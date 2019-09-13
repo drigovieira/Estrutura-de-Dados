@@ -12,23 +12,9 @@ namespace vetor_enari
 
         private usuarios[] pessoas = new usuarios[3];
 
-
-
-
-        public bool addUser(int index)
+        public bool addUser(int index, usuarios us)
         {
-            usuarios us = new usuarios();
-
-            Console.Write("\nEntre com o Nome: ");
-            us.setNome(Console.ReadLine());
-            Console.Write("Entre com o Email: ");
-            us.setEmail(Console.ReadLine());
-            Console.Write("Entre com a senha: ");
-            us.setSenha(Console.ReadLine());
-            Console.Write("Entre com o cpf: ");
-            us.setCpf(long.Parse(Console.ReadLine()));
-            us.setAtivo(true);
-
+            
             pessoas[index] = us;
 
             return true;

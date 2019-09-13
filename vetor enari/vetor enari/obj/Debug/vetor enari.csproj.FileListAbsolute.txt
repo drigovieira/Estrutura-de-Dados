@@ -12,3 +12,10 @@ C:\Users\Leo\Documents\C#\vetor enari\vetor enari\obj\Debug\vetor enari.csprojAs
 C:\Users\Leo\Documents\C#\vetor enari\vetor enari\obj\Debug\vetor enari.csproj.CoreCompileInputs.cache
 C:\Users\Leo\Documents\C#\vetor enari\vetor enari\obj\Debug\vetor enari.exe
 C:\Users\Leo\Documents\C#\vetor enari\vetor enari\obj\Debug\vetor enari.pdb
+C:\Users\jonat\Desktop\Estrutura-de-Dados\vetor enari\vetor enari\bin\Debug\vetor enari.exe.config
+C:\Users\jonat\Desktop\Estrutura-de-Dados\vetor enari\vetor enari\bin\Debug\vetor enari.exe
+C:\Users\jonat\Desktop\Estrutura-de-Dados\vetor enari\vetor enari\bin\Debug\vetor enari.pdb
+C:\Users\jonat\Desktop\Estrutura-de-Dados\vetor enari\vetor enari\obj\Debug\vetor enari.csprojAssemblyReference.cache
+C:\Users\jonat\Desktop\Estrutura-de-Dados\vetor enari\vetor enari\obj\Debug\vetor enari.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Desktop\Estrutura-de-Dados\vetor enari\vetor enari\obj\Debug\vetor enari.exe
+C:\Users\jonat\Desktop\Estrutura-de-Dados\vetor enari\vetor enari\obj\Debug\vetor enari.pdb
