@@ -11,10 +11,7 @@ namespace vetor_enari
         static void Main(string[] args)
         {
          
-            // menu mmmm = new menu();
-
-            // mmmm.MENU();
-
+     
             
 
             vetor v = new vetor();
