@@ -10,6 +10,21 @@ namespace vetor_enari
     {
         static void Main(string[] args)
         {
+            User user = new User();
+            var users = new List<User>();
+
+            user.Nome = "jhonatan";
+            user.Email = "jho@g.com";
+            user.Senha = "123";
+            user.Cpf = 458;
+            user.Ativo = true;
+            
+
+            users.Add(user);
+            
+            Console.WriteLine(users[0].Nome);
+
+            Console.WriteLine("-------------");
          
      
             
