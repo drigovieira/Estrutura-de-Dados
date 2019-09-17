@@ -26,14 +26,10 @@ namespace vetor_enari
             long cpf = users[index].Cpf;
             bool ativo = users[index].Ativo;
 
-            object[] vetor = { nome, email, senha, cpf, ativo };
-         
+            object[] vetor = { nome, email, senha, cpf, ativo };         
 
             return vetor;
         }
-
-        
-
         
     }
 }
