@@ -16,13 +16,15 @@ namespace Usuarios
             if (true)
             {
                 User user = new User();
-                user.Nome = "jhonatan";
+                user.Nome = "guilherme";
                 user.Email = "jho@gmail.com";
                 user.Senha = "123";
                 user.Cpf = 458;
                 user.Ativo = true;
-
+               
                 userList.userAdd(user);
+                
+                
             }
             if (true)
             {
@@ -32,11 +34,14 @@ namespace Usuarios
                 user.Senha = "321";
                 user.Cpf = 854;
                 user.Ativo = true;
-
+           
                 userList.userAdd(user);
+
+                
+
             }
 
-        
+
 
             for (int i = 0; i < userList.Tam ; i++)
             {
@@ -58,7 +63,6 @@ namespace Usuarios
                 user.Senha = "321";
                 user.Cpf = 854;
                 user.Ativo = true;
-
                 userList.alter(0, user);
             }
 
