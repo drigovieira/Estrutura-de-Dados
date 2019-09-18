@@ -12,8 +12,14 @@ namespace Usuarios
 
 
         public void userAdd(User user)
-        {              
-            users.Add(user);
+        {
+            User u = new User();
+            u.Nome = user.Nome;
+            u.Email = user.Email;
+            u.Senha = user.Senha;
+            u.Cpf = user.Cpf;
+            u.Ativo = user.Ativo;
+            users.Add(u);
         }
 
         public object[] select(int index)
