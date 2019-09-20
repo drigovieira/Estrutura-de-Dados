@@ -12,7 +12,7 @@ namespace Usuarios
 
         static void Main(string[] args)
         {
-            string str = "Nome: {0} \nEmail: {1} \nTelefone: {2} \nCPF: {3} \nStatus: {4} \n";
+            string str = "Nome: {0} \nEmail: {1} \nSenha: {2} \nCPF: {3} \nStatus: {4} \n";
             UserList userList = new UserList();
 
 
