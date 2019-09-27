@@ -10,7 +10,6 @@ namespace Usuarios
     {
         private List<User> users = new List<User>();
 
-
         public void userAdd(User user)
         {
             User u = new User();
@@ -31,7 +30,6 @@ namespace Usuarios
             bool ativo = users[index].Ativo;
 
             object[] vetor = { nome, email, senha, cpf, ativo };
-
             return vetor;
         }
 
@@ -52,6 +50,22 @@ namespace Usuarios
             users[index].Senha = u.Senha;
             users[index].Cpf = u.Cpf;
             users[index].Ativo = u.Ativo;
+        }
+
+        public List<User> selectAll()
+        {
+            List<User> lista = new List<User>();
+            foreach (var item in users)
+            {
+                User u = new User();
+                u.Nome = item.Nome;
+                u.Email = item.Email;
+                u.Senha = item.Senha;
+                u.Cpf = item.Cpf;
+                u.Ativo = item.Ativo;
+                lista.Add(u);
+            }
+            return lista;
         }
 
     }

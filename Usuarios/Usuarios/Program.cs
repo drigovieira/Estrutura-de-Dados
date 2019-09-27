@@ -75,10 +75,25 @@ namespace Usuarios
                 Console.WriteLine(String.Format(str, userList.select(i)));
             }
 
+            Console.WriteLine("-------------");
 
+            Console.WriteLine("seleceAll");
+
+            //List<User> us = userList.selectAll;
+
+            foreach (var item in userList.selectAll())
+            {
+                Console.WriteLine(String.Format(str, item.Nome, item.Email, item.Senha, item.Cpf, item.Ativo));
+                item.Nome = "marcelo";
+            }
+
+            foreach (var item in userList.selectAll())
+            {
+                Console.WriteLine(String.Format(str, item.Nome, item.Email, item.Senha, item.Cpf, item.Ativo));
+            }
 
             Console.ReadKey();
-            Console.WriteLine("-------------");
+           
 
         }
 
