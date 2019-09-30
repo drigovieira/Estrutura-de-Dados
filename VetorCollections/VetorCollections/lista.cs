@@ -72,7 +72,8 @@ namespace VetorCollections
 
             
             Console.ReadKey();
-
+
+
 
 
 
