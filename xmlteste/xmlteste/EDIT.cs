@@ -21,9 +21,6 @@ namespace xmlteste
 
             doc.Save(caminho);
 
-
-
-
         }
     }
 }

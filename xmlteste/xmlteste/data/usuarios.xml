@@ -24,4 +24,12 @@
     <cpf>2131231</cpf>
     <ativo>true</ativo>
   </usuario>
+  <usuario>
+    <id>11</id>
+    <nome>jhonn</nome>
+    <email>jho@gmail</email>
+    <senha>a17</senha>
+    <cpf>32859734</cpf>
+    <ativo>true</ativo>
+  </usuario>
 </usuarios>
