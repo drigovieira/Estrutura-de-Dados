@@ -11,6 +11,7 @@ namespace XmlCollection
     {
         static void Main(string[] args)
         {
+       
             XmlLi xmlli = new XmlLi();
             UserList userList = new UserList();
             User user = new User();
@@ -38,6 +39,11 @@ namespace XmlCollection
             Console.WriteLine("Salvar Xml");
             Console.ReadKey();
 
+
+
+          
+     
+
             //final do programa salvando...
 
             int cont = 0;
@@ -48,6 +54,7 @@ namespace XmlCollection
             }
             
             Console.WriteLine("Dados Salvos");
+            
             Console.ReadKey();
 
         }

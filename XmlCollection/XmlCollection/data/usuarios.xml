@@ -24,4 +24,12 @@
     <cpf>461</cpf>
     <ativo>true</ativo>
   </User>
+  <User>
+    <id>3</id>
+    <nome>mateus</nome>
+    <email>mateus@gmail.com</email>
+    <senha>MAT</senha>
+    <cpf>234</cpf>
+    <ativo>true</ativo>
+  </User>
 </UserList>
