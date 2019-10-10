@@ -116,7 +116,6 @@
             this.Controls.Add(this.PainelNav);
             this.Controls.Add(this.panel1);
             this.Enabled = false;
-            this.IsMdiContainer = true;
             this.Name = "FormNav";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
