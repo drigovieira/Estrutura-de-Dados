@@ -34,7 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PainelNav = new System.Windows.Forms.Panel();
+            this.panelHome = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,20 +100,20 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
-            // PainelNav
+            // panelHome
             // 
-            this.PainelNav.Location = new System.Drawing.Point(136, 50);
-            this.PainelNav.Name = "PainelNav";
-            this.PainelNav.Size = new System.Drawing.Size(1080, 720);
-            this.PainelNav.TabIndex = 2;
-            this.PainelNav.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
+            this.panelHome.Location = new System.Drawing.Point(126, 45);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.Size = new System.Drawing.Size(1080, 700);
+            this.panelHome.TabIndex = 1;
+            this.panelHome.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelHome_Paint);
             // 
             // FormNav
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.PainelNav);
+            this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panel1);
             this.Enabled = false;
             this.Name = "FormNav";
@@ -135,7 +135,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel PainelNav;
+        private System.Windows.Forms.Panel panelHome;
     }
 }
 

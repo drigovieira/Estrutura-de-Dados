@@ -46,13 +46,22 @@ namespace Home_do_projeto
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            FormHome fh = new FormHome();
+            fh.TopLevel = false;
+            panelHome.Controls.Add(fh);
+            fh.Show();
+
         }
 
         private void Panel2_Paint(object sender, PaintEventArgs e)
         {
-            FormHome fh = new FormHome();
-            fh.Show();
+
             
+        }
+
+        private void PanelHome_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

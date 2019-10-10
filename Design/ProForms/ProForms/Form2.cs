@@ -33,6 +33,10 @@ namespace ProForms
             frm.FormBorderStyle = FormBorderStyle.None;    
             frm.Show();
             this.Close();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
 
         }
     }
