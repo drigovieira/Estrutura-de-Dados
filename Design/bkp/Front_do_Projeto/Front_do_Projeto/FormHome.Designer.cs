@@ -58,7 +58,7 @@
             this.painelHome.Controls.Add(this.panel3);
             this.painelHome.Controls.Add(this.panel2);
             this.painelHome.Controls.Add(this.panel5);
-            this.painelHome.Location = new System.Drawing.Point(-8, -20);
+            this.painelHome.Location = new System.Drawing.Point(0, 0);
             this.painelHome.Name = "painelHome";
             this.painelHome.Size = new System.Drawing.Size(1080, 700);
             this.painelHome.TabIndex = 1;
@@ -208,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 661);
+            this.ClientSize = new System.Drawing.Size(1080, 700);
             this.Controls.Add(this.painelHome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormHome";
