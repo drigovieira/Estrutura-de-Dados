@@ -16,5 +16,10 @@ namespace Front_do_Projeto
         {
             InitializeComponent();
         }
+
+        private void Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
