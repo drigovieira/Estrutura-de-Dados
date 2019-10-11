@@ -41,5 +41,10 @@ namespace Front_do_Projeto
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
