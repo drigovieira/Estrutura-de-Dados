@@ -66,6 +66,7 @@
             this.button4.TabIndex = 1;
             this.button4.Text = "Fazer Login";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button1
             // 
@@ -102,9 +103,9 @@
             // 
             // panelHome
             // 
-            this.panelHome.Location = new System.Drawing.Point(126, 45);
+            this.panelHome.Location = new System.Drawing.Point(133, 45);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(1080, 700);
+            this.panelHome.Size = new System.Drawing.Size(1090, 700);
             this.panelHome.TabIndex = 1;
             this.panelHome.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelHome_Paint);
             // 
@@ -115,7 +116,6 @@
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panel1);
-            this.Enabled = false;
             this.Name = "FormNav";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";

@@ -56,7 +56,7 @@
             this.panel5.Controls.Add(this.button4);
             this.panel5.Location = new System.Drawing.Point(115, 289);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(150, 210);
+            this.panel5.Size = new System.Drawing.Size(150, 198);
             this.panel5.TabIndex = 4;
             // 
             // button4
@@ -70,10 +70,11 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(5, 160);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 45);
+            this.button4.Size = new System.Drawing.Size(140, 33);
             this.button4.TabIndex = 2;
             this.button4.Text = "Alimentos";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // panel2
             // 
@@ -81,7 +82,7 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(300, 289);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(150, 210);
+            this.panel2.Size = new System.Drawing.Size(150, 198);
             this.panel2.TabIndex = 5;
             // 
             // button1
@@ -95,7 +96,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(5, 160);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 45);
+            this.button1.Size = new System.Drawing.Size(140, 33);
             this.button1.TabIndex = 2;
             this.button1.Text = "Serviços";
             this.button1.UseVisualStyleBackColor = false;
@@ -106,7 +107,7 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Location = new System.Drawing.Point(485, 289);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(150, 210);
+            this.panel3.Size = new System.Drawing.Size(150, 198);
             this.panel3.TabIndex = 6;
             // 
             // button2
@@ -120,7 +121,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(5, 160);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 45);
+            this.button2.Size = new System.Drawing.Size(140, 33);
             this.button2.TabIndex = 2;
             this.button2.Text = "Hospedagem";
             this.button2.UseVisualStyleBackColor = false;
@@ -131,7 +132,7 @@
             this.panel4.Controls.Add(this.button3);
             this.panel4.Location = new System.Drawing.Point(670, 289);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(150, 210);
+            this.panel4.Size = new System.Drawing.Size(150, 198);
             this.panel4.TabIndex = 5;
             // 
             // button3
@@ -145,7 +146,7 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(4, 160);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 45);
+            this.button3.Size = new System.Drawing.Size(140, 33);
             this.button3.TabIndex = 2;
             this.button3.Text = "Eventos";
             this.button3.UseVisualStyleBackColor = false;
@@ -156,7 +157,7 @@
             this.panel6.Controls.Add(this.button5);
             this.panel6.Location = new System.Drawing.Point(859, 289);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(150, 210);
+            this.panel6.Size = new System.Drawing.Size(150, 198);
             this.panel6.TabIndex = 5;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel6_Paint);
             // 
@@ -171,7 +172,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(5, 160);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(140, 45);
+            this.button5.Size = new System.Drawing.Size(140, 33);
             this.button5.TabIndex = 2;
             this.button5.Text = "Avalie";
             this.button5.UseVisualStyleBackColor = false;
@@ -182,7 +183,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1080, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(1080, 138);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;

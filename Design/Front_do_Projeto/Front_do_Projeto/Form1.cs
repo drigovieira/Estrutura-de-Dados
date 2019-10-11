@@ -16,5 +16,25 @@ namespace Front_do_Projeto
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            FormHome fh = new FormHome();
+            fh.TopLevel = false;
+            panelHome.Controls.Add(fh);
+            fh.Show();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            FormLogin fL = new FormLogin();
+            fL.ShowDialog();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            FormCadastroUser fC = new FormCadastroUser();
+            fC.ShowDialog();
+        }
     }
 }
