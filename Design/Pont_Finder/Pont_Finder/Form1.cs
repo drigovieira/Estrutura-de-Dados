@@ -19,7 +19,10 @@ namespace Pont_Finder
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            formHome fh = new formHome();
+            fh.TopLevel = false;
+            panelHome.Controls.Add(fh);
+            fh.Show();
         }
     }
 }
