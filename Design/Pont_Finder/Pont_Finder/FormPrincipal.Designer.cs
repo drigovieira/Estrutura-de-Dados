@@ -1,6 +1,6 @@
 ﻿namespace Pont_Finder
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -104,15 +104,15 @@
             this.panelHome.Size = new System.Drawing.Size(1265, 675);
             this.panelHome.TabIndex = 3;
             // 
-            // Form1
+            // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1349, 720);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelHome);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormPrincipal";
+            this.Text = "Point Finder";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
