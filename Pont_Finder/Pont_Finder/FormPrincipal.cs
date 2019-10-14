@@ -49,7 +49,8 @@ namespace Pont_Finder
                 cont++;
             }
 
-            Console.WriteLine("Dados Salvos");
+            MessageBox.Show("Dados Salvos");
+           
 
         }
     }
