@@ -37,6 +37,23 @@ namespace Pont_Finder
         {
             string Login_email = textB_email.Text;
             string Login_senha = textB_senha.Text;
+            int indexer = UserList.checkLogin(Login_email, Login_senha);
+
+            if (indexer != -1)
+            {
+                UserList.sessionStart(indexer);
+                MessageBox.Show("Logado\n"+Session.Nome);
+            }
+            else
+            {
+                MessageBox.Show("Não Logado");
+            }
+           
+
+          
+            
+
+            
         }
     }
 }

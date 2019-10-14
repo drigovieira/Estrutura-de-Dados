@@ -13,9 +13,9 @@ namespace Pont_Finder
            UserList userList = new UserList();
         */
 
-        private List<User> users = new List<User>();
- 
-        public void userAdd(User user)
+        private static List<User> users = new List<User>();
+
+        public static void userAdd(User user)
         {
             User u = new User();
             u.Nome = user.Nome;
@@ -35,9 +35,9 @@ namespace Pont_Finder
                 user.Ativo = true;
                 userList.userAdd(user);
             */
-    }
+        }
 
-    public object[] select(int index)
+        public static object[] select(int index)
         {
             string nome = users[index].Nome;
             string email = users[index].Email;
@@ -56,7 +56,8 @@ namespace Pont_Finder
             */
         }
 
-        public void userDel(int index)
+
+        public static void userDel(int index)
         {
             users[index].Ativo = false;
 
@@ -66,7 +67,7 @@ namespace Pont_Finder
             */
         }
 
-        public int Tam
+        public static int Tam
         {
             get { return users.Count; }
 
@@ -76,7 +77,7 @@ namespace Pont_Finder
             */
         }
 
-        public void alter(int index, User u)
+        public static void alter(int index, User u)
         {
             users[index].Nome = u.Nome;
             users[index].Email = u.Email;
@@ -95,7 +96,33 @@ namespace Pont_Finder
             */
         }
 
-        public List<User> selectAll()
+        public static int checkLogin(string email, string senha)
+        {
+            bool valido = false;
+            int index = 0;
+
+            foreach (var item in UserList.selectAll())
+            {
+                if (item.Email.Equals(email) && item.Senha.Equals(senha))
+                {
+                    valido = true;
+                    break;
+                }
+                index++;
+            }
+
+            if (valido)
+            {
+                return index;
+            }
+            else
+            {
+                return -1;
+            }
+
+        }
+
+        public static List<User> selectAll()
         {
             List<User> lista = new List<User>();
             foreach (var item in users)
@@ -119,6 +146,16 @@ namespace Pont_Finder
                 Console.WriteLine(String.Format(str, item.Nome, item.Email, item.Senha, item.Cpf, item.Ativo));
             }
             */
+        }
+
+        public static void sessionStart(int index)
+        {
+            Session.Id = index;
+            Session.Nome = users[index].Nome;
+            Session.Email = users[index].Email;
+            Session.Senha = users[index].Senha;
+            Session.Cpf = users[index].Cpf;
+
         }
 
     }

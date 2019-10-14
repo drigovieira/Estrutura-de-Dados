@@ -1,3 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <UserList>
+  <User>
+    <id>0</id>
+    <nome>Mateus Abilio Gomes Leal</nome>
+    <email>mateuzim22@hotmail.com</email>
+    <senha>mateusbotanelas77</senha>
+    <cpf>78987906789</cpf>
+    <ativo>true</ativo>
+  </User>
+  <User>
+    <id>1</id>
+    <nome>jhonatan luiz chagas</nome>
+    <email>jho@gmail.com</email>
+    <senha>12345</senha>
+    <cpf>41432342342</cpf>
+    <ativo>true</ativo>
+  </User>
 </UserList>

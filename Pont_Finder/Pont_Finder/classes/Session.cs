@@ -8,10 +8,22 @@ namespace Pont_Finder
 {
     class Session
     {
+        private static int id;
+        private static string nome;
         private static string email;
         private static string senha;
+        private static long cpf;
 
- 
+        public static int Id
+        {
+            get { return Session.id; }
+            set { Session.id = value; }
+        }
+        public static string Nome
+        {
+            get { return Session.nome; }
+            set { Session.nome = value; }
+        }
         public static string Email
         {
             get { return Session.email; }
@@ -22,5 +34,13 @@ namespace Pont_Finder
             get { return Session.senha; }
             set { Session.senha = value; }
         }
+        public static long Cpf
+        {
+            get { return Session.cpf; }
+            set { Session.cpf = value; }
+        }
+
+
+
     }
 }
