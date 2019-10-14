@@ -35,6 +35,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panelHome = new System.Windows.Forms.Panel();
+            this.button_salvar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -43,6 +44,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.button_salvar);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -56,15 +58,19 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Dubai Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(1065, 10);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 23);
+            this.button4.Size = new System.Drawing.Size(85, 25);
             this.button4.TabIndex = 1;
             this.button4.Text = "Fazer Login";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox1
             // 
@@ -88,14 +94,20 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Dubai Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.Location = new System.Drawing.Point(1165, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 23);
+            this.button1.Size = new System.Drawing.Size(85, 25);
             this.button1.TabIndex = 2;
             this.button1.Text = "Criar Conta";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelHome
             // 
@@ -103,6 +115,22 @@
             this.panelHome.Name = "panelHome";
             this.panelHome.Size = new System.Drawing.Size(1265, 675);
             this.panelHome.TabIndex = 3;
+            // 
+            // button_salvar
+            // 
+            this.button_salvar.BackColor = System.Drawing.Color.Transparent;
+            this.button_salvar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_salvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.button_salvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.button_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_salvar.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_salvar.ForeColor = System.Drawing.Color.White;
+            this.button_salvar.Location = new System.Drawing.Point(1262, 10);
+            this.button_salvar.Name = "button_salvar";
+            this.button_salvar.Size = new System.Drawing.Size(75, 25);
+            this.button_salvar.TabIndex = 3;
+            this.button_salvar.Text = "Salvar";
+            this.button_salvar.UseVisualStyleBackColor = false;
             // 
             // FormPrincipal
             // 
@@ -112,6 +140,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelHome);
             this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Point Finder";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -129,6 +158,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelHome;
+        private System.Windows.Forms.Button button_salvar;
     }
 }
 

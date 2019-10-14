@@ -21,5 +21,13 @@ namespace Pont_Finder
         {
 
         }
+
+        private void button_Cadastrar_Click(object sender, EventArgs e)
+        {
+            string cad_Name = textB_nome.Text;
+            string cad_CPF = textB_cpf.Text;
+            string cad_email = textB_email.Text;
+            string cad_senha = textB_senha.Text;
+        }
     }
 }

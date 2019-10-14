@@ -24,5 +24,17 @@ namespace Pont_Finder
             panelHome.Controls.Add(fh);
             fh.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            formCriarConta fCC = new formCriarConta();
+            fCC.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            formLogin fL = new formLogin();
+            fL.ShowDialog();
+        }
     }
 }
