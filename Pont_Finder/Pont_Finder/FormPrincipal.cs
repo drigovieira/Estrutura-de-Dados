@@ -36,5 +36,21 @@ namespace Pont_Finder
             formLogin fL = new formLogin();
             fL.ShowDialog();
         }
+
+        private void Button_salvar_Click(object sender, EventArgs e)
+        {
+            XmlLi xmlli = new XmlLi();
+            //final do programa salvando...
+            xmlli.Drop();
+            int cont = 0;
+            foreach (var item in UserList.selectAll())
+            {
+                xmlli.Add(cont, item.Nome, item.Email, item.Senha, item.Cpf, item.Ativo);
+                cont++;
+            }
+
+            Console.WriteLine("Dados Salvos");
+
+        }
     }
 }

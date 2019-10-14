@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_salvar = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panelHome = new System.Windows.Forms.Panel();
-            this.button_salvar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -54,6 +54,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1349, 45);
             this.panel1.TabIndex = 3;
+            // 
+            // button_salvar
+            // 
+            this.button_salvar.BackColor = System.Drawing.Color.Transparent;
+            this.button_salvar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_salvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.button_salvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.button_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_salvar.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_salvar.ForeColor = System.Drawing.Color.White;
+            this.button_salvar.Location = new System.Drawing.Point(1262, 10);
+            this.button_salvar.Name = "button_salvar";
+            this.button_salvar.Size = new System.Drawing.Size(75, 25);
+            this.button_salvar.TabIndex = 3;
+            this.button_salvar.Text = "Salvar";
+            this.button_salvar.UseVisualStyleBackColor = false;
+            this.button_salvar.Click += new System.EventHandler(this.Button_salvar_Click);
             // 
             // button4
             // 
@@ -115,22 +132,6 @@
             this.panelHome.Name = "panelHome";
             this.panelHome.Size = new System.Drawing.Size(1265, 675);
             this.panelHome.TabIndex = 3;
-            // 
-            // button_salvar
-            // 
-            this.button_salvar.BackColor = System.Drawing.Color.Transparent;
-            this.button_salvar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button_salvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            this.button_salvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-            this.button_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_salvar.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_salvar.ForeColor = System.Drawing.Color.White;
-            this.button_salvar.Location = new System.Drawing.Point(1262, 10);
-            this.button_salvar.Name = "button_salvar";
-            this.button_salvar.Size = new System.Drawing.Size(75, 25);
-            this.button_salvar.TabIndex = 3;
-            this.button_salvar.Text = "Salvar";
-            this.button_salvar.UseVisualStyleBackColor = false;
             // 
             // FormPrincipal
             // 
