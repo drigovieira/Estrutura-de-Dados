@@ -48,4 +48,28 @@
     <cpf>12345</cpf>
     <ativo>true</ativo>
   </User>
+  <User>
+    <id>6</id>
+    <nome>raphael</nome>
+    <email>raphaelacacio84@gmail.com</email>
+    <senha>000000</senha>
+    <cpf>1393264646</cpf>
+    <ativo>true</ativo>
+  </User>
+  <User>
+    <id>7</id>
+    <nome>uu</nome>
+    <email>uu</email>
+    <senha>11</senha>
+    <cpf>11</cpf>
+    <ativo>true</ativo>
+  </User>
+  <User>
+    <id>8</id>
+    <nome>Gui</nome>
+    <email>gui@gmail.com</email>
+    <senha>fatec</senha>
+    <cpf>4338686386338</cpf>
+    <ativo>true</ativo>
+  </User>
 </UserList>

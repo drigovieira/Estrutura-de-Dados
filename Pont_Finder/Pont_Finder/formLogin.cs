@@ -43,7 +43,7 @@ namespace Pont_Finder
             {
                 UserList.sessionStart(indexer);
                 //MessageBox.Show("Logado\n"+Session.Nome);
-                this.Dispose();
+                this.Close();
             }
             else
             {

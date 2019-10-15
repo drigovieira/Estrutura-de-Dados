@@ -36,6 +36,14 @@ namespace Pont_Finder
             user.Cpf = cad_CPF;
             user.Ativo = true;
             UserList.userAdd(user);
+            
+            MessageBox.Show("Usuário Cadastrado com sucesso!");
+
+            //this.Dispose();
+            this.Close();
+            
+
+
         }
     }
 }
