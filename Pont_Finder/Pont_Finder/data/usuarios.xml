@@ -16,4 +16,36 @@
     <cpf>41432342342</cpf>
     <ativo>true</ativo>
   </User>
+  <User>
+    <id>2</id>
+    <nome>Luisa Ribeiro Couto</nome>
+    <email>carlos.nascimento@gmail.com</email>
+    <senha>lulululove34</senha>
+    <cpf>14251465220</cpf>
+    <ativo>true</ativo>
+  </User>
+  <User>
+    <id>3</id>
+    <nome>Luisa Ribeiro Couto</nome>
+    <email>carlos.nascimento@gmail.com</email>
+    <senha>lulululove34</senha>
+    <cpf>14251465220</cpf>
+    <ativo>true</ativo>
+  </User>
+  <User>
+    <id>4</id>
+    <nome>Vitoria Narciso</nome>
+    <email>mexicana@gmail.com</email>
+    <senha>minhacachorralate</senha>
+    <cpf>25896374178</cpf>
+    <ativo>true</ativo>
+  </User>
+  <User>
+    <id>5</id>
+    <nome>admin</nome>
+    <email>admin</email>
+    <senha>admin</senha>
+    <cpf>12345</cpf>
+    <ativo>true</ativo>
+  </User>
 </UserList>

@@ -19,6 +19,7 @@ namespace Pont_Finder
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label1.Text = "";
             formHome fh = new formHome();
             fh.TopLevel = false;
             panelHome.Controls.Add(fh);
@@ -35,6 +36,12 @@ namespace Pont_Finder
         {
             formLogin fL = new formLogin();
             fL.ShowDialog();
+            if (Session.Id != -1)
+            {
+                button4.Visible = false;
+                button1.Visible = false;
+                label1.Text = Session.Nome;
+            }
         }
 
         private void Button_salvar_Click(object sender, EventArgs e)

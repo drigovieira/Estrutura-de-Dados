@@ -30,7 +30,7 @@ namespace Pont_Finder
         {
             formCriarConta fCC = new formCriarConta();
             fCC.ShowDialog();
-            this.Dispose();
+            fCC.Dispose();
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
@@ -42,11 +42,13 @@ namespace Pont_Finder
             if (indexer != -1)
             {
                 UserList.sessionStart(indexer);
-                MessageBox.Show("Logado\n"+Session.Nome);
+                //MessageBox.Show("Logado\n"+Session.Nome);
+                this.Dispose();
             }
             else
             {
                 MessageBox.Show("Não Logado");
+          
             }
            
 
@@ -54,6 +56,11 @@ namespace Pont_Finder
             
 
             
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

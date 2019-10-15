@@ -8,7 +8,7 @@ namespace Pont_Finder
 {
     class Session
     {
-        private static int id;
+        private static int id = -1;
         private static string nome;
         private static string email;
         private static string senha;
