@@ -103,7 +103,7 @@
             // 
             this.panelHome.Location = new System.Drawing.Point(42, 45);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(1265, 675);
+            this.panelHome.Size = new System.Drawing.Size(1282, 675);
             this.panelHome.TabIndex = 3;
             this.panelHome.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHome_Paint);
             // 
