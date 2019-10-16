@@ -72,4 +72,12 @@
     <cpf>4338686386338</cpf>
     <ativo>true</ativo>
   </User>
+  <User>
+    <id>9</id>
+    <nome>jho</nome>
+    <email>jho</email>
+    <senha>123</senha>
+    <cpf>123</cpf>
+    <ativo>true</ativo>
+  </User>
 </UserList>
