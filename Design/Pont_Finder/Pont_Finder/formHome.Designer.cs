@@ -131,6 +131,7 @@
             this.button_Hospedagem.TabIndex = 3;
             this.button_Hospedagem.Text = "Hospedagem";
             this.button_Hospedagem.UseVisualStyleBackColor = false;
+            this.button_Hospedagem.Click += new System.EventHandler(this.button_Hospedagem_Click);
             // 
             // panel3
             // 
@@ -185,6 +186,7 @@
             this.button__Almentos.TabIndex = 3;
             this.button__Almentos.Text = "Alimentos";
             this.button__Almentos.UseVisualStyleBackColor = false;
+            this.button__Almentos.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel8
             // 
@@ -224,7 +226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1265, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);

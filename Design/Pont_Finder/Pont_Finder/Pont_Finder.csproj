@@ -74,6 +74,12 @@
     <Compile Include="formHome.Designer.cs">
       <DependentUpon>formHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\FormHospedagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\FormHospedagem.Designer.cs">
+      <DependentUpon>FormHospedagem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formLogin.resx">
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\FormHospedagem.resx">
+      <DependentUpon>FormHospedagem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,7 +123,6 @@
     <Folder Include="alimentos\" />
     <Folder Include="avalie\" />
     <Folder Include="eventos\" />
-    <Folder Include="hospedagem\" />
     <Folder Include="servicos\" />
   </ItemGroup>
   <ItemGroup>

@@ -21,5 +21,20 @@ namespace Pont_Finder
         {
 
         }
+
+        private void button_Hospedagem_Click(object sender, EventArgs e)
+        {
+            FormPrincipal fn = new FormPrincipal();
+            hospedagem.FormHospedagem fHp = new hospedagem.FormHospedagem();
+
+            fHp.TopLevel = false;
+            fn.panelHome.Controls.Add(fh);
+            fHp.Show();
+        }
+
+        private void button__Almentos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
