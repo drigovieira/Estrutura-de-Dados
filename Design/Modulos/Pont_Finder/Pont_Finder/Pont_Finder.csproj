@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C2C31E85-0180-4239-B0B3-F2E96C1CAFD6}</ProjectGuid>
+    <ProjectGuid>{6228359A-2674-4EB2-B000-C18BF43C37F5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Grid</RootNamespace>
-    <AssemblyName>Grid</AssemblyName>
+    <RootNamespace>Pont_Finder</RootNamespace>
+    <AssemblyName>Pont_Finder</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,52 +46,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="cadEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="cadEmpresa.Designer.cs">
+      <DependentUpon>cadEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="classes\Company.cs" />
+    <Compile Include="classes\CompanyList.cs" />
+    <Compile Include="classes\Session.cs" />
+    <Compile Include="classes\User.cs" />
+    <Compile Include="classes\UserList.cs" />
+    <Compile Include="classes\XmlLi.cs" />
+    <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Grid12.cs">
+    <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Grid12.Designer.cs">
-      <DependentUpon>Grid12.cs</DependentUpon>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="GridHome.cs">
+    <Compile Include="formCriarConta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GridHome.Designer.cs">
-      <DependentUpon>GridHome.cs</DependentUpon>
+    <Compile Include="formCriarConta.Designer.cs">
+      <DependentUpon>formCriarConta.cs</DependentUpon>
     </Compile>
-    <Compile Include="GridModulo.cs">
+    <Compile Include="formHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GridModulo.Designer.cs">
-      <DependentUpon>GridModulo.cs</DependentUpon>
+    <Compile Include="formHome.Designer.cs">
+      <DependentUpon>formHome.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="cadEmpresa.resx">
+      <DependentUpon>cadEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Grid12.resx">
-      <DependentUpon>Grid12.cs</DependentUpon>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GridHome.resx">
-      <DependentUpon>GridHome.cs</DependentUpon>
+    <EmbeddedResource Include="formCriarConta.resx">
+      <DependentUpon>formCriarConta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GridModulo.resx">
-      <DependentUpon>GridModulo.cs</DependentUpon>
+    <EmbeddedResource Include="formHome.resx">
+      <DependentUpon>formHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +120,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="alimentos\" />
+    <Folder Include="avalie\" />
+    <Folder Include="eventos\" />
+    <Folder Include="hospedagem\" />
+    <Folder Include="servicos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\usuarios.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
