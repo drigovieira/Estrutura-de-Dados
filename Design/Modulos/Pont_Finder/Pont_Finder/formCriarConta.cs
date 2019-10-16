@@ -45,5 +45,15 @@ namespace Pont_Finder
 
 
         }
+
+        private void textB_nome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textB_cpf_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
