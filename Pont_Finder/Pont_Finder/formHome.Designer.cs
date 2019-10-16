@@ -55,7 +55,7 @@
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
             this.panel6.Controls.Add(this.button_Avalie);
-            this.panel6.Location = new System.Drawing.Point(950, 328);
+            this.panel6.Location = new System.Drawing.Point(958, 328);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(205, 280);
             this.panel6.TabIndex = 12;
@@ -83,7 +83,7 @@
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.Controls.Add(this.button_Eventos);
-            this.panel5.Location = new System.Drawing.Point(740, 328);
+            this.panel5.Location = new System.Drawing.Point(748, 328);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(205, 280);
             this.panel5.TabIndex = 11;
@@ -110,7 +110,7 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.Controls.Add(this.button_Hospedagem);
-            this.panel4.Location = new System.Drawing.Point(530, 328);
+            this.panel4.Location = new System.Drawing.Point(538, 328);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(205, 280);
             this.panel4.TabIndex = 10;
@@ -137,7 +137,7 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.Controls.Add(this.button_Serviços);
-            this.panel3.Location = new System.Drawing.Point(320, 328);
+            this.panel3.Location = new System.Drawing.Point(328, 328);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(205, 280);
             this.panel3.TabIndex = 9;
@@ -164,7 +164,7 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Controls.Add(this.button__Almentos);
-            this.panel2.Location = new System.Drawing.Point(111, 328);
+            this.panel2.Location = new System.Drawing.Point(119, 328);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(205, 280);
             this.panel2.TabIndex = 8;
@@ -185,6 +185,7 @@
             this.button__Almentos.TabIndex = 3;
             this.button__Almentos.Text = "Alimentos";
             this.button__Almentos.UseVisualStyleBackColor = false;
+            this.button__Almentos.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel8
             // 
@@ -193,7 +194,7 @@
             this.panel8.Controls.Add(this.label1);
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1265, 200);
+            this.panel8.Size = new System.Drawing.Size(1282, 200);
             this.panel8.TabIndex = 14;
             // 
             // label1
@@ -202,7 +203,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Dubai", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(330, 66);
+            this.label1.Location = new System.Drawing.Point(339, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(603, 67);
             this.label1.TabIndex = 0;
@@ -213,7 +214,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Dubai", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(473, 236);
+            this.label2.Location = new System.Drawing.Point(476, 236);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(318, 55);
             this.label2.TabIndex = 15;
@@ -224,7 +225,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1265, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
@@ -233,6 +234,8 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "formHome";
             this.Text = "formHome";
             this.panel6.ResumeLayout(false);

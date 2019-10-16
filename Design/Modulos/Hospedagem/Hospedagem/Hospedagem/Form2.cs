@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pont_Finder
+namespace Hospedagem
 {
-    public partial class formHome : Form
+    public partial class Form2 : Form
     {
-        public formHome()
+        public Form2()
         {
             InitializeComponent();
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button__Almentos_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
