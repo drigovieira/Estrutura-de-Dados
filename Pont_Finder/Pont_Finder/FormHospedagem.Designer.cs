@@ -326,7 +326,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1264, 200);
+            this.panel1.Size = new System.Drawing.Size(1265, 200);
             this.panel1.TabIndex = 15;
             // 
             // label6
@@ -558,7 +558,7 @@
             // 
             this.panel6.Location = new System.Drawing.Point(505, 904);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(148, 115);
+            this.panel6.Size = new System.Drawing.Size(148, 135);
             this.panel6.TabIndex = 27;
             // 
             // FormHospedagem
@@ -582,6 +582,8 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "FormHospedagem";
             this.Text = "FormHospedagem";
             this.panel8.ResumeLayout(false);
