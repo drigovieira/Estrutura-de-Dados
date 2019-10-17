@@ -83,6 +83,7 @@ namespace Pont_Finder
                 case "Alimentos":
                     navbar.BackColor = Color.Red;
                     break;
+
                 case "Serviços":
                    formservicos form = new formservicos
                    {
@@ -90,12 +91,19 @@ namespace Pont_Finder
                     };
                     painel.Controls.Add(form);
                     form.Show();
-                    navbar.BackColor = Color.Blue;
-
+                    navbar.BackColor = Color.FromArgb(0, 120, 215);
                     break;
+
                 case "Hospedagem":
+                    FormHospedagem fHosp = new FormHospedagem();
+                    {
+                        fHosp.TopLevel = false;
+                    }
+                    painel.Controls.Add(fHosp);
+                    fHosp.Show();
                     navbar.BackColor = Color.LimeGreen;
                     break;
+
                 case "Eventos":
                     navbar.BackColor = Color.Blue;
                     break;

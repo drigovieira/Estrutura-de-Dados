@@ -51,6 +51,12 @@
     <Compile Include="classes\UserList.cs" />
     <Compile Include="classes\Validation.cs" />
     <Compile Include="classes\XmlLi.cs" />
+    <Compile Include="FormHospedagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHospedagem.Designer.cs">
+      <DependentUpon>FormHospedagem.cs</DependentUpon>
+    </Compile>
     <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     <Compile Include="formservicos.Designer.cs">
       <DependentUpon>formservicos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormHospedagem.resx">
+      <DependentUpon>FormHospedagem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
     </EmbeddedResource>
