@@ -101,7 +101,7 @@ namespace Pont_Finder
                     }
                     painel.Controls.Add(fHosp);
                     fHosp.Show();
-                    navbar.BackColor = Color.LimeGreen;
+                    navbar.BackColor = Color.FromArgb(69,172,20);
                     break;
 
                 case "Eventos":

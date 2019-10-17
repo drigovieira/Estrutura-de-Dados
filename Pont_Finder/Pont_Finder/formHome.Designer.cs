@@ -121,9 +121,9 @@
             // 
             this.button_Hospedagem.BackColor = System.Drawing.Color.Transparent;
             this.button_Hospedagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button_Hospedagem.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.button_Hospedagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
-            this.button_Hospedagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.button_Hospedagem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
+            this.button_Hospedagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
+            this.button_Hospedagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
             this.button_Hospedagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Hospedagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Hospedagem.ForeColor = System.Drawing.Color.White;
