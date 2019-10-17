@@ -31,6 +31,15 @@ namespace Modulo_Eventos
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            case "Eventos":
+            Form_eventos fEvent = new Form_eventos();
+            {
+                TopLevel = false
+            };
+            painel.Controls.Add(fEvent);
+            fEvent.Show();
+            navbar.Backcolor = Color.FromArgb(120; 88; 210);
+            break;
 
         }
 
