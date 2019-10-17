@@ -69,7 +69,7 @@
             this.button_Avalie.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(166)))), ((int)(((byte)(246)))));
             this.button_Avalie.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(166)))), ((int)(((byte)(246)))));
             this.button_Avalie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Avalie.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Avalie.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Avalie.ForeColor = System.Drawing.Color.White;
             this.button_Avalie.Location = new System.Drawing.Point(5, 222);
             this.button_Avalie.Name = "button_Avalie";
@@ -77,6 +77,7 @@
             this.button_Avalie.TabIndex = 3;
             this.button_Avalie.Text = "Avalie";
             this.button_Avalie.UseVisualStyleBackColor = false;
+            this.button_Avalie.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel5
             // 
@@ -96,7 +97,7 @@
             this.button_Eventos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(88)))), ((int)(((byte)(210)))));
             this.button_Eventos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(88)))), ((int)(((byte)(210)))));
             this.button_Eventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Eventos.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Eventos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Eventos.ForeColor = System.Drawing.Color.White;
             this.button_Eventos.Location = new System.Drawing.Point(5, 222);
             this.button_Eventos.Name = "button_Eventos";
@@ -104,6 +105,7 @@
             this.button_Eventos.TabIndex = 3;
             this.button_Eventos.Text = "Eventos";
             this.button_Eventos.UseVisualStyleBackColor = false;
+            this.button_Eventos.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel4
             // 
@@ -123,7 +125,7 @@
             this.button_Hospedagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
             this.button_Hospedagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.button_Hospedagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Hospedagem.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Hospedagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Hospedagem.ForeColor = System.Drawing.Color.White;
             this.button_Hospedagem.Location = new System.Drawing.Point(5, 222);
             this.button_Hospedagem.Name = "button_Hospedagem";
@@ -131,6 +133,7 @@
             this.button_Hospedagem.TabIndex = 3;
             this.button_Hospedagem.Text = "Hospedagem";
             this.button_Hospedagem.UseVisualStyleBackColor = false;
+            this.button_Hospedagem.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel3
             // 
@@ -150,7 +153,7 @@
             this.button_Serviços.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.button_Serviços.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.button_Serviços.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Serviços.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Serviços.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Serviços.ForeColor = System.Drawing.Color.White;
             this.button_Serviços.Location = new System.Drawing.Point(5, 222);
             this.button_Serviços.Name = "button_Serviços";
@@ -158,6 +161,7 @@
             this.button_Serviços.TabIndex = 3;
             this.button_Serviços.Text = "Serviços";
             this.button_Serviços.UseVisualStyleBackColor = false;
+            this.button_Serviços.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel2
             // 
@@ -177,7 +181,7 @@
             this.button__Almentos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(9)))), ((int)(((byte)(25)))));
             this.button__Almentos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(9)))), ((int)(((byte)(25)))));
             this.button__Almentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button__Almentos.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button__Almentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button__Almentos.ForeColor = System.Drawing.Color.White;
             this.button__Almentos.Location = new System.Drawing.Point(5, 222);
             this.button__Almentos.Name = "button__Almentos";
@@ -201,11 +205,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Dubai", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(339, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(603, 67);
+            this.label1.Size = new System.Drawing.Size(663, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Conheça o melhor para você aqui!";
             // 
@@ -213,10 +217,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Dubai", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(476, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(318, 55);
+            this.label2.Size = new System.Drawing.Size(357, 38);
             this.label2.TabIndex = 15;
             this.label2.Text = "Veja nossos serviços!";
             // 

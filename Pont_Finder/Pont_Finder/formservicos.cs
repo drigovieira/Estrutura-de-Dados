@@ -17,22 +17,22 @@ namespace Pont_Finder.servicos
             InitializeComponent();
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Session.Id != -1)
+            {
+
+                button1.Visible = false;
+
+            }
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
 
         }
@@ -42,26 +42,27 @@ namespace Pont_Finder.servicos
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-        public static void Mudar(String x = "")
+        private void pictureBox11_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void formservicos_Load(object sender, EventArgs e)
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

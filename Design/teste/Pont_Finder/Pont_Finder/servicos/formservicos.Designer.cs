@@ -270,6 +270,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formservicos";
             this.Text = "formservicos";
+            this.Load += new System.EventHandler(this.formservicos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgservicos)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
