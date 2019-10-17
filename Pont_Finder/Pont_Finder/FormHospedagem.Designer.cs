@@ -582,6 +582,8 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "FormHospedagem";
             this.Text = "FormHospedagem";
             this.panel8.ResumeLayout(false);
