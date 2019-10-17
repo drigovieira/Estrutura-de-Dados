@@ -326,7 +326,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 200);
+            this.panel1.Size = new System.Drawing.Size(1264, 200);
             this.panel1.TabIndex = 15;
             // 
             // label6
@@ -556,9 +556,9 @@
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(505, 805);
+            this.panel6.Location = new System.Drawing.Point(505, 904);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(148, 187);
+            this.panel6.Size = new System.Drawing.Size(148, 115);
             this.panel6.TabIndex = 27;
             // 
             // FormHospedagem
