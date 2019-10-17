@@ -72,7 +72,7 @@
             this.button_salvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             this.button_salvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.button_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_salvar.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_salvar.ForeColor = System.Drawing.Color.White;
             this.button_salvar.Location = new System.Drawing.Point(1262, 10);
             this.button_salvar.Name = "button_salvar";
@@ -89,7 +89,7 @@
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(1048, 10);
             this.button4.Name = "button4";
@@ -117,7 +117,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.Location = new System.Drawing.Point(1155, 10);
             this.button1.Name = "button1";

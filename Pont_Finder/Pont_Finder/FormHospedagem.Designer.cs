@@ -36,7 +36,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
@@ -74,6 +73,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -126,7 +126,7 @@
             this.panel8.Controls.Add(this.label15);
             this.panel8.Location = new System.Drawing.Point(950, 447);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(310, 326);
+            this.panel8.Size = new System.Drawing.Size(310, 325);
             this.panel8.TabIndex = 24;
             // 
             // label15
@@ -160,14 +160,6 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "Vejá oque temos para você!";
             // 
-            // panel6
-            // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 885);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1265, 85);
-            this.panel6.TabIndex = 25;
-            // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -179,7 +171,7 @@
             this.panel7.Controls.Add(this.label12);
             this.panel7.Location = new System.Drawing.Point(5, 783);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(310, 100);
+            this.panel7.Size = new System.Drawing.Size(310, 107);
             this.panel7.TabIndex = 17;
             // 
             // checkBox7
@@ -332,7 +324,6 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 200);
@@ -362,7 +353,7 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label_nome);
             this.panel3.Controls.Add(this.pictureB_card);
-            this.panel3.Location = new System.Drawing.Point(320, 281);
+            this.panel3.Location = new System.Drawing.Point(320, 280);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(625, 160);
             this.panel3.TabIndex = 19;
@@ -452,7 +443,7 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Location = new System.Drawing.Point(950, 281);
+            this.panel2.Location = new System.Drawing.Point(950, 280);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 160);
             this.panel2.TabIndex = 18;
@@ -478,7 +469,7 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Location = new System.Drawing.Point(5, 281);
+            this.panel4.Location = new System.Drawing.Point(5, 280);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 252);
             this.panel4.TabIndex = 16;
@@ -560,8 +551,15 @@
             this.panel5.Controls.Add(this.panel11);
             this.panel5.Location = new System.Drawing.Point(5, 585);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 300);
+            this.panel5.Size = new System.Drawing.Size(310, 298);
             this.panel5.TabIndex = 20;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(505, 805);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(148, 187);
+            this.panel6.TabIndex = 27;
             // 
             // FormHospedagem
             // 
@@ -569,11 +567,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 765);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel10);
@@ -621,7 +619,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox6;
@@ -659,5 +656,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }

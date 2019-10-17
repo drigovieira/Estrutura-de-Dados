@@ -123,7 +123,7 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label_nome);
             this.panel3.Controls.Add(this.pictureB_card);
-            this.panel3.Location = new System.Drawing.Point(320, 291);
+            this.panel3.Location = new System.Drawing.Point(320, 280);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(625, 160);
             this.panel3.TabIndex = 5;
@@ -215,7 +215,7 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Location = new System.Drawing.Point(950, 291);
+            this.panel2.Location = new System.Drawing.Point(950, 280);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 160);
             this.panel2.TabIndex = 4;
@@ -241,7 +241,7 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Location = new System.Drawing.Point(5, 291);
+            this.panel4.Location = new System.Drawing.Point(5, 280);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 252);
             this.panel4.TabIndex = 3;
@@ -332,7 +332,7 @@
             this.panel11.Controls.Add(this.checkBox2);
             this.panel11.Controls.Add(this.label11);
             this.panel11.Controls.Add(this.checkBox1);
-            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Location = new System.Drawing.Point(0, -16);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(310, 100);
             this.panel11.TabIndex = 0;
@@ -383,7 +383,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(45, 252);
+            this.label5.Location = new System.Drawing.Point(45, 240);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 36);
             this.label5.TabIndex = 8;
@@ -394,7 +394,7 @@
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(950, 457);
+            this.panel8.Location = new System.Drawing.Point(950, 446);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(310, 326);
             this.panel8.TabIndex = 11;
@@ -421,7 +421,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(116, 560);
+            this.label10.Location = new System.Drawing.Point(116, 544);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 32);
             this.label10.TabIndex = 0;
@@ -436,7 +436,7 @@
             this.panel7.Controls.Add(this.checkBox4);
             this.panel7.Controls.Add(this.checkBox3);
             this.panel7.Controls.Add(this.label12);
-            this.panel7.Location = new System.Drawing.Point(5, 793);
+            this.panel7.Location = new System.Drawing.Point(5, 777);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(310, 100);
             this.panel7.TabIndex = 4;
@@ -508,7 +508,7 @@
             this.panel10.Controls.Add(this.checkBox10);
             this.panel10.Controls.Add(this.checkBox11);
             this.panel10.Controls.Add(this.label14);
-            this.panel10.Location = new System.Drawing.Point(5, 694);
+            this.panel10.Location = new System.Drawing.Point(5, 678);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(310, 100);
             this.panel10.TabIndex = 7;
@@ -555,7 +555,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(41, 226);
+            this.button1.Location = new System.Drawing.Point(41, 214);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 23);
             this.button1.TabIndex = 13;
