@@ -1,0 +1,14 @@
+C:\Users\Miguel\source\repos\Modulo_Eventos\bin\Debug\Modulo_Eventos.exe.config
+C:\Users\Miguel\source\repos\Modulo_Eventos\bin\Debug\Modulo_Eventos.exe
+C:\Users\Miguel\source\repos\Modulo_Eventos\bin\Debug\Modulo_Eventos.pdb
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.csprojAssemblyReference.cache
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.Properties.Resources.resources
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.csproj.GenerateResource.cache
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.csproj.CoreCompileInputs.cache
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.exe
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.pdb
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.Form_eventos.resources
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.Form_fim_de_ano.resources
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.Form_apres_musical.resources
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.Form_compra.resources
+C:\Users\Miguel\source\repos\Modulo_Eventos\obj\Debug\Modulo_Eventos.Form_boleto.resources
