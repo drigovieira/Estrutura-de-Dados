@@ -30,18 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cadEmpresa));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.nomeempresa = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,114 +49,17 @@
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.panel12);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel13);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1282, 200);
             this.panel1.TabIndex = 0;
-            // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(1165, 194);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(100, 630);
-            this.panel7.TabIndex = 29;
-            // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(1060, 194);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(100, 630);
-            this.panel8.TabIndex = 28;
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(955, 194);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(100, 630);
-            this.panel9.TabIndex = 27;
-            // 
-            // panel10
-            // 
-            this.panel10.Location = new System.Drawing.Point(850, 194);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(100, 630);
-            this.panel10.TabIndex = 26;
-            // 
-            // panel11
-            // 
-            this.panel11.Location = new System.Drawing.Point(745, 194);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(100, 630);
-            this.panel11.TabIndex = 25;
-            // 
-            // panel12
-            // 
-            this.panel12.Location = new System.Drawing.Point(640, 194);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(100, 630);
-            this.panel12.TabIndex = 24;
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(535, 194);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(100, 630);
-            this.panel6.TabIndex = 23;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(430, 194);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(100, 630);
-            this.panel5.TabIndex = 22;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(325, 194);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(100, 630);
-            this.panel4.TabIndex = 21;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(220, 194);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(100, 630);
-            this.panel3.TabIndex = 20;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(115, 194);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(100, 630);
-            this.panel2.TabIndex = 19;
-            // 
-            // panel13
-            // 
-            this.panel13.Location = new System.Drawing.Point(10, 194);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(100, 630);
-            this.panel13.TabIndex = 18;
             // 
             // label1
             // 
@@ -383,7 +274,6 @@
             this.Name = "cadEmpresa";
             this.Text = "cadEmpresa";
             this.Load += new System.EventHandler(this.cadEmpresa_Load);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,18 +298,6 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label7;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

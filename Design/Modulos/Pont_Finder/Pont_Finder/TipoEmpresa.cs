@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hospedagem
+namespace Pont_Finder
 {
-    public partial class Form2 : Form
+    public partial class TipoEmpresa : Form
     {
-        public Form2()
+        public TipoEmpresa()
         {
             InitializeComponent();
         }
