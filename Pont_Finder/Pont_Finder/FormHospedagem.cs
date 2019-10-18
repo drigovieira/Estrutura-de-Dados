@@ -22,5 +22,10 @@ namespace Pont_Finder
             Hospedagem_DetalhesEmpresa detEmpre = new Hospedagem_DetalhesEmpresa();
             detEmpre.ShowDialog();
         }
+
+        private void FormHospedagem_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
