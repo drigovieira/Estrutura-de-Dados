@@ -12,6 +12,7 @@ namespace Pont_Finder.servicos
 {
     public partial class formservicos : Form
     {
+        private int y = 5;
         public formservicos()
         {
             InitializeComponent();
@@ -70,6 +71,48 @@ namespace Pont_Finder.servicos
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Formservicos_Load(object sender, EventArgs e)
+        {
+            panel4.Height = 180;
+            Service s = new Service();
+            s.Id = 0;
+            s.Tipo = "ADS";
+            s.Valor = 200.00;
+            s.Detalhes = "Análise e desenvolvimento de sistemas";
+            s.Sugestoes = 2;
+            s.Visualizacoes = 200;
+            s.Like = 12;
+            s.Avaliacao = 4;
+            s.Ativo = true;
+
+            classes.ServiceList.Add(s);
+
+         
+            s.Id = 1;
+            s.Tipo = "ADM";
+            s.Valor = 300.00;
+            s.Detalhes = "Administrador";
+            s.Sugestoes = 2;
+            s.Visualizacoes = 200;
+            s.Like = 12;
+            s.Avaliacao = 4;
+            s.Ativo = true;
+
+            classes.ServiceList.Add(s);
+
+
+
+            foreach (var item in classes.ServiceList.selectAll())
+            {
+                postcard a = new postcard( item.Tipo,  item.Detalhes,  item.Valor);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                panel4.Height = panel4.Height + 180;
+                panel4.Controls.Add(a);
+            }
+          
         }
     }
 }

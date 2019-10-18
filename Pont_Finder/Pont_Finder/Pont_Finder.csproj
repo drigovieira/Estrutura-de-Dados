@@ -121,11 +121,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="servicos\classes\Service.cs" />
+    <Compile Include="servicos\classes\ServiceList.cs" />
+    <Compile Include="servicos\classes\Worker.cs" />
     <Compile Include="servicos\formservicos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="servicos\formservicos.Designer.cs">
       <DependentUpon>formservicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\postcard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="servicos\postcard.Designer.cs">
+      <DependentUpon>postcard.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CadEmpresa.resx">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
@@ -171,6 +180,9 @@
     </Compile>
     <EmbeddedResource Include="servicos\formservicos.resx">
       <DependentUpon>formservicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\postcard.resx">
+      <DependentUpon>postcard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
