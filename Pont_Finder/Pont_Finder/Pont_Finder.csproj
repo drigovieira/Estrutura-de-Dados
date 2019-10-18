@@ -52,6 +52,8 @@
     <Compile Include="CadEmpresa.Designer.cs">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="classes\lista_quartos.cs" />
+    <Compile Include="classes\quarto.cs" />
     <Compile Include="classes\Session.cs" />
     <Compile Include="classes\User.cs" />
     <Compile Include="classes\UserList.cs" />
