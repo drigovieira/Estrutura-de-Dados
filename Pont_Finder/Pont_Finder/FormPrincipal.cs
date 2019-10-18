@@ -137,5 +137,11 @@ namespace Pont_Finder
         {
             Mudar();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CadEmpresa cdEmp = new CadEmpresa();
+            cdEmp.ShowDialog();
+        }
     }
 }

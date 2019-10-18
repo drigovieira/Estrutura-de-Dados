@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadEmpresa.Designer.cs">
+      <DependentUpon>CadEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="classes\Session.cs" />
     <Compile Include="classes\User.cs" />
     <Compile Include="classes\UserList.cs" />
@@ -89,6 +95,9 @@
     <Compile Include="formservicos.Designer.cs">
       <DependentUpon>formservicos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CadEmpresa.resx">
+      <DependentUpon>CadEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHospedagem.resx">
       <DependentUpon>FormHospedagem.cs</DependentUpon>
     </EmbeddedResource>
