@@ -59,28 +59,28 @@
     <Compile Include="classes\UserList.cs" />
     <Compile Include="classes\Validation.cs" />
     <Compile Include="classes\XmlLi.cs" />
-    <Compile Include="formAlimentos.cs">
+    <Compile Include="alimentos\formAlimentos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formAlimentos.Designer.cs">
+    <Compile Include="alimentos\formAlimentos.Designer.cs">
       <DependentUpon>formAlimentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAvalie.cs">
+    <Compile Include="avalie\FormAvalie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAvalie.Designer.cs">
+    <Compile Include="avalie\FormAvalie.Designer.cs">
       <DependentUpon>FormAvalie.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEventos.cs">
+    <Compile Include="eventos\FormEventos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormEventos.Designer.cs">
+    <Compile Include="eventos\FormEventos.Designer.cs">
       <DependentUpon>FormEventos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormHospedagem.cs">
+    <Compile Include="hospedagem\FormHospedagem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormHospedagem.Designer.cs">
+    <Compile Include="hospedagem\FormHospedagem.Designer.cs">
       <DependentUpon>FormHospedagem.cs</DependentUpon>
     </Compile>
     <Compile Include="formLogin.cs">
@@ -107,39 +107,39 @@
     <Compile Include="formHome.Designer.cs">
       <DependentUpon>formHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hospedagem_CadQuarto.cs">
+    <Compile Include="hospedagem\Hospedagem_CadQuarto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hospedagem_CadQuarto.Designer.cs">
+    <Compile Include="hospedagem\Hospedagem_CadQuarto.Designer.cs">
       <DependentUpon>Hospedagem_CadQuarto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hospedagem_DetalhesEmpresa.cs">
+    <Compile Include="hospedagem\Hospedagem_DetalhesEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hospedagem_DetalhesEmpresa.Designer.cs">
+    <Compile Include="hospedagem\Hospedagem_DetalhesEmpresa.Designer.cs">
       <DependentUpon>Hospedagem_DetalhesEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="formservicos.cs">
+    <Compile Include="servicos\formservicos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formservicos.Designer.cs">
+    <Compile Include="servicos\formservicos.Designer.cs">
       <DependentUpon>formservicos.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CadEmpresa.resx">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formAlimentos.resx">
+    <EmbeddedResource Include="alimentos\formAlimentos.resx">
       <DependentUpon>formAlimentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAvalie.resx">
+    <EmbeddedResource Include="avalie\FormAvalie.resx">
       <DependentUpon>FormAvalie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormEventos.resx">
+    <EmbeddedResource Include="eventos\FormEventos.resx">
       <DependentUpon>FormEventos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormHospedagem.resx">
+    <EmbeddedResource Include="hospedagem\FormHospedagem.resx">
       <DependentUpon>FormHospedagem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
@@ -154,10 +154,10 @@
     <EmbeddedResource Include="formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hospedagem_CadQuarto.resx">
+    <EmbeddedResource Include="hospedagem\Hospedagem_CadQuarto.resx">
       <DependentUpon>Hospedagem_CadQuarto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hospedagem_DetalhesEmpresa.resx">
+    <EmbeddedResource Include="hospedagem\Hospedagem_DetalhesEmpresa.resx">
       <DependentUpon>Hospedagem_DetalhesEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -169,7 +169,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="formservicos.resx">
+    <EmbeddedResource Include="servicos\formservicos.resx">
       <DependentUpon>formservicos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -185,13 +185,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="alimentos\" />
-    <Folder Include="avalie\" />
-    <Folder Include="eventos\" />
-    <Folder Include="hospedagem\" />
-    <Folder Include="servicos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="data\usuarios.xml" />
   </ItemGroup>
