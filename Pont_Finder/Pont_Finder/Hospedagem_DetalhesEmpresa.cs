@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Pont_Finder
 {
-    public partial class FormHospedagem : Form
+    public partial class Hospedagem_DetalhesEmpresa : Form
     {
-        public FormHospedagem()
+        public Hospedagem_DetalhesEmpresa()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Hospedagem_DetalhesEmpresa detEmpre = new Hospedagem_DetalhesEmpresa();
-            detEmpre.ShowDialog();
+            Hospedagem_CadQuarto cadQuarto = new Hospedagem_CadQuarto();
+            cadQuarto.ShowDialog();
         }
     }
 }
