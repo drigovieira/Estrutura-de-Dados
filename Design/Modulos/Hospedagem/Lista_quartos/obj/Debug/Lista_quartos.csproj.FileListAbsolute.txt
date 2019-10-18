@@ -8,3 +8,12 @@ C:\Users\PedroMuzy\source\repos\Lista_quartos\bin\Debug\Lista_quartos.exe
 C:\Users\PedroMuzy\source\repos\Lista_quartos\bin\Debug\Lista_quartos.pdb
 C:\Users\PedroMuzy\source\repos\Lista_quartos\obj\Debug\Lista_quartos.exe
 C:\Users\PedroMuzy\source\repos\Lista_quartos\obj\Debug\Lista_quartos.pdb
+E:\ADS\3 ADS\Projeto Enari\Estrutura-de-Dados\Design\Modulos\Hospedagem\Lista_quartos\bin\Debug\Lista_quartos.exe.config
+E:\ADS\3 ADS\Projeto Enari\Estrutura-de-Dados\Design\Modulos\Hospedagem\Lista_quartos\bin\Debug\Lista_quartos.exe
+E:\ADS\3 ADS\Projeto Enari\Estrutura-de-Dados\Design\Modulos\Hospedagem\Lista_quartos\bin\Debug\Lista_quartos.pdb
+E:\ADS\3 ADS\Projeto Enari\Estrutura-de-Dados\Design\Modulos\Hospedagem\Lista_quartos\obj\Debug\Lista_quartos.csprojAssemblyReference.cache
+E:\ADS\3 ADS\Projeto Enari\Estrutura-de-Dados\Design\Modulos\Hospedagem\Lista_quartos\obj\Debug\Lista_quartos.Form1.resources
+E:\ADS\3 ADS\Projeto Enari\Estrutura-de-Dados\Design\Modulos\Hospedagem\Lista_quartos\obj\Debug\Lista_quartos.Properties.Resources.resources
+E:\ADS\3 ADS\Projeto Enari\Estrutura-de-Dados\Design\Modulos\Hospedagem\Lista_quartos\obj\Debug\Lista_quartos.csproj.GenerateResource.cache
+E:\ADS\3 ADS\Projeto Enari\Estrutura-de-Dados\Design\Modulos\Hospedagem\Lista_quartos\obj\Debug\Lista_quartos.exe
+E:\ADS\3 ADS\Projeto Enari\Estrutura-de-Dados\Design\Modulos\Hospedagem\Lista_quartos\obj\Debug\Lista_quartos.pdb
