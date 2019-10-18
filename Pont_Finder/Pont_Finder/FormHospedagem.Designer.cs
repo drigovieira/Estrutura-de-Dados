@@ -148,9 +148,9 @@
             this.label1.Font = new System.Drawing.Font("Dubai", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(465, 221);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(334, 45);
+            this.label1.Size = new System.Drawing.Size(340, 45);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Vejá oque temos para você!";
+            this.label1.Text = "Veja o que temos para você!";
             // 
             // panel7
             // 
@@ -636,6 +636,7 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "FormHospedagem";
             this.Text = "FormHospedagem";
+            this.Load += new System.EventHandler(this.FormHospedagem_Load);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
