@@ -1,0 +1,3 @@
+imagens 
+descrição
+ambientes para o hospede, (piscina, estacionamento)

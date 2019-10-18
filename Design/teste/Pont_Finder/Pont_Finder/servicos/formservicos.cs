@@ -56,5 +56,14 @@ namespace Pont_Finder.servicos
         {
 
         }
+        public static void Mudar(String x = "")
+        {
+
+        }
+
+        private void formservicos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

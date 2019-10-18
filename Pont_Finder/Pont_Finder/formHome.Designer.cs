@@ -77,6 +77,7 @@
             this.button_Avalie.TabIndex = 3;
             this.button_Avalie.Text = "Avalie";
             this.button_Avalie.UseVisualStyleBackColor = false;
+            this.button_Avalie.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel5
             // 
@@ -104,6 +105,7 @@
             this.button_Eventos.TabIndex = 3;
             this.button_Eventos.Text = "Eventos";
             this.button_Eventos.UseVisualStyleBackColor = false;
+            this.button_Eventos.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel4
             // 
@@ -119,9 +121,9 @@
             // 
             this.button_Hospedagem.BackColor = System.Drawing.Color.Transparent;
             this.button_Hospedagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button_Hospedagem.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.button_Hospedagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
-            this.button_Hospedagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.button_Hospedagem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
+            this.button_Hospedagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
+            this.button_Hospedagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
             this.button_Hospedagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Hospedagem.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Hospedagem.ForeColor = System.Drawing.Color.White;
@@ -131,6 +133,7 @@
             this.button_Hospedagem.TabIndex = 3;
             this.button_Hospedagem.Text = "Hospedagem";
             this.button_Hospedagem.UseVisualStyleBackColor = false;
+            this.button_Hospedagem.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel3
             // 
@@ -158,6 +161,7 @@
             this.button_Serviços.TabIndex = 3;
             this.button_Serviços.Text = "Serviços";
             this.button_Serviços.UseVisualStyleBackColor = false;
+            this.button_Serviços.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel2
             // 
@@ -173,7 +177,7 @@
             // 
             this.button__Almentos.BackColor = System.Drawing.Color.Transparent;
             this.button__Almentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button__Almentos.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button__Almentos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(9)))), ((int)(((byte)(25)))));
             this.button__Almentos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(9)))), ((int)(((byte)(25)))));
             this.button__Almentos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(9)))), ((int)(((byte)(25)))));
             this.button__Almentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

@@ -1,0 +1,10 @@
+C:\Users\Miguel\source\repos\ModuloEventos\bin\Debug\ModuloEventos.exe.config
+C:\Users\Miguel\source\repos\ModuloEventos\bin\Debug\ModuloEventos.exe
+C:\Users\Miguel\source\repos\ModuloEventos\bin\Debug\ModuloEventos.pdb
+C:\Users\Miguel\source\repos\ModuloEventos\obj\Debug\ModuloEventos.csprojAssemblyReference.cache
+C:\Users\Miguel\source\repos\ModuloEventos\obj\Debug\ModuloEventos.Form1.resources
+C:\Users\Miguel\source\repos\ModuloEventos\obj\Debug\ModuloEventos.Properties.Resources.resources
+C:\Users\Miguel\source\repos\ModuloEventos\obj\Debug\ModuloEventos.csproj.GenerateResource.cache
+C:\Users\Miguel\source\repos\ModuloEventos\obj\Debug\ModuloEventos.csproj.CoreCompileInputs.cache
+C:\Users\Miguel\source\repos\ModuloEventos\obj\Debug\ModuloEventos.exe
+C:\Users\Miguel\source\repos\ModuloEventos\obj\Debug\ModuloEventos.pdb

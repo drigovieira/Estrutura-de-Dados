@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hospedagem
 {
-    public partial class Form2 : Form
+    public partial class Detalhes_empresa : Form
     {
-        public Form2()
+        public Detalhes_empresa()
         {
             InitializeComponent();
         }
