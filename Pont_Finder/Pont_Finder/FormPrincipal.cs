@@ -120,6 +120,12 @@ namespace Pont_Finder
                     navbar.BackColor = Color.FromArgb(120, 88, 210);
                     break;
                 case "Avalie":
+                    FormAvalie formAvalie = new FormAvalie();
+                    {
+                        formAvalie.TopLevel = false;
+                    }
+                    painel.Controls.Add(formAvalie);
+                    formAvalie.Show();
                     navbar.BackColor = Color.Blue;
                     break;
                 default:
