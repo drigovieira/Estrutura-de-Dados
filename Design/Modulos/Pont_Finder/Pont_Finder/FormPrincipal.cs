@@ -64,7 +64,7 @@ namespace Pont_Finder
         private void button2_Click(object sender, EventArgs e)
         {
             cadEmpresa ce = new cadEmpresa();
-            ce.Show();
+            ce.ShowDialog();
         }
     }
 }
