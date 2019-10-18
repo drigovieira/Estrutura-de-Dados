@@ -81,6 +81,12 @@ namespace Pont_Finder
             switch (x)
             {
                 case "Alimentos":
+                    formAlimentos formA = new formAlimentos
+                    {
+                        TopLevel = false
+                    };
+                    painel.Controls.Add(formA);
+                    formA.Show();
                     navbar.BackColor = Color.Red;
                     break;
 

@@ -57,6 +57,12 @@
     <Compile Include="classes\UserList.cs" />
     <Compile Include="classes\Validation.cs" />
     <Compile Include="classes\XmlLi.cs" />
+    <Compile Include="formAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAlimentos.Designer.cs">
+      <DependentUpon>formAlimentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEventos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="CadEmpresa.resx">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAlimentos.resx">
+      <DependentUpon>formAlimentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEventos.resx">
       <DependentUpon>FormEventos.cs</DependentUpon>
