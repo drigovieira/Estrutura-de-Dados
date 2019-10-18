@@ -16,5 +16,10 @@ namespace Pont_Finder
         {
             InitializeComponent();
         }
+
+        private void input_tipo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
