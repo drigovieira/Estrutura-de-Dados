@@ -105,7 +105,13 @@ namespace Pont_Finder
                     break;
 
                 case "Eventos":
-                    navbar.BackColor = Color.Blue;
+                    FormEventos fEvent = new FormEventos();
+                    {
+                        fEvent.TopLevel = false;
+                    }
+                    painel.Controls.Add(fEvent);
+                    fEvent.Show();
+                    navbar.BackColor = Color.FromArgb(120, 88, 210);
                     break;
                 case "Avalie":
                     navbar.BackColor = Color.Blue;

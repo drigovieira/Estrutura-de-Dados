@@ -16,10 +16,5 @@ namespace Pont_Finder
         {
             InitializeComponent();
         }
-
-        private void FormEventos_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
