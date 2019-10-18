@@ -1,0 +1,10 @@
+C:\Users\PedroMuzy\source\repos\Lista_quartos\obj\Debug\Lista_quartos.csprojAssemblyReference.cache
+C:\Users\PedroMuzy\source\repos\Lista_quartos\obj\Debug\Lista_quartos.Form1.resources
+C:\Users\PedroMuzy\source\repos\Lista_quartos\obj\Debug\Lista_quartos.Properties.Resources.resources
+C:\Users\PedroMuzy\source\repos\Lista_quartos\obj\Debug\Lista_quartos.csproj.GenerateResource.cache
+C:\Users\PedroMuzy\source\repos\Lista_quartos\obj\Debug\Lista_quartos.csproj.CoreCompileInputs.cache
+C:\Users\PedroMuzy\source\repos\Lista_quartos\bin\Debug\Lista_quartos.exe.config
+C:\Users\PedroMuzy\source\repos\Lista_quartos\bin\Debug\Lista_quartos.exe
+C:\Users\PedroMuzy\source\repos\Lista_quartos\bin\Debug\Lista_quartos.pdb
+C:\Users\PedroMuzy\source\repos\Lista_quartos\obj\Debug\Lista_quartos.exe
+C:\Users\PedroMuzy\source\repos\Lista_quartos\obj\Debug\Lista_quartos.pdb
