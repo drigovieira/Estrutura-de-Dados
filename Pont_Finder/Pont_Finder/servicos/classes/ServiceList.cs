@@ -44,5 +44,10 @@ namespace Pont_Finder.servicos.classes
             }
             return lista;
         }
+
+        public static int Tam
+        {
+            get { return services.Count; }
+        }
     }
 }

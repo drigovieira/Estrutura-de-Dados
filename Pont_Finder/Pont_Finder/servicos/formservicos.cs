@@ -76,43 +76,47 @@ namespace Pont_Finder.servicos
         private void Formservicos_Load(object sender, EventArgs e)
         {
             panel4.Height = 180;
-            Service s = new Service();
-            s.Id = 0;
-            s.Tipo = "ADS";
-            s.Valor = 200.00;
-            s.Detalhes = "Análise e desenvolvimento de sistemas";
-            s.Sugestoes = 2;
-            s.Visualizacoes = 200;
-            s.Like = 12;
-            s.Avaliacao = 4;
-            s.Ativo = true;
-
-            classes.ServiceList.Add(s);
-
-         
-            s.Id = 1;
-            s.Tipo = "ADM";
-            s.Valor = 300.00;
-            s.Detalhes = "Administrador";
-            s.Sugestoes = 2;
-            s.Visualizacoes = 200;
-            s.Like = 12;
-            s.Avaliacao = 4;
-            s.Ativo = true;
-
-            classes.ServiceList.Add(s);
 
 
-
+            int i = 0;
             foreach (var item in classes.ServiceList.selectAll())
             {
-                postcard a = new postcard( item.Tipo,  item.Detalhes,  item.Valor);
+                if (i > 8)
+                    break;
+                
+                postcard a = new postcard(item.Tipo, item.Detalhes, item.Valor, item.Id, item.Sugestoes, item.Visualizacoes, item.Like,item.Avaliacao, item.Ativo);
                 a.Location = new Point(0, (y));
                 y = y + a.Height + 5;
                 panel4.Height = panel4.Height + 180;
                 panel4.Controls.Add(a);
+                i++;
+              
             }
           
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            Post np = new Post();
+            np.ShowDialog();
+
+            int i = 0;
+            y = 5;
+            panel4.Controls.Clear();
+            panel4.Height = 700;
+            panel4.Width = 625;
+            foreach (var item in classes.ServiceList.selectAll())
+            {
+                if (i > 8)
+                    break;
+                postcard a = new postcard(item.Tipo, item.Detalhes, item.Valor, item.Id, item.Sugestoes, item.Visualizacoes, item.Like, item.Avaliacao, item.Ativo);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                panel4.Height = panel4.Height + 180;
+                panel4.Controls.Add(a);
+                i++;
+            }
+
         }
     }
 }

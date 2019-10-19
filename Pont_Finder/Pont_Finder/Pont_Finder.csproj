@@ -130,6 +130,12 @@
     <Compile Include="servicos\formservicos.Designer.cs">
       <DependentUpon>formservicos.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\Post.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\Post.Designer.cs">
+      <DependentUpon>Post.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\postcard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </Compile>
     <EmbeddedResource Include="servicos\formservicos.resx">
       <DependentUpon>formservicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\Post.resx">
+      <DependentUpon>Post.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\postcard.resx">
       <DependentUpon>postcard.cs</DependentUpon>

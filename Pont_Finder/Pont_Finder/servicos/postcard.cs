@@ -12,14 +12,29 @@ namespace Pont_Finder.servicos
 {
     public partial class postcard : UserControl
     {
-        string yTipo;
-        string yDetalhes;
-        double yValor;
-        public postcard(string xTipo, string xDetalhes, double xValor)
+        private string yTipo;
+        private string yDetalhes;
+        private double yValor;
+        private int yId;
+        private int ySugestoes;
+        private int yVisualizacoes;
+        private int yLike;
+        private short yAvaliacao;
+        private bool yAtivo;
+
+        public postcard(string yTipo, string yDetalhes, double yValor, int yId, int ySugestoes, int yVisualizacoes, int yLike, short yAvaliacao, bool yAtivo)
         {
-            yTipo = xTipo;
-            yDetalhes = xDetalhes;
-            yValor = xValor;
+            this.yTipo = yTipo;
+            this.yDetalhes = yDetalhes;
+            this.yValor = yValor;
+            this.yId = yId;
+            this.ySugestoes = ySugestoes;
+            this.yVisualizacoes = yVisualizacoes;
+            this.yLike = yLike;
+            this.yAvaliacao = yAvaliacao;
+            this.yAtivo = yAtivo;
+
+
             InitializeComponent();
         }
 
@@ -45,9 +60,14 @@ namespace Pont_Finder.servicos
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
-            tipo.Text = yTipo;
-            descricao.Text = yDetalhes;
-            valor.Text = yValor + "";
+            tipo.Text = this.yTipo;
+            descricao.Text = this.yDetalhes;
+            valor.Text = this.yValor + "";
+            label1.Text = yLike+"";
+            visualizacoes.Text = this.yVisualizacoes + "";
+            username.Text = "none";
+
+
         }
     }
 }

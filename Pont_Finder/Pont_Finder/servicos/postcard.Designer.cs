@@ -146,9 +146,9 @@
             this.visualizacoes.AutoSize = true;
             this.visualizacoes.Location = new System.Drawing.Point(348, 148);
             this.visualizacoes.Name = "visualizacoes";
-            this.visualizacoes.Size = new System.Drawing.Size(35, 13);
+            this.visualizacoes.Size = new System.Drawing.Size(14, 13);
             this.visualizacoes.TabIndex = 19;
-            this.visualizacoes.Text = "label1";
+            this.visualizacoes.Text = "V";
             // 
             // pictureBox3
             // 
