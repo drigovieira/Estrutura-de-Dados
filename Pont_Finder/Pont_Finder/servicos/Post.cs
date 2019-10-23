@@ -45,9 +45,7 @@ namespace Pont_Finder.servicos
             s.Avaliacao = 0;
             s.Ativo = true;
          
-            classes.ServiceList.Add(s);
-            
-            
+            classes.ServiceList.Add(s);     
             this.Close();
         }
     }
