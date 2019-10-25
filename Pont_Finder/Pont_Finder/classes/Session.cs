@@ -26,6 +26,11 @@ namespace Pont_Finder
 
         }
 
+        public static void Deslogar()
+        {
+            id = -1; 
+        }
+
         public static int Id
         {
             get { return Session.id; }

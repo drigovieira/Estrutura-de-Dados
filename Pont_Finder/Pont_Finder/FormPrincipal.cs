@@ -28,6 +28,7 @@ namespace Pont_Finder
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            bt_Sair.Visible = false;
             label1.Text = "";
             formHome fh = new formHome();
             fh.TopLevel = false;
@@ -47,9 +48,10 @@ namespace Pont_Finder
             fL.ShowDialog();
             if (Session.Id != -1)
             {
-                button4.Visible = false;
-                button1.Visible = false;
+                bt_FazerLogin.Visible = false;
+                bt_CriarConta.Visible = false;
                 label1.Text = Session.Nome;
+                bt_Sair.Visible = true;
             }
         }
 
@@ -160,6 +162,19 @@ namespace Pont_Finder
         {
             CadEmpresa cdEmp = new CadEmpresa();
             cdEmp.ShowDialog();
+        }
+
+        private void Bt_Sair_Click(object sender, EventArgs e)
+        {
+            Session.Deslogar();
+            bt_Sair.Visible = false;
+            bt_FazerLogin.Visible = true;
+            bt_CriarConta.Visible = true;
+            label1.Text = "";
+
+
+
+
         }
     }
 }
