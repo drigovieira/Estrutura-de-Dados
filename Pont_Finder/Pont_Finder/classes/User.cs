@@ -15,6 +15,16 @@ namespace Pont_Finder
         private long cpf;
         private bool ativo;
 
+        //atributos opcionais
+        private string endereco;
+        private DateTime dataNascimento;
+
+        public User()
+        {
+            dataNascimento = DateTime.Parse("01/01/0001");
+            endereco = null;
+        }
+
         //metodos
         public string Nome
         {
@@ -44,6 +54,18 @@ namespace Pont_Finder
         {
             get { return ativo; }
             set { ativo = value; }
+        }
+
+        public string Endereco
+        {
+            get { return endereco; }
+            set { endereco = value; }
+        }
+
+        public DateTime DataNascimento
+        {
+            get { return dataNascimento; }
+            set { dataNascimento = value; }
         }
 
     }

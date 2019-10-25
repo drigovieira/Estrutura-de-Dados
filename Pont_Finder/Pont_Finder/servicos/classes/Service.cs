@@ -17,6 +17,17 @@ namespace Pont_Finder.servicos
         private int like;
         private short avaliacao;
         private bool ativo;
+        private long cpf;
+
+        public Service()
+        {
+            cpf = Session.Cpf;
+
+
+            
+
+
+        }
 
 
         public int Id
@@ -72,5 +83,10 @@ namespace Pont_Finder.servicos
             set { ativo = value; }
         }
 
+        public long Cpf 
+        {
+            get { return cpf; }
+            set { cpf = value; }
+        }
     }
 }

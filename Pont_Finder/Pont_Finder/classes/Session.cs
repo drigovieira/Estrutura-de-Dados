@@ -14,6 +14,18 @@ namespace Pont_Finder
         private static string senha;
         private static long cpf;
 
+        public static bool Online
+        {
+            get
+            {
+                if (id == -1)
+                    return false;
+                else
+                    return true; ;
+            }
+
+        }
+
         public static int Id
         {
             get { return Session.id; }

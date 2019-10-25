@@ -93,24 +93,33 @@ namespace Pont_Finder.servicos
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
-            Post np = new Post();
-            np.ShowDialog();
-
-            y = 5;
-            panel4.Height = 180;
-            panel4.Controls.Clear();
-            int i = 0;
-            foreach (var item in classes.ServiceList.selectAll())
+            if (Session.Online)
             {
-                if (i > 8)
-                    break;
-                postcard a = new postcard(item.Tipo, item.Detalhes, item.Valor, item.Id, item.Sugestoes, item.Visualizacoes, item.Like, item.Avaliacao, item.Ativo);
-                a.Location = new Point(0, (y));
-                y = y + a.Height + 5;
-                panel4.Height = panel4.Height + 180;
-                panel4.Controls.Add(a);
-                i++;
+                Post np = new Post();
+                np.ShowDialog();
+
+                y = 5;
+                panel4.Height = 180;
+                panel4.Controls.Clear();
+                int i = 0;
+                foreach (var item in classes.ServiceList.selectAll())
+                {
+                    if (i > 8)
+                        break;
+                    postcard a = new postcard(item.Tipo, item.Detalhes, item.Valor, item.Id, item.Sugestoes, item.Visualizacoes, item.Like, item.Avaliacao, item.Ativo);
+                    a.Location = new Point(0, (y));
+                    y = y + a.Height + 5;
+                    panel4.Height = panel4.Height + 180;
+                    panel4.Controls.Add(a);
+                    i++;
+                }
             }
+            else
+            {
+                MessageBox.Show("É nessessario estar logado para cadastrar um serviço");
+            }
+
+           
 
         }
     }

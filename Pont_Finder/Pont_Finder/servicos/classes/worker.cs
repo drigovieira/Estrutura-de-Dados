@@ -10,7 +10,6 @@ namespace Pont_Finder.servicos
     {
         private string endereco;
         private DateTime dataNascimento;
-        private Service idServico;
 
         public string Endereco
         {
@@ -24,10 +23,6 @@ namespace Pont_Finder.servicos
             set { dataNascimento = value; }
         }
 
-        public Service IdServico
-        {
-            get { return idServico; }
-            set { idServico = value; }
-        }
+       
     }
 }
