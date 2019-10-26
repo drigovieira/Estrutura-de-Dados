@@ -30,7 +30,7 @@ namespace Imagim
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.ImageLocation = openFileDialog1.FileName;
-                //pictureBox1.Load();
+                pictureBox1.Load();
 
                 pictureBox1.Image = System.Drawing.Image.FromFile(openFileDialog1.FileName);
                 Bitmap bmp = new Bitmap(openFileDialog1.FileName);

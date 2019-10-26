@@ -37,7 +37,13 @@ namespace Pont_Finder.servicos
             this.yAtivo = yAtivo;
             this.yImage = yImage;
             InitializeComponent();
-            pictureBox1.ImageLocation = yImage;
+            if (yImage != null)
+                pictureBox1.ImageLocation = yImage;
+            else
+                pictureBox1.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
+
+
+
             pictureBox1.Load();
 
         }

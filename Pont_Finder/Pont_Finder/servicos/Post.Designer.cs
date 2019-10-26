@@ -172,7 +172,9 @@
             // 
             // openIcone
             // 
-            this.openIcone.FileName = "openFileDialog1";
+            this.openIcone.FileName = "icone";
+            this.openIcone.Filter = "\"Image|*.jpg;*.jpeg;*.bmp\"";
+            this.openIcone.FileOk += new System.ComponentModel.CancelEventHandler(this.OpenIcone_FileOk);
             // 
             // Post
             // 

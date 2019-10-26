@@ -41,15 +41,19 @@ namespace Pont_Finder.servicos
             string link = null;
             if (img)
             {
-                pb_icone.Load();
-                pb_icone.Image = System.Drawing.Image.FromFile(openIcone.FileName);
-                Bitmap bmp = new Bitmap(openIcone.FileName);
-                Bitmap bmp2 = new Bitmap(bmp, pb_icone.Size);
-
                 if (!Directory.Exists("..//..//servicos//data//images//posts"))
                     Directory.CreateDirectory("..//..//servicos//data//images//posts");
 
-                //pb_icone.Image = bmp2;
+                pb_icone.Load();
+                pb_icone.Image = Image.FromFile(openIcone.FileName);
+              
+                Image bmp = new Bitmap(pb_icone.Image);
+              
+                Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+
+                
+
+                pb_icone.Image = bmp2;
                 string nome = textBox1.Text;
                 int id = classes.ServiceList.Tam;
                 link = "..//..//servicos//data//images//posts//" + id + ".jpg";
@@ -88,6 +92,9 @@ namespace Pont_Finder.servicos
 
         }
 
-     
+        private void OpenIcone_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
