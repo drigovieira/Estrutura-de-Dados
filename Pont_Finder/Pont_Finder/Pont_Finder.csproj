@@ -183,6 +183,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="servicos\formservicos.resx">
       <DependentUpon>formservicos.cs</DependentUpon>
@@ -209,6 +210,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="data\usuarios.xml" />
+    <None Include="servicos\data\images\posts\offImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
