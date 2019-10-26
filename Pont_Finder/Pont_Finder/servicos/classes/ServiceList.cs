@@ -22,6 +22,7 @@ namespace Pont_Finder.servicos.classes
             s.Like = service.Like;
             s.Avaliacao = service.Avaliacao;
             s.Ativo = service.Ativo;
+            s.Image = service.Image;
             services.Add(s);
         }
 
@@ -40,6 +41,7 @@ namespace Pont_Finder.servicos.classes
                 s.Like = item.Like;
                 s.Avaliacao = item.Avaliacao;
                 s.Ativo = item.Ativo;
+                s.Image = item.Image;
                 lista.Add(s);
             }
             return lista;

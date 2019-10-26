@@ -18,15 +18,11 @@ namespace Pont_Finder.servicos
         private short avaliacao;
         private bool ativo;
         private long cpf;
+        private string image;
 
         public Service()
         {
             cpf = Session.Cpf;
-
-
-            
-
-
         }
 
 
@@ -87,6 +83,12 @@ namespace Pont_Finder.servicos
         {
             get { return cpf; }
             set { cpf = value; }
+        }
+
+        public string Image
+        {
+            get { return image; }
+            set { image = value; }
         }
     }
 }

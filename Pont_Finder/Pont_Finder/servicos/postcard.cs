@@ -21,8 +21,10 @@ namespace Pont_Finder.servicos
         private int yLike;
         private short yAvaliacao;
         private bool yAtivo;
+        private string yImage;
 
-        public postcard(string yTipo, string yDetalhes, double yValor, int yId, int ySugestoes, int yVisualizacoes, int yLike, short yAvaliacao, bool yAtivo)
+
+        public postcard(string yTipo, string yDetalhes, double yValor, int yId, int ySugestoes, int yVisualizacoes, int yLike, short yAvaliacao, bool yAtivo, string yImage)
         {
             this.yTipo = yTipo;
             this.yDetalhes = yDetalhes;
@@ -33,9 +35,11 @@ namespace Pont_Finder.servicos
             this.yLike = yLike;
             this.yAvaliacao = yAvaliacao;
             this.yAtivo = yAtivo;
-
-
+            this.yImage = yImage;
             InitializeComponent();
+            pictureBox1.ImageLocation = yImage;
+            pictureBox1.Load();
+
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -66,7 +70,11 @@ namespace Pont_Finder.servicos
             label1.Text = yLike+"";
             visualizacoes.Text = this.yVisualizacoes + "";
             username.Text = "none";
+           
+        }
 
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

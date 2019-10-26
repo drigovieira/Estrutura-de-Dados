@@ -81,7 +81,7 @@ namespace Pont_Finder.servicos
             {
                 if (i > 8)
                     break;               
-                postcard a = new postcard(item.Tipo, item.Detalhes, item.Valor, item.Id, item.Sugestoes, item.Visualizacoes, item.Like,item.Avaliacao, item.Ativo);
+                postcard a = new postcard(item.Tipo, item.Detalhes, item.Valor, item.Id, item.Sugestoes, item.Visualizacoes, item.Like,item.Avaliacao, item.Ativo, item.Image);
                 a.Location = new Point(0, (y));
                 y = y + a.Height + 5;
                 panel4.Height = panel4.Height + 180;
@@ -106,7 +106,7 @@ namespace Pont_Finder.servicos
                 {
                     if (i > 8)
                         break;
-                    postcard a = new postcard(item.Tipo, item.Detalhes, item.Valor, item.Id, item.Sugestoes, item.Visualizacoes, item.Like, item.Avaliacao, item.Ativo);
+                    postcard a = new postcard(item.Tipo, item.Detalhes, item.Valor, item.Id, item.Sugestoes, item.Visualizacoes, item.Like, item.Avaliacao, item.Ativo, item.Image);
                     a.Location = new Point(0, (y));
                     y = y + a.Height + 5;
                     panel4.Height = panel4.Height + 180;

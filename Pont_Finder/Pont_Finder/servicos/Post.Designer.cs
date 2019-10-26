@@ -40,6 +40,7 @@
             this.cancelar = new System.Windows.Forms.Button();
             this.publicar = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.openIcone = new System.Windows.Forms.OpenFileDialog();
             panel1 = new System.Windows.Forms.Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
@@ -63,6 +64,7 @@
             panel1.Name = "panel1";
             panel1.Size = new System.Drawing.Size(500, 500);
             panel1.TabIndex = 3;
+            panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // bt_icone
             // 
@@ -72,15 +74,17 @@
             this.bt_icone.TabIndex = 10;
             this.bt_icone.Text = "Selecionar";
             this.bt_icone.UseVisualStyleBackColor = true;
+            this.bt_icone.Click += new System.EventHandler(this.Bt_icone_Click);
             // 
             // pb_icone
             // 
+            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage;
             this.pb_icone.InitialImage = global::Pont_Finder.Properties.Resources.offImage;
             this.pb_icone.Location = new System.Drawing.Point(200, 22);
             this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(96, 96);
-            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_icone.Size = new System.Drawing.Size(100, 100);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_icone.TabIndex = 9;
             this.pb_icone.TabStop = false;
             // 
@@ -166,6 +170,10 @@
             this.textBox2.TabIndex = 0;
             this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
+            // openIcone
+            // 
+            this.openIcone.FileName = "openFileDialog1";
+            // 
             // Post
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,5 +204,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.PictureBox pb_icone;
         private System.Windows.Forms.Button bt_icone;
+        private System.Windows.Forms.OpenFileDialog openIcone;
     }
 }
