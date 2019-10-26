@@ -46,15 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="avalie\formPostar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="avalie\formPostar.designer.cs">
-      <DependentUpon>formPostar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="avalie\PostConstructor.cs" />
-    <Compile Include="avalie\PostList.cs" />
-    <Compile Include="avalie\XmlListAvalie.cs" />
     <Compile Include="CadEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,9 +142,6 @@
     <Compile Include="servicos\postcard.Designer.cs">
       <DependentUpon>postcard.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="avalie\formPostar.resx">
-      <DependentUpon>formPostar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CadEmpresa.resx">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </EmbeddedResource>

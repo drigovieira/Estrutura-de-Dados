@@ -121,14 +121,14 @@ namespace Pont_Finder
                     fEvent.Show();
                     navbar.BackColor = Color.FromArgb(120, 88, 210);
                     break;
-                case "Reclame":
+                case "Avalie":
                     FormAvalie formAvalie = new FormAvalie();
                     {
                         formAvalie.TopLevel = false;
                     }
                     painel.Controls.Add(formAvalie);
                     formAvalie.Show();
-                    navbar.BackColor = Color.DeepSkyBlue;
+                    navbar.BackColor = Color.Blue;
                     break;
                 default:
                     formHome fh = new formHome
@@ -174,11 +174,6 @@ namespace Pont_Finder
 
 
 
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
         }
     }
