@@ -12,8 +12,6 @@ namespace Pont_Finder.servicos.classes
             nome,
             nomeFantasia,
             email,
-            tipoServico,
-            senha,
             telefone,
             endereco;
         //rua, numero, cidade, cep
@@ -39,16 +37,7 @@ namespace Pont_Finder.servicos.classes
             get { return email; }
             set { email = value; }
         }
-        public string TipoServico
-        {
-            get { return tipoServico; }
-            set { tipoServico = value; }
-        }
-        public string Senha
-        {
-            get { return senha; }
-            set { senha = value; }
-        }
+
         public long Cnpj
         {
             get { return cnpj; }

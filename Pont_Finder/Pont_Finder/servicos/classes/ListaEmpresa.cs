@@ -16,8 +16,6 @@ namespace Pont_Finder.servicos.classes
             tmp.Nome = comp.Nome;
             tmp.NomeFantasia = comp.NomeFantasia;
             tmp.Email = comp.Email;
-            tmp.TipoServico = comp.TipoServico;
-            tmp.Senha = comp.Senha;
             tmp.Cnpj = comp.Cnpj;
             tmp.Endereco = comp.Endereco;
             tmp.Telefone = comp.Telefone;
@@ -34,8 +32,6 @@ namespace Pont_Finder.servicos.classes
                 tmp.Nome = item.Nome;
                 tmp.NomeFantasia = item.NomeFantasia;
                 tmp.Email = item.Email;
-                tmp.TipoServico = item.TipoServico;
-                tmp.Senha = item.Senha;
                 tmp.Cnpj = item.Cnpj;
                 tmp.Endereco = item.Endereco;
                 tmp.Telefone = item.Telefone;

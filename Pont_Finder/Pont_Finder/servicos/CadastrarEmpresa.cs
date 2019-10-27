@@ -25,9 +25,39 @@ namespace Pont_Finder.servicos
             string endereco = tb_endereco.Text;
             string telefone = tb_telefone.Text;
             string email = tb_email.Text;
+
+            classes.Empresa tmp = new classes.Empresa();
+            tmp.Nome = nome;
+            tmp.NomeFantasia = fatasia;
+            tmp.Email = email;
+            tmp.Cnpj = cnpj;
+            tmp.Endereco = endereco;
+            tmp.Telefone = telefone;
+            tmp.Status = true;
+            classes.ListaEmpresa.Add(tmp);
         }
 
         private void Tb_endereco_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tb_endereco_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CadastrarEmpresa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tb_email_TextChanged(object sender, EventArgs e)
         {
 
         }
