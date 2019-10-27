@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Pont_Finder.classes
+namespace Pont_Finder
 {
     class XmlLi_Empresa
     {
@@ -21,14 +21,13 @@ namespace Pont_Finder.classes
             */
         }
 
-        public void AddServico(string nome, string nomeFantasia, string email, string senha, string telefone, string endereco, long cnpj, bool status)
+        public void AddServico(string nome, string nomeFantasia, string email, string telefone, string endereco, long cnpj, bool status)
         {
             XElement serv =
                 new XElement("servico",
                 new XElement("nome", nome),
                 new XElement("nomeFantasia", nomeFantasia),
                 new XElement("email", email),
-                new XElement("senha", senha),
                 new XElement("telefone", telefone),
                 new XElement("endereco", endereco),
                 new XElement("cnpj", cnpj),

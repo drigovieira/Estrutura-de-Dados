@@ -67,7 +67,20 @@ namespace Pont_Finder
                 cont++;
             }
 
+
+            XmlLi_Empresa xmlli_empresa = new XmlLi_Empresa();
+            //final do programa salvando...
+            xmlli_empresa.Drop();
+            foreach (var item in servicos.classes.ListaEmpresa.selectAll())
+            {
+                xmlli_empresa.AddServico(item.Nome, item.NomeFantasia, item.Email, item.Telefone, item.Endereco, item.Cnpj, item.Status);
+            }
+
             MessageBox.Show("Dados Salvos");
+
+
+
+
            
 
         }

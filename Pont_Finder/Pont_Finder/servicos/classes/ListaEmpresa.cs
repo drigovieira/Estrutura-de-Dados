@@ -36,7 +36,7 @@ namespace Pont_Finder.servicos.classes
                 tmp.Endereco = item.Endereco;
                 tmp.Telefone = item.Telefone;
                 tmp.Status = item.Status;
-                listaEmpresa.Add(tmp);
+                lista.Add(tmp);
             }
             return lista;
         }
