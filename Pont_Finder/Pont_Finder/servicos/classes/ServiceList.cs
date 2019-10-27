@@ -31,18 +31,18 @@ namespace Pont_Finder.servicos.classes
             List<Service> lista = new List<Service>();
             foreach (var item in services)
             {
-                Service s = new Service();
-                s.Id = item.Id;
-                s.Tipo = item.Tipo;
-                s.Valor = item.Valor;
-                s.Detalhes = item.Detalhes;
-                s.Sugestoes = item.Sugestoes;
-                s.Visualizacoes = item.Visualizacoes;
-                s.Like = item.Like;
-                s.Avaliacao = item.Avaliacao;
-                s.Ativo = item.Ativo;
-                s.Image = item.Image;
-                lista.Add(s);
+                Service tmp = new Service();
+                tmp.Id = item.Id;
+                tmp.Tipo = item.Tipo;
+                tmp.Valor = item.Valor;
+                tmp.Detalhes = item.Detalhes;
+                tmp.Sugestoes = item.Sugestoes;
+                tmp.Visualizacoes = item.Visualizacoes;
+                tmp.Like = item.Like;
+                tmp.Avaliacao = item.Avaliacao;
+                tmp.Ativo = item.Ativo;
+                tmp.Image = item.Image;
+                lista.Add(tmp);
             }
             return lista;
         }

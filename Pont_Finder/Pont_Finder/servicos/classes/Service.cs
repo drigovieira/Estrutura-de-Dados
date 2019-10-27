@@ -19,12 +19,15 @@ namespace Pont_Finder.servicos
         private bool ativo;
         private long cpf;
         private string image;
+        private DateTime data;
 
         public Service()
         {
             cpf = Session.Cpf;
+            data = DateTime.Now;
         }
 
+            
 
         public int Id
         {
@@ -89,6 +92,12 @@ namespace Pont_Finder.servicos
         {
             get { return image; }
             set { image = value; }
+        }
+
+        public DateTime Data
+        {
+            get { return data; }
+            set { data = value; }
         }
     }
 }

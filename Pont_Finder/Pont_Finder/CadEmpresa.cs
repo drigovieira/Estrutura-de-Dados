@@ -16,5 +16,10 @@ namespace Pont_Finder
         {
             InitializeComponent();
         }
+
+        private void Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

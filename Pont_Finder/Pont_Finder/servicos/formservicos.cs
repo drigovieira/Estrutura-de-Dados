@@ -122,5 +122,12 @@ namespace Pont_Finder.servicos
            
 
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            CadastrarEmpresa cadEmpresa = new CadastrarEmpresa();
+
+            cadEmpresa.ShowDialog();
+        }
     }
 }

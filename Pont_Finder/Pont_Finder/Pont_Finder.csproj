@@ -80,6 +80,7 @@
     <Compile Include="avalie\FormAvalie.Designer.cs">
       <DependentUpon>FormAvalie.cs</DependentUpon>
     </Compile>
+    <Compile Include="classes\XmlLi_Empresa.cs" />
     <Compile Include="eventos\FormEventos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,9 +131,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="servicos\CadastrarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\CadastrarEmpresa.Designer.cs">
+      <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\classes\Empresa.cs" />
+    <Compile Include="servicos\classes\ListaEmpresa.cs" />
     <Compile Include="servicos\classes\Service.cs" />
     <Compile Include="servicos\classes\ServiceList.cs" />
+    <Compile Include="servicos\classes\ServiceXml.cs" />
     <Compile Include="servicos\classes\Worker.cs" />
     <Compile Include="servicos\formservicos.cs">
       <SubType>Form</SubType>
@@ -198,6 +207,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="servicos\CadastrarEmpresa.resx">
+      <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="servicos\formservicos.resx">
       <DependentUpon>formservicos.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +234,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="data\empresas.xml" />
     <Content Include="data\usuarios.xml" />
     <None Include="servicos\data\images\posts\offImage.png" />
   </ItemGroup>

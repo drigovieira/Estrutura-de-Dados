@@ -33,9 +33,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
@@ -71,6 +72,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.textBox1);
@@ -78,6 +80,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 700);
             this.panel2.TabIndex = 15;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 219);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(283, 54);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Cadastrar Empresa";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 123);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(283, 54);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Publicar Servicos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // textBox1
             // 
@@ -98,16 +120,6 @@
             this.pictureBox18.Size = new System.Drawing.Size(1282, 200);
             this.pictureBox18.TabIndex = 18;
             this.pictureBox18.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(283, 54);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Publicar Servicos";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // formservicos
             // 
@@ -141,5 +153,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

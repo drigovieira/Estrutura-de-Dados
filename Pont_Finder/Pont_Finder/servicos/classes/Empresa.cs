@@ -14,10 +14,14 @@ namespace Pont_Finder.servicos.classes
             email,
             tipoServico,
             senha,
+            telefone,
             endereco;
-
-        private long cnpj;
-        private bool status;
+        //rua, numero, cidade, cep
+       
+        private long
+            cnpj;
+        private bool
+            status;
 
         public string Nome
         {
@@ -55,11 +59,27 @@ namespace Pont_Finder.servicos.classes
             get { return endereco; }
             set { endereco = value; }
         }
+
+        /*
+        public void SetEndereco(string rua, string numero, string cidade, string cep)
+        {
+            endereco[0] = rua;
+            endereco[1] = numero;
+            endereco[2] = cidade;
+            endereco[3] = cep;
+        }
+        */
       
         public bool Status
         {
             get { return status; }
             set { status = value; }
+        }
+
+        public string Telefone
+        {
+            get { return telefone; }
+            set { telefone = value; }
         }
     }
 }
