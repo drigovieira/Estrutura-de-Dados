@@ -27,10 +27,23 @@ namespace Hospedagem
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // bottao cadastrar
         {
             Cad_Quarto cdQuarto = new Cad_Quarto();
             cdQuarto.ShowDialog();
+            
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e) //botão que limpa os textbox do primeiro bloco
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e) // 
+        {
+            
         }
     }
 }
