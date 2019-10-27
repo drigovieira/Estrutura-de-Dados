@@ -54,22 +54,7 @@ namespace Pont_Finder
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            string Login_email = textB_email.Text;
-            string Login_senha = textB_senha.Text;
-            int indexer = UserList.checkLogin(Login_email, Login_senha);
-
-            if (indexer != -1)
-            {
-                UserList.sessionStart(indexer);
-                //MessageBox.Show("Logado\n"+Session.Nome);
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Não Logado");
-          
-            }
-    
+            ChecarLogin();
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
