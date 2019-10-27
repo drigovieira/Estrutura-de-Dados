@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cad_Quarto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cad_Quarto.Designer.cs">
+      <DependentUpon>Cad_Quarto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Detalhes empresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cad_Quarto.resx">
+      <DependentUpon>Cad_Quarto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Detalhes empresa.resx">
       <DependentUpon>Detalhes empresa.cs</DependentUpon>
     </EmbeddedResource>

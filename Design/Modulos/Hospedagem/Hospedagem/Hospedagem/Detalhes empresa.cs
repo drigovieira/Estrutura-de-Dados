@@ -26,5 +26,11 @@ namespace Hospedagem
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Cad_Quarto cdQuarto = new Cad_Quarto();
+            cdQuarto.ShowDialog();
+        }
     }
 }

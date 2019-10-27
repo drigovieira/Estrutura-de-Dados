@@ -30,5 +30,11 @@ namespace Hospedagem
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Detalhes_empresa dtEmp = new Detalhes_empresa();
+            dtEmp.ShowDialog();
+        }
     }
 }
