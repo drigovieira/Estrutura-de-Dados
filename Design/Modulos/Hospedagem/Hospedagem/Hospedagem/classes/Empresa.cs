@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hospedagem.classes
+namespace Hospedagem
 {
     class Empresa
     {
         //Atributo da Empresa
 
         private string nomeempresa, nomefantasia, endereco, email, descricao, ambiente, foto;
-        private int cnpj, cep, tel;
+        private int cep, tel;
         private bool ativo;
+        private long cnpj;
 
 
 
@@ -55,13 +56,17 @@ namespace Hospedagem.classes
             set { foto = value; }
         }
 
-        //Gets e Sets Ints
 
-        public int CNPJ
+        //Get e Set Long
+
+        public long CNPJ
         {
             get { return cnpj; }
             set { cnpj = value; }
         }
+
+        //Gets e Sets Ints
+
         public int Telefone
         {
             get { return tel; }

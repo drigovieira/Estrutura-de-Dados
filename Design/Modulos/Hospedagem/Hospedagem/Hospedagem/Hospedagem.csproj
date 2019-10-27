@@ -52,7 +52,9 @@
     <Compile Include="Cad_Quarto.Designer.cs">
       <DependentUpon>Cad_Quarto.cs</DependentUpon>
     </Compile>
-    <Compile Include="classes\empresa.cs" />
+    <Compile Include="classes\Empresa.cs" />
+    <Compile Include="classes\hostList.cs" />
+    <Compile Include="classes\XML.cs" />
     <Compile Include="Detalhes empresa.cs">
       <SubType>Form</SubType>
     </Compile>

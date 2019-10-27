@@ -88,4 +88,12 @@
     <cpf>42750892864</cpf>
     <ativo>true</ativo>
   </User>
+  <User>
+    <id>11</id>
+    <nome>Pedro asda asd</nome>
+    <email>pedro@muzy.com</email>
+    <senha>pedro123456789</senha>
+    <cpf>14669766830</cpf>
+    <ativo>true</ativo>
+  </User>
 </UserList>
