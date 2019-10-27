@@ -65,20 +65,21 @@
             // 
             this.textB_senha.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textB_senha.Location = new System.Drawing.Point(165, 317);
-            this.textB_senha.Multiline = true;
             this.textB_senha.Name = "textB_senha";
             this.textB_senha.Size = new System.Drawing.Size(300, 29);
             this.textB_senha.TabIndex = 20;
+            this.textB_senha.TextChanged += new System.EventHandler(this.TextB_senha_TextChanged);
+            this.textB_senha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextB_senha_KeyPress);
             // 
             // textB_email
             // 
             this.textB_email.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textB_email.Location = new System.Drawing.Point(165, 211);
-            this.textB_email.Multiline = true;
             this.textB_email.Name = "textB_email";
             this.textB_email.Size = new System.Drawing.Size(300, 29);
             this.textB_email.TabIndex = 19;
             this.textB_email.Tag = "";
+            this.textB_email.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextB_email_KeyPress);
             // 
             // label3
             // 
@@ -128,7 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(646, 669);
+            this.ClientSize = new System.Drawing.Size(630, 630);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.buttonCriarC);
             this.Controls.Add(this.label4);
@@ -143,6 +144,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.FormLogin_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormLogin_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

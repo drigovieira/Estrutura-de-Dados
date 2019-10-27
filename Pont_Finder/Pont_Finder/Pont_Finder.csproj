@@ -130,6 +130,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="servicos\classes\Empresa.cs" />
     <Compile Include="servicos\classes\Service.cs" />
     <Compile Include="servicos\classes\ServiceList.cs" />
     <Compile Include="servicos\classes\Worker.cs" />
