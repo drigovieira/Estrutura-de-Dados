@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadEmpresa));
             this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -72,32 +70,6 @@
             this.label11.TabIndex = 30;
             this.label11.Text = "Cadastre sua empresa para divulgar seus serviços";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(105, 245);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 27);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Tipo de serviço";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Alimentos",
-            "Serviços",
-            "Hospedagem",
-            "Eventos",
-            "Avalie"});
-            this.comboBox1.Location = new System.Drawing.Point(105, 275);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 30);
-            this.comboBox1.TabIndex = 20;
-            this.comboBox1.Text = "Selecione seu serviço";
-            // 
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -125,7 +97,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(105, 496);
+            this.textBox3.Location = new System.Drawing.Point(105, 423);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(415, 29);
             this.textBox3.TabIndex = 6;
@@ -150,7 +122,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(105, 320);
+            this.label4.Location = new System.Drawing.Point(105, 247);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 27);
             this.label4.TabIndex = 7;
@@ -160,8 +132,6 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.textBox5);
             this.panel3.Controls.Add(this.label4);
@@ -186,7 +156,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(350, 423);
+            this.textBox7.Location = new System.Drawing.Point(350, 350);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(170, 29);
             this.textBox7.TabIndex = 15;
@@ -203,7 +173,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(105, 467);
+            this.label3.Location = new System.Drawing.Point(105, 394);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 27);
             this.label3.TabIndex = 5;
@@ -212,7 +182,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(105, 350);
+            this.textBox4.Location = new System.Drawing.Point(105, 277);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(415, 29);
             this.textBox4.TabIndex = 8;
@@ -222,7 +192,7 @@
             this.label7.AutoSize = true;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label7.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(350, 393);
+            this.label7.Location = new System.Drawing.Point(350, 320);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 27);
             this.label7.TabIndex = 14;
@@ -245,7 +215,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(155, 555);
+            this.button1.Location = new System.Drawing.Point(155, 482);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 40);
             this.button1.TabIndex = 18;
@@ -265,7 +235,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(105, 423);
+            this.textBox6.Location = new System.Drawing.Point(105, 350);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(170, 29);
             this.textBox6.TabIndex = 12;
@@ -284,7 +254,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(350, 555);
+            this.button2.Location = new System.Drawing.Point(350, 482);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 40);
             this.button2.TabIndex = 19;
@@ -305,7 +275,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(105, 393);
+            this.label6.Location = new System.Drawing.Point(105, 320);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 27);
             this.label6.TabIndex = 11;
@@ -364,8 +334,6 @@
         #endregion
 
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel4;
