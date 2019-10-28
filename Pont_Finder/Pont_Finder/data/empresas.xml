@@ -1,13 +1,3 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulos>
-  <servico>
-    <nome>asdasd</nome>
-    <nomeFantasia>sdad</nomeFantasia>
-    <email>sdfhiogewg</email>
-    <telefone>12312</telefone>
-    <endereco>asdad</endereco>
-    <cnpj>1231</cnpj>
-    <cpf>12345</cpf>
-    <status>true</status>
-  </servico>
 </modulos>
