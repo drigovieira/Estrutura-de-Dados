@@ -10,7 +10,7 @@ namespace Hospedagem
 {
     class XML
     {
-        private string caminho = "..\\..\\data\\empresas_hospedagem.xml";
+        private string caminho = "..\\..\\inc\\empresas.xml";
 
         public XElement Full
         {
@@ -27,8 +27,8 @@ namespace Hospedagem
             XElement empresa_host =
                 new XElement("Empresa",
                 new XElement("id", id),
-                new XElement("Nome Empresa", nomeempresa),
-                new XElement("Nome Fantasia", nomefantasia),
+                new XElement("NomeEmpresa", nomeempresa),
+                new XElement("NomeFantasia", nomefantasia),
                 new XElement("CNPJ", cnpj),
                 new XElement("Endereço", endereco),
                 new XElement("CepCep", cep),

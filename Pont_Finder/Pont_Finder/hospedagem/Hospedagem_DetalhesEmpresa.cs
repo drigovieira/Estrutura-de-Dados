@@ -22,5 +22,11 @@ namespace Pont_Finder
             Hospedagem_CadQuarto cadQuarto = new Hospedagem_CadQuarto();
             cadQuarto.ShowDialog();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Hospedagem_CadQuarto cdQuarto = new Hospedagem_CadQuarto();
+            cdQuarto.ShowDialog();
+        }
     }
 }
