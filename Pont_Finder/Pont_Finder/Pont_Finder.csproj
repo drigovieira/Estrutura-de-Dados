@@ -236,6 +236,10 @@
   <ItemGroup>
     <Content Include="data\empresas.xml" />
     <Content Include="data\usuarios.xml" />
+    <None Include="Resources\downgrey.png" />
+    <None Include="Resources\downblue.png" />
+    <None Include="Resources\upgrey.png" />
+    <None Include="Resources\upblue.png" />
     <None Include="servicos\data\images\posts\offImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

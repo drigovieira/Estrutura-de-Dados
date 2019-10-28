@@ -36,7 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cancelar = new System.Windows.Forms.Button();
             this.publicar = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -44,7 +43,6 @@
             panel1 = new System.Windows.Forms.Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,7 +54,6 @@
             panel1.Controls.Add(this.label2);
             panel1.Controls.Add(this.textBox1);
             panel1.Controls.Add(this.label1);
-            panel1.Controls.Add(this.pictureBox2);
             panel1.Controls.Add(this.cancelar);
             panel1.Controls.Add(this.publicar);
             panel1.Controls.Add(this.textBox2);
@@ -107,7 +104,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(129, 412);
+            this.label2.Location = new System.Drawing.Point(129, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 6;
@@ -115,7 +112,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 428);
+            this.textBox1.Location = new System.Drawing.Point(132, 209);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(250, 20);
             this.textBox1.TabIndex = 5;
@@ -123,20 +120,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(129, 193);
+            this.label1.Location = new System.Drawing.Point(129, 232);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Detalhes";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(424, 307);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 20);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
             // cancelar
             // 
@@ -160,7 +148,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 209);
+            this.textBox2.Location = new System.Drawing.Point(132, 248);
             this.textBox2.MaximumSize = new System.Drawing.Size(250, 200);
             this.textBox2.MaxLength = 560;
             this.textBox2.MinimumSize = new System.Drawing.Size(250, 200);
@@ -188,7 +176,6 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -198,7 +185,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button publicar;
         private System.Windows.Forms.Button cancelar;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;

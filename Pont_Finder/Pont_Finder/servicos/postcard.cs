@@ -23,6 +23,11 @@ namespace Pont_Finder.servicos
         private bool yAtivo;
         private string yImage;
 
+        Bitmap up = Properties.Resources.upgrey;
+        Bitmap down = Properties.Resources.downgrey;
+        Bitmap upv = Properties.Resources.upblue;
+        Bitmap downv = Properties.Resources.downblue;
+
 
         public postcard(string yTipo, string yDetalhes, double yValor, int yId, int ySugestoes, int yVisualizacoes, int yLike, short yAvaliacao, bool yAtivo, string yImage)
         {
@@ -45,6 +50,10 @@ namespace Pont_Finder.servicos
 
 
             pictureBox1.Load();
+
+
+            pictureBox3.Image = up;
+            pictureBox4.Image = down;
 
         }
 
@@ -80,6 +89,50 @@ namespace Pont_Finder.servicos
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tiposervico_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void like_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if(pictureBox3.Image == up)
+            {
+                pictureBox3.Image = upv;
+                pictureBox4.Image = down;
+                label1.Text = label1.Text + 1;
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            if (pictureBox4.Image == down)
+            {
+                pictureBox3.Image = up;
+                pictureBox4.Image = downv;
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void valor_Click(object sender, EventArgs e)
         {
 
         }
