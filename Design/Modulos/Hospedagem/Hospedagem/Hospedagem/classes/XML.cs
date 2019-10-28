@@ -10,7 +10,7 @@ namespace Hospedagem
 {
     class XML
     {
-        private string caminho = "..\\..\\data\\empresas_hospedagem.xml";
+        private string caminho = "..\\..\\inc\\empresas.xml";
 
         public XElement Full
         {

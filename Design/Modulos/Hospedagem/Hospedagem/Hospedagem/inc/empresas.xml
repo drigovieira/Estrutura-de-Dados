@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulos>
+  <Empresa>
+    <id>0</id>
+    <NomeEmpresa>Muzy Açai</NomeEmpresa>
+    <NomeFantasia>Açai delicia</NomeFantasia>
+    <CNPJ>213342324</CNPJ>
+    <Endereço>rua dos bobos n13</Endereço>
+    <CepCep>11</CepCep>
+    <Telefone>22</Telefone>
+    <Email>CAMINHO</Email>
+    <Foto>aa</Foto>
+  </Empresa>
+</modulos>
