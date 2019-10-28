@@ -215,10 +215,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(163, 608);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(323, 24);
+            this.label3.Size = new System.Drawing.Size(274, 32);
             this.label3.TabIndex = 4;
             this.label3.Text = "De uma breve descrição do Hotel";
             // 
@@ -691,10 +691,10 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(190, 479);
+            this.label17.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(180, 474);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(239, 27);
+            this.label17.Size = new System.Drawing.Size(272, 32);
             this.label17.TabIndex = 16;
             this.label17.Text = "Selecione o tipo de Hospedagem";
             // 
