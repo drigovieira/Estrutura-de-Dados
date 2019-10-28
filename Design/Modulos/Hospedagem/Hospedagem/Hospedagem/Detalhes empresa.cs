@@ -12,7 +12,7 @@ namespace Hospedagem
 {
     public partial class Detalhes_empresa : Form
     {
-        Empresa e = new Empresa();
+        
         
         public Detalhes_empresa()
         {
@@ -42,6 +42,26 @@ namespace Hospedagem
             string descricao = textBox1.Text;
             string Foto = "CAMINHO";
             string Ambientes = "abc";
+
+            Empresa empresa = new Empresa();
+
+            empresa.Nomeempresa = NomeEmpresa;
+            empresa.Nomefantasia = NomeFantasia;
+            empresa.Email = Email;
+            empresa.Endereco = Endereco;
+            empresa.CNPJ = CNPJ;
+            empresa.Cep = Cep;
+            empresa.Telefone = Tel;
+            empresa.Descricao = descricao;
+            empresa.Foto = Foto;
+            empresa.Ambiente = Ambientes;
+
+
+
+
+            hostList.addEmpresa(empresa);
+            MessageBox.Show("Usuário Cadastrado com sucesso!");
+            this.Close();
 
 
             XML xmlli = new XML();
