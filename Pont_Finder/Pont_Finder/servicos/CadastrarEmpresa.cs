@@ -33,8 +33,10 @@ namespace Pont_Finder.servicos
             tmp.Cnpj = cnpj;
             tmp.Endereco = endereco;
             tmp.Telefone = telefone;
+            tmp.Cpf = Session.Cpf;
             tmp.Status = true;
             classes.ListaEmpresa.Add(tmp);
+            this.Close();
         }
 
         private void Tb_endereco_TextChanged(object sender, EventArgs e)
@@ -60,6 +62,11 @@ namespace Pont_Finder.servicos
         private void Tb_email_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Bt_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Pont_Finder
             */
         }
 
-        public void AddServico(string nome, string nomeFantasia, string email, string telefone, string endereco, long cnpj, bool status)
+        public void AddServico(string nome, string nomeFantasia, string email, string telefone, string endereco, long cnpj, long cpf, bool status)
         {
             XElement serv =
                 new XElement("servico",
@@ -31,6 +31,7 @@ namespace Pont_Finder
                 new XElement("telefone", telefone),
                 new XElement("endereco", endereco),
                 new XElement("cnpj", cnpj),
+                new XElement("cpf", cpf),
                 new XElement("status", status));
             XDocument doc = XDocument.Load(caminho);
             doc.Root.Add(serv);

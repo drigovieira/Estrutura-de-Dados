@@ -73,7 +73,7 @@ namespace Pont_Finder
             xmlli_empresa.Drop();
             foreach (var item in servicos.classes.ListaEmpresa.selectAll())
             {
-                xmlli_empresa.AddServico(item.Nome, item.NomeFantasia, item.Email, item.Telefone, item.Endereco, item.Cnpj, item.Status);
+                xmlli_empresa.AddServico(item.Nome, item.NomeFantasia, item.Email, item.Telefone, item.Endereco, item.Cnpj, item.Cpf, item.Status);
             }
 
             MessageBox.Show("Dados Salvos");

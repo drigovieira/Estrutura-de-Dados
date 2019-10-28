@@ -17,6 +17,7 @@ namespace Pont_Finder.servicos.classes
             tmp.NomeFantasia = comp.NomeFantasia;
             tmp.Email = comp.Email;
             tmp.Cnpj = comp.Cnpj;
+            tmp.Cpf = comp.Cpf;
             tmp.Endereco = comp.Endereco;
             tmp.Telefone = comp.Telefone;
             tmp.Status = true;
@@ -33,9 +34,10 @@ namespace Pont_Finder.servicos.classes
                 tmp.NomeFantasia = item.NomeFantasia;
                 tmp.Email = item.Email;
                 tmp.Cnpj = item.Cnpj;
+                tmp.Cpf = item.Cpf;
                 tmp.Endereco = item.Endereco;
                 tmp.Telefone = item.Telefone;
-                tmp.Status = item.Status;
+                tmp.Status = item.Status;              
                 lista.Add(tmp);
             }
             return lista;

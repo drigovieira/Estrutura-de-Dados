@@ -15,9 +15,10 @@ namespace Pont_Finder.servicos.classes
             telefone,
             endereco;
         //rua, numero, cidade, cep
-       
+
         private long
-            cnpj;
+            cnpj,
+            cpf;
         private bool
             status;
 
@@ -43,6 +44,13 @@ namespace Pont_Finder.servicos.classes
             get { return cnpj; }
             set { cnpj = value; }
         }
+
+        public long Cpf
+        {
+            get { return cpf; }
+            set { cpf = value; }
+        }
+
         public string Endereco
         {
             get { return endereco; }
