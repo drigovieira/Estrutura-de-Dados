@@ -84,5 +84,10 @@ namespace Pont_Finder
             if (e.KeyChar == (char)Keys.Enter)
                 ChecarLogin();           
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6228359A-2674-4EB2-B000-C18BF43C37F5}</ProjectGuid>
+    <ProjectGuid>{CEA157A9-6081-4C22-B453-F50DD5718FCC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Pont_Finder</RootNamespace>
-    <AssemblyName>Pont_Finder</AssemblyName>
+    <RootNamespace>RecuperarSenha</RootNamespace>
+    <AssemblyName>RecuperarSenha</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,64 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cadEmpresa.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cadEmpresa.Designer.cs">
-      <DependentUpon>cadEmpresa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="classes\Company.cs" />
-    <Compile Include="classes\CompanyList.cs" />
-    <Compile Include="classes\Session.cs" />
-    <Compile Include="classes\User.cs" />
-    <Compile Include="classes\UserList.cs" />
-    <Compile Include="classes\XmlLi.cs" />
-    <Compile Include="formLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formLogin.Designer.cs">
-      <DependentUpon>formLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPrincipal.Designer.cs">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formCriarConta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formCriarConta.Designer.cs">
-      <DependentUpon>formCriarConta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formHome.Designer.cs">
-      <DependentUpon>formHome.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TipoEmpresa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TipoEmpresa.Designer.cs">
-      <DependentUpon>TipoEmpresa.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="cadEmpresa.resx">
-      <DependentUpon>cadEmpresa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formLogin.resx">
-      <DependentUpon>formLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormPrincipal.resx">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formCriarConta.resx">
-      <DependentUpon>formCriarConta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formHome.resx">
-      <DependentUpon>formHome.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,10 +66,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TipoEmpresa.resx">
-      <DependentUpon>TipoEmpresa.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="Circular.Picture" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,16 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="alimentos\" />
-    <Folder Include="avalie\" />
-    <Folder Include="eventos\" />
-    <Folder Include="hospedagem\" />
-    <Folder Include="servicos\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="data\usuarios.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

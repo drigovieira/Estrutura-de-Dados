@@ -55,5 +55,10 @@ namespace Pont_Finder
         {
 
         }
+
+        private void formCriarConta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

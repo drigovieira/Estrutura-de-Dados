@@ -129,6 +129,18 @@
     <Compile Include="hospedagem\Hospedagem_DetalhesEmpresa.Designer.cs">
       <DependentUpon>Hospedagem_DetalhesEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\Listas_quartos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Listas_quartos.Designer.cs">
+      <DependentUpon>Listas_quartos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecuperarSenha.Designer.cs">
+      <DependentUpon>RecuperarSenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="servicos\CadastrarEmpresa.cs">
@@ -196,6 +208,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Hospedagem_DetalhesEmpresa.resx">
       <DependentUpon>Hospedagem_DetalhesEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Listas_quartos.resx">
+      <DependentUpon>Listas_quartos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecuperarSenha.resx">
+      <DependentUpon>RecuperarSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
