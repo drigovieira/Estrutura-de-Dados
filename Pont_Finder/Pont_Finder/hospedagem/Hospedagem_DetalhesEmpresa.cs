@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Pont_Finder
 {
+
     public partial class Hospedagem_DetalhesEmpresa : Form
     {
         public Hospedagem_DetalhesEmpresa()
@@ -26,8 +27,13 @@ namespace Pont_Finder
         private void button2_Click_1(object sender, EventArgs e)
         {
              hospedagem.Listas_quartos lta_quartos = new hospedagem.Listas_quartos();
-            lta_quartos.ShowDialog();
+            
              
+        }
+
+        private void Hospedagem_DetalhesEmpresa_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

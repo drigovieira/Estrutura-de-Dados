@@ -19,8 +19,8 @@ namespace Pont_Finder
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hospedagem_DetalhesEmpresa detEmpre = new Hospedagem_DetalhesEmpresa();
-            detEmpre.ShowDialog();
+           Hospedagem_DetalhesEmpresa detEmpre = new Hospedagem_DetalhesEmpresa();
+            FormPrincipal.MudarForm("serviços", detEmpre);
         }
 
         private void FormHospedagem_Load(object sender, EventArgs e)

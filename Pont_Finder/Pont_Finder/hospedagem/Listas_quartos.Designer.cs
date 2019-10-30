@@ -142,6 +142,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Listas_quartos";
             this.Text = "Listas_quartos";
+            this.Load += new System.EventHandler(this.Listas_quartos_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

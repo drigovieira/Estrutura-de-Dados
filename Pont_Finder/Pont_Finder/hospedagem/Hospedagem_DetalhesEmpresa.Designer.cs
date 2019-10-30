@@ -129,7 +129,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 2267);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1254, 100);
+            this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 46;
             // 
             // label14
@@ -355,7 +355,7 @@
             this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1254, 200);
+            this.panel7.Size = new System.Drawing.Size(1265, 200);
             this.panel7.TabIndex = 44;
             // 
             // checkBox5
@@ -665,7 +665,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 2367);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1254, 100);
+            this.panel5.Size = new System.Drawing.Size(1265, 100);
             this.panel5.TabIndex = 43;
             // 
             // label1
@@ -700,7 +700,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1248, 658);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.panel11);
@@ -712,9 +712,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Hospedagem_DetalhesEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalhes da Empresa";
+            this.Load += new System.EventHandler(this.Hospedagem_DetalhesEmpresa_Load);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel7.ResumeLayout(false);
