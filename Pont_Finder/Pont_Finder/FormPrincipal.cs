@@ -117,12 +117,12 @@ namespace Pont_Finder
                     break;
 
                 case "Hospedagem":
-                    FormHospedagem fHosp = new FormHospedagem();
+                    hospedagem.Hosp_Home Hosp = new Hosp_Home();
                     {
-                        fHosp.TopLevel = false;
+                        Hosp.TopLevel = false;
                     }
-                    painel.Controls.Add(fHosp);
-                    fHosp.Show();
+                    painel.Controls.Add(Hosp);
+                    Hosp.Show();
                     navbar.BackColor = Color.FromArgb(69,172,20);
                     break;
 
@@ -155,6 +155,41 @@ namespace Pont_Finder
                     break;
 
             }
+        }
+
+        public static void MudarForm(string modulo, Form formA)
+        {
+            painel.Controls.Clear();
+            formA.TopLevel = false;          
+            painel.Controls.Add(formA);
+            formA.Show();
+          
+            switch (modulo.ToLower().Replace("ç", "c"))
+            {
+                case "alimentos":
+                    navbar.BackColor = Color.Red;
+                    break;
+                case "servicos":
+                    navbar.BackColor = Color.FromArgb(0, 120, 215);
+                    break;
+                case "hospedagem":
+                    navbar.BackColor = Color.FromArgb(69, 172, 20);
+                    break;
+                case "eventos":
+                    navbar.BackColor = Color.FromArgb(120, 88, 210);
+                    break;
+                case "reclame":                
+                    navbar.BackColor = Color.DeepSkyBlue;
+                    break;
+                default:
+                    navbar.BackColor = barra;
+                    break;
+            }
+
+
+
+
+
         }
 
         public static void padrao()

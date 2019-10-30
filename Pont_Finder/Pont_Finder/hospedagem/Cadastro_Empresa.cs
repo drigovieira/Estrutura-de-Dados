@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.hospedagem
 {
-    public partial class Listas_quartos : Form
+    public partial class Cadastro_Empresa : Form
     {
-        public Listas_quartos()
+        public Cadastro_Empresa()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Cadastro_Empresa_Load(object sender, EventArgs e)
         {
-            hospedagem.Cad_Quarto cadQuarto = new Cad_Quarto();
-            cadQuarto.ShowDialog();
+
         }
 
-        private void Listas_quartos_Load(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
-
+            hospedagem.Listas_quartos listQuartos = new Listas_quartos();
+            FormPrincipal.MudarForm("hospedagem", listQuartos);
         }
     }
 }

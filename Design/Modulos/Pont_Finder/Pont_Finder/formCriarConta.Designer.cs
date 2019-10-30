@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formCriarConta));
             this.button_Cadastrar = new System.Windows.Forms.Button();
             this.textB_senha = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -39,8 +40,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            this.testeArredondamento1 = new Pont_Finder.TesteArredondamento();
+            ((System.ComponentModel.ISupportInitialize)(this.testeArredondamento1)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Cadastrar
@@ -152,13 +154,26 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Criar conta";
             // 
-            // pictureBox1
+            // button1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(229, 87);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 86);
-            this.pictureBox1.TabIndex = 26;
-            this.pictureBox1.TabStop = false;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(347, 145);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(33, 33);
+            this.button1.TabIndex = 27;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // testeArredondamento1
+            // 
+            this.testeArredondamento1.Image = ((System.Drawing.Image)(resources.GetObject("testeArredondamento1.Image")));
+            this.testeArredondamento1.Location = new System.Drawing.Point(275, 94);
+            this.testeArredondamento1.Name = "testeArredondamento1";
+            this.testeArredondamento1.Size = new System.Drawing.Size(87, 84);
+            this.testeArredondamento1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.testeArredondamento1.TabIndex = 26;
+            this.testeArredondamento1.TabStop = false;
             // 
             // formCriarConta
             // 
@@ -166,7 +181,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(630, 630);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.testeArredondamento1);
             this.Controls.Add(this.button_Cadastrar);
             this.Controls.Add(this.textB_senha);
             this.Controls.Add(this.label6);
@@ -184,7 +200,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criar Conta";
             this.Load += new System.EventHandler(this.formCriarConta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testeArredondamento1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +219,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private TesteArredondamento testeArredondamento1;
+        private System.Windows.Forms.Button button1;
     }
 }

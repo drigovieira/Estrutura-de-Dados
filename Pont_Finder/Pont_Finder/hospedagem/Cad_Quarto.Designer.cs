@@ -1,6 +1,6 @@
-﻿namespace Pont_Finder
+﻿namespace Pont_Finder.hospedagem
 {
-    partial class Hospedagem_CadQuarto
+    partial class Cad_Quarto
     {
         /// <summary>
         /// Required designer variable.
@@ -193,7 +193,6 @@
             this.input_tipo.Name = "input_tipo";
             this.input_tipo.Size = new System.Drawing.Size(415, 22);
             this.input_tipo.TabIndex = 1;
-            this.input_tipo.TextChanged += new System.EventHandler(this.input_tipo_TextChanged);
             // 
             // panel3
             // 
@@ -215,8 +214,8 @@
             this.panel3.Controls.Add(this.input_tipo);
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(625, 650);
-            this.panel3.TabIndex = 21;
+            this.panel3.Size = new System.Drawing.Size(630, 650);
+            this.panel3.TabIndex = 22;
             // 
             // label3
             // 
@@ -228,16 +227,17 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Quantidade de quartos existentes: ";
             // 
-            // Hospedagem_CadQuarto
+            // Cad_Quarto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(625, 650);
+            this.ClientSize = new System.Drawing.Size(630, 650);
             this.Controls.Add(this.panel3);
-            this.Name = "Hospedagem_CadQuarto";
+            this.Name = "Cad_Quarto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hospedagem_CadQuarto";
+            this.Text = "Cad_Quarto";
+            this.Load += new System.EventHandler(this.Cad_Quarto_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);

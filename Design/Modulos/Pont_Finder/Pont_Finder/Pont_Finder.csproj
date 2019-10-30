@@ -84,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TesteArredondamento.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TipoEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,7 +120,6 @@
     <EmbeddedResource Include="TipoEmpresa.resx">
       <DependentUpon>TipoEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Circular.Picture" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

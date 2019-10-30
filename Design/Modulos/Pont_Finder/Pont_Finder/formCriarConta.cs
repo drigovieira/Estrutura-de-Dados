@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace Pont_Finder
 {
+
     public partial class formCriarConta : Form
     {
+
+        
         public formCriarConta()
         {
             InitializeComponent();
@@ -59,6 +62,10 @@ namespace Pont_Finder
         private void formCriarConta_Load(object sender, EventArgs e)
         {
 
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
