@@ -236,6 +236,7 @@
   <ItemGroup>
     <Content Include="data\empresas.xml" />
     <Content Include="data\usuarios.xml" />
+    <None Include="Resources\downred.png" />
     <None Include="Resources\downgrey.png" />
     <None Include="Resources\downblue.png" />
     <None Include="Resources\upgrey.png" />

@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.Panel panel1;
             this.bt_icone = new System.Windows.Forms.Button();
-            this.pb_icone = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.publicar = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
+            this.pb_icone = new System.Windows.Forms.PictureBox();
             panel1 = new System.Windows.Forms.Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
@@ -57,9 +57,9 @@
             panel1.Controls.Add(this.cancelar);
             panel1.Controls.Add(this.publicar);
             panel1.Controls.Add(this.textBox2);
-            panel1.Location = new System.Drawing.Point(0, 0);
+            panel1.Location = new System.Drawing.Point(1, 0);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(500, 500);
+            panel1.Size = new System.Drawing.Size(499, 500);
             panel1.TabIndex = 3;
             panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
@@ -72,18 +72,6 @@
             this.bt_icone.Text = "Selecionar";
             this.bt_icone.UseVisualStyleBackColor = true;
             this.bt_icone.Click += new System.EventHandler(this.Bt_icone_Click);
-            // 
-            // pb_icone
-            // 
-            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage;
-            this.pb_icone.InitialImage = global::Pont_Finder.Properties.Resources.offImage;
-            this.pb_icone.Location = new System.Drawing.Point(200, 22);
-            this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(100, 100);
-            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_icone.TabIndex = 9;
-            this.pb_icone.TabStop = false;
             // 
             // label3
             // 
@@ -116,6 +104,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(250, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -164,6 +153,18 @@
             this.openIcone.Filter = "\"Image|*.jpg;*.jpeg;*.bmp\"";
             this.openIcone.FileOk += new System.ComponentModel.CancelEventHandler(this.OpenIcone_FileOk);
             // 
+            // pb_icone
+            // 
+            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage;
+            this.pb_icone.InitialImage = global::Pont_Finder.Properties.Resources.offImage;
+            this.pb_icone.Location = new System.Drawing.Point(200, 22);
+            this.pb_icone.Name = "pb_icone";
+            this.pb_icone.Size = new System.Drawing.Size(100, 100);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_icone.TabIndex = 9;
+            this.pb_icone.TabStop = false;
+            // 
             // Post
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,6 +173,7 @@
             this.Controls.Add(panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Post";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
