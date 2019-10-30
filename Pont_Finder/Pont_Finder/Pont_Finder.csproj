@@ -87,11 +87,11 @@
     <Compile Include="eventos\FormEventos.Designer.cs">
       <DependentUpon>FormEventos.cs</DependentUpon>
     </Compile>
-    <Compile Include="hospedagem\FormHospedagem.cs">
+    <Compile Include="hospedagem\Cadastro_Empresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="hospedagem\FormHospedagem.Designer.cs">
-      <DependentUpon>FormHospedagem.cs</DependentUpon>
+    <Compile Include="hospedagem\Cadastro_Empresa.Designer.cs">
+      <DependentUpon>Cadastro_Empresa.cs</DependentUpon>
     </Compile>
     <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
@@ -117,17 +117,17 @@
     <Compile Include="formHome.Designer.cs">
       <DependentUpon>formHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="hospedagem\Hospedagem_CadQuarto.cs">
+    <Compile Include="hospedagem\Cad_Quarto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="hospedagem\Hospedagem_CadQuarto.Designer.cs">
-      <DependentUpon>Hospedagem_CadQuarto.cs</DependentUpon>
+    <Compile Include="hospedagem\Cad_Quarto.Designer.cs">
+      <DependentUpon>Cad_Quarto.cs</DependentUpon>
     </Compile>
-    <Compile Include="hospedagem\Hospedagem_DetalhesEmpresa.cs">
+    <Compile Include="hospedagem\Hosp_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="hospedagem\Hospedagem_DetalhesEmpresa.Designer.cs">
-      <DependentUpon>Hospedagem_DetalhesEmpresa.cs</DependentUpon>
+    <Compile Include="hospedagem\Hosp_Home.Designer.cs">
+      <DependentUpon>Hosp_Home.cs</DependentUpon>
     </Compile>
     <Compile Include="hospedagem\Listas_quartos.cs">
       <SubType>Form</SubType>
@@ -188,8 +188,8 @@
     <EmbeddedResource Include="eventos\FormEventos.resx">
       <DependentUpon>FormEventos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hospedagem\FormHospedagem.resx">
-      <DependentUpon>FormHospedagem.cs</DependentUpon>
+    <EmbeddedResource Include="hospedagem\Cadastro_Empresa.resx">
+      <DependentUpon>Cadastro_Empresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
@@ -203,11 +203,11 @@
     <EmbeddedResource Include="formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hospedagem\Hospedagem_CadQuarto.resx">
-      <DependentUpon>Hospedagem_CadQuarto.cs</DependentUpon>
+    <EmbeddedResource Include="hospedagem\Cad_Quarto.resx">
+      <DependentUpon>Cad_Quarto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hospedagem\Hospedagem_DetalhesEmpresa.resx">
-      <DependentUpon>Hospedagem_DetalhesEmpresa.cs</DependentUpon>
+    <EmbeddedResource Include="hospedagem\Hosp_Home.resx">
+      <DependentUpon>Hosp_Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Listas_quartos.resx">
       <DependentUpon>Listas_quartos.cs</DependentUpon>

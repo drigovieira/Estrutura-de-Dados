@@ -117,12 +117,12 @@ namespace Pont_Finder
                     break;
 
                 case "Hospedagem":
-                    FormHospedagem fHosp = new FormHospedagem();
+                    hospedagem.Hosp_Home Hosp = new Hosp_Home();
                     {
-                        fHosp.TopLevel = false;
+                        Hosp.TopLevel = false;
                     }
-                    painel.Controls.Add(fHosp);
-                    fHosp.Show();
+                    painel.Controls.Add(Hosp);
+                    Hosp.Show();
                     navbar.BackColor = Color.FromArgb(69,172,20);
                     break;
 

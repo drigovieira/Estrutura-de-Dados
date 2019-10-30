@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pont_Finder
+namespace Pont_Finder.hospedagem
 {
-    public partial class Hospedagem_CadQuarto : Form
+    public partial class Cad_Quarto : Form
     {
-        public Hospedagem_CadQuarto()
+        public Cad_Quarto()
         {
             InitializeComponent();
         }
 
-        private void input_tipo_TextChanged(object sender, EventArgs e)
+        private void Cad_Quarto_Load(object sender, EventArgs e)
         {
 
         }
