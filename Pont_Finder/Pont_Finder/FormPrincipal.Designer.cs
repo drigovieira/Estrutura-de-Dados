@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_Sair = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button_salvar = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_CriarConta = new System.Windows.Forms.Button();
             this.panelHome = new System.Windows.Forms.Panel();
-            this.bt_Sair = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +57,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1366, 45);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // bt_Sair
+            // 
+            this.bt_Sair.BackColor = System.Drawing.Color.Transparent;
+            this.bt_Sair.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_Sair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.bt_Sair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.bt_Sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Sair.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Sair.ForeColor = System.Drawing.Color.White;
+            this.bt_Sair.Location = new System.Drawing.Point(785, 10);
+            this.bt_Sair.Name = "bt_Sair";
+            this.bt_Sair.Size = new System.Drawing.Size(95, 25);
+            this.bt_Sair.TabIndex = 7;
+            this.bt_Sair.Text = "Sair";
+            this.bt_Sair.UseVisualStyleBackColor = false;
+            this.bt_Sair.Click += new System.EventHandler(this.Bt_Sair_Click);
             // 
             // button2
             // 
@@ -155,23 +173,6 @@
             this.panelHome.Size = new System.Drawing.Size(1282, 675);
             this.panelHome.TabIndex = 3;
             this.panelHome.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHome_Paint);
-            // 
-            // bt_Sair
-            // 
-            this.bt_Sair.BackColor = System.Drawing.Color.Transparent;
-            this.bt_Sair.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_Sair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            this.bt_Sair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-            this.bt_Sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Sair.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Sair.ForeColor = System.Drawing.Color.White;
-            this.bt_Sair.Location = new System.Drawing.Point(785, 10);
-            this.bt_Sair.Name = "bt_Sair";
-            this.bt_Sair.Size = new System.Drawing.Size(95, 25);
-            this.bt_Sair.TabIndex = 7;
-            this.bt_Sair.Text = "Sair";
-            this.bt_Sair.UseVisualStyleBackColor = false;
-            this.bt_Sair.Click += new System.EventHandler(this.Bt_Sair_Click);
             // 
             // FormPrincipal
             // 

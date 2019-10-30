@@ -1,4 +1,5 @@
 ﻿using Pont_Finder.servicos;
+using Pont_Finder.hospedagem;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -184,9 +185,10 @@ namespace Pont_Finder
             bt_FazerLogin.Visible = true;
             bt_CriarConta.Visible = true;
             label1.Text = "";
+        }
 
-
-
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

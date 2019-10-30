@@ -8,26 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pont_Finder
+namespace Pont_Finder.hospedagem
 {
-    public partial class Hospedagem_DetalhesEmpresa : Form
+    public partial class Listas_quartos : Form
     {
-        public Hospedagem_DetalhesEmpresa()
+        public Listas_quartos()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             Hospedagem_CadQuarto cadQuarto = new Hospedagem_CadQuarto();
             cadQuarto.ShowDialog();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-             hospedagem.Listas_quartos lta_quartos = new hospedagem.Listas_quartos();
-            lta_quartos.ShowDialog();
-             
         }
     }
 }
