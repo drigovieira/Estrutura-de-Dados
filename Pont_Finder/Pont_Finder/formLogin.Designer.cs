@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonCriarC = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonLogin
@@ -43,7 +44,7 @@
             this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.buttonLogin.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.White;
-            this.buttonLogin.Location = new System.Drawing.Point(241, 513);
+            this.buttonLogin.Location = new System.Drawing.Point(241, 443);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(148, 42);
             this.buttonLogin.TabIndex = 23;
@@ -116,7 +117,7 @@
             this.buttonCriarC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
             this.buttonCriarC.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCriarC.ForeColor = System.Drawing.Color.White;
-            this.buttonCriarC.Location = new System.Drawing.Point(241, 443);
+            this.buttonCriarC.Location = new System.Drawing.Point(241, 513);
             this.buttonCriarC.Name = "buttonCriarC";
             this.buttonCriarC.Size = new System.Drawing.Size(148, 42);
             this.buttonCriarC.TabIndex = 22;
@@ -124,12 +125,22 @@
             this.buttonCriarC.UseVisualStyleBackColor = false;
             this.buttonCriarC.Click += new System.EventHandler(this.buttonCriarC_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(182, 359);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "label5";
+            // 
             // formLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(630, 630);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.buttonCriarC);
             this.Controls.Add(this.label4);
@@ -160,5 +171,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonCriarC;
+        private System.Windows.Forms.Label label5;
     }
 }
