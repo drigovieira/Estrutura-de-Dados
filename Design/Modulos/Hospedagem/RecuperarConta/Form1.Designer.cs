@@ -45,7 +45,7 @@
             this.button_recuperar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
             this.button_recuperar.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_recuperar.ForeColor = System.Drawing.Color.White;
-            this.button_recuperar.Location = new System.Drawing.Point(234, 469);
+            this.button_recuperar.Location = new System.Drawing.Point(241, 513);
             this.button_recuperar.Name = "button_recuperar";
             this.button_recuperar.Size = new System.Drawing.Size(148, 42);
             this.button_recuperar.TabIndex = 36;
@@ -66,7 +66,7 @@
             this.label6.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(161, 364);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 31);
+            this.label6.Size = new System.Drawing.Size(111, 32);
             this.label6.TabIndex = 34;
             this.label6.Text = "Nova senha:";
             // 
@@ -92,7 +92,7 @@
             this.label5.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(161, 283);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 31);
+            this.label5.Size = new System.Drawing.Size(68, 32);
             this.label5.TabIndex = 31;
             this.label5.Text = "E-mail:";
             // 
@@ -102,7 +102,7 @@
             this.label4.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(161, 205);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 31);
+            this.label4.Size = new System.Drawing.Size(51, 32);
             this.label4.TabIndex = 30;
             this.label4.Text = "CPF:";
             // 
@@ -110,7 +110,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Dubai", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(226, 73);
+            this.label7.Location = new System.Drawing.Point(211, 50);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(208, 45);
             this.label7.TabIndex = 26;
@@ -119,10 +119,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(81, 127);
+            this.label2.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(99, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(488, 33);
+            this.label2.Size = new System.Drawing.Size(433, 27);
             this.label2.TabIndex = 38;
             this.label2.Text = "Recupere sua conta para utilizar novamente nossos serviços ";
             // 
@@ -130,6 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(630, 630);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button_recuperar);
@@ -141,7 +142,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Recuperar Senha";
             this.ResumeLayout(false);
             this.PerformLayout();
 

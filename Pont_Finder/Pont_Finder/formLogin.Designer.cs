@@ -128,11 +128,14 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(182, 359);
+            this.label5.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Blue;
+            this.label5.Location = new System.Drawing.Point(170, 351);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(96, 22);
             this.label5.TabIndex = 24;
-            this.label5.Text = "label5";
+            this.label5.Text = "Esqueci a senha!";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // formLogin
             // 
