@@ -173,6 +173,12 @@
     <Compile Include="servicos\postcard.Designer.cs">
       <DependentUpon>postcard.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\SolicitarServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\SolicitarServico.Designer.cs">
+      <DependentUpon>SolicitarServico.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="avalie\formPostar.resx">
       <DependentUpon>formPostar.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\postcard.resx">
       <DependentUpon>postcard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\SolicitarServico.resx">
+      <DependentUpon>SolicitarServico.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

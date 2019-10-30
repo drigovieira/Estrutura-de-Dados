@@ -137,5 +137,18 @@ namespace Pont_Finder.servicos
 
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                SolicitarServico solicservico = new SolicitarServico();
+                solicservico.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para solicitar um Serviço");
+            }
+        }
     }
 }
