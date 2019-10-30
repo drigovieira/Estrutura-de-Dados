@@ -185,11 +185,6 @@ namespace Pont_Finder
                     navbar.BackColor = barra;
                     break;
             }
-
-
-
-
-
         }
 
         public static void padrao()

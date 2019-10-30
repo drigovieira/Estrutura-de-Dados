@@ -65,7 +65,18 @@ namespace Pont_Finder
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                testeArredondamento3.ImageLocation = openFileDialog1.FileName;
+
+        
+            }
+
+        }
+
+        private void TesteArredondamento3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

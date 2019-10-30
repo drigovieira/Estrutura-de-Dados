@@ -41,8 +41,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.testeArredondamento1 = new Pont_Finder.TesteArredondamento();
-            ((System.ComponentModel.ISupportInitialize)(this.testeArredondamento1)).BeginInit();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.testeArredondamento2 = new Pont_Finder.TesteArredondamento();
+            this.testeArredondamento3 = new Pont_Finder.TesteArredondamento();
+            ((System.ComponentModel.ISupportInitialize)(this.testeArredondamento2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testeArredondamento3)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Cadastrar
@@ -165,15 +168,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // testeArredondamento1
+            // openFileDialog1
             // 
-            this.testeArredondamento1.Image = ((System.Drawing.Image)(resources.GetObject("testeArredondamento1.Image")));
-            this.testeArredondamento1.Location = new System.Drawing.Point(275, 94);
-            this.testeArredondamento1.Name = "testeArredondamento1";
-            this.testeArredondamento1.Size = new System.Drawing.Size(87, 84);
-            this.testeArredondamento1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.testeArredondamento1.TabIndex = 26;
-            this.testeArredondamento1.TabStop = false;
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // testeArredondamento2
+            // 
+            this.testeArredondamento2.Location = new System.Drawing.Point(249, 570);
+            this.testeArredondamento2.Name = "testeArredondamento2";
+            this.testeArredondamento2.Size = new System.Drawing.Size(100, 50);
+            this.testeArredondamento2.TabIndex = 28;
+            this.testeArredondamento2.TabStop = false;
+            // 
+            // testeArredondamento3
+            // 
+            this.testeArredondamento3.Location = new System.Drawing.Point(218, 127);
+            this.testeArredondamento3.Name = "testeArredondamento3";
+            this.testeArredondamento3.Size = new System.Drawing.Size(100, 68);
+            this.testeArredondamento3.TabIndex = 29;
+            this.testeArredondamento3.TabStop = false;
+            this.testeArredondamento3.Click += new System.EventHandler(this.TesteArredondamento3_Click);
             // 
             // formCriarConta
             // 
@@ -181,8 +195,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(630, 630);
+            this.Controls.Add(this.testeArredondamento3);
+            this.Controls.Add(this.testeArredondamento2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.testeArredondamento1);
             this.Controls.Add(this.button_Cadastrar);
             this.Controls.Add(this.textB_senha);
             this.Controls.Add(this.label6);
@@ -200,7 +215,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criar Conta";
             this.Load += new System.EventHandler(this.formCriarConta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.testeArredondamento1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testeArredondamento2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testeArredondamento3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,5 +237,8 @@
         private System.Windows.Forms.Label label1;
         private TesteArredondamento testeArredondamento1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private TesteArredondamento testeArredondamento2;
+        private TesteArredondamento testeArredondamento3;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Pont_Finder.servicos
 {
@@ -38,7 +39,7 @@ namespace Pont_Finder.servicos
             this.ySugestoes = ySugestoes;
             this.yVisualizacoes = yVisualizacoes;
             this.yLike = yLike;
-            this.yAvaliacao = yAvaliacao;
+            this.yAvaliacao = 0;
             this.yAtivo = yAtivo;
             this.yImage = yImage;
             InitializeComponent();
@@ -81,7 +82,7 @@ namespace Pont_Finder.servicos
         {
             tipo.Text = this.yTipo;
             label3.Text = this.yDetalhes;
-            valor.Text = this.yValor + "";
+            valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.yValor);
             label1.Text = this.yLike+"";
             visualizacoes.Text = this.yVisualizacoes + "";
             username.Text = "none";
@@ -115,6 +116,7 @@ namespace Pont_Finder.servicos
                 pictureBox3.Image = upv;
                 pictureBox4.Image = down;
                 label1.ForeColor = System.Drawing.Color.Blue;
+                yLike++;
             }
         }
 
@@ -125,6 +127,7 @@ namespace Pont_Finder.servicos
                 pictureBox3.Image = up;
                 pictureBox4.Image = downv;
                 label1.ForeColor = System.Drawing.Color.Red;
+                yLike--;
             }
         }
 
