@@ -96,4 +96,12 @@
     <cpf>14669766830</cpf>
     <ativo>true</ativo>
   </User>
+  <User>
+    <id>12</id>
+    <nome>asdfg</nome>
+    <email>asdfg@gmail.com</email>
+    <senha>asdfg</senha>
+    <cpf>27833572080</cpf>
+    <ativo>true</ativo>
+  </User>
 </UserList>

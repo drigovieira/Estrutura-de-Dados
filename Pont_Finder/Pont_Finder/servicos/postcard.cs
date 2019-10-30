@@ -26,7 +26,7 @@ namespace Pont_Finder.servicos
         Bitmap up = Properties.Resources.upgrey;
         Bitmap down = Properties.Resources.downgrey;
         Bitmap upv = Properties.Resources.upblue;
-        Bitmap downv = Properties.Resources.downblue;
+        Bitmap downv = Properties.Resources.downred;
 
 
         public postcard(string yTipo, string yDetalhes, double yValor, int yId, int ySugestoes, int yVisualizacoes, int yLike, short yAvaliacao, bool yAtivo, string yImage)
@@ -80,9 +80,9 @@ namespace Pont_Finder.servicos
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
             tipo.Text = this.yTipo;
-            descricao.Text = this.yDetalhes;
+            label3.Text = this.yDetalhes;
             valor.Text = this.yValor + "";
-            label1.Text = yLike+"";
+            label1.Text = this.yLike+"";
             visualizacoes.Text = this.yVisualizacoes + "";
             username.Text = "none";
            
@@ -114,7 +114,7 @@ namespace Pont_Finder.servicos
             {
                 pictureBox3.Image = upv;
                 pictureBox4.Image = down;
-                label1.Text = label1.Text + 1;
+                label1.ForeColor = System.Drawing.Color.Blue;
             }
         }
 
@@ -124,6 +124,7 @@ namespace Pont_Finder.servicos
             {
                 pictureBox3.Image = up;
                 pictureBox4.Image = downv;
+                label1.ForeColor = System.Drawing.Color.Red;
             }
         }
 
@@ -133,6 +134,16 @@ namespace Pont_Finder.servicos
         }
 
         private void valor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void visualizacoes_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void descricao_TextChanged(object sender, EventArgs e)
         {
 
         }
