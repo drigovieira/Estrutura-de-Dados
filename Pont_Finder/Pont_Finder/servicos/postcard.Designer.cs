@@ -30,162 +30,162 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(postcard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.username = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.valor = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.visualizacoes = new System.Windows.Forms.Label();
-            this.tipo = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lb_descricao = new System.Windows.Forms.Label();
+            this.pb_down = new System.Windows.Forms.PictureBox();
+            this.pb_up = new System.Windows.Forms.PictureBox();
+            this.lb_username = new System.Windows.Forms.Label();
+            this.pb_user = new System.Windows.Forms.PictureBox();
+            this.bt_obter = new System.Windows.Forms.Button();
+            this.lb_valor = new System.Windows.Forms.Label();
+            this.lb_like = new System.Windows.Forms.Label();
+            this.lb_visualizacao = new System.Windows.Forms.Label();
+            this.lb_titulo = new System.Windows.Forms.Label();
+            this.pb_icone = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_user)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.username);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.valor);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.visualizacoes);
-            this.panel1.Controls.Add(this.tipo);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.lb_descricao);
+            this.panel1.Controls.Add(this.pb_down);
+            this.panel1.Controls.Add(this.pb_up);
+            this.panel1.Controls.Add(this.lb_username);
+            this.panel1.Controls.Add(this.pb_user);
+            this.panel1.Controls.Add(this.bt_obter);
+            this.panel1.Controls.Add(this.lb_valor);
+            this.panel1.Controls.Add(this.lb_like);
+            this.panel1.Controls.Add(this.lb_visualizacao);
+            this.panel1.Controls.Add(this.lb_titulo);
+            this.panel1.Controls.Add(this.pb_icone);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(605, 195);
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
-            // label3
+            // lb_descricao
             // 
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.Location = new System.Drawing.Point(213, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(250, 141);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "descricao";
+            this.lb_descricao.BackColor = System.Drawing.Color.White;
+            this.lb_descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lb_descricao.Location = new System.Drawing.Point(213, 29);
+            this.lb_descricao.Name = "lb_descricao";
+            this.lb_descricao.Size = new System.Drawing.Size(250, 141);
+            this.lb_descricao.TabIndex = 29;
+            this.lb_descricao.Text = "descricao";
             // 
-            // pictureBox4
+            // pb_down
             // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Image = global::Pont_Finder.Properties.Resources.downgrey;
-            this.pictureBox4.Location = new System.Drawing.Point(469, 78);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 28;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pb_down.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_down.BackgroundImage")));
+            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_down.Image = global::Pont_Finder.Properties.Resources.downgrey;
+            this.pb_down.Location = new System.Drawing.Point(469, 78);
+            this.pb_down.Name = "pb_down";
+            this.pb_down.Size = new System.Drawing.Size(25, 25);
+            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_down.TabIndex = 28;
+            this.pb_down.TabStop = false;
+            this.pb_down.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox3
+            // pb_up
             // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Image = global::Pont_Finder.Properties.Resources.upgrey;
-            this.pictureBox3.Location = new System.Drawing.Point(469, 29);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 27;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pb_up.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_up.BackgroundImage")));
+            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_up.Image = global::Pont_Finder.Properties.Resources.upgrey;
+            this.pb_up.Location = new System.Drawing.Point(469, 29);
+            this.pb_up.Name = "pb_up";
+            this.pb_up.Size = new System.Drawing.Size(25, 25);
+            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_up.TabIndex = 27;
+            this.pb_up.TabStop = false;
+            this.pb_up.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // username
+            // lb_username
             // 
-            this.username.AutoSize = true;
-            this.username.Location = new System.Drawing.Point(512, 9);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(27, 13);
-            this.username.TabIndex = 25;
-            this.username.Text = "user";
+            this.lb_username.AutoSize = true;
+            this.lb_username.Location = new System.Drawing.Point(512, 9);
+            this.lb_username.Name = "lb_username";
+            this.lb_username.Size = new System.Drawing.Size(27, 13);
+            this.lb_username.TabIndex = 25;
+            this.lb_username.Text = "user";
             // 
-            // pictureBox2
+            // pb_user
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(556, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 33);
-            this.pictureBox2.TabIndex = 24;
-            this.pictureBox2.TabStop = false;
+            this.pb_user.Location = new System.Drawing.Point(556, 9);
+            this.pb_user.Name = "pb_user";
+            this.pb_user.Size = new System.Drawing.Size(40, 33);
+            this.pb_user.TabIndex = 24;
+            this.pb_user.TabStop = false;
             // 
-            // button1
+            // bt_obter
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(469, 138);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 32);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Obter";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bt_obter.BackColor = System.Drawing.Color.RoyalBlue;
+            this.bt_obter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_obter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bt_obter.ForeColor = System.Drawing.Color.White;
+            this.bt_obter.Location = new System.Drawing.Point(469, 138);
+            this.bt_obter.Name = "bt_obter";
+            this.bt_obter.Size = new System.Drawing.Size(127, 32);
+            this.bt_obter.TabIndex = 23;
+            this.bt_obter.Text = "Obter";
+            this.bt_obter.UseVisualStyleBackColor = false;
             // 
-            // valor
+            // lb_valor
             // 
-            this.valor.AutoSize = true;
-            this.valor.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valor.ForeColor = System.Drawing.Color.Green;
-            this.valor.Location = new System.Drawing.Point(469, 106);
-            this.valor.Name = "valor";
-            this.valor.Size = new System.Drawing.Size(55, 26);
-            this.valor.TabIndex = 22;
-            this.valor.Text = "valor";
-            this.valor.Click += new System.EventHandler(this.valor_Click);
+            this.lb_valor.AutoSize = true;
+            this.lb_valor.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_valor.ForeColor = System.Drawing.Color.Green;
+            this.lb_valor.Location = new System.Drawing.Point(469, 106);
+            this.lb_valor.Name = "lb_valor";
+            this.lb_valor.Size = new System.Drawing.Size(55, 26);
+            this.lb_valor.TabIndex = 22;
+            this.lb_valor.Text = "valor";
+            this.lb_valor.Click += new System.EventHandler(this.valor_Click);
             // 
-            // label1
+            // lb_like
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(475, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(12, 14);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "L";
-            this.label1.Click += new System.EventHandler(this.label1_Click_2);
+            this.lb_like.AutoSize = true;
+            this.lb_like.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lb_like.Location = new System.Drawing.Point(475, 59);
+            this.lb_like.Name = "lb_like";
+            this.lb_like.Size = new System.Drawing.Size(12, 14);
+            this.lb_like.TabIndex = 20;
+            this.lb_like.Text = "L";
+            this.lb_like.Click += new System.EventHandler(this.label1_Click_2);
             // 
-            // visualizacoes
+            // lb_visualizacao
             // 
-            this.visualizacoes.AutoSize = true;
-            this.visualizacoes.Location = new System.Drawing.Point(267, 14);
-            this.visualizacoes.Name = "visualizacoes";
-            this.visualizacoes.Size = new System.Drawing.Size(76, 13);
-            this.visualizacoes.TabIndex = 19;
-            this.visualizacoes.Text = "nvisualizacoes";
-            this.visualizacoes.Click += new System.EventHandler(this.visualizacoes_Click_1);
+            this.lb_visualizacao.AutoSize = true;
+            this.lb_visualizacao.Location = new System.Drawing.Point(267, 14);
+            this.lb_visualizacao.Name = "lb_visualizacao";
+            this.lb_visualizacao.Size = new System.Drawing.Size(76, 13);
+            this.lb_visualizacao.TabIndex = 19;
+            this.lb_visualizacao.Text = "nvisualizacoes";
+            this.lb_visualizacao.Click += new System.EventHandler(this.visualizacoes_Click_1);
             // 
-            // tipo
+            // lb_titulo
             // 
-            this.tipo.AutoSize = true;
-            this.tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tipo.Location = new System.Drawing.Point(212, 9);
-            this.tipo.Name = "tipo";
-            this.tipo.Size = new System.Drawing.Size(49, 20);
-            this.tipo.TabIndex = 15;
-            this.tipo.Text = "titulo";
+            this.lb_titulo.AutoSize = true;
+            this.lb_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titulo.Location = new System.Drawing.Point(212, 9);
+            this.lb_titulo.Name = "lb_titulo";
+            this.lb_titulo.Size = new System.Drawing.Size(49, 20);
+            this.lb_titulo.TabIndex = 15;
+            this.lb_titulo.Text = "titulo";
             // 
-            // pictureBox1
+            // pb_icone
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            this.pb_icone.Location = new System.Drawing.Point(6, 20);
+            this.pb_icone.Name = "pb_icone";
+            this.pb_icone.Size = new System.Drawing.Size(200, 150);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_icone.TabIndex = 14;
+            this.pb_icone.TabStop = false;
+            this.pb_icone.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // postcard
             // 
@@ -196,26 +196,26 @@
             this.Size = new System.Drawing.Size(605, 196);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_user)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label username;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label valor;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label visualizacoes;
-        private System.Windows.Forms.Label tipo;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lb_username;
+        private System.Windows.Forms.PictureBox pb_user;
+        private System.Windows.Forms.Button bt_obter;
+        private System.Windows.Forms.Label lb_valor;
+        private System.Windows.Forms.Label lb_like;
+        private System.Windows.Forms.Label lb_visualizacao;
+        private System.Windows.Forms.Label lb_titulo;
+        private System.Windows.Forms.PictureBox pb_icone;
+        private System.Windows.Forms.PictureBox pb_down;
+        private System.Windows.Forms.PictureBox pb_up;
+        private System.Windows.Forms.Label lb_descricao;
     }
 }

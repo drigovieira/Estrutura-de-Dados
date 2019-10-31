@@ -13,16 +13,16 @@ namespace Pont_Finder.servicos
 {
     public partial class postcard : UserControl
     {
-        private string yTipo;
-        private string yDetalhes;
-        private double yValor;
-        private int yId;
-        private int ySugestoes;
-        private int yVisualizacoes;
-        private int yLike;
-        private short yAvaliacao;
-        private bool yAtivo;
-        private string yImage;
+        private string tipo;
+        private string detalhes;
+        private double valor;
+        private int id;
+        private int sugestoes;
+        private int visualizacoes;
+        private int like;
+        private short avaliacao;
+        private bool ativo;
+        private string image;
 
         Bitmap up = Properties.Resources.upgrey;
         Bitmap down = Properties.Resources.downgrey;
@@ -32,29 +32,29 @@ namespace Pont_Finder.servicos
 
         public postcard(string yTipo, string yDetalhes, double yValor, int yId, int ySugestoes, int yVisualizacoes, int yLike, short yAvaliacao, bool yAtivo, string yImage)
         {
-            this.yTipo = yTipo;
-            this.yDetalhes = yDetalhes;
-            this.yValor = yValor;
-            this.yId = yId;
-            this.ySugestoes = ySugestoes;
-            this.yVisualizacoes = yVisualizacoes;
-            this.yLike = yLike;
-            this.yAvaliacao = 0;
-            this.yAtivo = yAtivo;
-            this.yImage = yImage;
+            this.tipo = yTipo;
+            this.detalhes = yDetalhes;
+            this.valor = yValor;
+            this.id = yId;
+            this.sugestoes = ySugestoes;
+            this.visualizacoes = yVisualizacoes;
+            this.like = yLike;
+            this.avaliacao = 0;
+            this.ativo = yAtivo;
+            this.image = yImage;
             InitializeComponent();
             if (yImage != null)
-                pictureBox1.ImageLocation = yImage;
+                pb_icone.ImageLocation = yImage;
             else
-                pictureBox1.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
+                pb_icone.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
 
 
 
-            pictureBox1.Load();
+            pb_icone.Load();
 
 
-            pictureBox3.Image = up;
-            pictureBox4.Image = down;
+            pb_up.Image = up;
+            pb_down.Image = down;
 
         }
 
@@ -80,12 +80,12 @@ namespace Pont_Finder.servicos
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
-            tipo.Text = this.yTipo;
-            label3.Text = this.yDetalhes;
-            valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.yValor);
-            label1.Text = this.yLike+"";
-            visualizacoes.Text = this.yVisualizacoes + "";
-            username.Text = "none";
+            lb_titulo.Text = this.tipo;
+            lb_descricao.Text = this.detalhes;
+            lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
+            lb_like.Text = this.like+"";
+            lb_visualizacao.Text = this.visualizacoes + "";
+            lb_username.Text = "none";
            
         }
 
@@ -111,23 +111,23 @@ namespace Pont_Finder.servicos
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if(pictureBox3.Image == up)
+            if(pb_up.Image == up)
             {
-                pictureBox3.Image = upv;
-                pictureBox4.Image = down;
-                label1.ForeColor = System.Drawing.Color.Blue;
-                yLike++;
+                pb_up.Image = upv;
+                pb_down.Image = down;
+                lb_like.ForeColor = System.Drawing.Color.Blue;
+                like++;
             }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            if (pictureBox4.Image == down)
+            if (pb_down.Image == down)
             {
-                pictureBox3.Image = up;
-                pictureBox4.Image = downv;
-                label1.ForeColor = System.Drawing.Color.Red;
-                yLike--;
+                pb_up.Image = up;
+                pb_down.Image = downv;
+                lb_like.ForeColor = System.Drawing.Color.Red;
+                like--;
             }
         }
 
