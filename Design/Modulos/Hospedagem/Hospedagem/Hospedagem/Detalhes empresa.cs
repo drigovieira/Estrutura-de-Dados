@@ -63,18 +63,6 @@ namespace Hospedagem
             MessageBox.Show("Usuário Cadastrado com sucesso!");
             this.Close();
 
-
-            XML xmlli = new XML();
-            //final do programa salvando...
-            int cont = 0;
-            foreach (var item in hostList.selectAll())
-            {
-                xmlli.Add(cont, item.Nomeempresa, item.Nomefantasia, item.CNPJ, item.Endereco, item.Cep, item.Telefone, item.Foto, item.Descricao);
-                cont++;
-            }
-
-            MessageBox.Show("Dados Salvos");
-
         }
 
         private void button4_Click(object sender, EventArgs e) //botão que limpa os textbox do primeiro bloco
@@ -88,6 +76,17 @@ namespace Hospedagem
             textBox5.Text = "";
             textBox6.Text = "";
             textBox7.Text = "";
+
+            XML xmlli = new XML();
+            //final do programa salvando...
+            int cont = 0;
+            foreach (var item in hostList.selectAll())
+            {
+                xmlli.Add(cont, item.Nomeempresa, item.Nomefantasia, item.CNPJ, item.Endereco, item.Cep, item.Telefone, item.Foto, item.Descricao);
+                cont++;
+            }
+
+            MessageBox.Show("Dados Salvos");
 
         }
 
