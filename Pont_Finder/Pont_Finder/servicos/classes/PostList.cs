@@ -20,21 +20,7 @@ namespace Pont_Finder.servicos.classes
             p.Image = post.Image;
             posts.Add(p);
         }
-
-        private int id;
-        private string titulo;
-        private double valor;
-        private string detalhes;
-        private string descricao;
-
-        private bool ativo;
-        private string image;
-        private long cpf;
-        private long cnpj;
-        private DateTime data;
-        private List<long[]> likes;
-
-
+        
 
         public static List<Post> selectAll()
         {
