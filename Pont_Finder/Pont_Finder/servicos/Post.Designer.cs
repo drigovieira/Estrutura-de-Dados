@@ -151,7 +151,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(132, 285);
             this.textBox2.MaximumSize = new System.Drawing.Size(250, 150);
-            this.textBox2.MaxLength = 560;
+            this.textBox2.MaxLength = 380;
             this.textBox2.MinimumSize = new System.Drawing.Size(250, 150);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
