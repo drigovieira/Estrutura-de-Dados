@@ -103,5 +103,17 @@ namespace Pont_Finder
                 ListarEmpresas.Controls.Add(exbEmp);
             }
         }
+
+        private void FormAlimentos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            alimentos.Cadastro_Restaurante cadastrarestabele = new alimentos.Cadastro_Restaurante();
+            FormPrincipal.MudarForm("alimentos", cadastrarestabele);
+
+        }
     }
 }

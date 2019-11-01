@@ -20,6 +20,7 @@ namespace Pont_Finder.servicos
         private long cpf;
         private string image;
         private DateTime data;
+        private List<long[]> likes;
 
         public Service()
         {
@@ -27,7 +28,7 @@ namespace Pont_Finder.servicos
             data = DateTime.Now;
         }
 
-            
+
 
         public int Id
         {
@@ -82,7 +83,7 @@ namespace Pont_Finder.servicos
             set { ativo = value; }
         }
 
-        public long Cpf 
+        public long Cpf
         {
             get { return cpf; }
             set { cpf = value; }
@@ -98,6 +99,35 @@ namespace Pont_Finder.servicos
         {
             get { return data; }
             set { data = value; }
+        }
+
+
+     
+        public long[] Likes
+        {
+            set
+            {
+                long[] v = new long[2];
+                v[0] = cpf;
+                v[1] = like;
+                likes.Add(v); }
+            get
+            {
+                long[] v = new long[2];
+                v[0] = cpf;
+                v[1] = like;
+
+                return v; }
+        }
+
+          
+
+
+        public long[] getLikes()
+        {
+            long[] v = likes[id];
+
+            return v;
         }
     }
 }
