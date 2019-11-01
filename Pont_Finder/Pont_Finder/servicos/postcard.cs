@@ -112,10 +112,16 @@ namespace Pont_Finder.servicos
         {
             if(pb_up.Image == up)
             {
+
+                classes.Post post = classes.PostList.SelectId(this.id);
+                int vLike = post.vLike(Session.Cpf);
+                post.like(1, Session.Cpf);
+                likes = post.Likes;
+
                 pb_up.Image = upv;
                 pb_down.Image = down;
                 lb_like.ForeColor = System.Drawing.Color.Blue;
-                likes++;
+                
             }
         }
 
@@ -123,10 +129,14 @@ namespace Pont_Finder.servicos
         {
             if (pb_down.Image == down)
             {
+                classes.Post post = classes.PostList.SelectId(this.id);
+                int vLike = post.vLike(Session.Cpf);
+                post.like(-1, Session.Cpf);
+                likes = post.Likes;
+
                 pb_up.Image = up;
                 pb_down.Image = downv;
                 lb_like.ForeColor = System.Drawing.Color.Red;
-                likes--;
             }
         }
 
