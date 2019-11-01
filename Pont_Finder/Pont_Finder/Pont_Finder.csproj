@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="alimentos\Cadastro_Restaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alimentos\Cadastro_Restaurante.Designer.cs">
+      <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
+    </Compile>
     <Compile Include="avalie\formPostar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     <Compile Include="servicos\SolicitarServico.Designer.cs">
       <DependentUpon>SolicitarServico.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="alimentos\Cadastro_Restaurante.resx">
+      <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="avalie\formPostar.resx">
       <DependentUpon>formPostar.cs</DependentUpon>
     </EmbeddedResource>
