@@ -159,7 +159,7 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(347, 145);
+            this.button1.Location = new System.Drawing.Point(355, 145);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(33, 33);
             this.button1.TabIndex = 27;
@@ -172,7 +172,8 @@
             // 
             // testeArredondamento3
             // 
-            this.testeArredondamento3.Location = new System.Drawing.Point(218, 127);
+            this.testeArredondamento3.Image = ((System.Drawing.Image)(resources.GetObject("testeArredondamento3.Image")));
+            this.testeArredondamento3.Location = new System.Drawing.Point(249, 110);
             this.testeArredondamento3.Name = "testeArredondamento3";
             this.testeArredondamento3.Size = new System.Drawing.Size(100, 68);
             this.testeArredondamento3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

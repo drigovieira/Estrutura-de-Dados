@@ -135,6 +135,12 @@
     <Compile Include="hospedagem\Listas_quartos.Designer.cs">
       <DependentUpon>Listas_quartos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Publicacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publicacao.Designer.cs">
+      <DependentUpon>Publicacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="RecuperarSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,7 +156,10 @@
       <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\classes\Empresa.cs" />
+    <Compile Include="servicos\classes\Likes.cs" />
     <Compile Include="servicos\classes\ListaEmpresa.cs" />
+    <Compile Include="servicos\classes\Post.cs" />
+    <Compile Include="servicos\classes\PostList.cs" />
     <Compile Include="servicos\classes\Service.cs" />
     <Compile Include="servicos\classes\ServiceList.cs" />
     <Compile Include="servicos\classes\ServiceXml.cs" />
