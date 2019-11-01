@@ -81,7 +81,7 @@ namespace Pont_Finder.servicos
             {
                 if (i > 8)
                     break;               
-                postcard a = new postcard(item.Tipo, item.Detalhes, item.Valor, item.Id, item.Sugestoes, item.Visualizacoes, item.Like,item.Avaliacao, item.Ativo, item.Image);
+                postcard a = new postcard(item.Id);
                 a.Location = new Point(0, (y));
                 y = y + a.Height + 5;
                 panel4.Height = panel4.Height + 180;
@@ -95,18 +95,18 @@ namespace Pont_Finder.servicos
         {
             if (Session.Online)
             {
-                Post np = new Post();
+                FormPost np = new FormPost();
                 np.ShowDialog();
 
                 y = 5;
                 panel4.Height = 180;
                 panel4.Controls.Clear();
                 int i = 0;
-                foreach (var item in classes.ServiceList.selectAll())
+                foreach (var item in classes.PostList.selectAll())
                 {
                     if (i > 8)
                         break;
-                    postcard a = new postcard(item.Tipo, item.Detalhes, item.Valor, item.Id, item.Sugestoes, item.Visualizacoes, item.Like, item.Avaliacao, item.Ativo, item.Image);
+                    postcard a = new postcard(item.Id);
                     a.Location = new Point(0, (y));
                     y = y + a.Height + 5;
                     panel4.Height = panel4.Height + 180;

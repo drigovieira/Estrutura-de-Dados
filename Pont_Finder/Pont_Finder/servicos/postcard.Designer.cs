@@ -38,7 +38,6 @@
             this.bt_obter = new System.Windows.Forms.Button();
             this.lb_valor = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
-            this.lb_visualizacao = new System.Windows.Forms.Label();
             this.lb_titulo = new System.Windows.Forms.Label();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -59,7 +58,6 @@
             this.panel1.Controls.Add(this.bt_obter);
             this.panel1.Controls.Add(this.lb_valor);
             this.panel1.Controls.Add(this.lb_like);
-            this.panel1.Controls.Add(this.lb_visualizacao);
             this.panel1.Controls.Add(this.lb_titulo);
             this.panel1.Controls.Add(this.pb_icone);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -157,16 +155,6 @@
             this.lb_like.Text = "L";
             this.lb_like.Click += new System.EventHandler(this.label1_Click_2);
             // 
-            // lb_visualizacao
-            // 
-            this.lb_visualizacao.AutoSize = true;
-            this.lb_visualizacao.Location = new System.Drawing.Point(267, 14);
-            this.lb_visualizacao.Name = "lb_visualizacao";
-            this.lb_visualizacao.Size = new System.Drawing.Size(76, 13);
-            this.lb_visualizacao.TabIndex = 19;
-            this.lb_visualizacao.Text = "nvisualizacoes";
-            this.lb_visualizacao.Click += new System.EventHandler(this.visualizacoes_Click_1);
-            // 
             // lb_titulo
             // 
             this.lb_titulo.AutoSize = true;
@@ -211,7 +199,6 @@
         private System.Windows.Forms.Button bt_obter;
         private System.Windows.Forms.Label lb_valor;
         private System.Windows.Forms.Label lb_like;
-        private System.Windows.Forms.Label lb_visualizacao;
         private System.Windows.Forms.Label lb_titulo;
         private System.Windows.Forms.PictureBox pb_icone;
         private System.Windows.Forms.PictureBox pb_down;

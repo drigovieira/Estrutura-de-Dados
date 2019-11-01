@@ -1,6 +1,6 @@
 ﻿namespace Pont_Finder.servicos
 {
-    partial class Post
+    partial class FormPost
     {
         /// <summary>
         /// Required designer variable.

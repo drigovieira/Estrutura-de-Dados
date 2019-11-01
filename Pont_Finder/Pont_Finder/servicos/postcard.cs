@@ -19,7 +19,7 @@ namespace Pont_Finder.servicos
         private int id;
         private int sugestoes;
         private int visualizacoes;
-        private int like;
+        private long likes;
         private short avaliacao;
         private bool ativo;
         private string image;
@@ -30,21 +30,20 @@ namespace Pont_Finder.servicos
         Bitmap downv = Properties.Resources.downred;
 
 
-        public postcard(string yTipo, string yDetalhes, double yValor, int yId, int ySugestoes, int yVisualizacoes, int yLike, short yAvaliacao, bool yAtivo, string yImage)
+        public postcard(int id)
         {
-            this.tipo = yTipo;
-            this.detalhes = yDetalhes;
-            this.valor = yValor;
-            this.id = yId;
-            this.sugestoes = ySugestoes;
-            this.visualizacoes = yVisualizacoes;
-            this.like = yLike;
-            this.avaliacao = 0;
-            this.ativo = yAtivo;
-            this.image = yImage;
+            classes.Post post = new classes.Post();
+            post = classes.PostList.SelectId(id);
+            this.tipo = post.Titulo;
+            this.detalhes = post.Detalhes;
+            this.valor = post.Valor;
+            this.id = post.Id;
+            this.likes = post.Likes;
+            this.ativo = post.Ativo;
+            this.image = post.Image;
             InitializeComponent();
-            if (yImage != null)
-                pb_icone.ImageLocation = yImage;
+            if (post.Image != null)
+                pb_icone.ImageLocation = post.Image;
             else
                 pb_icone.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
 
@@ -83,8 +82,8 @@ namespace Pont_Finder.servicos
             lb_titulo.Text = this.tipo;
             lb_descricao.Text = this.detalhes;
             lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
-            lb_like.Text = this.like+"";
-            lb_visualizacao.Text = this.visualizacoes + "";
+            lb_like.Text = this.likes+"";
+            
             lb_username.Text = "none";
            
         }
@@ -116,7 +115,7 @@ namespace Pont_Finder.servicos
                 pb_up.Image = upv;
                 pb_down.Image = down;
                 lb_like.ForeColor = System.Drawing.Color.Blue;
-                like++;
+                likes++;
             }
         }
 
@@ -127,7 +126,7 @@ namespace Pont_Finder.servicos
                 pb_up.Image = up;
                 pb_down.Image = downv;
                 lb_like.ForeColor = System.Drawing.Color.Red;
-                like--;
+                likes--;
             }
         }
 

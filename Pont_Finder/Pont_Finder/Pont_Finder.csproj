@@ -157,7 +157,6 @@
       <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\classes\Empresa.cs" />
-    <Compile Include="servicos\classes\Likes.cs" />
     <Compile Include="servicos\classes\ListaEmpresa.cs" />
     <Compile Include="servicos\classes\Post.cs" />
     <Compile Include="servicos\classes\PostList.cs" />
@@ -171,11 +170,11 @@
     <Compile Include="servicos\formservicos.Designer.cs">
       <DependentUpon>formservicos.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\Post.cs">
+    <Compile Include="servicos\FormPost.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="servicos\Post.Designer.cs">
-      <DependentUpon>Post.cs</DependentUpon>
+    <Compile Include="servicos\FormPost.Designer.cs">
+      <DependentUpon>FormPost.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\postcard.cs">
       <SubType>UserControl</SubType>
@@ -250,8 +249,8 @@
     <EmbeddedResource Include="servicos\formservicos.resx">
       <DependentUpon>formservicos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\Post.resx">
-      <DependentUpon>Post.cs</DependentUpon>
+    <EmbeddedResource Include="servicos\FormPost.resx">
+      <DependentUpon>FormPost.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\postcard.resx">
       <DependentUpon>postcard.cs</DependentUpon>
