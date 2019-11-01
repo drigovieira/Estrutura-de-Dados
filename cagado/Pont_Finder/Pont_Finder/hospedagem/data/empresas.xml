@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulos>
+  <Empresa>
+    <id>0</id>
+    <NomeEmpresa>emp1</NomeEmpresa>
+    <NomeFantasia>fan1</NomeFantasia>
+    <CNPJ>12</CNPJ>
+    <Endereço>ddfsd</Endereço>
+    <CepCep>33</CepCep>
+    <Telefone>656</Telefone>
+    <Foto>CAMINHO</Foto>
+    <Email>asd</Email>
+  </Empresa>
+  <Empresa>
+    <id>1</id>
+    <NomeEmpresa>sdfsdfds1</NomeEmpresa>
+    <NomeFantasia>fdsfsdf</NomeFantasia>
+    <CNPJ>324234</CNPJ>
+    <Endereço>gdfgfd12</Endereço>
+    <CepCep>55</CepCep>
+    <Telefone>7686</Telefone>
+    <Foto>CAMINHO</Foto>
+    <Email>afvcbvbbb</Email>
+  </Empresa>
+</modulos>
