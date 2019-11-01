@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usuarios>
+  <usuario>
+    <id>01</id>
+    <nome>Leonardo</nome>
+    <email>leogomes@</email>
+    <senha>01234</senha>
+    <cpf>47746352863</cpf>
+    <ativo>false</ativo>
+  </usuario>
+  <usuario>
+    <id>21</id>
+    <nome>jho</nome>
+    <email>jho@</email>
+    <senha>123</senha>
+    <cpf>321</cpf>
+    <ativo>true</ativo>
+  </usuario>
+  <usuario>
+    <id>05</id>
+    <nome>Leo</nome>
+    <email>leozera@</email>
+    <senha>012342</senha>
+    <cpf>2131231</cpf>
+    <ativo>true</ativo>
+  </usuario>
+  <usuario>
+    <id>11</id>
+    <nome>jhonn</nome>
+    <email>jho@gmail</email>
+    <senha>a17</senha>
+    <cpf>32859734</cpf>
+    <ativo>true</ativo>
+  </usuario>
+</usuarios>
