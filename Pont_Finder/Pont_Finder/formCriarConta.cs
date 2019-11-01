@@ -85,5 +85,10 @@ namespace Pont_Finder
             //this.Dispose();
                        
         }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

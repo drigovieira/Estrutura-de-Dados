@@ -135,6 +135,12 @@
     <Compile Include="hospedagem\Listas_quartos.Designer.cs">
       <DependentUpon>Listas_quartos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Publicacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publicacao.Designer.cs">
+      <DependentUpon>Publicacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="RecuperarSenha.cs">
       <SubType>Form</SubType>
     </Compile>
