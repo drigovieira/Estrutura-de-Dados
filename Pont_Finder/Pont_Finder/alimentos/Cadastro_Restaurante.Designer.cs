@@ -662,6 +662,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Cadastro_Restaurante";
             this.Text = "Cadastro_Restaurante";
             this.Load += new System.EventHandler(this.Cadastro_Restaurante_Load);

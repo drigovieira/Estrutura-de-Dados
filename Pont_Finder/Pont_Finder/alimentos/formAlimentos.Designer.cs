@@ -55,6 +55,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -344,6 +345,17 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Confira o que temos para você!";
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.button8.Location = new System.Drawing.Point(1070, 247);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(163, 36);
+            this.button8.TabIndex = 20;
+            this.button8.Text = "Cadastrar Estabelecimento";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.Button8_Click);
+            // 
             // formAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,6 +363,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel3);
@@ -360,8 +373,11 @@
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "formAlimentos";
             this.Text = "formAlimentos";
+            this.Load += new System.EventHandler(this.FormAlimentos_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -405,5 +421,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button8;
     }
 }
