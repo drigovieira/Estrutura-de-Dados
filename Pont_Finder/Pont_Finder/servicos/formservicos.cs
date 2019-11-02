@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.servicos
 {
-    public partial class formservicos : Form
+    public partial class FormServicos : Form
     {
         private int y = 5;
-        public formservicos()
+        public FormServicos()
         {
             InitializeComponent();
         }
@@ -81,7 +81,7 @@ namespace Pont_Finder.servicos
             {
                 if (i > 8)
                     break;               
-                postcard a = new postcard(item.Id);
+                PostCard a = new PostCard(item.Id);
                 a.Location = new Point(0, (y));
                 y = y + a.Height + 5;
                 panel4.Height = panel4.Height + 180;
@@ -106,7 +106,7 @@ namespace Pont_Finder.servicos
                 {
                     if (i > 8)
                         break;
-                    postcard a = new postcard(item.Id);
+                    PostCard a = new PostCard(item.Id);
                     a.Location = new Point(0, (y));
                     y = y + a.Height + 5;
                     panel4.Height = panel4.Height + 180;

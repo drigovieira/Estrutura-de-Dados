@@ -11,7 +11,7 @@ using System.Globalization;
 
 namespace Pont_Finder.servicos
 {
-    public partial class postcard : UserControl
+    public partial class PostCard : UserControl
     {
         private string tipo;
         private string detalhes;
@@ -30,7 +30,7 @@ namespace Pont_Finder.servicos
         Bitmap downv = Properties.Resources.downred;
 
 
-        public postcard(int id)
+        public PostCard(int id)
         {
             classes.Post post = new classes.Post();
             post = classes.PostList.SelectId(id);
@@ -41,12 +41,16 @@ namespace Pont_Finder.servicos
             this.likes = post.Likes;
             this.ativo = post.Ativo;
             this.image = post.Image;
+
+
             InitializeComponent();
+
             if (post.Image != null)
                 pb_icone.ImageLocation = post.Image;
             else
                 pb_icone.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
 
+           
             if (Session.Online)
             {
                 long userlike = post.userLike(Session.Cpf);
@@ -68,6 +72,7 @@ namespace Pont_Finder.servicos
                 pb_up.Image = up;
                 pb_down.Image = down;
             }
+            
           
 
         }
@@ -94,13 +99,13 @@ namespace Pont_Finder.servicos
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
+
             lb_titulo.Text = this.tipo;
             lb_descricao.Text = this.detalhes;
             lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
             lb_like.Text = this.likes+"";
-            
             lb_username.Text = "none";
-           
+
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)

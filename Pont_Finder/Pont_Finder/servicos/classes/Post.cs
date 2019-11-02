@@ -100,7 +100,17 @@ namespace Pont_Finder.servicos.classes
             }
             else
             {
-                likes[verify][0] = valor;
+                long alike = likes[verify][0];
+
+                if (valor == 1 && alike == -1)
+                {
+                    likes[verify][0] = 1;
+                }
+                else if (valor == -1 || alike == 1)
+                {
+                    likes[verify][0] = -1;
+                }
+               
             }      
         }
 

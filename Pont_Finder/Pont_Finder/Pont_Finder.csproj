@@ -164,11 +164,11 @@
     <Compile Include="servicos\classes\ServiceList.cs" />
     <Compile Include="servicos\classes\ServiceXml.cs" />
     <Compile Include="servicos\classes\Worker.cs" />
-    <Compile Include="servicos\formservicos.cs">
+    <Compile Include="servicos\FormServicos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="servicos\formservicos.Designer.cs">
-      <DependentUpon>formservicos.cs</DependentUpon>
+    <Compile Include="servicos\FormServicos.Designer.cs">
+      <DependentUpon>FormServicos.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\FormPost.cs">
       <SubType>Form</SubType>
@@ -176,11 +176,11 @@
     <Compile Include="servicos\FormPost.Designer.cs">
       <DependentUpon>FormPost.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\postcard.cs">
+    <Compile Include="servicos\PostCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="servicos\postcard.Designer.cs">
-      <DependentUpon>postcard.cs</DependentUpon>
+    <Compile Include="servicos\PostCard.Designer.cs">
+      <DependentUpon>PostCard.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\SolicitarServico.cs">
       <SubType>Form</SubType>
@@ -246,14 +246,14 @@
     <EmbeddedResource Include="servicos\CadastrarEmpresa.resx">
       <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\formservicos.resx">
-      <DependentUpon>formservicos.cs</DependentUpon>
+    <EmbeddedResource Include="servicos\FormServicos.resx">
+      <DependentUpon>FormServicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\FormPost.resx">
       <DependentUpon>FormPost.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\postcard.resx">
-      <DependentUpon>postcard.cs</DependentUpon>
+    <EmbeddedResource Include="servicos\PostCard.resx">
+      <DependentUpon>PostCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\SolicitarServico.resx">
       <DependentUpon>SolicitarServico.cs</DependentUpon>

@@ -109,7 +109,7 @@ namespace Pont_Finder
                     break;
 
                 case "Serviços":
-                   formservicos form = new formservicos
+                   FormServicos form = new FormServicos
                    {
                         TopLevel = false
                     };
@@ -161,7 +161,9 @@ namespace Pont_Finder
 
         public static void MudarForm(string modulo, Form formA)
         {
+            
             painel.Controls.Clear();
+            painel.Refresh();
             formA.TopLevel = false;          
             painel.Controls.Add(formA);
             formA.Show();
@@ -216,7 +218,7 @@ namespace Pont_Finder
             bt_Sair.Visible = false;
             bt_FazerLogin.Visible = true;
             bt_CriarConta.Visible = true;
-            label1.Text = "";             
+            label1.Text = "";  
             formHome fh = new formHome();     
             MudarForm("", fh);           
         }
