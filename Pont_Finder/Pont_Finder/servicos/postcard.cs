@@ -50,7 +50,8 @@ namespace Pont_Finder.servicos
             else
                 pb_icone.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
 
-           
+            lb_like.Text = this.likes + "";
+
             if (Session.Online)
             {
                 long userlike = post.userLike(Session.Cpf);
@@ -73,8 +74,6 @@ namespace Pont_Finder.servicos
                 pb_down.Image = down;
             }
             
-          
-
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -103,7 +102,7 @@ namespace Pont_Finder.servicos
             lb_titulo.Text = this.tipo;
             lb_descricao.Text = this.detalhes;
             lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
-            lb_like.Text = this.likes+"";
+           
             lb_username.Text = "none";
 
         }
@@ -136,20 +135,9 @@ namespace Pont_Finder.servicos
                 int vLike = post.vLike(Session.Cpf);
                 post.like(1, Session.Cpf);
                 lb_like.Text = "" + post.Likes;
-
-                if (pb_up.Image == up)
-                {
-                    pb_up.Image = upv;
-                    pb_down.Image = down;
-                    lb_like.ForeColor = System.Drawing.Color.Blue;
-                }
-                else
-                {
-                    pb_up.Image = up;
-                    pb_down.Image = downv;
-                    lb_like.ForeColor = System.Drawing.Color.Red;
-                }
-                
+                pb_up.Image = upv;
+                lb_like.ForeColor = System.Drawing.Color.Blue;
+                pb_down.Image = down;                                         
             }
            
         }
@@ -162,19 +150,9 @@ namespace Pont_Finder.servicos
                 int vLike = post.vLike(Session.Cpf);
                 post.like(-1, Session.Cpf);
                 lb_like.Text = "" + post.Likes;
-
-                if (pb_down.Image == down)
-                {
-                    pb_up.Image = up;
-                    pb_down.Image = downv;
-                    lb_like.ForeColor = System.Drawing.Color.Red;
-                }
-                else
-                {
-                    pb_up.Image = upv;
-                    pb_down.Image = down;
-                    lb_like.ForeColor = System.Drawing.Color.Blue;
-                }
+                pb_down.Image = downv;
+                lb_like.ForeColor = System.Drawing.Color.Red;
+                pb_up.Image = up;      
             }
         }
 

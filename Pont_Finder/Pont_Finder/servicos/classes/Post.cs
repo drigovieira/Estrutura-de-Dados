@@ -16,7 +16,7 @@ namespace Pont_Finder.servicos.classes
         private bool ativo;
         private string image;
         private long cpf;
-        private long cnpj;      
+        private long cnpj;
         private DateTime data;
         private List<long[]> likes = new List<long[]>();
 
@@ -100,18 +100,15 @@ namespace Pont_Finder.servicos.classes
             }
             else
             {
-                long alike = likes[verify][0];
-
-                if (valor == 1 && alike == -1)
+                foreach (var item in likes)
                 {
-                    likes[verify][0] = 1;
+                    if (cpf == item[1])
+                    {
+                        item[0] = valor;
+                        break;
+                    }
                 }
-                else if (valor == -1 || alike == 1)
-                {
-                    likes[verify][0] = -1;
-                }
-               
-            }      
+            }
         }
 
         public long Likes
@@ -146,13 +143,13 @@ namespace Pont_Finder.servicos.classes
                 {
                     cont++;
                     return cont;
-                }               
+                }
             }
             return cont;
         }
 
         public long userLike(long cpf)
-        {         
+        {
             int vlike = this.vLike(cpf);
             if (vlike == -1)
             {
@@ -168,12 +165,9 @@ namespace Pont_Finder.servicos.classes
 
         public List<long[]> LikesList
         {
-            get { return likes ; }
+            get { return likes; }
             set { likes = value; }
         }
-
-
-
     }
 
 }
