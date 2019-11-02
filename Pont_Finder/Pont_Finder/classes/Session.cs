@@ -28,7 +28,11 @@ namespace Pont_Finder
 
         public static void Deslogar()
         {
-            id = -1; 
+            id = -1;
+            nome = null;
+            email = null;
+            senha = null;
+            cpf = -1;
         }
 
         public static int Id

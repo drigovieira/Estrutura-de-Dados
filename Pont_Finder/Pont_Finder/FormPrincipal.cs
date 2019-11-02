@@ -47,16 +47,12 @@ namespace Pont_Finder
         {
             formLogin fL = new formLogin();
             fL.ShowDialog();
-            if (Session.Id != -1)
+            if (Session.Online)
             {
                 bt_FazerLogin.Visible = false;
                 bt_CriarConta.Visible = false;
                 label1.Text = Session.Nome;
                 bt_Sair.Visible = true;
-            }
-
-            if (Session.Online)
-            {
                 formHome fh = new formHome();
                 MudarForm("", fh);
             }
@@ -220,9 +216,9 @@ namespace Pont_Finder
             bt_Sair.Visible = false;
             bt_FazerLogin.Visible = true;
             bt_CriarConta.Visible = true;
-            label1.Text = "";
-            formHome fh = new formHome();
-            MudarForm("",fh);           
+            label1.Text = "";             
+            formHome fh = new formHome();     
+            MudarForm("", fh);           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

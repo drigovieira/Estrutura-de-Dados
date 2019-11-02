@@ -47,26 +47,28 @@ namespace Pont_Finder.servicos
             else
                 pb_icone.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
 
-
-
-            pb_icone.Load();
-
-
-            pb_up.Image = up;
-            pb_down.Image = down;
-
-            long userlike = post.userLike(Session.Cpf);
-            if (userlike == 1)
+            if (Session.Online)
             {
-                pb_up.Image = upv;
-                pb_down.Image = down;
-                lb_like.ForeColor = System.Drawing.Color.Blue;
-            }else if(userlike == -1)
+                long userlike = post.userLike(Session.Cpf);
+                if (userlike == 1)
+                {
+                    pb_up.Image = upv;
+                    pb_down.Image = down;
+                    lb_like.ForeColor = System.Drawing.Color.Blue;
+                }
+                else if (userlike == -1)
+                {
+                    pb_up.Image = up;
+                    pb_down.Image = downv;
+                    lb_like.ForeColor = System.Drawing.Color.Red;
+                }
+            }
+            else
             {
                 pb_up.Image = up;
-                pb_down.Image = downv;
-                lb_like.ForeColor = System.Drawing.Color.Red;
+                pb_down.Image = down;
             }
+          
 
         }
 
@@ -123,39 +125,50 @@ namespace Pont_Finder.servicos
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (Session.Online == true)
+            if (Session.Online)
             {
+                classes.Post post = classes.PostList.SelectId(this.id);
+                int vLike = post.vLike(Session.Cpf);
+                post.like(1, Session.Cpf);
+                lb_like.Text = "" + post.Likes;
+
                 if (pb_up.Image == up)
                 {
-
-                    classes.Post post = classes.PostList.SelectId(this.id);
-                    int vLike = post.vLike(Session.Cpf);
-                    post.like(1, Session.Cpf);
-                    likes = post.Likes;
-
                     pb_up.Image = upv;
                     pb_down.Image = down;
                     lb_like.ForeColor = System.Drawing.Color.Blue;
-
                 }
+                else
+                {
+                    pb_up.Image = up;
+                    pb_down.Image = downv;
+                    lb_like.ForeColor = System.Drawing.Color.Red;
+                }
+                
             }
            
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            if (Session.Online == true)
+            if (Session.Online)
             {
+                classes.Post post = classes.PostList.SelectId(this.id);
+                int vLike = post.vLike(Session.Cpf);
+                post.like(-1, Session.Cpf);
+                lb_like.Text = "" + post.Likes;
+
                 if (pb_down.Image == down)
                 {
-                    classes.Post post = classes.PostList.SelectId(this.id);
-                    int vLike = post.vLike(Session.Cpf);
-                    post.like(-1, Session.Cpf);
-                    likes = post.Likes;
-
                     pb_up.Image = up;
                     pb_down.Image = downv;
                     lb_like.ForeColor = System.Drawing.Color.Red;
+                }
+                else
+                {
+                    pb_up.Image = upv;
+                    pb_down.Image = down;
+                    lb_like.ForeColor = System.Drawing.Color.Blue;
                 }
             }
         }
