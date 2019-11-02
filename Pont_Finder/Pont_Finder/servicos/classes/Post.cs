@@ -16,9 +16,9 @@ namespace Pont_Finder.servicos.classes
         private bool ativo;
         private string image;
         private long cpf;
-        private long cnpj;      
+        private long cnpj;
         private DateTime data;
-        private List<long[]> likes;
+        private List<long[]> likes = new List<long[]>();
 
         public Post()
         {
@@ -100,21 +100,36 @@ namespace Pont_Finder.servicos.classes
             }
             else
             {
-                likes[verify][0] = valor;
-            }      
+                foreach (var item in likes)
+                {
+                    if (cpf == item[1])
+                    {
+                        item[0] = valor;
+                        break;
+                    }
+                }
+            }
         }
 
         public long Likes
         {
             get
             {
-                long total = 0;
-
-                foreach (var item in likes)
+                if (likes.Count == 0)
                 {
-                    total += item[0];
+                    return 0;
                 }
-                return total;
+                else
+                {
+                    long total = 0;
+
+                    foreach (var item in likes)
+                    {
+                        total += item[0];
+                    }
+                    return total;
+                }
+
                 ;
             }
         }
@@ -128,19 +143,31 @@ namespace Pont_Finder.servicos.classes
                 {
                     cont++;
                     return cont;
-                }               
+                }
             }
             return cont;
         }
 
-        public List<long[]> LikesList
+        public long userLike(long cpf)
         {
-            get { return likes ; }
-            set { likes = value; }
+            int vlike = this.vLike(cpf);
+            if (vlike == -1)
+            {
+                return 0;
+            }
+            else
+            {
+                return likes[vlike][0];
+            }
         }
 
 
 
+        public List<long[]> LikesList
+        {
+            get { return likes; }
+            set { likes = value; }
+        }
     }
 
 }

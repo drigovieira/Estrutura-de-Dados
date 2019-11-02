@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.servicos
 {
-    public partial class Post : Form
+    public partial class FormPost : Form
     {
         private bool img = false;
-        public Post()
+        public FormPost()
         {
             InitializeComponent();
             pb_icone.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -59,21 +59,16 @@ namespace Pont_Finder.servicos
                 link = "..//..//servicos//data//images//posts//" + id + ".jpg";
                 pb_icone.Image.Save(link, ImageFormat.Jpeg);
             }
-     
 
-            Service s = new Service();
-            s.Id = classes.ServiceList.Tam;
-            s.Tipo = textBox3.Text;
-            s.Valor = double.Parse(textBox1.Text);
-            s.Detalhes = textBox2.Text ;
-            s.Sugestoes = 0;
-            s.Visualizacoes = 0;
-            s.Like = 0;
-            s.Avaliacao = 0;
-            s.Ativo = true;
-            s.Image = link;
-        
-            classes.ServiceList.Add(s);     
+            classes.Post p = new classes.Post();
+            p.Id = classes.PostList.Tam;
+            p.Titulo = textBox3.Text;
+            p.Valor = double.Parse(textBox1.Text);
+            p.Detalhes = textBox2.Text;
+            p.Descricao = "";
+            p.Image = link;
+            
+            classes.PostList.Add(p);     
             this.Close();
         }
 

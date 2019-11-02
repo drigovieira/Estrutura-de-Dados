@@ -63,5 +63,10 @@ namespace Pont_Finder.servicos.classes
             get { return posts.Count; }
         }
 
+        public static Post SelectId(int id)
+        {
+            return posts[id];
+        }
+
     }
 }

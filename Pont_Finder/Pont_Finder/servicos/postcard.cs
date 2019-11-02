@@ -11,7 +11,7 @@ using System.Globalization;
 
 namespace Pont_Finder.servicos
 {
-    public partial class postcard : UserControl
+    public partial class PostCard : UserControl
     {
         private string tipo;
         private string detalhes;
@@ -19,7 +19,7 @@ namespace Pont_Finder.servicos
         private int id;
         private int sugestoes;
         private int visualizacoes;
-        private int like;
+        private long likes;
         private short avaliacao;
         private bool ativo;
         private string image;
@@ -30,32 +30,50 @@ namespace Pont_Finder.servicos
         Bitmap downv = Properties.Resources.downred;
 
 
-        public postcard(string yTipo, string yDetalhes, double yValor, int yId, int ySugestoes, int yVisualizacoes, int yLike, short yAvaliacao, bool yAtivo, string yImage)
+        public PostCard(int id)
         {
-            this.tipo = yTipo;
-            this.detalhes = yDetalhes;
-            this.valor = yValor;
-            this.id = yId;
-            this.sugestoes = ySugestoes;
-            this.visualizacoes = yVisualizacoes;
-            this.like = yLike;
-            this.avaliacao = 0;
-            this.ativo = yAtivo;
-            this.image = yImage;
+            classes.Post post = new classes.Post();
+            post = classes.PostList.SelectId(id);
+            this.tipo = post.Titulo;
+            this.detalhes = post.Detalhes;
+            this.valor = post.Valor;
+            this.id = post.Id;
+            this.likes = post.Likes;
+            this.ativo = post.Ativo;
+            this.image = post.Image;
+
+
             InitializeComponent();
-            if (yImage != null)
-                pb_icone.ImageLocation = yImage;
+
+            if (post.Image != null)
+                pb_icone.ImageLocation = post.Image;
             else
                 pb_icone.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
 
+            lb_like.Text = this.likes + "";
 
-
-            pb_icone.Load();
-
-
-            pb_up.Image = up;
-            pb_down.Image = down;
-
+            if (Session.Online)
+            {
+                long userlike = post.userLike(Session.Cpf);
+                if (userlike == 1)
+                {
+                    pb_up.Image = upv;
+                    pb_down.Image = down;
+                    lb_like.ForeColor = System.Drawing.Color.Blue;
+                }
+                else if (userlike == -1)
+                {
+                    pb_up.Image = up;
+                    pb_down.Image = downv;
+                    lb_like.ForeColor = System.Drawing.Color.Red;
+                }
+            }
+            else
+            {
+                pb_up.Image = up;
+                pb_down.Image = down;
+            }
+            
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -80,13 +98,13 @@ namespace Pont_Finder.servicos
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
+
             lb_titulo.Text = this.tipo;
             lb_descricao.Text = this.detalhes;
             lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
-            lb_like.Text = this.like+"";
-            lb_visualizacao.Text = this.visualizacoes + "";
-            lb_username.Text = "none";
            
+            lb_username.Text = "none";
+
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
@@ -111,23 +129,30 @@ namespace Pont_Finder.servicos
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if(pb_up.Image == up)
+            if (Session.Online)
             {
+                classes.Post post = classes.PostList.SelectId(this.id);
+                int vLike = post.vLike(Session.Cpf);
+                post.like(1, Session.Cpf);
+                lb_like.Text = "" + post.Likes;
                 pb_up.Image = upv;
-                pb_down.Image = down;
                 lb_like.ForeColor = System.Drawing.Color.Blue;
-                like++;
+                pb_down.Image = down;                                         
             }
+           
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            if (pb_down.Image == down)
+            if (Session.Online)
             {
-                pb_up.Image = up;
+                classes.Post post = classes.PostList.SelectId(this.id);
+                int vLike = post.vLike(Session.Cpf);
+                post.like(-1, Session.Cpf);
+                lb_like.Text = "" + post.Likes;
                 pb_down.Image = downv;
                 lb_like.ForeColor = System.Drawing.Color.Red;
-                like--;
+                pb_up.Image = up;      
             }
         }
 
