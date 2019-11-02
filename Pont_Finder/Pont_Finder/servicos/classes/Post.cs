@@ -141,6 +141,21 @@ namespace Pont_Finder.servicos.classes
             return cont;
         }
 
+        public long userLike(long cpf)
+        {         
+            int vlike = this.vLike(cpf);
+            if (vlike == -1)
+            {
+                return 0;
+            }
+            else
+            {
+                return likes[vlike][0];
+            }
+        }
+
+
+
         public List<long[]> LikesList
         {
             get { return likes ; }

@@ -77,7 +77,7 @@ namespace Pont_Finder.servicos
         {
             panel4.Height = 180;
             int i = 0;
-            foreach (var item in classes.ServiceList.selectAll())
+            foreach (var item in classes.PostList.selectAll())
             {
                 if (i > 8)
                     break;               

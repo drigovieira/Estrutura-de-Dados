@@ -54,6 +54,12 @@ namespace Pont_Finder
                 label1.Text = Session.Nome;
                 bt_Sair.Visible = true;
             }
+
+            if (Session.Online)
+            {
+                formHome fh = new formHome();
+                MudarForm("", fh);
+            }
         }
 
         private void Button_salvar_Click(object sender, EventArgs e)
@@ -215,6 +221,8 @@ namespace Pont_Finder
             bt_FazerLogin.Visible = true;
             bt_CriarConta.Visible = true;
             label1.Text = "";
+            formHome fh = new formHome();
+            MudarForm("",fh);           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

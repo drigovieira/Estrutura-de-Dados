@@ -55,6 +55,19 @@ namespace Pont_Finder.servicos
             pb_up.Image = up;
             pb_down.Image = down;
 
+            long userlike = post.userLike(Session.Cpf);
+            if (userlike == 1)
+            {
+                pb_up.Image = upv;
+                pb_down.Image = down;
+                lb_like.ForeColor = System.Drawing.Color.Blue;
+            }else if(userlike == -1)
+            {
+                pb_up.Image = up;
+                pb_down.Image = downv;
+                lb_like.ForeColor = System.Drawing.Color.Red;
+            }
+
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -110,33 +123,40 @@ namespace Pont_Finder.servicos
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if(pb_up.Image == up)
+            if (Session.Online == true)
             {
+                if (pb_up.Image == up)
+                {
 
-                classes.Post post = classes.PostList.SelectId(this.id);
-                int vLike = post.vLike(Session.Cpf);
-                post.like(1, Session.Cpf);
-                likes = post.Likes;
+                    classes.Post post = classes.PostList.SelectId(this.id);
+                    int vLike = post.vLike(Session.Cpf);
+                    post.like(1, Session.Cpf);
+                    likes = post.Likes;
 
-                pb_up.Image = upv;
-                pb_down.Image = down;
-                lb_like.ForeColor = System.Drawing.Color.Blue;
-                
+                    pb_up.Image = upv;
+                    pb_down.Image = down;
+                    lb_like.ForeColor = System.Drawing.Color.Blue;
+
+                }
             }
+           
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            if (pb_down.Image == down)
+            if (Session.Online == true)
             {
-                classes.Post post = classes.PostList.SelectId(this.id);
-                int vLike = post.vLike(Session.Cpf);
-                post.like(-1, Session.Cpf);
-                likes = post.Likes;
+                if (pb_down.Image == down)
+                {
+                    classes.Post post = classes.PostList.SelectId(this.id);
+                    int vLike = post.vLike(Session.Cpf);
+                    post.like(-1, Session.Cpf);
+                    likes = post.Likes;
 
-                pb_up.Image = up;
-                pb_down.Image = downv;
-                lb_like.ForeColor = System.Drawing.Color.Red;
+                    pb_up.Image = up;
+                    pb_down.Image = downv;
+                    lb_like.ForeColor = System.Drawing.Color.Red;
+                }
             }
         }
 
