@@ -44,19 +44,16 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.feed = new System.Windows.Forms.ListBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.nomepanelfeed = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.nomepanelfeed.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -106,12 +103,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(147, 283);
+            this.button1.Location = new System.Drawing.Point(67, 316);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 52);
             this.button1.TabIndex = 13;
@@ -122,12 +119,12 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Blue;
+            this.button3.BackColor = System.Drawing.SystemColors.Highlight;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(147, 219);
+            this.button3.Location = new System.Drawing.Point(67, 223);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(158, 52);
             this.button3.TabIndex = 12;
@@ -209,59 +206,38 @@
             this.panel2.Size = new System.Drawing.Size(310, 675);
             this.panel2.TabIndex = 24;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(-3, 96);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(248, 14);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Ranking: Restaurantes Melhor Valiados";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(3, 7);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 20);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Últimos Posts:";
-            // 
-            // feed
-            // 
-            this.feed.FormattingEnabled = true;
-            this.feed.Location = new System.Drawing.Point(1, 42);
-            this.feed.Name = "feed";
-            this.feed.Size = new System.Drawing.Size(624, 511);
-            this.feed.TabIndex = 9;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Blue;
-            this.panel12.Controls.Add(this.label7);
-            this.panel12.Controls.Add(this.label6);
-            this.panel12.Location = new System.Drawing.Point(0, 4);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(625, 39);
-            this.panel12.TabIndex = 7;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.feed);
-            this.panel3.Controls.Add(this.panel12);
-            this.panel3.Location = new System.Drawing.Point(319, 202);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(625, 675);
-            this.panel3.TabIndex = 25;
-            // 
             // contextMenuStrip2
             // 
             this.contextMenuStrip2.Name = "contextMenuStrip1";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.Location = new System.Drawing.Point(316, 246);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(627, 500);
+            this.panel3.TabIndex = 25;
+            // 
+            // nomepanelfeed
+            // 
+            this.nomepanelfeed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.nomepanelfeed.Controls.Add(this.label1);
+            this.nomepanelfeed.Location = new System.Drawing.Point(316, 203);
+            this.nomepanelfeed.Name = "nomepanelfeed";
+            this.nomepanelfeed.Size = new System.Drawing.Size(626, 43);
+            this.nomepanelfeed.TabIndex = 26;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(243, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ultimas Postagens";
             // 
             // FormAvalie
             // 
@@ -269,6 +245,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.nomepanelfeed);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel11);
@@ -286,9 +263,8 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.nomepanelfeed.ResumeLayout(false);
+            this.nomepanelfeed.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -308,11 +284,9 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListBox feed;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel nomepanelfeed;
+        private System.Windows.Forms.Label label1;
     }
 }
