@@ -8,7 +8,6 @@ namespace Pont_Finder.avalie
 {
     class PostConstructor
     {
-    
         private string desc,localizao,tipoproblema,tempohora,modulo;
 
         public string Desc
@@ -17,7 +16,6 @@ namespace Pont_Finder.avalie
             set { desc = value; }
 
         }
-        
 
         public string Localizao
         {
