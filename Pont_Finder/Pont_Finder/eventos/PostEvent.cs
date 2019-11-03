@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pont_Finder
+namespace Pont_Finder.eventos
 {
-    public partial class FormEventos : Form
+    public partial class PostEvent : Form
     {
-        public FormEventos()
+        public PostEvent()
         {
             InitializeComponent();
         }
 
-        private void Btn_com_Click(object sender, EventArgs e)
+        private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
