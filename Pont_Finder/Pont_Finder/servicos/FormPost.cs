@@ -51,8 +51,6 @@ namespace Pont_Finder.servicos
               
                 Image bmp2 = new Bitmap(bmp, pb_icone.Size);
 
-                
-
                 pb_icone.Image = bmp2;
                 string nome = textBox1.Text;
                 int id = classes.PostList.Tam;

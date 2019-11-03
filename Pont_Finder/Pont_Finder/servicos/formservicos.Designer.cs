@@ -29,64 +29,85 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormServicos));
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel_center = new System.Windows.Forms.Panel();
+            this.panel_right = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pb_pesquisar = new System.Windows.Forms.PictureBox();
+            this.panel_left = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            this.tb_pesquisar = new System.Windows.Forms.TextBox();
+            this.pb_wallpaper = new System.Windows.Forms.PictureBox();
+            this.panel_right.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
+            this.panel_left.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel4
+            // panel_center
             // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Location = new System.Drawing.Point(315, 200);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(625, 700);
-            this.panel4.TabIndex = 17;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.panel_center.BackColor = System.Drawing.Color.Transparent;
+            this.panel_center.Location = new System.Drawing.Point(315, 200);
+            this.panel_center.Name = "panel_center";
+            this.panel_center.Size = new System.Drawing.Size(625, 700);
+            this.panel_center.TabIndex = 17;
+            this.panel_center.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // panel3
+            // panel_right
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Location = new System.Drawing.Point(945, 200);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(304, 700);
-            this.panel3.TabIndex = 16;
+            this.panel_right.BackColor = System.Drawing.Color.Transparent;
+            this.panel_right.Controls.Add(this.button5);
+            this.panel_right.Controls.Add(this.button4);
+            this.panel_right.Location = new System.Drawing.Point(945, 200);
+            this.panel_right.Name = "panel_right";
+            this.panel_right.Size = new System.Drawing.Size(304, 700);
+            this.panel_right.TabIndex = 16;
             // 
-            // pictureBox1
+            // button5
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(258, 53);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.button5.Location = new System.Drawing.Point(112, 60);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Load";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
-            // panel2
+            // button4
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 200);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 700);
-            this.panel2.TabIndex = 15;
+            this.button4.Location = new System.Drawing.Point(112, 30);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Save";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // pb_pesquisar
+            // 
+            this.pb_pesquisar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_pesquisar.BackgroundImage")));
+            this.pb_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_pesquisar.Location = new System.Drawing.Point(258, 53);
+            this.pb_pesquisar.Name = "pb_pesquisar";
+            this.pb_pesquisar.Size = new System.Drawing.Size(35, 35);
+            this.pb_pesquisar.TabIndex = 1;
+            this.pb_pesquisar.TabStop = false;
+            this.pb_pesquisar.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
+            // panel_left
+            // 
+            this.panel_left.BackColor = System.Drawing.Color.Transparent;
+            this.panel_left.Controls.Add(this.button3);
+            this.panel_left.Controls.Add(this.button2);
+            this.panel_left.Controls.Add(this.button1);
+            this.panel_left.Controls.Add(this.pb_pesquisar);
+            this.panel_left.Controls.Add(this.tb_pesquisar);
+            this.panel_left.Location = new System.Drawing.Point(0, 200);
+            this.panel_left.Name = "panel_left";
+            this.panel_left.Size = new System.Drawing.Size(310, 700);
+            this.panel_left.TabIndex = 15;
             // 
             // button3
             // 
@@ -118,45 +139,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
-            // textBox1
+            // tb_pesquisar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox1.Location = new System.Drawing.Point(12, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 40);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Pesquisar";
+            this.tb_pesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_pesquisar.ForeColor = System.Drawing.Color.DarkGray;
+            this.tb_pesquisar.Location = new System.Drawing.Point(12, 51);
+            this.tb_pesquisar.Name = "tb_pesquisar";
+            this.tb_pesquisar.Size = new System.Drawing.Size(283, 40);
+            this.tb_pesquisar.TabIndex = 0;
+            this.tb_pesquisar.Tag = "";
+            this.tb_pesquisar.Text = "Pesquisar";
+            this.tb_pesquisar.TextChanged += new System.EventHandler(this.TextBox1_TextChanged_1);
+            this.tb_pesquisar.Enter += new System.EventHandler(this.Tb_pesquisa_Enter);
+            this.tb_pesquisar.Leave += new System.EventHandler(this.Tb_pesquisa_Leave);
             // 
-            // pictureBox18
+            // pb_wallpaper
             // 
-            this.pictureBox18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.BackgroundImage")));
-            this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox18.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(1282, 200);
-            this.pictureBox18.TabIndex = 18;
-            this.pictureBox18.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(112, 30);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Save";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(112, 60);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Load";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            this.pb_wallpaper.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_wallpaper.BackgroundImage")));
+            this.pb_wallpaper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_wallpaper.Location = new System.Drawing.Point(0, 0);
+            this.pb_wallpaper.Name = "pb_wallpaper";
+            this.pb_wallpaper.Size = new System.Drawing.Size(1282, 200);
+            this.pb_wallpaper.TabIndex = 18;
+            this.pb_wallpaper.TabStop = false;
             // 
             // FormServicos
             // 
@@ -165,31 +170,31 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pb_wallpaper);
+            this.Controls.Add(this.panel_center);
+            this.Controls.Add(this.panel_right);
+            this.Controls.Add(this.panel_left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormServicos";
             this.Text = "servicos";
             this.Load += new System.EventHandler(this.Formservicos_Load);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            this.panel_right.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).EndInit();
+            this.panel_left.ResumeLayout(false);
+            this.panel_left.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.Panel panel_center;
+        private System.Windows.Forms.Panel panel_right;
+        private System.Windows.Forms.PictureBox pb_pesquisar;
+        private System.Windows.Forms.Panel panel_left;
+        private System.Windows.Forms.TextBox tb_pesquisar;
+        private System.Windows.Forms.PictureBox pb_wallpaper;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

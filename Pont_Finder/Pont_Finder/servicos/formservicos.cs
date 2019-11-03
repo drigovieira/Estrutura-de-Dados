@@ -75,7 +75,7 @@ namespace Pont_Finder.servicos
 
         private void Formservicos_Load(object sender, EventArgs e)
         {
-            panel4.Height = 180;
+            panel_center.Height = 180;
             int i = 0;
             foreach (var item in classes.PostList.selectAll())
             {
@@ -84,8 +84,8 @@ namespace Pont_Finder.servicos
                 PostCard a = new PostCard(item.Id);
                 a.Location = new Point(0, (y));
                 y = y + a.Height + 5;
-                panel4.Height = panel4.Height + 180;
-                panel4.Controls.Add(a);
+                panel_center.Height = panel_center.Height + 180;
+                panel_center.Controls.Add(a);
                 i++;            
             }
           
@@ -99,8 +99,8 @@ namespace Pont_Finder.servicos
                 np.ShowDialog();
 
                 y = 5;
-                panel4.Height = 180;
-                panel4.Controls.Clear();
+                panel_center.Height = 180;
+                panel_center.Controls.Clear();
                 int i = 0;
                 foreach (var item in classes.PostList.selectAll())
                 {
@@ -109,8 +109,8 @@ namespace Pont_Finder.servicos
                     PostCard a = new PostCard(item.Id);
                     a.Location = new Point(0, (y));
                     y = y + a.Height + 5;
-                    panel4.Height = panel4.Height + 180;
-                    panel4.Controls.Add(a);
+                    panel_center.Height = panel_center.Height + 180;
+                    panel_center.Controls.Add(a);
                     i++;
                 }
             }
@@ -164,6 +164,50 @@ namespace Pont_Finder.servicos
             MessageBox.Show("Carregado com sucesso");
             FormPrincipal.MudarForm("servicos", new FormServicos());
             
+        }
+
+        private void TextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            Stack<classes.Post> pilha = new Stack<classes.Post>();
+            foreach (var item in classes.PostList.selectAll())
+            {
+                pilha.Push(item);
+            }
+
+            y = 5;
+            panel_center.Height = 180;
+            panel_center.Controls.Clear();
+            int i = 0;
+            foreach (var item in pilha)
+            {
+                if (item.Titulo.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                {
+                    if (i > 8)
+                        break;
+                    PostCard a = new PostCard(item.Id);
+                    a.Location = new Point(0, (y));
+                    y = y + a.Height + 5;
+                    panel_center.Height = panel_center.Height + 180;
+                    panel_center.Controls.Add(a);
+                    i++;
+                }
+              
+            }
+        }
+
+        private void Tb_pesquisa_Enter(object sender, EventArgs e)
+        {
+            tb_pesquisar.Text = "";
+        }
+
+        private void Tb_pesquisa_Leave(object sender, EventArgs e)
+        {
+            tb_pesquisar.Text = "Pesquisar";
         }
     }
 }
