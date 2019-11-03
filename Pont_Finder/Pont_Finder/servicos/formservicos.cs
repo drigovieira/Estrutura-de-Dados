@@ -150,5 +150,20 @@ namespace Pont_Finder.servicos
                 MessageBox.Show("É necessário estar logado para solicitar um Serviço");
             }
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            classes.PostList.XmlSave();
+            MessageBox.Show("Salvo com sucesso");
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            classes.PostList.DropList();
+            classes.PostList.XmlLoad();
+            MessageBox.Show("Carregado com sucesso");
+            FormPrincipal.MudarForm("servicos", new FormServicos());
+            
+        }
     }
 }

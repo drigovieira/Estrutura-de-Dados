@@ -75,6 +75,7 @@
             this.lb_descricao.Size = new System.Drawing.Size(250, 141);
             this.lb_descricao.TabIndex = 29;
             this.lb_descricao.Text = "descricao";
+            this.lb_descricao.Click += new System.EventHandler(this.Lb_descricao_Click);
             // 
             // pb_down
             // 
@@ -175,12 +176,12 @@
             this.pb_icone.TabStop = false;
             this.pb_icone.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
-            // postcard
+            // PostCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "postcard";
+            this.Name = "PostCard";
             this.Size = new System.Drawing.Size(605, 196);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

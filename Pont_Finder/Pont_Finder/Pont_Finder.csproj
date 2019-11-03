@@ -176,6 +176,7 @@
     <Compile Include="servicos\classes\ServiceList.cs" />
     <Compile Include="servicos\classes\ServiceXml.cs" />
     <Compile Include="servicos\classes\Worker.cs" />
+    <Compile Include="servicos\classes\XmiLi_Post.cs" />
     <Compile Include="servicos\FormServicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,6 +295,7 @@
     <Content Include="data\empresas.xml" />
     <Content Include="data\usuarios.xml" />
     <Content Include="hospedagem\data\empresas.xml" />
+    <Content Include="servicos\data\posts.xml" />
     <None Include="Resources\downred.png" />
     <None Include="Resources\downgrey.png" />
     <None Include="Resources\downblue.png" />

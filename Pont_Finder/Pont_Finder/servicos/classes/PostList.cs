@@ -11,6 +11,9 @@ namespace Pont_Finder.servicos.classes
         private static List<Post> posts = new List<Post>();
         public static void Add(Post post)
         {
+            if (post.Image == null)
+                post.Image = "..//..//servicos//data//images//posts//offImage.png";
+           
             Post p = new Post();
             p.Id = post.Id;
             p.Titulo = post.Titulo;
@@ -20,21 +23,6 @@ namespace Pont_Finder.servicos.classes
             p.Image = post.Image;
             posts.Add(p);
         }
-
-        private int id;
-        private string titulo;
-        private double valor;
-        private string detalhes;
-        private string descricao;
-
-        private bool ativo;
-        private string image;
-        private long cpf;
-        private long cnpj;
-        private DateTime data;
-        private List<long[]> likes;
-
-
 
         public static List<Post> selectAll()
         {
@@ -66,6 +54,24 @@ namespace Pont_Finder.servicos.classes
         public static Post SelectId(int id)
         {
             return posts[id];
+        }
+
+        public static void XmlLoad()
+        {
+            XmiLi_Post xmlLi = new XmiLi_Post();
+            xmlLi.Load();
+        }
+
+        public static void XmlSave()
+        {
+            XmiLi_Post xmlLi = new XmiLi_Post();
+            xmlLi.Save();
+        }
+
+        public static void DropList()
+        {
+            posts = null;
+            posts = new List<Post>();
         }
 
     }
