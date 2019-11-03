@@ -172,9 +172,6 @@
     <Compile Include="servicos\classes\ListaEmpresa.cs" />
     <Compile Include="servicos\classes\Post.cs" />
     <Compile Include="servicos\classes\PostList.cs" />
-    <Compile Include="servicos\classes\Service.cs" />
-    <Compile Include="servicos\classes\ServiceList.cs" />
-    <Compile Include="servicos\classes\ServiceXml.cs" />
     <Compile Include="servicos\classes\Worker.cs" />
     <Compile Include="servicos\classes\XmiLi_Post.cs" />
     <Compile Include="servicos\FormServicos.cs">

@@ -55,7 +55,7 @@ namespace Pont_Finder.servicos
 
                 pb_icone.Image = bmp2;
                 string nome = textBox1.Text;
-                int id = classes.ServiceList.Tam;
+                int id = classes.PostList.Tam;
                 link = "..//..//servicos//data//images//posts//" + id + ".jpg";
                 pb_icone.Image.Save(link, ImageFormat.Jpeg);
             }

@@ -56,8 +56,12 @@ namespace Pont_Finder.servicos.classes
                 
                 foreach (var like in userLike)
                 {
-                    string[] v = like.Split(',');                
-                    post.like(short.Parse(v[0]), long.Parse(v[1]));
+                    if (like != "")
+                    {
+                        string[] v = like.Split(',');
+                        post.like(short.Parse(v[0]), long.Parse(v[1]));
+                    }
+                  
                 }
                 
                 PostList.Add(post);
