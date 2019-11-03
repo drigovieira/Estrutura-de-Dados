@@ -65,7 +65,7 @@ namespace Pont_Finder.servicos
             p.Detalhes = textBox2.Text;
             p.Descricao = "";
             p.Image = link;
-            
+            p.Data = DateTime.Now;
             classes.PostList.Add(p);     
             this.Close();
         }

@@ -24,7 +24,7 @@ namespace Pont_Finder.servicos.classes
             p.Image = post.Image;
             p.Cpf = post.Cpf;
             p.Cnpj = post.Cnpj;
-            p.Data = p.Data;
+            p.Data = post.Data;
             p.LikesList = post.LikesList;          
             posts.Add(p);
         }

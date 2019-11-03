@@ -13,16 +13,18 @@ namespace Pont_Finder.servicos
 {
     public partial class PostCard : UserControl
     {
-        private string tipo;
-        private string detalhes;
-        private double valor;
         private int id;
-        private int sugestoes;
-        private int visualizacoes;
-        private long likes;
-        private short avaliacao;
+        private string titulo;
+        private double valor;
+        private string detalhes;
+        private string descricao;
         private bool ativo;
         private string image;
+        private long cpf;
+        private long cnpj;
+        private DateTime data;
+        private long likes;
+        private List<long[]> listlikes = new List<long[]>();
 
         Bitmap up = Properties.Resources.upgrey;
         Bitmap down = Properties.Resources.downgrey;
@@ -34,15 +36,15 @@ namespace Pont_Finder.servicos
         {
             classes.Post post = new classes.Post();
             post = classes.PostList.SelectId(id);
-            this.tipo = post.Titulo;
+            this.titulo = post.Titulo;
             this.detalhes = post.Detalhes;
             this.valor = post.Valor;
             this.id = post.Id;
             this.likes = post.Likes;
             this.ativo = post.Ativo;
             this.image = post.Image;
-
-
+            this.data = post.Data;
+          
             InitializeComponent();
 
             if (post.Image != null)
@@ -73,6 +75,8 @@ namespace Pont_Finder.servicos
                 pb_up.Image = up;
                 pb_down.Image = down;
             }
+
+            lb_data.Text = "Postado em: " + data;
             
         }
 
@@ -99,7 +103,7 @@ namespace Pont_Finder.servicos
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
-            lb_titulo.Text = this.tipo;
+            lb_titulo.Text = this.titulo;
             lb_descricao.Text = this.detalhes;
             lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
            
@@ -177,6 +181,16 @@ namespace Pont_Finder.servicos
         }
 
         private void Lb_descricao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lb_data_Click(object sender, EventArgs e)
         {
 
         }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PostCard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_data = new System.Windows.Forms.Label();
             this.lb_descricao = new System.Windows.Forms.Label();
             this.pb_down = new System.Windows.Forms.PictureBox();
             this.pb_up = new System.Windows.Forms.PictureBox();
@@ -50,6 +51,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lb_data);
             this.panel1.Controls.Add(this.lb_descricao);
             this.panel1.Controls.Add(this.pb_down);
             this.panel1.Controls.Add(this.pb_up);
@@ -65,6 +67,16 @@
             this.panel1.Size = new System.Drawing.Size(605, 195);
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // lb_data
+            // 
+            this.lb_data.AutoSize = true;
+            this.lb_data.Location = new System.Drawing.Point(6, 177);
+            this.lb_data.Name = "lb_data";
+            this.lb_data.Size = new System.Drawing.Size(35, 13);
+            this.lb_data.TabIndex = 30;
+            this.lb_data.Text = "label1";
+            this.lb_data.Click += new System.EventHandler(this.Lb_data_Click);
             // 
             // lb_descricao
             // 
@@ -205,5 +217,6 @@
         private System.Windows.Forms.PictureBox pb_down;
         private System.Windows.Forms.PictureBox pb_up;
         private System.Windows.Forms.Label lb_descricao;
+        private System.Windows.Forms.Label lb_data;
     }
 }
