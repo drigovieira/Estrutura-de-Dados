@@ -50,12 +50,21 @@ namespace Pont_Finder.servicos.classes
                 post.Cnpj = long.Parse(item.Element("cnpj").Value);
                 post.Data = DateTime.Parse(item.Element("data").Value);
                 //likes
+                //string likes = item.Element("likes").Value;
                 PostList.Add(post);
            }
         }
 
         public void Add(Post post)
         {
+            string like = "[";
+            foreach (var item in post.LikesList)
+            {
+                like = like + "[" + item[0] + "," + item[1] + "],";
+            }
+           
+            like = like.Remove(like.Length - 1) + "]";
+
             XElement p =
                 new XElement("Post",
                 new XElement("id", post.Id),
@@ -68,7 +77,7 @@ namespace Pont_Finder.servicos.classes
                 new XElement("cpf", post.Cpf),
                 new XElement("cnpj", post.Cnpj),
                 new XElement("data", post.Data),
-                new XElement("likes", post.LikesList));
+                new XElement("likes", like));
 
             XDocument doc = XDocument.Load(caminho);
             doc.Root.Add(p);

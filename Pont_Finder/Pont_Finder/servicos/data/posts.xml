@@ -8,10 +8,10 @@
     <detalhes />
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//offImage.png</image>
-    <cpf>0</cpf>
+    <cpf>12345</cpf>
     <cnpj>-1</cnpj>
-    <data>2019-11-03T11:09:13.6171465-03:00</data>
-    <likes>-112345</likes>
+    <data>2019-11-03T11:40:27.6491477-03:00</data>
+    <likes>[[1,12345],[1,0]]</likes>
   </Post>
   <Post>
     <id>1</id>
@@ -21,10 +21,10 @@
     <detalhes />
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//0.jpg</image>
-    <cpf>0</cpf>
+    <cpf>12345</cpf>
     <cnpj>-1</cnpj>
-    <data>2019-11-03T11:09:13.6181466-03:00</data>
-    <likes>112345</likes>
+    <data>2019-11-03T11:40:27.6491477-03:00</data>
+    <likes>[[-1,12345],[-1,0]]</likes>
   </Post>
   <Post>
     <id>2</id>
@@ -34,10 +34,10 @@
     <detalhes />
     <ativo>true</ativo>
     <image></image>
-    <cpf>0</cpf>
+    <cpf>12345</cpf>
     <cnpj>-1</cnpj>
-    <data>2019-11-03T11:09:13.6181466-03:00</data>
-    <likes />
+    <data>2019-11-03T11:40:27.6491477-03:00</data>
+    <likes>]</likes>
   </Post>
   <Post>
     <id>3</id>
@@ -47,9 +47,9 @@
     <detalhes />
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//offImage.png</image>
-    <cpf>0</cpf>
+    <cpf>12345</cpf>
     <cnpj>-1</cnpj>
-    <data>2019-11-03T11:09:13.6181466-03:00</data>
-    <likes />
+    <data>2019-11-03T11:40:27.6491477-03:00</data>
+    <likes>]</likes>
   </Post>
 </PostList>

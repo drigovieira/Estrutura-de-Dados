@@ -162,7 +162,6 @@ namespace Pont_Finder.servicos.classes
         }
 
 
-
         public List<long[]> LikesList
         {
             get { return likes; }
