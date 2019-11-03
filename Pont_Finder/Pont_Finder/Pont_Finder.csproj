@@ -52,6 +52,18 @@
     <Compile Include="alimentos\Cadastro_Restaurante.Designer.cs">
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </Compile>
+    <Compile Include="alimentos\Publi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\Publi.Designer.cs">
+      <DependentUpon>Publi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\Visualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alimentos\Visualizar.Designer.cs">
+      <DependentUpon>Visualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="avalie\formPostar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +202,12 @@
     </Compile>
     <EmbeddedResource Include="alimentos\Cadastro_Restaurante.resx">
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Publi.resx">
+      <DependentUpon>Publi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Visualizar.resx">
+      <DependentUpon>Visualizar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="avalie\formPostar.resx">
       <DependentUpon>formPostar.cs</DependentUpon>
