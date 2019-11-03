@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 
@@ -37,7 +38,7 @@ namespace Pont_Finder.servicos.classes
             XDocument doc = XDocument.Load(caminho);
             foreach (var item in doc.Descendants("Post"))
             {
-                Post post = new Post();
+                classes.Post post = new classes.Post();
 
                 post.Id = int.Parse(item.Element("id").Value);
                 post.Titulo = item.Element("titulo").Value;
@@ -49,21 +50,32 @@ namespace Pont_Finder.servicos.classes
                 post.Cpf = long.Parse(item.Element("cpf").Value);
                 post.Cnpj = long.Parse(item.Element("cnpj").Value);
                 post.Data = DateTime.Parse(item.Element("data").Value);
-                //likes
-                //string likes = item.Element("likes").Value;
+             
+                string sLikes = item.Element("likes").Value;              
+                string[] userLike = sLikes.Split('*');
+                
+                foreach (var like in userLike)
+                {
+                    string[] v = like.Split(',');                
+                    post.like(short.Parse(v[0]), long.Parse(v[1]));
+                }
+                
                 PostList.Add(post);
            }
         }
 
         public void Add(Post post)
         {
-            string like = "[";
+            string like = "";
             foreach (var item in post.LikesList)
             {
-                like = like + "[" + item[0] + "," + item[1] + "],";
+                like = like + item[0] + "," + item[1] + "*";
             }
-           
-            like = like.Remove(like.Length - 1) + "]";
+            if (like.Length - 1 > 0)
+            {
+                like = like.Remove(like.Length - 1);
+            }
+            
 
             XElement p =
                 new XElement("Post",

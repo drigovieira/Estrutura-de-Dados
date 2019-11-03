@@ -4,52 +4,26 @@
     <id>0</id>
     <titulo>ads</titulo>
     <valor>123</valor>
-    <detalhes>asd</detalhes>
+    <detalhes>ads</detalhes>
     <detalhes />
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//offImage.png</image>
-    <cpf>12345</cpf>
+    <cpf>0</cpf>
     <cnpj>-1</cnpj>
-    <data>2019-11-03T11:40:27.6491477-03:00</data>
-    <likes>[[1,12345],[1,0]]</likes>
+    <data>2019-11-03T14:22:48.5777984-03:00</data>
+    <likes>-1,12345*1,0</likes>
   </Post>
   <Post>
     <id>1</id>
-    <titulo>ads</titulo>
-    <valor>12</valor>
-    <detalhes>ads</detalhes>
+    <titulo>admin</titulo>
+    <valor>23</valor>
+    <detalhes>asda</detalhes>
     <detalhes />
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//0.jpg</image>
     <cpf>12345</cpf>
     <cnpj>-1</cnpj>
-    <data>2019-11-03T11:40:27.6491477-03:00</data>
-    <likes>[[-1,12345],[-1,0]]</likes>
-  </Post>
-  <Post>
-    <id>2</id>
-    <titulo>ads2</titulo>
-    <valor>23</valor>
-    <detalhes>ads2</detalhes>
-    <detalhes />
-    <ativo>true</ativo>
-    <image></image>
-    <cpf>12345</cpf>
-    <cnpj>-1</cnpj>
-    <data>2019-11-03T11:40:27.6491477-03:00</data>
-    <likes>]</likes>
-  </Post>
-  <Post>
-    <id>3</id>
-    <titulo>d</titulo>
-    <valor>1</valor>
-    <detalhes>d</detalhes>
-    <detalhes />
-    <ativo>true</ativo>
-    <image>..//..//servicos//data//images//posts//offImage.png</image>
-    <cpf>12345</cpf>
-    <cnpj>-1</cnpj>
-    <data>2019-11-03T11:40:27.6491477-03:00</data>
-    <likes>]</likes>
+    <data>2019-11-03T14:22:48.5777984-03:00</data>
+    <likes>1,12345*1,0</likes>
   </Post>
 </PostList>

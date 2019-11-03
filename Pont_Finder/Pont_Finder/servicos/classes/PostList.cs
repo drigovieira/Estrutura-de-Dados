@@ -19,8 +19,13 @@ namespace Pont_Finder.servicos.classes
             p.Titulo = post.Titulo;
             p.Valor = post.Valor;
             p.Detalhes = post.Detalhes;
-            p.Descricao = post.Descricao;         
+            p.Descricao = post.Descricao;
+            p.Ativo = post.Ativo;
             p.Image = post.Image;
+            p.Cpf = post.Cpf;
+            p.Cnpj = post.Cnpj;
+            p.Data = p.Data;
+            p.LikesList = post.LikesList;          
             posts.Add(p);
         }
 
