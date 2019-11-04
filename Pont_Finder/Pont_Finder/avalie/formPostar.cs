@@ -22,11 +22,14 @@ namespace Pont_Finder.avalie
     {
 
         FormAvalie AvaliePrincipal = new FormAvalie();
+        UserControl1 t1 = new UserControl1();
 
 
         public formPostar()
         {
             InitializeComponent();
+            
+
         }
 
         private void Button5_Click(object sender, EventArgs e)
@@ -96,7 +99,11 @@ namespace Pont_Finder.avalie
         }
         private void BtnPostar_Click(object sender, EventArgs e)
         {
-            PostConstructor post = new PostConstructor();
+
+           
+
+
+            /*PostConstructor post = new PostConstructor();
             
 
             string post_Tempohora = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
@@ -112,12 +119,46 @@ namespace Pont_Finder.avalie
 
             PostList.PostAdd(post);
 
-            AvaliePrincipal.Att();
-            this.Close();
+            
+            this.Close();*/
+
+            if (txtLocalizacao.Text == "   sua Localicação..." || txtLocalizacao.Text == ""
+                || comboBox1.Text == "Sobre o quê você quer falar" || comboBox1.Text == "" ||
+                pictureBoxCarregarImagem.ImageLocation == null || richTextBox1.Text == "")
+            {
+                MessageBox.Show("ATENÇÃO prencha todos os campos");
+            }
+            else
+            {
+                PostConstructor post = new PostConstructor();
+                
+
+                string post_Tempohora = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+                string post_problema = comboBox1.SelectedItem.ToString();
+                string post_localizao = txtLocalizacao.Text;
+                string post_descricao = richTextBox1.Text;
+
+                post.Tempohora = post_Tempohora;
+                post.Tipoproblema = post_problema;
+                post.Localizao = post_localizao;
+                post.Desc = post_descricao;
+
+                PostList.PostAdd(post);
+
+                //AvaliePrincipal.Att();
+                MessageBox.Show("Post realizado com sucesso!!!");
+
+                
+                FormAvalie master = (FormAvalie)Application.OpenForms["FormAvalie"];
+                master.button1.PerformClick();
+                
+                
 
 
+                this.Close();
+            }
 
-
+            
 
         }
 
@@ -128,6 +169,39 @@ namespace Pont_Finder.avalie
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLocalizacao_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void txtLocalizacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsLetter(e.KeyChar) && !(e.KeyChar == (char)Keys.Back)
+             && !(e.KeyChar == (char)Keys.Space))
+            {
+                e.Handled = true;
+            }
+            if (e.KeyChar == 13)//Executar alguma coisa com a tecla enter
+            {
+                if (txtLocalizacao.Text == Text)
+                {
+                    if (string.IsNullOrWhiteSpace(txtLocalizacao.Text)) ;
+
+                }
+                else
+                {
+
+                    NavigateToRoute(new string[1] { txtLocalizacao.Text });
+                }
+            }
+
 
         }
     }
