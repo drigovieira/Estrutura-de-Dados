@@ -20,8 +20,7 @@ namespace Pont_Finder.avalie
             pos.Localizao = post.Localizao;
             pos.Desc = post.Desc;
             pos.Tempohora = post.Tempohora;
-            pos.Modulo = "avalie";
-            
+            pos.Modulo = "avalie";           
             poster.Add(pos);
         }
 
@@ -33,6 +32,7 @@ namespace Pont_Finder.avalie
                 string localiza = poster[index].Localizao;
                 string tempohor = poster[index].Tempohora;
                 string modulo = poster[index].Modulo;
+
                 string[] vetor = { tempohor, tipoProblema, localiza, desc };
                 return vetor;
 

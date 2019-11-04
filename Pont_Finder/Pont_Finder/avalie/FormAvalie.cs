@@ -13,69 +13,65 @@ namespace Pont_Finder
 {
     public partial class FormAvalie : Form
     {
+
+        int leftcontrol = 8;
+        int let = 0;
+        int let2 = 0;
+
         public FormAvalie()
         {
             InitializeComponent();
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            formPostar fp = new formPostar();
-            fp.ShowDialog();
+            //formPostar fp = new formPostar();
+            //fp.ShowDialog();
+
+            formPostar f2 = new formPostar(); //be careful on this line!!
+            f2.Show();
+
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
-            string separacaoproblem = "____________________________________________________________________________________________________________________________________________________________________________";
-            feed.Items.Clear();
-
-            foreach (var item in PostList.poster)
-            {
-                feed.Items.Add(item.Tempohora);
-                feed.Items.Add("");
-                feed.Items.Add("TIPO DE PROBLEMA :");
-                feed.Items.Add(item.Tipoproblema);
-                feed.Items.Add("");
-                feed.Items.Add("LOCALIZAÇÃO :");
-                feed.Items.Add(item.Localizao);
-                feed.Items.Add("");
-                feed.Items.Add("DESCRIÇÃO :");
-                feed.Items.Add(item.Desc);
-
-                feed.Items.Add(separacaoproblem);
-
-            }
-            PostConstructor post = new PostConstructor();
-        }
-
-        public void Att()
-        {
-            string separacaoproblem = "____________________________________________________________________________________________________________________________________________________________________________";
-            feed.Items.Clear();
-
-            foreach (var item in PostList.poster)
-            {
-                feed.Items.Add(item.Tempohora);
-                feed.Items.Add("");
-                feed.Items.Add("TIPO DE PROBLEMA :");
-                feed.Items.Add(item.Tipoproblema);
-                feed.Items.Add("");
-                feed.Items.Add("LOCALIZAÇÃO :");
-                feed.Items.Add(item.Localizao);
-                feed.Items.Add("");
-                feed.Items.Add("DESCRIÇÃO :");
-                feed.Items.Add(item.Desc);
-
-                feed.Items.Add(separacaoproblem);
-
-            }
-            PostConstructor post = new PostConstructor();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserControl1 t1 = new UserControl1();
+
+
+            panel3.Controls.Add(t1);
+            t1.Top = let * let2;
+            let = 24;
+            let2 = 24;
+            t1.Left = 5;
+            leftcontrol = 0;
+            leftcontrol = leftcontrol;
+            t1.Att();
+
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void d_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
+
+

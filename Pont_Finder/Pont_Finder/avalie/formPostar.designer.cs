@@ -40,12 +40,13 @@
             this.button5 = new System.Windows.Forms.Button();
             this.txtLocalizacao = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnPostar = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxCarregarImagem = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -168,20 +169,49 @@
             this.txtLocalizacao.Size = new System.Drawing.Size(341, 26);
             this.txtLocalizacao.TabIndex = 63;
             this.txtLocalizacao.Text = "   sua Localicação...";
+            this.txtLocalizacao.TextChanged += new System.EventHandler(this.txtLocalizacao_TextChanged);
+            this.txtLocalizacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLocalizacao_KeyPress);
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.Controls.Add(this.comboBox1);
+            this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.btnPostar);
             this.panel6.Controls.Add(this.richTextBox1);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Controls.Add(this.pictureBoxCarregarImagem);
             this.panel6.Controls.Add(this.button3);
-            this.panel6.Controls.Add(this.comboBox1);
             this.panel6.Location = new System.Drawing.Point(528, 203);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(415, 675);
             this.panel6.TabIndex = 14;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Infraestrutura",
+            "Saúde",
+            "Segurança"});
+            this.comboBox1.Location = new System.Drawing.Point(0, 27);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(415, 28);
+            this.comboBox1.TabIndex = 77;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Blue;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(2, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(259, 24);
+            this.label2.TabIndex = 76;
+            this.label2.Text = "Sobre o que você quer falar...";
             // 
             // btnPostar
             // 
@@ -190,7 +220,7 @@
             this.btnPostar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPostar.ForeColor = System.Drawing.Color.White;
             this.btnPostar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPostar.Location = new System.Drawing.Point(302, 558);
+            this.btnPostar.Location = new System.Drawing.Point(302, 583);
             this.btnPostar.Name = "btnPostar";
             this.btnPostar.Size = new System.Drawing.Size(110, 42);
             this.btnPostar.TabIndex = 74;
@@ -202,11 +232,12 @@
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(0, 370);
+            this.richTextBox1.Location = new System.Drawing.Point(0, 398);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(414, 182);
             this.richTextBox1.TabIndex = 69;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // label1
             // 
@@ -214,7 +245,7 @@
             this.label1.BackColor = System.Drawing.Color.Blue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(1, 346);
+            this.label1.Location = new System.Drawing.Point(2, 373);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 24);
             this.label1.TabIndex = 66;
@@ -224,7 +255,7 @@
             // 
             this.pictureBoxCarregarImagem.BackColor = System.Drawing.Color.Silver;
             this.pictureBoxCarregarImagem.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCarregarImagem.Image")));
-            this.pictureBoxCarregarImagem.Location = new System.Drawing.Point(2, 83);
+            this.pictureBoxCarregarImagem.Location = new System.Drawing.Point(2, 105);
             this.pictureBoxCarregarImagem.Name = "pictureBoxCarregarImagem";
             this.pictureBoxCarregarImagem.Size = new System.Drawing.Size(410, 252);
             this.pictureBoxCarregarImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -239,7 +270,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(0, 51);
+            this.button3.Location = new System.Drawing.Point(0, 75);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(415, 31);
             this.button3.TabIndex = 64;
@@ -247,20 +278,6 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Infraestrutura",
-            "Saúde",
-            "Segurança"});
-            this.comboBox1.Location = new System.Drawing.Point(0, 6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(415, 28);
-            this.comboBox1.TabIndex = 62;
-            this.comboBox1.Text = "Sobre o quê você quer falar";
             // 
             // openFileDialog1
             // 
@@ -365,17 +382,18 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBoxCarregarImagem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button btnPostar;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Button btnPostar;
     }
 }

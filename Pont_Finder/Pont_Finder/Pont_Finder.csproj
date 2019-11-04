@@ -64,6 +64,12 @@
     <Compile Include="alimentos\Visualizar.Designer.cs">
       <DependentUpon>Visualizar.cs</DependentUpon>
     </Compile>
+    <Compile Include="avalie\FormAvalie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="avalie\FormAvalie.Designer.cs">
+      <DependentUpon>FormAvalie.cs</DependentUpon>
+    </Compile>
     <Compile Include="avalie\formPostar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,12 @@
     </Compile>
     <Compile Include="avalie\PostConstructor.cs" />
     <Compile Include="avalie\PostList.cs" />
+    <Compile Include="avalie\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="avalie\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="avalie\XmlListAvalie.cs" />
     <Compile Include="CadEmpresa.cs">
       <SubType>Form</SubType>
@@ -89,12 +101,6 @@
     </Compile>
     <Compile Include="alimentos\formAlimentos.Designer.cs">
       <DependentUpon>formAlimentos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="avalie\FormAvalie.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="avalie\FormAvalie.Designer.cs">
-      <DependentUpon>FormAvalie.cs</DependentUpon>
     </Compile>
     <Compile Include="classes\XmlLi_Empresa.cs" />
     <Compile Include="eventos\Classes\CadEmpresa.cs" />
@@ -216,17 +222,20 @@
     <EmbeddedResource Include="alimentos\Visualizar.resx">
       <DependentUpon>Visualizar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="avalie\FormAvalie.resx">
+      <DependentUpon>FormAvalie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="avalie\formPostar.resx">
       <DependentUpon>formPostar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avalie\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadEmpresa.resx">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\formAlimentos.resx">
       <DependentUpon>formAlimentos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="avalie\FormAvalie.resx">
-      <DependentUpon>FormAvalie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\FormEventos.resx">
       <DependentUpon>FormEventos.cs</DependentUpon>
