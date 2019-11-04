@@ -54,12 +54,9 @@ namespace Pont_Finder.hospedagem
 
             hostList.addEmpresa(empresa);
             MessageBox.Show("Usuário Cadastrado com sucesso!");
-            this.Close();
 
-            
-
-            //hospedagem.Listas_quartos listQuartos = new Listas_quartos();
-            //FormPrincipal.MudarForm("hospedagem", listQuartos);
+            hospedagem.Listas_quartos listQuartos = new Listas_quartos();
+            FormPrincipal.MudarForm("hospedagem", listQuartos);
         }
 
         private void button3_Click(object sender, EventArgs e) //BOTAO QUE VERIFICA OS TEXT FIELDS E HABILITA OS DEMAIS
