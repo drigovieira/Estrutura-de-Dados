@@ -97,11 +97,20 @@
       <DependentUpon>FormAvalie.cs</DependentUpon>
     </Compile>
     <Compile Include="classes\XmlLi_Empresa.cs" />
+    <Compile Include="eventos\Classes\CadEmpresa.cs" />
+    <Compile Include="eventos\Classes\Empresa_List.cs" />
+    <Compile Include="eventos\Classes\XmlLi_Eventos.cs" />
     <Compile Include="eventos\FormEventos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="eventos\FormEventos.Designer.cs">
       <DependentUpon>FormEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\Postagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\Postagem.Designer.cs">
+      <DependentUpon>Postagem.cs</DependentUpon>
     </Compile>
     <Compile Include="hospedagem\Cadastro_Empresa.cs">
       <SubType>Form</SubType>
@@ -221,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\FormEventos.resx">
       <DependentUpon>FormEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\Postagem.resx">
+      <DependentUpon>Postagem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Cadastro_Empresa.resx">
       <DependentUpon>Cadastro_Empresa.cs</DependentUpon>
