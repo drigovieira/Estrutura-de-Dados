@@ -104,7 +104,7 @@
     <cpf>27833572080</cpf>
     <ativo>true</ativo>
   </User>
- <User>
+  <User>
     <id>13</id>
     <nome>admin2</nome>
     <email>admin2</email>
@@ -112,7 +112,7 @@
     <cpf>22222222222</cpf>
     <ativo>true</ativo>
   </User>
- <User>
+  <User>
     <id>14</id>
     <nome>admin3</nome>
     <email>admin3</email>
@@ -120,7 +120,7 @@
     <cpf>33333333333</cpf>
     <ativo>true</ativo>
   </User>
-<User>
+  <User>
     <id>15</id>
     <nome>admin1</nome>
     <email>admin1</email>
@@ -128,12 +128,20 @@
     <cpf>11111111111</cpf>
     <ativo>true</ativo>
   </User>
-<User>
+  <User>
     <id>16</id>
     <nome>admin0</nome>
     <email>admin0</email>
     <senha>admin0</senha>
-    <cpf>00000000000</cpf>
+    <cpf>10000000000</cpf>
+    <ativo>true</ativo>
+  </User>
+  <User>
+    <id>17</id>
+    <nome>easdasr</nome>
+    <email>edu@hot.com</email>
+    <senha>1234</senha>
+    <cpf>42362871029</cpf>
     <ativo>true</ativo>
   </User>
 </UserList>

@@ -133,6 +133,8 @@ namespace Pont_Finder.servicos
             else
             {
                 MessageBox.Show("É nessessario estar logado para cadastrar uma empresa");
+              
+                FormPrincipal.MudarForm("servicos", new FormCadEmpresa());
             }
 
 

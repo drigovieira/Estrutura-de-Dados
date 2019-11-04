@@ -183,6 +183,12 @@
     <Compile Include="servicos\classes\PostList.cs" />
     <Compile Include="servicos\classes\Worker.cs" />
     <Compile Include="servicos\classes\XmiLi_Post.cs" />
+    <Compile Include="servicos\FormCadEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormCadEmpresa.Designer.cs">
+      <DependentUpon>FormCadEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\FormServicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +279,9 @@
     </Compile>
     <EmbeddedResource Include="servicos\CadastrarEmpresa.resx">
       <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormCadEmpresa.resx">
+      <DependentUpon>FormCadEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\FormServicos.resx">
       <DependentUpon>FormServicos.cs</DependentUpon>

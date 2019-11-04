@@ -208,8 +208,7 @@ namespace Pont_Finder
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CadEmpresa cdEmp = new CadEmpresa();
-            cdEmp.ShowDialog();
+         
         }
 
         private void Bt_Sair_Click(object sender, EventArgs e)
