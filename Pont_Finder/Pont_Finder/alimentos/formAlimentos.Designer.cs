@@ -36,14 +36,13 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PesquisaBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.Top5 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.ListarEmpresas = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -87,7 +86,7 @@
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.PesquisaBox);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(11, 328);
@@ -110,7 +109,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(200, 158);
+            this.button3.Location = new System.Drawing.Point(200, 84);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 28);
             this.button3.TabIndex = 9;
@@ -127,12 +126,12 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Categoria";
             // 
-            // textBox1
+            // PesquisaBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 20);
-            this.textBox1.TabIndex = 2;
+            this.PesquisaBox.Location = new System.Drawing.Point(22, 90);
+            this.PesquisaBox.Name = "PesquisaBox";
+            this.PesquisaBox.Size = new System.Drawing.Size(172, 20);
+            this.PesquisaBox.TabIndex = 2;
             // 
             // label3
             // 
@@ -163,27 +162,13 @@
             this.panel1.Size = new System.Drawing.Size(0, 0);
             this.panel1.TabIndex = 12;
             // 
-            // button6
+            // Top5
             // 
-            this.button6.BackColor = System.Drawing.Color.Green;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(210, 225);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(82, 28);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Visualizar";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(22, 75);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(270, 136);
-            this.panel8.TabIndex = 6;
+            this.Top5.BackColor = System.Drawing.Color.White;
+            this.Top5.Location = new System.Drawing.Point(22, 75);
+            this.Top5.Name = "Top5";
+            this.Top5.Size = new System.Drawing.Size(270, 270);
+            this.Top5.TabIndex = 6;
             // 
             // label7
             // 
@@ -195,20 +180,20 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "Top 5 Restaurantes Melhor Avaliados";
             // 
-            // panel5
+            // ListarEmpresas
             // 
-            this.panel5.AutoScroll = true;
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel5.Location = new System.Drawing.Point(325, 394);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(625, 505);
-            this.panel5.TabIndex = 16;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel5_Paint);
+            this.ListarEmpresas.AutoScroll = true;
+            this.ListarEmpresas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ListarEmpresas.Location = new System.Drawing.Point(325, 394);
+            this.ListarEmpresas.Name = "ListarEmpresas";
+            this.ListarEmpresas.Size = new System.Drawing.Size(625, 201);
+            this.ListarEmpresas.TabIndex = 16;
+            this.ListarEmpresas.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel5_Paint);
             // 
             // panel9
             // 
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 899);
+            this.panel9.Location = new System.Drawing.Point(0, 720);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 17;
@@ -216,12 +201,11 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel4.Controls.Add(this.button6);
-            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.Top5);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(955, 328);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 267);
+            this.panel4.Size = new System.Drawing.Size(310, 392);
             this.panel4.TabIndex = 15;
             // 
             // label8
@@ -261,7 +245,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.ListarEmpresas);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -290,14 +274,13 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PesquisaBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel Top5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel ListarEmpresas;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
