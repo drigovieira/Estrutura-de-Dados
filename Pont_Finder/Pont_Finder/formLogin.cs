@@ -87,7 +87,8 @@ namespace Pont_Finder
 
         private void label5_Click(object sender, EventArgs e)
         {
-            
+            Recuperar_senha Rec_Senha = new Recuperar_senha();
+            Rec_Senha.ShowDialog();
         }
     }
 }

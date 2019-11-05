@@ -2120,6 +2120,9 @@
         gWugh+s/AAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>12, 26</value>
+  </metadata>
   <data name="panel7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABPEAAADICAIAAAAGBeO5AAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
@@ -10628,9 +10631,6 @@
         77F4Lr4KWQ+vCP93jJZUarGlVbkCd2BTv8VKWrOYlpyIF6k1Pv5/aFoU/pRLnIEAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>12, 26</value>
-  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>26</value>
   </metadata>

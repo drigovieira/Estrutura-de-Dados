@@ -33,7 +33,7 @@ namespace Pont_Finder.servicos
 
         private void Cancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FormPrincipal.MudarForm("servicos", new FormServicos());
         }
 
         private void Publicar_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace Pont_Finder.servicos
                 Image bmp2 = new Bitmap(bmp, pb_icone.Size);
 
                 pb_icone.Image = bmp2;
-                string nome = textBox1.Text;
+                string nome = tb_valor.Text;
                 int id = classes.PostList.Tam;
                 link = "..//..//servicos//data//images//posts//" + id + ".jpg";
                 pb_icone.Image.Save(link, ImageFormat.Jpeg);
@@ -60,14 +60,15 @@ namespace Pont_Finder.servicos
 
             classes.Post p = new classes.Post();
             p.Id = classes.PostList.Tam;
-            p.Titulo = textBox3.Text;
-            p.Valor = double.Parse(textBox1.Text);
-            p.Detalhes = textBox2.Text;
+            p.Titulo = tb_titulo.Text;
+            p.Valor = double.Parse(tb_valor.Text);
+            p.Detalhes = tb_detalhes.Text;
             p.Descricao = "";
             p.Image = link;
             p.Data = DateTime.Now;
-            classes.PostList.Add(p);     
-            this.Close();
+            classes.PostList.Add(p);
+            FormPrincipal.MudarForm("servicos", new FormServicos());
+     
         }
 
         private void Bt_icone_Click(object sender, EventArgs e)
@@ -91,6 +92,11 @@ namespace Pont_Finder.servicos
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

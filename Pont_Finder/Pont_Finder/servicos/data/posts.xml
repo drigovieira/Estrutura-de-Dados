@@ -2,59 +2,15 @@
 <PostList>
   <Post>
     <id>0</id>
-    <titulo>admin</titulo>
-    <valor>1</valor>
-    <detalhes>admin</detalhes>
-    <detalhes />
-    <ativo>true</ativo>
-    <image>..//..//servicos//data//images//posts//offImage.png</image>
-    <cpf>12345</cpf>
-    <cnpj>-1</cnpj>
-    <data>2019-11-03T20:44:28.9036872-03:00</data>
-    <likes>-1,12345</likes>
-  </Post>
-  <Post>
-    <id>1</id>
-    <titulo>ds</titulo>
-    <valor>3</valor>
-    <detalhes>asd</detalhes>
-    <detalhes />
-    <ativo>true</ativo>
-    <image>..//..//servicos//data//images//posts//offImage.png</image>
-    <cpf>12345</cpf>
-    <cnpj>-1</cnpj>
-    <data>2019-11-03T20:54:48.0337035-03:00</data>
-    <likes>1,12345</likes>
-  </Post>
-  <Post>
-    <id>2</id>
-    <titulo>ejwjkdjwkdjkskj</titulo>
-    <valor>1000</valor>
-    <detalhes>edauiijodasjiodsiosdjoisjdoisajdoiasjdiaosjdias
-asjiodjasoidjasiodjasiodjas
-djaiojdosijdoasidja
-djiosajdioasjdosad
-asjdoiasjdioajs
-</detalhes>
-    <detalhes />
-    <ativo>true</ativo>
-    <image>..//..//servicos//data//images//posts//2.jpg</image>
-    <cpf>42362871029</cpf>
-    <cnpj>-1</cnpj>
-    <data>2019-11-04T07:20:57.192754-03:00</data>
-    <likes>1,42362871029*1,12345</likes>
-  </Post>
-  <Post>
-    <id>3</id>
-    <titulo>pinguin</titulo>
-    <valor>500</valor>
-    <detalhes>gelo</detalhes>
+    <titulo>adgsdf</titulo>
+    <valor>342</valor>
+    <detalhes>sdfgg</detalhes>
     <detalhes></detalhes>
     <ativo>true</ativo>
-    <image>..//..//servicos//data//images//posts//3.jpg</image>
+    <image>..//..//servicos//data//images//posts//0.jpg</image>
     <cpf>12345</cpf>
     <cnpj>-1</cnpj>
-    <data>2019-11-04T16:46:48.0739949-03:00</data>
-    <likes>-1,12345</likes>
+    <data>2019-11-04T20:50:39.6182036-03:00</data>
+    <likes></likes>
   </Post>
 </PostList>

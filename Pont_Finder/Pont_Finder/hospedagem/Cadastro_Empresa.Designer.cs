@@ -40,14 +40,11 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.nomeempresa = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -84,6 +81,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -95,16 +93,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
@@ -125,6 +122,7 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -160,16 +158,14 @@
             this.panel11.Controls.Add(this.textBox4);
             this.panel11.Controls.Add(this.label7);
             this.panel11.Controls.Add(this.label9);
-            this.panel11.Controls.Add(this.button3);
             this.panel11.Controls.Add(this.label11);
             this.panel11.Controls.Add(this.textBox6);
             this.panel11.Controls.Add(this.nomeempresa);
-            this.panel11.Controls.Add(this.button4);
             this.panel11.Controls.Add(this.label12);
             this.panel11.Controls.Add(this.label13);
-            this.panel11.Location = new System.Drawing.Point(320, 299);
+            this.panel11.Location = new System.Drawing.Point(320, 369);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(625, 578);
+            this.panel11.Size = new System.Drawing.Size(625, 496);
             this.panel11.TabIndex = 56;
             // 
             // textBox3
@@ -178,7 +174,7 @@
             this.textBox3.Location = new System.Drawing.Point(100, 423);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(415, 22);
-            this.textBox3.TabIndex = 6;
+            this.textBox3.TabIndex = 7;
             // 
             // textBox5
             // 
@@ -186,7 +182,7 @@
             this.textBox5.Location = new System.Drawing.Point(100, 200);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(415, 22);
-            this.textBox5.TabIndex = 10;
+            this.textBox5.TabIndex = 3;
             // 
             // label5
             // 
@@ -204,7 +200,7 @@
             this.textBox7.Location = new System.Drawing.Point(345, 350);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(170, 22);
-            this.textBox7.TabIndex = 15;
+            this.textBox7.TabIndex = 6;
             // 
             // textBox2
             // 
@@ -212,7 +208,7 @@
             this.textBox2.Location = new System.Drawing.Point(100, 123);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(415, 22);
-            this.textBox2.TabIndex = 4;
+            this.textBox2.TabIndex = 2;
             // 
             // label6
             // 
@@ -230,7 +226,7 @@
             this.textBox4.Location = new System.Drawing.Point(100, 277);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(415, 22);
-            this.textBox4.TabIndex = 8;
+            this.textBox4.TabIndex = 4;
             // 
             // label7
             // 
@@ -254,20 +250,6 @@
             this.label9.TabIndex = 3;
             this.label9.Text = "Nome fantasia";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(150, 482);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 40);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Continuar";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -284,7 +266,7 @@
             this.textBox6.Location = new System.Drawing.Point(100, 350);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(170, 22);
-            this.textBox6.TabIndex = 12;
+            this.textBox6.TabIndex = 5;
             // 
             // nomeempresa
             // 
@@ -292,20 +274,7 @@
             this.nomeempresa.Location = new System.Drawing.Point(100, 48);
             this.nomeempresa.Name = "nomeempresa";
             this.nomeempresa.Size = new System.Drawing.Size(415, 22);
-            this.nomeempresa.TabIndex = 2;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(345, 482);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 40);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "Cancelar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.nomeempresa.TabIndex = 1;
             // 
             // label12
             // 
@@ -327,19 +296,10 @@
             this.label13.TabIndex = 11;
             this.label13.Text = "CEP";
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox11.Location = new System.Drawing.Point(957, 12);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox11.TabIndex = 15;
-            this.pictureBox11.TabStop = false;
-            // 
             // panel9
             // 
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 2393);
+            this.panel9.Location = new System.Drawing.Point(0, 2463);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 57;
@@ -361,7 +321,7 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(320, 1008);
+            this.panel3.Location = new System.Drawing.Point(320, 1078);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(625, 1385);
             this.panel3.TabIndex = 52;
@@ -627,7 +587,7 @@
             this.radioButton1.Location = new System.Drawing.Point(24, 10);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(58, 20);
-            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabIndex = 8;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Hotel";
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -720,6 +680,7 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox8.Location = new System.Drawing.Point(77, 46);
             this.pictureBox8.Name = "pictureBox8";
@@ -746,8 +707,19 @@
             this.panel4.Size = new System.Drawing.Size(590, 94);
             this.panel4.TabIndex = 2;
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox11.Location = new System.Drawing.Point(957, 12);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox11.TabIndex = 15;
+            this.pictureBox11.TabStop = false;
+            // 
             // pictureBox10
             // 
+            this.pictureBox10.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox10.Location = new System.Drawing.Point(851, 12);
             this.pictureBox10.Name = "pictureBox10";
@@ -757,6 +729,7 @@
             // 
             // pictureBox9
             // 
+            this.pictureBox9.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox9.Location = new System.Drawing.Point(745, 12);
             this.pictureBox9.Name = "pictureBox9";
@@ -766,6 +739,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox7.Location = new System.Drawing.Point(639, 12);
             this.pictureBox7.Name = "pictureBox7";
@@ -775,6 +749,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6.Location = new System.Drawing.Point(533, 12);
             this.pictureBox6.Name = "pictureBox6";
@@ -784,6 +759,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Location = new System.Drawing.Point(427, 12);
             this.pictureBox5.Name = "pictureBox5";
@@ -793,6 +769,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Location = new System.Drawing.Point(321, 12);
             this.pictureBox4.Name = "pictureBox4";
@@ -802,6 +779,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Location = new System.Drawing.Point(215, 12);
             this.pictureBox3.Name = "pictureBox3";
@@ -811,6 +789,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point(109, 12);
             this.pictureBox2.Name = "pictureBox2";
@@ -820,6 +799,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(3, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -850,25 +830,45 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Adicone imagens do Hotel";
             // 
-            // label8
+            // label16
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(603, 92);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 16);
-            this.label8.TabIndex = 0;
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(511, 991);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(293, 31);
+            this.label16.TabIndex = 60;
+            this.label16.Text = "Detalhes da Empresa";
             // 
-            // label10
+            // label15
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(473, 70);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(371, 39);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Vamos evoluir juntos!";
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(341, 298);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(672, 31);
+            this.label15.TabIndex = 59;
+            this.label15.Text = "Cadastre sua empresa para divulgar seus serviços";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(950, 371);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(310, 576);
+            this.panel2.TabIndex = 51;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(5, 371);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(310, 576);
+            this.panel1.TabIndex = 50;
             // 
             // panel7
             // 
@@ -883,45 +883,25 @@
             this.panel7.Size = new System.Drawing.Size(1265, 200);
             this.panel7.TabIndex = 55;
             // 
-            // label16
+            // label10
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(511, 921);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(293, 31);
-            this.label16.TabIndex = 60;
-            this.label16.Text = "Detalhes da Empresa";
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(473, 70);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(371, 39);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Vamos evoluir juntos!";
             // 
-            // label15
+            // label8
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(341, 228);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(672, 31);
-            this.label15.TabIndex = 59;
-            this.label15.Text = "Cadastre sua empresa para divulgar seus serviços";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(950, 301);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 576);
-            this.panel2.TabIndex = 51;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(5, 301);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(310, 576);
-            this.panel1.TabIndex = 50;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(603, 92);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 16);
+            this.label8.TabIndex = 0;
             // 
             // Cadastro_Empresa
             // 
@@ -947,7 +927,6 @@
             this.Load += new System.EventHandler(this.Cadastro_Empresa_Load);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -972,6 +951,7 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -1001,11 +981,9 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox nomeempresa;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox11;

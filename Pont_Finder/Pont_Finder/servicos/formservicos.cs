@@ -95,8 +95,10 @@ namespace Pont_Finder.servicos
         {
             if (Session.Online)
             {
-                FormPost np = new FormPost();
-                np.ShowDialog();
+                FormPrincipal.MudarForm("servicos", new FormPost());
+
+
+
 
                 y = 5;
                 panel_center.Height = 180;
@@ -127,14 +129,11 @@ namespace Pont_Finder.servicos
         {
             if (Session.Online)
             {
-                CadastrarEmpresa cadEmpresa = new CadastrarEmpresa();
-                cadEmpresa.ShowDialog();
+                FormPrincipal.MudarForm("servicos", new FormCadEmpresa());
             }
             else
             {
                 MessageBox.Show("É nessessario estar logado para cadastrar uma empresa");
-              
-                FormPrincipal.MudarForm("servicos", new FormCadEmpresa());
             }
 
 
