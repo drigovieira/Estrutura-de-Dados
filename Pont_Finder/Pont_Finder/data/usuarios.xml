@@ -144,4 +144,12 @@
     <cpf>42362871029</cpf>
     <ativo>true</ativo>
   </User>
+  <User>
+    <id>18</id>
+    <nome>brayinha</nome>
+    <email>blackflames720@gmail.com</email>
+    <senha>90180270ab</senha>
+    <cpf>48253130864</cpf>
+    <ativo>true</ativo>
+  </User>
 </UserList>
