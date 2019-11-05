@@ -52,6 +52,11 @@
     <Compile Include="alimentos\Cadastro_Restaurante.Designer.cs">
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </Compile>
+    <Compile Include="alimentos\Company.cs" />
+    <Compile Include="alimentos\CompanyList.cs" />
+    <Compile Include="alimentos\Evaluation.cs" />
+    <Compile Include="alimentos\ProfileCompany.cs" />
+    <Compile Include="alimentos\ProfileList.cs" />
     <Compile Include="alimentos\Publi.cs">
       <SubType>UserControl</SubType>
     </Compile>
