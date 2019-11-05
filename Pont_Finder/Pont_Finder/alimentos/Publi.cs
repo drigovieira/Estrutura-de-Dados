@@ -12,9 +12,18 @@ namespace Pont_Finder.alimentos
 {
     public partial class Publi : UserControl
     {
-        public Publi()
+        private string nomeCompany;
+        private int ID;
+        public Publi(string Nome, int index)
         {
+            nomeCompany = Nome;
+            ID = index;
             InitializeComponent();
+        }
+
+        private void Panel5_Paint(object sender, PaintEventArgs e)
+        {
+            NomeEmpresa.Text = nomeCompany;
         }
     }
 }

@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Pesquisar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.PesquisaBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -84,7 +84,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.Pesquisar);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.PesquisaBox);
             this.panel2.Controls.Add(this.label3);
@@ -102,19 +102,20 @@
             this.comboBox1.Size = new System.Drawing.Size(172, 21);
             this.comboBox1.TabIndex = 11;
             // 
-            // button3
+            // Pesquisar
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(200, 84);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 28);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Pesquisar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Pesquisar.BackColor = System.Drawing.Color.Transparent;
+            this.Pesquisar.FlatAppearance.BorderSize = 0;
+            this.Pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Pesquisar.Location = new System.Drawing.Point(200, 84);
+            this.Pesquisar.Name = "Pesquisar";
+            this.Pesquisar.Size = new System.Drawing.Size(103, 28);
+            this.Pesquisar.TabIndex = 9;
+            this.Pesquisar.Text = "Pesquisar";
+            this.Pesquisar.UseVisualStyleBackColor = false;
+            this.Pesquisar.Click += new System.EventHandler(this.Pesquisar_Click);
             // 
             // label4
             // 
@@ -182,7 +183,7 @@
             // 
             // ListarEmpresas
             // 
-            this.ListarEmpresas.AutoScroll = true;
+            this.ListarEmpresas.AutoSize = true;
             this.ListarEmpresas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ListarEmpresas.Location = new System.Drawing.Point(325, 394);
             this.ListarEmpresas.Name = "ListarEmpresas";
@@ -272,7 +273,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Pesquisar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox PesquisaBox;
         private System.Windows.Forms.Label label3;
