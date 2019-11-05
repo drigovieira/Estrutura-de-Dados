@@ -58,6 +58,12 @@
     <Compile Include="alimentos\Publi.Designer.cs">
       <DependentUpon>Publi.cs</DependentUpon>
     </Compile>
+    <Compile Include="alimentos\TopEmpresa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\TopEmpresa.Designer.cs">
+      <DependentUpon>TopEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="alimentos\Visualizar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Publi.resx">
       <DependentUpon>Publi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\TopEmpresa.resx">
+      <DependentUpon>TopEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Visualizar.resx">
       <DependentUpon>Visualizar.cs</DependentUpon>
