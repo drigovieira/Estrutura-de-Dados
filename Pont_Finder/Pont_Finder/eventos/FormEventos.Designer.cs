@@ -338,6 +338,7 @@
             this.button4.TabIndex = 23;
             this.button4.Text = "+ Postar evento";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // panel7
             // 

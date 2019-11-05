@@ -16,5 +16,14 @@ namespace Pont_Finder.eventos
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Imagem = new OpenFileDialog();
+
+            if (Imagem.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.ImageLocation = Imagem.FileName;
+            }
     }
 }
