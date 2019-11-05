@@ -164,6 +164,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
             this.Name = "Recuperar_senha";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recuperar_senha";
             this.Load += new System.EventHandler(this.Recuperar_senha_Load);
             this.ResumeLayout(false);
