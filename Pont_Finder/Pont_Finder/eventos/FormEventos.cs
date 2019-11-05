@@ -21,10 +21,5 @@ namespace Pont_Finder
         {
 
         }
-
-        private void Button4_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
