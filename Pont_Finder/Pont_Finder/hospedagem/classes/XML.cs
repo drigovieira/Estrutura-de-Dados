@@ -21,7 +21,7 @@ namespace Pont_Finder.hospedagem
             */
         }
 
-        public void Add(int id, string nomeempresa, string nomefantasia, long cnpj, string endereco, int cep, int telefone, string email, string foto)
+        public void Add(int id, string nomeempresa, string nomefantasia, long cnpj, string endereco, int cep, int telefone, string email, string foto, string descricao)
         {
 
             XElement empresa_host =
@@ -33,8 +33,9 @@ namespace Pont_Finder.hospedagem
                 new XElement("Endereço", endereco),
                 new XElement("CepCep", cep),
                 new XElement("Telefone", telefone),
-                new XElement("Foto", email),
-                new XElement("Email", foto));
+                new XElement("Email", email),
+                new XElement("Foto", foto),
+                new XElement("Descricao", descricao));
 
 
             XDocument doc = XDocument.Load(caminho);

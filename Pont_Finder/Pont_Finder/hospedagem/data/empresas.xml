@@ -2,24 +2,14 @@
 <modulos>
   <Empresa>
     <id>0</id>
-    <NomeEmpresa>emp1</NomeEmpresa>
-    <NomeFantasia>fan1</NomeFantasia>
-    <CNPJ>12</CNPJ>
-    <Endereço>ddfsd</Endereço>
-    <CepCep>33</CepCep>
-    <Telefone>656</Telefone>
+    <NomeEmpresa>Coxinhas ltda</NomeEmpresa>
+    <NomeFantasia>Coxinhas mania</NomeFantasia>
+    <CNPJ>12345678978</CNPJ>
+    <Endereço>Rua xyz, numero 0 bairro xxx</Endereço>
+    <CepCep>1245</CepCep>
+    <Telefone>31441234</Telefone>
+    <Email>teste@email.com</Email>
     <Foto>CAMINHO</Foto>
-    <Email>asd</Email>
-  </Empresa>
-  <Empresa>
-    <id>1</id>
-    <NomeEmpresa>sdfsdfds1</NomeEmpresa>
-    <NomeFantasia>fdsfsdf</NomeFantasia>
-    <CNPJ>324234</CNPJ>
-    <Endereço>gdfgfd12</Endereço>
-    <CepCep>55</CepCep>
-    <Telefone>7686</Telefone>
-    <Foto>CAMINHO</Foto>
-    <Email>afvcbvbbb</Email>
+    <Descricao>Loja voltada para o ramo dos salgados!</Descricao>
   </Empresa>
 </modulos>
