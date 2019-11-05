@@ -60,6 +60,7 @@ namespace Pont_Finder
 
         private void Button_salvar_Click(object sender, EventArgs e)
         {
+            servicos.classes.PostList.XmlSave();
             XmlLi xmlli = new XmlLi();
             //final do programa salvando...
             xmlli.Drop();

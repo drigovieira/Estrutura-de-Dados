@@ -30,7 +30,10 @@
         {
             System.Windows.Forms.Panel panel1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPost));
+            this.label4 = new System.Windows.Forms.Label();
+            this.tb_descricao = new System.Windows.Forms.TextBox();
             this.bt_icone = new System.Windows.Forms.Button();
+            this.pb_icone = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_titulo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,9 +44,6 @@
             this.tb_detalhes = new System.Windows.Forms.TextBox();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tb_descricao = new System.Windows.Forms.TextBox();
-            this.pb_icone = new System.Windows.Forms.PictureBox();
             this.pb_wallpaper = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             panel1 = new System.Windows.Forms.Panel();
@@ -74,6 +74,26 @@
             panel1.TabIndex = 3;
             panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(268, 503);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Descrição completa";
+            // 
+            // tb_descricao
+            // 
+            this.tb_descricao.BackColor = System.Drawing.SystemColors.Control;
+            this.tb_descricao.Location = new System.Drawing.Point(126, 523);
+            this.tb_descricao.MaxLength = 380;
+            this.tb_descricao.Multiline = true;
+            this.tb_descricao.Name = "tb_descricao";
+            this.tb_descricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tb_descricao.Size = new System.Drawing.Size(390, 150);
+            this.tb_descricao.TabIndex = 11;
+            // 
             // bt_icone
             // 
             this.bt_icone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
@@ -86,6 +106,18 @@
             this.bt_icone.Text = "Selecionar";
             this.bt_icone.UseVisualStyleBackColor = false;
             this.bt_icone.Click += new System.EventHandler(this.Bt_icone_Click);
+            // 
+            // pb_icone
+            // 
+            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage;
+            this.pb_icone.InitialImage = global::Pont_Finder.Properties.Resources.offImage;
+            this.pb_icone.Location = new System.Drawing.Point(132, 12);
+            this.pb_icone.Name = "pb_icone";
+            this.pb_icone.Size = new System.Drawing.Size(200, 150);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_icone.TabIndex = 9;
+            this.pb_icone.TabStop = false;
             // 
             // label3
             // 
@@ -100,7 +132,7 @@
             // 
             this.tb_titulo.Location = new System.Drawing.Point(132, 197);
             this.tb_titulo.Name = "tb_titulo";
-            this.tb_titulo.Size = new System.Drawing.Size(384, 20);
+            this.tb_titulo.Size = new System.Drawing.Size(390, 20);
             this.tb_titulo.TabIndex = 2;
             // 
             // label2
@@ -180,38 +212,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1265, 100);
             this.panel3.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(268, 503);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Descrição completa";
-            // 
-            // tb_descricao
-            // 
-            this.tb_descricao.BackColor = System.Drawing.SystemColors.Control;
-            this.tb_descricao.Location = new System.Drawing.Point(126, 523);
-            this.tb_descricao.MaxLength = 380;
-            this.tb_descricao.Multiline = true;
-            this.tb_descricao.Name = "tb_descricao";
-            this.tb_descricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_descricao.Size = new System.Drawing.Size(390, 150);
-            this.tb_descricao.TabIndex = 11;
-            // 
-            // pb_icone
-            // 
-            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage;
-            this.pb_icone.InitialImage = global::Pont_Finder.Properties.Resources.offImage;
-            this.pb_icone.Location = new System.Drawing.Point(132, 12);
-            this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(200, 150);
-            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_icone.TabIndex = 9;
-            this.pb_icone.TabStop = false;
             // 
             // pb_wallpaper
             // 

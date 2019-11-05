@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PostCardEdit));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.lb_data = new System.Windows.Forms.Label();
             this.lb_descricao = new System.Windows.Forms.Label();
+            this.pb_down = new System.Windows.Forms.PictureBox();
+            this.pb_up = new System.Windows.Forms.PictureBox();
             this.lb_username = new System.Windows.Forms.Label();
+            this.pb_user = new System.Windows.Forms.PictureBox();
             this.bt_obter = new System.Windows.Forms.Button();
             this.lb_valor = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
             this.lb_titulo = new System.Windows.Forms.Label();
-            this.pb_down = new System.Windows.Forms.PictureBox();
-            this.pb_up = new System.Windows.Forms.PictureBox();
-            this.pb_user = new System.Windows.Forms.PictureBox();
             this.pb_icone = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
@@ -71,6 +71,30 @@
             this.panel1.Size = new System.Drawing.Size(1005, 200);
             this.panel1.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(882, 45);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 28);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Editar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.OrangeRed;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(882, 85);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(86, 28);
+            this.button3.TabIndex = 31;
+            this.button3.Text = "Remover";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // lb_data
             // 
             this.lb_data.AutoSize = true;
@@ -90,6 +114,30 @@
             this.lb_descricao.TabIndex = 29;
             this.lb_descricao.Text = "descricao";
             // 
+            // pb_down
+            // 
+            this.pb_down.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_down.BackgroundImage")));
+            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_down.Image = global::Pont_Finder.Properties.Resources.downgrey;
+            this.pb_down.Location = new System.Drawing.Point(701, 84);
+            this.pb_down.Name = "pb_down";
+            this.pb_down.Size = new System.Drawing.Size(25, 15);
+            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_down.TabIndex = 28;
+            this.pb_down.TabStop = false;
+            // 
+            // pb_up
+            // 
+            this.pb_up.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_up.BackgroundImage")));
+            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_up.Image = global::Pont_Finder.Properties.Resources.upgrey;
+            this.pb_up.Location = new System.Drawing.Point(701, 35);
+            this.pb_up.Name = "pb_up";
+            this.pb_up.Size = new System.Drawing.Size(25, 15);
+            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_up.TabIndex = 27;
+            this.pb_up.TabStop = false;
+            // 
             // lb_username
             // 
             this.lb_username.AutoSize = true;
@@ -98,6 +146,14 @@
             this.lb_username.Size = new System.Drawing.Size(27, 13);
             this.lb_username.TabIndex = 25;
             this.lb_username.Text = "user";
+            // 
+            // pb_user
+            // 
+            this.pb_user.Location = new System.Drawing.Point(788, 45);
+            this.pb_user.Name = "pb_user";
+            this.pb_user.Size = new System.Drawing.Size(40, 23);
+            this.pb_user.TabIndex = 24;
+            this.pb_user.TabStop = false;
             // 
             // bt_obter
             // 
@@ -111,6 +167,7 @@
             this.bt_obter.TabIndex = 23;
             this.bt_obter.Text = "Visualizar";
             this.bt_obter.UseVisualStyleBackColor = false;
+            this.bt_obter.Click += new System.EventHandler(this.bt_obter_Click);
             // 
             // lb_valor
             // 
@@ -143,38 +200,6 @@
             this.lb_titulo.TabIndex = 15;
             this.lb_titulo.Text = "titulo";
             // 
-            // pb_down
-            // 
-            this.pb_down.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_down.BackgroundImage")));
-            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_down.Image = global::Pont_Finder.Properties.Resources.downgrey;
-            this.pb_down.Location = new System.Drawing.Point(701, 84);
-            this.pb_down.Name = "pb_down";
-            this.pb_down.Size = new System.Drawing.Size(25, 15);
-            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_down.TabIndex = 28;
-            this.pb_down.TabStop = false;
-            // 
-            // pb_up
-            // 
-            this.pb_up.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_up.BackgroundImage")));
-            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_up.Image = global::Pont_Finder.Properties.Resources.upgrey;
-            this.pb_up.Location = new System.Drawing.Point(701, 35);
-            this.pb_up.Name = "pb_up";
-            this.pb_up.Size = new System.Drawing.Size(25, 15);
-            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_up.TabIndex = 27;
-            this.pb_up.TabStop = false;
-            // 
-            // pb_user
-            // 
-            this.pb_user.Location = new System.Drawing.Point(788, 45);
-            this.pb_user.Name = "pb_user";
-            this.pb_user.Size = new System.Drawing.Size(40, 23);
-            this.pb_user.TabIndex = 24;
-            this.pb_user.TabStop = false;
-            // 
             // pb_icone
             // 
             this.pb_icone.Location = new System.Drawing.Point(30, 26);
@@ -183,30 +208,6 @@
             this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_icone.TabIndex = 14;
             this.pb_icone.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(882, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 28);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Editar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.OrangeRed;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(882, 85);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 28);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "Remover";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // PostCardEdit
             // 

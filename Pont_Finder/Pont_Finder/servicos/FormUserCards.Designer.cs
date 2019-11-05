@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_center = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel_center = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +45,17 @@
             this.panel1.Size = new System.Drawing.Size(1055, 460);
             this.panel1.TabIndex = 10;
             // 
+            // panel_center
+            // 
+            this.panel_center.AutoScroll = true;
+            this.panel_center.BackColor = System.Drawing.Color.Transparent;
+            this.panel_center.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_center.Location = new System.Drawing.Point(25, 25);
+            this.panel_center.Name = "panel_center";
+            this.panel_center.Size = new System.Drawing.Size(1005, 200);
+            this.panel_center.TabIndex = 18;
+            this.panel_center.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_center_Paint);
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
@@ -57,6 +68,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "Adicionar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -67,17 +79,6 @@
             this.label1.Size = new System.Drawing.Size(421, 37);
             this.label1.TabIndex = 11;
             this.label1.Text = "Cadastre seu serviço aqui!";
-            // 
-            // panel_center
-            // 
-            this.panel_center.AutoScroll = true;
-            this.panel_center.BackColor = System.Drawing.Color.Transparent;
-            this.panel_center.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_center.Location = new System.Drawing.Point(25, 25);
-            this.panel_center.Name = "panel_center";
-            this.panel_center.Size = new System.Drawing.Size(1005, 200);
-            this.panel_center.TabIndex = 18;
-            this.panel_center.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_center_Paint);
             // 
             // FormUserCards
             // 

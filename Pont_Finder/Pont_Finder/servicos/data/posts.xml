@@ -5,12 +5,25 @@
     <titulo>adgsdf</titulo>
     <valor>342</valor>
     <detalhes>sdfgg</detalhes>
-    <detalhes></detalhes>
+    <detalhes />
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//0.jpg</image>
     <cpf>12345</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-04T20:50:39.6182036-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>1</id>
+    <titulo>Thied Code</titulo>
+    <valor>12312</valor>
+    <detalhes>Programa;áo e desenvolvimento de Softwarss</detalhes>
+    <detalhes></detalhes>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//1.jpg</image>
+    <cpf>12345</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-04T23:12:42.6025012-03:00</data>
     <likes></likes>
   </Post>
 </PostList>

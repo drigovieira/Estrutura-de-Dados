@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadEmpresa));
             this.panel11 = new System.Windows.Forms.Panel();
+            this.AddFotoEmpresa = new System.Windows.Forms.Button();
+            this.EmpresaFoto = new System.Windows.Forms.PictureBox();
             this.tb_email = new System.Windows.Forms.TextBox();
             this.tb_cnpj = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,11 +55,9 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.EmpresaFoto = new System.Windows.Forms.PictureBox();
-            this.AddFotoEmpresa = new System.Windows.Forms.Button();
             this.panel11.SuspendLayout();
-            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmpresaFoto)).BeginInit();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel11
@@ -86,6 +86,28 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(625, 805);
             this.panel11.TabIndex = 63;
+            // 
+            // AddFotoEmpresa
+            // 
+            this.AddFotoEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.AddFotoEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddFotoEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddFotoEmpresa.ForeColor = System.Drawing.Color.White;
+            this.AddFotoEmpresa.Location = new System.Drawing.Point(341, 87);
+            this.AddFotoEmpresa.Name = "AddFotoEmpresa";
+            this.AddFotoEmpresa.Size = new System.Drawing.Size(174, 55);
+            this.AddFotoEmpresa.TabIndex = 16;
+            this.AddFotoEmpresa.Text = "Adcionar foto de perfil";
+            this.AddFotoEmpresa.UseVisualStyleBackColor = false;
+            // 
+            // EmpresaFoto
+            // 
+            this.EmpresaFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EmpresaFoto.Location = new System.Drawing.Point(100, 12);
+            this.EmpresaFoto.Name = "EmpresaFoto";
+            this.EmpresaFoto.Size = new System.Drawing.Size(200, 200);
+            this.EmpresaFoto.TabIndex = 15;
+            this.EmpresaFoto.TabStop = false;
             // 
             // tb_email
             // 
@@ -314,28 +336,6 @@
             this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 0;
             // 
-            // EmpresaFoto
-            // 
-            this.EmpresaFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmpresaFoto.Location = new System.Drawing.Point(100, 12);
-            this.EmpresaFoto.Name = "EmpresaFoto";
-            this.EmpresaFoto.Size = new System.Drawing.Size(200, 200);
-            this.EmpresaFoto.TabIndex = 15;
-            this.EmpresaFoto.TabStop = false;
-            // 
-            // AddFotoEmpresa
-            // 
-            this.AddFotoEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.AddFotoEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddFotoEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddFotoEmpresa.ForeColor = System.Drawing.Color.White;
-            this.AddFotoEmpresa.Location = new System.Drawing.Point(341, 87);
-            this.AddFotoEmpresa.Name = "AddFotoEmpresa";
-            this.AddFotoEmpresa.Size = new System.Drawing.Size(174, 55);
-            this.AddFotoEmpresa.TabIndex = 16;
-            this.AddFotoEmpresa.Text = "Adcionar foto de perfil";
-            this.AddFotoEmpresa.UseVisualStyleBackColor = false;
-            // 
             // FormCadEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,9 +356,9 @@
             this.Text = "FormCadEmpresa";
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmpresaFoto)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmpresaFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

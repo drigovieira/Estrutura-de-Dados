@@ -1,13 +1,3 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulos>
-  <servico>
-    <nome>Tooperson</nome>
-    <nomeFantasia>Toopersons</nomeFantasia>
-    <email>toopersons@gmai.com</email>
-    <telefone>981827354</telefone>
-    <endereco>Cruzeiro-SP</endereco>
-    <cnpj>12622000</cnpj>
-    <cpf>12345</cpf>
-    <status>true</status>
-  </servico>
 </modulos>

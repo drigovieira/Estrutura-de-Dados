@@ -14,6 +14,8 @@ namespace Pont_Finder
         [STAThread]
         static void Main()
         {
+           servicos.classes.PostList.XmlLoad();
+
             //carregando o xml
             XmlLi xmlli = new XmlLi();      
             User user = new User();

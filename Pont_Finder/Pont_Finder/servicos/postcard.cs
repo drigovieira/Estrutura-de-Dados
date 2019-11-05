@@ -194,5 +194,10 @@ namespace Pont_Finder.servicos
         {
 
         }
+
+        private void bt_obter_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new FormVisualizarPost());
+        }
     }
 }

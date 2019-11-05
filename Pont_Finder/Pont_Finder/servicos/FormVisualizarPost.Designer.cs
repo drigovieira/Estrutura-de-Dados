@@ -36,18 +36,19 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lb_descricao = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lb_fantasia = new System.Windows.Forms.Label();
-            this.tb_cnpj = new System.Windows.Forms.Label();
-            this.tb_email = new System.Windows.Forms.Label();
-            this.tb_Endereco = new System.Windows.Forms.Label();
-            this.tb_Telefone = new System.Windows.Forms.Label();
             this.tb_cep = new System.Windows.Forms.Label();
+            this.tb_Telefone = new System.Windows.Forms.Label();
+            this.tb_Endereco = new System.Windows.Forms.Label();
+            this.tb_email = new System.Windows.Forms.Label();
+            this.tb_cnpj = new System.Windows.Forms.Label();
+            this.lb_fantasia = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icon)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_wallpaper
@@ -117,87 +118,90 @@
             this.lb_descricao.TabIndex = 0;
             this.lb_descricao.Text = "Descrição geral";
             // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(131, 983);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 217);
-            this.panel3.TabIndex = 25;
-            // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.tb_cep);
             this.panel4.Controls.Add(this.tb_Telefone);
             this.panel4.Controls.Add(this.tb_Endereco);
             this.panel4.Controls.Add(this.tb_email);
             this.panel4.Controls.Add(this.tb_cnpj);
             this.panel4.Controls.Add(this.lb_fantasia);
-            this.panel4.Location = new System.Drawing.Point(337, 983);
+            this.panel4.Location = new System.Drawing.Point(131, 983);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(849, 217);
+            this.panel4.Size = new System.Drawing.Size(1055, 217);
             this.panel4.TabIndex = 26;
             // 
-            // lb_fantasia
+            // tb_cep
             // 
-            this.lb_fantasia.AutoSize = true;
-            this.lb_fantasia.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_fantasia.Location = new System.Drawing.Point(15, 11);
-            this.lb_fantasia.Name = "lb_fantasia";
-            this.lb_fantasia.Size = new System.Drawing.Size(160, 29);
-            this.lb_fantasia.TabIndex = 0;
-            this.lb_fantasia.Text = "Nome fantasia";
-            this.lb_fantasia.Click += new System.EventHandler(this.label1_Click);
+            this.tb_cep.AutoSize = true;
+            this.tb_cep.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_cep.Location = new System.Drawing.Point(223, 175);
+            this.tb_cep.Name = "tb_cep";
+            this.tb_cep.Size = new System.Drawing.Size(51, 29);
+            this.tb_cep.TabIndex = 5;
+            this.tb_cep.Text = "CEP";
             // 
-            // tb_cnpj
+            // tb_Telefone
             // 
-            this.tb_cnpj.AutoSize = true;
-            this.tb_cnpj.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cnpj.Location = new System.Drawing.Point(15, 50);
-            this.tb_cnpj.Name = "tb_cnpj";
-            this.tb_cnpj.Size = new System.Drawing.Size(62, 29);
-            this.tb_cnpj.TabIndex = 1;
-            this.tb_cnpj.Text = "CNPJ";
-            // 
-            // tb_email
-            // 
-            this.tb_email.AutoSize = true;
-            this.tb_email.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_email.Location = new System.Drawing.Point(15, 180);
-            this.tb_email.Name = "tb_email";
-            this.tb_email.Size = new System.Drawing.Size(76, 29);
-            this.tb_email.TabIndex = 2;
-            this.tb_email.Text = "E-mail";
+            this.tb_Telefone.AutoSize = true;
+            this.tb_Telefone.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Telefone.Location = new System.Drawing.Point(439, 175);
+            this.tb_Telefone.Name = "tb_Telefone";
+            this.tb_Telefone.Size = new System.Drawing.Size(99, 29);
+            this.tb_Telefone.TabIndex = 4;
+            this.tb_Telefone.Text = "Telefone";
             // 
             // tb_Endereco
             // 
             this.tb_Endereco.AutoSize = true;
             this.tb_Endereco.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Endereco.Location = new System.Drawing.Point(15, 92);
+            this.tb_Endereco.Location = new System.Drawing.Point(223, 132);
             this.tb_Endereco.Name = "tb_Endereco";
             this.tb_Endereco.Size = new System.Drawing.Size(107, 29);
             this.tb_Endereco.TabIndex = 3;
             this.tb_Endereco.Text = "Endereco";
             this.tb_Endereco.Click += new System.EventHandler(this.tb_Endereco_Click);
             // 
-            // tb_Telefone
+            // tb_email
             // 
-            this.tb_Telefone.AutoSize = true;
-            this.tb_Telefone.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Telefone.Location = new System.Drawing.Point(231, 135);
-            this.tb_Telefone.Name = "tb_Telefone";
-            this.tb_Telefone.Size = new System.Drawing.Size(99, 29);
-            this.tb_Telefone.TabIndex = 4;
-            this.tb_Telefone.Text = "Telefone";
+            this.tb_email.AutoSize = true;
+            this.tb_email.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_email.Location = new System.Drawing.Point(223, 50);
+            this.tb_email.Name = "tb_email";
+            this.tb_email.Size = new System.Drawing.Size(76, 29);
+            this.tb_email.TabIndex = 2;
+            this.tb_email.Text = "E-mail";
             // 
-            // tb_cep
+            // tb_cnpj
             // 
-            this.tb_cep.AutoSize = true;
-            this.tb_cep.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cep.Location = new System.Drawing.Point(15, 135);
-            this.tb_cep.Name = "tb_cep";
-            this.tb_cep.Size = new System.Drawing.Size(51, 29);
-            this.tb_cep.TabIndex = 5;
-            this.tb_cep.Text = "CEP";
+            this.tb_cnpj.AutoSize = true;
+            this.tb_cnpj.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_cnpj.Location = new System.Drawing.Point(223, 88);
+            this.tb_cnpj.Name = "tb_cnpj";
+            this.tb_cnpj.Size = new System.Drawing.Size(62, 29);
+            this.tb_cnpj.TabIndex = 1;
+            this.tb_cnpj.Text = "CNPJ";
+            // 
+            // lb_fantasia
+            // 
+            this.lb_fantasia.AutoSize = true;
+            this.lb_fantasia.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_fantasia.Location = new System.Drawing.Point(223, 9);
+            this.lb_fantasia.Name = "lb_fantasia";
+            this.lb_fantasia.Size = new System.Drawing.Size(74, 29);
+            this.lb_fantasia.TabIndex = 0;
+            this.lb_fantasia.Text = "Nome";
+            this.lb_fantasia.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // FormVisualizarPost
             // 
@@ -207,7 +211,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_rs);
@@ -215,6 +218,8 @@
             this.Controls.Add(this.pb_icon);
             this.Controls.Add(this.pb_wallpaper);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "FormVisualizarPost";
             this.Text = "FormVisualizarPost";
             this.Load += new System.EventHandler(this.FormVisualizarPost_Load);
@@ -224,6 +229,7 @@
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,7 +244,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lb_descricao;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lb_fantasia;
         private System.Windows.Forms.Label tb_email;
@@ -246,5 +251,6 @@
         private System.Windows.Forms.Label tb_Endereco;
         private System.Windows.Forms.Label tb_cep;
         private System.Windows.Forms.Label tb_Telefone;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
