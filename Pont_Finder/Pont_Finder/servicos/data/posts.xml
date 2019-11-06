@@ -52,4 +52,33 @@
     <data>2019-11-06T17:21:56.7943227-03:00</data>
     <likes></likes>
   </Post>
+  <Post>
+    <id>4</id>
+    <titulo>Freedom Call Cover</titulo>
+    <valor>250</valor>
+    <detalhes>Banda cover do Freedom Call</detalhes>
+    <descricao>Banda cover do Freedom Call
+Repertório
+1 - Warriors
+2 - 111
+3 - Valley Of Kingdom
+4 - Freedom Call
+5 - Union of The Strong
+6 - Metal Invasion
+7 - Metal Is For Everyone
+8 - M.E.T.A.L.
+9 - Power &amp; Glory
+10 - High Up
+11 - The Ace Of The Unicorn
+12 - Among The Shadows
+13 - Bleeding Heart
+14 - Land Of Light
+15 - Paladin</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//4.jpg</image>
+    <cpf>91638965080</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-06T18:52:30.7859558-03:00</data>
+    <likes></likes>
+  </Post>
 </PostList>

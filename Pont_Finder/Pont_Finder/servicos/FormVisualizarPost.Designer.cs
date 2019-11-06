@@ -76,7 +76,7 @@
             // 
             this.lb_titulo.AutoSize = true;
             this.lb_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titulo.Location = new System.Drawing.Point(954, 202);
+            this.lb_titulo.Location = new System.Drawing.Point(491, 202);
             this.lb_titulo.Name = "lb_titulo";
             this.lb_titulo.Size = new System.Drawing.Size(87, 31);
             this.lb_titulo.TabIndex = 21;
@@ -86,7 +86,7 @@
             // 
             this.lb_valor.AutoSize = true;
             this.lb_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_valor.Location = new System.Drawing.Point(954, 278);
+            this.lb_valor.Location = new System.Drawing.Point(491, 278);
             this.lb_valor.Name = "lb_valor";
             this.lb_valor.Size = new System.Drawing.Size(51, 31);
             this.lb_valor.TabIndex = 22;
@@ -104,18 +104,20 @@
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lb_descricao);
-            this.panel2.Location = new System.Drawing.Point(131, 546);
+            this.panel2.Location = new System.Drawing.Point(131, 455);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1055, 431);
+            this.panel2.Size = new System.Drawing.Size(1055, 448);
             this.panel2.TabIndex = 24;
             // 
             // lb_descricao
             // 
             this.lb_descricao.AutoSize = true;
             this.lb_descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_descricao.Location = new System.Drawing.Point(50, 24);
+            this.lb_descricao.Location = new System.Drawing.Point(51, 10);
+            this.lb_descricao.MaximumSize = new System.Drawing.Size(950, 425);
+            this.lb_descricao.MinimumSize = new System.Drawing.Size(950, 425);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(162, 25);
+            this.lb_descricao.Size = new System.Drawing.Size(950, 425);
             this.lb_descricao.TabIndex = 0;
             this.lb_descricao.Text = "Descrição geral";
             // 

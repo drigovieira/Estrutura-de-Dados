@@ -152,4 +152,12 @@
     <cpf>48253130864</cpf>
     <ativo>true</ativo>
   </User>
+  <User>
+    <id>19</id>
+    <nome>SotnDragon</nome>
+    <email>sotndragon@gmail.com</email>
+    <senha>12345</senha>
+    <cpf>91638965080</cpf>
+    <ativo>true</ativo>
+  </User>
 </UserList>
