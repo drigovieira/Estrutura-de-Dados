@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.eventos
 {
-    public partial class Postagem : Form
+    public partial class CadEmpresa : Form
     {
-        public Postagem()
+        public CadEmpresa()
         {
             InitializeComponent();
+        }
+
+        private void CadEmpresa_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

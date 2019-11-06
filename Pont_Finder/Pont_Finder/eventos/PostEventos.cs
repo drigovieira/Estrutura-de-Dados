@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace Pont_Finder
 {
-    public partial class FormEventos : Form
+    public partial class PostEventos : Form
     {
-        public FormEventos()
+        public PostEventos()
         {
             InitializeComponent();
         }
 
-        private void Btn_com_Click(object sender, EventArgs e)
+        private void PostEventos_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void Button4_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

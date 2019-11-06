@@ -303,7 +303,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 2463);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1282, 100);
+            this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 57;
             // 
             // panel3
@@ -893,7 +893,7 @@
             this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1282, 200);
+            this.panel7.Size = new System.Drawing.Size(1265, 200);
             this.panel7.TabIndex = 55;
             // 
             // label10
@@ -930,7 +930,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel3);
