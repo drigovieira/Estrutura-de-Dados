@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVisualizarPost));
             this.pb_wallpaper = new System.Windows.Forms.PictureBox();
-            this.pb_icon = new System.Windows.Forms.PictureBox();
-            this.lb__titulo = new System.Windows.Forms.Label();
-            this.lb_rs = new System.Windows.Forms.Label();
+            this.pb_icone = new System.Windows.Forms.PictureBox();
+            this.lb_titulo = new System.Windows.Forms.Label();
+            this.lb_valor = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lb_descricao = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.tb_cep = new System.Windows.Forms.Label();
-            this.tb_Telefone = new System.Windows.Forms.Label();
-            this.tb_Endereco = new System.Windows.Forms.Label();
-            this.tb_email = new System.Windows.Forms.Label();
-            this.tb_cnpj = new System.Windows.Forms.Label();
-            this.lb_fantasia = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lb_cep = new System.Windows.Forms.Label();
+            this.lb_telefone = new System.Windows.Forms.Label();
+            this.lb_endereco = new System.Windows.Forms.Label();
+            this.lb_email = new System.Windows.Forms.Label();
+            this.lb_cpf = new System.Windows.Forms.Label();
+            this.lb_fantasia = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,35 +61,36 @@
             this.pb_wallpaper.TabIndex = 19;
             this.pb_wallpaper.TabStop = false;
             // 
-            // pb_icon
+            // pb_icone
             // 
-            this.pb_icon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_icon.Location = new System.Drawing.Point(131, 202);
-            this.pb_icon.Name = "pb_icon";
-            this.pb_icon.Size = new System.Drawing.Size(400, 300);
-            this.pb_icon.TabIndex = 20;
-            this.pb_icon.TabStop = false;
-            this.pb_icon.Click += new System.EventHandler(this.pb_icon_Click);
+            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_icone.Location = new System.Drawing.Point(131, 202);
+            this.pb_icone.Name = "pb_icone";
+            this.pb_icone.Size = new System.Drawing.Size(300, 225);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_icone.TabIndex = 20;
+            this.pb_icone.TabStop = false;
+            this.pb_icone.Click += new System.EventHandler(this.pb_icon_Click);
             // 
-            // lb__titulo
+            // lb_titulo
             // 
-            this.lb__titulo.AutoSize = true;
-            this.lb__titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb__titulo.Location = new System.Drawing.Point(954, 203);
-            this.lb__titulo.Name = "lb__titulo";
-            this.lb__titulo.Size = new System.Drawing.Size(87, 31);
-            this.lb__titulo.TabIndex = 21;
-            this.lb__titulo.Text = "Titulo";
+            this.lb_titulo.AutoSize = true;
+            this.lb_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titulo.Location = new System.Drawing.Point(954, 202);
+            this.lb_titulo.Name = "lb_titulo";
+            this.lb_titulo.Size = new System.Drawing.Size(87, 31);
+            this.lb_titulo.TabIndex = 21;
+            this.lb_titulo.Text = "Titulo";
             // 
-            // lb_rs
+            // lb_valor
             // 
-            this.lb_rs.AutoSize = true;
-            this.lb_rs.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_rs.Location = new System.Drawing.Point(973, 346);
-            this.lb_rs.Name = "lb_rs";
-            this.lb_rs.Size = new System.Drawing.Size(51, 31);
-            this.lb_rs.TabIndex = 22;
-            this.lb_rs.Text = "R$";
+            this.lb_valor.AutoSize = true;
+            this.lb_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_valor.Location = new System.Drawing.Point(954, 278);
+            this.lb_valor.Name = "lb_valor";
+            this.lb_valor.Size = new System.Drawing.Size(51, 31);
+            this.lb_valor.TabIndex = 22;
+            this.lb_valor.Text = "R$";
             // 
             // panel1
             // 
@@ -121,67 +122,76 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.tb_cep);
-            this.panel4.Controls.Add(this.tb_Telefone);
-            this.panel4.Controls.Add(this.tb_Endereco);
-            this.panel4.Controls.Add(this.tb_email);
-            this.panel4.Controls.Add(this.tb_cnpj);
+            this.panel4.Controls.Add(this.lb_cep);
+            this.panel4.Controls.Add(this.lb_telefone);
+            this.panel4.Controls.Add(this.lb_endereco);
+            this.panel4.Controls.Add(this.lb_email);
+            this.panel4.Controls.Add(this.lb_cpf);
             this.panel4.Controls.Add(this.lb_fantasia);
             this.panel4.Location = new System.Drawing.Point(131, 983);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1055, 217);
             this.panel4.TabIndex = 26;
             // 
-            // tb_cep
+            // pictureBox1
             // 
-            this.tb_cep.AutoSize = true;
-            this.tb_cep.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cep.Location = new System.Drawing.Point(223, 175);
-            this.tb_cep.Name = "tb_cep";
-            this.tb_cep.Size = new System.Drawing.Size(51, 29);
-            this.tb_cep.TabIndex = 5;
-            this.tb_cep.Text = "CEP";
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
-            // tb_Telefone
+            // lb_cep
             // 
-            this.tb_Telefone.AutoSize = true;
-            this.tb_Telefone.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Telefone.Location = new System.Drawing.Point(439, 175);
-            this.tb_Telefone.Name = "tb_Telefone";
-            this.tb_Telefone.Size = new System.Drawing.Size(99, 29);
-            this.tb_Telefone.TabIndex = 4;
-            this.tb_Telefone.Text = "Telefone";
+            this.lb_cep.AutoSize = true;
+            this.lb_cep.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cep.Location = new System.Drawing.Point(223, 175);
+            this.lb_cep.Name = "lb_cep";
+            this.lb_cep.Size = new System.Drawing.Size(51, 29);
+            this.lb_cep.TabIndex = 5;
+            this.lb_cep.Text = "CEP";
             // 
-            // tb_Endereco
+            // lb_telefone
             // 
-            this.tb_Endereco.AutoSize = true;
-            this.tb_Endereco.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Endereco.Location = new System.Drawing.Point(223, 132);
-            this.tb_Endereco.Name = "tb_Endereco";
-            this.tb_Endereco.Size = new System.Drawing.Size(107, 29);
-            this.tb_Endereco.TabIndex = 3;
-            this.tb_Endereco.Text = "Endereco";
-            this.tb_Endereco.Click += new System.EventHandler(this.tb_Endereco_Click);
+            this.lb_telefone.AutoSize = true;
+            this.lb_telefone.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_telefone.Location = new System.Drawing.Point(439, 175);
+            this.lb_telefone.Name = "lb_telefone";
+            this.lb_telefone.Size = new System.Drawing.Size(99, 29);
+            this.lb_telefone.TabIndex = 4;
+            this.lb_telefone.Text = "Telefone";
             // 
-            // tb_email
+            // lb_endereco
             // 
-            this.tb_email.AutoSize = true;
-            this.tb_email.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_email.Location = new System.Drawing.Point(223, 50);
-            this.tb_email.Name = "tb_email";
-            this.tb_email.Size = new System.Drawing.Size(76, 29);
-            this.tb_email.TabIndex = 2;
-            this.tb_email.Text = "E-mail";
+            this.lb_endereco.AutoSize = true;
+            this.lb_endereco.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_endereco.Location = new System.Drawing.Point(223, 132);
+            this.lb_endereco.Name = "lb_endereco";
+            this.lb_endereco.Size = new System.Drawing.Size(107, 29);
+            this.lb_endereco.TabIndex = 3;
+            this.lb_endereco.Text = "Endereco";
+            this.lb_endereco.Click += new System.EventHandler(this.tb_Endereco_Click);
             // 
-            // tb_cnpj
+            // lb_email
             // 
-            this.tb_cnpj.AutoSize = true;
-            this.tb_cnpj.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cnpj.Location = new System.Drawing.Point(223, 88);
-            this.tb_cnpj.Name = "tb_cnpj";
-            this.tb_cnpj.Size = new System.Drawing.Size(62, 29);
-            this.tb_cnpj.TabIndex = 1;
-            this.tb_cnpj.Text = "CNPJ";
+            this.lb_email.AutoSize = true;
+            this.lb_email.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_email.Location = new System.Drawing.Point(223, 50);
+            this.lb_email.Name = "lb_email";
+            this.lb_email.Size = new System.Drawing.Size(76, 29);
+            this.lb_email.TabIndex = 2;
+            this.lb_email.Text = "E-mail";
+            // 
+            // lb_cpf
+            // 
+            this.lb_cpf.AutoSize = true;
+            this.lb_cpf.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cpf.Location = new System.Drawing.Point(223, 88);
+            this.lb_cpf.Name = "lb_cpf";
+            this.lb_cpf.Size = new System.Drawing.Size(108, 29);
+            this.lb_cpf.TabIndex = 1;
+            this.lb_cpf.Text = "CPF/CNPJ";
             // 
             // lb_fantasia
             // 
@@ -194,15 +204,6 @@
             this.lb_fantasia.Text = "Nome";
             this.lb_fantasia.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            // 
             // FormVisualizarPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,18 +214,18 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lb_rs);
-            this.Controls.Add(this.lb__titulo);
-            this.Controls.Add(this.pb_icon);
+            this.Controls.Add(this.lb_valor);
+            this.Controls.Add(this.lb_titulo);
+            this.Controls.Add(this.pb_icone);
             this.Controls.Add(this.pb_wallpaper);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "FormVisualizarPost";
-            this.Text = "FormVisualizarPost";
+            this.Text = "\'";
             this.Load += new System.EventHandler(this.FormVisualizarPost_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -238,19 +239,19 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pb_wallpaper;
-        private System.Windows.Forms.PictureBox pb_icon;
-        private System.Windows.Forms.Label lb__titulo;
-        private System.Windows.Forms.Label lb_rs;
+        private System.Windows.Forms.PictureBox pb_icone;
+        private System.Windows.Forms.Label lb_titulo;
+        private System.Windows.Forms.Label lb_valor;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lb_descricao;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lb_fantasia;
-        private System.Windows.Forms.Label tb_email;
-        private System.Windows.Forms.Label tb_cnpj;
-        private System.Windows.Forms.Label tb_Endereco;
-        private System.Windows.Forms.Label tb_cep;
-        private System.Windows.Forms.Label tb_Telefone;
+        private System.Windows.Forms.Label lb_email;
+        private System.Windows.Forms.Label lb_cpf;
+        private System.Windows.Forms.Label lb_endereco;
+        private System.Windows.Forms.Label lb_cep;
+        private System.Windows.Forms.Label lb_telefone;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

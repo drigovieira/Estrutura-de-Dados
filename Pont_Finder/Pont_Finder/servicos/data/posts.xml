@@ -5,7 +5,7 @@
     <titulo>adgsdf</titulo>
     <valor>342</valor>
     <detalhes>sdfgg</detalhes>
-    <detalhes />
+    <descricao>descricao</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//0.jpg</image>
     <cpf>12345</cpf>
@@ -18,7 +18,7 @@
     <titulo>Thied Code</titulo>
     <valor>12312</valor>
     <detalhes>Programa;áo e desenvolvimento de Softwarss</detalhes>
-    <detalhes />
+    <descricao>descricao</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//1.jpg</image>
     <cpf>12345</cpf>
@@ -31,12 +31,25 @@
     <titulo>infernepe</titulo>
     <valor>6666</valor>
     <detalhes>um homem não é uma ilha, dentro de si mesmo</detalhes>
-    <detalhes></detalhes>
+    <descricao>descricao</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//2.jpg</image>
     <cpf>48253130864</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-05T08:36:36.3920241-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>3</id>
+    <titulo>Magic</titulo>
+    <valor>232</valor>
+    <detalhes>detalhes</detalhes>
+    <descricao>descricao</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//3.jpg</image>
+    <cpf>12345</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-06T17:21:56.7943227-03:00</data>
     <likes></likes>
   </Post>
 </PostList>

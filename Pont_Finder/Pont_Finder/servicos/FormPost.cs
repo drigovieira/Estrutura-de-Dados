@@ -63,6 +63,7 @@ namespace Pont_Finder.servicos
             p.Titulo = tb_titulo.Text;
             p.Valor = double.Parse(tb_valor.Text);
             p.Detalhes = tb_detalhes.Text;
+            p.Descricao = tb_descricao.Text;
             p.Descricao = "";
             p.Image = link;
             p.Data = DateTime.Now;

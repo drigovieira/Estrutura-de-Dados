@@ -77,7 +77,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(268, 503);
+            this.label4.Location = new System.Drawing.Point(268, 541);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 13);
             this.label4.TabIndex = 10;
@@ -86,7 +86,7 @@
             // tb_descricao
             // 
             this.tb_descricao.BackColor = System.Drawing.SystemColors.Control;
-            this.tb_descricao.Location = new System.Drawing.Point(126, 523);
+            this.tb_descricao.Location = new System.Drawing.Point(132, 557);
             this.tb_descricao.MaxLength = 380;
             this.tb_descricao.Multiline = true;
             this.tb_descricao.Name = "tb_descricao";
@@ -99,9 +99,9 @@
             this.bt_icone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_icone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_icone.ForeColor = System.Drawing.Color.White;
-            this.bt_icone.Location = new System.Drawing.Point(347, 67);
+            this.bt_icone.Location = new System.Drawing.Point(166, 213);
             this.bt_icone.Name = "bt_icone";
-            this.bt_icone.Size = new System.Drawing.Size(148, 34);
+            this.bt_icone.Size = new System.Drawing.Size(300, 34);
             this.bt_icone.TabIndex = 1;
             this.bt_icone.Text = "Selecionar";
             this.bt_icone.UseVisualStyleBackColor = false;
@@ -112,9 +112,9 @@
             this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage;
             this.pb_icone.InitialImage = global::Pont_Finder.Properties.Resources.offImage;
-            this.pb_icone.Location = new System.Drawing.Point(132, 12);
+            this.pb_icone.Location = new System.Drawing.Point(166, 9);
             this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(200, 150);
+            this.pb_icone.Size = new System.Drawing.Size(300, 225);
             this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_icone.TabIndex = 9;
             this.pb_icone.TabStop = false;
@@ -122,7 +122,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(129, 181);
+            this.label3.Location = new System.Drawing.Point(129, 261);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 8;
@@ -130,7 +130,7 @@
             // 
             // tb_titulo
             // 
-            this.tb_titulo.Location = new System.Drawing.Point(132, 197);
+            this.tb_titulo.Location = new System.Drawing.Point(132, 277);
             this.tb_titulo.Name = "tb_titulo";
             this.tb_titulo.Size = new System.Drawing.Size(390, 20);
             this.tb_titulo.TabIndex = 2;
@@ -138,7 +138,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(129, 220);
+            this.label2.Location = new System.Drawing.Point(129, 300);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 6;
@@ -146,7 +146,7 @@
             // 
             // tb_valor
             // 
-            this.tb_valor.Location = new System.Drawing.Point(132, 236);
+            this.tb_valor.Location = new System.Drawing.Point(132, 316);
             this.tb_valor.Name = "tb_valor";
             this.tb_valor.Size = new System.Drawing.Size(390, 20);
             this.tb_valor.TabIndex = 3;
@@ -155,7 +155,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(294, 290);
+            this.label1.Location = new System.Drawing.Point(294, 352);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 4;
@@ -191,7 +191,7 @@
             // tb_detalhes
             // 
             this.tb_detalhes.BackColor = System.Drawing.SystemColors.Control;
-            this.tb_detalhes.Location = new System.Drawing.Point(132, 309);
+            this.tb_detalhes.Location = new System.Drawing.Point(132, 371);
             this.tb_detalhes.MaxLength = 380;
             this.tb_detalhes.Multiline = true;
             this.tb_detalhes.Name = "tb_detalhes";

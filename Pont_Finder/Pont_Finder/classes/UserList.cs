@@ -158,5 +158,20 @@ namespace Pont_Finder
 
         }
 
+        public static User selectCpf(long cpf)
+        {
+            User user = new User();
+            foreach (var item in users)
+            {
+                if (cpf == item.Cpf)
+                {
+                    user.Nome = item.Nome;
+                    user.Email = item.Email;
+                }
+                              
+            }
+            return user;         
+        }
+
     }
 }
