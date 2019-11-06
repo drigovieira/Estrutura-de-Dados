@@ -76,6 +76,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_salvar_empresa = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -138,7 +139,7 @@
             this.bt_Cad_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Cad_Empresa.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Cad_Empresa.ForeColor = System.Drawing.Color.White;
-            this.bt_Cad_Empresa.Location = new System.Drawing.Point(5, 204);
+            this.bt_Cad_Empresa.Location = new System.Drawing.Point(41, 207);
             this.bt_Cad_Empresa.Name = "bt_Cad_Empresa";
             this.bt_Cad_Empresa.Size = new System.Drawing.Size(196, 35);
             this.bt_Cad_Empresa.TabIndex = 39;
@@ -612,6 +613,20 @@
             this.panel2.Size = new System.Drawing.Size(310, 160);
             this.panel2.TabIndex = 32;
             // 
+            // btn_salvar_empresa
+            // 
+            this.btn_salvar_empresa.BackColor = System.Drawing.Color.Green;
+            this.btn_salvar_empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salvar_empresa.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salvar_empresa.ForeColor = System.Drawing.Color.White;
+            this.btn_salvar_empresa.Location = new System.Drawing.Point(243, 207);
+            this.btn_salvar_empresa.Name = "btn_salvar_empresa";
+            this.btn_salvar_empresa.Size = new System.Drawing.Size(196, 35);
+            this.btn_salvar_empresa.TabIndex = 41;
+            this.btn_salvar_empresa.Text = "Salvar";
+            this.btn_salvar_empresa.UseVisualStyleBackColor = false;
+            this.btn_salvar_empresa.Click += new System.EventHandler(this.btn_salvar_empresa_Click);
+            // 
             // Hosp_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -619,6 +634,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.btn_salvar_empresa);
             this.Controls.Add(this.bt_Cad_Empresa);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel10);
@@ -713,5 +729,6 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_salvar_empresa;
     }
 }
