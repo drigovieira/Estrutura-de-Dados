@@ -24,10 +24,21 @@ namespace Pont_Finder.hospedagem
             
         }
 
+        
+
         private void Bt_Cad_Empresa_Click(object sender, EventArgs e)
-        {
-            hospedagem.Cadastro_Empresa cadEmpre = new Cadastro_Empresa();
-            FormPrincipal.MudarForm("hospedagem", cadEmpre);
+        {   
+            
+            if (Session.Online)
+            {
+                hospedagem.Cadastro_Empresa cadEmpre = new Cadastro_Empresa();
+                FormPrincipal.MudarForm("hospedagem", cadEmpre);
+            }
+            else
+            {
+                MessageBox.Show("Faça login com sua conta para poder cadastrar sua empresa!");
+            }
+                
         }
 
         private void btn_salvar_empresa_Click(object sender, EventArgs e)
