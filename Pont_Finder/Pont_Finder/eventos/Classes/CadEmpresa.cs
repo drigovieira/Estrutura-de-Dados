@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pont_Finder.eventos
+namespace Pont_Finder.eventos.classes
 {
     class CadEmpresa
     {

@@ -7,7 +7,7 @@ using System.Xml;
 using System.Xml.Linq;
 
 
-namespace Pont_Finder.eventos.Classes
+namespace Pont_Finder.eventos.classes
 {
     class XmlLi_Eventos
     {
