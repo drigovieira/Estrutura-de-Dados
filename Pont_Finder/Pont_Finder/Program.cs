@@ -14,7 +14,8 @@ namespace Pont_Finder
         [STAThread]
         static void Main()
         {
-           servicos.classes.PostList.XmlLoad();
+            servicos.classes.PostList.XmlLoad();
+            hospedagem.hostList.CarregarXML();
 
             //carregando o xml
             XmlLi xmlli = new XmlLi();      

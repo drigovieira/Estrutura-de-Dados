@@ -77,5 +77,11 @@ namespace Pont_Finder.hospedagem
             }
             return lista;
         }
+
+        public static void CarregarXML()
+        {
+            XML xmli = new XML();
+            xmli.Load();
+        }
     }
 }

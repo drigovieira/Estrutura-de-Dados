@@ -15,7 +15,9 @@ namespace Pont_Finder.hospedagem
         public Hosp_Home()
         {
             InitializeComponent();
+            
         }
+
 
         private void Hosp_Home_Load(object sender, EventArgs e)
         {
@@ -31,15 +33,22 @@ namespace Pont_Finder.hospedagem
         private void btn_salvar_empresa_Click(object sender, EventArgs e)
         {
             XML xmlli = new XML();
-            //final do programa salvando...
+
+            xmlli.Drop();
             int cont = 0;
             foreach (var item in hostList.selectAll())
             {
-                xmlli.Add(cont, item.Nomeempresa, item.Nomefantasia, item.CNPJ, item.Endereco, item.Cep, item.Telefone,item.Email, item.Foto, item.Tipo, item.Estrelas, item.Descricao, item.Ambiente, item.Ativo);
+                xmlli.Add(cont, item.Nomeempresa, item.Nomefantasia, item.CNPJ, item.Endereco, item.Cep, item.Telefone, item.Email, item.Foto, item.Tipo, item.Estrelas, item.Descricao, item.Ambiente, item.Ativo);
                 cont++;
             }
 
             MessageBox.Show("Dados Salvos");
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

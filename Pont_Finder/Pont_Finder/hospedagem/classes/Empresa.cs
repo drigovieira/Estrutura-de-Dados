@@ -11,7 +11,7 @@ namespace Pont_Finder.hospedagem
         //Atributo da Empresa
 
         private string nomeempresa, nomefantasia, endereco, email, descricao, ambiente, foto, tipo;
-        private int cep, tel, estrelas;
+        private int cep, tel, estrelas, id;
         private bool ativo;
         private long cnpj;
 
@@ -71,7 +71,11 @@ namespace Pont_Finder.hospedagem
         }
 
         //Gets e Sets Ints
-
+        public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public int Telefone
         {
             get { return tel; }

@@ -1,18 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modulos>
-  <Empresa>
-    <ID>0</ID>
-    <NomeEmpresa>Chaveiro LTDA</NomeEmpresa>
-    <NomeFantasia>Chaveiro Confiança</NomeFantasia>
-    <CNPJ>1232111985</CNPJ>
-    <Endereço>Rua XYZ, N3</Endereço>
-    <CepCep>9715677</CepCep>
-    <Telefone>12345698</Telefone>
-    <Email>chaveiro@email.com</Email>
-    <Foto>CAMINHO</Foto>
-    <Tipo>Pousada</Tipo>
-    <estrelas>5</estrelas>
-    <Descricao>Chaveiro de confiança em Cruzeiro e região</Descricao>
-    <Ambientes>LISTA DE AMBIENTES</Ambientes>
-  </Empresa>
-</modulos>
+<ListaEmpresas>
+  
+</ListaEmpresas>
