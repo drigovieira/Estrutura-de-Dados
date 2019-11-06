@@ -63,14 +63,14 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.estrela5 = new System.Windows.Forms.RadioButton();
+            this.estrela4 = new System.Windows.Forms.RadioButton();
+            this.estrela3 = new System.Windows.Forms.RadioButton();
+            this.estrela2 = new System.Windows.Forms.RadioButton();
             this.label17 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radio_pousada = new System.Windows.Forms.RadioButton();
+            this.radio_hotel = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
@@ -101,6 +101,8 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -301,7 +303,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 2463);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1265, 100);
+            this.panel9.Size = new System.Drawing.Size(1282, 100);
             this.panel9.TabIndex = 57;
             // 
             // panel3
@@ -354,10 +356,10 @@
             this.panel5.Controls.Add(this.pictureBox14);
             this.panel5.Controls.Add(this.pictureBox13);
             this.panel5.Controls.Add(this.pictureBox12);
-            this.panel5.Controls.Add(this.radioButton6);
-            this.panel5.Controls.Add(this.radioButton5);
-            this.panel5.Controls.Add(this.radioButton4);
-            this.panel5.Controls.Add(this.radioButton3);
+            this.panel5.Controls.Add(this.estrela5);
+            this.panel5.Controls.Add(this.estrela4);
+            this.panel5.Controls.Add(this.estrela3);
+            this.panel5.Controls.Add(this.estrela2);
             this.panel5.Location = new System.Drawing.Point(150, 622);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(328, 99);
@@ -503,49 +505,49 @@
             this.pictureBox12.TabIndex = 5;
             this.pictureBox12.TabStop = false;
             // 
-            // radioButton6
+            // estrela5
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(161, 50);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(14, 13);
-            this.radioButton6.TabIndex = 4;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.estrela5.AutoSize = true;
+            this.estrela5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estrela5.Location = new System.Drawing.Point(161, 50);
+            this.estrela5.Name = "estrela5";
+            this.estrela5.Size = new System.Drawing.Size(14, 13);
+            this.estrela5.TabIndex = 4;
+            this.estrela5.TabStop = true;
+            this.estrela5.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // estrela4
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(161, 18);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(14, 13);
-            this.radioButton5.TabIndex = 3;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.estrela4.AutoSize = true;
+            this.estrela4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estrela4.Location = new System.Drawing.Point(161, 18);
+            this.estrela4.Name = "estrela4";
+            this.estrela4.Size = new System.Drawing.Size(14, 13);
+            this.estrela4.TabIndex = 3;
+            this.estrela4.TabStop = true;
+            this.estrela4.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // estrela3
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(24, 50);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
-            this.radioButton4.TabIndex = 2;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.estrela3.AutoSize = true;
+            this.estrela3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estrela3.Location = new System.Drawing.Point(24, 50);
+            this.estrela3.Name = "estrela3";
+            this.estrela3.Size = new System.Drawing.Size(14, 13);
+            this.estrela3.TabIndex = 2;
+            this.estrela3.TabStop = true;
+            this.estrela3.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // estrela2
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(24, 18);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 1;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.estrela2.AutoSize = true;
+            this.estrela2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estrela2.Location = new System.Drawing.Point(24, 18);
+            this.estrela2.Name = "estrela2";
+            this.estrela2.Size = new System.Drawing.Size(14, 13);
+            this.estrela2.TabIndex = 1;
+            this.estrela2.TabStop = true;
+            this.estrela2.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -561,36 +563,36 @@
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.Control;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.radioButton2);
-            this.panel8.Controls.Add(this.radioButton1);
+            this.panel8.Controls.Add(this.radio_pousada);
+            this.panel8.Controls.Add(this.radio_hotel);
             this.panel8.Location = new System.Drawing.Point(187, 509);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(237, 49);
             this.panel8.TabIndex = 15;
             // 
-            // radioButton2
+            // radio_pousada
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(141, 10);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(81, 20);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Pousada";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radio_pousada.AutoSize = true;
+            this.radio_pousada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_pousada.Location = new System.Drawing.Point(141, 10);
+            this.radio_pousada.Name = "radio_pousada";
+            this.radio_pousada.Size = new System.Drawing.Size(81, 20);
+            this.radio_pousada.TabIndex = 1;
+            this.radio_pousada.TabStop = true;
+            this.radio_pousada.Text = "Pousada";
+            this.radio_pousada.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radio_hotel
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(24, 10);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 20);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Hotel";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radio_hotel.AutoSize = true;
+            this.radio_hotel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_hotel.Location = new System.Drawing.Point(24, 10);
+            this.radio_hotel.Name = "radio_hotel";
+            this.radio_hotel.Size = new System.Drawing.Size(58, 20);
+            this.radio_hotel.TabIndex = 8;
+            this.radio_hotel.TabStop = true;
+            this.radio_hotel.Text = "Hotel";
+            this.radio_hotel.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -687,6 +689,7 @@
             this.pictureBox8.Size = new System.Drawing.Size(460, 220);
             this.pictureBox8.TabIndex = 3;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // panel4
             // 
@@ -716,6 +719,7 @@
             this.pictureBox11.Size = new System.Drawing.Size(100, 50);
             this.pictureBox11.TabIndex = 15;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox10
             // 
@@ -726,6 +730,7 @@
             this.pictureBox10.Size = new System.Drawing.Size(100, 50);
             this.pictureBox10.TabIndex = 14;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox9
             // 
@@ -736,6 +741,7 @@
             this.pictureBox9.Size = new System.Drawing.Size(100, 50);
             this.pictureBox9.TabIndex = 13;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox7
             // 
@@ -746,6 +752,7 @@
             this.pictureBox7.Size = new System.Drawing.Size(100, 50);
             this.pictureBox7.TabIndex = 12;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox6
             // 
@@ -756,6 +763,7 @@
             this.pictureBox6.Size = new System.Drawing.Size(100, 50);
             this.pictureBox6.TabIndex = 11;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox5
             // 
@@ -766,6 +774,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(100, 50);
             this.pictureBox5.TabIndex = 10;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -776,6 +785,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(100, 50);
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -786,6 +796,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(100, 50);
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -796,6 +807,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -806,6 +818,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -880,7 +893,7 @@
             this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1265, 200);
+            this.panel7.Size = new System.Drawing.Size(1282, 200);
             this.panel7.TabIndex = 55;
             // 
             // label10
@@ -903,13 +916,21 @@
             this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 0;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog2";
+            // 
             // Cadastro_Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1299, 675);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel3);
@@ -1036,11 +1057,13 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton estrela5;
+        private System.Windows.Forms.RadioButton estrela4;
+        private System.Windows.Forms.RadioButton estrela3;
+        private System.Windows.Forms.RadioButton estrela2;
+        private System.Windows.Forms.RadioButton radio_pousada;
+        private System.Windows.Forms.RadioButton radio_hotel;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
     }
 }

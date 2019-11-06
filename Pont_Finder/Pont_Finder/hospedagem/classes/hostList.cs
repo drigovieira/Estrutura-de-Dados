@@ -22,8 +22,12 @@ namespace Pont_Finder.hospedagem
             e.Telefone = empresa.Telefone;
             e.Email = empresa.Email;
             e.Foto = empresa.Foto;
+            e.Tipo = empresa.Tipo;
+            e.Estrelas = empresa.Estrelas;
             e.Descricao = empresa.Descricao;
             e.Ambiente = empresa.Ambiente;
+            e.Ativo = empresa.Ativo;
+
             empresas.Add(e);
         }
 
@@ -37,16 +41,15 @@ namespace Pont_Finder.hospedagem
             int telefone = empresas[index].Telefone;
             string email = empresas[index].Email;
             string foto = empresas[index].Foto;
+            string tipo = empresas[index].Tipo;
+            int estrelas = empresas[index].Estrelas;
             string descricao = empresas[index].Descricao;
             string ambiente = empresas[index].Ambiente;
+            bool ativo = empresas[index].Ativo;
 
-            object[] vetor = { nomeempresa, nomefantasia, cnpj, cep, telefone, email, foto, descricao, ambiente };
+            object[] vetor = { nomeempresa, nomefantasia, cnpj, cep, telefone, email, foto, tipo, estrelas, descricao, ambiente, ativo };
             return vetor;
 
-            /*
-            string str = "Nome: {0} \nEmail: {1} \nSenha: {2} \nCPF: {3} \nStatus: {4} \n";
-            Console.WriteLine(String.Format(str, userList.select(i)));
-            */
         }
 
         public static List<Empresa> selectAll()
@@ -55,6 +58,7 @@ namespace Pont_Finder.hospedagem
             foreach (var item in empresas)
             {
                 Empresa e = new Empresa();
+
                 e.Nomeempresa = item.Nomeempresa;
                 e.Nomefantasia = item.Nomefantasia;
                 e.CNPJ = item.CNPJ;
@@ -63,8 +67,12 @@ namespace Pont_Finder.hospedagem
                 e.Telefone = item.Telefone;
                 e.Email = item.Email;
                 e.Foto = item.Foto;
+                e.Tipo = item.Tipo;
+                e.Estrelas = item.Estrelas;
                 e.Descricao = item.Descricao;
                 e.Ambiente = item.Ambiente;
+                e.Ativo = item.Ativo;
+
                 lista.Add(e);
             }
             return lista;

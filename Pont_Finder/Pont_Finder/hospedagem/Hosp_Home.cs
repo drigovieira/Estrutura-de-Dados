@@ -35,7 +35,7 @@ namespace Pont_Finder.hospedagem
             int cont = 0;
             foreach (var item in hostList.selectAll())
             {
-                xmlli.Add(cont, item.Nomeempresa, item.Nomefantasia, item.CNPJ, item.Endereco, item.Cep, item.Telefone,item.Email, item.Foto, item.Descricao);
+                xmlli.Add(cont, item.Nomeempresa, item.Nomefantasia, item.CNPJ, item.Endereco, item.Cep, item.Telefone,item.Email, item.Foto, item.Tipo, item.Estrelas, item.Descricao, item.Ambiente, item.Ativo);
                 cont++;
             }
 
