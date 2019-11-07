@@ -38,6 +38,8 @@ namespace Pont_Finder.hospedagem
                 {
                     if (estrela2.Checked || estrela3.Checked || estrela4.Checked || estrela5.Checked)
                     {
+                        List<string> ambientes = new List<string>();
+
                         string NomeEmpresa = nomeempresa.Text;
                         string NomeFantasia = textBox2.Text;
                         string Email = textBox3.Text;
@@ -47,7 +49,48 @@ namespace Pont_Finder.hospedagem
                         int Tel = Convert.ToInt32(textBox7.Text);
                         string descricao = textBox1.Text;
                         string Foto = "CAMINHO";
-                        string Ambientes = "LISTA DE AMBIENTES";
+                        string Ambientes = "";
+                        
+                        
+                        
+
+                        if (checkBox1.Checked)
+                        {
+                            string a = "Estacionamento";
+                            ambientes.Add(a);
+                        }
+
+                        if (checkBox2.Checked)
+                        {
+                            string a = "Piscina";
+                            ambientes.Add(a);
+                        }
+
+                        if (checkBox3.Checked)
+                        {
+                            string a = "Sala de Jogos";
+                            ambientes.Add(a);
+                        }
+
+                        if (checkBox4.Checked )
+                        {
+                            string a = "Academia";
+                            ambientes.Add(a);
+                        }
+
+                        /*int total = ambientes.Count;
+                        int contador = 0;
+
+                        while (contador <= total)
+                        {
+                            Ambientes = Ambientes +","+ambientes[contador];
+                            contador++;
+                        }*/
+
+                        foreach (var elemento in ambientes)
+                        {
+                            Ambientes = Ambientes+"  "+elemento;
+                        }
 
                         bool validaCNPJ = true;
                         bool validaEmail = true;
@@ -55,10 +98,16 @@ namespace Pont_Finder.hospedagem
                         foreach (var item in hostList.selectAll())
                         {
                             if (item.CNPJ == CNPJ)
+                            {
                                 validaCNPJ = false;
+                            }
+                                
 
                             if (item.Email == Email)
+                            {
                                 validaEmail = false;
+                            }
+                                
                         }
 
 
@@ -69,7 +118,7 @@ namespace Pont_Finder.hospedagem
                             {
                                 if (("" + CNPJ).Length != 14)
                                 {
-                                    MessageBox.Show("Favor revisar o CNPJ informado, poiso mesmo é inválido");
+                                    MessageBox.Show("CNPJ deve conter 14 dígitos");
                                     textBox5.Text = "";
                                 }
                                 else
@@ -119,6 +168,9 @@ namespace Pont_Finder.hospedagem
                                         empresa.Ambiente = Ambientes;
                                         empresa.Ativo = true;
 
+                                        MessageBox.Show(Ambientes) ;
+
+                                        
 
                                         //Adiciona na lista
                                         hostList.addEmpresa(empresa);
@@ -230,6 +282,11 @@ namespace Pont_Finder.hospedagem
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
