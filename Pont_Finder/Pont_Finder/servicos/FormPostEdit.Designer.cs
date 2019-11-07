@@ -1,6 +1,6 @@
 ﻿namespace Pont_Finder.servicos
 {
-    partial class FormPost
+    partial class FormPostEdit
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPostEdit));
             System.Windows.Forms.Panel panel1;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPost));
+            this.pb_wallpaper = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tb_descricao = new System.Windows.Forms.TextBox();
             this.bt_icone = new System.Windows.Forms.Button();
@@ -43,14 +45,31 @@
             this.publicar = new System.Windows.Forms.Button();
             this.tb_detalhes = new System.Windows.Forms.TextBox();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pb_wallpaper = new System.Windows.Forms.PictureBox();
             panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pb_wallpaper
+            // 
+            this.pb_wallpaper.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_wallpaper.BackgroundImage")));
+            this.pb_wallpaper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_wallpaper.Location = new System.Drawing.Point(0, 0);
+            this.pb_wallpaper.Name = "pb_wallpaper";
+            this.pb_wallpaper.Size = new System.Drawing.Size(1265, 150);
+            this.pb_wallpaper.TabIndex = 20;
+            this.pb_wallpaper.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(525, 178);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(299, 31);
+            this.label5.TabIndex = 38;
+            this.label5.Text = "Cadastre seu serviço!";
             // 
             // panel1
             // 
@@ -68,11 +87,10 @@
             panel1.Controls.Add(this.cancelar);
             panel1.Controls.Add(this.publicar);
             panel1.Controls.Add(this.tb_detalhes);
-            panel1.Location = new System.Drawing.Point(332, 231);
+            panel1.Location = new System.Drawing.Point(353, 222);
             panel1.Name = "panel1";
             panel1.Size = new System.Drawing.Size(630, 791);
-            panel1.TabIndex = 3;
-            panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            panel1.TabIndex = 39;
             // 
             // label4
             // 
@@ -150,7 +168,6 @@
             this.tb_valor.Name = "tb_valor";
             this.tb_valor.Size = new System.Drawing.Size(390, 20);
             this.tb_valor.TabIndex = 3;
-            this.tb_valor.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -160,7 +177,6 @@
             this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Detalhes Card";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cancelar
             // 
@@ -184,7 +200,7 @@
             this.publicar.Name = "publicar";
             this.publicar.Size = new System.Drawing.Size(99, 34);
             this.publicar.TabIndex = 5;
-            this.publicar.Text = "Publicar";
+            this.publicar.Text = "Editar";
             this.publicar.UseVisualStyleBackColor = false;
             this.publicar.Click += new System.EventHandler(this.Publicar_Click);
             // 
@@ -197,63 +213,29 @@
             this.tb_detalhes.Name = "tb_detalhes";
             this.tb_detalhes.Size = new System.Drawing.Size(390, 150);
             this.tb_detalhes.TabIndex = 4;
-            this.tb_detalhes.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // openIcone
             // 
             this.openIcone.FileName = "icone";
-            this.openIcone.Filter = "\"Image|*.jpg;*.jpeg;*.bmp\"";
-            this.openIcone.FileOk += new System.ComponentModel.CancelEventHandler(this.OpenIcone_FileOk);
             // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 1022);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1265, 100);
-            this.panel3.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(529, 176);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(299, 31);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Cadastre seu serviço!";
-            // 
-            // pb_wallpaper
-            // 
-            this.pb_wallpaper.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_wallpaper.BackgroundImage")));
-            this.pb_wallpaper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_wallpaper.Location = new System.Drawing.Point(0, 0);
-            this.pb_wallpaper.Name = "pb_wallpaper";
-            this.pb_wallpaper.Size = new System.Drawing.Size(1265, 150);
-            this.pb_wallpaper.TabIndex = 19;
-            this.pb_wallpaper.TabStop = false;
-            // 
-            // FormPost
+            // FormPostEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(panel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pb_wallpaper);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
-            this.Name = "FormPost";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Name = "FormPostEdit";
+            this.Text = "FormPostEdit";
+            ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,21 +243,20 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox tb_detalhes;
-        private System.Windows.Forms.Button publicar;
-        private System.Windows.Forms.Button cancelar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb_valor;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tb_titulo;
-        private System.Windows.Forms.PictureBox pb_icone;
-        private System.Windows.Forms.Button bt_icone;
-        private System.Windows.Forms.OpenFileDialog openIcone;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tb_descricao;
         private System.Windows.Forms.PictureBox pb_wallpaper;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tb_descricao;
+        private System.Windows.Forms.Button bt_icone;
+        private System.Windows.Forms.PictureBox pb_icone;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tb_titulo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tb_valor;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button cancelar;
+        private System.Windows.Forms.Button publicar;
+        private System.Windows.Forms.TextBox tb_detalhes;
+        private System.Windows.Forms.OpenFileDialog openIcone;
     }
 }

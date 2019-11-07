@@ -28,33 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel_center = new System.Windows.Forms.Panel();
+            this.painel = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // painel
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel_center);
-            this.panel1.Location = new System.Drawing.Point(114, 142);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1055, 460);
-            this.panel1.TabIndex = 10;
-            // 
-            // panel_center
-            // 
-            this.panel_center.AutoScroll = true;
-            this.panel_center.BackColor = System.Drawing.Color.Transparent;
-            this.panel_center.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_center.Location = new System.Drawing.Point(25, 25);
-            this.panel_center.Name = "panel_center";
-            this.panel_center.Size = new System.Drawing.Size(1005, 200);
-            this.panel_center.TabIndex = 18;
-            this.panel_center.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_center_Paint);
+            this.painel.AutoScroll = true;
+            this.painel.BackColor = System.Drawing.Color.White;
+            this.painel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.painel.Location = new System.Drawing.Point(114, 143);
+            this.painel.Name = "painel";
+            this.painel.Size = new System.Drawing.Size(1055, 460);
+            this.painel.TabIndex = 10;
             // 
             // button4
             // 
@@ -84,15 +71,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.painel);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUserCards";
             this.Text = "FormUserCards";
-            this.panel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FormUserCards_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,9 +88,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel painel;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel_center;
     }
 }

@@ -11,7 +11,7 @@
     <cpf>12345</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-04T20:50:39.6182036-03:00</data>
-    <likes></likes>
+    <likes>1,12345</likes>
   </Post>
   <Post>
     <id>1</id>
@@ -24,7 +24,7 @@
     <cpf>12345</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-04T23:12:42.6025012-03:00</data>
-    <likes></likes>
+    <likes>1,12345</likes>
   </Post>
   <Post>
     <id>2</id>
@@ -79,6 +79,19 @@ Repertório
     <cpf>91638965080</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-06T18:52:30.7859558-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>5</id>
+    <titulo>Pinguim</titulo>
+    <valor>458</valor>
+    <detalhes>Adestramento de pinguim</detalhes>
+    <descricao>Adestramento de pinguins é uma aplicação da análise do comportamento que usa os eventos do ambiente e suas consequências para modificar o comportamento do pinguim, tanto para auxiliar em atividades específicas, tomar ações particulares ou até mesmo para participar efetivamente da vida doméstica contemporânea.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//6.jpg</image>
+    <cpf>12345</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-07T18:10:19.2806456-03:00</data>
     <likes></likes>
   </Post>
 </PostList>

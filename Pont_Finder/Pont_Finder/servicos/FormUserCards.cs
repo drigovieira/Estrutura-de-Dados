@@ -36,5 +36,28 @@ namespace Pont_Finder.servicos
         {
             FormPrincipal.MudarForm("servicos",new FormPost() );
         }
+
+        private void FormUserCards_Load(object sender, EventArgs e)
+        {
+            int y = 5;           
+            int i = 0;
+       
+            foreach (var item in classes.PostList.Posts)
+            {
+                if (item.Cpf == Session.Cpf)
+                {
+                    if (i > 8)
+                        break;
+                    PostCardEdit a = new PostCardEdit(item.Id);
+                    a.Location = new Point(25, y);
+                    y = y + a.Height + 5;
+                    painel.Controls.Add(a);
+                    i++;
+                }                              
+
+            }
+
+            
+        }
     }
 }

@@ -79,5 +79,10 @@ namespace Pont_Finder.servicos.classes
             posts = new List<Post>();
         }
 
+        public static List<Post> Posts
+        {
+            get { return posts; }
+        }
+
     }
 }

@@ -14,12 +14,13 @@ namespace Pont_Finder.servicos
     public partial class FormVisualizarPost : Form
     {
         classes.Post post = new classes.Post();
+        Form anterior;
 
-        public FormVisualizarPost(int postId)
+        public FormVisualizarPost(int postId, Form anterior)
         {
             classes.Post p = new classes.Post();
             post = classes.PostList.SelectId(postId);
-           
+            this.anterior = anterior;
             InitializeComponent();
 
 
@@ -65,6 +66,11 @@ namespace Pont_Finder.servicos
         private void tb_Endereco_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Bt_voltar_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", anterior);
         }
     }
 }

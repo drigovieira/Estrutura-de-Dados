@@ -44,8 +44,10 @@
             this.lb_email = new System.Windows.Forms.Label();
             this.lb_cpf = new System.Windows.Forms.Label();
             this.lb_fantasia = new System.Windows.Forms.Label();
+            this.bt_voltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -94,6 +96,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.bt_voltar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 1200);
             this.panel1.Name = "panel1";
@@ -206,6 +209,16 @@
             this.lb_fantasia.Text = "Nome";
             this.lb_fantasia.Click += new System.EventHandler(this.label1_Click);
             // 
+            // bt_voltar
+            // 
+            this.bt_voltar.Location = new System.Drawing.Point(88, 13);
+            this.bt_voltar.Name = "bt_voltar";
+            this.bt_voltar.Size = new System.Drawing.Size(75, 23);
+            this.bt_voltar.TabIndex = 0;
+            this.bt_voltar.Text = "Voltar";
+            this.bt_voltar.UseVisualStyleBackColor = true;
+            this.bt_voltar.Click += new System.EventHandler(this.Bt_voltar_Click);
+            // 
             // FormVisualizarPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,6 +241,7 @@
             this.Load += new System.EventHandler(this.FormVisualizarPost_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -255,5 +269,6 @@
         private System.Windows.Forms.Label lb_cep;
         private System.Windows.Forms.Label lb_telefone;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button bt_voltar;
     }
 }
