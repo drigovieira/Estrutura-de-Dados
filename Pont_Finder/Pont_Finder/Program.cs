@@ -32,6 +32,8 @@ namespace Pont_Finder
                 UserList.userAdd(user);
             }
 
+            servicos.classes.ListaEmpresa.XmlLoad();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormPrincipal());

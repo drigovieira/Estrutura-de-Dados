@@ -1,3 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulos>
+  <alimentos>
+    <nome>nsdfih</nome>
+    <nomeFantasia>jfposjj</nomeFantasia>
+    <email>shfhw</email>
+    <telefone>297</telefone>
+    <endereco>270497ef</endereco>
+    <cnpj>998124</cnpj>
+    <cpf>12345</cpf>
+    <status>true</status>
+  </alimentos>
+  <servico>
+    <nome>nsdfih</nome>
+    <nomeFantasia>jfposjj</nomeFantasia>
+    <email>shfhw</email>
+    <telefone>297</telefone>
+    <endereco>270497ef</endereco>
+    <cnpj>998124</cnpj>
+    <cpf>12345</cpf>
+    <status>true</status>
+  </servico>
 </modulos>

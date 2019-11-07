@@ -16,6 +16,19 @@ namespace Pont_Finder.servicos
         public FormServicos()
         {
             InitializeComponent();
+            if (Session.Online)
+            {
+               classes.Empresa emp = classes.ListaEmpresa.selectCpf(Session.Cpf);
+                if (emp == null)
+                {
+                    bt_cadEmpresa.Enabled = true;
+                }
+                else
+                {
+                    bt_cadEmpresa.Enabled = false;
+                }
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
