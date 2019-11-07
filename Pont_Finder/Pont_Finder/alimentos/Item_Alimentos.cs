@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.alimentos
 {
-    public partial class Cadastro_Restaurante : Form
+    public partial class Item_Alimentos : UserControl
     {
-        public Cadastro_Restaurante()
+        public Item_Alimentos()
         {
             InitializeComponent();
         }
 
-        private void Cadastro_Restaurante_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

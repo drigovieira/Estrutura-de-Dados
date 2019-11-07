@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="alimentos\Cadastro_Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alimentos\Cadastro_Produto.Designer.cs">
+      <DependentUpon>Cadastro_Produto.cs</DependentUpon>
+    </Compile>
     <Compile Include="alimentos\Cadastro_Restaurante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,12 @@
     <Compile Include="alimentos\Company.cs" />
     <Compile Include="alimentos\CompanyList.cs" />
     <Compile Include="alimentos\Evaluation.cs" />
+    <Compile Include="alimentos\Item_Alimentos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\Item_Alimentos.Designer.cs">
+      <DependentUpon>Item_Alimentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="alimentos\ProfileCompany.cs" />
     <Compile Include="alimentos\ProfileList.cs" />
     <Compile Include="alimentos\Publi.cs">
@@ -62,6 +74,12 @@
     </Compile>
     <Compile Include="alimentos\Publi.Designer.cs">
       <DependentUpon>Publi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\Reserva_Alimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alimentos\Reserva_Alimentos.Designer.cs">
+      <DependentUpon>Reserva_Alimentos.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\TopEmpresa.cs">
       <SubType>UserControl</SubType>
@@ -248,11 +266,20 @@
     <Compile Include="servicos\SolicitarServico.Designer.cs">
       <DependentUpon>SolicitarServico.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="alimentos\Cadastro_Produto.resx">
+      <DependentUpon>Cadastro_Produto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Cadastro_Restaurante.resx">
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Item_Alimentos.resx">
+      <DependentUpon>Item_Alimentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Publi.resx">
       <DependentUpon>Publi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Reserva_Alimentos.resx">
+      <DependentUpon>Reserva_Alimentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\TopEmpresa.resx">
       <DependentUpon>TopEmpresa.cs</DependentUpon>

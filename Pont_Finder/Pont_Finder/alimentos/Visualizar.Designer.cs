@@ -38,27 +38,32 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.button7 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel10
@@ -153,6 +158,14 @@
             this.panel3.Size = new System.Drawing.Size(625, 61);
             this.panel3.TabIndex = 21;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Location = new System.Drawing.Point(180, 13);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(425, 35);
+            this.panel1.TabIndex = 7;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -191,58 +204,62 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "Propaganda";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(180, 13);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(425, 35);
-            this.panel1.TabIndex = 7;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel5.Controls.Add(this.panel11);
             this.panel5.Controls.Add(this.panel9);
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Location = new System.Drawing.Point(327, 396);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(622, 614);
+            this.panel5.Size = new System.Drawing.Size(622, 643);
             this.panel5.TabIndex = 23;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(17, 22);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(289, 206);
-            this.panel6.TabIndex = 6;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel6_Paint);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.button5);
-            this.panel7.Location = new System.Drawing.Point(321, 22);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(282, 206);
-            this.panel7.TabIndex = 7;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Controls.Add(this.label8);
             this.panel9.Controls.Add(this.button4);
             this.panel9.Controls.Add(this.button2);
             this.panel9.Controls.Add(this.trackBar1);
             this.panel9.Controls.Add(this.button7);
-            this.panel9.Location = new System.Drawing.Point(17, 247);
+            this.panel9.Location = new System.Drawing.Point(17, 356);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(586, 341);
+            this.panel9.Size = new System.Drawing.Size(586, 247);
             this.panel9.TabIndex = 8;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.Location = new System.Drawing.Point(16, 203);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(103, 28);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Comentários";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(484, 157);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(82, 28);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Reservar";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(334, 293);
+            this.trackBar1.Location = new System.Drawing.Point(321, 199);
             this.trackBar1.Maximum = 5;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(151, 45);
@@ -255,12 +272,22 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(491, 299);
+            this.button7.Location = new System.Drawing.Point(484, 203);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(82, 28);
             this.button7.TabIndex = 12;
             this.button7.Text = "Avalie";
             this.button7.UseVisualStyleBackColor = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.label5);
+            this.panel7.Controls.Add(this.button5);
+            this.panel7.Location = new System.Drawing.Point(321, 22);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(282, 206);
+            this.panel7.TabIndex = 7;
             // 
             // button5
             // 
@@ -273,36 +300,56 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(103, 28);
             this.button5.TabIndex = 10;
-            this.button5.Text = "Localização";
+            this.button5.Text = "Ver no Mapa";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // panel6
             // 
-            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(491, 241);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 28);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Reservar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(17, 22);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(289, 206);
+            this.panel6.TabIndex = 6;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel6_Paint);
             // 
-            // button4
+            // label5
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.Location = new System.Drawing.Point(13, 293);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 28);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Comentários";
-            this.button4.UseVisualStyleBackColor = false;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(13, 15);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 20);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Localização";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 20);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Categorias";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(198, 20);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Horário de Funcionamento";
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.Controls.Add(this.label6);
+            this.panel11.Location = new System.Drawing.Point(17, 248);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(586, 91);
+            this.panel11.TabIndex = 9;
             // 
             // Visualizar
             // 
@@ -328,10 +375,13 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -361,5 +411,9 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel11;
     }
 }

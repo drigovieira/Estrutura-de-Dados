@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.alimentos
 {
-    public partial class Cadastro_Restaurante : Form
+    public partial class Cadastro_Produto : Form
     {
-        public Cadastro_Restaurante()
+        public Cadastro_Produto()
         {
             InitializeComponent();
-        }
-
-        private void Cadastro_Restaurante_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
