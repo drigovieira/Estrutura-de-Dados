@@ -71,7 +71,7 @@ namespace Pont_Finder
                 cont++;
             }
 
-
+            /*
             XmlLi_Empresa xmlli_empresa = new XmlLi_Empresa();
             //final do programa salvando...
             xmlli_empresa.Drop();
@@ -79,6 +79,10 @@ namespace Pont_Finder
             {
                 xmlli_empresa.AddServico(item.Nome, item.NomeFantasia, item.Email, item.Telefone, item.Endereco, item.Cnpj, item.Cpf, item.Status);
             }
+            */
+
+            servicos.classes.ListaEmpresa.XmlDrop();
+            servicos.classes.ListaEmpresa.XmlSave();
 
             MessageBox.Show("Dados Salvos");
 

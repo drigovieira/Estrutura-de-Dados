@@ -34,7 +34,7 @@
             this.pb_pesquisar = new System.Windows.Forms.PictureBox();
             this.tb_pesquisar = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bt_cadEmpresa = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
@@ -107,17 +107,17 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // bt_cadEmpresa
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(488, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 22);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Cadastrar Empresa";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.bt_cadEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_cadEmpresa.ForeColor = System.Drawing.Color.White;
+            this.bt_cadEmpresa.Location = new System.Drawing.Point(488, 8);
+            this.bt_cadEmpresa.Name = "bt_cadEmpresa";
+            this.bt_cadEmpresa.Size = new System.Drawing.Size(120, 22);
+            this.bt_cadEmpresa.TabIndex = 3;
+            this.bt_cadEmpresa.Text = "Cadastrar Empresa";
+            this.bt_cadEmpresa.UseVisualStyleBackColor = true;
+            this.bt_cadEmpresa.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button1
             // 
@@ -138,7 +138,7 @@
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.bt_cadEmpresa);
             this.panel1.Location = new System.Drawing.Point(0, 150);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 40);
@@ -152,7 +152,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(120, 22);
             this.button6.TabIndex = 7;
-            this.button6.Text = "Gerenciar Serviço";
+            this.button6.Text = "Gerenciar Serviços";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
@@ -257,7 +257,7 @@
         private System.Windows.Forms.Panel panel_left;
         private System.Windows.Forms.TextBox tb_pesquisar;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bt_cadEmpresa;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
