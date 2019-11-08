@@ -15,13 +15,10 @@ namespace Pont_Finder.alimentos
             emp.Nome = comp.Nome;
             emp.NomeFantasia = comp.NomeFantasia;
             emp.Email = comp.Email;
-            emp.TipoServico = comp.TipoServico;
-            emp.Senha = comp.Senha;
             emp.Rua = comp.Rua;
             emp.Numero = comp.Numero;
             emp.Bairro = comp.Bairro;
             emp.Cep = comp.Cep;
-            emp.Cnpj = comp.Cnpj;
             emp.Status = true;
             company.Add(emp);
             company[company.IndexOf(emp)].Id = company.IndexOf(emp);
@@ -39,7 +36,7 @@ namespace Pont_Finder.alimentos
             }
             return index;
         }
-        public void CompDel(string cnpj)
+        /*public void CompDel(string cnpj)
         {
             //formata a string que ta com marcara pra long, só numeros
             long cnpjConvert = Convert.ToInt64(String.Join("", System.Text.RegularExpressions.Regex.Split(cnpj, @"[^\d]")));
@@ -53,27 +50,24 @@ namespace Pont_Finder.alimentos
                     break;
                 }
             }
-        }
+        }*/
         public void alter(string cnpj, Company comp)
         {
             long cnpjConvert = Convert.ToInt64(String.Join("", System.Text.RegularExpressions.Regex.Split(cnpj, @"[^\d]")));
             //percorre a lista com uma variável Company
             foreach (var emps in company)
             {
-                if (emps.Cnpj == cnpjConvert)
+                if (emps.Id == cnpjConvert)
                 {
                     //pega o index da lista do usuário em questão
                     int index = company.IndexOf(emps);
                     //substitui na lista company
                     company[index].NomeFantasia = comp.NomeFantasia;
                     company[index].Email = comp.Email;
-                    company[index].TipoServico = comp.TipoServico;
-                    company[index].Senha = comp.Senha;
                     company[index].Rua = comp.Rua;
                     company[index].Numero = comp.Numero;
                     company[index].Bairro = comp.Bairro;
                     company[index].Cep = comp.Cep;
-                    company[index].Cnpj = comp.Cnpj;
                     break;
                 }
             }

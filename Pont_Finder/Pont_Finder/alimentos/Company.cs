@@ -8,9 +8,8 @@ namespace Pont_Finder.alimentos
 {
     class Company
     {
-        private string nome, nomeFantasia, email, tipoServico, senha, rua, bairro;
-        private long cnpj;
-        private int numero, cep, ID;
+        private string nome, nomeFantasia, email, categoria, rua, bairro;
+        private int numero, cep, telComercial, ID;
         private bool status;
 
         public string Nome
@@ -28,22 +27,7 @@ namespace Pont_Finder.alimentos
         {
             get { return email; }
             set { email = value; }
-        }
-        public string TipoServico
-        {
-            get { return tipoServico; }
-            set { tipoServico = value; }
-        }
-        public string Senha
-        {
-            get { return senha; }
-            set { senha = value; }
-        }
-        public long Cnpj
-        {
-            get { return cnpj; }
-            set { cnpj = value; }
-        }
+        }        
         public string Rua
         {
             get { return rua; }
@@ -73,6 +57,16 @@ namespace Pont_Finder.alimentos
         {
             get { return ID; }
             set { ID = value; }
+        }
+        public string Categoria
+        {
+            get { return categoria; }
+            set { categoria = value; }
+        }
+        public int TelComercial
+        {
+            get { return telComercial; }
+            set { telComercial = value; }
         }
     }
 }

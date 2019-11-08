@@ -84,11 +84,8 @@ namespace Pont_Finder
                 emp.Nome = "Empresa" + cont;
                 emp.NomeFantasia = "Fantasia" + cont;
                 emp.Email = "email" + cont + "@mail.com";
-                emp.TipoServico = "Alimento";
-                emp.Senha = "senha" + cont;
                 emp.Rua = "rua" + cont;
                 emp.Bairro = "bairro" + cont;
-                emp.Cnpj = long.Parse("" + cont + "" + cont + "" + cont + "" + cont + "" + cont);
                 emp.Numero = int.Parse("" + cont + "" + cont);
                 emp.Cep = int.Parse("" + cont + "" + cont + "" + cont + "" + cont + "" + cont + "" + cont);
                 comp.CompAdd(emp);
