@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.eventos
 {
-    public partial class CadEmpresa : Form
+    public partial class ListEvent : Form
     {
-        public CadEmpresa()
+        public ListEvent()
         {
             InitializeComponent();
         }
 
-        private void CadEmpresa_Load(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
-
+            eventos.Post_Eventos ptEvent = new eventos.Post_Eventos();
+            FormPrincipal.MudarForm("eventos", ptEvent);
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void ListEvent_Load(object sender, EventArgs e)
         {
-            eventos.ListEvent ltEvent = new eventos.ListEvent();
-            FormPrincipal.MudarForm("evento", ltEvent);
+
         }
     }
 }

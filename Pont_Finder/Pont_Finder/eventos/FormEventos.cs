@@ -25,7 +25,12 @@ namespace Pont_Finder.eventos
         private void Button4_Click(object sender, EventArgs e)
         {
             CadEmpresa outroform = new CadEmpresa();
-            outroform.ShowDialog();
+            FormPrincipal.MudarForm("Eventos",outroform);
+        }
+
+        private void FormEventos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

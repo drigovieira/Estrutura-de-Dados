@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pont_Finder
+namespace Pont_Finder.eventos
 {
-    public partial class PostEventos : Form
+    public partial class Post_Eventos : Form
     {
-        public PostEventos()
+        public Post_Eventos()
         {
             InitializeComponent();
-        }
-
-        private void PostEventos_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

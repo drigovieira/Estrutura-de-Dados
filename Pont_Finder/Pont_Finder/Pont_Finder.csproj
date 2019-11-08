@@ -147,6 +147,18 @@
     <Compile Include="eventos\FormEventos.Designer.cs">
       <DependentUpon>FormEventos.cs</DependentUpon>
     </Compile>
+    <Compile Include="eventos\ListEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\ListEvent.Designer.cs">
+      <DependentUpon>ListEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\Post_Eventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\Post_Eventos.Designer.cs">
+      <DependentUpon>Post_Eventos.cs</DependentUpon>
+    </Compile>
     <Compile Include="hospedagem\Cadastro_Empresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,12 +209,6 @@
     </Compile>
     <Compile Include="hospedagem\Listas_quartos.Designer.cs">
       <DependentUpon>Listas_quartos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="eventos\PostEventos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="eventos\PostEventos.Designer.cs">
-      <DependentUpon>PostEventos.cs</DependentUpon>
     </Compile>
     <Compile Include="hospedagem\Hosp_PostCard.cs">
       <SubType>UserControl</SubType>
@@ -320,8 +326,11 @@
     <EmbeddedResource Include="eventos\FormEventos.resx">
       <DependentUpon>FormEventos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="eventos\PostEventos.resx">
-      <DependentUpon>PostEventos.cs</DependentUpon>
+    <EmbeddedResource Include="eventos\ListEvent.resx">
+      <DependentUpon>ListEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\Post_Eventos.resx">
+      <DependentUpon>Post_Eventos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Cadastro_Empresa.resx">
       <DependentUpon>Cadastro_Empresa.cs</DependentUpon>
