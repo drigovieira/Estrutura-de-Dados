@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadEmpresa));
             this.panel11 = new System.Windows.Forms.Panel();
             this.AddFotoEmpresa = new System.Windows.Forms.Button();
+            this.pb_icone = new System.Windows.Forms.PictureBox();
             this.tb_email = new System.Windows.Forms.TextBox();
             this.tb_cnpj = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
-            this.pb_icone = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -101,6 +101,17 @@
             this.AddFotoEmpresa.Text = "Adcionar foto de perfil";
             this.AddFotoEmpresa.UseVisualStyleBackColor = false;
             this.AddFotoEmpresa.Click += new System.EventHandler(this.AddFotoEmpresa_Click);
+            // 
+            // pb_icone
+            // 
+            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage1;
+            this.pb_icone.Location = new System.Drawing.Point(100, 12);
+            this.pb_icone.Name = "pb_icone";
+            this.pb_icone.Size = new System.Drawing.Size(200, 200);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_icone.TabIndex = 15;
+            this.pb_icone.TabStop = false;
             // 
             // tb_email
             // 
@@ -300,17 +311,6 @@
             // 
             this.openIcone.FileName = "icone";
             this.openIcone.Filter = "\"Image|*.jpg;*.jpeg;*.bmp\"";
-            // 
-            // pb_icone
-            // 
-            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage1;
-            this.pb_icone.Location = new System.Drawing.Point(100, 12);
-            this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(200, 200);
-            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_icone.TabIndex = 15;
-            this.pb_icone.TabStop = false;
             // 
             // panel7
             // 

@@ -119,6 +119,8 @@ namespace Pont_Finder.servicos
 
         private void Bt_empresa_Click(object sender, EventArgs e)
         {
+
+
             string link = null;
             if (img)
             {

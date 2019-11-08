@@ -35,7 +35,7 @@ namespace Pont_Finder.servicos
             string telefone = tb_telefone.Text;
             string email = tb_email.Text;
 
-            string link = null;
+            string link = "..//..//servicos//data//images//empresas//offImage.jpg";
             if (img)
             {
                 if (!Directory.Exists("..//..//servicos//data//images//empresas"))
