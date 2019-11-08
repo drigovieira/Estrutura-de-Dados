@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pont_Finder
+namespace Pont_Finder.eventos
 {
     public partial class FormEventos : Form
     {
@@ -24,7 +24,8 @@ namespace Pont_Finder
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            
+            CadEmpresa outroform = new CadEmpresa();
+            outroform.ShowDialog();
         }
     }
 }

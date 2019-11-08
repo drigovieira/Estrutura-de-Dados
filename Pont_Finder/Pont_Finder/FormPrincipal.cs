@@ -134,7 +134,7 @@ namespace Pont_Finder
                     break;
 
                 case "Eventos":
-                    FormEventos fEvent = new FormEventos();
+                    eventos.FormEventos fEvent = new eventos.FormEventos();
                     {
                         fEvent.TopLevel = false;
                     }
