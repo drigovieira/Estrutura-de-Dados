@@ -13,6 +13,7 @@ namespace Pont_Finder
         private string email;
         private string senha;
         private long cpf;
+        private string image;
         private bool ativo;
 
         //atributos opcionais
@@ -66,6 +67,12 @@ namespace Pont_Finder
         {
             get { return dataNascimento; }
             set { dataNascimento = value; }
+        }
+
+        public string Image
+        {
+            get { return image; }
+            set { image = value; }
         }
 
     }

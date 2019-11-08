@@ -37,13 +37,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_CriarConta = new System.Windows.Forms.Button();
             this.panelHome = new System.Windows.Forms.Panel();
+            this.pb_userIcone = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_userIcone)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.pb_userIcone);
             this.panel1.Controls.Add(this.bt_Sair);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button_salvar);
@@ -81,7 +84,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1083, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 33);
+            this.label1.Size = new System.Drawing.Size(63, 32);
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -156,6 +159,16 @@
             this.panelHome.TabIndex = 3;
             this.panelHome.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHome_Paint);
             // 
+            // pb_userIcone
+            // 
+            this.pb_userIcone.Location = new System.Drawing.Point(945, 3);
+            this.pb_userIcone.Name = "pb_userIcone";
+            this.pb_userIcone.Size = new System.Drawing.Size(40, 40);
+            this.pb_userIcone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_userIcone.TabIndex = 8;
+            this.pb_userIcone.TabStop = false;
+            this.pb_userIcone.Click += new System.EventHandler(this.Pb_userIcone_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,6 +185,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_userIcone)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -186,6 +200,7 @@
         private System.Windows.Forms.Button button_salvar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bt_Sair;
+        private System.Windows.Forms.PictureBox pb_userIcone;
     }
 }
 

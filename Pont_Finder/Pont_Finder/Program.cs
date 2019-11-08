@@ -14,25 +14,18 @@ namespace Pont_Finder
         [STAThread]
         static void Main()
         {
+            //geral
+            UserList.XmlLoad();
+            //fim geral
+
+            //servicos
             servicos.classes.PostList.XmlLoad();
-            hospedagem.hostList.CarregarXML();
-
-            //carregando o xml
-            XmlLi xmlli = new XmlLi();      
-            User user = new User();
-
-            //salvando os itens na lista
-            foreach (var item in xmlli.select())
-            {
-                user.Nome = item[1];
-                user.Email = item[2];
-                user.Senha = item[3];
-                user.Cpf = long.Parse(item[4]);
-                user.Ativo = bool.Parse(item[5]);
-                UserList.userAdd(user);
-            }
-
             servicos.classes.ListaEmpresa.XmlLoad();
+            //fim servicos
+
+            //hospedagem
+            hospedagem.hostList.CarregarXML();
+            //fim hospedagem
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
