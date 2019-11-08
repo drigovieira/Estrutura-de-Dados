@@ -70,12 +70,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -85,7 +86,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureB_card)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel5.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -205,7 +205,7 @@
             this.panel10.Controls.Add(this.radioButton3);
             this.panel10.Controls.Add(this.radioButton4);
             this.panel10.Controls.Add(this.label14);
-            this.panel10.Location = new System.Drawing.Point(5, 684);
+            this.panel10.Location = new System.Drawing.Point(5, 685);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(310, 100);
             this.panel10.TabIndex = 36;
@@ -356,7 +356,7 @@
             this.panel7.Controls.Add(this.radioButton7);
             this.panel7.Controls.Add(this.radioButton8);
             this.panel7.Controls.Add(this.label12);
-            this.panel7.Location = new System.Drawing.Point(5, 783);
+            this.panel7.Location = new System.Drawing.Point(5, 784);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(310, 120);
             this.panel7.TabIndex = 31;
@@ -446,7 +446,7 @@
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(950, 447);
+            this.panel8.Location = new System.Drawing.Point(950, 751);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(310, 325);
             this.panel8.TabIndex = 38;
@@ -542,22 +542,13 @@
             this.label11.TabIndex = 5;
             this.label11.Text = "Listar por preço";
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.panel11);
-            this.panel5.Location = new System.Drawing.Point(5, 585);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 298);
-            this.panel5.TabIndex = 34;
-            // 
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.radioButton2);
             this.panel11.Controls.Add(this.radioButton1);
             this.panel11.Controls.Add(this.label11);
-            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Location = new System.Drawing.Point(5, 586);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(310, 100);
             this.panel11.TabIndex = 0;
@@ -607,10 +598,29 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Location = new System.Drawing.Point(950, 280);
+            this.panel2.Location = new System.Drawing.Point(950, 586);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 160);
             this.panel2.TabIndex = 32;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Location = new System.Drawing.Point(950, 280);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(310, 300);
+            this.panel5.TabIndex = 41;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(1022, 241);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(188, 36);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Top 5 acomodações";
             // 
             // Hosp_Home
             // 
@@ -619,6 +629,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel11);
             this.Controls.Add(this.bt_Cad_Empresa);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel10);
@@ -629,7 +642,6 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -652,7 +664,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel5.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -707,11 +718,12 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label16;
     }
 }

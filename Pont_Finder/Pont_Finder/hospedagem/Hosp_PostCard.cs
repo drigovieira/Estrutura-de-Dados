@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.hospedagem
 {
-    public partial class PostCard : UserControl
+    public partial class Hosp_PostCard : UserControl
     {
-        public PostCard()
+        public Hosp_PostCard()
         {
             InitializeComponent();
+        }
+
+        private void bt_visualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_rs_Click(object sender, EventArgs e)
+        {
         }
     }
 }

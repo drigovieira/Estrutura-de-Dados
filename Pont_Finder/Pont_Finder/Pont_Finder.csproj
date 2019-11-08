@@ -204,11 +204,11 @@
     <Compile Include="eventos\PostEventos.Designer.cs">
       <DependentUpon>PostEventos.cs</DependentUpon>
     </Compile>
-    <Compile Include="hospedagem\PostCard.cs">
+    <Compile Include="hospedagem\Hosp_PostCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="hospedagem\PostCard.Designer.cs">
-      <DependentUpon>PostCard.cs</DependentUpon>
+    <Compile Include="hospedagem\Hosp_PostCard.Designer.cs">
+      <DependentUpon>Hosp_PostCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -347,8 +347,8 @@
     <EmbeddedResource Include="hospedagem\Listas_quartos.resx">
       <DependentUpon>Listas_quartos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hospedagem\PostCard.resx">
-      <DependentUpon>PostCard.cs</DependentUpon>
+    <EmbeddedResource Include="hospedagem\Hosp_PostCard.resx">
+      <DependentUpon>Hosp_PostCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
