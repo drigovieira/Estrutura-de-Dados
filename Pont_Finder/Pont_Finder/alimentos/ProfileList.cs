@@ -88,17 +88,20 @@ namespace Pont_Finder.alimentos
             return topList;
         }
 
-        public List<ProfileCompany> profileList(List<Company> referenceProfile)
+        public List<ProfileCompany> profileList(List<Company> referenceProfile, string categoria)
         {
             List<ProfileCompany> Perfis = new List<ProfileCompany>();
             CompanyList comp = new CompanyList();
             foreach (var id in referenceProfile)
             {
-                foreach (var item in perfil)
+                if (id.Categoria.Equals(categoria))
                 {
-                    if (id.Id == item.CodigoCompany)
+                    foreach (var item in perfil)
                     {
-                        Perfis.Add(item);
+                        if (id.Id == item.CodigoCompany)
+                        {
+                            Perfis.Add(item);
+                        }
                     }
                 }
             }

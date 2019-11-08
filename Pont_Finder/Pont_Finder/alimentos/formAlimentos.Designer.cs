@@ -102,6 +102,7 @@
             this.CategoriaBox.Name = "CategoriaBox";
             this.CategoriaBox.Size = new System.Drawing.Size(172, 21);
             this.CategoriaBox.TabIndex = 11;
+            this.CategoriaBox.Visible = false;
             // 
             // Pesquisar
             // 
@@ -127,6 +128,7 @@
             this.label4.Size = new System.Drawing.Size(72, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Categoria";
+            this.label4.Visible = false;
             // 
             // PesquisaBox
             // 

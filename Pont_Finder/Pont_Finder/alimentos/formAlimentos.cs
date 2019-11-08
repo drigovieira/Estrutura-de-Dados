@@ -55,7 +55,7 @@ namespace Pont_Finder
                 local = local + exbEmp.Height + 5;
                 ListarEmpresas.Controls.Add(exbEmp);
             }
-            List<ProfileCompany> BuscaPerfis = prof.profileList(listaBusca);
+            /*List<ProfileCompany> BuscaPerfis = prof.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
             local1 = 0;
             Top5.Controls.Clear();
             foreach (var busca in prof.TopList(BuscaPerfis))
@@ -74,6 +74,7 @@ namespace Pont_Finder
                     }
                 }
             }
+            */
         }
 
         public void Listar()

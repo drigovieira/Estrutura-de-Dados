@@ -25,5 +25,11 @@ namespace Pont_Finder.alimentos
         {
             NomeEmpresa.Text = nomeCompany;
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            alimentos.Visualizar perfil = new alimentos.Visualizar();
+            FormPrincipal.MudarForm("alimentos", perfil);
+        }
     }
 }

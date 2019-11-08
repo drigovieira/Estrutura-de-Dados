@@ -72,6 +72,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.lbOutros = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
@@ -102,8 +104,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.lbOutros = new System.Windows.Forms.Label();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -584,6 +584,25 @@
             this.panel6.Size = new System.Drawing.Size(460, 218);
             this.panel6.TabIndex = 6;
             // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(290, 164);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(91, 17);
+            this.checkBox9.TabIndex = 10;
+            this.checkBox9.Text = "Convencional";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // lbOutros
+            // 
+            this.lbOutros.AutoSize = true;
+            this.lbOutros.Location = new System.Drawing.Point(21, 168);
+            this.lbOutros.Name = "lbOutros";
+            this.lbOutros.Size = new System.Drawing.Size(41, 13);
+            this.lbOutros.TabIndex = 9;
+            this.lbOutros.Text = "Outros:";
+            // 
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(68, 165);
@@ -885,25 +904,6 @@
             this.label10.Size = new System.Drawing.Size(371, 39);
             this.label10.TabIndex = 3;
             this.label10.Text = "Vamos evoluir juntos!";
-            // 
-            // lbOutros
-            // 
-            this.lbOutros.AutoSize = true;
-            this.lbOutros.Location = new System.Drawing.Point(21, 168);
-            this.lbOutros.Name = "lbOutros";
-            this.lbOutros.Size = new System.Drawing.Size(41, 13);
-            this.lbOutros.TabIndex = 9;
-            this.lbOutros.Text = "Outros:";
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(290, 164);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(91, 17);
-            this.checkBox9.TabIndex = 10;
-            this.checkBox9.Text = "Convencional";
-            this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // Cadastro_Restaurante
             // 
