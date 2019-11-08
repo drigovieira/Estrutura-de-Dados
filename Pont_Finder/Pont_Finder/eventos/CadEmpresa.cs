@@ -21,5 +21,11 @@ namespace Pont_Finder.eventos
         {
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            PostEventos outroform = new PostEventos();
+            outroform.ShowDialog();
+        }
     }
 }
