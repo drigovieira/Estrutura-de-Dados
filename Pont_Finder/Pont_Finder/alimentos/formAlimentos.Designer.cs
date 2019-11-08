@@ -32,7 +32,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CategoriaBox = new System.Windows.Forms.ComboBox();
             this.Pesquisar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.PesquisaBox = new System.Windows.Forms.TextBox();
@@ -74,7 +74,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.CategoriaBox);
             this.panel2.Controls.Add(this.Pesquisar);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.PesquisaBox);
@@ -85,13 +85,23 @@
             this.panel2.Size = new System.Drawing.Size(310, 267);
             this.panel2.TabIndex = 13;
             // 
-            // comboBox1
+            // CategoriaBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(22, 163);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(172, 21);
-            this.comboBox1.TabIndex = 11;
+            this.CategoriaBox.FormattingEnabled = true;
+            this.CategoriaBox.Items.AddRange(new object[] {
+            "Hambúrgueria",
+            "Comida Italiana",
+            "Comida Japonesa",
+            "Pizzaria",
+            "Sorveteria",
+            "Petiscaria",
+            "Churrascaria",
+            "Frutos do Mar",
+            "Convencional"});
+            this.CategoriaBox.Location = new System.Drawing.Point(22, 163);
+            this.CategoriaBox.Name = "CategoriaBox";
+            this.CategoriaBox.Size = new System.Drawing.Size(172, 21);
+            this.CategoriaBox.TabIndex = 11;
             // 
             // Pesquisar
             // 
@@ -272,7 +282,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CategoriaBox;
         private System.Windows.Forms.Button Pesquisar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox PesquisaBox;
