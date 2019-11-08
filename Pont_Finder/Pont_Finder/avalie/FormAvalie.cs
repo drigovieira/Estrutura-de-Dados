@@ -14,12 +14,14 @@ namespace Pont_Finder
     public partial class FormAvalie : Form
     {
 
+        int local = 0;
         int leftcontrol = 8;
         int let = 0;
         int let2 = 0;
 
         public FormAvalie()
         {
+            local = 5;
             InitializeComponent();
            
         }
@@ -48,15 +50,17 @@ namespace Pont_Finder
         private void button1_Click(object sender, EventArgs e)
         {
             UserControl1 t1 = new UserControl1();
+            t1.Location = new Point(0, local);
+            local = local + t1.Height + 5;
 
 
             panel3.Controls.Add(t1);
-            t1.Top = let * let2;
+            /*t1.Top = let * let2;
             let = 24;
             let2 = 24;
             t1.Left = 5;
             leftcontrol = 0;
-            leftcontrol = leftcontrol;
+            leftcontrol = leftcontrol;*/
             t1.Att();
 
 
