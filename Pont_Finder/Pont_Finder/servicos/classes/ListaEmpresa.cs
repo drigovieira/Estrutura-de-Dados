@@ -24,6 +24,7 @@ namespace Pont_Finder.servicos.classes
             tmp.Cpf = comp.Cpf;
             tmp.Endereco = comp.Endereco;
             tmp.Telefone = comp.Telefone;
+            tmp.Image = comp.Image;
             tmp.Status = true;
             listaEmpresa.Add(tmp);
         }
@@ -41,6 +42,7 @@ namespace Pont_Finder.servicos.classes
                 tmp.Cpf = item.Cpf;
                 tmp.Endereco = item.Endereco;
                 tmp.Telefone = item.Telefone;
+                tmp.Image = item.Image;
                 tmp.Status = item.Status;              
                 lista.Add(tmp);
             }
@@ -61,6 +63,7 @@ namespace Pont_Finder.servicos.classes
                     emp.Endereco = item.Endereco;
                     emp.Telefone = item.Telefone;
                     emp.Status = item.Status;
+                    emp.Image = item.Image;
                     return emp;
                 }                
             }
@@ -81,6 +84,7 @@ namespace Pont_Finder.servicos.classes
                 emp.Endereco = item.Element("endereco").Value;
                 emp.Cnpj = long.Parse( item.Element("cnpj").Value);
                 emp.Cpf = long.Parse(item.Element("cpf").Value);
+                emp.Image = item.Element("image").Value;
                 emp.Status = bool.Parse( item.Element("status").Value);
                 ListaEmpresa.Add(emp);               
             }
@@ -98,6 +102,7 @@ namespace Pont_Finder.servicos.classes
                       new XElement("endereco", item.Endereco),
                       new XElement("cnpj", item.Cnpj),
                       new XElement("cpf", item.Cpf),
+                      new XElement("image", item.Image),
                       new XElement("status", item.Status));
 
                 XDocument doc = XDocument.Load(caminho);

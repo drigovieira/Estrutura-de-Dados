@@ -18,7 +18,7 @@ namespace Pont_Finder.servicos
             InitializeComponent();
             if (Session.Online)
             {
-               classes.Empresa emp = classes.ListaEmpresa.selectCpf(Session.Cpf);
+                classes.Empresa emp = classes.ListaEmpresa.selectCpf(Session.Cpf);
                 if (emp == null)
                 {
                     bt_cadEmpresa.Enabled = true;

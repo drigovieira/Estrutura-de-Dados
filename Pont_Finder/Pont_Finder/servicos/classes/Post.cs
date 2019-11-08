@@ -24,7 +24,7 @@ namespace Pont_Finder.servicos.classes
         {
             ativo = true;
             cpf = Session.Cpf;
-            cnpj = -1;
+            //cnpj = -1;
             //data = DateTime.Now;
         }
 

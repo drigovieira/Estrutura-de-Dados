@@ -43,11 +43,21 @@ namespace Pont_Finder.servicos
                 lb_endereco.Text = "";
                 lb_telefone.Text = "";
                 lb_cpf.Text = "";
-                lb_cep.Text = "";
+               
 
             }
             else
             {
+               
+                classes.Empresa emp = classes.ListaEmpresa.selectCpf(post.Cpf);
+
+                lb_fantasia.Text = "Nome: " + emp.NomeFantasia;
+                lb_email.Text = "E-mail: " + emp.Email;
+                lb_endereco.Text = "Endereco:" + emp.Endereco;
+                lb_telefone.Text = "Telefone: " + emp.Telefone;
+                lb_cpf.Text = "Cnpj: "+ emp.Cnpj;
+                pb_empresa.ImageLocation = emp.Image;
+
 
             }
 

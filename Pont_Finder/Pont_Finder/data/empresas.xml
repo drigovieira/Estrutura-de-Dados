@@ -1,23 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulos>
-  <alimentos>
-    <nome>nsdfih</nome>
-    <nomeFantasia>jfposjj</nomeFantasia>
-    <email>shfhw</email>
-    <telefone>297</telefone>
-    <endereco>270497ef</endereco>
-    <cnpj>998124</cnpj>
-    <cpf>12345</cpf>
-    <status>true</status>
-  </alimentos>
   <servico>
-    <nome>nsdfih</nome>
-    <nomeFantasia>jfposjj</nomeFantasia>
-    <email>shfhw</email>
-    <telefone>297</telefone>
-    <endereco>270497ef</endereco>
-    <cnpj>998124</cnpj>
+    <nome>Pingum</nome>
+    <nomeFantasia>Pingum</nomeFantasia>
+    <email>Pingum@gmail.com</email>
+    <telefone>38645896</telefone>
+    <endereco>Pingum/PG</endereco>
+    <cnpj>983264782638</cnpj>
     <cpf>12345</cpf>
+    <image>..//..//servicos//data//images//empresas//983264782638.jpg</image>
     <status>true</status>
   </servico>
 </modulos>

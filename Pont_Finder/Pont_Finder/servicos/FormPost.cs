@@ -19,6 +19,16 @@ namespace Pont_Finder.servicos
         {
             InitializeComponent();
             pb_icone.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            classes.Empresa emp = classes.ListaEmpresa.selectCpf(Session.Cpf);
+            if (emp == null)
+            {
+                bt_empresa.Enabled = false;
+            }
+            else
+            {
+                bt_empresa.Enabled = true;
+            }
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
@@ -66,6 +76,7 @@ namespace Pont_Finder.servicos
             p.Descricao = tb_descricao.Text;
             p.Image = link;
             p.Data = DateTime.Now;
+            p.Cnpj = -1;
             classes.PostList.Add(p);
             FormPrincipal.MudarForm("servicos", new FormServicos());
      
@@ -98,6 +109,49 @@ namespace Pont_Finder.servicos
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void FormPost_Load(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void Bt_empresa_Click(object sender, EventArgs e)
+        {
+            string link = null;
+            if (img)
+            {
+                if (!Directory.Exists("..//..//servicos//data//images//posts"))
+                    Directory.CreateDirectory("..//..//servicos//data//images//posts");
+
+                pb_icone.Load();
+                pb_icone.Image = Image.FromFile(openIcone.FileName);
+
+                Image bmp = new Bitmap(pb_icone.Image);
+
+                Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+
+                pb_icone.Image = bmp2;
+                string nome = tb_valor.Text;
+                int id = classes.PostList.Tam;
+                link = "..//..//servicos//data//images//posts//" + id + ".jpg";
+                pb_icone.Image.Save(link, ImageFormat.Jpeg);
+            }
+
+            classes.Empresa emp = classes.ListaEmpresa.selectCpf(Session.Cpf);
+
+            classes.Post p = new classes.Post();
+            p.Id = classes.PostList.Tam;
+            p.Titulo = tb_titulo.Text;
+            p.Valor = double.Parse(tb_valor.Text);
+            p.Detalhes = tb_detalhes.Text;
+            p.Descricao = tb_descricao.Text;
+            p.Image = link;
+            p.Data = DateTime.Now;
+            p.Cnpj = emp.Cnpj;
+            classes.PostList.Add(p);
+            FormPrincipal.MudarForm("servicos", new FormServicos());
 
         }
     }

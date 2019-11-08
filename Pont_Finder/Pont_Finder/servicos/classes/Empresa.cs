@@ -13,7 +13,8 @@ namespace Pont_Finder.servicos.classes
             nomeFantasia,
             email,
             telefone,
-            endereco;
+            endereco,
+            image;
         //rua, numero, cidade, cep
 
         private long
@@ -77,6 +78,12 @@ namespace Pont_Finder.servicos.classes
         {
             get { return telefone; }
             set { telefone = value; }
+        }
+
+        public string Image
+        {
+            get { return image; }
+            set { image = value; }
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.Panel panel1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPost));
+            this.bt_empresa = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.tb_descricao = new System.Windows.Forms.TextBox();
             this.bt_icone = new System.Windows.Forms.Button();
@@ -40,7 +41,7 @@
             this.tb_valor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cancelar = new System.Windows.Forms.Button();
-            this.publicar = new System.Windows.Forms.Button();
+            this.bt_usuario = new System.Windows.Forms.Button();
             this.tb_detalhes = new System.Windows.Forms.TextBox();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -56,6 +57,7 @@
             // 
             panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel1.Controls.Add(this.bt_empresa);
             panel1.Controls.Add(this.label4);
             panel1.Controls.Add(this.tb_descricao);
             panel1.Controls.Add(this.bt_icone);
@@ -66,13 +68,26 @@
             panel1.Controls.Add(this.tb_valor);
             panel1.Controls.Add(this.label1);
             panel1.Controls.Add(this.cancelar);
-            panel1.Controls.Add(this.publicar);
+            panel1.Controls.Add(this.bt_usuario);
             panel1.Controls.Add(this.tb_detalhes);
             panel1.Location = new System.Drawing.Point(332, 231);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(630, 791);
+            panel1.Size = new System.Drawing.Size(630, 879);
             panel1.TabIndex = 3;
             panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // bt_empresa
+            // 
+            this.bt_empresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_empresa.ForeColor = System.Drawing.Color.White;
+            this.bt_empresa.Location = new System.Drawing.Point(166, 777);
+            this.bt_empresa.Name = "bt_empresa";
+            this.bt_empresa.Size = new System.Drawing.Size(300, 34);
+            this.bt_empresa.TabIndex = 12;
+            this.bt_empresa.Text = "Publicar Empresa";
+            this.bt_empresa.UseVisualStyleBackColor = false;
+            this.bt_empresa.Click += new System.EventHandler(this.Bt_empresa_Click);
             // 
             // label4
             // 
@@ -167,26 +182,26 @@
             this.cancelar.BackColor = System.Drawing.Color.OrangeRed;
             this.cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelar.ForeColor = System.Drawing.Color.White;
-            this.cancelar.Location = new System.Drawing.Point(347, 731);
+            this.cancelar.Location = new System.Drawing.Point(166, 824);
             this.cancelar.Name = "cancelar";
-            this.cancelar.Size = new System.Drawing.Size(95, 34);
+            this.cancelar.Size = new System.Drawing.Size(300, 34);
             this.cancelar.TabIndex = 6;
             this.cancelar.Text = "Cancelar";
             this.cancelar.UseVisualStyleBackColor = false;
             this.cancelar.Click += new System.EventHandler(this.Cancelar_Click);
             // 
-            // publicar
+            // bt_usuario
             // 
-            this.publicar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
-            this.publicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.publicar.ForeColor = System.Drawing.Color.White;
-            this.publicar.Location = new System.Drawing.Point(192, 731);
-            this.publicar.Name = "publicar";
-            this.publicar.Size = new System.Drawing.Size(99, 34);
-            this.publicar.TabIndex = 5;
-            this.publicar.Text = "Publicar";
-            this.publicar.UseVisualStyleBackColor = false;
-            this.publicar.Click += new System.EventHandler(this.Publicar_Click);
+            this.bt_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
+            this.bt_usuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_usuario.ForeColor = System.Drawing.Color.White;
+            this.bt_usuario.Location = new System.Drawing.Point(166, 730);
+            this.bt_usuario.Name = "bt_usuario";
+            this.bt_usuario.Size = new System.Drawing.Size(300, 34);
+            this.bt_usuario.TabIndex = 5;
+            this.bt_usuario.Text = "Publicar Usuário";
+            this.bt_usuario.UseVisualStyleBackColor = false;
+            this.bt_usuario.Click += new System.EventHandler(this.Publicar_Click);
             // 
             // tb_detalhes
             // 
@@ -208,7 +223,7 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 1022);
+            this.panel3.Location = new System.Drawing.Point(0, 1110);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1265, 100);
             this.panel3.TabIndex = 5;
@@ -250,6 +265,7 @@
             this.Name = "FormPost";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.FormPost_Load);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
@@ -262,7 +278,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox tb_detalhes;
-        private System.Windows.Forms.Button publicar;
+        private System.Windows.Forms.Button bt_usuario;
         private System.Windows.Forms.Button cancelar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_valor;
@@ -277,5 +293,6 @@
         private System.Windows.Forms.TextBox tb_descricao;
         private System.Windows.Forms.PictureBox pb_wallpaper;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button bt_empresa;
     }
 }

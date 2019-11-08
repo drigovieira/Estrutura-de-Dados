@@ -34,23 +34,22 @@
             this.lb_titulo = new System.Windows.Forms.Label();
             this.lb_valor = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_voltar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lb_descricao = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lb_cep = new System.Windows.Forms.Label();
+            this.pb_empresa = new System.Windows.Forms.PictureBox();
             this.lb_telefone = new System.Windows.Forms.Label();
             this.lb_endereco = new System.Windows.Forms.Label();
             this.lb_email = new System.Windows.Forms.Label();
             this.lb_cpf = new System.Windows.Forms.Label();
             this.lb_fantasia = new System.Windows.Forms.Label();
-            this.bt_voltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_wallpaper
@@ -103,6 +102,16 @@
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 23;
             // 
+            // bt_voltar
+            // 
+            this.bt_voltar.Location = new System.Drawing.Point(88, 13);
+            this.bt_voltar.Name = "bt_voltar";
+            this.bt_voltar.Size = new System.Drawing.Size(75, 23);
+            this.bt_voltar.TabIndex = 0;
+            this.bt_voltar.Text = "Voltar";
+            this.bt_voltar.UseVisualStyleBackColor = true;
+            this.bt_voltar.Click += new System.EventHandler(this.Bt_voltar_Click);
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -126,8 +135,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.lb_cep);
+            this.panel4.Controls.Add(this.pb_empresa);
             this.panel4.Controls.Add(this.lb_telefone);
             this.panel4.Controls.Add(this.lb_endereco);
             this.panel4.Controls.Add(this.lb_email);
@@ -138,30 +146,20 @@
             this.panel4.Size = new System.Drawing.Size(1055, 217);
             this.panel4.TabIndex = 26;
             // 
-            // pictureBox1
+            // pb_empresa
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lb_cep
-            // 
-            this.lb_cep.AutoSize = true;
-            this.lb_cep.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cep.Location = new System.Drawing.Point(223, 175);
-            this.lb_cep.Name = "lb_cep";
-            this.lb_cep.Size = new System.Drawing.Size(51, 29);
-            this.lb_cep.TabIndex = 5;
-            this.lb_cep.Text = "CEP";
+            this.pb_empresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_empresa.Location = new System.Drawing.Point(9, 8);
+            this.pb_empresa.Name = "pb_empresa";
+            this.pb_empresa.Size = new System.Drawing.Size(200, 200);
+            this.pb_empresa.TabIndex = 27;
+            this.pb_empresa.TabStop = false;
             // 
             // lb_telefone
             // 
             this.lb_telefone.AutoSize = true;
             this.lb_telefone.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_telefone.Location = new System.Drawing.Point(439, 175);
+            this.lb_telefone.Location = new System.Drawing.Point(223, 179);
             this.lb_telefone.Name = "lb_telefone";
             this.lb_telefone.Size = new System.Drawing.Size(99, 29);
             this.lb_telefone.TabIndex = 4;
@@ -171,7 +169,7 @@
             // 
             this.lb_endereco.AutoSize = true;
             this.lb_endereco.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_endereco.Location = new System.Drawing.Point(223, 132);
+            this.lb_endereco.Location = new System.Drawing.Point(223, 133);
             this.lb_endereco.Name = "lb_endereco";
             this.lb_endereco.Size = new System.Drawing.Size(107, 29);
             this.lb_endereco.TabIndex = 3;
@@ -192,7 +190,7 @@
             // 
             this.lb_cpf.AutoSize = true;
             this.lb_cpf.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cpf.Location = new System.Drawing.Point(223, 88);
+            this.lb_cpf.Location = new System.Drawing.Point(223, 92);
             this.lb_cpf.Name = "lb_cpf";
             this.lb_cpf.Size = new System.Drawing.Size(108, 29);
             this.lb_cpf.TabIndex = 1;
@@ -208,16 +206,6 @@
             this.lb_fantasia.TabIndex = 0;
             this.lb_fantasia.Text = "Nome";
             this.lb_fantasia.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // bt_voltar
-            // 
-            this.bt_voltar.Location = new System.Drawing.Point(88, 13);
-            this.bt_voltar.Name = "bt_voltar";
-            this.bt_voltar.Size = new System.Drawing.Size(75, 23);
-            this.bt_voltar.TabIndex = 0;
-            this.bt_voltar.Text = "Voltar";
-            this.bt_voltar.UseVisualStyleBackColor = true;
-            this.bt_voltar.Click += new System.EventHandler(this.Bt_voltar_Click);
             // 
             // FormVisualizarPost
             // 
@@ -246,7 +234,7 @@
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,9 +254,8 @@
         private System.Windows.Forms.Label lb_email;
         private System.Windows.Forms.Label lb_cpf;
         private System.Windows.Forms.Label lb_endereco;
-        private System.Windows.Forms.Label lb_cep;
         private System.Windows.Forms.Label lb_telefone;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb_empresa;
         private System.Windows.Forms.Button bt_voltar;
     }
 }

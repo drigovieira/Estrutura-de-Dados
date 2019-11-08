@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadEmpresa));
             this.panel11 = new System.Windows.Forms.Panel();
             this.AddFotoEmpresa = new System.Windows.Forms.Button();
-            this.EmpresaFoto = new System.Windows.Forms.PictureBox();
             this.tb_email = new System.Windows.Forms.TextBox();
             this.tb_cnpj = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,11 +51,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.openIcone = new System.Windows.Forms.OpenFileDialog();
+            this.pb_icone = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmpresaFoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.AddFotoEmpresa);
-            this.panel11.Controls.Add(this.EmpresaFoto);
+            this.panel11.Controls.Add(this.pb_icone);
             this.panel11.Controls.Add(this.tb_email);
             this.panel11.Controls.Add(this.tb_cnpj);
             this.panel11.Controls.Add(this.label5);
@@ -99,15 +100,7 @@
             this.AddFotoEmpresa.TabIndex = 16;
             this.AddFotoEmpresa.Text = "Adcionar foto de perfil";
             this.AddFotoEmpresa.UseVisualStyleBackColor = false;
-            // 
-            // EmpresaFoto
-            // 
-            this.EmpresaFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmpresaFoto.Location = new System.Drawing.Point(100, 12);
-            this.EmpresaFoto.Name = "EmpresaFoto";
-            this.EmpresaFoto.Size = new System.Drawing.Size(200, 200);
-            this.EmpresaFoto.TabIndex = 15;
-            this.EmpresaFoto.TabStop = false;
+            this.AddFotoEmpresa.Click += new System.EventHandler(this.AddFotoEmpresa_Click);
             // 
             // tb_email
             // 
@@ -303,6 +296,22 @@
             this.panel3.Size = new System.Drawing.Size(1265, 100);
             this.panel3.TabIndex = 65;
             // 
+            // openIcone
+            // 
+            this.openIcone.FileName = "icone";
+            this.openIcone.Filter = "\"Image|*.jpg;*.jpeg;*.bmp\"";
+            // 
+            // pb_icone
+            // 
+            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage1;
+            this.pb_icone.Location = new System.Drawing.Point(100, 12);
+            this.pb_icone.Name = "pb_icone";
+            this.pb_icone.Size = new System.Drawing.Size(200, 200);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_icone.TabIndex = 15;
+            this.pb_icone.TabStop = false;
+            // 
             // panel7
             // 
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
@@ -356,7 +365,7 @@
             this.Text = "FormCadEmpresa";
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmpresaFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.ResumeLayout(false);
@@ -390,7 +399,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox EmpresaFoto;
+        private System.Windows.Forms.PictureBox pb_icone;
         private System.Windows.Forms.Button AddFotoEmpresa;
+        private System.Windows.Forms.OpenFileDialog openIcone;
     }
 }
