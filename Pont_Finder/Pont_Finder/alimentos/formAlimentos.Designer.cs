@@ -39,7 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Top5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbTop5 = new System.Windows.Forms.Label();
             this.ListarEmpresas = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -169,15 +169,15 @@
             this.Top5.Size = new System.Drawing.Size(270, 270);
             this.Top5.TabIndex = 6;
             // 
-            // label7
+            // lbTop5
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 14);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(274, 20);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Top 5 Restaurantes Melhor Avaliados";
+            this.lbTop5.AutoSize = true;
+            this.lbTop5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTop5.Location = new System.Drawing.Point(1, 23);
+            this.lbTop5.Name = "lbTop5";
+            this.lbTop5.Size = new System.Drawing.Size(309, 20);
+            this.lbTop5.TabIndex = 5;
+            this.lbTop5.Text = "Top 5 Restaurantes Melhor Avaliados";
             // 
             // ListarEmpresas
             // 
@@ -201,7 +201,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel4.Controls.Add(this.Top5);
-            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.lbTop5);
             this.panel4.Location = new System.Drawing.Point(955, 328);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 392);
@@ -311,7 +311,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel Top5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbTop5;
         private System.Windows.Forms.Panel ListarEmpresas;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel4;

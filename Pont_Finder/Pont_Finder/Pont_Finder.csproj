@@ -67,6 +67,12 @@
     <Compile Include="alimentos\Item_Alimentos.Designer.cs">
       <DependentUpon>Item_Alimentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="alimentos\lbMensagem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\lbMensagem.Designer.cs">
+      <DependentUpon>lbMensagem.cs</DependentUpon>
+    </Compile>
     <Compile Include="alimentos\ProfileCompany.cs" />
     <Compile Include="alimentos\ProfileList.cs" />
     <Compile Include="alimentos\Publi.cs">
@@ -291,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Item_Alimentos.resx">
       <DependentUpon>Item_Alimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\lbMensagem.resx">
+      <DependentUpon>lbMensagem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Publi.resx">
       <DependentUpon>Publi.cs</DependentUpon>
