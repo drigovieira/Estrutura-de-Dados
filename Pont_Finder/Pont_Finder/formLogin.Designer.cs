@@ -47,7 +47,7 @@
             this.buttonLogin.Location = new System.Drawing.Point(241, 443);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(148, 42);
-            this.buttonLogin.TabIndex = 23;
+            this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "Fazer Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
@@ -58,7 +58,7 @@
             this.label4.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(168, 282);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 32);
+            this.label4.Size = new System.Drawing.Size(66, 31);
             this.label4.TabIndex = 21;
             this.label4.Text = "Senha:";
             // 
@@ -68,7 +68,8 @@
             this.textB_senha.Location = new System.Drawing.Point(165, 317);
             this.textB_senha.Name = "textB_senha";
             this.textB_senha.Size = new System.Drawing.Size(300, 29);
-            this.textB_senha.TabIndex = 20;
+            this.textB_senha.TabIndex = 1;
+            this.textB_senha.UseSystemPasswordChar = true;
             this.textB_senha.TextChanged += new System.EventHandler(this.TextB_senha_TextChanged);
             this.textB_senha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextB_senha_KeyPress);
             // 
@@ -78,7 +79,7 @@
             this.textB_email.Location = new System.Drawing.Point(165, 211);
             this.textB_email.Name = "textB_email";
             this.textB_email.Size = new System.Drawing.Size(300, 29);
-            this.textB_email.TabIndex = 19;
+            this.textB_email.TabIndex = 0;
             this.textB_email.Tag = "";
             this.textB_email.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextB_email_KeyPress);
             // 
@@ -88,7 +89,7 @@
             this.label3.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(168, 176);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 32);
+            this.label3.Size = new System.Drawing.Size(67, 31);
             this.label3.TabIndex = 18;
             this.label3.Text = "E-mail:";
             // 
@@ -120,7 +121,7 @@
             this.buttonCriarC.Location = new System.Drawing.Point(241, 513);
             this.buttonCriarC.Name = "buttonCriarC";
             this.buttonCriarC.Size = new System.Drawing.Size(148, 42);
-            this.buttonCriarC.TabIndex = 22;
+            this.buttonCriarC.TabIndex = 4;
             this.buttonCriarC.Text = "Criar Conta";
             this.buttonCriarC.UseVisualStyleBackColor = false;
             this.buttonCriarC.Click += new System.EventHandler(this.buttonCriarC_Click);
@@ -132,8 +133,8 @@
             this.label5.ForeColor = System.Drawing.Color.Blue;
             this.label5.Location = new System.Drawing.Point(170, 351);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 22);
-            this.label5.TabIndex = 24;
+            this.label5.Size = new System.Drawing.Size(96, 21);
+            this.label5.TabIndex = 2;
             this.label5.Text = "Esqueci a senha!";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 

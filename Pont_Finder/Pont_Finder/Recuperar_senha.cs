@@ -21,5 +21,10 @@ namespace Pont_Finder
         {
 
         }
+
+        private void button_recuperar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

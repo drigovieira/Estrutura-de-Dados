@@ -66,7 +66,7 @@
             this.button1.Location = new System.Drawing.Point(202, 577);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 50);
-            this.button1.TabIndex = 13;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -76,7 +76,7 @@
             this.input_id.Location = new System.Drawing.Point(454, 523);
             this.input_id.Name = "input_id";
             this.input_id.Size = new System.Drawing.Size(66, 22);
-            this.input_id.TabIndex = 14;
+            this.input_id.TabIndex = 5;
             // 
             // input_valor
             // 
@@ -84,7 +84,7 @@
             this.input_valor.Location = new System.Drawing.Point(212, 523);
             this.input_valor.Name = "input_valor";
             this.input_valor.Size = new System.Drawing.Size(200, 22);
-            this.input_valor.TabIndex = 10;
+            this.input_valor.TabIndex = 4;
             // 
             // input_servicos
             // 
@@ -101,7 +101,7 @@
             this.input_servicos.Location = new System.Drawing.Point(177, 349);
             this.input_servicos.Name = "input_servicos";
             this.input_servicos.Size = new System.Drawing.Size(270, 123);
-            this.input_servicos.TabIndex = 8;
+            this.input_servicos.TabIndex = 3;
             // 
             // label7
             // 
@@ -149,7 +149,7 @@
             this.input_qtdquarto.Location = new System.Drawing.Point(212, 268);
             this.input_qtdquarto.Name = "input_qtdquarto";
             this.input_qtdquarto.Size = new System.Drawing.Size(200, 22);
-            this.input_qtdquarto.TabIndex = 6;
+            this.input_qtdquarto.TabIndex = 2;
             // 
             // label5
             // 
@@ -173,7 +173,7 @@
             this.input_qtdpessoas.Location = new System.Drawing.Point(212, 189);
             this.input_qtdpessoas.Name = "input_qtdpessoas";
             this.input_qtdpessoas.Size = new System.Drawing.Size(200, 24);
-            this.input_qtdpessoas.TabIndex = 4;
+            this.input_qtdpessoas.TabIndex = 1;
             this.input_qtdpessoas.Text = "Selecione a quantidade";
             // 
             // label4
@@ -192,7 +192,7 @@
             this.input_tipo.Location = new System.Drawing.Point(105, 110);
             this.input_tipo.Name = "input_tipo";
             this.input_tipo.Size = new System.Drawing.Size(415, 22);
-            this.input_tipo.TabIndex = 1;
+            this.input_tipo.TabIndex = 0;
             // 
             // panel3
             // 

@@ -35,19 +35,20 @@
             this.textB_senha = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textB_email = new System.Windows.Forms.TextBox();
-            this.textB_cpf = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.mkb_cpf = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(146, 471);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 22);
-            this.textBox1.TabIndex = 60;
+            this.textBox1.Size = new System.Drawing.Size(300, 29);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -78,17 +79,19 @@
             this.button_recuperar.Location = new System.Drawing.Point(220, 532);
             this.button_recuperar.Name = "button_recuperar";
             this.button_recuperar.Size = new System.Drawing.Size(148, 42);
-            this.button_recuperar.TabIndex = 57;
+            this.button_recuperar.TabIndex = 4;
             this.button_recuperar.Text = "Recuperar";
             this.button_recuperar.UseVisualStyleBackColor = false;
+            this.button_recuperar.Click += new System.EventHandler(this.button_recuperar_Click);
             // 
             // textB_senha
             // 
-            this.textB_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textB_senha.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textB_senha.Location = new System.Drawing.Point(144, 391);
             this.textB_senha.Name = "textB_senha";
-            this.textB_senha.Size = new System.Drawing.Size(300, 22);
-            this.textB_senha.TabIndex = 56;
+            this.textB_senha.Size = new System.Drawing.Size(300, 29);
+            this.textB_senha.TabIndex = 2;
+            this.textB_senha.UseSystemPasswordChar = true;
             // 
             // label6
             // 
@@ -102,19 +105,11 @@
             // 
             // textB_email
             // 
-            this.textB_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textB_email.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textB_email.Location = new System.Drawing.Point(144, 310);
             this.textB_email.Name = "textB_email";
-            this.textB_email.Size = new System.Drawing.Size(300, 22);
-            this.textB_email.TabIndex = 54;
-            // 
-            // textB_cpf
-            // 
-            this.textB_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textB_cpf.Location = new System.Drawing.Point(144, 232);
-            this.textB_cpf.Name = "textB_cpf";
-            this.textB_cpf.Size = new System.Drawing.Size(300, 22);
-            this.textB_cpf.TabIndex = 53;
+            this.textB_email.Size = new System.Drawing.Size(300, 29);
+            this.textB_email.TabIndex = 1;
             // 
             // label5
             // 
@@ -146,12 +141,23 @@
             this.label7.TabIndex = 50;
             this.label7.Text = "Recuperar conta";
             // 
+            // mkb_cpf
+            // 
+            this.mkb_cpf.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mkb_cpf.Location = new System.Drawing.Point(146, 225);
+            this.mkb_cpf.Mask = "000.000.000-00";
+            this.mkb_cpf.Name = "mkb_cpf";
+            this.mkb_cpf.Size = new System.Drawing.Size(300, 29);
+            this.mkb_cpf.TabIndex = 0;
+            this.mkb_cpf.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
             // Recuperar_senha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(630, 630);
+            this.Controls.Add(this.mkb_cpf);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -159,13 +165,12 @@
             this.Controls.Add(this.textB_senha);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textB_email);
-            this.Controls.Add(this.textB_cpf);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
             this.Name = "Recuperar_senha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Recuperar_senha";
+            this.Text = "Recuperar Senha";
             this.Load += new System.EventHandler(this.Recuperar_senha_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -181,9 +186,9 @@
         private System.Windows.Forms.TextBox textB_senha;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textB_email;
-        private System.Windows.Forms.TextBox textB_cpf;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.MaskedTextBox mkb_cpf;
     }
 }

@@ -28,7 +28,7 @@ namespace Pont_Finder.hospedagem
         private void Button2_Click(object sender, EventArgs e)
         {
 
-            if (nomeempresa.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || Convert.ToString(textBox5.Text) == "" || Convert.ToString(textBox6.Text) == "" || Convert.ToString(textBox7.Text) == "" || textBox1.Text == "")
+            if (tb_nameEmp.Text == "" || tb_nameFantasy.Text == "" || tb_email.Text == "" || tb_endereco.Text == "" || Convert.ToString(mkb_cnpj.Text) == "" || Convert.ToString(mkb_cep.Text) == "" || Convert.ToString(mkb_phone.Text) == "" || tb_descricaoHotel.Text == "")
             {
                 MessageBox.Show("Todos os campos devem ser preenchidos!");
             }
@@ -36,43 +36,43 @@ namespace Pont_Finder.hospedagem
             {
                 if (radio_hotel.Checked || radio_pousada.Checked)
                 {
-                    if (estrela2.Checked || estrela3.Checked || estrela4.Checked || estrela5.Checked)
+                    if (radio_star2.Checked || radio_star3.Checked || radio_star4.Checked || radio_star5.Checked)
                     {
                         List<string> ambientes = new List<string>();
 
-                        string NomeEmpresa = nomeempresa.Text;
-                        string NomeFantasia = textBox2.Text;
-                        string Email = textBox3.Text;
-                        string Endereco = textBox4.Text;
-                        long CNPJ = long.Parse(textBox5.Text);
-                        int Cep = Convert.ToInt32(textBox6.Text);
-                        int Tel = Convert.ToInt32(textBox7.Text);
-                        string descricao = textBox1.Text;
+                        string NomeEmpresa = tb_nameEmp.Text;
+                        string NomeFantasia = tb_nameFantasy.Text;
+                        string Email = tb_email.Text;
+                        string Endereco = tb_endereco.Text;
+                        long CNPJ = long.Parse(mkb_cnpj.Text);
+                        int Cep = Convert.ToInt32(mkb_cep.Text);
+                        int Tel = Convert.ToInt32(mkb_phone.Text);
+                        string descricao = tb_descricaoHotel.Text;
                         string Foto = "CAMINHO";
                         string Ambientes = "";
                         
                         
                         
 
-                        if (checkBox1.Checked)
+                        if (ckb_estacionamento.Checked)
                         {
                             string a = "Estacionamento";
                             ambientes.Add(a);
                         }
 
-                        if (checkBox2.Checked)
+                        if (ckb_piscina.Checked)
                         {
                             string a = "Piscina";
                             ambientes.Add(a);
                         }
 
-                        if (checkBox3.Checked)
+                        if (ckb_salaJogos.Checked)
                         {
                             string a = "Sala de Jogos";
                             ambientes.Add(a);
                         }
 
-                        if (checkBox4.Checked )
+                        if (ckb_academia.Checked )
                         {
                             string a = "Academia";
                             ambientes.Add(a);
@@ -119,7 +119,7 @@ namespace Pont_Finder.hospedagem
                                 if (("" + CNPJ).Length != 14)
                                 {
                                     MessageBox.Show("CNPJ deve conter 14 dígitos");
-                                    textBox5.Text = "";
+                                    mkb_cnpj.Text = "";
                                 }
                                 else
                                 {
@@ -147,19 +147,19 @@ namespace Pont_Finder.hospedagem
                                         }
 
                                         //Verifica qtd de estrelas
-                                        if (estrela2.Checked)
+                                        if (radio_star2.Checked)
                                         {
                                             empresa.Estrelas = 2;
                                         }
-                                        if (estrela3.Checked)
+                                        if (radio_star3.Checked)
                                         {
                                             empresa.Estrelas = 3;
                                         }
-                                        if (estrela4.Checked)
+                                        if (radio_star4.Checked)
                                         {
                                             empresa.Estrelas = 4;
                                         }
-                                        if (estrela5.Checked)
+                                        if (radio_star5.Checked)
                                         {
                                             empresa.Estrelas = 5;
                                         }
@@ -195,20 +195,20 @@ namespace Pont_Finder.hospedagem
                                     else
                                     {
                                         MessageBox.Show("Favor revisar o Email digitado, pois o mesmo é inválido!");
-                                        textBox3.Text = "";
+                                        tb_email.Text = "";
                                     }
                                 }
                             }
                             else
                             {
                                 MessageBox.Show("Favor revisar o Email digitado, pois o mesmo já existe em nosso sistema!");
-                                textBox3.Text = "";
+                                tb_email.Text = "";
                             }
                         }
                         else
                         {
                             MessageBox.Show("Favor revisar o CNPJ digitado, pois o mesmo já existe em nosso sistema!");
-                            textBox5.Text = "";
+                            mkb_cnpj.Text = "";
                         }
                     }
                     else
@@ -226,7 +226,7 @@ namespace Pont_Finder.hospedagem
 
         private void button3_Click(object sender, EventArgs e) //BOTAO QUE VERIFICA OS TEXT FIELDS E HABILITA OS DEMAIS
         {
-            textBox1.Enabled = true;
+            tb_descricaoHotel.Enabled = true;
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)

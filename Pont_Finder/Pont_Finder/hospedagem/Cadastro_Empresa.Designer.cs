@@ -31,24 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro_Empresa));
             this.label4 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.mkb_phone = new System.Windows.Forms.MaskedTextBox();
+            this.mkb_cep = new System.Windows.Forms.MaskedTextBox();
+            this.mkb_cnpj = new System.Windows.Forms.MaskedTextBox();
+            this.tb_email = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_nameFantasy = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_endereco = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.nomeempresa = new System.Windows.Forms.TextBox();
+            this.tb_nameEmp = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnl_star = new System.Windows.Forms.Panel();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
@@ -63,35 +63,35 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.estrela5 = new System.Windows.Forms.RadioButton();
-            this.estrela4 = new System.Windows.Forms.RadioButton();
-            this.estrela3 = new System.Windows.Forms.RadioButton();
-            this.estrela2 = new System.Windows.Forms.RadioButton();
+            this.radio_star5 = new System.Windows.Forms.RadioButton();
+            this.radio_star4 = new System.Windows.Forms.RadioButton();
+            this.radio_star3 = new System.Windows.Forms.RadioButton();
+            this.radio_star2 = new System.Windows.Forms.RadioButton();
             this.label17 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.pnl_tipoHosp = new System.Windows.Forms.Panel();
             this.radio_pousada = new System.Windows.Forms.RadioButton();
             this.radio_hotel = new System.Windows.Forms.RadioButton();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bt_continuar = new System.Windows.Forms.Button();
+            this.pnl_ambDisp = new System.Windows.Forms.Panel();
+            this.ckb_academia = new System.Windows.Forms.CheckBox();
+            this.ckb_salaJogos = new System.Windows.Forms.CheckBox();
+            this.ckb_piscina = new System.Windows.Forms.CheckBox();
+            this.ckb_estacionamento = new System.Windows.Forms.CheckBox();
+            this.tb_descricaoHotel = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pb_img1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pb_img11 = new System.Windows.Forms.PictureBox();
+            this.pb_img10 = new System.Windows.Forms.PictureBox();
+            this.pb_img9 = new System.Windows.Forms.PictureBox();
+            this.pb_img8 = new System.Windows.Forms.PictureBox();
+            this.pb_img7 = new System.Windows.Forms.PictureBox();
+            this.pb_img6 = new System.Windows.Forms.PictureBox();
+            this.pb_img5 = new System.Windows.Forms.PictureBox();
+            this.pb_img4 = new System.Windows.Forms.PictureBox();
+            this.pb_img3 = new System.Windows.Forms.PictureBox();
+            this.pb_img2 = new System.Windows.Forms.PictureBox();
+            this.bt_add_img = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -105,7 +105,7 @@
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.pnl_star.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
@@ -120,20 +120,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.panel8.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.pnl_tipoHosp.SuspendLayout();
+            this.pnl_ambDisp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img2)).BeginInit();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,40 +151,63 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.textBox3);
-            this.panel11.Controls.Add(this.textBox5);
+            this.panel11.Controls.Add(this.mkb_phone);
+            this.panel11.Controls.Add(this.mkb_cep);
+            this.panel11.Controls.Add(this.mkb_cnpj);
+            this.panel11.Controls.Add(this.tb_email);
             this.panel11.Controls.Add(this.label5);
-            this.panel11.Controls.Add(this.textBox7);
-            this.panel11.Controls.Add(this.textBox2);
+            this.panel11.Controls.Add(this.tb_nameFantasy);
             this.panel11.Controls.Add(this.label6);
-            this.panel11.Controls.Add(this.textBox4);
+            this.panel11.Controls.Add(this.tb_endereco);
             this.panel11.Controls.Add(this.label7);
             this.panel11.Controls.Add(this.label9);
             this.panel11.Controls.Add(this.label11);
-            this.panel11.Controls.Add(this.textBox6);
-            this.panel11.Controls.Add(this.nomeempresa);
+            this.panel11.Controls.Add(this.tb_nameEmp);
             this.panel11.Controls.Add(this.label12);
             this.panel11.Controls.Add(this.label13);
             this.panel11.Location = new System.Drawing.Point(320, 369);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(625, 496);
-            this.panel11.TabIndex = 56;
+            this.panel11.TabIndex = 0;
             // 
-            // textBox3
+            // mkb_phone
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(100, 423);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(415, 22);
-            this.textBox3.TabIndex = 7;
+            this.mkb_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mkb_phone.Location = new System.Drawing.Point(345, 350);
+            this.mkb_phone.Mask = "(99) 000-0000";
+            this.mkb_phone.Name = "mkb_phone";
+            this.mkb_phone.Size = new System.Drawing.Size(170, 22);
+            this.mkb_phone.TabIndex = 6;
+            this.mkb_phone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
-            // textBox5
+            // mkb_cep
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(100, 200);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(415, 22);
-            this.textBox5.TabIndex = 3;
+            this.mkb_cep.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mkb_cep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mkb_cep.Location = new System.Drawing.Point(100, 350);
+            this.mkb_cep.Mask = "00.000-000";
+            this.mkb_cep.Name = "mkb_cep";
+            this.mkb_cep.Size = new System.Drawing.Size(170, 22);
+            this.mkb_cep.TabIndex = 5;
+            this.mkb_cep.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // mkb_cnpj
+            // 
+            this.mkb_cnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mkb_cnpj.Location = new System.Drawing.Point(100, 199);
+            this.mkb_cnpj.Mask = "99.999.999/9999-99";
+            this.mkb_cnpj.Name = "mkb_cnpj";
+            this.mkb_cnpj.Size = new System.Drawing.Size(415, 22);
+            this.mkb_cnpj.TabIndex = 3;
+            this.mkb_cnpj.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // tb_email
+            // 
+            this.tb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_email.Location = new System.Drawing.Point(100, 423);
+            this.tb_email.Name = "tb_email";
+            this.tb_email.Size = new System.Drawing.Size(415, 22);
+            this.tb_email.TabIndex = 7;
             // 
             // label5
             // 
@@ -196,21 +219,13 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Endereço";
             // 
-            // textBox7
+            // tb_nameFantasy
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(345, 350);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(170, 22);
-            this.textBox7.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(100, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(415, 22);
-            this.textBox2.TabIndex = 2;
+            this.tb_nameFantasy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_nameFantasy.Location = new System.Drawing.Point(100, 123);
+            this.tb_nameFantasy.Name = "tb_nameFantasy";
+            this.tb_nameFantasy.Size = new System.Drawing.Size(415, 22);
+            this.tb_nameFantasy.TabIndex = 2;
             // 
             // label6
             // 
@@ -222,13 +237,13 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Email\r\n";
             // 
-            // textBox4
+            // tb_endereco
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(100, 277);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(415, 22);
-            this.textBox4.TabIndex = 4;
+            this.tb_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_endereco.Location = new System.Drawing.Point(100, 277);
+            this.tb_endereco.Name = "tb_endereco";
+            this.tb_endereco.Size = new System.Drawing.Size(415, 22);
+            this.tb_endereco.TabIndex = 4;
             // 
             // label7
             // 
@@ -262,21 +277,13 @@
             this.label11.TabIndex = 9;
             this.label11.Text = "CNPJ";
             // 
-            // textBox6
+            // tb_nameEmp
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(100, 350);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(170, 22);
-            this.textBox6.TabIndex = 5;
-            // 
-            // nomeempresa
-            // 
-            this.nomeempresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomeempresa.Location = new System.Drawing.Point(100, 48);
-            this.nomeempresa.Name = "nomeempresa";
-            this.nomeempresa.Size = new System.Drawing.Size(415, 22);
-            this.nomeempresa.TabIndex = 1;
+            this.tb_nameEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_nameEmp.Location = new System.Drawing.Point(100, 48);
+            this.tb_nameEmp.Name = "tb_nameEmp";
+            this.tb_nameEmp.Size = new System.Drawing.Size(415, 22);
+            this.tb_nameEmp.TabIndex = 1;
             // 
             // label12
             // 
@@ -311,59 +318,59 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.pnl_star);
             this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.panel8);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.pnl_tipoHosp);
+            this.panel3.Controls.Add(this.bt_continuar);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.pnl_ambDisp);
+            this.panel3.Controls.Add(this.tb_descricaoHotel);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.pictureBox8);
+            this.panel3.Controls.Add(this.pb_img1);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.bt_add_img);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(320, 1078);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(625, 1385);
-            this.panel3.TabIndex = 52;
+            this.panel3.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(168, 587);
+            this.label1.Location = new System.Drawing.Point(143, 587);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(339, 24);
             this.label1.TabIndex = 18;
             this.label1.Text = "Selecione a quantidade de estrelas";
             // 
-            // panel5
+            // pnl_star
             // 
-            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.pictureBox25);
-            this.panel5.Controls.Add(this.pictureBox24);
-            this.panel5.Controls.Add(this.pictureBox23);
-            this.panel5.Controls.Add(this.pictureBox22);
-            this.panel5.Controls.Add(this.pictureBox21);
-            this.panel5.Controls.Add(this.pictureBox20);
-            this.panel5.Controls.Add(this.pictureBox19);
-            this.panel5.Controls.Add(this.pictureBox18);
-            this.panel5.Controls.Add(this.pictureBox17);
-            this.panel5.Controls.Add(this.pictureBox16);
-            this.panel5.Controls.Add(this.pictureBox15);
-            this.panel5.Controls.Add(this.pictureBox14);
-            this.panel5.Controls.Add(this.pictureBox13);
-            this.panel5.Controls.Add(this.pictureBox12);
-            this.panel5.Controls.Add(this.estrela5);
-            this.panel5.Controls.Add(this.estrela4);
-            this.panel5.Controls.Add(this.estrela3);
-            this.panel5.Controls.Add(this.estrela2);
-            this.panel5.Location = new System.Drawing.Point(150, 622);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(328, 99);
-            this.panel5.TabIndex = 17;
+            this.pnl_star.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnl_star.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_star.Controls.Add(this.pictureBox25);
+            this.pnl_star.Controls.Add(this.pictureBox24);
+            this.pnl_star.Controls.Add(this.pictureBox23);
+            this.pnl_star.Controls.Add(this.pictureBox22);
+            this.pnl_star.Controls.Add(this.pictureBox21);
+            this.pnl_star.Controls.Add(this.pictureBox20);
+            this.pnl_star.Controls.Add(this.pictureBox19);
+            this.pnl_star.Controls.Add(this.pictureBox18);
+            this.pnl_star.Controls.Add(this.pictureBox17);
+            this.pnl_star.Controls.Add(this.pictureBox16);
+            this.pnl_star.Controls.Add(this.pictureBox15);
+            this.pnl_star.Controls.Add(this.pictureBox14);
+            this.pnl_star.Controls.Add(this.pictureBox13);
+            this.pnl_star.Controls.Add(this.pictureBox12);
+            this.pnl_star.Controls.Add(this.radio_star5);
+            this.pnl_star.Controls.Add(this.radio_star4);
+            this.pnl_star.Controls.Add(this.radio_star3);
+            this.pnl_star.Controls.Add(this.radio_star2);
+            this.pnl_star.Location = new System.Drawing.Point(150, 622);
+            this.pnl_star.Name = "pnl_star";
+            this.pnl_star.Size = new System.Drawing.Size(328, 99);
+            this.pnl_star.TabIndex = 13;
             // 
             // pictureBox25
             // 
@@ -505,49 +512,49 @@
             this.pictureBox12.TabIndex = 5;
             this.pictureBox12.TabStop = false;
             // 
-            // estrela5
+            // radio_star5
             // 
-            this.estrela5.AutoSize = true;
-            this.estrela5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estrela5.Location = new System.Drawing.Point(161, 50);
-            this.estrela5.Name = "estrela5";
-            this.estrela5.Size = new System.Drawing.Size(14, 13);
-            this.estrela5.TabIndex = 4;
-            this.estrela5.TabStop = true;
-            this.estrela5.UseVisualStyleBackColor = true;
+            this.radio_star5.AutoSize = true;
+            this.radio_star5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_star5.Location = new System.Drawing.Point(161, 50);
+            this.radio_star5.Name = "radio_star5";
+            this.radio_star5.Size = new System.Drawing.Size(14, 13);
+            this.radio_star5.TabIndex = 17;
+            this.radio_star5.TabStop = true;
+            this.radio_star5.UseVisualStyleBackColor = true;
             // 
-            // estrela4
+            // radio_star4
             // 
-            this.estrela4.AutoSize = true;
-            this.estrela4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estrela4.Location = new System.Drawing.Point(161, 18);
-            this.estrela4.Name = "estrela4";
-            this.estrela4.Size = new System.Drawing.Size(14, 13);
-            this.estrela4.TabIndex = 3;
-            this.estrela4.TabStop = true;
-            this.estrela4.UseVisualStyleBackColor = true;
+            this.radio_star4.AutoSize = true;
+            this.radio_star4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_star4.Location = new System.Drawing.Point(161, 18);
+            this.radio_star4.Name = "radio_star4";
+            this.radio_star4.Size = new System.Drawing.Size(14, 13);
+            this.radio_star4.TabIndex = 16;
+            this.radio_star4.TabStop = true;
+            this.radio_star4.UseVisualStyleBackColor = true;
             // 
-            // estrela3
+            // radio_star3
             // 
-            this.estrela3.AutoSize = true;
-            this.estrela3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estrela3.Location = new System.Drawing.Point(24, 50);
-            this.estrela3.Name = "estrela3";
-            this.estrela3.Size = new System.Drawing.Size(14, 13);
-            this.estrela3.TabIndex = 2;
-            this.estrela3.TabStop = true;
-            this.estrela3.UseVisualStyleBackColor = true;
+            this.radio_star3.AutoSize = true;
+            this.radio_star3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_star3.Location = new System.Drawing.Point(24, 50);
+            this.radio_star3.Name = "radio_star3";
+            this.radio_star3.Size = new System.Drawing.Size(14, 13);
+            this.radio_star3.TabIndex = 15;
+            this.radio_star3.TabStop = true;
+            this.radio_star3.UseVisualStyleBackColor = true;
             // 
-            // estrela2
+            // radio_star2
             // 
-            this.estrela2.AutoSize = true;
-            this.estrela2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estrela2.Location = new System.Drawing.Point(24, 18);
-            this.estrela2.Name = "estrela2";
-            this.estrela2.Size = new System.Drawing.Size(14, 13);
-            this.estrela2.TabIndex = 1;
-            this.estrela2.TabStop = true;
-            this.estrela2.UseVisualStyleBackColor = true;
+            this.radio_star2.AutoSize = true;
+            this.radio_star2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_star2.Location = new System.Drawing.Point(24, 18);
+            this.radio_star2.Name = "radio_star2";
+            this.radio_star2.Size = new System.Drawing.Size(14, 13);
+            this.radio_star2.TabIndex = 14;
+            this.radio_star2.TabStop = true;
+            this.radio_star2.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -559,16 +566,16 @@
             this.label17.TabIndex = 16;
             this.label17.Text = "Selecione o tipo de Hospedagem";
             // 
-            // panel8
+            // pnl_tipoHosp
             // 
-            this.panel8.BackColor = System.Drawing.SystemColors.Control;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.radio_pousada);
-            this.panel8.Controls.Add(this.radio_hotel);
-            this.panel8.Location = new System.Drawing.Point(187, 509);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(237, 49);
-            this.panel8.TabIndex = 15;
+            this.pnl_tipoHosp.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_tipoHosp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_tipoHosp.Controls.Add(this.radio_pousada);
+            this.pnl_tipoHosp.Controls.Add(this.radio_hotel);
+            this.pnl_tipoHosp.Location = new System.Drawing.Point(187, 509);
+            this.pnl_tipoHosp.Name = "pnl_tipoHosp";
+            this.pnl_tipoHosp.Size = new System.Drawing.Size(237, 49);
+            this.pnl_tipoHosp.TabIndex = 10;
             // 
             // radio_pousada
             // 
@@ -577,7 +584,7 @@
             this.radio_pousada.Location = new System.Drawing.Point(141, 10);
             this.radio_pousada.Name = "radio_pousada";
             this.radio_pousada.Size = new System.Drawing.Size(81, 20);
-            this.radio_pousada.TabIndex = 1;
+            this.radio_pousada.TabIndex = 12;
             this.radio_pousada.TabStop = true;
             this.radio_pousada.Text = "Pousada";
             this.radio_pousada.UseVisualStyleBackColor = true;
@@ -589,87 +596,87 @@
             this.radio_hotel.Location = new System.Drawing.Point(24, 10);
             this.radio_hotel.Name = "radio_hotel";
             this.radio_hotel.Size = new System.Drawing.Size(58, 20);
-            this.radio_hotel.TabIndex = 8;
+            this.radio_hotel.TabIndex = 11;
             this.radio_hotel.TabStop = true;
             this.radio_hotel.Text = "Hotel";
             this.radio_hotel.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bt_continuar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(197, 1296);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(220, 50);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Continuar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.bt_continuar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_continuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_continuar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_continuar.ForeColor = System.Drawing.Color.White;
+            this.bt_continuar.Location = new System.Drawing.Point(197, 1296);
+            this.bt_continuar.Name = "bt_continuar";
+            this.bt_continuar.Size = new System.Drawing.Size(220, 50);
+            this.bt_continuar.TabIndex = 24;
+            this.bt_continuar.Text = "Continuar";
+            this.bt_continuar.UseVisualStyleBackColor = false;
+            this.bt_continuar.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // panel6
+            // pnl_ambDisp
             // 
-            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.checkBox4);
-            this.panel6.Controls.Add(this.checkBox3);
-            this.panel6.Controls.Add(this.checkBox2);
-            this.panel6.Controls.Add(this.checkBox1);
-            this.panel6.Location = new System.Drawing.Point(77, 1100);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(460, 160);
-            this.panel6.TabIndex = 6;
+            this.pnl_ambDisp.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnl_ambDisp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_ambDisp.Controls.Add(this.ckb_academia);
+            this.pnl_ambDisp.Controls.Add(this.ckb_salaJogos);
+            this.pnl_ambDisp.Controls.Add(this.ckb_piscina);
+            this.pnl_ambDisp.Controls.Add(this.ckb_estacionamento);
+            this.pnl_ambDisp.Location = new System.Drawing.Point(77, 1100);
+            this.pnl_ambDisp.Name = "pnl_ambDisp";
+            this.pnl_ambDisp.Size = new System.Drawing.Size(460, 160);
+            this.pnl_ambDisp.TabIndex = 19;
             // 
-            // checkBox4
+            // ckb_academia
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(292, 77);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(73, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Academia";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.ckb_academia.AutoSize = true;
+            this.ckb_academia.Location = new System.Drawing.Point(292, 77);
+            this.ckb_academia.Name = "ckb_academia";
+            this.ckb_academia.Size = new System.Drawing.Size(73, 17);
+            this.ckb_academia.TabIndex = 23;
+            this.ckb_academia.Text = "Academia";
+            this.ckb_academia.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // ckb_salaJogos
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(292, 44);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(93, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Sala de Jogos";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.ckb_salaJogos.AutoSize = true;
+            this.ckb_salaJogos.Location = new System.Drawing.Point(292, 44);
+            this.ckb_salaJogos.Name = "ckb_salaJogos";
+            this.ckb_salaJogos.Size = new System.Drawing.Size(93, 17);
+            this.ckb_salaJogos.TabIndex = 22;
+            this.ckb_salaJogos.Text = "Sala de Jogos";
+            this.ckb_salaJogos.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // ckb_piscina
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(72, 77);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(60, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Piscina";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ckb_piscina.AutoSize = true;
+            this.ckb_piscina.Location = new System.Drawing.Point(72, 77);
+            this.ckb_piscina.Name = "ckb_piscina";
+            this.ckb_piscina.Size = new System.Drawing.Size(60, 17);
+            this.ckb_piscina.TabIndex = 21;
+            this.ckb_piscina.Text = "Piscina";
+            this.ckb_piscina.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // ckb_estacionamento
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(72, 44);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(102, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Estacionamento";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.ckb_estacionamento.AutoSize = true;
+            this.ckb_estacionamento.Location = new System.Drawing.Point(72, 44);
+            this.ckb_estacionamento.Name = "ckb_estacionamento";
+            this.ckb_estacionamento.Size = new System.Drawing.Size(102, 17);
+            this.ckb_estacionamento.TabIndex = 20;
+            this.ckb_estacionamento.Text = "Estacionamento";
+            this.ckb_estacionamento.UseVisualStyleBackColor = true;
+            this.ckb_estacionamento.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // textBox1
+            // tb_descricaoHotel
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Location = new System.Drawing.Point(77, 794);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(460, 220);
-            this.textBox1.TabIndex = 5;
+            this.tb_descricaoHotel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_descricaoHotel.Location = new System.Drawing.Point(77, 794);
+            this.tb_descricaoHotel.Multiline = true;
+            this.tb_descricaoHotel.Name = "tb_descricaoHotel";
+            this.tb_descricaoHotel.Size = new System.Drawing.Size(460, 220);
+            this.tb_descricaoHotel.TabIndex = 18;
             // 
             // label3
             // 
@@ -681,158 +688,158 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "De uma breve descrição do Hotel";
             // 
-            // pictureBox8
+            // pb_img1
             // 
-            this.pictureBox8.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Location = new System.Drawing.Point(77, 46);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(460, 220);
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            this.pb_img1.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img1.Location = new System.Drawing.Point(77, 46);
+            this.pb_img1.Name = "pb_img1";
+            this.pb_img1.Size = new System.Drawing.Size(460, 220);
+            this.pb_img1.TabIndex = 3;
+            this.pb_img1.TabStop = false;
+            this.pb_img1.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // panel4
             // 
             this.panel4.AutoScroll = true;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.pictureBox11);
-            this.panel4.Controls.Add(this.pictureBox10);
-            this.panel4.Controls.Add(this.pictureBox9);
-            this.panel4.Controls.Add(this.pictureBox7);
-            this.panel4.Controls.Add(this.pictureBox6);
-            this.panel4.Controls.Add(this.pictureBox5);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.pb_img11);
+            this.panel4.Controls.Add(this.pb_img10);
+            this.panel4.Controls.Add(this.pb_img9);
+            this.panel4.Controls.Add(this.pb_img8);
+            this.panel4.Controls.Add(this.pb_img7);
+            this.panel4.Controls.Add(this.pb_img6);
+            this.panel4.Controls.Add(this.pb_img5);
+            this.panel4.Controls.Add(this.pb_img4);
+            this.panel4.Controls.Add(this.pb_img3);
+            this.panel4.Controls.Add(this.pb_img2);
             this.panel4.Location = new System.Drawing.Point(12, 283);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(590, 94);
             this.panel4.TabIndex = 2;
             // 
-            // pictureBox11
+            // pb_img11
             // 
-            this.pictureBox11.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox11.Location = new System.Drawing.Point(957, 12);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox11.TabIndex = 15;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
+            this.pb_img11.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img11.Location = new System.Drawing.Point(957, 12);
+            this.pb_img11.Name = "pb_img11";
+            this.pb_img11.Size = new System.Drawing.Size(100, 50);
+            this.pb_img11.TabIndex = 15;
+            this.pb_img11.TabStop = false;
+            this.pb_img11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
-            // pictureBox10
+            // pb_img10
             // 
-            this.pictureBox10.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10.Location = new System.Drawing.Point(851, 12);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox10.TabIndex = 14;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            this.pb_img10.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img10.Location = new System.Drawing.Point(851, 12);
+            this.pb_img10.Name = "pb_img10";
+            this.pb_img10.Size = new System.Drawing.Size(100, 50);
+            this.pb_img10.TabIndex = 14;
+            this.pb_img10.TabStop = false;
+            this.pb_img10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
-            // pictureBox9
+            // pb_img9
             // 
-            this.pictureBox9.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9.Location = new System.Drawing.Point(745, 12);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox9.TabIndex = 13;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            this.pb_img9.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img9.Location = new System.Drawing.Point(745, 12);
+            this.pb_img9.Name = "pb_img9";
+            this.pb_img9.Size = new System.Drawing.Size(100, 50);
+            this.pb_img9.TabIndex = 13;
+            this.pb_img9.TabStop = false;
+            this.pb_img9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
-            // pictureBox7
+            // pb_img8
             // 
-            this.pictureBox7.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Location = new System.Drawing.Point(639, 12);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox7.TabIndex = 12;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            this.pb_img8.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img8.Location = new System.Drawing.Point(639, 12);
+            this.pb_img8.Name = "pb_img8";
+            this.pb_img8.Size = new System.Drawing.Size(100, 50);
+            this.pb_img8.TabIndex = 12;
+            this.pb_img8.TabStop = false;
+            this.pb_img8.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
-            // pictureBox6
+            // pb_img7
             // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Location = new System.Drawing.Point(533, 12);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox6.TabIndex = 11;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.pb_img7.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img7.Location = new System.Drawing.Point(533, 12);
+            this.pb_img7.Name = "pb_img7";
+            this.pb_img7.Size = new System.Drawing.Size(100, 50);
+            this.pb_img7.TabIndex = 11;
+            this.pb_img7.TabStop = false;
+            this.pb_img7.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
-            // pictureBox5
+            // pb_img6
             // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(427, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.pb_img6.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img6.Location = new System.Drawing.Point(427, 12);
+            this.pb_img6.Name = "pb_img6";
+            this.pb_img6.Size = new System.Drawing.Size(100, 50);
+            this.pb_img6.TabIndex = 10;
+            this.pb_img6.TabStop = false;
+            this.pb_img6.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // pictureBox4
+            // pb_img5
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(321, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pb_img5.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img5.Location = new System.Drawing.Point(321, 12);
+            this.pb_img5.Name = "pb_img5";
+            this.pb_img5.Size = new System.Drawing.Size(100, 50);
+            this.pb_img5.TabIndex = 9;
+            this.pb_img5.TabStop = false;
+            this.pb_img5.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox3
+            // pb_img4
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(215, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pb_img4.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img4.Location = new System.Drawing.Point(215, 12);
+            this.pb_img4.Name = "pb_img4";
+            this.pb_img4.Size = new System.Drawing.Size(100, 50);
+            this.pb_img4.TabIndex = 8;
+            this.pb_img4.TabStop = false;
+            this.pb_img4.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox2
+            // pb_img3
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(109, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pb_img3.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img3.Location = new System.Drawing.Point(109, 12);
+            this.pb_img3.Name = "pb_img3";
+            this.pb_img3.Size = new System.Drawing.Size(100, 50);
+            this.pb_img3.TabIndex = 7;
+            this.pb_img3.TabStop = false;
+            this.pb_img3.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox1
+            // pb_img2
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pb_img2.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img2.Location = new System.Drawing.Point(3, 12);
+            this.pb_img2.Name = "pb_img2";
+            this.pb_img2.Size = new System.Drawing.Size(100, 50);
+            this.pb_img2.TabIndex = 0;
+            this.pb_img2.TabStop = false;
+            this.pb_img2.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button1
+            // bt_add_img
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(227, 396);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Adicionar imagem";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bt_add_img.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_add_img.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_add_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_add_img.ForeColor = System.Drawing.Color.White;
+            this.bt_add_img.Location = new System.Drawing.Point(227, 396);
+            this.bt_add_img.Name = "bt_add_img";
+            this.bt_add_img.Size = new System.Drawing.Size(160, 35);
+            this.bt_add_img.TabIndex = 9;
+            this.bt_add_img.Text = "Adicionar imagem";
+            this.bt_add_img.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -951,8 +958,8 @@
             this.panel11.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.pnl_star.ResumeLayout(false);
+            this.pnl_star.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
@@ -967,22 +974,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.pnl_tipoHosp.ResumeLayout(false);
+            this.pnl_tipoHosp.PerformLayout();
+            this.pnl_ambDisp.ResumeLayout(false);
+            this.pnl_ambDisp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img2)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.ResumeLayout(false);
@@ -994,45 +1001,42 @@
 
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_email;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_nameFantasy;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_endereco;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox nomeempresa;
+        private System.Windows.Forms.TextBox tb_nameEmp;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pb_img11;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel pnl_tipoHosp;
+        private System.Windows.Forms.Button bt_continuar;
+        private System.Windows.Forms.Panel pnl_ambDisp;
+        private System.Windows.Forms.CheckBox ckb_academia;
+        private System.Windows.Forms.CheckBox ckb_salaJogos;
+        private System.Windows.Forms.CheckBox ckb_piscina;
+        private System.Windows.Forms.CheckBox ckb_estacionamento;
+        private System.Windows.Forms.TextBox tb_descricaoHotel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pb_img1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pb_img10;
+        private System.Windows.Forms.PictureBox pb_img9;
+        private System.Windows.Forms.PictureBox pb_img8;
+        private System.Windows.Forms.PictureBox pb_img7;
+        private System.Windows.Forms.PictureBox pb_img6;
+        private System.Windows.Forms.PictureBox pb_img5;
+        private System.Windows.Forms.PictureBox pb_img4;
+        private System.Windows.Forms.PictureBox pb_img3;
+        private System.Windows.Forms.PictureBox pb_img2;
+        private System.Windows.Forms.Button bt_add_img;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
@@ -1042,8 +1046,15 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton radio_pousada;
+        private System.Windows.Forms.RadioButton radio_hotel;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.MaskedTextBox mkb_cnpj;
+        private System.Windows.Forms.MaskedTextBox mkb_cep;
+        private System.Windows.Forms.MaskedTextBox mkb_phone;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pnl_star;
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox23;
@@ -1058,13 +1069,9 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.RadioButton estrela5;
-        private System.Windows.Forms.RadioButton estrela4;
-        private System.Windows.Forms.RadioButton estrela3;
-        private System.Windows.Forms.RadioButton estrela2;
-        private System.Windows.Forms.RadioButton radio_pousada;
-        private System.Windows.Forms.RadioButton radio_hotel;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.RadioButton radio_star5;
+        private System.Windows.Forms.RadioButton radio_star4;
+        private System.Windows.Forms.RadioButton radio_star3;
+        private System.Windows.Forms.RadioButton radio_star2;
     }
 }
