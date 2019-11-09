@@ -124,7 +124,6 @@
     <Compile Include="classes\User.cs" />
     <Compile Include="classes\UserList.cs" />
     <Compile Include="classes\Validation.cs" />
-    <Compile Include="classes\XmlLi.cs" />
     <Compile Include="alimentos\formAlimentos.cs">
       <SubType>Form</SubType>
     </Compile>

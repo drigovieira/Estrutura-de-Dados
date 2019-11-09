@@ -99,31 +99,7 @@ namespace Pont_Finder
             */
         }
 
-        public static int checkLogin(string email, string senha)
-        {
-            bool valido = false;
-            int index = 0;
-
-            foreach (var item in UserList.selectAll())
-            {
-                if (item.Email.Equals(email) && item.Senha.Equals(senha))
-                {
-                    valido = true;
-                    break;
-                }
-                index++;
-            }
-
-            if (valido)
-            {
-                return index;
-            }
-            else
-            {
-                return -1;
-            }
-
-        }
+       
 
         public static List<User> selectAll()
         {
@@ -149,20 +125,7 @@ namespace Pont_Finder
                 Console.WriteLine(String.Format(str, item.Nome, item.Email, item.Senha, item.Cpf, item.Ativo));
             }
             */
-        }
-
-        public static void sessionStart(int index)
-        {
-            Session.Id = index;
-            Session.Nome = users[index].Nome;
-            Session.Email = users[index].Email;
-            Session.Senha = users[index].Senha;
-            Session.Cpf = users[index].Cpf;
-            Session.Image = users[index].Image;
-
-        }
-
-
+        }      
 
         //novos métodos
         public static User selectCpf(long cpf)

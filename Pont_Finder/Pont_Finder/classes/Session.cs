@@ -14,17 +14,14 @@ namespace Pont_Finder
         private static string senha;
         private static long cpf;
         private static string image;
+        private static bool logado = false;
 
         public static bool Online
         {
             get
             {
-                if (id == -1)
-                    return false;
-                else
-                    return true; ;
+                return logado;
             }
-
         }
 
         public static void Deslogar()
@@ -35,6 +32,7 @@ namespace Pont_Finder
             senha = null;
             cpf = -1;
             image = null;
+            logado = false;
         }
 
         public static int Id
@@ -70,6 +68,24 @@ namespace Pont_Finder
         }
 
 
+        public static bool Login(string xEmail, string xSenha)
+        {
+            foreach (var item in UserList.selectAll())
+            {
+                if (item.Email.Equals(xEmail) && item.Senha.Equals(xSenha))
+                {
+                    nome = item.Nome;
+                    email = item.Email;
+                    senha = item.Senha;
+                    cpf = item.Cpf;
+                    image = item.Image;
+                    logado = true;
+                    return true;
+                }
+            }
+            Session.Deslogar();
+            return false;           
+        }
 
     }
 }
