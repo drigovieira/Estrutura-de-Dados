@@ -77,6 +77,22 @@ namespace Pont_Finder
             */
         }
 
+        private void Filtrar_Click(object sender, EventArgs e)
+        {
+            if (CategoriaBox.Visible == false)
+            {
+                Filtrar.Text = "Sem Filtro";
+                lbCategoria.Visible = true;
+                CategoriaBox.Visible = true;
+            }
+            else
+            {
+                Filtrar.Text = "Filtrar";
+                lbCategoria.Visible = false;
+                CategoriaBox.Visible = false;
+            }
+        }
+
         public void Listar()
         {
             Company emp = new Company();

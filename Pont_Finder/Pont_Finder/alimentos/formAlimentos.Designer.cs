@@ -34,7 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.CategoriaBox = new System.Windows.Forms.ComboBox();
             this.Pesquisar = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbCategoria = new System.Windows.Forms.Label();
             this.PesquisaBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Filtrar = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -74,9 +75,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.Filtrar);
             this.panel2.Controls.Add(this.CategoriaBox);
             this.panel2.Controls.Add(this.Pesquisar);
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.lbCategoria);
             this.panel2.Controls.Add(this.PesquisaBox);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
@@ -87,6 +89,7 @@
             // 
             // CategoriaBox
             // 
+            this.CategoriaBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CategoriaBox.FormattingEnabled = true;
             this.CategoriaBox.Items.AddRange(new object[] {
             "Hambúrgueria",
@@ -119,16 +122,16 @@
             this.Pesquisar.UseVisualStyleBackColor = false;
             this.Pesquisar.Click += new System.EventHandler(this.Pesquisar_Click);
             // 
-            // label4
+            // lbCategoria
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 131);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Categoria";
-            this.label4.Visible = false;
+            this.lbCategoria.AutoSize = true;
+            this.lbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCategoria.Location = new System.Drawing.Point(19, 133);
+            this.lbCategoria.Name = "lbCategoria";
+            this.lbCategoria.Size = new System.Drawing.Size(76, 18);
+            this.lbCategoria.TabIndex = 3;
+            this.lbCategoria.Text = "Categoria:";
+            this.lbCategoria.Visible = false;
             // 
             // PesquisaBox
             // 
@@ -143,9 +146,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(17, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 18);
+            this.label3.Size = new System.Drawing.Size(53, 18);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Nome";
+            this.label3.Text = "Nome:";
             // 
             // label1
             // 
@@ -245,6 +248,21 @@
             this.panel1.Size = new System.Drawing.Size(0, 0);
             this.panel1.TabIndex = 12;
             // 
+            // Filtrar
+            // 
+            this.Filtrar.BackColor = System.Drawing.Color.Transparent;
+            this.Filtrar.FlatAppearance.BorderSize = 0;
+            this.Filtrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Filtrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filtrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Filtrar.Location = new System.Drawing.Point(202, 159);
+            this.Filtrar.Name = "Filtrar";
+            this.Filtrar.Size = new System.Drawing.Size(103, 27);
+            this.Filtrar.TabIndex = 12;
+            this.Filtrar.Text = "Filtrar por:";
+            this.Filtrar.UseVisualStyleBackColor = false;
+            this.Filtrar.Click += new System.EventHandler(this.Filtrar_Click);
+            // 
             // formAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,7 +304,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox CategoriaBox;
         private System.Windows.Forms.Button Pesquisar;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbCategoria;
         private System.Windows.Forms.TextBox PesquisaBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -298,5 +316,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button Filtrar;
     }
 }
