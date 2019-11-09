@@ -43,13 +43,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.pc_slider = new System.Windows.Forms.PictureBox();
+            this.pn_slider = new System.Windows.Forms.Panel();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_slider)).BeginInit();
+            this.pn_slider.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel6
@@ -207,7 +207,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 3000;
+            this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
@@ -215,24 +215,22 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(337, 82);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(320, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(663, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Conheça o melhor para você aqui!";
             // 
-            // pc_slider
+            // pn_slider
             // 
-            this.pc_slider.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pc_slider.Image = ((System.Drawing.Image)(resources.GetObject("pc_slider.Image")));
-            this.pc_slider.Location = new System.Drawing.Point(0, 0);
-            this.pc_slider.Name = "pc_slider";
-            this.pc_slider.Size = new System.Drawing.Size(1282, 200);
-            this.pc_slider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc_slider.TabIndex = 16;
-            this.pc_slider.TabStop = false;
-            this.pc_slider.Click += new System.EventHandler(this.pc_slider_Click);
+            this.pn_slider.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pn_slider.BackgroundImage")));
+            this.pn_slider.Controls.Add(this.label1);
+            this.pn_slider.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_slider.Location = new System.Drawing.Point(0, 0);
+            this.pn_slider.Name = "pn_slider";
+            this.pn_slider.Size = new System.Drawing.Size(1282, 200);
+            this.pn_slider.TabIndex = 16;
             // 
             // formHome
             // 
@@ -240,14 +238,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pn_slider);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pc_slider);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
@@ -258,7 +255,8 @@
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pc_slider)).EndInit();
+            this.pn_slider.ResumeLayout(false);
+            this.pn_slider.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,6 +276,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pc_slider;
+        private System.Windows.Forms.Panel pn_slider;
     }
 }

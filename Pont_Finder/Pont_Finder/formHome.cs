@@ -28,20 +28,14 @@ namespace Pont_Finder
         }
         private Button Botao(object sender) => (Button)sender;
 
-        private int imageNumber = 1;
-        
-        private void LoadNextImg()
-        {
-            if (imageNumber == 5)
-            {
-                imageNumber = 1;
-            }
-            pc_slider.ImageLocation = string.Format("..\\..\\data\\images\\carrousel\\home\\{0}.png", imageNumber);
-            imageNumber++;
-        }
+        private int cont = 0;    
         private void timer1_Tick(object sender, EventArgs e)
         {
-            LoadNextImg();
+            if (cont == 4)
+                cont = 1;
+            Image image = Image.FromFile("..\\..\\data\\images\\carrousel\\home\\" + cont + ".png");
+            pn_slider.BackgroundImage = image;
+            cont++;
         }
 
         private void pc_slider_Click(object sender, EventArgs e)

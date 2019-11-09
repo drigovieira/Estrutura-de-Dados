@@ -125,5 +125,10 @@ namespace Pont_Finder
                 img = true;
             }
         }
+
+        private void formCriarConta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

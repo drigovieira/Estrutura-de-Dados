@@ -49,7 +49,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_img = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -78,7 +78,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnl_img.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel8.SuspendLayout();
@@ -305,14 +305,14 @@
             this.panel6.TabIndex = 40;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // panel1
+            // pnl_img
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1264, 200);
-            this.panel1.TabIndex = 29;
+            this.pnl_img.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl_img.BackgroundImage")));
+            this.pnl_img.Controls.Add(this.label6);
+            this.pnl_img.Location = new System.Drawing.Point(0, 0);
+            this.pnl_img.Name = "pnl_img";
+            this.pnl_img.Size = new System.Drawing.Size(1264, 200);
+            this.pnl_img.TabIndex = 29;
             // 
             // label6
             // 
@@ -628,7 +628,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1299, 675);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel11);
@@ -636,7 +636,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_img);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel7);
@@ -652,8 +652,8 @@
             this.Load += new System.EventHandler(this.Hosp_Home_Load);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnl_img.ResumeLayout(false);
+            this.pnl_img.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -697,7 +697,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_img;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;

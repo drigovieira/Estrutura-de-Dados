@@ -208,6 +208,7 @@
             this.Name = "formCriarConta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criar Conta";
+            this.Load += new System.EventHandler(this.formCriarConta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

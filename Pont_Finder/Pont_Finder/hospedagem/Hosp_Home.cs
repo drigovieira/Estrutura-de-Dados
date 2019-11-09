@@ -21,7 +21,8 @@ namespace Pont_Finder.hospedagem
 
         private void Hosp_Home_Load(object sender, EventArgs e)
         {
-            
+            Image image = Image.FromFile("..\\..\\data\\images\\carrousel\\home\\3.png");
+            pnl_img.BackgroundImage = image;
         }
 
         
