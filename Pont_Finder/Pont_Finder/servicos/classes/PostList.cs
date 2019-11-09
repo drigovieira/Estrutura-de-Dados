@@ -79,10 +79,40 @@ namespace Pont_Finder.servicos.classes
             posts = new List<Post>();
         }
 
-        public static List<Post> Posts
+        public static List<Post> thisPosts
         {
             get { return posts; }
         }
+
+        public static List<Post> Posts
+        {
+            get {
+
+                List<Post> lista = new List<Post>();
+                foreach (var post in posts)
+                {
+                    Post p = new Post();
+                    p.Id = post.Id;
+                    p.Titulo = post.Titulo;
+                    p.Valor = post.Valor;
+                    p.Detalhes = post.Detalhes;
+                    p.Descricao = post.Descricao;
+                    p.Ativo = post.Ativo;
+                    p.Image = post.Image;
+                    p.Cpf = post.Cpf;
+                    p.Cnpj = post.Cnpj;
+                    p.Data = post.Data;
+                    p.LikesList = post.LikesList;
+                    lista.Add(p);
+                }
+                return lista;
+            }
+        }
+
+        
+
+
+
 
     }
 }

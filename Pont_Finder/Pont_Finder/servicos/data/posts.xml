@@ -2,16 +2,16 @@
 <PostList>
   <Post>
     <id>0</id>
-    <titulo>iishdfoh</titulo>
-    <valor>23</valor>
-    <detalhes>shfpo</detalhes>
+    <titulo>fire</titulo>
+    <valor>232</valor>
+    <detalhes>Firee</detalhes>
     <descricao>hspof</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//0.jpg</image>
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-08T20:17:05.7685265-03:00</data>
-    <likes></likes>
+    <likes>1,26835036010</likes>
   </Post>
   <Post>
     <id>1</id>

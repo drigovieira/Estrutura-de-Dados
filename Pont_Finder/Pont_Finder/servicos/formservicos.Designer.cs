@@ -33,11 +33,11 @@
             this.panel_left = new System.Windows.Forms.Panel();
             this.pb_pesquisar = new System.Windows.Forms.PictureBox();
             this.tb_pesquisar = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.bt_solicitar = new System.Windows.Forms.Button();
             this.bt_cadEmpresa = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt_publicar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.bt_gerenciar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_center = new System.Windows.Forms.Panel();
@@ -91,21 +91,20 @@
             this.tb_pesquisar.TabIndex = 0;
             this.tb_pesquisar.Tag = "";
             this.tb_pesquisar.Text = "Pesquisar";
-            this.tb_pesquisar.TextChanged += new System.EventHandler(this.TextBox1_TextChanged_1);
             this.tb_pesquisar.Enter += new System.EventHandler(this.Tb_pesquisa_Enter);
             this.tb_pesquisar.Leave += new System.EventHandler(this.Tb_pesquisa_Leave);
             // 
-            // button3
+            // bt_solicitar
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(656, 8);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 22);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Solicitar Serviço";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.bt_solicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_solicitar.ForeColor = System.Drawing.Color.White;
+            this.bt_solicitar.Location = new System.Drawing.Point(656, 8);
+            this.bt_solicitar.Name = "bt_solicitar";
+            this.bt_solicitar.Size = new System.Drawing.Size(120, 22);
+            this.bt_solicitar.TabIndex = 4;
+            this.bt_solicitar.Text = "Solicitar Serviço";
+            this.bt_solicitar.UseVisualStyleBackColor = true;
+            this.bt_solicitar.Click += new System.EventHandler(this.button3_Click);
             // 
             // bt_cadEmpresa
             // 
@@ -119,42 +118,42 @@
             this.bt_cadEmpresa.UseVisualStyleBackColor = true;
             this.bt_cadEmpresa.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // button1
+            // bt_publicar
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(319, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 22);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Publicar Servicos";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            this.bt_publicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_publicar.ForeColor = System.Drawing.Color.White;
+            this.bt_publicar.Location = new System.Drawing.Point(319, 8);
+            this.bt_publicar.Name = "bt_publicar";
+            this.bt_publicar.Size = new System.Drawing.Size(120, 22);
+            this.bt_publicar.TabIndex = 2;
+            this.bt_publicar.Text = "Publicar Servicos";
+            this.bt_publicar.UseVisualStyleBackColor = true;
+            this.bt_publicar.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.bt_gerenciar);
+            this.panel1.Controls.Add(this.bt_solicitar);
+            this.panel1.Controls.Add(this.bt_publicar);
             this.panel1.Controls.Add(this.bt_cadEmpresa);
             this.panel1.Location = new System.Drawing.Point(0, 150);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 40);
             this.panel1.TabIndex = 19;
             // 
-            // button6
+            // bt_gerenciar
             // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(824, 8);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(120, 22);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Gerenciar Serviços";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            this.bt_gerenciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_gerenciar.ForeColor = System.Drawing.Color.White;
+            this.bt_gerenciar.Location = new System.Drawing.Point(824, 8);
+            this.bt_gerenciar.Name = "bt_gerenciar";
+            this.bt_gerenciar.Size = new System.Drawing.Size(120, 22);
+            this.bt_gerenciar.TabIndex = 7;
+            this.bt_gerenciar.Text = "Gerenciar Serviços";
+            this.bt_gerenciar.UseVisualStyleBackColor = true;
+            this.bt_gerenciar.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // panel2
             // 
@@ -185,7 +184,6 @@
             this.panel_center.Name = "panel_center";
             this.panel_center.Size = new System.Drawing.Size(625, 405);
             this.panel_center.TabIndex = 17;
-            this.panel_center.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label2
             // 
@@ -256,14 +254,14 @@
         private System.Windows.Forms.PictureBox pb_pesquisar;
         private System.Windows.Forms.Panel panel_left;
         private System.Windows.Forms.TextBox tb_pesquisar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_publicar;
         private System.Windows.Forms.Button bt_cadEmpresa;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button bt_solicitar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel_center;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button bt_gerenciar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
