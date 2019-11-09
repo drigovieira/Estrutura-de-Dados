@@ -12,9 +12,14 @@ namespace Pont_Finder
 {
     public partial class formHome : Form
     {
+        public List<Image> imageList = new List<Image>();
         public formHome()
         {
-            InitializeComponent();
+            InitializeComponent();         
+            for (int i = 0; i < 4; i++)
+            {
+                imageList.Add(Image.FromFile("..\\..\\data\\images\\carrousel\\home\\" + i + ".png"));
+            }
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
@@ -28,13 +33,14 @@ namespace Pont_Finder
         }
         private Button Botao(object sender) => (Button)sender;
 
-        private int cont = 0;    
+        private int cont = 0;
+
         private void timer1_Tick(object sender, EventArgs e)
         {
+           
             if (cont == 4)
-                cont = 1;
-            Image image = Image.FromFile("..\\..\\data\\images\\carrousel\\home\\" + cont + ".png");
-            pn_slider.BackgroundImage = image;
+                cont = 0;           
+            pn_slider.BackgroundImage = imageList[cont];
             cont++;
         }
 
