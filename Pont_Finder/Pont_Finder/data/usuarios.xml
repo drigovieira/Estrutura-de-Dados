@@ -5,12 +5,12 @@
     <email>admin</email>
     <senha>admin</senha>
     <cpf>26835036010</cpf>
-    <image>..//..//data//images//users//45850930876.jpg</image>
+    <image>..//..//data//images//users//26835036010.jpg</image>
     <ativo>true</ativo>
   </user>
   <user>
-    <nome>SotnDragon</nome>
-    <email>sotndragon</email>
+    <nome>sotndragon</nome>
+    <email>sotndragon@gmail.com</email>
     <senha>1234</senha>
     <cpf>45850930876</cpf>
     <image>..//..//data//images//users//45850930876.jpg</image>

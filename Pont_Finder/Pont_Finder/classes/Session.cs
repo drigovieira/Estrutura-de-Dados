@@ -63,14 +63,14 @@ namespace Pont_Finder
 
         public static string Image
         {
-            get { return Session.image; }
-            set { Session.image = value; }
+            get { return image; }
+            set { image = value; }
         }
 
 
         public static bool Login(string xEmail, string xSenha)
         {
-            foreach (var item in UserList.selectAll())
+            foreach (var item in UserList.thisUsers())
             {
                 if (item.Email.Equals(xEmail) && item.Senha.Equals(xSenha))
                 {

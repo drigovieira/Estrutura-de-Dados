@@ -168,6 +168,10 @@ namespace Pont_Finder
             }
             return lista;
         }
+        public static List<User> thisUsers()
+        {
+            return users;
+        }
 
         public static void XmlLoad()
         {
@@ -222,6 +226,8 @@ namespace Pont_Finder
             }
             xmldoc.Save(caminho);
         }
+
+        
 
 
 

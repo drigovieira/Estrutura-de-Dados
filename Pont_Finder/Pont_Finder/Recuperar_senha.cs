@@ -24,7 +24,44 @@ namespace Pont_Finder
 
         private void button_recuperar_Click(object sender, EventArgs e)
         {
+            long cpf = long.Parse(tb_cpf.Text);
+            string email = tb_email.Text;
+            string senha = tb_senha.Text;
+            string vsenha = tb_vsenha.Text;
+            bool alterada = false;
 
+            if (senha == vsenha)
+            {
+                foreach (var item in UserList.thisUsers())
+                {
+                    if (item.Email == email && item.Cpf == cpf)
+                    {
+                        item.Senha = senha;
+                        alterada = true;
+                        break;
+                    }
+                }
+                if (alterada)
+                {
+                    MessageBox.Show("Senha Alterada");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Senha Não Alterada.\nVerifique os Dados");
+                    tb_senha.Text = "";
+                    tb_vsenha.Text = "";
+                }
+               
+            }
+            else
+            {
+                tb_senha.Text = "";
+                tb_vsenha.Text = "";
+                MessageBox.Show("Senhas Diferentes");
+            }
+
+           
         }
     }
 }

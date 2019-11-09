@@ -28,7 +28,6 @@ namespace Pont_Finder
             if (!Session.Online)
             {
                 pb_userIcone.Visible = false;
-                pb_userIcone.ImageLocation = Session.Image;
             }
 
         }
@@ -65,6 +64,7 @@ namespace Pont_Finder
                 {
                     pb_userIcone.Visible = true;
                     pb_userIcone.ImageLocation = Session.Image;
+                    pb_userIcone.Load();
                 }
             }
         }
