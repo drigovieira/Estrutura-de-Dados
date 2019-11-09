@@ -106,6 +106,7 @@
             this.CategoriaBox.Size = new System.Drawing.Size(172, 21);
             this.CategoriaBox.TabIndex = 11;
             this.CategoriaBox.Visible = false;
+            this.CategoriaBox.SelectedValueChanged += new System.EventHandler(this.CategoriaBox_SelectedValueChanged);
             // 
             // Pesquisar
             // 
