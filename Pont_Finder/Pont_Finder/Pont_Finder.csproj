@@ -130,7 +130,6 @@
     <Compile Include="alimentos\formAlimentos.Designer.cs">
       <DependentUpon>formAlimentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="classes\XmlLi_Empresa.cs" />
     <Compile Include="eventos\CadEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>

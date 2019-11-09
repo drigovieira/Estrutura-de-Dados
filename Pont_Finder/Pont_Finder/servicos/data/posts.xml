@@ -26,4 +26,17 @@
     <data>2019-11-08T20:49:34.2992233-03:00</data>
     <likes></likes>
   </Post>
+  <Post>
+    <id>2</id>
+    <titulo>testing</titulo>
+    <valor>123</valor>
+    <detalhes>dfjpso</detalhes>
+    <descricao>sopdf</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-09T12:20:28.1118117-03:00</data>
+    <likes></likes>
+  </Post>
 </PostList>

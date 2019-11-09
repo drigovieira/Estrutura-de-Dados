@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pb_userIcone = new System.Windows.Forms.PictureBox();
             this.bt_Sair = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button_salvar = new System.Windows.Forms.Button();
@@ -37,10 +38,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_CriarConta = new System.Windows.Forms.Button();
             this.panelHome = new System.Windows.Forms.Panel();
-            this.pb_userIcone = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_userIcone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,6 +60,16 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // pb_userIcone
+            // 
+            this.pb_userIcone.Location = new System.Drawing.Point(945, 3);
+            this.pb_userIcone.Name = "pb_userIcone";
+            this.pb_userIcone.Size = new System.Drawing.Size(40, 40);
+            this.pb_userIcone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_userIcone.TabIndex = 8;
+            this.pb_userIcone.TabStop = false;
+            this.pb_userIcone.Click += new System.EventHandler(this.Pb_userIcone_Click);
+            // 
             // bt_Sair
             // 
             this.bt_Sair.BackColor = System.Drawing.Color.Transparent;
@@ -69,7 +79,7 @@
             this.bt_Sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Sair.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Sair.ForeColor = System.Drawing.Color.White;
-            this.bt_Sair.Location = new System.Drawing.Point(785, 10);
+            this.bt_Sair.Location = new System.Drawing.Point(1155, 10);
             this.bt_Sair.Name = "bt_Sair";
             this.bt_Sair.Size = new System.Drawing.Size(95, 25);
             this.bt_Sair.TabIndex = 7;
@@ -82,7 +92,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1083, 7);
+            this.label1.Location = new System.Drawing.Point(991, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 32);
             this.label1.TabIndex = 4;
@@ -159,16 +169,6 @@
             this.panelHome.TabIndex = 3;
             this.panelHome.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHome_Paint);
             // 
-            // pb_userIcone
-            // 
-            this.pb_userIcone.Location = new System.Drawing.Point(945, 3);
-            this.pb_userIcone.Name = "pb_userIcone";
-            this.pb_userIcone.Size = new System.Drawing.Size(40, 40);
-            this.pb_userIcone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_userIcone.TabIndex = 8;
-            this.pb_userIcone.TabStop = false;
-            this.pb_userIcone.Click += new System.EventHandler(this.Pb_userIcone_Click);
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,8 +184,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_userIcone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
