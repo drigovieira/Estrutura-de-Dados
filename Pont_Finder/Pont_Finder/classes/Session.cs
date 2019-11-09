@@ -13,6 +13,7 @@ namespace Pont_Finder
         private static string email;
         private static string senha;
         private static long cpf;
+        private static string image;
 
         public static bool Online
         {
@@ -33,6 +34,7 @@ namespace Pont_Finder
             email = null;
             senha = null;
             cpf = -1;
+            image = null;
         }
 
         public static int Id
@@ -59,6 +61,12 @@ namespace Pont_Finder
         {
             get { return Session.cpf; }
             set { Session.cpf = value; }
+        }
+
+        public static string Image
+        {
+            get { return Session.image; }
+            set { Session.image = value; }
         }
 
 

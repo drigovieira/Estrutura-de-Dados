@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Pont_Finder
 {
@@ -13,6 +15,7 @@ namespace Pont_Finder
            UserList userList = new UserList();
         */
 
+        
         private static List<User> users = new List<User>();
 
         public static void userAdd(User user)
@@ -155,23 +158,109 @@ namespace Pont_Finder
             Session.Email = users[index].Email;
             Session.Senha = users[index].Senha;
             Session.Cpf = users[index].Cpf;
+            Session.Image = users[index].Image;
 
         }
 
+
+
+        //novos métodos
         public static User selectCpf(long cpf)
         {
             User user = new User();
             foreach (var item in users)
             {
                 if (cpf == item.Cpf)
-                {
-                    user.Nome = item.Nome;
-                    user.Email = item.Email;
-                }
-                              
+                    return item;
             }
-            return user;         
+            return user;
         }
+
+
+        public static void Add(User user)
+        {
+            User u = new User();
+            u.Nome = user.Nome;
+            u.Email = user.Email;
+            u.Senha = user.Senha;
+            u.Cpf = user.Cpf;
+            u.Image = user.Image;
+            u.Ativo = user.Ativo;
+            users.Add(u);
+        }
+
+        public static List<User> Users()
+        {
+            List<User> lista = new List<User>();
+            foreach (var item in users)
+            {
+                User u = new User();
+                u.Nome = item.Nome;
+                u.Email = item.Email;
+                u.Senha = item.Senha;
+                u.Cpf = item.Cpf;
+                u.Image = item.Image;
+                u.Ativo = item.Ativo;
+                lista.Add(u);
+            }
+            return lista;
+        }
+
+        public static void XmlLoad()
+        {
+            string caminho = "..\\..\\data\\usuarios.xml";
+            XDocument doc = XDocument.Load(caminho);
+
+            foreach (var item in doc.Descendants("user"))
+            {
+                User user = new User();
+                user.Nome = item.Element("nome").Value;
+                user.Email = item.Element("email").Value;
+                user.Senha = item.Element("senha").Value;
+                user.Cpf = long.Parse(item.Element("cpf").Value);
+                user.Image = item.Element("image").Value;
+                user.Ativo = bool.Parse(item.Element("ativo").Value);
+                UserList.Add(user);
+            }
+        }
+        public static void XmlSave()
+        {
+            UserList.XmlDrop();
+            string caminho = "..\\..\\data\\usuarios.xml";
+            foreach (var item in users)
+            {
+                XElement xuser =
+                      new XElement("user",
+                      new XElement("nome", item.Nome),
+                      new XElement("email", item.Email),
+                       new XElement("senha", item.Senha),
+                      new XElement("cpf", item.Cpf),
+                      new XElement("image", item.Image),
+                      new XElement("ativo", item.Ativo));
+
+                XDocument doc = XDocument.Load(caminho);
+                doc.Root.Add(xuser);
+                doc.Save(caminho);
+            }
+        }
+
+        public static void XmlDrop()
+        {
+            string caminho = "..\\..\\data\\usuarios.xml";
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.Load(caminho);
+
+            XDocument xdoc = XDocument.Load(caminho);
+
+            foreach (var item in xdoc.Descendants("user"))
+            {
+                XmlNode node = xmldoc.SelectSingleNode("/userList/user");
+                node.ParentNode.RemoveChild(node);
+            }
+            xmldoc.Save(caminho);
+        }
+
+
 
     }
 }

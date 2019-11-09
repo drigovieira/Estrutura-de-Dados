@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulos>
   <servico>
-    <nome>Pingum</nome>
-    <nomeFantasia>Pingum</nomeFantasia>
-    <email>Pingum@gmail.com</email>
-    <telefone>38645896</telefone>
-    <endereco>Pingum/PG</endereco>
-    <cnpj>983264782638</cnpj>
-    <cpf>12345</cpf>
-    <image>..//..//servicos//data//images//empresas//983264782638.jpg</image>
+    <nome>empresa</nome>
+    <nomeFantasia>fantasia</nomeFantasia>
+    <email>email</email>
+    <telefone>2432</telefone>
+    <endereco>endereco</endereco>
+    <cnpj>21321</cnpj>
+    <cpf>26835036010</cpf>
+    <image>..//..//servicos//data//images//empresas//21321.jpg</image>
     <status>true</status>
   </servico>
 </modulos>

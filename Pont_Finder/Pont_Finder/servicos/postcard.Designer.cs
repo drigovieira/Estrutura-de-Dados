@@ -64,7 +64,7 @@
             this.panel1.Controls.Add(this.pb_icone);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(605, 195);
+            this.panel1.Size = new System.Drawing.Size(605, 196);
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
@@ -129,6 +129,7 @@
             this.pb_user.Location = new System.Drawing.Point(545, 9);
             this.pb_user.Name = "pb_user";
             this.pb_user.Size = new System.Drawing.Size(50, 50);
+            this.pb_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_user.TabIndex = 24;
             this.pb_user.TabStop = false;
             // 
@@ -196,6 +197,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "PostCard";
             this.Size = new System.Drawing.Size(605, 196);
+            this.Load += new System.EventHandler(this.PostCard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();

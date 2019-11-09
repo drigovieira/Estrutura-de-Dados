@@ -25,6 +25,12 @@ namespace Pont_Finder
             navbar = panel1;
             painel = panelHome;
 
+            if (!Session.Online)
+            {
+                pb_userIcone.Visible = false;
+                pb_userIcone.ImageLocation = Session.Image;
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -55,42 +61,26 @@ namespace Pont_Finder
                 bt_Sair.Visible = true;
                 formHome fh = new formHome();
                 MudarForm("", fh);
+                if (Session.Online)
+                {
+                    pb_userIcone.Visible = true;
+                    pb_userIcone.ImageLocation = Session.Image;
+                }
             }
         }
 
         private void Button_salvar_Click(object sender, EventArgs e)
         {
-            servicos.classes.PostList.XmlSave();
-            XmlLi xmlli = new XmlLi();
-            //final do programa salvando...
-            xmlli.Drop();
-            int cont = 0;
-            foreach (var item in UserList.selectAll())
-            {
-                xmlli.Add(cont, item.Nome, item.Email, item.Senha, item.Cpf, item.Ativo);
-                cont++;
-            }
+            //geral
+            UserList.XmlSave();
 
-            /*
-            XmlLi_Empresa xmlli_empresa = new XmlLi_Empresa();
-            //final do programa salvando...
-            xmlli_empresa.Drop();
-            foreach (var item in servicos.classes.ListaEmpresa.selectAll())
-            {
-                xmlli_empresa.AddServico(item.Nome, item.NomeFantasia, item.Email, item.Telefone, item.Endereco, item.Cnpj, item.Cpf, item.Status);
-            }
-            */
-
+            //servicos
+            servicos.classes.PostList.XmlSave();           
             servicos.classes.ListaEmpresa.XmlDrop();
             servicos.classes.ListaEmpresa.XmlSave();
+            //fim servicos
 
-            MessageBox.Show("Dados Salvos");
-
-
-
-
-           
-
+            MessageBox.Show("Dados Salvos");         
         }
 
         private void panelHome_Paint(object sender, PaintEventArgs e)
@@ -224,7 +214,8 @@ namespace Pont_Finder
             bt_CriarConta.Visible = true;
             label1.Text = "";  
             formHome fh = new formHome();     
-            MudarForm("", fh);           
+            MudarForm("", fh);
+            pb_userIcone.Visible = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -233,6 +224,11 @@ namespace Pont_Finder
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pb_userIcone_Click(object sender, EventArgs e)
         {
 
         }
