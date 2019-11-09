@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,13 +14,17 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Cadastro_Empresa : Form
     {
-        
+
+        private List<string> fotos = new List<string>();
  
         public Cadastro_Empresa()
         {
             InitializeComponent();
             
+            
+            
         }
+
 
         private void Cadastro_Empresa_Load(object sender, EventArgs e)
         {
@@ -49,6 +55,9 @@ namespace Pont_Finder.hospedagem
                         int Tel = Convert.ToInt32(mkb_phone.Text);
                         string descricao = tb_descricaoHotel.Text;
                         string Foto = "CAMINHO";
+
+                        string diretorio = "..//..//hospedagem//data//images//empresas//offImage.jpg";
+
                         string Ambientes = "";
                         long cpfadmin = Session.Cpf;
                         
@@ -158,9 +167,17 @@ namespace Pont_Finder.hospedagem
                                         empresa.Ambiente = Ambientes;
                                         empresa.Ativo = true;
 
-                                        MessageBox.Show(Ambientes) ;
 
-                                        
+
+
+
+                                        //Salvando Foto
+                                        if (!Directory.Exists("..//..//hospedagem//data//images//empresas//"+CNPJ))
+                                            Directory.CreateDirectory("..//..//hospedagem//data//images//empresas//"+ CNPJ);
+
+
+
+
 
                                         //Adiciona na lista
                                         hostList.addEmpresa(empresa);
@@ -265,6 +282,23 @@ namespace Pont_Finder.hospedagem
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bt_add_img_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openimg = new OpenFileDialog();
+
+            openimg.Filter = "Image Files(*.jpeg;*.bmp;*.png;*.jpg)|*.jpeg;*.bmp;*.png;*.jpg";
+
+            openimg.Multiselect = true;
+
+            if (openimg.ShowDialog() == DialogResult.OK)
+            {
+                foreach (var img in openimg.FileNames)
+                {
+                    this.fotos.Add(img);
+                }
+            }
         }
     }
 }

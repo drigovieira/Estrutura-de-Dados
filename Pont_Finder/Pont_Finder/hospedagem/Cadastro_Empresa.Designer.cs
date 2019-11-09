@@ -840,6 +840,7 @@
             this.bt_add_img.TabIndex = 9;
             this.bt_add_img.Text = "Adicionar imagem";
             this.bt_add_img.UseVisualStyleBackColor = false;
+            this.bt_add_img.Click += new System.EventHandler(this.bt_add_img_Click);
             // 
             // label2
             // 
