@@ -80,17 +80,6 @@
             this.tb_descricaoHotel = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pb_img1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pb_img11 = new System.Windows.Forms.PictureBox();
-            this.pb_img10 = new System.Windows.Forms.PictureBox();
-            this.pb_img9 = new System.Windows.Forms.PictureBox();
-            this.pb_img8 = new System.Windows.Forms.PictureBox();
-            this.pb_img7 = new System.Windows.Forms.PictureBox();
-            this.pb_img6 = new System.Windows.Forms.PictureBox();
-            this.pb_img5 = new System.Windows.Forms.PictureBox();
-            this.pb_img4 = new System.Windows.Forms.PictureBox();
-            this.pb_img3 = new System.Windows.Forms.PictureBox();
-            this.pb_img2 = new System.Windows.Forms.PictureBox();
             this.bt_add_img = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -123,17 +112,6 @@
             this.pnl_tipoHosp.SuspendLayout();
             this.pnl_ambDisp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img2)).BeginInit();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -327,7 +305,6 @@
             this.panel3.Controls.Add(this.tb_descricaoHotel);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.pb_img1);
-            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.bt_add_img);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(320, 1078);
@@ -667,7 +644,6 @@
             this.ckb_estacionamento.TabIndex = 20;
             this.ckb_estacionamento.Text = "Estacionamento";
             this.ckb_estacionamento.UseVisualStyleBackColor = true;
-            this.ckb_estacionamento.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // tb_descricaoHotel
             // 
@@ -692,141 +668,12 @@
             // 
             this.pb_img1.BackColor = System.Drawing.SystemColors.Control;
             this.pb_img1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img1.InitialImage = global::Pont_Finder.Properties.Resources.downgrey;
             this.pb_img1.Location = new System.Drawing.Point(77, 46);
             this.pb_img1.Name = "pb_img1";
             this.pb_img1.Size = new System.Drawing.Size(460, 220);
             this.pb_img1.TabIndex = 3;
             this.pb_img1.TabStop = false;
-            this.pb_img1.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.AutoScroll = true;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.pb_img11);
-            this.panel4.Controls.Add(this.pb_img10);
-            this.panel4.Controls.Add(this.pb_img9);
-            this.panel4.Controls.Add(this.pb_img8);
-            this.panel4.Controls.Add(this.pb_img7);
-            this.panel4.Controls.Add(this.pb_img6);
-            this.panel4.Controls.Add(this.pb_img5);
-            this.panel4.Controls.Add(this.pb_img4);
-            this.panel4.Controls.Add(this.pb_img3);
-            this.panel4.Controls.Add(this.pb_img2);
-            this.panel4.Location = new System.Drawing.Point(12, 283);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(590, 94);
-            this.panel4.TabIndex = 2;
-            // 
-            // pb_img11
-            // 
-            this.pb_img11.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img11.Location = new System.Drawing.Point(957, 12);
-            this.pb_img11.Name = "pb_img11";
-            this.pb_img11.Size = new System.Drawing.Size(100, 50);
-            this.pb_img11.TabIndex = 15;
-            this.pb_img11.TabStop = false;
-            this.pb_img11.Click += new System.EventHandler(this.pictureBox11_Click);
-            // 
-            // pb_img10
-            // 
-            this.pb_img10.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img10.Location = new System.Drawing.Point(851, 12);
-            this.pb_img10.Name = "pb_img10";
-            this.pb_img10.Size = new System.Drawing.Size(100, 50);
-            this.pb_img10.TabIndex = 14;
-            this.pb_img10.TabStop = false;
-            this.pb_img10.Click += new System.EventHandler(this.pictureBox10_Click);
-            // 
-            // pb_img9
-            // 
-            this.pb_img9.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img9.Location = new System.Drawing.Point(745, 12);
-            this.pb_img9.Name = "pb_img9";
-            this.pb_img9.Size = new System.Drawing.Size(100, 50);
-            this.pb_img9.TabIndex = 13;
-            this.pb_img9.TabStop = false;
-            this.pb_img9.Click += new System.EventHandler(this.pictureBox9_Click);
-            // 
-            // pb_img8
-            // 
-            this.pb_img8.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img8.Location = new System.Drawing.Point(639, 12);
-            this.pb_img8.Name = "pb_img8";
-            this.pb_img8.Size = new System.Drawing.Size(100, 50);
-            this.pb_img8.TabIndex = 12;
-            this.pb_img8.TabStop = false;
-            this.pb_img8.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // pb_img7
-            // 
-            this.pb_img7.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img7.Location = new System.Drawing.Point(533, 12);
-            this.pb_img7.Name = "pb_img7";
-            this.pb_img7.Size = new System.Drawing.Size(100, 50);
-            this.pb_img7.TabIndex = 11;
-            this.pb_img7.TabStop = false;
-            this.pb_img7.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // pb_img6
-            // 
-            this.pb_img6.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img6.Location = new System.Drawing.Point(427, 12);
-            this.pb_img6.Name = "pb_img6";
-            this.pb_img6.Size = new System.Drawing.Size(100, 50);
-            this.pb_img6.TabIndex = 10;
-            this.pb_img6.TabStop = false;
-            this.pb_img6.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pb_img5
-            // 
-            this.pb_img5.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img5.Location = new System.Drawing.Point(321, 12);
-            this.pb_img5.Name = "pb_img5";
-            this.pb_img5.Size = new System.Drawing.Size(100, 50);
-            this.pb_img5.TabIndex = 9;
-            this.pb_img5.TabStop = false;
-            this.pb_img5.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pb_img4
-            // 
-            this.pb_img4.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img4.Location = new System.Drawing.Point(215, 12);
-            this.pb_img4.Name = "pb_img4";
-            this.pb_img4.Size = new System.Drawing.Size(100, 50);
-            this.pb_img4.TabIndex = 8;
-            this.pb_img4.TabStop = false;
-            this.pb_img4.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pb_img3
-            // 
-            this.pb_img3.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img3.Location = new System.Drawing.Point(109, 12);
-            this.pb_img3.Name = "pb_img3";
-            this.pb_img3.Size = new System.Drawing.Size(100, 50);
-            this.pb_img3.TabIndex = 7;
-            this.pb_img3.TabStop = false;
-            this.pb_img3.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pb_img2
-            // 
-            this.pb_img2.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img2.Location = new System.Drawing.Point(3, 12);
-            this.pb_img2.Name = "pb_img2";
-            this.pb_img2.Size = new System.Drawing.Size(100, 50);
-            this.pb_img2.TabIndex = 0;
-            this.pb_img2.TabStop = false;
-            this.pb_img2.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // bt_add_img
             // 
@@ -834,7 +681,7 @@
             this.bt_add_img.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_add_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_img.ForeColor = System.Drawing.Color.White;
-            this.bt_add_img.Location = new System.Drawing.Point(227, 396);
+            this.bt_add_img.Location = new System.Drawing.Point(223, 290);
             this.bt_add_img.Name = "bt_add_img";
             this.bt_add_img.Size = new System.Drawing.Size(160, 35);
             this.bt_add_img.TabIndex = 9;
@@ -980,17 +827,6 @@
             this.pnl_ambDisp.ResumeLayout(false);
             this.pnl_ambDisp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img2)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.ResumeLayout(false);
@@ -1013,7 +849,6 @@
         private System.Windows.Forms.TextBox tb_nameEmp;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.PictureBox pb_img11;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label17;
@@ -1027,16 +862,6 @@
         private System.Windows.Forms.TextBox tb_descricaoHotel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pb_img1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pb_img10;
-        private System.Windows.Forms.PictureBox pb_img9;
-        private System.Windows.Forms.PictureBox pb_img8;
-        private System.Windows.Forms.PictureBox pb_img7;
-        private System.Windows.Forms.PictureBox pb_img6;
-        private System.Windows.Forms.PictureBox pb_img5;
-        private System.Windows.Forms.PictureBox pb_img4;
-        private System.Windows.Forms.PictureBox pb_img3;
-        private System.Windows.Forms.PictureBox pb_img2;
         private System.Windows.Forms.Button bt_add_img;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;

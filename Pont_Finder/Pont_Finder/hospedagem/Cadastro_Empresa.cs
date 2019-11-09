@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Security;
@@ -16,13 +17,13 @@ namespace Pont_Finder.hospedagem
     {
 
         private List<string> fotos = new List<string>();
- 
+
+        OpenFileDialog openimg = new OpenFileDialog();
+
         public Cadastro_Empresa()
         {
             InitializeComponent();
-            
-            
-            
+            pb_img1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
 
@@ -54,7 +55,7 @@ namespace Pont_Finder.hospedagem
                         int Cep = Convert.ToInt32(mkb_cep.Text);
                         int Tel = Convert.ToInt32(mkb_phone.Text);
                         string descricao = tb_descricaoHotel.Text;
-                        string Foto = "CAMINHO";
+                        string Foto = "";
 
                         string diretorio = "..//..//hospedagem//data//images//empresas//offImage.jpg";
 
@@ -132,7 +133,7 @@ namespace Pont_Finder.hospedagem
                                         empresa.Cep = Cep;
                                         empresa.Telefone = Tel;
                                         empresa.Email = Email;
-                                        empresa.Foto = Foto;
+                                        
                                         empresa.CPFADMIN = cpfadmin;
 
                                         //Verifica se e hotel ou pousada
@@ -167,16 +168,33 @@ namespace Pont_Finder.hospedagem
                                         empresa.Ambiente = Ambientes;
                                         empresa.Ativo = true;
 
-
-
-
-
                                         //Salvando Foto
                                         if (!Directory.Exists("..//..//hospedagem//data//images//empresas//"+CNPJ))
                                             Directory.CreateDirectory("..//..//hospedagem//data//images//empresas//"+ CNPJ);
 
+                                        pb_img1.Load();
+
+                                        int total_img = 0;
+
+                                        foreach (var imagem in openimg.FileNames)
+                                        {
+
+                                            Image bmp = new Bitmap(Image.FromFile(imagem));
+
+                                            Image bmp2 = new Bitmap(bmp, pb_img1.Size);
+
+                                            pb_img1.Image = bmp2;
+
+                                            diretorio = "..//..//hospedagem//data//images//empresas//" + CNPJ +"//"+total_img+ ".jpg";
+                                            pb_img1.Image.Save(diretorio, ImageFormat.Jpeg);
+
+                                            Foto = Foto+" * "+diretorio;
+
+                                            total_img++;
+                                        }
 
 
+                                        empresa.Foto = Foto;
 
 
                                         //Adiciona na lista
@@ -219,76 +237,11 @@ namespace Pont_Finder.hospedagem
             
         }
 
-        private void button3_Click(object sender, EventArgs e) //BOTAO QUE VERIFICA OS TEXT FIELDS E HABILITA OS DEMAIS
-        {
-            tb_descricaoHotel.Enabled = true;
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void bt_add_img_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openimg = new OpenFileDialog();
+            
 
-            openimg.Filter = "Image Files(*.jpeg;*.bmp;*.png;*.jpg)|*.jpeg;*.bmp;*.png;*.jpg";
+            openimg.Filter = "Image Files(*.jpeg;*.bmp;*.png;*.jpg)|*.jpeg;*.bmp;*.jpg";
 
             openimg.Multiselect = true;
 
@@ -296,7 +249,8 @@ namespace Pont_Finder.hospedagem
             {
                 foreach (var img in openimg.FileNames)
                 {
-                    this.fotos.Add(img);
+                    pb_img1.ImageLocation = img;
+                    pb_img1.Load();
                 }
             }
         }

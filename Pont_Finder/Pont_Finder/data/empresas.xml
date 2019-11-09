@@ -13,18 +13,18 @@
   </servico>
   <hospedagem>
     <admin>26835036010</admin>
-    <nomeempresa>testeeeeee'</nomeempresa>
-    <nomefantasia>nomefantasiaaa</nomefantasia>
-    <cnpj>32112333211234</cnpj>
-    <endereco>rua bla numero 3</endereco>
-    <cep>11111111</cep>
-    <telefone>0</telefone>
-    <email>aa@.com</email>
-    <foto>CAMINHO</foto>
+    <nomeempresa>Muzy Açais</nomeempresa>
+    <nomefantasia>Açais Mania</nomefantasia>
+    <cnpj>45612312312312</cnpj>
+    <endereco>Rua das Rosas, numero xx</endereco>
+    <cep>12334324</cep>
+    <telefone>121123213</telefone>
+    <email>admin@muzyacai.com</email>
+    <foto> * ..//..//hospedagem//data//images//empresas//45612312312312//0.jpg * ..//..//hospedagem//data//images//empresas//45612312312312//1.jpg</foto>
     <tipo>Pousada</tipo>
-    <estrelas>5</estrelas>
-    <descricao>asdasdsadsad</descricao>
-    <ambiente>  Estacionamento  Piscina</ambiente>
+    <estrelas>3</estrelas>
+    <descricao>Açais e sorvetes em geral!</descricao>
+    <ambiente>  Estacionamento  Academia</ambiente>
     <status>true</status>
   </hospedagem>
 </modulos>
