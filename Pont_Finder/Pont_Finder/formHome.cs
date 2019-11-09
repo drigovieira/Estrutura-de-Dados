@@ -36,7 +36,7 @@ namespace Pont_Finder
             {
                 imageNumber = 1;
             }
-            pc_slider.ImageLocation = string.Format("Images_slider\\{0}.png", imageNumber);
+            pc_slider.ImageLocation = string.Format("..\\..\\data\\images\\carrousel\\home\\{0}.png", imageNumber);
             imageNumber++;
         }
         private void timer1_Tick(object sender, EventArgs e)
