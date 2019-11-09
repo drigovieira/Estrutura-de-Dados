@@ -39,4 +39,17 @@
     <data>2019-11-09T12:20:28.1118117-03:00</data>
     <likes></likes>
   </Post>
+  <Post>
+    <id>3</id>
+    <titulo>tt</titulo>
+    <valor>12</valor>
+    <detalhes>sf</detalhes>
+    <descricao>asd</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>21321</cnpj>
+    <data>2019-11-09T12:31:40.4269534-03:00</data>
+    <likes></likes>
+  </Post>
 </PostList>

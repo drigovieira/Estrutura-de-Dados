@@ -71,15 +71,7 @@ namespace Pont_Finder
 
         private void Button_salvar_Click(object sender, EventArgs e)
         {
-            //geral
-            UserList.XmlSave();
-
-            //servicos
-            servicos.classes.PostList.XmlSave();           
-            servicos.classes.ListaEmpresa.XmlDrop();
-            servicos.classes.ListaEmpresa.XmlSave();
-            //fim servicos
-
+            classes.Config.Save();
             MessageBox.Show("Dados Salvos");         
         }
 

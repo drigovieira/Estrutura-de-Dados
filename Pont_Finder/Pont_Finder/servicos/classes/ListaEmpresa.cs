@@ -91,6 +91,7 @@ namespace Pont_Finder.servicos.classes
         }
         public static void XmlSave()
         {
+            XmlDrop();
             foreach (var item in listaEmpresa)
             {
                 XElement xemp =

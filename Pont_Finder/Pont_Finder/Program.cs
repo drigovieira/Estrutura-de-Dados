@@ -14,18 +14,7 @@ namespace Pont_Finder
         [STAThread]
         static void Main()
         {
-            //geral
-            UserList.XmlLoad();
-            //fim geral
-
-            //servicos
-            servicos.classes.PostList.XmlLoad();
-            servicos.classes.ListaEmpresa.XmlLoad();
-            //fim servicos
-
-            //hospedagem
-            hospedagem.hostList.CarregarXML();
-            //fim hospedagem
+            classes.Config.Load();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
