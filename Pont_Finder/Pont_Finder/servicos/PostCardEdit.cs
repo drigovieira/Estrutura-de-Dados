@@ -36,5 +36,22 @@ namespace Pont_Finder.servicos
         {
             FormPrincipal.MudarForm("servicos", new FormPostEdit(post.Id));
         }
+
+        private void PostCardEdit_Load(object sender, EventArgs e)
+        {
+            if (post.Cnpj == -1)
+            {
+                User u = UserList.selectCpf(post.Cpf);
+                pb_user.ImageLocation = u.Image;
+                lb_username.Text = u.Nome;
+            }
+            else
+            {
+                classes.Empresa emp = classes.ListaEmpresa.selectCpf(post.Cpf);
+                pb_user.ImageLocation = emp.Image;
+                lb_username.Text = emp.Nome;
+
+            }
+        }
     }
 }

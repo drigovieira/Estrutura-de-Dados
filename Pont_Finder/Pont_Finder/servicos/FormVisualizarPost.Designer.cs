@@ -152,6 +152,7 @@
             this.pb_empresa.Location = new System.Drawing.Point(9, 8);
             this.pb_empresa.Name = "pb_empresa";
             this.pb_empresa.Size = new System.Drawing.Size(200, 200);
+            this.pb_empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_empresa.TabIndex = 27;
             this.pb_empresa.TabStop = false;
             // 

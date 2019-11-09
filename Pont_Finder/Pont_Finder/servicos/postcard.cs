@@ -44,8 +44,12 @@ namespace Pont_Finder.servicos
             this.ativo = post.Ativo;
             this.image = post.Image;
             this.data = post.Data;
-          
+            this.cpf = post.Cpf;
+            this.cnpj = post.Cnpj;
+
+       
             InitializeComponent();
+
 
             if (post.Image != null)
                 pb_icone.ImageLocation = post.Image;
@@ -77,7 +81,10 @@ namespace Pont_Finder.servicos
             }
 
             lb_data.Text = "Postado em: " + data;
+
+
             
+
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -106,8 +113,8 @@ namespace Pont_Finder.servicos
             lb_titulo.Text = this.titulo;
             lb_descricao.Text = this.detalhes;
             lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
+
            
-            lb_username.Text = "none";
 
         }
 
@@ -198,6 +205,25 @@ namespace Pont_Finder.servicos
         private void bt_obter_Click(object sender, EventArgs e)
         {
             FormPrincipal.MudarForm("servicos", new FormVisualizarPost(id, new FormServicos()));
+        }
+
+        private void PostCard_Load(object sender, EventArgs e)
+        {
+            if (cnpj == -1)
+            {
+                User u = UserList.selectCpf(cpf);
+                pb_user.ImageLocation = u.Image;
+                lb_username.Text = u.Nome;
+            }
+            else
+            {
+
+                classes.Empresa emp = classes.ListaEmpresa.selectCpf(cpf);
+                pb_user.ImageLocation = emp.Image;
+                lb_username.Text = emp.Nome;
+
+            }
+
         }
     }
 }

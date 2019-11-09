@@ -1,3 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PostList>
+  <Post>
+    <id>0</id>
+    <titulo>iishdfoh</titulo>
+    <valor>23</valor>
+    <detalhes>shfpo</detalhes>
+    <descricao>hspof</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//0.jpg</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-08T20:17:05.7685265-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>1</id>
+    <titulo>hihdgh</titulo>
+    <valor>242</valor>
+    <detalhes>ihihwe</detalhes>
+    <descricao>bewiho</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//1.jpg</image>
+    <cpf>26835036010</cpf>
+    <cnpj>21321</cnpj>
+    <data>2019-11-08T20:49:34.2992233-03:00</data>
+    <likes></likes>
+  </Post>
 </PostList>

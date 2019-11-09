@@ -40,10 +40,12 @@ namespace Pont_Finder.servicos
 
                 lb_fantasia.Text = "Nome: " + user.Nome;
                 lb_email.Text = "E-mail: " + user.Email;
+                pb_empresa.ImageLocation = user.Image;
                 lb_endereco.Text = "";
                 lb_telefone.Text = "";
                 lb_cpf.Text = "";
                
+
 
             }
             else
