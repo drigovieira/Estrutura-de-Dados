@@ -44,16 +44,33 @@ namespace Pont_Finder
 
         private void Pesquisar_Click(object sender, EventArgs e)
         {
-            List<Company> listaBusca = new List<Company>();
-            listaBusca = comp.SearchName(PesquisaBox.Text);
-            ListarEmpresas.Controls.Clear();
-            local = 0;
-            foreach (var item in listaBusca)
+            if (CategoriaBox.Visible == false)
             {
-                Publi exbEmp = new Publi(item.Nome, listaBusca.IndexOf(item));
-                exbEmp.Location = new Point(0, local);
-                local = local + exbEmp.Height + 5;
-                ListarEmpresas.Controls.Add(exbEmp);
+                List<Company> listaBusca = new List<Company>();
+                listaBusca = comp.SearchName(PesquisaBox.Text);
+                ListarEmpresas.Controls.Clear();
+                local = 0;
+                foreach (var item in listaBusca)
+                {
+                    Publi exbEmp = new Publi(item.Nome, listaBusca.IndexOf(item));
+                    exbEmp.Location = new Point(0, local);
+                    local = local + exbEmp.Height + 5;
+                    ListarEmpresas.Controls.Add(exbEmp);
+                }
+            }
+            else
+            {
+                List<Company> listaBusca = new List<Company>();                
+                listaBusca = comp.SearchFiltro(PesquisaBox.Text, CategoriaBox.SelectedItem.ToString());
+                ListarEmpresas.Controls.Clear();
+                local = 0;
+                foreach (var item in listaBusca)
+                {
+                    Publi exbEmp = new Publi(item.Nome, listaBusca.IndexOf(item));
+                    exbEmp.Location = new Point(0, local);
+                    local = local + exbEmp.Height + 5;
+                    ListarEmpresas.Controls.Add(exbEmp);
+                }
             }
             /*List<ProfileCompany> BuscaPerfis = prof.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
             local1 = 0;
@@ -93,6 +110,31 @@ namespace Pont_Finder
             }
         }
 
+        private void CategoriaBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            List<Company> listaBusca = new List<Company>();
+            listaBusca = comp.SearchCategoria(CategoriaBox.SelectedItem.ToString());
+            List<ProfileCompany> BuscaPerfis = prof.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
+            local1 = 0;
+            Top5.Controls.Clear();
+            foreach (var busca in prof.TopList(BuscaPerfis))
+            {
+                if (busca.NotaApurada != 0)
+                {
+                    foreach (var teste2 in comp.selectAll())
+                    {
+                        if (busca.CodigoCompany == comp.selectAll().IndexOf(teste2))
+                        {
+                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
+                            te.Location = new Point(0, local1);
+                            local1 = local1 + te.Height + 5;
+                            Top5.Controls.Add(te);
+                        }
+                    }
+                }
+            }
+        }
+
         public void Listar()
         {
             Company emp = new Company();
@@ -103,6 +145,7 @@ namespace Pont_Finder
                 emp.Email = "email" + cont + "@mail.com";
                 emp.Rua = "rua" + cont;
                 emp.Bairro = "bairro" + cont;
+                emp.Categoria = "Churrascaria";
                 emp.Numero = int.Parse("" + cont + "" + cont);
                 emp.Cep = int.Parse("" + cont + "" + cont + "" + cont + "" + cont + "" + cont + "" + cont);
                 comp.CompAdd(emp);

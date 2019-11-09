@@ -18,6 +18,7 @@ namespace Pont_Finder.alimentos
             emp.Rua = comp.Rua;
             emp.Numero = comp.Numero;
             emp.Bairro = comp.Bairro;
+            emp.Categoria = comp.Categoria;
             emp.Cep = comp.Cep;
             emp.Status = true;
             company.Add(emp);
@@ -82,6 +83,30 @@ namespace Pont_Finder.alimentos
             foreach (var emps in company)
             {
                 if (emps.Nome.ToLower().Contains(name.ToLower()))
+                {
+                    lista.Add(emps);
+                }
+            }
+            return lista;
+        }
+        public List<Company> SearchCategoria(string categoria)
+        {
+            List<Company> lista = new List<Company>();
+            foreach (var emps in company)
+            {
+                if (emps.Categoria.ToLower().Contains(categoria.ToLower()))
+                {
+                    lista.Add(emps);
+                }
+            }
+            return lista;
+        }
+        public List<Company> SearchFiltro(string name, string categoria)
+        {
+            List<Company> lista = new List<Company>();
+            foreach (var emps in company)
+            {
+                if (emps.Nome.ToLower().Contains(name.ToLower()) && emps.Categoria == categoria)
                 {
                     lista.Add(emps);
                 }
