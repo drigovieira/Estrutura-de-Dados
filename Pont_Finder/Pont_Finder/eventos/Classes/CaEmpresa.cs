@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pont_Finder.eventos.classes
 {
-    class CadEmpresa
+    class CaEmpresa
     {
         private string nome;
         private string nome_fantasia;
@@ -16,6 +16,7 @@ namespace Pont_Finder.eventos.classes
         private string telefone;
         private string endereco;
         private string modulo;
+       
         public string Nome
         {
             get {return nome; }
@@ -63,5 +64,6 @@ namespace Pont_Finder.eventos.classes
             get { return modulo; }
             set { modulo = value; }
         }
+
     }
 }

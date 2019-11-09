@@ -9,11 +9,11 @@ namespace Pont_Finder.eventos.classes
     class Empresa_List
     {
 
-        public static List<CadEmpresa> poster = new List<CadEmpresa>();
+        public static List<CaEmpresa> poster = new List<CaEmpresa>();
 
-        public static void PostAdd(CadEmpresa post)
+        public static void PostAddEmpresa(CaEmpresa post)
         {
-            CadEmpresa pos = new CadEmpresa();
+            CaEmpresa pos = new CaEmpresa();
 
             pos.Nome = post.Nome;
             pos.Nome_Fantasia = post.Nome_Fantasia;

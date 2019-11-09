@@ -138,7 +138,7 @@
     <Compile Include="eventos\CadEmpresa.Designer.cs">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="eventos\Classes\CadEmpresa.cs" />
+    <Compile Include="eventos\Classes\CaEmpresa.cs" />
     <Compile Include="eventos\Classes\Empresa_List.cs" />
     <Compile Include="eventos\Classes\XmlLi_Eventos.cs" />
     <Compile Include="eventos\FormEventos.cs">
