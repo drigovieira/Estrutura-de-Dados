@@ -27,5 +27,26 @@ namespace Pont_Finder
             FormPrincipal.Mudar(Botao(sender).Text);
         }
         private Button Botao(object sender) => (Button)sender;
+
+        private int imageNumber = 1;
+        
+        private void LoadNextImg()
+        {
+            if (imageNumber == 5)
+            {
+                imageNumber = 1;
+            }
+            pc_slider.ImageLocation = string.Format(@"Images_slider\{0}.png", imageNumber);
+            imageNumber++;
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            LoadNextImg();
+        }
+
+        private void pc_slider_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

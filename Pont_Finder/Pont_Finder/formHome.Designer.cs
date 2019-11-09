@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formHome));
             this.panel6 = new System.Windows.Forms.Panel();
             this.button_Avalie = new System.Windows.Forms.Button();
@@ -39,15 +40,16 @@
             this.button_Serviços = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button__Almentos = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.pc_slider = new System.Windows.Forms.PictureBox();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pc_slider)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -191,28 +193,6 @@
             this.button__Almentos.UseVisualStyleBackColor = false;
             this.button__Almentos.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.Controls.Add(this.label1);
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1282, 200);
-            this.panel8.TabIndex = 14;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(339, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(663, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Conheça o melhor para você aqui!";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -224,19 +204,50 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Veja nossos serviços!";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(372, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(663, 46);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Conheça o melhor para você aqui!";
+            // 
+            // pc_slider
+            // 
+            this.pc_slider.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pc_slider.Image = ((System.Drawing.Image)(resources.GetObject("pc_slider.Image")));
+            this.pc_slider.Location = new System.Drawing.Point(0, 0);
+            this.pc_slider.Name = "pc_slider";
+            this.pc_slider.Size = new System.Drawing.Size(1282, 200);
+            this.pc_slider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pc_slider.TabIndex = 16;
+            this.pc_slider.TabStop = false;
+            this.pc_slider.Click += new System.EventHandler(this.pc_slider_Click);
+            // 
             // formHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pc_slider);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
@@ -247,8 +258,7 @@
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pc_slider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,13 +270,14 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button_Avalie;
         private System.Windows.Forms.Button button_Eventos;
         private System.Windows.Forms.Button button_Hospedagem;
         private System.Windows.Forms.Button button_Serviços;
         private System.Windows.Forms.Button button__Almentos;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pc_slider;
     }
 }
