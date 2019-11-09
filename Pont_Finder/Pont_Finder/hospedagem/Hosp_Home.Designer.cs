@@ -77,6 +77,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
+            this.Btn_Edit_Empresa = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.pnl_img.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -622,6 +623,20 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Top 5 acomodações";
             // 
+            // Btn_Edit_Empresa
+            // 
+            this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.Btn_Edit_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
+            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(5, 206);
+            this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
+            this.Btn_Edit_Empresa.Size = new System.Drawing.Size(196, 35);
+            this.Btn_Edit_Empresa.TabIndex = 42;
+            this.Btn_Edit_Empresa.Text = "Editar empresa";
+            this.Btn_Edit_Empresa.UseVisualStyleBackColor = false;
+            this.Btn_Edit_Empresa.Click += new System.EventHandler(this.Btn_Edit_Empresa_Click);
+            // 
             // Hosp_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -629,6 +644,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.Controls.Add(this.Btn_Edit_Empresa);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel11);
@@ -725,5 +741,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button Btn_Edit_Empresa;
     }
 }

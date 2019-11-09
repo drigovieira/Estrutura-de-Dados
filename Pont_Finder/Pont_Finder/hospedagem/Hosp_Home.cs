@@ -15,7 +15,25 @@ namespace Pont_Finder.hospedagem
         public Hosp_Home()
         {
             InitializeComponent();
-            
+
+            bt_Cad_Empresa.Visible = true;
+            Btn_Edit_Empresa.Visible = false;
+
+            if (Session.Online)
+            {
+                Empresa emp = hostList.selectCpf(Session.Cpf);
+                if (emp == null)
+                {
+                    bt_Cad_Empresa.Visible = true;
+                    Btn_Edit_Empresa.Visible = false;
+                }
+                else
+                {
+                    bt_Cad_Empresa.Visible = false;
+                    Btn_Edit_Empresa.Visible = true;
+                }
+            }
+
         }
 
 
@@ -61,6 +79,11 @@ namespace Pont_Finder.hospedagem
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Btn_Edit_Empresa_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("EDITAR EMPRESA");
         }
     }
 }

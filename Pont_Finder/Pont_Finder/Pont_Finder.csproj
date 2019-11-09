@@ -422,12 +422,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\images\carrousel\home\" />
+    <Folder Include="hospedagem\data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\empresas.xml" />
     <Content Include="data\images\users\offImage.jpg" />
     <Content Include="data\usuarios.xml" />
-    <Content Include="hospedagem\data\empresas.xml" />
     <Content Include="servicos\data\images\empresas\offImage.jpg" />
     <Content Include="servicos\data\posts.xml" />
     <None Include="Resources\downred.png" />

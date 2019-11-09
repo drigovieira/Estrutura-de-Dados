@@ -36,28 +36,6 @@ namespace Pont_Finder.hospedagem
             empresas.Add(e);
         }
 
-        /*public static object[] select(int index) //Busca usuario pelo index
-        {
-
-            string nomeempresa = empresas[index].Nomeempresa;
-            string nomefantasia = empresas[index].Nomefantasia;
-            long cnpj = empresas[index].CNPJ;
-            string endereco = empresas[index].Endereco;
-            int cep = empresas[index].Cep;
-            int telefone = empresas[index].Telefone;
-            string email = empresas[index].Email;
-            string foto = empresas[index].Foto;
-            string tipo = empresas[index].Tipo;
-            int estrelas = empresas[index].Estrelas;
-            string descricao = empresas[index].Descricao;
-            string ambiente = empresas[index].Ambiente;
-            bool ativo = empresas[index].Ativo;
-
-            object[] vetor = { nomeempresa, nomefantasia, cnpj, cep, telefone, email, foto, tipo, estrelas, descricao, ambiente, ativo };
-            return vetor;
-
-        }*/
-
         public static List<Empresa> selectAll()
         {
             List<Empresa> lista = new List<Empresa>();
@@ -83,6 +61,34 @@ namespace Pont_Finder.hospedagem
                 lista.Add(e);
             }
             return lista;
+        }
+
+        public static Empresa selectCpf(long cpf)
+        {
+            Empresa e = new Empresa();
+            foreach (var item in empresas)
+            {
+                if (cpf == item.CPFADMIN)
+                {
+                    e.CPFADMIN = item.CPFADMIN;
+                    e.Nomeempresa = item.Nomeempresa;
+                    e.Nomefantasia = item.Nomefantasia;
+                    e.CNPJ = item.CNPJ;
+                    e.Endereco = item.Endereco;
+                    e.Cep = item.Cep;
+                    e.Telefone = item.Telefone;
+                    e.Email = item.Email;
+                    e.Foto = item.Foto;
+                    e.Tipo = item.Tipo;
+                    e.Estrelas = item.Estrelas;
+                    e.Descricao = item.Descricao;
+                    e.Ambiente = item.Ambiente;
+                    e.Ativo = item.Ativo;
+                    return (e);
+                }
+            }
+            e = null;
+            return e;
         }
 
         public static void CarregarXML()
