@@ -13,7 +13,7 @@ namespace Pont_Finder.hospedagem
         private string nomeempresa, nomefantasia, endereco, email, descricao, ambiente, foto, tipo;
         private int cep, tel, estrelas, id;
         private bool ativo;
-        private long cnpj;
+        private long cnpj, cpfadmin;
 
 
 
@@ -68,6 +68,12 @@ namespace Pont_Finder.hospedagem
         {
             get { return cnpj; }
             set { cnpj = value; }
+        }
+
+        public long CPFADMIN
+        {
+            get { return cpfadmin; }
+            set { cpfadmin = value; }
         }
 
         //Gets e Sets Ints

@@ -11,4 +11,20 @@
     <image>..//..//servicos//data//images//empresas//21321.jpg</image>
     <status>true</status>
   </servico>
+  <hospedagem>
+    <admin>26835036010</admin>
+    <nomeempresa>testeeeeee'</nomeempresa>
+    <nomefantasia>nomefantasiaaa</nomefantasia>
+    <cnpj>32112333211234</cnpj>
+    <endereco>rua bla numero 3</endereco>
+    <cep>11111111</cep>
+    <telefone>0</telefone>
+    <email>aa@.com</email>
+    <foto>CAMINHO</foto>
+    <tipo>Pousada</tipo>
+    <estrelas>5</estrelas>
+    <descricao>asdasdsadsad</descricao>
+    <ambiente>  Estacionamento  Piscina</ambiente>
+    <status>true</status>
+  </hospedagem>
 </modulos>

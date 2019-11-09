@@ -50,10 +50,8 @@ namespace Pont_Finder.hospedagem
                         string descricao = tb_descricaoHotel.Text;
                         string Foto = "CAMINHO";
                         string Ambientes = "";
+                        long cpfadmin = Session.Cpf;
                         
-                        
-                        
-
                         if (ckb_estacionamento.Checked)
                         {
                             string a = "Estacionamento";
@@ -78,15 +76,6 @@ namespace Pont_Finder.hospedagem
                             ambientes.Add(a);
                         }
 
-                        /*int total = ambientes.Count;
-                        int contador = 0;
-
-                        while (contador <= total)
-                        {
-                            Ambientes = Ambientes +","+ambientes[contador];
-                            contador++;
-                        }*/
-
                         foreach (var elemento in ambientes)
                         {
                             Ambientes = Ambientes+"  "+elemento;
@@ -110,7 +99,7 @@ namespace Pont_Finder.hospedagem
                                 
                         }
 
-
+                        
 
                         if (validaCNPJ)
                         {
@@ -135,6 +124,7 @@ namespace Pont_Finder.hospedagem
                                         empresa.Telefone = Tel;
                                         empresa.Email = Email;
                                         empresa.Foto = Foto;
+                                        empresa.CPFADMIN = cpfadmin;
 
                                         //Verifica se e hotel ou pousada
                                         if (radio_hotel.Checked)
@@ -174,18 +164,6 @@ namespace Pont_Finder.hospedagem
 
                                         //Adiciona na lista
                                         hostList.addEmpresa(empresa);
-
-
-                                        //Adiciona no XML
-                                        XML xmlli = new XML();
-
-                                        xmlli.Drop();
-                                        int cont = 0;
-                                        foreach (var item in hostList.selectAll())
-                                        {
-                                            xmlli.Add(cont, item.Nomeempresa, item.Nomefantasia, item.CNPJ, item.Endereco, item.Cep, item.Telefone, item.Email, item.Foto, item.Tipo, item.Estrelas, item.Descricao, item.Ambiente, item.Ativo);
-                                            cont++;
-                                        }
 
                                         MessageBox.Show("Empresa Cadastrada com Sucesso!");
 

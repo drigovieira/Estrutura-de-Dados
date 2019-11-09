@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Pont_Finder.hospedagem
 {
@@ -10,10 +12,13 @@ namespace Pont_Finder.hospedagem
     {
         private static List<Empresa> empresas = new List<Empresa>();
 
+        private static string caminho = "..\\..\\data\\empresas.xml";
+
         public static void addEmpresa(Empresa empresa) //Adiciona uma empresa a lista
         {
             Empresa e = new Empresa();
 
+            e.CPFADMIN = empresa.CPFADMIN;
             e.Nomeempresa = empresa.Nomeempresa;
             e.Nomefantasia = empresa.Nomefantasia;
             e.CNPJ = empresa.CNPJ;
@@ -31,8 +36,9 @@ namespace Pont_Finder.hospedagem
             empresas.Add(e);
         }
 
-        public static object[] select(int index) //Busca usuario pelo index
+        /*public static object[] select(int index) //Busca usuario pelo index
         {
+
             string nomeempresa = empresas[index].Nomeempresa;
             string nomefantasia = empresas[index].Nomefantasia;
             long cnpj = empresas[index].CNPJ;
@@ -50,7 +56,7 @@ namespace Pont_Finder.hospedagem
             object[] vetor = { nomeempresa, nomefantasia, cnpj, cep, telefone, email, foto, tipo, estrelas, descricao, ambiente, ativo };
             return vetor;
 
-        }
+        }*/
 
         public static List<Empresa> selectAll()
         {
@@ -59,6 +65,7 @@ namespace Pont_Finder.hospedagem
             {
                 Empresa e = new Empresa();
 
+                e.CPFADMIN = item.CPFADMIN;
                 e.Nomeempresa = item.Nomeempresa;
                 e.Nomefantasia = item.Nomefantasia;
                 e.CNPJ = item.CNPJ;
@@ -80,8 +87,72 @@ namespace Pont_Finder.hospedagem
 
         public static void CarregarXML()
         {
-            XML xmli = new XML();
-            xmli.Load();
+            XDocument doc = XDocument.Load(caminho);
+
+            foreach (var item in doc.Descendants("hospedagem"))
+            {
+                Empresa emp = new Empresa();
+                emp.CPFADMIN = long.Parse(item.Element("admin").Value);
+                emp.Nomeempresa = item.Element("nomeempresa").Value;
+                emp.Nomefantasia = item.Element("nomefantasia").Value;
+                emp.CNPJ = long.Parse(item.Element("cnpj").Value);
+                emp.Endereco = item.Element("endereco").Value;
+                emp.Cep = int.Parse(item.Element("cep").Value);
+                emp.Telefone = int.Parse(item.Element("telefone").Value);
+                emp.Email = item.Element("email").Value;
+                emp.Foto = item.Element("foto").Value;
+                emp.Tipo = item.Element("tipo").Value;
+                emp.Estrelas = int.Parse(item.Element("estrelas").Value);
+                emp.Descricao = item.Element("descricao").Value;
+                emp.Ambiente = item.Element("ambiente").Value;
+                emp.Ativo = bool.Parse(item.Element("status").Value);
+
+                empresas.Add(emp);
+            }
+        }
+
+        public static void XmlSave()
+        {
+            XmlDrop();
+            foreach (var item in empresas)
+            {
+                XElement xemp =
+                      new XElement("hospedagem",
+                      new XElement("admin", item.CPFADMIN),
+                      new XElement("nomeempresa", item.Nomeempresa),
+                      new XElement("nomefantasia", item.Nomefantasia),
+                      new XElement("cnpj", item.CNPJ),
+                      new XElement("endereco", item.Endereco),
+                      new XElement("cep", item.Cep),
+                      new XElement("telefone", item.Telefone),
+                      new XElement("email", item.Email),
+                      new XElement("foto", item.Foto),
+                      new XElement("tipo", item.Tipo),
+                      new XElement("estrelas", item.Estrelas),
+                      new XElement("descricao", item.Descricao),
+                      new XElement("ambiente", item.Ambiente),
+                      new XElement("status", item.Ativo));
+
+                XDocument doc = XDocument.Load(caminho);
+                doc.Root.Add(xemp);
+                doc.Save(caminho);
+            }
+        }
+
+        
+        public static void XmlDrop()
+        {
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.Load(caminho);
+
+            XDocument xdoc = XDocument.Load(caminho);
+
+            foreach (var item in xdoc.Descendants("hospedagem"))
+            {
+                XmlNode node = xmldoc.SelectSingleNode("/modulos/hospedagem");
+                node.ParentNode.RemoveChild(node);
+            }
+            xmldoc.Save(caminho);
         }
     }
 }

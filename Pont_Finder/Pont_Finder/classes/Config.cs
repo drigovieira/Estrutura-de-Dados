@@ -34,6 +34,10 @@ namespace Pont_Finder.classes
             servicos.classes.PostList.XmlSave();
             servicos.classes.ListaEmpresa.XmlSave();
             //fim servicos
+
+            //hospedagem
+            hospedagem.hostList.XmlSave();
+            //fim hospedagem
         }
 
     }
