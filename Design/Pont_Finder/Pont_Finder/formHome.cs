@@ -28,11 +28,15 @@ namespace Pont_Finder
             hospedagem.FormHospedagem fHp = new hospedagem.FormHospedagem();
 
             fHp.TopLevel = false;
-            fn.panelHome.Controls.Add(fh);
             fHp.Show();
         }
 
         private void button__Almentos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formHome_Load(object sender, EventArgs e)
         {
 
         }
