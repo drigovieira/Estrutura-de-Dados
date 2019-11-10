@@ -45,9 +45,9 @@
             this.btnPostar = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pb_icone = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCarregarImagem = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.openIcone = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCarregarImagem)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -180,7 +180,7 @@
             this.panel6.Controls.Add(this.btnPostar);
             this.panel6.Controls.Add(this.richTextBox1);
             this.panel6.Controls.Add(this.label1);
-            this.panel6.Controls.Add(this.pb_icone);
+            this.panel6.Controls.Add(this.pictureBoxCarregarImagem);
             this.panel6.Controls.Add(this.button3);
             this.panel6.Location = new System.Drawing.Point(528, 203);
             this.panel6.Name = "panel6";
@@ -251,17 +251,17 @@
             this.label1.TabIndex = 66;
             this.label1.Text = "Descrição:";
             // 
-            // pb_icone
+            // pictureBoxCarregarImagem
             // 
-            this.pb_icone.BackColor = System.Drawing.Color.Silver;
-            this.pb_icone.Image = ((System.Drawing.Image)(resources.GetObject("pb_icone.Image")));
-            this.pb_icone.Location = new System.Drawing.Point(2, 105);
-            this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(410, 252);
-            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pb_icone.TabIndex = 65;
-            this.pb_icone.TabStop = false;
-            this.pb_icone.Click += new System.EventHandler(this.PictureBoxCarregarImagem_Click);
+            this.pictureBoxCarregarImagem.BackColor = System.Drawing.Color.Silver;
+            this.pictureBoxCarregarImagem.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCarregarImagem.Image")));
+            this.pictureBoxCarregarImagem.Location = new System.Drawing.Point(2, 105);
+            this.pictureBoxCarregarImagem.Name = "pictureBoxCarregarImagem";
+            this.pictureBoxCarregarImagem.Size = new System.Drawing.Size(410, 252);
+            this.pictureBoxCarregarImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxCarregarImagem.TabIndex = 65;
+            this.pictureBoxCarregarImagem.TabStop = false;
+            this.pictureBoxCarregarImagem.Click += new System.EventHandler(this.PictureBoxCarregarImagem_Click);
             // 
             // button3
             // 
@@ -279,9 +279,9 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // openIcone
+            // openFileDialog1
             // 
-            this.openIcone.FileName = "icone";
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // panel7
             // 
@@ -339,7 +339,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1298, 671);
+            this.ClientSize = new System.Drawing.Size(1281, 671);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
@@ -359,7 +359,7 @@
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCarregarImagem)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
@@ -383,10 +383,10 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox pb_icone;
+        private System.Windows.Forms.PictureBox pictureBoxCarregarImagem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.OpenFileDialog openIcone;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label15;

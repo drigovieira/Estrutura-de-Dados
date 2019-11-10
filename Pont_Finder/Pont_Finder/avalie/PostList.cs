@@ -26,8 +26,11 @@ namespace Pont_Finder.avalie
                 {               
                     
                     pos.Id = item.Id;
+<<<<<<< HEAD:Pont_Finder/Pont_Finder/avalie/classes/PostList.cs
                     pos.Nome = item.Nome;
                     pos.Img = item.Img;
+=======
+>>>>>>> parent of d69ee35... AttReclameBasePronta:Pont_Finder/Pont_Finder/avalie/PostList.cs
                     pos.Cpf = item.Cpf;
                     pos.Tipoproblema = item.Tipoproblema;
                     pos.Localizacao = item.Localizacao;
@@ -56,8 +59,11 @@ namespace Pont_Finder.avalie
                 {
                     PostConstructor pos = new PostConstructor();
                     pos.Id = item.Id;
+<<<<<<< HEAD:Pont_Finder/Pont_Finder/avalie/classes/PostList.cs
                     pos.Nome = item.Nome;
                     pos.Img = item.Img;
+=======
+>>>>>>> parent of d69ee35... AttReclameBasePronta:Pont_Finder/Pont_Finder/avalie/PostList.cs
                     pos.Cpf = item.Cpf;
                     pos.Tipoproblema = item.Tipoproblema;
                     pos.Localizacao = item.Localizacao;
@@ -82,8 +88,11 @@ namespace Pont_Finder.avalie
                     {
                         PostConstructor pos = new PostConstructor();
                         pos.Id = item.Id;
+<<<<<<< HEAD:Pont_Finder/Pont_Finder/avalie/classes/PostList.cs
                         pos.Nome = item.Nome;
                         pos.Img = item.Img;
+=======
+>>>>>>> parent of d69ee35... AttReclameBasePronta:Pont_Finder/Pont_Finder/avalie/PostList.cs
                         pos.Cpf = item.Cpf;
                         pos.Tipoproblema = item.Tipoproblema;
                         pos.Localizacao = item.Localizacao;
@@ -102,8 +111,11 @@ namespace Pont_Finder.avalie
         {
             PostConstructor pos = new PostConstructor();
             pos.Id = post.Id;
+<<<<<<< HEAD:Pont_Finder/Pont_Finder/avalie/classes/PostList.cs
             pos.Nome = post.Nome;
             pos.Img = post.Img;
+=======
+>>>>>>> parent of d69ee35... AttReclameBasePronta:Pont_Finder/Pont_Finder/avalie/PostList.cs
             pos.Cpf = post.Cpf;
             pos.Tipoproblema = post.Tipoproblema;
             pos.Localizacao = post.Localizacao;
@@ -123,8 +135,11 @@ namespace Pont_Finder.avalie
                 XElement post =
                       new XElement("post",
                       new XElement("id", item.Id),
+<<<<<<< HEAD:Pont_Finder/Pont_Finder/avalie/classes/PostList.cs
                       new XElement("nome",item.Nome),
                       new XElement("img", item.Img),
+=======
+>>>>>>> parent of d69ee35... AttReclameBasePronta:Pont_Finder/Pont_Finder/avalie/PostList.cs
                       new XElement("cpf", item.Cpf),
                       new XElement("tempohora", item.Tempohora),
                       new XElement("desc", item.Desc),
@@ -149,8 +164,11 @@ namespace Pont_Finder.avalie
                 PostConstructor postar = new PostConstructor();
 
                 postar.Id = long.Parse(item.Element("id").Value);
+<<<<<<< HEAD:Pont_Finder/Pont_Finder/avalie/classes/PostList.cs
                 postar.Nome = item.Element("nome").Value;
                 postar.Img = item.Element("img").Value;
+=======
+>>>>>>> parent of d69ee35... AttReclameBasePronta:Pont_Finder/Pont_Finder/avalie/PostList.cs
                 postar.Cpf = long.Parse(item.Element("cpf").Value);
                 postar.Tempohora = item.Element("tempohora").Value;
                 postar.Desc = item.Element("desc").Value;
