@@ -16,8 +16,6 @@ namespace Pont_Finder.hospedagem
     public partial class Cadastro_Empresa : Form
     {
 
-        private List<string> fotos = new List<string>();
-
         OpenFileDialog openimg = new OpenFileDialog();
 
         public Cadastro_Empresa()
@@ -169,8 +167,8 @@ namespace Pont_Finder.hospedagem
                                         empresa.Ativo = true;
 
                                         //Salvando Foto
-                                        if (!Directory.Exists("..//..//hospedagem//data//images//empresas//"+CNPJ))
-                                            Directory.CreateDirectory("..//..//hospedagem//data//images//empresas//"+ CNPJ);
+                                        if (!Directory.Exists("..//..//hospedagem//data//images//empresas//"+ CNPJ +"//empresa//"))
+                                            Directory.CreateDirectory("..//..//hospedagem//data//images//empresas//"+ CNPJ +"//empresa//");
 
                                         pb_img1.Load();
 
@@ -185,7 +183,7 @@ namespace Pont_Finder.hospedagem
 
                                             pb_img1.Image = bmp2;
 
-                                            diretorio = "..//..//hospedagem//data//images//empresas//" + CNPJ +"//"+total_img+ ".jpg";
+                                            diretorio = "..//..//hospedagem//data//images//empresas//" + CNPJ +"//empresa//"+total_img+ ".jpg";
                                             pb_img1.Image.Save(diretorio, ImageFormat.Jpeg);
 
                                             Foto = Foto+" * "+diretorio;

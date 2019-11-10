@@ -16,4 +16,12 @@
     <image>..//..//data//images//users//45850930876.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Muzy</nome>
+    <email>pedro@muzy.com</email>
+    <senha>1234</senha>
+    <cpf>42750892864</cpf>
+    <image>..//..//data//images//users//45850930876.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

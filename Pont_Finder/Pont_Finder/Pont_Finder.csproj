@@ -202,7 +202,8 @@
     </Compile>
     <Compile Include="hospedagem\classes\Empresa.cs" />
     <Compile Include="hospedagem\classes\hostList.cs" />
-    <Compile Include="hospedagem\classes\XML.cs" />
+    <Compile Include="hospedagem\classes\Quarto.cs" />
+    <Compile Include="hospedagem\classes\roomList.cs" />
     <Compile Include="hospedagem\Hosp_Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -422,12 +423,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\images\carrousel\home\" />
-    <Folder Include="hospedagem\data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\empresas.xml" />
     <Content Include="data\images\users\offImage.jpg" />
     <Content Include="data\usuarios.xml" />
+    <Content Include="hospedagem\data\quartos.xml" />
     <Content Include="servicos\data\images\empresas\offImage.jpg" />
     <Content Include="servicos\data\posts.xml" />
     <None Include="Resources\downred.png" />

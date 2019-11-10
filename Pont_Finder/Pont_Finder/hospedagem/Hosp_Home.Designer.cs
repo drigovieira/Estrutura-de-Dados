@@ -78,6 +78,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.Btn_Edit_Empresa = new System.Windows.Forms.Button();
+            this.bt_gerenciar_quartos = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.pnl_img.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -637,13 +638,28 @@
             this.Btn_Edit_Empresa.UseVisualStyleBackColor = false;
             this.Btn_Edit_Empresa.Click += new System.EventHandler(this.Btn_Edit_Empresa_Click);
             // 
+            // bt_gerenciar_quartos
+            // 
+            this.bt_gerenciar_quartos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_gerenciar_quartos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_gerenciar_quartos.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_gerenciar_quartos.ForeColor = System.Drawing.Color.White;
+            this.bt_gerenciar_quartos.Location = new System.Drawing.Point(207, 206);
+            this.bt_gerenciar_quartos.Name = "bt_gerenciar_quartos";
+            this.bt_gerenciar_quartos.Size = new System.Drawing.Size(196, 35);
+            this.bt_gerenciar_quartos.TabIndex = 43;
+            this.bt_gerenciar_quartos.Text = "Gerenciar quartos";
+            this.bt_gerenciar_quartos.UseVisualStyleBackColor = false;
+            this.bt_gerenciar_quartos.Click += new System.EventHandler(this.bt_gerenciar_quartos_Click);
+            // 
             // Hosp_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.bt_gerenciar_quartos);
             this.Controls.Add(this.Btn_Edit_Empresa);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel5);
@@ -742,5 +758,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button Btn_Edit_Empresa;
+        private System.Windows.Forms.Button bt_gerenciar_quartos;
     }
 }

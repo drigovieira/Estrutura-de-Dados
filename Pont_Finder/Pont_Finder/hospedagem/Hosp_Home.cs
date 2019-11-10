@@ -18,6 +18,7 @@ namespace Pont_Finder.hospedagem
 
             bt_Cad_Empresa.Visible = true;
             Btn_Edit_Empresa.Visible = false;
+            bt_gerenciar_quartos.Visible = false;
 
             if (Session.Online)
             {
@@ -26,13 +27,19 @@ namespace Pont_Finder.hospedagem
                 {
                     bt_Cad_Empresa.Visible = true;
                     Btn_Edit_Empresa.Visible = false;
+                    bt_gerenciar_quartos.Visible = false;
                 }
                 else
                 {
+
                     bt_Cad_Empresa.Visible = false;
                     Btn_Edit_Empresa.Visible = true;
+                    bt_gerenciar_quartos.Visible = true;
+
                 }
+
             }
+
 
         }
 
@@ -60,22 +67,6 @@ namespace Pont_Finder.hospedagem
                 
         }
 
-        private void btn_salvar_empresa_Click(object sender, EventArgs e)
-        {
-            XML xmlli = new XML();
-
-            xmlli.Drop();
-            int cont = 0;
-            foreach (var item in hostList.selectAll())
-            {
-                xmlli.Add(cont, item.Nomeempresa, item.Nomefantasia, item.CNPJ, item.Endereco, item.Cep, item.Telefone, item.Email, item.Foto, item.Tipo, item.Estrelas, item.Descricao, item.Ambiente, item.Ativo);
-                cont++;
-            }
-
-            MessageBox.Show("Dados Salvos");
-
-        }
-
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
@@ -84,6 +75,12 @@ namespace Pont_Finder.hospedagem
         private void Btn_Edit_Empresa_Click(object sender, EventArgs e)
         {
             MessageBox.Show("EDITAR EMPRESA");
+        }
+
+        private void bt_gerenciar_quartos_Click(object sender, EventArgs e)
+        {
+            hospedagem.Listas_quartos listaQuartos = new Listas_quartos();
+            FormPrincipal.MudarForm("hospedagem", listaQuartos);
         }
     }
 }
