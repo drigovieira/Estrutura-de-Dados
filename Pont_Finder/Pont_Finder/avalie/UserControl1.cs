@@ -25,6 +25,7 @@ namespace Pont_Finder.avalie
             userboxproblema.Text = (post.Tipoproblema);
             userboxlocalizacao.Text = (post.Localizacao);
             userboxdescricao.Text = (post.Desc);
+            pictureBox1.ImageLocation = post.Img;
         }
     }
 }

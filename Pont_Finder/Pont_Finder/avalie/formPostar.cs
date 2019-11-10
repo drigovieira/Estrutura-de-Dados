@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +25,7 @@ namespace Pont_Finder.avalie
 
         FormAvalie AvaliePrincipal = new FormAvalie();
 
-
+        private bool img = false;
 
         public formPostar()
         {
@@ -83,24 +85,25 @@ namespace Pont_Finder.avalie
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openIcone.ShowDialog() == DialogResult.OK)
             {
-                pictureBoxCarregarImagem.ImageLocation = openFileDialog1.FileName;
+                pb_icone.ImageLocation = openIcone.FileName;
             }
         }
 
         private void PictureBoxCarregarImagem_Click(object sender, EventArgs e)
         {
 
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openIcone.ShowDialog() == DialogResult.OK)
             {
-                pictureBoxCarregarImagem.ImageLocation = openFileDialog1.FileName;
+                pb_icone.ImageLocation = openIcone.FileName;
+                img = true;
             }
         }
         private void BtnPostar_Click(object sender, EventArgs e)
         {
 
-           
+
 
 
             /*PostConstructor post = new PostConstructor();
@@ -122,9 +125,31 @@ namespace Pont_Finder.avalie
             
             this.Close();*/
 
+            string link = "..//..//avalie//data//imagens//posts//offImage.jpg";
+            if (img)
+            {
+                if (!Directory.Exists("..//..//avalie//data//imagens//posts"))
+                    Directory.CreateDirectory("..//..//avalie//data//imagens//posts");
+
+                pb_icone.Load();
+                pb_icone.Image = Image.FromFile(openIcone.FileName);
+
+                Image bmp = new Bitmap(pb_icone.Image);
+
+                Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+
+                pb_icone.Image = bmp2;
+              
+                int id = PostList.Poster.Count;
+                link = "..//..//avalie//data//imagens//posts//" + id + ".jpg";
+                pb_icone.Image.Save(link, ImageFormat.Jpeg);
+            }
+
+
+
             if (txtLocalizacao.Text == "   sua Localicação..." || txtLocalizacao.Text == ""
                 || comboBox1.Text == "Sobre o quê você quer falar" || comboBox1.Text == "" ||
-                pictureBoxCarregarImagem.ImageLocation == null || richTextBox1.Text == "")
+                pb_icone.ImageLocation == null || richTextBox1.Text == "")
             {
                 MessageBox.Show("ATENÇÃO prencha todos os campos");
             }
@@ -140,11 +165,8 @@ namespace Pont_Finder.avalie
 
                 post.Cpf = Session.Cpf;
                 post.Id = PostList.Poster.Count();
-<<<<<<< HEAD
                 post.Nome = Session.Nome;
                 post.Img = link;
-=======
->>>>>>> parent of d69ee35... AttReclameBasePronta
                 post.Tempohora = post_Tempohora;
                 post.Tipoproblema = post_problema;
                 post.Localizacao = post_localizao;
