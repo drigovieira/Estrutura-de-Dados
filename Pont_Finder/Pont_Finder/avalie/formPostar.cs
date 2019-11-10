@@ -141,8 +141,11 @@ namespace Pont_Finder.avalie
                 post.Cpf = Session.Cpf;
                 post.Id = PostList.Poster.Count();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 post.Nome = Session.Nome;
                 post.Img = link;
+=======
+>>>>>>> parent of d69ee35... AttReclameBasePronta
 =======
 >>>>>>> parent of d69ee35... AttReclameBasePronta
                 post.Tempohora = post_Tempohora;
