@@ -147,7 +147,11 @@ namespace Pont_Finder.servicos
                 lb_like.Text = "" + post.Likes;
                 pb_up.Image = upv;
                 lb_like.ForeColor = System.Drawing.Color.Blue;
-                pb_down.Image = down;                                         
+                pb_down.Image = down;
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
             }
            
         }
@@ -162,7 +166,11 @@ namespace Pont_Finder.servicos
                 lb_like.Text = "" + post.Likes;
                 pb_down.Image = downv;
                 lb_like.ForeColor = System.Drawing.Color.Red;
-                pb_up.Image = up;      
+                pb_up.Image = up;
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
             }
         }
 

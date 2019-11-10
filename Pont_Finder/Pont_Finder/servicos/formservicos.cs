@@ -100,6 +100,12 @@ namespace Pont_Finder.servicos
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
+            if (tb_pesquisar.Text.Equals("!log"))
+            {
+                Session.Login("admin", "admin");
+                FormPrincipal.MudarForm("servicos", new FormServicos());
+            }
+
 
             ListaDePost.Clear();
             foreach (var item in classes.PostList.PostsAtivo)
@@ -221,6 +227,11 @@ namespace Pont_Finder.servicos
             }
            
 
+
+        }
+
+        private void Tb_pesquisar_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

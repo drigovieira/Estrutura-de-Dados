@@ -25,6 +25,9 @@ namespace Pont_Finder.servicos
             tb_descricao.Text = post.Descricao;
             pb_icone.ImageLocation = post.Image;
 
+         
+
+
         }
 
         private void Publicar_Click(object sender, EventArgs e)

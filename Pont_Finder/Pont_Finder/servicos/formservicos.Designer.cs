@@ -94,6 +94,7 @@
             this.tb_pesquisar.TabIndex = 0;
             this.tb_pesquisar.Tag = "";
             this.tb_pesquisar.Text = "Pesquisar";
+            this.tb_pesquisar.TextChanged += new System.EventHandler(this.Tb_pesquisar_TextChanged);
             this.tb_pesquisar.Enter += new System.EventHandler(this.Tb_pesquisa_Enter);
             this.tb_pesquisar.Leave += new System.EventHandler(this.Tb_pesquisa_Leave);
             // 
@@ -243,7 +244,7 @@
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(608, 264);
+            this.lb_pag.Location = new System.Drawing.Point(614, 264);
             this.lb_pag.Name = "lb_pag";
             this.lb_pag.Size = new System.Drawing.Size(39, 13);
             this.lb_pag.TabIndex = 41;

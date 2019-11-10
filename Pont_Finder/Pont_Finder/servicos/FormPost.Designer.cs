@@ -98,7 +98,7 @@
             // 
             this.tb_descricao.BackColor = System.Drawing.SystemColors.Control;
             this.tb_descricao.Location = new System.Drawing.Point(132, 380);
-            this.tb_descricao.MaxLength = 380;
+            this.tb_descricao.MaxLength = 1200;
             this.tb_descricao.Multiline = true;
             this.tb_descricao.Name = "tb_descricao";
             this.tb_descricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;

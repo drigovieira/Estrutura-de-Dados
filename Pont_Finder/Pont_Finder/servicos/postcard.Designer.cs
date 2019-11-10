@@ -82,9 +82,9 @@
             // 
             this.lb_descricao.BackColor = System.Drawing.Color.White;
             this.lb_descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lb_descricao.Location = new System.Drawing.Point(213, 29);
+            this.lb_descricao.Location = new System.Drawing.Point(213, 22);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(250, 141);
+            this.lb_descricao.Size = new System.Drawing.Size(250, 150);
             this.lb_descricao.TabIndex = 29;
             this.lb_descricao.Text = "descricao";
             this.lb_descricao.Click += new System.EventHandler(this.Lb_descricao_Click);
@@ -174,15 +174,18 @@
             // 
             this.lb_titulo.AutoSize = true;
             this.lb_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titulo.Location = new System.Drawing.Point(212, 9);
+            this.lb_titulo.Location = new System.Drawing.Point(5, 0);
+            this.lb_titulo.MaximumSize = new System.Drawing.Size(500, 20);
+            this.lb_titulo.MinimumSize = new System.Drawing.Size(500, 20);
             this.lb_titulo.Name = "lb_titulo";
-            this.lb_titulo.Size = new System.Drawing.Size(49, 20);
+            this.lb_titulo.Size = new System.Drawing.Size(500, 20);
             this.lb_titulo.TabIndex = 15;
             this.lb_titulo.Text = "titulo";
+            this.lb_titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pb_icone
             // 
-            this.pb_icone.Location = new System.Drawing.Point(6, 20);
+            this.pb_icone.Location = new System.Drawing.Point(6, 22);
             this.pb_icone.Name = "pb_icone";
             this.pb_icone.Size = new System.Drawing.Size(200, 150);
             this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

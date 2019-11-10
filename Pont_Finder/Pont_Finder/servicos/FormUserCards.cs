@@ -42,8 +42,11 @@ namespace Pont_Finder.servicos
         {
             int y = 5;           
             int i = 0;
-       
-            foreach (var item in classes.PostList.PostsAtivo)
+
+            List<classes.Post> lista = classes.PostList.PostsAtivo;
+            lista.Reverse();
+
+            foreach (var item in lista)
             {
                 if (item.Cpf == Session.Cpf)
                 {
