@@ -111,15 +111,14 @@
     <Compile Include="avalie\formPostar.designer.cs">
       <DependentUpon>formPostar.cs</DependentUpon>
     </Compile>
-    <Compile Include="avalie\PostConstructor.cs" />
-    <Compile Include="avalie\PostList.cs" />
+    <Compile Include="avalie\classes\PostConstructor.cs" />
+    <Compile Include="avalie\classes\PostList.cs" />
     <Compile Include="avalie\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="avalie\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
-    <Compile Include="avalie\XmlListAvalie.cs" />
     <Compile Include="CadEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -422,10 +421,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="avalie\data\imagens\" />
     <Folder Include="data\images\carrousel\home\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="avalie\data\imagens\posts\offImage.jpg" />
     <Content Include="avalie\data\postagens.xml" />
     <Content Include="data\empresas.xml" />
     <Content Include="data\images\users\offImage.jpg" />
