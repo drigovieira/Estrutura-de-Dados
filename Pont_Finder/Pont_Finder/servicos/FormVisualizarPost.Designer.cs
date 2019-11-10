@@ -155,6 +155,7 @@
             this.pb_empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_empresa.TabIndex = 27;
             this.pb_empresa.TabStop = false;
+            this.pb_empresa.Click += new System.EventHandler(this.pb_empresa_Click);
             // 
             // lb_telefone
             // 

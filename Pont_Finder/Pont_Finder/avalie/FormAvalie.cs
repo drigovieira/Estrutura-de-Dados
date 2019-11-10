@@ -45,7 +45,7 @@ namespace Pont_Finder
             }
             else
             {
-                MessageBox.Show("Loga seu disgrama");
+                MessageBox.Show("Por Favor, Efetue o Login para Realizar um Post");
             }
 
 

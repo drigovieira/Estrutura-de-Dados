@@ -8,18 +8,27 @@ namespace Pont_Finder.avalie
 {
     class PostConstructor
     {
-    
+
         private string
             desc,
             localizacao,
             tipoproblema,
             img,
+            nome,
             tempohora;
         private long 
             cpf,
             id;
         private bool 
             ativo;
+
+
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+
+        }
 
 
         public string Img

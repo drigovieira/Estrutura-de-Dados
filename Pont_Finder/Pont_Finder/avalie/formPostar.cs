@@ -165,6 +165,7 @@ namespace Pont_Finder.avalie
 
                 post.Cpf = Session.Cpf;
                 post.Id = PostList.Poster.Count();
+                post.Nome = Session.Nome;
                 post.Img = link;
                 post.Tempohora = post_Tempohora;
                 post.Tipoproblema = post_problema;

@@ -24,7 +24,9 @@ namespace Pont_Finder.avalie
             {
                 if (item.Id == postId)
                 {               
+                    
                     pos.Id = item.Id;
+                    pos.Nome = item.Nome;
                     pos.Img = item.Img;
                     pos.Cpf = item.Cpf;
                     pos.Tipoproblema = item.Tipoproblema;
@@ -54,6 +56,7 @@ namespace Pont_Finder.avalie
                 {
                     PostConstructor pos = new PostConstructor();
                     pos.Id = item.Id;
+                    pos.Nome = item.Nome;
                     pos.Img = item.Img;
                     pos.Cpf = item.Cpf;
                     pos.Tipoproblema = item.Tipoproblema;
@@ -79,6 +82,7 @@ namespace Pont_Finder.avalie
                     {
                         PostConstructor pos = new PostConstructor();
                         pos.Id = item.Id;
+                        pos.Nome = item.Nome;
                         pos.Img = item.Img;
                         pos.Cpf = item.Cpf;
                         pos.Tipoproblema = item.Tipoproblema;
@@ -98,6 +102,7 @@ namespace Pont_Finder.avalie
         {
             PostConstructor pos = new PostConstructor();
             pos.Id = post.Id;
+            pos.Nome = post.Nome;
             pos.Img = post.Img;
             pos.Cpf = post.Cpf;
             pos.Tipoproblema = post.Tipoproblema;
@@ -118,6 +123,7 @@ namespace Pont_Finder.avalie
                 XElement post =
                       new XElement("post",
                       new XElement("id", item.Id),
+                      new XElement("nome",item.Nome),
                       new XElement("img", item.Img),
                       new XElement("cpf", item.Cpf),
                       new XElement("tempohora", item.Tempohora),
@@ -143,6 +149,7 @@ namespace Pont_Finder.avalie
                 PostConstructor postar = new PostConstructor();
 
                 postar.Id = long.Parse(item.Element("id").Value);
+                postar.Nome = item.Element("nome").Value;
                 postar.Img = item.Element("img").Value;
                 postar.Cpf = long.Parse(item.Element("cpf").Value);
                 postar.Tempohora = item.Element("tempohora").Value;
