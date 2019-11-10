@@ -44,6 +44,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.bt_ant = new System.Windows.Forms.Button();
+            this.bt_prox = new System.Windows.Forms.Button();
+            this.lb_pag = new System.Windows.Forms.Label();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -217,6 +220,35 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Aproveite nossos serviços!";
             // 
+            // bt_ant
+            // 
+            this.bt_ant.Location = new System.Drawing.Point(320, 254);
+            this.bt_ant.Name = "bt_ant";
+            this.bt_ant.Size = new System.Drawing.Size(75, 23);
+            this.bt_ant.TabIndex = 39;
+            this.bt_ant.Text = "<<";
+            this.bt_ant.UseVisualStyleBackColor = true;
+            this.bt_ant.Click += new System.EventHandler(this.Bt_ant_Click);
+            // 
+            // bt_prox
+            // 
+            this.bt_prox.Location = new System.Drawing.Point(870, 254);
+            this.bt_prox.Name = "bt_prox";
+            this.bt_prox.Size = new System.Drawing.Size(75, 23);
+            this.bt_prox.TabIndex = 40;
+            this.bt_prox.Text = ">>";
+            this.bt_prox.UseVisualStyleBackColor = true;
+            this.bt_prox.Click += new System.EventHandler(this.Bt_prox_Click);
+            // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.Location = new System.Drawing.Point(608, 264);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(39, 13);
+            this.lb_pag.TabIndex = 41;
+            this.lb_pag.Text = "lb_pag";
+            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,6 +256,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.bt_ant);
+            this.Controls.Add(this.lb_pag);
+            this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -265,5 +300,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button bt_ant;
+        private System.Windows.Forms.Button bt_prox;
+        private System.Windows.Forms.Label lb_pag;
     }
 }

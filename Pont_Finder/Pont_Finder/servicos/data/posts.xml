@@ -3,7 +3,7 @@
   <Post>
     <id>0</id>
     <titulo>fire</titulo>
-    <valor>232</valor>
+    <valor>1</valor>
     <detalhes>Firee</detalhes>
     <descricao>hspof</descricao>
     <ativo>true</ativo>
@@ -16,7 +16,7 @@
   <Post>
     <id>1</id>
     <titulo>hihdgh</titulo>
-    <valor>242</valor>
+    <valor>2</valor>
     <detalhes>ihihwe</detalhes>
     <descricao>bewiho</descricao>
     <ativo>true</ativo>
@@ -29,7 +29,7 @@
   <Post>
     <id>2</id>
     <titulo>testing</titulo>
-    <valor>123</valor>
+    <valor>3</valor>
     <detalhes>dfjpso</detalhes>
     <descricao>sopdf</descricao>
     <ativo>true</ativo>
@@ -42,7 +42,7 @@
   <Post>
     <id>3</id>
     <titulo>tt</titulo>
-    <valor>12</valor>
+    <valor>4</valor>
     <detalhes>sf</detalhes>
     <descricao>asd</descricao>
     <ativo>true</ativo>
@@ -50,6 +50,45 @@
     <cpf>26835036010</cpf>
     <cnpj>21321</cnpj>
     <data>2019-11-09T12:31:40.4269534-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>4</id>
+    <titulo>tess</titulo>
+    <valor>5</valor>
+    <detalhes>JOWEJFPW</detalhes>
+    <descricao>SDF</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-09T22:15:32.532021-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>5</id>
+    <titulo>6</titulo>
+    <valor>6</valor>
+    <detalhes>6</detalhes>
+    <descricao>6</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-09T22:21:16.0622085-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>6</id>
+    <titulo>7</titulo>
+    <valor>7</valor>
+    <detalhes>7</detalhes>
+    <descricao>7</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-09T22:22:09.8103161-03:00</data>
     <likes></likes>
   </Post>
 </PostList>
