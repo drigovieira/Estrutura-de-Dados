@@ -42,7 +42,7 @@ namespace Pont_Finder.servicos
             int y = 5;           
             int i = 0;
        
-            foreach (var item in classes.PostList.thisPosts)
+            foreach (var item in classes.PostList.PostsAtivo)
             {
                 if (item.Cpf == Session.Cpf)
                 {

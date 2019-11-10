@@ -53,5 +53,22 @@ namespace Pont_Finder.servicos
 
             }
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Deseja Continuar?", "Excluir Post", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+
+            if (confirm.ToString().ToUpper() == "YES")
+            {
+                post.Ativo = false;
+                MessageBox.Show("Post Excluido");
+                FormPrincipal.MudarForm("servicos", new FormUserCards());
+            }               
+            else
+                MessageBox.Show("Cancelado");
+
+
+
+        }
     }
 }

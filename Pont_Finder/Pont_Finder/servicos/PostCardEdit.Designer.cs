@@ -36,18 +36,18 @@
             this.lb_descricao = new System.Windows.Forms.Label();
             this.pb_down = new System.Windows.Forms.PictureBox();
             this.pb_up = new System.Windows.Forms.PictureBox();
+            this.lb_username = new System.Windows.Forms.Label();
+            this.pb_user = new System.Windows.Forms.PictureBox();
             this.bt_obter = new System.Windows.Forms.Button();
             this.lb_valor = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
             this.lb_titulo = new System.Windows.Forms.Label();
             this.pb_icone = new System.Windows.Forms.PictureBox();
-            this.lb_username = new System.Windows.Forms.Label();
-            this.pb_user = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_user)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,6 +95,7 @@
             this.button3.TabIndex = 31;
             this.button3.Text = "Remover";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // lb_data
             // 
@@ -138,6 +139,24 @@
             this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_up.TabIndex = 27;
             this.pb_up.TabStop = false;
+            // 
+            // lb_username
+            // 
+            this.lb_username.AutoSize = true;
+            this.lb_username.Location = new System.Drawing.Point(775, 15);
+            this.lb_username.Name = "lb_username";
+            this.lb_username.Size = new System.Drawing.Size(27, 13);
+            this.lb_username.TabIndex = 25;
+            this.lb_username.Text = "user";
+            // 
+            // pb_user
+            // 
+            this.pb_user.Location = new System.Drawing.Point(778, 45);
+            this.pb_user.Name = "pb_user";
+            this.pb_user.Size = new System.Drawing.Size(50, 50);
+            this.pb_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_user.TabIndex = 24;
+            this.pb_user.TabStop = false;
             // 
             // bt_obter
             // 
@@ -193,24 +212,6 @@
             this.pb_icone.TabIndex = 14;
             this.pb_icone.TabStop = false;
             // 
-            // lb_username
-            // 
-            this.lb_username.AutoSize = true;
-            this.lb_username.Location = new System.Drawing.Point(775, 15);
-            this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(27, 13);
-            this.lb_username.TabIndex = 25;
-            this.lb_username.Text = "user";
-            // 
-            // pb_user
-            // 
-            this.pb_user.Location = new System.Drawing.Point(778, 45);
-            this.pb_user.Name = "pb_user";
-            this.pb_user.Size = new System.Drawing.Size(50, 50);
-            this.pb_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_user.TabIndex = 24;
-            this.pb_user.TabStop = false;
-            // 
             // PostCardEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,8 +224,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_user)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.ResumeLayout(false);
 
         }

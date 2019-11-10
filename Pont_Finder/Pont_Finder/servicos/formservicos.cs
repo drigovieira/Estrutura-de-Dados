@@ -10,14 +10,14 @@ namespace Pont_Finder.servicos
         private List<classes.Post> ListaDePost;
         private int pagTotal;
         private int pagAtual;
+        //quantidade de cards por pag
         private int pagQuant;
 
 
         private int y = 5;
         public FormServicos()
         {
-            
-
+           
             InitializeComponent();
             if (Session.Online)
             {
@@ -30,8 +30,9 @@ namespace Pont_Finder.servicos
 
             pagQuant = 8;
 
-            ListaDePost = classes.PostList.Posts;
+            ListaDePost = classes.PostList.PostsAtivo;
             ListaDePost.Reverse();
+
             pagTotal = ListaDePost.Count;
             if ((pagTotal % pagQuant) != 0)
             {
@@ -99,23 +100,48 @@ namespace Pont_Finder.servicos
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
+
+            ListaDePost.Clear();
+            foreach (var item in classes.PostList.PostsAtivo)
+            {
+                if (item.Titulo.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                {
+                    ListaDePost.Add(item);
+                }
+            }
+
             y = 5;
             panel_center.Height = 180;
             panel_center.Controls.Clear();
             int i = 0;
+
+            ListaDePost.Reverse();
+
+            pagTotal = ListaDePost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
             foreach (var item in ListaDePost)
             {
-                if (item.Titulo.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
-                {
-                    if (i > 8)
-                        break;
-                    PostCard a = new PostCard(item.Id);
-                    a.Location = new Point(0, (y));
-                    y = y + a.Height + 5;
-                    panel_center.Height = panel_center.Height + 180;
-                    panel_center.Controls.Add(a);
-                    i++;
-                }             
+                if (i >= pagQuant)
+                    break;
+                PostCard a = new PostCard(item.Id);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                panel_center.Height = panel_center.Height + 180;
+                panel_center.Controls.Add(a);
+                i++;
             }
         }
 
