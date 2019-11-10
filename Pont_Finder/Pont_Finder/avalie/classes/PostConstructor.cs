@@ -13,12 +13,21 @@ namespace Pont_Finder.avalie
             desc,
             localizacao,
             tipoproblema,
+            img,
             tempohora;
         private long 
             cpf,
             id;
         private bool 
             ativo;
+
+
+        public string Img
+        {
+            get { return img; }
+            set { img = value; }
+        }
+
 
 
         public long Id

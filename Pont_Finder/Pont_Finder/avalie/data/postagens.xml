@@ -2,20 +2,22 @@
 <posts>
   <post>
     <id>0</id>
-    <cpf>47746352863</cpf>
-    <tempohora>10/11/2019 12:29</tempohora>
-    <desc>RuRuasz</desc>
-    <tipoproblema>Saúde</tipoproblema>
-    <localizacao>RuaRuaRua</localizacao>
+    <img>..//..//avalie//data//imagens//posts//0.jpg</img>
+    <cpf>26835036010</cpf>
+    <tempohora>10/11/2019 13:06</tempohora>
+    <desc>Senõr</desc>
+    <tipoproblema>Infraestrutura</tipoproblema>
+    <localizacao>Senhor Omar</localizacao>
     <ativo>true</ativo>
   </post>
   <post>
     <id>1</id>
+    <img>..//..//avalie//data//imagens//posts//1.jpg</img>
     <cpf>26835036010</cpf>
-    <tempohora>10/11/2019 12:34</tempohora>
-    <desc>nadçnasçd</desc>
-    <tipoproblema>Segurança</tipoproblema>
-    <localizacao>   sua Localicação...naasdo</localizacao>
+    <tempohora>10/11/2019 13:08</tempohora>
+    <desc>Hentao</desc>
+    <tipoproblema>Infraestrutura</tipoproblema>
+    <localizacao>Hentao</localizacao>
     <ativo>true</ativo>
   </post>
 </posts>

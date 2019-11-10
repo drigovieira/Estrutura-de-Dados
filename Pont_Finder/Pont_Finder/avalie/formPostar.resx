@@ -7149,14 +7149,14 @@
         vyNvIr9BHhQ/u0cybdq/Ac1cSEYRaL6GAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBoxCarregarImagem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pb_icone.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAENJREFUSEtjGFngzJkz/0EYyqU+GLWAIBi1gCAY3BbANFMLQ41FAGyKKMFQY0kD
         FGkmBoxaQBCMWkAQDH0LBiFgYAAAiaABdHT3nzoAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="openIcone.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
 </root>
