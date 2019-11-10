@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Pont_Finder.servicos.classes
 {
@@ -11,7 +8,6 @@ namespace Pont_Finder.servicos.classes
         private int id;
         private string titulo;
         private double valor;
-        private string detalhes;
         private string descricao;
         private bool ativo;
         private string image;
@@ -44,12 +40,6 @@ namespace Pont_Finder.servicos.classes
         {
             get { return valor; }
             set { valor = value; }
-        }
-
-        public string Detalhes
-        {
-            get { return detalhes; }
-            set { detalhes = value; }
         }
 
         public string Descricao

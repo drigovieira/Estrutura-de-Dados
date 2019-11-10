@@ -39,10 +39,8 @@
             this.tb_titulo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tb_valor = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.cancelar = new System.Windows.Forms.Button();
             this.bt_usuario = new System.Windows.Forms.Button();
-            this.tb_detalhes = new System.Windows.Forms.TextBox();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -66,13 +64,11 @@
             panel1.Controls.Add(this.tb_titulo);
             panel1.Controls.Add(this.label2);
             panel1.Controls.Add(this.tb_valor);
-            panel1.Controls.Add(this.label1);
             panel1.Controls.Add(this.cancelar);
             panel1.Controls.Add(this.bt_usuario);
-            panel1.Controls.Add(this.tb_detalhes);
             panel1.Location = new System.Drawing.Point(332, 231);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(630, 879);
+            panel1.Size = new System.Drawing.Size(630, 758);
             panel1.TabIndex = 3;
             panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
@@ -81,10 +77,10 @@
             this.bt_empresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_empresa.ForeColor = System.Drawing.Color.White;
-            this.bt_empresa.Location = new System.Drawing.Point(166, 777);
+            this.bt_empresa.Location = new System.Drawing.Point(166, 629);
             this.bt_empresa.Name = "bt_empresa";
             this.bt_empresa.Size = new System.Drawing.Size(300, 34);
-            this.bt_empresa.TabIndex = 12;
+            this.bt_empresa.TabIndex = 7;
             this.bt_empresa.Text = "Publicar Empresa";
             this.bt_empresa.UseVisualStyleBackColor = false;
             this.bt_empresa.Click += new System.EventHandler(this.Bt_empresa_Click);
@@ -92,22 +88,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(268, 541);
+            this.label4.Location = new System.Drawing.Point(129, 364);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 13);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Descrição completa";
+            this.label4.Text = "Descrição";
             // 
             // tb_descricao
             // 
             this.tb_descricao.BackColor = System.Drawing.SystemColors.Control;
-            this.tb_descricao.Location = new System.Drawing.Point(132, 557);
+            this.tb_descricao.Location = new System.Drawing.Point(132, 380);
             this.tb_descricao.MaxLength = 380;
             this.tb_descricao.Multiline = true;
             this.tb_descricao.Name = "tb_descricao";
             this.tb_descricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tb_descricao.Size = new System.Drawing.Size(390, 150);
-            this.tb_descricao.TabIndex = 11;
+            this.tb_descricao.TabIndex = 5;
             // 
             // bt_icone
             // 
@@ -167,25 +163,15 @@
             this.tb_valor.TabIndex = 3;
             this.tb_valor.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(294, 352);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Detalhes Card";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // cancelar
             // 
             this.cancelar.BackColor = System.Drawing.Color.OrangeRed;
             this.cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelar.ForeColor = System.Drawing.Color.White;
-            this.cancelar.Location = new System.Drawing.Point(166, 824);
+            this.cancelar.Location = new System.Drawing.Point(166, 676);
             this.cancelar.Name = "cancelar";
             this.cancelar.Size = new System.Drawing.Size(300, 34);
-            this.cancelar.TabIndex = 6;
+            this.cancelar.TabIndex = 8;
             this.cancelar.Text = "Cancelar";
             this.cancelar.UseVisualStyleBackColor = false;
             this.cancelar.Click += new System.EventHandler(this.Cancelar_Click);
@@ -195,24 +181,13 @@
             this.bt_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
             this.bt_usuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_usuario.ForeColor = System.Drawing.Color.White;
-            this.bt_usuario.Location = new System.Drawing.Point(166, 730);
+            this.bt_usuario.Location = new System.Drawing.Point(166, 582);
             this.bt_usuario.Name = "bt_usuario";
             this.bt_usuario.Size = new System.Drawing.Size(300, 34);
-            this.bt_usuario.TabIndex = 5;
+            this.bt_usuario.TabIndex = 6;
             this.bt_usuario.Text = "Publicar Usuário";
             this.bt_usuario.UseVisualStyleBackColor = false;
             this.bt_usuario.Click += new System.EventHandler(this.Publicar_Click);
-            // 
-            // tb_detalhes
-            // 
-            this.tb_detalhes.BackColor = System.Drawing.SystemColors.Control;
-            this.tb_detalhes.Location = new System.Drawing.Point(132, 371);
-            this.tb_detalhes.MaxLength = 380;
-            this.tb_detalhes.Multiline = true;
-            this.tb_detalhes.Name = "tb_detalhes";
-            this.tb_detalhes.Size = new System.Drawing.Size(390, 150);
-            this.tb_detalhes.TabIndex = 4;
-            this.tb_detalhes.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // openIcone
             // 
@@ -223,7 +198,7 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 1110);
+            this.panel3.Location = new System.Drawing.Point(0, 989);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1265, 100);
             this.panel3.TabIndex = 5;
@@ -276,11 +251,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tb_detalhes;
         private System.Windows.Forms.Button bt_usuario;
         private System.Windows.Forms.Button cancelar;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_valor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

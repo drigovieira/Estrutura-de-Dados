@@ -72,7 +72,6 @@ namespace Pont_Finder.servicos
             p.Id = classes.PostList.Tam;
             p.Titulo = tb_titulo.Text;
             p.Valor = double.Parse(tb_valor.Text);
-            p.Detalhes = tb_detalhes.Text;
             p.Descricao = tb_descricao.Text;
             p.Image = link;
             p.Data = DateTime.Now;
@@ -147,7 +146,6 @@ namespace Pont_Finder.servicos
             p.Id = classes.PostList.Tam;
             p.Titulo = tb_titulo.Text;
             p.Valor = double.Parse(tb_valor.Text);
-            p.Detalhes = tb_detalhes.Text;
             p.Descricao = tb_descricao.Text;
             p.Image = link;
             p.Data = DateTime.Now;

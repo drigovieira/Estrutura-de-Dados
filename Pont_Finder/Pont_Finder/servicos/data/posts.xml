@@ -4,7 +4,6 @@
     <id>0</id>
     <titulo>fire</titulo>
     <valor>1</valor>
-    <detalhes>Firee</detalhes>
     <descricao>hspof</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//0.jpg</image>
@@ -17,7 +16,6 @@
     <id>1</id>
     <titulo>hihdgh</titulo>
     <valor>2</valor>
-    <detalhes>ihihwe</detalhes>
     <descricao>bewiho</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//1.jpg</image>
@@ -30,7 +28,6 @@
     <id>2</id>
     <titulo>testing</titulo>
     <valor>3</valor>
-    <detalhes>dfjpso</detalhes>
     <descricao>sopdf</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//offImage.png</image>
@@ -43,7 +40,6 @@
     <id>3</id>
     <titulo>tt</titulo>
     <valor>4</valor>
-    <detalhes>sf</detalhes>
     <descricao>asd</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//offImage.png</image>
@@ -56,7 +52,6 @@
     <id>4</id>
     <titulo>tess</titulo>
     <valor>5</valor>
-    <detalhes>JOWEJFPW</detalhes>
     <descricao>SDF</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//offImage.png</image>
@@ -69,7 +64,6 @@
     <id>5</id>
     <titulo>6</titulo>
     <valor>6</valor>
-    <detalhes>6</detalhes>
     <descricao>6</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//offImage.png</image>
@@ -82,7 +76,6 @@
     <id>6</id>
     <titulo>7</titulo>
     <valor>7</valor>
-    <detalhes>7</detalhes>
     <descricao>7</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//offImage.png</image>
@@ -95,7 +88,6 @@
     <id>7</id>
     <titulo>pala</titulo>
     <valor>12</valor>
-    <detalhes>fhios</detalhes>
     <descricao>hsdfh</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//7.jpg</image>
@@ -108,13 +100,37 @@
     <id>8</id>
     <titulo>kadspohpa</titulo>
     <valor>123</valor>
-    <detalhes>sjfpow</detalhes>
     <descricao>skhfp</descricao>
     <ativo>true</ativo>
     <image>..//..//servicos//data//images//posts//offImage.png</image>
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-10T12:17:45.5911303-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>9</id>
+    <titulo>joihdgi</titulo>
+    <valor>71243</valor>
+    <descricao>ohoiw</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-10T16:52:42.9314872-03:00</data>
+    <likes>1,26835036010</likes>
+  </Post>
+  <Post>
+    <id>10</id>
+    <titulo>Paladino</titulo>
+    <valor>5000</valor>
+    <descricao>Testando
+Paladino</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//10.jpg</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-10T17:06:52.3981891-03:00</data>
     <likes></likes>
   </Post>
 </PostList>

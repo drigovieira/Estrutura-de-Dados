@@ -22,7 +22,6 @@ namespace Pont_Finder.servicos
             InitializeComponent();
             tb_titulo.Text = post.Titulo;
             tb_valor.Text = "" + post.Valor;
-            tb_detalhes.Text = post.Detalhes;
             tb_descricao.Text = post.Descricao;
             pb_icone.ImageLocation = post.Image;
 
@@ -32,7 +31,6 @@ namespace Pont_Finder.servicos
         {
             post.Titulo = tb_titulo.Text;
             post.Valor = double.Parse(tb_valor.Text);
-            post.Detalhes = tb_detalhes.Text;
             post.Descricao = tb_descricao.Text;
 
             string link = null;
@@ -71,6 +69,11 @@ namespace Pont_Finder.servicos
                 pb_icone.Load();
                 img = true;
             }
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

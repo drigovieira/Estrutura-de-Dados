@@ -43,7 +43,6 @@ namespace Pont_Finder.servicos.classes
                 post.Id = int.Parse(item.Element("id").Value);
                 post.Titulo = item.Element("titulo").Value;
                 post.Valor = double.Parse(item.Element("valor").Value);
-                post.Detalhes = item.Element("detalhes").Value;
                 post.Descricao = item.Element("descricao").Value;
                 post.Ativo = bool.Parse(item.Element("ativo").Value);
                 post.Image = item.Element("image").Value;
@@ -86,7 +85,6 @@ namespace Pont_Finder.servicos.classes
                 new XElement("id", post.Id),
                 new XElement("titulo", post.Titulo),
                 new XElement("valor", post.Valor),
-                new XElement("detalhes", post.Detalhes),
                 new XElement("descricao", post.Descricao),
                 new XElement("ativo", post.Ativo),
                 new XElement("image", post.Image),

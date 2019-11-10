@@ -42,6 +42,7 @@
             this.painel.Name = "painel";
             this.painel.Size = new System.Drawing.Size(1055, 460);
             this.painel.TabIndex = 10;
+            this.painel.Paint += new System.Windows.Forms.PaintEventHandler(this.Painel_Paint);
             // 
             // button4
             // 

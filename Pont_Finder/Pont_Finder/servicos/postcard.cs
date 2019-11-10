@@ -16,7 +16,6 @@ namespace Pont_Finder.servicos
         private int id;
         private string titulo;
         private double valor;
-        private string detalhes;
         private string descricao;
         private bool ativo;
         private string image;
@@ -37,7 +36,6 @@ namespace Pont_Finder.servicos
             classes.Post post = new classes.Post();
             post = classes.PostList.SelectId(id);
             this.titulo = post.Titulo;
-            this.detalhes = post.Detalhes;
             this.valor = post.Valor;
             this.id = post.Id;
             this.likes = post.Likes;
@@ -46,6 +44,7 @@ namespace Pont_Finder.servicos
             this.data = post.Data;
             this.cpf = post.Cpf;
             this.cnpj = post.Cnpj;
+            this.descricao = post.Descricao;
 
        
             InitializeComponent();
@@ -111,7 +110,7 @@ namespace Pont_Finder.servicos
         {
 
             lb_titulo.Text = this.titulo;
-            lb_descricao.Text = this.detalhes;
+            lb_descricao.Text = this.descricao;
             lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
 
            

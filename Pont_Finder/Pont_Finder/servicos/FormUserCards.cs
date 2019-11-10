@@ -47,8 +47,10 @@ namespace Pont_Finder.servicos
             {
                 if (item.Cpf == Session.Cpf)
                 {
+                    /*
                     if (i > 8)
                         break;
+                    */
                     PostCardEdit a = new PostCardEdit(item.Id);
                     a.Location = new Point(25, y);
                     y = y + a.Height + 5;
@@ -59,6 +61,11 @@ namespace Pont_Finder.servicos
             }
 
             
+        }
+
+        private void Painel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

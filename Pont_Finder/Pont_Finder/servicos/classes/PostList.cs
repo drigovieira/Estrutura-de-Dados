@@ -18,7 +18,6 @@ namespace Pont_Finder.servicos.classes
             p.Id = post.Id;
             p.Titulo = post.Titulo;
             p.Valor = post.Valor;
-            p.Detalhes = post.Detalhes;
             p.Descricao = post.Descricao;
             p.Ativo = post.Ativo;
             p.Image = post.Image;
@@ -38,7 +37,6 @@ namespace Pont_Finder.servicos.classes
                 p.Id = post.Id;
                 p.Titulo = post.Titulo;
                 p.Valor = post.Valor;
-                p.Detalhes = post.Detalhes;
                 p.Descricao = post.Descricao;
                 p.Ativo = post.Ativo;
                 p.Image = post.Image;
@@ -95,7 +93,6 @@ namespace Pont_Finder.servicos.classes
                     p.Id = post.Id;
                     p.Titulo = post.Titulo;
                     p.Valor = post.Valor;
-                    p.Detalhes = post.Detalhes;
                     p.Descricao = post.Descricao;
                     p.Ativo = post.Ativo;
                     p.Image = post.Image;
@@ -122,7 +119,6 @@ namespace Pont_Finder.servicos.classes
                         p.Id = post.Id;
                         p.Titulo = post.Titulo;
                         p.Valor = post.Valor;
-                        p.Detalhes = post.Detalhes;
                         p.Descricao = post.Descricao;
                         p.Ativo = post.Ativo;
                         p.Image = post.Image;
