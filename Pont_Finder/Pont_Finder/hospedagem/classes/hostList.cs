@@ -91,6 +91,34 @@ namespace Pont_Finder.hospedagem
             return e;
         }
 
+        public static Empresa selectCnpj(long cnpj)
+        {
+            Empresa e = new Empresa();
+            foreach (var item in empresas)
+            {
+                if (cnpj == item.CNPJ)
+                {
+                    e.CPFADMIN = item.CPFADMIN;
+                    e.Nomeempresa = item.Nomeempresa;
+                    e.Nomefantasia = item.Nomefantasia;
+                    e.CNPJ = item.CNPJ;
+                    e.Endereco = item.Endereco;
+                    e.Cep = item.Cep;
+                    e.Telefone = item.Telefone;
+                    e.Email = item.Email;
+                    e.Foto = item.Foto;
+                    e.Tipo = item.Tipo;
+                    e.Estrelas = item.Estrelas;
+                    e.Descricao = item.Descricao;
+                    e.Ambiente = item.Ambiente;
+                    e.Ativo = item.Ativo;
+                    return (e);
+                }
+            }
+            e = null;
+            return e;
+        }
+
         public static void CarregarXML()
         {
             XDocument doc = XDocument.Load(caminho);

@@ -11,4 +11,20 @@
     <image>..//..//servicos//data//images//empresas//21321.jpg</image>
     <status>true</status>
   </servico>
+  <hospedagem>
+    <admin>26835036010</admin>
+    <nomeempresa>Muzy Hoteis LTDA</nomeempresa>
+    <nomefantasia>Recanto dos Muzy</nomefantasia>
+    <cnpj>34254142342342</cnpj>
+    <endereco>Rua dos lindos n22</endereco>
+    <cep>12721199</cep>
+    <telefone>123144123</telefone>
+    <email>pedro@lindo.com</email>
+    <foto> * ..//..//hospedagem//data//images//empresas//34254142342342//empresa//0.jpg * ..//..//hospedagem//data//images//empresas//34254142342342//empresa//1.jpg</foto>
+    <tipo>Hotel</tipo>
+    <estrelas>5</estrelas>
+    <descricao>Confiança e tradição.</descricao>
+    <ambiente>  Estacionamento  Piscina  Academia</ambiente>
+    <status>true</status>
+  </hospedagem>
 </modulos>

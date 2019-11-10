@@ -157,6 +157,38 @@ namespace Pont_Finder.hospedagem
             get { return quartos.Count; }
         }
 
+        public static List<Quarto> Quartos
+        {
+            get
+            {
+
+                List<Quarto> lista = new List<Quarto>();
+
+                foreach (var item in quartos)
+                {
+                    Quarto q = new Quarto();
+
+                    q.ID = item.ID;
+                    q.Cnpj_Empresa = item.Cnpj_Empresa;
+                    q.NomeQuarto = item.NomeQuarto;
+                    q.Qtd_Pessoas = item.Qtd_Pessoas;
+                    q.Qtd_Disponivel = item.Qtd_Disponivel;
+                    q.Servicos = item.Servicos;
+                    q.Valor_Diario = item.Valor_Diario;
+                    q.Foto = item.Foto;
+                    q.Status = item.Status;
+                    q.Ativo = item.Ativo;
+
+                    lista.Add(q);
+                }
+                return lista;
+            }
+        }
+
+        public static Quarto SelectId(int id)
+        {
+            return quartos[id];
+        }
 
     }
 }

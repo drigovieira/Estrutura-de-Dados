@@ -40,22 +40,22 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tb_nome = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.rb_pessoas_1 = new System.Windows.Forms.RadioButton();
-            this.rb_pessoas_2 = new System.Windows.Forms.RadioButton();
-            this.rb_pessoas_3 = new System.Windows.Forms.RadioButton();
-            this.rb_pessoas_4 = new System.Windows.Forms.RadioButton();
-            this.rb_pessoas_5 = new System.Windows.Forms.RadioButton();
-            this.rb_pessoas_6 = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pb_img_1 = new System.Windows.Forms.PictureBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.pb_img_1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.rb_pessoas_6 = new System.Windows.Forms.RadioButton();
+            this.rb_pessoas_5 = new System.Windows.Forms.RadioButton();
+            this.rb_pessoas_4 = new System.Windows.Forms.RadioButton();
+            this.rb_pessoas_3 = new System.Windows.Forms.RadioButton();
+            this.rb_pessoas_2 = new System.Windows.Forms.RadioButton();
+            this.rb_pessoas_1 = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).BeginInit();
             this.SuspendLayout();
@@ -160,6 +160,7 @@
             // 
             // panel3
             // 
+            this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.pb_img_1);
@@ -192,111 +193,34 @@
             this.panel3.Size = new System.Drawing.Size(630, 776);
             this.panel3.TabIndex = 22;
             // 
-            // label3
+            // button1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(168, 232);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(290, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Quantidade de quartos existentes: ";
+            this.button1.Location = new System.Drawing.Point(424, 590);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 51);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Adicionar Foto";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // rb_pessoas_1
+            // pb_img_1
             // 
-            this.rb_pessoas_1.AutoSize = true;
-            this.rb_pessoas_1.Location = new System.Drawing.Point(161, 194);
-            this.rb_pessoas_1.Name = "rb_pessoas_1";
-            this.rb_pessoas_1.Size = new System.Drawing.Size(31, 17);
-            this.rb_pessoas_1.TabIndex = 17;
-            this.rb_pessoas_1.TabStop = true;
-            this.rb_pessoas_1.Text = "1";
-            this.rb_pessoas_1.UseVisualStyleBackColor = true;
+            this.pb_img_1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb_img_1.InitialImage")));
+            this.pb_img_1.Location = new System.Drawing.Point(105, 522);
+            this.pb_img_1.Name = "pb_img_1";
+            this.pb_img_1.Size = new System.Drawing.Size(285, 173);
+            this.pb_img_1.TabIndex = 30;
+            this.pb_img_1.TabStop = false;
             // 
-            // rb_pessoas_2
+            // checkBox7
             // 
-            this.rb_pessoas_2.AutoSize = true;
-            this.rb_pessoas_2.Location = new System.Drawing.Point(217, 194);
-            this.rb_pessoas_2.Name = "rb_pessoas_2";
-            this.rb_pessoas_2.Size = new System.Drawing.Size(31, 17);
-            this.rb_pessoas_2.TabIndex = 18;
-            this.rb_pessoas_2.TabStop = true;
-            this.rb_pessoas_2.Text = "2";
-            this.rb_pessoas_2.UseVisualStyleBackColor = true;
-            // 
-            // rb_pessoas_3
-            // 
-            this.rb_pessoas_3.AutoSize = true;
-            this.rb_pessoas_3.Location = new System.Drawing.Point(273, 194);
-            this.rb_pessoas_3.Name = "rb_pessoas_3";
-            this.rb_pessoas_3.Size = new System.Drawing.Size(31, 17);
-            this.rb_pessoas_3.TabIndex = 19;
-            this.rb_pessoas_3.TabStop = true;
-            this.rb_pessoas_3.Text = "3";
-            this.rb_pessoas_3.UseVisualStyleBackColor = true;
-            // 
-            // rb_pessoas_4
-            // 
-            this.rb_pessoas_4.AutoSize = true;
-            this.rb_pessoas_4.Location = new System.Drawing.Point(323, 194);
-            this.rb_pessoas_4.Name = "rb_pessoas_4";
-            this.rb_pessoas_4.Size = new System.Drawing.Size(31, 17);
-            this.rb_pessoas_4.TabIndex = 20;
-            this.rb_pessoas_4.TabStop = true;
-            this.rb_pessoas_4.Text = "4";
-            this.rb_pessoas_4.UseVisualStyleBackColor = true;
-            // 
-            // rb_pessoas_5
-            // 
-            this.rb_pessoas_5.AutoSize = true;
-            this.rb_pessoas_5.Location = new System.Drawing.Point(374, 194);
-            this.rb_pessoas_5.Name = "rb_pessoas_5";
-            this.rb_pessoas_5.Size = new System.Drawing.Size(31, 17);
-            this.rb_pessoas_5.TabIndex = 21;
-            this.rb_pessoas_5.TabStop = true;
-            this.rb_pessoas_5.Text = "5";
-            this.rb_pessoas_5.UseVisualStyleBackColor = true;
-            // 
-            // rb_pessoas_6
-            // 
-            this.rb_pessoas_6.AutoSize = true;
-            this.rb_pessoas_6.Location = new System.Drawing.Point(424, 194);
-            this.rb_pessoas_6.Name = "rb_pessoas_6";
-            this.rb_pessoas_6.Size = new System.Drawing.Size(31, 17);
-            this.rb_pessoas_6.TabIndex = 22;
-            this.rb_pessoas_6.TabStop = true;
-            this.rb_pessoas_6.Text = "6";
-            this.rb_pessoas_6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(175, 355);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 17);
-            this.checkBox1.TabIndex = 23;
-            this.checkBox1.Text = "Café da manhã";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(288, 355);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(102, 17);
-            this.checkBox2.TabIndex = 24;
-            this.checkBox2.Text = "Estacionamento";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(403, 355);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(61, 17);
-            this.checkBox3.TabIndex = 25;
-            this.checkBox3.Text = "Almoço";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(175, 401);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(86, 17);
+            this.checkBox7.TabIndex = 29;
+            this.checkBox7.Text = "Espaço PET";
+            this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
@@ -328,34 +252,111 @@
             this.checkBox6.Text = "Café da tarde";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // checkBox3
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(175, 401);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(86, 17);
-            this.checkBox7.TabIndex = 29;
-            this.checkBox7.Text = "Espaço PET";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(403, 355);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(61, 17);
+            this.checkBox3.TabIndex = 25;
+            this.checkBox3.Text = "Almoço";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // pb_img_1
+            // checkBox2
             // 
-            this.pb_img_1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb_img_1.InitialImage")));
-            this.pb_img_1.Location = new System.Drawing.Point(105, 522);
-            this.pb_img_1.Name = "pb_img_1";
-            this.pb_img_1.Size = new System.Drawing.Size(285, 173);
-            this.pb_img_1.TabIndex = 30;
-            this.pb_img_1.TabStop = false;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(288, 355);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(102, 17);
+            this.checkBox2.TabIndex = 24;
+            this.checkBox2.Text = "Estacionamento";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // checkBox1
             // 
-            this.button1.Location = new System.Drawing.Point(424, 590);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 51);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Adicionar Foto";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(175, 355);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(98, 17);
+            this.checkBox1.TabIndex = 23;
+            this.checkBox1.Text = "Café da manhã";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // rb_pessoas_6
+            // 
+            this.rb_pessoas_6.AutoSize = true;
+            this.rb_pessoas_6.Location = new System.Drawing.Point(424, 194);
+            this.rb_pessoas_6.Name = "rb_pessoas_6";
+            this.rb_pessoas_6.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_6.TabIndex = 22;
+            this.rb_pessoas_6.TabStop = true;
+            this.rb_pessoas_6.Text = "6";
+            this.rb_pessoas_6.UseVisualStyleBackColor = true;
+            // 
+            // rb_pessoas_5
+            // 
+            this.rb_pessoas_5.AutoSize = true;
+            this.rb_pessoas_5.Location = new System.Drawing.Point(374, 194);
+            this.rb_pessoas_5.Name = "rb_pessoas_5";
+            this.rb_pessoas_5.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_5.TabIndex = 21;
+            this.rb_pessoas_5.TabStop = true;
+            this.rb_pessoas_5.Text = "5";
+            this.rb_pessoas_5.UseVisualStyleBackColor = true;
+            // 
+            // rb_pessoas_4
+            // 
+            this.rb_pessoas_4.AutoSize = true;
+            this.rb_pessoas_4.Location = new System.Drawing.Point(323, 194);
+            this.rb_pessoas_4.Name = "rb_pessoas_4";
+            this.rb_pessoas_4.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_4.TabIndex = 20;
+            this.rb_pessoas_4.TabStop = true;
+            this.rb_pessoas_4.Text = "4";
+            this.rb_pessoas_4.UseVisualStyleBackColor = true;
+            // 
+            // rb_pessoas_3
+            // 
+            this.rb_pessoas_3.AutoSize = true;
+            this.rb_pessoas_3.Location = new System.Drawing.Point(273, 194);
+            this.rb_pessoas_3.Name = "rb_pessoas_3";
+            this.rb_pessoas_3.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_3.TabIndex = 19;
+            this.rb_pessoas_3.TabStop = true;
+            this.rb_pessoas_3.Text = "3";
+            this.rb_pessoas_3.UseVisualStyleBackColor = true;
+            // 
+            // rb_pessoas_2
+            // 
+            this.rb_pessoas_2.AutoSize = true;
+            this.rb_pessoas_2.Location = new System.Drawing.Point(217, 194);
+            this.rb_pessoas_2.Name = "rb_pessoas_2";
+            this.rb_pessoas_2.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_2.TabIndex = 18;
+            this.rb_pessoas_2.TabStop = true;
+            this.rb_pessoas_2.Text = "2";
+            this.rb_pessoas_2.UseVisualStyleBackColor = true;
+            // 
+            // rb_pessoas_1
+            // 
+            this.rb_pessoas_1.AutoSize = true;
+            this.rb_pessoas_1.Location = new System.Drawing.Point(161, 194);
+            this.rb_pessoas_1.Name = "rb_pessoas_1";
+            this.rb_pessoas_1.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_1.TabIndex = 17;
+            this.rb_pessoas_1.TabStop = true;
+            this.rb_pessoas_1.Text = "1";
+            this.rb_pessoas_1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(168, 232);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(290, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Quantidade de quartos existentes: ";
             // 
             // Cad_Quarto
             // 

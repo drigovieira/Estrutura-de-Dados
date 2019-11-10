@@ -33,7 +33,7 @@
             this.bt_visualizar = new System.Windows.Forms.Button();
             this.lb_rs = new System.Windows.Forms.Label();
             this.lb_detalhe = new System.Windows.Forms.Label();
-            this.lb_endereco = new System.Windows.Forms.Label();
+            this.lb_empresa = new System.Windows.Forms.Label();
             this.lb_nome = new System.Windows.Forms.Label();
             this.pb_wifi = new System.Windows.Forms.PictureBox();
             this.pb__duo = new System.Windows.Forms.PictureBox();
@@ -89,15 +89,15 @@
             this.lb_detalhe.TabIndex = 31;
             this.lb_detalhe.Text = "Diária";
             // 
-            // lb_endereco
+            // lb_empresa
             // 
-            this.lb_endereco.AutoSize = true;
-            this.lb_endereco.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_endereco.Location = new System.Drawing.Point(179, 40);
-            this.lb_endereco.Name = "lb_endereco";
-            this.lb_endereco.Size = new System.Drawing.Size(60, 21);
-            this.lb_endereco.TabIndex = 30;
-            this.lb_endereco.Text = "Endereço";
+            this.lb_empresa.AutoSize = true;
+            this.lb_empresa.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_empresa.Location = new System.Drawing.Point(179, 40);
+            this.lb_empresa.Name = "lb_empresa";
+            this.lb_empresa.Size = new System.Drawing.Size(60, 21);
+            this.lb_empresa.TabIndex = 30;
+            this.lb_empresa.Text = "Endereço";
             // 
             // lb_nome
             // 
@@ -149,12 +149,13 @@
             this.Controls.Add(this.pb_wifi);
             this.Controls.Add(this.lb_rs);
             this.Controls.Add(this.lb_detalhe);
-            this.Controls.Add(this.lb_endereco);
+            this.Controls.Add(this.lb_empresa);
             this.Controls.Add(this.lb_nome);
             this.Controls.Add(this.bt_visualizar);
             this.Controls.Add(this.pb_hotel);
             this.Name = "Hosp_PostCard";
             this.Size = new System.Drawing.Size(625, 160);
+            this.Load += new System.EventHandler(this.Hosp_PostCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_wifi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).EndInit();
@@ -170,7 +171,7 @@
         private System.Windows.Forms.Button bt_visualizar;
         private System.Windows.Forms.Label lb_rs;
         private System.Windows.Forms.Label lb_detalhe;
-        private System.Windows.Forms.Label lb_endereco;
+        private System.Windows.Forms.Label lb_empresa;
         private System.Windows.Forms.Label lb_nome;
         private System.Windows.Forms.PictureBox pb_wifi;
         private System.Windows.Forms.PictureBox pb__duo;

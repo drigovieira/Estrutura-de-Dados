@@ -12,6 +12,9 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Hosp_Home : Form
     {
+        private List<Quarto> ListadeQuartos;
+
+        private int y = 5;
         public Hosp_Home()
         {
             InitializeComponent();
@@ -35,10 +38,11 @@ namespace Pont_Finder.hospedagem
                     bt_Cad_Empresa.Visible = false;
                     Btn_Edit_Empresa.Visible = true;
                     bt_gerenciar_quartos.Visible = true;
-
                 }
-
             }
+
+            ListadeQuartos = roomList.Quartos;
+            ListadeQuartos.Reverse();
 
 
         }
@@ -48,6 +52,22 @@ namespace Pont_Finder.hospedagem
         {
             Image image = Image.FromFile("..\\..\\data\\images\\carrousel\\home\\3.png");
             pnl_img.BackgroundImage = image;
+
+            panel_center.Height = 180;
+            int i = 0;
+
+            foreach (var item in ListadeQuartos)
+            {
+                if (i > 8)
+                    break;
+                Hosp_PostCard a = new Hosp_PostCard(item.ID);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                panel_center.Height = panel_center.Height + 180;
+                panel_center.Controls.Add(a);
+                i++;
+            }
+
         }
 
         
@@ -81,6 +101,11 @@ namespace Pont_Finder.hospedagem
         {
             hospedagem.Listas_quartos listaQuartos = new Listas_quartos();
             FormPrincipal.MudarForm("hospedagem", listaQuartos);
+        }
+
+        private void panel_center_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
