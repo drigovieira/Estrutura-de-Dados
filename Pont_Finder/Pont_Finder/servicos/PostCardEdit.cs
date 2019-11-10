@@ -66,9 +66,6 @@ namespace Pont_Finder.servicos
             }               
             else
                 MessageBox.Show("Cancelado");
-
-
-
         }
     }
 }
