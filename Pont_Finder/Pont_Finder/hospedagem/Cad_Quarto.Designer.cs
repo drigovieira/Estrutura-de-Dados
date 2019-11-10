@@ -76,7 +76,7 @@
             this.bt_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cadastrar.ForeColor = System.Drawing.Color.White;
-            this.bt_cadastrar.Location = new System.Drawing.Point(105, 711);
+            this.bt_cadastrar.Location = new System.Drawing.Point(105, 715);
             this.bt_cadastrar.Name = "bt_cadastrar";
             this.bt_cadastrar.Size = new System.Drawing.Size(415, 50);
             this.bt_cadastrar.TabIndex = 6;
@@ -367,7 +367,7 @@
             this.Controls.Add(this.panel3);
             this.Name = "Cad_Quarto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de Quarto";
+            this.Text = "Cad_Quarto";
             this.Load += new System.EventHandler(this.Cad_Quarto_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
