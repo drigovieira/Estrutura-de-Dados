@@ -13,14 +13,11 @@ namespace Pont_Finder.avalie
             desc,
             localizacao,
             tipoproblema,
-<<<<<<< HEAD:Pont_Finder/Pont_Finder/avalie/PostConstructor.cs
 <<<<<<< HEAD:Pont_Finder/Pont_Finder/avalie/classes/PostConstructor.cs
             img,
             nome,
 =======
 >>>>>>> parent of d69ee35... AttReclameBasePronta:Pont_Finder/Pont_Finder/avalie/PostConstructor.cs
-=======
->>>>>>> parent of d69ee35... AttReclameBasePronta:Pont_Finder/Pont_Finder/avalie/classes/PostConstructor.cs
             tempohora;
         private long 
             cpf,
@@ -29,7 +26,6 @@ namespace Pont_Finder.avalie
             ativo;
 
 
-<<<<<<< HEAD:Pont_Finder/Pont_Finder/avalie/PostConstructor.cs
 <<<<<<< HEAD:Pont_Finder/Pont_Finder/avalie/classes/PostConstructor.cs
         public string Nome
         {
@@ -49,8 +45,6 @@ namespace Pont_Finder.avalie
 
 =======
 >>>>>>> parent of d69ee35... AttReclameBasePronta:Pont_Finder/Pont_Finder/avalie/PostConstructor.cs
-=======
->>>>>>> parent of d69ee35... AttReclameBasePronta:Pont_Finder/Pont_Finder/avalie/classes/PostConstructor.cs
         public long Id
         {
             get { return id; }

@@ -3,7 +3,6 @@
   <post>
     <id>0</id>
 <<<<<<< HEAD
-<<<<<<< HEAD
     <nome>admin</nome>
     <img>..//..//avalie//data//imagens//posts//0.jpg</img>
     <cpf>26835036010</cpf>
@@ -12,8 +11,6 @@
     <tipoproblema>Saúde</tipoproblema>
     <localizacao>Tururu</localizacao>
 =======
-=======
->>>>>>> parent of d69ee35... AttReclameBasePronta
     <cpf>47746352863</cpf>
     <tempohora>10/11/2019 12:29</tempohora>
     <desc>RuRuasz</desc>
@@ -28,9 +25,6 @@
     <desc>nadçnasçd</desc>
     <tipoproblema>Segurança</tipoproblema>
     <localizacao>   sua Localicação...naasdo</localizacao>
-<<<<<<< HEAD
->>>>>>> parent of d69ee35... AttReclameBasePronta
-=======
 >>>>>>> parent of d69ee35... AttReclameBasePronta
     <ativo>true</ativo>
   </post>
