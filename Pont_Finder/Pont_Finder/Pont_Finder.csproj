@@ -143,8 +143,9 @@
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="eventos\Classes\CaEmpresa.cs" />
+    <Compile Include="eventos\Classes\CoEvento.cs" />
     <Compile Include="eventos\Classes\Empresa_List.cs" />
-    <Compile Include="eventos\Classes\XmlLi_Eventos.cs" />
+    <Compile Include="eventos\Classes\Eventos_List.cs" />
     <Compile Include="eventos\FormEventos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -433,6 +434,9 @@
     <Content Include="data\empresas.xml" />
     <Content Include="data\images\users\offImage.jpg" />
     <Content Include="data\usuarios.xml" />
+    <Content Include="eventos\Data\Empresa_Eventos.xml" />
+    <Content Include="eventos\Data\imagens\offImage.jpg" />
+    <Content Include="eventos\Data\Postagem_Eventos.xml" />
     <Content Include="hospedagem\data\quartos.xml" />
     <Content Include="servicos\data\images\empresas\offImage.jpg" />
     <Content Include="servicos\data\posts.xml" />

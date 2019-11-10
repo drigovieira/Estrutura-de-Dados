@@ -39,10 +39,11 @@ namespace Pont_Finder.eventos
 
             string p_nomeEmpresa = Bnomeempresa.Text;
             string p_nomeFantasia = Bnomefantasia.Text;
-            string p_cnpj = Bcnpj.Text;
+            long p_cnpj = long.Parse(Bcnpj.Text);
             string p_endereco = Bendereco.Text;
             string p_telefone = Btelefone.Text;
             string p_email = Bemail.Text;
+            string p_senha = Bsenha.Text;
 
 
             
@@ -53,22 +54,16 @@ namespace Pont_Finder.eventos
             postar.Endereco = p_endereco;
             postar.Telefone = p_telefone;
             postar.Email = p_email;
+            postar.Senha = p_senha;
 
 
-            Empresa_List.PostAddEmpresa(postar);
+            postar.Ativo = true;
+
+
+            Empresa_List.PostAdd(postar);
 
             //AvaliePrincipal.Att();
             MessageBox.Show("Post realizado com sucesso!!!");
-
-            foreach (var item in Empresa_List.poster)
-            {
-                testelista.Items.Add(item.Nome);
-                testelista.Items.Add(item.Nome_Fantasia);
-                testelista.Items.Add(item.Cnpj);
-                testelista.Items.Add(item.Endereco);
-                testelista.Items.Add(item.Telefone);
-                testelista.Items.Add(item.Email);
-            }
 
 
         }

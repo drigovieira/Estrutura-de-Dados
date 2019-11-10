@@ -39,8 +39,6 @@ namespace Pont_Finder.avalie
             }
             return pos;
         }
-    
-
 
         public static List<PostConstructor> thisPoster
         {

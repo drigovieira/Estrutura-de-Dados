@@ -52,7 +52,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.testelista = new System.Windows.Forms.ListBox();
+            this.Bsenha = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -186,7 +187,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(155, 482);
+            this.button1.Location = new System.Drawing.Point(164, 548);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 40);
             this.button1.TabIndex = 18;
@@ -218,7 +219,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(350, 482);
+            this.button2.Location = new System.Drawing.Point(341, 548);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 40);
             this.button2.TabIndex = 19;
@@ -267,6 +268,8 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.Bsenha);
+            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.Bemail);
             this.panel3.Controls.Add(this.Bcnpj);
             this.panel3.Controls.Add(this.label4);
@@ -286,13 +289,23 @@
             this.panel3.Size = new System.Drawing.Size(625, 640);
             this.panel3.TabIndex = 34;
             // 
-            // testelista
+            // Bsenha
             // 
-            this.testelista.FormattingEnabled = true;
-            this.testelista.Location = new System.Drawing.Point(951, 755);
-            this.testelista.Name = "testelista";
-            this.testelista.Size = new System.Drawing.Size(265, 173);
-            this.testelista.TabIndex = 37;
+            this.Bsenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bsenha.Location = new System.Drawing.Point(101, 495);
+            this.Bsenha.Name = "Bsenha";
+            this.Bsenha.Size = new System.Drawing.Size(415, 22);
+            this.Bsenha.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(101, 466);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 20);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Senha";
             // 
             // CadEmpresa
             // 
@@ -301,7 +314,6 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.testelista);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label11);
@@ -349,6 +361,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ListBox testelista;
+        private System.Windows.Forms.TextBox Bsenha;
+        private System.Windows.Forms.Label label6;
     }
 }

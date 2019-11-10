@@ -28,6 +28,13 @@ namespace Pont_Finder.classes
             //avalie
             avalie.PostList.XmlLoad();
             //fim avalie
+
+            //eventos
+            eventos.classes.Empresa_List.XmlLoad();
+            eventos.Classes.Eventos_List.XmlLoad();
+            //fim eventos
+
+
         }
 
         public static void Save()
@@ -48,6 +55,12 @@ namespace Pont_Finder.classes
             //avalie
             avalie.PostList.XmlSave();
             //fim avalie
+
+            //eventos
+            eventos.classes.Empresa_List.XmlSave();
+            eventos.Classes.Eventos_List.XmlSave();
+            //fim eventos
+
         }
 
     }

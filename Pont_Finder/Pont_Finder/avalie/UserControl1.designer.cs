@@ -59,6 +59,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(39, 80);
             this.pictureBox1.Name = "pictureBox1";
@@ -79,7 +80,7 @@
             this.panel2.Controls.Add(this.userboxproblema);
             this.panel2.Location = new System.Drawing.Point(336, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(237, 279);
+            this.panel2.Size = new System.Drawing.Size(236, 279);
             this.panel2.TabIndex = 10;
             // 
             // userhora
@@ -149,6 +150,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.NomePos);
             this.panel3.Location = new System.Drawing.Point(-1, -1);
             this.panel3.Name = "panel3";
@@ -159,9 +161,9 @@
             // 
             this.NomePos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NomePos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NomePos.Location = new System.Drawing.Point(82, 11);
+            this.NomePos.Location = new System.Drawing.Point(54, -1);
             this.NomePos.Name = "NomePos";
-            this.NomePos.Size = new System.Drawing.Size(249, 50);
+            this.NomePos.Size = new System.Drawing.Size(285, 60);
             this.NomePos.TabIndex = 0;
             this.NomePos.Text = "NOME";
             // 

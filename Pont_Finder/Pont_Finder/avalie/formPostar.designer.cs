@@ -253,7 +253,7 @@
             // 
             // pb_icone
             // 
-            this.pb_icone.BackColor = System.Drawing.Color.Silver;
+            this.pb_icone.BackColor = System.Drawing.Color.Transparent;
             this.pb_icone.Image = ((System.Drawing.Image)(resources.GetObject("pb_icone.Image")));
             this.pb_icone.Location = new System.Drawing.Point(2, 105);
             this.pb_icone.Name = "pb_icone";

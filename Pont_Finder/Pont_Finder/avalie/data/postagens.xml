@@ -5,21 +5,10 @@
     <nome>admin</nome>
     <img>..//..//avalie//data//imagens//posts//0.jpg</img>
     <cpf>26835036010</cpf>
-    <tempohora>10/11/2019 13:49</tempohora>
-    <desc>Sharigao</desc>
-    <tipoproblema>Saúde</tipoproblema>
-    <localizacao>Tururu</localizacao>
-    <ativo>true</ativo>
-  </post>
-  <post>
-    <id>1</id>
-    <nome>Leonardo Gomes</nome>
-    <img>..//..//avalie//data//imagens//posts//1.jpg</img>
-    <cpf>47746352863</cpf>
-    <tempohora>10/11/2019 15:41</tempohora>
-    <desc>Tá com mt buraco</desc>
+    <tempohora>10/11/2019 18:11</tempohora>
+    <desc>Rua com buraco</desc>
     <tipoproblema>Infraestrutura</tipoproblema>
-    <localizacao>Rua das Gardenias</localizacao>
+    <localizacao>rua das gardenias</localizacao>
     <ativo>true</ativo>
   </post>
 </posts>

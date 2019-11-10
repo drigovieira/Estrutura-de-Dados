@@ -12,6 +12,8 @@ namespace Pont_Finder.eventos
 {
     public partial class FormEventos : Form
     {
+        
+
         public FormEventos()
         {
             InitializeComponent();
@@ -31,6 +33,12 @@ namespace Pont_Finder.eventos
         private void FormEventos_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Post_Eventos outroform = new Post_Eventos();
+            FormPrincipal.MudarForm("Eventos", outroform);
         }
     }
 }
