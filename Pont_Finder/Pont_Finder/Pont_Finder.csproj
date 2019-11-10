@@ -422,9 +422,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="avalie\data\imagens\" />
     <Folder Include="data\images\carrousel\home\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="avalie\data\postagens.xml" />
     <Content Include="data\empresas.xml" />
     <Content Include="data\images\users\offImage.jpg" />
     <Content Include="data\usuarios.xml" />

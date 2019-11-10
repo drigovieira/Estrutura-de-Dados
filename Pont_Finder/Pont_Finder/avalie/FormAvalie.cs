@@ -22,17 +22,32 @@ namespace Pont_Finder
         public FormAvalie()
         {
             local = 5;
+            
+
             InitializeComponent();
-           
+            CarregarPost();
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //formPostar fp = new formPostar();
-            //fp.ShowDialog();
+            if (Session.Online)
+            {
 
-            formPostar f2 = new formPostar(); //be careful on this line!!
-            f2.Show();
+                //formPostar fp = new formPostar();
+                //fp.ShowDialog();
+
+                formPostar f2 = new formPostar(); //be careful on this line!!
+   
+                f2.ShowDialog();
+                FormPrincipal.MudarForm("avalie", new FormAvalie());
+            }
+            else
+            {
+                MessageBox.Show("Loga seu disgrama");
+            }
+
 
 
         }
@@ -49,19 +64,19 @@ namespace Pont_Finder
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UserControl1 t1 = new UserControl1();
-            t1.Location = new Point(0, local);
-            local = local + t1.Height + 5;
+
+            CarregarPost();
+
+          
 
 
-            panel3.Controls.Add(t1);
             /*t1.Top = let * let2;
             let = 24;
             let2 = 24;
             t1.Left = 5;
             leftcontrol = 0;
             leftcontrol = leftcontrol;*/
-            t1.Att();
+       
 
 
         }
@@ -75,6 +90,27 @@ namespace Pont_Finder
         {
             
         }
+
+        public void CarregarPost()
+        {
+            local = 0;
+
+            panel3.Controls.Clear();
+
+            List<PostConstructor> lista = new List<PostConstructor>();
+            lista = PostList.PosterAtivo;
+            lista.Reverse();
+
+            foreach (var item in lista)
+            {
+                UserControl1 t1 = new UserControl1(item.Id);
+                t1.Location = new Point(0, local);
+                local = local + t1.Height + 5;
+                panel3.Controls.Add(t1);
+            }
+
+        }
+
     }
 }
 

@@ -13,36 +13,17 @@ namespace Pont_Finder.avalie
     public partial class UserControl1 : UserControl
     {
 
+        private PostConstructor post;
 
-        
-
-
-        public UserControl1()
+        public UserControl1(long postid)
         {
             InitializeComponent();
-        }
+            post = PostList.PosterId(postid);
 
-
-        public void Att()
-        {
-            
-
-            foreach (var item in PostList.poster)
-            {
-                userhora.Text = (item.Tempohora);
-                userboxproblema.Text = (item.Tipoproblema);
-                userboxlocalizacao.Text = (item.Localizao);
-                userboxdescricao.Text = (item.Desc);
-            }
-
-        }
-
-        public void Del()
-        {
-            userhora.Text = "";
-            userboxproblema.Text = "";
-            userboxlocalizacao.Text = "";
-            userboxdescricao.Text = "";
+            userhora.Text = (post.Tempohora);
+            userboxproblema.Text = (post.Tipoproblema);
+            userboxlocalizacao.Text = (post.Localizacao);
+            userboxdescricao.Text = (post.Desc);
         }
     }
 }

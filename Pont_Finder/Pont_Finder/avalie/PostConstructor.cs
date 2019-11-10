@@ -9,7 +9,38 @@ namespace Pont_Finder.avalie
     class PostConstructor
     {
     
-        private string desc,localizao,tipoproblema,tempohora,modulo;
+        private string
+            desc,
+            localizacao,
+            tipoproblema,
+            tempohora;
+        private long 
+            cpf,
+            id;
+        private bool 
+            ativo;
+
+
+        public long Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        public bool Ativo
+        {
+            get { return ativo; }
+            set { ativo = value; }
+        }
+
+
+
+        public long Cpf
+        {
+            get { return cpf; }
+            set { cpf = value; }
+
+        }
 
         public string Desc
         {
@@ -19,10 +50,10 @@ namespace Pont_Finder.avalie
         }
         
 
-        public string Localizao
+        public string Localizacao
         {
-            get { return localizao; }
-            set { localizao = value; }
+            get { return localizacao; }
+            set { localizacao = value; }
         }
 
         public string Tipoproblema
@@ -38,11 +69,7 @@ namespace Pont_Finder.avalie
             set { tempohora = value; }
         }
 
-        public string Modulo
-        {
-            get { return modulo; }
-            set { modulo = value; }
-        }
+        
 
     }
 }

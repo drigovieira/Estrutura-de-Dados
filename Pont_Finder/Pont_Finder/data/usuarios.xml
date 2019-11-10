@@ -24,4 +24,12 @@
     <image>..//..//data//images//users//45850930876.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Leonardo Gomes</nome>
+    <email>Leozinho@gmail.com</email>
+    <senha>123</senha>
+    <cpf>47746352863</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

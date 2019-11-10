@@ -24,6 +24,10 @@ namespace Pont_Finder.classes
             hospedagem.hostList.CarregarXML();
             hospedagem.roomList.CarregarXML();
             //fim hospedagem
+
+            //avalie
+            avalie.PostList.XmlLoad();
+            //fim avalie
         }
 
         public static void Save()
@@ -40,6 +44,10 @@ namespace Pont_Finder.classes
             hospedagem.hostList.XmlSave();
             hospedagem.roomList.XmlSave();
             //fim hospedagem
+
+            //avalie
+            avalie.PostList.XmlSave();
+            //fim avalie
         }
 
     }

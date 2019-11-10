@@ -22,7 +22,7 @@ namespace Pont_Finder.avalie
     {
 
         FormAvalie AvaliePrincipal = new FormAvalie();
-        UserControl1 t1 = new UserControl1();
+
 
 
         public formPostar()
@@ -138,10 +138,13 @@ namespace Pont_Finder.avalie
                 string post_localizao = txtLocalizacao.Text;
                 string post_descricao = richTextBox1.Text;
 
+                post.Cpf = Session.Cpf;
+                post.Id = PostList.Poster.Count();
                 post.Tempohora = post_Tempohora;
                 post.Tipoproblema = post_problema;
-                post.Localizao = post_localizao;
+                post.Localizacao = post_localizao;
                 post.Desc = post_descricao;
+                post.Ativo = true;
 
                 PostList.PostAdd(post);
 
