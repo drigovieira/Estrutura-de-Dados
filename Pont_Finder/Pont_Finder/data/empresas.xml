@@ -27,4 +27,20 @@
     <ambiente>  Estacionamento  Piscina  Academia</ambiente>
     <status>true</status>
   </hospedagem>
+  <hospedagem>
+    <admin>42750892864</admin>
+    <nomeempresa>Ibis Hotel</nomeempresa>
+    <nomefantasia>Ibis Hotel</nomefantasia>
+    <cnpj>74571312354535</cnpj>
+    <endereco>rua bla bla bla n xxx</endereco>
+    <cep>12321321</cep>
+    <telefone>123123213</telefone>
+    <email>admin@ibis.com</email>
+    <foto> * ..//..//hospedagem//data//images//empresas//74571312354535//empresa//0.jpg</foto>
+    <tipo>Hotel</tipo>
+    <estrelas>3</estrelas>
+    <descricao>Mesmo ibis de sempre</descricao>
+    <ambiente>  Estacionamento</ambiente>
+    <status>true</status>
+  </hospedagem>
 </modulos>

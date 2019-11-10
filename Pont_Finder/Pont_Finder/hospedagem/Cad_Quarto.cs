@@ -174,7 +174,14 @@ namespace Pont_Finder.hospedagem
             quarto.Ativo = ativo;
 
             roomList.addQuarto(quarto);
-            
+
+            MessageBox.Show("O quarto: " + nome + " foi cadastrado com Sucesso!");
+
+            this.Close();
+
+            hospedagem.Hosp_Home hp = new Hosp_Home();
+            FormPrincipal.MudarForm("hospedagem", hp);
+
         }
     }
 }
