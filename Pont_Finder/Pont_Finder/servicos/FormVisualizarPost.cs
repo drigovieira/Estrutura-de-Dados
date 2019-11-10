@@ -84,10 +84,5 @@ namespace Pont_Finder.servicos
         {
             FormPrincipal.MudarForm("servicos", anterior);
         }
-
-        private void pb_empresa_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

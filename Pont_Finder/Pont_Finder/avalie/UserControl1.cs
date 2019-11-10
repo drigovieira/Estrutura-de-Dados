@@ -20,7 +20,6 @@ namespace Pont_Finder.avalie
             InitializeComponent();
             post = PostList.PosterId(postid);
 
-            NomePos.Text = (post.Nome);
             userhora.Text = (post.Tempohora);
             userboxproblema.Text = (post.Tipoproblema);
             userboxlocalizacao.Text = (post.Localizacao);
