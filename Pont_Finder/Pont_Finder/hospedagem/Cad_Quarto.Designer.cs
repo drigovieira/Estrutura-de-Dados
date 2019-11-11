@@ -306,7 +306,7 @@
             // 
             // bt_cadastrar
             // 
-            this.bt_cadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_cadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
             this.bt_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cadastrar.ForeColor = System.Drawing.Color.White;

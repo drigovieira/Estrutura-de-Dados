@@ -69,6 +69,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.Btn_Edit_Empresa = new System.Windows.Forms.Button();
             this.bt_gerenciar_quartos = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel10.SuspendLayout();
             this.pnl_img.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -528,6 +529,14 @@
             this.bt_gerenciar_quartos.UseVisualStyleBackColor = false;
             this.bt_gerenciar_quartos.Click += new System.EventHandler(this.bt_gerenciar_quartos_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 1076);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1265, 100);
+            this.panel1.TabIndex = 44;
+            // 
             // Hosp_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -535,6 +544,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.bt_gerenciar_quartos);
             this.Controls.Add(this.Btn_Edit_Empresa);
             this.Controls.Add(this.label16);
@@ -617,5 +627,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button Btn_Edit_Empresa;
         private System.Windows.Forms.Button bt_gerenciar_quartos;
+        private System.Windows.Forms.Panel panel1;
     }
 }
