@@ -20,7 +20,7 @@ namespace Pont_Finder.hospedagem
         private void button4_Click(object sender, EventArgs e)
         {
             hospedagem.Cad_Quarto cadQuarto = new Cad_Quarto();
-            cadQuarto.ShowDialog();
+            FormPrincipal.MudarForm("hospedagem", cadQuarto); 
         }
 
         private void Listas_quartos_Load(object sender, EventArgs e)

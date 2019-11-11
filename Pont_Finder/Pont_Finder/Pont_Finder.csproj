@@ -200,6 +200,12 @@
     <Compile Include="hospedagem\Cad_Quarto.Designer.cs">
       <DependentUpon>Cad_Quarto.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\Card_list_quarto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Card_list_quarto.Designer.cs">
+      <DependentUpon>Card_list_quarto.cs</DependentUpon>
+    </Compile>
     <Compile Include="hospedagem\classes\Empresa.cs" />
     <Compile Include="hospedagem\classes\hostList.cs" />
     <Compile Include="hospedagem\classes\Quarto.cs" />
@@ -358,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Cad_Quarto.resx">
       <DependentUpon>Cad_Quarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Card_list_quarto.resx">
+      <DependentUpon>Card_list_quarto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Hosp_Home.resx">
       <DependentUpon>Hosp_Home.cs</DependentUpon>
