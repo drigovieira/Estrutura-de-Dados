@@ -15,35 +15,16 @@ namespace Pont_Finder.servicos
     {
         private classes.Post post;
 
-       
-        private long like;
-        private long deslike;
-
-
-
-
-
-
-        Bitmap up = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
-     
+        Bitmap up = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");    
         Bitmap down = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
         Bitmap upv = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
         Bitmap downv = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
 
-
         public PostCard(int id)
         {
             this.post = classes.PostList.thisSelectId(id);
-
-
-            classes.Post post = new classes.Post();
-            post = classes.PostList.SelectId(id);
-           
-
-
-       
+            
             InitializeComponent();
-
 
             if (this.post.Image != null)
                 pb_icone.ImageLocation = this.post.Image;
@@ -51,7 +32,6 @@ namespace Pont_Finder.servicos
                 pb_icone.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
 
    
-
             lb_like.Text = this.post.Joinha + "";
             lb_deslike.Text = this.post.DeJoinha + "";
 
@@ -70,15 +50,11 @@ namespace Pont_Finder.servicos
            
 
             lb_data.Text = "Postado em: " + this.post.Data;
-
             lb_titulo.Text = this.post.Titulo;
             lb_descricao.Text = this.post.Descricao;
             lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.post.Valor);
 
-
-
         }
-
 
 
         private void PictureBox1_Click(object sender, EventArgs e)
@@ -90,9 +66,7 @@ namespace Pont_Finder.servicos
         {
 
         }
-
-      
-
+     
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             // Dar Um Like
@@ -112,7 +86,6 @@ namespace Pont_Finder.servicos
                 }
                 lb_like.Text = "" + post.Joinha;
                 lb_deslike.Text = "" + post.DeJoinha;
-
 
             }
             else
