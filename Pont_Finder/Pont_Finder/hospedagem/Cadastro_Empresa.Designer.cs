@@ -178,6 +178,7 @@
             this.mkb_cnpj.Size = new System.Drawing.Size(415, 22);
             this.mkb_cnpj.TabIndex = 3;
             this.mkb_cnpj.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mkb_cnpj.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.Mkb_cnpj_MaskInputRejected);
             // 
             // tb_email
             // 

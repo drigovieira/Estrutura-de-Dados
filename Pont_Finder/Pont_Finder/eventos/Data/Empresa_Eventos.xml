@@ -4,7 +4,6 @@
     <nome>LLLL</nome>
     <nome_fantasia>LLLL</nome_fantasia>
     <email>GG</email>
-    <senha>GG</senha>
     <cnpj>777777</cnpj>
     <telefone>LL</telefone>
     <endereco>LL</endereco>
@@ -14,7 +13,6 @@
     <nome>ANANA</nome>
     <nome_fantasia>ANANALL</nome_fantasia>
     <email>FEUBJBEW</email>
-    <senha>TI7F7IUKF</senha>
     <cnpj>123456</cnpj>
     <telefone>12345678</telefone>
     <endereco>NNNNNN</endereco>
@@ -24,7 +22,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -34,7 +31,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -44,7 +40,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -54,7 +49,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -64,7 +58,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -74,7 +67,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -84,7 +76,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -94,7 +85,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -104,7 +94,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -114,7 +103,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -124,7 +112,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -134,7 +121,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -144,7 +130,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -154,7 +139,6 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
@@ -164,10 +148,45 @@
     <nome>safdasdf</nome>
     <nome_fantasia>sfasfda</nome_fantasia>
     <email>fasfas</email>
-    <senha>1234</senha>
     <cnpj>1232165</cnpj>
     <telefone>16513</telefone>
     <endereco>fasdfas</endereco>
+    <ativo>true</ativo>
+  </EMPRESA>
+  <EMPRESA>
+    <nome>dfdsdffsdsdf</nome>
+    <nome_fantasia>sdfffsdfsdfsdf</nome_fantasia>
+    <email>sadsdasadsadasd</email>
+    <cnpj>12345678901234</cnpj>
+    <telefone>123456789</telefone>
+    <endereco>fsdffsdfsdsfd</endereco>
+    <ativo>true</ativo>
+  </EMPRESA>
+  <EMPRESA>
+    <nome>dsasdasdad</nome>
+    <nome_fantasia>sfdsdfasfafsdasdf</nome_fantasia>
+    <email>gdfdfgdfgdfgdfgg</email>
+    <cnpj>12345678901234</cnpj>
+    <telefone>12981894115</telefone>
+    <endereco>fdsdfsdfsdffsd</endereco>
+    <ativo>true</ativo>
+  </EMPRESA>
+  <EMPRESA>
+    <nome>dfsfdfsdfsdsdf</nome>
+    <nome_fantasia>fasdsdfsdfsdf</nome_fantasia>
+    <email>fgdfggdfdfgdfgdfg</email>
+    <cnpj>12345678900000</cnpj>
+    <telefone>11111111111</telefone>
+    <endereco>gsdfdggdfgdf</endereco>
+    <ativo>true</ativo>
+  </EMPRESA>
+  <EMPRESA>
+    <nome>sfasdfsdfsdf</nome>
+    <nome_fantasia>asdfsdfasdfsdf</nome_fantasia>
+    <email>dfsdfsdfsdfsdff</email>
+    <cnpj>11111111111111</cnpj>
+    <telefone>11111111111</telefone>
+    <endereco>dfsdfsffsdfsdf</endereco>
     <ativo>true</ativo>
   </EMPRESA>
 </CADEMPRESA>

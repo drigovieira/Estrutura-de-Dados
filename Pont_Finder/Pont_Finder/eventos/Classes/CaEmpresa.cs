@@ -11,7 +11,6 @@ namespace Pont_Finder.eventos.classes
         private string nome;
         private string nome_fantasia;
         private string email;
-       
         private long cnpj;
         private string telefone;
         private string endereco;

@@ -34,9 +34,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Bemail = new System.Windows.Forms.TextBox();
-            this.Bcnpj = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.Btelefone = new System.Windows.Forms.TextBox();
             this.Bnomefantasia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Bendereco = new System.Windows.Forms.TextBox();
@@ -52,6 +50,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.mkb_cnpj = new System.Windows.Forms.MaskedTextBox();
+            this.mkb_telefone = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -97,14 +97,6 @@
             this.Bemail.Size = new System.Drawing.Size(415, 22);
             this.Bemail.TabIndex = 6;
             // 
-            // Bcnpj
-            // 
-            this.Bcnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bcnpj.Location = new System.Drawing.Point(105, 200);
-            this.Bcnpj.Name = "Bcnpj";
-            this.Bcnpj.Size = new System.Drawing.Size(415, 22);
-            this.Bcnpj.TabIndex = 10;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -114,14 +106,6 @@
             this.label4.Size = new System.Drawing.Size(86, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Endereço";
-            // 
-            // Btelefone
-            // 
-            this.Btelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btelefone.Location = new System.Drawing.Point(105, 342);
-            this.Btelefone.Name = "Btelefone";
-            this.Btelefone.Size = new System.Drawing.Size(415, 22);
-            this.Btelefone.TabIndex = 15;
             // 
             // Bnomefantasia
             // 
@@ -210,6 +194,7 @@
             this.Bnomeempresa.Name = "Bnomeempresa";
             this.Bnomeempresa.Size = new System.Drawing.Size(415, 22);
             this.Bnomeempresa.TabIndex = 2;
+            this.Bnomeempresa.TextChanged += new System.EventHandler(this.Bnomeempresa_TextChanged);
             // 
             // button2
             // 
@@ -266,10 +251,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.mkb_telefone);
+            this.panel3.Controls.Add(this.mkb_cnpj);
             this.panel3.Controls.Add(this.Bemail);
-            this.panel3.Controls.Add(this.Bcnpj);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.Btelefone);
             this.panel3.Controls.Add(this.Bnomefantasia);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.Bendereco);
@@ -284,6 +269,24 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(625, 640);
             this.panel3.TabIndex = 34;
+            // 
+            // mkb_cnpj
+            // 
+            this.mkb_cnpj.Location = new System.Drawing.Point(109, 210);
+            this.mkb_cnpj.Mask = "99.999.999/9999-99";
+            this.mkb_cnpj.Name = "mkb_cnpj";
+            this.mkb_cnpj.Size = new System.Drawing.Size(411, 20);
+            this.mkb_cnpj.TabIndex = 20;
+            this.mkb_cnpj.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // mkb_telefone
+            // 
+            this.mkb_telefone.Location = new System.Drawing.Point(105, 358);
+            this.mkb_telefone.Mask = "(99) 0000-00000";
+            this.mkb_telefone.Name = "mkb_telefone";
+            this.mkb_telefone.Size = new System.Drawing.Size(415, 20);
+            this.mkb_telefone.TabIndex = 21;
+            this.mkb_telefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // CadEmpresa
             // 
@@ -321,9 +324,7 @@
         private System.Windows.Forms.Label label10;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox Bemail;
-        private System.Windows.Forms.TextBox Bcnpj;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox Btelefone;
         private System.Windows.Forms.TextBox Bnomefantasia;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Bendereco;
@@ -339,5 +340,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.MaskedTextBox mkb_cnpj;
+        private System.Windows.Forms.MaskedTextBox mkb_telefone;
     }
 }

@@ -252,5 +252,10 @@ namespace Pont_Finder.hospedagem
                 }
             }
         }
+
+        private void Mkb_cnpj_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

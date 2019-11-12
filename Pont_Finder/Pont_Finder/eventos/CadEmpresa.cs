@@ -39,9 +39,9 @@ namespace Pont_Finder.eventos
 
             string p_nomeEmpresa = Bnomeempresa.Text;
             string p_nomeFantasia = Bnomefantasia.Text;
-            long p_cnpj = long.Parse(Bcnpj.Text);
+            long p_cnpj = long.Parse(mkb_cnpj.Text);
             string p_endereco = Bendereco.Text;
-            string p_telefone = Btelefone.Text;
+            string p_telefone = mkb_telefone.Text;
             string p_email = Bemail.Text;
             //string p_senha = Bsenha.Text;
 
@@ -63,8 +63,16 @@ namespace Pont_Finder.eventos
             Empresa_List.PostAdd(postar);
 
             //AvaliePrincipal.Att();
-            MessageBox.Show("Post realizado com sucesso!!!");
+            MessageBox.Show("Cadastro realizado com sucesso!!!");
 
+            eventos.ListEvent listagem = new eventos.ListEvent();
+            FormPrincipal.MudarForm("eventos", listagem);
+
+
+        }
+
+        private void Bnomeempresa_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
