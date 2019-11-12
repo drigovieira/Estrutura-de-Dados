@@ -13,10 +13,16 @@ namespace Pont_Finder.hospedagem
     public partial class Hosp_Home : Form
     {
         private List<Quarto> ListadeQuartos;
+        private int pagTotal;
+        private int pagAtual;
+        private int pagQuant = 8;
 
         private int y = 5;
         public Hosp_Home()
         {
+            //Quantidades de Cards
+            pagQuant = 8;
+
             InitializeComponent();
 
             bt_Cad_Empresa.Visible = true;
@@ -41,8 +47,24 @@ namespace Pont_Finder.hospedagem
                 }
             }
 
+            
+
             ListadeQuartos = roomList.Quartos;
             ListadeQuartos.Reverse();
+
+            pagTotal = ListadeQuartos.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
 
 
         }
@@ -58,7 +80,7 @@ namespace Pont_Finder.hospedagem
 
             foreach (var item in ListadeQuartos)
             {
-                if (i > 8)
+                if (i >= pagQuant)
                     break;
                 Hosp_PostCard a = new Hosp_PostCard(item.ID);
                 a.Location = new Point(0, (y));
@@ -106,6 +128,111 @@ namespace Pont_Finder.hospedagem
         private void panel_center_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void bt_prox_Click(object sender, EventArgs e)
+        {
+
+            if (pagAtual < pagTotal)
+            {
+                y = 5;
+                panel_center.Height = 180;
+                panel_center.Controls.Clear();
+
+                int pg = (pagAtual * pagQuant);
+
+                for (int i = 0; i < pagQuant; i++)
+                {
+                    if (pg + i < ListadeQuartos.Count)
+                    {
+                        Hosp_PostCard a = new Hosp_PostCard(ListadeQuartos[pg + i].ID);
+                        a.Location = new Point(0, (y));
+                        y = y + a.Height + 5;
+                        panel_center.Height = panel_center.Height + 180;
+                        panel_center.Controls.Add(a);
+                    }
+
+                }
+
+                pagAtual++;
+                lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+            }
+
+        }
+
+        private void bt_ant_Click(object sender, EventArgs e)
+        {
+            if (pagAtual > 1)
+            {
+                y = 5;
+                panel_center.Height = 180;
+                panel_center.Controls.Clear();
+
+                int pg = ((pagAtual - 2) * pagQuant);
+
+                for (int i = 0; i < pagQuant; i++)
+                {
+                    if (pg + i < ListadeQuartos.Count)
+                    {
+                        Hosp_PostCard a = new Hosp_PostCard(ListadeQuartos[pg + i].ID);
+                        a.Location = new Point(0, (y));
+                        y = y + a.Height + 5;
+                        panel_center.Height = panel_center.Height + 180;
+                        panel_center.Controls.Add(a);
+                    }
+                }
+                pagAtual--;
+
+                lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+            }
+
+        }
+
+        private void bt_pesquisar_Click(object sender, EventArgs e)
+        {
+
+            ListadeQuartos.Clear();
+            foreach (var item in roomList.Quartos)
+            {
+                if (item.NomeQuarto.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                {
+                    ListadeQuartos.Add(item);
+                }
+            }
+
+            y = 5;
+            panel_center.Height = 180;
+            panel_center.Controls.Clear();
+            int i = 0;
+
+            ListadeQuartos.Reverse();
+
+            pagTotal = ListadeQuartos.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
+            foreach (var item in ListadeQuartos)
+            {
+                if (i >= pagQuant)
+                    break;
+                Hosp_PostCard a = new Hosp_PostCard(item.ID);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                panel_center.Height = panel_center.Height + 180;
+                panel_center.Controls.Add(a);
+                i++;
+            }
         }
     }
 }

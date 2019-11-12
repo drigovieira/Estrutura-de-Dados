@@ -81,8 +81,11 @@ namespace Pont_Finder.servicos
 
             lb_data.Text = "Postado em: " + data;
 
+            lb_titulo.Text = this.titulo;
+            lb_descricao.Text = this.descricao;
+            lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
 
-            
+
 
         }
 
@@ -109,9 +112,7 @@ namespace Pont_Finder.servicos
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
-            lb_titulo.Text = this.titulo;
-            lb_descricao.Text = this.descricao;
-            lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
+          
 
            
 
@@ -230,6 +231,11 @@ namespace Pont_Finder.servicos
                 lb_username.Text = emp.Nome;
 
             }
+
+        }
+
+        private void lb_titulo_Click(object sender, EventArgs e)
+        {
 
         }
     }

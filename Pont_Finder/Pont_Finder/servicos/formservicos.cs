@@ -103,7 +103,8 @@ namespace Pont_Finder.servicos
             if (tb_pesquisar.Text.Equals("!log"))
             {
                 Session.Login("admin", "admin");
-                FormPrincipal.MudarForm("servicos", new FormServicos());
+                FormPrincipal.MudarForm("servicos", new FormServicos());               
+
             }
 
 
@@ -231,6 +232,16 @@ namespace Pont_Finder.servicos
         }
 
         private void Tb_pesquisar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_center_Paint(object sender, PaintEventArgs e)
         {
 
         }

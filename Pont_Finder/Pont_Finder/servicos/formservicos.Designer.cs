@@ -32,7 +32,6 @@
             this.panel_right = new System.Windows.Forms.Panel();
             this.panel_left = new System.Windows.Forms.Panel();
             this.pb_pesquisar = new System.Windows.Forms.PictureBox();
-            this.tb_pesquisar = new System.Windows.Forms.TextBox();
             this.bt_solicitar = new System.Windows.Forms.Button();
             this.bt_cadEmpresa = new System.Windows.Forms.Button();
             this.bt_publicar = new System.Windows.Forms.Button();
@@ -40,13 +39,15 @@
             this.bt_gerenciar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel_center = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.bt_ant = new System.Windows.Forms.Button();
             this.bt_prox = new System.Windows.Forms.Button();
             this.lb_pag = new System.Windows.Forms.Label();
+            this.panel_center = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tb_pesquisar = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -55,48 +56,33 @@
             // 
             // panel_right
             // 
-            this.panel_right.BackColor = System.Drawing.Color.Transparent;
-            this.panel_right.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_right.Location = new System.Drawing.Point(950, 278);
+            this.panel_right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.panel_right.Location = new System.Drawing.Point(950, 282);
             this.panel_right.Name = "panel_right";
             this.panel_right.Size = new System.Drawing.Size(304, 259);
             this.panel_right.TabIndex = 16;
             // 
             // panel_left
             // 
-            this.panel_left.BackColor = System.Drawing.Color.Transparent;
-            this.panel_left.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel_left.Controls.Add(this.pb_pesquisar);
             this.panel_left.Controls.Add(this.tb_pesquisar);
-            this.panel_left.Location = new System.Drawing.Point(5, 278);
+            this.panel_left.Location = new System.Drawing.Point(5, 282);
             this.panel_left.Name = "panel_left";
             this.panel_left.Size = new System.Drawing.Size(310, 259);
             this.panel_left.TabIndex = 15;
             // 
             // pb_pesquisar
             // 
+            this.pb_pesquisar.BackColor = System.Drawing.Color.White;
             this.pb_pesquisar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_pesquisar.BackgroundImage")));
             this.pb_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_pesquisar.Location = new System.Drawing.Point(257, 25);
+            this.pb_pesquisar.Location = new System.Drawing.Point(262, 28);
             this.pb_pesquisar.Name = "pb_pesquisar";
-            this.pb_pesquisar.Size = new System.Drawing.Size(35, 35);
+            this.pb_pesquisar.Size = new System.Drawing.Size(30, 30);
             this.pb_pesquisar.TabIndex = 1;
             this.pb_pesquisar.TabStop = false;
             this.pb_pesquisar.Click += new System.EventHandler(this.PictureBox1_Click);
-            // 
-            // tb_pesquisar
-            // 
-            this.tb_pesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_pesquisar.ForeColor = System.Drawing.Color.DarkGray;
-            this.tb_pesquisar.Location = new System.Drawing.Point(13, 23);
-            this.tb_pesquisar.Name = "tb_pesquisar";
-            this.tb_pesquisar.Size = new System.Drawing.Size(283, 40);
-            this.tb_pesquisar.TabIndex = 0;
-            this.tb_pesquisar.Tag = "";
-            this.tb_pesquisar.Text = "Pesquisar";
-            this.tb_pesquisar.TextChanged += new System.EventHandler(this.Tb_pesquisar_TextChanged);
-            this.tb_pesquisar.Enter += new System.EventHandler(this.Tb_pesquisa_Enter);
-            this.tb_pesquisar.Leave += new System.EventHandler(this.Tb_pesquisa_Leave);
             // 
             // bt_solicitar
             // 
@@ -162,43 +148,20 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 683);
+            this.panel2.Location = new System.Drawing.Point(0, 575);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1265, 100);
+            this.panel2.Size = new System.Drawing.Size(1282, 100);
             this.panel2.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(420, 219);
+            this.label1.Location = new System.Drawing.Point(420, 208);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(384, 31);
             this.label1.TabIndex = 36;
             this.label1.Text = "Veja o que temos para você!";
-            // 
-            // panel_center
-            // 
-            this.panel_center.AutoScroll = true;
-            this.panel_center.BackColor = System.Drawing.Color.Transparent;
-            this.panel_center.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_center.Location = new System.Drawing.Point(320, 278);
-            this.panel_center.MaximumSize = new System.Drawing.Size(625, 405);
-            this.panel_center.MinimumSize = new System.Drawing.Size(625, 405);
-            this.panel_center.Name = "panel_center";
-            this.panel_center.Size = new System.Drawing.Size(625, 405);
-            this.panel_center.TabIndex = 17;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(643, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 54);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "label2";
             // 
             // panel3
             // 
@@ -208,6 +171,57 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1265, 150);
             this.panel3.TabIndex = 38;
+            // 
+            // bt_ant
+            // 
+            this.bt_ant.BackColor = System.Drawing.Color.Transparent;
+            this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ant.ForeColor = System.Drawing.Color.Black;
+            this.bt_ant.Location = new System.Drawing.Point(320, 254);
+            this.bt_ant.Name = "bt_ant";
+            this.bt_ant.Size = new System.Drawing.Size(75, 23);
+            this.bt_ant.TabIndex = 39;
+            this.bt_ant.Text = "<<";
+            this.bt_ant.UseVisualStyleBackColor = false;
+            this.bt_ant.Click += new System.EventHandler(this.Bt_ant_Click);
+            // 
+            // bt_prox
+            // 
+            this.bt_prox.BackColor = System.Drawing.Color.Transparent;
+            this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_prox.ForeColor = System.Drawing.Color.Black;
+            this.bt_prox.Location = new System.Drawing.Point(870, 254);
+            this.bt_prox.Name = "bt_prox";
+            this.bt_prox.Size = new System.Drawing.Size(75, 23);
+            this.bt_prox.TabIndex = 40;
+            this.bt_prox.Text = ">>";
+            this.bt_prox.UseVisualStyleBackColor = false;
+            this.bt_prox.Click += new System.EventHandler(this.Bt_prox_Click);
+            // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.Location = new System.Drawing.Point(608, 256);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(39, 13);
+            this.lb_pag.TabIndex = 41;
+            this.lb_pag.Text = "lb_pag";
+            // 
+            // panel_center
+            // 
+            this.panel_center.AutoSize = true;
+            this.panel_center.BackColor = System.Drawing.Color.Transparent;
+            this.panel_center.Location = new System.Drawing.Point(320, 277);
+            this.panel_center.MaximumSize = new System.Drawing.Size(625, 0);
+            this.panel_center.MinimumSize = new System.Drawing.Size(625, 0);
+            this.panel_center.Name = "panel_center";
+            this.panel_center.Size = new System.Drawing.Size(625, 0);
+            this.panel_center.TabIndex = 17;
+            this.panel_center.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_center_Paint);
             // 
             // label3
             // 
@@ -221,34 +235,40 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Aproveite nossos serviços!";
             // 
-            // bt_ant
+            // tb_pesquisar
             // 
-            this.bt_ant.Location = new System.Drawing.Point(320, 254);
-            this.bt_ant.Name = "bt_ant";
-            this.bt_ant.Size = new System.Drawing.Size(75, 23);
-            this.bt_ant.TabIndex = 39;
-            this.bt_ant.Text = "<<";
-            this.bt_ant.UseVisualStyleBackColor = true;
-            this.bt_ant.Click += new System.EventHandler(this.Bt_ant_Click);
+            this.tb_pesquisar.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_pesquisar.ForeColor = System.Drawing.Color.DarkGray;
+            this.tb_pesquisar.Location = new System.Drawing.Point(13, 23);
+            this.tb_pesquisar.Name = "tb_pesquisar";
+            this.tb_pesquisar.Size = new System.Drawing.Size(283, 40);
+            this.tb_pesquisar.TabIndex = 0;
+            this.tb_pesquisar.Tag = "";
+            this.tb_pesquisar.Text = "Pesquisar";
+            this.tb_pesquisar.TextChanged += new System.EventHandler(this.Tb_pesquisar_TextChanged);
+            this.tb_pesquisar.Enter += new System.EventHandler(this.Tb_pesquisa_Enter);
+            this.tb_pesquisar.Leave += new System.EventHandler(this.Tb_pesquisa_Leave);
             // 
-            // bt_prox
+            // label5
             // 
-            this.bt_prox.Location = new System.Drawing.Point(870, 254);
-            this.bt_prox.Name = "bt_prox";
-            this.bt_prox.Size = new System.Drawing.Size(75, 23);
-            this.bt_prox.TabIndex = 40;
-            this.bt_prox.Text = ">>";
-            this.bt_prox.UseVisualStyleBackColor = true;
-            this.bt_prox.Click += new System.EventHandler(this.Bt_prox_Click);
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 243);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 36);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Pesquisar";
             // 
-            // lb_pag
+            // label16
             // 
-            this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(614, 264);
-            this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(39, 13);
-            this.lb_pag.TabIndex = 41;
-            this.lb_pag.Text = "lb_pag";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(1039, 243);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(144, 36);
+            this.label16.TabIndex = 43;
+            this.label16.Text = "Top 5 Serviços";
             // 
             // FormServicos
             // 
@@ -257,11 +277,12 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.bt_ant);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -289,20 +310,21 @@
         private System.Windows.Forms.Panel panel_right;
         private System.Windows.Forms.PictureBox pb_pesquisar;
         private System.Windows.Forms.Panel panel_left;
-        private System.Windows.Forms.TextBox tb_pesquisar;
         private System.Windows.Forms.Button bt_publicar;
         private System.Windows.Forms.Button bt_cadEmpresa;
         private System.Windows.Forms.Button bt_solicitar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel_center;
         private System.Windows.Forms.Button bt_gerenciar;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bt_ant;
         private System.Windows.Forms.Button bt_prox;
+        private System.Windows.Forms.TextBox tb_pesquisar;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lb_pag;
+        private System.Windows.Forms.Panel panel_center;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label16;
     }
 }
