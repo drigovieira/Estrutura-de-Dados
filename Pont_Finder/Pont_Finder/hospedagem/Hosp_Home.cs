@@ -72,8 +72,8 @@ namespace Pont_Finder.hospedagem
 
         private void Hosp_Home_Load(object sender, EventArgs e)
         {
-            Image image = Image.FromFile("..\\..\\data\\images\\carrousel\\home\\3.png");
-            pnl_img.BackgroundImage = image;
+
+            pnl_img.BackgroundImage = Image.FromFile("..\\..\\data\\images\\carrousel\\home\\3.png");
 
             panel_center.Height = 180;
             int i = 0;

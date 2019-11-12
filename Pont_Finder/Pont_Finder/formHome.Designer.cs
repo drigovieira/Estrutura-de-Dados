@@ -250,6 +250,7 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "formHome";
             this.Text = "formHome";
+            this.Load += new System.EventHandler(this.formHome_Load);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

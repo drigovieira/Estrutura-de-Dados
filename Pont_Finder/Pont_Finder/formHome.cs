@@ -48,5 +48,10 @@ namespace Pont_Finder
         {
 
         }
+
+        private void formHome_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
