@@ -43,7 +43,7 @@ namespace Pont_Finder.eventos
             string p_endereco = Bendereco.Text;
             string p_telefone = Btelefone.Text;
             string p_email = Bemail.Text;
-            string p_senha = Bsenha.Text;
+            //string p_senha = Bsenha.Text;
 
 
             
@@ -54,7 +54,7 @@ namespace Pont_Finder.eventos
             postar.Endereco = p_endereco;
             postar.Telefone = p_telefone;
             postar.Email = p_email;
-            postar.Senha = p_senha;
+            //postar.Senha = p_senha;
 
 
             postar.Ativo = true;
