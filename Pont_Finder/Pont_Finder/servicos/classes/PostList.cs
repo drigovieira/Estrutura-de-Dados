@@ -59,6 +59,11 @@ namespace Pont_Finder.servicos.classes
             return posts[id];
         }
 
+        public static Post thisSelectId(int id)
+        {
+            return posts[id];
+        }
+
         public static void XmlLoad()
         {
             XmiLi_Post xmlLi = new XmiLi_Post();
