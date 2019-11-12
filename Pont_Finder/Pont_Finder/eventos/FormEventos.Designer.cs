@@ -262,7 +262,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Plum;
+            this.panel2.BackColor = System.Drawing.Color.Orchid;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.textBox3);

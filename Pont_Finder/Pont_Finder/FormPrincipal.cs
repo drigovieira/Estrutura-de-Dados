@@ -122,7 +122,7 @@ namespace Pont_Finder
                     }
                     painel.Controls.Add(fEvent);
                     fEvent.Show();
-                    navbar.BackColor = Color.FromArgb(120, 88, 210);
+                    navbar.BackColor = Color.FromArgb(128, 0, 128);
                     break;
                 case "Reclame":
                     FormAvalie formAvalie = new FormAvalie();
@@ -167,7 +167,7 @@ namespace Pont_Finder
                     navbar.BackColor = Color.FromArgb(69, 172, 20);
                     break;
                 case "eventos":
-                    navbar.BackColor = Color.FromArgb(120, 88, 210);
+                    navbar.BackColor = Color.FromArgb(128, 0, 128);
                     break;
                 case "reclame":                
                     navbar.BackColor = Color.DeepSkyBlue;
