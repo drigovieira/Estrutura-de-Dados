@@ -58,7 +58,7 @@
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-09T22:15:32.532021-03:00</data>
-    <likes></likes>
+    <likes>0,26835036010</likes>
   </Post>
   <Post>
     <id>5</id>
@@ -70,7 +70,7 @@
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-09T22:21:16.0622085-03:00</data>
-    <likes></likes>
+    <likes>-1,26835036010</likes>
   </Post>
   <Post>
     <id>6</id>
@@ -82,7 +82,7 @@
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-09T22:22:09.8103161-03:00</data>
-    <likes></likes>
+    <likes>-1,26835036010</likes>
   </Post>
   <Post>
     <id>7</id>
@@ -94,7 +94,7 @@
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-10T09:33:42.5511572-03:00</data>
-    <likes></likes>
+    <likes>1,26835036010</likes>
   </Post>
   <Post>
     <id>8</id>
@@ -106,7 +106,7 @@
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-10T12:17:45.5911303-03:00</data>
-    <likes></likes>
+    <likes>0,26835036010</likes>
   </Post>
   <Post>
     <id>9</id>
@@ -118,7 +118,7 @@
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-10T16:52:42.9314872-03:00</data>
-    <likes>-1,26835036010</likes>
+    <likes>0,26835036010</likes>
   </Post>
   <Post>
     <id>10</id>
@@ -138,7 +138,7 @@ sgfoids</descricao>
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-10T17:06:52.3981891-03:00</data>
-    <likes>1,26835036010</likes>
+    <likes>-1,26835036010</likes>
   </Post>
   <Post>
     <id>11</id>
@@ -153,6 +153,6 @@ Apesar do amplo escopo e da complexidade da ciê</descricao>
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-10T17:33:36.9378572-03:00</data>
-    <likes>0,26835036010</likes>
+    <likes>-1,26835036010</likes>
   </Post>
 </PostList>
