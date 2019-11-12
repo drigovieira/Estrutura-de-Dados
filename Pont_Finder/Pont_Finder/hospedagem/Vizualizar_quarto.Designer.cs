@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vizualizar_quarto));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.lb_telefone = new System.Windows.Forms.Label();
             this.lb_endereco = new System.Windows.Forms.Label();
             this.lb_email = new System.Windows.Forms.Label();
-            this.lb_cpf = new System.Windows.Forms.Label();
             this.lb_fantasia = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -62,6 +62,23 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pb_estacionamento = new System.Windows.Forms.PictureBox();
+            this.pb_pet = new System.Windows.Forms.PictureBox();
+            this.pb_tv = new System.Windows.Forms.PictureBox();
+            this.pb_cafe_da_tarde = new System.Windows.Forms.PictureBox();
+            this.pb_cafe_da_manha = new System.Windows.Forms.PictureBox();
+            this.pb_almoco = new System.Windows.Forms.PictureBox();
+            this.pb__duo = new System.Windows.Forms.PictureBox();
+            this.pb_wifi = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -79,46 +96,69 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_estacionamento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_tv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_tarde)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_manha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_almoco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_wifi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.pb_estacionamento);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.pictureBox15);
+            this.panel1.Controls.Add(this.pictureBox14);
+            this.panel1.Controls.Add(this.pictureBox13);
+            this.panel1.Controls.Add(this.pb_pet);
+            this.panel1.Controls.Add(this.pictureBox16);
+            this.panel1.Controls.Add(this.pb_tv);
+            this.panel1.Controls.Add(this.pb_cafe_da_tarde);
+            this.panel1.Controls.Add(this.pb_cafe_da_manha);
+            this.panel1.Controls.Add(this.pb_almoco);
+            this.panel1.Controls.Add(this.pb__duo);
+            this.panel1.Controls.Add(this.pb_wifi);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pb_img1);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.lb_rs);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(114, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1055, 882);
+            this.panel1.Size = new System.Drawing.Size(1055, 1460);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(614, 426);
+            this.label7.Location = new System.Drawing.Point(502, 127);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 31);
+            this.label7.Size = new System.Drawing.Size(206, 31);
             this.label7.TabIndex = 28;
-            this.label7.Text = "Telefone:";
+            this.label7.Text = "Disponibilidade do Hotel";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(53, 421);
+            this.label6.Location = new System.Drawing.Point(48, 63);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 31);
             this.label6.TabIndex = 27;
@@ -129,7 +169,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(842, 212);
+            this.button1.Location = new System.Drawing.Point(842, 202);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 44);
             this.button1.TabIndex = 26;
@@ -140,7 +180,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(900, 54);
+            this.label3.Location = new System.Drawing.Point(895, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 31);
             this.label3.TabIndex = 25;
@@ -151,7 +191,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(53, 590);
+            this.label10.Location = new System.Drawing.Point(48, 232);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(310, 31);
             this.label10.TabIndex = 24;
@@ -161,17 +201,17 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(53, 530);
+            this.label5.Location = new System.Drawing.Point(48, 172);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(263, 31);
+            this.label5.Size = new System.Drawing.Size(256, 31);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Número de quartos disponíveis:";
+            this.label5.Text = "Número de quartos existentes:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(53, 476);
+            this.label4.Location = new System.Drawing.Point(48, 118);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(266, 31);
             this.label4.TabIndex = 22;
@@ -181,11 +221,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(614, 378);
+            this.label2.Location = new System.Drawing.Point(502, 218);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 31);
+            this.label2.Size = new System.Drawing.Size(221, 31);
             this.label2.TabIndex = 21;
-            this.label2.Text = "Endereço:";
+            this.label2.Text = "Serviços incluso no quarto";
             // 
             // label1
             // 
@@ -202,7 +242,7 @@
             this.lb_rs.AutoSize = true;
             this.lb_rs.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs.Location = new System.Drawing.Point(852, 104);
+            this.lb_rs.Location = new System.Drawing.Point(852, 94);
             this.lb_rs.Name = "lb_rs";
             this.lb_rs.Size = new System.Drawing.Size(59, 54);
             this.lb_rs.TabIndex = 34;
@@ -212,7 +252,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(815, 167);
+            this.label8.Location = new System.Drawing.Point(815, 157);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(210, 31);
             this.label8.TabIndex = 35;
@@ -231,21 +271,29 @@
             // 
             // panel4
             // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.pictureBox17);
+            this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.pb_empresa);
             this.panel4.Controls.Add(this.lb_telefone);
             this.panel4.Controls.Add(this.lb_endereco);
             this.panel4.Controls.Add(this.lb_email);
-            this.panel4.Controls.Add(this.lb_cpf);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.lb_fantasia);
-            this.panel4.Location = new System.Drawing.Point(42, 672);
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Location = new System.Drawing.Point(40, 451);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(966, 189);
+            this.panel4.Size = new System.Drawing.Size(966, 937);
             this.panel4.TabIndex = 37;
             // 
             // pb_empresa
             // 
             this.pb_empresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_empresa.Location = new System.Drawing.Point(12, 16);
+            this.pb_empresa.Location = new System.Drawing.Point(18, 350);
             this.pb_empresa.Name = "pb_empresa";
             this.pb_empresa.Size = new System.Drawing.Size(185, 146);
             this.pb_empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -256,7 +304,7 @@
             // 
             this.lb_telefone.AutoSize = true;
             this.lb_telefone.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_telefone.Location = new System.Drawing.Point(223, 139);
+            this.lb_telefone.Location = new System.Drawing.Point(220, 445);
             this.lb_telefone.Name = "lb_telefone";
             this.lb_telefone.Size = new System.Drawing.Size(78, 23);
             this.lb_telefone.TabIndex = 4;
@@ -266,7 +314,7 @@
             // 
             this.lb_endereco.AutoSize = true;
             this.lb_endereco.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_endereco.Location = new System.Drawing.Point(223, 108);
+            this.lb_endereco.Location = new System.Drawing.Point(220, 414);
             this.lb_endereco.Name = "lb_endereco";
             this.lb_endereco.Size = new System.Drawing.Size(84, 23);
             this.lb_endereco.TabIndex = 3;
@@ -276,27 +324,17 @@
             // 
             this.lb_email.AutoSize = true;
             this.lb_email.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_email.Location = new System.Drawing.Point(223, 41);
+            this.lb_email.Location = new System.Drawing.Point(223, 381);
             this.lb_email.Name = "lb_email";
             this.lb_email.Size = new System.Drawing.Size(59, 23);
             this.lb_email.TabIndex = 2;
             this.lb_email.Text = "E-mail";
             // 
-            // lb_cpf
-            // 
-            this.lb_cpf.AutoSize = true;
-            this.lb_cpf.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cpf.Location = new System.Drawing.Point(223, 76);
-            this.lb_cpf.Name = "lb_cpf";
-            this.lb_cpf.Size = new System.Drawing.Size(84, 23);
-            this.lb_cpf.TabIndex = 1;
-            this.lb_cpf.Text = "CPF/CNPJ";
-            // 
             // lb_fantasia
             // 
             this.lb_fantasia.AutoSize = true;
             this.lb_fantasia.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_fantasia.Location = new System.Drawing.Point(220, 10);
+            this.lb_fantasia.Location = new System.Drawing.Point(220, 350);
             this.lb_fantasia.Name = "lb_fantasia";
             this.lb_fantasia.Size = new System.Drawing.Size(58, 23);
             this.lb_fantasia.TabIndex = 0;
@@ -305,7 +343,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 894);
+            this.panel2.Location = new System.Drawing.Point(0, 1472);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 2;
@@ -439,6 +477,177 @@
             this.pictureBox12.TabIndex = 11;
             this.pictureBox12.TabStop = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(21, 302);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(146, 33);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Sobre a empresa";
+            // 
+            // pb_estacionamento
+            // 
+            this.pb_estacionamento.Image = ((System.Drawing.Image)(resources.GetObject("pb_estacionamento.Image")));
+            this.pb_estacionamento.Location = new System.Drawing.Point(506, 165);
+            this.pb_estacionamento.Name = "pb_estacionamento";
+            this.pb_estacionamento.Size = new System.Drawing.Size(25, 25);
+            this.pb_estacionamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_estacionamento.TabIndex = 51;
+            this.pb_estacionamento.TabStop = false;
+            // 
+            // pb_pet
+            // 
+            this.pb_pet.Image = ((System.Drawing.Image)(resources.GetObject("pb_pet.Image")));
+            this.pb_pet.Location = new System.Drawing.Point(568, 165);
+            this.pb_pet.Name = "pb_pet";
+            this.pb_pet.Size = new System.Drawing.Size(25, 25);
+            this.pb_pet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_pet.TabIndex = 50;
+            this.pb_pet.TabStop = false;
+            // 
+            // pb_tv
+            // 
+            this.pb_tv.Image = ((System.Drawing.Image)(resources.GetObject("pb_tv.Image")));
+            this.pb_tv.Location = new System.Drawing.Point(630, 252);
+            this.pb_tv.Name = "pb_tv";
+            this.pb_tv.Size = new System.Drawing.Size(25, 25);
+            this.pb_tv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_tv.TabIndex = 49;
+            this.pb_tv.TabStop = false;
+            // 
+            // pb_cafe_da_tarde
+            // 
+            this.pb_cafe_da_tarde.Image = ((System.Drawing.Image)(resources.GetObject("pb_cafe_da_tarde.Image")));
+            this.pb_cafe_da_tarde.Location = new System.Drawing.Point(599, 252);
+            this.pb_cafe_da_tarde.Name = "pb_cafe_da_tarde";
+            this.pb_cafe_da_tarde.Size = new System.Drawing.Size(25, 25);
+            this.pb_cafe_da_tarde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_cafe_da_tarde.TabIndex = 48;
+            this.pb_cafe_da_tarde.TabStop = false;
+            // 
+            // pb_cafe_da_manha
+            // 
+            this.pb_cafe_da_manha.Image = ((System.Drawing.Image)(resources.GetObject("pb_cafe_da_manha.Image")));
+            this.pb_cafe_da_manha.Location = new System.Drawing.Point(537, 252);
+            this.pb_cafe_da_manha.Name = "pb_cafe_da_manha";
+            this.pb_cafe_da_manha.Size = new System.Drawing.Size(25, 25);
+            this.pb_cafe_da_manha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_cafe_da_manha.TabIndex = 47;
+            this.pb_cafe_da_manha.TabStop = false;
+            // 
+            // pb_almoco
+            // 
+            this.pb_almoco.Image = ((System.Drawing.Image)(resources.GetObject("pb_almoco.Image")));
+            this.pb_almoco.Location = new System.Drawing.Point(568, 252);
+            this.pb_almoco.Name = "pb_almoco";
+            this.pb_almoco.Size = new System.Drawing.Size(25, 25);
+            this.pb_almoco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_almoco.TabIndex = 46;
+            this.pb_almoco.TabStop = false;
+            // 
+            // pb__duo
+            // 
+            this.pb__duo.Image = ((System.Drawing.Image)(resources.GetObject("pb__duo.Image")));
+            this.pb__duo.Location = new System.Drawing.Point(506, 252);
+            this.pb__duo.Name = "pb__duo";
+            this.pb__duo.Size = new System.Drawing.Size(25, 25);
+            this.pb__duo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb__duo.TabIndex = 45;
+            this.pb__duo.TabStop = false;
+            // 
+            // pb_wifi
+            // 
+            this.pb_wifi.Image = ((System.Drawing.Image)(resources.GetObject("pb_wifi.Image")));
+            this.pb_wifi.Location = new System.Drawing.Point(537, 165);
+            this.pb_wifi.Name = "pb_wifi";
+            this.pb_wifi.Size = new System.Drawing.Size(25, 25);
+            this.pb_wifi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_wifi.TabIndex = 44;
+            this.pb_wifi.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(599, 165);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 50;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(632, 165);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 50;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(663, 165);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 50;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(661, 252);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 49;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox17.InitialImage = global::Pont_Finder.Properties.Resources.downgrey;
+            this.pictureBox17.Location = new System.Drawing.Point(18, 570);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(929, 340);
+            this.pictureBox17.TabIndex = 29;
+            this.pictureBox17.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(376, 531);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(181, 36);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "Descrição do Hotel";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(485, 412);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(92, 36);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Detalhes";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(48, 15);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(133, 33);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "Sobre o quarto";
+            // 
             // Vizualizar_quarto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -471,6 +680,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_estacionamento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_tv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_tarde)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_manha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_almoco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_wifi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -497,7 +719,6 @@
         private System.Windows.Forms.Label lb_telefone;
         private System.Windows.Forms.Label lb_endereco;
         private System.Windows.Forms.Label lb_email;
-        private System.Windows.Forms.Label lb_cpf;
         private System.Windows.Forms.Label lb_fantasia;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox12;
@@ -511,5 +732,22 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pb_estacionamento;
+        private System.Windows.Forms.PictureBox pb_pet;
+        private System.Windows.Forms.PictureBox pb_tv;
+        private System.Windows.Forms.PictureBox pb_cafe_da_tarde;
+        private System.Windows.Forms.PictureBox pb_cafe_da_manha;
+        private System.Windows.Forms.PictureBox pb_almoco;
+        private System.Windows.Forms.PictureBox pb__duo;
+        private System.Windows.Forms.PictureBox pb_wifi;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }
