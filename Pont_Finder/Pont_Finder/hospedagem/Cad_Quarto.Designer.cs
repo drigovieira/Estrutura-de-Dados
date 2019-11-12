@@ -56,13 +56,15 @@
             this.bt_cadastrar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // input_valor
             // 
             this.input_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.input_valor.Location = new System.Drawing.Point(594, 654);
+            this.input_valor.Location = new System.Drawing.Point(352, 800);
             this.input_valor.Name = "input_valor";
             this.input_valor.Size = new System.Drawing.Size(200, 22);
             this.input_valor.TabIndex = 4;
@@ -71,7 +73,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(553, 651);
+            this.label6.Location = new System.Drawing.Point(311, 797);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 20);
             this.label6.TabIndex = 12;
@@ -81,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(542, 330);
+            this.label2.Location = new System.Drawing.Point(300, 476);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(299, 20);
             this.label2.TabIndex = 5;
@@ -91,7 +93,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(548, 252);
+            this.label1.Location = new System.Drawing.Point(306, 398);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(274, 20);
             this.label1.TabIndex = 2;
@@ -100,7 +102,7 @@
             // tb_qtdquarto
             // 
             this.tb_qtdquarto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_qtdquarto.Location = new System.Drawing.Point(589, 445);
+            this.tb_qtdquarto.Location = new System.Drawing.Point(347, 591);
             this.tb_qtdquarto.Name = "tb_qtdquarto";
             this.tb_qtdquarto.Size = new System.Drawing.Size(200, 22);
             this.tb_qtdquarto.TabIndex = 2;
@@ -109,7 +111,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(586, 619);
+            this.label5.Location = new System.Drawing.Point(344, 765);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(208, 20);
             this.label5.TabIndex = 11;
@@ -119,7 +121,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(534, 490);
+            this.label4.Location = new System.Drawing.Point(292, 636);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(313, 20);
             this.label4.TabIndex = 9;
@@ -128,7 +130,7 @@
             // tb_nome
             // 
             this.tb_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_nome.Location = new System.Drawing.Point(482, 287);
+            this.tb_nome.Location = new System.Drawing.Point(240, 433);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(415, 22);
             this.tb_nome.TabIndex = 0;
@@ -136,7 +138,7 @@
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(552, 578);
+            this.checkBox7.Location = new System.Drawing.Point(310, 724);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(86, 17);
             this.checkBox7.TabIndex = 29;
@@ -146,7 +148,7 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(780, 555);
+            this.checkBox4.Location = new System.Drawing.Point(538, 701);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(47, 17);
             this.checkBox4.TabIndex = 28;
@@ -156,7 +158,7 @@
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(665, 555);
+            this.checkBox5.Location = new System.Drawing.Point(423, 701);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(76, 17);
             this.checkBox5.TabIndex = 27;
@@ -166,7 +168,7 @@
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(552, 555);
+            this.checkBox6.Location = new System.Drawing.Point(310, 701);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(90, 17);
             this.checkBox6.TabIndex = 26;
@@ -176,7 +178,7 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(780, 532);
+            this.checkBox3.Location = new System.Drawing.Point(538, 678);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(61, 17);
             this.checkBox3.TabIndex = 25;
@@ -186,7 +188,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(665, 532);
+            this.checkBox2.Location = new System.Drawing.Point(423, 678);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(102, 17);
             this.checkBox2.TabIndex = 24;
@@ -196,7 +198,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(552, 532);
+            this.checkBox1.Location = new System.Drawing.Point(310, 678);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(98, 17);
             this.checkBox1.TabIndex = 23;
@@ -206,7 +208,7 @@
             // rb_pessoas_6
             // 
             this.rb_pessoas_6.AutoSize = true;
-            this.rb_pessoas_6.Location = new System.Drawing.Point(801, 371);
+            this.rb_pessoas_6.Location = new System.Drawing.Point(559, 517);
             this.rb_pessoas_6.Name = "rb_pessoas_6";
             this.rb_pessoas_6.Size = new System.Drawing.Size(31, 17);
             this.rb_pessoas_6.TabIndex = 22;
@@ -217,7 +219,7 @@
             // rb_pessoas_5
             // 
             this.rb_pessoas_5.AutoSize = true;
-            this.rb_pessoas_5.Location = new System.Drawing.Point(751, 371);
+            this.rb_pessoas_5.Location = new System.Drawing.Point(509, 517);
             this.rb_pessoas_5.Name = "rb_pessoas_5";
             this.rb_pessoas_5.Size = new System.Drawing.Size(31, 17);
             this.rb_pessoas_5.TabIndex = 21;
@@ -228,7 +230,7 @@
             // rb_pessoas_4
             // 
             this.rb_pessoas_4.AutoSize = true;
-            this.rb_pessoas_4.Location = new System.Drawing.Point(700, 371);
+            this.rb_pessoas_4.Location = new System.Drawing.Point(458, 517);
             this.rb_pessoas_4.Name = "rb_pessoas_4";
             this.rb_pessoas_4.Size = new System.Drawing.Size(31, 17);
             this.rb_pessoas_4.TabIndex = 20;
@@ -239,7 +241,7 @@
             // rb_pessoas_3
             // 
             this.rb_pessoas_3.AutoSize = true;
-            this.rb_pessoas_3.Location = new System.Drawing.Point(650, 371);
+            this.rb_pessoas_3.Location = new System.Drawing.Point(408, 517);
             this.rb_pessoas_3.Name = "rb_pessoas_3";
             this.rb_pessoas_3.Size = new System.Drawing.Size(31, 17);
             this.rb_pessoas_3.TabIndex = 19;
@@ -250,7 +252,7 @@
             // rb_pessoas_2
             // 
             this.rb_pessoas_2.AutoSize = true;
-            this.rb_pessoas_2.Location = new System.Drawing.Point(594, 371);
+            this.rb_pessoas_2.Location = new System.Drawing.Point(352, 517);
             this.rb_pessoas_2.Name = "rb_pessoas_2";
             this.rb_pessoas_2.Size = new System.Drawing.Size(31, 17);
             this.rb_pessoas_2.TabIndex = 18;
@@ -261,7 +263,7 @@
             // rb_pessoas_1
             // 
             this.rb_pessoas_1.AutoSize = true;
-            this.rb_pessoas_1.Location = new System.Drawing.Point(538, 371);
+            this.rb_pessoas_1.Location = new System.Drawing.Point(296, 517);
             this.rb_pessoas_1.Name = "rb_pessoas_1";
             this.rb_pessoas_1.Size = new System.Drawing.Size(31, 17);
             this.rb_pessoas_1.TabIndex = 17;
@@ -273,7 +275,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(545, 409);
+            this.label3.Location = new System.Drawing.Point(303, 555);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(290, 20);
             this.label3.TabIndex = 7;
@@ -283,9 +285,9 @@
             // 
             this.pb_img_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_img_1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb_img_1.InitialImage")));
-            this.pb_img_1.Location = new System.Drawing.Point(482, 61);
+            this.pb_img_1.Location = new System.Drawing.Point(228, 64);
             this.pb_img_1.Name = "pb_img_1";
-            this.pb_img_1.Size = new System.Drawing.Size(285, 173);
+            this.pb_img_1.Size = new System.Drawing.Size(450, 225);
             this.pb_img_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_img_1.TabIndex = 30;
             this.pb_img_1.TabStop = false;
@@ -296,7 +298,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(801, 129);
+            this.button1.Location = new System.Drawing.Point(389, 312);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 51);
             this.button1.TabIndex = 31;
@@ -310,9 +312,9 @@
             this.bt_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cadastrar.ForeColor = System.Drawing.Color.White;
-            this.bt_cadastrar.Location = new System.Drawing.Point(482, 722);
+            this.bt_cadastrar.Location = new System.Drawing.Point(290, 865);
             this.bt_cadastrar.Name = "bt_cadastrar";
-            this.bt_cadastrar.Size = new System.Drawing.Size(415, 50);
+            this.bt_cadastrar.Size = new System.Drawing.Size(300, 50);
             this.bt_cadastrar.TabIndex = 6;
             this.bt_cadastrar.Text = "Cadastrar Quarto";
             this.bt_cadastrar.UseVisualStyleBackColor = false;
@@ -322,7 +324,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Dubai", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(491, 9);
+            this.label7.Location = new System.Drawing.Point(268, 12);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(375, 49);
             this.label7.TabIndex = 32;
@@ -331,10 +333,45 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 772);
+            this.panel1.Location = new System.Drawing.Point(0, 990);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 33;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.tb_nome);
+            this.panel2.Controls.Add(this.pb_img_1);
+            this.panel2.Controls.Add(this.rb_pessoas_2);
+            this.panel2.Controls.Add(this.rb_pessoas_3);
+            this.panel2.Controls.Add(this.checkBox7);
+            this.panel2.Controls.Add(this.rb_pessoas_1);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.rb_pessoas_4);
+            this.panel2.Controls.Add(this.checkBox4);
+            this.panel2.Controls.Add(this.bt_cadastrar);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.rb_pessoas_5);
+            this.panel2.Controls.Add(this.checkBox5);
+            this.panel2.Controls.Add(this.input_valor);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.rb_pessoas_6);
+            this.panel2.Controls.Add(this.checkBox6);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.tb_qtdquarto);
+            this.panel2.Controls.Add(this.checkBox1);
+            this.panel2.Controls.Add(this.checkBox3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.checkBox2);
+            this.panel2.Location = new System.Drawing.Point(210, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(845, 978);
+            this.panel2.TabIndex = 34;
             // 
             // Cad_Quarto
             // 
@@ -344,40 +381,16 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pb_img_1);
-            this.Controls.Add(this.tb_nome);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.tb_qtdquarto);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.rb_pessoas_6);
-            this.Controls.Add(this.input_valor);
-            this.Controls.Add(this.rb_pessoas_5);
-            this.Controls.Add(this.bt_cadastrar);
-            this.Controls.Add(this.rb_pessoas_4);
-            this.Controls.Add(this.rb_pessoas_1);
-            this.Controls.Add(this.rb_pessoas_3);
-            this.Controls.Add(this.rb_pessoas_2);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cad_Quarto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cad_Quarto";
             this.Load += new System.EventHandler(this.Cad_Quarto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -409,5 +422,6 @@
         private System.Windows.Forms.Button bt_cadastrar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
