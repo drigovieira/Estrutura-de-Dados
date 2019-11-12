@@ -164,6 +164,7 @@
     <Compile Include="eventos\Post_Eventos.Designer.cs">
       <DependentUpon>Post_Eventos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funcionamento.cs" />
     <Compile Include="hospedagem\Cadastro_Empresa.cs">
       <SubType>Form</SubType>
     </Compile>
