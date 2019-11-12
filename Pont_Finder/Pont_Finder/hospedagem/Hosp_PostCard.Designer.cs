@@ -43,12 +43,6 @@
             this.pb_almoco = new System.Windows.Forms.PictureBox();
             this.pb__duo = new System.Windows.Forms.PictureBox();
             this.pb_wifi = new System.Windows.Forms.PictureBox();
-            this.pb_5star = new System.Windows.Forms.PictureBox();
-            this.pb_4star = new System.Windows.Forms.PictureBox();
-            this.pb_3star = new System.Windows.Forms.PictureBox();
-            this.pb_2star = new System.Windows.Forms.PictureBox();
-            this.pb_1star = new System.Windows.Forms.PictureBox();
-            this.lb_txt_avaliacao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_estacionamento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).BeginInit();
@@ -58,17 +52,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_almoco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_wifi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_5star)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_4star)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_3star)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_2star)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_1star)).BeginInit();
             this.SuspendLayout();
             // 
             // bt_visualizar
             // 
             this.bt_visualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bt_visualizar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_visualizar.ForeColor = System.Drawing.Color.White;
             this.bt_visualizar.Location = new System.Drawing.Point(500, 111);
@@ -85,7 +74,7 @@
             this.lb_rs.BackColor = System.Drawing.Color.Transparent;
             this.lb_rs.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs.Location = new System.Drawing.Point(491, 54);
+            this.lb_rs.Location = new System.Drawing.Point(491, 40);
             this.lb_rs.Name = "lb_rs";
             this.lb_rs.Size = new System.Drawing.Size(59, 54);
             this.lb_rs.TabIndex = 32;
@@ -96,7 +85,7 @@
             // 
             this.lb_txt_diária.AutoSize = true;
             this.lb_txt_diária.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt_diária.Location = new System.Drawing.Point(531, 43);
+            this.lb_txt_diária.Location = new System.Drawing.Point(528, 15);
             this.lb_txt_diária.Name = "lb_txt_diária";
             this.lb_txt_diária.Size = new System.Drawing.Size(33, 18);
             this.lb_txt_diária.TabIndex = 31;
@@ -108,7 +97,7 @@
             this.lb_empresa.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_empresa.Location = new System.Drawing.Point(179, 40);
             this.lb_empresa.Name = "lb_empresa";
-            this.lb_empresa.Size = new System.Drawing.Size(60, 21);
+            this.lb_empresa.Size = new System.Drawing.Size(60, 22);
             this.lb_empresa.TabIndex = 30;
             this.lb_empresa.Text = "Endereço";
             // 
@@ -212,78 +201,12 @@
             this.pb_wifi.TabIndex = 44;
             this.pb_wifi.TabStop = false;
             // 
-            // pb_5star
-            // 
-            this.pb_5star.Image = ((System.Drawing.Image)(resources.GetObject("pb_5star.Image")));
-            this.pb_5star.Location = new System.Drawing.Point(590, 15);
-            this.pb_5star.Name = "pb_5star";
-            this.pb_5star.Size = new System.Drawing.Size(22, 16);
-            this.pb_5star.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_5star.TabIndex = 56;
-            this.pb_5star.TabStop = false;
-            // 
-            // pb_4star
-            // 
-            this.pb_4star.Image = ((System.Drawing.Image)(resources.GetObject("pb_4star.Image")));
-            this.pb_4star.Location = new System.Drawing.Point(562, 15);
-            this.pb_4star.Name = "pb_4star";
-            this.pb_4star.Size = new System.Drawing.Size(22, 16);
-            this.pb_4star.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_4star.TabIndex = 55;
-            this.pb_4star.TabStop = false;
-            // 
-            // pb_3star
-            // 
-            this.pb_3star.Image = ((System.Drawing.Image)(resources.GetObject("pb_3star.Image")));
-            this.pb_3star.Location = new System.Drawing.Point(534, 15);
-            this.pb_3star.Name = "pb_3star";
-            this.pb_3star.Size = new System.Drawing.Size(22, 16);
-            this.pb_3star.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_3star.TabIndex = 54;
-            this.pb_3star.TabStop = false;
-            // 
-            // pb_2star
-            // 
-            this.pb_2star.Image = ((System.Drawing.Image)(resources.GetObject("pb_2star.Image")));
-            this.pb_2star.Location = new System.Drawing.Point(506, 15);
-            this.pb_2star.Name = "pb_2star";
-            this.pb_2star.Size = new System.Drawing.Size(22, 16);
-            this.pb_2star.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_2star.TabIndex = 53;
-            this.pb_2star.TabStop = false;
-            // 
-            // pb_1star
-            // 
-            this.pb_1star.Image = ((System.Drawing.Image)(resources.GetObject("pb_1star.Image")));
-            this.pb_1star.Location = new System.Drawing.Point(478, 15);
-            this.pb_1star.Name = "pb_1star";
-            this.pb_1star.Size = new System.Drawing.Size(22, 16);
-            this.pb_1star.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_1star.TabIndex = 52;
-            this.pb_1star.TabStop = false;
-            // 
-            // lb_txt_avaliacao
-            // 
-            this.lb_txt_avaliacao.AutoSize = true;
-            this.lb_txt_avaliacao.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt_avaliacao.Location = new System.Drawing.Point(417, 15);
-            this.lb_txt_avaliacao.Name = "lb_txt_avaliacao";
-            this.lb_txt_avaliacao.Size = new System.Drawing.Size(57, 18);
-            this.lb_txt_avaliacao.TabIndex = 57;
-            this.lb_txt_avaliacao.Text = "Avaliações:";
-            // 
             // Hosp_PostCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))));
-            this.Controls.Add(this.lb_txt_avaliacao);
             this.Controls.Add(this.lb_txt_diária);
-            this.Controls.Add(this.pb_5star);
-            this.Controls.Add(this.pb_4star);
-            this.Controls.Add(this.pb_3star);
-            this.Controls.Add(this.pb_2star);
-            this.Controls.Add(this.pb_1star);
             this.Controls.Add(this.pb_estacionamento);
             this.Controls.Add(this.pb_pet);
             this.Controls.Add(this.pb_tv);
@@ -309,11 +232,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_almoco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_wifi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_5star)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_4star)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_3star)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_2star)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_1star)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,11 +253,5 @@
         private System.Windows.Forms.PictureBox pb_almoco;
         private System.Windows.Forms.PictureBox pb__duo;
         private System.Windows.Forms.PictureBox pb_wifi;
-        private System.Windows.Forms.PictureBox pb_5star;
-        private System.Windows.Forms.PictureBox pb_4star;
-        private System.Windows.Forms.PictureBox pb_3star;
-        private System.Windows.Forms.PictureBox pb_2star;
-        private System.Windows.Forms.PictureBox pb_1star;
-        private System.Windows.Forms.Label lb_txt_avaliacao;
     }
 }
