@@ -175,7 +175,7 @@
             // 
             this.radioButton11.AutoSize = true;
             this.radioButton11.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.Location = new System.Drawing.Point(159, 57);
+            this.radioButton11.Location = new System.Drawing.Point(159, 70);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(61, 25);
             this.radioButton11.TabIndex = 12;
@@ -187,7 +187,7 @@
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(159, 26);
+            this.radioButton5.Location = new System.Drawing.Point(159, 39);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(89, 25);
             this.radioButton5.TabIndex = 11;
@@ -199,7 +199,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(35, 57);
+            this.radioButton3.Location = new System.Drawing.Point(35, 70);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(77, 25);
             this.radioButton3.TabIndex = 10;
@@ -211,7 +211,7 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(35, 26);
+            this.radioButton4.Location = new System.Drawing.Point(35, 39);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(72, 25);
             this.radioButton4.TabIndex = 9;
@@ -223,7 +223,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(71, -1);
+            this.label14.Location = new System.Drawing.Point(71, 12);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(160, 27);
             this.label14.TabIndex = 3;
@@ -247,6 +247,8 @@
             this.tb_pesquisar.Name = "tb_pesquisar";
             this.tb_pesquisar.Size = new System.Drawing.Size(240, 28);
             this.tb_pesquisar.TabIndex = 0;
+            this.tb_pesquisar.TextChanged += new System.EventHandler(this.Tb_pesquisar_TextChanged);
+            this.tb_pesquisar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Tb_pesquisar_KeyPress);
             // 
             // pnl_img
             // 
@@ -320,7 +322,7 @@
             // 
             this.radioButton9.AutoSize = true;
             this.radioButton9.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(159, 60);
+            this.radioButton9.Location = new System.Drawing.Point(159, 62);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(76, 25);
             this.radioButton9.TabIndex = 16;
@@ -332,7 +334,7 @@
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(159, 29);
+            this.radioButton6.Location = new System.Drawing.Point(159, 31);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(76, 25);
             this.radioButton6.TabIndex = 15;
@@ -344,7 +346,7 @@
             // 
             this.radioButton7.AutoSize = true;
             this.radioButton7.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(35, 60);
+            this.radioButton7.Location = new System.Drawing.Point(35, 62);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(76, 25);
             this.radioButton7.TabIndex = 14;
@@ -356,7 +358,7 @@
             // 
             this.radioButton8.AutoSize = true;
             this.radioButton8.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(35, 29);
+            this.radioButton8.Location = new System.Drawing.Point(35, 31);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(71, 25);
             this.radioButton8.TabIndex = 13;
@@ -368,7 +370,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(71, -1);
+            this.label12.Location = new System.Drawing.Point(71, 1);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(160, 27);
             this.label12.TabIndex = 3;
@@ -418,7 +420,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(95, 0);
+            this.label11.Location = new System.Drawing.Point(95, 3);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(116, 27);
             this.label11.TabIndex = 5;
@@ -439,7 +441,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(35, 62);
+            this.radioButton2.Location = new System.Drawing.Point(81, 65);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(141, 25);
             this.radioButton2.TabIndex = 8;
@@ -451,7 +453,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(35, 30);
+            this.radioButton1.Location = new System.Drawing.Point(81, 33);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(141, 25);
             this.radioButton1.TabIndex = 7;
@@ -495,7 +497,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1022, 247);
+            this.label16.Location = new System.Drawing.Point(1022, 254);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(188, 36);
             this.label16.TabIndex = 0;
@@ -507,7 +509,7 @@
             this.Btn_Edit_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
-            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(5, 206);
+            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(5, 205);
             this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
             this.Btn_Edit_Empresa.Size = new System.Drawing.Size(196, 35);
             this.Btn_Edit_Empresa.TabIndex = 42;
@@ -539,7 +541,7 @@
             // 
             // bt_ant
             // 
-            this.bt_ant.Location = new System.Drawing.Point(320, 260);
+            this.bt_ant.Location = new System.Drawing.Point(320, 262);
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(75, 23);
             this.bt_ant.TabIndex = 45;
@@ -549,7 +551,7 @@
             // 
             // bt_prox
             // 
-            this.bt_prox.Location = new System.Drawing.Point(870, 260);
+            this.bt_prox.Location = new System.Drawing.Point(870, 262);
             this.bt_prox.Name = "bt_prox";
             this.bt_prox.Size = new System.Drawing.Size(75, 23);
             this.bt_prox.TabIndex = 46;
@@ -561,7 +563,7 @@
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(622, 270);
+            this.lb_pag.Location = new System.Drawing.Point(622, 272);
             this.lb_pag.Name = "lb_pag";
             this.lb_pag.Size = new System.Drawing.Size(35, 13);
             this.lb_pag.TabIndex = 47;
