@@ -448,6 +448,8 @@
     <Content Include="eventos\Data\imagens\offImage.jpg" />
     <Content Include="eventos\Data\Postagem_Eventos.xml" />
     <Content Include="hospedagem\data\quartos.xml" />
+    <None Include="Resources\back-1.png" />
+    <None Include="Resources\back-2.png" />
     <Content Include="servicos\data\images\empresas\offImage.jpg" />
     <Content Include="servicos\data\posts.xml" />
     <None Include="Resources\downred.png" />
