@@ -32,6 +32,7 @@
             this.panel_right = new System.Windows.Forms.Panel();
             this.panel_left = new System.Windows.Forms.Panel();
             this.pb_pesquisar = new System.Windows.Forms.PictureBox();
+            this.tb_pesquisar = new System.Windows.Forms.TextBox();
             this.bt_solicitar = new System.Windows.Forms.Button();
             this.bt_cadEmpresa = new System.Windows.Forms.Button();
             this.bt_publicar = new System.Windows.Forms.Button();
@@ -40,12 +41,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.bt_ant = new System.Windows.Forms.Button();
             this.bt_prox = new System.Windows.Forms.Button();
             this.lb_pag = new System.Windows.Forms.Label();
             this.panel_center = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tb_pesquisar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel_left.SuspendLayout();
@@ -83,6 +83,21 @@
             this.pb_pesquisar.TabIndex = 1;
             this.pb_pesquisar.TabStop = false;
             this.pb_pesquisar.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
+            // tb_pesquisar
+            // 
+            this.tb_pesquisar.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_pesquisar.ForeColor = System.Drawing.Color.DarkGray;
+            this.tb_pesquisar.Location = new System.Drawing.Point(13, 23);
+            this.tb_pesquisar.Name = "tb_pesquisar";
+            this.tb_pesquisar.Size = new System.Drawing.Size(283, 40);
+            this.tb_pesquisar.TabIndex = 0;
+            this.tb_pesquisar.Tag = "";
+            this.tb_pesquisar.Text = "Pesquisar";
+            this.tb_pesquisar.TextChanged += new System.EventHandler(this.Tb_pesquisar_TextChanged);
+            this.tb_pesquisar.Enter += new System.EventHandler(this.Tb_pesquisa_Enter);
+            this.tb_pesquisar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Tb_pesquisar_KeyPress);
+            this.tb_pesquisar.Leave += new System.EventHandler(this.Tb_pesquisa_Leave);
             // 
             // bt_solicitar
             // 
@@ -172,6 +187,18 @@
             this.panel3.Size = new System.Drawing.Size(1265, 150);
             this.panel3.TabIndex = 38;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Dubai", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(416, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(419, 60);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Aproveite nossos serviços!";
+            // 
             // bt_ant
             // 
             this.bt_ant.BackColor = System.Drawing.Color.Transparent;
@@ -222,32 +249,6 @@
             this.panel_center.Size = new System.Drawing.Size(625, 0);
             this.panel_center.TabIndex = 17;
             this.panel_center.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_center_Paint);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Dubai", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(416, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(419, 60);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Aproveite nossos serviços!";
-            // 
-            // tb_pesquisar
-            // 
-            this.tb_pesquisar.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_pesquisar.ForeColor = System.Drawing.Color.DarkGray;
-            this.tb_pesquisar.Location = new System.Drawing.Point(13, 23);
-            this.tb_pesquisar.Name = "tb_pesquisar";
-            this.tb_pesquisar.Size = new System.Drawing.Size(283, 40);
-            this.tb_pesquisar.TabIndex = 0;
-            this.tb_pesquisar.Tag = "";
-            this.tb_pesquisar.Text = "Pesquisar";
-            this.tb_pesquisar.TextChanged += new System.EventHandler(this.Tb_pesquisar_TextChanged);
-            this.tb_pesquisar.Enter += new System.EventHandler(this.Tb_pesquisa_Enter);
-            this.tb_pesquisar.Leave += new System.EventHandler(this.Tb_pesquisa_Leave);
             // 
             // label5
             // 
