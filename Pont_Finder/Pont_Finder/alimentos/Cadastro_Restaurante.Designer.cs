@@ -595,6 +595,7 @@
             this.checkBox9.TabIndex = 10;
             this.checkBox9.Text = "Convencional";
             this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // lbOutros
             // 
@@ -621,6 +622,7 @@
             this.checkBox5.TabIndex = 7;
             this.checkBox5.Text = "Frutos do Mar";
             this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // checkBox6
             // 
@@ -631,6 +633,7 @@
             this.checkBox6.TabIndex = 6;
             this.checkBox6.Text = "Hambúrgueria";
             this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // checkBox7
             // 
@@ -641,6 +644,7 @@
             this.checkBox7.TabIndex = 5;
             this.checkBox7.Text = "Comida Italiana";
             this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // checkBox8
             // 
@@ -651,6 +655,7 @@
             this.checkBox8.TabIndex = 4;
             this.checkBox8.Text = "Petiscaria";
             this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -661,6 +666,7 @@
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Sorveteria";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -671,6 +677,7 @@
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Comida Japonesa";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -681,6 +688,7 @@
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Pizzaria";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -691,6 +699,7 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Churrascaria";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // textBox1
             // 

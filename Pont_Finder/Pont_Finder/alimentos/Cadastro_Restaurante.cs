@@ -12,6 +12,7 @@ namespace Pont_Finder.alimentos
 {
     public partial class Cadastro_Restaurante : Form
     {
+        private string categorias;
         public Cadastro_Restaurante()
         {
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace Pont_Finder.alimentos
 
         private void BtnCad_Click(object sender, EventArgs e)
         {
+
             Company emp = new Company();
             try
             {
@@ -38,6 +40,7 @@ namespace Pont_Finder.alimentos
                 emp.Numero = Convert.ToInt32(tbNum.Text);
                 emp.Cep = Convert.ToInt32(tbCep.Text);
                 emp.Bairro = tbBairro.Text;
+                emp.Categoria = categorias;
                 emp.TelComercial = Convert.ToInt32(tbTel.Text);
                 emp.Email = tbEmail.Text;
                 CompanyList.CompAdd(emp);
@@ -51,6 +54,30 @@ namespace Pont_Finder.alimentos
         private void Button4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CheckBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (categorias == null)
+            {
+                categorias = "Comida Japonesa";
+            }
+            else
+            {
+                categorias += "/Comida Japonesa";
+            }
+        }
+
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (categorias == null)
+            {
+                categorias = "Churrascaria";
+            }
+            else
+            {
+                categorias += "/Churrascaria";
+            }
         }
     }
 }

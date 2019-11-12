@@ -121,10 +121,10 @@ namespace Pont_Finder
                     lbTop5.Text = "Top 5 Restaurantes da Categoria:\n " + CategoriaBox.SelectedItem.ToString();
                     List<Company> listaBusca = new List<Company>();
                     listaBusca = CompanyList.SearchCategoria(CategoriaBox.SelectedItem.ToString());
-                    List<ProfileCompany> BuscaPerfis = prof.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
+                    List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
                     local1 = 0;
                     Top5.Controls.Clear();
-                    foreach (var busca in prof.TopList(BuscaPerfis))
+                    foreach (var busca in ProfileList.TopList(BuscaPerfis))
                     {
                         if (busca.NotaApurada != 0)
                         {
@@ -153,7 +153,7 @@ namespace Pont_Finder
                 CategoriaBox.Visible = false;
                 local1 = 0;
                 Top5.Controls.Clear();
-                foreach (var teste in prof.TopList(prof.selectAll()))
+                foreach (var teste in ProfileList.TopList(ProfileList.selectAll()))
                 {
                     foreach (var teste2 in CompanyList.selectAll())
                     {
@@ -174,10 +174,10 @@ namespace Pont_Finder
             lbTop5.Text = "Top 5 Restaurantes da Categoria:\n " + CategoriaBox.SelectedItem.ToString();
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(CategoriaBox.SelectedItem.ToString());
-            List<ProfileCompany> BuscaPerfis = prof.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
+            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
             local1 = 0;
             Top5.Controls.Clear();
-            foreach (var busca in prof.TopList(BuscaPerfis))
+            foreach (var busca in ProfileList.TopList(BuscaPerfis))
             {
                 if (busca.NotaApurada != 0)
                 {
@@ -197,7 +197,7 @@ namespace Pont_Finder
 
         public void Listar()
         {            
-            foreach (var teste in prof.TopList(prof.selectAll()))
+            foreach (var teste in ProfileList.TopList(ProfileList.selectAll()))
             {
                 foreach (var teste2 in CompanyList.selectAll())
                 {

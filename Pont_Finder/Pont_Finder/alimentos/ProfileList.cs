@@ -8,11 +8,11 @@ namespace Pont_Finder.alimentos
 {
     class ProfileList
     {
-        private List<ProfileCompany> perfil = new List<ProfileCompany>();
-        private List<Evaluation> avaliacao = new List<Evaluation>();
+        private static List<ProfileCompany> perfil = new List<ProfileCompany>();
+        private static List<Evaluation> avaliacao = new List<Evaluation>();
 
         //Adicionando Atribudos adicionais vinculados a empresa
-        public void ProfileAdd(ProfileCompany emp)
+        public static void ProfileAdd(ProfileCompany emp)
         {
             ProfileCompany profComp = new ProfileCompany();
 
@@ -26,7 +26,7 @@ namespace Pont_Finder.alimentos
             profComp.CodigoCompany = emp.CodigoCompany;
             perfil.Add(profComp);
         }
-        public void AddAvaliacao(int nota, int indexEmp, int indexClient)
+        public static void AddAvaliacao(int nota, int indexEmp, int indexClient)
         {
             Evaluation ava = new Evaluation();
             ava.Nota = nota;
@@ -34,7 +34,7 @@ namespace Pont_Finder.alimentos
             ava.IndexClient = indexClient;
             avaliacao.Add(ava);
         }
-        public void ApuraAvaliacao(int indexEmp)
+        public static void ApuraAvaliacao(int indexEmp)
         {
             float mediaNota = 0;
             int count = 0;
@@ -54,15 +54,15 @@ namespace Pont_Finder.alimentos
                 }
             }
         }
-        public List<ProfileCompany> selectAll()
+        public static List<ProfileCompany> selectAll()
         {
             return perfil;
         }
-        public List<Evaluation> selectEvaluation()
+        public static List<Evaluation> selectEvaluation()
         {
             return avaliacao;
         }
-        public List<ProfileCompany> TopList(List<ProfileCompany> FiltroList)
+        public static List<ProfileCompany> TopList(List<ProfileCompany> FiltroList)
         {
             List<ProfileCompany> topList = new List<ProfileCompany>();
             ProfileCompany temp;
@@ -88,7 +88,7 @@ namespace Pont_Finder.alimentos
             return topList;
         }
 
-        public List<ProfileCompany> profileList(List<Company> referenceProfile, string categoria)
+        public static List<ProfileCompany> profileList(List<Company> referenceProfile, string categoria)
         {
             List<ProfileCompany> Perfis = new List<ProfileCompany>();
             CompanyList comp = new CompanyList();
