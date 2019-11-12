@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PostCard));
             this.lb_data = new System.Windows.Forms.Label();
             this.lb_descricao = new System.Windows.Forms.Label();
-            this.pb_down = new System.Windows.Forms.PictureBox();
-            this.pb_up = new System.Windows.Forms.PictureBox();
             this.lb_username = new System.Windows.Forms.Label();
-            this.pb_user = new System.Windows.Forms.PictureBox();
             this.bt_obter = new System.Windows.Forms.Button();
             this.lb_valor = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
             this.lb_titulo = new System.Windows.Forms.Label();
+            this.pb_down = new System.Windows.Forms.PictureBox();
             this.pb_icone = new System.Windows.Forms.PictureBox();
+            this.pb_up = new System.Windows.Forms.PictureBox();
+            this.pb_user = new System.Windows.Forms.PictureBox();
+            this.lb_deslike = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_user)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_data
@@ -67,32 +67,6 @@
             this.lb_descricao.Text = "descricao";
             this.lb_descricao.Click += new System.EventHandler(this.Lb_descricao_Click);
             // 
-            // pb_down
-            // 
-            this.pb_down.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_down.BackgroundImage")));
-            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_down.Image = global::Pont_Finder.Properties.Resources.downgrey;
-            this.pb_down.Location = new System.Drawing.Point(476, 81);
-            this.pb_down.Name = "pb_down";
-            this.pb_down.Size = new System.Drawing.Size(25, 25);
-            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_down.TabIndex = 28;
-            this.pb_down.TabStop = false;
-            this.pb_down.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pb_up
-            // 
-            this.pb_up.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_up.BackgroundImage")));
-            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_up.Image = global::Pont_Finder.Properties.Resources.upgrey;
-            this.pb_up.Location = new System.Drawing.Point(476, 32);
-            this.pb_up.Name = "pb_up";
-            this.pb_up.Size = new System.Drawing.Size(25, 25);
-            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_up.TabIndex = 27;
-            this.pb_up.TabStop = false;
-            this.pb_up.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
             // lb_username
             // 
             this.lb_username.AutoSize = true;
@@ -101,15 +75,6 @@
             this.lb_username.Size = new System.Drawing.Size(27, 13);
             this.lb_username.TabIndex = 25;
             this.lb_username.Text = "user";
-            // 
-            // pb_user
-            // 
-            this.pb_user.Location = new System.Drawing.Point(552, 12);
-            this.pb_user.Name = "pb_user";
-            this.pb_user.Size = new System.Drawing.Size(50, 50);
-            this.pb_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_user.TabIndex = 24;
-            this.pb_user.TabStop = false;
             // 
             // bt_obter
             // 
@@ -141,11 +106,11 @@
             // 
             this.lb_like.AutoSize = true;
             this.lb_like.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lb_like.Location = new System.Drawing.Point(482, 62);
+            this.lb_like.Location = new System.Drawing.Point(507, 54);
             this.lb_like.Name = "lb_like";
-            this.lb_like.Size = new System.Drawing.Size(12, 14);
+            this.lb_like.Size = new System.Drawing.Size(27, 14);
             this.lb_like.TabIndex = 20;
-            this.lb_like.Text = "L";
+            this.lb_like.Text = "Like";
             this.lb_like.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // lb_titulo
@@ -162,6 +127,19 @@
             this.lb_titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_titulo.Click += new System.EventHandler(this.lb_titulo_Click);
             // 
+            // pb_down
+            // 
+            this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.Location = new System.Drawing.Point(476, 81);
+            this.pb_down.Name = "pb_down";
+            this.pb_down.Size = new System.Drawing.Size(25, 25);
+            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_down.TabIndex = 28;
+            this.pb_down.TabStop = false;
+            this.pb_down.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // pb_icone
             // 
             this.pb_icone.Location = new System.Drawing.Point(13, 25);
@@ -172,11 +150,44 @@
             this.pb_icone.TabStop = false;
             this.pb_icone.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
+            // pb_up
+            // 
+            this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.Location = new System.Drawing.Point(476, 43);
+            this.pb_up.Name = "pb_up";
+            this.pb_up.Size = new System.Drawing.Size(25, 25);
+            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_up.TabIndex = 27;
+            this.pb_up.TabStop = false;
+            this.pb_up.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pb_user
+            // 
+            this.pb_user.Location = new System.Drawing.Point(552, 12);
+            this.pb_user.Name = "pb_user";
+            this.pb_user.Size = new System.Drawing.Size(50, 50);
+            this.pb_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_user.TabIndex = 24;
+            this.pb_user.TabStop = false;
+            // 
+            // lb_deslike
+            // 
+            this.lb_deslike.AutoSize = true;
+            this.lb_deslike.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lb_deslike.Location = new System.Drawing.Point(507, 92);
+            this.lb_deslike.Name = "lb_deslike";
+            this.lb_deslike.Size = new System.Drawing.Size(44, 14);
+            this.lb_deslike.TabIndex = 31;
+            this.lb_deslike.Text = "Deslike";
+            // 
             // PostCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.lb_deslike);
             this.Controls.Add(this.lb_data);
             this.Controls.Add(this.lb_descricao);
             this.Controls.Add(this.pb_down);
@@ -192,9 +203,9 @@
             this.Size = new System.Drawing.Size(625, 196);
             this.Load += new System.EventHandler(this.PostCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_user)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +223,6 @@
         private System.Windows.Forms.PictureBox pb_up;
         private System.Windows.Forms.Label lb_descricao;
         private System.Windows.Forms.Label lb_data;
+        private System.Windows.Forms.Label lb_deslike;
     }
 }

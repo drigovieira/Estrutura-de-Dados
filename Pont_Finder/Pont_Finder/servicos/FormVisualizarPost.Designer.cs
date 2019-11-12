@@ -34,7 +34,6 @@
             this.lb_titulo = new System.Windows.Forms.Label();
             this.lb_valor = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bt_voltar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lb_descricao = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -44,12 +43,13 @@
             this.lb_email = new System.Windows.Forms.Label();
             this.lb_cpf = new System.Windows.Forms.Label();
             this.lb_fantasia = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_wallpaper
@@ -95,22 +95,11 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.bt_voltar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 1200);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 23;
-            // 
-            // bt_voltar
-            // 
-            this.bt_voltar.Location = new System.Drawing.Point(88, 13);
-            this.bt_voltar.Name = "bt_voltar";
-            this.bt_voltar.Size = new System.Drawing.Size(75, 23);
-            this.bt_voltar.TabIndex = 0;
-            this.bt_voltar.Text = "Voltar";
-            this.bt_voltar.UseVisualStyleBackColor = true;
-            this.bt_voltar.Click += new System.EventHandler(this.Bt_voltar_Click);
             // 
             // panel2
             // 
@@ -208,6 +197,20 @@
             this.lb_fantasia.Text = "Nome";
             this.lb_fantasia.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(42, 174);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 13;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
+            this.btn_back.MouseLeave += new System.EventHandler(this.Btn_back_MouseLeave);
+            this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Btn_back_MouseMove);
+            // 
             // FormVisualizarPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,6 +218,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -230,12 +234,12 @@
             this.Load += new System.EventHandler(this.FormVisualizarPost_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,6 +261,6 @@
         private System.Windows.Forms.Label lb_endereco;
         private System.Windows.Forms.Label lb_telefone;
         private System.Windows.Forms.PictureBox pb_empresa;
-        private System.Windows.Forms.Button bt_voltar;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }

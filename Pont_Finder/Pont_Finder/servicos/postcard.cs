@@ -25,10 +25,19 @@ namespace Pont_Finder.servicos
         private long likes;
         private List<long[]> listlikes = new List<long[]>();
 
-        Bitmap up = Properties.Resources.upgrey;
-        Bitmap down = Properties.Resources.downgrey;
-        Bitmap upv = Properties.Resources.upblue;
-        Bitmap downv = Properties.Resources.downred;
+        private long like;
+        private long deslike;
+
+
+
+
+
+
+        Bitmap up = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
+     
+        Bitmap down = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
+        Bitmap upv = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
+        Bitmap downv = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
 
 
         public PostCard(int id)
@@ -46,6 +55,7 @@ namespace Pont_Finder.servicos
             this.cnpj = post.Cnpj;
             this.descricao = post.Descricao;
 
+
        
             InitializeComponent();
 
@@ -55,7 +65,13 @@ namespace Pont_Finder.servicos
             else
                 pb_icone.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
 
-            lb_like.Text = this.likes + "";
+            this.like = post.Joinha;
+            this.deslike = post.DeJoinha;
+
+            lb_like.Text = this.like + "";
+            lb_deslike.Text = this.deslike + "";
+
+            
 
             if (Session.Online)
             {
@@ -64,13 +80,13 @@ namespace Pont_Finder.servicos
                 {
                     pb_up.Image = upv;
                     pb_down.Image = down;
-                    lb_like.ForeColor = System.Drawing.Color.Blue;
+                   // lb_like.ForeColor = System.Drawing.Color.Blue;
                 }
                 else if (userlike == -1)
                 {
                     pb_up.Image = up;
                     pb_down.Image = downv;
-                    lb_like.ForeColor = System.Drawing.Color.Red;
+                   // lb_like.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -140,15 +156,33 @@ namespace Pont_Finder.servicos
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            //Like
             if (Session.Online)
             {
-                classes.Post post = classes.PostList.SelectId(this.id);
-                int vLike = post.vLike(Session.Cpf);
-                post.like(1, Session.Cpf);
-                lb_like.Text = "" + post.Likes;
-                pb_up.Image = upv;
-                lb_like.ForeColor = System.Drawing.Color.Blue;
-                pb_down.Image = down;
+                if (pb_up.Image == upv)
+                {
+                    classes.Post post = classes.PostList.SelectId(this.id);
+                    int vLike = post.vLike(Session.Cpf);
+                    post.like(0, Session.Cpf);
+                    lb_like.Text = "" + post.Joinha;
+                    lb_deslike.Text = "" + post.DeJoinha;
+                    pb_up.Image = up;
+                    //lb_like.ForeColor = System.Drawing.Color.Blue;
+                    pb_down.Image = down;
+                }
+                else
+                {
+                    classes.Post post = classes.PostList.SelectId(this.id);
+                    int vLike = post.vLike(Session.Cpf);
+                    post.like(1, Session.Cpf);
+                    lb_like.Text = "" + post.Joinha;
+                    lb_deslike.Text = "" + post.DeJoinha;
+                    pb_up.Image = upv;
+                    //lb_like.ForeColor = System.Drawing.Color.Blue;
+                    pb_down.Image = down;
+                }
+
+               
             }
             else
             {
@@ -161,13 +195,30 @@ namespace Pont_Finder.servicos
         {
             if (Session.Online)
             {
-                classes.Post post = classes.PostList.SelectId(this.id);
-                int vLike = post.vLike(Session.Cpf);
-                post.like(-1, Session.Cpf);
-                lb_like.Text = "" + post.Likes;
-                pb_down.Image = downv;
-                lb_like.ForeColor = System.Drawing.Color.Red;
-                pb_up.Image = up;
+                if (pb_down.Image == downv)
+                {
+                    classes.Post post = classes.PostList.SelectId(this.id);
+                    int vLike = post.vLike(Session.Cpf);
+                    post.like(0, Session.Cpf);
+                    lb_like.Text = "" + post.Joinha;
+                    lb_deslike.Text = "" + post.DeJoinha;
+                    pb_down.Image = down;
+                    //lb_like.ForeColor = System.Drawing.Color.Red;
+                    pb_up.Image = up;
+                }
+                else
+                {
+                    classes.Post post = classes.PostList.SelectId(this.id);
+                    int vLike = post.vLike(Session.Cpf);
+                    post.like(-1, Session.Cpf);
+                    lb_like.Text = "" + post.Joinha;
+                    lb_deslike.Text = "" + post.DeJoinha;
+                    pb_down.Image = downv;
+                    //lb_like.ForeColor = System.Drawing.Color.Red;
+                    pb_up.Image = up;
+                }
+
+                
             }
             else
             {

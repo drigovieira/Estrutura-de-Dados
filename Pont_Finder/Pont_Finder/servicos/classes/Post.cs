@@ -124,6 +124,62 @@ namespace Pont_Finder.servicos.classes
             }
         }
 
+        public long Joinha
+        {
+            get
+            {
+                if (likes.Count == 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    long total = 0;
+
+                    foreach (var item in likes)
+                    {
+                        if (item[0] == 1)
+                        {
+                            total++;
+                        }
+                        
+                    }
+                    return total;
+                }
+
+                ;
+            }
+        }
+        public long DeJoinha
+        {
+            get
+            {
+                if (likes.Count == 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    long total = 0;
+
+                    foreach (var item in likes)
+                    {
+                        if (item[0] == -1)
+                        {
+                            total++;
+                        }
+
+                    }
+                    return total;
+                }
+
+                ;
+            }
+        }
+
+
+
+
         public int vLike(long cpf)
         {
             int cont = -1;

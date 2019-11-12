@@ -83,6 +83,16 @@ namespace Pont_Finder.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Deslike_null {
+            get {
+                object obj = ResourceManager.GetObject("Deslike_null", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap downblue {
             get {
                 object obj = ResourceManager.GetObject("downblue", resourceCulture);
@@ -106,6 +116,16 @@ namespace Pont_Finder.Properties {
         internal static System.Drawing.Bitmap downred {
             get {
                 object obj = ResourceManager.GetObject("downred", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Like_null {
+            get {
+                object obj = ResourceManager.GetObject("Like_null", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

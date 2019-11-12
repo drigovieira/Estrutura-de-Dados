@@ -164,7 +164,6 @@
     <Compile Include="eventos\Post_Eventos.Designer.cs">
       <DependentUpon>Post_Eventos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Funcionamento.cs" />
     <Compile Include="hospedagem\Cadastro_Empresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -448,8 +447,12 @@
     <Content Include="eventos\Data\imagens\offImage.jpg" />
     <Content Include="eventos\Data\Postagem_Eventos.xml" />
     <Content Include="hospedagem\data\quartos.xml" />
-    <None Include="Resources\back-1.png" />
-    <None Include="Resources\back-2.png" />
+    <Content Include="Resources\servicos\like\Deslike.png" />
+    <Content Include="Resources\servicos\like\Deslike_blue.png" />
+    <Content Include="Resources\servicos\like\Deslike_null.png" />
+    <Content Include="Resources\servicos\like\like.png" />
+    <Content Include="Resources\servicos\like\Like_null.png" />
+    <Content Include="Resources\servicos\like\Like_verde.png" />
     <Content Include="servicos\data\images\empresas\offImage.jpg" />
     <Content Include="servicos\data\posts.xml" />
     <None Include="Resources\downred.png" />

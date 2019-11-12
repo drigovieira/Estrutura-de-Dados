@@ -304,7 +304,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 1068);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1265, 100);
+            this.panel3.Size = new System.Drawing.Size(1282, 100);
             this.panel3.TabIndex = 65;
             // 
             // openIcone
@@ -322,7 +322,7 @@
             this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1265, 150);
+            this.panel7.Size = new System.Drawing.Size(1282, 150);
             this.panel7.TabIndex = 62;
             // 
             // label10
@@ -351,7 +351,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1299, 675);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel7);
