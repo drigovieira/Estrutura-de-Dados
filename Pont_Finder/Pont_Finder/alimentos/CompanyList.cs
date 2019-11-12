@@ -8,8 +8,8 @@ namespace Pont_Finder.alimentos
 {
     class CompanyList
     {
-        private List<Company> company = new List<Company>();
-        public void CompAdd(Company comp)
+        private static List<Company> company = new List<Company>();
+        public static void CompAdd(Company comp)
         {
             Company emp = new Company();
             emp.Nome = comp.Nome;
@@ -20,12 +20,13 @@ namespace Pont_Finder.alimentos
             emp.Bairro = comp.Bairro;
             emp.Categoria = comp.Categoria;
             emp.Cep = comp.Cep;
+            emp.TelComercial = comp.TelComercial;
             emp.Status = true;
             company.Add(emp);
             company[company.IndexOf(emp)].Id = company.IndexOf(emp);
         }
         //falta arrumar o método select.
-        public int select(Company item)
+        public static int select(Company item)
         {            
             int index = 0;
             foreach(var select in company)
@@ -52,7 +53,7 @@ namespace Pont_Finder.alimentos
                 }
             }
         }*/
-        public void alter(string cnpj, Company comp)
+        public static void alter(string cnpj, Company comp)
         {
             long cnpjConvert = Convert.ToInt64(String.Join("", System.Text.RegularExpressions.Regex.Split(cnpj, @"[^\d]")));
             //percorre a lista com uma variável Company
@@ -73,11 +74,11 @@ namespace Pont_Finder.alimentos
                 }
             }
         }
-        public List<Company> selectAll()
+        public static List<Company> selectAll()
         {
             return company;
         }
-        public List<Company> SearchName(string name)
+        public static List<Company> SearchName(string name)
         {
             List<Company> lista = new List<Company>();
             foreach (var emps in company)
@@ -89,7 +90,7 @@ namespace Pont_Finder.alimentos
             }
             return lista;
         }
-        public List<Company> SearchCategoria(string categoria)
+        public static List<Company> SearchCategoria(string categoria)
         {
             List<Company> lista = new List<Company>();
             foreach (var emps in company)
@@ -101,7 +102,7 @@ namespace Pont_Finder.alimentos
             }
             return lista;
         }
-        public List<Company> SearchFiltro(string name, string categoria)
+        public static List<Company> SearchFiltro(string name, string categoria)
         {
             List<Company> lista = new List<Company>();
             foreach (var emps in company)

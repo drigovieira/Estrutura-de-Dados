@@ -32,6 +32,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Filtrar = new System.Windows.Forms.Button();
             this.CategoriaBox = new System.Windows.Forms.ComboBox();
             this.Pesquisar = new System.Windows.Forms.Button();
             this.lbCategoria = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Filtrar = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -86,6 +86,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 267);
             this.panel2.TabIndex = 13;
+            // 
+            // Filtrar
+            // 
+            this.Filtrar.BackColor = System.Drawing.Color.Transparent;
+            this.Filtrar.FlatAppearance.BorderSize = 0;
+            this.Filtrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Filtrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filtrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Filtrar.Location = new System.Drawing.Point(202, 159);
+            this.Filtrar.Name = "Filtrar";
+            this.Filtrar.Size = new System.Drawing.Size(103, 27);
+            this.Filtrar.TabIndex = 12;
+            this.Filtrar.Text = "Filtrar por:";
+            this.Filtrar.UseVisualStyleBackColor = false;
+            this.Filtrar.Click += new System.EventHandler(this.Filtrar_Click);
             // 
             // CategoriaBox
             // 
@@ -185,7 +200,7 @@
             this.ListarEmpresas.BackColor = System.Drawing.Color.White;
             this.ListarEmpresas.Location = new System.Drawing.Point(325, 394);
             this.ListarEmpresas.Name = "ListarEmpresas";
-            this.ListarEmpresas.Size = new System.Drawing.Size(625, 201);
+            this.ListarEmpresas.Size = new System.Drawing.Size(625, 205);
             this.ListarEmpresas.TabIndex = 16;
             this.ListarEmpresas.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel5_Paint);
             // 
@@ -248,21 +263,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(0, 0);
             this.panel1.TabIndex = 12;
-            // 
-            // Filtrar
-            // 
-            this.Filtrar.BackColor = System.Drawing.Color.Transparent;
-            this.Filtrar.FlatAppearance.BorderSize = 0;
-            this.Filtrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Filtrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Filtrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Filtrar.Location = new System.Drawing.Point(202, 159);
-            this.Filtrar.Name = "Filtrar";
-            this.Filtrar.Size = new System.Drawing.Size(103, 27);
-            this.Filtrar.TabIndex = 12;
-            this.Filtrar.Text = "Filtrar por:";
-            this.Filtrar.UseVisualStyleBackColor = false;
-            this.Filtrar.Click += new System.EventHandler(this.Filtrar_Click);
             // 
             // formAlimentos
             // 

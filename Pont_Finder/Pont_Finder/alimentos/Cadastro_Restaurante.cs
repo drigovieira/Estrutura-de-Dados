@@ -12,7 +12,6 @@ namespace Pont_Finder.alimentos
 {
     public partial class Cadastro_Restaurante : Form
     {
-        CompanyList complist = new CompanyList();
         public Cadastro_Restaurante()
         {
             InitializeComponent();
@@ -30,16 +29,28 @@ namespace Pont_Finder.alimentos
 
         private void BtnCad_Click(object sender, EventArgs e)
         {
-            Company comp = new Company();
-            comp.Nome = tbNomeEmpresa.Text;
-            comp.NomeFantasia = tbFantasia.Text;
-            comp.Rua = tbRua.Text;
-            comp.Numero = Convert.ToInt32(tbNum.Text);
-            comp.Cep = Convert.ToInt32(tbCep.Text);
-            comp.Bairro = tbBairro.Text;
-            comp.TelComercial = Convert.ToInt32(tbTel.Text);
-            comp.Email = tbEmail.Text;
-            complist.CompAdd(comp);
+            Company emp = new Company();
+            try
+            {
+                emp.Nome = tbNomeEmpresa.Text;
+                emp.NomeFantasia = tbFantasia.Text;
+                emp.Rua = tbRua.Text;
+                emp.Numero = Convert.ToInt32(tbNum.Text);
+                emp.Cep = Convert.ToInt32(tbCep.Text);
+                emp.Bairro = tbBairro.Text;
+                emp.TelComercial = Convert.ToInt32(tbTel.Text);
+                emp.Email = tbEmail.Text;
+                CompanyList.CompAdd(emp);
+                MessageBox.Show("Empresa Cadastrada!", "Status Operation:");
+            }catch(Exception exp)
+            {
+                MessageBox.Show("" +exp);
+            }
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
