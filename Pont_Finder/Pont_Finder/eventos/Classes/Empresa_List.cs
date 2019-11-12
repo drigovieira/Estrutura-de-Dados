@@ -28,7 +28,6 @@ namespace Pont_Finder.eventos.classes
                     pos.Nome = item.Nome;
                     pos.Nome_Fantasia = item.Nome;
                     pos.Email = item.Email;
-                    pos.Senha = item.Senha;
                     pos.Cnpj = item.Cnpj;
                     pos.Telefone = item.Telefone;
                     pos.Endereco = item.Endereco;
@@ -56,7 +55,6 @@ namespace Pont_Finder.eventos.classes
                     pos.Nome = item.Nome;
                     pos.Nome_Fantasia = item.Nome_Fantasia;
                     pos.Email = item.Email;
-                    pos.Senha = item.Senha;
                     pos.Cnpj = item.Cnpj;
                     pos.Telefone = item.Telefone;
                     pos.Endereco = item.Endereco;
@@ -82,7 +80,6 @@ namespace Pont_Finder.eventos.classes
                         pos.Nome = item.Nome;
                         pos.Nome_Fantasia = item.Nome_Fantasia;
                         pos.Email = item.Email;
-                        pos.Senha = item.Senha;
                         pos.Cnpj = item.Cnpj;
                         pos.Telefone = item.Telefone;
                         pos.Endereco = item.Endereco;
@@ -101,7 +98,6 @@ namespace Pont_Finder.eventos.classes
             pos.Nome = post.Nome;
             pos.Nome_Fantasia = post.Nome_Fantasia;
             pos.Email = post.Email;
-            pos.Senha = post.Senha;
             pos.Cnpj = post.Cnpj;
             pos.Telefone = post.Telefone;
             pos.Endereco = post.Endereco;
@@ -122,7 +118,6 @@ namespace Pont_Finder.eventos.classes
                       new XElement("nome", item.Nome),
                       new XElement("nome_fantasia", item.Nome_Fantasia),
                       new XElement("email", item.Email),
-                      new XElement("senha", item.Senha),
                       new XElement("cnpj", item.Cnpj),
                       new XElement("telefone", item.Telefone),
                       new XElement("endereco", item.Endereco),
@@ -147,7 +142,6 @@ namespace Pont_Finder.eventos.classes
                 postar.Nome = (item.Element("nome").Value);
                 postar.Nome_Fantasia = item.Element("nome_fantasia").Value;
                 postar.Email = item.Element("email").Value;
-                postar.Senha = (item.Element("senha").Value);
                 postar.Cnpj = long.Parse(item.Element("cnpj").Value);
                 postar.Telefone = item.Element("telefone").Value;
                 postar.Endereco = item.Element("endereco").Value;

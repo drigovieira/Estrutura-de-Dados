@@ -11,7 +11,7 @@ namespace Pont_Finder.eventos.classes
         private string nome;
         private string nome_fantasia;
         private string email;
-        private string senha;
+       
         private long cnpj;
         private string telefone;
         private string endereco;
@@ -36,12 +36,7 @@ namespace Pont_Finder.eventos.classes
             set { email = value; }
         }
 
-        public string Senha
-        {
-            get { return senha; }
-            set { senha = value; }
-        }
-
+        
         public long Cnpj
         {
             get { return cnpj; }
