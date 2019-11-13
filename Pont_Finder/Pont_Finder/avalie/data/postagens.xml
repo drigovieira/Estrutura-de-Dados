@@ -22,4 +22,15 @@
     <localizacao>sao paulo</localizacao>
     <ativo>true</ativo>
   </post>
+  <post>
+    <id>2</id>
+    <nome>Muzy</nome>
+    <img>..//..//avalie//data//imagens//posts//2.jpg</img>
+    <cpf>42750892864</cpf>
+    <tempohora>13/11/2019 07:59</tempohora>
+    <desc>Cade o recanto dos Muzzys</desc>
+    <tipoproblema>Infraestrutura</tipoproblema>
+    <localizacao>Cruzeiro</localizacao>
+    <ativo>true</ativo>
+  </post>
 </posts>
