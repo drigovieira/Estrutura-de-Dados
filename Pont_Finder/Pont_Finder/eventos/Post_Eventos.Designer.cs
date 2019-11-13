@@ -86,7 +86,7 @@
             this.button2.Location = new System.Drawing.Point(204, 1358);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(220, 50);
-            this.button2.TabIndex = 22;
+            this.button2.TabIndex = 6;
             this.button2.Text = "Adicionar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -102,7 +102,7 @@
             this.CBfaixaetaria.Location = new System.Drawing.Point(339, 1138);
             this.CBfaixaetaria.Name = "CBfaixaetaria";
             this.CBfaixaetaria.Size = new System.Drawing.Size(121, 21);
-            this.CBfaixaetaria.TabIndex = 21;
+            this.CBfaixaetaria.TabIndex = 4;
             // 
             // Blocal
             // 
@@ -110,28 +110,28 @@
             this.Blocal.Multiline = true;
             this.Blocal.Name = "Blocal";
             this.Blocal.Size = new System.Drawing.Size(278, 25);
-            this.Blocal.TabIndex = 20;
+            this.Blocal.TabIndex = 2;
             // 
             // Bvalor
             // 
             this.Bvalor.Location = new System.Drawing.Point(344, 1207);
             this.Bvalor.Name = "Bvalor";
             this.Bvalor.Size = new System.Drawing.Size(118, 20);
-            this.Bvalor.TabIndex = 19;
+            this.Bvalor.TabIndex = 5;
             // 
             // Bpatrocionadores
             // 
             this.Bpatrocionadores.Location = new System.Drawing.Point(136, 1316);
             this.Bpatrocionadores.Name = "Bpatrocionadores";
             this.Bpatrocionadores.Size = new System.Drawing.Size(210, 20);
-            this.Bpatrocionadores.TabIndex = 18;
+            this.Bpatrocionadores.TabIndex = 3;
             // 
             // Bhorario
             // 
             this.Bhorario.Location = new System.Drawing.Point(76, 1202);
             this.Bhorario.Name = "Bhorario";
             this.Bhorario.Size = new System.Drawing.Size(100, 20);
-            this.Bhorario.TabIndex = 17;
+            this.Bhorario.TabIndex = 1;
             // 
             // label11
             // 
@@ -322,7 +322,7 @@
             this.button1.Location = new System.Drawing.Point(228, 404);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 35);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 14;
             this.button1.Text = "Adicionar";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -372,7 +372,7 @@
             this.Bdata.Mask = "00/00/0000";
             this.Bdata.Name = "Bdata";
             this.Bdata.Size = new System.Drawing.Size(113, 20);
-            this.Bdata.TabIndex = 27;
+            this.Bdata.TabIndex = 0;
             this.Bdata.ValidatingType = typeof(System.DateTime);
             // 
             // pb_icone

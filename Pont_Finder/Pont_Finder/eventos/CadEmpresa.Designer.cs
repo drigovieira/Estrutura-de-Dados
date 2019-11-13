@@ -50,8 +50,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.mkb_cnpj = new System.Windows.Forms.MaskedTextBox();
             this.mkb_telefone = new System.Windows.Forms.MaskedTextBox();
+            this.mkb_cnpj = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -95,7 +95,7 @@
             this.Bemail.Location = new System.Drawing.Point(105, 423);
             this.Bemail.Name = "Bemail";
             this.Bemail.Size = new System.Drawing.Size(415, 22);
-            this.Bemail.TabIndex = 6;
+            this.Bemail.TabIndex = 5;
             // 
             // label4
             // 
@@ -113,7 +113,7 @@
             this.Bnomefantasia.Location = new System.Drawing.Point(105, 123);
             this.Bnomefantasia.Name = "Bnomefantasia";
             this.Bnomefantasia.Size = new System.Drawing.Size(415, 22);
-            this.Bnomefantasia.TabIndex = 4;
+            this.Bnomefantasia.TabIndex = 1;
             // 
             // label3
             // 
@@ -131,7 +131,7 @@
             this.Bendereco.Location = new System.Drawing.Point(105, 270);
             this.Bendereco.Name = "Bendereco";
             this.Bendereco.Size = new System.Drawing.Size(415, 22);
-            this.Bendereco.TabIndex = 8;
+            this.Bendereco.TabIndex = 3;
             // 
             // label7
             // 
@@ -172,7 +172,7 @@
             this.button1.Location = new System.Drawing.Point(164, 508);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 40);
-            this.button1.TabIndex = 18;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Continuar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -193,7 +193,7 @@
             this.Bnomeempresa.Location = new System.Drawing.Point(105, 48);
             this.Bnomeempresa.Name = "Bnomeempresa";
             this.Bnomeempresa.Size = new System.Drawing.Size(415, 22);
-            this.Bnomeempresa.TabIndex = 2;
+            this.Bnomeempresa.TabIndex = 0;
             this.Bnomeempresa.TextChanged += new System.EventHandler(this.Bnomeempresa_TextChanged);
             // 
             // button2
@@ -270,23 +270,23 @@
             this.panel3.Size = new System.Drawing.Size(625, 640);
             this.panel3.TabIndex = 34;
             // 
-            // mkb_cnpj
-            // 
-            this.mkb_cnpj.Location = new System.Drawing.Point(109, 210);
-            this.mkb_cnpj.Mask = "99.999.999/9999-99";
-            this.mkb_cnpj.Name = "mkb_cnpj";
-            this.mkb_cnpj.Size = new System.Drawing.Size(411, 20);
-            this.mkb_cnpj.TabIndex = 20;
-            this.mkb_cnpj.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            // 
             // mkb_telefone
             // 
             this.mkb_telefone.Location = new System.Drawing.Point(105, 358);
             this.mkb_telefone.Mask = "(99) 0000-00000";
             this.mkb_telefone.Name = "mkb_telefone";
             this.mkb_telefone.Size = new System.Drawing.Size(415, 20);
-            this.mkb_telefone.TabIndex = 21;
+            this.mkb_telefone.TabIndex = 4;
             this.mkb_telefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // mkb_cnpj
+            // 
+            this.mkb_cnpj.Location = new System.Drawing.Point(109, 210);
+            this.mkb_cnpj.Mask = "99.999.999/9999-99";
+            this.mkb_cnpj.Name = "mkb_cnpj";
+            this.mkb_cnpj.Size = new System.Drawing.Size(411, 20);
+            this.mkb_cnpj.TabIndex = 2;
+            this.mkb_cnpj.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // CadEmpresa
             // 
