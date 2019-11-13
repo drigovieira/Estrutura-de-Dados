@@ -72,28 +72,36 @@
             this.label8 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.pn_galery = new System.Windows.Forms.Panel();
+            this.pb_logo = new System.Windows.Forms.PictureBox();
+            this.bt_add_logo = new System.Windows.Forms.Button();
+            this.ckb_lugarPet = new System.Windows.Forms.CheckBox();
+            this.ckb_wifi = new System.Windows.Forms.CheckBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pnl_tipoHosp.SuspendLayout();
             this.pnl_ambDisp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(60, 1065);
+            this.label4.Location = new System.Drawing.Point(65, 942);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(495, 24);
+            this.label4.Size = new System.Drawing.Size(476, 24);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Marque os ambientes disponíveis para os hospedes";
+            this.label4.Text = "Marque os serviços disponíveis para os hospedes";
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.bt_add_logo);
+            this.panel11.Controls.Add(this.pb_logo);
             this.panel11.Controls.Add(this.mkb_phone);
             this.panel11.Controls.Add(this.mkb_cep);
             this.panel11.Controls.Add(this.mkb_cnpj);
@@ -108,15 +116,15 @@
             this.panel11.Controls.Add(this.tb_nameEmp);
             this.panel11.Controls.Add(this.label12);
             this.panel11.Controls.Add(this.label13);
-            this.panel11.Location = new System.Drawing.Point(320, 369);
+            this.panel11.Location = new System.Drawing.Point(320, 302);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(625, 496);
+            this.panel11.Size = new System.Drawing.Size(625, 656);
             this.panel11.TabIndex = 0;
             // 
             // mkb_phone
             // 
             this.mkb_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mkb_phone.Location = new System.Drawing.Point(345, 350);
+            this.mkb_phone.Location = new System.Drawing.Point(345, 523);
             this.mkb_phone.Mask = "(99) 000-0000";
             this.mkb_phone.Name = "mkb_phone";
             this.mkb_phone.Size = new System.Drawing.Size(170, 22);
@@ -127,7 +135,7 @@
             // 
             this.mkb_cep.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mkb_cep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mkb_cep.Location = new System.Drawing.Point(100, 350);
+            this.mkb_cep.Location = new System.Drawing.Point(100, 523);
             this.mkb_cep.Mask = "00.000-000";
             this.mkb_cep.Name = "mkb_cep";
             this.mkb_cep.Size = new System.Drawing.Size(170, 22);
@@ -137,7 +145,7 @@
             // mkb_cnpj
             // 
             this.mkb_cnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mkb_cnpj.Location = new System.Drawing.Point(100, 199);
+            this.mkb_cnpj.Location = new System.Drawing.Point(100, 372);
             this.mkb_cnpj.Mask = "99.999.999/9999-99";
             this.mkb_cnpj.Name = "mkb_cnpj";
             this.mkb_cnpj.Size = new System.Drawing.Size(415, 22);
@@ -148,7 +156,7 @@
             // tb_email
             // 
             this.tb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_email.Location = new System.Drawing.Point(100, 423);
+            this.tb_email.Location = new System.Drawing.Point(100, 596);
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(415, 22);
             this.tb_email.TabIndex = 7;
@@ -157,7 +165,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(100, 247);
+            this.label5.Location = new System.Drawing.Point(100, 420);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 20);
             this.label5.TabIndex = 7;
@@ -166,7 +174,7 @@
             // tb_nameFantasy
             // 
             this.tb_nameFantasy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_nameFantasy.Location = new System.Drawing.Point(100, 123);
+            this.tb_nameFantasy.Location = new System.Drawing.Point(100, 296);
             this.tb_nameFantasy.Name = "tb_nameFantasy";
             this.tb_nameFantasy.Size = new System.Drawing.Size(415, 22);
             this.tb_nameFantasy.TabIndex = 2;
@@ -175,7 +183,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(100, 394);
+            this.label6.Location = new System.Drawing.Point(100, 567);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 20);
             this.label6.TabIndex = 5;
@@ -184,7 +192,7 @@
             // tb_endereco
             // 
             this.tb_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_endereco.Location = new System.Drawing.Point(100, 277);
+            this.tb_endereco.Location = new System.Drawing.Point(100, 450);
             this.tb_endereco.Name = "tb_endereco";
             this.tb_endereco.Size = new System.Drawing.Size(415, 22);
             this.tb_endereco.TabIndex = 4;
@@ -194,7 +202,7 @@
             this.label7.AutoSize = true;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(345, 320);
+            this.label7.Location = new System.Drawing.Point(345, 493);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 20);
             this.label7.TabIndex = 14;
@@ -205,7 +213,7 @@
             this.label9.AutoSize = true;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(100, 94);
+            this.label9.Location = new System.Drawing.Point(100, 267);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(125, 20);
             this.label9.TabIndex = 3;
@@ -215,7 +223,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(100, 170);
+            this.label11.Location = new System.Drawing.Point(100, 343);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 20);
             this.label11.TabIndex = 9;
@@ -224,7 +232,7 @@
             // tb_nameEmp
             // 
             this.tb_nameEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_nameEmp.Location = new System.Drawing.Point(100, 48);
+            this.tb_nameEmp.Location = new System.Drawing.Point(100, 221);
             this.tb_nameEmp.Name = "tb_nameEmp";
             this.tb_nameEmp.Size = new System.Drawing.Size(415, 22);
             this.tb_nameEmp.TabIndex = 1;
@@ -233,7 +241,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(100, 18);
+            this.label12.Location = new System.Drawing.Point(100, 191);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(154, 20);
             this.label12.TabIndex = 1;
@@ -243,7 +251,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(100, 320);
+            this.label13.Location = new System.Drawing.Point(100, 493);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(44, 20);
             this.label13.TabIndex = 11;
@@ -252,7 +260,7 @@
             // panel9
             // 
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 2463);
+            this.panel9.Location = new System.Drawing.Point(0, 2269);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 57;
@@ -261,6 +269,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.pn_galery);
             this.panel3.Controls.Add(this.label17);
             this.panel3.Controls.Add(this.pnl_tipoHosp);
             this.panel3.Controls.Add(this.bt_continuar);
@@ -271,16 +280,16 @@
             this.panel3.Controls.Add(this.pb_img1);
             this.panel3.Controls.Add(this.bt_add_img);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(320, 1078);
+            this.panel3.Location = new System.Drawing.Point(320, 1045);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(625, 1385);
+            this.panel3.Size = new System.Drawing.Size(625, 1224);
             this.panel3.TabIndex = 8;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(155, 598);
+            this.label17.Location = new System.Drawing.Point(151, 500);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(323, 24);
             this.label17.TabIndex = 16;
@@ -292,7 +301,7 @@
             this.pnl_tipoHosp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_tipoHosp.Controls.Add(this.radio_pousada);
             this.pnl_tipoHosp.Controls.Add(this.radio_hotel);
-            this.pnl_tipoHosp.Location = new System.Drawing.Point(187, 640);
+            this.pnl_tipoHosp.Location = new System.Drawing.Point(183, 542);
             this.pnl_tipoHosp.Name = "pnl_tipoHosp";
             this.pnl_tipoHosp.Size = new System.Drawing.Size(237, 51);
             this.pnl_tipoHosp.TabIndex = 10;
@@ -327,7 +336,7 @@
             this.bt_continuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_continuar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_continuar.ForeColor = System.Drawing.Color.White;
-            this.bt_continuar.Location = new System.Drawing.Point(197, 1296);
+            this.bt_continuar.Location = new System.Drawing.Point(196, 1147);
             this.bt_continuar.Name = "bt_continuar";
             this.bt_continuar.Size = new System.Drawing.Size(220, 50);
             this.bt_continuar.TabIndex = 24;
@@ -339,19 +348,21 @@
             // 
             this.pnl_ambDisp.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnl_ambDisp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_ambDisp.Controls.Add(this.ckb_wifi);
+            this.pnl_ambDisp.Controls.Add(this.ckb_lugarPet);
             this.pnl_ambDisp.Controls.Add(this.ckb_academia);
             this.pnl_ambDisp.Controls.Add(this.ckb_salaJogos);
             this.pnl_ambDisp.Controls.Add(this.ckb_piscina);
             this.pnl_ambDisp.Controls.Add(this.ckb_estacionamento);
-            this.pnl_ambDisp.Location = new System.Drawing.Point(77, 1100);
+            this.pnl_ambDisp.Location = new System.Drawing.Point(73, 977);
             this.pnl_ambDisp.Name = "pnl_ambDisp";
-            this.pnl_ambDisp.Size = new System.Drawing.Size(460, 160);
+            this.pnl_ambDisp.Size = new System.Drawing.Size(460, 133);
             this.pnl_ambDisp.TabIndex = 19;
             // 
             // ckb_academia
             // 
             this.ckb_academia.AutoSize = true;
-            this.ckb_academia.Location = new System.Drawing.Point(292, 77);
+            this.ckb_academia.Location = new System.Drawing.Point(292, 55);
             this.ckb_academia.Name = "ckb_academia";
             this.ckb_academia.Size = new System.Drawing.Size(73, 17);
             this.ckb_academia.TabIndex = 23;
@@ -361,7 +372,7 @@
             // ckb_salaJogos
             // 
             this.ckb_salaJogos.AutoSize = true;
-            this.ckb_salaJogos.Location = new System.Drawing.Point(292, 44);
+            this.ckb_salaJogos.Location = new System.Drawing.Point(292, 89);
             this.ckb_salaJogos.Name = "ckb_salaJogos";
             this.ckb_salaJogos.Size = new System.Drawing.Size(93, 17);
             this.ckb_salaJogos.TabIndex = 22;
@@ -371,7 +382,7 @@
             // ckb_piscina
             // 
             this.ckb_piscina.AutoSize = true;
-            this.ckb_piscina.Location = new System.Drawing.Point(72, 77);
+            this.ckb_piscina.Location = new System.Drawing.Point(72, 55);
             this.ckb_piscina.Name = "ckb_piscina";
             this.ckb_piscina.Size = new System.Drawing.Size(60, 17);
             this.ckb_piscina.TabIndex = 21;
@@ -381,7 +392,7 @@
             // ckb_estacionamento
             // 
             this.ckb_estacionamento.AutoSize = true;
-            this.ckb_estacionamento.Location = new System.Drawing.Point(72, 44);
+            this.ckb_estacionamento.Location = new System.Drawing.Point(72, 22);
             this.ckb_estacionamento.Name = "ckb_estacionamento";
             this.ckb_estacionamento.Size = new System.Drawing.Size(102, 17);
             this.ckb_estacionamento.TabIndex = 20;
@@ -391,7 +402,7 @@
             // tb_descricaoHotel
             // 
             this.tb_descricaoHotel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_descricaoHotel.Location = new System.Drawing.Point(77, 794);
+            this.tb_descricaoHotel.Location = new System.Drawing.Point(73, 679);
             this.tb_descricaoHotel.Multiline = true;
             this.tb_descricaoHotel.Name = "tb_descricaoHotel";
             this.tb_descricaoHotel.Size = new System.Drawing.Size(460, 220);
@@ -401,7 +412,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(158, 747);
+            this.label3.Location = new System.Drawing.Point(154, 632);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(323, 24);
             this.label3.TabIndex = 4;
@@ -412,9 +423,9 @@
             this.pb_img1.BackColor = System.Drawing.SystemColors.Control;
             this.pb_img1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_img1.InitialImage = global::Pont_Finder.Properties.Resources.downgrey;
-            this.pb_img1.Location = new System.Drawing.Point(77, 290);
+            this.pb_img1.Location = new System.Drawing.Point(73, 65);
             this.pb_img1.Name = "pb_img1";
-            this.pb_img1.Size = new System.Drawing.Size(460, 158);
+            this.pb_img1.Size = new System.Drawing.Size(450, 225);
             this.pb_img1.TabIndex = 3;
             this.pb_img1.TabStop = false;
             // 
@@ -424,7 +435,7 @@
             this.bt_add_img.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_add_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_img.ForeColor = System.Drawing.Color.White;
-            this.bt_add_img.Location = new System.Drawing.Point(223, 473);
+            this.bt_add_img.Location = new System.Drawing.Point(219, 404);
             this.bt_add_img.Name = "bt_add_img";
             this.bt_add_img.Size = new System.Drawing.Size(187, 55);
             this.bt_add_img.TabIndex = 9;
@@ -436,7 +447,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(196, 256);
+            this.label2.Location = new System.Drawing.Point(192, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(258, 24);
             this.label2.TabIndex = 0;
@@ -448,7 +459,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(511, 991);
+            this.label16.Location = new System.Drawing.Point(505, 999);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(293, 31);
             this.label16.TabIndex = 60;
@@ -460,7 +471,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(341, 298);
+            this.label15.Location = new System.Drawing.Point(341, 231);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(672, 31);
             this.label15.TabIndex = 59;
@@ -469,7 +480,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(950, 371);
+            this.panel2.Location = new System.Drawing.Point(950, 304);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 576);
             this.panel2.TabIndex = 51;
@@ -477,7 +488,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(5, 371);
+            this.panel1.Location = new System.Drawing.Point(5, 304);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(310, 576);
             this.panel1.TabIndex = 50;
@@ -523,6 +534,57 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             // 
+            // pn_galery
+            // 
+            this.pn_galery.AutoScroll = true;
+            this.pn_galery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pn_galery.Location = new System.Drawing.Point(73, 296);
+            this.pn_galery.Name = "pn_galery";
+            this.pn_galery.Size = new System.Drawing.Size(450, 87);
+            this.pn_galery.TabIndex = 39;
+            // 
+            // pb_logo
+            // 
+            this.pb_logo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_logo.Location = new System.Drawing.Point(146, 40);
+            this.pb_logo.Name = "pb_logo";
+            this.pb_logo.Size = new System.Drawing.Size(150, 125);
+            this.pb_logo.TabIndex = 15;
+            this.pb_logo.TabStop = false;
+            // 
+            // bt_add_logo
+            // 
+            this.bt_add_logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_add_logo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_add_logo.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_add_logo.ForeColor = System.Drawing.Color.White;
+            this.bt_add_logo.Location = new System.Drawing.Point(335, 85);
+            this.bt_add_logo.Name = "bt_add_logo";
+            this.bt_add_logo.Size = new System.Drawing.Size(139, 44);
+            this.bt_add_logo.TabIndex = 16;
+            this.bt_add_logo.Text = "Adicionar Logo";
+            this.bt_add_logo.UseVisualStyleBackColor = false;
+            // 
+            // ckb_lugarPet
+            // 
+            this.ckb_lugarPet.AutoSize = true;
+            this.ckb_lugarPet.Location = new System.Drawing.Point(72, 89);
+            this.ckb_lugarPet.Name = "ckb_lugarPet";
+            this.ckb_lugarPet.Size = new System.Drawing.Size(95, 17);
+            this.ckb_lugarPet.TabIndex = 24;
+            this.ckb_lugarPet.Text = "Lugar para pet";
+            this.ckb_lugarPet.UseVisualStyleBackColor = true;
+            // 
+            // ckb_wifi
+            // 
+            this.ckb_wifi.AutoSize = true;
+            this.ckb_wifi.Location = new System.Drawing.Point(292, 22);
+            this.ckb_wifi.Name = "ckb_wifi";
+            this.ckb_wifi.Size = new System.Drawing.Size(44, 17);
+            this.ckb_wifi.TabIndex = 25;
+            this.ckb_wifi.Text = "Wifi";
+            this.ckb_wifi.UseVisualStyleBackColor = true;
+            // 
             // Cadastro_Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -556,6 +618,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -606,5 +669,10 @@
         private System.Windows.Forms.MaskedTextBox mkb_cnpj;
         private System.Windows.Forms.MaskedTextBox mkb_cep;
         private System.Windows.Forms.MaskedTextBox mkb_phone;
+        private System.Windows.Forms.Button bt_add_logo;
+        private System.Windows.Forms.PictureBox pb_logo;
+        private System.Windows.Forms.Panel pn_galery;
+        private System.Windows.Forms.CheckBox ckb_wifi;
+        private System.Windows.Forms.CheckBox ckb_lugarPet;
     }
 }

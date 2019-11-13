@@ -51,7 +51,8 @@ namespace Pont_Finder.hospedagem
 
         private void bt_visualizar_Click(object sender, EventArgs e)
         {
-
+            hospedagem.Vizualizar_quarto vizQuarto = new hospedagem.Vizualizar_quarto();
+            FormPrincipal.MudarForm("hospedagem",vizQuarto);
         }
 
         private void lb_rs_Click(object sender, EventArgs e)

@@ -28,30 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hosp_PostCard));
             this.lb_rs = new System.Windows.Forms.Label();
             this.lb_txt_diária = new System.Windows.Forms.Label();
             this.lb_empresa = new System.Windows.Forms.Label();
             this.lb_nome = new System.Windows.Forms.Label();
             this.pb_hotel = new System.Windows.Forms.PictureBox();
-            this.pb_estacionamento = new System.Windows.Forms.PictureBox();
-            this.pb_pet = new System.Windows.Forms.PictureBox();
-            this.pb_tv = new System.Windows.Forms.PictureBox();
-            this.pb_cafe_da_tarde = new System.Windows.Forms.PictureBox();
-            this.pb_cafe_da_manha = new System.Windows.Forms.PictureBox();
-            this.pb_almoco = new System.Windows.Forms.PictureBox();
-            this.pb__duo = new System.Windows.Forms.PictureBox();
-            this.pb_wifi = new System.Windows.Forms.PictureBox();
             this.bt_visualizar = new System.Windows.Forms.Button();
+            this.pn_icons_hotel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_estacionamento)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_tv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_tarde)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_manha)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_almoco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_wifi)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_rs
@@ -107,86 +91,6 @@
             this.pb_hotel.TabIndex = 1;
             this.pb_hotel.TabStop = false;
             // 
-            // pb_estacionamento
-            // 
-            this.pb_estacionamento.Image = ((System.Drawing.Image)(resources.GetObject("pb_estacionamento.Image")));
-            this.pb_estacionamento.Location = new System.Drawing.Point(400, 120);
-            this.pb_estacionamento.Name = "pb_estacionamento";
-            this.pb_estacionamento.Size = new System.Drawing.Size(25, 25);
-            this.pb_estacionamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_estacionamento.TabIndex = 51;
-            this.pb_estacionamento.TabStop = false;
-            // 
-            // pb_pet
-            // 
-            this.pb_pet.Image = ((System.Drawing.Image)(resources.GetObject("pb_pet.Image")));
-            this.pb_pet.Location = new System.Drawing.Point(369, 120);
-            this.pb_pet.Name = "pb_pet";
-            this.pb_pet.Size = new System.Drawing.Size(25, 25);
-            this.pb_pet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_pet.TabIndex = 50;
-            this.pb_pet.TabStop = false;
-            // 
-            // pb_tv
-            // 
-            this.pb_tv.Image = ((System.Drawing.Image)(resources.GetObject("pb_tv.Image")));
-            this.pb_tv.Location = new System.Drawing.Point(338, 120);
-            this.pb_tv.Name = "pb_tv";
-            this.pb_tv.Size = new System.Drawing.Size(25, 25);
-            this.pb_tv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_tv.TabIndex = 49;
-            this.pb_tv.TabStop = false;
-            // 
-            // pb_cafe_da_tarde
-            // 
-            this.pb_cafe_da_tarde.Image = ((System.Drawing.Image)(resources.GetObject("pb_cafe_da_tarde.Image")));
-            this.pb_cafe_da_tarde.Location = new System.Drawing.Point(307, 120);
-            this.pb_cafe_da_tarde.Name = "pb_cafe_da_tarde";
-            this.pb_cafe_da_tarde.Size = new System.Drawing.Size(25, 25);
-            this.pb_cafe_da_tarde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_cafe_da_tarde.TabIndex = 48;
-            this.pb_cafe_da_tarde.TabStop = false;
-            // 
-            // pb_cafe_da_manha
-            // 
-            this.pb_cafe_da_manha.Image = ((System.Drawing.Image)(resources.GetObject("pb_cafe_da_manha.Image")));
-            this.pb_cafe_da_manha.Location = new System.Drawing.Point(245, 120);
-            this.pb_cafe_da_manha.Name = "pb_cafe_da_manha";
-            this.pb_cafe_da_manha.Size = new System.Drawing.Size(25, 25);
-            this.pb_cafe_da_manha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_cafe_da_manha.TabIndex = 47;
-            this.pb_cafe_da_manha.TabStop = false;
-            // 
-            // pb_almoco
-            // 
-            this.pb_almoco.Image = ((System.Drawing.Image)(resources.GetObject("pb_almoco.Image")));
-            this.pb_almoco.Location = new System.Drawing.Point(276, 120);
-            this.pb_almoco.Name = "pb_almoco";
-            this.pb_almoco.Size = new System.Drawing.Size(25, 25);
-            this.pb_almoco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_almoco.TabIndex = 46;
-            this.pb_almoco.TabStop = false;
-            // 
-            // pb__duo
-            // 
-            this.pb__duo.Image = ((System.Drawing.Image)(resources.GetObject("pb__duo.Image")));
-            this.pb__duo.Location = new System.Drawing.Point(214, 120);
-            this.pb__duo.Name = "pb__duo";
-            this.pb__duo.Size = new System.Drawing.Size(25, 25);
-            this.pb__duo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb__duo.TabIndex = 45;
-            this.pb__duo.TabStop = false;
-            // 
-            // pb_wifi
-            // 
-            this.pb_wifi.Image = ((System.Drawing.Image)(resources.GetObject("pb_wifi.Image")));
-            this.pb_wifi.Location = new System.Drawing.Point(183, 120);
-            this.pb_wifi.Name = "pb_wifi";
-            this.pb_wifi.Size = new System.Drawing.Size(25, 25);
-            this.pb_wifi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_wifi.TabIndex = 44;
-            this.pb_wifi.TabStop = false;
-            // 
             // bt_visualizar
             // 
             this.bt_visualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
@@ -201,20 +105,21 @@
             this.bt_visualizar.UseVisualStyleBackColor = false;
             this.bt_visualizar.Click += new System.EventHandler(this.bt_visualizar_Click);
             // 
+            // pn_icons_hotel
+            // 
+            this.pn_icons_hotel.AutoSize = true;
+            this.pn_icons_hotel.Location = new System.Drawing.Point(183, 120);
+            this.pn_icons_hotel.Name = "pn_icons_hotel";
+            this.pn_icons_hotel.Size = new System.Drawing.Size(25, 25);
+            this.pn_icons_hotel.TabIndex = 53;
+            // 
             // Hosp_PostCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.pn_icons_hotel);
             this.Controls.Add(this.lb_txt_diária);
-            this.Controls.Add(this.pb_estacionamento);
-            this.Controls.Add(this.pb_pet);
-            this.Controls.Add(this.pb_tv);
-            this.Controls.Add(this.pb_cafe_da_tarde);
-            this.Controls.Add(this.pb_cafe_da_manha);
-            this.Controls.Add(this.pb_almoco);
-            this.Controls.Add(this.pb__duo);
-            this.Controls.Add(this.pb_wifi);
             this.Controls.Add(this.lb_rs);
             this.Controls.Add(this.lb_empresa);
             this.Controls.Add(this.lb_nome);
@@ -224,14 +129,6 @@
             this.Size = new System.Drawing.Size(625, 160);
             this.Load += new System.EventHandler(this.Hosp_PostCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_estacionamento)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_tv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_tarde)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_manha)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_almoco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_wifi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,14 +141,7 @@
         private System.Windows.Forms.Label lb_txt_diária;
         private System.Windows.Forms.Label lb_empresa;
         private System.Windows.Forms.Label lb_nome;
-        private System.Windows.Forms.PictureBox pb_estacionamento;
-        private System.Windows.Forms.PictureBox pb_pet;
-        private System.Windows.Forms.PictureBox pb_tv;
-        private System.Windows.Forms.PictureBox pb_cafe_da_tarde;
-        private System.Windows.Forms.PictureBox pb_cafe_da_manha;
-        private System.Windows.Forms.PictureBox pb_almoco;
-        private System.Windows.Forms.PictureBox pb__duo;
-        private System.Windows.Forms.PictureBox pb_wifi;
         private System.Windows.Forms.Button bt_visualizar;
+        private System.Windows.Forms.Panel pn_icons_hotel;
     }
 }

@@ -26,5 +26,10 @@ namespace Pont_Finder.hospedagem
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

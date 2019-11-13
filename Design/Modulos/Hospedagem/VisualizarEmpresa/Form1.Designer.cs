@@ -37,7 +37,7 @@
             this.bt_reservar = new System.Windows.Forms.Button();
             this.lb_txt2 = new System.Windows.Forms.Label();
             this.lb_nome_quarto = new System.Windows.Forms.Label();
-            this.lb_value_descricao = new System.Windows.Forms.Label();
+            this.lb_descricao = new System.Windows.Forms.Label();
             this.lb_txt_descricao = new System.Windows.Forms.Label();
             this.lb_txt8 = new System.Windows.Forms.Label();
             this.lb_txt_sobre = new System.Windows.Forms.Label();
@@ -158,15 +158,15 @@
             this.lb_nome_quarto.TabIndex = 20;
             this.lb_nome_quarto.Text = "nome do quarto";
             // 
-            // lb_value_descricao
+            // lb_descricao
             // 
-            this.lb_value_descricao.AutoSize = true;
-            this.lb_value_descricao.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_value_descricao.Location = new System.Drawing.Point(55, 584);
-            this.lb_value_descricao.Name = "lb_value_descricao";
-            this.lb_value_descricao.Size = new System.Drawing.Size(58, 31);
-            this.lb_value_descricao.TabIndex = 33;
-            this.lb_value_descricao.Text = "Value";
+            this.lb_descricao.AutoSize = true;
+            this.lb_descricao.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_descricao.Location = new System.Drawing.Point(55, 584);
+            this.lb_descricao.Name = "lb_descricao";
+            this.lb_descricao.Size = new System.Drawing.Size(58, 31);
+            this.lb_descricao.TabIndex = 33;
+            this.lb_descricao.Text = "Value";
             // 
             // lb_txt_descricao
             // 
@@ -322,7 +322,7 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.lb_value_descricao);
+            this.panel4.Controls.Add(this.lb_descricao);
             this.panel4.Controls.Add(this.lb_txt_descricao);
             this.panel4.Controls.Add(this.lb_txt8);
             this.panel4.Controls.Add(this.lb_txt_sobre);
@@ -445,7 +445,7 @@
         private System.Windows.Forms.Button bt_reservar;
         private System.Windows.Forms.Label lb_txt2;
         private System.Windows.Forms.Label lb_nome_quarto;
-        private System.Windows.Forms.Label lb_value_descricao;
+        private System.Windows.Forms.Label lb_descricao;
         private System.Windows.Forms.Label lb_txt_descricao;
         private System.Windows.Forms.Label lb_txt8;
         private System.Windows.Forms.Label lb_txt_sobre;

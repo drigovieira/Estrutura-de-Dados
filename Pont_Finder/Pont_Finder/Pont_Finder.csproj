@@ -222,6 +222,18 @@
     <Compile Include="hospedagem\data\inc\Img_list.Designer.cs">
       <DependentUpon>Img_list.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\Editar_Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Editar_Empresa.Designer.cs">
+      <DependentUpon>Editar_Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\Editar_Quarto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Editar_Quarto.Designer.cs">
+      <DependentUpon>Editar_Quarto.cs</DependentUpon>
+    </Compile>
     <Compile Include="hospedagem\Hosp_Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -391,6 +403,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\data\inc\Img_list.resx">
       <DependentUpon>Img_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Editar_Empresa.resx">
+      <DependentUpon>Editar_Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Editar_Quarto.resx">
+      <DependentUpon>Editar_Quarto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Hosp_Home.resx">
       <DependentUpon>Hosp_Home.cs</DependentUpon>

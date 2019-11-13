@@ -18,6 +18,12 @@ namespace Pont_Finder.hospedagem
         private double valor;
         private bool ativo;
 
+        private void bt_editar_Click(object sender, EventArgs e)
+        {
+            hospedagem.Editar_Quarto editQuarto = new hospedagem.Editar_Quarto();
+            FormPrincipal.MudarForm("hospedagem", editQuarto);
+        }
+
         Quarto quarto = new Quarto();
         public Card_list_quarto(int id)
         {

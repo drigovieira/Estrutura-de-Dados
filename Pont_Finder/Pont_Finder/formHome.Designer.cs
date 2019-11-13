@@ -197,10 +197,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Dubai", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(476, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(357, 38);
+            this.label2.Size = new System.Drawing.Size(318, 55);
             this.label2.TabIndex = 15;
             this.label2.Text = "Veja nossos serviços!";
             // 
@@ -214,11 +214,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Dubai", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(320, 80);
+            this.label1.Location = new System.Drawing.Point(320, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(663, 46);
+            this.label1.Size = new System.Drawing.Size(603, 67);
             this.label1.TabIndex = 0;
             this.label1.Text = "Conheça o melhor para você aqui!";
             // 

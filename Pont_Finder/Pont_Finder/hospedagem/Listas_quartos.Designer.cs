@@ -31,16 +31,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lb_nameEmpresa = new System.Windows.Forms.Label();
+            this.lb_nomeEmpresa = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(110, 142);
+            this.panel1.Location = new System.Drawing.Point(127, 142);
+            this.panel1.MaximumSize = new System.Drawing.Size(1010, 0);
+            this.panel1.MinimumSize = new System.Drawing.Size(1010, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1055, 460);
+            this.panel1.Size = new System.Drawing.Size(1010, 0);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -50,7 +52,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1070, 101);
+            this.button4.Location = new System.Drawing.Point(1040, 101);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(95, 36);
             this.button4.TabIndex = 0;
@@ -68,15 +70,15 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Cadastre seu quarto aqui!";
             // 
-            // lb_nameEmpresa
+            // lb_nomeEmpresa
             // 
-            this.lb_nameEmpresa.AutoSize = true;
-            this.lb_nameEmpresa.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nameEmpresa.Location = new System.Drawing.Point(557, 101);
-            this.lb_nameEmpresa.Name = "lb_nameEmpresa";
-            this.lb_nameEmpresa.Size = new System.Drawing.Size(174, 36);
-            this.lb_nameEmpresa.TabIndex = 9;
-            this.lb_nameEmpresa.Text = "Nome da empresa";
+            this.lb_nomeEmpresa.AutoSize = true;
+            this.lb_nomeEmpresa.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nomeEmpresa.Location = new System.Drawing.Point(557, 101);
+            this.lb_nomeEmpresa.Name = "lb_nomeEmpresa";
+            this.lb_nomeEmpresa.Size = new System.Drawing.Size(174, 36);
+            this.lb_nomeEmpresa.TabIndex = 9;
+            this.lb_nomeEmpresa.Text = "Nome da empresa";
             // 
             // Listas_quartos
             // 
@@ -85,7 +87,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.lb_nameEmpresa);
+            this.Controls.Add(this.lb_nomeEmpresa);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
@@ -105,6 +107,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lb_nameEmpresa;
+        private System.Windows.Forms.Label lb_nomeEmpresa;
     }
 }

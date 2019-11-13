@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Card_list_quarto));
             this.bt_editar = new System.Windows.Forms.Button();
             this.bt_remover = new System.Windows.Forms.Button();
             this.lb_nome = new System.Windows.Forms.Label();
@@ -38,23 +37,8 @@
             this.lb_value_pessoas = new System.Windows.Forms.Label();
             this.pb_hotel = new System.Windows.Forms.PictureBox();
             this.lb_rs = new System.Windows.Forms.Label();
-            this.pb_almoco = new System.Windows.Forms.PictureBox();
-            this.pb__duo = new System.Windows.Forms.PictureBox();
-            this.pb_wifi = new System.Windows.Forms.PictureBox();
-            this.pb_cafe_da_manha = new System.Windows.Forms.PictureBox();
-            this.pb_cafe_da_tarde = new System.Windows.Forms.PictureBox();
-            this.pb_tv = new System.Windows.Forms.PictureBox();
-            this.pb_pet = new System.Windows.Forms.PictureBox();
-            this.pb_estacionamento = new System.Windows.Forms.PictureBox();
+            this.pn_icons_quarto = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_almoco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_wifi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_manha)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_tarde)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_tv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_estacionamento)).BeginInit();
             this.SuspendLayout();
             // 
             // bt_editar
@@ -68,6 +52,7 @@
             this.bt_editar.TabIndex = 4;
             this.bt_editar.Text = "Editar";
             this.bt_editar.UseVisualStyleBackColor = false;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
             // bt_remover
             // 
@@ -155,99 +140,20 @@
             this.lb_rs.TabIndex = 33;
             this.lb_rs.Text = "R$";
             // 
-            // pb_almoco
+            // pn_icons_quarto
             // 
-            this.pb_almoco.Image = ((System.Drawing.Image)(resources.GetObject("pb_almoco.Image")));
-            this.pb_almoco.Location = new System.Drawing.Point(304, 119);
-            this.pb_almoco.Name = "pb_almoco";
-            this.pb_almoco.Size = new System.Drawing.Size(25, 25);
-            this.pb_almoco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_almoco.TabIndex = 38;
-            this.pb_almoco.TabStop = false;
-            // 
-            // pb__duo
-            // 
-            this.pb__duo.Image = ((System.Drawing.Image)(resources.GetObject("pb__duo.Image")));
-            this.pb__duo.Location = new System.Drawing.Point(242, 119);
-            this.pb__duo.Name = "pb__duo";
-            this.pb__duo.Size = new System.Drawing.Size(25, 25);
-            this.pb__duo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb__duo.TabIndex = 37;
-            this.pb__duo.TabStop = false;
-            // 
-            // pb_wifi
-            // 
-            this.pb_wifi.Image = ((System.Drawing.Image)(resources.GetObject("pb_wifi.Image")));
-            this.pb_wifi.Location = new System.Drawing.Point(211, 119);
-            this.pb_wifi.Name = "pb_wifi";
-            this.pb_wifi.Size = new System.Drawing.Size(25, 25);
-            this.pb_wifi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_wifi.TabIndex = 36;
-            this.pb_wifi.TabStop = false;
-            // 
-            // pb_cafe_da_manha
-            // 
-            this.pb_cafe_da_manha.Image = ((System.Drawing.Image)(resources.GetObject("pb_cafe_da_manha.Image")));
-            this.pb_cafe_da_manha.Location = new System.Drawing.Point(273, 119);
-            this.pb_cafe_da_manha.Name = "pb_cafe_da_manha";
-            this.pb_cafe_da_manha.Size = new System.Drawing.Size(25, 25);
-            this.pb_cafe_da_manha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_cafe_da_manha.TabIndex = 39;
-            this.pb_cafe_da_manha.TabStop = false;
-            // 
-            // pb_cafe_da_tarde
-            // 
-            this.pb_cafe_da_tarde.Image = ((System.Drawing.Image)(resources.GetObject("pb_cafe_da_tarde.Image")));
-            this.pb_cafe_da_tarde.Location = new System.Drawing.Point(335, 119);
-            this.pb_cafe_da_tarde.Name = "pb_cafe_da_tarde";
-            this.pb_cafe_da_tarde.Size = new System.Drawing.Size(25, 25);
-            this.pb_cafe_da_tarde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_cafe_da_tarde.TabIndex = 40;
-            this.pb_cafe_da_tarde.TabStop = false;
-            // 
-            // pb_tv
-            // 
-            this.pb_tv.Image = ((System.Drawing.Image)(resources.GetObject("pb_tv.Image")));
-            this.pb_tv.Location = new System.Drawing.Point(366, 119);
-            this.pb_tv.Name = "pb_tv";
-            this.pb_tv.Size = new System.Drawing.Size(25, 25);
-            this.pb_tv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_tv.TabIndex = 41;
-            this.pb_tv.TabStop = false;
-            // 
-            // pb_pet
-            // 
-            this.pb_pet.Image = ((System.Drawing.Image)(resources.GetObject("pb_pet.Image")));
-            this.pb_pet.Location = new System.Drawing.Point(397, 119);
-            this.pb_pet.Name = "pb_pet";
-            this.pb_pet.Size = new System.Drawing.Size(25, 25);
-            this.pb_pet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_pet.TabIndex = 42;
-            this.pb_pet.TabStop = false;
-            // 
-            // pb_estacionamento
-            // 
-            this.pb_estacionamento.Image = ((System.Drawing.Image)(resources.GetObject("pb_estacionamento.Image")));
-            this.pb_estacionamento.Location = new System.Drawing.Point(428, 119);
-            this.pb_estacionamento.Name = "pb_estacionamento";
-            this.pb_estacionamento.Size = new System.Drawing.Size(25, 25);
-            this.pb_estacionamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_estacionamento.TabIndex = 43;
-            this.pb_estacionamento.TabStop = false;
+            this.pn_icons_quarto.AutoSize = true;
+            this.pn_icons_quarto.Location = new System.Drawing.Point(212, 119);
+            this.pn_icons_quarto.Name = "pn_icons_quarto";
+            this.pn_icons_quarto.Size = new System.Drawing.Size(25, 25);
+            this.pn_icons_quarto.TabIndex = 53;
             // 
             // Card_list_quarto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))));
-            this.Controls.Add(this.pb_estacionamento);
-            this.Controls.Add(this.pb_pet);
-            this.Controls.Add(this.pb_tv);
-            this.Controls.Add(this.pb_cafe_da_tarde);
-            this.Controls.Add(this.pb_cafe_da_manha);
-            this.Controls.Add(this.pb_almoco);
-            this.Controls.Add(this.pb__duo);
-            this.Controls.Add(this.pb_wifi);
+            this.Controls.Add(this.pn_icons_quarto);
             this.Controls.Add(this.lb_rs);
             this.Controls.Add(this.lb_value_pessoas);
             this.Controls.Add(this.lb_value_quartos);
@@ -261,14 +167,6 @@
             this.Size = new System.Drawing.Size(1010, 160);
             this.Load += new System.EventHandler(this.Card_list_quarto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_almoco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_wifi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_manha)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_cafe_da_tarde)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_tv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_estacionamento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,13 +183,6 @@
         private System.Windows.Forms.Label lb_value_quartos;
         private System.Windows.Forms.Label lb_value_pessoas;
         private System.Windows.Forms.Label lb_rs;
-        private System.Windows.Forms.PictureBox pb_almoco;
-        private System.Windows.Forms.PictureBox pb__duo;
-        private System.Windows.Forms.PictureBox pb_wifi;
-        private System.Windows.Forms.PictureBox pb_cafe_da_manha;
-        private System.Windows.Forms.PictureBox pb_cafe_da_tarde;
-        private System.Windows.Forms.PictureBox pb_tv;
-        private System.Windows.Forms.PictureBox pb_pet;
-        private System.Windows.Forms.PictureBox pb_estacionamento;
+        private System.Windows.Forms.Panel pn_icons_quarto;
     }
 }
