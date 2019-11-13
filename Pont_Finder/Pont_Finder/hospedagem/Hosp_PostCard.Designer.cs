@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hosp_PostCard));
-            this.bt_visualizar = new System.Windows.Forms.Button();
             this.lb_rs = new System.Windows.Forms.Label();
             this.lb_txt_diária = new System.Windows.Forms.Label();
             this.lb_empresa = new System.Windows.Forms.Label();
@@ -43,6 +42,7 @@
             this.pb_almoco = new System.Windows.Forms.PictureBox();
             this.pb__duo = new System.Windows.Forms.PictureBox();
             this.pb_wifi = new System.Windows.Forms.PictureBox();
+            this.bt_visualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_estacionamento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).BeginInit();
@@ -53,20 +53,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_wifi)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bt_visualizar
-            // 
-            this.bt_visualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_visualizar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_visualizar.ForeColor = System.Drawing.Color.White;
-            this.bt_visualizar.Location = new System.Drawing.Point(500, 111);
-            this.bt_visualizar.Name = "bt_visualizar";
-            this.bt_visualizar.Size = new System.Drawing.Size(110, 34);
-            this.bt_visualizar.TabIndex = 28;
-            this.bt_visualizar.Text = "Visualizar";
-            this.bt_visualizar.UseVisualStyleBackColor = false;
-            this.bt_visualizar.Click += new System.EventHandler(this.bt_visualizar_Click);
             // 
             // lb_rs
             // 
@@ -97,7 +83,7 @@
             this.lb_empresa.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_empresa.Location = new System.Drawing.Point(179, 40);
             this.lb_empresa.Name = "lb_empresa";
-            this.lb_empresa.Size = new System.Drawing.Size(60, 22);
+            this.lb_empresa.Size = new System.Drawing.Size(60, 21);
             this.lb_empresa.TabIndex = 30;
             this.lb_empresa.Text = "Endereço";
             // 
@@ -201,6 +187,20 @@
             this.pb_wifi.TabIndex = 44;
             this.pb_wifi.TabStop = false;
             // 
+            // bt_visualizar
+            // 
+            this.bt_visualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_visualizar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_visualizar.ForeColor = System.Drawing.Color.White;
+            this.bt_visualizar.Location = new System.Drawing.Point(500, 111);
+            this.bt_visualizar.Name = "bt_visualizar";
+            this.bt_visualizar.Size = new System.Drawing.Size(110, 34);
+            this.bt_visualizar.TabIndex = 28;
+            this.bt_visualizar.Text = "Visualizar";
+            this.bt_visualizar.UseVisualStyleBackColor = false;
+            this.bt_visualizar.Click += new System.EventHandler(this.bt_visualizar_Click);
+            // 
             // Hosp_PostCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,7 +240,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pb_hotel;
-        private System.Windows.Forms.Button bt_visualizar;
         private System.Windows.Forms.Label lb_rs;
         private System.Windows.Forms.Label lb_txt_diária;
         private System.Windows.Forms.Label lb_empresa;
@@ -253,5 +252,6 @@
         private System.Windows.Forms.PictureBox pb_almoco;
         private System.Windows.Forms.PictureBox pb__duo;
         private System.Windows.Forms.PictureBox pb_wifi;
+        private System.Windows.Forms.Button bt_visualizar;
     }
 }

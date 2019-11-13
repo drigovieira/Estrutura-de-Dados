@@ -195,6 +195,89 @@ namespace Pont_Finder
             }
         }
 
+        private void Btn_Edit_Empresa_Click(object sender, EventArgs e)
+        {
+            alimentos.Cadastro_Restaurante cadastrarestabele = new alimentos.Cadastro_Restaurante();
+            FormPrincipal.MudarForm("alimentos", cadastrarestabele);
+        }
+
+        private void pb_pesquisar_Click(object sender, EventArgs e)
+        {
+            if (CategoriaBox.Visible == false)
+            {
+                if (PesquisaBox.Text.Equals(""))
+                {
+                    ListarEmpresas.Controls.Clear();
+                    lbMensagem msg = new lbMensagem("Nenhum resultado encontrado");
+                    msg.Location = new Point(0, 0);
+                    ListarEmpresas.Controls.Add(msg);
+                }
+                else
+                {
+                    List<Company> listaBusca = new List<Company>();
+                    listaBusca = CompanyList.SearchName(PesquisaBox.Text);
+                    ListarEmpresas.Controls.Clear();
+                    local = 0;
+                    foreach (var item in listaBusca)
+                    {
+                        Publi exbEmp = new Publi(item.Nome, listaBusca.IndexOf(item));
+                        exbEmp.Location = new Point(0, local);
+                        local = local + exbEmp.Height + 5;
+                        ListarEmpresas.Controls.Add(exbEmp);
+                    }
+                }
+            }
+            else
+            {
+                if (PesquisaBox.Text.Equals(""))
+                {
+                    ListarEmpresas.Controls.Clear();
+                    lbMensagem msg = new lbMensagem("Nenhum resultado encontrado");
+                    msg.Location = new Point(0, 0);
+                    ListarEmpresas.Controls.Add(msg);
+                }
+                else
+                {
+                    List<Company> listaBusca = new List<Company>();
+                    listaBusca = CompanyList.SearchFiltro(PesquisaBox.Text, CategoriaBox.SelectedItem.ToString());
+                    ListarEmpresas.Controls.Clear();
+                    local = 0;
+                    foreach (var item in listaBusca)
+                    {
+                        Publi exbEmp = new Publi(item.Nome, listaBusca.IndexOf(item));
+                        exbEmp.Location = new Point(0, local);
+                        local = local + exbEmp.Height + 5;
+                        ListarEmpresas.Controls.Add(exbEmp);
+                    }
+                }
+            }
+            /*List<ProfileCompany> BuscaPerfis = prof.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
+            local1 = 0;
+            Top5.Controls.Clear();
+            foreach (var busca in prof.TopList(BuscaPerfis))
+            {
+                if (busca.NotaApurada != 0)
+                {
+                    foreach (var teste2 in comp.selectAll())
+                    {
+                        if (busca.CodigoCompany == comp.selectAll().IndexOf(teste2))
+                        {
+                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
+                            te.Location = new Point(0, local1);
+                            local1 = local1 + te.Height + 5;
+                            Top5.Controls.Add(te);
+                        }
+                    }
+                }
+            }
+            */
+        }
+
+        private void Top5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         public void Listar()
         {            
             foreach (var teste in ProfileList.TopList(ProfileList.selectAll()))
