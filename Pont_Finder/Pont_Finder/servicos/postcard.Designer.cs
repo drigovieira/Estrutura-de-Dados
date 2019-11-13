@@ -49,20 +49,25 @@
             // lb_data
             // 
             this.lb_data.AutoSize = true;
-            this.lb_data.Location = new System.Drawing.Point(13, 180);
+            this.lb_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
+            this.lb_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_data.Location = new System.Drawing.Point(13, 178);
+            this.lb_data.Margin = new System.Windows.Forms.Padding(0);
+            this.lb_data.MaximumSize = new System.Drawing.Size(200, 15);
+            this.lb_data.MinimumSize = new System.Drawing.Size(200, 15);
             this.lb_data.Name = "lb_data";
-            this.lb_data.Size = new System.Drawing.Size(35, 13);
+            this.lb_data.Size = new System.Drawing.Size(200, 15);
             this.lb_data.TabIndex = 30;
             this.lb_data.Text = "label1";
             this.lb_data.Click += new System.EventHandler(this.Lb_data_Click);
             // 
             // lb_descricao
             // 
-            this.lb_descricao.BackColor = System.Drawing.Color.White;
+            this.lb_descricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
             this.lb_descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lb_descricao.Location = new System.Drawing.Point(220, 25);
+            this.lb_descricao.Location = new System.Drawing.Point(213, 25);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(250, 150);
+            this.lb_descricao.Size = new System.Drawing.Size(250, 168);
             this.lb_descricao.TabIndex = 29;
             this.lb_descricao.Text = "descricao";
             this.lb_descricao.Click += new System.EventHandler(this.Lb_descricao_Click);
