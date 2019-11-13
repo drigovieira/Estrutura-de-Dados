@@ -138,7 +138,7 @@ sgfoids</descricao>
     <cpf>26835036010</cpf>
     <cnpj>-1</cnpj>
     <data>2019-11-10T17:06:52.3981891-03:00</data>
-    <likes>-1,26835036010</likes>
+    <likes>-1,26835036010*1,49478292811</likes>
   </Post>
   <Post>
     <id>11</id>
@@ -154,5 +154,18 @@ Apesar do amplo escopo e da complexidade da ciê</descricao>
     <cnpj>-1</cnpj>
     <data>2019-11-10T17:33:36.9378572-03:00</data>
     <likes>1,26835036010</likes>
+  </Post>
+  <Post>
+    <id>12</id>
+    <titulo>matador de aluguel</titulo>
+    <valor>50005</valor>
+    <descricao>mato qualquer um a qualquer hora...paz na terra   
+Odin novo deus da morte</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//12.jpg</image>
+    <cpf>49478292811</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-13T07:37:40.4866273-03:00</data>
+    <likes></likes>
   </Post>
 </PostList>

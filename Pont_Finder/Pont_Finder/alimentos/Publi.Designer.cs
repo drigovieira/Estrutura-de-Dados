@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbCategoria = new System.Windows.Forms.Label();
             this.pb_Restaurante = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.NomeEmpresa = new System.Windows.Forms.Label();
@@ -38,18 +38,21 @@
             this.lbNumero = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbContato = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Restaurante)).BeginInit();
             this.SuspendLayout();
             // 
-            // label5
+            // lbCategoria
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(107, 157);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 18);
-            this.label5.TabIndex = 41;
-            this.label5.Text = "Value";
+            this.lbCategoria.AutoSize = true;
+            this.lbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCategoria.Location = new System.Drawing.Point(107, 157);
+            this.lbCategoria.Name = "lbCategoria";
+            this.lbCategoria.Size = new System.Drawing.Size(44, 18);
+            this.lbCategoria.TabIndex = 41;
+            this.lbCategoria.Text = "Value";
             // 
             // pb_Restaurante
             // 
@@ -85,7 +88,7 @@
             // 
             this.lbBairro.AutoSize = true;
             this.lbBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBairro.Location = new System.Drawing.Point(206, 78);
+            this.lbBairro.Location = new System.Drawing.Point(264, 78);
             this.lbBairro.Name = "lbBairro";
             this.lbBairro.Size = new System.Drawing.Size(88, 18);
             this.lbBairro.TabIndex = 39;
@@ -108,7 +111,7 @@
             // 
             this.lbRua.AutoSize = true;
             this.lbRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRua.Location = new System.Drawing.Point(206, 51);
+            this.lbRua.Location = new System.Drawing.Point(246, 51);
             this.lbRua.Name = "lbRua";
             this.lbRua.Size = new System.Drawing.Size(75, 18);
             this.lbRua.TabIndex = 43;
@@ -118,11 +121,11 @@
             // 
             this.lbNumero.AutoSize = true;
             this.lbNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNumero.Location = new System.Drawing.Point(452, 78);
+            this.lbNumero.Location = new System.Drawing.Point(505, 78);
             this.lbNumero.Name = "lbNumero";
             this.lbNumero.Size = new System.Drawing.Size(102, 18);
             this.lbNumero.TabIndex = 44;
-            this.lbNumero.Text = "Numero Valeu";
+            this.lbNumero.Text = "Numero Value";
             // 
             // label6
             // 
@@ -144,18 +147,51 @@
             this.lbContato.TabIndex = 46;
             this.lbContato.Text = "Value";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(206, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 18);
+            this.label1.TabIndex = 47;
+            this.label1.Text = "Rua:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(206, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 18);
+            this.label2.TabIndex = 48;
+            this.label2.Text = "Bairro:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(433, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 18);
+            this.label4.TabIndex = 49;
+            this.label4.Text = "Numero:";
+            // 
             // Publi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbContato);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lbNumero);
             this.Controls.Add(this.lbRua);
             this.Controls.Add(this.bt_visualizar);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbCategoria);
             this.Controls.Add(this.pb_Restaurante);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.NomeEmpresa);
@@ -170,7 +206,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbCategoria;
         private System.Windows.Forms.PictureBox pb_Restaurante;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label NomeEmpresa;
@@ -180,5 +216,8 @@
         private System.Windows.Forms.Label lbNumero;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbContato;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }

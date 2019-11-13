@@ -95,7 +95,7 @@ namespace Pont_Finder.alimentos
             List<Company> lista = new List<Company>();
             foreach (var emps in company)
             {
-                if (emps.Categoria.ToLower().Contains(categoria.ToLower()))
+                if (emps.Categoria.Contains(categoria.ToLower()))
                 {
                     lista.Add(emps);
                 }
@@ -107,7 +107,7 @@ namespace Pont_Finder.alimentos
             List<Company> lista = new List<Company>();
             foreach (var emps in company)
             {
-                if (emps.Nome.ToLower().Contains(name.ToLower()) && emps.Categoria == categoria)
+                if (emps.Nome.ToLower().Contains(name.ToLower()) && emps.Categoria.Contains(categoria))
                 {
                     lista.Add(emps);
                 }
