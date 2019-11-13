@@ -21,16 +21,38 @@ namespace Pont_Finder.alimentos
             bairroCompany = Bairro;
             numCompany = Num;
             contatoCompany = Contato;
+            int cont = 0;
             foreach(var aliment in Categoria)
             {
-                if (Categoria.IndexOf(aliment) == 0)
+                if (Categoria.Count > 3)
                 {
-                    categoriaCompany = aliment;
+                    if (Categoria.IndexOf(aliment) == 0)
+                    {
+                        categoriaCompany = aliment;
+                        cont++;
+                    }
+                    else
+                    {
+                        if(cont == 3)
+                        {
+                            categoriaCompany += " ...";
+                            break;
+                        }
+                        categoriaCompany += " / " + aliment;
+                        cont++;
+                    }
                 }
                 else
                 {
-                    categoriaCompany += " / " + aliment;
-                }                
+                    if (Categoria.IndexOf(aliment) == 0)
+                    {
+                        categoriaCompany = aliment;
+                    }
+                    else
+                    {
+                        categoriaCompany += " / " + aliment;
+                    }
+                }
             }            
             ID = index;
             InitializeComponent();

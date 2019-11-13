@@ -73,8 +73,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.lbOutros = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
@@ -104,6 +102,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -570,9 +569,8 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.checkBox10);
             this.panel6.Controls.Add(this.checkBox9);
-            this.panel6.Controls.Add(this.lbOutros);
-            this.panel6.Controls.Add(this.textBox10);
             this.panel6.Controls.Add(this.checkBox5);
             this.panel6.Controls.Add(this.checkBox6);
             this.panel6.Controls.Add(this.checkBox7);
@@ -595,23 +593,7 @@
             this.checkBox9.TabIndex = 10;
             this.checkBox9.Text = "Convencional";
             this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
-            // 
-            // lbOutros
-            // 
-            this.lbOutros.AutoSize = true;
-            this.lbOutros.Location = new System.Drawing.Point(21, 168);
-            this.lbOutros.Name = "lbOutros";
-            this.lbOutros.Size = new System.Drawing.Size(41, 13);
-            this.lbOutros.TabIndex = 9;
-            this.lbOutros.Text = "Outros:";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(68, 165);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(124, 20);
-            this.textBox10.TabIndex = 8;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.CheckBox9_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -622,7 +604,7 @@
             this.checkBox5.TabIndex = 7;
             this.checkBox5.Text = "Frutos do Mar";
             this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.CheckBox5_CheckedChanged);
             // 
             // checkBox6
             // 
@@ -633,7 +615,7 @@
             this.checkBox6.TabIndex = 6;
             this.checkBox6.Text = "Hambúrgueria";
             this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.CheckBox6_CheckedChanged);
             // 
             // checkBox7
             // 
@@ -644,7 +626,7 @@
             this.checkBox7.TabIndex = 5;
             this.checkBox7.Text = "Comida Italiana";
             this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.CheckBox7_CheckedChanged);
             // 
             // checkBox8
             // 
@@ -655,7 +637,7 @@
             this.checkBox8.TabIndex = 4;
             this.checkBox8.Text = "Petiscaria";
             this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.CheckBox8_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -666,7 +648,7 @@
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Sorveteria";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.CheckBox4_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -916,6 +898,17 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Vamos evoluir juntos!";
             // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Location = new System.Drawing.Point(68, 164);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(57, 17);
+            this.checkBox10.TabIndex = 11;
+            this.checkBox10.Text = "Outros";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox10.CheckedChanged += new System.EventHandler(this.CheckBox10_CheckedChanged);
+            // 
             // Cadastro_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1037,8 +1030,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label lbOutros;
         private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox10;
     }
 }

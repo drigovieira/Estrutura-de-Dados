@@ -58,9 +58,9 @@ namespace Pont_Finder.alimentos
 
         private void CheckBox3_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
-            {
-                categorias.Add("Comida Japonesa");
+            if (checkBox3.Checked == true)
+            {               
+                    categorias.Add("Comida Japonesa");
             }
             else
             {
@@ -88,7 +88,7 @@ namespace Pont_Finder.alimentos
 
         private void CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
+            if (checkBox2.Checked == true)
             {
                 categorias.Add("Pizzaria");
             }
@@ -97,6 +97,111 @@ namespace Pont_Finder.alimentos
                 if (categorias.Contains("Pizzaria"))
                 {
                     categorias.Remove("Pizzaria");
+                }
+            }
+        }
+
+        private void CheckBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox4.Checked == true)
+            {
+                categorias.Add("Sorveteria");
+            }
+            else
+            {
+                if (categorias.Contains("Sorveteria"))
+                {
+                    categorias.Remove("Sorveteria");
+                }
+            }
+        }
+
+        private void CheckBox8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox8.Checked == true)
+            {
+                categorias.Add("Petiscaria");
+            }
+            else
+            {
+                if (categorias.Contains("Petiscaria"))
+                {
+                    categorias.Remove("Petiscaria");
+                }
+            }
+        }
+
+        private void CheckBox7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox7.Checked == true)
+            {
+                categorias.Add("Comida Italiana");
+            }
+            else
+            {
+                if (categorias.Contains("Comida Italiana"))
+                {
+                    categorias.Remove("Comida Italiana");
+                }
+            }
+        }
+
+        private void CheckBox6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox6.Checked == true)
+            {
+                categorias.Add("Hambúrgueria");
+            }
+            else
+            {
+                if (categorias.Contains("Hambúrgueria"))
+                {
+                    categorias.Remove("Hambúrgueria");
+                }
+            }
+        }
+
+        private void CheckBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox5.Checked == true)
+            {
+                categorias.Add("Frutos do Mar");
+            }
+            else
+            {
+                if (categorias.Contains("Frutos do Mar"))
+                {
+                    categorias.Remove("Frutos do Mar");
+                }
+            }
+        }
+
+        private void CheckBox9_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox9.Checked == true)
+            {
+                categorias.Add("Convencional");
+            }
+            else
+            {
+                if (categorias.Contains("Convencional"))
+                {
+                    categorias.Remove("Convencional");
+                }
+            }
+        }
+
+        private void CheckBox10_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox10.Checked == true)
+            {
+                categorias.Add("Outros");
+            }
+            else
+            {
+                if (categorias.Contains("Outros"))
+                {
+                    categorias.Remove("Outros");
                 }
             }
         }
