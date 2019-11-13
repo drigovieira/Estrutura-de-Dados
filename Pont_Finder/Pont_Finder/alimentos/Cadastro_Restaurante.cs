@@ -79,5 +79,17 @@ namespace Pont_Finder.alimentos
                 categorias += "/Churrascaria";
             }
         }
+
+        private void CheckBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (categorias == null)
+            {
+                categorias = "Churrascaria";
+            }
+            else
+            {
+                categorias += "/Churrascaria";
+            }
+        }
     }
 }

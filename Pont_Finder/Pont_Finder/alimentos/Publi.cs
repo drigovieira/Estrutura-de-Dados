@@ -21,15 +21,15 @@ namespace Pont_Finder.alimentos
             InitializeComponent();
         }
 
-        private void Panel5_Paint(object sender, PaintEventArgs e)
-        {
-            NomeEmpresa.Text = nomeCompany;
-        }
-
         private void Button2_Click(object sender, EventArgs e)
         {
             alimentos.Visualizar perfil = new alimentos.Visualizar();
             FormPrincipal.MudarForm("alimentos", perfil);
+        }
+
+        private void Publi_Paint(object sender, PaintEventArgs e)
+        {
+            NomeEmpresa.Text = nomeCompany;
         }
     }
 }

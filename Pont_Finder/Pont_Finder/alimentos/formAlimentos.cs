@@ -118,7 +118,7 @@ namespace Pont_Finder
             if (CategoriaBox.Visible == false)
             {
                 if (CategoriaBox.SelectedItem != null) {
-                    lbTop5.Text = "Top 5 Restaurantes da Categoria:\n " + CategoriaBox.SelectedItem.ToString();
+                    lbTop5.Text = "Top 5 " + CategoriaBox.SelectedItem.ToString();
                     List<Company> listaBusca = new List<Company>();
                     listaBusca = CompanyList.SearchCategoria(CategoriaBox.SelectedItem.ToString());
                     List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
@@ -147,7 +147,7 @@ namespace Pont_Finder
             }
             else
             {
-                lbTop5.Text = "Top 5 Restaurantes Melhor Avaliados";
+                lbTop5.Text = "Top 5 Restaurantes";
                 Filtrar.Text = "Filtrar";
                 lbCategoria.Visible = false;
                 CategoriaBox.Visible = false;
@@ -171,7 +171,7 @@ namespace Pont_Finder
 
         private void CategoriaBox_SelectedValueChanged(object sender, EventArgs e)
         {
-            lbTop5.Text = "Top 5 Restaurantes da Categoria:\n " + CategoriaBox.SelectedItem.ToString();
+            lbTop5.Text = "Top 5 " + CategoriaBox.SelectedItem.ToString();
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(CategoriaBox.SelectedItem.ToString());
             List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());

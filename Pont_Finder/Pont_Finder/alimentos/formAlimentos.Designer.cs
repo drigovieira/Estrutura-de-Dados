@@ -115,7 +115,7 @@
             "Convencional"});
             this.CategoriaBox.Location = new System.Drawing.Point(22, 163);
             this.CategoriaBox.Name = "CategoriaBox";
-            this.CategoriaBox.Size = new System.Drawing.Size(172, 29);
+            this.CategoriaBox.Size = new System.Drawing.Size(172, 30);
             this.CategoriaBox.TabIndex = 11;
             this.CategoriaBox.Visible = false;
             this.CategoriaBox.SelectedValueChanged += new System.EventHandler(this.CategoriaBox_SelectedValueChanged);
@@ -126,7 +126,7 @@
             this.lbCategoria.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCategoria.Location = new System.Drawing.Point(25, 133);
             this.lbCategoria.Name = "lbCategoria";
-            this.lbCategoria.Size = new System.Drawing.Size(77, 26);
+            this.lbCategoria.Size = new System.Drawing.Size(77, 27);
             this.lbCategoria.TabIndex = 3;
             this.lbCategoria.Text = "Categoria:";
             this.lbCategoria.Visible = false;
@@ -145,7 +145,7 @@
             this.label3.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(25, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 26);
+            this.label3.Size = new System.Drawing.Size(155, 27);
             this.label3.TabIndex = 1;
             this.label3.Text = "Nome do Restaurante:";
             // 

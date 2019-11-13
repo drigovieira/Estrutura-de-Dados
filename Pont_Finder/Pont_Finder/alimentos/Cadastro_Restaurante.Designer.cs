@@ -688,7 +688,7 @@
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Pizzaria";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox2_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -699,7 +699,7 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Churrascaria";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // textBox1
             // 
