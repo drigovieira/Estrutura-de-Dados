@@ -258,6 +258,7 @@
             this.Controls.Add(this.pb_hotel);
             this.Name = "Card_list_quarto";
             this.Size = new System.Drawing.Size(1010, 160);
+            this.Load += new System.EventHandler(this.Card_list_quarto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_almoco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb__duo)).EndInit();

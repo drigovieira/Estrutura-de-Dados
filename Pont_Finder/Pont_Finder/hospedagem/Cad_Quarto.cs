@@ -107,7 +107,7 @@ namespace Pont_Finder.hospedagem
             }
             if (checkBox2.Checked)
             {
-                string a = "Estacionamento";
+                string a = "Ar Condicionado";
                 servicos.Add(a);
             }
             if (checkBox3.Checked)

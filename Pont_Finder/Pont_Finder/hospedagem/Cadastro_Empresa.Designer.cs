@@ -47,26 +47,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnl_star = new System.Windows.Forms.Panel();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.radio_star5 = new System.Windows.Forms.RadioButton();
-            this.radio_star4 = new System.Windows.Forms.RadioButton();
-            this.radio_star3 = new System.Windows.Forms.RadioButton();
-            this.radio_star2 = new System.Windows.Forms.RadioButton();
             this.label17 = new System.Windows.Forms.Label();
             this.pnl_tipoHosp = new System.Windows.Forms.Panel();
             this.radio_pousada = new System.Windows.Forms.RadioButton();
@@ -94,21 +74,6 @@
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.pnl_star.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.pnl_tipoHosp.SuspendLayout();
             this.pnl_ambDisp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).BeginInit();
@@ -296,8 +261,6 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pnl_star);
             this.panel3.Controls.Add(this.label17);
             this.panel3.Controls.Add(this.pnl_tipoHosp);
             this.panel3.Controls.Add(this.bt_continuar);
@@ -313,232 +276,11 @@
             this.panel3.Size = new System.Drawing.Size(625, 1385);
             this.panel3.TabIndex = 8;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(143, 587);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 24);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Selecione a quantidade de estrelas";
-            // 
-            // pnl_star
-            // 
-            this.pnl_star.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnl_star.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl_star.Controls.Add(this.pictureBox25);
-            this.pnl_star.Controls.Add(this.pictureBox24);
-            this.pnl_star.Controls.Add(this.pictureBox23);
-            this.pnl_star.Controls.Add(this.pictureBox22);
-            this.pnl_star.Controls.Add(this.pictureBox21);
-            this.pnl_star.Controls.Add(this.pictureBox20);
-            this.pnl_star.Controls.Add(this.pictureBox19);
-            this.pnl_star.Controls.Add(this.pictureBox18);
-            this.pnl_star.Controls.Add(this.pictureBox17);
-            this.pnl_star.Controls.Add(this.pictureBox16);
-            this.pnl_star.Controls.Add(this.pictureBox15);
-            this.pnl_star.Controls.Add(this.pictureBox14);
-            this.pnl_star.Controls.Add(this.pictureBox13);
-            this.pnl_star.Controls.Add(this.pictureBox12);
-            this.pnl_star.Controls.Add(this.radio_star5);
-            this.pnl_star.Controls.Add(this.radio_star4);
-            this.pnl_star.Controls.Add(this.radio_star3);
-            this.pnl_star.Controls.Add(this.radio_star2);
-            this.pnl_star.Location = new System.Drawing.Point(150, 622);
-            this.pnl_star.Name = "pnl_star";
-            this.pnl_star.Size = new System.Drawing.Size(328, 99);
-            this.pnl_star.TabIndex = 13;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
-            this.pictureBox25.Location = new System.Drawing.Point(293, 50);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox25.TabIndex = 18;
-            this.pictureBox25.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
-            this.pictureBox24.Location = new System.Drawing.Point(265, 50);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox24.TabIndex = 17;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(237, 50);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox23.TabIndex = 16;
-            this.pictureBox23.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(209, 50);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox22.TabIndex = 15;
-            this.pictureBox22.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
-            this.pictureBox21.Location = new System.Drawing.Point(181, 50);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox21.TabIndex = 14;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
-            this.pictureBox20.Location = new System.Drawing.Point(265, 18);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox20.TabIndex = 13;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(237, 18);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox19.TabIndex = 12;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(209, 18);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox18.TabIndex = 11;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(181, 18);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 10;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(101, 50);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 9;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(72, 50);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 8;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(44, 50);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 7;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(72, 18);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 6;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(44, 18);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(22, 16);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 5;
-            this.pictureBox12.TabStop = false;
-            // 
-            // radio_star5
-            // 
-            this.radio_star5.AutoSize = true;
-            this.radio_star5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_star5.Location = new System.Drawing.Point(161, 50);
-            this.radio_star5.Name = "radio_star5";
-            this.radio_star5.Size = new System.Drawing.Size(14, 13);
-            this.radio_star5.TabIndex = 17;
-            this.radio_star5.TabStop = true;
-            this.radio_star5.UseVisualStyleBackColor = true;
-            // 
-            // radio_star4
-            // 
-            this.radio_star4.AutoSize = true;
-            this.radio_star4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_star4.Location = new System.Drawing.Point(161, 18);
-            this.radio_star4.Name = "radio_star4";
-            this.radio_star4.Size = new System.Drawing.Size(14, 13);
-            this.radio_star4.TabIndex = 16;
-            this.radio_star4.TabStop = true;
-            this.radio_star4.UseVisualStyleBackColor = true;
-            // 
-            // radio_star3
-            // 
-            this.radio_star3.AutoSize = true;
-            this.radio_star3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_star3.Location = new System.Drawing.Point(24, 50);
-            this.radio_star3.Name = "radio_star3";
-            this.radio_star3.Size = new System.Drawing.Size(14, 13);
-            this.radio_star3.TabIndex = 15;
-            this.radio_star3.TabStop = true;
-            this.radio_star3.UseVisualStyleBackColor = true;
-            // 
-            // radio_star2
-            // 
-            this.radio_star2.AutoSize = true;
-            this.radio_star2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_star2.Location = new System.Drawing.Point(24, 18);
-            this.radio_star2.Name = "radio_star2";
-            this.radio_star2.Size = new System.Drawing.Size(14, 13);
-            this.radio_star2.TabIndex = 14;
-            this.radio_star2.TabStop = true;
-            this.radio_star2.UseVisualStyleBackColor = true;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(175, 474);
+            this.label17.Location = new System.Drawing.Point(155, 598);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(323, 24);
             this.label17.TabIndex = 16;
@@ -550,9 +292,9 @@
             this.pnl_tipoHosp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_tipoHosp.Controls.Add(this.radio_pousada);
             this.pnl_tipoHosp.Controls.Add(this.radio_hotel);
-            this.pnl_tipoHosp.Location = new System.Drawing.Point(187, 509);
+            this.pnl_tipoHosp.Location = new System.Drawing.Point(187, 640);
             this.pnl_tipoHosp.Name = "pnl_tipoHosp";
-            this.pnl_tipoHosp.Size = new System.Drawing.Size(237, 49);
+            this.pnl_tipoHosp.Size = new System.Drawing.Size(237, 51);
             this.pnl_tipoHosp.TabIndex = 10;
             // 
             // radio_pousada
@@ -670,9 +412,9 @@
             this.pb_img1.BackColor = System.Drawing.SystemColors.Control;
             this.pb_img1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_img1.InitialImage = global::Pont_Finder.Properties.Resources.downgrey;
-            this.pb_img1.Location = new System.Drawing.Point(77, 46);
+            this.pb_img1.Location = new System.Drawing.Point(77, 290);
             this.pb_img1.Name = "pb_img1";
-            this.pb_img1.Size = new System.Drawing.Size(460, 220);
+            this.pb_img1.Size = new System.Drawing.Size(460, 158);
             this.pb_img1.TabIndex = 3;
             this.pb_img1.TabStop = false;
             // 
@@ -682,9 +424,9 @@
             this.bt_add_img.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_add_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_img.ForeColor = System.Drawing.Color.White;
-            this.bt_add_img.Location = new System.Drawing.Point(223, 290);
+            this.bt_add_img.Location = new System.Drawing.Point(223, 473);
             this.bt_add_img.Name = "bt_add_img";
-            this.bt_add_img.Size = new System.Drawing.Size(160, 35);
+            this.bt_add_img.Size = new System.Drawing.Size(187, 55);
             this.bt_add_img.TabIndex = 9;
             this.bt_add_img.Text = "Adicionar imagem";
             this.bt_add_img.UseVisualStyleBackColor = false;
@@ -694,7 +436,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(196, 12);
+            this.label2.Location = new System.Drawing.Point(196, 256);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(258, 24);
             this.label2.TabIndex = 0;
@@ -807,22 +549,6 @@
             this.panel11.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.pnl_star.ResumeLayout(false);
-            this.pnl_star.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.pnl_tipoHosp.ResumeLayout(false);
             this.pnl_tipoHosp.PerformLayout();
             this.pnl_ambDisp.ResumeLayout(false);
@@ -880,25 +606,5 @@
         private System.Windows.Forms.MaskedTextBox mkb_cnpj;
         private System.Windows.Forms.MaskedTextBox mkb_cep;
         private System.Windows.Forms.MaskedTextBox mkb_phone;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel pnl_star;
-        private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.PictureBox pictureBox24;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.RadioButton radio_star5;
-        private System.Windows.Forms.RadioButton radio_star4;
-        private System.Windows.Forms.RadioButton radio_star3;
-        private System.Windows.Forms.RadioButton radio_star2;
     }
 }

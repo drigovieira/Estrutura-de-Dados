@@ -190,9 +190,9 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(423, 678);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(102, 17);
+            this.checkBox2.Size = new System.Drawing.Size(103, 17);
             this.checkBox2.TabIndex = 24;
-            this.checkBox2.Text = "Estacionamento";
+            this.checkBox2.Text = "Ar condicionado";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1

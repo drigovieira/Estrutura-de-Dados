@@ -200,10 +200,10 @@
     <Compile Include="hospedagem\Cad_Quarto.Designer.cs">
       <DependentUpon>Cad_Quarto.cs</DependentUpon>
     </Compile>
-    <Compile Include="hospedagem\Card_list_quarto.cs">
+    <Compile Include="hospedagem\data\inc\Card_list_quarto.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="hospedagem\Card_list_quarto.Designer.cs">
+    <Compile Include="hospedagem\data\inc\Card_list_quarto.Designer.cs">
       <DependentUpon>Card_list_quarto.cs</DependentUpon>
     </Compile>
     <Compile Include="hospedagem\classes\Empresa.cs" />
@@ -222,10 +222,10 @@
     <Compile Include="hospedagem\Listas_quartos.Designer.cs">
       <DependentUpon>Listas_quartos.cs</DependentUpon>
     </Compile>
-    <Compile Include="hospedagem\Hosp_PostCard.cs">
+    <Compile Include="hospedagem\data\inc\Hosp_PostCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="hospedagem\Hosp_PostCard.Designer.cs">
+    <Compile Include="hospedagem\data\inc\Hosp_PostCard.Designer.cs">
       <DependentUpon>Hosp_PostCard.cs</DependentUpon>
     </Compile>
     <Compile Include="hospedagem\Vizualizar_quarto.cs">
@@ -371,7 +371,7 @@
     <EmbeddedResource Include="hospedagem\Cad_Quarto.resx">
       <DependentUpon>Cad_Quarto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hospedagem\Card_list_quarto.resx">
+    <EmbeddedResource Include="hospedagem\data\inc\Card_list_quarto.resx">
       <DependentUpon>Card_list_quarto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Hosp_Home.resx">
@@ -380,7 +380,7 @@
     <EmbeddedResource Include="hospedagem\Listas_quartos.resx">
       <DependentUpon>Listas_quartos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hospedagem\Hosp_PostCard.resx">
+    <EmbeddedResource Include="hospedagem\data\inc\Hosp_PostCard.resx">
       <DependentUpon>Hosp_PostCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Vizualizar_quarto.resx">

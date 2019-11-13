@@ -86,6 +86,33 @@ namespace Pont_Finder.hospedagem
             return lista_cnpj;
         }
 
+        public static List<Quarto> quartosAtivos()
+        {
+            List<Quarto> lista_ativos = new List<Quarto>();
+
+            foreach (var item in quartos)
+            {
+                if (item.Ativo)
+                {
+                    Quarto q = new Quarto();
+                    q.ID = item.ID;
+                    q.Cnpj_Empresa = item.Cnpj_Empresa;
+                    q.NomeQuarto = item.NomeQuarto;
+                    q.Qtd_Pessoas = item.Qtd_Pessoas;
+                    q.Qtd_Disponivel = item.Qtd_Disponivel;
+                    q.Servicos = item.Servicos;
+                    q.Valor_Diario = item.Valor_Diario;
+                    q.Foto = item.Foto;
+                    q.Status = item.Status;
+                    q.Ativo = item.Ativo;
+
+                    lista_ativos.Add(q);
+                }
+            }
+
+            return lista_ativos;
+        }
+
         public static void CarregarXML()
         {
             XDocument doc = XDocument.Load(caminho);

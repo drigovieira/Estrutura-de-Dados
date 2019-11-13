@@ -41,8 +41,7 @@ namespace Pont_Finder.hospedagem
             {
                 if (radio_hotel.Checked || radio_pousada.Checked)
                 {
-                    if (radio_star2.Checked || radio_star3.Checked || radio_star4.Checked || radio_star5.Checked)
-                    {
+                    
                         List<string> ambientes = new List<string>();
 
                         string NomeEmpresa = tb_nameEmp.Text;
@@ -131,7 +130,6 @@ namespace Pont_Finder.hospedagem
                                         empresa.Cep = Cep;
                                         empresa.Telefone = Tel;
                                         empresa.Email = Email;
-                                        
                                         empresa.CPFADMIN = cpfadmin;
 
                                         //Verifica se e hotel ou pousada
@@ -144,23 +142,7 @@ namespace Pont_Finder.hospedagem
                                             empresa.Tipo = "Pousada";
                                         }
 
-                                        //Verifica qtd de estrelas
-                                        if (radio_star2.Checked)
-                                        {
-                                            empresa.Estrelas = 2;
-                                        }
-                                        if (radio_star3.Checked)
-                                        {
-                                            empresa.Estrelas = 3;
-                                        }
-                                        if (radio_star4.Checked)
-                                        {
-                                            empresa.Estrelas = 4;
-                                        }
-                                        if (radio_star5.Checked)
-                                        {
-                                            empresa.Estrelas = 5;
-                                        }
+                                        empresa.Estrelas = 5;
 
                                         empresa.Descricao = descricao;
                                         empresa.Ambiente = Ambientes;
@@ -221,11 +203,7 @@ namespace Pont_Finder.hospedagem
                             MessageBox.Show("Favor revisar o CNPJ digitado, pois o mesmo já existe em nosso sistema!");
                             mkb_cnpj.Text = "";
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Você deve selecionar uma classificação para sua empresa. (2 - 5 Estrelas)");
-                    }
+                    
                 }
                 else
                 {
