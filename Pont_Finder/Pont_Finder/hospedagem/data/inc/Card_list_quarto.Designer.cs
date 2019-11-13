@@ -80,6 +80,7 @@
             this.bt_remover.TabIndex = 5;
             this.bt_remover.Text = "Remover";
             this.bt_remover.UseVisualStyleBackColor = false;
+            this.bt_remover.Click += new System.EventHandler(this.bt_remover_Click);
             // 
             // lb_nome
             // 

@@ -14,13 +14,14 @@ namespace Pont_Finder.hospedagem
     {
         private int id, qtd_pessoas, qtd_disponivel;
         private string nome, empresa, servicos, foto, status;
+
         private double valor;
         private bool ativo;
+
+        Quarto quarto = new Quarto();
         public Card_list_quarto(int id)
         {
-            Quarto quarto = new Quarto();
             quarto = roomList.SelectId(id);
-
 
             Empresa emp = hostList.selectCnpj(quarto.Cnpj_Empresa);
 
@@ -45,6 +46,23 @@ namespace Pont_Finder.hospedagem
             lb_value_pessoas.Text = ""+this.qtd_pessoas;
             lb_value_quartos.Text = "" + this.qtd_disponivel;
             lb_rs.Text = "R$" + this.valor;
+        }
+
+        private void bt_remover_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Deseja realmente remover o quarto?", "Remover Quarto", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+
+            if (confirm.ToString().ToUpper() == "YES")
+            {
+                quarto.Ativo = false;
+
+                MessageBox.Show("Quarto removido!");
+                FormPrincipal.MudarForm("hospedagem", new Listas_quartos());
+            }
+            else 
+            { 
+
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
