@@ -12,11 +12,26 @@ namespace Pont_Finder.alimentos
 {
     public partial class Publi : UserControl
     {
-        private string nomeCompany;
-        private int ID;
-        public Publi(string Nome, int index)
+        private string nomeCompany, ruaCompany, bairroCompany, categoriaCompany;
+        private int ID, numCompany, contatoCompany;
+        public Publi(string Nome, string Rua, string Bairro, int Num, int Contato, List<string> Categoria, int index)
         {
             nomeCompany = Nome;
+            ruaCompany = Rua;
+            bairroCompany = Bairro;
+            numCompany = Num;
+            contatoCompany = Contato;
+            foreach(var aliment in Categoria)
+            {
+                if (Categoria.IndexOf(aliment) == 0)
+                {
+                    categoriaCompany = aliment;
+                }
+                else
+                {
+                    categoriaCompany += " / " + aliment;
+                }                
+            }            
             ID = index;
             InitializeComponent();
         }
@@ -30,6 +45,11 @@ namespace Pont_Finder.alimentos
         private void Publi_Paint(object sender, PaintEventArgs e)
         {
             NomeEmpresa.Text = nomeCompany;
+            lbRua.Text = ruaCompany;
+            lbBairro.Text = bairroCompany;
+            lbNumero.Text = numCompany.ToString();
+            lbContato.Text = contatoCompany.ToString();
+            lbCategoria.Text = categoriaCompany;
         }
     }
 }

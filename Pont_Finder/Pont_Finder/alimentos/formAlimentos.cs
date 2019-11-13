@@ -60,7 +60,7 @@ namespace Pont_Finder
                     local = 0;
                     foreach (var item in listaBusca)
                     {
-                        Publi exbEmp = new Publi(item.Nome, listaBusca.IndexOf(item));
+                        Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
                         exbEmp.Location = new Point(0, local);
                         local = local + exbEmp.Height + 5;
                         ListarEmpresas.Controls.Add(exbEmp);
@@ -84,7 +84,7 @@ namespace Pont_Finder
                     local = 0;
                     foreach (var item in listaBusca)
                     {
-                        Publi exbEmp = new Publi(item.Nome, listaBusca.IndexOf(item));
+                        Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
                         exbEmp.Location = new Point(0, local);
                         local = local + exbEmp.Height + 5;
                         ListarEmpresas.Controls.Add(exbEmp);
@@ -220,7 +220,7 @@ namespace Pont_Finder
                     local = 0;
                     foreach (var item in listaBusca)
                     {
-                        Publi exbEmp = new Publi(item.Nome, listaBusca.IndexOf(item));
+                        Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
                         exbEmp.Location = new Point(0, local);
                         local = local + exbEmp.Height + 5;
                         ListarEmpresas.Controls.Add(exbEmp);
@@ -244,7 +244,7 @@ namespace Pont_Finder
                     local = 0;
                     foreach (var item in listaBusca)
                     {
-                        Publi exbEmp = new Publi(item.Nome, listaBusca.IndexOf(item));
+                        Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
                         exbEmp.Location = new Point(0, local);
                         local = local + exbEmp.Height + 5;
                         ListarEmpresas.Controls.Add(exbEmp);
@@ -297,7 +297,7 @@ namespace Pont_Finder
             lista = CompanyList.selectAll();
             foreach (var item in lista)
             {
-                Publi exbEmp = new Publi(item.Nome, lista.IndexOf(item));
+                Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
                 exbEmp.Location = new Point(0, local);
                 local = local + exbEmp.Height + 5;
                 ListarEmpresas.Controls.Add(exbEmp);

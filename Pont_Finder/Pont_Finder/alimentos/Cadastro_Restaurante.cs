@@ -12,7 +12,7 @@ namespace Pont_Finder.alimentos
 {
     public partial class Cadastro_Restaurante : Form
     {
-        private string categorias;
+        private List<string> categorias = new List<string>();
         public Cadastro_Restaurante()
         {
             InitializeComponent();
@@ -58,37 +58,46 @@ namespace Pont_Finder.alimentos
 
         private void CheckBox3_CheckedChanged(object sender, EventArgs e)
         {
-            if (categorias == null)
+            if (checkBox1.Checked == true)
             {
-                categorias = "Comida Japonesa";
+                categorias.Add("Comida Japonesa");
             }
             else
             {
-                categorias += "/Comida Japonesa";
+                if (categorias.Contains("Comida Japonesa"))
+                {
+                    categorias.Remove("Comida Japonesa");
+                }
             }
         }
 
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (categorias == null)
+            if (checkBox1.Checked == true)
             {
-                categorias = "Churrascaria";
+                categorias.Add("Churrascaria");
             }
             else
             {
-                categorias += "/Churrascaria";
+                if (categorias.Contains("Churrascaria"))
+                {
+                    categorias.Remove("Churrascaria");
+                }
             }
         }
 
         private void CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (categorias == null)
+            if (checkBox1.Checked == true)
             {
-                categorias = "Churrascaria";
+                categorias.Add("Pizzaria");
             }
             else
             {
-                categorias += "/Churrascaria";
+                if (categorias.Contains("Pizzaria"))
+                {
+                    categorias.Remove("Pizzaria");
+                }
             }
         }
     }
