@@ -11,4 +11,15 @@
     <localizacao>rua das gardenias</localizacao>
     <ativo>true</ativo>
   </post>
+  <post>
+    <id>1</id>
+    <nome>alisson martins</nome>
+    <img>..//..//avalie//data//imagens//posts//1.jpg</img>
+    <cpf>49478292811</cpf>
+    <tempohora>13/11/2019 07:51</tempohora>
+    <desc>a casa n e assombrada</desc>
+    <tipoproblema>Segurança</tipoproblema>
+    <localizacao>sao paulo</localizacao>
+    <ativo>true</ativo>
+  </post>
 </posts>

@@ -43,4 +43,20 @@
     <ambiente>  Estacionamento</ambiente>
     <status>true</status>
   </hospedagem>
+  <hospedagem>
+    <admin>49478292811</admin>
+    <nomeempresa>hotel transilvania</nomeempresa>
+    <nomefantasia>dracola</nomefantasia>
+    <cnpj>11111111111111</cnpj>
+    <endereco>transilvania city</endereco>
+    <cep>66620164</cep>
+    <telefone>124002892</telefone>
+    <email>draculaura@gmail.com</email>
+    <foto> * ..//..//hospedagem//data//images//empresas//11111111111111//empresa//0.jpg</foto>
+    <tipo>Hotel</tipo>
+    <estrelas>5</estrelas>
+    <descricao>varias mortes </descricao>
+    <ambiente>  Sala de Jogos</ambiente>
+    <status>true</status>
+  </hospedagem>
 </modulos>
