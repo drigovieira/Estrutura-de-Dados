@@ -380,7 +380,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))));
             this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(950, 767);
+            this.panel8.Location = new System.Drawing.Point(950, 931);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(310, 325);
             this.panel8.TabIndex = 38;
@@ -482,7 +482,7 @@
             this.panel2.Controls.Add(this.label13);
             this.panel2.Location = new System.Drawing.Point(950, 600);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 160);
+            this.panel2.Size = new System.Drawing.Size(310, 325);
             this.panel2.TabIndex = 32;
             // 
             // panel5
@@ -534,13 +534,15 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1092);
+            this.panel1.Location = new System.Drawing.Point(0, 1256);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1282, 100);
+            this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 44;
             // 
             // bt_ant
             // 
+            this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_ant.Location = new System.Drawing.Point(320, 262);
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(75, 23);
@@ -551,6 +553,8 @@
             // 
             // bt_prox
             // 
+            this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_prox.Location = new System.Drawing.Point(870, 262);
             this.bt_prox.Name = "bt_prox";
             this.bt_prox.Size = new System.Drawing.Size(75, 23);
@@ -575,7 +579,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.bt_ant);
