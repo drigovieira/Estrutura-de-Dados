@@ -49,7 +49,7 @@ namespace Pont_Finder.hospedagem
 
             
 
-            ListadeQuartos = roomList.Quartos;
+            ListadeQuartos = roomList.quartosAtivos();
             ListadeQuartos.Reverse();
 
             pagTotal = ListadeQuartos.Count;
