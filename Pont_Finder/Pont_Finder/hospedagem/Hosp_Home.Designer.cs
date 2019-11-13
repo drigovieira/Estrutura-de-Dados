@@ -536,7 +536,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 1092);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 100);
+            this.panel1.Size = new System.Drawing.Size(1282, 100);
             this.panel1.TabIndex = 44;
             // 
             // bt_ant
@@ -575,7 +575,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1299, 675);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.bt_ant);
