@@ -50,11 +50,23 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -68,7 +80,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(5, 318);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 267);
+            this.panel2.Size = new System.Drawing.Size(310, 220);
             this.panel2.TabIndex = 13;
             // 
             // pb_pesquisar
@@ -88,7 +100,7 @@
             this.Filtrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.Filtrar.FlatAppearance.BorderSize = 0;
             this.Filtrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Filtrar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filtrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Filtrar.ForeColor = System.Drawing.Color.White;
             this.Filtrar.Location = new System.Drawing.Point(200, 157);
             this.Filtrar.Name = "Filtrar";
@@ -101,7 +113,7 @@
             // CategoriaBox
             // 
             this.CategoriaBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CategoriaBox.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoriaBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CategoriaBox.FormattingEnabled = true;
             this.CategoriaBox.Items.AddRange(new object[] {
             "Hambúrgueria",
@@ -115,7 +127,7 @@
             "Convencional"});
             this.CategoriaBox.Location = new System.Drawing.Point(22, 163);
             this.CategoriaBox.Name = "CategoriaBox";
-            this.CategoriaBox.Size = new System.Drawing.Size(172, 30);
+            this.CategoriaBox.Size = new System.Drawing.Size(172, 24);
             this.CategoriaBox.TabIndex = 11;
             this.CategoriaBox.Visible = false;
             this.CategoriaBox.SelectedValueChanged += new System.EventHandler(this.CategoriaBox_SelectedValueChanged);
@@ -123,45 +135,45 @@
             // lbCategoria
             // 
             this.lbCategoria.AutoSize = true;
-            this.lbCategoria.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCategoria.Location = new System.Drawing.Point(25, 133);
             this.lbCategoria.Name = "lbCategoria";
-            this.lbCategoria.Size = new System.Drawing.Size(77, 27);
+            this.lbCategoria.Size = new System.Drawing.Size(82, 20);
             this.lbCategoria.TabIndex = 3;
             this.lbCategoria.Text = "Categoria:";
             this.lbCategoria.Visible = false;
             // 
             // PesquisaBox
             // 
-            this.PesquisaBox.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PesquisaBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PesquisaBox.Location = new System.Drawing.Point(22, 56);
             this.PesquisaBox.Name = "PesquisaBox";
-            this.PesquisaBox.Size = new System.Drawing.Size(254, 40);
+            this.PesquisaBox.Size = new System.Drawing.Size(254, 29);
             this.PesquisaBox.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(25, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 27);
+            this.label3.Size = new System.Drawing.Size(170, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "Nome do Restaurante:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 284);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 36);
+            this.label1.Size = new System.Drawing.Size(117, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pesquisar";
             // 
             // Top5
             // 
-            this.Top5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.Top5.BackColor = System.Drawing.Color.FloralWhite;
             this.Top5.Location = new System.Drawing.Point(950, 318);
             this.Top5.Name = "Top5";
             this.Top5.Size = new System.Drawing.Size(310, 392);
@@ -171,10 +183,10 @@
             // lbTop5
             // 
             this.lbTop5.AutoSize = true;
-            this.lbTop5.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTop5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTop5.Location = new System.Drawing.Point(1015, 279);
             this.lbTop5.Name = "lbTop5";
-            this.lbTop5.Size = new System.Drawing.Size(192, 36);
+            this.lbTop5.Size = new System.Drawing.Size(226, 25);
             this.lbTop5.TabIndex = 5;
             this.lbTop5.Text = "Top 5 Restaurantes ";
             // 
@@ -199,10 +211,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Dubai", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(476, 244);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(374, 45);
+            this.label8.Size = new System.Drawing.Size(421, 31);
             this.label8.TabIndex = 19;
             this.label8.Text = "Confira o que temos para você!";
             // 
@@ -220,11 +232,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Dubai", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(265, 70);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(735, 60);
+            this.label6.Size = new System.Drawing.Size(808, 39);
             this.label6.TabIndex = 1;
             this.label6.Text = "Encontre o melhor lugar para você se Hospedar!";
             // 
@@ -241,7 +253,7 @@
             // 
             this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.Btn_Edit_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
             this.Btn_Edit_Empresa.Location = new System.Drawing.Point(18, 215);
             this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
@@ -253,7 +265,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel8.BackColor = System.Drawing.Color.FloralWhite;
             this.panel8.Controls.Add(this.label15);
             this.panel8.Location = new System.Drawing.Point(950, 883);
             this.panel8.Name = "panel8";
@@ -272,7 +284,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel5.BackColor = System.Drawing.Color.FloralWhite;
             this.panel5.Controls.Add(this.label13);
             this.panel5.Location = new System.Drawing.Point(950, 716);
             this.panel5.Name = "panel5";
@@ -289,6 +301,139 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Propaganda Externa";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(116, 564);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(67, 24);
+            this.label10.TabIndex = 46;
+            this.label10.Text = "Filtros";
+            // 
+            // panel11
+            // 
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.radioButton8);
+            this.panel11.Controls.Add(this.radioButton7);
+            this.panel11.Controls.Add(this.radioButton6);
+            this.panel11.Controls.Add(this.radioButton5);
+            this.panel11.Controls.Add(this.radioButton4);
+            this.panel11.Controls.Add(this.radioButton3);
+            this.panel11.Controls.Add(this.radioButton2);
+            this.panel11.Controls.Add(this.radioButton1);
+            this.panel11.Controls.Add(this.label11);
+            this.panel11.Location = new System.Drawing.Point(5, 610);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(310, 295);
+            this.panel11.TabIndex = 47;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(81, 65);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(69, 19);
+            this.radioButton2.TabIndex = 8;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Pizzaria";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(81, 33);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(95, 19);
+            this.radioButton1.TabIndex = 7;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Churrascaria";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(95, 3);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(90, 20);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Categorias:";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(81, 97);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(79, 19);
+            this.radioButton3.TabIndex = 9;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Petiscaria";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(81, 129);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(111, 19);
+            this.radioButton4.TabIndex = 10;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Comida Italiana";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton5.Location = new System.Drawing.Point(81, 161);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(125, 19);
+            this.radioButton5.TabIndex = 11;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Comida Japonesa";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton6.Location = new System.Drawing.Point(81, 193);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(80, 19);
+            this.radioButton6.TabIndex = 12;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Sorveteria";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton7.Location = new System.Drawing.Point(81, 225);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(105, 19);
+            this.radioButton7.TabIndex = 13;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Hambúrgueria";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton8.Location = new System.Drawing.Point(81, 257);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(101, 19);
+            this.radioButton8.TabIndex = 14;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Frutos do Mar";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
             // formAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,6 +441,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.Top5);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.lbTop5);
@@ -323,6 +470,8 @@
             this.panel8.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,5 +500,16 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton7;
     }
 }
