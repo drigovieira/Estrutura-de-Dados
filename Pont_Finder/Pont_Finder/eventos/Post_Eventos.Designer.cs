@@ -55,6 +55,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tb_ingresso_total = new System.Windows.Forms.TextBox();
+            this.tb_ingresso_disponivel = new System.Windows.Forms.TextBox();
+            this.lb_ingresso_disponivel = new System.Windows.Forms.Label();
+            this.lb_ingresso_total = new System.Windows.Forms.Label();
             this.lb_nome = new System.Windows.Forms.Label();
             this.tb_nome = new System.Windows.Forms.TextBox();
             this.Bdata = new System.Windows.Forms.MaskedTextBox();
@@ -62,10 +66,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
-            this.lb_ingresso_total = new System.Windows.Forms.Label();
-            this.lb_ingresso_disponivel = new System.Windows.Forms.Label();
-            this.tb_ingresso_disponivel = new System.Windows.Forms.TextBox();
-            this.tb_ingresso_total = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
@@ -378,6 +378,38 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // tb_ingresso_total
+            // 
+            this.tb_ingresso_total.Location = new System.Drawing.Point(116, 1132);
+            this.tb_ingresso_total.Name = "tb_ingresso_total";
+            this.tb_ingresso_total.Size = new System.Drawing.Size(100, 20);
+            this.tb_ingresso_total.TabIndex = 21;
+            // 
+            // tb_ingresso_disponivel
+            // 
+            this.tb_ingresso_disponivel.Location = new System.Drawing.Point(116, 1163);
+            this.tb_ingresso_disponivel.Name = "tb_ingresso_disponivel";
+            this.tb_ingresso_disponivel.Size = new System.Drawing.Size(100, 20);
+            this.tb_ingresso_disponivel.TabIndex = 20;
+            // 
+            // lb_ingresso_disponivel
+            // 
+            this.lb_ingresso_disponivel.AutoSize = true;
+            this.lb_ingresso_disponivel.Location = new System.Drawing.Point(3, 1165);
+            this.lb_ingresso_disponivel.Name = "lb_ingresso_disponivel";
+            this.lb_ingresso_disponivel.Size = new System.Drawing.Size(102, 13);
+            this.lb_ingresso_disponivel.TabIndex = 19;
+            this.lb_ingresso_disponivel.Text = "Ingresso disponível:";
+            // 
+            // lb_ingresso_total
+            // 
+            this.lb_ingresso_total.AutoSize = true;
+            this.lb_ingresso_total.Location = new System.Drawing.Point(43, 1134);
+            this.lb_ingresso_total.Name = "lb_ingresso_total";
+            this.lb_ingresso_total.Size = new System.Drawing.Size(73, 13);
+            this.lb_ingresso_total.TabIndex = 18;
+            this.lb_ingresso_total.Text = "Ingresso total:";
+            // 
             // lb_nome
             // 
             this.lb_nome.AutoSize = true;
@@ -437,38 +469,6 @@
             // openIcone
             // 
             this.openIcone.FileName = "openIcone";
-            // 
-            // lb_ingresso_total
-            // 
-            this.lb_ingresso_total.AutoSize = true;
-            this.lb_ingresso_total.Location = new System.Drawing.Point(43, 1134);
-            this.lb_ingresso_total.Name = "lb_ingresso_total";
-            this.lb_ingresso_total.Size = new System.Drawing.Size(73, 13);
-            this.lb_ingresso_total.TabIndex = 18;
-            this.lb_ingresso_total.Text = "Ingresso total:";
-            // 
-            // lb_ingresso_disponivel
-            // 
-            this.lb_ingresso_disponivel.AutoSize = true;
-            this.lb_ingresso_disponivel.Location = new System.Drawing.Point(3, 1165);
-            this.lb_ingresso_disponivel.Name = "lb_ingresso_disponivel";
-            this.lb_ingresso_disponivel.Size = new System.Drawing.Size(102, 13);
-            this.lb_ingresso_disponivel.TabIndex = 19;
-            this.lb_ingresso_disponivel.Text = "Ingresso disponível:";
-            // 
-            // tb_ingresso_disponivel
-            // 
-            this.tb_ingresso_disponivel.Location = new System.Drawing.Point(116, 1163);
-            this.tb_ingresso_disponivel.Name = "tb_ingresso_disponivel";
-            this.tb_ingresso_disponivel.Size = new System.Drawing.Size(100, 20);
-            this.tb_ingresso_disponivel.TabIndex = 20;
-            // 
-            // tb_ingresso_total
-            // 
-            this.tb_ingresso_total.Location = new System.Drawing.Point(116, 1132);
-            this.tb_ingresso_total.Name = "tb_ingresso_total";
-            this.tb_ingresso_total.Size = new System.Drawing.Size(100, 20);
-            this.tb_ingresso_total.TabIndex = 21;
             // 
             // Post_Eventos
             // 

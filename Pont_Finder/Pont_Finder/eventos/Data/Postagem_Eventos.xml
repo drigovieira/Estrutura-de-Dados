@@ -18,4 +18,22 @@
     <patrocinadores>RockStar, Amanco, Tigre</patrocinadores>
     <ativo>true</ativo>
   </postagem>
+  <postagem>
+    <id>1</id>
+    <ingresso_total>50</ingresso_total>
+    <ingresso_disponivel>50</ingresso_disponivel>
+    <nome>Jaccin</nome>
+    <imagem1>..//..//eventos//Data//imagens//1.jpg</imagem1>
+    <imagem2>null</imagem2>
+    <imagem3>null</imagem3>
+    <imagem4>null</imagem4>
+    <categoria>TesteNull</categoria>
+    <data>03/12/2019</data>
+    <horario>14:40</horario>
+    <local>R. Silva</local>
+    <idade>L</idade>
+    <valor>40</valor>
+    <patrocinadores>Bradesco</patrocinadores>
+    <ativo>true</ativo>
+  </postagem>
 </postagens>

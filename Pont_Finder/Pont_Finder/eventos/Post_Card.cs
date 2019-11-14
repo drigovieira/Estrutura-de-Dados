@@ -20,7 +20,12 @@ namespace Pont_Finder.eventos
 
             pb_imagem.ImageLocation = post.Imagem1;
             lb_nome.Text = post.Nome;
-           // lb_ingressos.Text = post.Ingress
+            lb_ingressos.Text = ""+post.IngressosTotal;
+            lb_categoria.Text = post.Categoria;
+            lb_ingresso.Text = ""+post.IngressoDispinivel;
+            lb_valor.Text = post.Valor;
+           
+
         }
 
         private void Post_Card_Load(object sender, EventArgs e)
