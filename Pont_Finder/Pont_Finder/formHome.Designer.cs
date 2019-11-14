@@ -95,9 +95,9 @@
             // 
             this.button_Eventos.BackColor = System.Drawing.Color.Transparent;
             this.button_Eventos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button_Eventos.FlatAppearance.BorderColor = System.Drawing.Color.DarkViolet;
-            this.button_Eventos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkViolet;
-            this.button_Eventos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkViolet;
+            this.button_Eventos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
+            this.button_Eventos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
+            this.button_Eventos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
             this.button_Eventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Eventos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Eventos.ForeColor = System.Drawing.Color.White;
