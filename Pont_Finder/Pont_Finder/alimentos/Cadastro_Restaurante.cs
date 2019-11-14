@@ -38,10 +38,10 @@ namespace Pont_Finder.alimentos
                 emp.NomeFantasia = tbFantasia.Text;
                 emp.Rua = tbRua.Text;
                 emp.Numero = Convert.ToInt32(tbNum.Text);
-                emp.Cep = Convert.ToInt32(tbCep.Text);
+                //CEP
                 emp.Bairro = tbBairro.Text;
                 emp.Categoria = categorias;
-                emp.TelComercial = Convert.ToInt32(tbTel.Text);
+                //Telefone
                 emp.Email = tbEmail.Text;
                 CompanyList.CompAdd(emp);
                 MessageBox.Show("Empresa Cadastrada!", "Status Operation:");
