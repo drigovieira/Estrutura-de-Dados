@@ -96,17 +96,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -848,40 +847,6 @@
             this.label16.TabIndex = 61;
             this.label16.Text = "Informações";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(396, 235);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(484, 31);
-            this.label15.TabIndex = 62;
-            this.label15.Text = "Cadastre seu Estabelecimento aqui!";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
-            this.panel10.Controls.Add(this.label10);
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1265, 200);
-            this.panel10.TabIndex = 19;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(447, 81);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(371, 39);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Vamos evoluir juntos!";
-            // 
             // btn_back
             // 
             this.btn_back.BackColor = System.Drawing.Color.White;
@@ -893,6 +858,28 @@
             this.btn_back.TabIndex = 63;
             this.btn_back.TabStop = false;
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
+            this.panel10.Controls.Add(this.label10);
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1265, 200);
+            this.panel10.TabIndex = 67;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(344, 70);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(565, 39);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Cadastre o seu Restaurante aqui!";
+            // 
             // Cadastro_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -900,15 +887,14 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.btn_back);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
@@ -924,17 +910,15 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox tbEmail;
@@ -967,8 +951,6 @@
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox tbNum;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
@@ -1005,5 +987,7 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox5;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label10;
     }
 }

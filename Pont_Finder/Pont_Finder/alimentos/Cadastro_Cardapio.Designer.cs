@@ -42,7 +42,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
@@ -52,9 +55,6 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.btn_back = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -214,6 +214,24 @@
             this.panel2.TabIndex = 36;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(275, 1007);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(332, 186);
+            this.listBox1.TabIndex = 37;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(326, 956);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(204, 20);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Informe os ingredientes:";
+            // 
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
@@ -223,6 +241,16 @@
             this.checkBox10.TabIndex = 11;
             this.checkBox10.Text = "Outros";
             this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(306, 627);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(265, 20);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Selecione a categoria do prato: ";
             // 
             // checkBox9
             // 
@@ -313,34 +341,6 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Churrascaria";
             this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(306, 627);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(265, 20);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Selecione a categoria do prato: ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(326, 956);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(204, 20);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "Informe os ingredientes:";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(275, 1007);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(332, 186);
-            this.listBox1.TabIndex = 37;
             // 
             // btn_back
             // 
