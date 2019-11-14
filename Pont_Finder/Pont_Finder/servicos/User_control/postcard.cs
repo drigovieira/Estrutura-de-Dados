@@ -15,10 +15,10 @@ namespace Pont_Finder.servicos
     {
         private classes.Post post;
 
-        Bitmap up = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");    
-        Bitmap down = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
-        Bitmap upv = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
-        Bitmap downv = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
+        Bitmap imgLike = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");    
+        Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
+        Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
+        Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
 
         public PostCard(int id)
         {
@@ -35,17 +35,17 @@ namespace Pont_Finder.servicos
             lb_like.Text = this.post.Joinha + "";
             lb_deslike.Text = this.post.DeJoinha + "";
 
-            pb_up.Image = up;
-            pb_down.Image = down;
+            pb_up.Image = imgLike;
+            pb_down.Image = imgDeslike;
 
             if (Session.Online)
             {
                 long userlike = this.post.userLike(Session.Cpf);
 
                 if (userlike == 1)
-                    pb_up.Image = upv;               
+                    pb_up.Image = imgLikeBlue;               
                 else if (userlike == -1)
-                    pb_down.Image = downv;               
+                    pb_down.Image = imgDeslikeBlue;               
             }
            
 
@@ -72,17 +72,17 @@ namespace Pont_Finder.servicos
             // Dar Um Like
             if (Session.Online)
             {
-                if (pb_up.Image == upv)
+                if (pb_up.Image == imgLikeBlue)
                 {                   
                     post.like(0, Session.Cpf);     
-                    pb_up.Image = up;
-                    pb_down.Image = down;
+                    pb_up.Image = imgLike;
+                    pb_down.Image = imgDeslike;
                 }
                 else
                 {
                     post.like(1, Session.Cpf);               
-                    pb_up.Image = upv;                 
-                    pb_down.Image = down;
+                    pb_up.Image = imgLikeBlue;                 
+                    pb_down.Image = imgDeslike;
                 }
                 lb_like.Text = "" + post.Joinha;
                 lb_deslike.Text = "" + post.DeJoinha;
@@ -99,17 +99,17 @@ namespace Pont_Finder.servicos
         {
             if (Session.Online)
             {
-                if (pb_down.Image == downv)
+                if (pb_down.Image == imgDeslikeBlue)
                 {                  
                     post.like(0, Session.Cpf);
-                    pb_down.Image = down;
-                    pb_up.Image = up;
+                    pb_down.Image = imgDeslike;
+                    pb_up.Image = imgLike;
                 }
                 else
                 {                  
                     post.like(-1, Session.Cpf);              
-                    pb_down.Image = downv;
-                    pb_up.Image = up;
+                    pb_down.Image = imgDeslikeBlue;
+                    pb_up.Image = imgLike;
                 }
                 lb_like.Text = "" + post.Joinha;
                 lb_deslike.Text = "" + post.DeJoinha;
