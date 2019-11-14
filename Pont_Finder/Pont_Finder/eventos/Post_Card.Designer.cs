@@ -60,6 +60,7 @@
             this.lb_categoria.Size = new System.Drawing.Size(125, 18);
             this.lb_categoria.TabIndex = 12;
             this.lb_categoria.Text = "Categoria: Festas";
+            this.lb_categoria.Click += new System.EventHandler(this.Lb_categoria_Click);
             // 
             // lb_valor
             // 

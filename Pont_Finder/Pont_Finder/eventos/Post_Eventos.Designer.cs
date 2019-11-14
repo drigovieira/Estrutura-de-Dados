@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rb_musica = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
             this.CBfaixaetaria = new System.Windows.Forms.ComboBox();
             this.Blocal = new System.Windows.Forms.TextBox();
@@ -46,11 +46,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rb_tecnologia = new System.Windows.Forms.RadioButton();
+            this.rb_esporte = new System.Windows.Forms.RadioButton();
+            this.rb_gastronomia = new System.Windows.Forms.RadioButton();
+            this.rb_cultural = new System.Windows.Forms.RadioButton();
+            this.rb_workshop = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -71,17 +71,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.SuspendLayout();
             // 
-            // radioButton1
+            // rb_musica
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(26, 21);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(74, 22);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Música";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_musica.AutoSize = true;
+            this.rb_musica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_musica.Location = new System.Drawing.Point(26, 21);
+            this.rb_musica.Name = "rb_musica";
+            this.rb_musica.Size = new System.Drawing.Size(74, 22);
+            this.rb_musica.TabIndex = 0;
+            this.rb_musica.TabStop = true;
+            this.rb_musica.Text = "Música";
+            this.rb_musica.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -238,76 +238,76 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.radioButton6);
-            this.panel3.Controls.Add(this.radioButton5);
-            this.panel3.Controls.Add(this.radioButton4);
-            this.panel3.Controls.Add(this.radioButton3);
-            this.panel3.Controls.Add(this.radioButton2);
-            this.panel3.Controls.Add(this.radioButton1);
+            this.panel3.Controls.Add(this.rb_tecnologia);
+            this.panel3.Controls.Add(this.rb_esporte);
+            this.panel3.Controls.Add(this.rb_gastronomia);
+            this.panel3.Controls.Add(this.rb_cultural);
+            this.panel3.Controls.Add(this.rb_workshop);
+            this.panel3.Controls.Add(this.rb_musica);
             this.panel3.Location = new System.Drawing.Point(76, 555);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(500, 150);
             this.panel3.TabIndex = 6;
             // 
-            // radioButton6
+            // rb_tecnologia
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(359, 91);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(99, 22);
-            this.radioButton6.TabIndex = 5;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Tecnologia";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rb_tecnologia.AutoSize = true;
+            this.rb_tecnologia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_tecnologia.Location = new System.Drawing.Point(359, 91);
+            this.rb_tecnologia.Name = "rb_tecnologia";
+            this.rb_tecnologia.Size = new System.Drawing.Size(99, 22);
+            this.rb_tecnologia.TabIndex = 5;
+            this.rb_tecnologia.TabStop = true;
+            this.rb_tecnologia.Text = "Tecnologia";
+            this.rb_tecnologia.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rb_esporte
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(214, 91);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(78, 22);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Esporte";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rb_esporte.AutoSize = true;
+            this.rb_esporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_esporte.Location = new System.Drawing.Point(214, 91);
+            this.rb_esporte.Name = "rb_esporte";
+            this.rb_esporte.Size = new System.Drawing.Size(78, 22);
+            this.rb_esporte.TabIndex = 4;
+            this.rb_esporte.TabStop = true;
+            this.rb_esporte.Text = "Esporte";
+            this.rb_esporte.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rb_gastronomia
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(26, 91);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(113, 22);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Gastronomia";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rb_gastronomia.AutoSize = true;
+            this.rb_gastronomia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_gastronomia.Location = new System.Drawing.Point(26, 91);
+            this.rb_gastronomia.Name = "rb_gastronomia";
+            this.rb_gastronomia.Size = new System.Drawing.Size(113, 22);
+            this.rb_gastronomia.TabIndex = 3;
+            this.rb_gastronomia.TabStop = true;
+            this.rb_gastronomia.Text = "Gastronomia";
+            this.rb_gastronomia.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rb_cultural
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(359, 21);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(76, 22);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Cultural";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rb_cultural.AutoSize = true;
+            this.rb_cultural.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_cultural.Location = new System.Drawing.Point(359, 21);
+            this.rb_cultural.Name = "rb_cultural";
+            this.rb_cultural.Size = new System.Drawing.Size(76, 22);
+            this.rb_cultural.TabIndex = 2;
+            this.rb_cultural.TabStop = true;
+            this.rb_cultural.Text = "Cultural";
+            this.rb_cultural.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rb_workshop
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(214, 21);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(96, 22);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Workshop";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_workshop.AutoSize = true;
+            this.rb_workshop.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_workshop.Location = new System.Drawing.Point(214, 21);
+            this.rb_workshop.Name = "rb_workshop";
+            this.rb_workshop.Size = new System.Drawing.Size(96, 22);
+            this.rb_workshop.TabIndex = 1;
+            this.rb_workshop.TabStop = true;
+            this.rb_workshop.Text = "Workshop";
+            this.rb_workshop.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -498,7 +498,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rb_musica;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox CBfaixaetaria;
         private System.Windows.Forms.TextBox Blocal;
@@ -516,11 +516,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rb_tecnologia;
+        private System.Windows.Forms.RadioButton rb_esporte;
+        private System.Windows.Forms.RadioButton rb_gastronomia;
+        private System.Windows.Forms.RadioButton rb_cultural;
+        private System.Windows.Forms.RadioButton rb_workshop;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;

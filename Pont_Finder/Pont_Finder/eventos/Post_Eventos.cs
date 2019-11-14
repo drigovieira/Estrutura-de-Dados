@@ -53,12 +53,35 @@ namespace Pont_Finder.eventos
 
 
 
+            string categoria = "";
+            if (rb_musica.Checked)
+            {
+                categoria = "Música";
+            }
+            else if (rb_cultural.Checked)
+            {
+                categoria = "Cultural";
+            }
+            else if (rb_esporte.Checked)
+            {
+                categoria = "Esporte";
+            }
+            else if (rb_tecnologia.Checked)
+            {
+                categoria = "Tecnologia";
+            }
+            else if (rb_gastronomia.Checked)
+            {
+                categoria = "Gastronomia";
+            }
+            else if (rb_workshop.Checked)
+            {
+                categoria = "Workshop";
+            }
 
 
 
-
-
-
+            
             string p_nome = tb_nome.Text;
             string p_totalingresso = tb_ingresso_total.Text;
             string p_disponivelingresso = tb_ingresso_disponivel.Text;
@@ -79,7 +102,7 @@ namespace Pont_Finder.eventos
             postar.Imagem2 = "null";
             postar.Imagem3 = "null";
             postar.Imagem4 = "null";
-            postar.Categoria = "TesteNull";
+            postar.Categoria = categoria;
             postar.Descricao = p_descricao;
             postar.Data = p_data;
             postar.Horario = p_horario;

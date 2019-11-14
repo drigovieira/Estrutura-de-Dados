@@ -36,4 +36,22 @@
     <patrocinadores>Bradesco</patrocinadores>
     <ativo>true</ativo>
   </postagem>
+  <postagem>
+    <id>2</id>
+    <ingresso_total>50</ingresso_total>
+    <ingresso_disponivel>50</ingresso_disponivel>
+    <nome>work</nome>
+    <imagem1>..//..//eventos//Data//imagens//offImage.jpg</imagem1>
+    <imagem2>null</imagem2>
+    <imagem3>null</imagem3>
+    <imagem4>null</imagem4>
+    <categoria>Workshop</categoria>
+    <data>00/00/0000</data>
+    <horario>12:00</horario>
+    <local>Rua</local>
+    <idade>12 </idade>
+    <valor>20</valor>
+    <patrocinadores>não sei</patrocinadores>
+    <ativo>true</ativo>
+  </postagem>
 </postagens>
