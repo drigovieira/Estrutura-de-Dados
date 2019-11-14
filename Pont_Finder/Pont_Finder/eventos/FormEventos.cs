@@ -65,15 +65,5 @@ namespace Pont_Finder.eventos
             else
                 MessageBox.Show("É necessário estar logado");
         }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

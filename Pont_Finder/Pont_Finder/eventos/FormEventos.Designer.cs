@@ -63,9 +63,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(80, 198);
+            this.button1.Location = new System.Drawing.Point(101, 194);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 35);
+            this.button1.Size = new System.Drawing.Size(85, 35);
             this.button1.TabIndex = 7;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = false;
@@ -139,11 +139,11 @@
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(5, 221);
+            this.button4.Location = new System.Drawing.Point(6, 205);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 35);
+            this.button4.Size = new System.Drawing.Size(186, 35);
             this.button4.TabIndex = 23;
             this.button4.Text = "Cadastrar Empresa";
             this.button4.UseVisualStyleBackColor = false;
@@ -154,7 +154,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(0, 1076);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1265, 100);
+            this.panel7.Size = new System.Drawing.Size(1282, 100);
             this.panel7.TabIndex = 26;
             // 
             // panel2
@@ -191,20 +191,19 @@
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(317, 66);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(656, 46);
+            this.label21.Size = new System.Drawing.Size(621, 46);
             this.label21.TabIndex = 0;
-            this.label21.Text = "Os melhores eventos de Cruzeiro!";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
+            this.label21.Text = "Os melhores eventos da cidade!";
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(165, 221);
+            this.button5.Location = new System.Drawing.Point(198, 206);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 35);
+            this.button5.Size = new System.Drawing.Size(170, 35);
             this.button5.TabIndex = 27;
             this.button5.Text = "Publicar Eventos";
             this.button5.UseVisualStyleBackColor = false;
@@ -213,23 +212,22 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(445, 218);
+            this.label22.Font = new System.Drawing.Font("Dubai", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(470, 218);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(384, 31);
+            this.label22.Size = new System.Drawing.Size(340, 45);
             this.label22.TabIndex = 36;
             this.label22.Text = "Veja o que temos para você!";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(1026, 224);
+            this.label23.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(1022, 238);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(164, 25);
+            this.label23.Size = new System.Drawing.Size(188, 36);
             this.label23.TabIndex = 42;
-            this.label23.Text = "Top 5 Eventos";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
+            this.label23.Text = "Top 5 acomodações";
             // 
             // panel8
             // 
@@ -245,7 +243,7 @@
             this.panel_center.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_center.Location = new System.Drawing.Point(320, 280);
             this.panel_center.Name = "panel_center";
-            this.panel_center.Size = new System.Drawing.Size(625, 796);
+            this.panel_center.Size = new System.Drawing.Size(625, 775);
             this.panel_center.TabIndex = 44;
             // 
             // panel4
@@ -294,7 +292,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1299, 675);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label23);
