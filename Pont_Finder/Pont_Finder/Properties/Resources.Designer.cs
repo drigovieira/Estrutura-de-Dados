@@ -133,6 +133,36 @@ namespace Pont_Finder.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap noview_icon {
+            get {
+                object obj = ResourceManager.GetObject("noview-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap noview_icon_ {
+            get {
+                object obj = ResourceManager.GetObject("noview-icon ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap noview_icon_1 {
+            get {
+                object obj = ResourceManager.GetObject("noview-icon 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap offImage {
             get {
                 object obj = ResourceManager.GetObject("offImage", resourceCulture);
@@ -166,6 +196,16 @@ namespace Pont_Finder.Properties {
         internal static System.Drawing.Bitmap upgrey {
             get {
                 object obj = ResourceManager.GetObject("upgrey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_icon {
+            get {
+                object obj = ResourceManager.GetObject("view-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

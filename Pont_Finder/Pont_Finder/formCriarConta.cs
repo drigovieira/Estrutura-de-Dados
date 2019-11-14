@@ -130,5 +130,20 @@ namespace Pont_Finder
         {
 
         }
+
+        private void PictureBox1_Click_1(object sender, EventArgs e)
+        {
+            if (textB_senha.UseSystemPasswordChar == true)
+            {
+                textB_senha.UseSystemPasswordChar = false;
+                pb_versenha.ImageLocation = "..//..//Resources//view-icon.png";               
+            }
+            else
+            {
+                textB_senha.UseSystemPasswordChar = true;
+                pb_versenha.ImageLocation = "..//..//Resources//noview-icon.png";
+            }
+                
+        }
     }
 }

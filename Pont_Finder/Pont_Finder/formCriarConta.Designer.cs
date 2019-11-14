@@ -39,10 +39,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pb_icone = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.mkb_cpf = new System.Windows.Forms.MaskedTextBox();
+            this.pb_versenha = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pb_icone = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_versenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +77,7 @@
             this.label6.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(167, 464);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 31);
+            this.label6.Size = new System.Drawing.Size(67, 32);
             this.label6.TabIndex = 23;
             this.label6.Text = "Senha:";
             // 
@@ -93,7 +95,7 @@
             this.label5.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(167, 395);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 31);
+            this.label5.Size = new System.Drawing.Size(68, 32);
             this.label5.TabIndex = 20;
             this.label5.Text = "E-mail:";
             // 
@@ -103,7 +105,7 @@
             this.label4.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(168, 326);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 31);
+            this.label4.Size = new System.Drawing.Size(51, 32);
             this.label4.TabIndex = 19;
             this.label4.Text = "CPF:";
             // 
@@ -122,7 +124,7 @@
             this.label3.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(168, 256);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 31);
+            this.label3.Size = new System.Drawing.Size(144, 32);
             this.label3.TabIndex = 17;
             this.label3.Text = "Nome completo:";
             // 
@@ -132,7 +134,7 @@
             this.label2.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(101, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(428, 33);
+            this.label2.Size = new System.Drawing.Size(428, 32);
             this.label2.TabIndex = 16;
             this.label2.Text = "Crie uma conta para utilizar os serviços Point Finder!";
             // 
@@ -145,31 +147,6 @@
             this.label1.Size = new System.Drawing.Size(147, 45);
             this.label1.TabIndex = 15;
             this.label1.Text = "Criar conta";
-            // 
-            // pb_icone
-            // 
-            this.pb_icone.Image = ((System.Drawing.Image)(resources.GetObject("pb_icone.Image")));
-            this.pb_icone.InitialImage = null;
-            this.pb_icone.Location = new System.Drawing.Point(240, 96);
-            this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(150, 150);
-            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_icone.TabIndex = 26;
-            this.pb_icone.TabStop = false;
-            this.pb_icone.WaitOnLoad = true;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(374, 228);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 32);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // openIcone
             // 
@@ -186,12 +163,50 @@
             this.mkb_cpf.TabIndex = 2;
             this.mkb_cpf.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
+            // pb_versenha
+            // 
+            this.pb_versenha.BackColor = System.Drawing.Color.Transparent;
+            this.pb_versenha.Image = global::Pont_Finder.Properties.Resources.noview_icon_1;
+            this.pb_versenha.Location = new System.Drawing.Point(438, 501);
+            this.pb_versenha.Name = "pb_versenha";
+            this.pb_versenha.Size = new System.Drawing.Size(25, 25);
+            this.pb_versenha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_versenha.TabIndex = 27;
+            this.pb_versenha.TabStop = false;
+            this.pb_versenha.Click += new System.EventHandler(this.PictureBox1_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(374, 228);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(32, 32);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // pb_icone
+            // 
+            this.pb_icone.Image = ((System.Drawing.Image)(resources.GetObject("pb_icone.Image")));
+            this.pb_icone.InitialImage = null;
+            this.pb_icone.Location = new System.Drawing.Point(240, 96);
+            this.pb_icone.Name = "pb_icone";
+            this.pb_icone.Size = new System.Drawing.Size(150, 150);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_icone.TabIndex = 26;
+            this.pb_icone.TabStop = false;
+            this.pb_icone.WaitOnLoad = true;
+            // 
             // formCriarConta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(630, 630);
+            this.Controls.Add(this.pb_versenha);
             this.Controls.Add(this.mkb_cpf);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button_Cadastrar);
@@ -209,6 +224,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criar Conta";
             this.Load += new System.EventHandler(this.formCriarConta_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_versenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -231,5 +247,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openIcone;
         private System.Windows.Forms.MaskedTextBox mkb_cpf;
+        private System.Windows.Forms.PictureBox pb_versenha;
     }
 }

@@ -118,37 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Like_null" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\servicos\like\Like_null.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="downred" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\downred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="offImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\servicos\data\images\posts\offImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="upgrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\upgrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="downgrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\downgrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="offImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\servicos\data\images\empresas\offImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Deslike_null" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\servicos\like\Deslike_null.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="downblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\downblue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="upblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upblue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="back-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\back-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="upblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\upblue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="downred" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\downred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="noview-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noview-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upgrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upgrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="offImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\servicos\data\images\posts\offImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="noview-icon " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noview-icon .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="back-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\back-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Deslike_null" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\servicos\like\Deslike_null.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Like_null" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\servicos\like\Like_null.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="offImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\servicos\data\images\empresas\offImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="downgrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\downgrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="noview-icon 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noview-icon .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
