@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro_Restaurante));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
@@ -48,7 +47,6 @@
             this.tbNomeEmpresa = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -101,30 +99,23 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.maskedTextBox1);
             this.panel1.Location = new System.Drawing.Point(5, 301);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(310, 604);
             this.panel1.TabIndex = 51;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(-20, 31);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 0;
             // 
             // panel11
             // 
@@ -297,20 +288,6 @@
             this.label13.TabIndex = 11;
             this.label13.Text = "CEP";
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Maroon;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(12, 226);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 40);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "Cancelar";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -338,8 +315,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.maskedTextBox12);
             this.panel4.Controls.Add(this.maskedTextBox13);
             this.panel4.Controls.Add(this.maskedTextBox14);
@@ -375,7 +351,7 @@
             // maskedTextBox12
             // 
             this.maskedTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox12.Location = new System.Drawing.Point(296, 279);
+            this.maskedTextBox12.Location = new System.Drawing.Point(308, 282);
             this.maskedTextBox12.Mask = "00:00";
             this.maskedTextBox12.Name = "maskedTextBox12";
             this.maskedTextBox12.Size = new System.Drawing.Size(86, 22);
@@ -385,7 +361,7 @@
             // maskedTextBox13
             // 
             this.maskedTextBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox13.Location = new System.Drawing.Point(296, 250);
+            this.maskedTextBox13.Location = new System.Drawing.Point(308, 253);
             this.maskedTextBox13.Mask = "00:00";
             this.maskedTextBox13.Name = "maskedTextBox13";
             this.maskedTextBox13.Size = new System.Drawing.Size(86, 22);
@@ -395,7 +371,7 @@
             // maskedTextBox14
             // 
             this.maskedTextBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox14.Location = new System.Drawing.Point(296, 217);
+            this.maskedTextBox14.Location = new System.Drawing.Point(308, 220);
             this.maskedTextBox14.Mask = "00:00";
             this.maskedTextBox14.Name = "maskedTextBox14";
             this.maskedTextBox14.Size = new System.Drawing.Size(86, 22);
@@ -405,7 +381,7 @@
             // maskedTextBox15
             // 
             this.maskedTextBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox15.Location = new System.Drawing.Point(296, 186);
+            this.maskedTextBox15.Location = new System.Drawing.Point(308, 189);
             this.maskedTextBox15.Mask = "00:00";
             this.maskedTextBox15.Name = "maskedTextBox15";
             this.maskedTextBox15.Size = new System.Drawing.Size(86, 22);
@@ -415,7 +391,7 @@
             // maskedTextBox16
             // 
             this.maskedTextBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox16.Location = new System.Drawing.Point(296, 154);
+            this.maskedTextBox16.Location = new System.Drawing.Point(308, 157);
             this.maskedTextBox16.Mask = "00:00";
             this.maskedTextBox16.Name = "maskedTextBox16";
             this.maskedTextBox16.Size = new System.Drawing.Size(86, 22);
@@ -425,7 +401,7 @@
             // maskedTextBox17
             // 
             this.maskedTextBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox17.Location = new System.Drawing.Point(296, 122);
+            this.maskedTextBox17.Location = new System.Drawing.Point(308, 125);
             this.maskedTextBox17.Mask = "00:00";
             this.maskedTextBox17.Name = "maskedTextBox17";
             this.maskedTextBox17.Size = new System.Drawing.Size(86, 22);
@@ -435,7 +411,7 @@
             // maskedTextBox18
             // 
             this.maskedTextBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox18.Location = new System.Drawing.Point(296, 89);
+            this.maskedTextBox18.Location = new System.Drawing.Point(308, 92);
             this.maskedTextBox18.Mask = "00:00";
             this.maskedTextBox18.Name = "maskedTextBox18";
             this.maskedTextBox18.Size = new System.Drawing.Size(86, 22);
@@ -445,7 +421,7 @@
             // maskedTextBox19
             // 
             this.maskedTextBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox19.Location = new System.Drawing.Point(296, 58);
+            this.maskedTextBox19.Location = new System.Drawing.Point(308, 61);
             this.maskedTextBox19.Mask = "00:00";
             this.maskedTextBox19.Name = "maskedTextBox19";
             this.maskedTextBox19.Size = new System.Drawing.Size(86, 22);
@@ -455,7 +431,7 @@
             // maskedTextBox11
             // 
             this.maskedTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox11.Location = new System.Drawing.Point(187, 279);
+            this.maskedTextBox11.Location = new System.Drawing.Point(199, 282);
             this.maskedTextBox11.Mask = "00:00";
             this.maskedTextBox11.Name = "maskedTextBox11";
             this.maskedTextBox11.Size = new System.Drawing.Size(86, 22);
@@ -465,7 +441,7 @@
             // maskedTextBox10
             // 
             this.maskedTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox10.Location = new System.Drawing.Point(187, 250);
+            this.maskedTextBox10.Location = new System.Drawing.Point(199, 253);
             this.maskedTextBox10.Mask = "00:00";
             this.maskedTextBox10.Name = "maskedTextBox10";
             this.maskedTextBox10.Size = new System.Drawing.Size(86, 22);
@@ -475,7 +451,7 @@
             // maskedTextBox9
             // 
             this.maskedTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox9.Location = new System.Drawing.Point(187, 217);
+            this.maskedTextBox9.Location = new System.Drawing.Point(199, 220);
             this.maskedTextBox9.Mask = "00:00";
             this.maskedTextBox9.Name = "maskedTextBox9";
             this.maskedTextBox9.Size = new System.Drawing.Size(86, 22);
@@ -485,7 +461,7 @@
             // maskedTextBox8
             // 
             this.maskedTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox8.Location = new System.Drawing.Point(187, 186);
+            this.maskedTextBox8.Location = new System.Drawing.Point(199, 189);
             this.maskedTextBox8.Mask = "00:00";
             this.maskedTextBox8.Name = "maskedTextBox8";
             this.maskedTextBox8.Size = new System.Drawing.Size(86, 22);
@@ -495,7 +471,7 @@
             // maskedTextBox7
             // 
             this.maskedTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox7.Location = new System.Drawing.Point(187, 154);
+            this.maskedTextBox7.Location = new System.Drawing.Point(199, 157);
             this.maskedTextBox7.Mask = "00:00";
             this.maskedTextBox7.Name = "maskedTextBox7";
             this.maskedTextBox7.Size = new System.Drawing.Size(86, 22);
@@ -505,7 +481,7 @@
             // maskedTextBox6
             // 
             this.maskedTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox6.Location = new System.Drawing.Point(187, 122);
+            this.maskedTextBox6.Location = new System.Drawing.Point(199, 125);
             this.maskedTextBox6.Mask = "00:00";
             this.maskedTextBox6.Name = "maskedTextBox6";
             this.maskedTextBox6.Size = new System.Drawing.Size(86, 22);
@@ -515,7 +491,7 @@
             // maskedTextBox5
             // 
             this.maskedTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox5.Location = new System.Drawing.Point(187, 89);
+            this.maskedTextBox5.Location = new System.Drawing.Point(199, 92);
             this.maskedTextBox5.Mask = "00:00";
             this.maskedTextBox5.Name = "maskedTextBox5";
             this.maskedTextBox5.Size = new System.Drawing.Size(86, 22);
@@ -525,7 +501,7 @@
             // maskedTextBox4
             // 
             this.maskedTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox4.Location = new System.Drawing.Point(187, 58);
+            this.maskedTextBox4.Location = new System.Drawing.Point(199, 61);
             this.maskedTextBox4.Mask = "00:00";
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.Size = new System.Drawing.Size(86, 22);
@@ -536,7 +512,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(293, 18);
+            this.label17.Location = new System.Drawing.Point(305, 21);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(77, 18);
             this.label17.TabIndex = 46;
@@ -546,7 +522,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(188, 18);
+            this.label11.Location = new System.Drawing.Point(200, 21);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 18);
             this.label11.TabIndex = 45;
@@ -556,7 +532,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(50, 18);
+            this.label14.Location = new System.Drawing.Point(62, 21);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(122, 18);
             this.label14.TabIndex = 32;
@@ -566,7 +542,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(51, 56);
+            this.radioButton1.Location = new System.Drawing.Point(63, 59);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(130, 22);
             this.radioButton1.TabIndex = 15;
@@ -578,7 +554,7 @@
             // 
             this.radioButton10.AutoSize = true;
             this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(51, 276);
+            this.radioButton10.Location = new System.Drawing.Point(63, 279);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(84, 22);
             this.radioButton10.TabIndex = 35;
@@ -590,7 +566,7 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(51, 85);
+            this.radioButton4.Location = new System.Drawing.Point(63, 88);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(110, 22);
             this.radioButton4.TabIndex = 18;
@@ -602,7 +578,7 @@
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(51, 118);
+            this.radioButton5.Location = new System.Drawing.Point(63, 121);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(117, 22);
             this.radioButton5.TabIndex = 19;
@@ -614,7 +590,7 @@
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(51, 152);
+            this.radioButton6.Location = new System.Drawing.Point(63, 155);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(115, 22);
             this.radioButton6.TabIndex = 20;
@@ -626,7 +602,7 @@
             // 
             this.radioButton7.AutoSize = true;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(51, 183);
+            this.radioButton7.Location = new System.Drawing.Point(63, 186);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(109, 22);
             this.radioButton7.TabIndex = 21;
@@ -638,7 +614,7 @@
             // 
             this.radioButton8.AutoSize = true;
             this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(51, 217);
+            this.radioButton8.Location = new System.Drawing.Point(63, 220);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(77, 22);
             this.radioButton8.TabIndex = 22;
@@ -650,7 +626,7 @@
             // 
             this.radioButton9.AutoSize = true;
             this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(51, 246);
+            this.radioButton9.Location = new System.Drawing.Point(63, 249);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(87, 22);
             this.radioButton9.TabIndex = 23;
@@ -684,8 +660,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.checkBox10);
             this.panel6.Controls.Add(this.checkBox9);
             this.panel6.Controls.Add(this.checkBox5);
@@ -907,6 +882,17 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Vamos evoluir juntos!";
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(12, 235);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 63;
+            this.btn_back.TabStop = false;
+            // 
             // Cadastro_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -914,7 +900,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel9);
@@ -929,8 +915,6 @@
             this.Name = "Cadastro_Restaurante";
             this.Text = "Cadastro_Restaurante";
             this.Load += new System.EventHandler(this.Cadastro_Restaurante_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -942,6 +926,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -961,7 +946,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbNomeEmpresa;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel2;
@@ -1002,7 +986,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox12;
@@ -1021,5 +1004,6 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox6;
         private System.Windows.Forms.MaskedTextBox maskedTextBox5;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }
