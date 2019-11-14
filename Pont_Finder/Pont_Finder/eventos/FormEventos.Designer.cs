@@ -154,7 +154,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(0, 1076);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1282, 100);
+            this.panel7.Size = new System.Drawing.Size(1265, 100);
             this.panel7.TabIndex = 26;
             // 
             // panel2
@@ -205,7 +205,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(170, 35);
             this.button5.TabIndex = 27;
-            this.button5.Text = "Publicar Eventos";
+            this.button5.Text = "Gerenciar Eventos";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -292,7 +292,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label23);

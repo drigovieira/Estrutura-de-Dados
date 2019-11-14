@@ -54,4 +54,22 @@
     <patrocinadores>não sei</patrocinadores>
     <ativo>true</ativo>
   </postagem>
+  <postagem>
+    <id>3</id>
+    <ingresso_total>50</ingresso_total>
+    <ingresso_disponivel>50</ingresso_disponivel>
+    <nome>Cultura</nome>
+    <imagem1>..//..//eventos//Data//imagens//offImage.jpg</imagem1>
+    <imagem2>null</imagem2>
+    <imagem3>null</imagem3>
+    <imagem4>null</imagem4>
+    <categoria>Cultural</categoria>
+    <data>00/00/0000</data>
+    <horario>00:00</horario>
+    <local>n.sei</local>
+    <idade>16 </idade>
+    <valor>40</valor>
+    <patrocinadores>Ninguém</patrocinadores>
+    <ativo>true</ativo>
+  </postagem>
 </postagens>

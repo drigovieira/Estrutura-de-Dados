@@ -61,7 +61,7 @@ namespace Pont_Finder.eventos
         private void button5_Click(object sender, EventArgs e)
         {
             if (Session.Online)
-                FormPrincipal.MudarForm("Eventos", new Post_Eventos());
+                FormPrincipal.MudarForm("Eventos", new ListEvent());
             else
                 MessageBox.Show("É necessário estar logado");
         }

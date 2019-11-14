@@ -118,6 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Thistle;
             this.Controls.Add(this.bt_visualizar);
             this.Controls.Add(this.lb_categoria);
             this.Controls.Add(this.lb_valor);
