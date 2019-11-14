@@ -77,7 +77,7 @@
             this.pb_pesquisar.BackColor = System.Drawing.Color.White;
             this.pb_pesquisar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_pesquisar.BackgroundImage")));
             this.pb_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_pesquisar.Location = new System.Drawing.Point(262, 28);
+            this.pb_pesquisar.Location = new System.Drawing.Point(265, 25);
             this.pb_pesquisar.Name = "pb_pesquisar";
             this.pb_pesquisar.Size = new System.Drawing.Size(30, 30);
             this.pb_pesquisar.TabIndex = 1;
@@ -86,14 +86,14 @@
             // 
             // tb_pesquisar
             // 
+            this.tb_pesquisar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_pesquisar.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_pesquisar.ForeColor = System.Drawing.Color.DarkGray;
+            this.tb_pesquisar.ForeColor = System.Drawing.Color.Black;
             this.tb_pesquisar.Location = new System.Drawing.Point(13, 23);
             this.tb_pesquisar.Name = "tb_pesquisar";
-            this.tb_pesquisar.Size = new System.Drawing.Size(283, 40);
+            this.tb_pesquisar.Size = new System.Drawing.Size(283, 33);
             this.tb_pesquisar.TabIndex = 0;
             this.tb_pesquisar.Tag = "";
-            this.tb_pesquisar.Text = "Pesquisar";
             this.tb_pesquisar.TextChanged += new System.EventHandler(this.Tb_pesquisar_TextChanged);
             this.tb_pesquisar.Enter += new System.EventHandler(this.Tb_pesquisa_Enter);
             this.tb_pesquisar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Tb_pesquisar_KeyPress);

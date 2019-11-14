@@ -65,5 +65,15 @@ namespace Pont_Finder.eventos
             else
                 MessageBox.Show("É necessário estar logado");
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }

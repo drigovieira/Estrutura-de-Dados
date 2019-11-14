@@ -21,8 +21,8 @@ namespace Pont_Finder.eventos
             pb_imagem.ImageLocation = post.Imagem1;
             lb_nome.Text = post.Nome;
             lb_ingressos.Text = ""+post.IngressosTotal;
+            lb_data.Text = post.Data;
             lb_categoria.Text = post.Categoria;
-            lb_ingresso.Text = ""+post.IngressoDispinivel;
             lb_valor.Text = post.Valor;
            
 
@@ -34,6 +34,11 @@ namespace Pont_Finder.eventos
         }
 
         private void Lb_categoria_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
