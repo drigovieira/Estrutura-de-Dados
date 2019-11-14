@@ -164,10 +164,16 @@
     <Compile Include="eventos\ListEvent.Designer.cs">
       <DependentUpon>ListEvent.cs</DependentUpon>
     </Compile>
-    <Compile Include="eventos\Post_Card.cs">
+    <Compile Include="eventos\User_Card\Card_list_Emp.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="eventos\Post_Card.Designer.cs">
+    <Compile Include="eventos\User_Card\Card_list_Emp.Designer.cs">
+      <DependentUpon>Card_list_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\User_Card\Post_Card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="eventos\User_Card\Post_Card.Designer.cs">
       <DependentUpon>Post_Card.cs</DependentUpon>
     </Compile>
     <Compile Include="eventos\Post_Eventos.cs">
@@ -330,16 +336,16 @@
     <Compile Include="servicos\FormVisualizarPost.Designer.cs">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\PostCard.cs">
+    <Compile Include="servicos\User_control\PostCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="servicos\PostCard.Designer.cs">
+    <Compile Include="servicos\User_control\PostCard.Designer.cs">
       <DependentUpon>PostCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\PostCardEdit.cs">
+    <Compile Include="servicos\User_control\PostCardEdit.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="servicos\PostCardEdit.Designer.cs">
+    <Compile Include="servicos\User_control\PostCardEdit.Designer.cs">
       <DependentUpon>PostCardEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\SolicitarServico.cs">
@@ -400,7 +406,10 @@
       <DependentUpon>ListEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\PostEventos.resx" />
-    <EmbeddedResource Include="eventos\Post_Card.resx">
+    <EmbeddedResource Include="eventos\User_Card\Card_list_Emp.resx">
+      <DependentUpon>Card_list_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\User_Card\Post_Card.resx">
       <DependentUpon>Post_Card.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\Post_Eventos.resx">
@@ -526,10 +535,10 @@
     <EmbeddedResource Include="servicos\FormVisualizarPost.resx">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\PostCard.resx">
+    <EmbeddedResource Include="servicos\User_control\PostCard.resx">
       <DependentUpon>PostCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\PostCardEdit.resx">
+    <EmbeddedResource Include="servicos\User_control\PostCardEdit.resx">
       <DependentUpon>PostCardEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\SolicitarServico.resx">
