@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_deslike = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.lb_data = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.lb_like = new System.Windows.Forms.Label();
             this.lb_titulo = new System.Windows.Forms.Label();
             this.pb_icone = new System.Windows.Forms.PictureBox();
-            this.lb_deslike = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
@@ -53,7 +53,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lb_deslike);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button3);
@@ -70,9 +69,19 @@
             this.panel1.Controls.Add(this.pb_icone);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 200);
+            this.panel1.Size = new System.Drawing.Size(1010, 200);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // lb_deslike
+            // 
+            this.lb_deslike.AutoSize = true;
+            this.lb_deslike.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lb_deslike.Location = new System.Drawing.Point(732, 79);
+            this.lb_deslike.Name = "lb_deslike";
+            this.lb_deslike.Size = new System.Drawing.Size(44, 14);
+            this.lb_deslike.TabIndex = 33;
+            this.lb_deslike.Text = "Deslike";
             // 
             // button1
             // 
@@ -227,23 +236,13 @@
             this.pb_icone.TabIndex = 14;
             this.pb_icone.TabStop = false;
             // 
-            // lb_deslike
-            // 
-            this.lb_deslike.AutoSize = true;
-            this.lb_deslike.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lb_deslike.Location = new System.Drawing.Point(732, 79);
-            this.lb_deslike.Name = "lb_deslike";
-            this.lb_deslike.Size = new System.Drawing.Size(44, 14);
-            this.lb_deslike.TabIndex = 33;
-            this.lb_deslike.Text = "Deslike";
-            // 
             // PostCardEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "PostCardEdit";
-            this.Size = new System.Drawing.Size(1000, 200);
+            this.Size = new System.Drawing.Size(1010, 200);
             this.Load += new System.EventHandler(this.PostCardEdit_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

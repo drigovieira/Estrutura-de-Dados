@@ -32,17 +32,19 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // painel
             // 
-            this.painel.AutoScroll = true;
+            this.painel.AutoSize = true;
             this.painel.BackColor = System.Drawing.Color.White;
-            this.painel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.painel.Location = new System.Drawing.Point(114, 143);
+            this.painel.Location = new System.Drawing.Point(127, 143);
+            this.painel.MaximumSize = new System.Drawing.Size(1010, 0);
+            this.painel.MinimumSize = new System.Drawing.Size(1010, 0);
             this.painel.Name = "painel";
-            this.painel.Size = new System.Drawing.Size(1055, 460);
+            this.painel.Size = new System.Drawing.Size(1010, 0);
             this.painel.TabIndex = 10;
             this.painel.Paint += new System.Windows.Forms.PaintEventHandler(this.Painel_Paint);
             // 
@@ -52,7 +54,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1074, 101);
+            this.button4.Location = new System.Drawing.Point(1042, 101);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(95, 36);
             this.button4.TabIndex = 9;
@@ -75,7 +77,7 @@
             this.btn_back.BackColor = System.Drawing.Color.White;
             this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.Location = new System.Drawing.Point(114, 97);
+            this.btn_back.Location = new System.Drawing.Point(124, 97);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 12;
@@ -84,6 +86,14 @@
             this.btn_back.MouseLeave += new System.EventHandler(this.Btn_back_MouseLeave);
             this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Btn_back_MouseMove);
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 575);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1282, 100);
+            this.panel1.TabIndex = 13;
+            // 
             // FormUserCards
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +101,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.painel);
             this.Controls.Add(this.button4);
@@ -111,5 +122,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Panel panel1;
     }
 }
