@@ -23,7 +23,10 @@ namespace Pont_Finder.eventos.Classes
             {
                 if (item.Id == postId)
                 {
-
+                    pos.Id = item.Id;
+                    pos.IngressosTotal = item.IngressosTotal;
+                    pos.IngressoDispinivel = item.IngressoDispinivel;
+                    pos.Nome = item.Nome;
                     pos.Imagem1 = item.Imagem1;
                     pos.Imagem2 = item.Imagem2;
                     pos.Imagem3 = item.Imagem3;
@@ -48,6 +51,8 @@ namespace Pont_Finder.eventos.Classes
             get { return poster; }
         }
 
+
+
         public static List<CoEvento> Poster
         {
             get
@@ -57,6 +62,10 @@ namespace Pont_Finder.eventos.Classes
                 foreach (var item in poster)
                 {
                     CoEvento pos = new CoEvento();
+                    pos.Id = item.Id;
+                    pos.IngressosTotal = item.IngressosTotal;
+                    pos.IngressoDispinivel = item.IngressoDispinivel;
+                    pos.Nome = item.Nome;
                     pos.Imagem1 = item.Imagem1;
                     pos.Imagem2 = item.Imagem2;
                     pos.Imagem3 = item.Imagem3;
@@ -78,6 +87,20 @@ namespace Pont_Finder.eventos.Classes
             }
         }
 
+        public static List<CoEvento> thisPosterAtivo
+        {
+            get
+            {
+                List<CoEvento> posts = new List<CoEvento>();
+                foreach (var item in poster)
+                {
+                    if (item.Ativo == true)
+                        posts.Add(item);                   
+                }
+                return posts;
+            }
+        }
+
         public static List<CoEvento> PosterAtivo
         {
             get
@@ -89,6 +112,10 @@ namespace Pont_Finder.eventos.Classes
                     if (item.Ativo)
                     {
                         CoEvento pos = new CoEvento();
+                        pos.Id = item.Id;
+                        pos.IngressosTotal = item.IngressosTotal;
+                        pos.IngressoDispinivel = item.IngressoDispinivel;
+                        pos.Nome = item.Nome;
                         pos.Imagem1 = item.Imagem1;
                         pos.Imagem2 = item.Imagem2;
                         pos.Imagem3 = item.Imagem3;
@@ -113,6 +140,10 @@ namespace Pont_Finder.eventos.Classes
         public static void PostAdd(CoEvento post)
         {
             CoEvento pos = new CoEvento();
+            pos.Id = post.Id;
+            pos.IngressosTotal = post.IngressosTotal;
+            pos.IngressoDispinivel = post.IngressoDispinivel;
+            pos.Nome = post.Nome;
             pos.Imagem1 = post.Imagem1;
             pos.Imagem2 = post.Imagem2;
             pos.Imagem3 = post.Imagem3;
@@ -138,7 +169,11 @@ namespace Pont_Finder.eventos.Classes
             foreach (var item in poster)
             {
                 XElement post =
-                      new XElement("POSTAGEM",
+                      new XElement("postagem",
+                      new XElement("id", item.Id),
+                      new XElement("ingresso_total", item.IngressosTotal),
+                      new XElement("ingresso_disponivel", item.IngressoDispinivel),
+                      new XElement("nome", item.Nome),
                       new XElement("imagem1", item.Imagem1),
                       new XElement("imagem2", item.Imagem2),
                       new XElement("imagem3", item.Imagem3),
@@ -150,7 +185,7 @@ namespace Pont_Finder.eventos.Classes
                       new XElement("idade", item.Idade),
                       new XElement("valor", item.Valor),
                       new XElement("patrocinadores", item.Patrocinadores),
-                      new XElement("ativo", item.Ativo));
+                      new XElement("ativo", item.Ativo)); ;
 
                 XDocument doc = XDocument.Load(caminhoPost);
 
@@ -164,10 +199,14 @@ namespace Pont_Finder.eventos.Classes
         {
             XDocument doc = XDocument.Load(caminhoPost);
 
-            foreach (var item in doc.Descendants("POSTAGEM"))
+            foreach (var item in doc.Descendants("postagem"))
             {
                 CoEvento postar = new CoEvento();
 
+                postar.Id = int.Parse(item.Element("id").Value);
+                postar.IngressosTotal = int.Parse(item.Element("ingresso_total").Value);
+                postar.IngressoDispinivel = int.Parse(item.Element("ingresso_disponivel").Value);
+                postar.Nome = (item.Element("nome").Value);
                 postar.Imagem1 = (item.Element("imagem1").Value);
                 postar.Imagem2 = (item.Element("imagem2").Value);
                 postar.Imagem3 = (item.Element("imagem3").Value);
@@ -192,9 +231,9 @@ namespace Pont_Finder.eventos.Classes
 
             XDocument xdoc = XDocument.Load(caminhoPost);
 
-            foreach (var item in xdoc.Descendants("POSTAGEM"))
+            foreach (var item in xdoc.Descendants("postagem"))
             {
-                XmlNode node = xmldoc.SelectSingleNode("/POSTAGENS/POSTAGEM");
+                XmlNode node = xmldoc.SelectSingleNode("/postagens/postagem");
                 node.ParentNode.RemoveChild(node);
             }
             xmldoc.Save(caminhoPost);

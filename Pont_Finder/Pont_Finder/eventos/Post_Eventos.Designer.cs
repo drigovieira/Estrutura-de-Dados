@@ -55,11 +55,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_nome = new System.Windows.Forms.Label();
+            this.tb_nome = new System.Windows.Forms.TextBox();
             this.Bdata = new System.Windows.Forms.MaskedTextBox();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
+            this.lb_ingresso_total = new System.Windows.Forms.Label();
+            this.lb_ingresso_disponivel = new System.Windows.Forms.Label();
+            this.tb_ingresso_disponivel = new System.Windows.Forms.TextBox();
+            this.tb_ingresso_total = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
@@ -128,7 +134,7 @@
             // 
             // Bhorario
             // 
-            this.Bhorario.Location = new System.Drawing.Point(76, 1202);
+            this.Bhorario.Location = new System.Drawing.Point(77, 1229);
             this.Bhorario.Name = "Bhorario";
             this.Bhorario.Size = new System.Drawing.Size(100, 20);
             this.Bhorario.TabIndex = 1;
@@ -177,7 +183,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 1203);
+            this.label7.Location = new System.Drawing.Point(15, 1235);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 18);
             this.label7.TabIndex = 11;
@@ -215,7 +221,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 1140);
+            this.label6.Location = new System.Drawing.Point(21, 1200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 18);
             this.label6.TabIndex = 10;
@@ -339,6 +345,12 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.tb_ingresso_total);
+            this.panel1.Controls.Add(this.tb_ingresso_disponivel);
+            this.panel1.Controls.Add(this.lb_ingresso_disponivel);
+            this.panel1.Controls.Add(this.lb_ingresso_total);
+            this.panel1.Controls.Add(this.lb_nome);
+            this.panel1.Controls.Add(this.tb_nome);
             this.panel1.Controls.Add(this.Bdata);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.CBfaixaetaria);
@@ -366,9 +378,25 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // lb_nome
+            // 
+            this.lb_nome.AutoSize = true;
+            this.lb_nome.Location = new System.Drawing.Point(73, 1108);
+            this.lb_nome.Name = "lb_nome";
+            this.lb_nome.Size = new System.Drawing.Size(38, 13);
+            this.lb_nome.TabIndex = 17;
+            this.lb_nome.Text = "Nome:";
+            // 
+            // tb_nome
+            // 
+            this.tb_nome.Location = new System.Drawing.Point(116, 1103);
+            this.tb_nome.Name = "tb_nome";
+            this.tb_nome.Size = new System.Drawing.Size(100, 20);
+            this.tb_nome.TabIndex = 16;
+            // 
             // Bdata
             // 
-            this.Bdata.Location = new System.Drawing.Point(76, 1138);
+            this.Bdata.Location = new System.Drawing.Point(76, 1197);
             this.Bdata.Mask = "00/00/0000";
             this.Bdata.Name = "Bdata";
             this.Bdata.Size = new System.Drawing.Size(113, 20);
@@ -409,6 +437,38 @@
             // openIcone
             // 
             this.openIcone.FileName = "openIcone";
+            // 
+            // lb_ingresso_total
+            // 
+            this.lb_ingresso_total.AutoSize = true;
+            this.lb_ingresso_total.Location = new System.Drawing.Point(43, 1134);
+            this.lb_ingresso_total.Name = "lb_ingresso_total";
+            this.lb_ingresso_total.Size = new System.Drawing.Size(73, 13);
+            this.lb_ingresso_total.TabIndex = 18;
+            this.lb_ingresso_total.Text = "Ingresso total:";
+            // 
+            // lb_ingresso_disponivel
+            // 
+            this.lb_ingresso_disponivel.AutoSize = true;
+            this.lb_ingresso_disponivel.Location = new System.Drawing.Point(3, 1165);
+            this.lb_ingresso_disponivel.Name = "lb_ingresso_disponivel";
+            this.lb_ingresso_disponivel.Size = new System.Drawing.Size(102, 13);
+            this.lb_ingresso_disponivel.TabIndex = 19;
+            this.lb_ingresso_disponivel.Text = "Ingresso disponível:";
+            // 
+            // tb_ingresso_disponivel
+            // 
+            this.tb_ingresso_disponivel.Location = new System.Drawing.Point(116, 1163);
+            this.tb_ingresso_disponivel.Name = "tb_ingresso_disponivel";
+            this.tb_ingresso_disponivel.Size = new System.Drawing.Size(100, 20);
+            this.tb_ingresso_disponivel.TabIndex = 20;
+            // 
+            // tb_ingresso_total
+            // 
+            this.tb_ingresso_total.Location = new System.Drawing.Point(116, 1132);
+            this.tb_ingresso_total.Name = "tb_ingresso_total";
+            this.tb_ingresso_total.Size = new System.Drawing.Size(100, 20);
+            this.tb_ingresso_total.TabIndex = 21;
             // 
             // Post_Eventos
             // 
@@ -470,5 +530,11 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.MaskedTextBox Bdata;
         private System.Windows.Forms.OpenFileDialog openIcone;
+        private System.Windows.Forms.Label lb_nome;
+        private System.Windows.Forms.TextBox tb_nome;
+        private System.Windows.Forms.TextBox tb_ingresso_total;
+        private System.Windows.Forms.TextBox tb_ingresso_disponivel;
+        private System.Windows.Forms.Label lb_ingresso_disponivel;
+        private System.Windows.Forms.Label lb_ingresso_total;
     }
 }

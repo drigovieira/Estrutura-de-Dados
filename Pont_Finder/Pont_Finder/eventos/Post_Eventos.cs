@@ -56,10 +56,12 @@ namespace Pont_Finder.eventos
 
 
 
-           
 
 
-            
+
+            string p_nome = tb_nome.Text;
+            string p_totalingresso = tb_ingresso_total.Text;
+            string p_disponivelingresso = tb_ingresso_disponivel.Text;
             string p_descricao = Bdescricao.Text;
             string p_data = Bdata.Text;
             string p_horario = Bhorario.Text;
@@ -67,8 +69,12 @@ namespace Pont_Finder.eventos
             string p_patrocinadores = Bpatrocionadores.Text;
             string p_faixaetaria = CBfaixaetaria.SelectedItem.ToString();
             string p_valor = Bvalor.Text;
+            int p_id = Classes.Eventos_List.thisPoster.Count();
 
-
+            postar.Id = p_id;
+            postar.IngressosTotal = int.Parse(p_totalingresso);
+            postar.IngressoDispinivel = int.Parse(p_disponivelingresso);
+            postar.Nome = p_nome;
             postar.Imagem1 = link;
             postar.Imagem2 = "null";
             postar.Imagem3 = "null";

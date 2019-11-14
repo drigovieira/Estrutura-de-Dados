@@ -1,31 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<POSTAGENS>
-  <POSTAGEM>
+<postagens>
+  <postagem>
+    <id>0</id>
+    <ingresso_total>50</ingresso_total>
+    <ingresso_disponivel>50</ingresso_disponivel>
+    <nome>Festa do Odim</nome>
     <imagem1>..//..//eventos//Data//imagens//0.jpg</imagem1>
     <imagem2>null</imagem2>
     <imagem3>null</imagem3>
     <imagem4>null</imagem4>
     <categoria>TesteNull</categoria>
-    <data>10/11/2019</data>
-    <horario>19:00</horario>
-    <local>Rua 2</local>
+    <data>22/11/2019</data>
+    <horario>23:22</horario>
+    <local>Casa do Miguel</local>
     <idade>18+</idade>
-    <valor>50,00</valor>
-    <patrocinadores>Prefeitura</patrocinadores>
+    <valor>89,50</valor>
+    <patrocinadores>RockStar, Amanco, Tigre</patrocinadores>
     <ativo>true</ativo>
-  </POSTAGEM>
-  <POSTAGEM>
-    <imagem1>..//..//eventos//Data//imagens//1.jpg</imagem1>
-    <imagem2>null</imagem2>
-    <imagem3>null</imagem3>
-    <imagem4>null</imagem4>
-    <categoria>TesteNull</categoria>
-    <data>10/11/2019</data>
-    <horario>19:00</horario>
-    <local>Rua 2</local>
-    <idade>18+</idade>
-    <valor>50,00</valor>
-    <patrocinadores>Prefeitura</patrocinadores>
-    <ativo>true</ativo>
-  </POSTAGEM>
-</POSTAGENS>
+  </postagem>
+</postagens>

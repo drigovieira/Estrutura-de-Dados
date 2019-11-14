@@ -8,27 +8,63 @@ namespace Pont_Finder.eventos.Classes
 {
     class CoEvento
     {
-        private int id;
-        private string imagem1;
-        private string imagem2;
-        private string imagem3;
-        private string imagem4;
-        private string categoria;
-        private string descricao;
-        private string data;
-        private string horario;
-        private string local;
-        private string idade;
-        private string valor;
-        private string patrocinadores;
-        private string modulo;
-        private bool ativo;
+        private bool
+            ativo;
+        private int
+            id,
+            ingressosTotal,
+            ingressosDisponivel;
+        private long
+            cnpj;
+        private string
+            nome,
+            categoria,
+            descricao,
+            data,
+            horario,
+            local,
+            idade,
+            valor,
+            patrocinadores,
+            modulo,
+            imagem1,
+            imagem2,
+            imagem3,
+            imagem4;
+
+
+
 
         public int Id
         {
             get { return id; }
             set { id = value; }
         }
+
+        public int IngressosTotal
+        {
+            get { return ingressosTotal; }
+            set { ingressosTotal = value; }
+        }
+
+        public int IngressoDispinivel
+        {
+            get { return ingressosDisponivel; }
+            set { ingressosDisponivel = value; }
+        }
+
+        public long Cnpj
+        {
+            get { return cnpj; }
+            set { cnpj = value; }
+        }
+
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+        }
+
 
         public string Imagem1
         {

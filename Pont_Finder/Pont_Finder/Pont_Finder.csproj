@@ -158,6 +158,12 @@
     <Compile Include="eventos\ListEvent.Designer.cs">
       <DependentUpon>ListEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="eventos\Post_Card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="eventos\Post_Card.Designer.cs">
+      <DependentUpon>Post_Card.cs</DependentUpon>
+    </Compile>
     <Compile Include="eventos\Post_Eventos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +266,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecuperarSenha.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecuperarSenha.resx</DependentUpon>
+    </Compile>
     <Compile Include="Recuperar_senha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -374,6 +385,10 @@
     <EmbeddedResource Include="eventos\ListEvent.resx">
       <DependentUpon>ListEvent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="eventos\PostEventos.resx" />
+    <EmbeddedResource Include="eventos\Post_Card.resx">
+      <DependentUpon>Post_Card.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="eventos\Post_Eventos.resx">
       <DependentUpon>Post_Eventos.cs</DependentUpon>
     </EmbeddedResource>
@@ -410,6 +425,8 @@
     <EmbeddedResource Include="hospedagem\Editar_Quarto.resx">
       <DependentUpon>Editar_Quarto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\FormHospedagem.resx" />
+    <EmbeddedResource Include="hospedagem\Hospedagem_DetalhesEmpresa.resx" />
     <EmbeddedResource Include="hospedagem\Hosp_Home.resx">
       <DependentUpon>Hosp_Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -422,6 +439,49 @@
     <EmbeddedResource Include="hospedagem\Vizualizar_quarto.resx">
       <DependentUpon>Vizualizar_quarto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Cadastro_Produto.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Cadastro_Restaurante.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Item_Alimentos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.lbMensagem.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Publi.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Reserva_Alimentos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.TopEmpresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Visualizar.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.avalie.formPostar.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.avalie.UserControl1.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.CadEmpresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.eventos.CadEmpresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.eventos.FormEventos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.eventos.ListEvent.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.eventos.Post_Eventos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.formAlimentos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.FormAvalie.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.formCriarConta.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.formHome.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.formLogin.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.FormPrincipal.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Cadastro_Empresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Cad_Quarto.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Card_list_quarto.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.data.inc.icon.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.data.inc.Img_list.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Editar_Empresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Editar_Quarto.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Hosp_Home.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Hosp_PostCard.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Listas_quartos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Vizualizar_quarto.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.Recuperar_senha.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormCadEmpresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormPost.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormPostEdit.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormServicos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormUserCards.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormVisualizarPost.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.PostCard.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.PostCardEdit.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.SolicitarServico.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -432,6 +492,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RecuperarSenha.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecuperarSenha.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Recuperar_senha.resx">
       <DependentUpon>Recuperar_senha.cs</DependentUpon>
     </EmbeddedResource>
@@ -462,6 +526,12 @@
     <EmbeddedResource Include="servicos\SolicitarServico.resx">
       <DependentUpon>SolicitarServico.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\Pont_Finder.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Pont_Finder.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Pont_Finder.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Pont_Finder.csprojAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -485,6 +555,8 @@
     <Content Include="avalie\data\imagens\posts\2.jpg" />
     <Content Include="avalie\data\imagens\posts\offImage.jpg" />
     <Content Include="avalie\data\postagens.xml" />
+    <Content Include="bin\Debug\Pont_Finder.exe" />
+    <Content Include="bin\Debug\Pont_Finder.pdb" />
     <Content Include="data\empresas.xml" />
     <Content Include="data\images\users\offImage.jpg" />
     <Content Include="data\usuarios.xml" />
@@ -492,6 +564,10 @@
     <Content Include="eventos\Data\imagens\offImage.jpg" />
     <Content Include="eventos\Data\Postagem_Eventos.xml" />
     <Content Include="hospedagem\data\quartos.xml" />
+    <Content Include="obj\Debug\Pont_Finder.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Pont_Finder.exe" />
+    <Content Include="obj\Debug\Pont_Finder.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <Content Include="Resources\servicos\like\Deslike.png" />
     <Content Include="Resources\servicos\like\Deslike_blue.png" />
     <Content Include="Resources\servicos\like\Deslike_null.png" />

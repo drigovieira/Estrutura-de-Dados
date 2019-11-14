@@ -189,4 +189,22 @@
     <endereco>dfsdfsffsdfsdf</endereco>
     <ativo>true</ativo>
   </EMPRESA>
+  <EMPRESA>
+    <nome>qwerqwerwerrwewer</nome>
+    <nome_fantasia>qwerqwerwerwer</nome_fantasia>
+    <email>asdfasdffasd</email>
+    <cnpj>11111111111111</cnpj>
+    <telefone>11111111111</telefone>
+    <endereco>ASDASDFASDF</endereco>
+    <ativo>true</ativo>
+  </EMPRESA>
+  <EMPRESA>
+    <nome>kaldshfih</nome>
+    <nome_fantasia>sidofh</nome_fantasia>
+    <email>fijsdoif</email>
+    <cnpj>12396249236469</cnpj>
+    <telefone>28468236489</telefone>
+    <endereco>sdgfg</endereco>
+    <ativo>true</ativo>
+  </EMPRESA>
 </CADEMPRESA>

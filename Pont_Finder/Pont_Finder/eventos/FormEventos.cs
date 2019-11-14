@@ -26,8 +26,10 @@ namespace Pont_Finder.eventos
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            CadEmpresa outroform = new CadEmpresa();
-            FormPrincipal.MudarForm("Eventos",outroform);
+            if (Session.Online)
+                FormPrincipal.MudarForm("Eventos", new CadEmpresa());
+            else
+                MessageBox.Show("É necessário estar logado");          
         }
 
         private void FormEventos_Load(object sender, EventArgs e)
@@ -37,8 +39,10 @@ namespace Pont_Finder.eventos
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Post_Eventos outroform = new Post_Eventos();
-            FormPrincipal.MudarForm("Eventos", outroform);
+            if (Session.Online)
+                FormPrincipal.MudarForm("Eventos", new Post_Eventos());
+            else
+                MessageBox.Show("É necessário estar logado");
         }
     }
 }
