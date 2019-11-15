@@ -48,6 +48,13 @@
             this.panel_center = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -65,6 +72,13 @@
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel_left.Controls.Add(this.radioButton6);
+            this.panel_left.Controls.Add(this.radioButton5);
+            this.panel_left.Controls.Add(this.radioButton4);
+            this.panel_left.Controls.Add(this.radioButton3);
+            this.panel_left.Controls.Add(this.radioButton2);
+            this.panel_left.Controls.Add(this.radioButton1);
+            this.panel_left.Controls.Add(this.label2);
             this.panel_left.Controls.Add(this.pb_pesquisar);
             this.panel_left.Controls.Add(this.tb_pesquisar);
             this.panel_left.Location = new System.Drawing.Point(5, 282);
@@ -102,10 +116,11 @@
             // bt_solicitar
             // 
             this.bt_solicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_solicitar.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_solicitar.ForeColor = System.Drawing.Color.White;
-            this.bt_solicitar.Location = new System.Drawing.Point(656, 8);
+            this.bt_solicitar.Location = new System.Drawing.Point(656, 5);
             this.bt_solicitar.Name = "bt_solicitar";
-            this.bt_solicitar.Size = new System.Drawing.Size(120, 22);
+            this.bt_solicitar.Size = new System.Drawing.Size(122, 28);
             this.bt_solicitar.TabIndex = 4;
             this.bt_solicitar.Text = "Solicitar Serviço";
             this.bt_solicitar.UseVisualStyleBackColor = true;
@@ -114,10 +129,11 @@
             // bt_cadEmpresa
             // 
             this.bt_cadEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_cadEmpresa.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cadEmpresa.ForeColor = System.Drawing.Color.White;
-            this.bt_cadEmpresa.Location = new System.Drawing.Point(488, 8);
+            this.bt_cadEmpresa.Location = new System.Drawing.Point(488, 5);
             this.bt_cadEmpresa.Name = "bt_cadEmpresa";
-            this.bt_cadEmpresa.Size = new System.Drawing.Size(120, 22);
+            this.bt_cadEmpresa.Size = new System.Drawing.Size(122, 28);
             this.bt_cadEmpresa.TabIndex = 3;
             this.bt_cadEmpresa.Text = "Cadastrar Empresa";
             this.bt_cadEmpresa.UseVisualStyleBackColor = true;
@@ -126,10 +142,11 @@
             // bt_publicar
             // 
             this.bt_publicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_publicar.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_publicar.ForeColor = System.Drawing.Color.White;
-            this.bt_publicar.Location = new System.Drawing.Point(319, 8);
+            this.bt_publicar.Location = new System.Drawing.Point(319, 5);
             this.bt_publicar.Name = "bt_publicar";
-            this.bt_publicar.Size = new System.Drawing.Size(120, 22);
+            this.bt_publicar.Size = new System.Drawing.Size(122, 28);
             this.bt_publicar.TabIndex = 2;
             this.bt_publicar.Text = "Publicar Servicos";
             this.bt_publicar.UseVisualStyleBackColor = true;
@@ -151,10 +168,11 @@
             // bt_gerenciar
             // 
             this.bt_gerenciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_gerenciar.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_gerenciar.ForeColor = System.Drawing.Color.White;
-            this.bt_gerenciar.Location = new System.Drawing.Point(824, 8);
+            this.bt_gerenciar.Location = new System.Drawing.Point(824, 5);
             this.bt_gerenciar.Name = "bt_gerenciar";
-            this.bt_gerenciar.Size = new System.Drawing.Size(120, 22);
+            this.bt_gerenciar.Size = new System.Drawing.Size(122, 28);
             this.bt_gerenciar.TabIndex = 7;
             this.bt_gerenciar.Text = "Gerenciar Serviços";
             this.bt_gerenciar.UseVisualStyleBackColor = true;
@@ -171,10 +189,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(420, 208);
+            this.label1.Font = new System.Drawing.Font("Dubai", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(464, 193);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(384, 31);
+            this.label1.Size = new System.Drawing.Size(340, 45);
             this.label1.TabIndex = 36;
             this.label1.Text = "Veja o que temos para você!";
             // 
@@ -232,9 +250,10 @@
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(608, 256);
+            this.lb_pag.Font = new System.Drawing.Font("Dubai", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_pag.Location = new System.Drawing.Point(607, 252);
             this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(39, 13);
+            this.lb_pag.Size = new System.Drawing.Size(49, 24);
             this.lb_pag.TabIndex = 41;
             this.lb_pag.Text = "lb_pag";
             // 
@@ -270,6 +289,85 @@
             this.label16.Size = new System.Drawing.Size(144, 36);
             this.label16.TabIndex = 43;
             this.label16.Text = "Top 5 Serviços";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(118, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 36);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "Filtros";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(25, 127);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(69, 25);
+            this.radioButton1.TabIndex = 44;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Nenhum";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(25, 160);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(117, 25);
+            this.radioButton2.TabIndex = 45;
+            this.radioButton2.Text = "Nome da Empresa";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(25, 192);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(111, 25);
+            this.radioButton3.TabIndex = 46;
+            this.radioButton3.Text = "Nome do Serviço";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(169, 127);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(95, 25);
+            this.radioButton4.TabIndex = 47;
+            this.radioButton4.Text = "Mais Recente";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton5.Location = new System.Drawing.Point(169, 160);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(88, 25);
+            this.radioButton5.TabIndex = 48;
+            this.radioButton5.Text = "Mais Antigo";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton6.Location = new System.Drawing.Point(169, 192);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(81, 25);
+            this.radioButton6.TabIndex = 49;
+            this.radioButton6.Text = "Relevância";
+            this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // FormServicos
             // 
@@ -327,5 +425,12 @@
         private System.Windows.Forms.Panel panel_center;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label2;
     }
 }

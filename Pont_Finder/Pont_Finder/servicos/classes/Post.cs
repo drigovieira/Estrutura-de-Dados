@@ -5,16 +5,30 @@ namespace Pont_Finder.servicos.classes
 {
     class Post
     {
-        private int id;
-        private string titulo;
-        private double valor;
-        private string descricao;
-        private bool ativo;
-        private string image;
-        private long cpf;
-        private long cnpj;
-        private DateTime data;
-        private List<long[]> likes = new List<long[]>();
+
+        private int
+            id;
+
+        private long
+            cpf,
+            cnpj;
+
+        private string
+            titulo,
+            descricao,
+            image;
+
+        private double
+            valor;
+
+        private bool
+            ativo;
+           
+        private DateTime
+            data;
+
+        private List<long[]>
+            likes = new List<long[]>();
 
         public Post()
         {
@@ -60,7 +74,8 @@ namespace Pont_Finder.servicos.classes
             set { cpf = value; }
         }
 
-        public long Cnpj
+        public long
+            Cnpj
         {
             get { return cnpj; }
             set { cnpj = value; }
@@ -118,9 +133,7 @@ namespace Pont_Finder.servicos.classes
                         total += item[0];
                     }
                     return total;
-                }
-
-                ;
+                };
             }
         }
 
@@ -145,9 +158,7 @@ namespace Pont_Finder.servicos.classes
                         
                     }
                     return total;
-                }
-
-                ;
+                };
             }
         }
         public long DeJoinha
@@ -171,9 +182,7 @@ namespace Pont_Finder.servicos.classes
 
                     }
                     return total;
-                }
-
-                ;
+                };
             }
         }
 

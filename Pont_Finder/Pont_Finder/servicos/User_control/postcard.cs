@@ -14,6 +14,7 @@ namespace Pont_Finder.servicos
     public partial class PostCard : UserControl
     {
         private classes.Post post;
+        private classes.Empresa empresa;
 
         Bitmap imgLike = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");    
         Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
@@ -51,7 +52,7 @@ namespace Pont_Finder.servicos
 
             lb_data.Text = "Postado em: " + this.post.Data;
             lb_titulo.Text = this.post.Titulo;
-            lb_descricao.Text = this.post.Descricao;
+            lb_descricao.Text = "Descrição: " + this.post.Descricao;
             lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.post.Valor);
 
         }
@@ -154,9 +155,10 @@ namespace Pont_Finder.servicos
             }
             else
             {
-                classes.Empresa emp = classes.ListaEmpresa.selectCpf(this.post.Cpf);
-                pb_user.ImageLocation = emp.Image;
-                lb_username.Text = emp.Nome;
+                empresa = classes.ListaEmpresa.selectCpf(this.post.Cpf);
+                pb_user.ImageLocation = empresa.Image;
+                lb_username.Text = empresa.Nome;
+                lb_tipo.Text = "Categoria: "+ empresa.Servico;
 
             }
 

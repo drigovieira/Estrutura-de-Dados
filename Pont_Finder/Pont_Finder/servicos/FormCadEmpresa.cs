@@ -22,7 +22,8 @@ namespace Pont_Finder.servicos
             "Limpeza",
             "Montador de Móveis",
             "Hidráulico",
-            "Pintor"
+            "Pintor",
+            "Outro"
         };
 
         public FormCadEmpresa()
@@ -117,6 +118,16 @@ namespace Pont_Finder.servicos
         }
 
         private void Panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FormCadEmpresa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadEmpresa));
             this.panel11 = new System.Windows.Forms.Panel();
+            this.cb_servico = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.AddFotoEmpresa = new System.Windows.Forms.Button();
             this.pb_icone = new System.Windows.Forms.PictureBox();
@@ -57,7 +58,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.cb_servico = new System.Windows.Forms.ComboBox();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
@@ -93,15 +93,24 @@
             this.panel11.TabIndex = 63;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel11_Paint);
             // 
+            // cb_servico
+            // 
+            this.cb_servico.FormattingEnabled = true;
+            this.cb_servico.Location = new System.Drawing.Point(104, 721);
+            this.cb_servico.Name = "cb_servico";
+            this.cb_servico.Size = new System.Drawing.Size(411, 21);
+            this.cb_servico.TabIndex = 19;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(100, 694);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 20);
+            this.label1.Size = new System.Drawing.Size(87, 20);
             this.label1.TabIndex = 18;
-            this.label1.Text = "Tipo de Serviço prestado";
+            this.label1.Text = "Categoria";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // AddFotoEmpresa
             // 
@@ -360,14 +369,6 @@
             this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 0;
             // 
-            // cb_servico
-            // 
-            this.cb_servico.FormattingEnabled = true;
-            this.cb_servico.Location = new System.Drawing.Point(104, 721);
-            this.cb_servico.Name = "cb_servico";
-            this.cb_servico.Size = new System.Drawing.Size(411, 21);
-            this.cb_servico.TabIndex = 19;
-            // 
             // FormCadEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -386,6 +387,7 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "FormCadEmpresa";
             this.Text = "FormCadEmpresa";
+            this.Load += new System.EventHandler(this.FormCadEmpresa_Load);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();

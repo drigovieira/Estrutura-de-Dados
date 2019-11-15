@@ -40,6 +40,7 @@
             this.pb_up = new System.Windows.Forms.PictureBox();
             this.pb_user = new System.Windows.Forms.PictureBox();
             this.lb_deslike = new System.Windows.Forms.Label();
+            this.lb_tipo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
@@ -49,35 +50,40 @@
             // lb_data
             // 
             this.lb_data.AutoSize = true;
-            this.lb_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
-            this.lb_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_data.Location = new System.Drawing.Point(13, 178);
-            this.lb_data.Margin = new System.Windows.Forms.Padding(0);
-            this.lb_data.MaximumSize = new System.Drawing.Size(200, 15);
-            this.lb_data.MinimumSize = new System.Drawing.Size(200, 15);
+            this.lb_data.BackColor = System.Drawing.Color.Transparent;
+            this.lb_data.Font = new System.Drawing.Font("Dubai", 8F);
+            this.lb_data.Location = new System.Drawing.Point(15, 160);
+            this.lb_data.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_data.MaximumSize = new System.Drawing.Size(200, 20);
+            this.lb_data.MinimumSize = new System.Drawing.Size(200, 20);
             this.lb_data.Name = "lb_data";
-            this.lb_data.Size = new System.Drawing.Size(200, 15);
+            this.lb_data.Size = new System.Drawing.Size(200, 20);
             this.lb_data.TabIndex = 30;
-            this.lb_data.Text = "label1";
+            this.lb_data.Text = "Postado em:";
+            this.lb_data.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lb_data.Click += new System.EventHandler(this.Lb_data_Click);
             // 
             // lb_descricao
             // 
-            this.lb_descricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
-            this.lb_descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lb_descricao.Location = new System.Drawing.Point(213, 25);
+            this.lb_descricao.BackColor = System.Drawing.Color.Transparent;
+            this.lb_descricao.Font = new System.Drawing.Font("Dubai", 9F);
+            this.lb_descricao.Location = new System.Drawing.Point(225, 75);
+            this.lb_descricao.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_descricao.MaximumSize = new System.Drawing.Size(240, 60);
+            this.lb_descricao.MinimumSize = new System.Drawing.Size(240, 60);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(250, 168);
+            this.lb_descricao.Size = new System.Drawing.Size(240, 60);
             this.lb_descricao.TabIndex = 29;
-            this.lb_descricao.Text = "descricao";
+            this.lb_descricao.Text = "Descricao:";
             this.lb_descricao.Click += new System.EventHandler(this.Lb_descricao_Click);
             // 
             // lb_username
             // 
             this.lb_username.AutoSize = true;
-            this.lb_username.Location = new System.Drawing.Point(563, 65);
+            this.lb_username.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_username.Location = new System.Drawing.Point(548, 32);
             this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(27, 13);
+            this.lb_username.Size = new System.Drawing.Size(28, 18);
             this.lb_username.TabIndex = 25;
             this.lb_username.Text = "user";
             // 
@@ -85,9 +91,10 @@
             // 
             this.bt_obter.BackColor = System.Drawing.Color.RoyalBlue;
             this.bt_obter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_obter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bt_obter.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.bt_obter.ForeColor = System.Drawing.Color.White;
-            this.bt_obter.Location = new System.Drawing.Point(476, 141);
+            this.bt_obter.Location = new System.Drawing.Point(483, 133);
+            this.bt_obter.Margin = new System.Windows.Forms.Padding(15);
             this.bt_obter.Name = "bt_obter";
             this.bt_obter.Size = new System.Drawing.Size(127, 32);
             this.bt_obter.TabIndex = 23;
@@ -98,22 +105,23 @@
             // lb_valor
             // 
             this.lb_valor.AutoSize = true;
-            this.lb_valor.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_valor.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_valor.ForeColor = System.Drawing.Color.Green;
-            this.lb_valor.Location = new System.Drawing.Point(476, 109);
+            this.lb_valor.Location = new System.Drawing.Point(477, 84);
+            this.lb_valor.Margin = new System.Windows.Forms.Padding(15);
             this.lb_valor.Name = "lb_valor";
-            this.lb_valor.Size = new System.Drawing.Size(55, 26);
+            this.lb_valor.Size = new System.Drawing.Size(81, 36);
             this.lb_valor.TabIndex = 22;
-            this.lb_valor.Text = "valor";
+            this.lb_valor.Text = "R$ 0,00";
             this.lb_valor.Click += new System.EventHandler(this.valor_Click);
             // 
             // lb_like
             // 
             this.lb_like.AutoSize = true;
-            this.lb_like.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lb_like.Location = new System.Drawing.Point(507, 54);
+            this.lb_like.Font = new System.Drawing.Font("Dubai", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lb_like.Location = new System.Drawing.Point(260, 144);
             this.lb_like.Name = "lb_like";
-            this.lb_like.Size = new System.Drawing.Size(27, 14);
+            this.lb_like.Size = new System.Drawing.Size(31, 21);
             this.lb_like.TabIndex = 20;
             this.lb_like.Text = "Like";
             this.lb_like.Click += new System.EventHandler(this.label1_Click_2);
@@ -121,15 +129,15 @@
             // lb_titulo
             // 
             this.lb_titulo.AutoSize = true;
-            this.lb_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titulo.Location = new System.Drawing.Point(12, 3);
-            this.lb_titulo.MaximumSize = new System.Drawing.Size(500, 20);
-            this.lb_titulo.MinimumSize = new System.Drawing.Size(500, 20);
+            this.lb_titulo.Font = new System.Drawing.Font("Dubai", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titulo.Location = new System.Drawing.Point(225, 45);
+            this.lb_titulo.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_titulo.MaximumSize = new System.Drawing.Size(200, 20);
+            this.lb_titulo.MinimumSize = new System.Drawing.Size(200, 20);
             this.lb_titulo.Name = "lb_titulo";
-            this.lb_titulo.Size = new System.Drawing.Size(500, 20);
+            this.lb_titulo.Size = new System.Drawing.Size(200, 20);
             this.lb_titulo.TabIndex = 15;
-            this.lb_titulo.Text = "titulo";
-            this.lb_titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_titulo.Text = "Nome do Serviço:";
             this.lb_titulo.Click += new System.EventHandler(this.lb_titulo_Click);
             // 
             // pb_down
@@ -137,7 +145,8 @@
             this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
             this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.Location = new System.Drawing.Point(476, 81);
+            this.pb_down.Location = new System.Drawing.Point(309, 140);
+            this.pb_down.Margin = new System.Windows.Forms.Padding(15);
             this.pb_down.Name = "pb_down";
             this.pb_down.Size = new System.Drawing.Size(25, 25);
             this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -147,7 +156,8 @@
             // 
             // pb_icone
             // 
-            this.pb_icone.Location = new System.Drawing.Point(13, 25);
+            this.pb_icone.Location = new System.Drawing.Point(15, 15);
+            this.pb_icone.Margin = new System.Windows.Forms.Padding(15, 15, 5, 15);
             this.pb_icone.Name = "pb_icone";
             this.pb_icone.Size = new System.Drawing.Size(200, 150);
             this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,7 +170,8 @@
             this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
             this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.Location = new System.Drawing.Point(476, 43);
+            this.pb_up.Location = new System.Drawing.Point(229, 140);
+            this.pb_up.Margin = new System.Windows.Forms.Padding(15);
             this.pb_up.Name = "pb_up";
             this.pb_up.Size = new System.Drawing.Size(25, 25);
             this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -170,7 +181,8 @@
             // 
             // pb_user
             // 
-            this.pb_user.Location = new System.Drawing.Point(552, 12);
+            this.pb_user.Location = new System.Drawing.Point(484, 15);
+            this.pb_user.Margin = new System.Windows.Forms.Padding(15);
             this.pb_user.Name = "pb_user";
             this.pb_user.Size = new System.Drawing.Size(50, 50);
             this.pb_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -180,18 +192,32 @@
             // lb_deslike
             // 
             this.lb_deslike.AutoSize = true;
-            this.lb_deslike.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lb_deslike.Location = new System.Drawing.Point(507, 92);
+            this.lb_deslike.Font = new System.Drawing.Font("Dubai", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lb_deslike.Location = new System.Drawing.Point(340, 144);
             this.lb_deslike.Name = "lb_deslike";
-            this.lb_deslike.Size = new System.Drawing.Size(44, 14);
+            this.lb_deslike.Size = new System.Drawing.Size(47, 21);
             this.lb_deslike.TabIndex = 31;
             this.lb_deslike.Text = "Deslike";
+            // 
+            // lb_tipo
+            // 
+            this.lb_tipo.AutoSize = true;
+            this.lb_tipo.Font = new System.Drawing.Font("Dubai", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tipo.Location = new System.Drawing.Point(225, 15);
+            this.lb_tipo.Margin = new System.Windows.Forms.Padding(5, 15, 5, 5);
+            this.lb_tipo.MaximumSize = new System.Drawing.Size(240, 20);
+            this.lb_tipo.MinimumSize = new System.Drawing.Size(240, 20);
+            this.lb_tipo.Name = "lb_tipo";
+            this.lb_tipo.Size = new System.Drawing.Size(240, 20);
+            this.lb_tipo.TabIndex = 32;
+            this.lb_tipo.Text = "Tipo:";
             // 
             // PostCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.lb_tipo);
             this.Controls.Add(this.lb_deslike);
             this.Controls.Add(this.lb_data);
             this.Controls.Add(this.lb_descricao);
@@ -205,7 +231,7 @@
             this.Controls.Add(this.lb_valor);
             this.Controls.Add(this.bt_obter);
             this.Name = "PostCard";
-            this.Size = new System.Drawing.Size(625, 196);
+            this.Size = new System.Drawing.Size(625, 180);
             this.Load += new System.EventHandler(this.PostCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
@@ -229,5 +255,6 @@
         private System.Windows.Forms.Label lb_descricao;
         private System.Windows.Forms.Label lb_data;
         private System.Windows.Forms.Label lb_deslike;
+        private System.Windows.Forms.Label lb_tipo;
     }
 }
