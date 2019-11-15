@@ -1,3 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PostList>
+  <Post>
+    <id>0</id>
+    <titulo>OdinStelo</titulo>
+    <valor>123</valor>
+    <descricao>Castelo de Odin Asss</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//0.jpg</image>
+    <cpf>26835036010</cpf>
+    <cnpj>8634895</cnpj>
+    <data>2019-11-15T16:12:41.8049686-03:00</data>
+    <likes></likes>
+  </Post>
 </PostList>

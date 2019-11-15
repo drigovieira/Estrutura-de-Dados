@@ -305,7 +305,6 @@
     <Compile Include="servicos\classes\Post.cs" />
     <Compile Include="servicos\classes\PostList.cs" />
     <Compile Include="servicos\classes\Worker.cs" />
-    <Compile Include="servicos\classes\XmiLi_Post.cs" />
     <Compile Include="servicos\FormCadEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
