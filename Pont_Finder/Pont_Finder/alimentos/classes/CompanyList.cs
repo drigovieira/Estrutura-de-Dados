@@ -26,17 +26,17 @@ namespace Pont_Finder.alimentos
             company[company.IndexOf(emp)].Id = company.IndexOf(emp);
         }
         //falta arrumar o método select.
-        public static int select(Company item)
-        {            
-            int index = 0;
+        public static Company select(int id)
+        {
+            Company empresa = new Company();
             foreach(var select in company)
             {
-                if(select.Equals(item))
+                if(company.IndexOf(select) == id)
                 {
-                    index = company.IndexOf(item);
+                    empresa = select;
                 }
             }
-            return index;
+            return empresa;
         }
         /*public void CompDel(string cnpj)
         {

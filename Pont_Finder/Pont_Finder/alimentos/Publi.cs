@@ -28,7 +28,13 @@ namespace Pont_Finder.alimentos
         }
 
         public Publi(string Nome, string Rua, string Bairro, int Num, int Contato, List<string> Categoria, int index)
-        {
+        {            
+
+            /*if (CompanyList.select(index).Image != null)
+                pb_Restaurante.ImageLocation = CompanyList.select(index).Image;
+            else
+                pb_Restaurante.ImageLocation = "..//..//alimentos//data//image//empresas//offImage.jpg";*/
+
             nomeCompany = Nome;
             ruaCompany = Rua;
             bairroCompany = Bairro;

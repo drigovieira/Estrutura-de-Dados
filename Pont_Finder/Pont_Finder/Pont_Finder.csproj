@@ -569,10 +569,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="alimentos\data\image\empresas\" />
     <Folder Include="data\images\carrousel\home\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="alimentos\data\image\empresas\offImage.jpg" />
     <Content Include="avalie\data\imagens\posts0.jpg" />
     <Content Include="avalie\data\imagens\posts\0.jpg" />
     <Content Include="avalie\data\imagens\posts\1.jpg" />

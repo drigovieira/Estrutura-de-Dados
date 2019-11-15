@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,6 +47,25 @@ namespace Pont_Finder.alimentos
                 //Telefone
                 emp.Email = tbEmail.Text;
                 CompanyList.CompAdd(emp);
+
+                string link = "..//..//alimentos//data//image//empresas//offImage.jpg";
+                if (img)
+                {
+                    if (!Directory.Exists("..//..//alimentos//data//image//empresas"))
+                        Directory.CreateDirectory("..//..//alimentos//data//image//empresas");
+
+                    pb_icone.Load();
+                    pb_icone.Image = Image.FromFile(openIcone.FileName);
+
+                    Image bmp = new Bitmap(pb_icone.Image);
+
+                    Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+
+                    pb_icone.Image = bmp2;
+
+                    link = "..//..//servicos//data//images//empresas//" + emp.Id + ".jpg";
+                    pb_icone.Image.Save(link, ImageFormat.Jpeg);
+                }
                 MessageBox.Show("Empresa Cadastrada!", "Status Operation:");
             }catch(Exception exp)
             {

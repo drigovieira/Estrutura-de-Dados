@@ -8,7 +8,7 @@ namespace Pont_Finder.alimentos
 {
     class Company
     {
-        private string nome, nomeFantasia, email, rua, bairro;
+        private string nome, nomeFantasia, email, rua, bairro, image;
         private List<string> categoria;
         private int numero, cep, telComercial, ID;
         private bool status;
@@ -68,6 +68,11 @@ namespace Pont_Finder.alimentos
         {
             get { return telComercial; }
             set { telComercial = value; }
+        }
+        public string Image
+        {
+            get { return image; }
+            set { image = value; }
         }
     }
 }
