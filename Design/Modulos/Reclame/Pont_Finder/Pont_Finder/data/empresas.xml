@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulos>
+  <servico>
+    <nome>empresa</nome>
+    <nomeFantasia>fantasia</nomeFantasia>
+    <email>email</email>
+    <telefone>2432</telefone>
+    <endereco>endereco</endereco>
+    <cnpj>21321</cnpj>
+    <cpf>26835036010</cpf>
+    <image>..//..//servicos//data//images//empresas//21321.jpg</image>
+    <status>true</status>
+  </servico>
+  <hospedagem>
+    <admin>26835036010</admin>
+    <nomeempresa>Muzy Hoteis LTDA</nomeempresa>
+    <nomefantasia>Recanto dos Muzy</nomefantasia>
+    <cnpj>34254142342342</cnpj>
+    <endereco>Rua dos lindos n22</endereco>
+    <cep>12721199</cep>
+    <telefone>123144123</telefone>
+    <email>pedro@lindo.com</email>
+    <foto> * ..//..//hospedagem//data//images//empresas//34254142342342//empresa//0.jpg * ..//..//hospedagem//data//images//empresas//34254142342342//empresa//1.jpg</foto>
+    <tipo>Hotel</tipo>
+    <estrelas>5</estrelas>
+    <descricao>Confiança e tradição.</descricao>
+    <ambiente>  Estacionamento  Piscina  Academia</ambiente>
+    <status>true</status>
+  </hospedagem>
+  <hospedagem>
+    <admin>42750892864</admin>
+    <nomeempresa>Ibis Hotel</nomeempresa>
+    <nomefantasia>Ibis Hotel</nomefantasia>
+    <cnpj>74571312354535</cnpj>
+    <endereco>rua bla bla bla n xxx</endereco>
+    <cep>12321321</cep>
+    <telefone>123123213</telefone>
+    <email>admin@ibis.com</email>
+    <foto> * ..//..//hospedagem//data//images//empresas//74571312354535//empresa//0.jpg</foto>
+    <tipo>Hotel</tipo>
+    <estrelas>3</estrelas>
+    <descricao>Mesmo ibis de sempre</descricao>
+    <ambiente>  Estacionamento</ambiente>
+    <status>true</status>
+  </hospedagem>
+  <hospedagem>
+    <admin>49478292811</admin>
+    <nomeempresa>hotel transilvania</nomeempresa>
+    <nomefantasia>dracola</nomefantasia>
+    <cnpj>11111111111111</cnpj>
+    <endereco>transilvania city</endereco>
+    <cep>66620164</cep>
+    <telefone>124002892</telefone>
+    <email>draculaura@gmail.com</email>
+    <foto> * ..//..//hospedagem//data//images//empresas//11111111111111//empresa//0.jpg</foto>
+    <tipo>Hotel</tipo>
+    <estrelas>5</estrelas>
+    <descricao>varias mortes </descricao>
+    <ambiente>  Sala de Jogos</ambiente>
+    <status>true</status>
+  </hospedagem>
+</modulos>

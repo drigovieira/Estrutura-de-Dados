@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<postagens>
+  <postagem>
+    <id>0</id>
+    <ingresso_total>50</ingresso_total>
+    <ingresso_disponivel>50</ingresso_disponivel>
+    <nome>Festa do Odim</nome>
+    <imagem1>..//..//eventos//Data//imagens//0.jpg</imagem1>
+    <imagem2>null</imagem2>
+    <imagem3>null</imagem3>
+    <imagem4>null</imagem4>
+    <categoria>TesteNull</categoria>
+    <data>22/11/2019</data>
+    <horario>23:22</horario>
+    <local>Casa do Miguel</local>
+    <idade>18+</idade>
+    <valor>89,50</valor>
+    <patrocinadores>RockStar, Amanco, Tigre</patrocinadores>
+    <ativo>true</ativo>
+  </postagem>
+  <postagem>
+    <id>1</id>
+    <ingresso_total>50</ingresso_total>
+    <ingresso_disponivel>50</ingresso_disponivel>
+    <nome>Jaccin</nome>
+    <imagem1>..//..//eventos//Data//imagens//1.jpg</imagem1>
+    <imagem2>null</imagem2>
+    <imagem3>null</imagem3>
+    <imagem4>null</imagem4>
+    <categoria>TesteNull</categoria>
+    <data>03/12/2019</data>
+    <horario>14:40</horario>
+    <local>R. Silva</local>
+    <idade>L</idade>
+    <valor>40</valor>
+    <patrocinadores>Bradesco</patrocinadores>
+    <ativo>true</ativo>
+  </postagem>
+  <postagem>
+    <id>2</id>
+    <ingresso_total>50</ingresso_total>
+    <ingresso_disponivel>50</ingresso_disponivel>
+    <nome>work</nome>
+    <imagem1>..//..//eventos//Data//imagens//offImage.jpg</imagem1>
+    <imagem2>null</imagem2>
+    <imagem3>null</imagem3>
+    <imagem4>null</imagem4>
+    <categoria>Workshop</categoria>
+    <data>00/00/0000</data>
+    <horario>12:00</horario>
+    <local>Rua</local>
+    <idade>12 </idade>
+    <valor>20</valor>
+    <patrocinadores>não sei</patrocinadores>
+    <ativo>true</ativo>
+  </postagem>
+</postagens>

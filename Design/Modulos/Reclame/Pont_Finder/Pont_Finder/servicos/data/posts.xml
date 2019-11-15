@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PostList>
+  <Post>
+    <id>0</id>
+    <titulo>fire</titulo>
+    <valor>1</valor>
+    <descricao>hspof</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//0.jpg</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-08T20:17:05.7685265-03:00</data>
+    <likes>1,26835036010</likes>
+  </Post>
+  <Post>
+    <id>1</id>
+    <titulo>hihdgh</titulo>
+    <valor>2</valor>
+    <descricao>bewiho</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//1.jpg</image>
+    <cpf>26835036010</cpf>
+    <cnpj>21321</cnpj>
+    <data>2019-11-08T20:49:34.2992233-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>2</id>
+    <titulo>testing</titulo>
+    <valor>3</valor>
+    <descricao>sopdf</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-09T12:20:28.1118117-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>3</id>
+    <titulo>tt</titulo>
+    <valor>4</valor>
+    <descricao>asd</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>21321</cnpj>
+    <data>2019-11-09T12:31:40.4269534-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>4</id>
+    <titulo>tess</titulo>
+    <valor>5</valor>
+    <descricao>SDF</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-09T22:15:32.532021-03:00</data>
+    <likes>0,26835036010</likes>
+  </Post>
+  <Post>
+    <id>5</id>
+    <titulo>6</titulo>
+    <valor>6</valor>
+    <descricao>6</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-09T22:21:16.0622085-03:00</data>
+    <likes>-1,26835036010</likes>
+  </Post>
+  <Post>
+    <id>6</id>
+    <titulo>7</titulo>
+    <valor>7</valor>
+    <descricao>7</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-09T22:22:09.8103161-03:00</data>
+    <likes>-1,26835036010</likes>
+  </Post>
+  <Post>
+    <id>7</id>
+    <titulo>pala</titulo>
+    <valor>12</valor>
+    <descricao>hsdfh</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//7.jpg</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-10T09:33:42.5511572-03:00</data>
+    <likes>1,26835036010</likes>
+  </Post>
+  <Post>
+    <id>8</id>
+    <titulo>kadspohpa</titulo>
+    <valor>123</valor>
+    <descricao>skhfp</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-10T12:17:45.5911303-03:00</data>
+    <likes>0,26835036010</likes>
+  </Post>
+  <Post>
+    <id>9</id>
+    <titulo>joihdgi</titulo>
+    <valor>71243</valor>
+    <descricao>ohoiw</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//offImage.png</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-10T16:52:42.9314872-03:00</data>
+    <likes>0,26835036010</likes>
+  </Post>
+  <Post>
+    <id>10</id>
+    <titulo>hfioshogiorhghsdoghsohgoshogshdofhsdifhsiofhsof</titulo>
+    <valor>5000</valor>
+    <descricao>ashdpsa
+sidfhps
+gsoifg
+isgf
+
+spidfhp
+
+
+sgfoids</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//10.jpg</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-10T17:06:52.3981891-03:00</data>
+    <likes>-1,26835036010*1,49478292811</likes>
+  </Post>
+  <Post>
+    <id>11</id>
+    <titulo>Biologia</titulo>
+    <valor>100</valor>
+    <descricao>Biologia é a ciência que estuda a vida e os organismos vivos.
+A biologia está dividida em vários campos especializados que abrangem a morfologia, fisiologia, anatomia, comportamento, origem, evolução e distribuição da matéria viva, além dos processos vitais e das relações entre os seres vivos.
+As subdisciplinas da biologia são definidas pela escala em que a vida é estudada, os tipos de organismos estudados e os métodos utilizados para estudá-los: a bioquímica examina a química rudimentar da vida; a biologia molecular estuda as interações complexas entre as moléculas biológicas; a biologia celular examina o bloco básico de construção de toda a vida, a célula; a fisiologia examina as funções físicas e químicas dos tecidos, órgãos e sistemas de órgãos; a ecologia examina como os organismos interagem em seu ambiente; e a biologia evolutiva examina os processos evolutivos que provavelmente produziram a diversidade da vida.
+Apesar do amplo escopo e da complexidade da ciê</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//11.jpg</image>
+    <cpf>26835036010</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-10T17:33:36.9378572-03:00</data>
+    <likes>1,26835036010</likes>
+  </Post>
+  <Post>
+    <id>12</id>
+    <titulo>matador de aluguel</titulo>
+    <valor>50005</valor>
+    <descricao>mato qualquer um a qualquer hora...paz na terra   
+Odin novo deus da morte</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//12.jpg</image>
+    <cpf>49478292811</cpf>
+    <cnpj>-1</cnpj>
+    <data>2019-11-13T07:37:40.4866273-03:00</data>
+    <likes></likes>
+  </Post>
+</PostList>

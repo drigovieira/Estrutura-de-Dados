@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6228359A-2674-4EB2-B000-C18BF43C37F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pont_Finder</RootNamespace>
+    <AssemblyName>Pont_Finder</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alimentos\Cadastro_Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alimentos\Cadastro_Produto.Designer.cs">
+      <DependentUpon>Cadastro_Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\Cadastro_Restaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alimentos\Cadastro_Restaurante.Designer.cs">
+      <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\Company.cs" />
+    <Compile Include="alimentos\CompanyList.cs" />
+    <Compile Include="alimentos\Evaluation.cs" />
+    <Compile Include="alimentos\Item_Alimentos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\Item_Alimentos.Designer.cs">
+      <DependentUpon>Item_Alimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\lbMensagem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\lbMensagem.Designer.cs">
+      <DependentUpon>lbMensagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\ProfileCompany.cs" />
+    <Compile Include="alimentos\ProfileList.cs" />
+    <Compile Include="alimentos\Publi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\Publi.Designer.cs">
+      <DependentUpon>Publi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\Reserva_Alimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alimentos\Reserva_Alimentos.Designer.cs">
+      <DependentUpon>Reserva_Alimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\TopEmpresa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\TopEmpresa.Designer.cs">
+      <DependentUpon>TopEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\Visualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alimentos\Visualizar.Designer.cs">
+      <DependentUpon>Visualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="avalie\classes\PostConstructor.cs" />
+    <Compile Include="avalie\classes\PostList.cs" />
+    <Compile Include="avalie\FormAvalie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="avalie\FormAvalie.designer.cs">
+      <DependentUpon>FormAvalie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="avalie\formPostar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="avalie\formPostar.designer.cs">
+      <DependentUpon>formPostar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="avalie\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="avalie\UserControl1.designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadEmpresa.Designer.cs">
+      <DependentUpon>CadEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\Config.cs" />
+    <Compile Include="classes\Session.cs" />
+    <Compile Include="classes\User.cs" />
+    <Compile Include="classes\UserList.cs" />
+    <Compile Include="classes\Validation.cs" />
+    <Compile Include="alimentos\formAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alimentos\formAlimentos.Designer.cs">
+      <DependentUpon>formAlimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\CadEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\CadEmpresa.Designer.cs">
+      <DependentUpon>CadEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\Classes\CaEmpresa.cs" />
+    <Compile Include="eventos\Classes\CoEvento.cs" />
+    <Compile Include="eventos\Classes\Empresa_List.cs" />
+    <Compile Include="eventos\Classes\Eventos_List.cs" />
+    <Compile Include="eventos\FormEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\FormEventos.Designer.cs">
+      <DependentUpon>FormEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\ListEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\ListEvent.Designer.cs">
+      <DependentUpon>ListEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\Post_Card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="eventos\Post_Card.Designer.cs">
+      <DependentUpon>Post_Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\Post_Eventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\Post_Eventos.Designer.cs">
+      <DependentUpon>Post_Eventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\Cadastro_Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Cadastro_Empresa.Designer.cs">
+      <DependentUpon>Cadastro_Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCriarConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCriarConta.Designer.cs">
+      <DependentUpon>formCriarConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHome.Designer.cs">
+      <DependentUpon>formHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\Cad_Quarto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Cad_Quarto.Designer.cs">
+      <DependentUpon>Cad_Quarto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\Card_list_quarto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\Card_list_quarto.Designer.cs">
+      <DependentUpon>Card_list_quarto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\classes\Empresa.cs" />
+    <Compile Include="hospedagem\classes\hostList.cs" />
+    <Compile Include="hospedagem\classes\Quarto.cs" />
+    <Compile Include="hospedagem\classes\roomList.cs" />
+    <Compile Include="hospedagem\data\inc\icon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\icon.Designer.cs">
+      <DependentUpon>icon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\Img_list.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\Img_list.Designer.cs">
+      <DependentUpon>Img_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\Editar_Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Editar_Empresa.Designer.cs">
+      <DependentUpon>Editar_Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\Editar_Quarto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Editar_Quarto.Designer.cs">
+      <DependentUpon>Editar_Quarto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\Hosp_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Hosp_Home.Designer.cs">
+      <DependentUpon>Hosp_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\Listas_quartos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Listas_quartos.Designer.cs">
+      <DependentUpon>Listas_quartos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\Hosp_PostCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\Hosp_PostCard.Designer.cs">
+      <DependentUpon>Hosp_PostCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\Vizualizar_quarto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Vizualizar_quarto.Designer.cs">
+      <DependentUpon>Vizualizar_quarto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperarSenha.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecuperarSenha.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Recuperar_senha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recuperar_senha.Designer.cs">
+      <DependentUpon>Recuperar_senha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\classes\Empresa.cs" />
+    <Compile Include="servicos\classes\ListaEmpresa.cs" />
+    <Compile Include="servicos\classes\Post.cs" />
+    <Compile Include="servicos\classes\PostList.cs" />
+    <Compile Include="servicos\classes\Worker.cs" />
+    <Compile Include="servicos\classes\XmiLi_Post.cs" />
+    <Compile Include="servicos\FormCadEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormCadEmpresa.Designer.cs">
+      <DependentUpon>FormCadEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\FormPostEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormPostEdit.Designer.cs">
+      <DependentUpon>FormPostEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\FormServicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormServicos.Designer.cs">
+      <DependentUpon>FormServicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\FormPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormPost.Designer.cs">
+      <DependentUpon>FormPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\FormUserCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormUserCards.Designer.cs">
+      <DependentUpon>FormUserCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\FormVisualizarPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormVisualizarPost.Designer.cs">
+      <DependentUpon>FormVisualizarPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\PostCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="servicos\PostCard.Designer.cs">
+      <DependentUpon>PostCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\PostCardEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="servicos\PostCardEdit.Designer.cs">
+      <DependentUpon>PostCardEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\SolicitarServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\SolicitarServico.Designer.cs">
+      <DependentUpon>SolicitarServico.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="alimentos\Cadastro_Produto.resx">
+      <DependentUpon>Cadastro_Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Cadastro_Restaurante.resx">
+      <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Item_Alimentos.resx">
+      <DependentUpon>Item_Alimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\lbMensagem.resx">
+      <DependentUpon>lbMensagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Publi.resx">
+      <DependentUpon>Publi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Reserva_Alimentos.resx">
+      <DependentUpon>Reserva_Alimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\TopEmpresa.resx">
+      <DependentUpon>TopEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Visualizar.resx">
+      <DependentUpon>Visualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avalie\FormAvalie.resx">
+      <DependentUpon>FormAvalie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avalie\formPostar.resx">
+      <DependentUpon>formPostar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avalie\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadEmpresa.resx">
+      <DependentUpon>CadEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\formAlimentos.resx">
+      <DependentUpon>formAlimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\CadEmpresa.resx">
+      <DependentUpon>CadEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\FormEventos.resx">
+      <DependentUpon>FormEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\ListEvent.resx">
+      <DependentUpon>ListEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\PostEventos.resx" />
+    <EmbeddedResource Include="eventos\Post_Card.resx">
+      <DependentUpon>Post_Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\Post_Eventos.resx">
+      <DependentUpon>Post_Eventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Cadastro_Empresa.resx">
+      <DependentUpon>Cadastro_Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCriarConta.resx">
+      <DependentUpon>formCriarConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHome.resx">
+      <DependentUpon>formHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Cad_Quarto.resx">
+      <DependentUpon>Cad_Quarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\data\inc\Card_list_quarto.resx">
+      <DependentUpon>Card_list_quarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\data\inc\icon.resx">
+      <DependentUpon>icon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\data\inc\Img_list.resx">
+      <DependentUpon>Img_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Editar_Empresa.resx">
+      <DependentUpon>Editar_Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Editar_Quarto.resx">
+      <DependentUpon>Editar_Quarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\FormHospedagem.resx" />
+    <EmbeddedResource Include="hospedagem\Hospedagem_DetalhesEmpresa.resx" />
+    <EmbeddedResource Include="hospedagem\Hosp_Home.resx">
+      <DependentUpon>Hosp_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Listas_quartos.resx">
+      <DependentUpon>Listas_quartos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\data\inc\Hosp_PostCard.resx">
+      <DependentUpon>Hosp_PostCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Vizualizar_quarto.resx">
+      <DependentUpon>Vizualizar_quarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Cadastro_Produto.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Cadastro_Restaurante.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Item_Alimentos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.lbMensagem.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Publi.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Reserva_Alimentos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.TopEmpresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.alimentos.Visualizar.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.avalie.formPostar.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.avalie.UserControl1.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.CadEmpresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.eventos.CadEmpresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.eventos.FormEventos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.eventos.ListEvent.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.eventos.Post_Eventos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.formAlimentos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.FormAvalie.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.formCriarConta.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.formHome.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.formLogin.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.FormPrincipal.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Cadastro_Empresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Cad_Quarto.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Card_list_quarto.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.data.inc.icon.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.data.inc.Img_list.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Editar_Empresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Editar_Quarto.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Hosp_Home.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Hosp_PostCard.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Listas_quartos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.hospedagem.Vizualizar_quarto.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.Recuperar_senha.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormCadEmpresa.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormPost.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormPostEdit.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormServicos.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormUserCards.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.FormVisualizarPost.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.PostCard.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.PostCardEdit.resources" />
+    <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.SolicitarServico.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecuperarSenha.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecuperarSenha.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recuperar_senha.resx">
+      <DependentUpon>Recuperar_senha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormCadEmpresa.resx">
+      <DependentUpon>FormCadEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormPostEdit.resx">
+      <DependentUpon>FormPostEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormServicos.resx">
+      <DependentUpon>FormServicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormPost.resx">
+      <DependentUpon>FormPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormUserCards.resx">
+      <DependentUpon>FormUserCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormVisualizarPost.resx">
+      <DependentUpon>FormVisualizarPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\PostCard.resx">
+      <DependentUpon>PostCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\PostCardEdit.resx">
+      <DependentUpon>PostCardEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\SolicitarServico.resx">
+      <DependentUpon>SolicitarServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\Pont_Finder.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Pont_Finder.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Pont_Finder.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Pont_Finder.csprojAssemblyReference.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\images\carrousel\home\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="avalie\data\imagens\posts0.jpg" />
+    <Content Include="avalie\data\imagens\posts\0.jpg" />
+    <Content Include="avalie\data\imagens\posts\1.jpg" />
+    <Content Include="avalie\data\imagens\posts\2.jpg" />
+    <Content Include="avalie\data\imagens\posts\offImage.jpg" />
+    <Content Include="avalie\data\postagens.xml" />
+    <Content Include="bin\Debug\Pont_Finder.exe" />
+    <Content Include="bin\Debug\Pont_Finder.pdb" />
+    <Content Include="data\empresas.xml" />
+    <Content Include="data\images\users\offImage.jpg" />
+    <Content Include="data\usuarios.xml" />
+    <Content Include="eventos\Data\Empresa_Eventos.xml" />
+    <Content Include="eventos\Data\imagens\offImage.jpg" />
+    <Content Include="eventos\Data\Postagem_Eventos.xml" />
+    <Content Include="hospedagem\data\quartos.xml" />
+    <Content Include="obj\Debug\Pont_Finder.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Pont_Finder.exe" />
+    <Content Include="obj\Debug\Pont_Finder.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\noview-icon .png" />
+    <Content Include="Resources\noview-icon.png" />
+    <Content Include="Resources\servicos\like\Deslike.png" />
+    <Content Include="Resources\servicos\like\Deslike_blue.png" />
+    <Content Include="Resources\servicos\like\Deslike_null.png" />
+    <Content Include="Resources\servicos\like\like.png" />
+    <Content Include="Resources\servicos\like\Like_null.png" />
+    <Content Include="Resources\servicos\like\Like_verde.png" />
+    <Content Include="Resources\view-icon.png" />
+    <Content Include="servicos\data\images\empresas\offImage.jpg" />
+    <Content Include="servicos\data\posts.xml" />
+    <None Include="Resources\downred.png" />
+    <None Include="Resources\downgrey.png" />
+    <None Include="Resources\downblue.png" />
+    <None Include="Resources\upgrey.png" />
+    <None Include="Resources\upblue.png" />
+    <None Include="servicos\data\images\posts\offImage.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

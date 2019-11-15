@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<userList>
+  <user>
+    <nome>admin</nome>
+    <email>admin</email>
+    <senha>admin</senha>
+    <cpf>26835036010</cpf>
+    <image>..//..//data//images//users//26835036010.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>sotndragon</nome>
+    <email>sotndragon@gmail.com</email>
+    <senha>1234</senha>
+    <cpf>45850930876</cpf>
+    <image>..//..//data//images//users//45850930876.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Muzy</nome>
+    <email>pedro@muzy.com</email>
+    <senha>1234</senha>
+    <cpf>42750892864</cpf>
+    <image>..//..//data//images//users//45850930876.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Leonardo Gomes</nome>
+    <email>leogomes@gmail.com</email>
+    <senha>123</senha>
+    <cpf>47746352863</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Mateus</nome>
+    <email>mateus@hotmail.com</email>
+    <senha>1234</senha>
+    <cpf>35004132003</cpf>
+    <image>..//..//data//images//users//35004132003.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>alisson martins</nome>
+    <email>als@gmail.com</email>
+    <senha>123456</senha>
+    <cpf>49478292811</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+</userList>

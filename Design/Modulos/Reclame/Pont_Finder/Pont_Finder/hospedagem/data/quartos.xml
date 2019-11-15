@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<roomlist>
+  <quarto>
+    <id>0</id>
+    <empresa>34254142342342</empresa>
+    <nome>Pacote Familia 1</nome>
+    <qtd_pessoas>4</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Estacionamento * Almoço * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
+    <valor>80</valor>
+    <foto>..//..//hospedagem//data//images//empresas//34254142342342//quartos//0//Pacote Familia 1.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>1</id>
+    <empresa>34254142342342</empresa>
+    <nome>Casal 1</nome>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>9</qtd_quartos>
+    <servicos> * Café da manhã * TV a cabo * Wi-fi * Espaço PET</servicos>
+    <valor>55</valor>
+    <foto>..//..//hospedagem//data//images//empresas//34254142342342//quartos//1//Casal 1.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>2</id>
+    <empresa>74571312354535</empresa>
+    <nome>Básico + Refeição</nome>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>15</qtd_quartos>
+    <servicos> * Café da manhã * Estacionamento * Almoço * Wi-fi</servicos>
+    <valor>1500</valor>
+    <foto>..//..//hospedagem//data//images//empresas//74571312354535//quartos//2//Básico + Refeição.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>3</id>
+    <empresa>34254142342342</empresa>
+    <nome>Residencial de ricos</nome>
+    <qtd_pessoas>6</qtd_pessoas>
+    <qtd_quartos>6</qtd_quartos>
+    <servicos> * Café da manhã * Estacionamento * Almoço * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
+    <valor>500</valor>
+    <foto>..//..//hospedagem//data//images//empresas//34254142342342//quartos//3//Residencial de ricos.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+</roomlist>

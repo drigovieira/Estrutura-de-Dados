@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<posts>
+  <post>
+    <id>0</id>
+    <nome>admin</nome>
+    <img>..//..//avalie//data//imagens//posts//0.jpg</img>
+    <cpf>26835036010</cpf>
+    <tempohora>10/11/2019 18:11</tempohora>
+    <desc>Rua com buraco</desc>
+    <tipoproblema>Infraestrutura</tipoproblema>
+    <localizacao>rua das gardenias</localizacao>
+    <ativo>true</ativo>
+  </post>
+  <post>
+    <id>1</id>
+    <nome>alisson martins</nome>
+    <img>..//..//avalie//data//imagens//posts//1.jpg</img>
+    <cpf>49478292811</cpf>
+    <tempohora>13/11/2019 07:51</tempohora>
+    <desc>a casa n e assombrada</desc>
+    <tipoproblema>Segurança</tipoproblema>
+    <localizacao>sao paulo</localizacao>
+    <ativo>true</ativo>
+  </post>
+  <post>
+    <id>2</id>
+    <nome>Muzy</nome>
+    <img>..//..//avalie//data//imagens//posts//2.jpg</img>
+    <cpf>42750892864</cpf>
+    <tempohora>13/11/2019 07:59</tempohora>
+    <desc>Cade o recanto dos Muzzys</desc>
+    <tipoproblema>Infraestrutura</tipoproblema>
+    <localizacao>Cruzeiro</localizacao>
+    <ativo>true</ativo>
+  </post>
+</posts>
