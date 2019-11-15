@@ -17,8 +17,14 @@ namespace Pont_Finder.alimentos
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
         {
-            alimentos.Visualizar exibirEmpresa = new alimentos.Visualizar();
-            FormPrincipal.MudarForm("perfil empresa alimentos", exibirEmpresa);
+            foreach (var item in CompanyList.selectAll())
+            {
+                if(CompanyList.selectAll().IndexOf(item) == ID)
+                {
+                    alimentos.Visualizar exibirEmpresa = new alimentos.Visualizar(item.NomeFantasia, item.Rua, item.Bairro, item.Categoria, item.Numero, item.Cep, item.TelComercial);
+                    FormPrincipal.MudarForm("alimentos", exibirEmpresa);
+                }
+            }            
         }
 
         public Publi(string Nome, string Rua, string Bairro, int Num, int Contato, List<string> Categoria, int index)
@@ -65,11 +71,6 @@ namespace Pont_Finder.alimentos
             InitializeComponent();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            alimentos.Visualizar perfil = new alimentos.Visualizar();
-            FormPrincipal.MudarForm("alimentos", perfil);
-        }
 
         private void Publi_Paint(object sender, PaintEventArgs e)
         {
