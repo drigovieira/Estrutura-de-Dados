@@ -13,13 +13,14 @@ namespace Pont_Finder.servicos.classes
             nomeFantasia,
             email,
             telefone,
-            endereco,
-            image;
-        //rua, numero, cidade, cep
+            endereco, //endereco no formato -> rua, numero, cidade, cep
+            image,
+            servicos; //servicos, uma lista de (tipo) servicos que a empresa pode prestar
 
         private long
-            cnpj,
-            cpf;
+            cnpj, //cnpj da empresa
+            cpf; //cpf do usiario que cadastrou a empresa
+
         private bool
             status;
 
@@ -40,6 +41,30 @@ namespace Pont_Finder.servicos.classes
             set { email = value; }
         }
 
+        public string Endereco
+        {
+            get { return endereco; }
+            set { endereco = value; }
+        }
+        
+        public string Telefone
+        {
+            get { return telefone; }
+            set { telefone = value; }
+        }
+
+        public string Image
+        {
+            get { return image; }
+            set { image = value; }
+        }
+
+        public string Servicos
+        {
+            get { return servicos; }
+            set { servicos = value; }
+        }
+
         public long Cnpj
         {
             get { return cnpj; }
@@ -52,38 +77,11 @@ namespace Pont_Finder.servicos.classes
             set { cpf = value; }
         }
 
-        public string Endereco
-        {
-            get { return endereco; }
-            set { endereco = value; }
-        }
-
-        /*
-        public void SetEndereco(string rua, string numero, string cidade, string cep)
-        {
-            endereco[0] = rua;
-            endereco[1] = numero;
-            endereco[2] = cidade;
-            endereco[3] = cep;
-        }
-        */
-      
         public bool Status
         {
             get { return status; }
             set { status = value; }
         }
 
-        public string Telefone
-        {
-            get { return telefone; }
-            set { telefone = value; }
-        }
-
-        public string Image
-        {
-            get { return image; }
-            set { image = value; }
-        }
     }
 }

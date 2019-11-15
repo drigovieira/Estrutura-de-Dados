@@ -15,10 +15,27 @@ namespace Pont_Finder.servicos
     public partial class FormCadEmpresa : Form
     {
         private bool img = false;
+
+        string[] tiposServicos = {
+            "Eletrecista",
+            "Informática",
+            "Limpeza",
+            "Montador de Móveis",
+            "Hidráulico",
+            "Pintor"
+        };
+
         public FormCadEmpresa()
         {
             InitializeComponent();
             pb_icone.SizeMode = PictureBoxSizeMode.StretchImage;
+
+           
+            foreach (var item in tiposServicos)
+            {
+                clb_servicos.Items.Add(item);
+            }
+            
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -28,44 +45,66 @@ namespace Pont_Finder.servicos
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string nome = tb_nome.Text;
-            string fatasia = tb_fantasia.Text;
-            long cnpj = long.Parse(tb_cep.Text);
-            string endereco = tb_endereco.Text;
-            string telefone = tb_telefone.Text;
-            string email = tb_email.Text;
-
-            string link = "..//..//servicos//data//images//empresas//offImage.jpg";
-            if (img)
+            bool validation = false;
+            if (clb_servicos.CheckedItems.Count > 3)
             {
-                if (!Directory.Exists("..//..//servicos//data//images//empresas"))
-                    Directory.CreateDirectory("..//..//servicos//data//images//empresas");
+                MessageBox.Show("Uma empresa pode no maximo prestar 3 tipos de serviços");
+            }
+            else
+            {
+                if (clb_servicos.CheckedItems.Count < 1)
+                {
+                    MessageBox.Show("Uma empresa deve prestar ao menos 1 tipo de serviço");
+                }
+                else
+                {
+                    validation = true;
+                }
 
-                pb_icone.Load();
-                pb_icone.Image = Image.FromFile(openIcone.FileName);
-
-                Image bmp = new Bitmap(pb_icone.Image);
-
-                Image bmp2 = new Bitmap(bmp, pb_icone.Size);
-
-                pb_icone.Image = bmp2;
-                               
-                link = "..//..//servicos//data//images//empresas//" + cnpj + ".jpg";
-                pb_icone.Image.Save(link, ImageFormat.Jpeg);
             }
 
-            classes.Empresa tmp = new classes.Empresa();
-            tmp.Nome = nome;
-            tmp.NomeFantasia = fatasia;
-            tmp.Email = email;
-            tmp.Cnpj = cnpj;
-            tmp.Endereco = endereco;
-            tmp.Telefone = telefone;
-            tmp.Cpf = Session.Cpf;
-            tmp.Image = link;
-            tmp.Status = true;
-            classes.ListaEmpresa.Add(tmp);
-            FormPrincipal.MudarForm("servicos", new FormServicos());
+            if (validation)
+            {
+                string nome = tb_nome.Text;
+                string fatasia = tb_fantasia.Text;
+                long cnpj = long.Parse(tb_cep.Text);
+                string endereco = tb_endereco.Text;
+                string telefone = tb_telefone.Text;
+                string email = tb_email.Text;
+
+                string link = "..//..//servicos//data//images//empresas//offImage.jpg";
+                if (img)
+                {
+                    if (!Directory.Exists("..//..//servicos//data//images//empresas"))
+                        Directory.CreateDirectory("..//..//servicos//data//images//empresas");
+
+                    pb_icone.Load();
+                    pb_icone.Image = Image.FromFile(openIcone.FileName);
+
+                    Image bmp = new Bitmap(pb_icone.Image);
+
+                    Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+
+                    pb_icone.Image = bmp2;
+
+                    link = "..//..//servicos//data//images//empresas//" + cnpj + ".jpg";
+                    pb_icone.Image.Save(link, ImageFormat.Jpeg);
+                }
+
+                classes.Empresa tmp = new classes.Empresa();
+                tmp.Nome = nome;
+                tmp.NomeFantasia = fatasia;
+                tmp.Email = email;
+                tmp.Cnpj = cnpj;
+                tmp.Endereco = endereco;
+                tmp.Telefone = telefone;
+                tmp.Cpf = Session.Cpf;
+                tmp.Image = link;
+                tmp.Status = true;
+                classes.ListaEmpresa.Add(tmp);
+                FormPrincipal.MudarForm("servicos", new FormServicos());
+            }
+        
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -81,6 +120,11 @@ namespace Pont_Finder.servicos
                 pb_icone.Load();
                 img = true;
             }
+        }
+
+        private void Panel11_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -48,6 +48,10 @@ namespace Pont_Finder.servicos
 
         private void Publicar_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Agora somente empresas podem cadastrar servicos\n" +
+                "Error nº #40028922");
+
+            /*
             string link = null;
             if (img)
             {
@@ -78,6 +82,7 @@ namespace Pont_Finder.servicos
             p.Cnpj = -1;
             classes.PostList.Add(p);
             FormPrincipal.MudarForm("servicos", new FormServicos());
+            */
      
         }
 

@@ -1,16 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulos>
-  <servico>
-    <nome>empresa</nome>
-    <nomeFantasia>fantasia</nomeFantasia>
-    <email>email</email>
-    <telefone>2432</telefone>
-    <endereco>endereco</endereco>
-    <cnpj>21321</cnpj>
-    <cpf>26835036010</cpf>
-    <image>..//..//servicos//data//images//empresas//21321.jpg</image>
-    <status>true</status>
-  </servico>
   <hospedagem>
     <admin>26835036010</admin>
     <nomeempresa>Muzy Hoteis LTDA</nomeempresa>

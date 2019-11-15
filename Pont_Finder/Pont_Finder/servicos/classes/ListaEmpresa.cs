@@ -14,19 +14,23 @@ namespace Pont_Finder.servicos.classes
         private static List<Empresa> listaEmpresa = new List<Empresa>();
         private static string caminho = "..\\..\\data\\empresas.xml";
 
-        public static void Add(Empresa comp)
+        public static void Add(Empresa empresa)
         {
+            listaEmpresa.Add(empresa);
+
+            /*
             Empresa tmp = new Empresa();
-            tmp.Nome = comp.Nome;
-            tmp.NomeFantasia = comp.NomeFantasia;
-            tmp.Email = comp.Email;
-            tmp.Cnpj = comp.Cnpj;
-            tmp.Cpf = comp.Cpf;
-            tmp.Endereco = comp.Endereco;
-            tmp.Telefone = comp.Telefone;
-            tmp.Image = comp.Image;
+            tmp.Nome = empresa.Nome;
+            tmp.NomeFantasia = empresa.NomeFantasia;
+            tmp.Email = empresa.Email;
+            tmp.Cnpj = empresa.Cnpj;
+            tmp.Cpf = empresa.Cpf;
+            tmp.Endereco = empresa.Endereco;
+            tmp.Telefone = empresa.Telefone;
+            tmp.Image = empresa.Image;
             tmp.Status = true;
             listaEmpresa.Add(tmp);
+            */
         }
 
         public static List<Empresa> selectAll()
@@ -70,6 +74,37 @@ namespace Pont_Finder.servicos.classes
             emp = null;
             return emp;
         }
+
+        public static List<Empresa> thisEmpresas
+        {
+            get{ return listaEmpresa; }            
+        }
+
+
+        public static List<Empresa> Empresas
+        {
+            get
+            {
+                List<Empresa> lista = new List<Empresa>();
+
+                foreach (var item in listaEmpresa)
+                {
+                    Empresa emp = new Empresa();
+                    emp.Nome = item.Nome;
+                    emp.NomeFantasia = item.NomeFantasia;
+                    emp.Email = item.Email;
+                    emp.Endereco = item.Endereco;
+                    emp.Telefone = item.Telefone;
+                    emp.Image = item.Image;
+                    emp.Servicos = item.Servicos;
+                    emp.Cnpj = item.Cnpj;
+                    emp.Cpf = item.Cpf;
+                    emp.Status = item.Status;
+                    lista.Add(emp);
+                }
+                return lista; }
+        }
+
         public static void XmlLoad()
         {         
             XDocument doc = XDocument.Load(caminho);
