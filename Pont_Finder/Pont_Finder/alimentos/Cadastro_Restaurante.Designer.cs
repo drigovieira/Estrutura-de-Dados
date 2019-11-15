@@ -91,7 +91,7 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pb_icone = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -99,11 +99,12 @@
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel10.SuspendLayout();
             this.SuspendLayout();
@@ -304,7 +305,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.pictureBox8);
+            this.panel3.Controls.Add(this.pb_icone);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(318, 1138);
@@ -795,14 +796,16 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Horário de Funcionamento";
             // 
-            // pictureBox8
+            // pb_icone
             // 
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Location = new System.Drawing.Point(81, 74);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(460, 220);
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
+            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage1;
+            this.pb_icone.Location = new System.Drawing.Point(180, 74);
+            this.pb_icone.Name = "pb_icone";
+            this.pb_icone.Size = new System.Drawing.Size(250, 220);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_icone.TabIndex = 3;
+            this.pb_icone.TabStop = false;
             // 
             // button1
             // 
@@ -816,6 +819,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Adicionar imagem";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label2
             // 
@@ -882,6 +886,10 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "Cadastre o seu Restaurante aqui!";
             // 
+            // openIcone
+            // 
+            this.openIcone.FileName = "icone";
+            // 
             // Cadastro_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -911,7 +919,7 @@
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -944,7 +952,7 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pb_icone;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel9;
@@ -991,5 +999,6 @@
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.OpenFileDialog openIcone;
     }
 }

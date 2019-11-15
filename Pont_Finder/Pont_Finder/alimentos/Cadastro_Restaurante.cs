@@ -13,6 +13,7 @@ namespace Pont_Finder.alimentos
     public partial class Cadastro_Restaurante : Form
     {
         private List<string> categorias = new List<string>();
+        private bool img = false;
         public Cadastro_Restaurante()
         {
             InitializeComponent();
@@ -210,6 +211,15 @@ namespace Pont_Finder.alimentos
         {
             formAlimentos alimentos = new formAlimentos();
             FormPrincipal.MudarForm("alimentos", alimentos);
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (openIcone.ShowDialog() == DialogResult.OK)
+            {
+                pb_icone.ImageLocation = openIcone.FileName;
+                img = true;
+            }
         }
     }
 }
