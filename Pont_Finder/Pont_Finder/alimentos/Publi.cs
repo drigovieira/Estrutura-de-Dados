@@ -14,6 +14,13 @@ namespace Pont_Finder.alimentos
     {
         private string nomeCompany, ruaCompany, bairroCompany, categoriaCompany;
         private int ID, numCompany, contatoCompany;
+
+        private void Bt_visualizar_Click(object sender, EventArgs e)
+        {
+            alimentos.Visualizar exibirEmpresa = new alimentos.Visualizar();
+            FormPrincipal.MudarForm("perfil empresa alimentos", exibirEmpresa);
+        }
+
         public Publi(string Nome, string Rua, string Bairro, int Num, int Contato, List<string> Categoria, int index)
         {
             nomeCompany = Nome;

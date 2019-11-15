@@ -64,9 +64,9 @@
     <Compile Include="alimentos\Cadastro_Restaurante.Designer.cs">
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\Company.cs" />
-    <Compile Include="alimentos\CompanyList.cs" />
-    <Compile Include="alimentos\Evaluation.cs" />
+    <Compile Include="alimentos\classes\Company.cs" />
+    <Compile Include="alimentos\classes\CompanyList.cs" />
+    <Compile Include="alimentos\classes\Evaluation.cs" />
     <Compile Include="alimentos\Item_Alimentos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -79,8 +79,8 @@
     <Compile Include="alimentos\lbMensagem.Designer.cs">
       <DependentUpon>lbMensagem.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\ProfileCompany.cs" />
-    <Compile Include="alimentos\ProfileList.cs" />
+    <Compile Include="alimentos\classes\ProfileCompany.cs" />
+    <Compile Include="alimentos\classes\ProfileList.cs" />
     <Compile Include="alimentos\Publi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -569,6 +569,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="alimentos\data\image\empresas\" />
     <Folder Include="data\images\carrousel\home\" />
   </ItemGroup>
   <ItemGroup>

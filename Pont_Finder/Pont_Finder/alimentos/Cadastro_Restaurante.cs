@@ -205,5 +205,11 @@ namespace Pont_Finder.alimentos
                 }
             }
         }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            formAlimentos alimentos = new formAlimentos();
+            FormPrincipal.MudarForm("alimentos", alimentos);
+        }
     }
 }

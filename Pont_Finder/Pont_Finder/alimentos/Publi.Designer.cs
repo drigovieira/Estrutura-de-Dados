@@ -106,6 +106,7 @@
             this.bt_visualizar.TabIndex = 42;
             this.bt_visualizar.Text = "Visualizar";
             this.bt_visualizar.UseVisualStyleBackColor = false;
+            this.bt_visualizar.Click += new System.EventHandler(this.Bt_visualizar_Click);
             // 
             // lbRua
             // 
