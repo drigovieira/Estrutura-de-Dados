@@ -113,17 +113,23 @@
     <Compile Include="avalie\FormAvalie.designer.cs">
       <DependentUpon>FormAvalie.cs</DependentUpon>
     </Compile>
-    <Compile Include="avalie\formPostar.cs">
+    <Compile Include="avalie\FormPostar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="avalie\formPostar.designer.cs">
-      <DependentUpon>formPostar.cs</DependentUpon>
+    <Compile Include="avalie\FormPostar.designer.cs">
+      <DependentUpon>FormPostar.cs</DependentUpon>
     </Compile>
     <Compile Include="avalie\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="avalie\UserControl1.designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="avalie\ViewPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="avalie\ViewPost.Designer.cs">
+      <DependentUpon>ViewPost.cs</DependentUpon>
     </Compile>
     <Compile Include="CadEmpresa.cs">
       <SubType>Form</SubType>
@@ -384,8 +390,8 @@
     <EmbeddedResource Include="avalie\FormAvalie.resx">
       <DependentUpon>FormAvalie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="avalie\formPostar.resx">
-      <DependentUpon>formPostar.cs</DependentUpon>
+    <EmbeddedResource Include="avalie\FormPostar.resx">
+      <DependentUpon>FormPostar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="avalie\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>

@@ -20,14 +20,14 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.avalie
 {
-    public partial class formPostar : Form
+    public partial class FormPostar : Form
     {
 
         FormAvalie AvaliePrincipal = new FormAvalie();
 
         private bool img = false;
 
-        public formPostar()
+        public FormPostar()
         {
             InitializeComponent();
             
@@ -178,14 +178,14 @@ namespace Pont_Finder.avalie
                 //AvaliePrincipal.Att();
                 MessageBox.Show("Post realizado com sucesso!!!");
 
-                
-                FormAvalie master = (FormAvalie)Application.OpenForms["FormAvalie"];
-                master.button1.PerformClick();
-                
-                
+
+                FormPrincipal.MudarForm("Avalie", new FormAvalie());
 
 
-                this.Close();
+
+
+
+
             }
 
             
@@ -232,6 +232,11 @@ namespace Pont_Finder.avalie
                 }
             }
 
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

@@ -34,14 +34,8 @@ namespace Pont_Finder
         {
             if (Session.Online)
             {
-
-                //formPostar fp = new formPostar();
-                //fp.ShowDialog();
-
-                formPostar f2 = new formPostar(); //be careful on this line!!
-   
-                f2.ShowDialog();
-                FormPrincipal.MudarForm("avalie", new FormAvalie());
+                avalie.FormPostar avaliepost = new FormPostar();
+                FormPrincipal.MudarForm("Reclame", avaliepost);
             }
             else
             {

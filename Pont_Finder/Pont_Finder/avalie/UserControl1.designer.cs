@@ -28,174 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.userhora = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.userboxdescricao = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.userboxdesc = new System.Windows.Forms.TextBox();
             this.userboxlocalizacao = new System.Windows.Forms.TextBox();
             this.userboxproblema = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.userhora = new System.Windows.Forms.Label();
             this.NomePos = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(575, 279);
-            this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(39, 80);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(273, 173);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.Size = new System.Drawing.Size(199, 148);
+            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
+            // panel1
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel2.Controls.Add(this.userhora);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.userboxdescricao);
-            this.panel2.Controls.Add(this.userboxlocalizacao);
-            this.panel2.Controls.Add(this.userboxproblema);
-            this.panel2.Location = new System.Drawing.Point(336, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(236, 279);
-            this.panel2.TabIndex = 10;
-            // 
-            // userhora
-            // 
-            this.userhora.AutoSize = true;
-            this.userhora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userhora.Location = new System.Drawing.Point(13, 10);
-            this.userhora.Name = "userhora";
-            this.userhora.Size = new System.Drawing.Size(0, 13);
-            this.userhora.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(13, 153);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "DESCRIÇÃO";
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.userboxdesc);
+            this.panel1.Controls.Add(this.userboxlocalizacao);
+            this.panel1.Controls.Add(this.userboxproblema);
+            this.panel1.Location = new System.Drawing.Point(212, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(413, 196);
+            this.panel1.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(13, 101);
+            this.label3.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(12, 50);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "LOCALIZAÇÃO";
+            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Localização";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(13, 48);
+            this.label2.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(12, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "PROBLEMA";
+            this.label2.Size = new System.Drawing.Size(54, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Descrição";
             // 
-            // userboxdescricao
+            // label1
             // 
-            this.userboxdescricao.Location = new System.Drawing.Point(16, 169);
-            this.userboxdescricao.Multiline = true;
-            this.userboxdescricao.Name = "userboxdescricao";
-            this.userboxdescricao.ReadOnly = true;
-            this.userboxdescricao.Size = new System.Drawing.Size(194, 68);
-            this.userboxdescricao.TabIndex = 4;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(12, -2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Tipo do Problema";
+            // 
+            // userboxdesc
+            // 
+            this.userboxdesc.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.userboxdesc.Enabled = false;
+            this.userboxdesc.Font = new System.Drawing.Font("Dubai", 8F);
+            this.userboxdesc.Location = new System.Drawing.Point(16, 128);
+            this.userboxdesc.Multiline = true;
+            this.userboxdesc.Name = "userboxdesc";
+            this.userboxdesc.ReadOnly = true;
+            this.userboxdesc.Size = new System.Drawing.Size(259, 50);
+            this.userboxdesc.TabIndex = 2;
             // 
             // userboxlocalizacao
             // 
-            this.userboxlocalizacao.Location = new System.Drawing.Point(16, 117);
+            this.userboxlocalizacao.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.userboxlocalizacao.Enabled = false;
+            this.userboxlocalizacao.Font = new System.Drawing.Font("Dubai", 8F);
+            this.userboxlocalizacao.Location = new System.Drawing.Point(16, 73);
             this.userboxlocalizacao.Name = "userboxlocalizacao";
             this.userboxlocalizacao.ReadOnly = true;
-            this.userboxlocalizacao.Size = new System.Drawing.Size(194, 20);
-            this.userboxlocalizacao.TabIndex = 3;
+            this.userboxlocalizacao.Size = new System.Drawing.Size(259, 26);
+            this.userboxlocalizacao.TabIndex = 1;
             // 
             // userboxproblema
             // 
-            this.userboxproblema.Location = new System.Drawing.Point(16, 64);
+            this.userboxproblema.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.userboxproblema.Enabled = false;
+            this.userboxproblema.Font = new System.Drawing.Font("Dubai", 8F);
+            this.userboxproblema.Location = new System.Drawing.Point(16, 21);
             this.userboxproblema.Name = "userboxproblema";
             this.userboxproblema.ReadOnly = true;
-            this.userboxproblema.Size = new System.Drawing.Size(194, 20);
-            this.userboxproblema.TabIndex = 2;
+            this.userboxproblema.Size = new System.Drawing.Size(259, 26);
+            this.userboxproblema.TabIndex = 0;
             // 
-            // panel3
+            // userhora
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.NomePos);
-            this.panel3.Location = new System.Drawing.Point(-1, -1);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(344, 63);
-            this.panel3.TabIndex = 10;
+            this.userhora.AutoSize = true;
+            this.userhora.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
+            this.userhora.Location = new System.Drawing.Point(90, 176);
+            this.userhora.Name = "userhora";
+            this.userhora.Size = new System.Drawing.Size(37, 20);
+            this.userhora.TabIndex = 6;
+            this.userhora.Text = "label4";
             // 
             // NomePos
             // 
-            this.NomePos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomePos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NomePos.Location = new System.Drawing.Point(54, -1);
+            this.NomePos.AutoSize = true;
+            this.NomePos.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
+            this.NomePos.Location = new System.Drawing.Point(3, 0);
             this.NomePos.Name = "NomePos";
-            this.NomePos.Size = new System.Drawing.Size(285, 60);
-            this.NomePos.TabIndex = 0;
-            this.NomePos.Text = "NOME";
+            this.NomePos.Size = new System.Drawing.Size(37, 20);
+            this.NomePos.TabIndex = 6;
+            this.NomePos.Text = "label4";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(-1, 176);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Data da Postagem:";
             // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.userhora);
+            this.Controls.Add(this.NomePos);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(573, 279);
-            this.panel1.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(625, 196);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.TextBox userboxdescricao;
-        public System.Windows.Forms.TextBox userboxlocalizacao;
-        public System.Windows.Forms.TextBox userboxproblema;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label userhora;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox userboxdesc;
+        private System.Windows.Forms.TextBox userboxlocalizacao;
+        private System.Windows.Forms.TextBox userboxproblema;
         private System.Windows.Forms.Label NomePos;
+        private System.Windows.Forms.Label userhora;
+        private System.Windows.Forms.Label label4;
     }
 }

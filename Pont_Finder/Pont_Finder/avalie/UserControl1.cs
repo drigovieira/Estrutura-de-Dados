@@ -24,8 +24,13 @@ namespace Pont_Finder.avalie
             userhora.Text = (post.Tempohora);
             userboxproblema.Text = (post.Tipoproblema);
             userboxlocalizacao.Text = (post.Localizacao);
-            userboxdescricao.Text = (post.Desc);
+            userboxdesc.Text = (post.Desc);
             pictureBox1.ImageLocation = post.Img;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
