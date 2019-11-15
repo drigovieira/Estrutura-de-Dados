@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadEmpresa));
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.AddFotoEmpresa = new System.Windows.Forms.Button();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.tb_email = new System.Windows.Forms.TextBox();
@@ -56,8 +57,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.clb_servicos = new System.Windows.Forms.CheckedListBox();
+            this.cb_servico = new System.Windows.Forms.ComboBox();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
@@ -67,7 +67,7 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.clb_servicos);
+            this.panel11.Controls.Add(this.cb_servico);
             this.panel11.Controls.Add(this.label1);
             this.panel11.Controls.Add(this.AddFotoEmpresa);
             this.panel11.Controls.Add(this.pb_icone);
@@ -89,9 +89,19 @@
             this.panel11.Controls.Add(this.label13);
             this.panel11.Location = new System.Drawing.Point(320, 263);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(625, 985);
+            this.panel11.Size = new System.Drawing.Size(625, 897);
             this.panel11.TabIndex = 63;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel11_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(100, 694);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 20);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Tipo de Serviço prestado";
             // 
             // AddFotoEmpresa
             // 
@@ -207,7 +217,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(150, 896);
+            this.button3.Location = new System.Drawing.Point(150, 790);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(120, 40);
             this.button3.TabIndex = 7;
@@ -247,7 +257,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(345, 896);
+            this.button4.Location = new System.Drawing.Point(345, 790);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(120, 40);
             this.button4.TabIndex = 8;
@@ -307,7 +317,7 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 1248);
+            this.panel3.Location = new System.Drawing.Point(0, 1160);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1265, 100);
             this.panel3.TabIndex = 65;
@@ -350,24 +360,13 @@
             this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 0;
             // 
-            // label1
+            // cb_servico
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(96, 702);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 20);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Tipo de Serviço prestado";
-            // 
-            // clb_servicos
-            // 
-            this.clb_servicos.FormattingEnabled = true;
-            this.clb_servicos.Location = new System.Drawing.Point(100, 748);
-            this.clb_servicos.Name = "clb_servicos";
-            this.clb_servicos.Size = new System.Drawing.Size(415, 94);
-            this.clb_servicos.Sorted = true;
-            this.clb_servicos.TabIndex = 19;
+            this.cb_servico.FormattingEnabled = true;
+            this.cb_servico.Location = new System.Drawing.Point(104, 721);
+            this.cb_servico.Name = "cb_servico";
+            this.cb_servico.Size = new System.Drawing.Size(411, 21);
+            this.cb_servico.TabIndex = 19;
             // 
             // FormCadEmpresa
             // 
@@ -427,6 +426,6 @@
         private System.Windows.Forms.Button AddFotoEmpresa;
         private System.Windows.Forms.OpenFileDialog openIcone;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox clb_servicos;
+        private System.Windows.Forms.ComboBox cb_servico;
     }
 }

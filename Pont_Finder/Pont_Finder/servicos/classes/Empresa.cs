@@ -15,7 +15,7 @@ namespace Pont_Finder.servicos.classes
             telefone,
             endereco, //endereco no formato -> rua, numero, cidade, cep
             image,
-            servicos; //servicos, uma lista de (tipo) servicos que a empresa pode prestar
+            servico; //servicos, uma lista de (tipo) servicos que a empresa pode prestar
 
         private long
             cnpj, //cnpj da empresa
@@ -59,10 +59,10 @@ namespace Pont_Finder.servicos.classes
             set { image = value; }
         }
 
-        public string Servicos
+        public string Servico
         {
-            get { return servicos; }
-            set { servicos = value; }
+            get { return servico; }
+            set { servico = value; }
         }
 
         public long Cnpj

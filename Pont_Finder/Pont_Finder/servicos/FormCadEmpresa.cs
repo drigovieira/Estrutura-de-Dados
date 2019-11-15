@@ -33,7 +33,7 @@ namespace Pont_Finder.servicos
            
             foreach (var item in tiposServicos)
             {
-                clb_servicos.Items.Add(item);
+                cb_servico.Items.Add(item);
             }
             
         }
@@ -46,21 +46,13 @@ namespace Pont_Finder.servicos
         private void button3_Click(object sender, EventArgs e)
         {
             bool validation = false;
-            if (clb_servicos.CheckedItems.Count > 3)
+            if ( (cb_servico.SelectedItem+"").Equals("") )
             {
-                MessageBox.Show("Uma empresa pode no maximo prestar 3 tipos de serviços");
+                MessageBox.Show("Selecione o tipo de serviço");
             }
             else
             {
-                if (clb_servicos.CheckedItems.Count < 1)
-                {
-                    MessageBox.Show("Uma empresa deve prestar ao menos 1 tipo de serviço");
-                }
-                else
-                {
-                    validation = true;
-                }
-
+                validation = true;
             }
 
             if (validation)
@@ -71,6 +63,7 @@ namespace Pont_Finder.servicos
                 string endereco = tb_endereco.Text;
                 string telefone = tb_telefone.Text;
                 string email = tb_email.Text;
+                string servico = cb_servico.SelectedItem + "";
 
                 string link = "..//..//servicos//data//images//empresas//offImage.jpg";
                 if (img)
@@ -101,6 +94,7 @@ namespace Pont_Finder.servicos
                 tmp.Cpf = Session.Cpf;
                 tmp.Image = link;
                 tmp.Status = true;
+                tmp.Servico = servico;
                 classes.ListaEmpresa.Add(tmp);
                 FormPrincipal.MudarForm("servicos", new FormServicos());
             }

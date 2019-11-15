@@ -42,6 +42,7 @@ namespace Pont_Finder.servicos.classes
                 tmp.Nome = item.Nome;
                 tmp.NomeFantasia = item.NomeFantasia;
                 tmp.Email = item.Email;
+                tmp.Servico = item.Servico;
                 tmp.Cnpj = item.Cnpj;
                 tmp.Cpf = item.Cpf;
                 tmp.Endereco = item.Endereco;
@@ -65,6 +66,7 @@ namespace Pont_Finder.servicos.classes
                     emp.Cnpj = item.Cnpj;
                     emp.Cpf = item.Cpf;
                     emp.Endereco = item.Endereco;
+                    emp.Servico = item.Servico;
                     emp.Telefone = item.Telefone;
                     emp.Status = item.Status;
                     emp.Image = item.Image;
@@ -96,7 +98,7 @@ namespace Pont_Finder.servicos.classes
                     emp.Endereco = item.Endereco;
                     emp.Telefone = item.Telefone;
                     emp.Image = item.Image;
-                    emp.Servicos = item.Servicos;
+                    emp.Servico = item.Servico;
                     emp.Cnpj = item.Cnpj;
                     emp.Cpf = item.Cpf;
                     emp.Status = item.Status;
@@ -117,6 +119,7 @@ namespace Pont_Finder.servicos.classes
                 emp.Email = item.Element("email").Value;
                 emp.Telefone = item.Element("telefone").Value;
                 emp.Endereco = item.Element("endereco").Value;
+                emp.Servico = item.Element("service").Value;
                 emp.Cnpj = long.Parse( item.Element("cnpj").Value);
                 emp.Cpf = long.Parse(item.Element("cpf").Value);
                 emp.Image = item.Element("image").Value;
@@ -136,6 +139,7 @@ namespace Pont_Finder.servicos.classes
                       new XElement("email", item.Email),
                       new XElement("telefone", item.Telefone),
                       new XElement("endereco", item.Endereco),
+                      new XElement("service", item.Servico),
                       new XElement("cnpj", item.Cnpj),
                       new XElement("cpf", item.Cpf),
                       new XElement("image", item.Image),

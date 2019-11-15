@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulos>
+  <servico>
+    <nome>OdinSeia</nome>
+    <nomeFantasia>OdinSeia</nomeFantasia>
+    <email>OdinSeia@gmail.com</email>
+    <telefone>986435</telefone>
+    <endereco>Cruzeiro/SP</endereco>
+    <service>Informática</service>
+    <cnpj>8634895</cnpj>
+    <cpf>26835036010</cpf>
+    <image>..//..//servicos//data//images//empresas//8634895.jpg</image>
+    <status>true</status>
+  </servico>
   <hospedagem>
     <admin>26835036010</admin>
     <nomeempresa>Muzy Hoteis LTDA</nomeempresa>
