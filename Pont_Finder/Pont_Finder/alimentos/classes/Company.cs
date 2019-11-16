@@ -10,7 +10,8 @@ namespace Pont_Finder.alimentos
     {
         private string nome, nomeFantasia, email, rua, bairro, image;
         private List<string> categoria;
-        private int numero, cep, telComercial, ID;
+        private int numero, cep, ID;
+        private long telComercial;
         private bool status;
 
         public string Nome
@@ -64,7 +65,7 @@ namespace Pont_Finder.alimentos
             get { return categoria; }
             set { categoria = value; }
         }
-        public int TelComercial
+        public long TelComercial
         {
             get { return telComercial; }
             set { telComercial = value; }

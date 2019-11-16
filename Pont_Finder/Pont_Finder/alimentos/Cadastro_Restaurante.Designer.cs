@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro_Restaurante));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.mkb_Tel = new System.Windows.Forms.MaskedTextBox();
+            this.mkb_Cep = new System.Windows.Forms.MaskedTextBox();
             this.tbNum = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -121,8 +121,8 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.maskedTextBox3);
-            this.panel11.Controls.Add(this.maskedTextBox2);
+            this.panel11.Controls.Add(this.mkb_Tel);
+            this.panel11.Controls.Add(this.mkb_Cep);
             this.panel11.Controls.Add(this.tbNum);
             this.panel11.Controls.Add(this.label8);
             this.panel11.Controls.Add(this.label1);
@@ -142,21 +142,23 @@
             this.panel11.Size = new System.Drawing.Size(625, 604);
             this.panel11.TabIndex = 57;
             // 
-            // maskedTextBox3
+            // mkb_Tel
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(100, 436);
-            this.maskedTextBox3.Mask = "(00)00000-0000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(170, 20);
-            this.maskedTextBox3.TabIndex = 24;
+            this.mkb_Tel.Location = new System.Drawing.Point(100, 436);
+            this.mkb_Tel.Mask = "(00)00000-0000";
+            this.mkb_Tel.Name = "mkb_Tel";
+            this.mkb_Tel.Size = new System.Drawing.Size(170, 20);
+            this.mkb_Tel.TabIndex = 24;
+            this.mkb_Tel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
-            // maskedTextBox2
+            // mkb_Cep
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(345, 355);
-            this.maskedTextBox2.Mask = "00.000-000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(170, 20);
-            this.maskedTextBox2.TabIndex = 23;
+            this.mkb_Cep.Location = new System.Drawing.Point(345, 355);
+            this.mkb_Cep.Mask = "00.000-000";
+            this.mkb_Cep.Name = "mkb_Cep";
+            this.mkb_Cep.Size = new System.Drawing.Size(170, 20);
+            this.mkb_Cep.TabIndex = 23;
+            this.mkb_Cep.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // tbNum
             // 
@@ -978,8 +980,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox mkb_Tel;
+        private System.Windows.Forms.MaskedTextBox mkb_Cep;
         private System.Windows.Forms.MaskedTextBox maskedTextBox12;
         private System.Windows.Forms.MaskedTextBox maskedTextBox13;
         private System.Windows.Forms.MaskedTextBox maskedTextBox14;

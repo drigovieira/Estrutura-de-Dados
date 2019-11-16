@@ -13,7 +13,8 @@ namespace Pont_Finder.alimentos
     public partial class Publi : UserControl
     {
         private string nomeCompany, ruaCompany, bairroCompany, categoriaCompany;
-        private int ID, numCompany, contatoCompany;
+        private int ID, numCompany;
+        private long contatoCompany;
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
         {
@@ -21,13 +22,13 @@ namespace Pont_Finder.alimentos
             {
                 if(CompanyList.selectAll().IndexOf(item) == ID)
                 {
-                    alimentos.Visualizar exibirEmpresa = new alimentos.Visualizar(item.NomeFantasia, item.Rua, item.Bairro, item.Categoria, item.Numero, item.Cep, item.TelComercial);
+                    alimentos.Visualizar exibirEmpresa = new alimentos.Visualizar(item.NomeFantasia, item.Rua, item.Bairro, item.Categoria, item.Numero, item.Cep, item.TelComercial, item.Image);
                     FormPrincipal.MudarForm("alimentos", exibirEmpresa);
                 }
             }            
         }
 
-        public Publi(string Nome, string Rua, string Bairro, int Num, int Contato, List<string> Categoria, int index)
+        public Publi(string Nome, string Rua, string Bairro, int Num, long Contato, List<string> Categoria, int index)
         {                        
             nomeCompany = Nome;
             ruaCompany = Rua;

@@ -41,10 +41,10 @@ namespace Pont_Finder.alimentos
                 emp.NomeFantasia = tbFantasia.Text;
                 emp.Rua = tbRua.Text;
                 emp.Numero = Convert.ToInt32(tbNum.Text);
-                //emp.Cep = Convert.ToInt32(maskedTextBox2.Text);
+                emp.Cep = int.Parse(mkb_Cep.Text);
                 emp.Bairro = tbBairro.Text;
                 emp.Categoria = categorias;
-                //emp.TelComercial = Convert.ToInt32(maskedTextBox3.Text);
+                emp.TelComercial = long.Parse(mkb_Tel.Text);
                 emp.Email = tbEmail.Text;
                 string link = "..//..//alimentos//data//image//empresas//offImage.jpg";
                 if (img)

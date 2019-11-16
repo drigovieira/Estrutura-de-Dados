@@ -37,18 +37,24 @@
             this.lbRestaurante = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.ImagemPerfil = new System.Windows.Forms.PictureBox();
             this.bt_visualizar = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.lbCategorias = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.lbContato = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.lbFuncionamento = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.lbCep = new System.Windows.Forms.Label();
+            this.lbBairro = new System.Windows.Forms.Label();
+            this.lbNum = new System.Windows.Forms.Label();
+            this.lbRua = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -67,22 +73,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.lbContato = new System.Windows.Forms.Label();
-            this.lbCategorias = new System.Windows.Forms.Label();
-            this.lbFuncionamento = new System.Windows.Forms.Label();
-            this.lbRua = new System.Windows.Forms.Label();
-            this.lbNum = new System.Windows.Forms.Label();
-            this.lbBairro = new System.Windows.Forms.Label();
-            this.lbCep = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagemPerfil)).BeginInit();
             this.panel13.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -163,16 +162,25 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FloralWhite;
+            this.panel5.Controls.Add(this.ImagemPerfil);
             this.panel5.Controls.Add(this.bt_visualizar);
             this.panel5.Controls.Add(this.panel13);
             this.panel5.Controls.Add(this.panel11);
             this.panel5.Controls.Add(this.panel9);
             this.panel5.Controls.Add(this.panel7);
-            this.panel5.Controls.Add(this.panel6);
             this.panel5.Location = new System.Drawing.Point(320, 385);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(625, 744);
             this.panel5.TabIndex = 23;
+            // 
+            // ImagemPerfil
+            // 
+            this.ImagemPerfil.Location = new System.Drawing.Point(17, 22);
+            this.ImagemPerfil.Name = "ImagemPerfil";
+            this.ImagemPerfil.Size = new System.Drawing.Size(289, 206);
+            this.ImagemPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImagemPerfil.TabIndex = 0;
+            this.ImagemPerfil.TabStop = false;
             // 
             // bt_visualizar
             // 
@@ -197,6 +205,16 @@
             this.panel13.Size = new System.Drawing.Size(586, 62);
             this.panel13.TabIndex = 10;
             // 
+            // lbCategorias
+            // 
+            this.lbCategorias.AutoSize = true;
+            this.lbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCategorias.Location = new System.Drawing.Point(108, 12);
+            this.lbCategorias.Name = "lbCategorias";
+            this.lbCategorias.Size = new System.Drawing.Size(50, 20);
+            this.lbCategorias.TabIndex = 17;
+            this.lbCategorias.Text = "Value";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -217,6 +235,16 @@
             this.panel11.Size = new System.Drawing.Size(586, 62);
             this.panel11.TabIndex = 9;
             // 
+            // lbContato
+            // 
+            this.lbContato.AutoSize = true;
+            this.lbContato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbContato.Location = new System.Drawing.Point(79, 12);
+            this.lbContato.Name = "lbContato";
+            this.lbContato.Size = new System.Drawing.Size(50, 20);
+            this.lbContato.TabIndex = 17;
+            this.lbContato.Text = "Value";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -236,6 +264,16 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(586, 264);
             this.panel9.TabIndex = 8;
+            // 
+            // lbFuncionamento
+            // 
+            this.lbFuncionamento.AutoSize = true;
+            this.lbFuncionamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFuncionamento.Location = new System.Drawing.Point(220, 19);
+            this.lbFuncionamento.Name = "lbFuncionamento";
+            this.lbFuncionamento.Size = new System.Drawing.Size(50, 20);
+            this.lbFuncionamento.TabIndex = 18;
+            this.lbFuncionamento.Text = "Value";
             // 
             // label8
             // 
@@ -261,6 +299,46 @@
             this.panel7.Size = new System.Drawing.Size(282, 206);
             this.panel7.TabIndex = 7;
             // 
+            // lbCep
+            // 
+            this.lbCep.AutoSize = true;
+            this.lbCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCep.Location = new System.Drawing.Point(14, 107);
+            this.lbCep.Name = "lbCep";
+            this.lbCep.Size = new System.Drawing.Size(79, 20);
+            this.lbCep.TabIndex = 39;
+            this.lbCep.Text = "CepValue";
+            // 
+            // lbBairro
+            // 
+            this.lbBairro.AutoSize = true;
+            this.lbBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBairro.Location = new System.Drawing.Point(13, 78);
+            this.lbBairro.Name = "lbBairro";
+            this.lbBairro.Size = new System.Drawing.Size(92, 20);
+            this.lbBairro.TabIndex = 38;
+            this.lbBairro.Text = "BairroValue";
+            // 
+            // lbNum
+            // 
+            this.lbNum.AutoSize = true;
+            this.lbNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNum.Location = new System.Drawing.Point(180, 48);
+            this.lbNum.Name = "lbNum";
+            this.lbNum.Size = new System.Drawing.Size(66, 20);
+            this.lbNum.TabIndex = 37;
+            this.lbNum.Text = "N°Value";
+            // 
+            // lbRua
+            // 
+            this.lbRua.AutoSize = true;
+            this.lbRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRua.Location = new System.Drawing.Point(13, 51);
+            this.lbRua.Name = "lbRua";
+            this.lbRua.Size = new System.Drawing.Size(80, 20);
+            this.lbRua.TabIndex = 36;
+            this.lbRua.Text = "RuaValue";
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
@@ -283,26 +361,6 @@
             this.label5.Size = new System.Drawing.Size(97, 20);
             this.label5.TabIndex = 11;
             this.label5.Text = "Localização:";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.label7);
-            this.panel6.Location = new System.Drawing.Point(17, 22);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(289, 206);
-            this.panel6.TabIndex = 6;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel6_Paint);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(98, 93);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 20);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Imagem";
             // 
             // panel8
             // 
@@ -508,76 +566,6 @@
             this.label12.TabIndex = 1;
             this.label12.Text = "Encontre o Restaurante ideal para o seu gosto!";
             // 
-            // lbContato
-            // 
-            this.lbContato.AutoSize = true;
-            this.lbContato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbContato.Location = new System.Drawing.Point(79, 12);
-            this.lbContato.Name = "lbContato";
-            this.lbContato.Size = new System.Drawing.Size(50, 20);
-            this.lbContato.TabIndex = 17;
-            this.lbContato.Text = "Value";
-            // 
-            // lbCategorias
-            // 
-            this.lbCategorias.AutoSize = true;
-            this.lbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCategorias.Location = new System.Drawing.Point(108, 12);
-            this.lbCategorias.Name = "lbCategorias";
-            this.lbCategorias.Size = new System.Drawing.Size(50, 20);
-            this.lbCategorias.TabIndex = 17;
-            this.lbCategorias.Text = "Value";
-            // 
-            // lbFuncionamento
-            // 
-            this.lbFuncionamento.AutoSize = true;
-            this.lbFuncionamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFuncionamento.Location = new System.Drawing.Point(220, 19);
-            this.lbFuncionamento.Name = "lbFuncionamento";
-            this.lbFuncionamento.Size = new System.Drawing.Size(50, 20);
-            this.lbFuncionamento.TabIndex = 18;
-            this.lbFuncionamento.Text = "Value";
-            // 
-            // lbRua
-            // 
-            this.lbRua.AutoSize = true;
-            this.lbRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRua.Location = new System.Drawing.Point(13, 51);
-            this.lbRua.Name = "lbRua";
-            this.lbRua.Size = new System.Drawing.Size(80, 20);
-            this.lbRua.TabIndex = 36;
-            this.lbRua.Text = "RuaValue";
-            // 
-            // lbNum
-            // 
-            this.lbNum.AutoSize = true;
-            this.lbNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNum.Location = new System.Drawing.Point(180, 48);
-            this.lbNum.Name = "lbNum";
-            this.lbNum.Size = new System.Drawing.Size(66, 20);
-            this.lbNum.TabIndex = 37;
-            this.lbNum.Text = "N°Value";
-            // 
-            // lbBairro
-            // 
-            this.lbBairro.AutoSize = true;
-            this.lbBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBairro.Location = new System.Drawing.Point(13, 78);
-            this.lbBairro.Name = "lbBairro";
-            this.lbBairro.Size = new System.Drawing.Size(92, 20);
-            this.lbBairro.TabIndex = 38;
-            this.lbBairro.Text = "BairroValue";
-            // 
-            // lbCep
-            // 
-            this.lbCep.AutoSize = true;
-            this.lbCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCep.Location = new System.Drawing.Point(180, 78);
-            this.lbCep.Name = "lbCep";
-            this.lbCep.Size = new System.Drawing.Size(79, 20);
-            this.lbCep.TabIndex = 39;
-            this.lbCep.Text = "CepValue";
-            // 
             // Visualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -607,6 +595,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ImagemPerfil)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel11.ResumeLayout(false);
@@ -615,8 +604,6 @@
             this.panel9.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -639,7 +626,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
@@ -661,7 +647,6 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label9;
@@ -676,5 +661,6 @@
         private System.Windows.Forms.Label lbBairro;
         private System.Windows.Forms.Label lbNum;
         private System.Windows.Forms.Label lbRua;
+        private System.Windows.Forms.PictureBox ImagemPerfil;
     }
 }
