@@ -38,6 +38,7 @@
             this.userhora = new System.Windows.Forms.Label();
             this.NomePos = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.bt_obter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(234, 60);
+            this.label3.Location = new System.Drawing.Point(217, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 18);
             this.label3.TabIndex = 5;
@@ -63,7 +64,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(234, 117);
+            this.label2.Location = new System.Drawing.Point(216, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 18);
             this.label2.TabIndex = 4;
@@ -73,7 +74,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(235, 9);
+            this.label1.Location = new System.Drawing.Point(217, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 18);
             this.label1.TabIndex = 3;
@@ -84,7 +85,7 @@
             this.userboxdesc.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.userboxdesc.Enabled = false;
             this.userboxdesc.Font = new System.Drawing.Font("Dubai", 8F);
-            this.userboxdesc.Location = new System.Drawing.Point(238, 138);
+            this.userboxdesc.Location = new System.Drawing.Point(212, 138);
             this.userboxdesc.Multiline = true;
             this.userboxdesc.Name = "userboxdesc";
             this.userboxdesc.ReadOnly = true;
@@ -96,7 +97,7 @@
             this.userboxlocalizacao.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.userboxlocalizacao.Enabled = false;
             this.userboxlocalizacao.Font = new System.Drawing.Font("Dubai", 8F);
-            this.userboxlocalizacao.Location = new System.Drawing.Point(238, 83);
+            this.userboxlocalizacao.Location = new System.Drawing.Point(212, 81);
             this.userboxlocalizacao.Name = "userboxlocalizacao";
             this.userboxlocalizacao.ReadOnly = true;
             this.userboxlocalizacao.Size = new System.Drawing.Size(259, 26);
@@ -107,7 +108,7 @@
             this.userboxproblema.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.userboxproblema.Enabled = false;
             this.userboxproblema.Font = new System.Drawing.Font("Dubai", 8F);
-            this.userboxproblema.Location = new System.Drawing.Point(238, 31);
+            this.userboxproblema.Location = new System.Drawing.Point(212, 30);
             this.userboxproblema.Name = "userboxproblema";
             this.userboxproblema.ReadOnly = true;
             this.userboxproblema.Size = new System.Drawing.Size(259, 26);
@@ -143,11 +144,27 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Data da Postagem:";
             // 
+            // bt_obter
+            // 
+            this.bt_obter.BackColor = System.Drawing.Color.RoyalBlue;
+            this.bt_obter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_obter.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bt_obter.ForeColor = System.Drawing.Color.White;
+            this.bt_obter.Location = new System.Drawing.Point(489, 156);
+            this.bt_obter.Margin = new System.Windows.Forms.Padding(15);
+            this.bt_obter.Name = "bt_obter";
+            this.bt_obter.Size = new System.Drawing.Size(127, 32);
+            this.bt_obter.TabIndex = 24;
+            this.bt_obter.Text = "Visualizar";
+            this.bt_obter.UseVisualStyleBackColor = false;
+            this.bt_obter.Click += new System.EventHandler(this.bt_obter_Click);
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.bt_obter);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -178,5 +195,6 @@
         private System.Windows.Forms.Label NomePos;
         private System.Windows.Forms.Label userhora;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button bt_obter;
     }
 }
