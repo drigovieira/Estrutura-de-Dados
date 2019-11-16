@@ -105,6 +105,18 @@ namespace Pont_Finder
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                avalie.MeusPost avaliepost = new MeusPost();
+                FormPrincipal.MudarForm("Reclame", avaliepost);
+            }
+            else
+            {
+                MessageBox.Show("Por Favor, Efetue o Login para Realizar um Post");
+            }
+        }
     }
 }
 
