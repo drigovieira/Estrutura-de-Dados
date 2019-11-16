@@ -69,14 +69,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.btnCad = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -100,6 +92,15 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.cbSegunda = new System.Windows.Forms.CheckBox();
+            this.cbQuinta = new System.Windows.Forms.CheckBox();
+            this.cbQuarta = new System.Windows.Forms.CheckBox();
+            this.cbTerca = new System.Windows.Forms.CheckBox();
+            this.cbSexta = new System.Windows.Forms.CheckBox();
+            this.cbSabado = new System.Windows.Forms.CheckBox();
+            this.cbDomingo = new System.Windows.Forms.CheckBox();
+            this.cbFeriado = new System.Windows.Forms.CheckBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -302,6 +303,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.checkBox11);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.btnCad);
             this.panel3.Controls.Add(this.label4);
@@ -318,6 +320,14 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.cbFeriado);
+            this.panel4.Controls.Add(this.cbDomingo);
+            this.panel4.Controls.Add(this.cbSabado);
+            this.panel4.Controls.Add(this.cbSexta);
+            this.panel4.Controls.Add(this.cbTerca);
+            this.panel4.Controls.Add(this.cbQuarta);
+            this.panel4.Controls.Add(this.cbQuinta);
+            this.panel4.Controls.Add(this.cbSegunda);
             this.panel4.Controls.Add(this.maskedTextBox12);
             this.panel4.Controls.Add(this.maskedTextBox13);
             this.panel4.Controls.Add(this.maskedTextBox14);
@@ -337,14 +347,6 @@
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.radioButton1);
-            this.panel4.Controls.Add(this.radioButton10);
-            this.panel4.Controls.Add(this.radioButton4);
-            this.panel4.Controls.Add(this.radioButton5);
-            this.panel4.Controls.Add(this.radioButton6);
-            this.panel4.Controls.Add(this.radioButton7);
-            this.panel4.Controls.Add(this.radioButton8);
-            this.panel4.Controls.Add(this.radioButton9);
             this.panel4.Location = new System.Drawing.Point(81, 763);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(460, 327);
@@ -352,6 +354,7 @@
             // 
             // maskedTextBox12
             // 
+            this.maskedTextBox12.Enabled = false;
             this.maskedTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox12.Location = new System.Drawing.Point(308, 282);
             this.maskedTextBox12.Mask = "00:00";
@@ -362,6 +365,7 @@
             // 
             // maskedTextBox13
             // 
+            this.maskedTextBox13.Enabled = false;
             this.maskedTextBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox13.Location = new System.Drawing.Point(308, 253);
             this.maskedTextBox13.Mask = "00:00";
@@ -372,6 +376,7 @@
             // 
             // maskedTextBox14
             // 
+            this.maskedTextBox14.Enabled = false;
             this.maskedTextBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox14.Location = new System.Drawing.Point(308, 220);
             this.maskedTextBox14.Mask = "00:00";
@@ -382,6 +387,7 @@
             // 
             // maskedTextBox15
             // 
+            this.maskedTextBox15.Enabled = false;
             this.maskedTextBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox15.Location = new System.Drawing.Point(308, 189);
             this.maskedTextBox15.Mask = "00:00";
@@ -392,6 +398,7 @@
             // 
             // maskedTextBox16
             // 
+            this.maskedTextBox16.Enabled = false;
             this.maskedTextBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox16.Location = new System.Drawing.Point(308, 157);
             this.maskedTextBox16.Mask = "00:00";
@@ -402,6 +409,7 @@
             // 
             // maskedTextBox17
             // 
+            this.maskedTextBox17.Enabled = false;
             this.maskedTextBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox17.Location = new System.Drawing.Point(308, 125);
             this.maskedTextBox17.Mask = "00:00";
@@ -412,6 +420,7 @@
             // 
             // maskedTextBox18
             // 
+            this.maskedTextBox18.Enabled = false;
             this.maskedTextBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox18.Location = new System.Drawing.Point(308, 92);
             this.maskedTextBox18.Mask = "00:00";
@@ -422,6 +431,7 @@
             // 
             // maskedTextBox19
             // 
+            this.maskedTextBox19.Enabled = false;
             this.maskedTextBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox19.Location = new System.Drawing.Point(308, 61);
             this.maskedTextBox19.Mask = "00:00";
@@ -432,6 +442,7 @@
             // 
             // maskedTextBox11
             // 
+            this.maskedTextBox11.Enabled = false;
             this.maskedTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox11.Location = new System.Drawing.Point(199, 282);
             this.maskedTextBox11.Mask = "00:00";
@@ -442,6 +453,7 @@
             // 
             // maskedTextBox10
             // 
+            this.maskedTextBox10.Enabled = false;
             this.maskedTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox10.Location = new System.Drawing.Point(199, 253);
             this.maskedTextBox10.Mask = "00:00";
@@ -452,6 +464,7 @@
             // 
             // maskedTextBox9
             // 
+            this.maskedTextBox9.Enabled = false;
             this.maskedTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox9.Location = new System.Drawing.Point(199, 220);
             this.maskedTextBox9.Mask = "00:00";
@@ -462,6 +475,7 @@
             // 
             // maskedTextBox8
             // 
+            this.maskedTextBox8.Enabled = false;
             this.maskedTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox8.Location = new System.Drawing.Point(199, 189);
             this.maskedTextBox8.Mask = "00:00";
@@ -472,6 +486,7 @@
             // 
             // maskedTextBox7
             // 
+            this.maskedTextBox7.Enabled = false;
             this.maskedTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox7.Location = new System.Drawing.Point(199, 157);
             this.maskedTextBox7.Mask = "00:00";
@@ -482,6 +497,7 @@
             // 
             // maskedTextBox6
             // 
+            this.maskedTextBox6.Enabled = false;
             this.maskedTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox6.Location = new System.Drawing.Point(199, 125);
             this.maskedTextBox6.Mask = "00:00";
@@ -492,6 +508,7 @@
             // 
             // maskedTextBox5
             // 
+            this.maskedTextBox5.Enabled = false;
             this.maskedTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox5.Location = new System.Drawing.Point(199, 92);
             this.maskedTextBox5.Mask = "00:00";
@@ -502,6 +519,7 @@
             // 
             // maskedTextBox4
             // 
+            this.maskedTextBox4.Enabled = false;
             this.maskedTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox4.Location = new System.Drawing.Point(199, 61);
             this.maskedTextBox4.Mask = "00:00";
@@ -539,102 +557,6 @@
             this.label14.Size = new System.Drawing.Size(122, 18);
             this.label14.TabIndex = 32;
             this.label14.Text = "Dia da Semana";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(63, 59);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(130, 22);
-            this.radioButton1.TabIndex = 15;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Segunda - Feira";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(63, 279);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(84, 22);
-            this.radioButton10.TabIndex = 35;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Feriados";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(63, 88);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(110, 22);
-            this.radioButton4.TabIndex = 18;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Terça - Feira";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(63, 121);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(117, 22);
-            this.radioButton5.TabIndex = 19;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Quarta - Feira";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(63, 155);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(115, 22);
-            this.radioButton6.TabIndex = 20;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Quinta - Feira";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(63, 186);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(109, 22);
-            this.radioButton7.TabIndex = 21;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Sexta - Feira";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(63, 220);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(77, 22);
-            this.radioButton8.TabIndex = 22;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Sábado";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(63, 249);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(87, 22);
-            this.radioButton9.TabIndex = 23;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Domingo";
-            this.radioButton9.UseVisualStyleBackColor = true;
             // 
             // btnCad
             // 
@@ -892,6 +814,104 @@
             // 
             this.openIcone.FileName = "icone";
             // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(0, 0);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(86, 17);
+            this.checkBox11.TabIndex = 38;
+            this.checkBox11.Text = "checkBox11";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // cbSegunda
+            // 
+            this.cbSegunda.AutoSize = true;
+            this.cbSegunda.Location = new System.Drawing.Point(92, 63);
+            this.cbSegunda.Name = "cbSegunda";
+            this.cbSegunda.Size = new System.Drawing.Size(101, 17);
+            this.cbSegunda.TabIndex = 63;
+            this.cbSegunda.Text = "Segunda - Feira";
+            this.cbSegunda.UseVisualStyleBackColor = true;
+            this.cbSegunda.CheckedChanged += new System.EventHandler(this.CbSegunda_CheckedChanged);
+            // 
+            // cbQuinta
+            // 
+            this.cbQuinta.AutoSize = true;
+            this.cbQuinta.Location = new System.Drawing.Point(92, 159);
+            this.cbQuinta.Name = "cbQuinta";
+            this.cbQuinta.Size = new System.Drawing.Size(89, 17);
+            this.cbQuinta.TabIndex = 64;
+            this.cbQuinta.Text = "Quinta - Feira";
+            this.cbQuinta.UseVisualStyleBackColor = true;
+            this.cbQuinta.CheckedChanged += new System.EventHandler(this.CbQuinta_CheckedChanged);
+            // 
+            // cbQuarta
+            // 
+            this.cbQuarta.AutoSize = true;
+            this.cbQuarta.Location = new System.Drawing.Point(92, 127);
+            this.cbQuarta.Name = "cbQuarta";
+            this.cbQuarta.Size = new System.Drawing.Size(90, 17);
+            this.cbQuarta.TabIndex = 65;
+            this.cbQuarta.Text = "Quarta - Feira";
+            this.cbQuarta.UseVisualStyleBackColor = true;
+            this.cbQuarta.CheckedChanged += new System.EventHandler(this.CbQuarta_CheckedChanged);
+            // 
+            // cbTerca
+            // 
+            this.cbTerca.AutoSize = true;
+            this.cbTerca.Location = new System.Drawing.Point(92, 94);
+            this.cbTerca.Name = "cbTerca";
+            this.cbTerca.Size = new System.Drawing.Size(86, 17);
+            this.cbTerca.TabIndex = 66;
+            this.cbTerca.Text = "Terça - Feira";
+            this.cbTerca.UseVisualStyleBackColor = true;
+            this.cbTerca.CheckedChanged += new System.EventHandler(this.CbTerca_CheckedChanged);
+            // 
+            // cbSexta
+            // 
+            this.cbSexta.AutoSize = true;
+            this.cbSexta.Location = new System.Drawing.Point(92, 191);
+            this.cbSexta.Name = "cbSexta";
+            this.cbSexta.Size = new System.Drawing.Size(85, 17);
+            this.cbSexta.TabIndex = 67;
+            this.cbSexta.Text = "Sexta - Feira";
+            this.cbSexta.UseVisualStyleBackColor = true;
+            this.cbSexta.CheckedChanged += new System.EventHandler(this.CbSexta_CheckedChanged);
+            // 
+            // cbSabado
+            // 
+            this.cbSabado.AutoSize = true;
+            this.cbSabado.Location = new System.Drawing.Point(92, 222);
+            this.cbSabado.Name = "cbSabado";
+            this.cbSabado.Size = new System.Drawing.Size(63, 17);
+            this.cbSabado.TabIndex = 68;
+            this.cbSabado.Text = "Sábado";
+            this.cbSabado.UseVisualStyleBackColor = true;
+            this.cbSabado.CheckedChanged += new System.EventHandler(this.CbSabado_CheckedChanged);
+            // 
+            // cbDomingo
+            // 
+            this.cbDomingo.AutoSize = true;
+            this.cbDomingo.Location = new System.Drawing.Point(92, 255);
+            this.cbDomingo.Name = "cbDomingo";
+            this.cbDomingo.Size = new System.Drawing.Size(68, 17);
+            this.cbDomingo.TabIndex = 69;
+            this.cbDomingo.Text = "Domingo";
+            this.cbDomingo.UseVisualStyleBackColor = true;
+            this.cbDomingo.CheckedChanged += new System.EventHandler(this.CbDomingo_CheckedChanged);
+            // 
+            // cbFeriado
+            // 
+            this.cbFeriado.AutoSize = true;
+            this.cbFeriado.Location = new System.Drawing.Point(92, 284);
+            this.cbFeriado.Name = "cbFeriado";
+            this.cbFeriado.Size = new System.Drawing.Size(66, 17);
+            this.cbFeriado.TabIndex = 70;
+            this.cbFeriado.Text = "Feriados";
+            this.cbFeriado.UseVisualStyleBackColor = true;
+            this.cbFeriado.CheckedChanged += new System.EventHandler(this.CbFeriado_CheckedChanged);
+            // 
             // Cadastro_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -966,15 +986,7 @@
         private System.Windows.Forms.TextBox tbNum;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.Panel panel4;
@@ -1002,5 +1014,14 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.OpenFileDialog openIcone;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox cbFeriado;
+        private System.Windows.Forms.CheckBox cbDomingo;
+        private System.Windows.Forms.CheckBox cbSabado;
+        private System.Windows.Forms.CheckBox cbSexta;
+        private System.Windows.Forms.CheckBox cbTerca;
+        private System.Windows.Forms.CheckBox cbQuarta;
+        private System.Windows.Forms.CheckBox cbQuinta;
+        private System.Windows.Forms.CheckBox cbSegunda;
     }
 }

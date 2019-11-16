@@ -242,5 +242,117 @@ namespace Pont_Finder.alimentos
                 img = true;
             }
         }
+
+        private void CbSegunda_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbSegunda.Checked == true)
+            {
+                maskedTextBox4.Enabled = true;
+                maskedTextBox19.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox4.Enabled = false;
+                maskedTextBox19.Enabled = false;
+            }
+        }
+
+        private void CbTerca_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbTerca.Checked == true)
+            {
+                maskedTextBox5.Enabled = true;
+                maskedTextBox18.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox5.Enabled = false;
+                maskedTextBox18.Enabled = false;
+            }
+        }
+
+        private void CbQuarta_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbQuarta.Checked)
+            {
+                maskedTextBox6.Enabled = true;
+                maskedTextBox17.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox6.Enabled = false;
+                maskedTextBox17.Enabled = false;
+            }
+        }
+
+        private void CbQuinta_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbQuinta.Checked == true)
+            {
+                maskedTextBox7.Enabled = true;
+                maskedTextBox16.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox7.Enabled = false;
+                maskedTextBox16.Enabled = false;
+            }
+        }
+
+        private void CbSexta_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbSexta.Checked == true)
+            {
+                maskedTextBox8.Enabled = true;
+                maskedTextBox15.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox8.Enabled = false;
+                maskedTextBox15.Enabled = false;
+            }
+        }
+
+        private void CbSabado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbSabado.Checked == true)
+            {
+                maskedTextBox9.Enabled = true;
+                maskedTextBox14.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox9.Enabled = false;
+                maskedTextBox14.Enabled = false;
+            }
+        }
+
+        private void CbDomingo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbDomingo.Checked == true)
+            {
+                maskedTextBox10.Enabled = true;
+                maskedTextBox13.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox10.Enabled = false;
+                maskedTextBox13.Enabled = false;
+            }
+        }
+
+        private void CbFeriado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbFeriado.Checked == true)
+            {
+                maskedTextBox11.Enabled = true;
+                maskedTextBox12.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox11.Enabled = false;
+                maskedTextBox12.Enabled = false;
+            }
+        }
     }
 }
