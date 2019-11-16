@@ -32,7 +32,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtLocalizacao = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPostar = new System.Windows.Forms.Button();
@@ -40,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -95,18 +95,6 @@
             this.panel6.TabIndex = 14;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(81, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 32);
-            this.label3.TabIndex = 78;
-            this.label3.Text = "Localização...";
-            // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -139,7 +127,7 @@
             this.btnPostar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPostar.ForeColor = System.Drawing.Color.White;
             this.btnPostar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPostar.Location = new System.Drawing.Point(476, 586);
+            this.btnPostar.Location = new System.Drawing.Point(36, 586);
             this.btnPostar.Name = "btnPostar";
             this.btnPostar.Size = new System.Drawing.Size(110, 42);
             this.btnPostar.TabIndex = 74;
@@ -198,6 +186,18 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(81, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(118, 32);
+            this.label3.TabIndex = 78;
+            this.label3.Text = "Localização...";
             // 
             // openIcone
             // 
