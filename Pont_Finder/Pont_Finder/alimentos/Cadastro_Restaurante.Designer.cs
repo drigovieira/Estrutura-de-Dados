@@ -49,7 +49,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbFeriado = new System.Windows.Forms.CheckBox();
             this.cbDomingo = new System.Windows.Forms.CheckBox();
@@ -303,7 +302,6 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.checkBox11);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.btnCad);
             this.panel3.Controls.Add(this.label4);
@@ -316,16 +314,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(625, 1262);
             this.panel3.TabIndex = 59;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(0, 0);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(86, 17);
-            this.checkBox11.TabIndex = 38;
-            this.checkBox11.Text = "checkBox11";
-            this.checkBox11.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -1014,7 +1002,6 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.OpenFileDialog openIcone;
-        private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.CheckBox cbFeriado;
         private System.Windows.Forms.CheckBox cbDomingo;
         private System.Windows.Forms.CheckBox cbSabado;
