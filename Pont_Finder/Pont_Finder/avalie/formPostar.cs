@@ -62,25 +62,25 @@ namespace Pont_Finder.avalie
                 url.Append("/");
             }
 
-            webBrowser1.Navigate(new Uri(url.ToString()));
+           // webBrowser1.Navigate(new Uri(url.ToString()));
         }
 
         private void WebBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
 
-            if (e.Url == webBrowser1.Url)
+            /*if (e.Url == webBrowser1.Url)
             {
                 //progressBar1.Style = ProgressBarStyle.Blocks;
-            }
+            }*/
         }
 
         private void WebBrowser1_DocumentCompleted_1(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
 
-            if (e.Url == webBrowser1.Url)
+            /*if (e.Url == webBrowser1.Url)
             {
                 //progressBar1.Style = ProgressBarStyle.Blocks;
-            }
+            }*/
         }
 
         private void Button3_Click(object sender, EventArgs e)
