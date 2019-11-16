@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPostar));
             this.panel4 = new System.Windows.Forms.Panel();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.button5 = new System.Windows.Forms.Button();
             this.txtLocalizacao = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,7 +48,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
@@ -62,45 +59,19 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.webBrowser1);
-            this.panel4.Location = new System.Drawing.Point(0, 246);
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Location = new System.Drawing.Point(0, 210);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(438, 631);
+            this.panel4.Size = new System.Drawing.Size(310, 668);
             this.panel4.TabIndex = 8;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(13, 5);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(30, 32);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(421, 621);
-            this.webBrowser1.TabIndex = 69;
-            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.WebBrowser1_DocumentCompleted_1);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(425, 44);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(44, 39);
-            this.button5.TabIndex = 68;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // txtLocalizacao
             // 
             this.txtLocalizacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocalizacao.Location = new System.Drawing.Point(9, 50);
+            this.txtLocalizacao.Location = new System.Drawing.Point(76, 55);
             this.txtLocalizacao.Name = "txtLocalizacao";
-            this.txtLocalizacao.Size = new System.Drawing.Size(410, 26);
+            this.txtLocalizacao.Size = new System.Drawing.Size(473, 26);
             this.txtLocalizacao.TabIndex = 63;
             this.txtLocalizacao.TextChanged += new System.EventHandler(this.txtLocalizacao_TextChanged);
             this.txtLocalizacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLocalizacao_KeyPress);
@@ -108,19 +79,19 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Controls.Add(this.label3);
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.comboBox1);
             this.panel6.Controls.Add(this.txtLocalizacao);
-            this.panel6.Controls.Add(this.button5);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.btnPostar);
             this.panel6.Controls.Add(this.richTextBox1);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Controls.Add(this.pb_icone);
             this.panel6.Controls.Add(this.button3);
-            this.panel6.Location = new System.Drawing.Point(444, 209);
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Location = new System.Drawing.Point(317, 209);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(502, 669);
+            this.panel6.Size = new System.Drawing.Size(625, 669);
             this.panel6.TabIndex = 14;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
@@ -130,11 +101,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(3, 14);
+            this.label3.Location = new System.Drawing.Point(81, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 33);
+            this.label3.Size = new System.Drawing.Size(118, 32);
             this.label3.TabIndex = 78;
-            this.label3.Text = "Localização";
+            this.label3.Text = "Localização...";
             // 
             // comboBox1
             // 
@@ -143,9 +114,8 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Infraestrutura",
-            "Saúde",
-            "Segurança"});
-            this.comboBox1.Location = new System.Drawing.Point(9, 132);
+            "Outros"});
+            this.comboBox1.Location = new System.Drawing.Point(76, 131);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(473, 28);
             this.comboBox1.TabIndex = 77;
@@ -156,9 +126,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(140, 96);
+            this.label2.Location = new System.Drawing.Point(81, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 33);
+            this.label2.Size = new System.Drawing.Size(241, 32);
             this.label2.TabIndex = 76;
             this.label2.Text = "Sobre o que você quer falar...";
             // 
@@ -169,7 +139,7 @@
             this.btnPostar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPostar.ForeColor = System.Drawing.Color.White;
             this.btnPostar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPostar.Location = new System.Drawing.Point(192, 624);
+            this.btnPostar.Location = new System.Drawing.Point(476, 586);
             this.btnPostar.Name = "btnPostar";
             this.btnPostar.Size = new System.Drawing.Size(110, 42);
             this.btnPostar.TabIndex = 74;
@@ -182,9 +152,9 @@
             // 
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(9, 491);
+            this.richTextBox1.Location = new System.Drawing.Point(36, 461);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(473, 119);
+            this.richTextBox1.Size = new System.Drawing.Size(550, 119);
             this.richTextBox1.TabIndex = 69;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -195,20 +165,20 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(186, 457);
+            this.label1.Location = new System.Drawing.Point(40, 432);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 33);
+            this.label1.Size = new System.Drawing.Size(96, 32);
             this.label1.TabIndex = 66;
             this.label1.Text = "Descrição:";
             // 
             // pb_icone
             // 
-            this.pb_icone.BackColor = System.Drawing.Color.Transparent;
+            this.pb_icone.BackColor = System.Drawing.Color.White;
             this.pb_icone.Image = ((System.Drawing.Image)(resources.GetObject("pb_icone.Image")));
-            this.pb_icone.Location = new System.Drawing.Point(99, 248);
+            this.pb_icone.Location = new System.Drawing.Point(131, 215);
             this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(296, 187);
-            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_icone.Size = new System.Drawing.Size(345, 195);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pb_icone.TabIndex = 65;
             this.pb_icone.TabStop = false;
             this.pb_icone.Click += new System.EventHandler(this.PictureBoxCarregarImagem_Click);
@@ -220,9 +190,9 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(99, 186);
+            this.button3.Location = new System.Drawing.Point(129, 185);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(296, 31);
+            this.button3.Size = new System.Drawing.Size(349, 31);
             this.button3.TabIndex = 64;
             this.button3.Text = "Carregar imagem...";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -238,7 +208,7 @@
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.panel9);
             this.panel7.Controls.Add(this.panel10);
-            this.panel7.Location = new System.Drawing.Point(952, 204);
+            this.panel7.Location = new System.Drawing.Point(949, 204);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(310, 675);
             this.panel7.TabIndex = 19;
@@ -311,7 +281,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
@@ -323,7 +293,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Realize seu post!";
             this.Load += new System.EventHandler(this.FormPostar_Load);
-            this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
@@ -341,8 +310,6 @@
         #endregion
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtLocalizacao;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pb_icone;
