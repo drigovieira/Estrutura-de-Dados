@@ -278,6 +278,32 @@ namespace Pont_Finder
 
         }
 
+        private void RbChurrascaria_CheckedChanged(object sender, EventArgs e)
+        {
+            lbTop5.Text = "Top 5 " + rbChurrascaria.Text;
+            List<Company> listaBusca = new List<Company>();
+            listaBusca = CompanyList.SearchCategoria(rbChurrascaria.Text);
+            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, rbChurrascaria.Text);
+            local1 = 0;
+            Top5.Controls.Clear();
+            foreach (var busca in ProfileList.TopList(BuscaPerfis))
+            {
+                if (busca.NotaApurada != 0)
+                {
+                    foreach (var teste2 in CompanyList.selectAll())
+                    {
+                        if (busca.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
+                        {
+                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
+                            te.Location = new Point(0, local1);
+                            local1 = local1 + te.Height + 5;
+                            Top5.Controls.Add(te);
+                        }
+                    }
+                }
+            }
+        }
+
         public void Listar()
         {            
             foreach (var teste in ProfileList.TopList(ProfileList.selectAll()))

@@ -52,15 +52,16 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbFrutosDoMar = new System.Windows.Forms.RadioButton();
+            this.rbHambúrgueria = new System.Windows.Forms.RadioButton();
+            this.rbSorveteria = new System.Windows.Forms.RadioButton();
+            this.rbComidaJaponesa = new System.Windows.Forms.RadioButton();
+            this.rbComidaItaliana = new System.Windows.Forms.RadioButton();
+            this.rbPetiscaria = new System.Windows.Forms.RadioButton();
+            this.rbPizzaria = new System.Windows.Forms.RadioButton();
+            this.rbChurrascaria = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
+            this.rbOutros = new System.Windows.Forms.RadioButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
@@ -314,115 +315,117 @@
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.radioButton8);
-            this.panel11.Controls.Add(this.radioButton7);
-            this.panel11.Controls.Add(this.radioButton6);
-            this.panel11.Controls.Add(this.radioButton5);
-            this.panel11.Controls.Add(this.radioButton4);
-            this.panel11.Controls.Add(this.radioButton3);
-            this.panel11.Controls.Add(this.radioButton2);
-            this.panel11.Controls.Add(this.radioButton1);
+            this.panel11.Controls.Add(this.rbOutros);
+            this.panel11.Controls.Add(this.rbFrutosDoMar);
+            this.panel11.Controls.Add(this.rbHambúrgueria);
+            this.panel11.Controls.Add(this.rbSorveteria);
+            this.panel11.Controls.Add(this.rbComidaJaponesa);
+            this.panel11.Controls.Add(this.rbComidaItaliana);
+            this.panel11.Controls.Add(this.rbPetiscaria);
+            this.panel11.Controls.Add(this.rbPizzaria);
+            this.panel11.Controls.Add(this.rbChurrascaria);
             this.panel11.Controls.Add(this.label11);
             this.panel11.Location = new System.Drawing.Point(5, 610);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(310, 295);
+            this.panel11.Size = new System.Drawing.Size(310, 324);
             this.panel11.TabIndex = 47;
             // 
-            // radioButton8
+            // rbFrutosDoMar
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(81, 257);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(101, 19);
-            this.radioButton8.TabIndex = 14;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Frutos do Mar";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rbFrutosDoMar.AutoSize = true;
+            this.rbFrutosDoMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFrutosDoMar.Location = new System.Drawing.Point(81, 257);
+            this.rbFrutosDoMar.Name = "rbFrutosDoMar";
+            this.rbFrutosDoMar.Size = new System.Drawing.Size(101, 19);
+            this.rbFrutosDoMar.TabIndex = 14;
+            this.rbFrutosDoMar.TabStop = true;
+            this.rbFrutosDoMar.Text = "Frutos do Mar";
+            this.rbFrutosDoMar.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rbHambúrgueria
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(81, 225);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(105, 19);
-            this.radioButton7.TabIndex = 13;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Hambúrgueria";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rbHambúrgueria.AutoSize = true;
+            this.rbHambúrgueria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbHambúrgueria.Location = new System.Drawing.Point(81, 225);
+            this.rbHambúrgueria.Name = "rbHambúrgueria";
+            this.rbHambúrgueria.Size = new System.Drawing.Size(105, 19);
+            this.rbHambúrgueria.TabIndex = 13;
+            this.rbHambúrgueria.TabStop = true;
+            this.rbHambúrgueria.Text = "Hambúrgueria";
+            this.rbHambúrgueria.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rbSorveteria
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(81, 193);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(80, 19);
-            this.radioButton6.TabIndex = 12;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Sorveteria";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rbSorveteria.AutoSize = true;
+            this.rbSorveteria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSorveteria.Location = new System.Drawing.Point(81, 193);
+            this.rbSorveteria.Name = "rbSorveteria";
+            this.rbSorveteria.Size = new System.Drawing.Size(80, 19);
+            this.rbSorveteria.TabIndex = 12;
+            this.rbSorveteria.TabStop = true;
+            this.rbSorveteria.Text = "Sorveteria";
+            this.rbSorveteria.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rbComidaJaponesa
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(81, 161);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(125, 19);
-            this.radioButton5.TabIndex = 11;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Comida Japonesa";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbComidaJaponesa.AutoSize = true;
+            this.rbComidaJaponesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbComidaJaponesa.Location = new System.Drawing.Point(81, 161);
+            this.rbComidaJaponesa.Name = "rbComidaJaponesa";
+            this.rbComidaJaponesa.Size = new System.Drawing.Size(125, 19);
+            this.rbComidaJaponesa.TabIndex = 11;
+            this.rbComidaJaponesa.TabStop = true;
+            this.rbComidaJaponesa.Text = "Comida Japonesa";
+            this.rbComidaJaponesa.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbComidaItaliana
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(81, 129);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(111, 19);
-            this.radioButton4.TabIndex = 10;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Comida Italiana";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbComidaItaliana.AutoSize = true;
+            this.rbComidaItaliana.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbComidaItaliana.Location = new System.Drawing.Point(81, 129);
+            this.rbComidaItaliana.Name = "rbComidaItaliana";
+            this.rbComidaItaliana.Size = new System.Drawing.Size(111, 19);
+            this.rbComidaItaliana.TabIndex = 10;
+            this.rbComidaItaliana.TabStop = true;
+            this.rbComidaItaliana.Text = "Comida Italiana";
+            this.rbComidaItaliana.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbPetiscaria
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(81, 97);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(79, 19);
-            this.radioButton3.TabIndex = 9;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Petiscaria";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbPetiscaria.AutoSize = true;
+            this.rbPetiscaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPetiscaria.Location = new System.Drawing.Point(81, 97);
+            this.rbPetiscaria.Name = "rbPetiscaria";
+            this.rbPetiscaria.Size = new System.Drawing.Size(79, 19);
+            this.rbPetiscaria.TabIndex = 9;
+            this.rbPetiscaria.TabStop = true;
+            this.rbPetiscaria.Text = "Petiscaria";
+            this.rbPetiscaria.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbPizzaria
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(81, 65);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(69, 19);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Pizzaria";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbPizzaria.AutoSize = true;
+            this.rbPizzaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPizzaria.Location = new System.Drawing.Point(81, 65);
+            this.rbPizzaria.Name = "rbPizzaria";
+            this.rbPizzaria.Size = new System.Drawing.Size(69, 19);
+            this.rbPizzaria.TabIndex = 8;
+            this.rbPizzaria.TabStop = true;
+            this.rbPizzaria.Text = "Pizzaria";
+            this.rbPizzaria.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbChurrascaria
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(81, 33);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(95, 19);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Churrascaria";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbChurrascaria.AutoSize = true;
+            this.rbChurrascaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbChurrascaria.Location = new System.Drawing.Point(81, 33);
+            this.rbChurrascaria.Name = "rbChurrascaria";
+            this.rbChurrascaria.Size = new System.Drawing.Size(95, 19);
+            this.rbChurrascaria.TabIndex = 7;
+            this.rbChurrascaria.TabStop = true;
+            this.rbChurrascaria.Text = "Churrascaria";
+            this.rbChurrascaria.UseVisualStyleBackColor = true;
+            this.rbChurrascaria.CheckedChanged += new System.EventHandler(this.RbChurrascaria_CheckedChanged);
             // 
             // label11
             // 
@@ -433,6 +436,18 @@
             this.label11.Size = new System.Drawing.Size(90, 20);
             this.label11.TabIndex = 5;
             this.label11.Text = "Categorias:";
+            // 
+            // rbOutros
+            // 
+            this.rbOutros.AutoSize = true;
+            this.rbOutros.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbOutros.Location = new System.Drawing.Point(81, 288);
+            this.rbOutros.Name = "rbOutros";
+            this.rbOutros.Size = new System.Drawing.Size(61, 19);
+            this.rbOutros.TabIndex = 15;
+            this.rbOutros.TabStop = true;
+            this.rbOutros.Text = "Outros";
+            this.rbOutros.UseVisualStyleBackColor = true;
             // 
             // formAlimentos
             // 
@@ -502,14 +517,15 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbPizzaria;
+        private System.Windows.Forms.RadioButton rbChurrascaria;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton rbSorveteria;
+        private System.Windows.Forms.RadioButton rbComidaJaponesa;
+        private System.Windows.Forms.RadioButton rbComidaItaliana;
+        private System.Windows.Forms.RadioButton rbPetiscaria;
+        private System.Windows.Forms.RadioButton rbFrutosDoMar;
+        private System.Windows.Forms.RadioButton rbHambúrgueria;
+        private System.Windows.Forms.RadioButton rbOutros;
     }
 }
