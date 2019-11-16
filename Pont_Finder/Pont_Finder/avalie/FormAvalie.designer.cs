@@ -126,18 +126,17 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Infraestrutura",
-            "Saúde",
-            "Segurança"});
-            this.comboBox1.Location = new System.Drawing.Point(8, 97);
+            "Outros"});
+            this.comboBox1.Location = new System.Drawing.Point(10, 97);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(274, 28);
+            this.comboBox1.Size = new System.Drawing.Size(288, 28);
             this.comboBox1.TabIndex = 78;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(87, 61);
+            this.label1.Location = new System.Drawing.Point(98, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 32);
             this.label1.TabIndex = 3;
