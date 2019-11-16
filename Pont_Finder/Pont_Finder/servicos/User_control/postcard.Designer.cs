@@ -67,12 +67,12 @@
             // 
             this.lb_descricao.BackColor = System.Drawing.Color.Transparent;
             this.lb_descricao.Font = new System.Drawing.Font("Dubai", 9F);
-            this.lb_descricao.Location = new System.Drawing.Point(225, 75);
-            this.lb_descricao.Margin = new System.Windows.Forms.Padding(5);
-            this.lb_descricao.MaximumSize = new System.Drawing.Size(240, 60);
-            this.lb_descricao.MinimumSize = new System.Drawing.Size(240, 60);
+            this.lb_descricao.Location = new System.Drawing.Point(225, 67);
+            this.lb_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
+            this.lb_descricao.MaximumSize = new System.Drawing.Size(240, 65);
+            this.lb_descricao.MinimumSize = new System.Drawing.Size(240, 65);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(240, 60);
+            this.lb_descricao.Size = new System.Drawing.Size(240, 65);
             this.lb_descricao.TabIndex = 29;
             this.lb_descricao.Text = "Descricao:";
             this.lb_descricao.Click += new System.EventHandler(this.Lb_descricao_Click);
@@ -130,8 +130,8 @@
             // 
             this.lb_titulo.AutoSize = true;
             this.lb_titulo.Font = new System.Drawing.Font("Dubai", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titulo.Location = new System.Drawing.Point(225, 45);
-            this.lb_titulo.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_titulo.Location = new System.Drawing.Point(225, 41);
+            this.lb_titulo.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.lb_titulo.MaximumSize = new System.Drawing.Size(200, 20);
             this.lb_titulo.MinimumSize = new System.Drawing.Size(200, 20);
             this.lb_titulo.Name = "lb_titulo";
@@ -204,7 +204,7 @@
             this.lb_tipo.AutoSize = true;
             this.lb_tipo.Font = new System.Drawing.Font("Dubai", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_tipo.Location = new System.Drawing.Point(225, 15);
-            this.lb_tipo.Margin = new System.Windows.Forms.Padding(5, 15, 5, 5);
+            this.lb_tipo.Margin = new System.Windows.Forms.Padding(5, 15, 5, 3);
             this.lb_tipo.MaximumSize = new System.Drawing.Size(240, 20);
             this.lb_tipo.MinimumSize = new System.Drawing.Size(240, 20);
             this.lb_tipo.Name = "lb_tipo";

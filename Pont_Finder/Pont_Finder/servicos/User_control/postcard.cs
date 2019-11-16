@@ -49,10 +49,18 @@ namespace Pont_Finder.servicos
                     pb_down.Image = imgDeslikeBlue;               
             }
            
-
             lb_data.Text = "Postado em: " + this.post.Data;
-            lb_titulo.Text = this.post.Titulo;
-            lb_descricao.Text = "Descrição: " + this.post.Descricao;
+
+            //caractere invisivel alt + 0160 ou " "
+            string desc = this.post.Descricao.Replace("\n", " ").Replace(" ", " ");
+
+            if (desc.Length > 80)
+            {
+                desc = desc.Substring(0, 115);
+                desc = desc+"...";
+            }
+            
+            lb_descricao.Text = "Descrição: " + desc;
             lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.post.Valor);
 
         }
