@@ -175,7 +175,7 @@
             this.testeArredondamento3.Image = ((System.Drawing.Image)(resources.GetObject("testeArredondamento3.Image")));
             this.testeArredondamento3.Location = new System.Drawing.Point(249, 110);
             this.testeArredondamento3.Name = "testeArredondamento3";
-            this.testeArredondamento3.Size = new System.Drawing.Size(100, 68);
+            this.testeArredondamento3.Size = new System.Drawing.Size(50, 50);
             this.testeArredondamento3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.testeArredondamento3.TabIndex = 29;
             this.testeArredondamento3.TabStop = false;

@@ -12,24 +12,29 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Vizualizar_quarto : Form
     {
-        public Vizualizar_quarto()
+        Form anterior;
+        public Vizualizar_quarto(Form anterior)
         {
+            this.anterior = anterior;
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
 
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("hospedagem", anterior);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btn_back_MouseMove(object sender, MouseEventArgs e)
         {
-
+             btn_back.Image = Properties.Resources.back_2;
+            //btn_back.ImageLocation = "..//..//Resources//back-2.png";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_back_MouseLeave(object sender, EventArgs e)
         {
-
+            btn_back.Image = Properties.Resources.back_1;
+            //btn_back.ImageLocation = "..//..//Resources//back-1.png";
         }
     }
 }

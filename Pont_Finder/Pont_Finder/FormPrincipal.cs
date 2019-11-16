@@ -29,7 +29,6 @@ namespace Pont_Finder
             {
                 pb_userIcone.Visible = false;
             }
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -155,6 +154,8 @@ namespace Pont_Finder
             painel.Controls.Add(formA);
             formA.Show();
           
+
+
             switch (modulo.ToLower().Replace("ç", "c"))
             {
                 case "alimentos":

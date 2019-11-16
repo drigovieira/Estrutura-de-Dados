@@ -23,11 +23,11 @@ namespace Pont_Finder
         {
             PrivateFontCollection pfc = new PrivateFontCollection();
             //Pegar todas as fontes de um diretório
-            foreach (string item in Directory.GetFiles("E:\\ADS\\Estrutura-de-Dados\\Design\\Font - Dubai\\dubai-cufonfonts\\", " *.ttf"))
-                pfc.AddFontFile(item);
+            //foreach (string item in Directory.GetFiles("E:\\ADS\\Estrutura-de-Dados\\Design\\Font - Dubai\\dubai-cufonfonts\\", " *.ttf"))
+               // pfc.AddFontFile(item);
 
             //Responder todas as fontes do PrivateFontCollection na página
-            foreach (FontFamily font in pfc.Families)
+            //foreach (FontFamily font in pfc.Families)
             {
                 //Response.Write(font.Name + "<br />");
             }
