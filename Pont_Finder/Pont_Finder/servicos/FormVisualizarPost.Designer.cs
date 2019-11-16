@@ -44,6 +44,7 @@
             this.lb_cpf = new System.Windows.Forms.Label();
             this.lb_fantasia = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_wallpaper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel2.SuspendLayout();
@@ -211,6 +212,20 @@
             this.btn_back.MouseLeave += new System.EventHandler(this.Btn_back_MouseLeave);
             this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Btn_back_MouseMove);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1031, 274);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 51);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "Solicitar serviço";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormVisualizarPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,6 +233,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -262,5 +278,6 @@
         private System.Windows.Forms.Label lb_telefone;
         private System.Windows.Forms.PictureBox pb_empresa;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -347,6 +347,12 @@
     <Compile Include="servicos\FormVisualizarPost.Designer.cs">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\Solicitar_Sevico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\Solicitar_Sevico.Designer.cs">
+      <DependentUpon>Solicitar_Sevico.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\User_control\PostCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -551,6 +557,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\FormVisualizarPost.resx">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\Solicitar_Sevico.resx">
+      <DependentUpon>Solicitar_Sevico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\User_control\PostCard.resx">
       <DependentUpon>PostCard.cs</DependentUpon>

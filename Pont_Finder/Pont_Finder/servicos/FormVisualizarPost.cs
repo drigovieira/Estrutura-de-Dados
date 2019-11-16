@@ -99,5 +99,11 @@ namespace Pont_Finder.servicos
         {
             btn_back.Image = Properties.Resources.back_1;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            FormPrincipal.MudarForm("servicos",new Solicitar_Sevico());
+        }
     }
 }
