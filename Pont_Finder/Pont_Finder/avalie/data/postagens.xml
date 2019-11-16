@@ -33,4 +33,15 @@
     <localizacao>Cruzeiro</localizacao>
     <ativo>true</ativo>
   </post>
+  <post>
+    <id>3</id>
+    <nome>admin</nome>
+    <img>..//..//avalie//data//imagens//posts//3.jpg</img>
+    <cpf>26835036010</cpf>
+    <tempohora>16/11/2019 09:20</tempohora>
+    <desc>a meses esse buraco</desc>
+    <tipoproblema>Infraestrutura</tipoproblema>
+    <localizacao>rua major novaes cruzeiro sp</localizacao>
+    <ativo>true</ativo>
+  </post>
 </posts>
