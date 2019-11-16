@@ -49,7 +49,16 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.cbFeriado = new System.Windows.Forms.CheckBox();
+            this.cbDomingo = new System.Windows.Forms.CheckBox();
+            this.cbSabado = new System.Windows.Forms.CheckBox();
+            this.cbSexta = new System.Windows.Forms.CheckBox();
+            this.cbTerca = new System.Windows.Forms.CheckBox();
+            this.cbQuarta = new System.Windows.Forms.CheckBox();
+            this.cbQuinta = new System.Windows.Forms.CheckBox();
+            this.cbSegunda = new System.Windows.Forms.CheckBox();
             this.maskedTextBox12 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox13 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox14 = new System.Windows.Forms.MaskedTextBox();
@@ -92,15 +101,6 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.cbSegunda = new System.Windows.Forms.CheckBox();
-            this.cbQuinta = new System.Windows.Forms.CheckBox();
-            this.cbQuarta = new System.Windows.Forms.CheckBox();
-            this.cbTerca = new System.Windows.Forms.CheckBox();
-            this.cbSexta = new System.Windows.Forms.CheckBox();
-            this.cbSabado = new System.Windows.Forms.CheckBox();
-            this.cbDomingo = new System.Windows.Forms.CheckBox();
-            this.cbFeriado = new System.Windows.Forms.CheckBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -317,6 +317,16 @@
             this.panel3.Size = new System.Drawing.Size(625, 1262);
             this.panel3.TabIndex = 59;
             // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(0, 0);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(86, 17);
+            this.checkBox11.TabIndex = 38;
+            this.checkBox11.Text = "checkBox11";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
@@ -351,6 +361,94 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(460, 327);
             this.panel4.TabIndex = 37;
+            // 
+            // cbFeriado
+            // 
+            this.cbFeriado.AutoSize = true;
+            this.cbFeriado.Location = new System.Drawing.Point(92, 284);
+            this.cbFeriado.Name = "cbFeriado";
+            this.cbFeriado.Size = new System.Drawing.Size(66, 17);
+            this.cbFeriado.TabIndex = 70;
+            this.cbFeriado.Text = "Feriados";
+            this.cbFeriado.UseVisualStyleBackColor = true;
+            this.cbFeriado.CheckedChanged += new System.EventHandler(this.CbFeriado_CheckedChanged);
+            // 
+            // cbDomingo
+            // 
+            this.cbDomingo.AutoSize = true;
+            this.cbDomingo.Location = new System.Drawing.Point(92, 255);
+            this.cbDomingo.Name = "cbDomingo";
+            this.cbDomingo.Size = new System.Drawing.Size(68, 17);
+            this.cbDomingo.TabIndex = 69;
+            this.cbDomingo.Text = "Domingo";
+            this.cbDomingo.UseVisualStyleBackColor = true;
+            this.cbDomingo.CheckedChanged += new System.EventHandler(this.CbDomingo_CheckedChanged);
+            // 
+            // cbSabado
+            // 
+            this.cbSabado.AutoSize = true;
+            this.cbSabado.Location = new System.Drawing.Point(92, 222);
+            this.cbSabado.Name = "cbSabado";
+            this.cbSabado.Size = new System.Drawing.Size(63, 17);
+            this.cbSabado.TabIndex = 68;
+            this.cbSabado.Text = "Sábado";
+            this.cbSabado.UseVisualStyleBackColor = true;
+            this.cbSabado.CheckedChanged += new System.EventHandler(this.CbSabado_CheckedChanged);
+            // 
+            // cbSexta
+            // 
+            this.cbSexta.AutoSize = true;
+            this.cbSexta.Location = new System.Drawing.Point(92, 191);
+            this.cbSexta.Name = "cbSexta";
+            this.cbSexta.Size = new System.Drawing.Size(85, 17);
+            this.cbSexta.TabIndex = 67;
+            this.cbSexta.Text = "Sexta - Feira";
+            this.cbSexta.UseVisualStyleBackColor = true;
+            this.cbSexta.CheckedChanged += new System.EventHandler(this.CbSexta_CheckedChanged);
+            // 
+            // cbTerca
+            // 
+            this.cbTerca.AutoSize = true;
+            this.cbTerca.Location = new System.Drawing.Point(92, 94);
+            this.cbTerca.Name = "cbTerca";
+            this.cbTerca.Size = new System.Drawing.Size(86, 17);
+            this.cbTerca.TabIndex = 66;
+            this.cbTerca.Text = "Terça - Feira";
+            this.cbTerca.UseVisualStyleBackColor = true;
+            this.cbTerca.CheckedChanged += new System.EventHandler(this.CbTerca_CheckedChanged);
+            // 
+            // cbQuarta
+            // 
+            this.cbQuarta.AutoSize = true;
+            this.cbQuarta.Location = new System.Drawing.Point(92, 127);
+            this.cbQuarta.Name = "cbQuarta";
+            this.cbQuarta.Size = new System.Drawing.Size(90, 17);
+            this.cbQuarta.TabIndex = 65;
+            this.cbQuarta.Text = "Quarta - Feira";
+            this.cbQuarta.UseVisualStyleBackColor = true;
+            this.cbQuarta.CheckedChanged += new System.EventHandler(this.CbQuarta_CheckedChanged);
+            // 
+            // cbQuinta
+            // 
+            this.cbQuinta.AutoSize = true;
+            this.cbQuinta.Location = new System.Drawing.Point(92, 159);
+            this.cbQuinta.Name = "cbQuinta";
+            this.cbQuinta.Size = new System.Drawing.Size(89, 17);
+            this.cbQuinta.TabIndex = 64;
+            this.cbQuinta.Text = "Quinta - Feira";
+            this.cbQuinta.UseVisualStyleBackColor = true;
+            this.cbQuinta.CheckedChanged += new System.EventHandler(this.CbQuinta_CheckedChanged);
+            // 
+            // cbSegunda
+            // 
+            this.cbSegunda.AutoSize = true;
+            this.cbSegunda.Location = new System.Drawing.Point(92, 63);
+            this.cbSegunda.Name = "cbSegunda";
+            this.cbSegunda.Size = new System.Drawing.Size(101, 17);
+            this.cbSegunda.TabIndex = 63;
+            this.cbSegunda.Text = "Segunda - Feira";
+            this.cbSegunda.UseVisualStyleBackColor = true;
+            this.cbSegunda.CheckedChanged += new System.EventHandler(this.CbSegunda_CheckedChanged);
             // 
             // maskedTextBox12
             // 
@@ -813,104 +911,6 @@
             // openIcone
             // 
             this.openIcone.FileName = "icone";
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(0, 0);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(86, 17);
-            this.checkBox11.TabIndex = 38;
-            this.checkBox11.Text = "checkBox11";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // cbSegunda
-            // 
-            this.cbSegunda.AutoSize = true;
-            this.cbSegunda.Location = new System.Drawing.Point(92, 63);
-            this.cbSegunda.Name = "cbSegunda";
-            this.cbSegunda.Size = new System.Drawing.Size(101, 17);
-            this.cbSegunda.TabIndex = 63;
-            this.cbSegunda.Text = "Segunda - Feira";
-            this.cbSegunda.UseVisualStyleBackColor = true;
-            this.cbSegunda.CheckedChanged += new System.EventHandler(this.CbSegunda_CheckedChanged);
-            // 
-            // cbQuinta
-            // 
-            this.cbQuinta.AutoSize = true;
-            this.cbQuinta.Location = new System.Drawing.Point(92, 159);
-            this.cbQuinta.Name = "cbQuinta";
-            this.cbQuinta.Size = new System.Drawing.Size(89, 17);
-            this.cbQuinta.TabIndex = 64;
-            this.cbQuinta.Text = "Quinta - Feira";
-            this.cbQuinta.UseVisualStyleBackColor = true;
-            this.cbQuinta.CheckedChanged += new System.EventHandler(this.CbQuinta_CheckedChanged);
-            // 
-            // cbQuarta
-            // 
-            this.cbQuarta.AutoSize = true;
-            this.cbQuarta.Location = new System.Drawing.Point(92, 127);
-            this.cbQuarta.Name = "cbQuarta";
-            this.cbQuarta.Size = new System.Drawing.Size(90, 17);
-            this.cbQuarta.TabIndex = 65;
-            this.cbQuarta.Text = "Quarta - Feira";
-            this.cbQuarta.UseVisualStyleBackColor = true;
-            this.cbQuarta.CheckedChanged += new System.EventHandler(this.CbQuarta_CheckedChanged);
-            // 
-            // cbTerca
-            // 
-            this.cbTerca.AutoSize = true;
-            this.cbTerca.Location = new System.Drawing.Point(92, 94);
-            this.cbTerca.Name = "cbTerca";
-            this.cbTerca.Size = new System.Drawing.Size(86, 17);
-            this.cbTerca.TabIndex = 66;
-            this.cbTerca.Text = "Terça - Feira";
-            this.cbTerca.UseVisualStyleBackColor = true;
-            this.cbTerca.CheckedChanged += new System.EventHandler(this.CbTerca_CheckedChanged);
-            // 
-            // cbSexta
-            // 
-            this.cbSexta.AutoSize = true;
-            this.cbSexta.Location = new System.Drawing.Point(92, 191);
-            this.cbSexta.Name = "cbSexta";
-            this.cbSexta.Size = new System.Drawing.Size(85, 17);
-            this.cbSexta.TabIndex = 67;
-            this.cbSexta.Text = "Sexta - Feira";
-            this.cbSexta.UseVisualStyleBackColor = true;
-            this.cbSexta.CheckedChanged += new System.EventHandler(this.CbSexta_CheckedChanged);
-            // 
-            // cbSabado
-            // 
-            this.cbSabado.AutoSize = true;
-            this.cbSabado.Location = new System.Drawing.Point(92, 222);
-            this.cbSabado.Name = "cbSabado";
-            this.cbSabado.Size = new System.Drawing.Size(63, 17);
-            this.cbSabado.TabIndex = 68;
-            this.cbSabado.Text = "Sábado";
-            this.cbSabado.UseVisualStyleBackColor = true;
-            this.cbSabado.CheckedChanged += new System.EventHandler(this.CbSabado_CheckedChanged);
-            // 
-            // cbDomingo
-            // 
-            this.cbDomingo.AutoSize = true;
-            this.cbDomingo.Location = new System.Drawing.Point(92, 255);
-            this.cbDomingo.Name = "cbDomingo";
-            this.cbDomingo.Size = new System.Drawing.Size(68, 17);
-            this.cbDomingo.TabIndex = 69;
-            this.cbDomingo.Text = "Domingo";
-            this.cbDomingo.UseVisualStyleBackColor = true;
-            this.cbDomingo.CheckedChanged += new System.EventHandler(this.CbDomingo_CheckedChanged);
-            // 
-            // cbFeriado
-            // 
-            this.cbFeriado.AutoSize = true;
-            this.cbFeriado.Location = new System.Drawing.Point(92, 284);
-            this.cbFeriado.Name = "cbFeriado";
-            this.cbFeriado.Size = new System.Drawing.Size(66, 17);
-            this.cbFeriado.TabIndex = 70;
-            this.cbFeriado.Text = "Feriados";
-            this.cbFeriado.UseVisualStyleBackColor = true;
-            this.cbFeriado.CheckedChanged += new System.EventHandler(this.CbFeriado_CheckedChanged);
             // 
             // Cadastro_Restaurante
             // 

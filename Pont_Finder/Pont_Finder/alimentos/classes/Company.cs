@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pont_Finder.alimentos.classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace Pont_Finder.alimentos
     {
         private string nome, nomeFantasia, email, rua, bairro, image;
         private List<string> categoria;
+        private List<Funcionamento> funcionamentoEmp;
         private int numero, cep, ID;
         private long telComercial;
         private bool status;
@@ -74,6 +76,11 @@ namespace Pont_Finder.alimentos
         {
             get { return image; }
             set { image = value; }
+        }
+        public List<Funcionamento> FuncionamentoEmp
+        {
+            get { return funcionamentoEmp; }
+            set { funcionamentoEmp = value; }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pont_Finder.alimentos.classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace Pont_Finder.alimentos
     public partial class Cadastro_Restaurante : Form
     {
         private List<string> categorias = new List<string>();
+        private List<Funcionamento> funcionamentos = new List<Funcionamento>();
         private bool img = false;
         public Cadastro_Restaurante()
         {
@@ -33,6 +35,70 @@ namespace Pont_Finder.alimentos
 
         private void BtnCad_Click(object sender, EventArgs e)
         {
+            if (cbSegunda.Checked == true)
+            {
+                Funcionamento funcio = new Funcionamento();
+                funcio.Dia = cbSegunda.Text;
+                funcio.HoraInicio = DateTime.Parse(maskedTextBox4.Text);
+                funcio.HoraFim = DateTime.Parse(maskedTextBox19.Text);
+                funcionamentos.Add(funcio);
+            }
+            if (cbTerca.Checked == true)
+            {
+                Funcionamento funcio = new Funcionamento();
+                funcio.Dia = cbTerca.Text;
+                funcio.HoraInicio = DateTime.Parse(maskedTextBox5.Text);
+                funcio.HoraFim = DateTime.Parse(maskedTextBox18.Text);
+                funcionamentos.Add(funcio);
+            }
+            if (cbQuarta.Checked == true)
+            {
+                Funcionamento funcio = new Funcionamento();
+                funcio.Dia = cbQuarta.Text;
+                funcio.HoraInicio = DateTime.Parse(maskedTextBox6.Text);
+                funcio.HoraFim = DateTime.Parse(maskedTextBox17.Text);
+                funcionamentos.Add(funcio);
+            }
+            if (cbQuinta.Checked == true)
+            {
+                Funcionamento funcio = new Funcionamento();
+                funcio.Dia = cbQuinta.Text;
+                funcio.HoraInicio = DateTime.Parse(maskedTextBox7.Text);
+                funcio.HoraFim = DateTime.Parse(maskedTextBox16.Text);
+                funcionamentos.Add(funcio);
+            }
+            if (cbSexta.Checked == true)
+            {
+                Funcionamento funcio = new Funcionamento();
+                funcio.Dia = cbSexta.Text;
+                funcio.HoraInicio = DateTime.Parse(maskedTextBox8.Text);
+                funcio.HoraFim = DateTime.Parse(maskedTextBox15.Text);
+                funcionamentos.Add(funcio);
+            }
+            if (cbSabado.Checked == true)
+            {
+                Funcionamento funcio = new Funcionamento();
+                funcio.Dia = cbSabado.Text;
+                funcio.HoraInicio = DateTime.Parse(maskedTextBox9.Text);
+                funcio.HoraFim = DateTime.Parse(maskedTextBox14.Text);
+                funcionamentos.Add(funcio);
+            }
+            if (cbDomingo.Checked == true)
+            {
+                Funcionamento funcio = new Funcionamento();
+                funcio.Dia = cbDomingo.Text;
+                funcio.HoraInicio = DateTime.Parse(maskedTextBox10.Text);
+                funcio.HoraFim = DateTime.Parse(maskedTextBox13.Text);
+                funcionamentos.Add(funcio);
+            }
+            if (cbFeriado.Checked == true)
+            {
+                Funcionamento funcio = new Funcionamento();
+                funcio.Dia = cbFeriado.Text;
+                funcio.HoraInicio = DateTime.Parse(maskedTextBox11.Text);
+                funcio.HoraFim = DateTime.Parse(maskedTextBox12.Text);
+                funcionamentos.Add(funcio);
+            }
 
             Company emp = new Company();
             try
@@ -64,6 +130,7 @@ namespace Pont_Finder.alimentos
                     pb_icone.Image.Save(link, ImageFormat.Jpeg);
                 }
                 emp.Image = link;
+                emp.FuncionamentoEmp = funcionamentos;
                 CompanyList.CompAdd(emp);                
 
                 MessageBox.Show("Empresa Cadastrada!", "Status Operation:");

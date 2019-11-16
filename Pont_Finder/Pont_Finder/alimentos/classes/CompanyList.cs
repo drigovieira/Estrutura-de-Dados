@@ -23,6 +23,7 @@ namespace Pont_Finder.alimentos
             emp.TelComercial = comp.TelComercial;
             emp.Status = true;
             emp.Image = comp.Image;
+            emp.FuncionamentoEmp = comp.FuncionamentoEmp;
             company.Add(emp);
             company[company.IndexOf(emp)].Id = company.IndexOf(emp);
         }

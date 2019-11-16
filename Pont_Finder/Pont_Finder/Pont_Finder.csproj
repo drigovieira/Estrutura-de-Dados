@@ -67,6 +67,7 @@
     <Compile Include="alimentos\classes\Company.cs" />
     <Compile Include="alimentos\classes\CompanyList.cs" />
     <Compile Include="alimentos\classes\Evaluation.cs" />
+    <Compile Include="alimentos\classes\Funcionamento.cs" />
     <Compile Include="alimentos\Item_Alimentos.cs">
       <SubType>UserControl</SubType>
     </Compile>
