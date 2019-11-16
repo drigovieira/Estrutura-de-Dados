@@ -15,13 +15,14 @@ namespace Pont_Finder.alimentos
             emp.Nome = comp.Nome;
             emp.NomeFantasia = comp.NomeFantasia;
             emp.Email = comp.Email;
-            emp.Rua = comp.Rua;
+            emp.Rua = comp.Rua;            
             emp.Numero = comp.Numero;
             emp.Bairro = comp.Bairro;
             emp.Categoria = comp.Categoria;
             emp.Cep = comp.Cep;
             emp.TelComercial = comp.TelComercial;
             emp.Status = true;
+            emp.Image = comp.Image;
             company.Add(emp);
             company[company.IndexOf(emp)].Id = company.IndexOf(emp);
         }

@@ -41,13 +41,11 @@ namespace Pont_Finder.alimentos
                 emp.NomeFantasia = tbFantasia.Text;
                 emp.Rua = tbRua.Text;
                 emp.Numero = Convert.ToInt32(tbNum.Text);
-                //CEP
+                //emp.Cep = Convert.ToInt32(maskedTextBox2.Text);
                 emp.Bairro = tbBairro.Text;
                 emp.Categoria = categorias;
-                //Telefone
+                //emp.TelComercial = Convert.ToInt32(maskedTextBox3.Text);
                 emp.Email = tbEmail.Text;
-                CompanyList.CompAdd(emp);
-
                 string link = "..//..//alimentos//data//image//empresas//offImage.jpg";
                 if (img)
                 {
@@ -62,10 +60,12 @@ namespace Pont_Finder.alimentos
                     Image bmp2 = new Bitmap(bmp, pb_icone.Size);
 
                     pb_icone.Image = bmp2;
-
-                    link = "..//..//servicos//data//images//empresas//" + emp.Id + ".jpg";
+                    link = "..//..//servicos//data//images//empresas//" + emp.Email + ".jpg";
                     pb_icone.Image.Save(link, ImageFormat.Jpeg);
                 }
+                emp.Image = link;
+                CompanyList.CompAdd(emp);                
+
                 MessageBox.Show("Empresa Cadastrada!", "Status Operation:");
             }catch(Exception exp)
             {
