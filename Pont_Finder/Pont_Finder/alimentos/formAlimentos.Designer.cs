@@ -52,6 +52,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.rbOutros = new System.Windows.Forms.RadioButton();
             this.rbFrutosDoMar = new System.Windows.Forms.RadioButton();
             this.rbHambúrgueria = new System.Windows.Forms.RadioButton();
             this.rbSorveteria = new System.Windows.Forms.RadioButton();
@@ -61,7 +62,6 @@
             this.rbPizzaria = new System.Windows.Forms.RadioButton();
             this.rbChurrascaria = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
-            this.rbOutros = new System.Windows.Forms.RadioButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
@@ -330,6 +330,19 @@
             this.panel11.Size = new System.Drawing.Size(310, 324);
             this.panel11.TabIndex = 47;
             // 
+            // rbOutros
+            // 
+            this.rbOutros.AutoSize = true;
+            this.rbOutros.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbOutros.Location = new System.Drawing.Point(81, 288);
+            this.rbOutros.Name = "rbOutros";
+            this.rbOutros.Size = new System.Drawing.Size(61, 19);
+            this.rbOutros.TabIndex = 15;
+            this.rbOutros.TabStop = true;
+            this.rbOutros.Text = "Outros";
+            this.rbOutros.UseVisualStyleBackColor = true;
+            this.rbOutros.CheckedChanged += new System.EventHandler(this.RbOutros_CheckedChanged);
+            // 
             // rbFrutosDoMar
             // 
             this.rbFrutosDoMar.AutoSize = true;
@@ -341,6 +354,7 @@
             this.rbFrutosDoMar.TabStop = true;
             this.rbFrutosDoMar.Text = "Frutos do Mar";
             this.rbFrutosDoMar.UseVisualStyleBackColor = true;
+            this.rbFrutosDoMar.CheckedChanged += new System.EventHandler(this.RbFrutosDoMar_CheckedChanged);
             // 
             // rbHambúrgueria
             // 
@@ -353,6 +367,7 @@
             this.rbHambúrgueria.TabStop = true;
             this.rbHambúrgueria.Text = "Hambúrgueria";
             this.rbHambúrgueria.UseVisualStyleBackColor = true;
+            this.rbHambúrgueria.CheckedChanged += new System.EventHandler(this.RbHambúrgueria_CheckedChanged);
             // 
             // rbSorveteria
             // 
@@ -365,6 +380,7 @@
             this.rbSorveteria.TabStop = true;
             this.rbSorveteria.Text = "Sorveteria";
             this.rbSorveteria.UseVisualStyleBackColor = true;
+            this.rbSorveteria.CheckedChanged += new System.EventHandler(this.RbSorveteria_CheckedChanged);
             // 
             // rbComidaJaponesa
             // 
@@ -377,6 +393,7 @@
             this.rbComidaJaponesa.TabStop = true;
             this.rbComidaJaponesa.Text = "Comida Japonesa";
             this.rbComidaJaponesa.UseVisualStyleBackColor = true;
+            this.rbComidaJaponesa.CheckedChanged += new System.EventHandler(this.RbComidaJaponesa_CheckedChanged);
             // 
             // rbComidaItaliana
             // 
@@ -389,6 +406,7 @@
             this.rbComidaItaliana.TabStop = true;
             this.rbComidaItaliana.Text = "Comida Italiana";
             this.rbComidaItaliana.UseVisualStyleBackColor = true;
+            this.rbComidaItaliana.CheckedChanged += new System.EventHandler(this.RbComidaItaliana_CheckedChanged);
             // 
             // rbPetiscaria
             // 
@@ -401,6 +419,7 @@
             this.rbPetiscaria.TabStop = true;
             this.rbPetiscaria.Text = "Petiscaria";
             this.rbPetiscaria.UseVisualStyleBackColor = true;
+            this.rbPetiscaria.CheckedChanged += new System.EventHandler(this.RbPetiscaria_CheckedChanged);
             // 
             // rbPizzaria
             // 
@@ -413,6 +432,7 @@
             this.rbPizzaria.TabStop = true;
             this.rbPizzaria.Text = "Pizzaria";
             this.rbPizzaria.UseVisualStyleBackColor = true;
+            this.rbPizzaria.CheckedChanged += new System.EventHandler(this.RbPizzaria_CheckedChanged);
             // 
             // rbChurrascaria
             // 
@@ -436,18 +456,6 @@
             this.label11.Size = new System.Drawing.Size(90, 20);
             this.label11.TabIndex = 5;
             this.label11.Text = "Categorias:";
-            // 
-            // rbOutros
-            // 
-            this.rbOutros.AutoSize = true;
-            this.rbOutros.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbOutros.Location = new System.Drawing.Point(81, 288);
-            this.rbOutros.Name = "rbOutros";
-            this.rbOutros.Size = new System.Drawing.Size(61, 19);
-            this.rbOutros.TabIndex = 15;
-            this.rbOutros.TabStop = true;
-            this.rbOutros.Text = "Outros";
-            this.rbOutros.UseVisualStyleBackColor = true;
             // 
             // formAlimentos
             // 
