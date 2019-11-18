@@ -77,7 +77,7 @@
             this.bt_Sair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             this.bt_Sair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.bt_Sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Sair.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Sair.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Sair.ForeColor = System.Drawing.Color.White;
             this.bt_Sair.Location = new System.Drawing.Point(1155, 10);
             this.bt_Sair.Name = "bt_Sair";
@@ -90,11 +90,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(991, 5);
+            this.label1.Location = new System.Drawing.Point(991, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 33);
+            this.label1.Size = new System.Drawing.Size(65, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -106,7 +106,7 @@
             this.button_salvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             this.button_salvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.button_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_salvar.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_salvar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_salvar.ForeColor = System.Drawing.Color.White;
             this.button_salvar.Location = new System.Drawing.Point(1262, 10);
             this.button_salvar.Name = "button_salvar";
@@ -123,7 +123,7 @@
             this.bt_FazerLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             this.bt_FazerLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.bt_FazerLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_FazerLogin.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_FazerLogin.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_FazerLogin.ForeColor = System.Drawing.Color.White;
             this.bt_FazerLogin.Location = new System.Drawing.Point(1048, 10);
             this.bt_FazerLogin.Name = "bt_FazerLogin";

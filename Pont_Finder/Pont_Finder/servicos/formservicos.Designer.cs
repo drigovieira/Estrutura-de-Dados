@@ -247,7 +247,7 @@
             // bt_gerenciar
             // 
             this.bt_gerenciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_gerenciar.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_gerenciar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_gerenciar.ForeColor = System.Drawing.Color.White;
             this.bt_gerenciar.Location = new System.Drawing.Point(824, 5);
             this.bt_gerenciar.Name = "bt_gerenciar";
@@ -268,10 +268,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Dubai", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(464, 193);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 45);
+            this.label1.Size = new System.Drawing.Size(378, 36);
             this.label1.TabIndex = 36;
             this.label1.Text = "Veja o que temos para você!";
             // 
@@ -288,11 +288,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Dubai", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(416, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(419, 60);
+            this.label3.Size = new System.Drawing.Size(452, 46);
             this.label3.TabIndex = 0;
             this.label3.Text = "Aproveite nossos serviços!";
             // 
