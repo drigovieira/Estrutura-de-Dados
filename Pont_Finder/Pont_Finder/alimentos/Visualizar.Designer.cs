@@ -194,6 +194,7 @@
             this.bt_visualizar.TabIndex = 35;
             this.bt_visualizar.Text = "Cardápio";
             this.bt_visualizar.UseVisualStyleBackColor = false;
+            this.bt_visualizar.Click += new System.EventHandler(this.Bt_visualizar_Click);
             // 
             // panel13
             // 

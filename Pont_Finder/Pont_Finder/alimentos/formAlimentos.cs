@@ -14,10 +14,13 @@ namespace Pont_Finder
     public partial class formAlimentos : Form
     {
         private int local, local1;
+        private bool cat;
+        private string filtro;
         private List<Company> lista = new List<Company>();
         private ProfileList prof = new ProfileList();
         public formAlimentos()
         {
+            cat = false;
             local = 0;
             local1 = 0;
             InitializeComponent();
@@ -43,7 +46,7 @@ namespace Pont_Finder
 
         private void Pesquisar_Click(object sender, EventArgs e)
         {
-            if (CategoriaBox.Visible == false)
+            if (Categoria() == false)
             {
                 if (PesquisaBox.Text.Equals(""))
                 {
@@ -79,7 +82,7 @@ namespace Pont_Finder
                 else
                 {
                     List<Company> listaBusca = new List<Company>();
-                    listaBusca = CompanyList.SearchFiltro(PesquisaBox.Text, CategoriaBox.SelectedItem.ToString());
+                    listaBusca = CompanyList.SearchFiltro(PesquisaBox.Text, Filtro());
                     ListarEmpresas.Controls.Clear();
                     local = 0;
                     foreach (var item in listaBusca)
@@ -112,7 +115,58 @@ namespace Pont_Finder
             }
             */
         }
-
+        public bool Categoria()
+        {
+            if (rbChurrascaria.Checked == false && rbPizzaria.Checked == false && rbPetiscaria.Checked == false && rbComidaItaliana.Checked == false && rbComidaJaponesa.Checked == false && rbSorveteria.Checked == false && rbHambúrgueria.Checked == false && rbFrutosDoMar.Checked == false && rbOutros.Checked == false)
+            {
+                cat = false;
+            }
+            else
+            {
+                cat = true;
+            }
+            return cat;
+        }
+        public string Filtro()
+        {
+            if (rbChurrascaria.Checked == true)
+            {
+                filtro = rbChurrascaria.Text;
+            }
+            else if(rbPetiscaria.Checked == true)
+            {
+                filtro = rbPetiscaria.Text;
+            }
+            else if(rbPizzaria.Checked == true)
+            {
+                filtro = rbPizzaria.Text;
+            }
+            else if(rbComidaItaliana.Checked == true)
+            {
+                filtro = rbComidaItaliana.Text;
+            }
+            else if(rbComidaJaponesa.Checked == true)
+            {
+                filtro = rbComidaJaponesa.Text;
+            }
+            else if(rbSorveteria.Checked == true)
+            {
+                filtro = rbSorveteria.Text;
+            }
+            else if(rbHambúrgueria.Checked == true)
+            {
+                filtro = rbHambúrgueria.Text;
+            }
+            else if(rbFrutosDoMar.Checked == true)
+            {
+                filtro = rbFrutosDoMar.Text;
+            }
+            else if (rbOutros.Checked == true)
+            {
+                filtro = rbOutros.Text;
+            }
+            return filtro;
+        }
         private void Filtrar_Click(object sender, EventArgs e)
         {
             if (CategoriaBox.Visible == false)
@@ -203,7 +257,7 @@ namespace Pont_Finder
 
         private void pb_pesquisar_Click(object sender, EventArgs e)
         {
-            if (CategoriaBox.Visible == false)
+            if (Categoria() == false)
             {
                 if (PesquisaBox.Text.Equals(""))
                 {
@@ -239,7 +293,7 @@ namespace Pont_Finder
                 else
                 {
                     List<Company> listaBusca = new List<Company>();
-                    listaBusca = CompanyList.SearchFiltro(PesquisaBox.Text, CategoriaBox.SelectedItem.ToString());
+                    listaBusca = CompanyList.SearchFiltro(PesquisaBox.Text, Filtro());
                     ListarEmpresas.Controls.Clear();
                     local = 0;
                     foreach (var item in listaBusca)
