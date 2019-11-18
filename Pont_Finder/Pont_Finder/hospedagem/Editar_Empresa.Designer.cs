@@ -39,8 +39,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.pn_galery = new System.Windows.Forms.Panel();
@@ -181,22 +179,6 @@
             this.label15.Size = new System.Drawing.Size(406, 31);
             this.label15.TabIndex = 67;
             this.label15.Text = "Alterar dados da sua Empresa";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(950, 304);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 576);
-            this.panel2.TabIndex = 64;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(5, 304);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(310, 576);
-            this.panel1.TabIndex = 63;
             // 
             // openFileDialog1
             // 
@@ -592,8 +574,6 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel3);
@@ -634,8 +614,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.Panel pn_galery;

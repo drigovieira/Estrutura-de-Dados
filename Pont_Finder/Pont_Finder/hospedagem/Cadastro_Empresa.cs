@@ -17,9 +17,10 @@ namespace Pont_Finder.hospedagem
     {
 
         OpenFileDialog openimg = new OpenFileDialog();
-
-        public Cadastro_Empresa()
+        Form anterior;
+        public Cadastro_Empresa(Form anterior)
         {
+            this.anterior = anterior;
             InitializeComponent();
             pb_img1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
@@ -182,7 +183,7 @@ namespace Pont_Finder.hospedagem
 
                                         MessageBox.Show("Empresa Cadastrada com Sucesso!");
 
-                                        hospedagem.Listas_quartos listQuartos = new Listas_quartos();
+                                        hospedagem.Listas_quartos listQuartos = new Listas_quartos(new Hosp_Home());
                                         FormPrincipal.MudarForm("hospedagem", listQuartos);
                                     }
                                     else
@@ -234,6 +235,21 @@ namespace Pont_Finder.hospedagem
         private void Mkb_cnpj_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("hospedagem", anterior);
+        }
+
+        private void btn_back_MouseLeave(object sender, EventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_1;
+        }
+
+        private void btn_back_MouseMove(object sender, MouseEventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_2;
         }
     }
 }

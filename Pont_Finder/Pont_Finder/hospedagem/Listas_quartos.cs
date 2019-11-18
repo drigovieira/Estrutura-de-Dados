@@ -12,14 +12,16 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Listas_quartos : Form
     {
-        public Listas_quartos()
+        Form anterior;
+        public Listas_quartos(Form anterior)
         {
+            this.anterior = anterior;
             InitializeComponent();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            hospedagem.Cad_Quarto cadQuarto = new Cad_Quarto();
+            hospedagem.Cad_Quarto cadQuarto = new Cad_Quarto(new Listas_quartos(new Hosp_Home()));
             FormPrincipal.MudarForm("hospedagem", cadQuarto); 
         }
 
@@ -56,6 +58,21 @@ namespace Pont_Finder.hospedagem
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("hospedagem", anterior);
+        }
+
+        private void btn_back_MouseLeave(object sender, EventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_1;
+        }
+
+        private void btn_back_MouseMove(object sender, MouseEventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_2;
         }
     }
 }

@@ -95,7 +95,7 @@ namespace Pont_Finder.hospedagem
             
             if (Session.Online)
             {
-                hospedagem.Cadastro_Empresa cadEmpre = new Cadastro_Empresa();
+                hospedagem.Cadastro_Empresa cadEmpre = new Cadastro_Empresa(new Hosp_Home());
                 FormPrincipal.MudarForm("hospedagem", cadEmpre);
             }
             else
@@ -117,7 +117,7 @@ namespace Pont_Finder.hospedagem
 
         private void bt_gerenciar_quartos_Click(object sender, EventArgs e)
         {
-            hospedagem.Listas_quartos listaQuartos = new Listas_quartos();
+            hospedagem.Listas_quartos listaQuartos = new Listas_quartos(new Hosp_Home());
             FormPrincipal.MudarForm("hospedagem", listaQuartos);
         }
 

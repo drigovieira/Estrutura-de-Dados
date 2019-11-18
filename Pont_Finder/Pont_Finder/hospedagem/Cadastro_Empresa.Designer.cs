@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro_Empresa));
             this.label4 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.bt_add_logo = new System.Windows.Forms.Button();
+            this.pb_logo = new System.Windows.Forms.PictureBox();
             this.mkb_phone = new System.Windows.Forms.MaskedTextBox();
             this.mkb_cep = new System.Windows.Forms.MaskedTextBox();
             this.mkb_cnpj = new System.Windows.Forms.MaskedTextBox();
@@ -47,12 +49,15 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pn_galery = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.pnl_tipoHosp = new System.Windows.Forms.Panel();
             this.radio_pousada = new System.Windows.Forms.RadioButton();
             this.radio_hotel = new System.Windows.Forms.RadioButton();
             this.bt_continuar = new System.Windows.Forms.Button();
             this.pnl_ambDisp = new System.Windows.Forms.Panel();
+            this.ckb_wifi = new System.Windows.Forms.CheckBox();
+            this.ckb_lugarPet = new System.Windows.Forms.CheckBox();
             this.ckb_academia = new System.Windows.Forms.CheckBox();
             this.ckb_salaJogos = new System.Windows.Forms.CheckBox();
             this.ckb_piscina = new System.Windows.Forms.CheckBox();
@@ -65,25 +70,20 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
-            this.pn_galery = new System.Windows.Forms.Panel();
-            this.pb_logo = new System.Windows.Forms.PictureBox();
-            this.bt_add_logo = new System.Windows.Forms.Button();
-            this.ckb_lugarPet = new System.Windows.Forms.CheckBox();
-            this.ckb_wifi = new System.Windows.Forms.CheckBox();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.panel3.SuspendLayout();
             this.pnl_tipoHosp.SuspendLayout();
             this.pnl_ambDisp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -120,6 +120,28 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(625, 656);
             this.panel11.TabIndex = 0;
+            // 
+            // bt_add_logo
+            // 
+            this.bt_add_logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_add_logo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_add_logo.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_add_logo.ForeColor = System.Drawing.Color.White;
+            this.bt_add_logo.Location = new System.Drawing.Point(335, 85);
+            this.bt_add_logo.Name = "bt_add_logo";
+            this.bt_add_logo.Size = new System.Drawing.Size(139, 44);
+            this.bt_add_logo.TabIndex = 16;
+            this.bt_add_logo.Text = "Adicionar Logo";
+            this.bt_add_logo.UseVisualStyleBackColor = false;
+            // 
+            // pb_logo
+            // 
+            this.pb_logo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_logo.Location = new System.Drawing.Point(146, 40);
+            this.pb_logo.Name = "pb_logo";
+            this.pb_logo.Size = new System.Drawing.Size(150, 125);
+            this.pb_logo.TabIndex = 15;
+            this.pb_logo.TabStop = false;
             // 
             // mkb_phone
             // 
@@ -285,6 +307,15 @@
             this.panel3.Size = new System.Drawing.Size(625, 1224);
             this.panel3.TabIndex = 8;
             // 
+            // pn_galery
+            // 
+            this.pn_galery.AutoScroll = true;
+            this.pn_galery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pn_galery.Location = new System.Drawing.Point(73, 296);
+            this.pn_galery.Name = "pn_galery";
+            this.pn_galery.Size = new System.Drawing.Size(450, 87);
+            this.pn_galery.TabIndex = 39;
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -358,6 +389,26 @@
             this.pnl_ambDisp.Name = "pnl_ambDisp";
             this.pnl_ambDisp.Size = new System.Drawing.Size(460, 133);
             this.pnl_ambDisp.TabIndex = 19;
+            // 
+            // ckb_wifi
+            // 
+            this.ckb_wifi.AutoSize = true;
+            this.ckb_wifi.Location = new System.Drawing.Point(292, 22);
+            this.ckb_wifi.Name = "ckb_wifi";
+            this.ckb_wifi.Size = new System.Drawing.Size(44, 17);
+            this.ckb_wifi.TabIndex = 25;
+            this.ckb_wifi.Text = "Wifi";
+            this.ckb_wifi.UseVisualStyleBackColor = true;
+            // 
+            // ckb_lugarPet
+            // 
+            this.ckb_lugarPet.AutoSize = true;
+            this.ckb_lugarPet.Location = new System.Drawing.Point(72, 89);
+            this.ckb_lugarPet.Name = "ckb_lugarPet";
+            this.ckb_lugarPet.Size = new System.Drawing.Size(95, 17);
+            this.ckb_lugarPet.TabIndex = 24;
+            this.ckb_lugarPet.Text = "Lugar para pet";
+            this.ckb_lugarPet.UseVisualStyleBackColor = true;
             // 
             // ckb_academia
             // 
@@ -477,22 +528,6 @@
             this.label15.TabIndex = 59;
             this.label15.Text = "Cadastre sua empresa para divulgar seus serviços";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(950, 304);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 576);
-            this.panel2.TabIndex = 51;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(5, 304);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(310, 576);
-            this.panel1.TabIndex = 50;
-            // 
             // panel7
             // 
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
@@ -534,56 +569,20 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             // 
-            // pn_galery
+            // btn_back
             // 
-            this.pn_galery.AutoScroll = true;
-            this.pn_galery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_galery.Location = new System.Drawing.Point(73, 296);
-            this.pn_galery.Name = "pn_galery";
-            this.pn_galery.Size = new System.Drawing.Size(450, 87);
-            this.pn_galery.TabIndex = 39;
-            // 
-            // pb_logo
-            // 
-            this.pb_logo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_logo.Location = new System.Drawing.Point(146, 40);
-            this.pb_logo.Name = "pb_logo";
-            this.pb_logo.Size = new System.Drawing.Size(150, 125);
-            this.pb_logo.TabIndex = 15;
-            this.pb_logo.TabStop = false;
-            // 
-            // bt_add_logo
-            // 
-            this.bt_add_logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_add_logo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_add_logo.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_add_logo.ForeColor = System.Drawing.Color.White;
-            this.bt_add_logo.Location = new System.Drawing.Point(335, 85);
-            this.bt_add_logo.Name = "bt_add_logo";
-            this.bt_add_logo.Size = new System.Drawing.Size(139, 44);
-            this.bt_add_logo.TabIndex = 16;
-            this.bt_add_logo.Text = "Adicionar Logo";
-            this.bt_add_logo.UseVisualStyleBackColor = false;
-            // 
-            // ckb_lugarPet
-            // 
-            this.ckb_lugarPet.AutoSize = true;
-            this.ckb_lugarPet.Location = new System.Drawing.Point(72, 89);
-            this.ckb_lugarPet.Name = "ckb_lugarPet";
-            this.ckb_lugarPet.Size = new System.Drawing.Size(95, 17);
-            this.ckb_lugarPet.TabIndex = 24;
-            this.ckb_lugarPet.Text = "Lugar para pet";
-            this.ckb_lugarPet.UseVisualStyleBackColor = true;
-            // 
-            // ckb_wifi
-            // 
-            this.ckb_wifi.AutoSize = true;
-            this.ckb_wifi.Location = new System.Drawing.Point(292, 22);
-            this.ckb_wifi.Name = "ckb_wifi";
-            this.ckb_wifi.Size = new System.Drawing.Size(44, 17);
-            this.ckb_wifi.TabIndex = 25;
-            this.ckb_wifi.Text = "Wifi";
-            this.ckb_wifi.UseVisualStyleBackColor = true;
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(66, 302);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 61;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            this.btn_back.MouseLeave += new System.EventHandler(this.btn_back_MouseLeave);
+            this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_back_MouseMove);
             // 
             // Cadastro_Empresa
             // 
@@ -592,14 +591,13 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
@@ -609,6 +607,7 @@
             this.Load += new System.EventHandler(this.Cadastro_Empresa_Load);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.pnl_tipoHosp.ResumeLayout(false);
@@ -618,7 +617,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -660,8 +659,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton radio_pousada;
         private System.Windows.Forms.RadioButton radio_hotel;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
@@ -674,5 +671,6 @@
         private System.Windows.Forms.Panel pn_galery;
         private System.Windows.Forms.CheckBox ckb_wifi;
         private System.Windows.Forms.CheckBox ckb_lugarPet;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }

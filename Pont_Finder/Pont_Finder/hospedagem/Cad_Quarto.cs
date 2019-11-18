@@ -14,12 +14,14 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Cad_Quarto : Form
     {
+        Form anterior;
         OpenFileDialog openimg = new OpenFileDialog();
         Quarto quarto = new Quarto();
 
         private bool img = false;
-        public Cad_Quarto()
+        public Cad_Quarto(Form anterior)
         {
+            this.anterior = anterior;
             InitializeComponent();
 
             
@@ -195,6 +197,21 @@ namespace Pont_Finder.hospedagem
                 FormPrincipal.MudarForm("hospedagem", hp);
 
             }
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("hospedagem", anterior);
+        }
+
+        private void btn_back_MouseLeave(object sender, EventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_1;
+        }
+
+        private void btn_back_MouseMove(object sender, MouseEventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_2;
         }
     }
 }
