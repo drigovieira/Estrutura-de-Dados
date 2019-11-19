@@ -136,5 +136,14 @@ namespace Pont_Finder.eventos
             }
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (openIcone.ShowDialog() == DialogResult.OK)
+            {
+                pb_icone.ImageLocation = openIcone.FileName;
+                img = true;
+            }
+        }
     }
 }

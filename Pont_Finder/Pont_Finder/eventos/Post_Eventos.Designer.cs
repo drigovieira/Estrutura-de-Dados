@@ -105,7 +105,7 @@
             "12 ",
             "16 ",
             "18+"});
-            this.CBfaixaetaria.Location = new System.Drawing.Point(339, 1138);
+            this.CBfaixaetaria.Location = new System.Drawing.Point(414, 1152);
             this.CBfaixaetaria.Name = "CBfaixaetaria";
             this.CBfaixaetaria.Size = new System.Drawing.Size(121, 21);
             this.CBfaixaetaria.TabIndex = 4;
@@ -120,7 +120,7 @@
             // 
             // Bvalor
             // 
-            this.Bvalor.Location = new System.Drawing.Point(344, 1207);
+            this.Bvalor.Location = new System.Drawing.Point(458, 1317);
             this.Bvalor.Name = "Bvalor";
             this.Bvalor.Size = new System.Drawing.Size(118, 20);
             this.Bvalor.TabIndex = 5;
@@ -153,7 +153,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(288, 1203);
+            this.label10.Location = new System.Drawing.Point(405, 1319);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(42, 18);
             this.label10.TabIndex = 14;
@@ -163,7 +163,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(242, 1135);
+            this.label9.Location = new System.Drawing.Point(325, 1150);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(83, 18);
             this.label9.TabIndex = 13;
@@ -331,6 +331,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Adicionar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label2
             // 
