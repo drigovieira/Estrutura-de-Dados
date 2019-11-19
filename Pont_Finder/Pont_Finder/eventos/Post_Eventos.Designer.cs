@@ -92,7 +92,7 @@
             this.button2.Location = new System.Drawing.Point(204, 1358);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(220, 50);
-            this.button2.TabIndex = 6;
+            this.button2.TabIndex = 9;
             this.button2.Text = "Adicionar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -105,45 +105,45 @@
             "12 ",
             "16 ",
             "18+"});
-            this.CBfaixaetaria.Location = new System.Drawing.Point(339, 1138);
+            this.CBfaixaetaria.Location = new System.Drawing.Point(375, 1186);
             this.CBfaixaetaria.Name = "CBfaixaetaria";
             this.CBfaixaetaria.Size = new System.Drawing.Size(121, 21);
-            this.CBfaixaetaria.TabIndex = 4;
+            this.CBfaixaetaria.TabIndex = 7;
             // 
             // Blocal
             // 
-            this.Blocal.Location = new System.Drawing.Point(76, 1262);
+            this.Blocal.Location = new System.Drawing.Point(342, 1102);
             this.Blocal.Multiline = true;
             this.Blocal.Name = "Blocal";
-            this.Blocal.Size = new System.Drawing.Size(278, 25);
-            this.Blocal.TabIndex = 2;
+            this.Blocal.Size = new System.Drawing.Size(266, 25);
+            this.Blocal.TabIndex = 5;
             // 
             // Bvalor
             // 
-            this.Bvalor.Location = new System.Drawing.Point(344, 1207);
+            this.Bvalor.Location = new System.Drawing.Point(338, 1226);
             this.Bvalor.Name = "Bvalor";
             this.Bvalor.Size = new System.Drawing.Size(118, 20);
-            this.Bvalor.TabIndex = 5;
+            this.Bvalor.TabIndex = 8;
             // 
             // Bpatrocionadores
             // 
-            this.Bpatrocionadores.Location = new System.Drawing.Point(136, 1316);
+            this.Bpatrocionadores.Location = new System.Drawing.Point(397, 1150);
             this.Bpatrocionadores.Name = "Bpatrocionadores";
             this.Bpatrocionadores.Size = new System.Drawing.Size(210, 20);
-            this.Bpatrocionadores.TabIndex = 3;
+            this.Bpatrocionadores.TabIndex = 6;
             // 
             // Bhorario
             // 
-            this.Bhorario.Location = new System.Drawing.Point(77, 1229);
+            this.Bhorario.Location = new System.Drawing.Point(103, 1274);
             this.Bhorario.Name = "Bhorario";
             this.Bhorario.Size = new System.Drawing.Size(100, 20);
-            this.Bhorario.TabIndex = 1;
+            this.Bhorario.TabIndex = 4;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(15, 1316);
+            this.label11.Location = new System.Drawing.Point(288, 1150);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(109, 18);
             this.label11.TabIndex = 15;
@@ -153,7 +153,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(288, 1203);
+            this.label10.Location = new System.Drawing.Point(288, 1225);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(42, 18);
             this.label10.TabIndex = 14;
@@ -163,7 +163,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(242, 1135);
+            this.label9.Location = new System.Drawing.Point(288, 1186);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(83, 18);
             this.label9.TabIndex = 13;
@@ -173,7 +173,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(24, 1260);
+            this.label8.Location = new System.Drawing.Point(288, 1108);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 18);
             this.label8.TabIndex = 12;
@@ -183,7 +183,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(15, 1235);
+            this.label7.Location = new System.Drawing.Point(34, 1272);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 18);
             this.label7.TabIndex = 11;
@@ -221,7 +221,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(21, 1200);
+            this.label6.Location = new System.Drawing.Point(32, 1230);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 18);
             this.label6.TabIndex = 10;
@@ -331,6 +331,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Adicionar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label2
             // 
@@ -380,59 +381,62 @@
             // 
             // tb_ingresso_total
             // 
-            this.tb_ingresso_total.Location = new System.Drawing.Point(116, 1132);
+            this.tb_ingresso_total.Location = new System.Drawing.Point(125, 1154);
             this.tb_ingresso_total.Name = "tb_ingresso_total";
             this.tb_ingresso_total.Size = new System.Drawing.Size(100, 20);
-            this.tb_ingresso_total.TabIndex = 21;
+            this.tb_ingresso_total.TabIndex = 1;
             // 
             // tb_ingresso_disponivel
             // 
-            this.tb_ingresso_disponivel.Location = new System.Drawing.Point(116, 1163);
+            this.tb_ingresso_disponivel.Location = new System.Drawing.Point(163, 1191);
             this.tb_ingresso_disponivel.Name = "tb_ingresso_disponivel";
             this.tb_ingresso_disponivel.Size = new System.Drawing.Size(100, 20);
-            this.tb_ingresso_disponivel.TabIndex = 20;
+            this.tb_ingresso_disponivel.TabIndex = 2;
             // 
             // lb_ingresso_disponivel
             // 
             this.lb_ingresso_disponivel.AutoSize = true;
-            this.lb_ingresso_disponivel.Location = new System.Drawing.Point(3, 1165);
+            this.lb_ingresso_disponivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ingresso_disponivel.Location = new System.Drawing.Point(28, 1191);
             this.lb_ingresso_disponivel.Name = "lb_ingresso_disponivel";
-            this.lb_ingresso_disponivel.Size = new System.Drawing.Size(102, 13);
+            this.lb_ingresso_disponivel.Size = new System.Drawing.Size(134, 18);
             this.lb_ingresso_disponivel.TabIndex = 19;
-            this.lb_ingresso_disponivel.Text = "Ingresso disponível:";
+            this.lb_ingresso_disponivel.Text = "Ingresso disponível";
             // 
             // lb_ingresso_total
             // 
             this.lb_ingresso_total.AutoSize = true;
-            this.lb_ingresso_total.Location = new System.Drawing.Point(43, 1134);
+            this.lb_ingresso_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ingresso_total.Location = new System.Drawing.Point(26, 1152);
             this.lb_ingresso_total.Name = "lb_ingresso_total";
-            this.lb_ingresso_total.Size = new System.Drawing.Size(73, 13);
+            this.lb_ingresso_total.Size = new System.Drawing.Size(97, 18);
             this.lb_ingresso_total.TabIndex = 18;
-            this.lb_ingresso_total.Text = "Ingresso total:";
+            this.lb_ingresso_total.Text = "Ingresso total";
             // 
             // lb_nome
             // 
             this.lb_nome.AutoSize = true;
-            this.lb_nome.Location = new System.Drawing.Point(73, 1108);
+            this.lb_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nome.Location = new System.Drawing.Point(23, 1110);
             this.lb_nome.Name = "lb_nome";
-            this.lb_nome.Size = new System.Drawing.Size(38, 13);
+            this.lb_nome.Size = new System.Drawing.Size(49, 18);
             this.lb_nome.TabIndex = 17;
-            this.lb_nome.Text = "Nome:";
+            this.lb_nome.Text = "Nome";
             // 
             // tb_nome
             // 
-            this.tb_nome.Location = new System.Drawing.Point(116, 1103);
+            this.tb_nome.Location = new System.Drawing.Point(77, 1111);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(100, 20);
-            this.tb_nome.TabIndex = 16;
+            this.tb_nome.TabIndex = 0;
             // 
             // Bdata
             // 
-            this.Bdata.Location = new System.Drawing.Point(76, 1197);
+            this.Bdata.Location = new System.Drawing.Point(76, 1231);
             this.Bdata.Mask = "00/00/0000";
             this.Bdata.Name = "Bdata";
             this.Bdata.Size = new System.Drawing.Size(113, 20);
-            this.Bdata.TabIndex = 0;
+            this.Bdata.TabIndex = 3;
             this.Bdata.ValidatingType = typeof(System.DateTime);
             // 
             // pb_icone

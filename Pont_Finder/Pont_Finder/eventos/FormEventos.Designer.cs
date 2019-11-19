@@ -39,6 +39,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bt_pesquisar = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.bt_pesquisar = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -119,7 +119,7 @@
             this.label1.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(76, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 33);
+            this.label1.Size = new System.Drawing.Size(149, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Área de pesquisa";
             this.label1.UseWaitCursor = true;
@@ -162,6 +162,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 250);
             this.panel2.TabIndex = 19;
+            // 
+            // bt_pesquisar
+            // 
+            this.bt_pesquisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_pesquisar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.bt_pesquisar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_pesquisar.ForeColor = System.Drawing.Color.White;
+            this.bt_pesquisar.Location = new System.Drawing.Point(97, 198);
+            this.bt_pesquisar.Name = "bt_pesquisar";
+            this.bt_pesquisar.Size = new System.Drawing.Size(110, 34);
+            this.bt_pesquisar.TabIndex = 27;
+            this.bt_pesquisar.Text = "Pesquisar";
+            this.bt_pesquisar.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
@@ -214,7 +227,7 @@
             this.label23.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(1022, 238);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(170, 33);
+            this.label23.Size = new System.Drawing.Size(170, 32);
             this.label23.TabIndex = 42;
             this.label23.Text = "Top 5 acomodações";
             // 
@@ -273,19 +286,6 @@
             this.label8.Size = new System.Drawing.Size(155, 20);
             this.label8.TabIndex = 0;
             this.label8.Text = "Propaganda Externa";
-            // 
-            // bt_pesquisar
-            // 
-            this.bt_pesquisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_pesquisar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
-            this.bt_pesquisar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_pesquisar.ForeColor = System.Drawing.Color.White;
-            this.bt_pesquisar.Location = new System.Drawing.Point(97, 198);
-            this.bt_pesquisar.Name = "bt_pesquisar";
-            this.bt_pesquisar.Size = new System.Drawing.Size(110, 34);
-            this.bt_pesquisar.TabIndex = 27;
-            this.bt_pesquisar.Text = "Pesquisar";
-            this.bt_pesquisar.UseVisualStyleBackColor = false;
             // 
             // FormEventos
             // 
