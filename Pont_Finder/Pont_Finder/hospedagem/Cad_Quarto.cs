@@ -56,11 +56,12 @@ namespace Pont_Finder.hospedagem
                 && checkBox3.Checked == false && checkBox4.Checked == false && checkBox5.Checked == false
                 && checkBox6.Checked == false && checkBox7.Checked == false))
             {
-                MessageBox.Show("Algum campo obrigatório está vazio");
+                MessageBox.Show("Preencha todos os campos");
             }
             else
 
             {
+
                 List<string> servicos = new List<string>();
 
                 int id = roomList.Tam;
