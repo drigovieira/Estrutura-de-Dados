@@ -73,60 +73,60 @@
             // lb_emp_endereco
             // 
             this.lb_emp_endereco.AutoSize = true;
-            this.lb_emp_endereco.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_emp_endereco.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_emp_endereco.Location = new System.Drawing.Point(241, 423);
             this.lb_emp_endereco.Name = "lb_emp_endereco";
-            this.lb_emp_endereco.Size = new System.Drawing.Size(84, 23);
+            this.lb_emp_endereco.Size = new System.Drawing.Size(95, 25);
             this.lb_emp_endereco.TabIndex = 3;
             this.lb_emp_endereco.Text = "Endereco";
             // 
             // lb_emp_email
             // 
             this.lb_emp_email.AutoSize = true;
-            this.lb_emp_email.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_emp_email.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_emp_email.Location = new System.Drawing.Point(241, 384);
             this.lb_emp_email.Name = "lb_emp_email";
-            this.lb_emp_email.Size = new System.Drawing.Size(59, 23);
+            this.lb_emp_email.Size = new System.Drawing.Size(67, 25);
             this.lb_emp_email.TabIndex = 2;
             this.lb_emp_email.Text = "E-mail";
             // 
             // lb_txt9
             // 
             this.lb_txt9.AutoSize = true;
-            this.lb_txt9.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt9.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt9.Location = new System.Drawing.Point(48, 63);
             this.lb_txt9.Name = "lb_txt9";
-            this.lb_txt9.Size = new System.Drawing.Size(135, 31);
+            this.lb_txt9.Size = new System.Drawing.Size(138, 24);
             this.lb_txt9.TabIndex = 27;
             this.lb_txt9.Text = "Tipo de quarto:";
             // 
             // lb_txt10
             // 
             this.lb_txt10.AutoSize = true;
-            this.lb_txt10.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt10.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt10.Location = new System.Drawing.Point(48, 118);
             this.lb_txt10.Name = "lb_txt10";
-            this.lb_txt10.Size = new System.Drawing.Size(266, 31);
+            this.lb_txt10.Size = new System.Drawing.Size(278, 24);
             this.lb_txt10.TabIndex = 22;
             this.lb_txt10.Text = "Número de pessoas suportadas:";
             // 
             // lb_emp_fantasia
             // 
             this.lb_emp_fantasia.AutoSize = true;
-            this.lb_emp_fantasia.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_emp_fantasia.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_emp_fantasia.Location = new System.Drawing.Point(241, 348);
             this.lb_emp_fantasia.Name = "lb_emp_fantasia";
-            this.lb_emp_fantasia.Size = new System.Drawing.Size(58, 23);
+            this.lb_emp_fantasia.Size = new System.Drawing.Size(66, 25);
             this.lb_emp_fantasia.TabIndex = 0;
             this.lb_emp_fantasia.Text = "Nome";
             // 
             // lb_txt11
             // 
             this.lb_txt11.AutoSize = true;
-            this.lb_txt11.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt11.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt11.Location = new System.Drawing.Point(48, 167);
             this.lb_txt11.Name = "lb_txt11";
-            this.lb_txt11.Size = new System.Drawing.Size(256, 31);
+            this.lb_txt11.Size = new System.Drawing.Size(266, 24);
             this.lb_txt11.TabIndex = 23;
             this.lb_txt11.Text = "Número de quartos existentes:";
             // 
@@ -149,50 +149,50 @@
             // lb_txt7
             // 
             this.lb_txt7.AutoSize = true;
-            this.lb_txt7.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt7.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt7.Location = new System.Drawing.Point(485, 412);
             this.lb_txt7.Name = "lb_txt7";
-            this.lb_txt7.Size = new System.Drawing.Size(92, 36);
+            this.lb_txt7.Size = new System.Drawing.Size(96, 27);
             this.lb_txt7.TabIndex = 31;
             this.lb_txt7.Text = "Detalhes";
             // 
             // lb_parcelas
             // 
             this.lb_parcelas.AutoSize = true;
-            this.lb_parcelas.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_parcelas.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_parcelas.Location = new System.Drawing.Point(977, 235);
             this.lb_parcelas.Name = "lb_parcelas";
-            this.lb_parcelas.Size = new System.Drawing.Size(40, 21);
+            this.lb_parcelas.Size = new System.Drawing.Size(49, 21);
             this.lb_parcelas.TabIndex = 25;
             this.lb_parcelas.Text = "Value";
             // 
             // lb_txt5
             // 
             this.lb_txt5.AutoSize = true;
-            this.lb_txt5.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt5.Location = new System.Drawing.Point(881, 169);
             this.lb_txt5.Name = "lb_txt5";
-            this.lb_txt5.Size = new System.Drawing.Size(24, 21);
+            this.lb_txt5.Size = new System.Drawing.Size(28, 21);
             this.lb_txt5.TabIndex = 25;
             this.lb_txt5.Text = "ou";
             // 
             // lb_txt4
             // 
             this.lb_txt4.AutoSize = true;
-            this.lb_txt4.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt4.Location = new System.Drawing.Point(822, 132);
             this.lb_txt4.Name = "lb_txt4";
-            this.lb_txt4.Size = new System.Drawing.Size(147, 21);
+            this.lb_txt4.Size = new System.Drawing.Size(186, 21);
             this.lb_txt4.TabIndex = 25;
             this.lb_txt4.Text = "Avista no boleto bancário";
             // 
             // lb_txt3
             // 
             this.lb_txt3.AutoSize = true;
-            this.lb_txt3.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt3.Location = new System.Drawing.Point(888, 54);
             this.lb_txt3.Name = "lb_txt3";
-            this.lb_txt3.Size = new System.Drawing.Size(44, 21);
+            this.lb_txt3.Size = new System.Drawing.Size(45, 17);
             this.lb_txt3.TabIndex = 25;
             this.lb_txt3.Text = "Diária:";
             // 
@@ -231,70 +231,70 @@
             // lb_num_quartos
             // 
             this.lb_num_quartos.AutoSize = true;
-            this.lb_num_quartos.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_num_quartos.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_num_quartos.Location = new System.Drawing.Point(310, 167);
             this.lb_num_quartos.Name = "lb_num_quartos";
-            this.lb_num_quartos.Size = new System.Drawing.Size(58, 31);
+            this.lb_num_quartos.Size = new System.Drawing.Size(58, 24);
             this.lb_num_quartos.TabIndex = 36;
             this.lb_num_quartos.Text = "Value";
             // 
             // lb_num_pessoas
             // 
             this.lb_num_pessoas.AutoSize = true;
-            this.lb_num_pessoas.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_num_pessoas.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_num_pessoas.Location = new System.Drawing.Point(320, 118);
             this.lb_num_pessoas.Name = "lb_num_pessoas";
-            this.lb_num_pessoas.Size = new System.Drawing.Size(58, 31);
+            this.lb_num_pessoas.Size = new System.Drawing.Size(58, 24);
             this.lb_num_pessoas.TabIndex = 35;
             this.lb_num_pessoas.Text = "Value";
             // 
             // lb_tipo_quarto
             // 
             this.lb_tipo_quarto.AutoSize = true;
-            this.lb_tipo_quarto.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tipo_quarto.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_tipo_quarto.Location = new System.Drawing.Point(189, 63);
             this.lb_tipo_quarto.Name = "lb_tipo_quarto";
-            this.lb_tipo_quarto.Size = new System.Drawing.Size(58, 31);
+            this.lb_tipo_quarto.Size = new System.Drawing.Size(58, 24);
             this.lb_tipo_quarto.TabIndex = 34;
             this.lb_tipo_quarto.Text = "Value";
             // 
             // lb_emp_descricao
             // 
             this.lb_emp_descricao.AutoSize = true;
-            this.lb_emp_descricao.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_emp_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_emp_descricao.Location = new System.Drawing.Point(55, 584);
             this.lb_emp_descricao.Name = "lb_emp_descricao";
-            this.lb_emp_descricao.Size = new System.Drawing.Size(58, 31);
+            this.lb_emp_descricao.Size = new System.Drawing.Size(58, 24);
             this.lb_emp_descricao.TabIndex = 33;
             this.lb_emp_descricao.Text = "Value";
             // 
             // lb_txt13
             // 
             this.lb_txt13.AutoSize = true;
-            this.lb_txt13.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt13.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt13.Location = new System.Drawing.Point(55, 534);
             this.lb_txt13.Name = "lb_txt13";
-            this.lb_txt13.Size = new System.Drawing.Size(96, 33);
+            this.lb_txt13.Size = new System.Drawing.Size(111, 27);
             this.lb_txt13.TabIndex = 32;
             this.lb_txt13.Text = "Descrição:";
             // 
             // lb_txt8
             // 
             this.lb_txt8.AutoSize = true;
-            this.lb_txt8.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt8.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt8.Location = new System.Drawing.Point(48, 15);
             this.lb_txt8.Name = "lb_txt8";
-            this.lb_txt8.Size = new System.Drawing.Size(147, 36);
+            this.lb_txt8.Size = new System.Drawing.Size(160, 27);
             this.lb_txt8.TabIndex = 31;
             this.lb_txt8.Text = "Sobre o quarto";
             // 
             // lb_txt12
             // 
             this.lb_txt12.AutoSize = true;
-            this.lb_txt12.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt12.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt12.Location = new System.Drawing.Point(55, 303);
             this.lb_txt12.Name = "lb_txt12";
-            this.lb_txt12.Size = new System.Drawing.Size(164, 36);
+            this.lb_txt12.Size = new System.Drawing.Size(174, 27);
             this.lb_txt12.TabIndex = 30;
             this.lb_txt12.Text = "Sobre a Empresa";
             // 
@@ -311,10 +311,10 @@
             // lb_emp_telefone
             // 
             this.lb_emp_telefone.AutoSize = true;
-            this.lb_emp_telefone.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_emp_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_emp_telefone.Location = new System.Drawing.Point(241, 462);
             this.lb_emp_telefone.Name = "lb_emp_telefone";
-            this.lb_emp_telefone.Size = new System.Drawing.Size(78, 23);
+            this.lb_emp_telefone.Size = new System.Drawing.Size(89, 25);
             this.lb_emp_telefone.TabIndex = 4;
             this.lb_emp_telefone.Text = "Telefone";
             // 
@@ -339,49 +339,49 @@
             // lb_txt6
             // 
             this.lb_txt6.AutoSize = true;
-            this.lb_txt6.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt6.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt6.Location = new System.Drawing.Point(815, 235);
             this.lb_txt6.Name = "lb_txt6";
-            this.lb_txt6.Size = new System.Drawing.Size(165, 21);
+            this.lb_txt6.Size = new System.Drawing.Size(211, 21);
             this.lb_txt6.TabIndex = 35;
             this.lb_txt6.Text = "Em até 12 vezes no cartão de";
             // 
             // lb_rs_cartao
             // 
             this.lb_rs_cartao.AutoSize = true;
-            this.lb_rs_cartao.Font = new System.Drawing.Font("Dubai", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rs_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs_cartao.ForeColor = System.Drawing.Color.Red;
             this.lb_rs_cartao.Location = new System.Drawing.Point(836, 190);
             this.lb_rs_cartao.Name = "lb_rs_cartao";
-            this.lb_rs_cartao.Size = new System.Drawing.Size(51, 45);
+            this.lb_rs_cartao.Size = new System.Drawing.Size(49, 36);
             this.lb_rs_cartao.TabIndex = 34;
             this.lb_rs_cartao.Text = "R$";
             // 
             // lb_rs_boleto
             // 
             this.lb_rs_boleto.AutoSize = true;
-            this.lb_rs_boleto.Font = new System.Drawing.Font("Dubai", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rs_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs_boleto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
             this.lb_rs_boleto.Location = new System.Drawing.Point(834, 77);
             this.lb_rs_boleto.Name = "lb_rs_boleto";
-            this.lb_rs_boleto.Size = new System.Drawing.Size(65, 60);
+            this.lb_rs_boleto.Size = new System.Drawing.Size(63, 46);
             this.lb_rs_boleto.TabIndex = 34;
             this.lb_rs_boleto.Text = "R$";
             // 
             // lb_txt1
             // 
             this.lb_txt1.AutoSize = true;
-            this.lb_txt1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt1.Location = new System.Drawing.Point(502, 127);
             this.lb_txt1.Name = "lb_txt1";
-            this.lb_txt1.Size = new System.Drawing.Size(172, 26);
+            this.lb_txt1.Size = new System.Drawing.Size(181, 21);
             this.lb_txt1.TabIndex = 28;
             this.lb_txt1.Text = "Disponibilidade do Hotel";
             // 
             // bt_reservar
             // 
             this.bt_reservar.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_reservar.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_reservar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_reservar.ForeColor = System.Drawing.Color.White;
             this.bt_reservar.Location = new System.Drawing.Point(826, 291);
             this.bt_reservar.Name = "bt_reservar";
@@ -393,20 +393,20 @@
             // lb_txt2
             // 
             this.lb_txt2.AutoSize = true;
-            this.lb_txt2.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt2.Location = new System.Drawing.Point(502, 218);
             this.lb_txt2.Name = "lb_txt2";
-            this.lb_txt2.Size = new System.Drawing.Size(184, 26);
+            this.lb_txt2.Size = new System.Drawing.Size(193, 21);
             this.lb_txt2.TabIndex = 21;
             this.lb_txt2.Text = "Serviços incluso no quarto";
             // 
             // lb_nome_quarto
             // 
             this.lb_nome_quarto.AutoSize = true;
-            this.lb_nome_quarto.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nome_quarto.Location = new System.Drawing.Point(480, 13);
+            this.lb_nome_quarto.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nome_quarto.Location = new System.Drawing.Point(483, 8);
             this.lb_nome_quarto.Name = "lb_nome_quarto";
-            this.lb_nome_quarto.Size = new System.Drawing.Size(159, 36);
+            this.lb_nome_quarto.Size = new System.Drawing.Size(183, 40);
             this.lb_nome_quarto.TabIndex = 20;
             this.lb_nome_quarto.Text = "Nome do quarto";
             // 

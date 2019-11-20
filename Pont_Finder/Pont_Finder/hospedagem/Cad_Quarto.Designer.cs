@@ -65,84 +65,85 @@
             // 
             // input_valor
             // 
-            this.input_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.input_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input_valor.Location = new System.Drawing.Point(352, 800);
             this.input_valor.Name = "input_valor";
-            this.input_valor.Size = new System.Drawing.Size(200, 22);
+            this.input_valor.Size = new System.Drawing.Size(200, 24);
             this.input_valor.TabIndex = 4;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(311, 797);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 20);
+            this.label6.Size = new System.Drawing.Size(29, 21);
             this.label6.TabIndex = 12;
             this.label6.Text = "R$";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(300, 476);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(299, 20);
+            this.label2.Size = new System.Drawing.Size(278, 21);
             this.label2.TabIndex = 5;
             this.label2.Text = "Quantidade de pessoas suportadas:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(306, 398);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 20);
+            this.label1.Size = new System.Drawing.Size(267, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "Informe o tipo (nome) do quarto: ";
             // 
             // tb_qtdquarto
             // 
-            this.tb_qtdquarto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_qtdquarto.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_qtdquarto.Location = new System.Drawing.Point(347, 591);
             this.tb_qtdquarto.Name = "tb_qtdquarto";
-            this.tb_qtdquarto.Size = new System.Drawing.Size(200, 22);
+            this.tb_qtdquarto.Size = new System.Drawing.Size(200, 24);
             this.tb_qtdquarto.TabIndex = 2;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(344, 765);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(208, 20);
+            this.label5.Size = new System.Drawing.Size(203, 21);
             this.label5.TabIndex = 11;
             this.label5.Text = "Informe o valor da diária:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(292, 636);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(313, 20);
+            this.label4.Size = new System.Drawing.Size(296, 21);
             this.label4.TabIndex = 9;
             this.label4.Text = "Serviços disponiveis para este quarto:";
             // 
             // tb_nome
             // 
-            this.tb_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_nome.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_nome.Location = new System.Drawing.Point(240, 433);
             this.tb_nome.Name = "tb_nome";
-            this.tb_nome.Size = new System.Drawing.Size(415, 22);
+            this.tb_nome.Size = new System.Drawing.Size(415, 24);
             this.tb_nome.TabIndex = 0;
             // 
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
+            this.checkBox7.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox7.Location = new System.Drawing.Point(310, 724);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(86, 17);
+            this.checkBox7.Size = new System.Drawing.Size(81, 18);
             this.checkBox7.TabIndex = 29;
             this.checkBox7.Text = "Espaço PET";
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -150,9 +151,10 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox4.Location = new System.Drawing.Point(538, 701);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(47, 17);
+            this.checkBox4.Size = new System.Drawing.Size(49, 18);
             this.checkBox4.TabIndex = 28;
             this.checkBox4.Text = "Wi-fi";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -160,9 +162,10 @@
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
+            this.checkBox5.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox5.Location = new System.Drawing.Point(423, 701);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(76, 17);
+            this.checkBox5.Size = new System.Drawing.Size(74, 18);
             this.checkBox5.TabIndex = 27;
             this.checkBox5.Text = "TV a cabo";
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -170,9 +173,10 @@
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
+            this.checkBox6.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox6.Location = new System.Drawing.Point(310, 701);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(90, 17);
+            this.checkBox6.Size = new System.Drawing.Size(92, 18);
             this.checkBox6.TabIndex = 26;
             this.checkBox6.Text = "Café da tarde";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -180,9 +184,10 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.Location = new System.Drawing.Point(538, 678);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(61, 17);
+            this.checkBox3.Size = new System.Drawing.Size(62, 18);
             this.checkBox3.TabIndex = 25;
             this.checkBox3.Text = "Almoço";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -190,9 +195,10 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.Location = new System.Drawing.Point(423, 678);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(103, 17);
+            this.checkBox2.Size = new System.Drawing.Size(104, 18);
             this.checkBox2.TabIndex = 24;
             this.checkBox2.Text = "Ar condicionado";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -200,9 +206,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(310, 678);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 17);
+            this.checkBox1.Size = new System.Drawing.Size(99, 18);
             this.checkBox1.TabIndex = 23;
             this.checkBox1.Text = "Café da manhã";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -210,9 +217,10 @@
             // rb_pessoas_6
             // 
             this.rb_pessoas_6.AutoSize = true;
+            this.rb_pessoas_6.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_pessoas_6.Location = new System.Drawing.Point(559, 517);
             this.rb_pessoas_6.Name = "rb_pessoas_6";
-            this.rb_pessoas_6.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_6.Size = new System.Drawing.Size(31, 18);
             this.rb_pessoas_6.TabIndex = 22;
             this.rb_pessoas_6.TabStop = true;
             this.rb_pessoas_6.Text = "6";
@@ -221,9 +229,10 @@
             // rb_pessoas_5
             // 
             this.rb_pessoas_5.AutoSize = true;
+            this.rb_pessoas_5.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_pessoas_5.Location = new System.Drawing.Point(509, 517);
             this.rb_pessoas_5.Name = "rb_pessoas_5";
-            this.rb_pessoas_5.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_5.Size = new System.Drawing.Size(31, 18);
             this.rb_pessoas_5.TabIndex = 21;
             this.rb_pessoas_5.TabStop = true;
             this.rb_pessoas_5.Text = "5";
@@ -232,9 +241,10 @@
             // rb_pessoas_4
             // 
             this.rb_pessoas_4.AutoSize = true;
+            this.rb_pessoas_4.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_pessoas_4.Location = new System.Drawing.Point(458, 517);
             this.rb_pessoas_4.Name = "rb_pessoas_4";
-            this.rb_pessoas_4.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_4.Size = new System.Drawing.Size(31, 18);
             this.rb_pessoas_4.TabIndex = 20;
             this.rb_pessoas_4.TabStop = true;
             this.rb_pessoas_4.Text = "4";
@@ -243,9 +253,10 @@
             // rb_pessoas_3
             // 
             this.rb_pessoas_3.AutoSize = true;
+            this.rb_pessoas_3.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_pessoas_3.Location = new System.Drawing.Point(408, 517);
             this.rb_pessoas_3.Name = "rb_pessoas_3";
-            this.rb_pessoas_3.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_3.Size = new System.Drawing.Size(31, 18);
             this.rb_pessoas_3.TabIndex = 19;
             this.rb_pessoas_3.TabStop = true;
             this.rb_pessoas_3.Text = "3";
@@ -254,9 +265,10 @@
             // rb_pessoas_2
             // 
             this.rb_pessoas_2.AutoSize = true;
+            this.rb_pessoas_2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_pessoas_2.Location = new System.Drawing.Point(352, 517);
             this.rb_pessoas_2.Name = "rb_pessoas_2";
-            this.rb_pessoas_2.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_2.Size = new System.Drawing.Size(31, 18);
             this.rb_pessoas_2.TabIndex = 18;
             this.rb_pessoas_2.TabStop = true;
             this.rb_pessoas_2.Text = "2";
@@ -265,9 +277,10 @@
             // rb_pessoas_1
             // 
             this.rb_pessoas_1.AutoSize = true;
+            this.rb_pessoas_1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_pessoas_1.Location = new System.Drawing.Point(296, 517);
             this.rb_pessoas_1.Name = "rb_pessoas_1";
-            this.rb_pessoas_1.Size = new System.Drawing.Size(31, 17);
+            this.rb_pessoas_1.Size = new System.Drawing.Size(31, 18);
             this.rb_pessoas_1.TabIndex = 17;
             this.rb_pessoas_1.TabStop = true;
             this.rb_pessoas_1.Text = "1";
@@ -276,10 +289,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(303, 555);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(290, 20);
+            this.label3.Size = new System.Drawing.Size(274, 21);
             this.label3.TabIndex = 7;
             this.label3.Text = "Quantidade de quartos existentes: ";
             // 
@@ -298,7 +311,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(389, 312);
             this.button1.Name = "button1";
@@ -312,11 +325,11 @@
             // 
             this.bt_cadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
             this.bt_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_cadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_cadastrar.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cadastrar.ForeColor = System.Drawing.Color.White;
-            this.bt_cadastrar.Location = new System.Drawing.Point(290, 865);
+            this.bt_cadastrar.Location = new System.Drawing.Point(337, 853);
             this.bt_cadastrar.Name = "bt_cadastrar";
-            this.bt_cadastrar.Size = new System.Drawing.Size(300, 50);
+            this.bt_cadastrar.Size = new System.Drawing.Size(236, 53);
             this.bt_cadastrar.TabIndex = 6;
             this.bt_cadastrar.Text = "Cadastrar Quarto";
             this.bt_cadastrar.UseVisualStyleBackColor = false;
@@ -325,10 +338,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Dubai", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft PhagsPa", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(268, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(375, 49);
+            this.label7.Size = new System.Drawing.Size(412, 38);
             this.label7.TabIndex = 32;
             this.label7.Text = "Informe os dados do quarto!";
             // 
