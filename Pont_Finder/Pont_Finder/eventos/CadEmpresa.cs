@@ -75,5 +75,10 @@ namespace Pont_Finder.eventos
         {
 
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

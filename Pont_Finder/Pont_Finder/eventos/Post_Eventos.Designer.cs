@@ -74,10 +74,10 @@
             // rb_musica
             // 
             this.rb_musica.AutoSize = true;
-            this.rb_musica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_musica.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_musica.Location = new System.Drawing.Point(26, 21);
             this.rb_musica.Name = "rb_musica";
-            this.rb_musica.Size = new System.Drawing.Size(74, 22);
+            this.rb_musica.Size = new System.Drawing.Size(73, 24);
             this.rb_musica.TabIndex = 0;
             this.rb_musica.TabStop = true;
             this.rb_musica.Text = "Música";
@@ -87,7 +87,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(204, 1358);
             this.button2.Name = "button2";
@@ -99,6 +99,7 @@
             // 
             // CBfaixaetaria
             // 
+            this.CBfaixaetaria.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBfaixaetaria.FormattingEnabled = true;
             this.CBfaixaetaria.Items.AddRange(new object[] {
             "L",
@@ -107,11 +108,12 @@
             "18+"});
             this.CBfaixaetaria.Location = new System.Drawing.Point(375, 1186);
             this.CBfaixaetaria.Name = "CBfaixaetaria";
-            this.CBfaixaetaria.Size = new System.Drawing.Size(121, 21);
+            this.CBfaixaetaria.Size = new System.Drawing.Size(121, 25);
             this.CBfaixaetaria.TabIndex = 7;
             // 
             // Blocal
             // 
+            this.Blocal.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Blocal.Location = new System.Drawing.Point(342, 1102);
             this.Blocal.Multiline = true;
             this.Blocal.Name = "Blocal";
@@ -120,87 +122,91 @@
             // 
             // Bvalor
             // 
+            this.Bvalor.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bvalor.Location = new System.Drawing.Point(338, 1226);
             this.Bvalor.Name = "Bvalor";
-            this.Bvalor.Size = new System.Drawing.Size(118, 20);
+            this.Bvalor.Size = new System.Drawing.Size(118, 24);
             this.Bvalor.TabIndex = 8;
             // 
             // Bpatrocionadores
             // 
+            this.Bpatrocionadores.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bpatrocionadores.Location = new System.Drawing.Point(397, 1150);
             this.Bpatrocionadores.Name = "Bpatrocionadores";
-            this.Bpatrocionadores.Size = new System.Drawing.Size(210, 20);
+            this.Bpatrocionadores.Size = new System.Drawing.Size(210, 24);
             this.Bpatrocionadores.TabIndex = 6;
             // 
             // Bhorario
             // 
+            this.Bhorario.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bhorario.Location = new System.Drawing.Point(103, 1274);
             this.Bhorario.Name = "Bhorario";
-            this.Bhorario.Size = new System.Drawing.Size(100, 20);
+            this.Bhorario.Size = new System.Drawing.Size(100, 24);
             this.Bhorario.TabIndex = 4;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(288, 1150);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(109, 18);
+            this.label11.Size = new System.Drawing.Size(108, 20);
             this.label11.TabIndex = 15;
             this.label11.Text = "Patrocinadores";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(288, 1225);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 18);
+            this.label10.Size = new System.Drawing.Size(44, 20);
             this.label10.TabIndex = 14;
             this.label10.Text = "Valor";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(288, 1186);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 18);
+            this.label9.Size = new System.Drawing.Size(85, 20);
             this.label9.TabIndex = 13;
             this.label9.Text = "Faixa etária";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(288, 1108);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 18);
+            this.label8.Size = new System.Drawing.Size(44, 20);
             this.label8.TabIndex = 12;
             this.label8.Text = "Local";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(34, 1272);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 18);
+            this.label7.Size = new System.Drawing.Size(60, 20);
             this.label7.TabIndex = 11;
             this.label7.Text = "Horario";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(237, 1057);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(187, 24);
+            this.label5.Size = new System.Drawing.Size(181, 25);
             this.label5.TabIndex = 9;
             this.label5.Text = "Informações gerais";
             // 
             // Bdescricao
             // 
+            this.Bdescricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bdescricao.Location = new System.Drawing.Point(121, 809);
             this.Bdescricao.Multiline = true;
             this.Bdescricao.Name = "Bdescricao";
@@ -210,20 +216,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(224, 764);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(202, 24);
+            this.label4.Size = new System.Drawing.Size(192, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Descrição do evento";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(32, 1230);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 18);
+            this.label6.Size = new System.Drawing.Size(41, 20);
             this.label6.TabIndex = 10;
             this.label6.Text = "Data";
             // 
@@ -252,10 +258,10 @@
             // rb_tecnologia
             // 
             this.rb_tecnologia.AutoSize = true;
-            this.rb_tecnologia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_tecnologia.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_tecnologia.Location = new System.Drawing.Point(359, 91);
             this.rb_tecnologia.Name = "rb_tecnologia";
-            this.rb_tecnologia.Size = new System.Drawing.Size(99, 22);
+            this.rb_tecnologia.Size = new System.Drawing.Size(101, 24);
             this.rb_tecnologia.TabIndex = 5;
             this.rb_tecnologia.TabStop = true;
             this.rb_tecnologia.Text = "Tecnologia";
@@ -264,10 +270,10 @@
             // rb_esporte
             // 
             this.rb_esporte.AutoSize = true;
-            this.rb_esporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_esporte.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_esporte.Location = new System.Drawing.Point(214, 91);
             this.rb_esporte.Name = "rb_esporte";
-            this.rb_esporte.Size = new System.Drawing.Size(78, 22);
+            this.rb_esporte.Size = new System.Drawing.Size(77, 24);
             this.rb_esporte.TabIndex = 4;
             this.rb_esporte.TabStop = true;
             this.rb_esporte.Text = "Esporte";
@@ -276,10 +282,10 @@
             // rb_gastronomia
             // 
             this.rb_gastronomia.AutoSize = true;
-            this.rb_gastronomia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_gastronomia.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_gastronomia.Location = new System.Drawing.Point(26, 91);
             this.rb_gastronomia.Name = "rb_gastronomia";
-            this.rb_gastronomia.Size = new System.Drawing.Size(113, 22);
+            this.rb_gastronomia.Size = new System.Drawing.Size(112, 24);
             this.rb_gastronomia.TabIndex = 3;
             this.rb_gastronomia.TabStop = true;
             this.rb_gastronomia.Text = "Gastronomia";
@@ -288,10 +294,10 @@
             // rb_cultural
             // 
             this.rb_cultural.AutoSize = true;
-            this.rb_cultural.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_cultural.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_cultural.Location = new System.Drawing.Point(359, 21);
             this.rb_cultural.Name = "rb_cultural";
-            this.rb_cultural.Size = new System.Drawing.Size(76, 22);
+            this.rb_cultural.Size = new System.Drawing.Size(78, 24);
             this.rb_cultural.TabIndex = 2;
             this.rb_cultural.TabStop = true;
             this.rb_cultural.Text = "Cultural";
@@ -300,10 +306,10 @@
             // rb_workshop
             // 
             this.rb_workshop.AutoSize = true;
-            this.rb_workshop.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_workshop.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_workshop.Location = new System.Drawing.Point(214, 21);
             this.rb_workshop.Name = "rb_workshop";
-            this.rb_workshop.Size = new System.Drawing.Size(96, 22);
+            this.rb_workshop.Size = new System.Drawing.Size(94, 24);
             this.rb_workshop.TabIndex = 1;
             this.rb_workshop.TabStop = true;
             this.rb_workshop.Text = "Workshop";
@@ -312,10 +318,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(211, 504);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 24);
+            this.label3.Size = new System.Drawing.Size(199, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Selecione a categoria";
             // 
@@ -323,7 +329,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(228, 404);
             this.button1.Name = "button1";
@@ -336,10 +342,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(224, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 24);
+            this.label2.Size = new System.Drawing.Size(177, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Adicionar imagens";
             // 
@@ -381,61 +387,65 @@
             // 
             // tb_ingresso_total
             // 
+            this.tb_ingresso_total.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_ingresso_total.Location = new System.Drawing.Point(125, 1154);
             this.tb_ingresso_total.Name = "tb_ingresso_total";
-            this.tb_ingresso_total.Size = new System.Drawing.Size(100, 20);
+            this.tb_ingresso_total.Size = new System.Drawing.Size(100, 24);
             this.tb_ingresso_total.TabIndex = 1;
             // 
             // tb_ingresso_disponivel
             // 
+            this.tb_ingresso_disponivel.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_ingresso_disponivel.Location = new System.Drawing.Point(163, 1191);
             this.tb_ingresso_disponivel.Name = "tb_ingresso_disponivel";
-            this.tb_ingresso_disponivel.Size = new System.Drawing.Size(100, 20);
+            this.tb_ingresso_disponivel.Size = new System.Drawing.Size(100, 24);
             this.tb_ingresso_disponivel.TabIndex = 2;
             // 
             // lb_ingresso_disponivel
             // 
             this.lb_ingresso_disponivel.AutoSize = true;
-            this.lb_ingresso_disponivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ingresso_disponivel.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_ingresso_disponivel.Location = new System.Drawing.Point(28, 1191);
             this.lb_ingresso_disponivel.Name = "lb_ingresso_disponivel";
-            this.lb_ingresso_disponivel.Size = new System.Drawing.Size(134, 18);
+            this.lb_ingresso_disponivel.Size = new System.Drawing.Size(136, 20);
             this.lb_ingresso_disponivel.TabIndex = 19;
             this.lb_ingresso_disponivel.Text = "Ingresso disponível";
             // 
             // lb_ingresso_total
             // 
             this.lb_ingresso_total.AutoSize = true;
-            this.lb_ingresso_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ingresso_total.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_ingresso_total.Location = new System.Drawing.Point(26, 1152);
             this.lb_ingresso_total.Name = "lb_ingresso_total";
-            this.lb_ingresso_total.Size = new System.Drawing.Size(97, 18);
+            this.lb_ingresso_total.Size = new System.Drawing.Size(99, 20);
             this.lb_ingresso_total.TabIndex = 18;
             this.lb_ingresso_total.Text = "Ingresso total";
             // 
             // lb_nome
             // 
             this.lb_nome.AutoSize = true;
-            this.lb_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nome.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_nome.Location = new System.Drawing.Point(23, 1110);
             this.lb_nome.Name = "lb_nome";
-            this.lb_nome.Size = new System.Drawing.Size(49, 18);
+            this.lb_nome.Size = new System.Drawing.Size(50, 20);
             this.lb_nome.TabIndex = 17;
             this.lb_nome.Text = "Nome";
             // 
             // tb_nome
             // 
+            this.tb_nome.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_nome.Location = new System.Drawing.Point(77, 1111);
             this.tb_nome.Name = "tb_nome";
-            this.tb_nome.Size = new System.Drawing.Size(100, 20);
+            this.tb_nome.Size = new System.Drawing.Size(100, 24);
             this.tb_nome.TabIndex = 0;
             // 
             // Bdata
             // 
+            this.Bdata.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bdata.Location = new System.Drawing.Point(76, 1231);
             this.Bdata.Mask = "00/00/0000";
             this.Bdata.Name = "Bdata";
-            this.Bdata.Size = new System.Drawing.Size(113, 20);
+            this.Bdata.Size = new System.Drawing.Size(113, 24);
             this.Bdata.TabIndex = 3;
             this.Bdata.ValidatingType = typeof(System.DateTime);
             // 
@@ -463,10 +473,10 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(446, 16);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(366, 37);
+            this.label12.Size = new System.Drawing.Size(355, 42);
             this.label12.TabIndex = 7;
             this.label12.Text = "Poste seu Evento aqui!";
             // 
