@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro_Empresa));
             this.label4 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -76,6 +77,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.panel3.SuspendLayout();
@@ -289,7 +291,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.pn_galery);
             this.panel3.Controls.Add(this.label17);
@@ -310,6 +312,7 @@
             // pn_galery
             // 
             this.pn_galery.AutoScroll = true;
+            this.pn_galery.BackColor = System.Drawing.Color.Transparent;
             this.pn_galery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pn_galery.Location = new System.Drawing.Point(73, 319);
             this.pn_galery.Name = "pn_galery";
@@ -588,6 +591,11 @@
             this.btn_back.MouseLeave += new System.EventHandler(this.btn_back_MouseLeave);
             this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_back_MouseMove);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Cadastro_Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -677,5 +685,6 @@
         private System.Windows.Forms.CheckBox ckb_wifi;
         private System.Windows.Forms.CheckBox ckb_lugarPet;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Timer timer1;
     }
 }

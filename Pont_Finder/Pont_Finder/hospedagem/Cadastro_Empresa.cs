@@ -15,7 +15,7 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Cadastro_Empresa : Form
     {
-        public static string fotin;
+        public static string fotin = null;
 
         OpenFileDialog openimg = new OpenFileDialog();
         Form anterior;
@@ -23,7 +23,7 @@ namespace Pont_Finder.hospedagem
         {
             this.anterior = anterior;
             InitializeComponent();
-            pb_img1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_img1.SizeMode = PictureBoxSizeMode.StretchImage;   
         }
 
 
@@ -235,9 +235,12 @@ namespace Pont_Finder.hospedagem
                 int x = 5;
                 int abcd = 0;
 
+                pn_galery.Controls.Clear();
+                
+
                 foreach (var img in openimg.FileNames)
                 {
-                    data.inc.Img_list gallery = new data.inc.Img_list(img, this);
+                    data.inc.Img_list gallery = new data.inc.Img_list(img);
 
                     gallery.Location = new Point((x), 12);
                     x = x + gallery.Width + 5;
@@ -245,6 +248,7 @@ namespace Pont_Finder.hospedagem
                     
                     if (abcd == 0)
                     {
+                        fotin = img;
                         pb_img1.ImageLocation = img;
                         pb_img1.Load();
                         abcd++;
@@ -286,15 +290,21 @@ namespace Pont_Finder.hospedagem
 
         public void pn_galery_MouseClick(object sender, MouseEventArgs e)
         {
-
-            pb_img1.ImageLocation = fotin;
-            pb_img1.Load();
+           
         }
 
         private void pn_galery_MouseUp(object sender, MouseEventArgs e)
         {
-            pb_img1.ImageLocation = fotin;
-            pb_img1.Load();
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (fotin != null)
+            {
+                pb_img1.ImageLocation = fotin;
+                pb_img1.Load();
+            }
         }
     }
 }

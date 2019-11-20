@@ -13,10 +13,10 @@ namespace Pont_Finder.hospedagem.data.inc
     public partial class Img_list : UserControl
     {
         private string imagem;
-        Form pedro;
-        public Img_list(string foto, Form pedro)
+
+        public Img_list(string foto)
         {
-            this.pedro = pedro;
+           
             InitializeComponent();
 
             pb_img.ImageLocation = foto;
@@ -33,10 +33,7 @@ namespace Pont_Finder.hospedagem.data.inc
 
             Cadastro_Empresa cd = new Cadastro_Empresa(null);
             cd.pn_galery_MouseClick(null, null);
-             
-            /*Cadastro_Empresa cd = new Cadastro_Empresa(null);
-            cd.UpdateGallery(imagem);
-            return imagem;*/
+          
         }
     }
 }
