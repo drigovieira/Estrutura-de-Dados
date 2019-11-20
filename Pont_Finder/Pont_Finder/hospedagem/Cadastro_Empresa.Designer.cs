@@ -315,6 +315,9 @@
             this.pn_galery.Name = "pn_galery";
             this.pn_galery.Size = new System.Drawing.Size(450, 94);
             this.pn_galery.TabIndex = 39;
+            this.pn_galery.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_galery_Paint);
+            this.pn_galery.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pn_galery_MouseClick);
+            this.pn_galery.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pn_galery_MouseUp);
             // 
             // label17
             // 
@@ -479,6 +482,7 @@
             this.pb_img1.Size = new System.Drawing.Size(450, 242);
             this.pb_img1.TabIndex = 3;
             this.pb_img1.TabStop = false;
+            this.pb_img1.Click += new System.EventHandler(this.pb_img1_Click);
             // 
             // bt_add_img
             // 

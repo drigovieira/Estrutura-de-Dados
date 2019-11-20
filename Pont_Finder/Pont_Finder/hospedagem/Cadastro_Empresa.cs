@@ -15,6 +15,7 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Cadastro_Empresa : Form
     {
+        public static string fotin;
 
         OpenFileDialog openimg = new OpenFileDialog();
         Form anterior;
@@ -29,6 +30,13 @@ namespace Pont_Finder.hospedagem
         private void Cadastro_Empresa_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void UpdateGallery(string fotona)
+        {
+            MessageBox.Show(fotona);
+            pb_img1.ImageLocation = fotin;
+            pb_img1.Load();
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -224,10 +232,23 @@ namespace Pont_Finder.hospedagem
 
             if (openimg.ShowDialog() == DialogResult.OK)
             {
+                int x = 5;
+                int abcd = 0;
+
                 foreach (var img in openimg.FileNames)
                 {
-                    pb_img1.ImageLocation = img;
-                    pb_img1.Load();
+                    data.inc.Img_list gallery = new data.inc.Img_list(img, this);
+
+                    gallery.Location = new Point((x), 12);
+                    x = x + gallery.Width + 5;
+                    pn_galery.Controls.Add(gallery);
+                    
+                    if (abcd == 0)
+                    {
+                        pb_img1.ImageLocation = img;
+                        pb_img1.Load();
+                        abcd++;
+                    }
                 }
             }
         }
@@ -250,6 +271,30 @@ namespace Pont_Finder.hospedagem
         private void btn_back_MouseMove(object sender, MouseEventArgs e)
         {
             btn_back.Image = Properties.Resources.back_2;
+        }
+
+        private void pn_galery_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+
+
+        private void pb_img1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void pn_galery_MouseClick(object sender, MouseEventArgs e)
+        {
+
+            pb_img1.ImageLocation = fotin;
+            pb_img1.Load();
+        }
+
+        private void pn_galery_MouseUp(object sender, MouseEventArgs e)
+        {
+            pb_img1.ImageLocation = fotin;
+            pb_img1.Load();
         }
     }
 }
