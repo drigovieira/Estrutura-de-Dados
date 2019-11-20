@@ -6,9 +6,9 @@
     <nome>Pacote Familia 1</nome>
     <qtd_pessoas>4</qtd_pessoas>
     <qtd_quartos>2</qtd_quartos>
-    <servicos> * Café da manhã * Estacionamento * Almoço * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
-    <valor>80</valor>
-    <foto>..//..//hospedagem//data//images//empresas//34254142342342//quartos//0//Pacote Familia 1.jpg</foto>
+    <servicos> * Almoço * Café da tarde * Wi-fi * Espaço PET</servicos>
+    <valor>100</valor>
+    <foto />
     <estado>Disponivel</estado>
     <status>true</status>
   </quarto>

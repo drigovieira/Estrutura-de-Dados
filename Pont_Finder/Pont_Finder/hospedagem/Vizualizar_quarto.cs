@@ -36,5 +36,10 @@ namespace Pont_Finder.hospedagem
             btn_back.Image = Properties.Resources.back_1;
             //btn_back.ImageLocation = "..//..//Resources//back-1.png";
         }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

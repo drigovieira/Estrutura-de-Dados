@@ -130,7 +130,7 @@ namespace Pont_Finder.hospedagem
                     string a = "Almoço";
                     servicos.Add(a);
                 }
-                if (checkBox4.Checked)
+                if (checkBox6.Checked)
                 {
                     string a = "Café da tarde";
                     servicos.Add(a);
@@ -140,7 +140,7 @@ namespace Pont_Finder.hospedagem
                     string a = "TV a cabo";
                     servicos.Add(a);
                 }
-                if (checkBox6.Checked)
+                if (checkBox4.Checked)
                 {
                     string a = "Wi-fi";
                     servicos.Add(a);
@@ -150,6 +150,7 @@ namespace Pont_Finder.hospedagem
                     string a = "Espaço PET";
                     servicos.Add(a);
                 }
+                
 
                 foreach (var elemento in servicos)
                 {

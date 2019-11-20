@@ -95,6 +95,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(845, 978);
             this.panel2.TabIndex = 36;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
             // label7
             // 
@@ -118,6 +119,7 @@
             this.button1.TabIndex = 31;
             this.button1.Text = "Adicionar Foto";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // tb_nome
             // 
@@ -205,7 +207,7 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(538, 701);
+            this.checkBox4.Location = new System.Drawing.Point(543, 707);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(47, 17);
             this.checkBox4.TabIndex = 28;
@@ -224,6 +226,7 @@
             this.bt_cadastrar.TabIndex = 6;
             this.bt_cadastrar.Text = "Alterar";
             this.bt_cadastrar.UseVisualStyleBackColor = false;
+            this.bt_cadastrar.Click += new System.EventHandler(this.Bt_cadastrar_Click);
             // 
             // label5
             // 
@@ -316,7 +319,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(310, 678);
+            this.checkBox1.Location = new System.Drawing.Point(310, 682);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(98, 17);
             this.checkBox1.TabIndex = 23;
@@ -385,6 +388,7 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Editar_Quarto";
             this.Text = "Editar_Quarto";
+            this.Load += new System.EventHandler(this.Editar_Quarto_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).EndInit();
@@ -422,5 +426,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox checkBox8;
     }
 }

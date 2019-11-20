@@ -14,13 +14,13 @@ namespace Pont_Finder.hospedagem
     {
         private int id, qtd_pessoas, qtd_disponivel;
         private string nome, empresa, servicos, foto, status;
-
         private double valor;
         private bool ativo;
 
+
         private void bt_editar_Click(object sender, EventArgs e)
         {
-            hospedagem.Editar_Quarto editQuarto = new hospedagem.Editar_Quarto();
+            hospedagem.Editar_Quarto editQuarto = new hospedagem.Editar_Quarto(id);
             FormPrincipal.MudarForm("hospedagem", editQuarto);
         }
 
