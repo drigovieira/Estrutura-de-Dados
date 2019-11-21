@@ -117,6 +117,7 @@
             // 
             // monthCalendar1
             // 
+            this.monthCalendar1.AccessibleDescription = "Teste";
             this.monthCalendar1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monthCalendar1.Location = new System.Drawing.Point(43, 53);
             this.monthCalendar1.Name = "monthCalendar1";

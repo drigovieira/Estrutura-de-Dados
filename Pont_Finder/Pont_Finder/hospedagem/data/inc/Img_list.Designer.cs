@@ -41,6 +41,7 @@
             this.pb_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_img.TabIndex = 1;
             this.pb_img.TabStop = false;
+            this.pb_img.Click += new System.EventHandler(this.pb_img_Click);
             // 
             // Img_list
             // 

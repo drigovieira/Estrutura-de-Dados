@@ -49,7 +49,7 @@ namespace Pont_Finder.alimentos
                     {
                         if(cont == 3)
                         {
-                            categoriaCompany += " ...";
+                            categoriaCompany += " e mais ...";
                             break;
                         }
                         categoriaCompany += " / " + aliment;
@@ -83,7 +83,7 @@ namespace Pont_Finder.alimentos
             lbRua.Text = ruaCompany;
             lbBairro.Text = bairroCompany;
             lbNumero.Text = numCompany.ToString();
-            lbContato.Text = contatoCompany.ToString();
+            lbContato.Text = contatoCompany.ToString(@"(00) 00000-0000");
             lbCategoria.Text = categoriaCompany;
         }
     }

@@ -62,6 +62,7 @@
             this.rbPizzaria = new System.Windows.Forms.RadioButton();
             this.rbChurrascaria = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
+            this.remFiltro = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
@@ -73,6 +74,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.remFiltro);
             this.panel2.Controls.Add(this.pb_pesquisar);
             this.panel2.Controls.Add(this.Filtrar);
             this.panel2.Controls.Add(this.CategoriaBox);
@@ -109,6 +111,7 @@
             this.Filtrar.TabIndex = 12;
             this.Filtrar.Text = "Filtrar por:";
             this.Filtrar.UseVisualStyleBackColor = false;
+            this.Filtrar.Visible = false;
             this.Filtrar.Click += new System.EventHandler(this.Filtrar_Click);
             // 
             // CategoriaBox
@@ -457,6 +460,22 @@
             this.label11.TabIndex = 5;
             this.label11.Text = "Categorias:";
             // 
+            // remFiltro
+            // 
+            this.remFiltro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.remFiltro.FlatAppearance.BorderSize = 0;
+            this.remFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.remFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remFiltro.ForeColor = System.Drawing.Color.White;
+            this.remFiltro.Location = new System.Drawing.Point(200, 157);
+            this.remFiltro.Name = "remFiltro";
+            this.remFiltro.Size = new System.Drawing.Size(103, 37);
+            this.remFiltro.TabIndex = 45;
+            this.remFiltro.Text = "Sem Filtro";
+            this.remFiltro.UseVisualStyleBackColor = false;
+            this.remFiltro.Visible = false;
+            this.remFiltro.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // formAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -535,5 +554,6 @@
         private System.Windows.Forms.RadioButton rbFrutosDoMar;
         private System.Windows.Forms.RadioButton rbHambúrgueria;
         private System.Windows.Forms.RadioButton rbOutros;
+        private System.Windows.Forms.Button remFiltro;
     }
 }

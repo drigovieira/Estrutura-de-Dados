@@ -148,7 +148,7 @@
             this.mkb_Tel.Mask = "(00)00000-0000";
             this.mkb_Tel.Name = "mkb_Tel";
             this.mkb_Tel.Size = new System.Drawing.Size(170, 20);
-            this.mkb_Tel.TabIndex = 24;
+            this.mkb_Tel.TabIndex = 14;
             this.mkb_Tel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // mkb_Cep
@@ -157,7 +157,7 @@
             this.mkb_Cep.Mask = "00.000-000";
             this.mkb_Cep.Name = "mkb_Cep";
             this.mkb_Cep.Size = new System.Drawing.Size(170, 20);
-            this.mkb_Cep.TabIndex = 23;
+            this.mkb_Cep.TabIndex = 12;
             this.mkb_Cep.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // tbNum
@@ -166,7 +166,7 @@
             this.tbNum.Location = new System.Drawing.Point(100, 355);
             this.tbNum.Name = "tbNum";
             this.tbNum.Size = new System.Drawing.Size(170, 22);
-            this.tbNum.TabIndex = 22;
+            this.tbNum.TabIndex = 10;
             // 
             // label8
             // 
@@ -175,7 +175,7 @@
             this.label8.Location = new System.Drawing.Point(100, 325);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 20);
-            this.label8.TabIndex = 21;
+            this.label8.TabIndex = 9;
             this.label8.Text = "Número";
             // 
             // label1
@@ -185,7 +185,7 @@
             this.label1.Location = new System.Drawing.Point(100, 179);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 20);
-            this.label1.TabIndex = 20;
+            this.label1.TabIndex = 5;
             this.label1.Text = "Bairro";
             // 
             // tbEmail
@@ -194,7 +194,7 @@
             this.tbEmail.Location = new System.Drawing.Point(100, 517);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(415, 22);
-            this.tbEmail.TabIndex = 6;
+            this.tbEmail.TabIndex = 16;
             // 
             // tbRua
             // 
@@ -202,7 +202,7 @@
             this.tbRua.Location = new System.Drawing.Point(100, 280);
             this.tbRua.Name = "tbRua";
             this.tbRua.Size = new System.Drawing.Size(415, 22);
-            this.tbRua.TabIndex = 10;
+            this.tbRua.TabIndex = 8;
             // 
             // label5
             // 
@@ -229,7 +229,7 @@
             this.label6.Location = new System.Drawing.Point(101, 494);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 20);
-            this.label6.TabIndex = 5;
+            this.label6.TabIndex = 15;
             this.label6.Text = "Email\r\n";
             // 
             // tbBairro
@@ -238,7 +238,7 @@
             this.tbBairro.Location = new System.Drawing.Point(100, 209);
             this.tbBairro.Name = "tbBairro";
             this.tbBairro.Size = new System.Drawing.Size(415, 22);
-            this.tbBairro.TabIndex = 8;
+            this.tbBairro.TabIndex = 6;
             // 
             // label7
             // 
@@ -248,7 +248,7 @@
             this.label7.Location = new System.Drawing.Point(100, 401);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 20);
-            this.label7.TabIndex = 14;
+            this.label7.TabIndex = 13;
             this.label7.Text = "Telefone";
             // 
             // label9
@@ -457,7 +457,7 @@
             this.maskedTextBox13.Mask = "00:00";
             this.maskedTextBox13.Name = "maskedTextBox13";
             this.maskedTextBox13.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox13.TabIndex = 61;
+            this.maskedTextBox13.TabIndex = 60;
             this.maskedTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox14
@@ -468,7 +468,7 @@
             this.maskedTextBox14.Mask = "00:00";
             this.maskedTextBox14.Name = "maskedTextBox14";
             this.maskedTextBox14.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox14.TabIndex = 60;
+            this.maskedTextBox14.TabIndex = 58;
             this.maskedTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox15
@@ -479,7 +479,7 @@
             this.maskedTextBox15.Mask = "00:00";
             this.maskedTextBox15.Name = "maskedTextBox15";
             this.maskedTextBox15.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox15.TabIndex = 59;
+            this.maskedTextBox15.TabIndex = 56;
             this.maskedTextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox16
@@ -490,7 +490,7 @@
             this.maskedTextBox16.Mask = "00:00";
             this.maskedTextBox16.Name = "maskedTextBox16";
             this.maskedTextBox16.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox16.TabIndex = 58;
+            this.maskedTextBox16.TabIndex = 54;
             this.maskedTextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox17
@@ -501,7 +501,7 @@
             this.maskedTextBox17.Mask = "00:00";
             this.maskedTextBox17.Name = "maskedTextBox17";
             this.maskedTextBox17.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox17.TabIndex = 57;
+            this.maskedTextBox17.TabIndex = 52;
             this.maskedTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox18
@@ -512,7 +512,7 @@
             this.maskedTextBox18.Mask = "00:00";
             this.maskedTextBox18.Name = "maskedTextBox18";
             this.maskedTextBox18.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox18.TabIndex = 56;
+            this.maskedTextBox18.TabIndex = 50;
             this.maskedTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox19
@@ -523,7 +523,7 @@
             this.maskedTextBox19.Mask = "00:00";
             this.maskedTextBox19.Name = "maskedTextBox19";
             this.maskedTextBox19.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox19.TabIndex = 55;
+            this.maskedTextBox19.TabIndex = 48;
             this.maskedTextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox11
@@ -534,7 +534,7 @@
             this.maskedTextBox11.Mask = "00:00";
             this.maskedTextBox11.Name = "maskedTextBox11";
             this.maskedTextBox11.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox11.TabIndex = 54;
+            this.maskedTextBox11.TabIndex = 61;
             this.maskedTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox10
@@ -545,7 +545,7 @@
             this.maskedTextBox10.Mask = "00:00";
             this.maskedTextBox10.Name = "maskedTextBox10";
             this.maskedTextBox10.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox10.TabIndex = 53;
+            this.maskedTextBox10.TabIndex = 59;
             this.maskedTextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox9
@@ -556,7 +556,7 @@
             this.maskedTextBox9.Mask = "00:00";
             this.maskedTextBox9.Name = "maskedTextBox9";
             this.maskedTextBox9.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox9.TabIndex = 52;
+            this.maskedTextBox9.TabIndex = 57;
             this.maskedTextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox8
@@ -567,7 +567,7 @@
             this.maskedTextBox8.Mask = "00:00";
             this.maskedTextBox8.Name = "maskedTextBox8";
             this.maskedTextBox8.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox8.TabIndex = 51;
+            this.maskedTextBox8.TabIndex = 55;
             this.maskedTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox7
@@ -578,7 +578,7 @@
             this.maskedTextBox7.Mask = "00:00";
             this.maskedTextBox7.Name = "maskedTextBox7";
             this.maskedTextBox7.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox7.TabIndex = 50;
+            this.maskedTextBox7.TabIndex = 53;
             this.maskedTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox6
@@ -589,7 +589,7 @@
             this.maskedTextBox6.Mask = "00:00";
             this.maskedTextBox6.Name = "maskedTextBox6";
             this.maskedTextBox6.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox6.TabIndex = 49;
+            this.maskedTextBox6.TabIndex = 51;
             this.maskedTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox5
@@ -600,7 +600,7 @@
             this.maskedTextBox5.Mask = "00:00";
             this.maskedTextBox5.Name = "maskedTextBox5";
             this.maskedTextBox5.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox5.TabIndex = 48;
+            this.maskedTextBox5.TabIndex = 49;
             this.maskedTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // maskedTextBox4
@@ -692,7 +692,7 @@
             this.checkBox10.Location = new System.Drawing.Point(68, 164);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(57, 17);
-            this.checkBox10.TabIndex = 11;
+            this.checkBox10.TabIndex = 9;
             this.checkBox10.Text = "Outros";
             this.checkBox10.UseVisualStyleBackColor = true;
             this.checkBox10.CheckedChanged += new System.EventHandler(this.CheckBox10_CheckedChanged);
@@ -714,7 +714,7 @@
             this.checkBox5.Location = new System.Drawing.Point(290, 132);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(91, 17);
-            this.checkBox5.TabIndex = 7;
+            this.checkBox5.TabIndex = 8;
             this.checkBox5.Text = "Frutos do Mar";
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.CheckedChanged += new System.EventHandler(this.CheckBox5_CheckedChanged);
@@ -736,7 +736,7 @@
             this.checkBox7.Location = new System.Drawing.Point(70, 132);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(98, 17);
-            this.checkBox7.TabIndex = 5;
+            this.checkBox7.TabIndex = 7;
             this.checkBox7.Text = "Comida Italiana";
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.CheckBox7_CheckedChanged);
@@ -747,7 +747,7 @@
             this.checkBox8.Location = new System.Drawing.Point(70, 99);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(72, 17);
-            this.checkBox8.TabIndex = 4;
+            this.checkBox8.TabIndex = 5;
             this.checkBox8.Text = "Petiscaria";
             this.checkBox8.UseVisualStyleBackColor = true;
             this.checkBox8.CheckedChanged += new System.EventHandler(this.CheckBox8_CheckedChanged);
@@ -758,7 +758,7 @@
             this.checkBox4.Location = new System.Drawing.Point(290, 64);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(74, 17);
-            this.checkBox4.TabIndex = 3;
+            this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "Sorveteria";
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.CheckBox4_CheckedChanged);
@@ -780,7 +780,7 @@
             this.checkBox2.Location = new System.Drawing.Point(70, 64);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(62, 17);
-            this.checkBox2.TabIndex = 1;
+            this.checkBox2.TabIndex = 3;
             this.checkBox2.Text = "Pizzaria";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox2_CheckedChanged);
@@ -791,7 +791,7 @@
             this.checkBox1.Location = new System.Drawing.Point(70, 31);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(85, 17);
-            this.checkBox1.TabIndex = 0;
+            this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Churrascaria";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
@@ -826,7 +826,7 @@
             this.button1.Location = new System.Drawing.Point(227, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 35);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 0;
             this.button1.Text = "Adicionar imagem";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);

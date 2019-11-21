@@ -32,4 +32,12 @@
     <image>..//..//data//images//users//offImage.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Muzy</nome>
+    <email>pedro</email>
+    <senha>1234</senha>
+    <cpf>42750892804</cpf>
+    <image>..//..//data//images//users//45850930876.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

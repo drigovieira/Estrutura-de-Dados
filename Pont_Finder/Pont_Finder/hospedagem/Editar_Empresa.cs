@@ -16,5 +16,40 @@ namespace Pont_Finder.hospedagem
         {
             InitializeComponent();
         }
+
+        private void ckb_wifi_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ckb_lugarPet_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ckb_academia_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ckb_salaJogos_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ckb_piscina_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ckb_estacionamento_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_ambDisp_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

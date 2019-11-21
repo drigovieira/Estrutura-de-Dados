@@ -73,6 +73,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
+            this.lbHoras = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel3.SuspendLayout();
@@ -259,6 +260,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Controls.Add(this.lbHoras);
             this.panel9.Controls.Add(this.lbFuncionamento);
             this.panel9.Controls.Add(this.label8);
             this.panel9.Location = new System.Drawing.Point(19, 414);
@@ -567,6 +569,16 @@
             this.label12.TabIndex = 1;
             this.label12.Text = "Encontre o Restaurante ideal para o seu gosto!";
             // 
+            // lbHoras
+            // 
+            this.lbHoras.AutoSize = true;
+            this.lbHoras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHoras.Location = new System.Drawing.Point(375, 19);
+            this.lbHoras.Name = "lbHoras";
+            this.lbHoras.Size = new System.Drawing.Size(50, 20);
+            this.lbHoras.TabIndex = 19;
+            this.lbHoras.Text = "Value";
+            // 
             // Visualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -663,5 +675,6 @@
         private System.Windows.Forms.Label lbNum;
         private System.Windows.Forms.Label lbRua;
         private System.Windows.Forms.PictureBox ImagemPerfil;
+        private System.Windows.Forms.Label lbHoras;
     }
 }

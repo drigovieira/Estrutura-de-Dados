@@ -334,6 +334,10 @@ namespace Pont_Finder
 
         private void RbChurrascaria_CheckedChanged(object sender, EventArgs e)
         {
+            if (Categoria())
+            {
+                remFiltro.Visible = true;
+            }
             lbTop5.Text = "Top 5 " + rbChurrascaria.Text;
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(rbChurrascaria.Text);
@@ -360,6 +364,10 @@ namespace Pont_Finder
 
         private void RbPizzaria_CheckedChanged(object sender, EventArgs e)
         {
+            if (Categoria())
+            {
+                remFiltro.Visible = true;
+            }
             lbTop5.Text = "Top 5 " + rbPizzaria.Text;
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(rbPizzaria.Text);
@@ -386,6 +394,10 @@ namespace Pont_Finder
 
         private void RbPetiscaria_CheckedChanged(object sender, EventArgs e)
         {
+            if (Categoria())
+            {
+                remFiltro.Visible = true;
+            }
             lbTop5.Text = "Top 5 " + rbPetiscaria.Text;
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(rbPetiscaria.Text);
@@ -412,6 +424,10 @@ namespace Pont_Finder
 
         private void RbComidaItaliana_CheckedChanged(object sender, EventArgs e)
         {
+            if (Categoria())
+            {
+                remFiltro.Visible = true;
+            }
             lbTop5.Text = "Top 5 " + rbComidaItaliana.Text;
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(rbComidaItaliana.Text);
@@ -438,6 +454,10 @@ namespace Pont_Finder
 
         private void RbComidaJaponesa_CheckedChanged(object sender, EventArgs e)
         {
+            if (Categoria())
+            {
+                remFiltro.Visible = true;
+            }
             lbTop5.Text = "Top 5 " + rbComidaJaponesa.Text;
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(rbComidaJaponesa.Text);
@@ -464,6 +484,10 @@ namespace Pont_Finder
 
         private void RbSorveteria_CheckedChanged(object sender, EventArgs e)
         {
+            if (Categoria())
+            {
+                remFiltro.Visible = true;
+            }
             lbTop5.Text = "Top 5 " + rbSorveteria.Text;
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(rbSorveteria.Text);
@@ -490,6 +514,10 @@ namespace Pont_Finder
 
         private void RbHambúrgueria_CheckedChanged(object sender, EventArgs e)
         {
+            if (Categoria())
+            {
+                remFiltro.Visible = true;
+            }
             lbTop5.Text = "Top 5 " + rbHambúrgueria.Text;
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(rbHambúrgueria.Text);
@@ -516,6 +544,10 @@ namespace Pont_Finder
 
         private void RbFrutosDoMar_CheckedChanged(object sender, EventArgs e)
         {
+            if (Categoria())
+            {
+                remFiltro.Visible = true;
+            }
             lbTop5.Text = "Top 5 " + rbFrutosDoMar.Text;
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(rbFrutosDoMar.Text);
@@ -542,6 +574,10 @@ namespace Pont_Finder
 
         private void RbOutros_CheckedChanged(object sender, EventArgs e)
         {
+            if (Categoria())
+            {
+                remFiltro.Visible = true;
+            }
             lbTop5.Text = "Top 5 " + rbOutros.Text;
             List<Company> listaBusca = new List<Company>();
             listaBusca = CompanyList.SearchCategoria(rbOutros.Text);
@@ -564,6 +600,21 @@ namespace Pont_Finder
                     }
                 }
             }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            remFiltro.Visible = false;
+            rbChurrascaria.Checked = false;
+            rbPizzaria.Checked = false;
+            rbPetiscaria.Checked = false;
+            rbSorveteria.Checked = false;
+            rbComidaItaliana.Checked = false;
+            rbComidaJaponesa.Checked = false;
+            rbFrutosDoMar.Checked = false;
+            rbHambúrgueria.Checked = false;
+            rbOutros.Checked = false;
+            lbTop5.Text = "Top 5 Restaurantes";
         }
 
         public void Listar()
