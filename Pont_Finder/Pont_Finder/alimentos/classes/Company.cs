@@ -13,7 +13,7 @@ namespace Pont_Finder.alimentos
         private List<string> categoria;
         private List<Funcionamento> funcionamentoEmp;
         private int numero, cep, ID;
-        private long telComercial;
+        private long telComercial, cpf;
         private bool status;
 
         public string Nome
@@ -81,6 +81,11 @@ namespace Pont_Finder.alimentos
         {
             get { return funcionamentoEmp; }
             set { funcionamentoEmp = value; }
+        }
+        public long Cpf
+        {
+            get { return cpf; }
+            set { cpf = value; }
         }
     }
 }
