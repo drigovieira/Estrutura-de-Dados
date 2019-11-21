@@ -47,9 +47,11 @@ namespace Pont_Finder.alimentos
                 }
             }
             lbFuncionamento.Text = "";
+            lbHoras.Text = "";
             foreach (var funcio in funcionamentoEmp)
             {
-                lbFuncionamento.Text += funcio.Dia + "  Inicio: "+ funcio.HoraInicio.ToString("HH:mm") + "  Fim: "+ funcio.HoraFim.ToString("HH:mm")+"\n"; 
+                lbFuncionamento.Text += funcio.Dia +"\n";
+                lbHoras.Text += "Inicio: "+ funcio.HoraInicio.ToString("HH:mm") + "  Fim: "+ funcio.HoraFim.ToString("HH:mm")+"\n"; 
             }
         }
         public void CapturarFuncionamento()
@@ -80,8 +82,8 @@ namespace Pont_Finder.alimentos
             lbRua.Text = "Rua: " + Emprua;
             lbBairro.Text = "Bairro: " + Empbairro;
             lbNum.Text = "N°: " + numero.ToString();
-            lbCep.Text = "CEP: " + Empcep.ToString();
-            lbContato.Text = Empcontato.ToString();            
+            lbCep.Text = "CEP: " + Empcep.ToString(@"00000\-000");
+            lbContato.Text = Empcontato.ToString(@"(00) 00000-0000");            
             ImagemPerfil.ImageLocation = linkimage;
         }
 
