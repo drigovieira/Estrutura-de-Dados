@@ -76,6 +76,10 @@ namespace Pont_Finder.alimentos
             FormPrincipal.MudarForm("alimentos", reserva);
         }
 
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+                    }
+
         private void Visualizar_Paint(object sender, PaintEventArgs e)
         {
             lbRestaurante.Text = nomeFantasia;

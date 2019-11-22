@@ -14,6 +14,12 @@ namespace Pont_Finder.alimentos
     {
         private string nomeCompany, ruaCompany, bairroCompany, categoriaCompany;
         private int ID, numCompany;
+
+        private void Publi_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private long contatoCompany;
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
