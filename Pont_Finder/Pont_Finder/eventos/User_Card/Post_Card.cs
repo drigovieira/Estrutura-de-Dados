@@ -42,5 +42,10 @@ namespace Pont_Finder.eventos
         {
 
         }
+
+        private void Bt_visualizar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
