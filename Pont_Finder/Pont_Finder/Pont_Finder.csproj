@@ -313,10 +313,12 @@
     <Compile Include="Recuperar_senha.Designer.cs">
       <DependentUpon>Recuperar_senha.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\classes\Prestar.cs" />
     <Compile Include="servicos\classes\Empresa.cs" />
     <Compile Include="servicos\classes\ListaEmpresa.cs" />
     <Compile Include="servicos\classes\Post.cs" />
     <Compile Include="servicos\classes\PostList.cs" />
+    <Compile Include="servicos\classes\Solicitado.cs" />
     <Compile Include="servicos\classes\Worker.cs" />
     <Compile Include="servicos\FormCadEmpresa.cs">
       <SubType>Form</SubType>

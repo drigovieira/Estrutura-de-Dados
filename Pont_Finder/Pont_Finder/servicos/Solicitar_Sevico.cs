@@ -16,5 +16,16 @@ namespace Pont_Finder.servicos
         {
             InitializeComponent();
         }
+
+        private void Bt_continuar_Click(object sender, EventArgs e)
+        {
+            classes.Solicitado sol = new classes.Solicitado();
+
+            sol.PostId = 2;
+            sol.CpfUser = 123;
+
+            MessageBox.Show(sol.PostId +"\n"+sol.CpfUser);
+
+        }
     }
 }
