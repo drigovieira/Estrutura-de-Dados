@@ -313,12 +313,10 @@
     <Compile Include="Recuperar_senha.Designer.cs">
       <DependentUpon>Recuperar_senha.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\classes\Prestar.cs" />
     <Compile Include="servicos\classes\Empresa.cs" />
     <Compile Include="servicos\classes\ListaEmpresa.cs" />
     <Compile Include="servicos\classes\Post.cs" />
     <Compile Include="servicos\classes\PostList.cs" />
-    <Compile Include="servicos\classes\Solicitado.cs" />
     <Compile Include="servicos\classes\Worker.cs" />
     <Compile Include="servicos\FormCadEmpresa.cs">
       <SubType>Form</SubType>
@@ -356,11 +354,23 @@
     <Compile Include="servicos\FormVisualizarPost.Designer.cs">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\ServicosADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\ServicosADM.Designer.cs">
+      <DependentUpon>ServicosADM.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\Solicitar_Sevico.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="servicos\Solicitar_Sevico.Designer.cs">
       <DependentUpon>Solicitar_Sevico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\User_control\CardSev_Agenda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="servicos\User_control\CardSev_Agenda.Designer.cs">
+      <DependentUpon>CardSev_Agenda.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\User_control\PostCard.cs">
       <SubType>UserControl</SubType>
@@ -570,8 +580,14 @@
     <EmbeddedResource Include="servicos\FormVisualizarPost.resx">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="servicos\ServicosADM.resx">
+      <DependentUpon>ServicosADM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="servicos\Solicitar_Sevico.resx">
       <DependentUpon>Solicitar_Sevico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\User_control\CardSev_Agenda.resx">
+      <DependentUpon>CardSev_Agenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\User_control\PostCard.resx">
       <DependentUpon>PostCard.cs</DependentUpon>
