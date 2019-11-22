@@ -26,6 +26,18 @@ namespace Pont_Finder.avalie
             userboxlocalizacao.Text = (post.Localizacao);
             userboxdesc.Text = (post.Desc);
             pictureBox1.ImageLocation = post.Img;
+           
+            if(post.Resolved == true)
+            {
+                checado.Visible = true;
+            }
+            else
+            {
+                checado.Visible = false;
+            }
+            
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

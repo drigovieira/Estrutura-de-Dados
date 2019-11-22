@@ -34,6 +34,7 @@ namespace Pont_Finder.avalie
                     pos.Desc = item.Desc;
                     pos.Tempohora = item.Tempohora;
                     pos.Ativo = item.Ativo;
+                    pos.Resolved = item.Resolved;
                     return pos;
                 }               
             }
@@ -62,7 +63,7 @@ namespace Pont_Finder.avalie
                     pos.Desc = item.Desc;
                     pos.Tempohora = item.Tempohora;
                     pos.Ativo = item.Ativo;
-
+                    pos.Resolved = item.Resolved;
                     posts.Add(pos);
                 }
                 return posts; }
@@ -88,6 +89,8 @@ namespace Pont_Finder.avalie
                         pos.Desc = item.Desc;
                         pos.Tempohora = item.Tempohora;
                         pos.Ativo = item.Ativo;
+                        pos.Resolved = item.Resolved;
+
                         posts.Add(pos);
                     }                 
                 }
@@ -107,7 +110,9 @@ namespace Pont_Finder.avalie
             pos.Localizacao = post.Localizacao;
             pos.Desc = post.Desc;
             pos.Tempohora = post.Tempohora;
-            pos.Ativo = post.Ativo;                      
+            pos.Ativo = post.Ativo;
+            pos.Resolved = post.Resolved;
+
             poster.Add(pos);
         }
 
@@ -121,15 +126,16 @@ namespace Pont_Finder.avalie
                 XElement post =
                       new XElement("post",
                       new XElement("id", item.Id),
-                      new XElement("nome",item.Nome),
+                      new XElement("nome", item.Nome),
                       new XElement("img", item.Img),
                       new XElement("cpf", item.Cpf),
                       new XElement("tempohora", item.Tempohora),
                       new XElement("desc", item.Desc),
                       new XElement("tipoproblema", item.Tipoproblema),
                       new XElement("localizacao", item.Localizacao),
-                      new XElement("ativo", item.Ativo));
-                      
+                      new XElement("ativo", item.Ativo),
+                      new XElement("resolvido", item.Resolved));
+
                 XDocument doc = XDocument.Load(caminhoPost);
 
                 doc.Root.Add(post);
@@ -155,6 +161,7 @@ namespace Pont_Finder.avalie
                 postar.Tipoproblema = item.Element("tipoproblema").Value;
                 postar.Localizacao = item.Element("localizacao").Value;
                 postar.Ativo = bool.Parse(item.Element("ativo").Value);
+                postar.Resolved = bool.Parse(item.Element("resolvido").Value);
 
                 poster.Add(postar);
             }

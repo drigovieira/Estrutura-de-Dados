@@ -19,8 +19,9 @@ namespace Pont_Finder.avalie
         private long 
             cpf,
             id;
-        private bool 
-            ativo;
+        private bool
+            ativo,
+            resolved;
 
 
         public string Nome
@@ -87,6 +88,11 @@ namespace Pont_Finder.avalie
             set { tempohora = value; }
         }
 
+        public bool Resolved
+        {
+            get { return resolved; }
+            set { resolved = value; }
+        }
         
 
     }

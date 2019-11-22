@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,16 +38,11 @@
             this.NomePos = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.bt_obter = new System.Windows.Forms.Button();
+            this.checado = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.checado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(7, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(199, 148);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -56,7 +50,7 @@
             this.label3.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(217, 60);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 18);
+            this.label3.Size = new System.Drawing.Size(63, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Localização";
             // 
@@ -66,7 +60,7 @@
             this.label2.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(216, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 18);
+            this.label2.Size = new System.Drawing.Size(54, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Descrição";
             // 
@@ -76,7 +70,7 @@
             this.label1.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(217, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 18);
+            this.label1.Size = new System.Drawing.Size(90, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Tipo do Problema";
             // 
@@ -120,7 +114,7 @@
             this.userhora.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
             this.userhora.Location = new System.Drawing.Point(90, 176);
             this.userhora.Name = "userhora";
-            this.userhora.Size = new System.Drawing.Size(36, 18);
+            this.userhora.Size = new System.Drawing.Size(37, 20);
             this.userhora.TabIndex = 6;
             this.userhora.Text = "label4";
             // 
@@ -130,7 +124,7 @@
             this.NomePos.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
             this.NomePos.Location = new System.Drawing.Point(3, 0);
             this.NomePos.Name = "NomePos";
-            this.NomePos.Size = new System.Drawing.Size(36, 18);
+            this.NomePos.Size = new System.Drawing.Size(37, 20);
             this.NomePos.TabIndex = 6;
             this.NomePos.Text = "label4";
             // 
@@ -140,7 +134,7 @@
             this.label4.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(-1, 176);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 18);
+            this.label4.Size = new System.Drawing.Size(93, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Data da Postagem:";
             // 
@@ -159,11 +153,30 @@
             this.bt_obter.UseVisualStyleBackColor = false;
             this.bt_obter.Click += new System.EventHandler(this.bt_obter_Click);
             // 
+            // checado
+            // 
+            this.checado.Image = global::Pont_Finder.Properties.Resources.Checked_icon;
+            this.checado.Location = new System.Drawing.Point(564, 24);
+            this.checado.Name = "checado";
+            this.checado.Size = new System.Drawing.Size(37, 32);
+            this.checado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.checado.TabIndex = 25;
+            this.checado.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(7, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(199, 148);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.checado);
             this.Controls.Add(this.bt_obter);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -177,6 +190,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(625, 196);
+            ((System.ComponentModel.ISupportInitialize)(this.checado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,5 +210,6 @@
         private System.Windows.Forms.Label userhora;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button bt_obter;
+        private System.Windows.Forms.PictureBox checado;
     }
 }

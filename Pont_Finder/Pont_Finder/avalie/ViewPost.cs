@@ -12,6 +12,9 @@ namespace Pont_Finder.avalie
 {
     public partial class ViewPost : Form
     {
+        
+
+
         public ViewPost()
         {
             InitializeComponent();

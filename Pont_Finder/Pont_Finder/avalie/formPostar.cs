@@ -172,6 +172,7 @@ namespace Pont_Finder.avalie
                 post.Localizacao = post_localizao;
                 post.Desc = post_descricao;
                 post.Ativo = true;
+                post.Resolved = false;
 
                 PostList.PostAdd(post);
 

@@ -624,6 +624,7 @@
     <Content Include="obj\Debug\Pont_Finder.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <None Include="Resources\noview-icon .png" />
+    <None Include="Resources\Checked_icon.png" />
     <Content Include="Resources\noview-icon.png" />
     <Content Include="Resources\servicos\like\Deslike.png" />
     <Content Include="Resources\servicos\like\Deslike_blue.png" />

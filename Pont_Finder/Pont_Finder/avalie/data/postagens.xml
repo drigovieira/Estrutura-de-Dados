@@ -5,56 +5,11 @@
     <nome>admin</nome>
     <img>..//..//avalie//data//imagens//posts//0.jpg</img>
     <cpf>26835036010</cpf>
-    <tempohora>10/11/2019 18:11</tempohora>
-    <desc>Rua com buraco</desc>
+    <tempohora>22/11/2019 08:55</tempohora>
+    <desc>sdfsdfsdf</desc>
     <tipoproblema>Infraestrutura</tipoproblema>
-    <localizacao>rua das gardenias</localizacao>
+    <localizacao>dsfsdf</localizacao>
     <ativo>true</ativo>
-  </post>
-  <post>
-    <id>1</id>
-    <nome>alisson martins</nome>
-    <img>..//..//avalie//data//imagens//posts//1.jpg</img>
-    <cpf>49478292811</cpf>
-    <tempohora>13/11/2019 07:51</tempohora>
-    <desc>a casa n e assombrada</desc>
-    <tipoproblema>Segurança</tipoproblema>
-    <localizacao>sao paulo</localizacao>
-    <ativo>true</ativo>
-  </post>
-  <post>
-    <id>2</id>
-    <nome>Muzy</nome>
-    <img>..//..//avalie//data//imagens//posts//2.jpg</img>
-    <cpf>42750892864</cpf>
-    <tempohora>13/11/2019 07:59</tempohora>
-    <desc>Cade o recanto dos Muzzys</desc>
-    <tipoproblema>Infraestrutura</tipoproblema>
-    <localizacao>Cruzeiro</localizacao>
-    <ativo>true</ativo>
-  </post>
-  <post>
-    <id>3</id>
-    <nome>admin</nome>
-    <img>..//..//avalie//data//imagens//posts//3.jpg</img>
-    <cpf>26835036010</cpf>
-    <tempohora>16/11/2019 09:20</tempohora>
-    <desc>a meses esse buraco</desc>
-    <tipoproblema>Infraestrutura</tipoproblema>
-    <localizacao>rua major novaes cruzeiro sp</localizacao>
-    <ativo>true</ativo>
-  </post>
-  <post>
-    <id>4</id>
-    <nome>admin</nome>
-    <img>..//..//avalie//data//imagens//posts//4.jpg</img>
-    <cpf>26835036010</cpf>
-    <tempohora>16/11/2019 14:44</tempohora>
-    <desc>Nem esse picture box está funcionando direito
-O font está bem inovador, para a época do meu pai (1979)
-</desc>
-    <tipoproblema>Outros</tipoproblema>
-    <localizacao>Modulo do leo</localizacao>
-    <ativo>true</ativo>
+    <resolvido>false</resolvido>
   </post>
 </posts>
