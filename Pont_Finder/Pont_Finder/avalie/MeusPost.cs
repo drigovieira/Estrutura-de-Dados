@@ -16,10 +16,5 @@ namespace Pont_Finder.avalie
         {
             InitializeComponent();
         }
-
-        private void btn_back_Click(object sender, EventArgs e)
-        {
-            FormPrincipal.MudarForm("Reclame", new FormAvalie());
-        }
     }
 }
