@@ -51,8 +51,8 @@
             // 
             this.lb_data.AutoSize = true;
             this.lb_data.BackColor = System.Drawing.Color.Transparent;
-            this.lb_data.Font = new System.Drawing.Font("Dubai", 8F);
-            this.lb_data.Location = new System.Drawing.Point(15, 160);
+            this.lb_data.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_data.Location = new System.Drawing.Point(15, 167);
             this.lb_data.Margin = new System.Windows.Forms.Padding(5);
             this.lb_data.MaximumSize = new System.Drawing.Size(200, 20);
             this.lb_data.MinimumSize = new System.Drawing.Size(200, 20);
@@ -80,10 +80,10 @@
             // lb_username
             // 
             this.lb_username.AutoSize = true;
-            this.lb_username.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_username.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_username.Location = new System.Drawing.Point(548, 32);
             this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(28, 18);
+            this.lb_username.Size = new System.Drawing.Size(30, 16);
             this.lb_username.TabIndex = 25;
             this.lb_username.Text = "user";
             // 
@@ -118,10 +118,10 @@
             // lb_like
             // 
             this.lb_like.AutoSize = true;
-            this.lb_like.Font = new System.Drawing.Font("Dubai", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_like.Location = new System.Drawing.Point(260, 144);
             this.lb_like.Name = "lb_like";
-            this.lb_like.Size = new System.Drawing.Size(31, 21);
+            this.lb_like.Size = new System.Drawing.Size(31, 16);
             this.lb_like.TabIndex = 20;
             this.lb_like.Text = "Like";
             this.lb_like.Click += new System.EventHandler(this.label1_Click_2);
@@ -129,7 +129,7 @@
             // lb_titulo
             // 
             this.lb_titulo.AutoSize = true;
-            this.lb_titulo.Font = new System.Drawing.Font("Dubai", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titulo.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_titulo.Location = new System.Drawing.Point(225, 41);
             this.lb_titulo.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.lb_titulo.MaximumSize = new System.Drawing.Size(200, 20);
@@ -192,17 +192,17 @@
             // lb_deslike
             // 
             this.lb_deslike.AutoSize = true;
-            this.lb_deslike.Font = new System.Drawing.Font("Dubai", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_deslike.Location = new System.Drawing.Point(340, 144);
             this.lb_deslike.Name = "lb_deslike";
-            this.lb_deslike.Size = new System.Drawing.Size(47, 21);
+            this.lb_deslike.Size = new System.Drawing.Size(49, 16);
             this.lb_deslike.TabIndex = 31;
             this.lb_deslike.Text = "Deslike";
             // 
             // lb_tipo
             // 
             this.lb_tipo.AutoSize = true;
-            this.lb_tipo.Font = new System.Drawing.Font("Dubai", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tipo.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_tipo.Location = new System.Drawing.Point(225, 15);
             this.lb_tipo.Margin = new System.Windows.Forms.Padding(5, 15, 5, 3);
             this.lb_tipo.MaximumSize = new System.Drawing.Size(240, 20);
@@ -231,7 +231,7 @@
             this.Controls.Add(this.lb_valor);
             this.Controls.Add(this.bt_obter);
             this.Name = "PostCard";
-            this.Size = new System.Drawing.Size(625, 180);
+            this.Size = new System.Drawing.Size(625, 190);
             this.Load += new System.EventHandler(this.PostCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();

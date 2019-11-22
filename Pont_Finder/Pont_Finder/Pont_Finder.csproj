@@ -372,6 +372,12 @@
     <Compile Include="servicos\User_control\CardSev_Agenda.Designer.cs">
       <DependentUpon>CardSev_Agenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\User_control\Card_User_Pedidos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="servicos\User_control\Card_User_Pedidos.Designer.cs">
+      <DependentUpon>Card_User_Pedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\User_control\PostCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -389,6 +395,12 @@
     </Compile>
     <Compile Include="servicos\SolicitarServico.Designer.cs">
       <DependentUpon>SolicitarServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\Visualizar-Solicitado_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\Visualizar-Solicitado_User.Designer.cs">
+      <DependentUpon>Visualizar-Solicitado_User.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="alimentos\Cadastro_Cardapio.resx">
       <DependentUpon>Cadastro_Cardapio.cs</DependentUpon>
@@ -589,6 +601,9 @@
     <EmbeddedResource Include="servicos\User_control\CardSev_Agenda.resx">
       <DependentUpon>CardSev_Agenda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="servicos\User_control\Card_User_Pedidos.resx">
+      <DependentUpon>Card_User_Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="servicos\User_control\PostCard.resx">
       <DependentUpon>PostCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -597,6 +612,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\SolicitarServico.resx">
       <DependentUpon>SolicitarServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\Visualizar-Solicitado_User.resx">
+      <DependentUpon>Visualizar-Solicitado_User.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\Pont_Finder.exe.config" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
