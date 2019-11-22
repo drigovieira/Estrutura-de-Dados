@@ -48,7 +48,7 @@
             this.lb_data.AutoSize = true;
             this.lb_data.BackColor = System.Drawing.Color.Transparent;
             this.lb_data.Font = new System.Drawing.Font("Dubai", 8F);
-            this.lb_data.Location = new System.Drawing.Point(769, 93);
+            this.lb_data.Location = new System.Drawing.Point(12, 167);
             this.lb_data.Margin = new System.Windows.Forms.Padding(5);
             this.lb_data.Name = "lb_data";
             this.lb_data.Size = new System.Drawing.Size(100, 18);
@@ -103,7 +103,7 @@
             // 
             this.bt_obter.BackColor = System.Drawing.Color.RoyalBlue;
             this.bt_obter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_obter.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.bt_obter.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_obter.ForeColor = System.Drawing.Color.White;
             this.bt_obter.Location = new System.Drawing.Point(868, 133);
             this.bt_obter.Margin = new System.Windows.Forms.Padding(15);
@@ -179,7 +179,7 @@
             this.Controls.Add(this.pb_user);
             this.Controls.Add(this.bt_obter);
             this.Name = "CardSev_Agenda";
-            this.Size = new System.Drawing.Size(1010, 180);
+            this.Size = new System.Drawing.Size(1010, 190);
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_user)).EndInit();
             this.ResumeLayout(false);
