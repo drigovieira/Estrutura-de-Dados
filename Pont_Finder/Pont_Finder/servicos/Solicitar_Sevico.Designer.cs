@@ -79,7 +79,7 @@
             this.label2.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(214, 439);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 22);
+            this.label2.Size = new System.Drawing.Size(113, 21);
             this.label2.TabIndex = 38;
             this.label2.Text = "Agendar para o dia:";
             // 
@@ -242,6 +242,7 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Solicitar_Sevico";
             this.Text = "Solicitar_Sevico";
+            this.Load += new System.EventHandler(this.Solicitar_Sevico_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
