@@ -60,9 +60,9 @@ namespace Pont_Finder.servicos
             {
                 string nome = tb_nome.Text;
                 string fatasia = tb_fantasia.Text;
-                long cnpj = long.Parse(tb_cep.Text);
-                string endereco = tb_endereco.Text;
-                string telefone = tb_telefone.Text;
+                long cnpj = long.Parse(mb_cnpj.Text);
+                string endereco = tb_endereco.Text + ", " + mb_cep.Text;
+                string telefone = mb_phone.Text;
                 string email = tb_email.Text;
                 string servico = cb_servico.SelectedItem + "";
 
