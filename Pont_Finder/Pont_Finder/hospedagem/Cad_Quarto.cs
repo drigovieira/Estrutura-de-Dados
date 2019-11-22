@@ -215,5 +215,10 @@ namespace Pont_Finder.hospedagem
         {
             btn_back.Image = Properties.Resources.back_2;
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
