@@ -35,9 +35,7 @@
             this.AddFotoEmpresa = new System.Windows.Forms.Button();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.tb_email = new System.Windows.Forms.TextBox();
-            this.tb_cnpj = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tb_telefone = new System.Windows.Forms.TextBox();
             this.tb_fantasia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tb_endereco = new System.Windows.Forms.TextBox();
@@ -45,7 +43,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.tb_cep = new System.Windows.Forms.TextBox();
             this.tb_nome = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -58,6 +55,9 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.mb_phone = new System.Windows.Forms.MaskedTextBox();
+            this.mb_cep = new System.Windows.Forms.MaskedTextBox();
+            this.mb_cnpj = new System.Windows.Forms.MaskedTextBox();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
@@ -67,14 +67,15 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.mb_phone);
             this.panel11.Controls.Add(this.cb_servico);
+            this.panel11.Controls.Add(this.mb_cep);
             this.panel11.Controls.Add(this.label1);
+            this.panel11.Controls.Add(this.mb_cnpj);
             this.panel11.Controls.Add(this.AddFotoEmpresa);
             this.panel11.Controls.Add(this.pb_icone);
             this.panel11.Controls.Add(this.tb_email);
-            this.panel11.Controls.Add(this.tb_cnpj);
             this.panel11.Controls.Add(this.label5);
-            this.panel11.Controls.Add(this.tb_telefone);
             this.panel11.Controls.Add(this.tb_fantasia);
             this.panel11.Controls.Add(this.label6);
             this.panel11.Controls.Add(this.tb_endereco);
@@ -82,7 +83,6 @@
             this.panel11.Controls.Add(this.label9);
             this.panel11.Controls.Add(this.button3);
             this.panel11.Controls.Add(this.label11);
-            this.panel11.Controls.Add(this.tb_cep);
             this.panel11.Controls.Add(this.tb_nome);
             this.panel11.Controls.Add(this.button4);
             this.panel11.Controls.Add(this.label12);
@@ -145,15 +145,6 @@
             this.tb_email.Size = new System.Drawing.Size(415, 22);
             this.tb_email.TabIndex = 6;
             // 
-            // tb_cnpj
-            // 
-            this.tb_cnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cnpj.Location = new System.Drawing.Point(100, 423);
-            this.tb_cnpj.Name = "tb_cnpj";
-            this.tb_cnpj.Size = new System.Drawing.Size(415, 22);
-            this.tb_cnpj.TabIndex = 2;
-            this.tb_cnpj.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -163,14 +154,6 @@
             this.label5.Size = new System.Drawing.Size(86, 20);
             this.label5.TabIndex = 7;
             this.label5.Text = "Endereço";
-            // 
-            // tb_telefone
-            // 
-            this.tb_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_telefone.Location = new System.Drawing.Point(345, 573);
-            this.tb_telefone.Name = "tb_telefone";
-            this.tb_telefone.Size = new System.Drawing.Size(170, 22);
-            this.tb_telefone.TabIndex = 5;
             // 
             // tb_fantasia
             // 
@@ -243,14 +226,6 @@
             this.label11.Size = new System.Drawing.Size(53, 20);
             this.label11.TabIndex = 9;
             this.label11.Text = "CNPJ";
-            // 
-            // tb_cep
-            // 
-            this.tb_cep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cep.Location = new System.Drawing.Point(100, 573);
-            this.tb_cep.Name = "tb_cep";
-            this.tb_cep.Size = new System.Drawing.Size(170, 22);
-            this.tb_cep.TabIndex = 4;
             // 
             // tb_nome
             // 
@@ -369,6 +344,37 @@
             this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 0;
             // 
+            // mb_phone
+            // 
+            this.mb_phone.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mb_phone.Location = new System.Drawing.Point(345, 575);
+            this.mb_phone.Mask = "(99) 00000-0000";
+            this.mb_phone.Name = "mb_phone";
+            this.mb_phone.Size = new System.Drawing.Size(170, 22);
+            this.mb_phone.TabIndex = 68;
+            this.mb_phone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // mb_cep
+            // 
+            this.mb_cep.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mb_cep.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mb_cep.Location = new System.Drawing.Point(100, 575);
+            this.mb_cep.Mask = "00.000-000";
+            this.mb_cep.Name = "mb_cep";
+            this.mb_cep.Size = new System.Drawing.Size(170, 22);
+            this.mb_cep.TabIndex = 67;
+            this.mb_cep.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // mb_cnpj
+            // 
+            this.mb_cnpj.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mb_cnpj.Location = new System.Drawing.Point(104, 416);
+            this.mb_cnpj.Mask = "99.999.999/9999-99";
+            this.mb_cnpj.Name = "mb_cnpj";
+            this.mb_cnpj.Size = new System.Drawing.Size(415, 22);
+            this.mb_cnpj.TabIndex = 66;
+            this.mb_cnpj.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
             // FormCadEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,9 +408,7 @@
 
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox tb_email;
-        private System.Windows.Forms.TextBox tb_cnpj;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tb_telefone;
         private System.Windows.Forms.TextBox tb_fantasia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_endereco;
@@ -412,7 +416,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox tb_cep;
         private System.Windows.Forms.TextBox tb_nome;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label12;
@@ -429,5 +432,8 @@
         private System.Windows.Forms.OpenFileDialog openIcone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cb_servico;
+        private System.Windows.Forms.MaskedTextBox mb_phone;
+        private System.Windows.Forms.MaskedTextBox mb_cep;
+        private System.Windows.Forms.MaskedTextBox mb_cnpj;
     }
 }

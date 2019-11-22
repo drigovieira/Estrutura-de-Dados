@@ -149,7 +149,7 @@
             // 
             this.mkb_phone.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mkb_phone.Location = new System.Drawing.Point(345, 563);
-            this.mkb_phone.Mask = "(99) 000-0000";
+            this.mkb_phone.Mask = "(99) 00000-0000";
             this.mkb_phone.Name = "mkb_phone";
             this.mkb_phone.Size = new System.Drawing.Size(170, 22);
             this.mkb_phone.TabIndex = 6;
