@@ -604,7 +604,7 @@
             this.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 727);
-            this.MinimumSize = new System.Drawing.Size(1282, 727);
+            this.MinimumSize = new System.Drawing.Size(1282, 726);
             this.Name = "Hosp_Home";
             this.Text = "Hosp_Home";
             this.Load += new System.EventHandler(this.Hosp_Home_Load);
