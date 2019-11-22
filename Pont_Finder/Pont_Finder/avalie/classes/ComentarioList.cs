@@ -93,7 +93,7 @@ namespace Pont_Finder.avalie.classes
 
             foreach (var item in xdoc.Descendants("comentario"))
             {
-                XmlNode node = xmldoc.SelectSingleNode("/comentarios/comentario");
+                XmlNode node = xmldoc.SelectSingleNode("/comentariolist/comentario");
                 node.ParentNode.RemoveChild(node);
             }
             xmldoc.Save(caminhao);
