@@ -47,6 +47,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
             this.panel1.SuspendLayout();
@@ -99,7 +100,7 @@
             this.panel6.Controls.Add(this.panel1);
             this.panel6.Location = new System.Drawing.Point(305, 62);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(614, 669);
+            this.panel6.Size = new System.Drawing.Size(615, 553);
             this.panel6.TabIndex = 23;
             // 
             // bt_postar
@@ -267,12 +268,21 @@
             this.label2.TabIndex = 80;
             this.label2.Text = "Descrição";
             // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 649);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1249, 100);
+            this.panel2.TabIndex = 24;
+            // 
             // ViewPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1249, 749);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewPost";
@@ -307,5 +317,6 @@
         private System.Windows.Forms.Button bt_editar;
         private System.Windows.Forms.Button bt_remover;
         private System.Windows.Forms.Button bt_postar;
+        private System.Windows.Forms.Panel panel2;
     }
 }

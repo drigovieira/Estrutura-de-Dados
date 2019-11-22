@@ -128,6 +128,12 @@
     <Compile Include="avalie\MeusPost.Designer.cs">
       <DependentUpon>MeusPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="avalie\User Control\Card_comentario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="avalie\User Control\Card_comentario.Designer.cs">
+      <DependentUpon>Card_comentario.cs</DependentUpon>
+    </Compile>
     <Compile Include="avalie\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -439,6 +445,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="avalie\MeusPost.resx">
       <DependentUpon>MeusPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avalie\User Control\Card_comentario.resx">
+      <DependentUpon>Card_comentario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="avalie\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
