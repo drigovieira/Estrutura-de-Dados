@@ -117,6 +117,16 @@ namespace Pont_Finder.avalie
         }
 
 
+        public static PostConstructor thisPostId(long postId)
+        {
+            foreach (var item in poster)
+            {
+                if (postId == item.Id)
+                    return item;              
+            }
+            return null;
+        }
+
         public static void XmlSave()
         {
 

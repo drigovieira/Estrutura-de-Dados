@@ -47,6 +47,10 @@ namespace Pont_Finder.avalie
 
         private void bt_obter_Click(object sender, EventArgs e)
         {
+            avalie.ViewPost avaliepost = new ViewPost(post.Id);
+            FormPrincipal.MudarForm("Reclame", avaliepost);
+
+            /*
             if (Session.Online)
             {
                 avalie.ViewPost avaliepost = new ViewPost();
@@ -56,6 +60,7 @@ namespace Pont_Finder.avalie
             {
                 MessageBox.Show("Por Favor, Efetue o Login para Realizar um Post");
             }
+            */
         }
     }
 }

@@ -27,6 +27,7 @@ namespace Pont_Finder.classes
 
             //avalie
             avalie.PostList.XmlLoad();
+            avalie.classes.ComentarioList.XmlLoad();
             //fim avalie
 
             //eventos
@@ -54,6 +55,7 @@ namespace Pont_Finder.classes
 
             //avalie
             avalie.PostList.XmlSave();
+            avalie.classes.ComentarioList.XmlSave();
             //fim avalie
 
             //eventos

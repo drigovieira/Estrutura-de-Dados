@@ -32,7 +32,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tb_resposta = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
@@ -40,28 +40,28 @@
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.bt_postar = new System.Windows.Forms.Button();
+            this.bt_editar = new System.Windows.Forms.Button();
+            this.bt_remover = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.userhora = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lb_data = new System.Windows.Forms.Label();
+            this.lb_hora = new System.Windows.Forms.Label();
             this.NomePos = new System.Windows.Forms.Label();
-            this.userboxdesc = new System.Windows.Forms.TextBox();
-            this.userboxlocalizacao = new System.Windows.Forms.TextBox();
-            this.userboxproblema = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tb_descricao = new System.Windows.Forms.TextBox();
+            this.tb_localizacao = new System.Windows.Forms.TextBox();
+            this.tb_problema = new System.Windows.Forms.TextBox();
+            this.pb_imagem = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel8.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,15 +98,15 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Propaganda Externa";
             // 
-            // richTextBox1
+            // tb_resposta
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(28, 342);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(558, 119);
-            this.richTextBox1.TabIndex = 69;
-            this.richTextBox1.Text = "";
+            this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_resposta.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_resposta.Location = new System.Drawing.Point(28, 342);
+            this.tb_resposta.Name = "tb_resposta";
+            this.tb_resposta.Size = new System.Drawing.Size(558, 119);
+            this.tb_resposta.TabIndex = 69;
+            this.tb_resposta.Text = "";
             // 
             // label1
             // 
@@ -170,18 +170,18 @@
             this.panel6.AutoScroll = true;
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.button2);
-            this.panel6.Controls.Add(this.button1);
-            this.panel6.Controls.Add(this.button3);
+            this.panel6.Controls.Add(this.bt_postar);
+            this.panel6.Controls.Add(this.bt_editar);
+            this.panel6.Controls.Add(this.bt_remover);
             this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Controls.Add(this.userhora);
+            this.panel6.Controls.Add(this.lb_data);
+            this.panel6.Controls.Add(this.lb_hora);
             this.panel6.Controls.Add(this.NomePos);
-            this.panel6.Controls.Add(this.userboxdesc);
-            this.panel6.Controls.Add(this.userboxlocalizacao);
-            this.panel6.Controls.Add(this.userboxproblema);
-            this.panel6.Controls.Add(this.pictureBox1);
-            this.panel6.Controls.Add(this.richTextBox1);
+            this.panel6.Controls.Add(this.tb_descricao);
+            this.panel6.Controls.Add(this.tb_localizacao);
+            this.panel6.Controls.Add(this.tb_problema);
+            this.panel6.Controls.Add(this.pb_imagem);
+            this.panel6.Controls.Add(this.tb_resposta);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Controls.Add(this.panel1);
             this.panel6.Location = new System.Drawing.Point(305, 213);
@@ -189,41 +189,44 @@
             this.panel6.Size = new System.Drawing.Size(614, 669);
             this.panel6.TabIndex = 23;
             // 
-            // button2
+            // bt_postar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(28, 467);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 28);
-            this.button2.TabIndex = 89;
-            this.button2.Text = "Postar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.bt_postar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_postar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_postar.ForeColor = System.Drawing.Color.White;
+            this.bt_postar.Location = new System.Drawing.Point(28, 467);
+            this.bt_postar.Name = "bt_postar";
+            this.bt_postar.Size = new System.Drawing.Size(86, 28);
+            this.bt_postar.TabIndex = 89;
+            this.bt_postar.Text = "Postar";
+            this.bt_postar.UseVisualStyleBackColor = false;
+            this.bt_postar.Click += new System.EventHandler(this.bt_postar_Click);
             // 
-            // button1
+            // bt_editar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(268, 467);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 28);
-            this.button1.TabIndex = 88;
-            this.button1.Text = "Editar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bt_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_editar.ForeColor = System.Drawing.Color.White;
+            this.bt_editar.Location = new System.Drawing.Point(268, 467);
+            this.bt_editar.Name = "bt_editar";
+            this.bt_editar.Size = new System.Drawing.Size(86, 28);
+            this.bt_editar.TabIndex = 88;
+            this.bt_editar.Text = "Editar";
+            this.bt_editar.UseVisualStyleBackColor = false;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
-            // button3
+            // bt_remover
             // 
-            this.button3.BackColor = System.Drawing.Color.OrangeRed;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(500, 467);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 28);
-            this.button3.TabIndex = 87;
-            this.button3.Text = "Remover";
-            this.button3.UseVisualStyleBackColor = false;
+            this.bt_remover.BackColor = System.Drawing.Color.OrangeRed;
+            this.bt_remover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_remover.ForeColor = System.Drawing.Color.White;
+            this.bt_remover.Location = new System.Drawing.Point(500, 467);
+            this.bt_remover.Name = "bt_remover";
+            this.bt_remover.Size = new System.Drawing.Size(86, 28);
+            this.bt_remover.TabIndex = 87;
+            this.bt_remover.Text = "Remover";
+            this.bt_remover.UseVisualStyleBackColor = false;
+            this.bt_remover.Click += new System.EventHandler(this.bt_remover_Click);
             // 
             // label11
             // 
@@ -237,55 +240,25 @@
             this.label11.TabIndex = 86;
             this.label11.Text = "Postagem";
             // 
-            // label3
+            // lb_data
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(314, 77);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 22);
-            this.label3.TabIndex = 81;
-            this.label3.Text = "Localização";
+            this.lb_data.AutoSize = true;
+            this.lb_data.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
+            this.lb_data.Location = new System.Drawing.Point(21, 255);
+            this.lb_data.Name = "lb_data";
+            this.lb_data.Size = new System.Drawing.Size(93, 20);
+            this.lb_data.TabIndex = 84;
+            this.lb_data.Text = "Data da Postagem:";
             // 
-            // label4
+            // lb_hora
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(21, 255);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 20);
-            this.label4.TabIndex = 84;
-            this.label4.Text = "Data da Postagem:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(314, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 22);
-            this.label2.TabIndex = 80;
-            this.label2.Text = "Descrição";
-            // 
-            // userhora
-            // 
-            this.userhora.AutoSize = true;
-            this.userhora.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
-            this.userhora.Location = new System.Drawing.Point(113, 256);
-            this.userhora.Name = "userhora";
-            this.userhora.Size = new System.Drawing.Size(37, 20);
-            this.userhora.TabIndex = 82;
-            this.userhora.Text = "label4";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(314, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 22);
-            this.label5.TabIndex = 79;
-            this.label5.Text = "Tipo do Problema";
+            this.lb_hora.AutoSize = true;
+            this.lb_hora.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
+            this.lb_hora.Location = new System.Drawing.Point(113, 256);
+            this.lb_hora.Name = "lb_hora";
+            this.lb_hora.Size = new System.Drawing.Size(30, 20);
+            this.lb_hora.TabIndex = 82;
+            this.lb_hora.Text = "hora";
             // 
             // NomePos
             // 
@@ -297,47 +270,48 @@
             this.NomePos.TabIndex = 83;
             this.NomePos.Text = "label4";
             // 
-            // userboxdesc
+            // tb_descricao
             // 
-            this.userboxdesc.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.userboxdesc.Enabled = false;
-            this.userboxdesc.Font = new System.Drawing.Font("Dubai", 8F);
-            this.userboxdesc.Location = new System.Drawing.Point(327, 201);
-            this.userboxdesc.Multiline = true;
-            this.userboxdesc.Name = "userboxdesc";
-            this.userboxdesc.ReadOnly = true;
-            this.userboxdesc.Size = new System.Drawing.Size(259, 50);
-            this.userboxdesc.TabIndex = 78;
+            this.tb_descricao.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tb_descricao.Enabled = false;
+            this.tb_descricao.Font = new System.Drawing.Font("Dubai", 8F);
+            this.tb_descricao.Location = new System.Drawing.Point(327, 201);
+            this.tb_descricao.Multiline = true;
+            this.tb_descricao.Name = "tb_descricao";
+            this.tb_descricao.ReadOnly = true;
+            this.tb_descricao.Size = new System.Drawing.Size(259, 50);
+            this.tb_descricao.TabIndex = 78;
             // 
-            // userboxlocalizacao
+            // tb_localizacao
             // 
-            this.userboxlocalizacao.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.userboxlocalizacao.Enabled = false;
-            this.userboxlocalizacao.Font = new System.Drawing.Font("Dubai", 8F);
-            this.userboxlocalizacao.Location = new System.Drawing.Point(327, 146);
-            this.userboxlocalizacao.Name = "userboxlocalizacao";
-            this.userboxlocalizacao.ReadOnly = true;
-            this.userboxlocalizacao.Size = new System.Drawing.Size(259, 26);
-            this.userboxlocalizacao.TabIndex = 77;
+            this.tb_localizacao.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tb_localizacao.Enabled = false;
+            this.tb_localizacao.Font = new System.Drawing.Font("Dubai", 8F);
+            this.tb_localizacao.Location = new System.Drawing.Point(327, 146);
+            this.tb_localizacao.Name = "tb_localizacao";
+            this.tb_localizacao.ReadOnly = true;
+            this.tb_localizacao.Size = new System.Drawing.Size(259, 26);
+            this.tb_localizacao.TabIndex = 77;
             // 
-            // userboxproblema
+            // tb_problema
             // 
-            this.userboxproblema.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.userboxproblema.Enabled = false;
-            this.userboxproblema.Font = new System.Drawing.Font("Dubai", 8F);
-            this.userboxproblema.Location = new System.Drawing.Point(327, 92);
-            this.userboxproblema.Name = "userboxproblema";
-            this.userboxproblema.ReadOnly = true;
-            this.userboxproblema.Size = new System.Drawing.Size(259, 26);
-            this.userboxproblema.TabIndex = 75;
+            this.tb_problema.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tb_problema.Enabled = false;
+            this.tb_problema.Font = new System.Drawing.Font("Dubai", 8F);
+            this.tb_problema.Location = new System.Drawing.Point(327, 92);
+            this.tb_problema.Name = "tb_problema";
+            this.tb_problema.ReadOnly = true;
+            this.tb_problema.Size = new System.Drawing.Size(259, 26);
+            this.tb_problema.TabIndex = 75;
             // 
-            // pictureBox1
+            // pb_imagem
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(21, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 170);
-            this.pictureBox1.TabIndex = 76;
-            this.pictureBox1.TabStop = false;
+            this.pb_imagem.Location = new System.Drawing.Point(21, 79);
+            this.pb_imagem.Name = "pb_imagem";
+            this.pb_imagem.Size = new System.Drawing.Size(263, 170);
+            this.pb_imagem.TabIndex = 76;
+            this.pb_imagem.TabStop = false;
+            this.pb_imagem.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel1
             // 
@@ -349,6 +323,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(596, 248);
             this.panel1.TabIndex = 85;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(314, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 22);
+            this.label5.TabIndex = 79;
+            this.label5.Text = "Tipo do Problema";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(314, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 22);
+            this.label3.TabIndex = 81;
+            this.label3.Text = "Localização";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(314, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 22);
+            this.label2.TabIndex = 80;
+            this.label2.Text = "Descrição";
             // 
             // panel4
             // 
@@ -372,6 +376,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewPost";
             this.Text = "ViewPost";
+            this.Load += new System.EventHandler(this.ViewPost_Load);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -381,7 +386,7 @@
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -393,7 +398,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox tb_resposta;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label15;
@@ -403,19 +408,19 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lb_data;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label userhora;
+        private System.Windows.Forms.Label lb_hora;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label NomePos;
-        private System.Windows.Forms.TextBox userboxdesc;
-        private System.Windows.Forms.TextBox userboxlocalizacao;
-        private System.Windows.Forms.TextBox userboxproblema;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox tb_descricao;
+        private System.Windows.Forms.TextBox tb_localizacao;
+        private System.Windows.Forms.TextBox tb_problema;
+        private System.Windows.Forms.PictureBox pb_imagem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bt_editar;
+        private System.Windows.Forms.Button bt_remover;
+        private System.Windows.Forms.Button bt_postar;
     }
 }
