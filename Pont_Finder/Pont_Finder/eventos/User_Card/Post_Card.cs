@@ -45,7 +45,8 @@ namespace Pont_Finder.eventos
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
         {
-            
+            eventos.Visualizar_evento viewpost = new eventos.Visualizar_evento(new FormEventos());
+            FormPrincipal.MudarForm("Eventos", viewpost);
         }
     }
 }

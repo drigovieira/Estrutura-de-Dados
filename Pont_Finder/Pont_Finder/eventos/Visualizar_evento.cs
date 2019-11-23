@@ -12,9 +12,21 @@ namespace Pont_Finder.eventos
 {
     public partial class Visualizar_evento : Form
     {
-        public Visualizar_evento()
+        Form anterior;
+        public Visualizar_evento(Form anterior)
         {
+            this.anterior = anterior;
             InitializeComponent();
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("eventos", anterior);
         }
     }
 }

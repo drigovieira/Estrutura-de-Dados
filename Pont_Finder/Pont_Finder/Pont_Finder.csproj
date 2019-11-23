@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Pont_Finder</RootNamespace>
     <AssemblyName>Pont_Finder</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -64,10 +65,12 @@
     <Compile Include="alimentos\Cadastro_Restaurante.Designer.cs">
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </Compile>
+    <Compile Include="alimentos\classes\Cardapio.cs" />
     <Compile Include="alimentos\classes\Company.cs" />
     <Compile Include="alimentos\classes\CompanyList.cs" />
     <Compile Include="alimentos\classes\Evaluation.cs" />
     <Compile Include="alimentos\classes\Funcionamento.cs" />
+    <Compile Include="alimentos\classes\ListCardapio.cs" />
     <Compile Include="alimentos\Item_Alimentos.cs">
       <SubType>UserControl</SubType>
     </Compile>
