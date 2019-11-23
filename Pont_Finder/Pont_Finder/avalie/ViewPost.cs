@@ -111,5 +111,15 @@ namespace Pont_Finder.avalie
         {
             classes.ComentarioList.Remove(Session.Cpf, post.Id);
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("Reclame", new FormAvalie());
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("Reclame", new FormAvalie());
+        }
     }
 }
