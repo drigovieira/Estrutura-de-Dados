@@ -72,8 +72,15 @@ namespace Pont_Finder.alimentos
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
         {
-            alimentos.Reserva_Alimentos reserva = new alimentos.Reserva_Alimentos();
-            FormPrincipal.MudarForm("alimentos", reserva);
+            if (Session.Online)
+            {
+                alimentos.Reserva_Alimentos reserva = new alimentos.Reserva_Alimentos();
+                FormPrincipal.MudarForm("alimentos", reserva);
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para visualizar essas informações. ", "Aviso");
+            }
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
