@@ -102,11 +102,11 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(436, 235);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(386, 31);
+            this.label15.Size = new System.Drawing.Size(374, 36);
             this.label15.TabIndex = 63;
             this.label15.Text = "Cadastre seu Cardápio aqui!";
             // 
@@ -143,11 +143,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(301, 70);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(672, 39);
+            this.label6.Size = new System.Drawing.Size(677, 46);
             this.label6.TabIndex = 1;
             this.label6.Text = "Informe o seu cardápio para os clientes!";
             // 
