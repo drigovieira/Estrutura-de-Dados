@@ -138,7 +138,7 @@
             this.label1.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(98, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 33);
+            this.label1.Size = new System.Drawing.Size(92, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Categoria";
             this.label1.Visible = false;
@@ -149,7 +149,7 @@
             this.label2.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(63, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 33);
+            this.label2.Size = new System.Drawing.Size(170, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Filtrar Reclamações";
             // 
@@ -407,7 +407,7 @@
             this.label4.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(33, 133);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 21);
+            this.label4.Size = new System.Drawing.Size(31, 22);
             this.label4.TabIndex = 4;
             this.label4.Text = "Até:";
             // 
@@ -426,7 +426,7 @@
             this.label8.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(33, 72);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 21);
+            this.label8.Size = new System.Drawing.Size(70, 22);
             this.label8.TabIndex = 2;
             this.label8.Text = "Período de:";
             // 
