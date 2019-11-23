@@ -12,4 +12,28 @@
     <ativo>true</ativo>
     <resolvido>false</resolvido>
   </post>
+  <post>
+    <id>1</id>
+    <nome>admin</nome>
+    <img>..//..//avalie//data//imagens//posts//1.jpg</img>
+    <cpf>26835036010</cpf>
+    <tempohora>23/11/2019 08:42</tempohora>
+    <desc>dfdsfdgfd</desc>
+    <tipoproblema>Infraestrutura</tipoproblema>
+    <localizacao>fgdgdfgfd</localizacao>
+    <ativo>true</ativo>
+    <resolvido>false</resolvido>
+  </post>
+  <post>
+    <id>2</id>
+    <nome>admin</nome>
+    <img>..//..//avalie//data//imagens//posts//2.jpg</img>
+    <cpf>26835036010</cpf>
+    <tempohora>23/11/2019 08:42</tempohora>
+    <desc>hgfhgfhfgh</desc>
+    <tipoproblema>Outros</tipoproblema>
+    <localizacao>hgfhfh</localizacao>
+    <ativo>true</ativo>
+    <resolvido>false</resolvido>
+  </post>
 </posts>

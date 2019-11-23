@@ -13,6 +13,12 @@ namespace Pont_Finder
 {
     public partial class FormAvalie : Form
     {
+        private List<PostConstructor> ListaDePost;
+        private int pagTotal;
+        private int pagAtual;
+        //quantidade de cards por pag
+        private int pagQuant;
+
 
         int local = 0;
         int leftcontrol = 8;
@@ -26,6 +32,10 @@ namespace Pont_Finder
 
             InitializeComponent();
             CarregarPost();
+
+         
+
+
 
 
         }
@@ -87,20 +97,40 @@ namespace Pont_Finder
 
         public void CarregarPost()
         {
+
+
+            ListaDePost = PostList.PosterAtivo;
+            ListaDePost.Reverse();
+
+            pagQuant = 2;
+
+            pagTotal = ListaDePost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
             local = 0;
 
             panel3.Controls.Clear();
-
-            List<PostConstructor> lista = new List<PostConstructor>();
-            lista = PostList.PosterAtivo;
-            lista.Reverse();
-
-            foreach (var item in lista)
+            int i = 0;
+            foreach (var item in ListaDePost)
             {
+                if (i >= pagQuant)
+                    break;
                 UserControl1 t1 = new UserControl1(item.Id);
                 t1.Location = new Point(0, local);
                 local = local + t1.Height + 5;
                 panel3.Controls.Add(t1);
+                i++;
             }
 
         }
@@ -116,6 +146,58 @@ namespace Pont_Finder
             {
                 MessageBox.Show("Por Favor, Efetue o Login para Realizar um Post");
             }
+        }
+
+        private void bt_ant_Click(object sender, EventArgs e)
+        {
+            if (pagAtual > 1)
+            {
+                local = 0;
+                panel3.Controls.Clear();
+
+                int pg = ((pagAtual - 2) * pagQuant);
+
+                for (int i = 0; i < pagQuant; i++)
+                {
+                    if (pg + i < ListaDePost.Count)
+                    {
+                        UserControl1 t1 = new UserControl1(ListaDePost[pg + i].Id);
+                        t1.Location = new Point(0, local);
+                        local = local + t1.Height + 5;
+                        panel3.Controls.Add(t1);
+                    }
+                }
+                pagAtual--;
+
+                lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+            }
+        }
+
+        private void bt_prox_Click(object sender, EventArgs e)
+        {
+
+            if (pagAtual < pagTotal)
+            {
+                local = 0;
+                panel3.Controls.Clear();
+                int pg = (pagAtual * pagQuant);
+
+                for (int i = 0; i < pagQuant; i++)
+                {
+                    if (pg + i < ListaDePost.Count)
+                    {
+                        UserControl1 t1 = new UserControl1(ListaDePost[pg + i].Id);
+                        t1.Location = new Point(0, local);
+                        local = local + t1.Height + 5;
+                        panel3.Controls.Add(t1);
+                    }
+
+                }
+
+                pagAtual++;
+                lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+            }
+
         }
     }
 }
