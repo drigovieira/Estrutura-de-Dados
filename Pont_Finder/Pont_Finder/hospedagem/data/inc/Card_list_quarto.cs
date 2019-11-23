@@ -20,7 +20,7 @@ namespace Pont_Finder.hospedagem
 
         private void bt_editar_Click(object sender, EventArgs e)
         {
-            hospedagem.Editar_Quarto editQuarto = new hospedagem.Editar_Quarto(id);
+            hospedagem.Editar_Quarto editQuarto = new hospedagem.Editar_Quarto(id, new Listas_quartos(new Hosp_Home()));
             FormPrincipal.MudarForm("hospedagem", editQuarto);
         }
 

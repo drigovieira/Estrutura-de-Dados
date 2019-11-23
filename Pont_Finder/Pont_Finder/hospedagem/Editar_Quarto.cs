@@ -35,12 +35,28 @@ namespace Pont_Finder.hospedagem
             }
         }
 
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("hospedagem", anterior);
+        }
+
         UserControl user = new UserControl();
+
+        private void Btn_back_MouseLeave(object sender, EventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_1;
+        }
+
+        private void Btn_back_MouseMove(object sender, MouseEventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_2;
+        }
+
         OpenFileDialog openimg = new OpenFileDialog();
-       
 
+        Form anterior;
 
-        public Editar_Quarto(int id)
+        public Editar_Quarto(int id, Form anterior)
         {
             quarto = roomList.SelectId(id);
 
@@ -56,6 +72,7 @@ namespace Pont_Finder.hospedagem
             this.status = quarto.Status;
             this.ativo = quarto.Ativo;
 
+            this.anterior = anterior;
             InitializeComponent();
             /*
             if (quarto.Foto != null)
