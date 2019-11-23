@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lbRestaurante = new System.Windows.Forms.Label();
             this.ImagemPerfil = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.bt_visualizar = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.lbCategorias = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbRestaurante = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImagemPerfil)).BeginInit();
@@ -77,6 +77,17 @@
             this.panel5.Size = new System.Drawing.Size(1055, 918);
             this.panel5.TabIndex = 23;
             // 
+            // lbRestaurante
+            // 
+            this.lbRestaurante.AutoSize = true;
+            this.lbRestaurante.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRestaurante.ForeColor = System.Drawing.Color.Black;
+            this.lbRestaurante.Location = new System.Drawing.Point(421, 37);
+            this.lbRestaurante.Name = "lbRestaurante";
+            this.lbRestaurante.Size = new System.Drawing.Size(84, 36);
+            this.lbRestaurante.TabIndex = 2;
+            this.lbRestaurante.Text = "value";
+            // 
             // ImagemPerfil
             // 
             this.ImagemPerfil.Location = new System.Drawing.Point(244, 109);
@@ -85,6 +96,17 @@
             this.ImagemPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImagemPerfil.TabIndex = 0;
             this.ImagemPerfil.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(238, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(177, 36);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Restaurante:";
             // 
             // bt_visualizar
             // 
@@ -291,28 +313,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 52;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(238, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 36);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Restaurante:";
-            // 
-            // lbRestaurante
-            // 
-            this.lbRestaurante.AutoSize = true;
-            this.lbRestaurante.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRestaurante.ForeColor = System.Drawing.Color.Black;
-            this.lbRestaurante.Location = new System.Drawing.Point(421, 37);
-            this.lbRestaurante.Name = "lbRestaurante";
-            this.lbRestaurante.Size = new System.Drawing.Size(84, 36);
-            this.lbRestaurante.TabIndex = 2;
-            this.lbRestaurante.Text = "value";
             // 
             // btn_back
             // 

@@ -65,10 +65,12 @@
     <Compile Include="alimentos\Cadastro_Restaurante.Designer.cs">
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </Compile>
+    <Compile Include="alimentos\classes\Cardapio.cs" />
     <Compile Include="alimentos\classes\Company.cs" />
     <Compile Include="alimentos\classes\CompanyList.cs" />
     <Compile Include="alimentos\classes\Evaluation.cs" />
     <Compile Include="alimentos\classes\Funcionamento.cs" />
+    <Compile Include="alimentos\classes\ListCardapio.cs" />
     <Compile Include="alimentos\Item_Alimentos.cs">
       <SubType>UserControl</SubType>
     </Compile>
