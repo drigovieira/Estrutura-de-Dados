@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro_Restaurante));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.mkb_Tel = new System.Windows.Forms.MaskedTextBox();
             this.mkb_Cep = new System.Windows.Forms.MaskedTextBox();
             this.tbNum = new System.Windows.Forms.TextBox();
@@ -49,6 +51,14 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.cbEntregaNao = new System.Windows.Forms.CheckBox();
+            this.cbEntregaSim = new System.Windows.Forms.CheckBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.cbRegitNao = new System.Windows.Forms.CheckBox();
+            this.cbRegistSim = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbFeriado = new System.Windows.Forms.CheckBox();
             this.cbDomingo = new System.Windows.Forms.CheckBox();
@@ -100,25 +110,15 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel10.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -155,6 +155,25 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(625, 684);
             this.panel11.TabIndex = 57;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label19.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(100, 482);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(63, 21);
+            this.label19.TabIndex = 18;
+            this.label19.Text = "Página";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(100, 521);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(170, 21);
+            this.comboBox1.TabIndex = 17;
             // 
             // mkb_Tel
             // 
@@ -333,6 +352,92 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(625, 1596);
             this.panel3.TabIndex = 59;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.cbEntregaNao);
+            this.panel7.Controls.Add(this.cbEntregaSim);
+            this.panel7.Location = new System.Drawing.Point(81, 1340);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(460, 100);
+            this.panel7.TabIndex = 41;
+            // 
+            // cbEntregaNao
+            // 
+            this.cbEntregaNao.AutoSize = true;
+            this.cbEntregaNao.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEntregaNao.Location = new System.Drawing.Point(107, 54);
+            this.cbEntregaNao.Name = "cbEntregaNao";
+            this.cbEntregaNao.Size = new System.Drawing.Size(56, 24);
+            this.cbEntregaNao.TabIndex = 1;
+            this.cbEntregaNao.Text = "Não";
+            this.cbEntregaNao.UseVisualStyleBackColor = true;
+            this.cbEntregaNao.CheckedChanged += new System.EventHandler(this.CbEntregaNao_CheckedChanged);
+            // 
+            // cbEntregaSim
+            // 
+            this.cbEntregaSim.AutoSize = true;
+            this.cbEntregaSim.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEntregaSim.Location = new System.Drawing.Point(107, 19);
+            this.cbEntregaSim.Name = "cbEntregaSim";
+            this.cbEntregaSim.Size = new System.Drawing.Size(53, 24);
+            this.cbEntregaSim.TabIndex = 0;
+            this.cbEntregaSim.Text = "Sim";
+            this.cbEntregaSim.UseVisualStyleBackColor = true;
+            this.cbEntregaSim.CheckedChanged += new System.EventHandler(this.CbEntregaSim_CheckedChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(210, 1287);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(178, 25);
+            this.label18.TabIndex = 40;
+            this.label18.Text = "Serviço de Entrega";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(181, 1113);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(233, 25);
+            this.label15.TabIndex = 39;
+            this.label15.Text = "Deseja registrar cardápio";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.cbRegitNao);
+            this.panel5.Controls.Add(this.cbRegistSim);
+            this.panel5.Location = new System.Drawing.Point(81, 1164);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(460, 100);
+            this.panel5.TabIndex = 38;
+            // 
+            // cbRegitNao
+            // 
+            this.cbRegitNao.AutoSize = true;
+            this.cbRegitNao.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRegitNao.Location = new System.Drawing.Point(107, 51);
+            this.cbRegitNao.Name = "cbRegitNao";
+            this.cbRegitNao.Size = new System.Drawing.Size(56, 24);
+            this.cbRegitNao.TabIndex = 1;
+            this.cbRegitNao.Text = "Não";
+            this.cbRegitNao.UseVisualStyleBackColor = true;
+            this.cbRegitNao.CheckedChanged += new System.EventHandler(this.CbRegitNao_CheckedChanged);
+            // 
+            // cbRegistSim
+            // 
+            this.cbRegistSim.AutoSize = true;
+            this.cbRegistSim.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRegistSim.Location = new System.Drawing.Point(107, 15);
+            this.cbRegistSim.Name = "cbRegistSim";
+            this.cbRegistSim.Size = new System.Drawing.Size(53, 24);
+            this.cbRegistSim.TabIndex = 0;
+            this.cbRegistSim.Text = "Sim";
+            this.cbRegistSim.UseVisualStyleBackColor = true;
+            this.cbRegistSim.CheckedChanged += new System.EventHandler(this.CbRegistSim_CheckedChanged);
             // 
             // panel4
             // 
@@ -937,107 +1042,6 @@
             // 
             this.openIcone.FileName = "icone";
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.checkBox12);
-            this.panel5.Controls.Add(this.checkBox11);
-            this.panel5.Location = new System.Drawing.Point(81, 1164);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(460, 100);
-            this.panel5.TabIndex = 38;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(181, 1113);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(233, 25);
-            this.label15.TabIndex = 39;
-            this.label15.Text = "Deseja registrar cardápio";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(210, 1287);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(178, 25);
-            this.label18.TabIndex = 40;
-            this.label18.Text = "Serviço de Entrega";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.checkBox14);
-            this.panel7.Controls.Add(this.checkBox13);
-            this.panel7.Location = new System.Drawing.Point(81, 1340);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(460, 100);
-            this.panel7.TabIndex = 41;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox11.Location = new System.Drawing.Point(107, 15);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(53, 24);
-            this.checkBox11.TabIndex = 0;
-            this.checkBox11.Text = "Sim";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox12.Location = new System.Drawing.Point(107, 51);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(56, 24);
-            this.checkBox12.TabIndex = 1;
-            this.checkBox12.Text = "Não";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox13.Location = new System.Drawing.Point(107, 19);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(53, 24);
-            this.checkBox13.TabIndex = 0;
-            this.checkBox13.Text = "Sim";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox14.Location = new System.Drawing.Point(107, 54);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(56, 24);
-            this.checkBox14.TabIndex = 1;
-            this.checkBox14.Text = "Não";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(100, 521);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 21);
-            this.comboBox1.TabIndex = 17;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label19.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(100, 482);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(63, 21);
-            this.label19.TabIndex = 18;
-            this.label19.Text = "Página";
-            // 
             // Cadastro_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1063,6 +1067,10 @@
             this.panel11.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -1071,10 +1079,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1153,13 +1157,13 @@
         private System.Windows.Forms.CheckBox cbQuinta;
         private System.Windows.Forms.CheckBox cbSegunda;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox cbEntregaNao;
+        private System.Windows.Forms.CheckBox cbEntregaSim;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox cbRegitNao;
+        private System.Windows.Forms.CheckBox cbRegistSim;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ComboBox comboBox1;
     }
