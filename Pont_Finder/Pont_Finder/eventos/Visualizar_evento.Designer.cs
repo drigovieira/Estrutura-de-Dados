@@ -33,6 +33,8 @@
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.pn_galery = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lb_horario = new System.Windows.Forms.Label();
             this.lb_data = new System.Windows.Forms.Label();
             this.lb_categoria = new System.Windows.Forms.Label();
@@ -52,12 +54,12 @@
             this.lb_rs_boleto = new System.Windows.Forms.Label();
             this.bt_comprar = new System.Windows.Forms.Button();
             this.lb_nome_evento = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_principal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,6 +78,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1055, 1166);
             this.panel1.TabIndex = 6;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // lb_txt7
             // 
@@ -130,6 +133,27 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(966, 666);
             this.panel4.TabIndex = 37;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(49, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 24);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "Descrição:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(51, 99);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(43, 17);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "label1";
             // 
             // lb_horario
             // 
@@ -324,26 +348,18 @@
             this.lb_nome_evento.TabIndex = 20;
             this.lb_nome_evento.Text = "Nome do evento";
             // 
-            // label1
+            // btn_back
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 99);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(43, 17);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 24);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "Descrição:";
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(66, 29);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 15;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // Visualizar_evento
             // 
@@ -352,6 +368,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Visualizar_evento";
@@ -362,6 +379,7 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_principal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -394,5 +412,6 @@
         private System.Windows.Forms.Label lb_nome_evento;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }
