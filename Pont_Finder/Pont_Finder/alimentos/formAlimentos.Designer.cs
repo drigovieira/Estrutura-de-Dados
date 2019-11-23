@@ -32,9 +32,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.remFiltro = new System.Windows.Forms.Button();
             this.pb_pesquisar = new System.Windows.Forms.PictureBox();
-            this.Filtrar = new System.Windows.Forms.Button();
-            this.CategoriaBox = new System.Windows.Forms.ComboBox();
-            this.lbCategoria = new System.Windows.Forms.Label();
             this.PesquisaBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -76,9 +73,6 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.remFiltro);
             this.panel2.Controls.Add(this.pb_pesquisar);
-            this.panel2.Controls.Add(this.Filtrar);
-            this.panel2.Controls.Add(this.CategoriaBox);
-            this.panel2.Controls.Add(this.lbCategoria);
             this.panel2.Controls.Add(this.PesquisaBox);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(5, 318);
@@ -93,7 +87,7 @@
             this.remFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.remFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remFiltro.ForeColor = System.Drawing.Color.White;
-            this.remFiltro.Location = new System.Drawing.Point(200, 104);
+            this.remFiltro.Location = new System.Drawing.Point(200, 109);
             this.remFiltro.Name = "remFiltro";
             this.remFiltro.Size = new System.Drawing.Size(103, 37);
             this.remFiltro.TabIndex = 45;
@@ -113,55 +107,6 @@
             this.pb_pesquisar.TabIndex = 44;
             this.pb_pesquisar.TabStop = false;
             this.pb_pesquisar.Click += new System.EventHandler(this.pb_pesquisar_Click);
-            // 
-            // Filtrar
-            // 
-            this.Filtrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.Filtrar.FlatAppearance.BorderSize = 0;
-            this.Filtrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Filtrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Filtrar.ForeColor = System.Drawing.Color.White;
-            this.Filtrar.Location = new System.Drawing.Point(200, 104);
-            this.Filtrar.Name = "Filtrar";
-            this.Filtrar.Size = new System.Drawing.Size(103, 37);
-            this.Filtrar.TabIndex = 12;
-            this.Filtrar.Text = "Filtrar por:";
-            this.Filtrar.UseVisualStyleBackColor = false;
-            this.Filtrar.Visible = false;
-            this.Filtrar.Click += new System.EventHandler(this.Filtrar_Click);
-            // 
-            // CategoriaBox
-            // 
-            this.CategoriaBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CategoriaBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategoriaBox.FormattingEnabled = true;
-            this.CategoriaBox.Items.AddRange(new object[] {
-            "Hambúrgueria",
-            "Comida Italiana",
-            "Comida Japonesa",
-            "Pizzaria",
-            "Sorveteria",
-            "Petiscaria",
-            "Churrascaria",
-            "Frutos do Mar",
-            "Convencional"});
-            this.CategoriaBox.Location = new System.Drawing.Point(22, 117);
-            this.CategoriaBox.Name = "CategoriaBox";
-            this.CategoriaBox.Size = new System.Drawing.Size(172, 24);
-            this.CategoriaBox.TabIndex = 11;
-            this.CategoriaBox.Visible = false;
-            this.CategoriaBox.SelectedValueChanged += new System.EventHandler(this.CategoriaBox_SelectedValueChanged);
-            // 
-            // lbCategoria
-            // 
-            this.lbCategoria.AutoSize = true;
-            this.lbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCategoria.Location = new System.Drawing.Point(18, 94);
-            this.lbCategoria.Name = "lbCategoria";
-            this.lbCategoria.Size = new System.Drawing.Size(82, 20);
-            this.lbCategoria.TabIndex = 3;
-            this.lbCategoria.Text = "Categoria:";
-            this.lbCategoria.Visible = false;
             // 
             // PesquisaBox
             // 
@@ -526,8 +471,6 @@
 
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox CategoriaBox;
-        private System.Windows.Forms.Label lbCategoria;
         private System.Windows.Forms.TextBox PesquisaBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -537,7 +480,6 @@
         private System.Windows.Forms.Panel ListarEmpresas;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button Filtrar;
         private System.Windows.Forms.Button Btn_Edit_Empresa;
         private System.Windows.Forms.PictureBox pb_pesquisar;
         private System.Windows.Forms.Panel panel8;
