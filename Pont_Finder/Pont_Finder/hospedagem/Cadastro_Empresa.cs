@@ -17,13 +17,17 @@ namespace Pont_Finder.hospedagem
     {
         public static string fotin = null;
 
+        bool loguinho = false;
+
         OpenFileDialog openimg = new OpenFileDialog();
+        OpenFileDialog openlogo = new OpenFileDialog();
         Form anterior;
         public Cadastro_Empresa(Form anterior)
         {
             this.anterior = anterior;
             InitializeComponent();
-            pb_img1.SizeMode = PictureBoxSizeMode.StretchImage;   
+            pb_img1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_logo.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
 
@@ -131,6 +135,32 @@ namespace Pont_Finder.hospedagem
                                     if (Validation.Email(Email))
                                     {
                                         Empresa empresa = new Empresa();
+
+                                        string diretorio_logo = null;
+
+                                    if (loguinho)
+                                    {
+                                        if (!Directory.Exists("..//..//hospedagem//data//images//empresas//" + CNPJ + "//logo//"))
+                                            Directory.CreateDirectory("..//..//hospedagem//data//images//empresas//" + CNPJ + "//logo//");
+                                        pb_logo.Load();
+                                        pb_logo.Image = Image.FromFile(openlogo.FileName);
+
+                                        Image logoo = new Bitmap(pb_logo.Image);
+
+                                        Image logoo2 = new Bitmap(logoo, pb_logo.Size);
+
+                                        pb_logo.Image = logoo2;
+
+                                        diretorio_logo = "..//..//hospedagem//data//images//empresas//" + CNPJ + "//logo//" + CNPJ + ".jpg";
+                                        pb_logo.Image.Save(diretorio_logo, ImageFormat.Jpeg);
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Você deve enviar um logo para sua empresa.");
+                                    }
+                                    
+            
+                                        //empresa.Logo = logo;
 
                                         empresa.Nomeempresa = NomeEmpresa;
                                         empresa.Nomefantasia = NomeFantasia;
@@ -305,6 +335,19 @@ namespace Pont_Finder.hospedagem
                 pb_img1.ImageLocation = fotin;
                 pb_img1.Load();
             }
+        }
+
+        private void bt_add_logo_Click(object sender, EventArgs e)
+        {
+            openlogo.Filter = "Image Files(*.jpeg;*.bmp;*.png;*.jpg)|*.jpeg;*.bmp;*.jpg";
+
+            if (openlogo.ShowDialog() == DialogResult.OK)
+            {
+                pb_logo.ImageLocation = openlogo.FileName;
+                pb_logo.Load();
+            }
+
+            loguinho = true;
         }
     }
 }

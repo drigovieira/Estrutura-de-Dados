@@ -10,7 +10,7 @@ namespace Pont_Finder.hospedagem
     {
         //Atributo da Empresa
 
-        private string nomeempresa, nomefantasia, endereco, email, descricao, ambiente, foto, tipo;
+        private string nomeempresa, nomefantasia, endereco, email, descricao, ambiente, foto, tipo, logo;
         private int cep, tel, estrelas, id;
         private bool ativo;
         private long cnpj, cpfadmin;
@@ -60,6 +60,12 @@ namespace Pont_Finder.hospedagem
         {
             get { return tipo; }
             set { tipo = value; }
+        }
+
+        public string Logo
+        {
+            get { return logo; }
+            set { logo = value; }
         }
 
         //Get e Set Long

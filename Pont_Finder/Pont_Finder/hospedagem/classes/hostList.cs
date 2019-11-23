@@ -19,6 +19,7 @@ namespace Pont_Finder.hospedagem
             Empresa e = new Empresa();
 
             e.CPFADMIN = empresa.CPFADMIN;
+            e.Logo = empresa.Logo;
             e.Nomeempresa = empresa.Nomeempresa;
             e.Nomefantasia = empresa.Nomefantasia;
             e.CNPJ = empresa.CNPJ;
@@ -44,6 +45,7 @@ namespace Pont_Finder.hospedagem
                 Empresa e = new Empresa();
 
                 e.CPFADMIN = item.CPFADMIN;
+                e.Logo = item.Logo;
                 e.Nomeempresa = item.Nomeempresa;
                 e.Nomefantasia = item.Nomefantasia;
                 e.CNPJ = item.CNPJ;
@@ -71,6 +73,7 @@ namespace Pont_Finder.hospedagem
                 if (cpf == item.CPFADMIN)
                 {
                     e.CPFADMIN = item.CPFADMIN;
+                    e.Logo = item.Logo;
                     e.Nomeempresa = item.Nomeempresa;
                     e.Nomefantasia = item.Nomefantasia;
                     e.CNPJ = item.CNPJ;
@@ -99,6 +102,7 @@ namespace Pont_Finder.hospedagem
                 if (cnpj == item.CNPJ)
                 {
                     e.CPFADMIN = item.CPFADMIN;
+                    e.Logo = item.Logo;
                     e.Nomeempresa = item.Nomeempresa;
                     e.Nomefantasia = item.Nomefantasia;
                     e.CNPJ = item.CNPJ;
@@ -127,6 +131,7 @@ namespace Pont_Finder.hospedagem
             {
                 Empresa emp = new Empresa();
                 emp.CPFADMIN = long.Parse(item.Element("admin").Value);
+                emp.Logo = item.Element("logo").Value;
                 emp.Nomeempresa = item.Element("nomeempresa").Value;
                 emp.Nomefantasia = item.Element("nomefantasia").Value;
                 emp.CNPJ = long.Parse(item.Element("cnpj").Value);
@@ -153,6 +158,7 @@ namespace Pont_Finder.hospedagem
                 XElement xemp =
                       new XElement("hospedagem",
                       new XElement("admin", item.CPFADMIN),
+                      new XElement("logo", item.Logo),
                       new XElement("nomeempresa", item.Nomeempresa),
                       new XElement("nomefantasia", item.Nomefantasia),
                       new XElement("cnpj", item.CNPJ),

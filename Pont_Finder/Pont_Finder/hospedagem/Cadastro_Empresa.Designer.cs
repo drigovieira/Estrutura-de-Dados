@@ -135,6 +135,7 @@
             this.bt_add_logo.TabIndex = 16;
             this.bt_add_logo.Text = "Adicionar Logo";
             this.bt_add_logo.UseVisualStyleBackColor = false;
+            this.bt_add_logo.Click += new System.EventHandler(this.bt_add_logo_Click);
             // 
             // pb_logo
             // 
