@@ -105,6 +105,7 @@
             this.tb_descricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tb_descricao.Size = new System.Drawing.Size(390, 150);
             this.tb_descricao.TabIndex = 5;
+            this.tb_descricao.TextChanged += new System.EventHandler(this.Tb_descricao_TextChanged);
             // 
             // bt_icone
             // 
@@ -149,6 +150,7 @@
             this.tb_titulo.Name = "tb_titulo";
             this.tb_titulo.Size = new System.Drawing.Size(390, 24);
             this.tb_titulo.TabIndex = 2;
+            this.tb_titulo.TextChanged += new System.EventHandler(this.Tb_titulo_TextChanged);
             // 
             // label2
             // 

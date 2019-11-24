@@ -108,7 +108,7 @@ namespace Pont_Finder.servicos
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            tb_valor.MaxLength = 10;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -158,6 +158,16 @@ namespace Pont_Finder.servicos
             classes.PostList.Add(p);
             FormPrincipal.MudarForm("servicos", new FormServicos());
 
+        }
+
+        private void Tb_titulo_TextChanged(object sender, EventArgs e)
+        {
+            tb_titulo.MaxLength = 35;
+        }
+
+        private void Tb_descricao_TextChanged(object sender, EventArgs e)
+        {
+            tb_descricao.MaxLength = 300;
         }
     }
 }

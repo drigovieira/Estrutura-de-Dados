@@ -145,5 +145,20 @@ namespace Pont_Finder
             }
                 
         }
+
+        private void TextB_nome_TextChanged(object sender, EventArgs e)
+        {
+            textB_nome.MaxLength = 50;
+        }
+
+        private void TextB_email_TextChanged(object sender, EventArgs e)
+        {
+            textB_email.MaxLength = 50;
+        }
+
+        private void TextB_senha_TextChanged(object sender, EventArgs e)
+        {
+            textB_senha.MaxLength = 100;
+        }
     }
 }

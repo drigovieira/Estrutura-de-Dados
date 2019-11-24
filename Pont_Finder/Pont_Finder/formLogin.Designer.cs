@@ -81,6 +81,7 @@
             this.tb_email.Size = new System.Drawing.Size(300, 29);
             this.tb_email.TabIndex = 0;
             this.tb_email.Tag = "";
+            this.tb_email.TextChanged += new System.EventHandler(this.Tb_email_TextChanged);
             this.tb_email.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextB_email_KeyPress);
             // 
             // label3

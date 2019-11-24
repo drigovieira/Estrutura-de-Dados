@@ -24,7 +24,7 @@ namespace Pont_Finder.servicos
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-
+            textBox4.MaxLength = 300;
         }
 
         private void Solicitar_Click(object sender, EventArgs e)
@@ -35,6 +35,21 @@ namespace Pont_Finder.servicos
         private void cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.MaxLength = 40;
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.MaxLength = 40;
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+            textBox3.MaxLength = 25;
         }
     }
 }

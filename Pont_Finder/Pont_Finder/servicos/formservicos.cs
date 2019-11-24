@@ -233,7 +233,7 @@ namespace Pont_Finder.servicos
 
         private void Tb_pesquisar_TextChanged(object sender, EventArgs e)
         {
-
+            tb_pesquisar.MaxLength = 45;
         }
 
         private void label2_Click(object sender, EventArgs e)

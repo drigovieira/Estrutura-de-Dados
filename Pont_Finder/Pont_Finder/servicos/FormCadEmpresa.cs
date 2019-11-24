@@ -131,5 +131,25 @@ namespace Pont_Finder.servicos
         {
 
         }
+
+        private void Tb_nome_TextChanged(object sender, EventArgs e)
+        {
+            tb_nome.MaxLength = 50;
+        }
+
+        private void Tb_fantasia_TextChanged(object sender, EventArgs e)
+        {
+            tb_fantasia.MaxLength = 50;
+        }
+
+        private void Tb_endereco_TextChanged(object sender, EventArgs e)
+        {
+            tb_endereco.MaxLength = 100;
+        }
+
+        private void Tb_email_TextChanged(object sender, EventArgs e)
+        {
+            tb_email.MaxLength = 50;
+        }
     }
 }

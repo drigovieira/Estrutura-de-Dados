@@ -176,6 +176,7 @@
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(415, 24);
             this.tb_email.TabIndex = 6;
+            this.tb_email.TextChanged += new System.EventHandler(this.Tb_email_TextChanged);
             // 
             // label5
             // 
@@ -194,6 +195,7 @@
             this.tb_fantasia.Name = "tb_fantasia";
             this.tb_fantasia.Size = new System.Drawing.Size(415, 24);
             this.tb_fantasia.TabIndex = 1;
+            this.tb_fantasia.TextChanged += new System.EventHandler(this.Tb_fantasia_TextChanged);
             // 
             // label6
             // 
@@ -212,6 +214,7 @@
             this.tb_endereco.Name = "tb_endereco";
             this.tb_endereco.Size = new System.Drawing.Size(415, 24);
             this.tb_endereco.TabIndex = 3;
+            this.tb_endereco.TextChanged += new System.EventHandler(this.Tb_endereco_TextChanged);
             // 
             // label7
             // 
@@ -266,6 +269,7 @@
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(415, 24);
             this.tb_nome.TabIndex = 0;
+            this.tb_nome.TextChanged += new System.EventHandler(this.Tb_nome_TextChanged);
             // 
             // button4
             // 

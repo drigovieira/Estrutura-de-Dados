@@ -48,7 +48,7 @@ namespace Pont_Finder
 
         private void TextB_senha_TextChanged(object sender, EventArgs e)
         {
-
+            tb_senha.MaxLength = 100;
         }
 
         private void TextB_senha_KeyPress(object sender, KeyPressEventArgs e)
@@ -83,6 +83,11 @@ namespace Pont_Finder
         {
             Recuperar_senha Rec_Senha = new Recuperar_senha();
             Rec_Senha.ShowDialog();
+        }
+
+        private void Tb_email_TextChanged(object sender, EventArgs e)
+        {
+            tb_email.MaxLength = 50;
         }
     }
 }

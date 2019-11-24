@@ -81,7 +81,7 @@ namespace Pont_Finder.servicos
 
         private void tb_descricao_TextChanged(object sender, EventArgs e)
         {
-
+            tb_descricao.MaxLength = 300;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace Pont_Finder.servicos
 
         private void tb_titulo_TextChanged(object sender, EventArgs e)
         {
-
+            tb_titulo.MaxLength = 30;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -101,7 +101,7 @@ namespace Pont_Finder.servicos
 
         private void tb_valor_TextChanged(object sender, EventArgs e)
         {
-
+            tb_valor.MaxLength = 10;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

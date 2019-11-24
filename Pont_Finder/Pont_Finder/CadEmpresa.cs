@@ -21,5 +21,15 @@ namespace Pont_Finder
         {
 
         }
+
+        private void Nomeempresa_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

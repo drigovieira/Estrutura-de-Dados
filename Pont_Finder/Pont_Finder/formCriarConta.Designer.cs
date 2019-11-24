@@ -70,6 +70,7 @@
             this.textB_senha.Size = new System.Drawing.Size(300, 29);
             this.textB_senha.TabIndex = 4;
             this.textB_senha.UseSystemPasswordChar = true;
+            this.textB_senha.TextChanged += new System.EventHandler(this.TextB_senha_TextChanged);
             // 
             // label6
             // 
@@ -88,6 +89,7 @@
             this.textB_email.Name = "textB_email";
             this.textB_email.Size = new System.Drawing.Size(300, 29);
             this.textB_email.TabIndex = 3;
+            this.textB_email.TextChanged += new System.EventHandler(this.TextB_email_TextChanged);
             // 
             // label5
             // 
@@ -117,6 +119,7 @@
             this.textB_nome.Size = new System.Drawing.Size(300, 29);
             this.textB_nome.TabIndex = 1;
             this.textB_nome.Tag = "";
+            this.textB_nome.TextChanged += new System.EventHandler(this.TextB_nome_TextChanged);
             // 
             // label3
             // 

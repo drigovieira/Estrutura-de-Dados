@@ -63,5 +63,20 @@ namespace Pont_Finder
 
            
         }
+
+        private void Tb_email_TextChanged(object sender, EventArgs e)
+        {
+            tb_email.MaxLength = 50;
+        }
+
+        private void Tb_senha_TextChanged(object sender, EventArgs e)
+        {
+            tb_senha.MaxLength = 100;
+        }
+
+        private void Tb_vsenha_TextChanged(object sender, EventArgs e)
+        {
+            tb_vsenha.MaxLength = 100;
+        }
     }
 }
