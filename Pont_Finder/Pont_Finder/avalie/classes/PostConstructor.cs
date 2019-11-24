@@ -15,7 +15,8 @@ namespace Pont_Finder.avalie
             tipoproblema,
             img,
             nome,
-            tempohora;
+            tempohora,
+            imgperfil;
         private long 
             cpf,
             id;
@@ -92,6 +93,12 @@ namespace Pont_Finder.avalie
         {
             get { return resolved; }
             set { resolved = value; }
+        }
+
+        public string Imgperfil
+        {
+            get { return imgperfil; }
+            set { imgperfil = value; }
         }
         
 

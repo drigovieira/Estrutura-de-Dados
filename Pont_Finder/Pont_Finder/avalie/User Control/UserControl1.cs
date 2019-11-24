@@ -21,6 +21,8 @@ namespace Pont_Finder.avalie
             post = PostList.PosterId(postid);
 
             NomePos.Text = (post.Nome);
+            imagemuser.ImageLocation = (post.Imgperfil);
+            
             userhora.Text = (post.Tempohora);
             userboxproblema.Text = (post.Tipoproblema);
             userboxlocalizacao.Text = (post.Localizacao);

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GMap.NET;
+using GMap.NET.WindowsForms;
+using GMap.NET.WindowsForms.Markers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -66,7 +69,31 @@ namespace Pont_Finder.avalie
                 r.Checked = true;
             else
                 nr.Checked = true;
-            
+
+            //Inicia o mapa baseado no provedor selecionado e carrega o cache.
+            gMapControl1.MapProvider = GMap.NET.MapProviders.OpenStreetMapProvider.Instance;
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.CacheOnly;
+
+            //LOCALIZAÇÃO DO CACHE
+            gMapControl1.CacheLocation = @"F:\GMAP\GmapCache";
+
+            // Inicia o mapa nas coordernadas correspondentes a cidade de cruzeiro.
+            gMapControl1.Position = new GMap.NET.PointLatLng(-22.5785104945075, -44.959659576416);
+
+            //end.Cidade = textBox2.Text;
+            string endereco = tb_loc.Text + ", Cruzeiro, Sâo Paulo";
+            gMapControl1.SetPositionByKeywords(endereco);
+            gMapControl1.Zoom = 16;
+            //Cria um overlay do mapa e cria o marcador.
+            GMapOverlay camada = new GMapOverlay("camada");
+            GMapMarker marker = new GMarkerGoogle(new PointLatLng(), GMarkerGoogleType.red_dot);
+            //Iguala o marcador com o texto digitado para trocar a posição e adiciona o marcador no overlay e no mapa.
+            gMapControl1.GetPositionByKeywords(endereco, out PointLatLng x);
+            gMapControl1.Overlays.Clear();
+            marker.Position = x;
+            gMapControl1.Overlays.Add(camada);
+            camada.Markers.Add(marker);
+
 
 
 
@@ -108,8 +135,32 @@ namespace Pont_Finder.avalie
             
             if(nr.Checked)
                 post.Resolved = false;
-            
 
+            MessageBox.Show("Post Alterado Com Sucesso");
+
+            //Inicia o mapa baseado no provedor selecionado e carrega o cache.
+            gMapControl1.MapProvider = GMap.NET.MapProviders.OpenStreetMapProvider.Instance;
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.CacheOnly;
+
+            //LOCALIZAÇÃO DO CACHE
+            gMapControl1.CacheLocation = @"F:\GMAP\GmapCache";
+
+            // Inicia o mapa nas coordernadas correspondentes a cidade de cruzeiro.
+            gMapControl1.Position = new GMap.NET.PointLatLng(-22.5785104945075, -44.959659576416);
+
+            //end.Cidade = textBox2.Text;
+            string endereco = tb_loc.Text + ", Cruzeiro, Sâo Paulo";
+            gMapControl1.SetPositionByKeywords(endereco);
+            gMapControl1.Zoom = 16;
+            //Cria um overlay do mapa e cria o marcador.
+            GMapOverlay camada = new GMapOverlay("camada");
+            GMapMarker marker = new GMarkerGoogle(new PointLatLng(), GMarkerGoogleType.red_dot);
+            //Iguala o marcador com o texto digitado para trocar a posição e adiciona o marcador no overlay e no mapa.
+            gMapControl1.GetPositionByKeywords(endereco, out PointLatLng x);
+            gMapControl1.Overlays.Clear();
+            marker.Position = x;
+            gMapControl1.Overlays.Add(camada);
+            camada.Markers.Add(marker);
 
         }
 
@@ -130,6 +181,7 @@ namespace Pont_Finder.avalie
         private void bt_remover_Click_1(object sender, EventArgs e)
         {
             post.Ativo = false;
+            MessageBox.Show("Post Removido Com Sucesso");
         }
 
         private void panel5_Paint_1(object sender, PaintEventArgs e)

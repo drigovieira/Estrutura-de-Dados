@@ -166,7 +166,9 @@ namespace Pont_Finder.avalie
                 string post_localizao = txtLocalizacao.Text;
                 string post_descricao = richTextBox1.Text;
 
+
                 post.Cpf = Session.Cpf;
+                post.Imgperfil = Session.Image;
                 post.Id = PostList.Poster.Count();
                 post.Nome = Session.Nome;
                 post.Img = link;

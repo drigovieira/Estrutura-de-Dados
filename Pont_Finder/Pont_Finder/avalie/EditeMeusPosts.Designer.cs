@@ -156,7 +156,7 @@
             this.bt_remover.BackColor = System.Drawing.Color.OrangeRed;
             this.bt_remover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_remover.ForeColor = System.Drawing.Color.White;
-            this.bt_remover.Location = new System.Drawing.Point(665, 327);
+            this.bt_remover.Location = new System.Drawing.Point(599, 298);
             this.bt_remover.Name = "bt_remover";
             this.bt_remover.Size = new System.Drawing.Size(86, 28);
             this.bt_remover.TabIndex = 96;
@@ -195,7 +195,7 @@
             this.bt_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_editar.ForeColor = System.Drawing.Color.White;
-            this.bt_editar.Location = new System.Drawing.Point(357, 327);
+            this.bt_editar.Location = new System.Drawing.Point(411, 298);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(86, 28);
             this.bt_editar.TabIndex = 97;

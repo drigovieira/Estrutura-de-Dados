@@ -67,7 +67,7 @@
             // 
             this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_resposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_resposta.Location = new System.Drawing.Point(16, 464);
+            this.tb_resposta.Location = new System.Drawing.Point(16, 903);
             this.tb_resposta.Name = "tb_resposta";
             this.tb_resposta.Size = new System.Drawing.Size(558, 119);
             this.tb_resposta.TabIndex = 69;
@@ -82,7 +82,7 @@
             this.bt_postar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_postar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_postar.ForeColor = System.Drawing.Color.White;
-            this.bt_postar.Location = new System.Drawing.Point(580, 463);
+            this.bt_postar.Location = new System.Drawing.Point(16, 1039);
             this.bt_postar.Name = "bt_postar";
             this.bt_postar.Size = new System.Drawing.Size(86, 28);
             this.bt_postar.TabIndex = 89;
@@ -95,7 +95,7 @@
             this.bt_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_editar.ForeColor = System.Drawing.Color.White;
-            this.bt_editar.Location = new System.Drawing.Point(580, 497);
+            this.bt_editar.Location = new System.Drawing.Point(251, 1039);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(86, 28);
             this.bt_editar.TabIndex = 88;
@@ -108,7 +108,7 @@
             this.bt_remover.BackColor = System.Drawing.Color.OrangeRed;
             this.bt_remover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_remover.ForeColor = System.Drawing.Color.White;
-            this.bt_remover.Location = new System.Drawing.Point(580, 531);
+            this.bt_remover.Location = new System.Drawing.Point(485, 1037);
             this.bt_remover.Name = "bt_remover";
             this.bt_remover.Size = new System.Drawing.Size(86, 28);
             this.bt_remover.TabIndex = 87;
@@ -237,7 +237,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(192, 590);
+            this.label6.Location = new System.Drawing.Point(468, 430);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 24);
             this.label6.TabIndex = 91;
@@ -265,9 +265,9 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(196, 617);
+            this.panel4.Location = new System.Drawing.Point(8, 457);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(709, 536);
+            this.panel4.Size = new System.Drawing.Size(1020, 397);
             this.panel4.TabIndex = 90;
             // 
             // label4
@@ -288,7 +288,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(4, 437);
+            this.label8.Location = new System.Drawing.Point(12, 874);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(106, 24);
             this.label8.TabIndex = 66;

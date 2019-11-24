@@ -29,6 +29,7 @@ namespace Pont_Finder.avalie
                     pos.Nome = item.Nome;
                     pos.Img = item.Img;
                     pos.Cpf = item.Cpf;
+                    pos.Imgperfil = item.Imgperfil;
                     pos.Tipoproblema = item.Tipoproblema;
                     pos.Localizacao = item.Localizacao;
                     pos.Desc = item.Desc;
@@ -58,6 +59,7 @@ namespace Pont_Finder.avalie
                     pos.Nome = item.Nome;
                     pos.Img = item.Img;
                     pos.Cpf = item.Cpf;
+                    pos.Imgperfil = item.Imgperfil;
                     pos.Tipoproblema = item.Tipoproblema;
                     pos.Localizacao = item.Localizacao;
                     pos.Desc = item.Desc;
@@ -84,6 +86,7 @@ namespace Pont_Finder.avalie
                         pos.Nome = item.Nome;
                         pos.Img = item.Img;
                         pos.Cpf = item.Cpf;
+                        pos.Imgperfil = item.Imgperfil;
                         pos.Tipoproblema = item.Tipoproblema;
                         pos.Localizacao = item.Localizacao;
                         pos.Desc = item.Desc;
@@ -106,6 +109,7 @@ namespace Pont_Finder.avalie
             pos.Nome = post.Nome;
             pos.Img = post.Img;
             pos.Cpf = post.Cpf;
+            pos.Imgperfil = post.Imgperfil;
             pos.Tipoproblema = post.Tipoproblema;
             pos.Localizacao = post.Localizacao;
             pos.Desc = post.Desc;
@@ -139,6 +143,7 @@ namespace Pont_Finder.avalie
                       new XElement("nome", item.Nome),
                       new XElement("img", item.Img),
                       new XElement("cpf", item.Cpf),
+                      new XElement("imgperfil", item.Imgperfil),
                       new XElement("tempohora", item.Tempohora),
                       new XElement("desc", item.Desc),
                       new XElement("tipoproblema", item.Tipoproblema),
@@ -166,6 +171,7 @@ namespace Pont_Finder.avalie
                 postar.Nome = item.Element("nome").Value;
                 postar.Img = item.Element("img").Value;
                 postar.Cpf = long.Parse(item.Element("cpf").Value);
+                postar.Imgperfil = item.Element("imgperfil").Value;
                 postar.Tempohora = item.Element("tempohora").Value;
                 postar.Desc = item.Element("desc").Value;
                 postar.Tipoproblema = item.Element("tipoproblema").Value;
