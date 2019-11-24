@@ -39,12 +39,13 @@
             this.NomePos = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.bt_remover = new System.Windows.Forms.Button();
-            this.bt_postar = new System.Windows.Forms.Button();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.bt_editar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.r = new System.Windows.Forms.RadioButton();
+            this.nr = new System.Windows.Forms.RadioButton();
             this.cb_pro = new System.Windows.Forms.ComboBox();
             this.tb_loc = new System.Windows.Forms.TextBox();
             this.tb_des = new System.Windows.Forms.RichTextBox();
@@ -85,7 +86,7 @@
             // 
             this.lb_hora.AutoSize = true;
             this.lb_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_hora.Location = new System.Drawing.Point(181, 335);
+            this.lb_hora.Location = new System.Drawing.Point(186, 335);
             this.lb_hora.Name = "lb_hora";
             this.lb_hora.Size = new System.Drawing.Size(32, 13);
             this.lb_hora.TabIndex = 82;
@@ -118,6 +119,7 @@
             this.pb_icone.Size = new System.Drawing.Size(263, 251);
             this.pb_icone.TabIndex = 76;
             this.pb_icone.TabStop = false;
+            this.pb_icone.Click += new System.EventHandler(this.pb_icone_Click);
             // 
             // label3
             // 
@@ -154,25 +156,13 @@
             this.bt_remover.BackColor = System.Drawing.Color.OrangeRed;
             this.bt_remover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_remover.ForeColor = System.Drawing.Color.White;
-            this.bt_remover.Location = new System.Drawing.Point(665, 320);
+            this.bt_remover.Location = new System.Drawing.Point(665, 327);
             this.bt_remover.Name = "bt_remover";
             this.bt_remover.Size = new System.Drawing.Size(86, 28);
             this.bt_remover.TabIndex = 96;
             this.bt_remover.Text = "Remover";
             this.bt_remover.UseVisualStyleBackColor = false;
-            // 
-            // bt_postar
-            // 
-            this.bt_postar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_postar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_postar.ForeColor = System.Drawing.Color.White;
-            this.bt_postar.Location = new System.Drawing.Point(357, 320);
-            this.bt_postar.Name = "bt_postar";
-            this.bt_postar.Size = new System.Drawing.Size(86, 28);
-            this.bt_postar.TabIndex = 98;
-            this.bt_postar.Text = "Postar";
-            this.bt_postar.UseVisualStyleBackColor = false;
-            this.bt_postar.Click += new System.EventHandler(this.bt_postar_Click_1);
+            this.bt_remover.Click += new System.EventHandler(this.bt_remover_Click_1);
             // 
             // gMapControl1
             // 
@@ -205,7 +195,7 @@
             this.bt_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_editar.ForeColor = System.Drawing.Color.White;
-            this.bt_editar.Location = new System.Drawing.Point(507, 320);
+            this.bt_editar.Location = new System.Drawing.Point(357, 327);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(86, 28);
             this.bt_editar.TabIndex = 97;
@@ -227,7 +217,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(74, 17);
+            this.label4.Location = new System.Drawing.Point(129, 17);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 100;
@@ -236,6 +226,8 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.r);
+            this.panel5.Controls.Add(this.nr);
             this.panel5.Controls.Add(this.cb_pro);
             this.panel5.Controls.Add(this.tb_loc);
             this.panel5.Controls.Add(this.tb_des);
@@ -243,7 +235,6 @@
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.bt_editar);
             this.panel5.Controls.Add(this.gMapControl1);
-            this.panel5.Controls.Add(this.bt_postar);
             this.panel5.Controls.Add(this.bt_remover);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.NomePos);
@@ -257,6 +248,29 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1199, 561);
             this.panel5.TabIndex = 95;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint_1);
+            // 
+            // r
+            // 
+            this.r.AutoSize = true;
+            this.r.Location = new System.Drawing.Point(259, 298);
+            this.r.Name = "r";
+            this.r.Size = new System.Drawing.Size(72, 17);
+            this.r.TabIndex = 105;
+            this.r.TabStop = true;
+            this.r.Text = "Resolvido";
+            this.r.UseVisualStyleBackColor = true;
+            // 
+            // nr
+            // 
+            this.nr.AutoSize = true;
+            this.nr.Location = new System.Drawing.Point(68, 297);
+            this.nr.Name = "nr";
+            this.nr.Size = new System.Drawing.Size(95, 17);
+            this.nr.TabIndex = 104;
+            this.nr.TabStop = true;
+            this.nr.Text = "Não Resolvido";
+            this.nr.UseVisualStyleBackColor = true;
             // 
             // cb_pro
             // 
@@ -325,7 +339,6 @@
         private System.Windows.Forms.Label NomePos;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button bt_remover;
-        private System.Windows.Forms.Button bt_postar;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
         private System.Windows.Forms.Button bt_editar;
         private System.Windows.Forms.Label label1;
@@ -334,5 +347,7 @@
         private System.Windows.Forms.ComboBox cb_pro;
         private System.Windows.Forms.TextBox tb_loc;
         private System.Windows.Forms.RichTextBox tb_des;
+        private System.Windows.Forms.RadioButton r;
+        private System.Windows.Forms.RadioButton nr;
     }
 }
