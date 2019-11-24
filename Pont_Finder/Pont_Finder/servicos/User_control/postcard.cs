@@ -36,6 +36,8 @@ namespace Pont_Finder.servicos
             lb_like.Text = this.post.Joinha + "";
             lb_deslike.Text = this.post.DeJoinha + "";
 
+            lb_titulo.Text += " "+ this.post.Titulo;
+
             pb_up.Image = imgLike;
             pb_down.Image = imgDeslike;
 

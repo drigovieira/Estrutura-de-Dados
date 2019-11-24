@@ -59,6 +59,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -203,7 +204,7 @@
             this.bt_solicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_solicitar.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_solicitar.ForeColor = System.Drawing.Color.White;
-            this.bt_solicitar.Location = new System.Drawing.Point(656, 5);
+            this.bt_solicitar.Location = new System.Drawing.Point(570, 5);
             this.bt_solicitar.Name = "bt_solicitar";
             this.bt_solicitar.Size = new System.Drawing.Size(122, 28);
             this.bt_solicitar.TabIndex = 4;
@@ -216,7 +217,7 @@
             this.bt_cadEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cadEmpresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cadEmpresa.ForeColor = System.Drawing.Color.White;
-            this.bt_cadEmpresa.Location = new System.Drawing.Point(488, 5);
+            this.bt_cadEmpresa.Location = new System.Drawing.Point(442, 5);
             this.bt_cadEmpresa.Name = "bt_cadEmpresa";
             this.bt_cadEmpresa.Size = new System.Drawing.Size(122, 28);
             this.bt_cadEmpresa.TabIndex = 3;
@@ -229,7 +230,7 @@
             this.bt_publicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_publicar.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_publicar.ForeColor = System.Drawing.Color.White;
-            this.bt_publicar.Location = new System.Drawing.Point(319, 5);
+            this.bt_publicar.Location = new System.Drawing.Point(314, 5);
             this.bt_publicar.Name = "bt_publicar";
             this.bt_publicar.Size = new System.Drawing.Size(122, 28);
             this.bt_publicar.TabIndex = 2;
@@ -241,6 +242,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.bt_gerenciar);
             this.panel1.Controls.Add(this.bt_solicitar);
             this.panel1.Controls.Add(this.bt_publicar);
@@ -255,7 +257,7 @@
             this.bt_gerenciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_gerenciar.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_gerenciar.ForeColor = System.Drawing.Color.White;
-            this.bt_gerenciar.Location = new System.Drawing.Point(824, 5);
+            this.bt_gerenciar.Location = new System.Drawing.Point(698, 5);
             this.bt_gerenciar.Name = "bt_gerenciar";
             this.bt_gerenciar.Size = new System.Drawing.Size(122, 28);
             this.bt_gerenciar.TabIndex = 7;
@@ -413,6 +415,18 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Propaganda Externa";
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(826, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 28);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Mensagens";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,5 +500,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button1;
     }
 }
