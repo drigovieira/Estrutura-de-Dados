@@ -55,6 +55,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -121,7 +122,7 @@
             this.lb_data.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
             this.lb_data.Location = new System.Drawing.Point(52, 263);
             this.lb_data.Name = "lb_data";
-            this.lb_data.Size = new System.Drawing.Size(92, 18);
+            this.lb_data.Size = new System.Drawing.Size(93, 20);
             this.lb_data.TabIndex = 84;
             this.lb_data.Text = "Data da Postagem:";
             // 
@@ -131,7 +132,7 @@
             this.lb_hora.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Bold);
             this.lb_hora.Location = new System.Drawing.Point(144, 264);
             this.lb_hora.Name = "lb_hora";
-            this.lb_hora.Size = new System.Drawing.Size(29, 18);
+            this.lb_hora.Size = new System.Drawing.Size(30, 20);
             this.lb_hora.TabIndex = 82;
             this.lb_hora.Text = "hora";
             // 
@@ -296,6 +297,7 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.gMapControl1);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.NomePos);
             this.panel5.Controls.Add(this.label3);
@@ -341,6 +343,32 @@
             this.pictureBox1.TabIndex = 92;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // gMapControl1
+            // 
+            this.gMapControl1.Bearing = 0F;
+            this.gMapControl1.CanDragMap = true;
+            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
+            this.gMapControl1.GrayScaleMode = false;
+            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.gMapControl1.LevelsKeepInMemmory = 5;
+            this.gMapControl1.Location = new System.Drawing.Point(634, 23);
+            this.gMapControl1.MarkersEnabled = true;
+            this.gMapControl1.MaxZoom = 18;
+            this.gMapControl1.MinZoom = 14;
+            this.gMapControl1.MouseWheelZoomEnabled = true;
+            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.gMapControl1.Name = "gMapControl1";
+            this.gMapControl1.NegativeMode = false;
+            this.gMapControl1.PolygonsEnabled = true;
+            this.gMapControl1.RetryLoadTile = 0;
+            this.gMapControl1.RoutesEnabled = true;
+            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.gMapControl1.ShowTileGridLines = false;
+            this.gMapControl1.Size = new System.Drawing.Size(369, 334);
+            this.gMapControl1.TabIndex = 85;
+            this.gMapControl1.Zoom = 14D;
             // 
             // ViewPost
             // 
@@ -396,5 +424,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private GMap.NET.WindowsForms.GMapControl gMapControl1;
     }
 }
