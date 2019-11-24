@@ -209,7 +209,7 @@ namespace Pont_Finder
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                if (Tb_CatS.Text.Equals("!log"))
+                if (cb_problemas.Text.Equals("!log"))
                 {
                     Session.Login("admin", "admin");
                     FormPrincipal.MudarForm("Reclame", new FormAvalie());
@@ -219,7 +219,7 @@ namespace Pont_Finder
                 ListaDePost.Clear();
                 foreach (var item in PostList.PosterAtivo)
                 {
-                    if (item.Tipoproblema.ToLower().Trim().Contains(Tb_CatS.Text.ToLower().Trim()))
+                    if (item.Tipoproblema.ToLower().Trim().Contains(cb_problemas.Text.ToLower().Trim()))
                     {
                         ListaDePost.Add(item);
                     }
@@ -272,7 +272,7 @@ namespace Pont_Finder
             ListaDePost.Clear();
             foreach (var item in PostList.PosterAtivo)
             {
-                if (item.Tipoproblema.ToLower().Trim().Contains(Tb_CatS.Text.ToLower().Trim()))
+                if (item.Tipoproblema.ToLower().Trim().Contains(cb_problemas.Text.ToLower().Trim()))
                 {
                     ListaDePost.Add(item);
                 }
@@ -375,6 +375,11 @@ namespace Pont_Finder
         }
 
         private void FormAvalie_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Databox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

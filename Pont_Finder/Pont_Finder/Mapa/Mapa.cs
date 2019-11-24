@@ -57,5 +57,10 @@ namespace Pont_Finder.Mapa
             // Inicia o mapa nas coordernadas correspondentes a cidade de cruzeiro.
             gMapControl1.Position = new GMap.NET.PointLatLng(-22.5785104945075, -44.959659576416);
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

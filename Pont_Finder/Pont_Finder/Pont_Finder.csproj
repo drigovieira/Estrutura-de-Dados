@@ -174,10 +174,10 @@
     <Compile Include="avalie\User Control\Card_comentario.Designer.cs">
       <DependentUpon>Card_comentario.cs</DependentUpon>
     </Compile>
-    <Compile Include="avalie\UserControl1.cs">
+    <Compile Include="avalie\User Control\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="avalie\UserControl1.designer.cs">
+    <Compile Include="avalie\User Control\UserControl1.designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="avalie\ViewPost.cs">
@@ -499,7 +499,7 @@
     <EmbeddedResource Include="avalie\User Control\Card_comentario.resx">
       <DependentUpon>Card_comentario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="avalie\UserControl1.resx">
+    <EmbeddedResource Include="avalie\User Control\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="avalie\ViewPost.resx">
@@ -727,6 +727,7 @@
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <None Include="Resources\noview-icon .png" />
     <None Include="Resources\Checked_icon.png" />
+    <Content Include="Resources\57477.png" />
     <Content Include="Resources\854878.png" />
     <Content Include="Resources\noview-icon.png" />
     <Content Include="Resources\servicos\like\Deslike.png" />
