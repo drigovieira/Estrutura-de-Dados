@@ -67,18 +67,13 @@ namespace Pont_Finder.avalie
                     break;
                 UserControl1 t1 = new UserControl1(item.Id);
                 t1.Location = new Point(0, local);
+                
                 local = local + t1.Height + 5;
                 panel3.Controls.Add(t1);
                 i++;
             }
-
-
-
-
-
-
         }    
-
+        
 
         public void Organized()
         {

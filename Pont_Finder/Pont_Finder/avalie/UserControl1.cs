@@ -36,7 +36,14 @@ namespace Pont_Finder.avalie
                 checado.Visible = false;
             }
             
-
+            if(Session.Cpf == post.Cpf)
+            {
+                bt_editar.Visible = true;
+            }
+            else
+            {
+                bt_editar.Visible = false;
+            }
 
         }
 
@@ -65,6 +72,13 @@ namespace Pont_Finder.avalie
 
         private void userhora_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void bt_editar_Click(object sender, EventArgs e)
+        {
+            avalie.EditeMeusPosts avaliepost = new EditeMeusPosts(post.Id);
+            FormPrincipal.MudarForm("Reclame", avaliepost);
 
         }
     }
