@@ -240,5 +240,11 @@ namespace Pont_Finder.avalie
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Mapa.Mapa m = new Mapa.Mapa();
+            m.ShowDialog();
+        }
     }
 }

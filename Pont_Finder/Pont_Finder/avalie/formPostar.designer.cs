@@ -32,6 +32,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtLocalizacao = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPostar = new System.Windows.Forms.Button();
@@ -46,9 +47,10 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -71,7 +73,7 @@
             this.txtLocalizacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocalizacao.Location = new System.Drawing.Point(76, 55);
             this.txtLocalizacao.Name = "txtLocalizacao";
-            this.txtLocalizacao.Size = new System.Drawing.Size(473, 26);
+            this.txtLocalizacao.Size = new System.Drawing.Size(433, 26);
             this.txtLocalizacao.TabIndex = 63;
             this.txtLocalizacao.TextChanged += new System.EventHandler(this.txtLocalizacao_TextChanged);
             this.txtLocalizacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLocalizacao_KeyPress);
@@ -80,6 +82,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.pictureBox1);
             this.panel6.Controls.Add(this.comboBox1);
             this.panel6.Controls.Add(this.txtLocalizacao);
             this.panel6.Controls.Add(this.label2);
@@ -94,6 +97,18 @@
             this.panel6.Size = new System.Drawing.Size(625, 669);
             this.panel6.TabIndex = 14;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::Pont_Finder.Properties.Resources._854878;
+            this.pictureBox1.Location = new System.Drawing.Point(522, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(27, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 79;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // comboBox1
             // 
@@ -116,7 +131,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(81, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 32);
+            this.label2.Size = new System.Drawing.Size(241, 33);
             this.label2.TabIndex = 76;
             this.label2.Text = "Sobre o que você quer falar...";
             // 
@@ -155,7 +170,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(40, 432);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 32);
+            this.label1.Size = new System.Drawing.Size(96, 33);
             this.label1.TabIndex = 66;
             this.label1.Text = "Descrição:";
             // 
@@ -195,7 +210,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(81, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 32);
+            this.label3.Size = new System.Drawing.Size(118, 33);
             this.label3.TabIndex = 78;
             this.label3.Text = "Localização...";
             // 
@@ -253,6 +268,16 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Propaganda Externa";
             // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Controls.Add(this.label6);
+            this.panel8.Location = new System.Drawing.Point(0, -2);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1262, 200);
+            this.panel8.TabIndex = 21;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -266,23 +291,13 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Expresse sua opinião";
             // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Controls.Add(this.label6);
-            this.panel8.Location = new System.Drawing.Point(0, -2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1262, 200);
-            this.panel8.TabIndex = 21;
-            // 
             // FormPostar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1299, 675);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
@@ -295,6 +310,7 @@
             this.Load += new System.EventHandler(this.FormPostar_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -327,5 +343,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
