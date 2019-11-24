@@ -260,6 +260,124 @@ namespace Pont_Finder
                 }
             }
         }
+
+        private void Tb_CatS_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Pesquisar_Click(object sender, EventArgs e)
+        {
+
+            ListaDePost.Clear();
+            foreach (var item in PostList.PosterAtivo)
+            {
+                if (item.Tipoproblema.ToLower().Trim().Contains(Tb_CatS.Text.ToLower().Trim()))
+                {
+                    ListaDePost.Add(item);
+                }
+            }
+
+            int y = 5;
+            panel3.Height = 180;
+            panel3.Controls.Clear();
+            int i = 0;
+
+            ListaDePost.Reverse();
+
+            pagTotal = ListaDePost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
+            foreach (var item in ListaDePost)
+            {
+                if (i >= pagQuant)
+                    break;
+                UserControl1 a = new UserControl1(item.Id);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                panel3.Height = panel3.Height + 180;
+                panel3.Controls.Add(a);
+                i++;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ListaDePost.Clear();
+            foreach (var item in PostList.PosterAtivo)
+            {
+                if (item.Tempohora.ToLower().Trim().Contains(Databox.Text.ToLower().Trim()))
+                {
+                    ListaDePost.Add(item);
+                }
+            }
+
+            int y = 5;
+            panel3.Height = 180;
+            panel3.Controls.Clear();
+            int i = 0;
+
+            ListaDePost.Reverse();
+
+            pagTotal = ListaDePost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
+            foreach (var item in ListaDePost)
+            {
+                if (i >= pagQuant)
+                    break;
+                UserControl1 a = new UserControl1(item.Id);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                panel3.Height = panel3.Height + 180;
+                panel3.Controls.Add(a);
+                i++;
+            }
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormAvalie_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

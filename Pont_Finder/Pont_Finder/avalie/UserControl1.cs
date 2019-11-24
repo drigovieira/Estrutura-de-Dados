@@ -62,5 +62,10 @@ namespace Pont_Finder.avalie
             }
             */
         }
+
+        private void userhora_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -144,6 +144,12 @@
     <Compile Include="avalie\classes\ComentarioList.cs" />
     <Compile Include="avalie\classes\PostConstructor.cs" />
     <Compile Include="avalie\classes\PostList.cs" />
+    <Compile Include="avalie\EditeMeusPosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="avalie\EditeMeusPosts.Designer.cs">
+      <DependentUpon>EditeMeusPosts.cs</DependentUpon>
+    </Compile>
     <Compile Include="avalie\FormAvalie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -477,6 +483,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Visualizar.resx">
       <DependentUpon>Visualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avalie\EditeMeusPosts.resx">
+      <DependentUpon>EditeMeusPosts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="avalie\FormAvalie.resx">
       <DependentUpon>FormAvalie.cs</DependentUpon>
