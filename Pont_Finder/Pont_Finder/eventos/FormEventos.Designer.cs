@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEventos));
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_bai = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_fai = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_cat = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -51,19 +51,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.bt_prox = new System.Windows.Forms.Button();
+            this.lb_pag = new System.Windows.Forms.Label();
+            this.bt_ant = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox3
+            // tb_bai
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(145, 144);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 24);
-            this.textBox3.TabIndex = 6;
+            this.tb_bai.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_bai.Location = new System.Drawing.Point(145, 144);
+            this.tb_bai.Name = "tb_bai";
+            this.tb_bai.Size = new System.Drawing.Size(130, 24);
+            this.tb_bai.TabIndex = 6;
             // 
             // label15
             // 
@@ -75,13 +78,13 @@
             this.label15.TabIndex = 5;
             this.label15.Text = "Bairro:";
             // 
-            // textBox2
+            // tb_fai
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(145, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(130, 24);
-            this.textBox2.TabIndex = 4;
+            this.tb_fai.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_fai.Location = new System.Drawing.Point(145, 97);
+            this.tb_fai.Name = "tb_fai";
+            this.tb_fai.Size = new System.Drawing.Size(130, 24);
+            this.tb_fai.TabIndex = 4;
             // 
             // label14
             // 
@@ -93,15 +96,15 @@
             this.label14.TabIndex = 3;
             this.label14.Text = "Faixa etária:";
             // 
-            // textBox1
+            // tb_cat
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(145, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 24);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.tb_cat.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_cat.Location = new System.Drawing.Point(145, 54);
+            this.tb_cat.Name = "tb_cat";
+            this.tb_cat.Size = new System.Drawing.Size(130, 24);
+            this.tb_cat.TabIndex = 2;
+            this.tb_cat.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tb_cat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label13
             // 
@@ -151,11 +154,11 @@
             this.panel2.BackColor = System.Drawing.Color.Orchid;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.bt_pesquisar);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.tb_bai);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.tb_fai);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.tb_cat);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(5, 280);
@@ -175,6 +178,7 @@
             this.bt_pesquisar.TabIndex = 27;
             this.bt_pesquisar.Text = "Pesquisar";
             this.bt_pesquisar.UseVisualStyleBackColor = false;
+            this.bt_pesquisar.Click += new System.EventHandler(this.bt_pesquisar_Click);
             // 
             // panel6
             // 
@@ -215,7 +219,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(470, 218);
+            this.label22.Location = new System.Drawing.Point(470, 206);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(378, 36);
             this.label22.TabIndex = 36;
@@ -287,6 +291,45 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Propaganda Externa";
             // 
+            // bt_prox
+            // 
+            this.bt_prox.BackColor = System.Drawing.Color.Transparent;
+            this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_prox.ForeColor = System.Drawing.Color.Black;
+            this.bt_prox.Location = new System.Drawing.Point(867, 252);
+            this.bt_prox.Name = "bt_prox";
+            this.bt_prox.Size = new System.Drawing.Size(75, 23);
+            this.bt_prox.TabIndex = 85;
+            this.bt_prox.Text = ">>";
+            this.bt_prox.UseVisualStyleBackColor = false;
+            this.bt_prox.Click += new System.EventHandler(this.bt_prox_Click);
+            // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.Location = new System.Drawing.Point(620, 262);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(39, 13);
+            this.lb_pag.TabIndex = 86;
+            this.lb_pag.Text = "lb_pag";
+            // 
+            // bt_ant
+            // 
+            this.bt_ant.BackColor = System.Drawing.Color.Transparent;
+            this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ant.ForeColor = System.Drawing.Color.Black;
+            this.bt_ant.Location = new System.Drawing.Point(320, 252);
+            this.bt_ant.Name = "bt_ant";
+            this.bt_ant.Size = new System.Drawing.Size(75, 23);
+            this.bt_ant.TabIndex = 84;
+            this.bt_ant.Text = "<<";
+            this.bt_ant.UseVisualStyleBackColor = false;
+            this.bt_ant.Click += new System.EventHandler(this.bt_ant_Click);
+            // 
             // FormEventos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,6 +337,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.bt_prox);
+            this.Controls.Add(this.lb_pag);
+            this.Controls.Add(this.bt_ant);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label23);
@@ -325,13 +371,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_bai;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_fai;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_cat;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
@@ -347,5 +393,8 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button bt_pesquisar;
+        private System.Windows.Forms.Button bt_prox;
+        private System.Windows.Forms.Label lb_pag;
+        private System.Windows.Forms.Button bt_ant;
     }
 }

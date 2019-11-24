@@ -102,7 +102,7 @@ namespace Pont_Finder
             ListaDePost = PostList.PosterAtivo;
             ListaDePost.Reverse();
 
-            pagQuant = 2;
+            pagQuant = 3;
 
             pagTotal = ListaDePost.Count;
             if ((pagTotal % pagQuant) != 0)
