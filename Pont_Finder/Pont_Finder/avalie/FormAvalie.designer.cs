@@ -33,6 +33,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.Tb_CatS = new System.Windows.Forms.TextBox();
             this.button_Pesquisar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -96,14 +97,24 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel7.Controls.Add(this.Tb_CatS);
             this.panel7.Controls.Add(this.button_Pesquisar);
             this.panel7.Controls.Add(this.comboBox1);
             this.panel7.Controls.Add(this.label1);
             this.panel7.Controls.Add(this.label2);
             this.panel7.Location = new System.Drawing.Point(5, 539);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(310, 195);
+            this.panel7.Size = new System.Drawing.Size(310, 197);
             this.panel7.TabIndex = 14;
+            // 
+            // Tb_CatS
+            // 
+            this.Tb_CatS.Location = new System.Drawing.Point(7, 89);
+            this.Tb_CatS.Name = "Tb_CatS";
+            this.Tb_CatS.Size = new System.Drawing.Size(288, 20);
+            this.Tb_CatS.TabIndex = 86;
+            this.Tb_CatS.Enter += new System.EventHandler(this.Tb_CatS_Enter);
+            this.Tb_CatS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Tb_CatS_KeyPress);
             // 
             // button_Pesquisar
             // 
@@ -112,7 +123,7 @@
             this.button_Pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Pesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Pesquisar.ForeColor = System.Drawing.Color.White;
-            this.button_Pesquisar.Location = new System.Drawing.Point(80, 145);
+            this.button_Pesquisar.Location = new System.Drawing.Point(87, 115);
             this.button_Pesquisar.Name = "button_Pesquisar";
             this.button_Pesquisar.Size = new System.Drawing.Size(110, 34);
             this.button_Pesquisar.TabIndex = 79;
@@ -127,10 +138,11 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Infraestrutura",
             "Outros"});
-            this.comboBox1.Location = new System.Drawing.Point(10, 97);
+            this.comboBox1.Location = new System.Drawing.Point(7, 152);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(288, 28);
             this.comboBox1.TabIndex = 78;
+            this.comboBox1.Visible = false;
             // 
             // label1
             // 
@@ -508,5 +520,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox Tb_CatS;
     }
 }

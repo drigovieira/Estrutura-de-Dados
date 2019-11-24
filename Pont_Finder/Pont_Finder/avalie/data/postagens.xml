@@ -36,4 +36,16 @@
     <ativo>true</ativo>
     <resolvido>false</resolvido>
   </post>
+  <post>
+    <id>3</id>
+    <nome>admin</nome>
+    <img>..//..//avalie//data//imagens//posts//3.jpg</img>
+    <cpf>26835036010</cpf>
+    <tempohora>23/11/2019 22:44</tempohora>
+    <desc>Bob Esponja Zuadasso</desc>
+    <tipoproblema>Outros</tipoproblema>
+    <localizacao>Rua das Azaleias</localizacao>
+    <ativo>true</ativo>
+    <resolvido>false</resolvido>
+  </post>
 </posts>

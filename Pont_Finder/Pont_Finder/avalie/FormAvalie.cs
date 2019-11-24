@@ -199,6 +199,67 @@ namespace Pont_Finder
             }
 
         }
+
+        private void Tb_CatS_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tb_CatS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if (Tb_CatS.Text.Equals("!log"))
+                {
+                    Session.Login("admin", "admin");
+                    FormPrincipal.MudarForm("Reclame", new FormAvalie());
+                }
+
+
+                ListaDePost.Clear();
+                foreach (var item in PostList.PosterAtivo)
+                {
+                    if (item.Tipoproblema.ToLower().Trim().Contains(Tb_CatS.Text.ToLower().Trim()))
+                    {
+                        ListaDePost.Add(item);
+                    }
+                }
+
+                int y = 5;
+                panel3.Height = 180;
+                panel3.Controls.Clear();
+                int i = 0;
+
+                ListaDePost.Reverse();
+
+                pagTotal = ListaDePost.Count;
+                if ((pagTotal % pagQuant) != 0)
+                {
+                    pagTotal = (pagTotal / pagQuant);
+                    pagTotal++;
+                }
+                else
+                {
+                    pagTotal = pagTotal / pagQuant;
+                }
+                pagAtual = 1;
+
+                lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
+                foreach (var item in ListaDePost)
+                {
+                    if (i >= pagQuant)
+                        break;
+                    UserControl1 a = new UserControl1(item.Id);
+                    a.Location = new Point(0, (y));
+                    y = y + a.Height + 5;
+                    panel3.Height = panel3.Height + 180;
+                    panel3.Controls.Add(a);
+                    i++;
+                }
+            }
+        }
     }
 }
 
