@@ -34,7 +34,6 @@
             this.pn_galery = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.lb_horario = new System.Windows.Forms.Label();
             this.lb_data = new System.Windows.Forms.Label();
             this.lb_categoria = new System.Windows.Forms.Label();
@@ -55,6 +54,7 @@
             this.bt_comprar = new System.Windows.Forms.Button();
             this.lb_nome_evento = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.lb_descricao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
@@ -112,8 +112,8 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.lb_descricao);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.lb_horario);
             this.panel4.Controls.Add(this.lb_data);
             this.panel4.Controls.Add(this.lb_categoria);
@@ -143,17 +143,6 @@
             this.label2.Size = new System.Drawing.Size(96, 24);
             this.label2.TabIndex = 38;
             this.label2.Text = "Descrição:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 99);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(43, 17);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "label1";
             // 
             // lb_horario
             // 
@@ -361,6 +350,16 @@
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
+            // lb_descricao
+            // 
+            this.lb_descricao.AutoSize = true;
+            this.lb_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_descricao.Location = new System.Drawing.Point(157, 63);
+            this.lb_descricao.Name = "lb_descricao";
+            this.lb_descricao.Size = new System.Drawing.Size(58, 24);
+            this.lb_descricao.TabIndex = 39;
+            this.lb_descricao.Text = "Value";
+            // 
             // Visualizar_evento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,7 +410,7 @@
         private System.Windows.Forms.Button bt_comprar;
         private System.Windows.Forms.Label lb_nome_evento;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Label lb_descricao;
     }
 }
