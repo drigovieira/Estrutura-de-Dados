@@ -1,36 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <roomlist>
-	<quarto>
-		<id>0</id>
-
-		<empresa>12123123112221</empresa>
-		<nome>Casal 1</nome>
-		<qtd_pessoas>2</qtd_pessoas>
-		<qtd_quartos>11</qtd_quartos>
-		<servicos> * Café da manhã * Café da tarde * TV a cabo</servicos>
-		<valor>250</valor>
-		<foto>..//..//hospedagem//data//images//empresas//12123123112221//quartos//0//Casal 1.jpg</foto>
-		<empresa>12131232131231</empresa>
-		<nome>Casal1</nome>
-		<qtd_pessoas>2</qtd_pessoas>
-		<qtd_quartos>2</qtd_quartos>
-		<servicos> * Café da manhã * Ar Condicionado * Café da tarde * Wi-fi</servicos>
-		<valor>250</valor>
-		<foto>..//..//hospedagem//data//images//empresas//12131232131231//quartos//0//Casal1.jpg</foto>
-		<estado>Disponivel</estado>
-		<status>true</status>
-	</quarto>
-	<quarto>
-		<id>1</id>
-		<empresa>12131232131231</empresa>
-		<nome>Solteiro1</nome>
-		<qtd_pessoas>2</qtd_pessoas>
-		<qtd_quartos>2</qtd_quartos>
-		<servicos> * Café da manhã * Ar Condicionado * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
-		<valor>200</valor>
-		<foto>..//..//hospedagem//data//images//empresas//12131232131231//quartos//1//Solteiro1.jpg</foto>
-		>>>>>>> 6067e6a91b15b313de4b26ca7f89a7b23e884f07
-		<estado>Disponivel</estado>
-		<status>true</status>
-	</quarto>
+  <quarto>
+    <id>0</id>
+    <empresa>12123123112221</empresa>
+    <nome>Casal 2</nome>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>3</qtd_quartos>
+    <servicos> * Café da manhã * Café da tarde * TV a cabo * Espaço PET</servicos>
+    <valor>300</valor>
+    <foto>..//..//hospedagem//data//images//empresas//12123123112221//quartos//0//Casal 2.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
 </roomlist>
