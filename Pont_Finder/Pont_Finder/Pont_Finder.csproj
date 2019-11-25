@@ -415,6 +415,8 @@
     <Compile Include="servicos\ServicosADM.Designer.cs">
       <DependentUpon>ServicosADM.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\socialist\Mensagem.cs" />
+    <Compile Include="servicos\socialist\MensagemList.cs" />
     <Compile Include="servicos\Solicitar_Sevico.cs">
       <SubType>Form</SubType>
     </Compile>
