@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.pb_icone = new System.Windows.Forms.PictureBox();
-            this.lb_nome = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb_empresa = new System.Windows.Forms.Label();
+            this.lb_servico = new System.Windows.Forms.Label();
+            this.lb_status = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.SuspendLayout();
@@ -41,36 +41,37 @@
             this.pb_icone.Location = new System.Drawing.Point(5, 5);
             this.pb_icone.Margin = new System.Windows.Forms.Padding(5);
             this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(80, 80);
+            this.pb_icone.Size = new System.Drawing.Size(100, 80);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_icone.TabIndex = 0;
             this.pb_icone.TabStop = false;
             // 
-            // lb_nome
+            // lb_empresa
             // 
-            this.lb_nome.AutoSize = true;
-            this.lb_nome.Location = new System.Drawing.Point(112, 5);
-            this.lb_nome.Name = "lb_nome";
-            this.lb_nome.Size = new System.Drawing.Size(100, 13);
-            this.lb_nome.TabIndex = 1;
-            this.lb_nome.Text = "Nome da Empresa: ";
+            this.lb_empresa.AutoSize = true;
+            this.lb_empresa.Location = new System.Drawing.Point(112, 5);
+            this.lb_empresa.Name = "lb_empresa";
+            this.lb_empresa.Size = new System.Drawing.Size(100, 13);
+            this.lb_empresa.TabIndex = 1;
+            this.lb_empresa.Text = "Nome da Empresa: ";
             // 
-            // label1
+            // lb_servico
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(112, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Serviço Solicitado:";
+            this.lb_servico.AutoSize = true;
+            this.lb_servico.Location = new System.Drawing.Point(112, 40);
+            this.lb_servico.Name = "lb_servico";
+            this.lb_servico.Size = new System.Drawing.Size(98, 13);
+            this.lb_servico.TabIndex = 2;
+            this.lb_servico.Text = "Serviço Solicitado: ";
             // 
-            // label2
+            // lb_status
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(112, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Status:";
+            this.lb_status.AutoSize = true;
+            this.lb_status.Location = new System.Drawing.Point(112, 72);
+            this.lb_status.Name = "lb_status";
+            this.lb_status.Size = new System.Drawing.Size(43, 13);
+            this.lb_status.TabIndex = 3;
+            this.lb_status.Text = "Status: ";
             // 
             // button1
             // 
@@ -87,12 +88,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lb_nome);
+            this.Controls.Add(this.lb_status);
+            this.Controls.Add(this.lb_servico);
+            this.Controls.Add(this.lb_empresa);
             this.Controls.Add(this.pb_icone);
             this.Name = "UserControl_ChatEmpresa";
             this.Size = new System.Drawing.Size(470, 90);
+            this.Load += new System.EventHandler(this.UserControl_ChatEmpresa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -102,9 +104,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pb_icone;
-        private System.Windows.Forms.Label lb_nome;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb_empresa;
+        private System.Windows.Forms.Label lb_servico;
+        private System.Windows.Forms.Label lb_status;
         private System.Windows.Forms.Button button1;
     }
 }

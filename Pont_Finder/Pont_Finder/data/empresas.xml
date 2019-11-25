@@ -12,6 +12,18 @@
     <image>..//..//servicos//data//images//empresas//8634895.jpg</image>
     <status>true</status>
   </servico>
+  <servico>
+    <nome>Genesis</nome>
+    <nomeFantasia>Genesis Start</nomeFantasia>
+    <email>genesis@gmail.com</email>
+    <telefone>12315616712</telefone>
+    <endereco>Piquete/SP, 12620000</endereco>
+    <service>Informática</service>
+    <cnpj>45675675464067</cnpj>
+    <cpf>86609522006</cpf>
+    <image>..//..//servicos//data//images//empresas//offImage.jpg</image>
+    <status>true</status>
+  </servico>
   <hospedagem>
     <admin>26835036010</admin>
     <logo>..//..//hospedagem//data//images//empresas//12123123112221//logo//12123123112221.jpg</logo>

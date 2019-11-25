@@ -48,4 +48,12 @@
     <image>..//..//data//images//users//47746352863.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Gabriel</nome>
+    <email>gabriel@gmail.com</email>
+    <senha>1234</senha>
+    <cpf>86609522006</cpf>
+    <image>..//..//data//images//users//86609522006.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

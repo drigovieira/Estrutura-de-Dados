@@ -105,5 +105,16 @@ namespace Pont_Finder.servicos
             
             FormPrincipal.MudarForm("servicos",new Solicitar_Sevico());
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            socialist.Solicitado solicitacao = new socialist.Solicitado();
+
+            solicitacao.PostId = post.Id;
+            solicitacao.CpfUser = Session.Cpf;
+            socialist.SolicitadoList.Solicitados.Add(solicitacao);
+
+            MessageBox.Show("A Solicitação foi Efetuada com Sucesso!");
+        }
     }
 }

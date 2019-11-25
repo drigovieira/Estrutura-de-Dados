@@ -26,4 +26,16 @@ Símbolos</descricao>
     <data>2019-11-15T18:40:21.2964069-03:00</data>
     <likes></likes>
   </Post>
+  <Post>
+    <id>2</id>
+    <titulo>Sherlock Games</titulo>
+    <valor>87.45</valor>
+    <descricao>Construtor de Jogos do Sherlock</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//2.jpg</image>
+    <cpf>86609522006</cpf>
+    <cnpj>45675675464067</cnpj>
+    <data>2019-11-25T17:54:31.0106375-03:00</data>
+    <likes></likes>
+  </Post>
 </PostList>
