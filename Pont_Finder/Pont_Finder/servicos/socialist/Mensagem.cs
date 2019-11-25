@@ -12,6 +12,9 @@ namespace Pont_Finder.servicos.socialist
             de,
             para;
 
+        private int
+            postId;
+
         private string
             msg;
 
@@ -22,5 +25,6 @@ namespace Pont_Finder.servicos.socialist
         public long Para { get => para; set => para = value; }
         public string Msg { get => msg; set => msg = value; }
         public DateTime Data { get => data; set => data = value; }
+        public int PostId { get => postId; set => postId = value; }
     }
 }

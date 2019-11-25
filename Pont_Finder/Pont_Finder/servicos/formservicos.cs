@@ -304,8 +304,13 @@ namespace Pont_Finder.servicos
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new socialist.FormSociaList(-1));
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaList(-1, "cliente"));
             
+        }
+
+        private void Button2_Click_1(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaList(-1, "empresa"));
         }
     }
 }

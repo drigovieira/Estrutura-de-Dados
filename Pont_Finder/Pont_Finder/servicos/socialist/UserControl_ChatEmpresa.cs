@@ -14,9 +14,10 @@ namespace Pont_Finder.servicos.socialist
     {
         classes.Post post;
         classes.Empresa empresa;
-
-        public UserControl_ChatEmpresa(int postId)
+        string tipo;
+        public UserControl_ChatEmpresa(int postId, string tipo)
         {
+            this.tipo = tipo;
             InitializeComponent();
             this.post = classes.PostList.thisSelectId(postId);
             empresa = classes.ListaEmpresa.selectCpf(this.post.Cpf);
@@ -32,7 +33,7 @@ namespace Pont_Finder.servicos.socialist
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new socialist.FormSociaList(post.Id));
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaList(post.Id, tipo));
         }
     }
 }

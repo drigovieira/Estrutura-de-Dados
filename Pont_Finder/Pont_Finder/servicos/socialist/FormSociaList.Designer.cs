@@ -36,12 +36,12 @@
             this.lb_username = new System.Windows.Forms.Label();
             this.pb_userimage = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lb_empresa = new System.Windows.Forms.Label();
+            this.pb_empresa = new System.Windows.Forms.PictureBox();
             this.tb_mensagens = new System.Windows.Forms.RichTextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tb_mensagem = new System.Windows.Forms.RichTextBox();
-            this.lb_empresa = new System.Windows.Forms.Label();
-            this.pb_empresa = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_userimage)).BeginInit();
@@ -126,6 +126,27 @@
             this.panel2.TabIndex = 41;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
+            // lb_empresa
+            // 
+            this.lb_empresa.AutoSize = true;
+            this.lb_empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_empresa.Location = new System.Drawing.Point(73, 16);
+            this.lb_empresa.Name = "lb_empresa";
+            this.lb_empresa.Size = new System.Drawing.Size(209, 36);
+            this.lb_empresa.TabIndex = 5;
+            this.lb_empresa.Text = "Nome Empresa";
+            this.lb_empresa.Click += new System.EventHandler(this.Label1_Click);
+            // 
+            // pb_empresa
+            // 
+            this.pb_empresa.Location = new System.Drawing.Point(10, 10);
+            this.pb_empresa.Margin = new System.Windows.Forms.Padding(10);
+            this.pb_empresa.Name = "pb_empresa";
+            this.pb_empresa.Size = new System.Drawing.Size(50, 50);
+            this.pb_empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_empresa.TabIndex = 4;
+            this.pb_empresa.TabStop = false;
+            // 
             // tb_mensagens
             // 
             this.tb_mensagens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
@@ -165,27 +186,6 @@
             this.tb_mensagem.Size = new System.Drawing.Size(749, 96);
             this.tb_mensagem.TabIndex = 0;
             this.tb_mensagem.Text = "";
-            // 
-            // lb_empresa
-            // 
-            this.lb_empresa.AutoSize = true;
-            this.lb_empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_empresa.Location = new System.Drawing.Point(73, 16);
-            this.lb_empresa.Name = "lb_empresa";
-            this.lb_empresa.Size = new System.Drawing.Size(209, 36);
-            this.lb_empresa.TabIndex = 5;
-            this.lb_empresa.Text = "Nome Empresa";
-            this.lb_empresa.Click += new System.EventHandler(this.Label1_Click);
-            // 
-            // pb_empresa
-            // 
-            this.pb_empresa.Location = new System.Drawing.Point(10, 10);
-            this.pb_empresa.Margin = new System.Windows.Forms.Padding(10);
-            this.pb_empresa.Name = "pb_empresa";
-            this.pb_empresa.Size = new System.Drawing.Size(50, 50);
-            this.pb_empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_empresa.TabIndex = 4;
-            this.pb_empresa.TabStop = false;
             // 
             // FormSociaList
             // 
