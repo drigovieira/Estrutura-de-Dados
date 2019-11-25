@@ -228,6 +228,10 @@ namespace Pont_Finder.hospedagem
                         diretorio = "..//..//hospedagem//data//images//empresas//" + empresa + "//quartos//" + id + "//" + nome + ".jpg";
                         pb_img_1.Image.Save(diretorio, ImageFormat.Jpeg);
                     }
+                    else
+                    {
+                        diretorio = foto;
+                    }
 
                     quarto.ID = id;
                     quarto.Cnpj_Empresa = empresa;

@@ -31,6 +31,7 @@ namespace Pont_Finder.hospedagem
 
             Empresa emp = hostList.selectCnpj(quarto.Cnpj_Empresa);
 
+            this.id = quarto.ID;
             this.nome = quarto.NomeQuarto;
             this.qtd_pessoas = quarto.Qtd_Pessoas;
             this.qtd_disponivel = quarto.Qtd_Disponivel;
