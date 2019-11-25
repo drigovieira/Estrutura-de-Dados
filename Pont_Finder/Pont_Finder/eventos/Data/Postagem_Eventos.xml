@@ -72,4 +72,22 @@
     <patrocinadores>Ninguém</patrocinadores>
     <ativo>true</ativo>
   </postagem>
+  <postagem>
+    <id>4</id>
+    <ingresso_total>50</ingresso_total>
+    <ingresso_disponivel>50</ingresso_disponivel>
+    <nome>Música</nome>
+    <imagem1>..//..//eventos//Data//imagens//4.jpg</imagem1>
+    <imagem2>null</imagem2>
+    <imagem3>null</imagem3>
+    <imagem4>null</imagem4>
+    <categoria>Música</categoria>
+    <data>11/11/1111</data>
+    <horario>13:00</horario>
+    <local>n. sei</local>
+    <idade>L</idade>
+    <valor>20</valor>
+    <patrocinadores>ninguem</patrocinadores>
+    <ativo>true</ativo>
+  </postagem>
 </postagens>
