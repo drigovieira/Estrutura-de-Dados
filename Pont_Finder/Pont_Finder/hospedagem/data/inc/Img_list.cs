@@ -30,9 +30,10 @@ namespace Pont_Finder.hospedagem.data.inc
         {
             
             Cadastro_Empresa.fotin = imagem;
+            Vizualizar_quarto.fotin = imagem;
 
-            Cadastro_Empresa cd = new Cadastro_Empresa(null);
-            cd.pn_galery_MouseClick(null, null);
+            //Cadastro_Empresa cd = new Cadastro_Empresa(null);
+            //cd.pn_galery_MouseClick(null, null);
           
         }
     }

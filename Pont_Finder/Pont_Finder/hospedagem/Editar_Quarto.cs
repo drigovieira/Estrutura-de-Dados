@@ -31,7 +31,7 @@ namespace Pont_Finder.hospedagem
             {
                 pb_img_1.ImageLocation = openimg.FileName;
                 pb_img_1.Load();
-                img = true;
+                img = true;                
             }
         }
 

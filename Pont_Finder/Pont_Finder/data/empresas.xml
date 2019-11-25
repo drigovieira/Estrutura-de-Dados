@@ -14,35 +14,18 @@
   </servico>
   <hospedagem>
     <admin>26835036010</admin>
-    <logo></logo>
-    <nomeempresa>teste</nomeempresa>
-    <nomefantasia>testeee</nomefantasia>
-    <cnpj>12131232131231</cnpj>
-    <endereco>dsdfsd</endereco>
-    <cep>12312312</cep>
+    <logo>..//..//hospedagem//data//images//empresas//12123123112221//logo//12123123112221.jpg</logo>
+    <nomeempresa>Fortes text</nomeempresa>
+    <nomefantasia>Fortes musc</nomefantasia>
+    <cnpj>12123123112221</cnpj>
+    <endereco>Rua XXXX nYYYY</endereco>
+    <cep>11211221</cep>
     <telefone>1231443222</telefone>
-    <email>add@email.com</email>
-    <foto> * ..//..//hospedagem//data//images//empresas//12131232131231//empresa//0.jpg * ..//..//hospedagem//data//images//empresas//12131232131231//empresa//1.jpg * ..//..//hospedagem//data//images//empresas//12131232131231//empresa//2.jpg</foto>
-    <tipo>Pousada</tipo>
+    <email>admin@fortes.com</email>
+    <foto>..//..//hospedagem//data//images//empresas//12123123112221//empresa//</foto>
+    <tipo>Hotel</tipo>
     <estrelas>5</estrelas>
-    <descricao>xasds</descricao>
-    <ambiente>  Sala de Jogos  Academia</ambiente>
-    <status>true</status>
-  </hospedagem>
-  <hospedagem>
-    <admin>42750892804</admin>
-    <logo></logo>
-    <nomeempresa>sdasda</nomeempresa>
-    <nomefantasia>sadsadas</nomefantasia>
-    <cnpj>12345678910111</cnpj>
-    <endereco>rua bbb sadsa</endereco>
-    <cep>12312312</cep>
-    <telefone>1231443222</telefone>
-    <email>aaa@.com</email>
-    <foto> * ..//..//hospedagem//data//images//empresas//12345678910111//empresa//0.jpg * ..//..//hospedagem//data//images//empresas//12345678910111//empresa//1.jpg * ..//..//hospedagem//data//images//empresas//12345678910111//empresa//2.jpg * ..//..//hospedagem//data//images//empresas//12345678910111//empresa//3.jpg * ..//..//hospedagem//data//images//empresas//12345678910111//empresa//4.jpg</foto>
-    <tipo>Pousada</tipo>
-    <estrelas>5</estrelas>
-    <descricao>dfsdf</descricao>
+    <descricao>Fortes como um tourpo</descricao>
     <ambiente>  Sala de Jogos  Academia</ambiente>
     <status>true</status>
   </hospedagem>

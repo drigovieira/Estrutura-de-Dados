@@ -1,3 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <roomlist>
+  <quarto>
+    <id>0</id>
+    <empresa>12123123112221</empresa>
+    <nome>Casal 1</nome>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>11</qtd_quartos>
+    <servicos> * Café da manhã * Café da tarde * TV a cabo</servicos>
+    <valor>250</valor>
+    <foto>..//..//hospedagem//data//images//empresas//12123123112221//quartos//0//Casal 1.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
 </roomlist>

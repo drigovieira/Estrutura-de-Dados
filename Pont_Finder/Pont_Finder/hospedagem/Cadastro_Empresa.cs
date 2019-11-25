@@ -160,7 +160,7 @@ namespace Pont_Finder.hospedagem
                                     }
                                     
             
-                                        //empresa.Logo = logo;
+                                        empresa.Logo = diretorio_logo;
 
                                         empresa.Nomeempresa = NomeEmpresa;
                                         empresa.Nomefantasia = NomeFantasia;
@@ -207,13 +207,13 @@ namespace Pont_Finder.hospedagem
                                             diretorio = "..//..//hospedagem//data//images//empresas//" + CNPJ +"//empresa//"+total_img+ ".jpg";
                                             pb_img1.Image.Save(diretorio, ImageFormat.Jpeg);
 
-                                            Foto = Foto+" * "+diretorio;
+                                            Foto = Foto+"*"+diretorio;
 
                                             total_img++;
                                         }
 
-
-                                        empresa.Foto = Foto;
+                                        string diretorio_imgs = "..//..//hospedagem//data//images//empresas//" + CNPJ + "//empresa//";
+                                        empresa.Foto = diretorio_imgs;
 
 
                                         //Adiciona na lista

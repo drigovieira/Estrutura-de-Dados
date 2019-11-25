@@ -25,6 +25,7 @@ namespace Pont_Finder.hospedagem
 
             Empresa emp = hostList.selectCnpj(quarto.Cnpj_Empresa);
 
+            this.id = quarto.ID;
             this.nome = quarto.NomeQuarto;
             this.qtd_pessoas = quarto.Qtd_Pessoas;
             this.qtd_disponivel = quarto.Qtd_Disponivel;
@@ -51,7 +52,7 @@ namespace Pont_Finder.hospedagem
 
         private void bt_visualizar_Click(object sender, EventArgs e)
         {
-            hospedagem.Vizualizar_quarto vizQuarto = new hospedagem.Vizualizar_quarto(new Hosp_Home());
+            hospedagem.Vizualizar_quarto vizQuarto = new hospedagem.Vizualizar_quarto(id,new Hosp_Home());
             FormPrincipal.MudarForm("hospedagem",vizQuarto);
         }
 

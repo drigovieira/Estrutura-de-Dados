@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lb_emp_endereco = new System.Windows.Forms.Label();
             this.lb_emp_email = new System.Windows.Forms.Label();
             this.lb_txt9 = new System.Windows.Forms.Label();
@@ -63,6 +64,7 @@
             this.lb_nome_quarto = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_principal)).BeginInit();
@@ -452,6 +454,11 @@
             this.btn_back.MouseLeave += new System.EventHandler(this.btn_back_MouseLeave);
             this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_back_MouseMove);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Vizualizar_quarto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -468,6 +475,7 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Vizualizar_quarto";
             this.Text = "Vizualizar_quarto";
+            this.Load += new System.EventHandler(this.Vizualizar_quarto_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).EndInit();
@@ -516,5 +524,6 @@
         private System.Windows.Forms.Label lb_num_pessoas;
         private System.Windows.Forms.Label lb_tipo_quarto;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Timer timer1;
     }
 }
