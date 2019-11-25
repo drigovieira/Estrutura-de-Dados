@@ -29,5 +29,10 @@ namespace Pont_Finder.servicos.socialist
             lb_empresa.Text += empresa.NomeFantasia;
             lb_status.Text += "Em Beta!";
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaList(post.Id));
+        }
     }
 }

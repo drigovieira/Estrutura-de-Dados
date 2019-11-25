@@ -12,8 +12,25 @@ namespace Pont_Finder.servicos.socialist
 {
     public partial class FormSociaList : Form
     {
-        public FormSociaList()
+
+        classes.Post post;
+        classes.Empresa empresa;
+
+
+        public FormSociaList(int postId)
         {
+            if (postId != -1)
+            {
+                post = classes.PostList.SelectId(postId);
+                empresa = classes.ListaEmpresa.selectCpf(this.post.Cpf);
+            }
+            else
+            {
+                post = null;
+                empresa = null;
+            }
+
+          
             InitializeComponent();
         }
 
@@ -29,13 +46,31 @@ namespace Pont_Finder.servicos.socialist
             int i = 0;
             foreach (var item in SolicitadoList.Solicitados)
             {
-                UserControl_ChatEmpresa a = new UserControl_ChatEmpresa(item.PostId);
-                a.Location = new Point(10, (y));
-                y = y + a.Height + 5;
-                panel_chat.Height = panel_chat.Height + 180;
-                panel_chat.Controls.Add(a);
-                panel_chat.Controls.Add(a);
-                i++;
+                if (item.CpfUser.Equals(Session.Cpf))
+                {
+                    UserControl_ChatEmpresa a = new UserControl_ChatEmpresa(item.PostId);
+                    a.Location = new Point(10, (y));
+                    y = y + a.Height + 5;
+                    panel_chat.Height = panel_chat.Height + 180;
+                    panel_chat.Controls.Add(a);
+                    panel_chat.Controls.Add(a);
+                    i++;
+                }
+               
+            }
+
+
+
+            
+            if (post != null)
+            {
+                lb_empresa.Text = empresa.Nome;
+                pb_empresa.ImageLocation = empresa.Image;
+            }
+            else
+            {
+                lb_empresa.Text = "";
+                pb_empresa.Visible = false;
             }
 
         }
@@ -49,6 +84,16 @@ namespace Pont_Finder.servicos.socialist
         {
             tb_mensagens.Text += Session.Nome +": "+ tb_mensagem.Text + "\n";
             tb_mensagem.Clear();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

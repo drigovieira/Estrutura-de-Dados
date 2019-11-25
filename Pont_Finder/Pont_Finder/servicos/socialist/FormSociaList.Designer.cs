@@ -36,14 +36,17 @@
             this.lb_username = new System.Windows.Forms.Label();
             this.pb_userimage = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tb_mensagem = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.tb_mensagens = new System.Windows.Forms.RichTextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tb_mensagem = new System.Windows.Forms.RichTextBox();
+            this.lb_empresa = new System.Windows.Forms.Label();
+            this.pb_empresa = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_userimage)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -110,6 +113,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.lb_empresa);
+            this.panel2.Controls.Add(this.pb_empresa);
             this.panel2.Controls.Add(this.tb_mensagens);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
@@ -119,25 +124,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(755, 505);
             this.panel2.TabIndex = 41;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
-            // tb_mensagem
+            // tb_mensagens
             // 
-            this.tb_mensagem.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_mensagem.Location = new System.Drawing.Point(3, 377);
-            this.tb_mensagem.Name = "tb_mensagem";
-            this.tb_mensagem.Size = new System.Drawing.Size(749, 96);
-            this.tb_mensagem.TabIndex = 0;
-            this.tb_mensagem.Text = "";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(677, 479);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Enviar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.tb_mensagens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.tb_mensagens.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_mensagens.Location = new System.Drawing.Point(3, 80);
+            this.tb_mensagens.Name = "tb_mensagens";
+            this.tb_mensagens.ReadOnly = true;
+            this.tb_mensagens.Size = new System.Drawing.Size(749, 291);
+            this.tb_mensagens.TabIndex = 3;
+            this.tb_mensagens.Text = "";
             // 
             // button2
             // 
@@ -149,16 +147,45 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // tb_mensagens
+            // button1
             // 
-            this.tb_mensagens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.tb_mensagens.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_mensagens.Location = new System.Drawing.Point(3, 3);
-            this.tb_mensagens.Name = "tb_mensagens";
-            this.tb_mensagens.ReadOnly = true;
-            this.tb_mensagens.Size = new System.Drawing.Size(749, 368);
-            this.tb_mensagens.TabIndex = 3;
-            this.tb_mensagens.Text = "";
+            this.button1.Location = new System.Drawing.Point(677, 479);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Enviar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // tb_mensagem
+            // 
+            this.tb_mensagem.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_mensagem.Location = new System.Drawing.Point(3, 377);
+            this.tb_mensagem.Name = "tb_mensagem";
+            this.tb_mensagem.Size = new System.Drawing.Size(749, 96);
+            this.tb_mensagem.TabIndex = 0;
+            this.tb_mensagem.Text = "";
+            // 
+            // lb_empresa
+            // 
+            this.lb_empresa.AutoSize = true;
+            this.lb_empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_empresa.Location = new System.Drawing.Point(73, 16);
+            this.lb_empresa.Name = "lb_empresa";
+            this.lb_empresa.Size = new System.Drawing.Size(209, 36);
+            this.lb_empresa.TabIndex = 5;
+            this.lb_empresa.Text = "Nome Empresa";
+            this.lb_empresa.Click += new System.EventHandler(this.Label1_Click);
+            // 
+            // pb_empresa
+            // 
+            this.pb_empresa.Location = new System.Drawing.Point(10, 10);
+            this.pb_empresa.Margin = new System.Windows.Forms.Padding(10);
+            this.pb_empresa.Name = "pb_empresa";
+            this.pb_empresa.Size = new System.Drawing.Size(50, 50);
+            this.pb_empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_empresa.TabIndex = 4;
+            this.pb_empresa.TabStop = false;
             // 
             // FormSociaList
             // 
@@ -181,6 +208,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_userimage)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -198,5 +227,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox tb_mensagem;
         private System.Windows.Forms.RichTextBox tb_mensagens;
+        private System.Windows.Forms.Label lb_empresa;
+        private System.Windows.Forms.PictureBox pb_empresa;
     }
 }
