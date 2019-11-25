@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pont_Finder.servicos.classes
+namespace Pont_Finder.servicos.socialist
 {
     class Solicitado
     {
@@ -26,7 +26,7 @@ namespace Pont_Finder.servicos.classes
             numero,
             cep,
             status;
-        
+
         public int PostId { get => postId; set => postId = value; }
         public long CpfUser { get => cpfUser; set => cpfUser = value; }
         public DateTime DataDaSolicitacao { get => dataDaSolicitacao; set => dataDaSolicitacao = value; }

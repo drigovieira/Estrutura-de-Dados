@@ -415,8 +415,22 @@
     <Compile Include="servicos\ServicosADM.Designer.cs">
       <DependentUpon>ServicosADM.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\socialist\FormSociaList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\socialist\FormSociaList.Designer.cs">
+      <DependentUpon>FormSociaList.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\socialist\Mensagem.cs" />
     <Compile Include="servicos\socialist\MensagemList.cs" />
+    <Compile Include="servicos\socialist\Solicitado.cs" />
+    <Compile Include="servicos\socialist\SolicitadoList.cs" />
+    <Compile Include="servicos\socialist\UserControl_ChatEmpresa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="servicos\socialist\UserControl_ChatEmpresa.Designer.cs">
+      <DependentUpon>UserControl_ChatEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\Solicitar_Sevico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -660,6 +674,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\ServicosADM.resx">
       <DependentUpon>ServicosADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\socialist\FormSociaList.resx">
+      <DependentUpon>FormSociaList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\socialist\UserControl_ChatEmpresa.resx">
+      <DependentUpon>UserControl_ChatEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\Solicitar_Sevico.resx">
       <DependentUpon>Solicitar_Sevico.cs</DependentUpon>

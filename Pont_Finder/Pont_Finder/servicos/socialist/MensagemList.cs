@@ -10,6 +10,6 @@ namespace Pont_Finder.servicos.socialist
     {
         private static List<Mensagem> mensagens = new List<Mensagem>();
 
-        public 
+        public static List<Mensagem> Mensagens { get => mensagens; set => mensagens = value; }
     }
 }

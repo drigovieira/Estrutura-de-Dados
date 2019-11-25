@@ -44,6 +44,7 @@
             this.bt_cadEmpresa = new System.Windows.Forms.Button();
             this.bt_publicar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.bt_gerenciar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -252,6 +252,19 @@
             this.panel1.Size = new System.Drawing.Size(1265, 40);
             this.panel1.TabIndex = 19;
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(826, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 28);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Mensagens";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // bt_gerenciar
             // 
             this.bt_gerenciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -414,18 +427,6 @@
             this.label13.Size = new System.Drawing.Size(149, 21);
             this.label13.TabIndex = 0;
             this.label13.Text = "Propaganda Externa";
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(826, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 28);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Mensagens";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // FormServicos
             // 
