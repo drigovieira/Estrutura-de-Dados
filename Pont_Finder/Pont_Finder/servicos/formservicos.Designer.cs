@@ -44,6 +44,7 @@
             this.bt_cadEmpresa = new System.Windows.Forms.Button();
             this.bt_publicar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_solicitados = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.bt_gerenciar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -60,7 +61,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -243,7 +243,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.bt_solicitados);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.bt_gerenciar);
             this.panel1.Controls.Add(this.bt_solicitar);
@@ -253,6 +253,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 40);
             this.panel1.TabIndex = 19;
+            // 
+            // bt_solicitados
+            // 
+            this.bt_solicitados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_solicitados.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_solicitados.ForeColor = System.Drawing.Color.White;
+            this.bt_solicitados.Location = new System.Drawing.Point(954, 5);
+            this.bt_solicitados.Name = "bt_solicitados";
+            this.bt_solicitados.Size = new System.Drawing.Size(122, 28);
+            this.bt_solicitados.TabIndex = 9;
+            this.bt_solicitados.Text = "Serviços Solicitados";
+            this.bt_solicitados.UseVisualStyleBackColor = true;
+            this.bt_solicitados.Click += new System.EventHandler(this.Button2_Click_1);
             // 
             // button1
             // 
@@ -430,19 +443,6 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Propaganda Externa";
             // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(954, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 28);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Serviços Solicitados";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click_1);
-            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -517,6 +517,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bt_solicitados;
     }
 }

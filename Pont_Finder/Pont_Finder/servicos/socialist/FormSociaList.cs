@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.servicos.socialist
 {
-    public partial class FormSociaList : Form
+    public partial class FormSociaListEmresa : Form
     {
 
         classes.Post post;
@@ -19,7 +19,7 @@ namespace Pont_Finder.servicos.socialist
         string tipo;
 
 
-        public FormSociaList(int postId, string tipo)
+        public FormSociaListEmresa(int postId, string tipo)
         {
             this.tipo = tipo;
 
@@ -101,6 +101,60 @@ namespace Pont_Finder.servicos.socialist
 
                 pb_userimage.ImageLocation = userEmpresa.Image;
                 lb_username.Text = userEmpresa.NomeFantasia;
+
+                int y = 5;
+                panel_chat.Height = 180;
+                int i = 0;
+                foreach (var item in SolicitadoList.Solicitados)
+                {
+                    classes.Post tPost = classes.PostList.SelectId(item.PostId);
+
+                    if (tPost.Cpf == Session.Cpf)
+                    {
+                        UserControl_ChatEmpresa a = new UserControl_ChatEmpresa(item.PostId, tipo);
+                        a.Location = new Point(10, (y));
+                        y = y + a.Height + 5;
+                        panel_chat.Height = panel_chat.Height + 180;
+                        panel_chat.Controls.Add(a);
+                        i++;
+                    }
+                }
+
+
+                if (post != null)
+                {
+
+                    foreach (var item in MensagemList.Mensagens)
+                    {
+                        if (item.Para == Session.Cpf)
+                        {
+                            lb_empresa.Text = "AAA" ;
+                            pb_empresa.ImageLocation = UserList.selectCpf(item.De).Image;
+                            break;
+                        }
+                    }
+
+                     /*
+                    foreach (var item in MensagemList.Mensagens)
+                    {
+                        if (item.PostId == post.Id && item.De == Session.Cpf && item.Para == post.Cpf)
+                        {
+                            tb_mensagens.Text += Session.Nome + ": " + item.Msg + "\n";
+                        }
+                        else if (item.PostId == post.Id && item.Para == Session.Cpf && item.De == post.Cpf)
+                        {
+                            tb_mensagens.Text += empresa.NomeFantasia + ": " + item.Msg + "\n";
+                        }
+                    }
+                    */
+                }
+                else
+                {
+                    lb_empresa.Text = "";
+                    pb_empresa.Visible = false;
+                }
+
+
             }
           
 

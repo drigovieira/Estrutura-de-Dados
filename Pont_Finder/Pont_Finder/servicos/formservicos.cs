@@ -23,9 +23,16 @@ namespace Pont_Finder.servicos
             {
                 classes.Empresa emp = classes.ListaEmpresa.selectCpf(Session.Cpf);
                 if (emp == null)
-                    bt_cadEmpresa.Enabled = true;               
+                {
+                    bt_cadEmpresa.Enabled = true;
+                    bt_solicitados.Enabled = false;
+                }
                 else
-                    bt_cadEmpresa.Enabled = false;               
+                {
+                    bt_cadEmpresa.Enabled = false;
+                    bt_solicitados.Enabled = true  ;
+                }
+
             }
 
             pagQuant = 8;
@@ -304,13 +311,13 @@ namespace Pont_Finder.servicos
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new socialist.FormSociaList(-1, "cliente"));
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmresa(-1, "cliente"));
             
         }
 
         private void Button2_Click_1(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new socialist.FormSociaList(-1, "empresa"));
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmresa(-1, "empresa"));
         }
     }
 }
