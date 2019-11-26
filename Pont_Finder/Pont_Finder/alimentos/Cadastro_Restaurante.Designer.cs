@@ -106,10 +106,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -117,8 +117,8 @@
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -951,7 +951,6 @@
             // pb_icone
             // 
             this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage1;
             this.pb_icone.Location = new System.Drawing.Point(180, 74);
             this.pb_icone.Name = "pb_icone";
             this.pb_icone.Size = new System.Drawing.Size(250, 220);
@@ -1003,19 +1002,6 @@
             this.label16.TabIndex = 61;
             this.label16.Text = "Informações";
             // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.White;
-            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
-            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_back.Location = new System.Drawing.Point(12, 235);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(40, 40);
-            this.btn_back.TabIndex = 63;
-            this.btn_back.TabStop = false;
-            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
-            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
@@ -1042,6 +1028,18 @@
             // 
             this.openIcone.FileName = "icone";
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(66, 229);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 68;
+            this.btn_back.TabStop = false;
+            // 
             // Cadastro_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1049,8 +1047,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.panel10);
             this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel3);
@@ -1076,9 +1074,9 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1144,7 +1142,6 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox6;
         private System.Windows.Forms.MaskedTextBox maskedTextBox5;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.OpenFileDialog openIcone;
@@ -1166,5 +1163,6 @@
         private System.Windows.Forms.CheckBox cbRegistSim;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }

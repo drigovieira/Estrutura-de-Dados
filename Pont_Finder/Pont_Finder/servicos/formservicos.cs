@@ -96,8 +96,7 @@ namespace Pont_Finder.servicos
         {
             if (Session.Online)
             {
-                SolicitarServico solicservico = new SolicitarServico();
-                solicservico.ShowDialog();
+                FormPrincipal.MudarForm("servicos", new SolicitarServico());
             }
             else
             {
