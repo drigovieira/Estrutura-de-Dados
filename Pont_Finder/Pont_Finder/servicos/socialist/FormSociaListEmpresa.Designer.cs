@@ -32,21 +32,21 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lb_username = new System.Windows.Forms.Label();
-            this.pb_userimage = new System.Windows.Forms.PictureBox();
-            this.panel_chat = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.lb_empresa = new System.Windows.Forms.Label();
             this.pb_empresa = new System.Windows.Forms.PictureBox();
+            this.panel_chat = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lb_username = new System.Windows.Forms.Label();
+            this.pb_usericone = new System.Windows.Forms.PictureBox();
             this.tb_mensagens = new System.Windows.Forms.RichTextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tb_mensagem = new System.Windows.Forms.RichTextBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_userimage)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_usericone)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -73,33 +73,34 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.lb_username);
-            this.panel1.Controls.Add(this.pb_userimage);
+            this.panel1.Controls.Add(this.lb_empresa);
+            this.panel1.Controls.Add(this.pb_empresa);
             this.panel1.Location = new System.Drawing.Point(5, 158);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(490, 70);
             this.panel1.TabIndex = 44;
             // 
-            // lb_username
+            // lb_empresa
             // 
-            this.lb_username.AutoSize = true;
-            this.lb_username.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_username.Location = new System.Drawing.Point(73, 17);
-            this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(199, 36);
-            this.lb_username.TabIndex = 1;
-            this.lb_username.Text = "Nome Usuário";
+            this.lb_empresa.AutoSize = true;
+            this.lb_empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_empresa.Location = new System.Drawing.Point(73, 17);
+            this.lb_empresa.Name = "lb_empresa";
+            this.lb_empresa.Size = new System.Drawing.Size(209, 36);
+            this.lb_empresa.TabIndex = 1;
+            this.lb_empresa.Text = "Nome Empresa";
+            this.lb_empresa.Click += new System.EventHandler(this.Lb_username_Click);
             // 
-            // pb_userimage
+            // pb_empresa
             // 
-            this.pb_userimage.Location = new System.Drawing.Point(10, 11);
-            this.pb_userimage.Margin = new System.Windows.Forms.Padding(10);
-            this.pb_userimage.Name = "pb_userimage";
-            this.pb_userimage.Size = new System.Drawing.Size(50, 50);
-            this.pb_userimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_userimage.TabIndex = 0;
-            this.pb_userimage.TabStop = false;
+            this.pb_empresa.Location = new System.Drawing.Point(10, 11);
+            this.pb_empresa.Margin = new System.Windows.Forms.Padding(10);
+            this.pb_empresa.Name = "pb_empresa";
+            this.pb_empresa.Size = new System.Drawing.Size(50, 50);
+            this.pb_empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_empresa.TabIndex = 0;
+            this.pb_empresa.TabStop = false;
             // 
             // panel_chat
             // 
@@ -113,8 +114,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.lb_empresa);
-            this.panel2.Controls.Add(this.pb_empresa);
+            this.panel2.Controls.Add(this.lb_username);
+            this.panel2.Controls.Add(this.pb_usericone);
             this.panel2.Controls.Add(this.tb_mensagens);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
@@ -125,25 +126,25 @@
             this.panel2.Size = new System.Drawing.Size(755, 505);
             this.panel2.TabIndex = 45;
             // 
-            // lb_empresa
+            // lb_username
             // 
-            this.lb_empresa.AutoSize = true;
-            this.lb_empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_empresa.Location = new System.Drawing.Point(73, 17);
-            this.lb_empresa.Name = "lb_empresa";
-            this.lb_empresa.Size = new System.Drawing.Size(209, 36);
-            this.lb_empresa.TabIndex = 5;
-            this.lb_empresa.Text = "Nome Empresa";
+            this.lb_username.AutoSize = true;
+            this.lb_username.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_username.Location = new System.Drawing.Point(73, 17);
+            this.lb_username.Name = "lb_username";
+            this.lb_username.Size = new System.Drawing.Size(209, 36);
+            this.lb_username.TabIndex = 5;
+            this.lb_username.Text = "Nome Empresa";
             // 
-            // pb_empresa
+            // pb_usericone
             // 
-            this.pb_empresa.Location = new System.Drawing.Point(10, 11);
-            this.pb_empresa.Margin = new System.Windows.Forms.Padding(10);
-            this.pb_empresa.Name = "pb_empresa";
-            this.pb_empresa.Size = new System.Drawing.Size(50, 50);
-            this.pb_empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_empresa.TabIndex = 4;
-            this.pb_empresa.TabStop = false;
+            this.pb_usericone.Location = new System.Drawing.Point(10, 11);
+            this.pb_usericone.Margin = new System.Windows.Forms.Padding(10);
+            this.pb_usericone.Name = "pb_usericone";
+            this.pb_usericone.Size = new System.Drawing.Size(50, 50);
+            this.pb_usericone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_usericone.TabIndex = 4;
+            this.pb_usericone.TabStop = false;
             // 
             // tb_mensagens
             // 
@@ -196,14 +197,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSociaListEmpresa";
             this.Text = "FormSociaListEmpresa";
+            this.Load += new System.EventHandler(this.FormSociaListEmpresa_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_userimage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_usericone)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,12 +215,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lb_username;
-        private System.Windows.Forms.PictureBox pb_userimage;
-        private System.Windows.Forms.Panel panel_chat;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lb_empresa;
         private System.Windows.Forms.PictureBox pb_empresa;
+        private System.Windows.Forms.Panel panel_chat;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lb_username;
+        private System.Windows.Forms.PictureBox pb_usericone;
         private System.Windows.Forms.RichTextBox tb_mensagens;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;

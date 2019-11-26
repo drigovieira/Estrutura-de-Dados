@@ -1,6 +1,6 @@
 ﻿namespace Pont_Finder.servicos.socialist
 {
-    partial class FormSociaListEmresa
+    partial class FormSociaListUser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSociaListEmresa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSociaListUser));
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel_chat = new System.Windows.Forms.Panel();

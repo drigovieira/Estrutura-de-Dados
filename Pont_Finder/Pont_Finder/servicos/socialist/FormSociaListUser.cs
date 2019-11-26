@@ -10,49 +10,30 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.servicos.socialist
 {
-    public partial class FormSociaListEmresa : Form
+    public partial class FormSociaListUser : Form
     {
 
         classes.Post post;
         classes.Empresa empresa;
-        classes.Empresa userEmpresa;
-        string tipo;
 
 
-        public FormSociaListEmresa(int postId, string tipo)
-        {
-            this.tipo = tipo;
-
-            
-            if (postId != -1 && tipo.Equals("cliente"))
+        public FormSociaListUser(int postId)
+        {           
+            if (postId != -1)
             {
                 post = classes.PostList.SelectId(postId);
                 empresa = classes.ListaEmpresa.selectCpf(this.post.Cpf);
-            }
-            else if (postId != -1 && tipo.Equals("empresa"))
-            {
-                post = classes.PostList.SelectId(postId);
-               // this.userEmpresa = classes.ListaEmpresa.selectCpf(Session.Cpf);
             }
             else
             {
                 post = null;
                 empresa = null;
             }
-
-            if (tipo.Equals("empresa"))
-            {
-                this.userEmpresa = classes.ListaEmpresa.selectCpf(Session.Cpf); ;
-            }
-
-
                 InitializeComponent();
         }
 
         private void FormSociaList_Load(object sender, EventArgs e)
         {
-            if (tipo.Equals("cliente"))
-            {
                 pb_userimage.ImageLocation = Session.Image;
                 lb_username.Text = Session.Nome;
 
@@ -63,7 +44,7 @@ namespace Pont_Finder.servicos.socialist
                 {
                     if (item.CpfUser.Equals(Session.Cpf))
                     {
-                        UserControl_ChatEmpresa a = new UserControl_ChatEmpresa(item.PostId, tipo);
+                        UserControl_ChatEmpresa a = new UserControl_ChatEmpresa(item.PostId, "cliente");
                         a.Location = new Point(10, (y));
                         y = y + a.Height + 5;
                         panel_chat.Height = panel_chat.Height + 180;
@@ -71,7 +52,6 @@ namespace Pont_Finder.servicos.socialist
                         i++;
                     }
                 }
-
                 if (post != null)
                 {
                     lb_empresa.Text = empresa.Nome;
@@ -93,71 +73,7 @@ namespace Pont_Finder.servicos.socialist
                 {
                     lb_empresa.Text = "";
                     pb_empresa.Visible = false;
-                }
-            }
-            else if (tipo.Equals("empresa") && Session.Online)
-            {
-                //caso for empresa
-
-                pb_userimage.ImageLocation = userEmpresa.Image;
-                lb_username.Text = userEmpresa.NomeFantasia;
-
-                int y = 5;
-                panel_chat.Height = 180;
-                int i = 0;
-                foreach (var item in SolicitadoList.Solicitados)
-                {
-                    classes.Post tPost = classes.PostList.SelectId(item.PostId);
-
-                    if (tPost.Cpf == Session.Cpf)
-                    {
-                        UserControl_ChatEmpresa a = new UserControl_ChatEmpresa(item.PostId, tipo);
-                        a.Location = new Point(10, (y));
-                        y = y + a.Height + 5;
-                        panel_chat.Height = panel_chat.Height + 180;
-                        panel_chat.Controls.Add(a);
-                        i++;
-                    }
-                }
-
-
-                if (post != null)
-                {
-
-                    foreach (var item in MensagemList.Mensagens)
-                    {
-                        if (item.Para == Session.Cpf)
-                        {
-                            lb_empresa.Text = "AAA" ;
-                            pb_empresa.ImageLocation = UserList.selectCpf(item.De).Image;
-                            break;
-                        }
-                    }
-
-                     /*
-                    foreach (var item in MensagemList.Mensagens)
-                    {
-                        if (item.PostId == post.Id && item.De == Session.Cpf && item.Para == post.Cpf)
-                        {
-                            tb_mensagens.Text += Session.Nome + ": " + item.Msg + "\n";
-                        }
-                        else if (item.PostId == post.Id && item.Para == Session.Cpf && item.De == post.Cpf)
-                        {
-                            tb_mensagens.Text += empresa.NomeFantasia + ": " + item.Msg + "\n";
-                        }
-                    }
-                    */
-                }
-                else
-                {
-                    lb_empresa.Text = "";
-                    pb_empresa.Visible = false;
-                }
-
-
-            }
-          
-
+                }            
         }
 
         private void Button2_Click(object sender, EventArgs e)

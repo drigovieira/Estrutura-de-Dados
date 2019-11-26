@@ -311,13 +311,13 @@ namespace Pont_Finder.servicos
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmresa(-1, "cliente"));
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListUser(-1));
             
         }
 
         private void Button2_Click_1(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmresa(-1, "empresa"));
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmpresa(-1));
         }
     }
 }

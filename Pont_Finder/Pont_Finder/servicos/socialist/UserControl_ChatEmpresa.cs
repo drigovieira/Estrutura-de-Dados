@@ -33,7 +33,15 @@ namespace Pont_Finder.servicos.socialist
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmresa(post.Id, this.tipo));
+            if (tipo.Equals("empresa"))
+            {
+                FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmpresa(-1));
+            }
+            else
+            {
+                FormPrincipal.MudarForm("servicos", new socialist.FormSociaListUser(post.Id));         
+            }
+            
 
         }
     }
