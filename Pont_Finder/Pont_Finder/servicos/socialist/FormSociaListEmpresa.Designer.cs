@@ -132,9 +132,9 @@
             this.lb_username.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_username.Location = new System.Drawing.Point(73, 17);
             this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(209, 36);
+            this.lb_username.Size = new System.Drawing.Size(199, 36);
             this.lb_username.TabIndex = 5;
-            this.lb_username.Text = "Nome Empresa";
+            this.lb_username.Text = "Nome Usuario";
             // 
             // pb_usericone
             // 
@@ -174,6 +174,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Enviar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // tb_mensagem
             // 

@@ -451,6 +451,12 @@
     <Compile Include="servicos\socialist\UserControl_ChatEmpresa.Designer.cs">
       <DependentUpon>UserControl_ChatEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\socialist\UserControl_ChatUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="servicos\socialist\UserControl_ChatUser.Designer.cs">
+      <DependentUpon>UserControl_ChatUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\Solicitar_Sevico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -709,6 +715,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\socialist\UserControl_ChatEmpresa.resx">
       <DependentUpon>UserControl_ChatEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\socialist\UserControl_ChatUser.resx">
+      <DependentUpon>UserControl_ChatUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\Solicitar_Sevico.resx">
       <DependentUpon>Solicitar_Sevico.cs</DependentUpon>

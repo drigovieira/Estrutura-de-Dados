@@ -316,7 +316,7 @@ namespace Pont_Finder.servicos
 
         private void Button2_Click_1(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmpresa(-1));
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmpresa(-1, -1));
         }
     }
 }
