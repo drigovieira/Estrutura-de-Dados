@@ -424,33 +424,19 @@ namespace Pont_Finder.alimentos
 
         private void CbRegistSim_CheckedChanged(object sender, EventArgs e)
         {
-            if(cbRegitNao.Checked == true)
-            {
-                cbRegitNao.Checked = false;
-            }
-        }
 
-        private void CbRegitNao_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cbRegistSim.Checked == true)
-            {
-                cbRegistSim.Checked = false;
-            }
-        }
+        }        
 
         private void CbEntregaSim_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbEntregaNao.Checked == true)
-            {
-                cbEntregaNao.Checked = false;
-            }
+            
         }
 
         private void CbEntregaNao_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbEntregaSim.Checked == true)
+            if (cbEntrega.Checked == true)
             {
-                cbEntregaSim.Checked = false;
+                cbEntrega.Checked = false;
             }
         }
     }

@@ -51,14 +51,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.cbEntregaNao = new System.Windows.Forms.CheckBox();
-            this.cbEntregaSim = new System.Windows.Forms.CheckBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.cbEntrega = new System.Windows.Forms.CheckBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.cbRegitNao = new System.Windows.Forms.CheckBox();
-            this.cbRegistSim = new System.Windows.Forms.CheckBox();
+            this.cbCardapio = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbFeriado = new System.Windows.Forms.CheckBox();
             this.cbDomingo = new System.Windows.Forms.CheckBox();
@@ -110,9 +105,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -335,9 +330,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.btnCad);
@@ -350,94 +343,41 @@
             this.panel3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(318, 1138);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(625, 1596);
+            this.panel3.Size = new System.Drawing.Size(625, 1304);
             this.panel3.TabIndex = 59;
             // 
-            // panel7
+            // cbEntrega
             // 
-            this.panel7.Controls.Add(this.cbEntregaNao);
-            this.panel7.Controls.Add(this.cbEntregaSim);
-            this.panel7.Location = new System.Drawing.Point(81, 1340);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(460, 100);
-            this.panel7.TabIndex = 41;
-            // 
-            // cbEntregaNao
-            // 
-            this.cbEntregaNao.AutoSize = true;
-            this.cbEntregaNao.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbEntregaNao.Location = new System.Drawing.Point(107, 54);
-            this.cbEntregaNao.Name = "cbEntregaNao";
-            this.cbEntregaNao.Size = new System.Drawing.Size(56, 24);
-            this.cbEntregaNao.TabIndex = 1;
-            this.cbEntregaNao.Text = "Não";
-            this.cbEntregaNao.UseVisualStyleBackColor = true;
-            this.cbEntregaNao.CheckedChanged += new System.EventHandler(this.CbEntregaNao_CheckedChanged);
-            // 
-            // cbEntregaSim
-            // 
-            this.cbEntregaSim.AutoSize = true;
-            this.cbEntregaSim.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbEntregaSim.Location = new System.Drawing.Point(107, 19);
-            this.cbEntregaSim.Name = "cbEntregaSim";
-            this.cbEntregaSim.Size = new System.Drawing.Size(53, 24);
-            this.cbEntregaSim.TabIndex = 0;
-            this.cbEntregaSim.Text = "Sim";
-            this.cbEntregaSim.UseVisualStyleBackColor = true;
-            this.cbEntregaSim.CheckedChanged += new System.EventHandler(this.CbEntregaSim_CheckedChanged);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(210, 1287);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(178, 25);
-            this.label18.TabIndex = 40;
-            this.label18.Text = "Serviço de Entrega";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(181, 1113);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(233, 25);
-            this.label15.TabIndex = 39;
-            this.label15.Text = "Deseja registrar cardápio";
+            this.cbEntrega.AutoSize = true;
+            this.cbEntrega.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEntrega.Location = new System.Drawing.Point(62, 39);
+            this.cbEntrega.Name = "cbEntrega";
+            this.cbEntrega.Size = new System.Drawing.Size(364, 24);
+            this.cbEntrega.TabIndex = 0;
+            this.cbEntrega.Text = "Utilizar serviço de pedidos para entrega (Delivery).";
+            this.cbEntrega.UseVisualStyleBackColor = true;
+            this.cbEntrega.CheckedChanged += new System.EventHandler(this.CbEntregaSim_CheckedChanged);
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.cbRegitNao);
-            this.panel5.Controls.Add(this.cbRegistSim);
-            this.panel5.Location = new System.Drawing.Point(81, 1164);
+            this.panel5.Controls.Add(this.cbEntrega);
+            this.panel5.Controls.Add(this.cbCardapio);
+            this.panel5.Location = new System.Drawing.Point(81, 1127);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(460, 100);
+            this.panel5.Size = new System.Drawing.Size(460, 74);
             this.panel5.TabIndex = 38;
             // 
-            // cbRegitNao
+            // cbCardapio
             // 
-            this.cbRegitNao.AutoSize = true;
-            this.cbRegitNao.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRegitNao.Location = new System.Drawing.Point(107, 51);
-            this.cbRegitNao.Name = "cbRegitNao";
-            this.cbRegitNao.Size = new System.Drawing.Size(56, 24);
-            this.cbRegitNao.TabIndex = 1;
-            this.cbRegitNao.Text = "Não";
-            this.cbRegitNao.UseVisualStyleBackColor = true;
-            this.cbRegitNao.CheckedChanged += new System.EventHandler(this.CbRegitNao_CheckedChanged);
-            // 
-            // cbRegistSim
-            // 
-            this.cbRegistSim.AutoSize = true;
-            this.cbRegistSim.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRegistSim.Location = new System.Drawing.Point(107, 15);
-            this.cbRegistSim.Name = "cbRegistSim";
-            this.cbRegistSim.Size = new System.Drawing.Size(53, 24);
-            this.cbRegistSim.TabIndex = 0;
-            this.cbRegistSim.Text = "Sim";
-            this.cbRegistSim.UseVisualStyleBackColor = true;
-            this.cbRegistSim.CheckedChanged += new System.EventHandler(this.CbRegistSim_CheckedChanged);
+            this.cbCardapio.AutoSize = true;
+            this.cbCardapio.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCardapio.Location = new System.Drawing.Point(62, 9);
+            this.cbCardapio.Name = "cbCardapio";
+            this.cbCardapio.Size = new System.Drawing.Size(295, 24);
+            this.cbCardapio.TabIndex = 0;
+            this.cbCardapio.Text = "Utilizar serviço de exibição de Cardápio.";
+            this.cbCardapio.UseVisualStyleBackColor = true;
+            this.cbCardapio.CheckedChanged += new System.EventHandler(this.CbRegistSim_CheckedChanged);
             // 
             // panel4
             // 
@@ -782,7 +722,7 @@
             this.btnCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCad.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCad.ForeColor = System.Drawing.Color.White;
-            this.btnCad.Location = new System.Drawing.Point(199, 1486);
+            this.btnCad.Location = new System.Drawing.Point(199, 1226);
             this.btnCad.Name = "btnCad";
             this.btnCad.Size = new System.Drawing.Size(220, 50);
             this.btnCad.TabIndex = 14;
@@ -985,7 +925,7 @@
             // panel9
             // 
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 2734);
+            this.panel9.Location = new System.Drawing.Point(0, 2442);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 60;
@@ -1040,6 +980,17 @@
             this.btn_back.TabIndex = 68;
             this.btn_back.TabStop = false;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(83, 1106);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(461, 16);
+            this.label20.TabIndex = 42;
+            this.label20.Text = "Caso marque a opção, ao cadastrar, será direcionado a página de registro de cardá" +
+    "pio*";
+            // 
             // Cadastro_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1065,8 +1016,6 @@
             this.panel11.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -1153,16 +1102,12 @@
         private System.Windows.Forms.CheckBox cbQuarta;
         private System.Windows.Forms.CheckBox cbQuinta;
         private System.Windows.Forms.CheckBox cbSegunda;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.CheckBox cbEntregaNao;
-        private System.Windows.Forms.CheckBox cbEntregaSim;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.CheckBox cbEntrega;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.CheckBox cbRegitNao;
-        private System.Windows.Forms.CheckBox cbRegistSim;
+        private System.Windows.Forms.CheckBox cbCardapio;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Label label20;
     }
 }
