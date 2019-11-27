@@ -42,6 +42,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.inputIngrediente = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
@@ -56,8 +58,6 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
@@ -117,6 +117,7 @@
             this.bt_cadastrar.TabIndex = 6;
             this.bt_cadastrar.Text = "Cadastrar Prato";
             this.bt_cadastrar.UseVisualStyleBackColor = false;
+            this.bt_cadastrar.Click += new System.EventHandler(this.Bt_cadastrar_Click);
             // 
             // label5
             // 
@@ -187,7 +188,7 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.inputIngrediente);
             this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.checkBox10);
@@ -218,6 +219,27 @@
             this.panel2.TabIndex = 36;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(518, 994);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 34);
+            this.button2.TabIndex = 39;
+            this.button2.Text = "Adicionar ";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // inputIngrediente
+            // 
+            this.inputIngrediente.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputIngrediente.Location = new System.Drawing.Point(294, 998);
+            this.inputIngrediente.Name = "inputIngrediente";
+            this.inputIngrediente.Size = new System.Drawing.Size(200, 27);
+            this.inputIngrediente.TabIndex = 38;
+            // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
@@ -246,6 +268,7 @@
             this.checkBox10.TabIndex = 11;
             this.checkBox10.Text = "Outros";
             this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox10.CheckedChanged += new System.EventHandler(this.CheckBox10_CheckedChanged);
             // 
             // label2
             // 
@@ -267,6 +290,7 @@
             this.checkBox9.TabIndex = 10;
             this.checkBox9.Text = "Convencional";
             this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.CheckBox9_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -278,6 +302,7 @@
             this.checkBox5.TabIndex = 7;
             this.checkBox5.Text = "Frutos do Mar";
             this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.CheckBox5_CheckedChanged);
             // 
             // checkBox6
             // 
@@ -289,6 +314,7 @@
             this.checkBox6.TabIndex = 6;
             this.checkBox6.Text = "Hambúrgueria";
             this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.CheckBox6_CheckedChanged);
             // 
             // checkBox7
             // 
@@ -300,6 +326,7 @@
             this.checkBox7.TabIndex = 5;
             this.checkBox7.Text = "Comida Italiana";
             this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.CheckBox7_CheckedChanged);
             // 
             // checkBox8
             // 
@@ -311,6 +338,7 @@
             this.checkBox8.TabIndex = 4;
             this.checkBox8.Text = "Petiscaria";
             this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.CheckBox8_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -322,6 +350,7 @@
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Sorveteria";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.CheckBox4_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -333,6 +362,7 @@
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Comida Japonesa";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -344,6 +374,7 @@
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Pizzaria";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox2_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -355,6 +386,7 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Churrascaria";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // btn_back
             // 
@@ -366,27 +398,6 @@
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 64;
             this.btn_back.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(294, 998);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 27);
-            this.textBox1.TabIndex = 38;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(518, 994);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 34);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "Adicionar ";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // Cadastro_Cardapio
             // 
@@ -438,7 +449,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.PictureBox btn_back;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox inputIngrediente;
         private System.Windows.Forms.Button button2;
     }
 }

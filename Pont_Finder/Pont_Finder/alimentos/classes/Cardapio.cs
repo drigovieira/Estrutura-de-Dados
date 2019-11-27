@@ -9,8 +9,8 @@ namespace Cardapios
     class Cardapio
     {
         private float preco;
-        private string categoria, nome, qtd, image;
-        private List<string> ingredientes;
+        private string  nome, qtd, image;
+        private List<string> ingredientes, categoria;
         private bool status;
         private int id;
 
@@ -19,7 +19,7 @@ namespace Cardapios
             get { return preco; }
             set { preco = value; }
         }
-        public string Categoria
+        public List<string> Categoria
         {
             get { return categoria; }
             set { categoria = value; }
