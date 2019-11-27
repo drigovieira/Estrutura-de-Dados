@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.lb_hora = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,18 +39,18 @@
             this.NomePos = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.bt_remover = new System.Windows.Forms.Button();
-            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.bt_editar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.r = new System.Windows.Forms.RadioButton();
             this.nr = new System.Windows.Forms.RadioButton();
             this.cb_pro = new System.Windows.Forms.ComboBox();
             this.tb_loc = new System.Windows.Forms.TextBox();
             this.tb_des = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -66,17 +66,19 @@
             this.pictureBox1.TabIndex = 94;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // btn_back
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.TabIndex = 96;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(10, 11);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 96;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.btn_back.MouseLeave += new System.EventHandler(this.btn_back_MouseLeave);
+            this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_back_MouseMove);
             // 
             // openFileDialog1
             // 
@@ -86,7 +88,7 @@
             // 
             this.lb_hora.AutoSize = true;
             this.lb_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_hora.Location = new System.Drawing.Point(186, 335);
+            this.lb_hora.Location = new System.Drawing.Point(196, 369);
             this.lb_hora.Name = "lb_hora";
             this.lb_hora.Size = new System.Drawing.Size(32, 13);
             this.lb_hora.TabIndex = 82;
@@ -96,7 +98,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(364, 134);
+            this.label2.Location = new System.Drawing.Point(567, 177);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 16);
             this.label2.TabIndex = 80;
@@ -106,7 +108,7 @@
             // 
             this.lb_data.AutoSize = true;
             this.lb_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_data.Location = new System.Drawing.Point(65, 335);
+            this.lb_data.Location = new System.Drawing.Point(75, 369);
             this.lb_data.Name = "lb_data";
             this.lb_data.Size = new System.Drawing.Size(115, 13);
             this.lb_data.TabIndex = 84;
@@ -116,7 +118,7 @@
             // 
             this.pb_icone.Location = new System.Drawing.Point(68, 41);
             this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(263, 251);
+            this.pb_icone.Size = new System.Drawing.Size(330, 271);
             this.pb_icone.TabIndex = 76;
             this.pb_icone.TabStop = false;
             this.pb_icone.Click += new System.EventHandler(this.pb_icone_Click);
@@ -125,7 +127,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(364, 80);
+            this.label3.Location = new System.Drawing.Point(564, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 16);
             this.label3.TabIndex = 81;
@@ -145,7 +147,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(364, 17);
+            this.label5.Location = new System.Drawing.Point(567, 17);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 16);
             this.label5.TabIndex = 79;
@@ -156,7 +158,7 @@
             this.bt_remover.BackColor = System.Drawing.Color.OrangeRed;
             this.bt_remover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_remover.ForeColor = System.Drawing.Color.White;
-            this.bt_remover.Location = new System.Drawing.Point(599, 298);
+            this.bt_remover.Location = new System.Drawing.Point(860, 354);
             this.bt_remover.Name = "bt_remover";
             this.bt_remover.Size = new System.Drawing.Size(86, 28);
             this.bt_remover.TabIndex = 96;
@@ -164,38 +166,12 @@
             this.bt_remover.UseVisualStyleBackColor = false;
             this.bt_remover.Click += new System.EventHandler(this.bt_remover_Click_1);
             // 
-            // gMapControl1
-            // 
-            this.gMapControl1.Bearing = 0F;
-            this.gMapControl1.CanDragMap = true;
-            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
-            this.gMapControl1.GrayScaleMode = false;
-            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(806, 10);
-            this.gMapControl1.MarkersEnabled = true;
-            this.gMapControl1.MaxZoom = 18;
-            this.gMapControl1.MinZoom = 14;
-            this.gMapControl1.MouseWheelZoomEnabled = true;
-            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            this.gMapControl1.Name = "gMapControl1";
-            this.gMapControl1.NegativeMode = false;
-            this.gMapControl1.PolygonsEnabled = true;
-            this.gMapControl1.RetryLoadTile = 0;
-            this.gMapControl1.RoutesEnabled = true;
-            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(283, 304);
-            this.gMapControl1.TabIndex = 85;
-            this.gMapControl1.Zoom = 14D;
-            // 
             // bt_editar
             // 
             this.bt_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_editar.ForeColor = System.Drawing.Color.White;
-            this.bt_editar.Location = new System.Drawing.Point(411, 298);
+            this.bt_editar.Location = new System.Drawing.Point(570, 354);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(86, 28);
             this.bt_editar.TabIndex = 97;
@@ -225,7 +201,9 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.linkLabel1);
             this.panel5.Controls.Add(this.r);
             this.panel5.Controls.Add(this.nr);
             this.panel5.Controls.Add(this.cb_pro);
@@ -234,7 +212,6 @@
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.bt_editar);
-            this.panel5.Controls.Add(this.gMapControl1);
             this.panel5.Controls.Add(this.bt_remover);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.NomePos);
@@ -250,10 +227,22 @@
             this.panel5.TabIndex = 95;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint_1);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(961, 117);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(163, 24);
+            this.linkLabel1.TabIndex = 106;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Visualiza no Mapa";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // r
             // 
             this.r.AutoSize = true;
-            this.r.Location = new System.Drawing.Point(259, 298);
+            this.r.Location = new System.Drawing.Point(326, 318);
             this.r.Name = "r";
             this.r.Size = new System.Drawing.Size(72, 17);
             this.r.TabIndex = 105;
@@ -264,7 +253,7 @@
             // nr
             // 
             this.nr.AutoSize = true;
-            this.nr.Location = new System.Drawing.Point(68, 297);
+            this.nr.Location = new System.Drawing.Point(68, 318);
             this.nr.Name = "nr";
             this.nr.Size = new System.Drawing.Size(95, 17);
             this.nr.TabIndex = 104;
@@ -274,6 +263,7 @@
             // 
             // cb_pro
             // 
+            this.cb_pro.BackColor = System.Drawing.Color.White;
             this.cb_pro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_pro.FormattingEnabled = true;
@@ -281,26 +271,28 @@
             "Infraestrutura",
             "Serviços",
             "Outros"});
-            this.cb_pro.Location = new System.Drawing.Point(357, 41);
+            this.cb_pro.Location = new System.Drawing.Point(561, 41);
             this.cb_pro.Name = "cb_pro";
             this.cb_pro.Size = new System.Drawing.Size(394, 28);
             this.cb_pro.TabIndex = 103;
             // 
             // tb_loc
             // 
+            this.tb_loc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_loc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_loc.Location = new System.Drawing.Point(357, 99);
+            this.tb_loc.Location = new System.Drawing.Point(561, 118);
             this.tb_loc.Name = "tb_loc";
             this.tb_loc.Size = new System.Drawing.Size(394, 26);
             this.tb_loc.TabIndex = 101;
             // 
             // tb_des
             // 
+            this.tb_des.BackColor = System.Drawing.Color.White;
             this.tb_des.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_des.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_des.Location = new System.Drawing.Point(357, 173);
+            this.tb_des.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_des.Location = new System.Drawing.Point(561, 196);
             this.tb_des.Name = "tb_des";
-            this.tb_des.Size = new System.Drawing.Size(394, 119);
+            this.tb_des.Size = new System.Drawing.Size(394, 152);
             this.tb_des.TabIndex = 102;
             this.tb_des.Text = "";
             // 
@@ -309,7 +301,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1199, 561);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -319,7 +311,7 @@
             this.Text = "EditeMeusPosts";
             this.Load += new System.EventHandler(this.EditeMeusPosts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -329,7 +321,7 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label lb_hora;
         private System.Windows.Forms.Label label2;
@@ -339,7 +331,6 @@
         private System.Windows.Forms.Label NomePos;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button bt_remover;
-        private GMap.NET.WindowsForms.GMapControl gMapControl1;
         private System.Windows.Forms.Button bt_editar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
@@ -349,5 +340,6 @@
         private System.Windows.Forms.RichTextBox tb_des;
         private System.Windows.Forms.RadioButton r;
         private System.Windows.Forms.RadioButton nr;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

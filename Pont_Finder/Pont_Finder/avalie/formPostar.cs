@@ -240,6 +240,7 @@ namespace Pont_Finder.avalie
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
+            /*
             //Inicia o mapa baseado no provedor selecionado e carrega o cache.
             gMapControl1.MapProvider = GMap.NET.MapProviders.OpenStreetMapProvider.Instance;
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.CacheOnly;
@@ -264,6 +265,12 @@ namespace Pont_Finder.avalie
             marker.Position = x;
             gMapControl1.Overlays.Add(camada);
             camada.Markers.Add(marker);
+            */
+
+        }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
+        {
 
         }
     }

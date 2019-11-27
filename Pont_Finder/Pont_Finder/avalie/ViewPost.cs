@@ -149,5 +149,10 @@ namespace Pont_Finder.avalie
         {
             FormPrincipal.MudarForm("Reclame", new FormAvalie());
         }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

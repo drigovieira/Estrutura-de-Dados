@@ -384,6 +384,11 @@ namespace Pont_Finder
         {
 
         }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

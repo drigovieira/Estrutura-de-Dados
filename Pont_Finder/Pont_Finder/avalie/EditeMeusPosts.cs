@@ -57,6 +57,7 @@ namespace Pont_Finder.avalie
 
         private void EditeMeusPosts_Load(object sender, EventArgs e)
         {
+            /*
             label4.Text = Session.Nome;
             cb_pro.Text = post.Tipoproblema;
             tb_loc.Text = post.Localizacao;
@@ -93,7 +94,7 @@ namespace Pont_Finder.avalie
             marker.Position = x;
             gMapControl1.Overlays.Add(camada);
             camada.Markers.Add(marker);
-
+            */
 
 
 
@@ -106,6 +107,8 @@ namespace Pont_Finder.avalie
 
         private void bt_editar_Click_1(object sender, EventArgs e)
         {
+            /*
+             * MAPA DO LEO
             post.Tipoproblema = cb_pro.SelectedItem.ToString();
             post.Localizacao = tb_loc.Text;
             post.Desc = tb_des.Text;
@@ -161,6 +164,7 @@ namespace Pont_Finder.avalie
             marker.Position = x;
             gMapControl1.Overlays.Add(camada);
             camada.Markers.Add(marker);
+            */
 
         }
 
@@ -187,6 +191,28 @@ namespace Pont_Finder.avalie
         private void panel5_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_back_MouseLeave(object sender, EventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_1;
+        }
+
+        private void btn_back_MouseMove(object sender, MouseEventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_2;
+        }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            avalie.formMaps avaliepost = new formMaps();
+            FormPrincipal.MudarForm("Reclame", avaliepost);
+            
         }
     }
 }

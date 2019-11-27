@@ -33,7 +33,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.cb_problemas = new System.Windows.Forms.ComboBox();
             this.button_Pesquisar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,6 +58,7 @@
             this.Databox = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.cb_problemas = new System.Windows.Forms.ComboBox();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -98,22 +98,9 @@
             this.panel7.Controls.Add(this.label2);
             this.panel7.Location = new System.Drawing.Point(5, 464);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(310, 162);
+            this.panel7.Size = new System.Drawing.Size(310, 200);
             this.panel7.TabIndex = 14;
-            // 
-            // cb_problemas
-            // 
-            this.cb_problemas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_problemas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_problemas.FormattingEnabled = true;
-            this.cb_problemas.Items.AddRange(new object[] {
-            "Infraestrutura",
-            "Serviços",
-            "Outros"});
-            this.cb_problemas.Location = new System.Drawing.Point(37, 50);
-            this.cb_problemas.Name = "cb_problemas";
-            this.cb_problemas.Size = new System.Drawing.Size(230, 28);
-            this.cb_problemas.TabIndex = 80;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // button_Pesquisar
             // 
@@ -122,7 +109,7 @@
             this.button_Pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Pesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Pesquisar.ForeColor = System.Drawing.Color.White;
-            this.button_Pesquisar.Location = new System.Drawing.Point(92, 100);
+            this.button_Pesquisar.Location = new System.Drawing.Point(92, 115);
             this.button_Pesquisar.Name = "button_Pesquisar";
             this.button_Pesquisar.Size = new System.Drawing.Size(110, 34);
             this.button_Pesquisar.TabIndex = 79;
@@ -193,7 +180,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(463, 54);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(397, 42);
@@ -388,12 +375,26 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // cb_problemas
+            // 
+            this.cb_problemas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_problemas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_problemas.FormattingEnabled = true;
+            this.cb_problemas.Items.AddRange(new object[] {
+            "Infraestrutura",
+            "Serviços",
+            "Outros"});
+            this.cb_problemas.Location = new System.Drawing.Point(47, 52);
+            this.cb_problemas.Name = "cb_problemas";
+            this.cb_problemas.Size = new System.Drawing.Size(230, 28);
+            this.cb_problemas.TabIndex = 82;
+            // 
             // FormAvalie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1215, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel7);
@@ -409,7 +410,7 @@
             this.Controls.Add(this.panel8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
-            this.MinimumSize = new System.Drawing.Size(1198, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "FormAvalie";
             this.Text = "FormAvalie";
             this.Load += new System.EventHandler(this.FormAvalie_Load);

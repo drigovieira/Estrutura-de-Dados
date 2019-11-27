@@ -32,8 +32,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtLocalizacao = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPostar = new System.Windows.Forms.Button();
@@ -50,8 +48,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -62,19 +60,18 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Location = new System.Drawing.Point(0, 210);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 641);
+            this.panel4.Size = new System.Drawing.Size(310, 824);
             this.panel4.TabIndex = 8;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // txtLocalizacao
             // 
             this.txtLocalizacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocalizacao.Location = new System.Drawing.Point(13, 48);
+            this.txtLocalizacao.Location = new System.Drawing.Point(113, 48);
             this.txtLocalizacao.Name = "txtLocalizacao";
-            this.txtLocalizacao.Size = new System.Drawing.Size(224, 26);
+            this.txtLocalizacao.Size = new System.Drawing.Size(381, 26);
             this.txtLocalizacao.TabIndex = 63;
             this.txtLocalizacao.TextChanged += new System.EventHandler(this.txtLocalizacao_TextChanged);
             this.txtLocalizacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLocalizacao_KeyPress);
@@ -83,8 +80,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.pictureBox1);
-            this.panel6.Controls.Add(this.gMapControl1);
+            this.panel6.Controls.Add(this.linkLabel1);
             this.panel6.Controls.Add(this.comboBox1);
             this.panel6.Controls.Add(this.txtLocalizacao);
             this.panel6.Controls.Add(this.label2);
@@ -96,49 +92,9 @@
             this.panel6.Controls.Add(this.label3);
             this.panel6.Location = new System.Drawing.Point(317, 209);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(625, 642);
+            this.panel6.Size = new System.Drawing.Size(625, 866);
             this.panel6.TabIndex = 14;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(240, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 81;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
-            // gMapControl1
-            // 
-            this.gMapControl1.Bearing = 0F;
-            this.gMapControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.gMapControl1.CanDragMap = true;
-            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
-            this.gMapControl1.GrayScaleMode = false;
-            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(294, 3);
-            this.gMapControl1.MarkersEnabled = true;
-            this.gMapControl1.MaxZoom = 18;
-            this.gMapControl1.MinZoom = 14;
-            this.gMapControl1.MouseWheelZoomEnabled = true;
-            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            this.gMapControl1.Name = "gMapControl1";
-            this.gMapControl1.NegativeMode = false;
-            this.gMapControl1.PolygonsEnabled = true;
-            this.gMapControl1.RetryLoadTile = 0;
-            this.gMapControl1.RoutesEnabled = true;
-            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(326, 246);
-            this.gMapControl1.TabIndex = 80;
-            this.gMapControl1.Zoom = 14D;
             // 
             // comboBox1
             // 
@@ -149,9 +105,9 @@
             "Infraestrutura",
             "Serviços",
             "Outros"});
-            this.comboBox1.Location = new System.Drawing.Point(16, 150);
+            this.comboBox1.Location = new System.Drawing.Point(113, 152);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(258, 28);
+            this.comboBox1.Size = new System.Drawing.Size(378, 28);
             this.comboBox1.TabIndex = 77;
             // 
             // label2
@@ -160,9 +116,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(7, 114);
+            this.label2.Location = new System.Drawing.Point(121, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 33);
+            this.label2.Size = new System.Drawing.Size(241, 32);
             this.label2.TabIndex = 76;
             this.label2.Text = "Sobre o que você quer falar...";
             // 
@@ -173,7 +129,7 @@
             this.btnPostar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPostar.ForeColor = System.Drawing.Color.White;
             this.btnPostar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPostar.Location = new System.Drawing.Point(227, 581);
+            this.btnPostar.Location = new System.Drawing.Point(351, 708);
             this.btnPostar.Name = "btnPostar";
             this.btnPostar.Size = new System.Drawing.Size(194, 44);
             this.btnPostar.TabIndex = 74;
@@ -186,9 +142,9 @@
             // 
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(16, 309);
+            this.richTextBox1.Location = new System.Drawing.Point(62, 498);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(351, 180);
+            this.richTextBox1.Size = new System.Drawing.Size(483, 191);
             this.richTextBox1.TabIndex = 69;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -199,9 +155,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(10, 274);
+            this.label1.Location = new System.Drawing.Point(77, 463);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 33);
+            this.label1.Size = new System.Drawing.Size(96, 32);
             this.label1.TabIndex = 66;
             this.label1.Text = "Descrição:";
             // 
@@ -209,11 +165,11 @@
             // 
             this.pb_icone.BackColor = System.Drawing.Color.White;
             this.pb_icone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.upgrey;
-            this.pb_icone.Location = new System.Drawing.Point(373, 309);
+            this.pb_icone.Image = ((System.Drawing.Image)(resources.GetObject("pb_icone.Image")));
+            this.pb_icone.Location = new System.Drawing.Point(113, 239);
             this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(247, 180);
-            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_icone.Size = new System.Drawing.Size(378, 197);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pb_icone.TabIndex = 65;
             this.pb_icone.TabStop = false;
             this.pb_icone.Click += new System.EventHandler(this.PictureBoxCarregarImagem_Click);
@@ -226,9 +182,9 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(373, 271);
+            this.button3.Location = new System.Drawing.Point(113, 206);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(247, 32);
+            this.button3.Size = new System.Drawing.Size(378, 32);
             this.button3.TabIndex = 64;
             this.button3.Text = "Carregar imagem...";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -241,9 +197,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(10, 12);
+            this.label3.Location = new System.Drawing.Point(121, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 33);
+            this.label3.Size = new System.Drawing.Size(110, 32);
             this.label3.TabIndex = 78;
             this.label3.Text = "Localização:";
             // 
@@ -258,7 +214,7 @@
             this.panel7.Controls.Add(this.panel10);
             this.panel7.Location = new System.Drawing.Point(949, 204);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(310, 647);
+            this.panel7.Size = new System.Drawing.Size(321, 838);
             this.panel7.TabIndex = 19;
             // 
             // panel9
@@ -268,7 +224,7 @@
             this.panel9.Controls.Add(this.label15);
             this.panel9.Location = new System.Drawing.Point(0, 170);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(310, 325);
+            this.panel9.Size = new System.Drawing.Size(318, 325);
             this.panel9.TabIndex = 25;
             // 
             // label15
@@ -288,7 +244,7 @@
             this.panel10.Controls.Add(this.label13);
             this.panel10.Location = new System.Drawing.Point(0, 5);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(310, 160);
+            this.panel10.Size = new System.Drawing.Size(318, 160);
             this.panel10.TabIndex = 19;
             // 
             // label13
@@ -317,12 +273,23 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label6.Font = new System.Drawing.Font("Dubai", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(485, 98);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(354, 63);
             this.label6.TabIndex = 1;
             this.label6.Text = "Expresse sua opinião";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(331, 15);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(163, 24);
+            this.linkLabel1.TabIndex = 107;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Visualiza no Mapa";
             // 
             // FormPostar
             // 
@@ -330,7 +297,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1299, 656);
+            this.ClientSize = new System.Drawing.Size(1299, 788);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
@@ -343,7 +310,6 @@
             this.Load += new System.EventHandler(this.FormPostar_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -376,7 +342,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label3;
-        private GMap.NET.WindowsForms.GMapControl gMapControl1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
