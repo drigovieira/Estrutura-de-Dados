@@ -134,6 +134,11 @@ namespace Pont_Finder.alimentos
                 CompanyList.CompAdd(emp);                
 
                 MessageBox.Show("Empresa Cadastrada!", "Status Operation:");
+                if (cbCardapio.Checked == true)
+                {
+                    alimentos.Cadastro_Cardapio cadCardapio = new Cadastro_Cardapio();
+                    FormPrincipal.MudarForm("alimentos", cadCardapio);
+                }
             }catch(Exception exp)
             {
                 MessageBox.Show("" +exp);
@@ -438,6 +443,12 @@ namespace Pont_Finder.alimentos
             {
                 cbEntrega.Checked = false;
             }
+        }
+
+        private void Btn_back_Click_1(object sender, EventArgs e)
+        {
+            formAlimentos homeAlimentos = new formAlimentos();
+            FormPrincipal.MudarForm("alimentos", homeAlimentos);
         }
     }
 }

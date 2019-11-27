@@ -42,9 +42,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAddIngrediente = new System.Windows.Forms.Button();
             this.inputIngrediente = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Ingredientes = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -187,9 +187,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnAddIngrediente);
             this.panel2.Controls.Add(this.inputIngrediente);
-            this.panel2.Controls.Add(this.listBox1);
+            this.panel2.Controls.Add(this.Ingredientes);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.checkBox10);
             this.panel2.Controls.Add(this.label2);
@@ -219,18 +219,19 @@
             this.panel2.TabIndex = 36;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
-            // button2
+            // btnAddIngrediente
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(518, 994);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 34);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "Adicionar ";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAddIngrediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.btnAddIngrediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddIngrediente.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddIngrediente.ForeColor = System.Drawing.Color.White;
+            this.btnAddIngrediente.Location = new System.Drawing.Point(518, 994);
+            this.btnAddIngrediente.Name = "btnAddIngrediente";
+            this.btnAddIngrediente.Size = new System.Drawing.Size(109, 34);
+            this.btnAddIngrediente.TabIndex = 39;
+            this.btnAddIngrediente.Text = "Adicionar ";
+            this.btnAddIngrediente.UseVisualStyleBackColor = false;
+            this.btnAddIngrediente.Click += new System.EventHandler(this.BtnAddIngrediente_Click);
             // 
             // inputIngrediente
             // 
@@ -240,13 +241,13 @@
             this.inputIngrediente.Size = new System.Drawing.Size(200, 27);
             this.inputIngrediente.TabIndex = 38;
             // 
-            // listBox1
+            // Ingredientes
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(275, 1072);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(332, 121);
-            this.listBox1.TabIndex = 37;
+            this.Ingredientes.FormattingEnabled = true;
+            this.Ingredientes.Location = new System.Drawing.Point(275, 1072);
+            this.Ingredientes.Name = "Ingredientes";
+            this.Ingredientes.Size = new System.Drawing.Size(332, 121);
+            this.Ingredientes.TabIndex = 37;
             // 
             // label4
             // 
@@ -393,11 +394,13 @@
             this.btn_back.BackColor = System.Drawing.Color.White;
             this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_back.Location = new System.Drawing.Point(12, 24);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 64;
             this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // Cadastro_Cardapio
             // 
@@ -447,9 +450,9 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox Ingredientes;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.TextBox inputIngrediente;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAddIngrediente;
     }
 }

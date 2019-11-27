@@ -51,8 +51,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.cbEntrega = new System.Windows.Forms.CheckBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.cbEntrega = new System.Windows.Forms.CheckBox();
             this.cbCardapio = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbFeriado = new System.Windows.Forms.CheckBox();
@@ -105,7 +106,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -346,6 +346,26 @@
             this.panel3.Size = new System.Drawing.Size(625, 1304);
             this.panel3.TabIndex = 59;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(83, 1106);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(461, 16);
+            this.label20.TabIndex = 42;
+            this.label20.Text = "Caso marque a opção, ao cadastrar, será direcionado a página de registro de cardá" +
+    "pio*";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.cbEntrega);
+            this.panel5.Controls.Add(this.cbCardapio);
+            this.panel5.Location = new System.Drawing.Point(81, 1127);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(460, 74);
+            this.panel5.TabIndex = 38;
+            // 
             // cbEntrega
             // 
             this.cbEntrega.AutoSize = true;
@@ -357,15 +377,6 @@
             this.cbEntrega.Text = "Utilizar serviço de pedidos para entrega (Delivery).";
             this.cbEntrega.UseVisualStyleBackColor = true;
             this.cbEntrega.CheckedChanged += new System.EventHandler(this.CbEntregaSim_CheckedChanged);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.cbEntrega);
-            this.panel5.Controls.Add(this.cbCardapio);
-            this.panel5.Location = new System.Drawing.Point(81, 1127);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(460, 74);
-            this.panel5.TabIndex = 38;
             // 
             // cbCardapio
             // 
@@ -891,6 +902,7 @@
             // pb_icone
             // 
             this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage1;
             this.pb_icone.Location = new System.Drawing.Point(180, 74);
             this.pb_icone.Name = "pb_icone";
             this.pb_icone.Size = new System.Drawing.Size(250, 220);
@@ -972,24 +984,15 @@
             // 
             this.btn_back.BackColor = System.Drawing.Color.White;
             this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
-            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_back.Location = new System.Drawing.Point(66, 229);
             this.btn_back.Margin = new System.Windows.Forms.Padding(5);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 68;
             this.btn_back.TabStop = false;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(83, 1106);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(461, 16);
-            this.label20.TabIndex = 42;
-            this.label20.Text = "Caso marque a opção, ao cadastrar, será direcionado a página de registro de cardá" +
-    "pio*";
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click_1);
             // 
             // Cadastro_Restaurante
             // 

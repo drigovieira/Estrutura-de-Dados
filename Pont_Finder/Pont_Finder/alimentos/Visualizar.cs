@@ -87,6 +87,12 @@ namespace Pont_Finder.alimentos
         {
                     }
 
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            formAlimentos homeAlimentos = new formAlimentos();
+            FormPrincipal.MudarForm("alimentos", homeAlimentos);
+        }
+
         private void Visualizar_Paint(object sender, PaintEventArgs e)
         {
             lbRestaurante.Text = nomeFantasia;

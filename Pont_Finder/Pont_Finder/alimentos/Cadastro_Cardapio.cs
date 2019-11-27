@@ -177,5 +177,16 @@ namespace Pont_Finder.alimentos
                 }
             }
         }
+
+        private void BtnAddIngrediente_Click(object sender, EventArgs e)
+        {
+            Ingredientes.Items.Add(inputIngrediente.Text);
+        }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            formAlimentos homeAlimentos = new formAlimentos();
+            FormPrincipal.MudarForm("alimentos", homeAlimentos);
+        }
     }
 }
