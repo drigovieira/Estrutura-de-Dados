@@ -12,11 +12,30 @@ namespace Pont_Finder.eventos
 {
     public partial class Visualizar_evento : Form
     {
-        Form anterior;
-        public Visualizar_evento(Form anterior)
+        Classes.CoEvento post;
+        
+
+
+        
+        public Visualizar_evento(int postId)
         {
-            this.anterior = anterior;
+
+            
+          
             InitializeComponent();
+            
+            post = Classes.Eventos_List.thisPostId(postId);
+
+            //Evento:
+            lb_nome_evento.Text = post.Nome;
+            pb_principal.ImageLocation = post.Imagem1;
+            lb_rs_boleto.Text = post.Valor;
+            lb_descricao.Text = post.Descricao;
+            lb_categoria.Text = post.Categoria;
+            lb_data.Text = post.Data;
+            lb_horario.Text = post.Horario;
+
+
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
@@ -26,7 +45,18 @@ namespace Pont_Finder.eventos
 
         private void Btn_back_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("eventos", anterior);
+            FormPrincipal.MudarForm("eventos", new eventos.FormEventos());
+        }
+
+        private void Visualizar_evento_Load(object sender, EventArgs e)
+        {
+           
+           
+            
+
+
+
+
         }
     }
 }

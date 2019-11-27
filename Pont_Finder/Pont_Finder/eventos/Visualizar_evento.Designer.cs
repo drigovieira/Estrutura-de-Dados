@@ -33,6 +33,7 @@
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.pn_galery = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lb_descricao = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lb_horario = new System.Windows.Forms.Label();
             this.lb_data = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@
             this.bt_comprar = new System.Windows.Forms.Button();
             this.lb_nome_evento = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.lb_descricao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
@@ -133,6 +133,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(966, 666);
             this.panel4.TabIndex = 37;
+            // 
+            // lb_descricao
+            // 
+            this.lb_descricao.AutoSize = true;
+            this.lb_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_descricao.Location = new System.Drawing.Point(157, 63);
+            this.lb_descricao.Name = "lb_descricao";
+            this.lb_descricao.Size = new System.Drawing.Size(58, 24);
+            this.lb_descricao.TabIndex = 39;
+            this.lb_descricao.Text = "Value";
             // 
             // label2
             // 
@@ -301,6 +311,7 @@
             this.pb_principal.Location = new System.Drawing.Point(42, 54);
             this.pb_principal.Name = "pb_principal";
             this.pb_principal.Size = new System.Drawing.Size(450, 225);
+            this.pb_principal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_principal.TabIndex = 36;
             this.pb_principal.TabStop = false;
             // 
@@ -349,16 +360,6 @@
             this.btn_back.TabIndex = 15;
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
-            // 
-            // lb_descricao
-            // 
-            this.lb_descricao.AutoSize = true;
-            this.lb_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_descricao.Location = new System.Drawing.Point(157, 63);
-            this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(58, 24);
-            this.lb_descricao.TabIndex = 39;
-            this.lb_descricao.Text = "Value";
             // 
             // Visualizar_evento
             // 

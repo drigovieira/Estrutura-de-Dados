@@ -160,6 +160,16 @@ namespace Pont_Finder.eventos.Classes
             poster.Add(pos);
         }
 
+        public static CoEvento thisPostId(int postId)
+        {
+            foreach (var item in poster)
+            {
+                if (postId == item.Id)
+                    return item;
+            }
+            return null;
+        }
+
 
         public static void XmlSave()
         {

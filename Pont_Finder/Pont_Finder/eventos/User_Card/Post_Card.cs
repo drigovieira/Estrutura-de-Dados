@@ -16,6 +16,7 @@ namespace Pont_Finder.eventos
         public Post_Card(int postid)
         {
             InitializeComponent();
+
             post = Classes.Eventos_List.PosterId(postid);
 
             pb_imagem.ImageLocation = post.Imagem1;
@@ -24,7 +25,9 @@ namespace Pont_Finder.eventos
             lb_data.Text = post.Data;
             lb_categoria.Text = post.Categoria;
             lb_valor.Text = post.Valor;
-           
+
+            
+
 
         }
 
@@ -45,8 +48,15 @@ namespace Pont_Finder.eventos
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
         {
-            eventos.Visualizar_evento viewpost = new eventos.Visualizar_evento(new FormEventos());
+            eventos.Visualizar_evento viewpost = new eventos.Visualizar_evento(post.Id);
             FormPrincipal.MudarForm("Eventos", viewpost);
+
+            //eventos.Visualizar_evento visu = new eventos.Visualizar_evento(post.Id);
+            //visu.ShowDialog();
+
+
+            //eventos.Visualizar_evento viewEvento = new eventos.Visualizar_evento(post.Id);
+            //FormPrincipal.MudarForm("eventos", viewEvento);
         }
     }
 }
