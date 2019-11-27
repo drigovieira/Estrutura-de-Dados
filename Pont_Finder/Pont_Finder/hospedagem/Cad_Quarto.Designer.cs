@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cad_Quarto));
             this.input_valor = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_qtdquarto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,12 +43,6 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.rb_pessoas_6 = new System.Windows.Forms.RadioButton();
-            this.rb_pessoas_5 = new System.Windows.Forms.RadioButton();
-            this.rb_pessoas_4 = new System.Windows.Forms.RadioButton();
-            this.rb_pessoas_3 = new System.Windows.Forms.RadioButton();
-            this.rb_pessoas_2 = new System.Windows.Forms.RadioButton();
-            this.rb_pessoas_1 = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.pb_img_1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -89,16 +82,6 @@
             this.label6.Size = new System.Drawing.Size(29, 21);
             this.label6.TabIndex = 12;
             this.label6.Text = "R$";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(306, 602);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(278, 21);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Quantidade de pessoas suportadas:";
             // 
             // label1
             // 
@@ -223,78 +206,6 @@
             this.checkBox1.Text = "Café da manhã";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // rb_pessoas_6
-            // 
-            this.rb_pessoas_6.AutoSize = true;
-            this.rb_pessoas_6.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_pessoas_6.Location = new System.Drawing.Point(565, 643);
-            this.rb_pessoas_6.Name = "rb_pessoas_6";
-            this.rb_pessoas_6.Size = new System.Drawing.Size(31, 18);
-            this.rb_pessoas_6.TabIndex = 22;
-            this.rb_pessoas_6.TabStop = true;
-            this.rb_pessoas_6.Text = "6";
-            this.rb_pessoas_6.UseVisualStyleBackColor = true;
-            // 
-            // rb_pessoas_5
-            // 
-            this.rb_pessoas_5.AutoSize = true;
-            this.rb_pessoas_5.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_pessoas_5.Location = new System.Drawing.Point(515, 643);
-            this.rb_pessoas_5.Name = "rb_pessoas_5";
-            this.rb_pessoas_5.Size = new System.Drawing.Size(31, 18);
-            this.rb_pessoas_5.TabIndex = 21;
-            this.rb_pessoas_5.TabStop = true;
-            this.rb_pessoas_5.Text = "5";
-            this.rb_pessoas_5.UseVisualStyleBackColor = true;
-            // 
-            // rb_pessoas_4
-            // 
-            this.rb_pessoas_4.AutoSize = true;
-            this.rb_pessoas_4.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_pessoas_4.Location = new System.Drawing.Point(464, 643);
-            this.rb_pessoas_4.Name = "rb_pessoas_4";
-            this.rb_pessoas_4.Size = new System.Drawing.Size(31, 18);
-            this.rb_pessoas_4.TabIndex = 20;
-            this.rb_pessoas_4.TabStop = true;
-            this.rb_pessoas_4.Text = "4";
-            this.rb_pessoas_4.UseVisualStyleBackColor = true;
-            // 
-            // rb_pessoas_3
-            // 
-            this.rb_pessoas_3.AutoSize = true;
-            this.rb_pessoas_3.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_pessoas_3.Location = new System.Drawing.Point(414, 643);
-            this.rb_pessoas_3.Name = "rb_pessoas_3";
-            this.rb_pessoas_3.Size = new System.Drawing.Size(31, 18);
-            this.rb_pessoas_3.TabIndex = 19;
-            this.rb_pessoas_3.TabStop = true;
-            this.rb_pessoas_3.Text = "3";
-            this.rb_pessoas_3.UseVisualStyleBackColor = true;
-            // 
-            // rb_pessoas_2
-            // 
-            this.rb_pessoas_2.AutoSize = true;
-            this.rb_pessoas_2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_pessoas_2.Location = new System.Drawing.Point(358, 643);
-            this.rb_pessoas_2.Name = "rb_pessoas_2";
-            this.rb_pessoas_2.Size = new System.Drawing.Size(31, 18);
-            this.rb_pessoas_2.TabIndex = 18;
-            this.rb_pessoas_2.TabStop = true;
-            this.rb_pessoas_2.Text = "2";
-            this.rb_pessoas_2.UseVisualStyleBackColor = true;
-            // 
-            // rb_pessoas_1
-            // 
-            this.rb_pessoas_1.AutoSize = true;
-            this.rb_pessoas_1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_pessoas_1.Location = new System.Drawing.Point(302, 643);
-            this.rb_pessoas_1.Name = "rb_pessoas_1";
-            this.rb_pessoas_1.Size = new System.Drawing.Size(31, 18);
-            this.rb_pessoas_1.TabIndex = 17;
-            this.rb_pessoas_1.TabStop = true;
-            this.rb_pessoas_1.Text = "1";
-            this.rb_pessoas_1.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -379,32 +290,26 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.tb_nome);
             this.panel2.Controls.Add(this.pb_img_1);
-            this.panel2.Controls.Add(this.rb_pessoas_2);
-            this.panel2.Controls.Add(this.rb_pessoas_3);
             this.panel2.Controls.Add(this.checkBox7);
-            this.panel2.Controls.Add(this.rb_pessoas_1);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.rb_pessoas_4);
             this.panel2.Controls.Add(this.checkBox4);
             this.panel2.Controls.Add(this.bt_cadastrar);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.rb_pessoas_5);
             this.panel2.Controls.Add(this.checkBox5);
             this.panel2.Controls.Add(this.input_valor);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.rb_pessoas_6);
             this.panel2.Controls.Add(this.checkBox6);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.tb_qtdquarto);
             this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.checkBox3);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.checkBox2);
             this.panel2.Location = new System.Drawing.Point(210, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(845, 1286);
             this.panel2.TabIndex = 34;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
             // radioButton1
             // 
@@ -417,6 +322,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Solteiro";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Click += new System.EventHandler(this.RadioButton1_Click);
             // 
             // radioButton2
             // 
@@ -429,6 +335,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Outros";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Click += new System.EventHandler(this.RadioButton2_Click);
             // 
             // radioButton3
             // 
@@ -441,6 +348,7 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Casal";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.Click += new System.EventHandler(this.RadioButton3_Click);
             // 
             // label11
             // 
@@ -540,19 +448,12 @@
         #endregion
         private System.Windows.Forms.TextBox input_valor;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_qtdquarto;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tb_nome;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton rb_pessoas_2;
-        private System.Windows.Forms.RadioButton rb_pessoas_1;
-        private System.Windows.Forms.RadioButton rb_pessoas_6;
-        private System.Windows.Forms.RadioButton rb_pessoas_5;
-        private System.Windows.Forms.RadioButton rb_pessoas_4;
-        private System.Windows.Forms.RadioButton rb_pessoas_3;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;

@@ -10,7 +10,7 @@ namespace Pont_Finder.hospedagem
     {
 
         string nome_quarto, servicos, status, foto;
-        int id, qtd_pessoas, qtd_disponivel;
+        int id, qtd_pessoas, qtd_disponivel, qtd_solteiro,qtd_casal;
         double valor_diario;
         long cnpj_empresa;
         bool ativo;
@@ -54,6 +54,18 @@ namespace Pont_Finder.hospedagem
             get { return qtd_disponivel; }
             set { qtd_disponivel = value; }
         }
+
+        public int Qtd_Casal
+        {
+            get { return qtd_casal; }
+            set { qtd_casal = value; }
+        }
+        public int Qtd_Solteiro
+        {
+            get { return qtd_solteiro; }
+            set { qtd_solteiro = value; }
+        }
+
 
         //Get e Set Double
         public double Valor_Diario

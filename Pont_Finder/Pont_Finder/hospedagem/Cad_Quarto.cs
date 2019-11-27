@@ -23,6 +23,8 @@ namespace Pont_Finder.hospedagem
         {
             this.anterior = anterior;
             InitializeComponent();
+            tb_solteiro.Enabled = false;
+            tb_casal.Enabled = false;
 
             
         }
@@ -50,11 +52,10 @@ namespace Pont_Finder.hospedagem
         {
             int cont = 0;//contador para salvar se não existir o nome na lista
             if (pb_img_1.Image == null || tb_nome.Text == "" || tb_qtdquarto.Text == "" ||
-                input_valor.Text == "" || (rb_pessoas_1.Checked == false && rb_pessoas_2.Checked == false
-                && rb_pessoas_3.Checked == false && rb_pessoas_4.Checked == false && rb_pessoas_5.Checked == false
-                && rb_pessoas_6.Checked == false) || (checkBox1.Checked == false && checkBox2.Checked == false
+                input_valor.Text == "" || (checkBox1.Checked == false && checkBox2.Checked == false
                 && checkBox3.Checked == false && checkBox4.Checked == false && checkBox5.Checked == false
-                && checkBox6.Checked == false && checkBox7.Checked == false))
+                && checkBox6.Checked == false && checkBox7.Checked == false)||(radioButton1.Checked==false&&
+                radioButton2.Checked==false && radioButton3.Checked==false))
             {
                 MessageBox.Show("Preencha todos os campos");
             }
@@ -70,6 +71,8 @@ namespace Pont_Finder.hospedagem
                 string status = "Disponivel";
                 string lista_servicos = "";
                 int qtd_pessoas = 0;
+                int qtd_solteiro = 0;
+                int qtd_casal = 0;
                 int qtd_disponivel = int.Parse(tb_qtdquarto.Text);
                 double valor = double.Parse(input_valor.Text);
                 bool ativo = true;
@@ -89,30 +92,36 @@ namespace Pont_Finder.hospedagem
                 }
 
                 //PEGA QTD DE PESSOAS
-                if (rb_pessoas_1.Checked)
-                {
+                if(radioButton1.Checked)
+                {                    
                     qtd_pessoas = 1;
                 }
-                if (rb_pessoas_2.Checked)
+                if (radioButton3.Checked)
                 {
                     qtd_pessoas = 2;
                 }
-                if (rb_pessoas_3.Checked)
+                if (radioButton2.Checked)
                 {
-                    qtd_pessoas = 3;
+                    if (tb_casal.Text == "")
+                    {
+                        qtd_solteiro = Convert.ToInt32(tb_solteiro.Text);
+                        qtd_pessoas = qtd_solteiro;
+                    }
+                    if (tb_solteiro.Text == "")
+                    {
+                        qtd_casal = Convert.ToInt32(tb_casal.Text);
+                        qtd_pessoas = qtd_casal * 2;
+                    }
+                    if (tb_casal.Text != "" && tb_solteiro.Text != "")
+                    {
+                        qtd_solteiro = Convert.ToInt32(tb_solteiro.Text);
+                        qtd_casal = Convert.ToInt32(tb_casal.Text);
+                        qtd_pessoas = qtd_solteiro + (qtd_casal * 2);
+                    }
+
+                    
                 }
-                if (rb_pessoas_4.Checked)
-                {
-                    qtd_pessoas = 4;
-                }
-                if (rb_pessoas_5.Checked)
-                {
-                    qtd_pessoas = 5;
-                }
-                if (rb_pessoas_6.Checked)
-                {
-                    qtd_pessoas = 6;
-                }
+
 
                 // PEGA OS VALORES DOS SERVIÇOS
                 if (checkBox1.Checked)
@@ -219,6 +228,33 @@ namespace Pont_Finder.hospedagem
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void RadioButton3_Click(object sender, EventArgs e)
+        {
+            tb_solteiro.Text = "";
+            tb_casal.Text = "";
+            tb_solteiro.Enabled = false;
+            tb_casal.Enabled = false;
+        }
+
+        private void RadioButton1_Click(object sender, EventArgs e)
+        {
+            tb_solteiro.Text = "";
+            tb_casal.Text = "";
+            tb_solteiro.Enabled = false;
+            tb_casal.Enabled = false;
+        }
+
+        private void RadioButton2_Click(object sender, EventArgs e)
+        {
+            tb_solteiro.Enabled = true;
+            tb_casal.Enabled = true;
         }
     }
 }
