@@ -42,17 +42,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_editar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             this.lb_deslike = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
             this.pb_down = new System.Windows.Forms.PictureBox();
             this.pb_up = new System.Windows.Forms.PictureBox();
-            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             ((System.ComponentModel.ISupportInitialize)(this.checado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -155,7 +155,7 @@
             // 
             // bt_obter
             // 
-            this.bt_obter.BackColor = System.Drawing.SystemColors.Highlight;
+            this.bt_obter.BackColor = System.Drawing.Color.DodgerBlue;
             this.bt_obter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_obter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.bt_obter.ForeColor = System.Drawing.Color.White;
@@ -191,11 +191,11 @@
             // 
             // bt_editar
             // 
-            this.bt_editar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.bt_editar.BackColor = System.Drawing.Color.DodgerBlue;
             this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.bt_editar.ForeColor = System.Drawing.Color.White;
-            this.bt_editar.Location = new System.Drawing.Point(422, 5);
+            this.bt_editar.Location = new System.Drawing.Point(419, 5);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(127, 28);
             this.bt_editar.TabIndex = 98;
@@ -206,7 +206,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.bt_editar);
             this.panel1.Controls.Add(this.imagemuser);
@@ -216,8 +216,18 @@
             this.panel1.Controls.Add(this.NomePos);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(626, 70);
+            this.panel1.Size = new System.Drawing.Size(625, 70);
             this.panel1.TabIndex = 100;
+            // 
+            // imagemuser
+            // 
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemuser.Location = new System.Drawing.Point(5, 2);
+            this.imagemuser.Name = "imagemuser";
+            this.imagemuser.Size = new System.Drawing.Size(57, 57);
+            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagemuser.TabIndex = 101;
+            this.imagemuser.TabStop = false;
             // 
             // lb_deslike
             // 
@@ -233,7 +243,7 @@
             // 
             this.lb_like.AutoSize = true;
             this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_like.Location = new System.Drawing.Point(553, 80);
+            this.lb_like.Location = new System.Drawing.Point(553, 96);
             this.lb_like.Name = "lb_like";
             this.lb_like.Size = new System.Drawing.Size(15, 16);
             this.lb_like.TabIndex = 101;
@@ -244,7 +254,7 @@
             this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
             this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.Location = new System.Drawing.Point(501, 157);
+            this.pb_down.Location = new System.Drawing.Point(510, 141);
             this.pb_down.Margin = new System.Windows.Forms.Padding(15);
             this.pb_down.Name = "pb_down";
             this.pb_down.Size = new System.Drawing.Size(37, 32);
@@ -258,7 +268,7 @@
             this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
             this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.Location = new System.Drawing.Point(501, 80);
+            this.pb_up.Location = new System.Drawing.Point(510, 80);
             this.pb_up.Margin = new System.Windows.Forms.Padding(15);
             this.pb_up.Name = "pb_up";
             this.pb_up.Size = new System.Drawing.Size(37, 32);
@@ -266,16 +276,6 @@
             this.pb_up.TabIndex = 102;
             this.pb_up.TabStop = false;
             this.pb_up.Click += new System.EventHandler(this.pb_up_Click);
-            // 
-            // imagemuser
-            // 
-            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imagemuser.Location = new System.Drawing.Point(5, 2);
-            this.imagemuser.Name = "imagemuser";
-            this.imagemuser.Size = new System.Drawing.Size(57, 57);
-            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagemuser.TabIndex = 101;
-            this.imagemuser.TabStop = false;
             // 
             // UserControl1
             // 
@@ -296,14 +296,14 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(626, 243);
+            this.Size = new System.Drawing.Size(624, 243);
             ((System.ComponentModel.ISupportInitialize)(this.checado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

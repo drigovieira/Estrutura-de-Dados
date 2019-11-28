@@ -92,7 +92,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel7.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel7.Controls.Add(this.cb_problemas);
             this.panel7.Controls.Add(this.button_Pesquisar);
             this.panel7.Controls.Add(this.label2);
@@ -111,19 +111,19 @@
             "Infraestrutura",
             "Serviços",
             "Outros"});
-            this.cb_problemas.Location = new System.Drawing.Point(47, 52);
+            this.cb_problemas.Location = new System.Drawing.Point(37, 55);
             this.cb_problemas.Name = "cb_problemas";
-            this.cb_problemas.Size = new System.Drawing.Size(230, 28);
+            this.cb_problemas.Size = new System.Drawing.Size(240, 28);
             this.cb_problemas.TabIndex = 82;
             // 
             // button_Pesquisar
             // 
-            this.button_Pesquisar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button_Pesquisar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.button_Pesquisar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button_Pesquisar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_Pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Pesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Pesquisar.ForeColor = System.Drawing.Color.White;
-            this.button_Pesquisar.Location = new System.Drawing.Point(92, 115);
+            this.button_Pesquisar.Location = new System.Drawing.Point(92, 140);
             this.button_Pesquisar.Name = "button_Pesquisar";
             this.button_Pesquisar.Size = new System.Drawing.Size(110, 34);
             this.button_Pesquisar.TabIndex = 79;
@@ -135,7 +135,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(63, 11);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(70, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(195, 24);
             this.label2.TabIndex = 0;
@@ -145,6 +146,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(82, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 24);
@@ -307,7 +309,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel6.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel6.Controls.Add(this.Top5);
             this.panel6.Controls.Add(this.label7);
             this.panel6.Location = new System.Drawing.Point(950, 270);
@@ -327,7 +329,8 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(46, 1);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(33, 10);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(259, 26);
             this.label7.TabIndex = 5;
@@ -344,7 +347,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.Databox);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.button1);
@@ -369,6 +371,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(17, 11);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(265, 25);
@@ -377,8 +380,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(91, 139);
