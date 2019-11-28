@@ -38,7 +38,7 @@
             this.input_valor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.tb_qtdquarto = new System.Windows.Forms.TextBox();
+            this.tb_qtdprato = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -58,6 +58,7 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.openIcone = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
@@ -85,6 +86,7 @@
             this.button1.TabIndex = 31;
             this.button1.Text = "Adicionar Foto";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // tb_nome
             // 
@@ -157,13 +159,13 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "R$";
             // 
-            // tb_qtdquarto
+            // tb_qtdprato
             // 
-            this.tb_qtdquarto.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_qtdquarto.Location = new System.Drawing.Point(343, 912);
-            this.tb_qtdquarto.Name = "tb_qtdquarto";
-            this.tb_qtdquarto.Size = new System.Drawing.Size(200, 27);
-            this.tb_qtdquarto.TabIndex = 2;
+            this.tb_qtdprato.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_qtdprato.Location = new System.Drawing.Point(343, 912);
+            this.tb_qtdprato.Name = "tb_qtdprato";
+            this.tb_qtdprato.Size = new System.Drawing.Size(200, 27);
+            this.tb_qtdprato.TabIndex = 2;
             // 
             // panel1
             // 
@@ -211,7 +213,7 @@
             this.panel2.Controls.Add(this.input_valor);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.tb_qtdquarto);
+            this.panel2.Controls.Add(this.tb_qtdprato);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(210, 0);
             this.panel2.Name = "panel2";
@@ -402,6 +404,10 @@
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
+            // openIcone
+            // 
+            this.openIcone.FileName = "icone";
+            // 
             // Cadastro_Cardapio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -434,7 +440,7 @@
         private System.Windows.Forms.TextBox input_valor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tb_qtdquarto;
+        private System.Windows.Forms.TextBox tb_qtdprato;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
@@ -454,5 +460,6 @@
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.TextBox inputIngrediente;
         private System.Windows.Forms.Button btnAddIngrediente;
+        private System.Windows.Forms.OpenFileDialog openIcone;
     }
 }

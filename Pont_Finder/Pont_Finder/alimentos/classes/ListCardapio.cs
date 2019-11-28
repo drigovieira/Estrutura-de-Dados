@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cardapios
+namespace Pont_Finder.alimentos
 {
     class ListCardapio
     {
@@ -19,9 +19,9 @@ namespace Cardapios
             car.Qtd = dados.Qtd;
             car.Ingredientes = dados.Ingredientes;
             car.Image = dados.Image;
-            car.Status = true;
-            cardapio[cardapio.IndexOf(car)].Id = cardapio.IndexOf(car);
+            car.Status = true;            
             cardapio.Add(car);
+            cardapio[cardapio.IndexOf(car)].Id = cardapio.IndexOf(car);
         }
         public object select(int index)
         {

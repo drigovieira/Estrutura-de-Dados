@@ -14,7 +14,7 @@ namespace Pont_Finder.alimentos
         private List<Funcionamento> funcionamentoEmp;
         private int numero, cep, ID;
         private long telComercial, cpf;
-        private bool status;
+        private bool status, sttsCardapio, sttsEntrega;
 
         public string Nome
         {
@@ -56,6 +56,16 @@ namespace Pont_Finder.alimentos
         {
             get { return status; }
             set { status = value; }
+        }
+        public bool SttsCardapio
+        {
+            get { return sttsCardapio; }
+            set { sttsCardapio = value; }
+        }
+        public bool SttsEntrega
+        {
+            get { return sttsEntrega; }
+            set { sttsEntrega = value; }
         }
         public int Id
         {

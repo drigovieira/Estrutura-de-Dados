@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +15,8 @@ namespace Pont_Finder.alimentos
     public partial class Cadastro_Cardapio : Form
     {
         private List<string> categorias = new List<string>();
+        private List<string> ingredientesList = new List<string>();
+        private bool img = false;
         public Cadastro_Cardapio()
         {
             InitializeComponent();
@@ -24,8 +28,46 @@ namespace Pont_Finder.alimentos
         }
 
         private void Bt_cadastrar_Click(object sender, EventArgs e)
-        {
+        {            
+            try
+            {
+                Cardapio menu = new Cardapio();
+                menu.Nome = tb_nome.Text;
+                menu.Categoria = categorias;
+                menu.Qtd = float.Parse(tb_qtdprato.Text);
+                menu.Ingredientes = ingredientesList;
+                menu.Preco = float.Parse(input_valor.Text);
+                ListCardapio.CardapioAdd(menu);
+                foreach (var item in ListCardapio.selectAll())
+                {
+                    if (item.Equals(menu))
+                    {
+                        string link = "..//..//alimentos//data//image//empresas//offImage.jpg";
+                        if (img)
+                        {
+                            if (!Directory.Exists("..//..//alimentos//data//image//empresas"))
+                                Directory.CreateDirectory("..//..//alimentos//data//image//empresas");
 
+                            pb_img_1.Load();
+                            pb_img_1.Image = Image.FromFile(openIcone.FileName);
+
+                            Image bmp = new Bitmap(pb_img_1.Image);
+
+                            Image bmp2 = new Bitmap(bmp, pb_img_1.Size);
+
+                            pb_img_1.Image = bmp2;
+                            link = "..//..//servicos//data//images//empresas//" + item.Id + ListCardapio.selectAll().Count + ".jpg";
+                            pb_img_1.Image.Save(link, ImageFormat.Jpeg);
+                            item.Image = link;
+                        }
+                    }
+                }
+                MessageBox.Show("Item adicionado ao cardápio!", "Status Operation:");
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show("" + exp);
+            }
         }
 
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
@@ -181,12 +223,22 @@ namespace Pont_Finder.alimentos
         private void BtnAddIngrediente_Click(object sender, EventArgs e)
         {
             Ingredientes.Items.Add(inputIngrediente.Text);
+            ingredientesList.Add(inputIngrediente.Text);
         }
 
         private void Btn_back_Click(object sender, EventArgs e)
         {
             formAlimentos homeAlimentos = new formAlimentos();
             FormPrincipal.MudarForm("alimentos", homeAlimentos);
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (openIcone.ShowDialog() == DialogResult.OK)
+            {
+                pb_img_1.ImageLocation = openIcone.FileName;
+                img = true;
+            }
         }
     }
 }

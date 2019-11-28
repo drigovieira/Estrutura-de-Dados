@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cardapios
+namespace Pont_Finder.alimentos
 {
     class Cardapio
     {
         private float preco;
-        private string  nome, qtd, image;
+        private string  nome, image;
+        private float qtd;
         private List<string> ingredientes, categoria;
         private bool status;
         private int id;
@@ -29,7 +30,7 @@ namespace Cardapios
             get { return nome; }
             set { nome = value; }
         }
-        public string Qtd
+        public float Qtd
         {
             get { return qtd; }
             set { qtd = value; }
