@@ -217,7 +217,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.White;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lb_tipo);
             this.Controls.Add(this.lb_deslike);
             this.Controls.Add(this.lb_data);
@@ -232,7 +233,7 @@
             this.Controls.Add(this.lb_valor);
             this.Controls.Add(this.bt_obter);
             this.Name = "PostCard";
-            this.Size = new System.Drawing.Size(625, 190);
+            this.Size = new System.Drawing.Size(623, 188);
             this.Load += new System.EventHandler(this.PostCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();

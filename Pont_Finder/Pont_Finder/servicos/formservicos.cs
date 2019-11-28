@@ -78,7 +78,7 @@ namespace Pont_Finder.servicos
                     break;               
                 PostCard a = new PostCard(item.Id);
                 a.Location = new Point(0, (y));
-                y = y + a.Height + 5;
+                y = y + a.Height + 10;
                 panel_center.Height = panel_center.Height + 180;
                 panel_center.Controls.Add(a);
                 i++;            
@@ -161,7 +161,7 @@ namespace Pont_Finder.servicos
                     break;
                 PostCard a = new PostCard(item.Id);
                 a.Location = new Point(0, (y));
-                y = y + a.Height + 5;
+                y = y + a.Height + 10;
                 panel_center.Height = panel_center.Height + 180;
                 panel_center.Controls.Add(a);
                 i++;
@@ -202,7 +202,7 @@ namespace Pont_Finder.servicos
                     {
                         PostCard a = new PostCard(ListaDePost[pg + i].Id);
                         a.Location = new Point(0, (y));
-                        y = y + a.Height + 5;
+                        y = y + a.Height + 10;
                         panel_center.Height = panel_center.Height + 180;
                         panel_center.Controls.Add(a);
                     }
@@ -232,7 +232,7 @@ namespace Pont_Finder.servicos
                     {
                         PostCard a = new PostCard(ListaDePost[pg + i].Id);
                         a.Location = new Point(0, (y));
-                        y = y + a.Height + 5;
+                        y = y + a.Height + 10;
                         panel_center.Height = panel_center.Height + 180;
                         panel_center.Controls.Add(a);
                     }
@@ -310,7 +310,7 @@ namespace Pont_Finder.servicos
                         break;
                     PostCard a = new PostCard(item.Id);
                     a.Location = new Point(0, (y));
-                    y = y + a.Height + 5;
+                    y = y + a.Height + 10;
                     panel_center.Height = panel_center.Height + 180;
                     panel_center.Controls.Add(a);
                     i++;
