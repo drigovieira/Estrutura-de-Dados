@@ -33,6 +33,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.cb_problemas = new System.Windows.Forms.ComboBox();
             this.button_Pesquisar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.Databox = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.cb_problemas = new System.Windows.Forms.ComboBox();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -101,6 +101,20 @@
             this.panel7.Size = new System.Drawing.Size(310, 200);
             this.panel7.TabIndex = 14;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            // 
+            // cb_problemas
+            // 
+            this.cb_problemas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_problemas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_problemas.FormattingEnabled = true;
+            this.cb_problemas.Items.AddRange(new object[] {
+            "Infraestrutura",
+            "Serviços",
+            "Outros"});
+            this.cb_problemas.Location = new System.Drawing.Point(47, 52);
+            this.cb_problemas.Name = "cb_problemas";
+            this.cb_problemas.Size = new System.Drawing.Size(230, 28);
+            this.cb_problemas.TabIndex = 82;
             // 
             // button_Pesquisar
             // 
@@ -374,20 +388,6 @@
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // cb_problemas
-            // 
-            this.cb_problemas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_problemas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_problemas.FormattingEnabled = true;
-            this.cb_problemas.Items.AddRange(new object[] {
-            "Infraestrutura",
-            "Serviços",
-            "Outros"});
-            this.cb_problemas.Location = new System.Drawing.Point(47, 52);
-            this.cb_problemas.Name = "cb_problemas";
-            this.cb_problemas.Size = new System.Drawing.Size(230, 28);
-            this.cb_problemas.TabIndex = 82;
             // 
             // FormAvalie
             // 

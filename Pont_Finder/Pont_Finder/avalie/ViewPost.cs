@@ -43,6 +43,7 @@ namespace Pont_Finder.avalie
             pb_imagem.ImageLocation = post.Img;
             lb_hora.Text = post.Tempohora;
             NomePos.Text = post.Nome;
+            imagemuser.ImageLocation = post.Imgperfil;
 
 
             lb_like.Text = this.post.Joinha + "";

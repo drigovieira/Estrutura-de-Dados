@@ -206,6 +206,9 @@
     <Compile Include="CadEmpresa.Designer.cs">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="classes\CircularPicBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="classes\Config.cs" />
     <Compile Include="classes\Session.cs" />
     <Compile Include="classes\User.cs" />

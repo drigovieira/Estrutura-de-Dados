@@ -70,6 +70,7 @@ namespace Pont_Finder.avalie
             pb_icone.ImageLocation = post.Img;
             lb_hora.Text = post.Tempohora;
             NomePos.Text = post.Nome;
+            imagemuser.ImageLocation = post.Imgperfil;
 
             if (post.Resolved)
                 r.Checked = true;

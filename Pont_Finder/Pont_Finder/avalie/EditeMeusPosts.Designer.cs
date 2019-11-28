@@ -53,6 +53,7 @@
             this.cb_pro = new System.Windows.Forms.ComboBox();
             this.tb_loc = new System.Windows.Forms.TextBox();
             this.tb_des = new System.Windows.Forms.RichTextBox();
+            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
@@ -60,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -123,9 +125,10 @@
             // 
             // pb_icone
             // 
-            this.pb_icone.Location = new System.Drawing.Point(68, 41);
+            this.pb_icone.Location = new System.Drawing.Point(68, 87);
             this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(330, 271);
+            this.pb_icone.Size = new System.Drawing.Size(315, 233);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_icone.TabIndex = 76;
             this.pb_icone.TabStop = false;
             this.pb_icone.Click += new System.EventHandler(this.pb_icone_Click);
@@ -200,7 +203,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(129, 17);
+            this.label4.Location = new System.Drawing.Point(167, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 100;
@@ -210,6 +213,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.imagemuser);
             this.panel5.Controls.Add(this.lb_deslike);
             this.panel5.Controls.Add(this.lb_like);
             this.panel5.Controls.Add(this.pb_down);
@@ -302,7 +306,7 @@
             // r
             // 
             this.r.AutoSize = true;
-            this.r.Location = new System.Drawing.Point(326, 318);
+            this.r.Location = new System.Drawing.Point(68, 326);
             this.r.Name = "r";
             this.r.Size = new System.Drawing.Size(72, 17);
             this.r.TabIndex = 105;
@@ -313,7 +317,7 @@
             // nr
             // 
             this.nr.AutoSize = true;
-            this.nr.Location = new System.Drawing.Point(68, 318);
+            this.nr.Location = new System.Drawing.Point(68, 349);
             this.nr.Name = "nr";
             this.nr.Size = new System.Drawing.Size(95, 17);
             this.nr.TabIndex = 104;
@@ -356,6 +360,16 @@
             this.tb_des.TabIndex = 102;
             this.tb_des.Text = "";
             // 
+            // imagemuser
+            // 
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemuser.Location = new System.Drawing.Point(83, 10);
+            this.imagemuser.Name = "imagemuser";
+            this.imagemuser.Size = new System.Drawing.Size(57, 57);
+            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagemuser.TabIndex = 114;
+            this.imagemuser.TabStop = false;
+            // 
             // EditeMeusPosts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -378,6 +392,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -408,5 +423,6 @@
         private System.Windows.Forms.Label lb_like;
         private System.Windows.Forms.PictureBox pb_down;
         private System.Windows.Forms.PictureBox pb_up;
+        private Pont_Finder.classes.CircularPicBox imagemuser;
     }
 }

@@ -60,6 +60,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -67,6 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.SuspendLayout();
             // 
             // tb_resposta
@@ -146,7 +148,7 @@
             // 
             this.NomePos.AutoSize = true;
             this.NomePos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomePos.Location = new System.Drawing.Point(51, 54);
+            this.NomePos.Location = new System.Drawing.Point(143, 3);
             this.NomePos.Name = "NomePos";
             this.NomePos.Size = new System.Drawing.Size(51, 16);
             this.NomePos.TabIndex = 83;
@@ -191,6 +193,7 @@
             this.pb_imagem.Location = new System.Drawing.Point(55, 79);
             this.pb_imagem.Name = "pb_imagem";
             this.pb_imagem.Size = new System.Drawing.Size(263, 170);
+            this.pb_imagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_imagem.TabIndex = 76;
             this.pb_imagem.TabStop = false;
             this.pb_imagem.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -303,6 +306,7 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.imagemuser);
             this.panel5.Controls.Add(this.lb_deslike);
             this.panel5.Controls.Add(this.lb_like);
             this.panel5.Controls.Add(this.pb_down);
@@ -431,6 +435,16 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
+            // imagemuser
+            // 
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemuser.Location = new System.Drawing.Point(57, 3);
+            this.imagemuser.Name = "imagemuser";
+            this.imagemuser.Size = new System.Drawing.Size(68, 68);
+            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagemuser.TabIndex = 109;
+            this.imagemuser.TabStop = false;
+            // 
             // ViewPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,6 +469,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -492,5 +507,6 @@
         private System.Windows.Forms.Label lb_like;
         private System.Windows.Forms.PictureBox pb_down;
         private System.Windows.Forms.PictureBox pb_up;
+        private Pont_Finder.classes.CircularPicBox imagemuser;
     }
 }

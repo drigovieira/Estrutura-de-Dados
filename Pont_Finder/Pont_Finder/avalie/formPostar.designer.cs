@@ -32,6 +32,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtLocalizacao = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPostar = new System.Windows.Forms.Button();
@@ -48,14 +49,13 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -96,6 +96,19 @@
             this.panel6.Size = new System.Drawing.Size(625, 866);
             this.panel6.TabIndex = 14;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Pont_Finder.Properties.Resources._854878;
+            this.pictureBox1.Location = new System.Drawing.Point(500, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 108;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_2);
             // 
             // comboBox1
             // 
@@ -170,7 +183,7 @@
             this.pb_icone.Location = new System.Drawing.Point(113, 239);
             this.pb_icone.Name = "pb_icone";
             this.pb_icone.Size = new System.Drawing.Size(378, 197);
-            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_icone.TabIndex = 65;
             this.pb_icone.TabStop = false;
             this.pb_icone.Click += new System.EventHandler(this.PictureBoxCarregarImagem_Click);
@@ -281,19 +294,6 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Expresse sua opinião";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Pont_Finder.Properties.Resources._854878;
-            this.pictureBox1.Location = new System.Drawing.Point(500, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 108;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_2);
-            // 
             // FormPostar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,6 +313,7 @@
             this.Load += new System.EventHandler(this.FormPostar_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -321,7 +322,6 @@
             this.panel10.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
