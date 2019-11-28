@@ -37,7 +37,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button_Hospedagem = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button_Serviços = new System.Windows.Forms.Button();
+            this.bt_servicos = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button__Almentos = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -141,29 +141,29 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Controls.Add(this.button_Serviços);
+            this.panel3.Controls.Add(this.bt_servicos);
             this.panel3.Location = new System.Drawing.Point(328, 328);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(205, 280);
             this.panel3.TabIndex = 9;
             // 
-            // button_Serviços
+            // bt_servicos
             // 
-            this.button_Serviços.BackColor = System.Drawing.Color.Transparent;
-            this.button_Serviços.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button_Serviços.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.button_Serviços.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.button_Serviços.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.button_Serviços.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Serviços.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Serviços.ForeColor = System.Drawing.Color.White;
-            this.button_Serviços.Location = new System.Drawing.Point(5, 222);
-            this.button_Serviços.Name = "button_Serviços";
-            this.button_Serviços.Size = new System.Drawing.Size(195, 45);
-            this.button_Serviços.TabIndex = 3;
-            this.button_Serviços.Text = "Serviços";
-            this.button_Serviços.UseVisualStyleBackColor = false;
-            this.button_Serviços.Click += new System.EventHandler(this.button__Almentos_Click);
+            this.bt_servicos.BackColor = System.Drawing.Color.Transparent;
+            this.bt_servicos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bt_servicos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.bt_servicos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.bt_servicos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.bt_servicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_servicos.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_servicos.ForeColor = System.Drawing.Color.White;
+            this.bt_servicos.Location = new System.Drawing.Point(5, 222);
+            this.bt_servicos.Name = "bt_servicos";
+            this.bt_servicos.Size = new System.Drawing.Size(195, 45);
+            this.bt_servicos.TabIndex = 3;
+            this.bt_servicos.Text = "Serviços";
+            this.bt_servicos.UseVisualStyleBackColor = false;
+            this.bt_servicos.Click += new System.EventHandler(this.button__Almentos_Click);
             // 
             // panel2
             // 
@@ -272,7 +272,7 @@
         private System.Windows.Forms.Button button_Avalie;
         private System.Windows.Forms.Button button_Eventos;
         private System.Windows.Forms.Button button_Hospedagem;
-        private System.Windows.Forms.Button button_Serviços;
+        private System.Windows.Forms.Button bt_servicos;
         private System.Windows.Forms.Button button__Almentos;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
