@@ -43,7 +43,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lb_deslike = new System.Windows.Forms.Label();
+            this.lb_like = new System.Windows.Forms.Label();
+            this.pb_down = new System.Windows.Forms.PictureBox();
+            this.pb_up = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.r = new System.Windows.Forms.RadioButton();
             this.nr = new System.Windows.Forms.RadioButton();
             this.cb_pro = new System.Windows.Forms.ComboBox();
@@ -53,6 +57,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -88,7 +95,7 @@
             // 
             this.lb_hora.AutoSize = true;
             this.lb_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_hora.Location = new System.Drawing.Point(196, 369);
+            this.lb_hora.Location = new System.Drawing.Point(186, 369);
             this.lb_hora.Name = "lb_hora";
             this.lb_hora.Size = new System.Drawing.Size(32, 13);
             this.lb_hora.TabIndex = 82;
@@ -108,7 +115,7 @@
             // 
             this.lb_data.AutoSize = true;
             this.lb_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_data.Location = new System.Drawing.Point(75, 369);
+            this.lb_data.Location = new System.Drawing.Point(65, 369);
             this.lb_data.Name = "lb_data";
             this.lb_data.Size = new System.Drawing.Size(115, 13);
             this.lb_data.TabIndex = 84;
@@ -203,7 +210,11 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.linkLabel1);
+            this.panel5.Controls.Add(this.lb_deslike);
+            this.panel5.Controls.Add(this.lb_like);
+            this.panel5.Controls.Add(this.pb_down);
+            this.panel5.Controls.Add(this.pb_up);
+            this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Controls.Add(this.r);
             this.panel5.Controls.Add(this.nr);
             this.panel5.Controls.Add(this.cb_pro);
@@ -227,17 +238,66 @@
             this.panel5.TabIndex = 95;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint_1);
             // 
-            // linkLabel1
+            // lb_deslike
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(961, 117);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(163, 24);
-            this.linkLabel1.TabIndex = 106;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Visualiza no Mapa";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.lb_deslike.AutoSize = true;
+            this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_deslike.Location = new System.Drawing.Point(213, 397);
+            this.lb_deslike.Name = "lb_deslike";
+            this.lb_deslike.Size = new System.Drawing.Size(15, 16);
+            this.lb_deslike.TabIndex = 113;
+            this.lb_deslike.Text = "0";
+            // 
+            // lb_like
+            // 
+            this.lb_like.AutoSize = true;
+            this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_like.Location = new System.Drawing.Point(112, 397);
+            this.lb_like.Name = "lb_like";
+            this.lb_like.Size = new System.Drawing.Size(15, 16);
+            this.lb_like.TabIndex = 110;
+            this.lb_like.Text = "0";
+            // 
+            // pb_down
+            // 
+            this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.Location = new System.Drawing.Point(170, 397);
+            this.pb_down.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_down.Name = "pb_down";
+            this.pb_down.Size = new System.Drawing.Size(37, 32);
+            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_down.TabIndex = 112;
+            this.pb_down.TabStop = false;
+            this.pb_down.Click += new System.EventHandler(this.pb_down_Click);
+            // 
+            // pb_up
+            // 
+            this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.Location = new System.Drawing.Point(68, 397);
+            this.pb_up.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_up.Name = "pb_up";
+            this.pb_up.Size = new System.Drawing.Size(37, 32);
+            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_up.TabIndex = 111;
+            this.pb_up.TabStop = false;
+            this.pb_up.Click += new System.EventHandler(this.pb_up_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::Pont_Finder.Properties.Resources._854878;
+            this.pictureBox2.Location = new System.Drawing.Point(961, 118);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 109;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // r
             // 
@@ -315,6 +375,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -340,6 +403,10 @@
         private System.Windows.Forms.RichTextBox tb_des;
         private System.Windows.Forms.RadioButton r;
         private System.Windows.Forms.RadioButton nr;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lb_deslike;
+        private System.Windows.Forms.Label lb_like;
+        private System.Windows.Forms.PictureBox pb_down;
+        private System.Windows.Forms.PictureBox pb_up;
     }
 }

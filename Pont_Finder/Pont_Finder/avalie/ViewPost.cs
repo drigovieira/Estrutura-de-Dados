@@ -18,6 +18,10 @@ namespace Pont_Finder.avalie
 
         PostConstructor post;
         classes.Comentario comment;
+        Bitmap imgLike = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
+        Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
+        Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
+        Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
 
         public ViewPost(long postId)
         {
@@ -39,6 +43,27 @@ namespace Pont_Finder.avalie
             pb_imagem.ImageLocation = post.Img;
             lb_hora.Text = post.Tempohora;
             NomePos.Text = post.Nome;
+
+
+            lb_like.Text = this.post.Joinha + "";
+            lb_deslike.Text = this.post.DeJoinha + "";
+
+
+
+            pb_up.Image = imgLike;
+            pb_down.Image = imgDeslike;
+
+            if (Session.Online)
+            {
+                long userlike = this.post.userLike(Session.Cpf);
+
+                if (userlike == 1)
+                    pb_up.Image = imgLikeBlue;
+                else if (userlike == -1)
+                    pb_down.Image = imgDeslikeBlue;
+            }
+
+
 
             if (Session.Online)
             {
@@ -151,6 +176,68 @@ namespace Pont_Finder.avalie
         }
 
         private void gMapControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb_up_Click(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                if (pb_up.Image == imgLikeBlue)
+                {
+                    post.like(0, Session.Cpf);
+                    pb_up.Image = imgLike;
+                    pb_down.Image = imgDeslike;
+                }
+                else
+                {
+                    post.like(1, Session.Cpf);
+                    pb_up.Image = imgLikeBlue;
+                    pb_down.Image = imgDeslike;
+                }
+                lb_like.Text = "" + post.Joinha;
+                lb_deslike.Text = "" + post.DeJoinha;
+
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
+            }
+        }
+
+        private void pb_down_Click(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                if (pb_down.Image == imgDeslikeBlue)
+                {
+                    post.like(0, Session.Cpf);
+                    pb_down.Image = imgDeslike;
+                    pb_up.Image = imgLike;
+                }
+                else
+                {
+                    post.like(-1, Session.Cpf);
+                    pb_down.Image = imgDeslikeBlue;
+                    pb_up.Image = imgLike;
+                }
+                lb_like.Text = "" + post.Joinha;
+                lb_deslike.Text = "" + post.DeJoinha;
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
+            }
+
+        }
+
+        private void lb_like_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_deslike_Click(object sender, EventArgs e)
         {
 
         }

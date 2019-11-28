@@ -36,6 +36,7 @@ namespace Pont_Finder.avalie
                     pos.Tempohora = item.Tempohora;
                     pos.Ativo = item.Ativo;
                     pos.Resolved = item.Resolved;
+                    pos.LikesList = item.LikesList;
                     return pos;
                 }               
             }
@@ -66,6 +67,7 @@ namespace Pont_Finder.avalie
                     pos.Tempohora = item.Tempohora;
                     pos.Ativo = item.Ativo;
                     pos.Resolved = item.Resolved;
+                    pos.LikesList = item.LikesList;
                     posts.Add(pos);
                 }
                 return posts; }
@@ -93,7 +95,7 @@ namespace Pont_Finder.avalie
                         pos.Tempohora = item.Tempohora;
                         pos.Ativo = item.Ativo;
                         pos.Resolved = item.Resolved;
-
+                        pos.LikesList = item.LikesList;
                         posts.Add(pos);
                     }                 
                 }
@@ -116,7 +118,7 @@ namespace Pont_Finder.avalie
             pos.Tempohora = post.Tempohora;
             pos.Ativo = post.Ativo;
             pos.Resolved = post.Resolved;
-
+            pos.LikesList = post.LikesList;
             poster.Add(pos);
         }
 
@@ -135,8 +137,23 @@ namespace Pont_Finder.avalie
         {
 
             XmlDrop();
+
+
+
             foreach (var item in poster)
             {
+
+                string like = "";
+                foreach (var item2 in item.LikesList)
+                {
+                    like = like + item2[0] + "," + item2[1] + "*";
+                }
+                if (like.Length - 1 > 0)
+                {
+                    like = like.Remove(like.Length - 1);
+                }
+
+
                 XElement post =
                       new XElement("post",
                       new XElement("id", item.Id),
@@ -149,7 +166,8 @@ namespace Pont_Finder.avalie
                       new XElement("tipoproblema", item.Tipoproblema),
                       new XElement("localizacao", item.Localizacao),
                       new XElement("ativo", item.Ativo),
-                      new XElement("resolvido", item.Resolved));
+                      new XElement("resolvido", item.Resolved),
+                      new XElement("like", like));
 
                 XDocument doc = XDocument.Load(caminhoPost);
 
@@ -178,6 +196,19 @@ namespace Pont_Finder.avalie
                 postar.Localizacao = item.Element("localizacao").Value;
                 postar.Ativo = bool.Parse(item.Element("ativo").Value);
                 postar.Resolved = bool.Parse(item.Element("resolvido").Value);
+
+                string sLikes = item.Element("like").Value;
+                string[] userLike = sLikes.Split('*');
+
+                foreach (var like in userLike)
+                {
+                    if (like != "")
+                    {
+                        string[] v = like.Split(',');
+                        postar.like(short.Parse(v[0]), long.Parse(v[1]));
+                    }
+                }
+
 
                 poster.Add(postar);
             }

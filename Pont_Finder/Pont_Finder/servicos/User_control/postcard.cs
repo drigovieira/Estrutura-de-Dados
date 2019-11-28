@@ -178,5 +178,10 @@ namespace Pont_Finder.servicos
         {
 
         }
+
+        private void lb_deslike_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

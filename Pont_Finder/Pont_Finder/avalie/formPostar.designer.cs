@@ -48,13 +48,14 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -80,7 +81,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.linkLabel1);
+            this.panel6.Controls.Add(this.pictureBox1);
             this.panel6.Controls.Add(this.comboBox1);
             this.panel6.Controls.Add(this.txtLocalizacao);
             this.panel6.Controls.Add(this.label2);
@@ -118,7 +119,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(121, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 32);
+            this.label2.Size = new System.Drawing.Size(241, 33);
             this.label2.TabIndex = 76;
             this.label2.Text = "Sobre o que você quer falar...";
             // 
@@ -157,7 +158,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(77, 463);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 32);
+            this.label1.Size = new System.Drawing.Size(96, 33);
             this.label1.TabIndex = 66;
             this.label1.Text = "Descrição:";
             // 
@@ -199,7 +200,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(121, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 32);
+            this.label3.Size = new System.Drawing.Size(110, 33);
             this.label3.TabIndex = 78;
             this.label3.Text = "Localização:";
             // 
@@ -280,16 +281,18 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Expresse sua opinião";
             // 
-            // linkLabel1
+            // pictureBox1
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(331, 15);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(163, 24);
-            this.linkLabel1.TabIndex = 107;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Visualiza no Mapa";
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Pont_Finder.Properties.Resources._854878;
+            this.pictureBox1.Location = new System.Drawing.Point(500, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 108;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_2);
             // 
             // FormPostar
             // 
@@ -318,6 +321,7 @@
             this.panel10.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,6 +346,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

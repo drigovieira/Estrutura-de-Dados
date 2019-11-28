@@ -51,6 +51,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lb_deslike = new System.Windows.Forms.Label();
+            this.lb_like = new System.Windows.Forms.Label();
+            this.pb_down = new System.Windows.Forms.PictureBox();
+            this.pb_up = new System.Windows.Forms.PictureBox();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -59,6 +63,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -297,6 +303,10 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.lb_deslike);
+            this.panel5.Controls.Add(this.lb_like);
+            this.panel5.Controls.Add(this.pb_down);
+            this.panel5.Controls.Add(this.pb_up);
             this.panel5.Controls.Add(this.gMapControl1);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.NomePos);
@@ -312,6 +322,56 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1020, 375);
             this.panel5.TabIndex = 85;
+            // 
+            // lb_deslike
+            // 
+            this.lb_deslike.AutoSize = true;
+            this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_deslike.Location = new System.Drawing.Point(200, 326);
+            this.lb_deslike.Name = "lb_deslike";
+            this.lb_deslike.Size = new System.Drawing.Size(15, 16);
+            this.lb_deslike.TabIndex = 108;
+            this.lb_deslike.Text = "0";
+            this.lb_deslike.Click += new System.EventHandler(this.lb_deslike_Click);
+            // 
+            // lb_like
+            // 
+            this.lb_like.AutoSize = true;
+            this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_like.Location = new System.Drawing.Point(99, 326);
+            this.lb_like.Name = "lb_like";
+            this.lb_like.Size = new System.Drawing.Size(15, 16);
+            this.lb_like.TabIndex = 105;
+            this.lb_like.Text = "0";
+            this.lb_like.Click += new System.EventHandler(this.lb_like_Click);
+            // 
+            // pb_down
+            // 
+            this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.Location = new System.Drawing.Point(157, 326);
+            this.pb_down.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_down.Name = "pb_down";
+            this.pb_down.Size = new System.Drawing.Size(37, 32);
+            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_down.TabIndex = 107;
+            this.pb_down.TabStop = false;
+            this.pb_down.Click += new System.EventHandler(this.pb_down_Click);
+            // 
+            // pb_up
+            // 
+            this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.Location = new System.Drawing.Point(55, 326);
+            this.pb_up.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_up.Name = "pb_up";
+            this.pb_up.Size = new System.Drawing.Size(37, 32);
+            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_up.TabIndex = 106;
+            this.pb_up.TabStop = false;
+            this.pb_up.Click += new System.EventHandler(this.pb_up_Click);
             // 
             // gMapControl1
             // 
@@ -391,6 +451,8 @@
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -426,5 +488,9 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
+        private System.Windows.Forms.Label lb_deslike;
+        private System.Windows.Forms.Label lb_like;
+        private System.Windows.Forms.PictureBox pb_down;
+        private System.Windows.Forms.PictureBox pb_up;
     }
 }

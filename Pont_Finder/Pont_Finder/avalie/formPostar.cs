@@ -269,8 +269,19 @@ namespace Pont_Finder.avalie
 
         }
 
-        private void gMapControl1_Load(object sender, EventArgs e)
+      
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
         {
+            if (txtLocalizacao.Text != "")
+            {
+                Mapa.Mapa map = new Mapa.Mapa(txtLocalizacao.Text);
+                map.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Caixa localização não preenchida");
+            }
 
         }
     }

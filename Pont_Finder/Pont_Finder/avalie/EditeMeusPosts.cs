@@ -21,6 +21,11 @@ namespace Pont_Finder.avalie
         private bool img = false;
         private long postId;
 
+        Bitmap imgLike = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
+        Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
+        Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
+        Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
+
 
         public EditeMeusPosts(long postId)
         {
@@ -57,7 +62,7 @@ namespace Pont_Finder.avalie
 
         private void EditeMeusPosts_Load(object sender, EventArgs e)
         {
-            /*
+            
             label4.Text = Session.Nome;
             cb_pro.Text = post.Tipoproblema;
             tb_loc.Text = post.Localizacao;
@@ -71,30 +76,24 @@ namespace Pont_Finder.avalie
             else
                 nr.Checked = true;
 
-            //Inicia o mapa baseado no provedor selecionado e carrega o cache.
-            gMapControl1.MapProvider = GMap.NET.MapProviders.OpenStreetMapProvider.Instance;
-            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.CacheOnly;
 
-            //LOCALIZAÇÃO DO CACHE
-            gMapControl1.CacheLocation = @"F:\GMAP\GmapCache";
+            lb_like.Text = this.post.Joinha + "";
+            lb_deslike.Text = this.post.DeJoinha + "";
 
-            // Inicia o mapa nas coordernadas correspondentes a cidade de cruzeiro.
-            gMapControl1.Position = new GMap.NET.PointLatLng(-22.5785104945075, -44.959659576416);
 
-            //end.Cidade = textBox2.Text;
-            string endereco = tb_loc.Text + ", Cruzeiro, Sâo Paulo";
-            gMapControl1.SetPositionByKeywords(endereco);
-            gMapControl1.Zoom = 16;
-            //Cria um overlay do mapa e cria o marcador.
-            GMapOverlay camada = new GMapOverlay("camada");
-            GMapMarker marker = new GMarkerGoogle(new PointLatLng(), GMarkerGoogleType.red_dot);
-            //Iguala o marcador com o texto digitado para trocar a posição e adiciona o marcador no overlay e no mapa.
-            gMapControl1.GetPositionByKeywords(endereco, out PointLatLng x);
-            gMapControl1.Overlays.Clear();
-            marker.Position = x;
-            gMapControl1.Overlays.Add(camada);
-            camada.Markers.Add(marker);
-            */
+
+            pb_up.Image = imgLike;
+            pb_down.Image = imgDeslike;
+
+            if (Session.Online)
+            {
+                long userlike = this.post.userLike(Session.Cpf);
+
+                if (userlike == 1)
+                    pb_up.Image = imgLikeBlue;
+                else if (userlike == -1)
+                    pb_down.Image = imgDeslikeBlue;
+            }
 
 
 
@@ -107,8 +106,8 @@ namespace Pont_Finder.avalie
 
         private void bt_editar_Click_1(object sender, EventArgs e)
         {
-            /*
-             * MAPA DO LEO
+            
+             
             post.Tipoproblema = cb_pro.SelectedItem.ToString();
             post.Localizacao = tb_loc.Text;
             post.Desc = tb_des.Text;
@@ -141,30 +140,8 @@ namespace Pont_Finder.avalie
 
             MessageBox.Show("Post Alterado Com Sucesso");
 
-            //Inicia o mapa baseado no provedor selecionado e carrega o cache.
-            gMapControl1.MapProvider = GMap.NET.MapProviders.OpenStreetMapProvider.Instance;
-            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.CacheOnly;
-
-            //LOCALIZAÇÃO DO CACHE
-            gMapControl1.CacheLocation = @"F:\GMAP\GmapCache";
-
-            // Inicia o mapa nas coordernadas correspondentes a cidade de cruzeiro.
-            gMapControl1.Position = new GMap.NET.PointLatLng(-22.5785104945075, -44.959659576416);
-
-            //end.Cidade = textBox2.Text;
-            string endereco = tb_loc.Text + ", Cruzeiro, Sâo Paulo";
-            gMapControl1.SetPositionByKeywords(endereco);
-            gMapControl1.Zoom = 16;
-            //Cria um overlay do mapa e cria o marcador.
-            GMapOverlay camada = new GMapOverlay("camada");
-            GMapMarker marker = new GMarkerGoogle(new PointLatLng(), GMarkerGoogleType.red_dot);
-            //Iguala o marcador com o texto digitado para trocar a posição e adiciona o marcador no overlay e no mapa.
-            gMapControl1.GetPositionByKeywords(endereco, out PointLatLng x);
-            gMapControl1.Overlays.Clear();
-            marker.Position = x;
-            gMapControl1.Overlays.Add(camada);
-            camada.Markers.Add(marker);
-            */
+            
+            
 
         }
 
@@ -203,16 +180,73 @@ namespace Pont_Finder.avalie
             btn_back.Image = Properties.Resources.back_2;
         }
 
-        private void gMapControl1_Load(object sender, EventArgs e)
+     
+
+        
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
         {
+            if (tb_loc.Text != "")
+            {
+                Mapa.Mapa map = new Mapa.Mapa(tb_loc.Text);
+                map.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Caixa localização não preenchida");
+            }
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void pb_up_Click(object sender, EventArgs e)
         {
-            avalie.formMaps avaliepost = new formMaps();
-            FormPrincipal.MudarForm("Reclame", avaliepost);
-            
+            if (Session.Online)
+            {
+                if (pb_up.Image == imgLikeBlue)
+                {
+                    post.like(0, Session.Cpf);
+                    pb_up.Image = imgLike;
+                    pb_down.Image = imgDeslike;
+                }
+                else
+                {
+                    post.like(1, Session.Cpf);
+                    pb_up.Image = imgLikeBlue;
+                    pb_down.Image = imgDeslike;
+                }
+                lb_like.Text = "" + post.Joinha;
+                lb_deslike.Text = "" + post.DeJoinha;
+
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
+            }
+        }
+
+        private void pb_down_Click(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                if (pb_down.Image == imgDeslikeBlue)
+                {
+                    post.like(0, Session.Cpf);
+                    pb_down.Image = imgDeslike;
+                    pb_up.Image = imgLike;
+                }
+                else
+                {
+                    post.like(-1, Session.Cpf);
+                    pb_down.Image = imgDeslikeBlue;
+                    pb_up.Image = imgLike;
+                }
+                lb_like.Text = "" + post.Joinha;
+                lb_deslike.Text = "" + post.DeJoinha;
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
+            }
         }
     }
 }

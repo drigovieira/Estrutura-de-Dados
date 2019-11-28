@@ -43,10 +43,16 @@
             this.bt_editar = new System.Windows.Forms.Button();
             this.imagemuser = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_deslike = new System.Windows.Forms.Label();
+            this.lb_like = new System.Windows.Forms.Label();
+            this.pb_down = new System.Windows.Forms.PictureBox();
+            this.pb_up = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.checado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -164,7 +170,7 @@
             // 
             this.checado.BackColor = System.Drawing.Color.Transparent;
             this.checado.Image = global::Pont_Finder.Properties.Resources.Checked_icon;
-            this.checado.Location = new System.Drawing.Point(579, 11);
+            this.checado.Location = new System.Drawing.Point(578, 11);
             this.checado.Name = "checado";
             this.checado.Size = new System.Drawing.Size(37, 32);
             this.checado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,13 +214,65 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lb_deslike);
+            this.panel1.Controls.Add(this.lb_like);
             this.panel1.Controls.Add(this.imagemuser);
+            this.panel1.Controls.Add(this.pb_down);
             this.panel1.Controls.Add(this.checado);
+            this.panel1.Controls.Add(this.pb_up);
             this.panel1.Controls.Add(this.NomePos);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(626, 64);
             this.panel1.TabIndex = 100;
+            // 
+            // lb_deslike
+            // 
+            this.lb_deslike.AutoSize = true;
+            this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_deslike.Location = new System.Drawing.Point(453, 3);
+            this.lb_deslike.Name = "lb_deslike";
+            this.lb_deslike.Size = new System.Drawing.Size(15, 16);
+            this.lb_deslike.TabIndex = 104;
+            this.lb_deslike.Text = "0";
+            // 
+            // lb_like
+            // 
+            this.lb_like.AutoSize = true;
+            this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_like.Location = new System.Drawing.Point(352, 3);
+            this.lb_like.Name = "lb_like";
+            this.lb_like.Size = new System.Drawing.Size(15, 16);
+            this.lb_like.TabIndex = 101;
+            this.lb_like.Text = "0";
+            // 
+            // pb_down
+            // 
+            this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.Location = new System.Drawing.Point(410, 3);
+            this.pb_down.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_down.Name = "pb_down";
+            this.pb_down.Size = new System.Drawing.Size(37, 32);
+            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_down.TabIndex = 103;
+            this.pb_down.TabStop = false;
+            this.pb_down.Click += new System.EventHandler(this.pb_down_Click);
+            // 
+            // pb_up
+            // 
+            this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.Location = new System.Drawing.Point(308, 3);
+            this.pb_up.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_up.Name = "pb_up";
+            this.pb_up.Size = new System.Drawing.Size(37, 32);
+            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_up.TabIndex = 102;
+            this.pb_up.TabStop = false;
+            this.pb_up.Click += new System.EventHandler(this.pb_up_Click);
             // 
             // UserControl1
             // 
@@ -240,6 +298,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,5 +322,9 @@
         private System.Windows.Forms.Button bt_editar;
         private System.Windows.Forms.PictureBox imagemuser;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pb_down;
+        private System.Windows.Forms.PictureBox pb_up;
+        private System.Windows.Forms.Label lb_like;
+        private System.Windows.Forms.Label lb_deslike;
     }
 }

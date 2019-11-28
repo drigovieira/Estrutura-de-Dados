@@ -198,6 +198,7 @@
             this.lb_deslike.Size = new System.Drawing.Size(49, 16);
             this.lb_deslike.TabIndex = 31;
             this.lb_deslike.Text = "Deslike";
+            this.lb_deslike.Click += new System.EventHandler(this.lb_deslike_Click);
             // 
             // lb_tipo
             // 
