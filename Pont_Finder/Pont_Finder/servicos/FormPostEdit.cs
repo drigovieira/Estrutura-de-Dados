@@ -15,9 +15,11 @@ namespace Pont_Finder.servicos
     {
         classes.Post post;
         private bool img = false;
+        Form anterior;
 
-        public FormPostEdit(int postId)
+        public FormPostEdit(int postId, Form anterior)
         {
+            this.anterior = anterior;
             post = classes.PostList.SelectId(postId);
             InitializeComponent();
             tb_titulo.Text = post.Titulo;
@@ -56,12 +58,12 @@ namespace Pont_Finder.servicos
 
 
 
-            FormPrincipal.MudarForm("servicos", new FormUserCards());
+            FormPrincipal.MudarForm("servicos", anterior);
         }
 
         private void Cancelar_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new FormUserCards());
+            FormPrincipal.MudarForm("servicos", anterior);
         }
 
         private void Bt_icone_Click(object sender, EventArgs e)

@@ -16,5 +16,10 @@ namespace Pont_Finder.servicos.User_control
         {
             InitializeComponent();
         }
+
+        private void Bt_obter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

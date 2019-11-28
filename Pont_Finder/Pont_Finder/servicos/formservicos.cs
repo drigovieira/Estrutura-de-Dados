@@ -13,6 +13,8 @@ namespace Pont_Finder.servicos
         //quantidade de cards por pag
         private int pagQuant;
 
+        classes.Empresa empresa;
+
 
         private int y = 5;
         public FormServicos()
@@ -21,17 +23,25 @@ namespace Pont_Finder.servicos
             InitializeComponent();
             if (Session.Online)
             {
-                classes.Empresa emp = classes.ListaEmpresa.selectCpf(Session.Cpf);
-                if (emp == null)
-                {
-                    bt_cadEmpresa.Enabled = true;
-                    bt_solicitados.Enabled = false;
-                }
-                else
-                {
-                    bt_cadEmpresa.Enabled = false;
-                    bt_solicitados.Enabled = true  ;
-                }
+                empresa = classes.ListaEmpresa.selectCpf(Session.Cpf);            
+            }
+            else
+            {
+                empresa = null;
+                bt_mensagens.Enabled = false;
+                bt_solicitados.Enabled = false;
+                bt_servicos.Enabled = false;
+                bt_empresa.Enabled = false;
+            }
+
+            if (empresa == null)
+            {
+                bt_solicitados.Enabled = false;
+                bt_servicos.Enabled = false;
+            }
+            else
+            {
+                bt_empresa.Enabled = false;
 
             }
 
@@ -173,7 +183,7 @@ namespace Pont_Finder.servicos
             if (Session.Online)
                 FormPrincipal.MudarForm("servicos", new FormUserCards());          
             else
-                MessageBox.Show("É necessário estar logado para solicitar um Serviço");          
+                MessageBox.Show("É necessário estar logado para gerenciar serviços");          
         }
 
         private void Bt_ant_Click(object sender, EventArgs e)

@@ -13,18 +13,22 @@ namespace Pont_Finder.servicos
 {
     public partial class FormVisualizarPost : Form
     {
-        classes.Post post = new classes.Post();
+        classes.Post post;
         Form anterior;
 
         public FormVisualizarPost(int postId, Form anterior)
         {
-            classes.Post p = new classes.Post();
             post = classes.PostList.SelectId(postId);
             this.anterior = anterior;
             InitializeComponent();
 
-
-            
+            if (Session.Online)
+            {
+                if (post.Cpf == Session.Cpf)
+                {
+                    bt_negociar.Text = "Editar Post";
+                }
+            }              
         }
 
         private void FormVisualizarPost_Load(object sender, EventArgs e)
@@ -108,13 +112,45 @@ namespace Pont_Finder.servicos
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            socialist.Solicitado solicitacao = new socialist.Solicitado();
+            if (Session.Online)
+            {
+                if (Session.Cpf == post.Cpf)
+                {
+                    FormPrincipal.MudarForm("servicos", new servicos.FormPostEdit(post.Id, new FormVisualizarPost(post.Id, anterior)));
+                }
+                else
+                {
+                    bool existe = false;
+                    foreach (var item in socialist.SolicitadoList.Solicitados)
+                    {
+                        if (item.PostId == post.Id && item.CpfUser == Session.Cpf)
+                        {
+                            existe = true;
+                            break;
+                        }
+                    }
+                    if (existe)
+                    {
+                        MessageBox.Show("A Solicitação já foi efetuada");
+                    }
+                    else
+                    {
+                        socialist.Solicitado solicitacao = new socialist.Solicitado();
+                        solicitacao.PostId = post.Id;
+                        solicitacao.CpfUser = Session.Cpf;
+                        socialist.SolicitadoList.Solicitados.Add(solicitacao);
+                        MessageBox.Show("A Solicitação foi Efetuada com Sucesso!");
+                    }
 
-            solicitacao.PostId = post.Id;
-            solicitacao.CpfUser = Session.Cpf;
-            socialist.SolicitadoList.Solicitados.Add(solicitacao);
 
-            MessageBox.Show("A Solicitação foi Efetuada com Sucesso!");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para efetuar uma solicitação!");
+            }
+           
         }
     }
 }

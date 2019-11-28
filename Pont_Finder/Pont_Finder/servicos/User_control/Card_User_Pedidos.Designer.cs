@@ -163,6 +163,7 @@
             this.bt_obter.TabIndex = 50;
             this.bt_obter.Text = "Visualizar";
             this.bt_obter.UseVisualStyleBackColor = false;
+            this.bt_obter.Click += new System.EventHandler(this.Bt_obter_Click);
             // 
             // bt_cancelar_pedido
             // 

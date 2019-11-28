@@ -61,7 +61,7 @@ namespace Pont_Finder.servicos
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new FormPostEdit(post.Id));
+            FormPrincipal.MudarForm("servicos", new FormPostEdit(post.Id, new FormUserCards()));
         }
 
         private void PostCardEdit_Load(object sender, EventArgs e)
