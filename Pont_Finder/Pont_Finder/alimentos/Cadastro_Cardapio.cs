@@ -63,6 +63,20 @@ namespace Pont_Finder.alimentos
                     }
                 }
                 MessageBox.Show("Item adicionado ao cardápio!", "Status Operation:");
+                tb_nome.Clear();
+                tb_qtdprato.Clear();
+                Ingredientes.Items.Clear();
+                input_valor.Clear();
+                checkBox1.Checked = false;
+                checkBox2.Checked = false;
+                checkBox3.Checked = false;
+                checkBox4.Checked = false;
+                checkBox5.Checked = false;
+                checkBox6.Checked = false;
+                checkBox7.Checked = false;
+                checkBox8.Checked = false;
+                checkBox9.Checked = false;
+                checkBox10.Checked = false;
             }
             catch (Exception exp)
             {
@@ -224,6 +238,7 @@ namespace Pont_Finder.alimentos
         {
             Ingredientes.Items.Add(inputIngrediente.Text);
             ingredientesList.Add(inputIngrediente.Text);
+            inputIngrediente.Clear();
         }
 
         private void Btn_back_Click(object sender, EventArgs e)
