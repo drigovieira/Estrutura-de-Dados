@@ -51,10 +51,7 @@ namespace Pont_Finder.servicos.socialist
                 lb_username.Text = usuario.Nome;
                 pb_usericone.ImageLocation = usuario.Image;
             }
-            else
-            {
 
-            }
 
             int y = 5;
             panel_chat.Height = 180;
@@ -93,10 +90,6 @@ namespace Pont_Finder.servicos.socialist
                 lb_username.Text = "";
                 pb_usericone.Visible = false;
             }
-
-
-
-
         }
 
         private void Button1_Click(object sender, EventArgs e)
