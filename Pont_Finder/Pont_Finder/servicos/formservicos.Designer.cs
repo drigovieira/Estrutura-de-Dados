@@ -45,7 +45,6 @@
             this.bt_prox = new System.Windows.Forms.Button();
             this.lb_pag = new System.Windows.Forms.Label();
             this.panel_center = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
@@ -54,15 +53,16 @@
             this.tb_pesquisar = new System.Windows.Forms.TextBox();
             this.pb_pesquisar = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.rb_semfiltro = new System.Windows.Forms.RadioButton();
+            this.rb_empresa = new System.Windows.Forms.RadioButton();
+            this.rb_servico = new System.Windows.Forms.RadioButton();
+            this.rb_recente = new System.Windows.Forms.RadioButton();
+            this.rb_antigo = new System.Windows.Forms.RadioButton();
+            this.rb_relevancia = new System.Windows.Forms.RadioButton();
             this.panel_left = new System.Windows.Forms.Panel();
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_proxFull = new System.Windows.Forms.Button();
+            this.rb_categoria = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -269,17 +269,6 @@
             this.panel_center.TabIndex = 17;
             this.panel_center.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_center_Paint);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 258);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 27);
-            this.label5.TabIndex = 42;
-            this.label5.Text = "Pesquisar";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -360,89 +349,91 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(118, 71);
+            this.label2.Location = new System.Drawing.Point(64, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 27);
+            this.label2.Size = new System.Drawing.Size(165, 27);
             this.label2.TabIndex = 43;
-            this.label2.Text = "Filtros";
+            this.label2.Text = "Filtros de Busca";
             // 
-            // radioButton1
+            // rb_semfiltro
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(25, 127);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(72, 20);
-            this.radioButton1.TabIndex = 44;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nenhum";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_semfiltro.AutoSize = true;
+            this.rb_semfiltro.Checked = true;
+            this.rb_semfiltro.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_semfiltro.Location = new System.Drawing.Point(16, 128);
+            this.rb_semfiltro.Name = "rb_semfiltro";
+            this.rb_semfiltro.Size = new System.Drawing.Size(78, 20);
+            this.rb_semfiltro.TabIndex = 44;
+            this.rb_semfiltro.TabStop = true;
+            this.rb_semfiltro.Text = "Sem Filtro";
+            this.rb_semfiltro.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rb_empresa
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(25, 160);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(121, 20);
-            this.radioButton2.TabIndex = 45;
-            this.radioButton2.Text = "Nome da Empresa";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_empresa.AutoSize = true;
+            this.rb_empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_empresa.Location = new System.Drawing.Point(162, 150);
+            this.rb_empresa.Name = "rb_empresa";
+            this.rb_empresa.Size = new System.Drawing.Size(121, 20);
+            this.rb_empresa.TabIndex = 45;
+            this.rb_empresa.Text = "Nome da Empresa";
+            this.rb_empresa.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rb_servico
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(25, 192);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(116, 20);
-            this.radioButton3.TabIndex = 46;
-            this.radioButton3.Text = "Nome do Serviço";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rb_servico.AutoSize = true;
+            this.rb_servico.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_servico.Location = new System.Drawing.Point(162, 124);
+            this.rb_servico.Name = "rb_servico";
+            this.rb_servico.Size = new System.Drawing.Size(116, 20);
+            this.rb_servico.TabIndex = 46;
+            this.rb_servico.Text = "Nome do Serviço";
+            this.rb_servico.UseVisualStyleBackColor = true;
+            this.rb_servico.CheckedChanged += new System.EventHandler(this.RadioButton3_CheckedChanged);
             // 
-            // radioButton4
+            // rb_recente
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(169, 127);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(96, 20);
-            this.radioButton4.TabIndex = 47;
-            this.radioButton4.Text = "Mais Recente";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rb_recente.AutoSize = true;
+            this.rb_recente.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_recente.Location = new System.Drawing.Point(16, 154);
+            this.rb_recente.Name = "rb_recente";
+            this.rb_recente.Size = new System.Drawing.Size(96, 20);
+            this.rb_recente.TabIndex = 47;
+            this.rb_recente.Text = "Mais Recente";
+            this.rb_recente.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rb_antigo
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(169, 160);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(90, 20);
-            this.radioButton5.TabIndex = 48;
-            this.radioButton5.Text = "Mais Antigo";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rb_antigo.AutoSize = true;
+            this.rb_antigo.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_antigo.Location = new System.Drawing.Point(16, 180);
+            this.rb_antigo.Name = "rb_antigo";
+            this.rb_antigo.Size = new System.Drawing.Size(90, 20);
+            this.rb_antigo.TabIndex = 48;
+            this.rb_antigo.Text = "Mais Antigo";
+            this.rb_antigo.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rb_relevancia
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(169, 192);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(82, 20);
-            this.radioButton6.TabIndex = 49;
-            this.radioButton6.Text = "Relevância";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rb_relevancia.AutoSize = true;
+            this.rb_relevancia.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_relevancia.Location = new System.Drawing.Point(16, 206);
+            this.rb_relevancia.Name = "rb_relevancia";
+            this.rb_relevancia.Size = new System.Drawing.Size(82, 20);
+            this.rb_relevancia.TabIndex = 49;
+            this.rb_relevancia.Text = "Relevância";
+            this.rb_relevancia.UseVisualStyleBackColor = true;
             // 
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
-            this.panel_left.Controls.Add(this.radioButton6);
-            this.panel_left.Controls.Add(this.radioButton5);
-            this.panel_left.Controls.Add(this.radioButton4);
-            this.panel_left.Controls.Add(this.radioButton3);
-            this.panel_left.Controls.Add(this.radioButton2);
-            this.panel_left.Controls.Add(this.radioButton1);
+            this.panel_left.Controls.Add(this.rb_categoria);
+            this.panel_left.Controls.Add(this.rb_relevancia);
+            this.panel_left.Controls.Add(this.rb_antigo);
+            this.panel_left.Controls.Add(this.rb_recente);
+            this.panel_left.Controls.Add(this.rb_servico);
+            this.panel_left.Controls.Add(this.rb_empresa);
+            this.panel_left.Controls.Add(this.rb_semfiltro);
             this.panel_left.Controls.Add(this.label2);
             this.panel_left.Controls.Add(this.pb_pesquisar);
             this.panel_left.Controls.Add(this.tb_pesquisar);
@@ -481,6 +472,17 @@
             this.bt_proxFull.UseVisualStyleBackColor = false;
             this.bt_proxFull.Click += new System.EventHandler(this.Bt_proxFull_Click);
             // 
+            // rb_categoria
+            // 
+            this.rb_categoria.AutoSize = true;
+            this.rb_categoria.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_categoria.Location = new System.Drawing.Point(162, 176);
+            this.rb_categoria.Name = "rb_categoria";
+            this.rb_categoria.Size = new System.Drawing.Size(76, 20);
+            this.rb_categoria.TabIndex = 50;
+            this.rb_categoria.Text = "Categoria";
+            this.rb_categoria.UseVisualStyleBackColor = true;
+            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -496,7 +498,6 @@
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -539,7 +540,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lb_pag;
         private System.Windows.Forms.Panel panel_center;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label15;
@@ -550,15 +550,16 @@
         private System.Windows.Forms.TextBox tb_pesquisar;
         private System.Windows.Forms.PictureBox pb_pesquisar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton rb_semfiltro;
+        private System.Windows.Forms.RadioButton rb_empresa;
+        private System.Windows.Forms.RadioButton rb_servico;
+        private System.Windows.Forms.RadioButton rb_recente;
+        private System.Windows.Forms.RadioButton rb_antigo;
+        private System.Windows.Forms.RadioButton rb_relevancia;
         private System.Windows.Forms.Panel panel_left;
         private System.Windows.Forms.Button EditarPerfil;
         private System.Windows.Forms.Button bt_antFull;
         private System.Windows.Forms.Button bt_proxFull;
+        private System.Windows.Forms.RadioButton rb_categoria;
     }
 }

@@ -90,56 +90,32 @@ namespace Pont_Finder.servicos
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            if (tb_pesquisar.Text.Equals("!log"))
+            if (rb_semfiltro.Checked)
             {
-                Session.Login("admin", "admin");
-                FormPrincipal.MudarForm("servicos", new FormServicos());               
 
             }
-
-
-            ListaDePost.Clear();
-            foreach (var item in classes.PostList.PostsAtivo)
+            else if (rb_recente.Checked)
             {
-                if (item.Titulo.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                LoadFiltro();
+            }
+            else if (rb_antigo.Checked)
+            {
+                ListaDePost.Clear();
+                foreach (var item in classes.PostList.PostsAtivo)
                 {
-                    ListaDePost.Add(item);
+                    if (item.Titulo.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                    {
+                        ListaDePost.Add(item);
+                    }
                 }
+                ListaDePost.Reverse();
+                LoadPosts();
             }
 
-            y = 5;
-            panel_center.Height = 180;
-            panel_center.Controls.Clear();
-            int i = 0;
-
-            ListaDePost.Reverse();
-
-            pagTotal = ListaDePost.Count;
-            if ((pagTotal % pagQuant) != 0)
-            {
-                pagTotal = (pagTotal / pagQuant);
-                pagTotal++;
-            }
-            else
-            {
-                pagTotal = pagTotal / pagQuant;
-            }
-            pagAtual = 1;
-
-            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
 
 
-            foreach (var item in ListaDePost)
-            {
-                if (i >= pagQuant)
-                    break;
-                PostCard a = new PostCard(item.Id);
-                a.Location = new Point(0, (y));
-                y = y + a.Height + 10;
-                panel_center.Height = panel_center.Height + 180;
-                panel_center.Controls.Add(a);
-                i++;
-            }
+
+
         }
 
         private void Tb_pesquisa_Enter(object sender, EventArgs e)
@@ -321,6 +297,40 @@ namespace Pont_Finder.servicos
 
         }
 
+        public void LoadFiltro()
+        {
+            panel_center.Controls.Clear();
+            pagTotal = ListaDePost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+            panel_center.Height = 180;
+            int i = 0;
+
+            foreach (var item in ListaDePost)
+            {
+                if (i >= pagQuant)
+                    break;
+                PostCard a = new PostCard(item.Id);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 10;
+                panel_center.Height = panel_center.Height + 180;
+                panel_center.Controls.Add(a);
+                i++;
+            }
+
+        }
+
+
         public void GoPag(string p)
         {
             int pagina;
@@ -438,6 +448,11 @@ namespace Pont_Finder.servicos
                     }
                 }
             }
+        }
+
+        private void RadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
