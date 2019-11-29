@@ -16,5 +16,10 @@ namespace Pont_Finder.servicos
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new FormServicos());
+        }
     }
 }

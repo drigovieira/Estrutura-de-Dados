@@ -152,5 +152,10 @@ namespace Pont_Finder.servicos
             }
            
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa());
+        }
     }
 }

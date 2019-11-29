@@ -12,8 +12,11 @@ namespace Pont_Finder.servicos
 {
     public partial class PerfilEmpresa : Form
     {
+
+
         public PerfilEmpresa()
         {
+
             InitializeComponent();
         }
 
@@ -30,6 +33,11 @@ namespace Pont_Finder.servicos
         private void Setor_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new FormServicos());
         }
     }
 }
