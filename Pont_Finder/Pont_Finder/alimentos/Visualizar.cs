@@ -74,7 +74,7 @@ namespace Pont_Finder.alimentos
         {
             if (Session.Online)
             {
-                alimentos.Reserva_Alimentos reserva = new alimentos.Reserva_Alimentos();
+                alimentos.Reserva_Alimentos reserva = new alimentos.Reserva_Alimentos(Index);
                 FormPrincipal.MudarForm("alimentos", reserva);
             }
             else

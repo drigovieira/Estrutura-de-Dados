@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.IngredienteComida = new System.Windows.Forms.Label();
+            this.qtdComida = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.NomeEmpresa = new System.Windows.Forms.Label();
+            this.NomeComida = new System.Windows.Forms.Label();
             this.pb_hotel = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.CategoriasPrato = new System.Windows.Forms.Label();
             this.lb_rs = new System.Windows.Forms.Label();
             this.bt_visualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).BeginInit();
@@ -50,27 +50,27 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Categoria:";
             // 
-            // label4
+            // IngredienteComida
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(200, 47);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Ingredientes";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.IngredienteComida.AutoSize = true;
+            this.IngredienteComida.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IngredienteComida.Location = new System.Drawing.Point(200, 47);
+            this.IngredienteComida.Name = "IngredienteComida";
+            this.IngredienteComida.Size = new System.Drawing.Size(91, 20);
+            this.IngredienteComida.TabIndex = 3;
+            this.IngredienteComida.Text = "Ingredientes";
+            this.IngredienteComida.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label2
+            // qtdComida
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(200, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tamanho";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.qtdComida.AutoSize = true;
+            this.qtdComida.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qtdComida.Location = new System.Drawing.Point(200, 81);
+            this.qtdComida.Name = "qtdComida";
+            this.qtdComida.Size = new System.Drawing.Size(71, 20);
+            this.qtdComida.TabIndex = 2;
+            this.qtdComida.Text = "Tamanho";
+            this.qtdComida.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -83,16 +83,15 @@
             this.label1.Text = "Preço";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // NomeEmpresa
+            // NomeComida
             // 
-            this.NomeEmpresa.AutoSize = true;
-            this.NomeEmpresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomeEmpresa.Location = new System.Drawing.Point(199, 12);
-            this.NomeEmpresa.Name = "NomeEmpresa";
-            this.NomeEmpresa.Size = new System.Drawing.Size(57, 21);
-            this.NomeEmpresa.TabIndex = 1;
-            this.NomeEmpresa.Text = "Nome";
-            this.NomeEmpresa.Click += new System.EventHandler(this.NomeEmpresa_Click);
+            this.NomeComida.AutoSize = true;
+            this.NomeComida.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomeComida.Location = new System.Drawing.Point(199, 12);
+            this.NomeComida.Name = "NomeComida";
+            this.NomeComida.Size = new System.Drawing.Size(57, 21);
+            this.NomeComida.TabIndex = 1;
+            this.NomeComida.Text = "Nome";
             // 
             // pb_hotel
             // 
@@ -104,15 +103,15 @@
             this.pb_hotel.TabIndex = 4;
             this.pb_hotel.TabStop = false;
             // 
-            // label5
+            // CategoriasPrato
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(101, 154);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 20);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Value";
+            this.CategoriasPrato.AutoSize = true;
+            this.CategoriasPrato.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoriasPrato.Location = new System.Drawing.Point(101, 154);
+            this.CategoriasPrato.Name = "CategoriasPrato";
+            this.CategoriasPrato.Size = new System.Drawing.Size(46, 20);
+            this.CategoriasPrato.TabIndex = 5;
+            this.CategoriasPrato.Text = "Value";
             // 
             // lb_rs
             // 
@@ -147,16 +146,16 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.bt_visualizar);
             this.Controls.Add(this.lb_rs);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.CategoriasPrato);
             this.Controls.Add(this.pb_hotel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.NomeEmpresa);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.NomeComida);
+            this.Controls.Add(this.IngredienteComida);
+            this.Controls.Add(this.qtdComida);
             this.Controls.Add(this.label1);
             this.Name = "Item_Alimentos";
             this.Size = new System.Drawing.Size(625, 190);
-            this.Load += new System.EventHandler(this.Item_Alimentos_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Item_Alimentos_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -164,13 +163,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label NomeEmpresa;
+        private System.Windows.Forms.Label NomeComida;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label IngredienteComida;
+        private System.Windows.Forms.Label qtdComida;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pb_hotel;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label CategoriasPrato;
         private System.Windows.Forms.Label lb_rs;
         private System.Windows.Forms.Button bt_visualizar;
     }

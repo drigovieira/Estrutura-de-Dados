@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reserva_Alimentos));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.menu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -56,15 +56,15 @@
             this.panel1.Size = new System.Drawing.Size(310, 691);
             this.panel1.TabIndex = 52;
             // 
-            // panel11
+            // menu
             // 
-            this.panel11.AutoScroll = true;
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Location = new System.Drawing.Point(320, 363);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(625, 629);
-            this.panel11.TabIndex = 58;
+            this.menu.AutoScroll = true;
+            this.menu.BackColor = System.Drawing.Color.White;
+            this.menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.menu.Location = new System.Drawing.Point(320, 363);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(625, 629);
+            this.menu.TabIndex = 58;
             // 
             // panel2
             // 
@@ -79,7 +79,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 992);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1282, 100);
+            this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 61;
             // 
             // panel3
@@ -183,14 +183,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.menu);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
@@ -210,7 +210,7 @@
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel menu;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel3;
