@@ -37,31 +37,61 @@ namespace Pont_Finder.alimentos
         {
             NomeComida.Text = NomeItem;
             string maisIngredientes = "";
+            /*int cont1 = 0;
             foreach (var ingred in IngredientesItem)
             {
                 if (maisIngredientes.Equals("")){
                     maisIngredientes = ingred;
+                    cont1++;
                 }
                 else
                 {
+                    if (cont1 > 4)
+                    {
+                        cont1 = 0;
+                        maisIngredientes += "\n";
+                    }
                     maisIngredientes += " / "+ingred;
+                    cont1++;
                 }
                 
-            }
+            }*/
             IngredienteComida.Text = maisIngredientes;
             qtdComida.Text = qtdItem.ToString();
             string maisCategoria = "";
+            /*int cont2 = 0;
             foreach (var aliment in CategoriasItem)
-            {                
-                if (maisCategoria.Equals(""))
+            {
+                if (CategoriasItem.Count > 3)
                 {
-                    maisCategoria = aliment;
+                    if (maisCategoria.Equals(""))
+                    {
+                        maisCategoria = aliment;
+                        cont2++;
+                    }
+                    else
+                    {
+                        if(cont2 == 3)
+                        {
+                            maisCategoria += " e mais ...";
+                            break;
+                        }
+                        maisCategoria += " / " + aliment;
+                        cont2++;
+                    }
                 }
                 else
                 {
-                    maisCategoria += " / " + aliment;
+                    if (maisCategoria.Equals(""))
+                    {
+                        maisCategoria = aliment;
+                    }
+                    else
+                    {
+                        maisCategoria += " / " + aliment;
+                    }
                 }
-            }
+            }*/
             CategoriasPrato.Text = maisCategoria;
             lb_rs.Text += PrecoItem.ToString();
         }

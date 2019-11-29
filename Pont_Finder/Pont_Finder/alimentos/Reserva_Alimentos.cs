@@ -20,9 +20,10 @@ namespace Pont_Finder.alimentos
             InitializeComponent();
             Listar();
         }
+
         public void Listar()
         {
-            foreach(var item in ListCardapio.selectAll())
+            foreach (var item in ListCardapio.selectAll())
             {
                 if (item.IdEmpresa == Company)
                 {
