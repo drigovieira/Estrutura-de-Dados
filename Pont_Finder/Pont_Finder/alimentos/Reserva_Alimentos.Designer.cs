@@ -58,7 +58,7 @@
             // 
             // menu
             // 
-            this.menu.AutoScroll = true;
+            this.menu.AutoSize = true;
             this.menu.BackColor = System.Drawing.Color.White;
             this.menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.menu.Location = new System.Drawing.Point(320, 363);
@@ -205,6 +205,7 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
