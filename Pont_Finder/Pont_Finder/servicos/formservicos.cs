@@ -41,7 +41,7 @@ namespace Pont_Finder.servicos
             }
             else
             {
-                bt_empresa.Enabled = false;
+                bt_empresa.Text = "Visualizar Empresa";
 
             }
 
@@ -96,10 +96,13 @@ namespace Pont_Finder.servicos
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            if (Session.Online)
-                FormPrincipal.MudarForm("servicos", new FormCadEmpresa());            
+            if (empresa != null)
+                FormPrincipal.MudarForm("servicos", new PerfilEmpresa());
+            else if (Session.Online)
+                FormPrincipal.MudarForm("servicos", new FormCadEmpresa());
             else
                 MessageBox.Show("É nessessario estar logado para cadastrar uma empresa");
+
         }
 
         private void button3_Click(object sender, EventArgs e)

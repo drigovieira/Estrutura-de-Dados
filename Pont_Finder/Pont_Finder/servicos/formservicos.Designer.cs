@@ -32,8 +32,8 @@
             this.panel_right = new System.Windows.Forms.Panel();
             this.bt_solicitar = new System.Windows.Forms.Button();
             this.bt_empresa = new System.Windows.Forms.Button();
-            this.bt_publicar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.EditarPerfil = new System.Windows.Forms.Button();
             this.bt_solicitados = new System.Windows.Forms.Button();
             this.bt_mensagens = new System.Windows.Forms.Button();
             this.bt_servicos = new System.Windows.Forms.Button();
@@ -61,8 +61,6 @@
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.panel_left = new System.Windows.Forms.Panel();
-            this.VisualizarPerfil = new System.Windows.Forms.Button();
-            this.EditarPerfil = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -84,7 +82,7 @@
             this.bt_solicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_solicitar.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_solicitar.ForeColor = System.Drawing.Color.White;
-            this.bt_solicitar.Location = new System.Drawing.Point(4, 5);
+            this.bt_solicitar.Location = new System.Drawing.Point(824, 5);
             this.bt_solicitar.Name = "bt_solicitar";
             this.bt_solicitar.Size = new System.Drawing.Size(122, 28);
             this.bt_solicitar.TabIndex = 4;
@@ -97,7 +95,7 @@
             this.bt_empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_empresa.ForeColor = System.Drawing.Color.White;
-            this.bt_empresa.Location = new System.Drawing.Point(373, 5);
+            this.bt_empresa.Location = new System.Drawing.Point(312, 5);
             this.bt_empresa.Name = "bt_empresa";
             this.bt_empresa.Size = new System.Drawing.Size(122, 28);
             this.bt_empresa.TabIndex = 3;
@@ -105,42 +103,40 @@
             this.bt_empresa.UseVisualStyleBackColor = true;
             this.bt_empresa.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // bt_publicar
-            // 
-            this.bt_publicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_publicar.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_publicar.ForeColor = System.Drawing.Color.White;
-            this.bt_publicar.Location = new System.Drawing.Point(127, 5);
-            this.bt_publicar.Name = "bt_publicar";
-            this.bt_publicar.Size = new System.Drawing.Size(122, 28);
-            this.bt_publicar.TabIndex = 2;
-            this.bt_publicar.Text = "Publicar Servicos";
-            this.bt_publicar.UseVisualStyleBackColor = true;
-            this.bt_publicar.Click += new System.EventHandler(this.Button1_Click_1);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.EditarPerfil);
-            this.panel1.Controls.Add(this.VisualizarPerfil);
             this.panel1.Controls.Add(this.bt_solicitados);
             this.panel1.Controls.Add(this.bt_mensagens);
             this.panel1.Controls.Add(this.bt_servicos);
             this.panel1.Controls.Add(this.bt_solicitar);
-            this.panel1.Controls.Add(this.bt_publicar);
             this.panel1.Controls.Add(this.bt_empresa);
             this.panel1.Location = new System.Drawing.Point(0, 150);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 40);
             this.panel1.TabIndex = 19;
             // 
+            // EditarPerfil
+            // 
+            this.EditarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditarPerfil.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditarPerfil.ForeColor = System.Drawing.Color.White;
+            this.EditarPerfil.Location = new System.Drawing.Point(3, 5);
+            this.EditarPerfil.Name = "EditarPerfil";
+            this.EditarPerfil.Size = new System.Drawing.Size(122, 28);
+            this.EditarPerfil.TabIndex = 11;
+            this.EditarPerfil.Text = "Editar perfil";
+            this.EditarPerfil.UseVisualStyleBackColor = true;
+            this.EditarPerfil.Click += new System.EventHandler(this.EditarPerfil_Click);
+            // 
             // bt_solicitados
             // 
             this.bt_solicitados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_solicitados.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_solicitados.ForeColor = System.Drawing.Color.White;
-            this.bt_solicitados.Location = new System.Drawing.Point(757, 5);
+            this.bt_solicitados.Location = new System.Drawing.Point(696, 5);
             this.bt_solicitados.Name = "bt_solicitados";
             this.bt_solicitados.Size = new System.Drawing.Size(122, 28);
             this.bt_solicitados.TabIndex = 9;
@@ -153,7 +149,7 @@
             this.bt_mensagens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_mensagens.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_mensagens.ForeColor = System.Drawing.Color.White;
-            this.bt_mensagens.Location = new System.Drawing.Point(629, 5);
+            this.bt_mensagens.Location = new System.Drawing.Point(568, 5);
             this.bt_mensagens.Name = "bt_mensagens";
             this.bt_mensagens.Size = new System.Drawing.Size(122, 28);
             this.bt_mensagens.TabIndex = 8;
@@ -166,7 +162,7 @@
             this.bt_servicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_servicos.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_servicos.ForeColor = System.Drawing.Color.White;
-            this.bt_servicos.Location = new System.Drawing.Point(501, 5);
+            this.bt_servicos.Location = new System.Drawing.Point(440, 5);
             this.bt_servicos.Name = "bt_servicos";
             this.bt_servicos.Size = new System.Drawing.Size(122, 28);
             this.bt_servicos.TabIndex = 7;
@@ -447,32 +443,6 @@
             this.panel_left.Size = new System.Drawing.Size(310, 259);
             this.panel_left.TabIndex = 15;
             // 
-            // VisualizarPerfil
-            // 
-            this.VisualizarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VisualizarPerfil.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VisualizarPerfil.ForeColor = System.Drawing.Color.White;
-            this.VisualizarPerfil.Location = new System.Drawing.Point(885, 5);
-            this.VisualizarPerfil.Name = "VisualizarPerfil";
-            this.VisualizarPerfil.Size = new System.Drawing.Size(122, 28);
-            this.VisualizarPerfil.TabIndex = 10;
-            this.VisualizarPerfil.Text = "Visualizar perfil";
-            this.VisualizarPerfil.UseVisualStyleBackColor = true;
-            this.VisualizarPerfil.Click += new System.EventHandler(this.VisualizarPerfil_Click);
-            // 
-            // EditarPerfil
-            // 
-            this.EditarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditarPerfil.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditarPerfil.ForeColor = System.Drawing.Color.White;
-            this.EditarPerfil.Location = new System.Drawing.Point(1013, 5);
-            this.EditarPerfil.Name = "EditarPerfil";
-            this.EditarPerfil.Size = new System.Drawing.Size(122, 28);
-            this.EditarPerfil.TabIndex = 11;
-            this.EditarPerfil.Text = "Editar perfil";
-            this.EditarPerfil.UseVisualStyleBackColor = true;
-            this.EditarPerfil.Click += new System.EventHandler(this.EditarPerfil_Click);
-            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -517,7 +487,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel_right;
-        private System.Windows.Forms.Button bt_publicar;
         private System.Windows.Forms.Button bt_empresa;
         private System.Windows.Forms.Button bt_solicitar;
         private System.Windows.Forms.Panel panel1;
@@ -549,6 +518,5 @@
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.Panel panel_left;
         private System.Windows.Forms.Button EditarPerfil;
-        private System.Windows.Forms.Button VisualizarPerfil;
     }
 }
