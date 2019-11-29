@@ -396,6 +396,12 @@
     <Compile Include="servicos\FormCadEmpresa.Designer.cs">
       <DependentUpon>FormCadEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\FormEditarPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormEditarPerfil.Designer.cs">
+      <DependentUpon>FormEditarPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\FormPostEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -425,6 +431,12 @@
     </Compile>
     <Compile Include="servicos\FormVisualizarPost.Designer.cs">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\PerfilEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\PerfilEmpresa.Designer.cs">
+      <DependentUpon>PerfilEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\ServicosADM.cs">
       <SubType>Form</SubType>
@@ -692,6 +704,9 @@
     <EmbeddedResource Include="servicos\FormCadEmpresa.resx">
       <DependentUpon>FormCadEmpresa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormEditarPerfil.resx">
+      <DependentUpon>FormEditarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="servicos\FormPostEdit.resx">
       <DependentUpon>FormPostEdit.cs</DependentUpon>
     </EmbeddedResource>
@@ -706,6 +721,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\FormVisualizarPost.resx">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\PerfilEmpresa.resx">
+      <DependentUpon>PerfilEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\ServicosADM.resx">
       <DependentUpon>ServicosADM.cs</DependentUpon>

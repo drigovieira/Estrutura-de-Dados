@@ -61,6 +61,8 @@
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.VisualizarPerfil = new System.Windows.Forms.Button();
+            this.EditarPerfil = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -120,6 +122,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.EditarPerfil);
+            this.panel1.Controls.Add(this.VisualizarPerfil);
             this.panel1.Controls.Add(this.bt_solicitados);
             this.panel1.Controls.Add(this.bt_mensagens);
             this.panel1.Controls.Add(this.bt_servicos);
@@ -443,6 +447,32 @@
             this.panel_left.Size = new System.Drawing.Size(310, 259);
             this.panel_left.TabIndex = 15;
             // 
+            // VisualizarPerfil
+            // 
+            this.VisualizarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VisualizarPerfil.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VisualizarPerfil.ForeColor = System.Drawing.Color.White;
+            this.VisualizarPerfil.Location = new System.Drawing.Point(885, 5);
+            this.VisualizarPerfil.Name = "VisualizarPerfil";
+            this.VisualizarPerfil.Size = new System.Drawing.Size(122, 28);
+            this.VisualizarPerfil.TabIndex = 10;
+            this.VisualizarPerfil.Text = "Visualizar perfil";
+            this.VisualizarPerfil.UseVisualStyleBackColor = true;
+            this.VisualizarPerfil.Click += new System.EventHandler(this.VisualizarPerfil_Click);
+            // 
+            // EditarPerfil
+            // 
+            this.EditarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditarPerfil.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditarPerfil.ForeColor = System.Drawing.Color.White;
+            this.EditarPerfil.Location = new System.Drawing.Point(1013, 5);
+            this.EditarPerfil.Name = "EditarPerfil";
+            this.EditarPerfil.Size = new System.Drawing.Size(122, 28);
+            this.EditarPerfil.TabIndex = 11;
+            this.EditarPerfil.Text = "Editar perfil";
+            this.EditarPerfil.UseVisualStyleBackColor = true;
+            this.EditarPerfil.Click += new System.EventHandler(this.EditarPerfil_Click);
+            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -518,5 +548,7 @@
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.Panel panel_left;
+        private System.Windows.Forms.Button EditarPerfil;
+        private System.Windows.Forms.Button VisualizarPerfil;
     }
 }

@@ -328,5 +328,15 @@ namespace Pont_Finder.servicos
         {
             FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmpresa(-1, -1));
         }
+
+        private void VisualizarPerfil_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa());
+        }
+
+        private void EditarPerfil_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new FormEditarPerfil());
+        }
     }
 }
