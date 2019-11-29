@@ -65,5 +65,67 @@ namespace Pont_Finder
                 }
             }
         }
+        public bool Cnpj(string cnpj)
+
+        {
+            string cnpjT;                                                                           //Temporário
+
+            int[] verificardig1 = new int[12] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };               //Comparações/multiplicação do primeiro digito
+
+            int[] verificardig2 = new int[13] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };            //Comparações/multiplicação do primeiro digito
+
+            int soma;
+
+            string digito;
+
+            cnpj = cnpj.Trim();
+
+            cnpj = cnpj.Replace(".", "").Replace("-", "").Replace("/", "");                         //Tirar ".","-" e "/" da string a ser utilizada
+
+            if (cnpj.Length != 14)
+
+                return false;
+
+            cnpjT = cnpj.Substring(0, 12);
+
+            soma = 0;
+
+            //Calcular o primeiro digito de verificação
+
+            for (int i = 0; i < 12; i++)
+
+                soma += int.Parse(cnpjT[i].ToString()) * verificardig1[i];
+
+
+            if (soma % 11 < 2)
+
+                digito = "0";
+
+            else
+
+                digito = (11 - (soma % 11)).ToString();
+
+            cnpjT = cnpjT + digito;
+
+            soma = 0;
+
+            //Calcular o segundo digito de verificação
+
+            for (int i = 0; i < 13; i++)
+
+                soma += int.Parse(cnpjT[i].ToString()) * verificardig2[i];
+
+
+            if (soma % 11 < 2)
+
+                digito = "0";
+
+            else
+
+                digito = digito + (11 - (soma % 11)).ToString();
+
+            return cnpj.EndsWith(digito);
+
+        }
     }
 }
