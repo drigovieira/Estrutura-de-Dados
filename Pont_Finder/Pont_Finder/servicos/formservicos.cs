@@ -45,44 +45,15 @@ namespace Pont_Finder.servicos
 
             }
 
-            pagQuant = 8;
-
-            ListaDePost = classes.PostList.PostsAtivo;
-            ListaDePost.Reverse();
-
-            pagTotal = ListaDePost.Count;
-            if ((pagTotal % pagQuant) != 0)
-            {
-                pagTotal = (pagTotal / pagQuant);
-                pagTotal++;
-            }
-            else
-            {
-                pagTotal = pagTotal / pagQuant;
-            }
-            pagAtual = 1;
-
-            lb_pag.Text = "Pagina "+ pagAtual +" de "+ pagTotal;
+            pagQuant = 2;
+            LoadPosts();
 
 
         }
 
         private void Formservicos_Load(object sender, EventArgs e)
         {
-            panel_center.Height = 180;
-            int i = 0;
-            
-            foreach (var item in ListaDePost)
-            {
-                if (i >= pagQuant)
-                    break;               
-                PostCard a = new PostCard(item.Id);
-                a.Location = new Point(0, (y));
-                y = y + a.Height + 10;
-                panel_center.Height = panel_center.Height + 180;
-                panel_center.Controls.Add(a);
-                i++;            
-            }
+         
           
         }
 
@@ -191,60 +162,13 @@ namespace Pont_Finder.servicos
 
         private void Bt_ant_Click(object sender, EventArgs e)
         {
-            if (pagAtual > 1)
-            {
-                y = 5;
-                panel_center.Height = 180;
-                panel_center.Controls.Clear();
-
-                int pg = ((pagAtual-2) * pagQuant);
-                
-                for (int i = 0; i < pagQuant; i++)
-                {
-                    if (pg + i < ListaDePost.Count)
-                    {
-                        PostCard a = new PostCard(ListaDePost[pg + i].Id);
-                        a.Location = new Point(0, (y));
-                        y = y + a.Height + 10;
-                        panel_center.Height = panel_center.Height + 180;
-                        panel_center.Controls.Add(a);
-                    }
-                }
-                pagAtual--;
-
-                lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
-            }
-
-
+            GoPag("anterior");
         }
 
         private void Bt_prox_Click(object sender, EventArgs e)
         {
 
-            if (pagAtual < pagTotal)
-            {
-                y = 5;
-                panel_center.Height = 180;
-                panel_center.Controls.Clear();
-
-                int pg = (pagAtual* pagQuant);
-
-                for (int i = 0; i < pagQuant; i++)
-                {
-                    if (pg + i < ListaDePost.Count)
-                    {
-                        PostCard a = new PostCard(ListaDePost[pg + i].Id);
-                        a.Location = new Point(0, (y));
-                        y = y + a.Height + 10;
-                        panel_center.Height = panel_center.Height + 180;
-                        panel_center.Controls.Add(a);
-                    }
-                   
-                }
-               
-                pagAtual++;
-                lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
-            }
+            GoPag("proxima");
            
 
 
@@ -340,6 +264,180 @@ namespace Pont_Finder.servicos
         private void EditarPerfil_Click(object sender, EventArgs e)
         {
             FormPrincipal.MudarForm("servicos", new FormEditarPerfil());
+        }
+
+        private void Lb_pag_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Bt_proxFull_Click(object sender, EventArgs e)
+        {
+            GoPag("ultima");
+        }
+
+        private void Bt_antFull_Click(object sender, EventArgs e)
+        {
+            GoPag("primeira");
+        }
+
+        public void LoadPosts()
+        {
+            ListaDePost = classes.PostList.PostsAtivo;
+            ListaDePost.Reverse();
+
+            pagTotal = ListaDePost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+            panel_center.Height = 180;
+            int i = 0;
+
+            foreach (var item in ListaDePost)
+            {
+                if (i >= pagQuant)
+                    break;
+                PostCard a = new PostCard(item.Id);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 10;
+                panel_center.Height = panel_center.Height + 180;
+                panel_center.Controls.Add(a);
+                i++;
+            }
+
+        }
+
+        public void GoPag(string p)
+        {
+            int pagina;
+
+            if (p.Equals("ant") || p.Equals("anterior"))
+                pagina = -1;           
+            else if (p.Equals("prox") || p.Equals("proxima"))
+                pagina = -2;
+            else if (p.Equals("1") || p.Equals("primeira"))
+                pagina = 1;
+            else if (p.Equals("0") || p.Equals("ultima"))
+                pagina = pagTotal;
+            else
+                pagina = int.Parse(p);
+            
+            
+            if (ListaDePost.Count > pagTotal)
+            {
+                if (pagina == 1 && (pagAtual > 1))
+                {
+                    y = 5;
+                    panel_center.Height = 180;
+                    panel_center.Controls.Clear();
+
+                    int i = 0;
+                    foreach (var item in ListaDePost)
+                    {
+                        if (i >= pagQuant)
+                            break;
+                        PostCard a = new PostCard(item.Id);
+                        a.Location = new Point(0, (y));
+                        y = y + a.Height + 10;
+                        panel_center.Height = panel_center.Height + 180;
+                        panel_center.Controls.Add(a);
+                        i++;
+                    }
+                    lb_pag.Text = "Pagina " + 1 + " de " + pagTotal;
+                    pagAtual = 1;
+
+                }
+                else if (pagina == pagTotal && (pagAtual < pagTotal) )
+                {
+                    y = 5;
+                    panel_center.Height = 180;
+                    panel_center.Controls.Clear();
+
+                    int pg = ((pagTotal - 1) * pagQuant);
+                    for (int i = 0; i < pagQuant; i++)
+                    {
+                        if (pg + i < ListaDePost.Count)
+                        {
+                            PostCard a = new PostCard(ListaDePost[pg + i].Id);
+                            a.Location = new Point(0, (y));
+                            y = y + a.Height + 10;
+                            panel_center.Height = panel_center.Height + 180;
+                            panel_center.Controls.Add(a);
+                        }
+
+                    }
+
+                    pagAtual = pagTotal;
+                    lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+                }
+                else if (pagina == -1)
+                {
+                    if (pagAtual > 1)
+                    {
+                        y = 5;
+                        panel_center.Height = 180;
+                        panel_center.Controls.Clear();
+
+                        int pg = ((pagAtual - 2) * pagQuant);
+
+                        for (int i = 0; i < pagQuant; i++)
+                        {
+                            if (pg + i < ListaDePost.Count)
+                            {
+                                PostCard a = new PostCard(ListaDePost[pg + i].Id);
+                                a.Location = new Point(0, (y));
+                                y = y + a.Height + 10;
+                                panel_center.Height = panel_center.Height + 180;
+                                panel_center.Controls.Add(a);
+                            }
+                        }
+                        pagAtual--;
+
+                        lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+                    }
+                }
+                else if (pagina == -2)
+                {
+                    if (pagAtual < pagTotal)
+                    {
+                        y = 5;
+                        panel_center.Height = 180;
+                        panel_center.Controls.Clear();
+
+                        int pg = (pagAtual * pagQuant);
+
+                        for (int i = 0; i < pagQuant; i++)
+                        {
+                            if (pg + i < ListaDePost.Count)
+                            {
+                                PostCard a = new PostCard(ListaDePost[pg + i].Id);
+                                a.Location = new Point(0, (y));
+                                y = y + a.Height + 10;
+                                panel_center.Height = panel_center.Height + 180;
+                                panel_center.Controls.Add(a);
+                            }
+
+                        }
+                        pagAtual++;
+                        lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+                    }
+                }
+            }
         }
     }
 }

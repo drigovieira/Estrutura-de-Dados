@@ -61,6 +61,8 @@
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.bt_antFull = new System.Windows.Forms.Button();
+            this.bt_proxFull = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -214,13 +216,13 @@
             this.bt_ant.BackColor = System.Drawing.Color.Transparent;
             this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ant.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(320, 269);
+            this.bt_ant.Location = new System.Drawing.Point(320, 297);
             this.bt_ant.Name = "bt_ant";
-            this.bt_ant.Size = new System.Drawing.Size(75, 23);
+            this.bt_ant.Size = new System.Drawing.Size(50, 33);
             this.bt_ant.TabIndex = 39;
-            this.bt_ant.Text = "<<";
+            this.bt_ant.Text = "←";
             this.bt_ant.UseVisualStyleBackColor = false;
             this.bt_ant.Click += new System.EventHandler(this.Bt_ant_Click);
             // 
@@ -229,31 +231,37 @@
             this.bt_prox.BackColor = System.Drawing.Color.Transparent;
             this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_prox.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_prox.ForeColor = System.Drawing.Color.Black;
-            this.bt_prox.Location = new System.Drawing.Point(870, 269);
+            this.bt_prox.Location = new System.Drawing.Point(894, 297);
             this.bt_prox.Name = "bt_prox";
-            this.bt_prox.Size = new System.Drawing.Size(75, 23);
+            this.bt_prox.Size = new System.Drawing.Size(50, 33);
             this.bt_prox.TabIndex = 40;
-            this.bt_prox.Text = ">>";
+            this.bt_prox.Text = "→";
             this.bt_prox.UseVisualStyleBackColor = false;
             this.bt_prox.Click += new System.EventHandler(this.Bt_prox_Click);
             // 
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_pag.Location = new System.Drawing.Point(607, 267);
+            this.lb_pag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_pag.ForeColor = System.Drawing.Color.Black;
+            this.lb_pag.Location = new System.Drawing.Point(432, 297);
+            this.lb_pag.MaximumSize = new System.Drawing.Size(400, 33);
+            this.lb_pag.MinimumSize = new System.Drawing.Size(400, 33);
             this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(47, 17);
+            this.lb_pag.Size = new System.Drawing.Size(400, 33);
             this.lb_pag.TabIndex = 41;
             this.lb_pag.Text = "lb_pag";
+            this.lb_pag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_pag.Click += new System.EventHandler(this.Lb_pag_Click);
             // 
             // panel_center
             // 
             this.panel_center.AutoSize = true;
             this.panel_center.BackColor = System.Drawing.Color.Transparent;
-            this.panel_center.Location = new System.Drawing.Point(320, 292);
+            this.panel_center.Location = new System.Drawing.Point(320, 334);
             this.panel_center.MaximumSize = new System.Drawing.Size(625, 0);
             this.panel_center.MinimumSize = new System.Drawing.Size(625, 0);
             this.panel_center.Name = "panel_center";
@@ -443,6 +451,36 @@
             this.panel_left.Size = new System.Drawing.Size(310, 259);
             this.panel_left.TabIndex = 15;
             // 
+            // bt_antFull
+            // 
+            this.bt_antFull.BackColor = System.Drawing.Color.Transparent;
+            this.bt_antFull.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_antFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_antFull.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_antFull.ForeColor = System.Drawing.Color.Black;
+            this.bt_antFull.Location = new System.Drawing.Point(376, 297);
+            this.bt_antFull.Name = "bt_antFull";
+            this.bt_antFull.Size = new System.Drawing.Size(50, 33);
+            this.bt_antFull.TabIndex = 47;
+            this.bt_antFull.Text = "↞";
+            this.bt_antFull.UseVisualStyleBackColor = false;
+            this.bt_antFull.Click += new System.EventHandler(this.Bt_antFull_Click);
+            // 
+            // bt_proxFull
+            // 
+            this.bt_proxFull.BackColor = System.Drawing.Color.Transparent;
+            this.bt_proxFull.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_proxFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_proxFull.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_proxFull.ForeColor = System.Drawing.Color.Black;
+            this.bt_proxFull.Location = new System.Drawing.Point(838, 297);
+            this.bt_proxFull.Name = "bt_proxFull";
+            this.bt_proxFull.Size = new System.Drawing.Size(50, 33);
+            this.bt_proxFull.TabIndex = 48;
+            this.bt_proxFull.Text = "↠";
+            this.bt_proxFull.UseVisualStyleBackColor = false;
+            this.bt_proxFull.Click += new System.EventHandler(this.Bt_proxFull_Click);
+            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -450,13 +488,15 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.lb_pag);
+            this.Controls.Add(this.bt_proxFull);
+            this.Controls.Add(this.bt_antFull);
+            this.Controls.Add(this.bt_prox);
+            this.Controls.Add(this.bt_ant);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.bt_ant);
-            this.Controls.Add(this.lb_pag);
-            this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -518,5 +558,7 @@
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.Panel panel_left;
         private System.Windows.Forms.Button EditarPerfil;
+        private System.Windows.Forms.Button bt_antFull;
+        private System.Windows.Forms.Button bt_proxFull;
     }
 }
