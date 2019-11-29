@@ -39,8 +39,8 @@
             this.lb_empresa = new System.Windows.Forms.Label();
             this.pb_empresa = new System.Windows.Forms.PictureBox();
             this.tb_mensagens = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt_limpar = new System.Windows.Forms.Button();
+            this.bt_enviar = new System.Windows.Forms.Button();
             this.tb_mensagem = new System.Windows.Forms.RichTextBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -116,15 +116,14 @@
             this.panel2.Controls.Add(this.lb_empresa);
             this.panel2.Controls.Add(this.pb_empresa);
             this.panel2.Controls.Add(this.tb_mensagens);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.bt_limpar);
+            this.panel2.Controls.Add(this.bt_enviar);
             this.panel2.Controls.Add(this.tb_mensagem);
             this.panel2.Location = new System.Drawing.Point(505, 158);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(755, 505);
             this.panel2.TabIndex = 41;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
             // lb_empresa
             // 
@@ -135,7 +134,6 @@
             this.lb_empresa.Size = new System.Drawing.Size(209, 36);
             this.lb_empresa.TabIndex = 5;
             this.lb_empresa.Text = "Nome Empresa";
-            this.lb_empresa.Click += new System.EventHandler(this.Label1_Click);
             // 
             // pb_empresa
             // 
@@ -158,25 +156,25 @@
             this.tb_mensagens.TabIndex = 3;
             this.tb_mensagens.Text = "";
             // 
-            // button2
+            // bt_limpar
             // 
-            this.button2.Location = new System.Drawing.Point(596, 479);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Limpar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.bt_limpar.Location = new System.Drawing.Point(596, 479);
+            this.bt_limpar.Name = "bt_limpar";
+            this.bt_limpar.Size = new System.Drawing.Size(75, 23);
+            this.bt_limpar.TabIndex = 2;
+            this.bt_limpar.Text = "Limpar";
+            this.bt_limpar.UseVisualStyleBackColor = true;
+            this.bt_limpar.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // button1
+            // bt_enviar
             // 
-            this.button1.Location = new System.Drawing.Point(677, 479);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Enviar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.bt_enviar.Location = new System.Drawing.Point(677, 479);
+            this.bt_enviar.Name = "bt_enviar";
+            this.bt_enviar.Size = new System.Drawing.Size(75, 23);
+            this.bt_enviar.TabIndex = 1;
+            this.bt_enviar.Text = "Enviar";
+            this.bt_enviar.UseVisualStyleBackColor = true;
+            this.bt_enviar.Click += new System.EventHandler(this.Button1_Click);
             // 
             // tb_mensagem
             // 
@@ -187,7 +185,7 @@
             this.tb_mensagem.TabIndex = 0;
             this.tb_mensagem.Text = "";
             // 
-            // FormSociaList
+            // FormSociaListUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -199,7 +197,7 @@
             this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormSociaList";
+            this.Name = "FormSociaListUser";
             this.Text = "FormSociaList";
             this.Load += new System.EventHandler(this.FormSociaList_Load);
             this.panel3.ResumeLayout(false);
@@ -223,8 +221,8 @@
         private System.Windows.Forms.Label lb_username;
         private System.Windows.Forms.PictureBox pb_userimage;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_limpar;
+        private System.Windows.Forms.Button bt_enviar;
         private System.Windows.Forms.RichTextBox tb_mensagem;
         private System.Windows.Forms.RichTextBox tb_mensagens;
         private System.Windows.Forms.Label lb_empresa;

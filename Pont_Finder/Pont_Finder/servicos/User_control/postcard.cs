@@ -165,7 +165,7 @@ namespace Pont_Finder.servicos
             }
             else
             {
-                empresa = classes.ListaEmpresa.selectCpf(this.post.Cpf);
+                empresa = classes.ListaEmpresa.ForCpf(this.post.Cpf);
                 pb_user.ImageLocation = empresa.Image;
                 lb_username.Text = empresa.Nome;
                 lb_tipo.Text = "Categoria: "+ empresa.Servico;

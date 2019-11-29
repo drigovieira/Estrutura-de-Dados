@@ -17,20 +17,6 @@ namespace Pont_Finder.servicos.classes
         public static void Add(Empresa empresa)
         {
             listaEmpresa.Add(empresa);
-
-            /*
-            Empresa tmp = new Empresa();
-            tmp.Nome = empresa.Nome;
-            tmp.NomeFantasia = empresa.NomeFantasia;
-            tmp.Email = empresa.Email;
-            tmp.Cnpj = empresa.Cnpj;
-            tmp.Cpf = empresa.Cpf;
-            tmp.Endereco = empresa.Endereco;
-            tmp.Telefone = empresa.Telefone;
-            tmp.Image = empresa.Image;
-            tmp.Status = true;
-            listaEmpresa.Add(tmp);
-            */
         }
 
         public static List<Empresa> selectAll()
@@ -38,43 +24,52 @@ namespace Pont_Finder.servicos.classes
             List<Empresa> lista = new List<Empresa>();
             foreach (var item in listaEmpresa)
             {
-                Empresa tmp = new Empresa();
-                tmp.Nome = item.Nome;
-                tmp.NomeFantasia = item.NomeFantasia;
-                tmp.Email = item.Email;
-                tmp.Servico = item.Servico;
-                tmp.Cnpj = item.Cnpj;
-                tmp.Cpf = item.Cpf;
-                tmp.Endereco = item.Endereco;
-                tmp.Telefone = item.Telefone;
-                tmp.Image = item.Image;
-                tmp.Status = item.Status;              
-                lista.Add(tmp);
+                Empresa empresa = new Empresa();
+                empresa.Nome = item.Nome;
+                empresa.NomeFantasia = item.NomeFantasia;
+                empresa.Email = item.Email;
+                empresa.Servico = item.Servico;
+                empresa.Cnpj = item.Cnpj;
+                empresa.Cpf = item.Cpf;
+                empresa.Endereco = item.Endereco;
+                empresa.Telefone = item.Telefone;
+                empresa.Image = item.Image;
+                empresa.Status = item.Status;              
+                lista.Add(empresa);
             }
             return lista;
         }
-        public static Empresa selectCpf(long cpf)
-        {
-            Empresa emp = new Empresa();
+        public static Empresa ForCpf(long cpf)
+        {        
             foreach (var item in listaEmpresa)
             {
                 if (cpf == item.Cpf)
                 {
-                    emp.Nome = item.Nome;
-                    emp.NomeFantasia = item.NomeFantasia;
-                    emp.Email = item.Email;
-                    emp.Cnpj = item.Cnpj;
-                    emp.Cpf = item.Cpf;
-                    emp.Endereco = item.Endereco;
-                    emp.Servico = item.Servico;
-                    emp.Telefone = item.Telefone;
-                    emp.Status = item.Status;
-                    emp.Image = item.Image;
-                    return emp;
+                    Empresa empresa = new Empresa();
+                    empresa.Nome = item.Nome;
+                    empresa.NomeFantasia = item.NomeFantasia;
+                    empresa.Email = item.Email;
+                    empresa.Cnpj = item.Cnpj;
+                    empresa.Cpf = item.Cpf;
+                    empresa.Endereco = item.Endereco;
+                    empresa.Servico = item.Servico;
+                    empresa.Telefone = item.Telefone;
+                    empresa.Status = item.Status;
+                    empresa.Image = item.Image;
+                    return empresa;
                 }                
             }
-            emp = null;
-            return emp;
+            return null;
+        }
+
+        public static Empresa thisForCpf(long cpf)
+        {
+            foreach (var item in listaEmpresa)
+            {
+                if (cpf == item.Cpf)
+                    return item;               
+            }
+            return null;
         }
 
         public static List<Empresa> thisEmpresas
@@ -91,18 +86,18 @@ namespace Pont_Finder.servicos.classes
 
                 foreach (var item in listaEmpresa)
                 {
-                    Empresa emp = new Empresa();
-                    emp.Nome = item.Nome;
-                    emp.NomeFantasia = item.NomeFantasia;
-                    emp.Email = item.Email;
-                    emp.Endereco = item.Endereco;
-                    emp.Telefone = item.Telefone;
-                    emp.Image = item.Image;
-                    emp.Servico = item.Servico;
-                    emp.Cnpj = item.Cnpj;
-                    emp.Cpf = item.Cpf;
-                    emp.Status = item.Status;
-                    lista.Add(emp);
+                    Empresa empresa = new Empresa();
+                    empresa.Nome = item.Nome;
+                    empresa.NomeFantasia = item.NomeFantasia;
+                    empresa.Email = item.Email;
+                    empresa.Endereco = item.Endereco;
+                    empresa.Telefone = item.Telefone;
+                    empresa.Image = item.Image;
+                    empresa.Servico = item.Servico;
+                    empresa.Cnpj = item.Cnpj;
+                    empresa.Cpf = item.Cpf;
+                    empresa.Status = item.Status;
+                    lista.Add(empresa);
                 }
                 return lista; }
         }
@@ -113,18 +108,18 @@ namespace Pont_Finder.servicos.classes
 
             foreach (var item in doc.Descendants("servico"))
             {
-                Empresa emp = new Empresa();
-                emp.Nome = item.Element("nome").Value;
-                emp.NomeFantasia = item.Element("nomeFantasia").Value;
-                emp.Email = item.Element("email").Value;
-                emp.Telefone = item.Element("telefone").Value;
-                emp.Endereco = item.Element("endereco").Value;
-                emp.Servico = item.Element("service").Value;
-                emp.Cnpj = long.Parse( item.Element("cnpj").Value);
-                emp.Cpf = long.Parse(item.Element("cpf").Value);
-                emp.Image = item.Element("image").Value;
-                emp.Status = bool.Parse( item.Element("status").Value);
-                ListaEmpresa.Add(emp);               
+                Empresa empresa = new Empresa();
+                empresa.Nome = item.Element("nome").Value;
+                empresa.NomeFantasia = item.Element("nomeFantasia").Value;
+                empresa.Email = item.Element("email").Value;
+                empresa.Telefone = item.Element("telefone").Value;
+                empresa.Endereco = item.Element("endereco").Value;
+                empresa.Servico = item.Element("service").Value;
+                empresa.Cnpj = long.Parse( item.Element("cnpj").Value);
+                empresa.Cpf = long.Parse(item.Element("cpf").Value);
+                empresa.Image = item.Element("image").Value;
+                empresa.Status = bool.Parse( item.Element("status").Value);
+                ListaEmpresa.Add(empresa);               
             }
         }
         public static void XmlSave()

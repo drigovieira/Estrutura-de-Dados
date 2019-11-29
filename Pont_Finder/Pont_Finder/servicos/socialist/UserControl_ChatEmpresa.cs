@@ -21,7 +21,7 @@ namespace Pont_Finder.servicos.socialist
             InitializeComponent();
             this.tipo = tipo;
             this.post = classes.PostList.thisSelectId(postId);
-            empresa = classes.ListaEmpresa.selectCpf(this.post.Cpf);
+            empresa = classes.ListaEmpresa.ForCpf(this.post.Cpf);
         }
 
         private void UserControl_ChatEmpresa_Load(object sender, EventArgs e)

@@ -74,7 +74,7 @@ namespace Pont_Finder.servicos
             }
             else
             {
-                classes.Empresa emp = classes.ListaEmpresa.selectCpf(post.Cpf);
+                classes.Empresa emp = classes.ListaEmpresa.ForCpf(post.Cpf);
                 pb_user.ImageLocation = emp.Image;
                 lb_username.Text = emp.Nome;
 

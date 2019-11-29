@@ -66,6 +66,43 @@ namespace Pont_Finder.servicos.classes
             return posts[id];
         }
 
+        public static Post thisForId(int id)
+        {
+            foreach (var item in posts)
+            {
+                if (item.Id == id)
+                    return item;            
+            }
+            return null;
+        }
+
+        public static Post ForId(int id)
+        {
+            foreach (var item in posts)
+            {
+                if (item.Id == id)
+                {
+                    Post post = new Post();
+                    post.Id = item.Id;
+                    post.Titulo = item.Titulo;
+                    post.Valor = item.Valor;
+                    post.Descricao = item.Descricao;
+                    post.Ativo = item.Ativo;
+                    post.Image = item.Image;
+                    post.Cpf = item.Cpf;
+                    post.Cnpj = item.Cnpj;
+                    post.Data = item.Data;
+                    post.LikesList = item.LikesList;
+                    return post;
+                }
+            }
+            return null;
+        }
+
+
+
+        //xml config
+
         public static void XmlLoad()
         {
             // XmiLi_Post xmlLi = new XmiLi_Post();

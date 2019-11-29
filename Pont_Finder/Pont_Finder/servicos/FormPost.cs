@@ -20,7 +20,7 @@ namespace Pont_Finder.servicos
             InitializeComponent();
             pb_icone.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            classes.Empresa emp = classes.ListaEmpresa.selectCpf(Session.Cpf);
+            classes.Empresa emp = classes.ListaEmpresa.ForCpf(Session.Cpf);
             if (emp == null)
             {
                 bt_empresa.Enabled = false;
@@ -145,7 +145,7 @@ namespace Pont_Finder.servicos
                 pb_icone.Image.Save(link, ImageFormat.Jpeg);
             }
 
-            classes.Empresa emp = classes.ListaEmpresa.selectCpf(Session.Cpf);
+            classes.Empresa emp = classes.ListaEmpresa.ForCpf(Session.Cpf);
 
             classes.Post p = new classes.Post();
             p.Id = classes.PostList.Tam;

@@ -23,7 +23,7 @@ namespace Pont_Finder.servicos
             InitializeComponent();
             if (Session.Online)
             {
-                empresa = classes.ListaEmpresa.selectCpf(Session.Cpf);            
+                empresa = classes.ListaEmpresa.ForCpf(Session.Cpf);            
             }
             else
             {
