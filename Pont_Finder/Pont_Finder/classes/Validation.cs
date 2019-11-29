@@ -72,7 +72,7 @@ namespace Pont_Finder
 
             int[] verificardig1 = new int[12] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };               //Comparações/multiplicação do primeiro digito
 
-            int[] verificardig2 = new int[13] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };            //Comparações/multiplicação do primeiro digito
+            int[] verificardig2 = new int[13] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };             //Comparações/multiplicação do primeiro digito
 
             int soma;
 
