@@ -52,10 +52,11 @@ namespace Pont_Finder.eventos
         {
            
            
-            
+           
+        }
 
-
-
+        private void Lb_rs_boleto_Click(object sender, EventArgs e)
+        {
 
         }
     }

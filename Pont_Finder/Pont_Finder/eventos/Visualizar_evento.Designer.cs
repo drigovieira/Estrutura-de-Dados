@@ -55,6 +55,7 @@
             this.bt_comprar = new System.Windows.Forms.Button();
             this.lb_nome_evento = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
@@ -66,6 +67,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lb_txt7);
             this.panel1.Controls.Add(this.lb_txt3);
             this.panel1.Controls.Add(this.pn_galery);
@@ -320,11 +322,12 @@
             this.lb_rs_boleto.AutoSize = true;
             this.lb_rs_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs_boleto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs_boleto.Location = new System.Drawing.Point(834, 77);
+            this.lb_rs_boleto.Location = new System.Drawing.Point(918, 87);
             this.lb_rs_boleto.Name = "lb_rs_boleto";
-            this.lb_rs_boleto.Size = new System.Drawing.Size(63, 46);
+            this.lb_rs_boleto.Size = new System.Drawing.Size(43, 46);
             this.lb_rs_boleto.TabIndex = 34;
-            this.lb_rs_boleto.Text = "R$";
+            this.lb_rs_boleto.Text = "V";
+            this.lb_rs_boleto.Click += new System.EventHandler(this.Lb_rs_boleto_Click);
             // 
             // bt_comprar
             // 
@@ -360,6 +363,17 @@
             this.btn_back.TabIndex = 15;
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
+            this.label1.Location = new System.Drawing.Point(849, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 46);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "R$";
             // 
             // Visualizar_evento
             // 
@@ -413,5 +427,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Label lb_descricao;
+        private System.Windows.Forms.Label label1;
     }
 }
