@@ -77,8 +77,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.Location = new System.Drawing.Point(450, 5);
@@ -96,7 +95,7 @@
             this.panel7.Controls.Add(this.cb_problemas);
             this.panel7.Controls.Add(this.button_Pesquisar);
             this.panel7.Controls.Add(this.label2);
-            this.panel7.Location = new System.Drawing.Point(5, 464);
+            this.panel7.Location = new System.Drawing.Point(5, 482);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(310, 200);
             this.panel7.TabIndex = 14;
@@ -105,25 +104,24 @@
             // cb_problemas
             // 
             this.cb_problemas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_problemas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_problemas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_problemas.FormattingEnabled = true;
             this.cb_problemas.Items.AddRange(new object[] {
             "Infraestrutura",
             "Serviços",
             "Outros"});
-            this.cb_problemas.Location = new System.Drawing.Point(37, 55);
+            this.cb_problemas.Location = new System.Drawing.Point(65, 72);
             this.cb_problemas.Name = "cb_problemas";
-            this.cb_problemas.Size = new System.Drawing.Size(240, 28);
+            this.cb_problemas.Size = new System.Drawing.Size(200, 28);
             this.cb_problemas.TabIndex = 82;
             // 
             // button_Pesquisar
             // 
             this.button_Pesquisar.BackColor = System.Drawing.Color.DodgerBlue;
             this.button_Pesquisar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button_Pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Pesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Pesquisar.ForeColor = System.Drawing.Color.White;
-            this.button_Pesquisar.Location = new System.Drawing.Point(92, 140);
+            this.button_Pesquisar.Location = new System.Drawing.Point(92, 123);
             this.button_Pesquisar.Name = "button_Pesquisar";
             this.button_Pesquisar.Size = new System.Drawing.Size(110, 34);
             this.button_Pesquisar.TabIndex = 79;
@@ -147,7 +145,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(82, 52);
+            this.label1.Location = new System.Drawing.Point(82, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 24);
             this.label1.TabIndex = 3;
@@ -217,8 +215,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(726, 5);
             this.button2.Name = "button2";
@@ -358,11 +355,12 @@
             // 
             // Databox
             // 
-            this.Databox.Location = new System.Drawing.Point(36, 91);
+            this.Databox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Databox.Location = new System.Drawing.Point(86, 85);
             this.Databox.Margin = new System.Windows.Forms.Padding(2);
             this.Databox.Mask = "00/0000";
             this.Databox.Name = "Databox";
-            this.Databox.Size = new System.Drawing.Size(240, 20);
+            this.Databox.Size = new System.Drawing.Size(115, 29);
             this.Databox.TabIndex = 81;
             this.Databox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.Databox_MaskInputRejected);
             // 
@@ -382,10 +380,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(91, 139);
+            this.button1.Location = new System.Drawing.Point(86, 126);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 34);
             this.button1.TabIndex = 26;

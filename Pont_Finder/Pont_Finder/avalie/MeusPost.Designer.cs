@@ -29,26 +29,20 @@
         private void InitializeComponent()
         {
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
-            this.label5 = new System.Windows.Forms.Label();
             this.bt_prox = new System.Windows.Forms.Button();
             this.lb_pag = new System.Windows.Forms.Label();
             this.bt_ant = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.PictureBox();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // openIcone
             // 
             this.openIcone.FileName = "icone";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(312, 117);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 24);
-            this.label5.TabIndex = 85;
-            this.label5.Text = "Meus Posts...";
             // 
             // bt_prox
             // 
@@ -57,7 +51,7 @@
             this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_prox.ForeColor = System.Drawing.Color.Black;
-            this.bt_prox.Location = new System.Drawing.Point(822, 180);
+            this.bt_prox.Location = new System.Drawing.Point(770, 76);
             this.bt_prox.Name = "bt_prox";
             this.bt_prox.Size = new System.Drawing.Size(75, 23);
             this.bt_prox.TabIndex = 87;
@@ -68,7 +62,7 @@
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(562, 193);
+            this.lb_pag.Location = new System.Drawing.Point(515, 86);
             this.lb_pag.Name = "lb_pag";
             this.lb_pag.Size = new System.Drawing.Size(39, 13);
             this.lb_pag.TabIndex = 88;
@@ -81,7 +75,7 @@
             this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(239, 183);
+            this.bt_ant.Location = new System.Drawing.Point(196, 76);
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(75, 23);
             this.bt_ant.TabIndex = 86;
@@ -92,36 +86,79 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Location = new System.Drawing.Point(239, 209);
+            this.panel3.Location = new System.Drawing.Point(164, 141);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(658, 576);
+            this.panel3.Size = new System.Drawing.Size(983, 576);
             this.panel3.TabIndex = 89;
+            // 
+            // panel6
+            // 
+            this.panel6.AutoScroll = true;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.bt_ant);
+            this.panel6.Controls.Add(this.bt_prox);
+            this.panel6.Controls.Add(this.lb_pag);
+            this.panel6.Location = new System.Drawing.Point(127, 31);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1055, 1166);
+            this.panel6.TabIndex = 90;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(10, 17);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(166, 31);
+            this.label11.TabIndex = 86;
+            this.label11.Text = "Meus Posts";
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(81, 31);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 91;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            this.btn_back.MouseLeave += new System.EventHandler(this.btn_back_MouseLeave);
+            this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_back_MouseMove);
             // 
             // MeusPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1233, 710);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.bt_prox);
-            this.Controls.Add(this.lb_pag);
-            this.Controls.Add(this.bt_ant);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MeusPost";
             this.Text = "MeusPost";
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.OpenFileDialog openIcone;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button bt_prox;
         private System.Windows.Forms.Label lb_pag;
         private System.Windows.Forms.Button bt_ant;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }

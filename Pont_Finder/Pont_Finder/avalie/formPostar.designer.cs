@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPostar));
-            this.panel4 = new System.Windows.Forms.Panel();
             this.txtLocalizacao = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -49,6 +48,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
@@ -56,16 +56,8 @@
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Location = new System.Drawing.Point(0, 210);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 824);
-            this.panel4.TabIndex = 8;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // txtLocalizacao
             // 
@@ -91,9 +83,9 @@
             this.panel6.Controls.Add(this.pb_icone);
             this.panel6.Controls.Add(this.button3);
             this.panel6.Controls.Add(this.label3);
-            this.panel6.Location = new System.Drawing.Point(317, 209);
+            this.panel6.Location = new System.Drawing.Point(312, 209);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(625, 866);
+            this.panel6.Size = new System.Drawing.Size(625, 1035);
             this.panel6.TabIndex = 14;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
@@ -119,9 +111,9 @@
             "Infraestrutura",
             "Serviços",
             "Outros"});
-            this.comboBox1.Location = new System.Drawing.Point(113, 152);
+            this.comboBox1.Location = new System.Drawing.Point(113, 123);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(378, 28);
+            this.comboBox1.Size = new System.Drawing.Size(418, 28);
             this.comboBox1.TabIndex = 77;
             // 
             // label2
@@ -130,22 +122,21 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(121, 117);
+            this.label2.Location = new System.Drawing.Point(120, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 33);
+            this.label2.Size = new System.Drawing.Size(241, 32);
             this.label2.TabIndex = 76;
             this.label2.Text = "Sobre o que você quer falar...";
             // 
             // btnPostar
             // 
             this.btnPostar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnPostar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPostar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPostar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPostar.ForeColor = System.Drawing.Color.White;
             this.btnPostar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPostar.Location = new System.Drawing.Point(351, 708);
+            this.btnPostar.Location = new System.Drawing.Point(414, 666);
             this.btnPostar.Name = "btnPostar";
-            this.btnPostar.Size = new System.Drawing.Size(194, 44);
+            this.btnPostar.Size = new System.Drawing.Size(131, 44);
             this.btnPostar.TabIndex = 74;
             this.btnPostar.Text = "Postar";
             this.btnPostar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -156,7 +147,7 @@
             // 
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(62, 498);
+            this.richTextBox1.Location = new System.Drawing.Point(62, 469);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(483, 191);
             this.richTextBox1.TabIndex = 69;
@@ -169,9 +160,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(77, 463);
+            this.label1.Location = new System.Drawing.Point(67, 443);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 33);
+            this.label1.Size = new System.Drawing.Size(96, 32);
             this.label1.TabIndex = 66;
             this.label1.Text = "Descrição:";
             // 
@@ -180,9 +171,9 @@
             this.pb_icone.BackColor = System.Drawing.Color.White;
             this.pb_icone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_icone.Image = ((System.Drawing.Image)(resources.GetObject("pb_icone.Image")));
-            this.pb_icone.Location = new System.Drawing.Point(113, 239);
+            this.pb_icone.Location = new System.Drawing.Point(113, 211);
             this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(378, 197);
+            this.pb_icone.Size = new System.Drawing.Size(418, 213);
             this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_icone.TabIndex = 65;
             this.pb_icone.TabStop = false;
@@ -196,9 +187,9 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(113, 206);
+            this.button3.Location = new System.Drawing.Point(113, 180);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(378, 32);
+            this.button3.Size = new System.Drawing.Size(418, 32);
             this.button3.TabIndex = 64;
             this.button3.Text = "Carregar imagem...";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -211,9 +202,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(121, 13);
+            this.label3.Location = new System.Drawing.Point(121, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 33);
+            this.label3.Size = new System.Drawing.Size(110, 32);
             this.label3.TabIndex = 78;
             this.label3.Text = "Localização:";
             // 
@@ -226,9 +217,9 @@
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.panel9);
             this.panel7.Controls.Add(this.panel10);
-            this.panel7.Location = new System.Drawing.Point(949, 204);
+            this.panel7.Location = new System.Drawing.Point(945, 204);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(321, 838);
+            this.panel7.Size = new System.Drawing.Size(310, 1044);
             this.panel7.TabIndex = 19;
             // 
             // panel9
@@ -238,7 +229,7 @@
             this.panel9.Controls.Add(this.label15);
             this.panel9.Location = new System.Drawing.Point(0, 170);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(318, 325);
+            this.panel9.Size = new System.Drawing.Size(310, 325);
             this.panel9.TabIndex = 25;
             // 
             // label15
@@ -258,7 +249,7 @@
             this.panel10.Controls.Add(this.label13);
             this.panel10.Location = new System.Drawing.Point(0, 5);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(318, 160);
+            this.panel10.Size = new System.Drawing.Size(310, 160);
             this.panel10.TabIndex = 19;
             // 
             // label13
@@ -278,7 +269,7 @@
             this.panel8.Controls.Add(this.label6);
             this.panel8.Location = new System.Drawing.Point(0, -2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1262, 200);
+            this.panel8.Size = new System.Drawing.Size(1269, 200);
             this.panel8.TabIndex = 21;
             // 
             // label6
@@ -294,16 +285,30 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Expresse sua opinião";
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(13, 206);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 92;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            this.btn_back.MouseLeave += new System.EventHandler(this.btn_back_MouseLeave);
+            this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_back_MouseMove);
+            // 
             // FormPostar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1299, 788);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1282, 788);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimizeBox = false;
@@ -322,12 +327,12 @@
             this.panel10.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtLocalizacao;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button3;
@@ -347,5 +352,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }

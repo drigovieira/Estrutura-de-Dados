@@ -179,6 +179,21 @@ namespace Pont_Finder.avalie
                 lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
             }
         }
+
+        private void btn_back_MouseLeave(object sender, EventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_1;
+        }
+
+        private void btn_back_MouseMove(object sender, MouseEventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_2;
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("Reclame", new FormAvalie());
+        }
     }
 }
 

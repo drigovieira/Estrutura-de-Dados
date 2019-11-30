@@ -242,5 +242,25 @@ namespace Pont_Finder.avalie
         {
 
         }
+
+        private void btn_back_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.back_1;
+        }
+
+        private void btn_back_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.back_2;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.back_1;
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.back_2;
+        }
     }
 }
