@@ -14,6 +14,7 @@ namespace Pont_Finder.servicos
     public partial class PostCardEdit : UserControl
     {
         classes.Post post;
+        classes.Empresa empresa;
 
         Bitmap imgLike = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
         Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
@@ -24,9 +25,10 @@ namespace Pont_Finder.servicos
         public PostCardEdit(int postId)
         {
             post = classes.PostList.SelectId(postId);
+            empresa = classes.ListaEmpresa.ForCpf(post.Cpf);
             InitializeComponent();
-            lb_titulo.Text = post.Titulo;
-            lb_descricao.Text = post.Descricao;
+            lb_titulo.Text += post.Titulo;
+            lb_descricao.Text += post.Descricao;
             lb_like.Text = ""+post.Likes;
         
             lb_data.Text = "Postado em: " + post.Data;
@@ -66,19 +68,7 @@ namespace Pont_Finder.servicos
 
         private void PostCardEdit_Load(object sender, EventArgs e)
         {
-            if (post.Cnpj == -1)
-            {
-                User u = UserList.selectCpf(post.Cpf);
-                pb_user.ImageLocation = u.Image;
-                lb_username.Text = u.Nome;
-            }
-            else
-            {
-                classes.Empresa emp = classes.ListaEmpresa.ForCpf(post.Cpf);
-                pb_user.ImageLocation = emp.Image;
-                lb_username.Text = emp.Nome;
-
-            }
+            
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -101,6 +91,16 @@ namespace Pont_Finder.servicos
         }
 
         private void Lb_titulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lb_descricao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pb_icone_Click(object sender, EventArgs e)
         {
 
         }
