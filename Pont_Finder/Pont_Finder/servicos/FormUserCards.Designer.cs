@@ -39,7 +39,7 @@
             // painel
             // 
             this.painel.AutoSize = true;
-            this.painel.BackColor = System.Drawing.Color.White;
+            this.painel.BackColor = System.Drawing.Color.Transparent;
             this.painel.Location = new System.Drawing.Point(127, 143);
             this.painel.MaximumSize = new System.Drawing.Size(1010, 0);
             this.painel.MinimumSize = new System.Drawing.Size(1010, 0);
@@ -50,7 +50,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
@@ -74,7 +74,7 @@
             // 
             // btn_back
             // 
-            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackColor = System.Drawing.Color.Transparent;
             this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_back.Location = new System.Drawing.Point(124, 97);
@@ -99,7 +99,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_back);
