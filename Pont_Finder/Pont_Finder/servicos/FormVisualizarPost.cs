@@ -13,12 +13,15 @@ namespace Pont_Finder.servicos
 {
     public partial class FormVisualizarPost : Form
     {
-        classes.Post post;
         Form anterior;
+        classes.Post post;
+        classes.Empresa empresa;
+        
 
         public FormVisualizarPost(int postId, Form anterior)
         {
             post = classes.PostList.SelectId(postId);
+            empresa = classes.ListaEmpresa.ForCpf(post.Cpf);
             this.anterior = anterior;
             InitializeComponent();
 
@@ -38,18 +41,13 @@ namespace Pont_Finder.servicos
             pb_icone.ImageLocation = post.Image;
             lb_descricao.Text = post.Descricao;
 
-    
-               
-                classes.Empresa emp = classes.ListaEmpresa.ForCpf(post.Cpf);
+            lb_categoria.Text = empresa.Categoria;
 
-                lb_fantasia.Text += emp.NomeFantasia;
-                lb_email.Text += emp.Email;
-                lb_endereco.Text += emp.Endereco;
-                lb_telefone.Text += emp.Telefone;
-                pb_empresa.ImageLocation = emp.Image;
-
-
-            
+            lb_fantasia.Text += empresa.NomeFantasia;
+            lb_email.Text += empresa.Email;
+            lb_endereco.Text += empresa.Endereco;
+            lb_telefone.Text += empresa.Telefone;
+            pb_empresa.ImageLocation = empresa.Image;
 
         }
 
@@ -140,6 +138,21 @@ namespace Pont_Finder.servicos
         private void button2_Click_1(object sender, EventArgs e)
         {
             FormPrincipal.MudarForm("servicos", new PerfilEmpresa());
+        }
+
+        private void Lb_email_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lb_valor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lb_titulo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

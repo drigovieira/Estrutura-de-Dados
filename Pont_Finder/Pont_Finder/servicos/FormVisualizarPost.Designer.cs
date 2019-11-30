@@ -44,6 +44,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.bt_negociar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.lb_categoria = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -65,22 +66,27 @@
             // lb_titulo
             // 
             this.lb_titulo.AutoSize = true;
-            this.lb_titulo.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titulo.Location = new System.Drawing.Point(472, 31);
+            this.lb_titulo.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titulo.Location = new System.Drawing.Point(454, 85);
+            this.lb_titulo.MaximumSize = new System.Drawing.Size(320, 50);
+            this.lb_titulo.MinimumSize = new System.Drawing.Size(320, 50);
             this.lb_titulo.Name = "lb_titulo";
-            this.lb_titulo.Size = new System.Drawing.Size(91, 36);
+            this.lb_titulo.Size = new System.Drawing.Size(320, 50);
             this.lb_titulo.TabIndex = 21;
-            this.lb_titulo.Text = "Titulo";
+            this.lb_titulo.Text = "Nome do Serviço";
+            this.lb_titulo.Click += new System.EventHandler(this.Lb_titulo_Click);
             // 
             // lb_valor
             // 
             this.lb_valor.AutoSize = true;
-            this.lb_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_valor.Location = new System.Drawing.Point(472, 107);
+            this.lb_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_valor.ForeColor = System.Drawing.Color.Green;
+            this.lb_valor.Location = new System.Drawing.Point(452, 173);
             this.lb_valor.Name = "lb_valor";
-            this.lb_valor.Size = new System.Drawing.Size(49, 36);
+            this.lb_valor.Size = new System.Drawing.Size(53, 38);
             this.lb_valor.TabIndex = 22;
             this.lb_valor.Text = "R$";
+            this.lb_valor.Click += new System.EventHandler(this.Lb_valor_Click);
             // 
             // panel1
             // 
@@ -125,13 +131,13 @@
             this.panel4.Controls.Add(this.lb_fantasia);
             this.panel4.Location = new System.Drawing.Point(799, 31);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(387, 167);
+            this.panel4.Size = new System.Drawing.Size(387, 145);
             this.panel4.TabIndex = 26;
             // 
             // pb_empresa
             // 
             this.pb_empresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_empresa.Location = new System.Drawing.Point(22, 12);
+            this.pb_empresa.Location = new System.Drawing.Point(3, 3);
             this.pb_empresa.Name = "pb_empresa";
             this.pb_empresa.Size = new System.Drawing.Size(100, 100);
             this.pb_empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -141,43 +147,52 @@
             // lb_telefone
             // 
             this.lb_telefone.AutoSize = true;
-            this.lb_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_telefone.Location = new System.Drawing.Point(146, 94);
+            this.lb_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_telefone.Location = new System.Drawing.Point(109, 118);
+            this.lb_telefone.MaximumSize = new System.Drawing.Size(265, 0);
+            this.lb_telefone.MinimumSize = new System.Drawing.Size(265, 0);
             this.lb_telefone.Name = "lb_telefone";
-            this.lb_telefone.Size = new System.Drawing.Size(76, 21);
+            this.lb_telefone.Size = new System.Drawing.Size(265, 18);
             this.lb_telefone.TabIndex = 4;
-            this.lb_telefone.Text = "Telefone: ";
+            this.lb_telefone.Text = "Telefone: ";
             // 
             // lb_endereco
             // 
             this.lb_endereco.AutoSize = true;
-            this.lb_endereco.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_endereco.Location = new System.Drawing.Point(147, 51);
+            this.lb_endereco.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_endereco.Location = new System.Drawing.Point(109, 40);
+            this.lb_endereco.MaximumSize = new System.Drawing.Size(265, 36);
+            this.lb_endereco.MinimumSize = new System.Drawing.Size(265, 36);
             this.lb_endereco.Name = "lb_endereco";
-            this.lb_endereco.Size = new System.Drawing.Size(81, 21);
+            this.lb_endereco.Size = new System.Drawing.Size(265, 36);
             this.lb_endereco.TabIndex = 3;
-            this.lb_endereco.Text = "Endereço: ";
+            this.lb_endereco.Text = "Endereço: ";
             this.lb_endereco.Click += new System.EventHandler(this.tb_Endereco_Click);
             // 
             // lb_email
             // 
             this.lb_email.AutoSize = true;
-            this.lb_email.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_email.Location = new System.Drawing.Point(147, 133);
+            this.lb_email.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_email.Location = new System.Drawing.Point(109, 78);
+            this.lb_email.MaximumSize = new System.Drawing.Size(265, 36);
+            this.lb_email.MinimumSize = new System.Drawing.Size(265, 36);
             this.lb_email.Name = "lb_email";
-            this.lb_email.Size = new System.Drawing.Size(61, 21);
+            this.lb_email.Size = new System.Drawing.Size(265, 36);
             this.lb_email.TabIndex = 2;
-            this.lb_email.Text = "E-mail: ";
+            this.lb_email.Text = "E-mail: ";
+            this.lb_email.Click += new System.EventHandler(this.Lb_email_Click);
             // 
             // lb_fantasia
             // 
             this.lb_fantasia.AutoSize = true;
-            this.lb_fantasia.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_fantasia.Location = new System.Drawing.Point(147, 12);
+            this.lb_fantasia.Font = new System.Drawing.Font("Microsoft PhagsPa", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_fantasia.Location = new System.Drawing.Point(109, 3);
+            this.lb_fantasia.MaximumSize = new System.Drawing.Size(265, 36);
+            this.lb_fantasia.MinimumSize = new System.Drawing.Size(265, 36);
             this.lb_fantasia.Name = "lb_fantasia";
-            this.lb_fantasia.Size = new System.Drawing.Size(60, 21);
+            this.lb_fantasia.Size = new System.Drawing.Size(265, 36);
             this.lb_fantasia.TabIndex = 0;
-            this.lb_fantasia.Text = "Nome: ";
+            this.lb_fantasia.Text = "Nome: ";
             this.lb_fantasia.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_back
@@ -200,7 +215,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1008, 214);
+            this.button1.Location = new System.Drawing.Point(1007, 205);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 51);
             this.button1.TabIndex = 33;
@@ -214,7 +229,7 @@
             this.bt_negociar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_negociar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_negociar.ForeColor = System.Drawing.Color.White;
-            this.bt_negociar.Location = new System.Drawing.Point(820, 214);
+            this.bt_negociar.Location = new System.Drawing.Point(821, 205);
             this.bt_negociar.Name = "bt_negociar";
             this.bt_negociar.Size = new System.Drawing.Size(157, 51);
             this.bt_negociar.TabIndex = 34;
@@ -228,13 +243,25 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(21, 118);
+            this.button2.Location = new System.Drawing.Point(3, 105);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 36);
             this.button2.TabIndex = 35;
             this.button2.Text = "Visualizar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // lb_categoria
+            // 
+            this.lb_categoria.AutoSize = true;
+            this.lb_categoria.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_categoria.Location = new System.Drawing.Point(454, 31);
+            this.lb_categoria.MaximumSize = new System.Drawing.Size(320, 50);
+            this.lb_categoria.MinimumSize = new System.Drawing.Size(320, 50);
+            this.lb_categoria.Name = "lb_categoria";
+            this.lb_categoria.Size = new System.Drawing.Size(320, 50);
+            this.lb_categoria.TabIndex = 35;
+            this.lb_categoria.Text = "Categoria";
             // 
             // FormVisualizarPost
             // 
@@ -243,6 +270,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.lb_categoria);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.bt_negociar);
             this.Controls.Add(this.button1);
@@ -287,5 +315,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button bt_negociar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lb_categoria;
     }
 }
