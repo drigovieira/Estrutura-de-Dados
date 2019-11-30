@@ -329,7 +329,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 1195);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1282, 100);
+            this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 6;
             // 
             // pb_principal
@@ -514,7 +514,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
