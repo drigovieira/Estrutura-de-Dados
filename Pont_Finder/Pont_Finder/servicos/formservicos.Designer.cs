@@ -58,11 +58,10 @@
             this.rb_servico = new System.Windows.Forms.RadioButton();
             this.rb_recente = new System.Windows.Forms.RadioButton();
             this.rb_antigo = new System.Windows.Forms.RadioButton();
-            this.rb_relevancia = new System.Windows.Forms.RadioButton();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.rb_categoria = new System.Windows.Forms.RadioButton();
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_proxFull = new System.Windows.Forms.Button();
-            this.rb_categoria = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -413,22 +412,10 @@
             this.rb_antigo.Text = "Mais Antigo";
             this.rb_antigo.UseVisualStyleBackColor = true;
             // 
-            // rb_relevancia
-            // 
-            this.rb_relevancia.AutoSize = true;
-            this.rb_relevancia.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_relevancia.Location = new System.Drawing.Point(16, 206);
-            this.rb_relevancia.Name = "rb_relevancia";
-            this.rb_relevancia.Size = new System.Drawing.Size(82, 20);
-            this.rb_relevancia.TabIndex = 49;
-            this.rb_relevancia.Text = "Relevância";
-            this.rb_relevancia.UseVisualStyleBackColor = true;
-            // 
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
             this.panel_left.Controls.Add(this.rb_categoria);
-            this.panel_left.Controls.Add(this.rb_relevancia);
             this.panel_left.Controls.Add(this.rb_antigo);
             this.panel_left.Controls.Add(this.rb_recente);
             this.panel_left.Controls.Add(this.rb_servico);
@@ -441,6 +428,17 @@
             this.panel_left.Name = "panel_left";
             this.panel_left.Size = new System.Drawing.Size(310, 259);
             this.panel_left.TabIndex = 15;
+            // 
+            // rb_categoria
+            // 
+            this.rb_categoria.AutoSize = true;
+            this.rb_categoria.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_categoria.Location = new System.Drawing.Point(162, 176);
+            this.rb_categoria.Name = "rb_categoria";
+            this.rb_categoria.Size = new System.Drawing.Size(76, 20);
+            this.rb_categoria.TabIndex = 50;
+            this.rb_categoria.Text = "Categoria";
+            this.rb_categoria.UseVisualStyleBackColor = true;
             // 
             // bt_antFull
             // 
@@ -471,17 +469,6 @@
             this.bt_proxFull.Text = "↠";
             this.bt_proxFull.UseVisualStyleBackColor = false;
             this.bt_proxFull.Click += new System.EventHandler(this.Bt_proxFull_Click);
-            // 
-            // rb_categoria
-            // 
-            this.rb_categoria.AutoSize = true;
-            this.rb_categoria.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_categoria.Location = new System.Drawing.Point(162, 176);
-            this.rb_categoria.Name = "rb_categoria";
-            this.rb_categoria.Size = new System.Drawing.Size(76, 20);
-            this.rb_categoria.TabIndex = 50;
-            this.rb_categoria.Text = "Categoria";
-            this.rb_categoria.UseVisualStyleBackColor = true;
             // 
             // FormServicos
             // 
@@ -555,7 +542,6 @@
         private System.Windows.Forms.RadioButton rb_servico;
         private System.Windows.Forms.RadioButton rb_recente;
         private System.Windows.Forms.RadioButton rb_antigo;
-        private System.Windows.Forms.RadioButton rb_relevancia;
         private System.Windows.Forms.Panel panel_left;
         private System.Windows.Forms.Button EditarPerfil;
         private System.Windows.Forms.Button bt_antFull;

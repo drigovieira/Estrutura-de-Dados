@@ -90,13 +90,18 @@ namespace Pont_Finder.servicos
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            if (rb_semfiltro.Checked)
+            if (rb_semfiltro.Checked || rb_servico.Checked || rb_recente.Checked)
             {
-
-            }
-            else if (rb_recente.Checked)
-            {
-                LoadFiltro();
+                ListaDePost.Clear();
+                foreach (var item in classes.PostList.PostsAtivo)
+                {
+                    if (item.Titulo.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                    {
+                        ListaDePost.Add(item);
+                    }
+                }
+                ListaDePost.Reverse();
+                Pesquisa();
             }
             else if (rb_antigo.Checked)
             {
@@ -108,8 +113,36 @@ namespace Pont_Finder.servicos
                         ListaDePost.Add(item);
                     }
                 }
+                Pesquisa();
+            }
+            else if (rb_empresa.Checked)
+            {
+                ListaDePost.Clear();
+                foreach (var item in classes.PostList.PostsAtivo)
+                {
+                    classes.Empresa emp = classes.ListaEmpresa.ForCpf(item.Cpf);
+                    if (emp.Nome.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim())
+                        || emp.Nome.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                    {
+                        ListaDePost.Add(item);
+                    }
+                }
                 ListaDePost.Reverse();
-                LoadPosts();
+                Pesquisa();
+            }
+            else if (rb_categoria.Checked)
+            {
+                ListaDePost.Clear();
+                foreach (var item in classes.PostList.PostsAtivo)
+                {
+                    classes.Empresa emp = classes.ListaEmpresa.ForCpf(item.Cpf);
+                    if (emp.Servico.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                    {
+                        ListaDePost.Add(item);
+                    }
+                }
+                ListaDePost.Reverse();
+                Pesquisa();
             }
 
 
@@ -297,7 +330,7 @@ namespace Pont_Finder.servicos
 
         }
 
-        public void LoadFiltro()
+        public void Pesquisa()
         {
             panel_center.Controls.Clear();
             pagTotal = ListaDePost.Count;
@@ -315,7 +348,7 @@ namespace Pont_Finder.servicos
 
             panel_center.Height = 180;
             int i = 0;
-
+            y = 5;
             foreach (var item in ListaDePost)
             {
                 if (i >= pagQuant)
