@@ -39,7 +39,6 @@
             this.lb_telefone = new System.Windows.Forms.Label();
             this.lb_endereco = new System.Windows.Forms.Label();
             this.lb_email = new System.Windows.Forms.Label();
-            this.lb_cpf = new System.Windows.Forms.Label();
             this.lb_fantasia = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -67,7 +66,7 @@
             // 
             this.lb_titulo.AutoSize = true;
             this.lb_titulo.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titulo.Location = new System.Drawing.Point(491, 31);
+            this.lb_titulo.Location = new System.Drawing.Point(472, 31);
             this.lb_titulo.Name = "lb_titulo";
             this.lb_titulo.Size = new System.Drawing.Size(91, 36);
             this.lb_titulo.TabIndex = 21;
@@ -77,7 +76,7 @@
             // 
             this.lb_valor.AutoSize = true;
             this.lb_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_valor.Location = new System.Drawing.Point(491, 107);
+            this.lb_valor.Location = new System.Drawing.Point(472, 107);
             this.lb_valor.Name = "lb_valor";
             this.lb_valor.Size = new System.Drawing.Size(49, 36);
             this.lb_valor.TabIndex = 22;
@@ -86,18 +85,20 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1029);
+            this.panel1.Location = new System.Drawing.Point(0, 684);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 23;
             // 
             // panel2
             // 
+            this.panel2.AutoScroll = true;
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lb_descricao);
             this.panel2.Location = new System.Drawing.Point(131, 284);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1055, 448);
+            this.panel2.Size = new System.Drawing.Size(1055, 400);
             this.panel2.TabIndex = 24;
             // 
             // lb_descricao
@@ -105,32 +106,34 @@
             this.lb_descricao.AutoSize = true;
             this.lb_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_descricao.Location = new System.Drawing.Point(51, 10);
-            this.lb_descricao.MaximumSize = new System.Drawing.Size(950, 425);
-            this.lb_descricao.MinimumSize = new System.Drawing.Size(950, 425);
+            this.lb_descricao.MaximumSize = new System.Drawing.Size(950, 0);
+            this.lb_descricao.MinimumSize = new System.Drawing.Size(950, 0);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(950, 425);
+            this.lb_descricao.Size = new System.Drawing.Size(950, 27);
             this.lb_descricao.TabIndex = 0;
             this.lb_descricao.Text = "Descrição geral";
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.pb_empresa);
             this.panel4.Controls.Add(this.lb_telefone);
             this.panel4.Controls.Add(this.lb_endereco);
             this.panel4.Controls.Add(this.lb_email);
-            this.panel4.Controls.Add(this.lb_cpf);
             this.panel4.Controls.Add(this.lb_fantasia);
-            this.panel4.Location = new System.Drawing.Point(131, 812);
+            this.panel4.Location = new System.Drawing.Point(799, 31);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1055, 217);
+            this.panel4.Size = new System.Drawing.Size(387, 167);
             this.panel4.TabIndex = 26;
             // 
             // pb_empresa
             // 
             this.pb_empresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_empresa.Location = new System.Drawing.Point(9, 8);
+            this.pb_empresa.Location = new System.Drawing.Point(22, 12);
             this.pb_empresa.Name = "pb_empresa";
-            this.pb_empresa.Size = new System.Drawing.Size(200, 200);
+            this.pb_empresa.Size = new System.Drawing.Size(100, 100);
             this.pb_empresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_empresa.TabIndex = 27;
             this.pb_empresa.TabStop = false;
@@ -138,58 +141,48 @@
             // lb_telefone
             // 
             this.lb_telefone.AutoSize = true;
-            this.lb_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_telefone.Location = new System.Drawing.Point(223, 173);
+            this.lb_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_telefone.Location = new System.Drawing.Point(146, 94);
             this.lb_telefone.Name = "lb_telefone";
-            this.lb_telefone.Size = new System.Drawing.Size(114, 32);
+            this.lb_telefone.Size = new System.Drawing.Size(76, 21);
             this.lb_telefone.TabIndex = 4;
-            this.lb_telefone.Text = "Telefone";
+            this.lb_telefone.Text = "Telefone: ";
             // 
             // lb_endereco
             // 
             this.lb_endereco.AutoSize = true;
-            this.lb_endereco.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_endereco.Location = new System.Drawing.Point(223, 134);
+            this.lb_endereco.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_endereco.Location = new System.Drawing.Point(147, 51);
             this.lb_endereco.Name = "lb_endereco";
-            this.lb_endereco.Size = new System.Drawing.Size(121, 32);
+            this.lb_endereco.Size = new System.Drawing.Size(81, 21);
             this.lb_endereco.TabIndex = 3;
-            this.lb_endereco.Text = "Endereco";
+            this.lb_endereco.Text = "Endereço: ";
             this.lb_endereco.Click += new System.EventHandler(this.tb_Endereco_Click);
             // 
             // lb_email
             // 
             this.lb_email.AutoSize = true;
-            this.lb_email.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_email.Location = new System.Drawing.Point(223, 51);
+            this.lb_email.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_email.Location = new System.Drawing.Point(147, 133);
             this.lb_email.Name = "lb_email";
-            this.lb_email.Size = new System.Drawing.Size(87, 32);
+            this.lb_email.Size = new System.Drawing.Size(61, 21);
             this.lb_email.TabIndex = 2;
-            this.lb_email.Text = "E-mail";
-            // 
-            // lb_cpf
-            // 
-            this.lb_cpf.AutoSize = true;
-            this.lb_cpf.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cpf.Location = new System.Drawing.Point(223, 93);
-            this.lb_cpf.Name = "lb_cpf";
-            this.lb_cpf.Size = new System.Drawing.Size(128, 32);
-            this.lb_cpf.TabIndex = 1;
-            this.lb_cpf.Text = "CPF/CNPJ";
+            this.lb_email.Text = "E-mail: ";
             // 
             // lb_fantasia
             // 
             this.lb_fantasia.AutoSize = true;
-            this.lb_fantasia.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_fantasia.Location = new System.Drawing.Point(223, 10);
+            this.lb_fantasia.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_fantasia.Location = new System.Drawing.Point(147, 12);
             this.lb_fantasia.Name = "lb_fantasia";
-            this.lb_fantasia.Size = new System.Drawing.Size(84, 32);
+            this.lb_fantasia.Size = new System.Drawing.Size(60, 21);
             this.lb_fantasia.TabIndex = 0;
-            this.lb_fantasia.Text = "Nome";
+            this.lb_fantasia.Text = "Nome: ";
             this.lb_fantasia.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_back
             // 
-            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackColor = System.Drawing.Color.Transparent;
             this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_back.Location = new System.Drawing.Point(41, 31);
@@ -207,7 +200,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1029, 104);
+            this.button1.Location = new System.Drawing.Point(1008, 214);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 51);
             this.button1.TabIndex = 33;
@@ -221,7 +214,7 @@
             this.bt_negociar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_negociar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_negociar.ForeColor = System.Drawing.Color.White;
-            this.bt_negociar.Location = new System.Drawing.Point(1029, 174);
+            this.bt_negociar.Location = new System.Drawing.Point(820, 214);
             this.bt_negociar.Name = "bt_negociar";
             this.bt_negociar.Size = new System.Drawing.Size(157, 51);
             this.bt_negociar.TabIndex = 34;
@@ -235,11 +228,11 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1029, 23);
+            this.button2.Location = new System.Drawing.Point(21, 118);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 59);
+            this.button2.Size = new System.Drawing.Size(100, 36);
             this.button2.TabIndex = 35;
-            this.button2.Text = "Visualizar empresa";
+            this.button2.Text = "Visualizar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
@@ -248,13 +241,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.bt_negociar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_back);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_valor);
@@ -288,7 +280,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lb_fantasia;
         private System.Windows.Forms.Label lb_email;
-        private System.Windows.Forms.Label lb_cpf;
         private System.Windows.Forms.Label lb_endereco;
         private System.Windows.Forms.Label lb_telefone;
         private System.Windows.Forms.PictureBox pb_empresa;

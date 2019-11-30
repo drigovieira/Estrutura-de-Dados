@@ -28,7 +28,7 @@ namespace Pont_Finder.servicos.classes
                 empresa.Nome = item.Nome;
                 empresa.NomeFantasia = item.NomeFantasia;
                 empresa.Email = item.Email;
-                empresa.Servico = item.Servico;
+                empresa.Categoria = item.Categoria;
                 empresa.Cnpj = item.Cnpj;
                 empresa.Cpf = item.Cpf;
                 empresa.Endereco = item.Endereco;
@@ -52,7 +52,7 @@ namespace Pont_Finder.servicos.classes
                     empresa.Cnpj = item.Cnpj;
                     empresa.Cpf = item.Cpf;
                     empresa.Endereco = item.Endereco;
-                    empresa.Servico = item.Servico;
+                    empresa.Categoria = item.Categoria;
                     empresa.Telefone = item.Telefone;
                     empresa.Status = item.Status;
                     empresa.Image = item.Image;
@@ -93,7 +93,7 @@ namespace Pont_Finder.servicos.classes
                     empresa.Endereco = item.Endereco;
                     empresa.Telefone = item.Telefone;
                     empresa.Image = item.Image;
-                    empresa.Servico = item.Servico;
+                    empresa.Categoria = item.Categoria;
                     empresa.Cnpj = item.Cnpj;
                     empresa.Cpf = item.Cpf;
                     empresa.Status = item.Status;
@@ -114,7 +114,7 @@ namespace Pont_Finder.servicos.classes
                 empresa.Email = item.Element("email").Value;
                 empresa.Telefone = item.Element("telefone").Value;
                 empresa.Endereco = item.Element("endereco").Value;
-                empresa.Servico = item.Element("service").Value;
+                empresa.Categoria = item.Element("service").Value;
                 empresa.Cnpj = long.Parse( item.Element("cnpj").Value);
                 empresa.Cpf = long.Parse(item.Element("cpf").Value);
                 empresa.Image = item.Element("image").Value;
@@ -134,7 +134,7 @@ namespace Pont_Finder.servicos.classes
                       new XElement("email", item.Email),
                       new XElement("telefone", item.Telefone),
                       new XElement("endereco", item.Endereco),
-                      new XElement("service", item.Servico),
+                      new XElement("service", item.Categoria),
                       new XElement("cnpj", item.Cnpj),
                       new XElement("cpf", item.Cpf),
                       new XElement("image", item.Image),

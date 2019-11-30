@@ -136,7 +136,7 @@ namespace Pont_Finder.servicos
                 foreach (var item in classes.PostList.PostsAtivo)
                 {
                     classes.Empresa emp = classes.ListaEmpresa.ForCpf(item.Cpf);
-                    if (emp.Servico.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                    if (emp.Categoria.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
                     {
                         ListaDePost.Add(item);
                     }

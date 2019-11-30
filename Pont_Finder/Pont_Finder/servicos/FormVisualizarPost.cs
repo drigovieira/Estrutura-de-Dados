@@ -38,34 +38,18 @@ namespace Pont_Finder.servicos
             pb_icone.ImageLocation = post.Image;
             lb_descricao.Text = post.Descricao;
 
-            if (post.Cnpj == -1)
-            {
-                User user = UserList.selectCpf(post.Cpf);
-
-                lb_fantasia.Text = "Nome: " + user.Nome;
-                lb_email.Text = "E-mail: " + user.Email;
-                pb_empresa.ImageLocation = user.Image;
-                lb_endereco.Text = "";
-                lb_telefone.Text = "";
-                lb_cpf.Text = "";
-               
-
-
-            }
-            else
-            {
+    
                
                 classes.Empresa emp = classes.ListaEmpresa.ForCpf(post.Cpf);
 
-                lb_fantasia.Text = "Nome: " + emp.NomeFantasia;
-                lb_email.Text = "E-mail: " + emp.Email;
-                lb_endereco.Text = "Endereco:" + emp.Endereco;
-                lb_telefone.Text = "Telefone: " + emp.Telefone;
-                lb_cpf.Text = "Cnpj: "+ emp.Cnpj;
+                lb_fantasia.Text += emp.NomeFantasia;
+                lb_email.Text += emp.Email;
+                lb_endereco.Text += emp.Endereco;
+                lb_telefone.Text += emp.Telefone;
                 pb_empresa.ImageLocation = emp.Image;
 
 
-            }
+            
 
         }
 

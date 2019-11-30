@@ -106,7 +106,7 @@ namespace Pont_Finder.servicos
                 tmp.Cpf = Session.Cpf;
                 tmp.Image = link;
                 tmp.Status = true;
-                tmp.Servico = servico;
+                tmp.Categoria = servico;
                 classes.ListaEmpresa.Add(tmp);
                 FormPrincipal.MudarForm("servicos", new FormServicos());
             }
