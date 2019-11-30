@@ -262,5 +262,15 @@ namespace Pont_Finder.avalie
         {
             pictureBox1.Image = Properties.Resources.back_2;
         }
+
+        private void Tb_resposta_TextChanged(object sender, EventArgs e)
+        {
+            tb_resposta.MaxLength = 500;
+        }
+
+        private void Panel4_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
     }
 }

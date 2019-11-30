@@ -536,6 +536,11 @@ namespace Pont_Finder
             lbTop5.Text = "Top 5 Restaurantes";
         }
 
+        private void PesquisaBox_TextChanged(object sender, EventArgs e)
+        {
+            PesquisaBox.MaxLength = 50;
+        }
+
         public void Listar()
         {            
             foreach (var teste in ProfileList.TopList(ProfileList.selectAll()))

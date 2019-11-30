@@ -73,12 +73,27 @@ namespace Pont_Finder.eventos
 
         private void Bnomeempresa_TextChanged(object sender, EventArgs e)
         {
-
+            Bnomeempresa.MaxLength = 50;
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void Bnomefantasia_TextChanged(object sender, EventArgs e)
+        {
+            Bnomefantasia.MaxLength = 75;
+        }
+
+        private void Bendereco_TextChanged(object sender, EventArgs e)
+        {
+            Bendereco.MaxLength = 50;
+        }
+
+        private void Bemail_TextChanged(object sender, EventArgs e)
+        {
+            Bemail.MaxLength = 50;
         }
     }
 }

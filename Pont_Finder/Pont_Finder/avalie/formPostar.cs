@@ -212,7 +212,7 @@ namespace Pont_Finder.avalie
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-
+            richTextBox1.MaxLength = 300;
         }
 
         private void txtLocalizacao_TextChanged(object sender, EventArgs e)

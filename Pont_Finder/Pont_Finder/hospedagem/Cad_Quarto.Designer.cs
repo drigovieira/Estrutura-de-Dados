@@ -72,6 +72,7 @@
             this.input_valor.Name = "input_valor";
             this.input_valor.Size = new System.Drawing.Size(200, 24);
             this.input_valor.TabIndex = 4;
+            this.input_valor.TextChanged += new System.EventHandler(this.Input_valor_TextChanged);
             // 
             // label6
             // 
@@ -100,6 +101,7 @@
             this.tb_qtdquarto.Name = "tb_qtdquarto";
             this.tb_qtdquarto.Size = new System.Drawing.Size(200, 24);
             this.tb_qtdquarto.TabIndex = 2;
+            this.tb_qtdquarto.TextChanged += new System.EventHandler(this.Tb_qtdquarto_TextChanged);
             // 
             // label5
             // 
@@ -128,6 +130,7 @@
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(415, 24);
             this.tb_nome.TabIndex = 0;
+            this.tb_nome.TextChanged += new System.EventHandler(this.Tb_nome_TextChanged);
             // 
             // checkBox7
             // 
@@ -387,6 +390,7 @@
             this.tb_solteiro.Name = "tb_solteiro";
             this.tb_solteiro.Size = new System.Drawing.Size(80, 24);
             this.tb_solteiro.TabIndex = 36;
+            this.tb_solteiro.TextChanged += new System.EventHandler(this.Tb_solteiro_TextChanged);
             // 
             // tb_casal
             // 
@@ -395,6 +399,7 @@
             this.tb_casal.Name = "tb_casal";
             this.tb_casal.Size = new System.Drawing.Size(80, 24);
             this.tb_casal.TabIndex = 35;
+            this.tb_casal.TextChanged += new System.EventHandler(this.Tb_casal_TextChanged);
             // 
             // label8
             // 

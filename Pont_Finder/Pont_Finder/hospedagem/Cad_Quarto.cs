@@ -256,5 +256,30 @@ namespace Pont_Finder.hospedagem
             tb_solteiro.Enabled = true;
             tb_casal.Enabled = true;
         }
+
+        private void Tb_nome_TextChanged(object sender, EventArgs e)
+        {
+            tb_nome.MaxLength = 50;
+        }
+
+        private void Tb_casal_TextChanged(object sender, EventArgs e)
+        {
+            tb_casal.MaxLength = 10;
+        }
+
+        private void Tb_solteiro_TextChanged(object sender, EventArgs e)
+        {
+            tb_solteiro.MaxLength = 10;
+        }
+
+        private void Tb_qtdquarto_TextChanged(object sender, EventArgs e)
+        {
+            tb_qtdquarto.MaxLength = 10;
+        }
+
+        private void Input_valor_TextChanged(object sender, EventArgs e)
+        {
+            input_valor.MaxLength = 10;
+        }
     }
 }

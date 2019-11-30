@@ -95,6 +95,7 @@
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(415, 24);
             this.tb_nome.TabIndex = 0;
+            this.tb_nome.TextChanged += new System.EventHandler(this.Tb_nome_TextChanged);
             // 
             // pb_img_1
             // 
@@ -106,6 +107,7 @@
             this.pb_img_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_img_1.TabIndex = 30;
             this.pb_img_1.TabStop = false;
+            this.pb_img_1.Click += new System.EventHandler(this.Pb_img_1_Click);
             // 
             // bt_cadastrar
             // 
@@ -138,6 +140,7 @@
             this.input_valor.Name = "input_valor";
             this.input_valor.Size = new System.Drawing.Size(200, 27);
             this.input_valor.TabIndex = 4;
+            this.input_valor.TextChanged += new System.EventHandler(this.Input_valor_TextChanged);
             // 
             // label3
             // 
@@ -166,6 +169,7 @@
             this.tb_qtdprato.Name = "tb_qtdprato";
             this.tb_qtdprato.Size = new System.Drawing.Size(200, 27);
             this.tb_qtdprato.TabIndex = 2;
+            this.tb_qtdprato.TextChanged += new System.EventHandler(this.Tb_qtdprato_TextChanged);
             // 
             // panel1
             // 
@@ -242,6 +246,7 @@
             this.inputIngrediente.Name = "inputIngrediente";
             this.inputIngrediente.Size = new System.Drawing.Size(200, 27);
             this.inputIngrediente.TabIndex = 38;
+            this.inputIngrediente.TextChanged += new System.EventHandler(this.InputIngrediente_TextChanged);
             // 
             // Ingredientes
             // 

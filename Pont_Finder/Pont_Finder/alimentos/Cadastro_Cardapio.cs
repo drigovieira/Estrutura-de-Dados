@@ -260,5 +260,30 @@ namespace Pont_Finder.alimentos
                 img = true;
             }
         }
+
+        private void Tb_qtdprato_TextChanged(object sender, EventArgs e)
+        {
+            tb_qtdprato.MaxLength = 5;
+        }
+
+        private void Tb_nome_TextChanged(object sender, EventArgs e)
+        {
+            tb_nome.MaxLength = 75;
+        }
+
+        private void InputIngrediente_TextChanged(object sender, EventArgs e)
+        {
+            inputIngrediente.MaxLength = 75;
+        }
+
+        private void Pb_img_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Input_valor_TextChanged(object sender, EventArgs e)
+        {
+            input_valor.MaxLength = 10;
+        }
     }
 }

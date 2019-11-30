@@ -363,6 +363,7 @@
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(415, 28);
             this.tb_email.TabIndex = 7;
+            this.tb_email.TextChanged += new System.EventHandler(this.Tb_email_TextChanged);
             // 
             // label5
             // 
@@ -381,6 +382,7 @@
             this.tb_nameFantasy.Name = "tb_nameFantasy";
             this.tb_nameFantasy.Size = new System.Drawing.Size(415, 28);
             this.tb_nameFantasy.TabIndex = 2;
+            this.tb_nameFantasy.TextChanged += new System.EventHandler(this.Tb_nameFantasy_TextChanged);
             // 
             // label6
             // 
@@ -399,6 +401,7 @@
             this.tb_endereco.Name = "tb_endereco";
             this.tb_endereco.Size = new System.Drawing.Size(415, 28);
             this.tb_endereco.TabIndex = 4;
+            this.tb_endereco.TextChanged += new System.EventHandler(this.Tb_endereco_TextChanged);
             // 
             // label7
             // 
@@ -439,6 +442,7 @@
             this.tb_nameEmp.Name = "tb_nameEmp";
             this.tb_nameEmp.Size = new System.Drawing.Size(415, 28);
             this.tb_nameEmp.TabIndex = 1;
+            this.tb_nameEmp.TextChanged += new System.EventHandler(this.Tb_nameEmp_TextChanged);
             // 
             // label12
             // 

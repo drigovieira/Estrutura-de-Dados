@@ -96,6 +96,7 @@
             this.Bemail.Name = "Bemail";
             this.Bemail.Size = new System.Drawing.Size(415, 24);
             this.Bemail.TabIndex = 5;
+            this.Bemail.TextChanged += new System.EventHandler(this.Bemail_TextChanged);
             // 
             // label4
             // 
@@ -114,6 +115,7 @@
             this.Bnomefantasia.Name = "Bnomefantasia";
             this.Bnomefantasia.Size = new System.Drawing.Size(415, 24);
             this.Bnomefantasia.TabIndex = 1;
+            this.Bnomefantasia.TextChanged += new System.EventHandler(this.Bnomefantasia_TextChanged);
             // 
             // label3
             // 
@@ -132,6 +134,7 @@
             this.Bendereco.Name = "Bendereco";
             this.Bendereco.Size = new System.Drawing.Size(415, 24);
             this.Bendereco.TabIndex = 3;
+            this.Bendereco.TextChanged += new System.EventHandler(this.Bendereco_TextChanged);
             // 
             // label7
             // 

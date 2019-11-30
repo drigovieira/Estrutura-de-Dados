@@ -279,7 +279,7 @@ namespace Pont_Finder.hospedagem
 
         private void Tb_pesquisar_TextChanged(object sender, EventArgs e)
         {
-
+            tb_pesquisar.MaxLength = 50;
         }
 
         private void label13_Click(object sender, EventArgs e)

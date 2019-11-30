@@ -195,6 +195,7 @@
             this.tbNum.Name = "tbNum";
             this.tbNum.Size = new System.Drawing.Size(170, 22);
             this.tbNum.TabIndex = 10;
+            this.tbNum.TextChanged += new System.EventHandler(this.TbNum_TextChanged);
             // 
             // label8
             // 
@@ -223,6 +224,7 @@
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(415, 22);
             this.tbEmail.TabIndex = 16;
+            this.tbEmail.TextChanged += new System.EventHandler(this.TbEmail_TextChanged);
             // 
             // tbRua
             // 
@@ -231,6 +233,7 @@
             this.tbRua.Name = "tbRua";
             this.tbRua.Size = new System.Drawing.Size(415, 22);
             this.tbRua.TabIndex = 8;
+            this.tbRua.TextChanged += new System.EventHandler(this.TbRua_TextChanged);
             // 
             // label5
             // 
@@ -249,6 +252,7 @@
             this.tbFantasia.Name = "tbFantasia";
             this.tbFantasia.Size = new System.Drawing.Size(415, 22);
             this.tbFantasia.TabIndex = 4;
+            this.tbFantasia.TextChanged += new System.EventHandler(this.TbFantasia_TextChanged);
             // 
             // label6
             // 
@@ -267,6 +271,7 @@
             this.tbBairro.Name = "tbBairro";
             this.tbBairro.Size = new System.Drawing.Size(415, 22);
             this.tbBairro.TabIndex = 6;
+            this.tbBairro.TextChanged += new System.EventHandler(this.TbBairro_TextChanged);
             // 
             // label7
             // 
@@ -297,6 +302,7 @@
             this.tbNomeEmpresa.Name = "tbNomeEmpresa";
             this.tbNomeEmpresa.Size = new System.Drawing.Size(415, 22);
             this.tbNomeEmpresa.TabIndex = 2;
+            this.tbNomeEmpresa.TextChanged += new System.EventHandler(this.TbNomeEmpresa_TextChanged);
             // 
             // label12
             // 

@@ -115,6 +115,7 @@
             this.PesquisaBox.Name = "PesquisaBox";
             this.PesquisaBox.Size = new System.Drawing.Size(254, 35);
             this.PesquisaBox.TabIndex = 2;
+            this.PesquisaBox.TextChanged += new System.EventHandler(this.PesquisaBox_TextChanged);
             // 
             // label3
             // 

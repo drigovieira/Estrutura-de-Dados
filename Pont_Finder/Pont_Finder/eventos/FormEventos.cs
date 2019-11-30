@@ -123,7 +123,7 @@ namespace Pont_Finder.eventos
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            tb_cat.MaxLength = 50;
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -230,6 +230,16 @@ namespace Pont_Finder.eventos
                 panel_center.Controls.Add(a);
                 i++;
             }
+        }
+
+        private void Tb_bai_TextChanged(object sender, EventArgs e)
+        {
+            tb_bai.MaxLength = 50;
+        }
+
+        private void Tb_fai_TextChanged(object sender, EventArgs e)
+        {
+            tb_fai.MaxLength = 50;
         }
     }
 }

@@ -51,5 +51,25 @@ namespace Pont_Finder.hospedagem
         {
 
         }
+
+        private void Tb_nameEmp_TextChanged(object sender, EventArgs e)
+        {
+            tb_nameEmp.MaxLength = 50;
+        }
+
+        private void Tb_nameFantasy_TextChanged(object sender, EventArgs e)
+        {
+            tb_nameFantasy.MaxLength = 75;
+        }
+
+        private void Tb_endereco_TextChanged(object sender, EventArgs e)
+        {
+            tb_endereco.MaxLength = 50;
+        }
+
+        private void Tb_email_TextChanged(object sender, EventArgs e)
+        {
+            tb_email.MaxLength = 50;
+        }
     }
 }

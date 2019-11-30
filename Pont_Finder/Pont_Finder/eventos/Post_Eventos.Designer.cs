@@ -34,7 +34,6 @@
             this.Blocal = new System.Windows.Forms.TextBox();
             this.Bvalor = new System.Windows.Forms.TextBox();
             this.Bpatrocionadores = new System.Windows.Forms.TextBox();
-            this.Bhorario = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -54,7 +53,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Bhorario = new System.Windows.Forms.Panel();
             this.tb_ingresso_total = new System.Windows.Forms.TextBox();
             this.tb_ingresso_disponivel = new System.Windows.Forms.TextBox();
             this.lb_ingresso_disponivel = new System.Windows.Forms.Label();
@@ -66,8 +65,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.Bhorario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,6 +119,7 @@
             this.Blocal.Name = "Blocal";
             this.Blocal.Size = new System.Drawing.Size(266, 25);
             this.Blocal.TabIndex = 5;
+            this.Blocal.TextChanged += new System.EventHandler(this.Blocal_TextChanged);
             // 
             // Bvalor
             // 
@@ -127,6 +128,7 @@
             this.Bvalor.Name = "Bvalor";
             this.Bvalor.Size = new System.Drawing.Size(118, 24);
             this.Bvalor.TabIndex = 8;
+            this.Bvalor.TextChanged += new System.EventHandler(this.Bvalor_TextChanged);
             // 
             // Bpatrocionadores
             // 
@@ -135,14 +137,7 @@
             this.Bpatrocionadores.Name = "Bpatrocionadores";
             this.Bpatrocionadores.Size = new System.Drawing.Size(210, 24);
             this.Bpatrocionadores.TabIndex = 6;
-            // 
-            // Bhorario
-            // 
-            this.Bhorario.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bhorario.Location = new System.Drawing.Point(103, 1274);
-            this.Bhorario.Name = "Bhorario";
-            this.Bhorario.Size = new System.Drawing.Size(100, 24);
-            this.Bhorario.TabIndex = 4;
+            this.Bpatrocionadores.TextChanged += new System.EventHandler(this.Bpatrocionadores_TextChanged);
             // 
             // label11
             // 
@@ -349,41 +344,41 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Adicionar imagens";
             // 
-            // panel1
+            // Bhorario
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.tb_ingresso_total);
-            this.panel1.Controls.Add(this.tb_ingresso_disponivel);
-            this.panel1.Controls.Add(this.lb_ingresso_disponivel);
-            this.panel1.Controls.Add(this.lb_ingresso_total);
-            this.panel1.Controls.Add(this.lb_nome);
-            this.panel1.Controls.Add(this.tb_nome);
-            this.panel1.Controls.Add(this.Bdata);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.CBfaixaetaria);
-            this.panel1.Controls.Add(this.Blocal);
-            this.panel1.Controls.Add(this.Bvalor);
-            this.panel1.Controls.Add(this.Bpatrocionadores);
-            this.panel1.Controls.Add(this.Bhorario);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.Bdescricao);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.pb_icone);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(320, 81);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(625, 1415);
-            this.panel1.TabIndex = 5;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.Bhorario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Bhorario.Controls.Add(this.maskedTextBox1);
+            this.Bhorario.Controls.Add(this.tb_ingresso_total);
+            this.Bhorario.Controls.Add(this.tb_ingresso_disponivel);
+            this.Bhorario.Controls.Add(this.lb_ingresso_disponivel);
+            this.Bhorario.Controls.Add(this.lb_ingresso_total);
+            this.Bhorario.Controls.Add(this.lb_nome);
+            this.Bhorario.Controls.Add(this.tb_nome);
+            this.Bhorario.Controls.Add(this.Bdata);
+            this.Bhorario.Controls.Add(this.button2);
+            this.Bhorario.Controls.Add(this.CBfaixaetaria);
+            this.Bhorario.Controls.Add(this.Blocal);
+            this.Bhorario.Controls.Add(this.Bvalor);
+            this.Bhorario.Controls.Add(this.Bpatrocionadores);
+            this.Bhorario.Controls.Add(this.label11);
+            this.Bhorario.Controls.Add(this.label10);
+            this.Bhorario.Controls.Add(this.label9);
+            this.Bhorario.Controls.Add(this.label8);
+            this.Bhorario.Controls.Add(this.label7);
+            this.Bhorario.Controls.Add(this.label6);
+            this.Bhorario.Controls.Add(this.label5);
+            this.Bhorario.Controls.Add(this.Bdescricao);
+            this.Bhorario.Controls.Add(this.label4);
+            this.Bhorario.Controls.Add(this.panel3);
+            this.Bhorario.Controls.Add(this.label3);
+            this.Bhorario.Controls.Add(this.button1);
+            this.Bhorario.Controls.Add(this.pb_icone);
+            this.Bhorario.Controls.Add(this.label2);
+            this.Bhorario.Location = new System.Drawing.Point(320, 81);
+            this.Bhorario.Name = "Bhorario";
+            this.Bhorario.Size = new System.Drawing.Size(625, 1415);
+            this.Bhorario.TabIndex = 5;
+            this.Bhorario.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // tb_ingresso_total
             // 
@@ -392,6 +387,7 @@
             this.tb_ingresso_total.Name = "tb_ingresso_total";
             this.tb_ingresso_total.Size = new System.Drawing.Size(100, 24);
             this.tb_ingresso_total.TabIndex = 1;
+            this.tb_ingresso_total.TextChanged += new System.EventHandler(this.Tb_ingresso_total_TextChanged);
             // 
             // tb_ingresso_disponivel
             // 
@@ -400,6 +396,7 @@
             this.tb_ingresso_disponivel.Name = "tb_ingresso_disponivel";
             this.tb_ingresso_disponivel.Size = new System.Drawing.Size(100, 24);
             this.tb_ingresso_disponivel.TabIndex = 2;
+            this.tb_ingresso_disponivel.TextChanged += new System.EventHandler(this.Tb_ingresso_disponivel_TextChanged);
             // 
             // lb_ingresso_disponivel
             // 
@@ -438,6 +435,7 @@
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(100, 24);
             this.tb_nome.TabIndex = 0;
+            this.tb_nome.TextChanged += new System.EventHandler(this.Tb_nome_TextChanged);
             // 
             // Bdata
             // 
@@ -484,6 +482,16 @@
             // 
             this.openIcone.FileName = "openIcone";
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(103, 1275);
+            this.maskedTextBox1.Mask = "00:00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(104, 20);
+            this.maskedTextBox1.TabIndex = 20;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.MaskedTextBox1_MaskInputRejected);
+            // 
             // Post_Eventos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,7 +501,7 @@
             this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Bhorario);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
@@ -502,8 +510,8 @@
             this.Text = "Post_Eventos";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Bhorario.ResumeLayout(false);
+            this.Bhorario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -518,7 +526,6 @@
         private System.Windows.Forms.TextBox Blocal;
         private System.Windows.Forms.TextBox Bvalor;
         private System.Windows.Forms.TextBox Bpatrocionadores;
-        private System.Windows.Forms.TextBox Bhorario;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -538,7 +545,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Bhorario;
         private System.Windows.Forms.PictureBox pb_icone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12;
@@ -550,5 +557,6 @@
         private System.Windows.Forms.TextBox tb_ingresso_disponivel;
         private System.Windows.Forms.Label lb_ingresso_disponivel;
         private System.Windows.Forms.Label lb_ingresso_total;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

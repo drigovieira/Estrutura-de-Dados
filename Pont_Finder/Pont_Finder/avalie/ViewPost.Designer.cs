@@ -80,6 +80,7 @@
             this.tb_resposta.Size = new System.Drawing.Size(558, 119);
             this.tb_resposta.TabIndex = 69;
             this.tb_resposta.Text = "";
+            this.tb_resposta.TextChanged += new System.EventHandler(this.Tb_resposta_TextChanged);
             // 
             // openIcone
             // 
@@ -284,6 +285,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1020, 397);
             this.panel4.TabIndex = 90;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
             // label4
             // 

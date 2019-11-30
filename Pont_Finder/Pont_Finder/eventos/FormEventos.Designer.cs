@@ -67,6 +67,7 @@
             this.tb_bai.Name = "tb_bai";
             this.tb_bai.Size = new System.Drawing.Size(130, 24);
             this.tb_bai.TabIndex = 6;
+            this.tb_bai.TextChanged += new System.EventHandler(this.Tb_bai_TextChanged);
             // 
             // label15
             // 
@@ -85,6 +86,7 @@
             this.tb_fai.Name = "tb_fai";
             this.tb_fai.Size = new System.Drawing.Size(130, 24);
             this.tb_fai.TabIndex = 4;
+            this.tb_fai.TextChanged += new System.EventHandler(this.Tb_fai_TextChanged);
             // 
             // label14
             // 

@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             this.lb_deslike = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
             this.pb_down = new System.Windows.Forms.PictureBox();
@@ -53,15 +54,14 @@
             this.cb_pro = new System.Windows.Forms.ComboBox();
             this.tb_loc = new System.Windows.Forms.TextBox();
             this.tb_des = new System.Windows.Forms.RichTextBox();
-            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -242,6 +242,16 @@
             this.panel5.TabIndex = 95;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint_1);
             // 
+            // imagemuser
+            // 
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemuser.Location = new System.Drawing.Point(83, 10);
+            this.imagemuser.Name = "imagemuser";
+            this.imagemuser.Size = new System.Drawing.Size(57, 57);
+            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagemuser.TabIndex = 114;
+            this.imagemuser.TabStop = false;
+            // 
             // lb_deslike
             // 
             this.lb_deslike.AutoSize = true;
@@ -359,16 +369,7 @@
             this.tb_des.Size = new System.Drawing.Size(394, 152);
             this.tb_des.TabIndex = 102;
             this.tb_des.Text = "";
-            // 
-            // imagemuser
-            // 
-            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imagemuser.Location = new System.Drawing.Point(83, 10);
-            this.imagemuser.Name = "imagemuser";
-            this.imagemuser.Size = new System.Drawing.Size(57, 57);
-            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagemuser.TabIndex = 114;
-            this.imagemuser.TabStop = false;
+            this.tb_des.TextChanged += new System.EventHandler(this.Tb_des_TextChanged);
             // 
             // EditeMeusPosts
             // 
@@ -389,10 +390,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.ResumeLayout(false);
 
         }

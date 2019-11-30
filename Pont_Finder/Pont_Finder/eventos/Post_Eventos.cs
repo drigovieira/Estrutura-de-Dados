@@ -145,5 +145,40 @@ namespace Pont_Finder.eventos
                 img = true;
             }
         }
+
+        private void Tb_nome_TextChanged(object sender, EventArgs e)
+        {
+            tb_nome.MaxLength = 75;
+        }
+
+        private void Tb_ingresso_total_TextChanged(object sender, EventArgs e)
+        {
+            tb_ingresso_total.MaxLength = 10;
+        }
+
+        private void Tb_ingresso_disponivel_TextChanged(object sender, EventArgs e)
+        {
+            tb_ingresso_disponivel.MaxLength = 10;
+        }
+
+        private void MaskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void Blocal_TextChanged(object sender, EventArgs e)
+        {
+            Blocal.MaxLength = 75;
+        }
+
+        private void Bpatrocionadores_TextChanged(object sender, EventArgs e)
+        {
+            Bpatrocionadores.MaxLength = 50;
+        }
+
+        private void Bvalor_TextChanged(object sender, EventArgs e)
+        {
+            Bvalor.MaxLength = 10;
+        }
     }
 }

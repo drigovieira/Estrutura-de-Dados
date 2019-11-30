@@ -21,5 +21,35 @@ namespace Pont_Finder.alimentos
         {
 
         }
+
+        private void TbNomeEmpresa_TextChanged(object sender, EventArgs e)
+        {
+            tbNomeEmpresa.MaxLength = 50;
+        }
+
+        private void TbFantasia_TextChanged(object sender, EventArgs e)
+        {
+            tbFantasia.MaxLength = 75;
+        }
+
+        private void TbBairro_TextChanged(object sender, EventArgs e)
+        {
+            tbBairro.MaxLength = 50;
+        }
+
+        private void TbRua_TextChanged(object sender, EventArgs e)
+        {
+            tbRua.MaxLength = 50;
+        }
+
+        private void TbNum_TextChanged(object sender, EventArgs e)
+        {
+            tbNum.MaxLength = 10;
+        }
+
+        private void TbEmail_TextChanged(object sender, EventArgs e)
+        {
+            tbEmail.MaxLength = 50;
+        }
     }
 }

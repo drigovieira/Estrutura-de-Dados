@@ -52,6 +52,21 @@ namespace Pont_Finder.hospedagem
             btn_back.Image = Properties.Resources.back_2;
         }
 
+        private void Tb_nome_TextChanged(object sender, EventArgs e)
+        {
+            tb_nome.MaxLength = 50;
+        }
+
+        private void Tb_qtdquarto_TextChanged(object sender, EventArgs e)
+        {
+            tb_qtdquarto.MaxLength = 10;
+        }
+
+        private void Input_valor_TextChanged(object sender, EventArgs e)
+        {
+            input_valor.MaxLength = 10;
+        }
+
         OpenFileDialog openimg = new OpenFileDialog();
 
         Form anterior;

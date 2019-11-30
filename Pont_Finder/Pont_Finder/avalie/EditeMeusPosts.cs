@@ -249,5 +249,10 @@ namespace Pont_Finder.avalie
                 MessageBox.Show("É necessário estar logado para avaliar");
             }
         }
+
+        private void Tb_des_TextChanged(object sender, EventArgs e)
+        {
+            tb_des.MaxLength = 300;
+        }
     }
 }
