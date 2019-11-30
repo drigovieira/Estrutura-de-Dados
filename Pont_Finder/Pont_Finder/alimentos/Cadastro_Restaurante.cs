@@ -136,8 +136,15 @@ namespace Pont_Finder.alimentos
                 MessageBox.Show("Empresa Cadastrada!", "Status Operation:");
                 if (cbCardapio.Checked == true)
                 {
-                    alimentos.Cadastro_Cardapio cadCardapio = new Cadastro_Cardapio();
-                    FormPrincipal.MudarForm("alimentos", cadCardapio);
+                    foreach(var i in CompanyList.selectAll())
+                    {
+                        if (i.Email.Equals(emp.Email))
+                        {
+                            alimentos.Cadastro_Produto cadCardapio = new Cadastro_Produto(i.Id);
+                            FormPrincipal.MudarForm("alimentos", cadCardapio);
+                            break;
+                        }   
+                    }                    
                 }
             }catch(Exception exp)
             {

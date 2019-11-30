@@ -33,11 +33,11 @@
             this.qtdComida = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.NomeComida = new System.Windows.Forms.Label();
-            this.pb_hotel = new System.Windows.Forms.PictureBox();
+            this.pb_alimento = new System.Windows.Forms.PictureBox();
             this.CategoriasPrato = new System.Windows.Forms.Label();
             this.lb_rs = new System.Windows.Forms.Label();
             this.bt_visualizar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_alimento)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -93,15 +93,15 @@
             this.NomeComida.TabIndex = 1;
             this.NomeComida.Text = "Nome";
             // 
-            // pb_hotel
+            // pb_alimento
             // 
-            this.pb_hotel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_hotel.Location = new System.Drawing.Point(12, 12);
-            this.pb_hotel.Name = "pb_hotel";
-            this.pb_hotel.Size = new System.Drawing.Size(150, 130);
-            this.pb_hotel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_hotel.TabIndex = 4;
-            this.pb_hotel.TabStop = false;
+            this.pb_alimento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_alimento.Location = new System.Drawing.Point(12, 12);
+            this.pb_alimento.Name = "pb_alimento";
+            this.pb_alimento.Size = new System.Drawing.Size(150, 130);
+            this.pb_alimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_alimento.TabIndex = 4;
+            this.pb_alimento.TabStop = false;
             // 
             // CategoriasPrato
             // 
@@ -147,7 +147,7 @@
             this.Controls.Add(this.bt_visualizar);
             this.Controls.Add(this.lb_rs);
             this.Controls.Add(this.CategoriasPrato);
-            this.Controls.Add(this.pb_hotel);
+            this.Controls.Add(this.pb_alimento);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.NomeComida);
             this.Controls.Add(this.IngredienteComida);
@@ -156,7 +156,7 @@
             this.Name = "Item_Alimentos";
             this.Size = new System.Drawing.Size(625, 190);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Item_Alimentos_Paint);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_alimento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,7 +168,7 @@
         private System.Windows.Forms.Label IngredienteComida;
         private System.Windows.Forms.Label qtdComida;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pb_hotel;
+        private System.Windows.Forms.PictureBox pb_alimento;
         private System.Windows.Forms.Label CategoriasPrato;
         private System.Windows.Forms.Label lb_rs;
         private System.Windows.Forms.Button bt_visualizar;

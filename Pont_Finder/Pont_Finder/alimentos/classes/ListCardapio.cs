@@ -23,7 +23,7 @@ namespace Pont_Finder.alimentos
             cardapio.Add(car);
             cardapio[cardapio.IndexOf(car)].Id = cardapio.IndexOf(car);
         }
-        public object select(int index)
+        public static Cardapio select(int index)
         {
             Cardapio lista = new Cardapio();
             foreach (var item in cardapio)

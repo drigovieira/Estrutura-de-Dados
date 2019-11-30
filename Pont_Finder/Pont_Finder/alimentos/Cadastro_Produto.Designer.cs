@@ -33,7 +33,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.Cardapio = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.PictureBox();
@@ -79,6 +79,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Adicionar Produto";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // panel2
             // 
@@ -88,15 +89,15 @@
             this.panel2.Size = new System.Drawing.Size(310, 691);
             this.panel2.TabIndex = 59;
             // 
-            // panel11
+            // Cardapio
             // 
-            this.panel11.AutoScroll = true;
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Location = new System.Drawing.Point(320, 301);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(625, 691);
-            this.panel11.TabIndex = 60;
+            this.Cardapio.AutoScroll = true;
+            this.Cardapio.BackColor = System.Drawing.Color.White;
+            this.Cardapio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Cardapio.Location = new System.Drawing.Point(320, 301);
+            this.Cardapio.Name = "Cardapio";
+            this.Cardapio.Size = new System.Drawing.Size(625, 691);
+            this.Cardapio.TabIndex = 60;
             // 
             // label15
             // 
@@ -162,7 +163,7 @@
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.Cardapio);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -182,7 +183,7 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel Cardapio;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

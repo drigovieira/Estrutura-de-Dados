@@ -16,9 +16,11 @@ namespace Pont_Finder.alimentos
     {
         private List<string> categorias = new List<string>();
         private List<string> ingredientesList = new List<string>();
+        private int ID;
         private bool img = false;
-        public Cadastro_Cardapio()
+        public Cadastro_Cardapio(int idEmpresa)
         {
+            ID = idEmpresa;
             InitializeComponent();
         }
 
@@ -37,6 +39,7 @@ namespace Pont_Finder.alimentos
                 menu.Qtd = float.Parse(tb_qtdprato.Text);
                 menu.Ingredientes = ingredientesList;
                 menu.Preco = float.Parse(input_valor.Text);
+                menu.IdEmpresa = ID;
                 ListCardapio.CardapioAdd(menu);
                 foreach (var item in ListCardapio.selectAll())
                 {
@@ -63,6 +66,8 @@ namespace Pont_Finder.alimentos
                     }
                 }
                 MessageBox.Show("Item adicionado ao cardápio!", "Status Operation:");
+                alimentos.Cadastro_Produto cadProduto = new Cadastro_Produto(ID);
+                FormPrincipal.MudarForm("alimentos", cadProduto);
                 tb_nome.Clear();
                 tb_qtdprato.Clear();
                 Ingredientes.Items.Clear();

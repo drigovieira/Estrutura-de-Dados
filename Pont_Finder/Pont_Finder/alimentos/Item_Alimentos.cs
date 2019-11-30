@@ -12,7 +12,7 @@ namespace Pont_Finder.alimentos
 {
     public partial class Item_Alimentos : UserControl
     {
-        private string NomeItem, ImageItem;
+        private string NomeItem, ImageItem, maisIngredientes, maisCategoria;
         private float PrecoItem, qtdItem;
         private List<string> IngredientesItem, CategoriasItem;
         private int IdItem;
@@ -25,7 +25,13 @@ namespace Pont_Finder.alimentos
             IngredientesItem = Ingredientes;
             CategoriasItem = Categorias;
             IdItem = Id;
+            maisIngredientes = "";
+            maisCategoria = "";
             InitializeComponent();
+            if (ListCardapio.select(Id).Image != null)
+                pb_alimento.ImageLocation = CompanyList.select(Id).Image;
+            else
+                pb_alimento.ImageLocation = "..//..//alimentos//data//image//empresas//offImage.jpg";
         }        
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,8 +41,8 @@ namespace Pont_Finder.alimentos
 
         private void Item_Alimentos_Paint(object sender, PaintEventArgs e)
         {
-            NomeComida.Text = NomeItem;
-            string maisIngredientes = "";
+            NomeComida.Text = NomeItem;    
+    
             /*int cont1 = 0;
             foreach (var ingred in IngredientesItem)
             {
@@ -57,8 +63,7 @@ namespace Pont_Finder.alimentos
                 
             }*/
             IngredienteComida.Text = maisIngredientes;
-            qtdComida.Text = qtdItem.ToString();
-            string maisCategoria = "";
+            qtdComida.Text = qtdItem.ToString();            
             /*int cont2 = 0;
             foreach (var aliment in CategoriasItem)
             {
@@ -93,7 +98,7 @@ namespace Pont_Finder.alimentos
                 }
             }*/
             CategoriasPrato.Text = maisCategoria;
-            lb_rs.Text += PrecoItem.ToString();
+            lb_rs.Text = "R$" + PrecoItem.ToString();
         }
 
         private void label2_Click(object sender, EventArgs e)
