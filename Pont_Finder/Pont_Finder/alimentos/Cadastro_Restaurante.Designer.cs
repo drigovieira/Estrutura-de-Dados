@@ -376,6 +376,7 @@
             this.cbEntrega.TabIndex = 0;
             this.cbEntrega.Text = "Utilizar serviço de pedidos para entrega (Delivery).";
             this.cbEntrega.UseVisualStyleBackColor = true;
+            this.cbEntrega.Visible = false;
             this.cbEntrega.CheckedChanged += new System.EventHandler(this.CbEntregaSim_CheckedChanged);
             // 
             // cbCardapio
@@ -737,7 +738,7 @@
             this.btnCad.Name = "btnCad";
             this.btnCad.Size = new System.Drawing.Size(220, 50);
             this.btnCad.TabIndex = 14;
-            this.btnCad.Text = "Continuar";
+            this.btnCad.Text = "Cadastrar";
             this.btnCad.UseVisualStyleBackColor = false;
             this.btnCad.Click += new System.EventHandler(this.BtnCad_Click);
             // 

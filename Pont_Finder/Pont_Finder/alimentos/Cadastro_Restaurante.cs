@@ -131,6 +131,16 @@ namespace Pont_Finder.alimentos
                 }
                 emp.Image = link;
                 emp.FuncionamentoEmp = funcionamentos;
+                if(cbCardapio.Checked == true)
+                {
+                    emp.SttsCardapio = true;
+                    if (cbEntrega.Checked == true)
+                    {
+                        emp.SttsEntrega = true;
+                    }
+                    else { emp.SttsEntrega = false; }
+                }
+                else { emp.SttsCardapio = false; emp.SttsEntrega = false; }
                 CompanyList.CompAdd(emp);                
 
                 MessageBox.Show("Empresa Cadastrada!", "Status Operation:");
@@ -435,8 +445,13 @@ namespace Pont_Finder.alimentos
         }
 
         private void CbRegistSim_CheckedChanged(object sender, EventArgs e)
-        {
-
+        {           
+            if (cbCardapio.Checked == true)
+            {
+                btnCad.Text = "Continuar";
+                cbEntrega.Visible = true;
+            }
+            else { cbEntrega.Visible = false; btnCad.Text = "Cadastrar"; }
         }        
 
         private void CbEntregaSim_CheckedChanged(object sender, EventArgs e)

@@ -31,7 +31,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.IngredienteComida = new System.Windows.Forms.Label();
             this.qtdComida = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.NomeComida = new System.Windows.Forms.Label();
             this.pb_alimento = new System.Windows.Forms.PictureBox();
             this.CategoriasPrato = new System.Windows.Forms.Label();
@@ -71,17 +70,6 @@
             this.qtdComida.TabIndex = 2;
             this.qtdComida.Text = "Tamanho";
             this.qtdComida.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(200, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Preço";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // NomeComida
             // 
@@ -152,7 +140,6 @@
             this.Controls.Add(this.NomeComida);
             this.Controls.Add(this.IngredienteComida);
             this.Controls.Add(this.qtdComida);
-            this.Controls.Add(this.label1);
             this.Name = "Item_Alimentos";
             this.Size = new System.Drawing.Size(625, 190);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Item_Alimentos_Paint);
@@ -167,7 +154,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label IngredienteComida;
         private System.Windows.Forms.Label qtdComida;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pb_alimento;
         private System.Windows.Forms.Label CategoriasPrato;
         private System.Windows.Forms.Label lb_rs;

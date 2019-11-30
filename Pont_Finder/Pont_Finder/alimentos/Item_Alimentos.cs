@@ -32,21 +32,11 @@ namespace Pont_Finder.alimentos
                 pb_alimento.ImageLocation = CompanyList.select(Id).Image;
             else
                 pb_alimento.ImageLocation = "..//..//alimentos//data//image//empresas//offImage.jpg";
-        }        
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Item_Alimentos_Paint(object sender, PaintEventArgs e)
-        {
-            NomeComida.Text = NomeItem;    
-    
-            /*int cont1 = 0;
+            int cont1 = 0;
             foreach (var ingred in IngredientesItem)
             {
-                if (maisIngredientes.Equals("")){
+                if (maisIngredientes.Equals(""))
+                {
                     maisIngredientes = ingred;
                     cont1++;
                 }
@@ -57,14 +47,11 @@ namespace Pont_Finder.alimentos
                         cont1 = 0;
                         maisIngredientes += "\n";
                     }
-                    maisIngredientes += " / "+ingred;
+                    maisIngredientes += " / " + ingred;
                     cont1++;
                 }
-                
-            }*/
-            IngredienteComida.Text = maisIngredientes;
-            qtdComida.Text = qtdItem.ToString();            
-            /*int cont2 = 0;
+            }
+            int cont2 = 0;
             foreach (var aliment in CategoriasItem)
             {
                 if (CategoriasItem.Count > 3)
@@ -76,7 +63,7 @@ namespace Pont_Finder.alimentos
                     }
                     else
                     {
-                        if(cont2 == 3)
+                        if (cont2 == 3)
                         {
                             maisCategoria += " e mais ...";
                             break;
@@ -96,9 +83,21 @@ namespace Pont_Finder.alimentos
                         maisCategoria += " / " + aliment;
                     }
                 }
-            }*/
+            }
+        }        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Item_Alimentos_Paint(object sender, PaintEventArgs e)
+        {
+            NomeComida.Text = NomeItem;                
+            IngredienteComida.Text = maisIngredientes;
+            qtdComida.Text = "KG "+ qtdItem.ToString("000,00");                        
             CategoriasPrato.Text = maisCategoria;
-            lb_rs.Text = "R$" + PrecoItem.ToString();
+            lb_rs.Text = "R$" + PrecoItem.ToString("000,00");
         }
 
         private void label2_Click(object sender, EventArgs e)
