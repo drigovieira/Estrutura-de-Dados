@@ -46,15 +46,26 @@ namespace Pont_Finder.servicos
 
         private void button3_Click(object sender, EventArgs e)
         {
+
+
             bool validation = false;
-            if ( (cb_servico.SelectedItem+"").Equals("") )
+
+
+            if ((cb_servico.SelectedItem + "").Equals(""))
             {
                 MessageBox.Show("Selecione o tipo de serviço");
+
             }
-            else
+            else if (Validation.Cnpj(mb_cnpj.Text))
             {
                 validation = true;
             }
+            else
+            {
+                MessageBox.Show("Cnpj Invalido");
+            }
+
+
 
             if (validation)
             {

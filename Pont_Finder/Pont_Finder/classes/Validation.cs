@@ -65,7 +65,7 @@ namespace Pont_Finder
                 }
             }
         }
-        public bool Cnpj(string cnpj)
+        public static bool Cnpj(string cnpj)
 
         {
             string cnpjT;                                                                           //Temporário
