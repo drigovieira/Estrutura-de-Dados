@@ -59,10 +59,14 @@
             this.lb_rs_cartao = new System.Windows.Forms.Label();
             this.lb_rs_boleto = new System.Windows.Forms.Label();
             this.lb_txt1 = new System.Windows.Forms.Label();
-            this.bt_reservar = new System.Windows.Forms.Button();
             this.lb_txt2 = new System.Windows.Forms.Label();
             this.lb_nome_quarto = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.bt_reservar = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel4.SuspendLayout();
@@ -152,7 +156,7 @@
             // 
             this.lb_txt7.AutoSize = true;
             this.lb_txt7.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt7.Location = new System.Drawing.Point(485, 412);
+            this.lb_txt7.Location = new System.Drawing.Point(485, 432);
             this.lb_txt7.Name = "lb_txt7";
             this.lb_txt7.Size = new System.Drawing.Size(96, 27);
             this.lb_txt7.TabIndex = 31;
@@ -162,7 +166,7 @@
             // 
             this.lb_parcelas.AutoSize = true;
             this.lb_parcelas.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_parcelas.Location = new System.Drawing.Point(977, 235);
+            this.lb_parcelas.Location = new System.Drawing.Point(976, 212);
             this.lb_parcelas.Name = "lb_parcelas";
             this.lb_parcelas.Size = new System.Drawing.Size(49, 21);
             this.lb_parcelas.TabIndex = 25;
@@ -172,7 +176,7 @@
             // 
             this.lb_txt5.AutoSize = true;
             this.lb_txt5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt5.Location = new System.Drawing.Point(881, 169);
+            this.lb_txt5.Location = new System.Drawing.Point(880, 146);
             this.lb_txt5.Name = "lb_txt5";
             this.lb_txt5.Size = new System.Drawing.Size(28, 21);
             this.lb_txt5.TabIndex = 25;
@@ -182,7 +186,7 @@
             // 
             this.lb_txt4.AutoSize = true;
             this.lb_txt4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt4.Location = new System.Drawing.Point(822, 132);
+            this.lb_txt4.Location = new System.Drawing.Point(821, 109);
             this.lb_txt4.Name = "lb_txt4";
             this.lb_txt4.Size = new System.Drawing.Size(186, 21);
             this.lb_txt4.TabIndex = 25;
@@ -192,7 +196,7 @@
             // 
             this.lb_txt3.AutoSize = true;
             this.lb_txt3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt3.Location = new System.Drawing.Point(888, 54);
+            this.lb_txt3.Location = new System.Drawing.Point(887, 31);
             this.lb_txt3.Name = "lb_txt3";
             this.lb_txt3.Size = new System.Drawing.Size(45, 17);
             this.lb_txt3.TabIndex = 25;
@@ -225,7 +229,7 @@
             this.panel4.Controls.Add(this.lb_txt10);
             this.panel4.Controls.Add(this.lb_emp_fantasia);
             this.panel4.Controls.Add(this.lb_txt11);
-            this.panel4.Location = new System.Drawing.Point(40, 451);
+            this.panel4.Location = new System.Drawing.Point(40, 471);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(966, 666);
             this.panel4.TabIndex = 37;
@@ -325,7 +329,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 1195);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1265, 100);
+            this.panel2.Size = new System.Drawing.Size(1282, 100);
             this.panel2.TabIndex = 6;
             // 
             // pb_principal
@@ -342,7 +346,7 @@
             // 
             this.lb_txt6.AutoSize = true;
             this.lb_txt6.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt6.Location = new System.Drawing.Point(815, 235);
+            this.lb_txt6.Location = new System.Drawing.Point(814, 212);
             this.lb_txt6.Name = "lb_txt6";
             this.lb_txt6.Size = new System.Drawing.Size(211, 21);
             this.lb_txt6.TabIndex = 35;
@@ -353,7 +357,7 @@
             this.lb_rs_cartao.AutoSize = true;
             this.lb_rs_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs_cartao.ForeColor = System.Drawing.Color.Red;
-            this.lb_rs_cartao.Location = new System.Drawing.Point(836, 190);
+            this.lb_rs_cartao.Location = new System.Drawing.Point(835, 167);
             this.lb_rs_cartao.Name = "lb_rs_cartao";
             this.lb_rs_cartao.Size = new System.Drawing.Size(49, 36);
             this.lb_rs_cartao.TabIndex = 34;
@@ -364,7 +368,7 @@
             this.lb_rs_boleto.AutoSize = true;
             this.lb_rs_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs_boleto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs_boleto.Location = new System.Drawing.Point(834, 77);
+            this.lb_rs_boleto.Location = new System.Drawing.Point(833, 54);
             this.lb_rs_boleto.Name = "lb_rs_boleto";
             this.lb_rs_boleto.Size = new System.Drawing.Size(63, 46);
             this.lb_rs_boleto.TabIndex = 34;
@@ -379,18 +383,6 @@
             this.lb_txt1.Size = new System.Drawing.Size(181, 21);
             this.lb_txt1.TabIndex = 28;
             this.lb_txt1.Text = "Disponibilidade do Hotel";
-            // 
-            // bt_reservar
-            // 
-            this.bt_reservar.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_reservar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_reservar.ForeColor = System.Drawing.Color.White;
-            this.bt_reservar.Location = new System.Drawing.Point(826, 291);
-            this.bt_reservar.Name = "bt_reservar";
-            this.bt_reservar.Size = new System.Drawing.Size(164, 44);
-            this.bt_reservar.TabIndex = 26;
-            this.bt_reservar.Text = "Reservar";
-            this.bt_reservar.UseVisualStyleBackColor = false;
             // 
             // lb_txt2
             // 
@@ -416,6 +408,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pn_icons_quarto);
             this.panel1.Controls.Add(this.pn_icons_hotel);
             this.panel1.Controls.Add(this.lb_txt7);
@@ -438,6 +434,58 @@
             this.panel1.Size = new System.Drawing.Size(1055, 1166);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(785, 357);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(240, 28);
+            this.dateTimePicker2.TabIndex = 57;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(783, 330);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 17);
+            this.label4.TabIndex = 56;
+            this.label4.Text = "Data de saída:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(785, 291);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(240, 28);
+            this.dateTimePicker1.TabIndex = 55;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(783, 265);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 17);
+            this.label3.TabIndex = 54;
+            this.label3.Text = "Data de entrada:";
+            // 
+            // bt_reservar
+            // 
+            this.bt_reservar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_reservar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_reservar.ForeColor = System.Drawing.Color.White;
+            this.bt_reservar.Location = new System.Drawing.Point(828, 402);
+            this.bt_reservar.Name = "bt_reservar";
+            this.bt_reservar.Size = new System.Drawing.Size(164, 44);
+            this.bt_reservar.TabIndex = 26;
+            this.bt_reservar.Text = "Reservar";
+            this.bt_reservar.UseVisualStyleBackColor = false;
+            this.bt_reservar.Click += new System.EventHandler(this.bt_reservar_Click);
             // 
             // btn_back
             // 
@@ -466,7 +514,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1299, 675);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -516,7 +564,6 @@
         private System.Windows.Forms.Label lb_rs_cartao;
         private System.Windows.Forms.Label lb_rs_boleto;
         private System.Windows.Forms.Label lb_txt1;
-        private System.Windows.Forms.Button bt_reservar;
         private System.Windows.Forms.Label lb_txt2;
         private System.Windows.Forms.Label lb_nome_quarto;
         private System.Windows.Forms.Panel panel1;
@@ -525,5 +572,10 @@
         private System.Windows.Forms.Label lb_tipo_quarto;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button bt_reservar;
     }
 }

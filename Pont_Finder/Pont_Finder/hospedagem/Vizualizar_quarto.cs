@@ -19,6 +19,14 @@ namespace Pont_Finder.hospedagem
         private int id, qtd_pessoas, qtd_disponivel, telefone_emp;
         private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp;
 
+        private void bt_reservar_Click(object sender, EventArgs e)
+        {
+        
+              hospedagem.Reservar_VerificarDados reserv = new Reservar_VerificarDados(new Hosp_Home());
+              FormPrincipal.MudarForm("hospedagem", reserv);
+            
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (fotin != null)

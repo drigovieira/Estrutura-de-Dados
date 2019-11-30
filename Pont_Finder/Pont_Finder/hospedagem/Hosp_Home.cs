@@ -286,5 +286,16 @@ namespace Pont_Finder.hospedagem
         {
 
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            hospedagem.Lista_de_reservas_user listRes = new Lista_de_reservas_user();
+            FormPrincipal.MudarForm("hospedagem", listRes);
+        }
     }
 }
