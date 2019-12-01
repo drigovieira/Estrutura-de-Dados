@@ -28,5 +28,10 @@ namespace Pont_Finder.eventos
             eventos.Cartao cartao = new eventos.Cartao();
             FormPrincipal.MudarForm("eventos", cartao);
         }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
