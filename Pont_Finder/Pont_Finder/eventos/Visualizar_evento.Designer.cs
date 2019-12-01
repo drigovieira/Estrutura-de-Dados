@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lb_txt7 = new System.Windows.Forms.Label();
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.pn_galery = new System.Windows.Forms.Panel();
@@ -55,7 +56,6 @@
             this.bt_comprar = new System.Windows.Forms.Button();
             this.lb_nome_evento = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
@@ -81,6 +81,17 @@
             this.panel1.Size = new System.Drawing.Size(1055, 1166);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
+            this.label1.Location = new System.Drawing.Point(849, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 46);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "R$";
             // 
             // lb_txt7
             // 
@@ -340,6 +351,7 @@
             this.bt_comprar.TabIndex = 26;
             this.bt_comprar.Text = "Comprar";
             this.bt_comprar.UseVisualStyleBackColor = false;
+            this.bt_comprar.Click += new System.EventHandler(this.Bt_comprar_Click);
             // 
             // lb_nome_evento
             // 
@@ -363,17 +375,6 @@
             this.btn_back.TabIndex = 15;
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.label1.Location = new System.Drawing.Point(849, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 46);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "R$";
             // 
             // Visualizar_evento
             // 

@@ -59,5 +59,11 @@ namespace Pont_Finder.eventos
         {
 
         }
+
+        private void Bt_comprar_Click(object sender, EventArgs e)
+        {
+            eventos.Tela_compra compra = new eventos.Tela_compra();
+            FormPrincipal.MudarForm("eventos", compra);
+        }
     }
 }
