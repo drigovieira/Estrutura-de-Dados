@@ -30,7 +30,7 @@ namespace Pont_Finder.servicos
             if (this.post.Image != null)
                 pb_icone.ImageLocation = this.post.Image;
             else
-                pb_icone.ImageLocation = "..//..//servicos//data//images//posts//offImage.png";
+                pb_icone.ImageLocation = "..//..//servicos//data//images//offImage.jpg";
 
    
             lb_like.Text = this.post.Joinha + "";

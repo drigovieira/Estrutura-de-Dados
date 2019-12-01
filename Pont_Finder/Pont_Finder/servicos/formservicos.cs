@@ -57,13 +57,7 @@ namespace Pont_Finder.servicos
           
         }
 
-        private void Button1_Click_1(object sender, EventArgs e)
-        {
-            if (Session.Online)
-                FormPrincipal.MudarForm("servicos", new FormPost());           
-            else
-                MessageBox.Show("É nessessario estar logado para cadastrar um serviço");                   
-        }
+   
 
         private void Button2_Click(object sender, EventArgs e)
         {

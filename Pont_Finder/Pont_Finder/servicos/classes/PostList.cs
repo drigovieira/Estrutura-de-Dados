@@ -14,8 +14,8 @@ namespace Pont_Finder.servicos.classes
         public static void Add(Post post)
         {
             if (post.Image == null)
-                post.Image = "..//..//servicos//data//images//posts//offImage.png";
-           
+                post.Image = "..//..//servicos//data//images//offImage.jpg";
+
             Post p = new Post();
             p.Id = post.Id;
             p.Titulo = post.Titulo;

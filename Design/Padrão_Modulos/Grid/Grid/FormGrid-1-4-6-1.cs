@@ -16,5 +16,10 @@ namespace Grid
         {
             InitializeComponent();
         }
+
+        private void FormGrid_1_4_6_1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

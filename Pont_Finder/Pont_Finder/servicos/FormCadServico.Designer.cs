@@ -1,6 +1,6 @@
 ﻿namespace Pont_Finder.servicos
 {
-    partial class FormPostEdit
+    partial class FormCadServico
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPostEdit));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadServico));
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tb_descricao = new System.Windows.Forms.TextBox();
             this.pb_icone = new System.Windows.Forms.PictureBox();
@@ -37,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cancelar = new System.Windows.Forms.Button();
             this.publicar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bt_icone = new System.Windows.Forms.Button();
@@ -51,6 +51,19 @@
             this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(115, 24);
+            this.label5.MaximumSize = new System.Drawing.Size(1040, 0);
+            this.label5.MinimumSize = new System.Drawing.Size(1040, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(1040, 31);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "Edição de Serviço";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -62,7 +75,6 @@
             this.label4.Size = new System.Drawing.Size(300, 27);
             this.label4.TabIndex = 10;
             this.label4.Text = "Descrição";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // tb_descricao
             // 
@@ -75,7 +87,6 @@
             this.tb_descricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tb_descricao.Size = new System.Drawing.Size(563, 333);
             this.tb_descricao.TabIndex = 4;
-            this.tb_descricao.TextChanged += new System.EventHandler(this.tb_descricao_TextChanged);
             // 
             // pb_icone
             // 
@@ -101,7 +112,6 @@
             this.label3.Size = new System.Drawing.Size(300, 27);
             this.label3.TabIndex = 8;
             this.label3.Text = "Nome Do Serviço";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // tb_titulo
             // 
@@ -110,7 +120,6 @@
             this.tb_titulo.Name = "tb_titulo";
             this.tb_titulo.Size = new System.Drawing.Size(300, 34);
             this.tb_titulo.TabIndex = 2;
-            this.tb_titulo.TextChanged += new System.EventHandler(this.tb_titulo_TextChanged);
             // 
             // label2
             // 
@@ -123,7 +132,6 @@
             this.label2.Size = new System.Drawing.Size(300, 27);
             this.label2.TabIndex = 6;
             this.label2.Text = "Valor do Serviço";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // cancelar
             // 
@@ -149,22 +157,9 @@
             this.publicar.Name = "publicar";
             this.publicar.Size = new System.Drawing.Size(130, 35);
             this.publicar.TabIndex = 5;
-            this.publicar.Text = "Editar";
+            this.publicar.Text = "Cadastrar";
             this.publicar.UseVisualStyleBackColor = false;
             this.publicar.Click += new System.EventHandler(this.Publicar_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(115, 24);
-            this.label5.MaximumSize = new System.Drawing.Size(1040, 0);
-            this.label5.MinimumSize = new System.Drawing.Size(1040, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(1040, 31);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "Edição de Serviço";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // openIcone
             // 
@@ -176,7 +171,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 575);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1282, 100);
-            this.panel2.TabIndex = 40;
+            this.panel2.TabIndex = 45;
             // 
             // bt_icone
             // 
@@ -191,7 +186,7 @@
             this.bt_icone.Size = new System.Drawing.Size(40, 30);
             this.bt_icone.TabIndex = 11;
             this.bt_icone.UseVisualStyleBackColor = false;
-            this.bt_icone.Click += new System.EventHandler(this.Button1_Click);
+            this.bt_icone.Click += new System.EventHandler(this.Bt_icone_Click);
             // 
             // panel4
             // 
@@ -205,8 +200,7 @@
             this.panel4.Location = new System.Drawing.Point(111, 74);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(414, 493);
-            this.panel4.TabIndex = 20;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
+            this.panel4.TabIndex = 43;
             // 
             // tb_valor
             // 
@@ -234,7 +228,6 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Alterar Imagem ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // panel6
             // 
@@ -245,25 +238,23 @@
             this.panel6.Location = new System.Drawing.Point(531, 74);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(624, 493);
-            this.panel6.TabIndex = 42;
+            this.panel6.TabIndex = 46;
             // 
-            // FormPostEdit
+            // FormCadServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
-            this.Name = "FormPostEdit";
-            this.Text = "FormPostEdit";
-            this.Load += new System.EventHandler(this.FormPostEdit_Load);
+            this.Name = "FormCadServico";
+            this.Text = "FormCadServico";
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -276,6 +267,7 @@
         }
 
         #endregion
+
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tb_descricao;
@@ -289,8 +281,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button bt_icone;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown tb_valor;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel6;
     }
 }

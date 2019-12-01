@@ -397,6 +397,12 @@
     <Compile Include="servicos\FormCadEmpresa.Designer.cs">
       <DependentUpon>FormCadEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\FormCadServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormCadServico.Designer.cs">
+      <DependentUpon>FormCadServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\FormEditarPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -704,6 +710,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\FormCadEmpresa.resx">
       <DependentUpon>FormCadEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormCadServico.resx">
+      <DependentUpon>FormCadServico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\FormEditarPerfil.resx">
       <DependentUpon>FormEditarPerfil.cs</DependentUpon>

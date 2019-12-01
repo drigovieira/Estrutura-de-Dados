@@ -52,11 +52,11 @@
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1042, 101);
+            this.button4.Location = new System.Drawing.Point(962, 102);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 36);
+            this.button4.Size = new System.Drawing.Size(130, 35);
             this.button4.TabIndex = 9;
             this.button4.Text = "Adicionar";
             this.button4.UseVisualStyleBackColor = false;
