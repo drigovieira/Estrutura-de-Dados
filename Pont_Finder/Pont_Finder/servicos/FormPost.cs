@@ -21,14 +21,7 @@ namespace Pont_Finder.servicos
             pb_icone.SizeMode = PictureBoxSizeMode.StretchImage;
 
             classes.Empresa emp = classes.ListaEmpresa.ForCpf(Session.Cpf);
-            if (emp == null)
-            {
-                bt_empresa.Enabled = false;
-            }
-            else
-            {
-                bt_empresa.Enabled = true;
-            }
+           
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
@@ -108,7 +101,7 @@ namespace Pont_Finder.servicos
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            tb_valor.MaxLength = 10;
+
         }
 
         private void label1_Click(object sender, EventArgs e)

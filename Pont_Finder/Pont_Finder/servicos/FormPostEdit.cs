@@ -35,7 +35,7 @@ namespace Pont_Finder.servicos
         private void Publicar_Click(object sender, EventArgs e)
         {
             post.Titulo = tb_titulo.Text;
-            post.Valor = double.Parse(tb_valor.Text);
+            post.Valor = double.Parse(tb_valor.Value + "");
             post.Descricao = tb_descricao.Text;
 
             string link = null;
@@ -103,10 +103,35 @@ namespace Pont_Finder.servicos
 
         private void tb_valor_TextChanged(object sender, EventArgs e)
         {
-            tb_valor.MaxLength = 10;
+      
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (openIcone.ShowDialog() == DialogResult.OK)
+            {
+                pb_icone.ImageLocation = openIcone.FileName;
+                pb_icone.Load();
+                img = true;
+            }
+        }
+
+        private void Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormPostEdit_Load(object sender, EventArgs e)
         {
 
         }
