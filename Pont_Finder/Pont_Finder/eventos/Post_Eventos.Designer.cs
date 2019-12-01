@@ -54,6 +54,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.Bhorario = new System.Windows.Forms.Panel();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.tb_ingresso_total = new System.Windows.Forms.TextBox();
             this.tb_ingresso_disponivel = new System.Windows.Forms.TextBox();
             this.lb_ingresso_disponivel = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.panel3.SuspendLayout();
             this.Bhorario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
@@ -233,7 +233,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 1496);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1265, 100);
+            this.panel4.Size = new System.Drawing.Size(1027, 100);
             this.panel4.TabIndex = 6;
             // 
             // panel3
@@ -380,6 +380,16 @@
             this.Bhorario.TabIndex = 5;
             this.Bhorario.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(103, 1275);
+            this.maskedTextBox1.Mask = "00:00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(104, 20);
+            this.maskedTextBox1.TabIndex = 20;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.MaskedTextBox1_MaskInputRejected);
+            // 
             // tb_ingresso_total
             // 
             this.tb_ingresso_total.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -482,30 +492,20 @@
             // 
             this.openIcone.FileName = "openIcone";
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(103, 1275);
-            this.maskedTextBox1.Mask = "00:00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(104, 20);
-            this.maskedTextBox1.TabIndex = 20;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.MaskedTextBox1_MaskInputRejected);
-            // 
             // Post_Eventos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1044, 675);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.Bhorario);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
-            this.MinimumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1022, 675);
             this.Name = "Post_Eventos";
             this.Text = "Post_Eventos";
             this.panel3.ResumeLayout(false);

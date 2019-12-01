@@ -25,7 +25,8 @@ namespace Pont_Finder.eventos
             lb_data.Text = post.Data;
             lb_categoria.Text = post.Categoria;
             lb_valor.Text = post.Valor;
-
+            lb_classifica.Text = post.Idade;
+            lb_local.Text = post.Local;
             
 
 

@@ -40,6 +40,10 @@
             this.lb_categoria = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bt_visualizar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lb_local = new System.Windows.Forms.Label();
+            this.lb_classifica = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +52,7 @@
             this.lb_valor.AutoSize = true;
             this.lb_valor.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_valor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_valor.Location = new System.Drawing.Point(525, 43);
+            this.lb_valor.Location = new System.Drawing.Point(567, 45);
             this.lb_valor.Name = "lb_valor";
             this.lb_valor.Size = new System.Drawing.Size(44, 54);
             this.lb_valor.TabIndex = 11;
@@ -90,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.label1.Location = new System.Drawing.Point(473, 43);
+            this.label1.Location = new System.Drawing.Point(514, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 54);
             this.label1.TabIndex = 14;
@@ -153,7 +157,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(485, 13);
+            this.label3.Location = new System.Drawing.Point(492, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(119, 25);
             this.label3.TabIndex = 21;
@@ -165,7 +169,7 @@
             this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bt_visualizar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_visualizar.ForeColor = System.Drawing.Color.White;
-            this.bt_visualizar.Location = new System.Drawing.Point(489, 110);
+            this.bt_visualizar.Location = new System.Drawing.Point(501, 113);
             this.bt_visualizar.Name = "bt_visualizar";
             this.bt_visualizar.Size = new System.Drawing.Size(110, 34);
             this.bt_visualizar.TabIndex = 29;
@@ -173,11 +177,55 @@
             this.bt_visualizar.UseVisualStyleBackColor = false;
             this.bt_visualizar.Click += new System.EventHandler(this.Bt_visualizar_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(348, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 25);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Local:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(349, 113);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 25);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Classificação:";
+            // 
+            // lb_local
+            // 
+            this.lb_local.AutoSize = true;
+            this.lb_local.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_local.Location = new System.Drawing.Point(401, 45);
+            this.lb_local.Name = "lb_local";
+            this.lb_local.Size = new System.Drawing.Size(19, 25);
+            this.lb_local.TabIndex = 32;
+            this.lb_local.Text = "v";
+            // 
+            // lb_classifica
+            // 
+            this.lb_classifica.AutoSize = true;
+            this.lb_classifica.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_classifica.Location = new System.Drawing.Point(446, 114);
+            this.lb_classifica.Name = "lb_classifica";
+            this.lb_classifica.Size = new System.Drawing.Size(19, 25);
+            this.lb_classifica.TabIndex = 33;
+            this.lb_classifica.Text = "v";
+            // 
             // Post_Card
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(218)))), ((int)(((byte)(243)))));
+            this.Controls.Add(this.lb_classifica);
+            this.Controls.Add(this.lb_local);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.bt_visualizar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
@@ -212,5 +260,9 @@
         private System.Windows.Forms.Label lb_categoria;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bt_visualizar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lb_local;
+        private System.Windows.Forms.Label lb_classifica;
     }
 }
