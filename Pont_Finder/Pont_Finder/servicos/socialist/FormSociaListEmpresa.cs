@@ -39,8 +39,9 @@ namespace Pont_Finder.servicos.socialist
             lb_empresa.Text = empresa.Nome;
             pb_empresa.ImageLocation = empresa.Image;
 
+
             int y = 5;
-            panel_chat.Height = 180;
+            //panel_chat.Height = 180;
             int i = 0;
             foreach (var item in SolicitadoList.Solicitados)
             {
@@ -50,7 +51,7 @@ namespace Pont_Finder.servicos.socialist
                     UserControl_ChatUser a = new UserControl_ChatUser(item.PostId, "empresa", item.CpfUser);
                     a.Location = new Point(10, (y));
                     y = y + a.Height + 5;
-                    panel_chat.Height = panel_chat.Height + 180;
+                    //panel_chat.Height = panel_chat.Height + a.Height+5;
                     panel_chat.Controls.Add(a);
                     i++;
                 }
@@ -99,6 +100,26 @@ namespace Pont_Finder.servicos.socialist
                 else if (item.PostId == post.Id && item.Para == Session.Cpf && item.De == usuario.Cpf)
                     tb_mensagens.Text += usuario.Nome + ": " + item.Msg + "\n";                
             }
+        }
+
+        private void Bt_limpar_Click(object sender, EventArgs e)
+        {
+            tb_mensagem.Clear();
+        }
+
+        private void Pb_usericone_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Tb_mensagens_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
