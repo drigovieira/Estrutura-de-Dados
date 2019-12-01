@@ -26,7 +26,7 @@ namespace Pont_Finder
             cat = false;
             local = 0;
             local1 = 0;
-            pagQuant = 1;
+            pagQuant = 10;
             lista = CompanyList.selectAll();
             InitializeComponent();
             Listar();
@@ -572,8 +572,8 @@ namespace Pont_Finder
 
             if (p.Equals("ant") || p.Equals("anterior"))
                 pagina = -1;
-            else if (p.Equals("prox") || p.Equals("proxima"))
-                pagina = -2;
+            else if (p.Equals("prox") || p.Equals("proxima")) 
+                pagina = -2;            
             else if (p.Equals("1") || p.Equals("primeira"))
                 pagina = 1;
             else if (p.Equals("0") || p.Equals("ultima"))
@@ -582,7 +582,7 @@ namespace Pont_Finder
                 pagina = int.Parse(p);
 
 
-            if (lista.Count > pagTotal)
+            if (lista.Count > pagQuant)
             {
                 if (pagina == 1 && (pagAtual > 1))
                 {
@@ -655,8 +655,7 @@ namespace Pont_Finder
                     if (pagAtual < pagTotal)
                     {
                         local = 0;
-                        ListarEmpresas.Controls.Clear();
-                        /*
+                        ListarEmpresas.Controls.Clear();                        
                         int pg = (pagAtual * pagQuant);
 
                         for (int i = 0; i < pagQuant; i++)
@@ -671,7 +670,7 @@ namespace Pont_Finder
 
                         }
                         pagAtual++;
-                        lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;*/
+                        lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
                     }
                 }
             }

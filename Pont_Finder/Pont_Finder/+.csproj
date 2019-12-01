@@ -226,6 +226,12 @@
     <Compile Include="eventos\CadEmpresa.Designer.cs">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="eventos\Cartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\Cartao.Designer.cs">
+      <DependentUpon>Cartao.cs</DependentUpon>
+    </Compile>
     <Compile Include="eventos\Classes\CaEmpresa.cs" />
     <Compile Include="eventos\Classes\CoEvento.cs" />
     <Compile Include="eventos\Classes\Empresa_List.cs" />
@@ -241,6 +247,18 @@
     </Compile>
     <Compile Include="eventos\ListEvent.Designer.cs">
       <DependentUpon>ListEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\Tela_Boleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\Tela_Boleto.Designer.cs">
+      <DependentUpon>Tela_Boleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\Tela_compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\Tela_compra.Designer.cs">
+      <DependentUpon>Tela_compra.cs</DependentUpon>
     </Compile>
     <Compile Include="eventos\User_Card\Card_list_Emp.cs">
       <SubType>UserControl</SubType>
@@ -324,6 +342,18 @@
     <Compile Include="hospedagem\data\inc\Img_list.Designer.cs">
       <DependentUpon>Img_list.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\data\inc\Reserva_boleto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\Reserva_boleto.Designer.cs">
+      <DependentUpon>Reserva_boleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\Reserva_cartao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\Reserva_cartao.Designer.cs">
+      <DependentUpon>Reserva_cartao.cs</DependentUpon>
+    </Compile>
     <Compile Include="hospedagem\Editar_Empresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -353,6 +383,12 @@
     </Compile>
     <Compile Include="hospedagem\data\inc\Hosp_PostCard.Designer.cs">
       <DependentUpon>Hosp_PostCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\Reservar_quarto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Reservar_quarto.Designer.cs">
+      <DependentUpon>Reservar_quarto.cs</DependentUpon>
     </Compile>
     <Compile Include="hospedagem\Vizualizar_quarto.cs">
       <SubType>Form</SubType>
@@ -590,6 +626,9 @@
     <EmbeddedResource Include="eventos\CadEmpresa.resx">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="eventos\Cartao.resx">
+      <DependentUpon>Cartao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="eventos\FormEventos.resx">
       <DependentUpon>FormEventos.cs</DependentUpon>
     </EmbeddedResource>
@@ -597,6 +636,12 @@
       <DependentUpon>ListEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\PostEventos.resx" />
+    <EmbeddedResource Include="eventos\Tela_Boleto.resx">
+      <DependentUpon>Tela_Boleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\Tela_compra.resx">
+      <DependentUpon>Tela_compra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="eventos\User_Card\Card_list_Emp.resx">
       <DependentUpon>Card_list_Emp.cs</DependentUpon>
     </EmbeddedResource>
@@ -636,6 +681,12 @@
     <EmbeddedResource Include="hospedagem\data\inc\Img_list.resx">
       <DependentUpon>Img_list.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\data\inc\Reserva_boleto.resx">
+      <DependentUpon>Reserva_boleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\data\inc\Reserva_cartao.resx">
+      <DependentUpon>Reserva_cartao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Editar_Empresa.resx">
       <DependentUpon>Editar_Empresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -652,6 +703,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\data\inc\Hosp_PostCard.resx">
       <DependentUpon>Hosp_PostCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Reservar_quarto.resx">
+      <DependentUpon>Reservar_quarto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Vizualizar_quarto.resx">
       <DependentUpon>Vizualizar_quarto.cs</DependentUpon>

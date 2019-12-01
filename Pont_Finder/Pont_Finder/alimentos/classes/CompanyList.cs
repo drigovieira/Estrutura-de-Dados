@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Pont_Finder.alimentos
 {
     class CompanyList
     {
         private static List<Company> company = new List<Company>();
+        private static string caminho = "..\\..\\data\\empresas.xml";
         public static void CompAdd(Company comp)
         {
             Company emp = new Company();
@@ -115,6 +118,63 @@ namespace Pont_Finder.alimentos
                 }
             }
             return lista;
+        }
+        public static void XmlLoad()
+        {
+            XDocument doc = XDocument.Load(caminho);
+
+            /*foreach (var item in doc.Descendants("alimentos"))
+            {
+                Company empresa = new Company();
+                empresa.Nome = item.Element("nome").Value;
+                empresa.NomeFantasia = item.Element("nomeFantasia").Value;
+                empresa.Email = item.Element("email").Value;
+                empresa.Telefone = item.Element("telefone").Value;
+                empresa.Endereco = item.Element("endereco").Value;
+                empresa.Categoria = item.Element("service").Value;
+                empresa.Cnpj = long.Parse(item.Element("cnpj").Value);
+                empresa.Cpf = long.Parse(item.Element("cpf").Value);
+                empresa.Image = item.Element("image").Value;
+                empresa.Status = bool.Parse(item.Element("status").Value);
+                CompanyList.CompAdd(empresa);
+            }*/
+        }
+        public static void XmlSave()
+        {
+            XmlDrop();
+            /*foreach (var item in listaEmpresa)
+            {
+                XElement xemp =
+                      new XElement("servico",
+                      new XElement("nome", item.Nome),
+                      new XElement("nomeFantasia", item.NomeFantasia),
+                      new XElement("email", item.Email),
+                      new XElement("telefone", item.Telefone),
+                      new XElement("endereco", item.Endereco),
+                      new XElement("service", item.Categoria),
+                      new XElement("cnpj", item.Cnpj),
+                      new XElement("cpf", item.Cpf),
+                      new XElement("image", item.Image),
+                      new XElement("status", item.Status));
+
+                XDocument doc = XDocument.Load(caminho);
+                doc.Root.Add(xemp);
+                doc.Save(caminho);
+            }*/
+        }
+        public static void XmlDrop()
+        {
+            /*XmlDocument xmldoc = new XmlDocument();
+            xmldoc.Load(caminho);
+
+            XDocument xdoc = XDocument.Load(caminho);
+
+            foreach (var item in xdoc.Descendants("servico"))
+            {
+                XmlNode node = xmldoc.SelectSingleNode("/modulos/servico");
+                node.ParentNode.RemoveChild(node);
+            }
+            xmldoc.Save(caminho);*/
         }
     }
 }
