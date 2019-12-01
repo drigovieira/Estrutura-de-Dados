@@ -27,6 +27,7 @@ namespace Pont_Finder
             local = 0;
             local1 = 0;
             pagQuant = 1;
+            lista = CompanyList.selectAll();
             InitializeComponent();
             Listar();
         }
@@ -61,11 +62,10 @@ namespace Pont_Finder
                 }
                 else
                 {
-                    List<Company> listaBusca = new List<Company>();
-                    listaBusca = CompanyList.SearchName(PesquisaBox.Text);
+                    lista = CompanyList.SearchName(PesquisaBox.Text);
                     ListarEmpresas.Controls.Clear();
                     local = 0;
-                    foreach (var item in listaBusca)
+                    foreach (var item in lista)
                     {
                         Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
                         exbEmp.Location = new Point(0, local);
@@ -85,11 +85,10 @@ namespace Pont_Finder
                 }
                 else
                 {
-                    List<Company> listaBusca = new List<Company>();
-                    listaBusca = CompanyList.SearchFiltro(PesquisaBox.Text, Filtro());
+                    lista = CompanyList.SearchFiltro(PesquisaBox.Text, Filtro());
                     ListarEmpresas.Controls.Clear();
                     local = 0;
-                    foreach (var item in listaBusca)
+                    foreach (var item in lista)
                     {
                         Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
                         exbEmp.Location = new Point(0, local);
@@ -171,11 +170,10 @@ namespace Pont_Finder
                 }
                 else
                 {
-                    List<Company> listaBusca = new List<Company>();
-                    listaBusca = CompanyList.SearchName(PesquisaBox.Text);
+                    lista = CompanyList.SearchName(PesquisaBox.Text);
                     ListarEmpresas.Controls.Clear();
                     local = 0;
-                    foreach (var item in listaBusca)
+                    foreach (var item in lista)
                     {
                         Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
                         exbEmp.Location = new Point(0, local);
@@ -195,11 +193,10 @@ namespace Pont_Finder
                 }
                 else
                 {
-                    List<Company> listaBusca = new List<Company>();
-                    listaBusca = CompanyList.SearchFiltro(PesquisaBox.Text, Filtro());
+                    lista = CompanyList.SearchFiltro(PesquisaBox.Text, Filtro());
                     ListarEmpresas.Controls.Clear();
                     local = 0;
-                    foreach (var item in listaBusca)
+                    foreach (var item in lista)
                     {
                         Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
                         exbEmp.Location = new Point(0, local);
@@ -537,7 +534,7 @@ namespace Pont_Finder
 
             int i = 0;
 
-            foreach (var item in CompanyList.selectAll())
+            foreach (var item in lista)
             {
                 if (i >= pagQuant)
                     break;
@@ -547,6 +544,112 @@ namespace Pont_Finder
                 ListarEmpresas.Controls.Add(exbEmp);
                 i++;
             }
-        }        
+        }
+        public void GoPag(string p)
+        {
+            int pagina;
+
+            if (p.Equals("ant") || p.Equals("anterior"))
+                pagina = -1;
+            else if (p.Equals("prox") || p.Equals("proxima"))
+                pagina = -2;
+            else if (p.Equals("1") || p.Equals("primeira"))
+                pagina = 1;
+            else if (p.Equals("0") || p.Equals("ultima"))
+                pagina = pagTotal;
+            else
+                pagina = int.Parse(p);
+
+
+            if (lista.Count > pagTotal)
+            {
+                if (pagina == 1 && (pagAtual > 1))
+                {                    
+                    ListarEmpresas.Controls.Clear();
+
+                    int i = 0;
+                    foreach (var item in lista)
+                    {
+                        if (i >= pagQuant)
+                            break;
+                        Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
+                        exbEmp.Location = new Point(0, local);
+                        local = local + exbEmp.Height + 5;
+                        ListarEmpresas.Controls.Add(exbEmp);
+                        i++;
+                    }
+                    lb_pag.Text = "Pagina " + 1 + " de " + pagTotal;
+                    pagAtual = 1;
+
+                }
+                else if (pagina == pagTotal && (pagAtual < pagTotal))
+                {                    
+                    ListarEmpresas.Controls.Clear();
+
+                    int pg = ((pagTotal - 1) * pagQuant);
+                    for (int i = 0; i < pagQuant; i++)
+                    {
+                        if (pg + i < lista.Count)
+                        {
+                            Publi exbEmp = new Publi(lista[pg + i].NomeFantasia, lista[pg + i].Rua, lista[pg + i].Bairro, lista[pg + i].Numero, lista[pg + i].TelComercial, lista[pg + i].Categoria, lista[pg + i].Id);
+                            exbEmp.Location = new Point(0, local);
+                            local = local + exbEmp.Height + 5;
+                            ListarEmpresas.Controls.Add(exbEmp);
+                        }
+
+                    }
+
+                    pagAtual = pagTotal;
+                    lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+                }
+                else if (pagina == -1)
+                {
+                    if (pagAtual > 1)
+                    {                        
+                        ListarEmpresas.Controls.Clear();
+
+                        int pg = ((pagAtual - 2) * pagQuant);
+
+                        for (int i = 0; i < pagQuant; i++)
+                        {
+                            if (pg + i < lista.Count)
+                            {
+                                Publi exbEmp = new Publi(lista[pg + i].NomeFantasia, lista[pg + i].Rua, lista[pg + i].Bairro, lista[pg + i].Numero, lista[pg + i].TelComercial, lista[pg + i].Categoria, lista[pg + i].Id);
+                                exbEmp.Location = new Point(0, local);
+                                local = local + exbEmp.Height + 5;
+                                ListarEmpresas.Controls.Add(exbEmp);
+                            }
+                        }
+                        pagAtual--;
+
+                        lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+                    }
+                }
+                else if (pagina == -2)
+                {
+                    if (pagAtual < pagTotal)
+                    {
+                        ListarEmpresas.Controls.Clear();
+
+                        int pg = (pagAtual * pagQuant);
+
+                        for (int i = 0; i < pagQuant; i++)
+                        {
+                            if (pg + i < lista.Count)
+                            {
+                                Publi exbEmp = new Publi(lista[pg + i].NomeFantasia, lista[pg + i].Rua, lista[pg + i].Bairro, lista[pg + i].Numero, lista[pg + i].TelComercial, lista[pg + i].Categoria, lista[pg + i].Id);
+                                exbEmp.Location = new Point(0, local);
+                                local = local + exbEmp.Height + 5;
+                                ListarEmpresas.Controls.Add(exbEmp);
+                            }
+
+                        }
+                        pagAtual++;
+                        lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+                    }
+                }
+            }
+        }
     }
 }
