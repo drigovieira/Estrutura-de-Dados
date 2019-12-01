@@ -13,6 +13,9 @@ namespace Pont_Finder
 {
     public partial class formAlimentos : Form
     {
+        private int pagTotal;
+        private int pagAtual;
+        private int pagQuant;
         private int local, local1;
         private bool cat;
         private string filtro;
@@ -23,6 +26,7 @@ namespace Pont_Finder
             cat = false;
             local = 0;
             local1 = 0;
+            pagQuant = 1;
             InitializeComponent();
             Listar();
         }
@@ -93,27 +97,7 @@ namespace Pont_Finder
                         ListarEmpresas.Controls.Add(exbEmp);
                     }
                 }
-            }
-            /*List<ProfileCompany> BuscaPerfis = prof.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in prof.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in comp.selectAll())
-                    {
-                        if (busca.CodigoCompany == comp.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
-            */
+            }            
         }
         public bool Categoria()
         {
@@ -223,27 +207,7 @@ namespace Pont_Finder
                         ListarEmpresas.Controls.Add(exbEmp);
                     }
                 }
-            }
-            /*List<ProfileCompany> BuscaPerfis = prof.profileList(listaBusca, CategoriaBox.SelectedItem.ToString());
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in prof.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in comp.selectAll())
-                    {
-                        if (busca.CodigoCompany == comp.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
-            */
+            }            
         }
 
         private void Top5_Paint(object sender, PaintEventArgs e)
@@ -557,14 +521,32 @@ namespace Pont_Finder
                 }
             }
 
-            lista = CompanyList.selectAll();
-            foreach (var item in lista)
+            //Listando Empresas
+            pagTotal = CompanyList.selectAll().Count;
+            if ((pagTotal % pagQuant) != 0)
             {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+            int i = 0;
+
+            foreach (var item in CompanyList.selectAll())
+            {
+                if (i >= pagQuant)
+                    break;
                 Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
                 exbEmp.Location = new Point(0, local);
                 local = local + exbEmp.Height + 5;
                 ListarEmpresas.Controls.Add(exbEmp);
+                i++;
             }
-        }
+        }        
     }
 }

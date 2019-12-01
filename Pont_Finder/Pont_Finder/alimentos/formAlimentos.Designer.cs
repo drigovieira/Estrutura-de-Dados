@@ -60,6 +60,11 @@
             this.rbPizzaria = new System.Windows.Forms.RadioButton();
             this.rbChurrascaria = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
+            this.lb_pag = new System.Windows.Forms.Label();
+            this.bt_proxFull = new System.Windows.Forms.Button();
+            this.bt_antFull = new System.Windows.Forms.Button();
+            this.bt_prox = new System.Windows.Forms.Button();
+            this.bt_ant = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
@@ -161,9 +166,9 @@
             // 
             this.ListarEmpresas.AutoSize = true;
             this.ListarEmpresas.BackColor = System.Drawing.Color.White;
-            this.ListarEmpresas.Location = new System.Drawing.Point(320, 319);
+            this.ListarEmpresas.Location = new System.Drawing.Point(320, 360);
             this.ListarEmpresas.Name = "ListarEmpresas";
-            this.ListarEmpresas.Size = new System.Drawing.Size(625, 205);
+            this.ListarEmpresas.Size = new System.Drawing.Size(627, 205);
             this.ListarEmpresas.TabIndex = 16;
             this.ListarEmpresas.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel5_Paint);
             // 
@@ -425,6 +430,77 @@
             this.label11.TabIndex = 5;
             this.label11.Text = "Categorias:";
             // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_pag.ForeColor = System.Drawing.Color.Black;
+            this.lb_pag.Location = new System.Drawing.Point(433, 318);
+            this.lb_pag.MaximumSize = new System.Drawing.Size(400, 33);
+            this.lb_pag.MinimumSize = new System.Drawing.Size(400, 33);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(400, 33);
+            this.lb_pag.TabIndex = 51;
+            this.lb_pag.Text = "lb_pag";
+            this.lb_pag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bt_proxFull
+            // 
+            this.bt_proxFull.BackColor = System.Drawing.Color.Transparent;
+            this.bt_proxFull.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_proxFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_proxFull.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_proxFull.ForeColor = System.Drawing.Color.Black;
+            this.bt_proxFull.Location = new System.Drawing.Point(839, 318);
+            this.bt_proxFull.Name = "bt_proxFull";
+            this.bt_proxFull.Size = new System.Drawing.Size(50, 33);
+            this.bt_proxFull.TabIndex = 53;
+            this.bt_proxFull.Text = "↠";
+            this.bt_proxFull.UseVisualStyleBackColor = false;
+            // 
+            // bt_antFull
+            // 
+            this.bt_antFull.BackColor = System.Drawing.Color.Transparent;
+            this.bt_antFull.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_antFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_antFull.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_antFull.ForeColor = System.Drawing.Color.Black;
+            this.bt_antFull.Location = new System.Drawing.Point(377, 318);
+            this.bt_antFull.Name = "bt_antFull";
+            this.bt_antFull.Size = new System.Drawing.Size(50, 33);
+            this.bt_antFull.TabIndex = 52;
+            this.bt_antFull.Text = "↞";
+            this.bt_antFull.UseVisualStyleBackColor = false;
+            // 
+            // bt_prox
+            // 
+            this.bt_prox.BackColor = System.Drawing.Color.Transparent;
+            this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_prox.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_prox.ForeColor = System.Drawing.Color.Black;
+            this.bt_prox.Location = new System.Drawing.Point(895, 318);
+            this.bt_prox.Name = "bt_prox";
+            this.bt_prox.Size = new System.Drawing.Size(50, 33);
+            this.bt_prox.TabIndex = 50;
+            this.bt_prox.Text = "→";
+            this.bt_prox.UseVisualStyleBackColor = false;
+            // 
+            // bt_ant
+            // 
+            this.bt_ant.BackColor = System.Drawing.Color.Transparent;
+            this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_ant.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ant.ForeColor = System.Drawing.Color.Black;
+            this.bt_ant.Location = new System.Drawing.Point(321, 318);
+            this.bt_ant.Name = "bt_ant";
+            this.bt_ant.Size = new System.Drawing.Size(50, 33);
+            this.bt_ant.TabIndex = 49;
+            this.bt_ant.Text = "←";
+            this.bt_ant.UseVisualStyleBackColor = false;
+            // 
             // formAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,9 +508,14 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.lb_pag);
+            this.Controls.Add(this.bt_proxFull);
             this.Controls.Add(this.panel11);
+            this.Controls.Add(this.bt_antFull);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.Top5);
+            this.Controls.Add(this.bt_ant);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.lbTop5);
             this.Controls.Add(this.panel5);
@@ -501,5 +582,10 @@
         private System.Windows.Forms.RadioButton rbHambúrgueria;
         private System.Windows.Forms.RadioButton rbOutros;
         private System.Windows.Forms.Button remFiltro;
+        private System.Windows.Forms.Label lb_pag;
+        private System.Windows.Forms.Button bt_proxFull;
+        private System.Windows.Forms.Button bt_antFull;
+        private System.Windows.Forms.Button bt_prox;
+        private System.Windows.Forms.Button bt_ant;
     }
 }
