@@ -471,8 +471,8 @@
     </Compile>
     <Compile Include="servicos\socialist\Mensagem.cs" />
     <Compile Include="servicos\socialist\MensagemList.cs" />
-    <Compile Include="servicos\socialist\Solicitado.cs" />
-    <Compile Include="servicos\socialist\SolicitadoList.cs" />
+    <Compile Include="servicos\socialist\Chat.cs" />
+    <Compile Include="servicos\socialist\ChatList.cs" />
     <Compile Include="servicos\socialist\UserControl_ChatEmpresa.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -837,7 +837,9 @@
     <Content Include="Resources\servicos\like\Like_null.png" />
     <Content Include="Resources\servicos\like\Like_verde.png" />
     <Content Include="Resources\view-icon.png" />
+    <Content Include="servicos\data\chats.xml" />
     <Content Include="servicos\data\images\empresas\offImage.jpg" />
+    <Content Include="servicos\data\mensagens.xml" />
     <Content Include="servicos\data\posts.xml" />
     <None Include="Resources\downred.png" />
     <None Include="Resources\downgrey.png" />

@@ -43,7 +43,7 @@ namespace Pont_Finder.servicos.socialist
             int y = 5;
             //panel_chat.Height = 180;
             int i = 0;
-            foreach (var item in SolicitadoList.Solicitados)
+            foreach (var item in ChatList.Chats)
             {
                 classes.Post tPost = classes.PostList.SelectId(item.PostId);
                 if (tPost.Cpf == Session.Cpf)

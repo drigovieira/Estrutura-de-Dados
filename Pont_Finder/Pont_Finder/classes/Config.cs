@@ -18,6 +18,8 @@ namespace Pont_Finder.classes
             //servicos
             servicos.classes.PostList.XmlLoad();
             servicos.classes.ListaEmpresa.XmlLoad();
+            servicos.socialist.MensagemList.XmlLoad();
+            servicos.socialist.ChatList.XmlLoad();
             //fim servicos
 
             //hospedagem
@@ -46,6 +48,8 @@ namespace Pont_Finder.classes
             //servicos
             servicos.classes.PostList.XmlSave();
             servicos.classes.ListaEmpresa.XmlSave();
+            servicos.socialist.MensagemList.XmlSave();
+            servicos.socialist.ChatList.XmlSave();
             //fim servicos
 
             //hospedagem

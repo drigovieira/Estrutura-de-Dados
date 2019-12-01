@@ -44,6 +44,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.pb_usericone = new System.Windows.Forms.PictureBox();
             this.lb_username = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).BeginInit();
@@ -78,12 +79,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.lb_empresa);
             this.panel1.Controls.Add(this.pb_empresa);
-            this.panel1.Location = new System.Drawing.Point(5, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5);
+            this.panel1.Controls.Add(this.lb_empresa);
+            this.panel1.Location = new System.Drawing.Point(10, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 70);
+            this.panel1.Size = new System.Drawing.Size(500, 70);
             this.panel1.TabIndex = 44;
             // 
             // lb_empresa
@@ -98,7 +99,7 @@
             // 
             // pb_empresa
             // 
-            this.pb_empresa.Location = new System.Drawing.Point(10, 11);
+            this.pb_empresa.Location = new System.Drawing.Point(10, 10);
             this.pb_empresa.Margin = new System.Windows.Forms.Padding(10);
             this.pb_empresa.Name = "pb_empresa";
             this.pb_empresa.Size = new System.Drawing.Size(50, 50);
@@ -111,24 +112,27 @@
             this.panel_chat.AutoScroll = true;
             this.panel_chat.BackColor = System.Drawing.Color.White;
             this.panel_chat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_chat.Location = new System.Drawing.Point(5, 85);
-            this.panel_chat.Margin = new System.Windows.Forms.Padding(5);
+            this.panel_chat.Location = new System.Drawing.Point(10, 90);
+            this.panel_chat.Margin = new System.Windows.Forms.Padding(10);
             this.panel_chat.Name = "panel_chat";
-            this.panel_chat.Size = new System.Drawing.Size(510, 390);
+            this.panel_chat.Size = new System.Drawing.Size(500, 384);
             this.panel_chat.TabIndex = 43;
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.panel_chat);
             this.panel4.Location = new System.Drawing.Point(5, 158);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(520, 510);
+            this.panel4.Size = new System.Drawing.Size(520, 484);
             this.panel4.TabIndex = 46;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(237)))));
+            this.panel6.Controls.Add(this.button1);
             this.panel6.Controls.Add(this.panel5);
             this.panel6.Controls.Add(this.tb_mensagens);
             this.panel6.Controls.Add(this.bt_limpar);
@@ -136,7 +140,7 @@
             this.panel6.Controls.Add(this.bt_enviar);
             this.panel6.Location = new System.Drawing.Point(531, 158);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(730, 510);
+            this.panel6.Size = new System.Drawing.Size(730, 484);
             this.panel6.TabIndex = 33;
             // 
             // tb_mensagem
@@ -144,15 +148,16 @@
             this.tb_mensagem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_mensagem.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_mensagem.Location = new System.Drawing.Point(8, 327);
+            this.tb_mensagem.Margin = new System.Windows.Forms.Padding(10);
             this.tb_mensagem.Name = "tb_mensagem";
-            this.tb_mensagem.Size = new System.Drawing.Size(716, 107);
+            this.tb_mensagem.Size = new System.Drawing.Size(712, 105);
             this.tb_mensagem.TabIndex = 0;
             this.tb_mensagem.Text = "";
             // 
             // bt_enviar
             // 
             this.bt_enviar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_enviar.Location = new System.Drawing.Point(558, 440);
+            this.bt_enviar.Location = new System.Drawing.Point(590, 440);
             this.bt_enviar.Name = "bt_enviar";
             this.bt_enviar.Size = new System.Drawing.Size(130, 35);
             this.bt_enviar.TabIndex = 1;
@@ -163,7 +168,7 @@
             // bt_limpar
             // 
             this.bt_limpar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_limpar.Location = new System.Drawing.Point(403, 440);
+            this.bt_limpar.Location = new System.Drawing.Point(454, 440);
             this.bt_limpar.Name = "bt_limpar";
             this.bt_limpar.Size = new System.Drawing.Size(130, 35);
             this.bt_limpar.TabIndex = 2;
@@ -176,10 +181,11 @@
             this.tb_mensagens.BackColor = System.Drawing.Color.White;
             this.tb_mensagens.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_mensagens.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_mensagens.Location = new System.Drawing.Point(8, 85);
+            this.tb_mensagens.Location = new System.Drawing.Point(10, 90);
+            this.tb_mensagens.Margin = new System.Windows.Forms.Padding(10);
             this.tb_mensagens.Name = "tb_mensagens";
             this.tb_mensagens.ReadOnly = true;
-            this.tb_mensagens.Size = new System.Drawing.Size(716, 236);
+            this.tb_mensagens.Size = new System.Drawing.Size(710, 228);
             this.tb_mensagens.TabIndex = 3;
             this.tb_mensagens.Text = "";
             this.tb_mensagens.TextChanged += new System.EventHandler(this.Tb_mensagens_TextChanged);
@@ -190,9 +196,10 @@
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.lb_username);
             this.panel5.Controls.Add(this.pb_usericone);
-            this.panel5.Location = new System.Drawing.Point(8, 5);
+            this.panel5.Location = new System.Drawing.Point(10, 10);
+            this.panel5.Margin = new System.Windows.Forms.Padding(10);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(716, 70);
+            this.panel5.Size = new System.Drawing.Size(710, 70);
             this.panel5.TabIndex = 6;
             // 
             // pb_usericone
@@ -215,6 +222,16 @@
             this.lb_username.Size = new System.Drawing.Size(199, 36);
             this.lb_username.TabIndex = 5;
             this.lb_username.Text = "Nome Usuario";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(8, 440);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 35);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Solicitar Serviço";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FormSociaListEmpresa
             // 
@@ -260,5 +277,6 @@
         private System.Windows.Forms.Button bt_limpar;
         private System.Windows.Forms.RichTextBox tb_mensagem;
         private System.Windows.Forms.Button bt_enviar;
+        private System.Windows.Forms.Button button1;
     }
 }

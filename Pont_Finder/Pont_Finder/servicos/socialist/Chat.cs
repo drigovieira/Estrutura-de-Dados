@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pont_Finder.servicos.socialist
 {
-    class Solicitado
+    class Chat
     {
         private int
             postId;

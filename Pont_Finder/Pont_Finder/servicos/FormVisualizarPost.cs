@@ -103,7 +103,7 @@ namespace Pont_Finder.servicos
                 else
                 {
                     bool existe = false;
-                    foreach (var item in socialist.SolicitadoList.Solicitados)
+                    foreach (var item in socialist.ChatList.Chats)
                     {
                         if (item.PostId == post.Id && item.CpfUser == Session.Cpf)
                         {
@@ -117,10 +117,10 @@ namespace Pont_Finder.servicos
                     }
                     else
                     {
-                        socialist.Solicitado solicitacao = new socialist.Solicitado();
+                        socialist.Chat solicitacao = new socialist.Chat();
                         solicitacao.PostId = post.Id;
                         solicitacao.CpfUser = Session.Cpf;
-                        socialist.SolicitadoList.Solicitados.Add(solicitacao);
+                        socialist.ChatList.Chats.Add(solicitacao);
                         MessageBox.Show("A Solicitação foi Efetuada com Sucesso!");
                     }
 
