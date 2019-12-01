@@ -21,10 +21,10 @@ namespace Pont_Finder.hospedagem
 
         private void bt_reservar_Click(object sender, EventArgs e)
         {
-        
-              //hospedagem.Reservar_VerificarDados reserv = new Reservar_VerificarDados(new Hosp_Home());
-              //FormPrincipal.MudarForm("hospedagem", reserv);
-            
+
+            hospedagem.Reservar_quarto reserva = new Reservar_quarto();
+            FormPrincipal.MudarForm("hospedagem", reserva);
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
