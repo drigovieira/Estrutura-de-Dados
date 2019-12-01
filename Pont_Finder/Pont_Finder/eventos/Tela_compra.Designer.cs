@@ -64,6 +64,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.bt_cartao);
             this.panel1.Controls.Add(this.bt_boleto);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -72,6 +73,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(600, 400);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // bt_cartao
             // 
@@ -126,7 +128,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 577);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1282, 100);
+            this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 3;
             // 
             // Tela_compra
@@ -135,7 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);

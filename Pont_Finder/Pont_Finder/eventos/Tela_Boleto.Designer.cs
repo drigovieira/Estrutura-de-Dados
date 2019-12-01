@@ -32,13 +32,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tb_email = new System.Windows.Forms.TextBox();
+            this.tb_senha = new System.Windows.Forms.TextBox();
+            this.bt_compra_boleto = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_quantidade = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_cpf = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -81,34 +81,34 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Senha";
             // 
-            // textBox1
+            // tb_email
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(539, 267);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 27);
-            this.textBox1.TabIndex = 5;
+            this.tb_email.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_email.Location = new System.Drawing.Point(539, 267);
+            this.tb_email.Name = "tb_email";
+            this.tb_email.Size = new System.Drawing.Size(223, 27);
+            this.tb_email.TabIndex = 5;
             // 
-            // textBox2
+            // tb_senha
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(539, 365);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(223, 27);
-            this.textBox2.TabIndex = 6;
+            this.tb_senha.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_senha.Location = new System.Drawing.Point(539, 365);
+            this.tb_senha.Name = "tb_senha";
+            this.tb_senha.Size = new System.Drawing.Size(223, 27);
+            this.tb_senha.TabIndex = 6;
             // 
-            // button1
+            // bt_compra_boleto
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(559, 531);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 37);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Finalizar compra";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bt_compra_boleto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_compra_boleto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_compra_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_compra_boleto.ForeColor = System.Drawing.Color.White;
+            this.bt_compra_boleto.Location = new System.Drawing.Point(559, 531);
+            this.bt_compra_boleto.Name = "bt_compra_boleto";
+            this.bt_compra_boleto.Size = new System.Drawing.Size(156, 37);
+            this.bt_compra_boleto.TabIndex = 7;
+            this.bt_compra_boleto.Text = "Finalizar compra";
+            this.bt_compra_boleto.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -120,21 +120,21 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Quantidade";
             // 
-            // comboBox1
+            // cb_quantidade
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cb_quantidade.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_quantidade.FormattingEnabled = true;
+            this.cb_quantidade.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5",
             "Mais de 10 "});
-            this.comboBox1.Location = new System.Drawing.Point(583, 428);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(141, 25);
-            this.comboBox1.TabIndex = 9;
+            this.cb_quantidade.Location = new System.Drawing.Point(583, 428);
+            this.cb_quantidade.Name = "cb_quantidade";
+            this.cb_quantidade.Size = new System.Drawing.Size(141, 25);
+            this.cb_quantidade.TabIndex = 9;
             // 
             // label6
             // 
@@ -146,13 +146,13 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "CPF";
             // 
-            // textBox3
+            // tb_cpf
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(539, 316);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(223, 27);
-            this.textBox3.TabIndex = 11;
+            this.tb_cpf.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_cpf.Location = new System.Drawing.Point(539, 316);
+            this.tb_cpf.Name = "tb_cpf";
+            this.tb_cpf.Size = new System.Drawing.Size(223, 27);
+            this.tb_cpf.TabIndex = 11;
             // 
             // Tela_Boleto
             // 
@@ -160,13 +160,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tb_cpf);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_quantidade);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.bt_compra_boleto);
+            this.Controls.Add(this.tb_senha);
+            this.Controls.Add(this.tb_email);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -187,12 +187,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tb_email;
+        private System.Windows.Forms.TextBox tb_senha;
+        private System.Windows.Forms.Button bt_compra_boleto;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_quantidade;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_cpf;
     }
 }
