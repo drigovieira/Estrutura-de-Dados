@@ -545,8 +545,29 @@ namespace Pont_Finder
                 i++;
             }
         }
-        public void GoPag(string p)
+
+        private void Bt_ant_Click(object sender, EventArgs e)
         {
+            GoPag("anterior");
+        }
+
+        private void Bt_prox_Click(object sender, EventArgs e)
+        {
+            GoPag("proxima");
+        }
+
+        private void Bt_proxFull_Click(object sender, EventArgs e)
+        {
+            GoPag("ultima");
+        }
+
+        private void Bt_antFull_Click(object sender, EventArgs e)
+        {
+            GoPag("primeira");
+        }
+
+        public void GoPag(string p)
+        {            
             int pagina;
 
             if (p.Equals("ant") || p.Equals("anterior"))
@@ -564,7 +585,8 @@ namespace Pont_Finder
             if (lista.Count > pagTotal)
             {
                 if (pagina == 1 && (pagAtual > 1))
-                {                    
+                {
+                    local = 0;
                     ListarEmpresas.Controls.Clear();
 
                     int i = 0;
@@ -583,7 +605,8 @@ namespace Pont_Finder
 
                 }
                 else if (pagina == pagTotal && (pagAtual < pagTotal))
-                {                    
+                {
+                    local = 0;
                     ListarEmpresas.Controls.Clear();
 
                     int pg = ((pagTotal - 1) * pagQuant);
@@ -606,7 +629,8 @@ namespace Pont_Finder
                 else if (pagina == -1)
                 {
                     if (pagAtual > 1)
-                    {                        
+                    {
+                        local = 0;
                         ListarEmpresas.Controls.Clear();
 
                         int pg = ((pagAtual - 2) * pagQuant);
@@ -630,8 +654,9 @@ namespace Pont_Finder
                 {
                     if (pagAtual < pagTotal)
                     {
+                        local = 0;
                         ListarEmpresas.Controls.Clear();
-
+                        /*
                         int pg = (pagAtual * pagQuant);
 
                         for (int i = 0; i < pagQuant; i++)
@@ -646,7 +671,7 @@ namespace Pont_Finder
 
                         }
                         pagAtual++;
-                        lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+                        lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;*/
                     }
                 }
             }

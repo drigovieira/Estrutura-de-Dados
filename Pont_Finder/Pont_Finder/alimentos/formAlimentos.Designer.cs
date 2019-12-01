@@ -458,6 +458,7 @@
             this.bt_proxFull.TabIndex = 53;
             this.bt_proxFull.Text = "↠";
             this.bt_proxFull.UseVisualStyleBackColor = false;
+            this.bt_proxFull.Click += new System.EventHandler(this.Bt_proxFull_Click);
             // 
             // bt_antFull
             // 
@@ -472,6 +473,7 @@
             this.bt_antFull.TabIndex = 52;
             this.bt_antFull.Text = "↞";
             this.bt_antFull.UseVisualStyleBackColor = false;
+            this.bt_antFull.Click += new System.EventHandler(this.Bt_antFull_Click);
             // 
             // bt_prox
             // 
@@ -486,6 +488,7 @@
             this.bt_prox.TabIndex = 50;
             this.bt_prox.Text = "→";
             this.bt_prox.UseVisualStyleBackColor = false;
+            this.bt_prox.Click += new System.EventHandler(this.Bt_prox_Click);
             // 
             // bt_ant
             // 
@@ -500,6 +503,7 @@
             this.bt_ant.TabIndex = 49;
             this.bt_ant.Text = "←";
             this.bt_ant.UseVisualStyleBackColor = false;
+            this.bt_ant.Click += new System.EventHandler(this.Bt_ant_Click);
             // 
             // formAlimentos
             // 
