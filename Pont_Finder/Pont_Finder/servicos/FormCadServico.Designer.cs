@@ -61,7 +61,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(1040, 31);
             this.label5.TabIndex = 44;
-            this.label5.Text = "Edição de Serviço";
+            this.label5.Text = "Cadastre seu serviço!";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
