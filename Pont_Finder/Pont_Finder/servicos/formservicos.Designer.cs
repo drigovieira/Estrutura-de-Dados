@@ -62,6 +62,7 @@
             this.rb_categoria = new System.Windows.Forms.RadioButton();
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_proxFull = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -108,6 +109,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.EditarPerfil);
             this.panel1.Controls.Add(this.bt_solicitados);
             this.panel1.Controls.Add(this.bt_mensagens);
@@ -141,7 +143,7 @@
             this.bt_solicitados.Name = "bt_solicitados";
             this.bt_solicitados.Size = new System.Drawing.Size(122, 28);
             this.bt_solicitados.TabIndex = 9;
-            this.bt_solicitados.Text = "Serviços Solicitados";
+            this.bt_solicitados.Text = "Mensagens Emp";
             this.bt_solicitados.UseVisualStyleBackColor = true;
             this.bt_solicitados.Click += new System.EventHandler(this.Button2_Click_1);
             // 
@@ -154,7 +156,7 @@
             this.bt_mensagens.Name = "bt_mensagens";
             this.bt_mensagens.Size = new System.Drawing.Size(122, 28);
             this.bt_mensagens.TabIndex = 8;
-            this.bt_mensagens.Text = "Mensagens";
+            this.bt_mensagens.Text = "Mensagens User";
             this.bt_mensagens.UseVisualStyleBackColor = true;
             this.bt_mensagens.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -470,6 +472,18 @@
             this.bt_proxFull.UseVisualStyleBackColor = false;
             this.bt_proxFull.Click += new System.EventHandler(this.Bt_proxFull_Click);
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(147, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 28);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Solicitados";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,5 +561,6 @@
         private System.Windows.Forms.Button bt_antFull;
         private System.Windows.Forms.Button bt_proxFull;
         private System.Windows.Forms.RadioButton rb_categoria;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -28,5 +28,10 @@ namespace Pont_Finder.servicos
         {
 
         }
+
+        private void tbBairro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
