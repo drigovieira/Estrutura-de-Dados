@@ -19,6 +19,19 @@ namespace Pont_Finder.hospedagem
         private int id, qtd_pessoas, qtd_disponivel, telefone_emp;
         private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp;
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (lb_emp_endereco.Text != "")
+            {
+                Mapa.Mapa map = new Mapa.Mapa(lb_emp_endereco.Text);
+                map.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Caixa localização não preenchida");
+            }
+        }
+
         private void bt_reservar_Click(object sender, EventArgs e)
         {
 
