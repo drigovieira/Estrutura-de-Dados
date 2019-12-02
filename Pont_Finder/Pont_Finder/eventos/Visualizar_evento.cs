@@ -34,6 +34,9 @@ namespace Pont_Finder.eventos
             lb_categoria.Text = post.Categoria;
             lb_data.Text = post.Data;
             lb_horario.Text = post.Horario;
+            check();
+
+           
 
 
         }
@@ -50,9 +53,8 @@ namespace Pont_Finder.eventos
 
         private void Visualizar_evento_Load(object sender, EventArgs e)
         {
-           
-           
-           
+            
+
         }
 
         private void Lb_rs_boleto_Click(object sender, EventArgs e)
@@ -62,8 +64,31 @@ namespace Pont_Finder.eventos
 
         private void Bt_comprar_Click(object sender, EventArgs e)
         {
-            eventos.Tela_compra compra = new eventos.Tela_compra();
-            FormPrincipal.MudarForm("eventos", compra);
+            if (Session.Online == true)
+            {
+                eventos.Tela_compra compra = new eventos.Tela_compra(post.Id);
+                FormPrincipal.MudarForm("eventos", compra);
+            }
+            else
+            {
+                MessageBox.Show("Precisa estar logado para realizar a compra de ingressos");
+            }
         }
+
+        public void check()
+        {
+            if (post.IngressoDispinivel == 0)
+            {
+                bt_comprar.Visible = false;
+                esgotado.Visible = true;
+            }
+            else
+            {
+                bt_comprar.Visible = true;
+                esgotado.Visible = false;
+
+            }
+        }
+       
     }
 }

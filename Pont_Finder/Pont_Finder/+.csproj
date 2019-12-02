@@ -226,15 +226,11 @@
     <Compile Include="eventos\CadEmpresa.Designer.cs">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="eventos\Cartao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="eventos\Cartao.Designer.cs">
-      <DependentUpon>Cartao.cs</DependentUpon>
-    </Compile>
     <Compile Include="eventos\Classes\CaEmpresa.cs" />
     <Compile Include="eventos\Classes\CoEvento.cs" />
+    <Compile Include="eventos\Classes\ComprEvento.cs" />
     <Compile Include="eventos\Classes\Empresa_List.cs" />
+    <Compile Include="eventos\Classes\EventoCompra_List.cs" />
     <Compile Include="eventos\Classes\Eventos_List.cs" />
     <Compile Include="eventos\FormEventos.cs">
       <SubType>Form</SubType>
@@ -248,11 +244,11 @@
     <Compile Include="eventos\ListEvent.Designer.cs">
       <DependentUpon>ListEvent.cs</DependentUpon>
     </Compile>
-    <Compile Include="eventos\Tela_Boleto.cs">
+    <Compile Include="eventos\Post_Eventos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="eventos\Tela_Boleto.Designer.cs">
-      <DependentUpon>Tela_Boleto.cs</DependentUpon>
+    <Compile Include="eventos\Post_Eventos.Designer.cs">
+      <DependentUpon>Post_Eventos.cs</DependentUpon>
     </Compile>
     <Compile Include="eventos\Tela_compra.cs">
       <SubType>Form</SubType>
@@ -271,12 +267,6 @@
     </Compile>
     <Compile Include="eventos\User_Card\Post_Card.Designer.cs">
       <DependentUpon>Post_Card.cs</DependentUpon>
-    </Compile>
-    <Compile Include="eventos\Post_Eventos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="eventos\Post_Eventos.Designer.cs">
-      <DependentUpon>Post_Eventos.cs</DependentUpon>
     </Compile>
     <Compile Include="eventos\Visualizar_evento.cs">
       <SubType>Form</SubType>
@@ -626,9 +616,6 @@
     <EmbeddedResource Include="eventos\CadEmpresa.resx">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="eventos\Cartao.resx">
-      <DependentUpon>Cartao.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="eventos\FormEventos.resx">
       <DependentUpon>FormEventos.cs</DependentUpon>
     </EmbeddedResource>
@@ -636,8 +623,8 @@
       <DependentUpon>ListEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\PostEventos.resx" />
-    <EmbeddedResource Include="eventos\Tela_Boleto.resx">
-      <DependentUpon>Tela_Boleto.cs</DependentUpon>
+    <EmbeddedResource Include="eventos\Post_Eventos.resx">
+      <DependentUpon>Post_Eventos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\Tela_compra.resx">
       <DependentUpon>Tela_compra.cs</DependentUpon>
@@ -647,9 +634,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\User_Card\Post_Card.resx">
       <DependentUpon>Post_Card.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="eventos\Post_Eventos.resx">
-      <DependentUpon>Post_Eventos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\Visualizar_evento.resx">
       <DependentUpon>Visualizar_evento.cs</DependentUpon>
@@ -871,7 +855,11 @@
     <Content Include="data\empresas.xml" />
     <Content Include="data\images\users\offImage.jpg" />
     <Content Include="data\usuarios.xml" />
+    <Content Include="eventos\Data\compras_eventos.xml" />
     <Content Include="eventos\Data\Empresa_Eventos.xml" />
+    <Content Include="eventos\Data\imagens\0.jpg" />
+    <Content Include="eventos\Data\imagens\1.jpg" />
+    <Content Include="eventos\Data\imagens\4.jpg" />
     <Content Include="eventos\Data\imagens\offImage.jpg" />
     <Content Include="eventos\Data\Postagem_Eventos.xml" />
     <Content Include="hospedagem\data\quartos.xml" />

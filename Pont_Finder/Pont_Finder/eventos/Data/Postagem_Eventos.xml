@@ -3,7 +3,7 @@
   <postagem>
     <id>0</id>
     <ingresso_total>50</ingresso_total>
-    <ingresso_disponivel>50</ingresso_disponivel>
+    <ingresso_disponivel>10</ingresso_disponivel>
     <nome>Festa do Odim</nome>
     <imagem1>..//..//eventos//Data//imagens//0.jpg</imagem1>
     <imagem2>null</imagem2>
@@ -75,7 +75,7 @@
   <postagem>
     <id>4</id>
     <ingresso_total>50</ingresso_total>
-    <ingresso_disponivel>50</ingresso_disponivel>
+    <ingresso_disponivel>26</ingresso_disponivel>
     <nome>Música</nome>
     <imagem1>..//..//eventos//Data//imagens//4.jpg</imagem1>
     <imagem2>null</imagem2>

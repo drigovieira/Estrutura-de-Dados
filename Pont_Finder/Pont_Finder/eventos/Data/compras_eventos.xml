@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<compra>
+  <compras>
+    <id>0</id>
+    <cpf>47746352863</cpf>
+    <Metodopagamento>CARTÃO DE CRÉDITO</Metodopagamento>
+    <QuantidadedeIngresso>3</QuantidadedeIngresso>
+    <ValorCompra>60</ValorCompra>
+    <DataCompra>01/12/2019 20:54</DataCompra>
+  </compras>
+</compra>

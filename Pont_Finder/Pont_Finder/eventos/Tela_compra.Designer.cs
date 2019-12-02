@@ -28,108 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_compra));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bt_cartao = new System.Windows.Forms.Button();
-            this.bt_boleto = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.senhabox = new System.Windows.Forms.TextBox();
+            this.qntbox = new System.Windows.Forms.TextBox();
+            this.cbbox = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(575, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 38);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Compra";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(383, 110);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(514, 34);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Selecione aqui a melhor opção de compra";
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.bt_cartao);
-            this.panel1.Controls.Add(this.bt_boleto);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(361, 177);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 400);
-            this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
-            // 
-            // bt_cartao
-            // 
-            this.bt_cartao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cartao.ForeColor = System.Drawing.Color.White;
-            this.bt_cartao.Location = new System.Drawing.Point(433, 286);
-            this.bt_cartao.Name = "bt_cartao";
-            this.bt_cartao.Size = new System.Drawing.Size(75, 36);
-            this.bt_cartao.TabIndex = 3;
-            this.bt_cartao.Text = "Cartão";
-            this.bt_cartao.UseVisualStyleBackColor = false;
-            this.bt_cartao.Click += new System.EventHandler(this.Bt_cartao_Click);
-            // 
-            // bt_boleto
-            // 
-            this.bt_boleto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_boleto.ForeColor = System.Drawing.Color.White;
-            this.bt_boleto.Location = new System.Drawing.Point(96, 286);
-            this.bt_boleto.Name = "bt_boleto";
-            this.bt_boleto.Size = new System.Drawing.Size(87, 36);
-            this.bt_boleto.TabIndex = 2;
-            this.bt_boleto.Text = "Boleto";
-            this.bt_boleto.UseVisualStyleBackColor = false;
-            this.bt_boleto.Click += new System.EventHandler(this.Bt_boleto_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(370, 44);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(41, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 577);
+            this.panel2.Location = new System.Drawing.Point(0, 575);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(538, 263);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "MÉTODO DE PAGAMENTO";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(538, 296);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "QUANTIDADE";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(538, 329);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "SENHA";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // senhabox
+            // 
+            this.senhabox.Location = new System.Drawing.Point(687, 322);
+            this.senhabox.Name = "senhabox";
+            this.senhabox.Size = new System.Drawing.Size(154, 20);
+            this.senhabox.TabIndex = 11;
+            this.senhabox.TextChanged += new System.EventHandler(this.senhabox_TextChanged);
+            // 
+            // qntbox
+            // 
+            this.qntbox.Location = new System.Drawing.Point(687, 289);
+            this.qntbox.Name = "qntbox";
+            this.qntbox.Size = new System.Drawing.Size(154, 20);
+            this.qntbox.TabIndex = 12;
+            this.qntbox.TextChanged += new System.EventHandler(this.qntbox_TextChanged);
+            // 
+            // cbbox
+            // 
+            this.cbbox.FormattingEnabled = true;
+            this.cbbox.Items.AddRange(new object[] {
+            "CARTÃO DE CRÉDITO",
+            "BOLETO"});
+            this.cbbox.Location = new System.Drawing.Point(687, 255);
+            this.cbbox.Name = "cbbox";
+            this.cbbox.Size = new System.Drawing.Size(154, 21);
+            this.cbbox.TabIndex = 13;
+            this.cbbox.SelectedIndexChanged += new System.EventHandler(this.cbbox_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(541, 366);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 42);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "COMPRAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(720, 366);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 42);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "LIMPAR";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Tela_compra
             // 
@@ -138,32 +131,35 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cbbox);
+            this.Controls.Add(this.qntbox);
+            this.Controls.Add(this.senhabox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Tela_compra";
             this.Text = "Tela_compra";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Tela_compra_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button bt_cartao;
-        private System.Windows.Forms.Button bt_boleto;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox senhabox;
+        private System.Windows.Forms.TextBox qntbox;
+        private System.Windows.Forms.ComboBox cbbox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

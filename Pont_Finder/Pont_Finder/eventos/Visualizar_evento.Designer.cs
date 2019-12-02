@@ -29,11 +29,22 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.esgotado = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_txt7 = new System.Windows.Forms.Label();
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.pn_galery = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.senhabox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.qntbox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbbox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cpfbox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.lb_descricao = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lb_horario = new System.Windows.Forms.Label();
@@ -67,6 +78,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.esgotado);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lb_txt7);
             this.panel1.Controls.Add(this.lb_txt3);
@@ -81,6 +93,18 @@
             this.panel1.Size = new System.Drawing.Size(1055, 1166);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // esgotado
+            // 
+            this.esgotado.AutoSize = true;
+            this.esgotado.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold);
+            this.esgotado.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.esgotado.Location = new System.Drawing.Point(852, 214);
+            this.esgotado.Name = "esgotado";
+            this.esgotado.Size = new System.Drawing.Size(124, 27);
+            this.esgotado.TabIndex = 40;
+            this.esgotado.Text = "ESGOTADO";
+            this.esgotado.Visible = false;
             // 
             // label1
             // 
@@ -125,6 +149,16 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.senhabox);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.qntbox);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.cbbox);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.cpfbox);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.lb_descricao);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.lb_horario);
@@ -146,6 +180,92 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(966, 666);
             this.panel4.TabIndex = 37;
+            // 
+            // senhabox
+            // 
+            this.senhabox.Location = new System.Drawing.Point(799, 444);
+            this.senhabox.Name = "senhabox";
+            this.senhabox.Size = new System.Drawing.Size(121, 20);
+            this.senhabox.TabIndex = 49;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(650, 451);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 48;
+            this.label6.Text = "SENHA";
+            // 
+            // qntbox
+            // 
+            this.qntbox.Location = new System.Drawing.Point(799, 403);
+            this.qntbox.Name = "qntbox";
+            this.qntbox.Size = new System.Drawing.Size(121, 20);
+            this.qntbox.TabIndex = 47;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(650, 410);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 13);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "QUANTIDADE";
+            // 
+            // cbbox
+            // 
+            this.cbbox.FormattingEnabled = true;
+            this.cbbox.Items.AddRange(new object[] {
+            "CARTÃO DE CRÉDITO",
+            "BOLETO"});
+            this.cbbox.Location = new System.Drawing.Point(799, 361);
+            this.cbbox.Name = "cbbox";
+            this.cbbox.Size = new System.Drawing.Size(121, 21);
+            this.cbbox.TabIndex = 45;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(650, 369);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(143, 13);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "MÉTODO DE PAGAMENTO";
+            // 
+            // cpfbox
+            // 
+            this.cpfbox.Location = new System.Drawing.Point(799, 326);
+            this.cpfbox.Name = "cpfbox";
+            this.cpfbox.Size = new System.Drawing.Size(121, 20);
+            this.cpfbox.TabIndex = 43;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(650, 329);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 13);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "CPF";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(799, 519);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 42);
+            this.button2.TabIndex = 41;
+            this.button2.Text = "LIMPAR";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(653, 519);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 42);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "COMPRAR";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // lb_descricao
             // 
@@ -382,7 +502,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1316, 675);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -429,5 +549,16 @@
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Label lb_descricao;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox cpfbox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbbox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox qntbox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox senhabox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label esgotado;
     }
 }

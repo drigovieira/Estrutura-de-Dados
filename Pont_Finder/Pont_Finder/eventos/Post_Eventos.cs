@@ -120,6 +120,8 @@ namespace Pont_Finder.eventos
 
             //AvaliePrincipal.Att();
             MessageBox.Show("Post realizado com sucesso!!!");
+
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
