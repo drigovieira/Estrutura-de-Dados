@@ -194,6 +194,11 @@ namespace Pont_Finder.avalie
         {
             FormPrincipal.MudarForm("Reclame", new FormAvalie());
         }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

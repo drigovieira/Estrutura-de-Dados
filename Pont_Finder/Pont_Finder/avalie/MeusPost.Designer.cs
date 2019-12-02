@@ -62,7 +62,7 @@
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(515, 86);
+            this.lb_pag.Location = new System.Drawing.Point(484, 86);
             this.lb_pag.Name = "lb_pag";
             this.lb_pag.Size = new System.Drawing.Size(39, 13);
             this.lb_pag.TabIndex = 88;
@@ -86,9 +86,9 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Location = new System.Drawing.Point(164, 141);
+            this.panel3.Location = new System.Drawing.Point(209, 114);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(983, 576);
+            this.panel3.Size = new System.Drawing.Size(627, 557);
             this.panel3.TabIndex = 89;
             // 
             // panel6
@@ -97,6 +97,7 @@
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.panel3);
             this.panel6.Controls.Add(this.bt_ant);
             this.panel6.Controls.Add(this.bt_prox);
             this.panel6.Controls.Add(this.lb_pag);
@@ -104,6 +105,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1055, 1166);
             this.panel6.TabIndex = 90;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // label11
             // 
@@ -139,7 +141,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1233, 710);
             this.Controls.Add(this.btn_back);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MeusPost";

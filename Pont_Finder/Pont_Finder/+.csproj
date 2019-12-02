@@ -553,6 +553,12 @@
     <Compile Include="servicos\Visualizar-Solicitado_User.Designer.cs">
       <DependentUpon>Visualizar-Solicitado_User.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaCarregamento\TelaCarregamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaCarregamento\TelaCarregamento.Designer.cs">
+      <DependentUpon>TelaCarregamento.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="alimentos\Cadastro_Cardapio.resx">
       <DependentUpon>Cadastro_Cardapio.cs</DependentUpon>
     </EmbeddedResource>
@@ -817,6 +823,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\Visualizar-Solicitado_User.resx">
       <DependentUpon>Visualizar-Solicitado_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaCarregamento\TelaCarregamento.resx">
+      <DependentUpon>TelaCarregamento.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\Pont_Finder.exe.config" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
