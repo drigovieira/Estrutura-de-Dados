@@ -49,7 +49,7 @@ namespace Pont_Finder.avalie.classes
         public static void XmlSave()
         {
 
-            foreach (var item in )
+            foreach (var item in Comentarios)
             {
 
                 string like = "";
@@ -65,26 +65,26 @@ namespace Pont_Finder.avalie.classes
 
 
                 xmlDrop();
-            foreach (var itens in Comentarios)
-            {
-                XElement mensagem =
-                    new XElement("comentarios",
-                    new XElement("id", itens.PostId),
-                    new XElement("idcoment", itens.Idcoment),
-                    new XElement("nome", itens.Username),
-                    new XElement("imguser", itens.ImgUser),
-                    new XElement("cpf", itens.UserCpf),
-                    new XElement("comment", itens.Comment),
-                    new XElement("ativo", itens.Ativo),
-                    new XElement("likes", like),
-                    new XElement("data", itens.Data));
-                    
-                XDocument doc = XDocument.Load(caminho);
-                doc.Root.Add(mensagem);
-                doc.Save(caminho);
+                foreach (var itens in Comentarios)
+                {
+                    XElement mensagem =
+                        new XElement("comentarios",
+                        new XElement("id", itens.PostId),
+                        new XElement("idcoment", itens.Idcoment),
+                        new XElement("nome", itens.Username),
+                        new XElement("imguser", itens.ImgUser),
+                        new XElement("cpf", itens.UserCpf),
+                        new XElement("comment", itens.Comment),
+                        new XElement("ativo", itens.Ativo),
+                        new XElement("likes", like),
+                        new XElement("data", itens.Data));
+
+                    XDocument doc = XDocument.Load(caminho);
+                    doc.Root.Add(mensagem);
+                    doc.Save(caminho);
+                }
             }
         }
-
         public static void xmlDrop()
         {
             XmlDocument xmldoc = new XmlDocument();
