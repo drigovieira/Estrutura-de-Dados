@@ -83,7 +83,7 @@
             this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage1;
             this.pb_icone.InitialImage = global::Pont_Finder.Properties.Resources.offImage;
-            this.pb_icone.Location = new System.Drawing.Point(54, 54);
+            this.pb_icone.Location = new System.Drawing.Point(56, 54);
             this.pb_icone.Name = "pb_icone";
             this.pb_icone.Size = new System.Drawing.Size(300, 225);
             this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +94,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(54, 319);
+            this.label3.Location = new System.Drawing.Point(56, 319);
             this.label3.MaximumSize = new System.Drawing.Size(300, 0);
             this.label3.MinimumSize = new System.Drawing.Size(300, 0);
             this.label3.Name = "label3";
@@ -106,7 +106,7 @@
             // tb_titulo
             // 
             this.tb_titulo.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_titulo.Location = new System.Drawing.Point(54, 349);
+            this.tb_titulo.Location = new System.Drawing.Point(56, 349);
             this.tb_titulo.Name = "tb_titulo";
             this.tb_titulo.Size = new System.Drawing.Size(300, 34);
             this.tb_titulo.TabIndex = 2;
@@ -116,7 +116,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(54, 398);
+            this.label2.Location = new System.Drawing.Point(56, 396);
             this.label2.MaximumSize = new System.Drawing.Size(300, 0);
             this.label2.MinimumSize = new System.Drawing.Size(300, 0);
             this.label2.Name = "label2";
@@ -212,7 +212,7 @@
             // 
             this.tb_valor.DecimalPlaces = 2;
             this.tb_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_valor.Location = new System.Drawing.Point(54, 428);
+            this.tb_valor.Location = new System.Drawing.Point(56, 426);
             this.tb_valor.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -226,7 +226,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 24);
+            this.label1.Location = new System.Drawing.Point(56, 24);
             this.label1.MaximumSize = new System.Drawing.Size(300, 0);
             this.label1.MinimumSize = new System.Drawing.Size(300, 0);
             this.label1.Name = "label1";
