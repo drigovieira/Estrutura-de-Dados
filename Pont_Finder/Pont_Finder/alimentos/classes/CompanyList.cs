@@ -167,39 +167,68 @@ namespace Pont_Finder.alimentos
         public static void XmlSave()
         {
             XmlDrop();
-            /*foreach (var item in listaEmpresa)
-            {
+            string categorias = "";
+            foreach (var item in company)
+            {                
+                foreach (var i in item.Categoria) {
+                    if (categorias.Equals(""))
+                    {
+                        categorias = i;
+                    }
+                    else
+                    {
+                        categorias += ","+i;
+                    }                    
+                }
+                string funcio = "";
+                foreach (var a in item.FuncionamentoEmp)
+                {                    
+                    if (funcio.Equals(""))
+                    {
+                        funcio = a.Dia + a.HoraInicio.ToString() + a.HoraFim.ToString();
+                    }
+                    else
+                    {
+                        funcio += "/"+ a.Dia +","+ a.HoraInicio.ToString() + "," + a.HoraFim.ToString();
+                    }
+                }
                 XElement xemp =
-                      new XElement("servico",
+                      new XElement("alimentos",
                       new XElement("nome", item.Nome),
                       new XElement("nomeFantasia", item.NomeFantasia),
                       new XElement("email", item.Email),
-                      new XElement("telefone", item.Telefone),
-                      new XElement("endereco", item.Endereco),
-                      new XElement("service", item.Categoria),
-                      new XElement("cnpj", item.Cnpj),
-                      new XElement("cpf", item.Cpf),
+                      new XElement("rua", item.Rua),
+                      new XElement("bairro", item.Bairro),
                       new XElement("image", item.Image),
-                      new XElement("status", item.Status));
+                      new XElement("categorias", categorias),
+                      new XElement("funcionamento", funcio),
+                      new XElement("numero", item.Image),
+                      new XElement("cep", item.Cep),
+                      new XElement("id", item.Id),
+                      new XElement("telComercial", item.TelComercial),
+                      new XElement("cpf", item.Cpf),
+                      new XElement("status", item.Status),
+                      new XElement("statusCardapio", item.SttsCardapio),
+                      new XElement("statusEntrega", item.SttsEntrega));
 
                 XDocument doc = XDocument.Load(caminho);
                 doc.Root.Add(xemp);
                 doc.Save(caminho);
-            }*/
+            }
         }
         public static void XmlDrop()
         {
-            /*XmlDocument xmldoc = new XmlDocument();
+            XmlDocument xmldoc = new XmlDocument();
             xmldoc.Load(caminho);
 
             XDocument xdoc = XDocument.Load(caminho);
 
-            foreach (var item in xdoc.Descendants("servico"))
+            foreach (var item in xdoc.Descendants("alimentos"))
             {
-                XmlNode node = xmldoc.SelectSingleNode("/modulos/servico");
+                XmlNode node = xmldoc.SelectSingleNode("/modulos/alimentos");
                 node.ParentNode.RemoveChild(node);
             }
-            xmldoc.Save(caminho);*/
+            xmldoc.Save(caminho);
         }
     }
 }
