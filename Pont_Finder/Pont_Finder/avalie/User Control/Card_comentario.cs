@@ -16,5 +16,10 @@ namespace Pont_Finder.avalie.User_Control
         {
             InitializeComponent();
         }
+
+        private void lb_comentario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

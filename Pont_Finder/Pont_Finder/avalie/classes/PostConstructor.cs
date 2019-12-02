@@ -104,6 +104,9 @@ namespace Pont_Finder.avalie
             set { imgperfil = value; }
         }
 
+
+        //LIKETEMPORARIO
+
         public void like(short valor, long cpf)
         {
             int verify = this.vLike(cpf);
@@ -128,7 +131,7 @@ namespace Pont_Finder.avalie
         }
 
 
-        //LIKETEMPORARIO
+       
 
         public long Likes
         {
