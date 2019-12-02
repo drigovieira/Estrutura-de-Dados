@@ -37,6 +37,10 @@ namespace Pont_Finder.classes
             eventos.Classes.Eventos_List.XmlLoad();
             //fim eventos
 
+            //alimentos
+            alimentos.CompanyList.XmlLoad();
+            //fim Alimentos
+
 
         }
 
@@ -66,6 +70,10 @@ namespace Pont_Finder.classes
             eventos.classes.Empresa_List.XmlSave();
             eventos.Classes.Eventos_List.XmlSave();
             //fim eventos
+
+            //alimentos
+            alimentos.CompanyList.XmlSave();
+            //fim Alimentos
 
         }
 

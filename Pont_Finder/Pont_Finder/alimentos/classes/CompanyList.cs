@@ -141,15 +141,15 @@ namespace Pont_Finder.alimentos
                 }
                 empresa.Categoria = categorias;
                 List<Funcionamento> funcionamento = new List<Funcionamento>();                
-                string[] tempFuncio = item.Element("funcionamento").Value.Split('/');
+                string[] tempFuncio = item.Element("funcionamento").Value.Split('*');
                 string[] tempFuncioSub;
                 foreach (var a in tempFuncio)
                 {
                     Funcionamento temp = new Funcionamento();
                     tempFuncioSub = a.Split(',');
-                    temp.Dia = tempFuncio[0];
-                    temp.HoraInicio = DateTime.Parse(tempFuncio[1]);
-                    temp.HoraFim = DateTime.Parse(tempFuncio[2]);
+                    temp.Dia = tempFuncioSub[0];
+                    temp.HoraInicio = DateTime.Parse(tempFuncioSub[1]);
+                    temp.HoraFim = DateTime.Parse(tempFuncioSub[2]);
                     funcionamento.Add(temp);
                 }
                 empresa.FuncionamentoEmp = funcionamento;
@@ -185,11 +185,11 @@ namespace Pont_Finder.alimentos
                 {                    
                     if (funcio.Equals(""))
                     {
-                        funcio = a.Dia + a.HoraInicio.ToString() + a.HoraFim.ToString();
+                        funcio = a.Dia + "," + a.HoraInicio.ToString() + "," + a.HoraFim.ToString();
                     }
                     else
                     {
-                        funcio += "/"+ a.Dia +","+ a.HoraInicio.ToString() + "," + a.HoraFim.ToString();
+                        funcio += "*"+ a.Dia +","+ a.HoraInicio.ToString() + "," + a.HoraFim.ToString();
                     }
                 }
                 XElement xemp =
@@ -202,7 +202,7 @@ namespace Pont_Finder.alimentos
                       new XElement("image", item.Image),
                       new XElement("categorias", categorias),
                       new XElement("funcionamento", funcio),
-                      new XElement("numero", item.Image),
+                      new XElement("numero", item.Numero),
                       new XElement("cep", item.Cep),
                       new XElement("id", item.Id),
                       new XElement("telComercial", item.TelComercial),

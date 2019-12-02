@@ -41,7 +41,7 @@ namespace Pont_Finder.alimentos
                 }
                 else
                 {
-                    if (count == 4) lbCategorias.Text += "\n";
+                    if (count == 3) { lbCategorias.Text += "\n"; count = 0; }
                     lbCategorias.Text += " / " + item;
                     count++;
                 }
