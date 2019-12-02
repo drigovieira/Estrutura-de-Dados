@@ -21,7 +21,7 @@ namespace Pont_Finder.eventos
 
             pb_imagem.ImageLocation = post.Imagem1;
             lb_nome.Text = post.Nome;
-            lb_ingressos.Text = ""+post.IngressosTotal;
+            lb_ingressos.Text = ""+post.IngressoDispinivel;
             lb_data.Text = post.Data;
             lb_categoria.Text = post.Categoria;
             lb_valor.Text = post.Valor;
