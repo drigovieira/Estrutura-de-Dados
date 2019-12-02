@@ -316,6 +316,41 @@ namespace Pont_Finder
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormAvalie_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Databox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Databox_KeyPress(object sender, KeyPressEventArgs e)
+        {
             ListaDePost.Clear();
             foreach (var item in PostList.PosterAtivo)
             {
@@ -358,35 +393,6 @@ namespace Pont_Finder
                 panel3.Controls.Add(a);
                 i++;
             }
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormAvalie_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Databox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
 
         }
     }

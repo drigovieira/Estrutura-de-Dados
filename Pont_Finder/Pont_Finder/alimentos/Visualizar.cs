@@ -93,6 +93,19 @@ namespace Pont_Finder.alimentos
             FormPrincipal.MudarForm("alimentos", homeAlimentos);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (lbBairro.Text != "")
+            {
+                Mapa.Mapa map = new Mapa.Mapa(lbBairro.Text);
+                map.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Caixa localização não preenchida");
+            }
+        }
+
         private void Visualizar_Paint(object sender, PaintEventArgs e)
         {
             lbRestaurante.Text = nomeFantasia;
