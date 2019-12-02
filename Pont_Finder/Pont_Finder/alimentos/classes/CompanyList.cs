@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pont_Finder.alimentos.classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -123,21 +124,45 @@ namespace Pont_Finder.alimentos
         {
             XDocument doc = XDocument.Load(caminho);
 
-            /*foreach (var item in doc.Descendants("alimentos"))
+            foreach (var item in doc.Descendants("alimentos"))
             {
                 Company empresa = new Company();
                 empresa.Nome = item.Element("nome").Value;
                 empresa.NomeFantasia = item.Element("nomeFantasia").Value;
                 empresa.Email = item.Element("email").Value;
-                empresa.Telefone = item.Element("telefone").Value;
-                empresa.Endereco = item.Element("endereco").Value;
-                empresa.Categoria = item.Element("service").Value;
-                empresa.Cnpj = long.Parse(item.Element("cnpj").Value);
-                empresa.Cpf = long.Parse(item.Element("cpf").Value);
+                empresa.Rua = item.Element("rua").Value;
+                empresa.Bairro = item.Element("bairro").Value;
                 empresa.Image = item.Element("image").Value;
+                List<string> categorias = new List<string>();
+                string[] tempCat = item.Element("categorias").Value.Split(',');
+                foreach(var i in tempCat)
+                {
+                    categorias.Add(i);
+                }
+                empresa.Categoria = categorias;
+                List<Funcionamento> funcionamento = new List<Funcionamento>();                
+                string[] tempFuncio = item.Element("funcionamento").Value.Split('/');
+                string[] tempFuncioSub;
+                foreach (var a in tempFuncio)
+                {
+                    Funcionamento temp = new Funcionamento();
+                    tempFuncioSub = a.Split(',');
+                    temp.Dia = tempFuncio[0];
+                    temp.HoraInicio = DateTime.Parse(tempFuncio[1]);
+                    temp.HoraFim = DateTime.Parse(tempFuncio[2]);
+                    funcionamento.Add(temp);
+                }
+                empresa.FuncionamentoEmp = funcionamento;
+                empresa.Numero = int.Parse(item.Element("numero").Value);
+                empresa.Cep = int.Parse(item.Element("cep").Value);
+                empresa.Id = int.Parse(item.Element("id").Value);
+                empresa.TelComercial = long.Parse(item.Element("telComercial").Value);
+                empresa.Cpf = long.Parse(item.Element("cpf").Value);                
                 empresa.Status = bool.Parse(item.Element("status").Value);
+                empresa.SttsCardapio = bool.Parse(item.Element("statusCardapio").Value);
+                empresa.SttsEntrega = bool.Parse(item.Element("statusEntrega").Value);
                 CompanyList.CompAdd(empresa);
-            }*/
+            }
         }
         public static void XmlSave()
         {
