@@ -39,32 +39,27 @@ namespace Pont_Finder.alimentos
                 menu.Qtd = float.Parse(tb_qtdprato.Text);
                 menu.Ingredientes = ingredientesList;
                 menu.Preco = float.Parse(input_valor.Text);
-                menu.IdEmpresa = ID;
-                ListCardapio.CardapioAdd(menu);
-                foreach (var item in ListCardapio.selectAll())
+                menu.IdEmpresa = ID;                                    
+                string link = "..//..//alimentos//data//image//cardapio//offImage.jpg";
+                if (img)
                 {
-                    if (item.Equals(menu))
-                    {
-                        string link = "..//..//alimentos//data//image//empresas//offImage.jpg";
-                        if (img)
-                        {
-                            if (!Directory.Exists("..//..//alimentos//data//image//empresas"))
-                                Directory.CreateDirectory("..//..//alimentos//data//image//empresas");
+                    if (!Directory.Exists("..//..//alimentos//data//image//cardapio"))
+                        Directory.CreateDirectory("..//..//alimentos//data//image//cardapio");
 
-                            pb_img_1.Load();
-                            pb_img_1.Image = Image.FromFile(openIcone.FileName);
+                    pb_img_1.Load();
+                    pb_img_1.Image = Image.FromFile(openIcone.FileName);
 
-                            Image bmp = new Bitmap(pb_img_1.Image);
+                    Image bmp = new Bitmap(pb_img_1.Image);
 
-                            Image bmp2 = new Bitmap(bmp, pb_img_1.Size);
+                    Image bmp2 = new Bitmap(bmp, pb_img_1.Size);
 
-                            pb_img_1.Image = bmp2;
-                            link = "..//..//servicos//data//images//empresas//" + item.Id + ListCardapio.selectAll().Count + ".jpg";
-                            pb_img_1.Image.Save(link, ImageFormat.Jpeg);
-                            item.Image = link;
-                        }
-                    }
+                    pb_img_1.Image = bmp2;
+                    int name = ID + ListCardapio.selectAll().Count;
+                    link = "..//..//servicos//data//images//empresas//"+name+".jpg";
+                    pb_img_1.Image.Save(link, ImageFormat.Jpeg);                                          
                 }
+                menu.Image = link;
+                ListCardapio.CardapioAdd(menu);                
                 MessageBox.Show("Item adicionado ao cardápio!", "Status Operation:");
                 alimentos.Cadastro_Produto cadProduto = new Cadastro_Produto(ID);
                 FormPrincipal.MudarForm("alimentos", cadProduto);

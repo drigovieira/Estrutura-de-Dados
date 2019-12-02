@@ -842,6 +842,7 @@
     <Folder Include="data\images\carrousel\home\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="alimentos\data\image\cardapio\offImage.jpg" />
     <Content Include="alimentos\data\image\empresas\offImage.jpg" />
     <Content Include="avalie\data\comentarios.xml" />
     <Content Include="avalie\data\imagens\posts0.jpg" />

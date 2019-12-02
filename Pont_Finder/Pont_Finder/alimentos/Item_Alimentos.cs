@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Pont_Finder.alimentos
 {
@@ -31,7 +32,7 @@ namespace Pont_Finder.alimentos
             if (ListCardapio.select(Id).Image != null)
                 pb_alimento.ImageLocation = CompanyList.select(Id).Image;
             else
-                pb_alimento.ImageLocation = "..//..//alimentos//data//image//empresas//offImage.jpg";
+                pb_alimento.ImageLocation = "..//..//alimentos//data//image//cardapio//offImage.jpg";
             int cont1 = 0;
             foreach (var ingred in IngredientesItem)
             {
@@ -95,9 +96,9 @@ namespace Pont_Finder.alimentos
         {
             NomeComida.Text = NomeItem;                
             IngredienteComida.Text = maisIngredientes;
-            qtdComida.Text = "KG "+ qtdItem.ToString("000,00");                        
+            qtdComida.Text = "KG "+ qtdItem.ToString("N2");                        
             CategoriasPrato.Text = maisCategoria;
-            lb_rs.Text = "R$" + PrecoItem.ToString("000,00");
+            lb_rs.Text = PrecoItem.ToString("C", CultureInfo.CurrentCulture);
         }
 
         private void label2_Click(object sender, EventArgs e)
