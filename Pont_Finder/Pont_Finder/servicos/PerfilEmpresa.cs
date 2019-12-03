@@ -39,5 +39,35 @@ namespace Pont_Finder.servicos
         {
             FormPrincipal.MudarForm("servicos", new FormServicos());
         }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Email_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Endereço_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new FormEditarPerfil());
+        }
     }
 }
