@@ -233,5 +233,10 @@ namespace Pont_Finder
         {
 
         }
+
+        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
