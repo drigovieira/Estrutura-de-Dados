@@ -65,7 +65,7 @@
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_prox = new System.Windows.Forms.Button();
             this.bt_ant = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.PictureBox();
+            this.btn_Config = new System.Windows.Forms.PictureBox();
             this.lbConfig1 = new System.Windows.Forms.Label();
             this.lbConfig2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -74,7 +74,7 @@
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -509,19 +509,20 @@
             this.bt_ant.UseVisualStyleBackColor = false;
             this.bt_ant.Click += new System.EventHandler(this.Bt_ant_Click);
             // 
-            // btn_back
+            // btn_Config
             // 
-            this.btn_back.BackColor = System.Drawing.Color.White;
-            this.btn_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_back.BackgroundImage")));
-            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_back.Location = new System.Drawing.Point(1181, 215);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(40, 35);
-            this.btn_back.TabIndex = 69;
-            this.btn_back.TabStop = false;
-            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
+            this.btn_Config.BackColor = System.Drawing.Color.White;
+            this.btn_Config.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Config.BackgroundImage")));
+            this.btn_Config.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Config.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Config.Location = new System.Drawing.Point(1181, 215);
+            this.btn_Config.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Config.Name = "btn_Config";
+            this.btn_Config.Size = new System.Drawing.Size(40, 35);
+            this.btn_Config.TabIndex = 69;
+            this.btn_Config.TabStop = false;
+            this.btn_Config.Visible = false;
+            this.btn_Config.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // lbConfig1
             // 
@@ -566,7 +567,7 @@
             this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.lbConfig2);
             this.Controls.Add(this.lbConfig1);
-            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.btn_Config);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_proxFull);
             this.Controls.Add(this.panel11);
@@ -603,7 +604,7 @@
             this.panel5.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -647,7 +648,7 @@
         private System.Windows.Forms.Button bt_antFull;
         private System.Windows.Forms.Button bt_prox;
         private System.Windows.Forms.Button bt_ant;
-        private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.PictureBox btn_Config;
         private System.Windows.Forms.Label lbConfig1;
         private System.Windows.Forms.Label lbConfig2;
     }

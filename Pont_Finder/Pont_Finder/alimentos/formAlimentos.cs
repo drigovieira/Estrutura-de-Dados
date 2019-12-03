@@ -29,6 +29,8 @@ namespace Pont_Finder
             pagQuant = 10;
             lista = CompanyList.selectAll();
             InitializeComponent();
+            if (Session.Online) btn_Config.Visible = true;
+            else btn_Config.Visible = false;
             Listar();
         }
 
@@ -153,8 +155,15 @@ namespace Pont_Finder
 
         private void Btn_Edit_Empresa_Click(object sender, EventArgs e)
         {
-            alimentos.Cadastro_Restaurante cadastrarestabele = new alimentos.Cadastro_Restaurante();
-            FormPrincipal.MudarForm("alimentos", cadastrarestabele);
+            if (Session.Online)
+            {
+                alimentos.Cadastro_Restaurante cadastrarestabele = new alimentos.Cadastro_Restaurante();
+                FormPrincipal.MudarForm("alimentos", cadastrarestabele);
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para Cadastrar uma empresa. ", "Aviso");
+            }            
         }
 
         private void pb_pesquisar_Click(object sender, EventArgs e)

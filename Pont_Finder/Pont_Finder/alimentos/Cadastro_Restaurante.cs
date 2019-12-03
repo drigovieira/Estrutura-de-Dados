@@ -141,6 +141,7 @@ namespace Pont_Finder.alimentos
                     else { emp.SttsEntrega = false; }
                 }
                 else { emp.SttsCardapio = false; emp.SttsEntrega = false; }
+                emp.Cpf = Session.Cpf;
                 CompanyList.CompAdd(emp);                
 
                 MessageBox.Show("Empresa Cadastrada!", "Status Operation:");
