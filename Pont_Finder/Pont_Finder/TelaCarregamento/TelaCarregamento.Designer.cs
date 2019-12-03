@@ -34,6 +34,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lb_carregar = new System.Windows.Forms.Label();
+            this.lb_modulos = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // progressBar1
@@ -69,12 +71,24 @@
             this.lb_carregar.TabIndex = 6;
             this.lb_carregar.Text = "Carregando";
             // 
+            // lb_modulos
+            // 
+            this.lb_modulos.AutoSize = true;
+            this.lb_modulos.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_modulos.ForeColor = System.Drawing.Color.White;
+            this.lb_modulos.Location = new System.Drawing.Point(704, 410);
+            this.lb_modulos.Name = "lb_modulos";
+            this.lb_modulos.Size = new System.Drawing.Size(187, 46);
+            this.lb_modulos.TabIndex = 7;
+            this.lb_modulos.Text = "Alimentos";
+            // 
             // TelaCarregamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(1382, 759);
+            this.Controls.Add(this.lb_modulos);
             this.Controls.Add(this.lb_carregar);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.pictureBox1);
@@ -95,5 +109,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label lb_carregar;
+        private System.Windows.Forms.Label lb_modulos;
     }
 }
