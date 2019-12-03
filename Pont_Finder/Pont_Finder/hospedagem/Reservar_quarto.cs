@@ -46,5 +46,10 @@ namespace Pont_Finder.hospedagem
                 panel_center.Controls.Clear();
             }
         }
+
+        private void Panel_center_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

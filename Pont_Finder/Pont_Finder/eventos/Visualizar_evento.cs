@@ -71,7 +71,7 @@ namespace Pont_Finder.eventos
             }
             else
             {
-                MessageBox.Show("Precisa estar logado para realizar a compra de ingressos");
+                MessageBox.Show("É preciso estar logado para realizar a compra de ingressos!");
             }
         }
 
@@ -89,6 +89,10 @@ namespace Pont_Finder.eventos
 
             }
         }
-       
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

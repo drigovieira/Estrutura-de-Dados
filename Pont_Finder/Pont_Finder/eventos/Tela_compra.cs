@@ -110,5 +110,15 @@ namespace Pont_Finder.eventos
         {
 
         }
+
+        private void Bt_limpar_Click(object sender, EventArgs e)
+        {
+            cbbox.Text = string.Empty;
+            qntbox.Clear();
+            senhabox.Clear();
+        }
+
+       
+           
     }
 }
