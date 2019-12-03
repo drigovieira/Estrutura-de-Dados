@@ -566,6 +566,52 @@ namespace Pont_Finder
             GoPag("primeira");
         }
 
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            if (lbConfig1.Visible == false && lbConfig2.Visible == false)
+            {
+                lbConfig1.Visible = true;
+                lbConfig2.Visible = true;
+            }
+            else
+            {
+                lbConfig1.Visible = false;
+                lbConfig2.Visible = false;
+            }
+        }
+
+        private void LbConfig1_MouseMove(object sender, MouseEventArgs e)
+        {
+            lbConfig1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(139)))));
+        }
+
+        private void LbConfig1_MouseLeave(object sender, EventArgs e)
+        {
+            lbConfig1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+        }
+
+        private void LbConfig2_MouseMove(object sender, MouseEventArgs e)
+        {
+            lbConfig2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(139)))));
+        }
+
+        private void LbConfig2_MouseLeave(object sender, EventArgs e)
+        {
+            lbConfig2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+        }
+
+        private void LbConfig1_Click(object sender, EventArgs e)
+        {
+            alimentos.Editar_Restaurante editRest = new Editar_Restaurante();
+            FormPrincipal.MudarForm("alimentos", editRest);
+        }
+
+        private void LbConfig2_Click(object sender, EventArgs e)
+        {
+            //alimentos.Cadastro_Produto gerenProd = new Cadastro_Produto();
+            //FormPrincipal.MudarForm("alimentos", gerenProd);
+        }
+
         public void GoPag(string p)
         {            
             int pagina;

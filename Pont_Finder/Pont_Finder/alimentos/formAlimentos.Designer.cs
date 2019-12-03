@@ -65,12 +65,16 @@
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_prox = new System.Windows.Forms.Button();
             this.bt_ant = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.PictureBox();
+            this.lbConfig1 = new System.Windows.Forms.Label();
+            this.lbConfig2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -505,6 +509,54 @@
             this.bt_ant.UseVisualStyleBackColor = false;
             this.bt_ant.Click += new System.EventHandler(this.Bt_ant_Click);
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_back.BackgroundImage")));
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_back.Location = new System.Drawing.Point(1181, 215);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 35);
+            this.btn_back.TabIndex = 69;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
+            // 
+            // lbConfig1
+            // 
+            this.lbConfig1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.lbConfig1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbConfig1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold);
+            this.lbConfig1.ForeColor = System.Drawing.Color.White;
+            this.lbConfig1.Location = new System.Drawing.Point(995, 215);
+            this.lbConfig1.Name = "lbConfig1";
+            this.lbConfig1.Size = new System.Drawing.Size(184, 25);
+            this.lbConfig1.TabIndex = 70;
+            this.lbConfig1.Text = "Gerenciar Empresa";
+            this.lbConfig1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbConfig1.Visible = false;
+            this.lbConfig1.Click += new System.EventHandler(this.LbConfig1_Click);
+            this.lbConfig1.MouseLeave += new System.EventHandler(this.LbConfig1_MouseLeave);
+            this.lbConfig1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LbConfig1_MouseMove);
+            // 
+            // lbConfig2
+            // 
+            this.lbConfig2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.lbConfig2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbConfig2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold);
+            this.lbConfig2.ForeColor = System.Drawing.Color.White;
+            this.lbConfig2.Location = new System.Drawing.Point(995, 240);
+            this.lbConfig2.Name = "lbConfig2";
+            this.lbConfig2.Size = new System.Drawing.Size(184, 25);
+            this.lbConfig2.TabIndex = 71;
+            this.lbConfig2.Text = "Gerenciar Cardápio";
+            this.lbConfig2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbConfig2.Visible = false;
+            this.lbConfig2.Click += new System.EventHandler(this.LbConfig2_Click);
+            this.lbConfig2.MouseLeave += new System.EventHandler(this.LbConfig2_MouseLeave);
+            this.lbConfig2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LbConfig2_MouseMove);
+            // 
             // formAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -512,6 +564,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.lbConfig2);
+            this.Controls.Add(this.lbConfig1);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_proxFull);
             this.Controls.Add(this.panel11);
@@ -548,6 +603,7 @@
             this.panel5.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -591,5 +647,8 @@
         private System.Windows.Forms.Button bt_antFull;
         private System.Windows.Forms.Button bt_prox;
         private System.Windows.Forms.Button bt_ant;
+        private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Label lbConfig1;
+        private System.Windows.Forms.Label lbConfig2;
     }
 }
