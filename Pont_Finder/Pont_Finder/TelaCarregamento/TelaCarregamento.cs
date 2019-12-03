@@ -13,6 +13,7 @@ namespace Pont_Finder.TelaCarregamento
     public partial class TelaCarregamento : Form
     {
         int move = 0;
+        FormPrincipal fors = new FormPrincipal();
 
 
         public TelaCarregamento()
@@ -23,7 +24,12 @@ namespace Pont_Finder.TelaCarregamento
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-            panelslide.Left += 10; // Velocidade
+            if (timer1.Interval == 2000)
+            {
+                this.Visible = false;
+                customProgressBar1.Value = customProgressBar1.Value + 1;
+            }
+            /*panelslide.Left += 10; // Velocidade
 
             if(panelslide.Left > 450) // Limite Até Onde A Barra Vai percorrer
             {
@@ -33,6 +39,27 @@ namespace Pont_Finder.TelaCarregamento
             {
                 move = 1;
             }
+            */
+
+            /*
+            if (customProgressBar1.Value < 100)
+            {
+                customProgressBar1.Value = customProgressBar1.Value + 1;
+
+
+
+            }
+            else
+            {
+                timer1.Enabled = false;
+                Application.Exit();
+            }
+
+            }
+            */
+
+
+            
 
         }
 

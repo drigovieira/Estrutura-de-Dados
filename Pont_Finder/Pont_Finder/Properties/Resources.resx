@@ -133,6 +133,9 @@
   <data name="noview-icon " type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noview-icon .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="854878" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\854878.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="upblue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\upblue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,10 +166,13 @@
   <data name="downgrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\downgrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Like_null" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\servicos\like\Like_null.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="854878" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\854878.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="codigodebarra-810x446" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\codigodebarra-810x446.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

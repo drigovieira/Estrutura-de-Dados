@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Pont_Finder
 {
@@ -20,7 +21,13 @@ namespace Pont_Finder
 
         public FormPrincipal()
         {
+           
+
+
+
             InitializeComponent();
+            
+
             panel1.BackColor = barra;
             navbar = panel1;
             painel = panelHome;
@@ -31,6 +38,7 @@ namespace Pont_Finder
             }
         }
 
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             bt_Sair.Visible = false;

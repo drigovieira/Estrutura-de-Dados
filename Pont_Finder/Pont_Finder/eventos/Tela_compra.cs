@@ -50,6 +50,8 @@ namespace Pont_Finder.eventos
                 Classes.EventoCompra_List.PostAdd(cm);
 
                 MessageBox.Show("Compra Realizada Com Sucesso");
+                Boleto.GerarBoleto bol = new Boleto.GerarBoleto (Session.Cpf, cm.Valortotal);
+                FormPrincipal.MudarForm("eventos", bol);
 
             }
             else

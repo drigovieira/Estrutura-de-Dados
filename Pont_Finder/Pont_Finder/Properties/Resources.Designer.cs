@@ -103,6 +103,16 @@ namespace Pont_Finder.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap codigodebarra_810x446 {
+            get {
+                object obj = ResourceManager.GetObject("codigodebarra-810x446", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Deslike_null {
             get {
                 object obj = ResourceManager.GetObject("Deslike_null", resourceCulture);
@@ -136,6 +146,16 @@ namespace Pont_Finder.Properties {
         internal static System.Drawing.Bitmap downred {
             get {
                 object obj = ResourceManager.GetObject("downred", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -200,6 +200,12 @@
     <Compile Include="avalie\ViewPost.Designer.cs">
       <DependentUpon>ViewPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="Boleto\GerarBoleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boleto\GerarBoleto.Designer.cs">
+      <DependentUpon>GerarBoleto.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="classes\Config.cs" />
+    <Compile Include="classes\CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="classes\Session.cs" />
     <Compile Include="classes\User.cs" />
     <Compile Include="classes\UserList.cs" />
@@ -613,6 +622,9 @@
     <EmbeddedResource Include="avalie\ViewPost.resx">
       <DependentUpon>ViewPost.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Boleto\GerarBoleto.resx">
+      <DependentUpon>GerarBoleto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadEmpresa.resx">
       <DependentUpon>CadEmpresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -881,7 +893,10 @@
     <None Include="Resources\Checked_icon.png" />
     <Content Include="Resources\57477.png" />
     <Content Include="Resources\854878.png" />
+    <None Include="Resources\codigodebarra-810x446.png" />
+    <Content Include="Resources\images.png" />
     <Content Include="Resources\noview-icon.png" />
+    <Content Include="Resources\printer.png" />
     <Content Include="Resources\servicos\like\Deslike.png" />
     <Content Include="Resources\servicos\like\Deslike_blue.png" />
     <Content Include="Resources\servicos\like\Deslike_null.png" />
