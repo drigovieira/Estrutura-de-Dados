@@ -24,10 +24,13 @@ namespace Pont_Finder.alimentos
             emp.Bairro = comp.Bairro;
             emp.Categoria = comp.Categoria;
             emp.Cep = comp.Cep;
+            emp.Cpf = comp.Cpf;
             emp.TelComercial = comp.TelComercial;
             emp.Status = true;
             emp.Image = comp.Image;
             emp.FuncionamentoEmp = comp.FuncionamentoEmp;
+            emp.SttsCardapio = comp.SttsCardapio;
+            emp.SttsEntrega = comp.SttsEntrega;
             company.Add(emp);
             company[company.IndexOf(emp)].Id = company.IndexOf(emp);
         }
@@ -229,6 +232,21 @@ namespace Pont_Finder.alimentos
                 node.ParentNode.RemoveChild(node);
             }
             xmldoc.Save(caminho);
+        }
+        public static object[] verifEmp(long cpf)
+        {
+            object[] variaveis = new object[2];
+            variaveis[0] = null;
+            variaveis[1] = false;
+            foreach(var item in company)
+            {
+                if(item.Cpf == cpf)
+                {
+                    variaveis[0] = item.Id;
+                    variaveis[1] = true;
+                }
+            }
+            return variaveis;
         }
     }
 }
