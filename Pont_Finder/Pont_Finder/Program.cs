@@ -18,7 +18,7 @@ namespace Pont_Finder
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrincipal());
+            Application.Run(new TelaCarregamento.TelaCarregamento());
         }
     }
 }

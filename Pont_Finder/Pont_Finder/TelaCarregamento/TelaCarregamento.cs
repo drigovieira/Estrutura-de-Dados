@@ -12,10 +12,6 @@ namespace Pont_Finder.TelaCarregamento
 {
     public partial class TelaCarregamento : Form
     {
-        int move = 0;
-        FormPrincipal fors = new FormPrincipal();
-
-
         public TelaCarregamento()
         {
             InitializeComponent();
@@ -24,47 +20,24 @@ namespace Pont_Finder.TelaCarregamento
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-            if (timer1.Interval == 2000)
+            FormPrincipal FPrince = new FormPrincipal();
+            if (progressBar1.Value == 100)
             {
+                timer1.Stop();
+                
                 this.Visible = false;
-                customProgressBar1.Value = customProgressBar1.Value + 1;
-            }
-            /*panelslide.Left += 10; // Velocidade
-
-            if(panelslide.Left > 450) // Limite Até Onde A Barra Vai percorrer
-            {
-                panelslide.Left = 0;
-            }
-            if(panelslide.Left < 10)
-            {
-                move = 1;
-            }
-            */
-
-            /*
-            if (customProgressBar1.Value < 100)
-            {
-                customProgressBar1.Value = customProgressBar1.Value + 1;
-
-
-
+                FPrince.Show();
             }
             else
             {
-                timer1.Enabled = false;
-                Application.Exit();
+                progressBar1.Value = progressBar1.Value + 5;
+                lb_carregar.Text = "Carregando : " + progressBar1.Value.ToString() + " %";
             }
-
-            }
-            */
-
-
-            
-
         }
 
         private void TelaCarregamento_Load(object sender, EventArgs e)
         {
+            progressBar1.Value = 0;
             timer1.Start();
         }
     }
