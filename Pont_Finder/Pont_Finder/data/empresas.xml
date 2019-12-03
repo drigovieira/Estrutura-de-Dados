@@ -1,23 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulos>
-  <alimentos>
-    <nome>Empresa Teste</nome>
-    <nomeFantasia>Empresa Teste</nomeFantasia>
-    <email>teste@teste.com</email>
-    <rua>rua teste</rua>
-    <bairro>bairro teste</bairro>
-    <image>..//..//servicos//data//images//empresas//teste@teste.com.jpg</image>
-    <categorias>Churrascaria,Comida Japonesa,Hambúrgueria,Outros</categorias>
-    <funcionamento>Segunda - Feira,02/12/2019 12:00:00,02/12/2019 18:00:00*Quarta - Feira,02/12/2019 13:00:00,02/12/2019 19:00:00*Sexta - Feira,02/12/2019 14:00:00,02/12/2019 20:00:00*Domingo,02/12/2019 16:00:00,02/12/2019 00:00:00</funcionamento>
-    <numero>123</numero>
-    <cep>12312312</cep>
-    <id>0</id>
-    <telComercial>1231231231</telComercial>
-    <cpf>0</cpf>
-    <status>true</status>
-    <statusCardapio>false</statusCardapio>
-    <statusEntrega>false</statusEntrega>
-  </alimentos>
   <servico>
     <nome>OdinSeia</nome>
     <nomeFantasia>OdinSeia</nomeFantasia>

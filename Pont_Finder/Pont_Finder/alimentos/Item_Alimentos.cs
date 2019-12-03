@@ -96,7 +96,7 @@ namespace Pont_Finder.alimentos
         {
             NomeComida.Text = NomeItem;                
             IngredienteComida.Text = maisIngredientes;
-            qtdComida.Text = "KG "+ qtdItem.ToString("N2");                        
+            qtdComida.Text = "Kg "+ qtdItem.ToString("N2");                        
             CategoriasPrato.Text = maisCategoria;
             lb_rs.Text = PrecoItem.ToString("C", CultureInfo.CurrentCulture);
         }

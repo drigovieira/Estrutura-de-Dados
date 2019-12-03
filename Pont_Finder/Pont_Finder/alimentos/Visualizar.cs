@@ -95,15 +95,18 @@ namespace Pont_Finder.alimentos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (lbBairro.Text != "")
-            {
-                Mapa.Mapa map = new Mapa.Mapa(lbBairro.Text);
-                map.ShowDialog();
+            if (Session.Online) {
+                if (lbBairro.Text != "")
+                {
+                    Mapa.Mapa map = new Mapa.Mapa(lbBairro.Text);
+                    map.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Caixa localização não preenchida");
+                }
             }
-            else
-            {
-                MessageBox.Show("Caixa localização não preenchida");
-            }
+            else MessageBox.Show("É necessário estar logado para utilizar esta função!", "Alerta");
         }
 
         private void Visualizar_Paint(object sender, PaintEventArgs e)

@@ -35,6 +35,7 @@ namespace Pont_Finder
                 result = CompanyList.verifEmp(Session.Cpf);
                 if(result[0] != null)
                 {
+                    Btn_Edit_Empresa.Visible = false;
                     btn_Config.Visible = true;
                 }                
             }
