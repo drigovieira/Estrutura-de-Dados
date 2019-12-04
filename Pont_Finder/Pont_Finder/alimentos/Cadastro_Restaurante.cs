@@ -126,7 +126,7 @@ namespace Pont_Finder.alimentos
                     Image bmp2 = new Bitmap(bmp, pb_icone.Size);
 
                     pb_icone.Image = bmp2;
-                    link = "..//..//servicos//data//images//empresas//" + emp.Email + ".jpg";
+                    link = "..//..//alimentos//data//images//empresas//" + emp.Email + ".jpg";
                     pb_icone.Image.Save(link, ImageFormat.Jpeg);
                 }
                 emp.Image = link;
