@@ -29,35 +29,7 @@ namespace Pont_Finder.eventos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Classes.ComprEvento cm = new Classes.ComprEvento();
-
-            
-            string metodo = cbbox.SelectedItem.ToString();
-            string qnt = qntbox.Text;
-            string senha = senhabox.Text;
-
-            edit.IngressoDispinivel = edit.IngressoDispinivel - int.Parse(qnt);
-
-            cm.Id = Classes.EventoCompra_List.thisPoster.Count();
-            cm.Cpf = Session.Cpf;
-            cm.Qnt = long.Parse(qnt);
-            cm.Metodopagamento = metodo;
-            cm.Data = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
-            cm.Valortotal = double.Parse(edit.Valor) * cm.Qnt + double.Parse(",00") ;
-
-            if (senha == Session.Senha)
-            {
-                Classes.EventoCompra_List.PostAdd(cm);
-
-                MessageBox.Show("Compra Realizada Com Sucesso");
-                Boleto.GerarBoleto bol = new Boleto.GerarBoleto (Session.Cpf, cm.Valortotal);
-                FormPrincipal.MudarForm("eventos", bol);
-
-            }
-            else
-            {
-                MessageBox.Show("Senha Incorreta");
-            }
+          
             
 
 
@@ -115,12 +87,72 @@ namespace Pont_Finder.eventos
 
         private void Bt_limpar_Click(object sender, EventArgs e)
         {
-            cbbox.Text = string.Empty;
-            qntbox.Clear();
-            senhabox.Clear();
+          
         }
 
-       
-           
+        private void Rb_boleto_CheckedChanged(object sender, EventArgs e)
+        {
+            {
+                if (rb_boleto.Checked)
+                {
+                    eventos.User_Card.Card_boleto boleto = new User_Card.Card_boleto();
+                    boleto.Location = new Point(0, 0);
+                    panel_center.Controls.Add(boleto);
+                }
+                else
+                {
+                    panel_center.Controls.Clear();
+                }
+            }
+        }
+
+        private void Rb_cartao_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (rb_cartao.Checked)
+            {
+                eventos.User_Card.Card_cartao cartao = new User_Card.Card_cartao();
+                cartao.Location = new Point(0, 0);
+                panel_center.Controls.Add(cartao);
+            }
+            else
+            {
+                panel_center.Controls.Clear();
+            }
+        }
+
+        private void Bt_finalizar_Click(object sender, EventArgs e)
+        {
+            Classes.ComprEvento cm = new Classes.ComprEvento();
+
+
+            //string metodo = cbbox.SelectedItem.ToString();
+            //string qnt = qntbox.Text;
+            //string senha = senhabox.Text;
+
+            // edit.IngressoDispinivel = edit.IngressoDispinivel - int.Parse(qnt);
+
+            //cm.Id = Classes.EventoCompra_List.thisPoster.Count();
+            //cm.Cpf = Session.Cpf;
+            //cm.Qnt = long.Parse(qnt);
+            // cm.Metodopagamento = metodo;
+            //cm.Data = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+            //cm.Valortotal = double.Parse(edit.Valor) * cm.Qnt + double.Parse(",00") ;
+
+            // if (senha == Session.Senha)
+            // {
+            //   Classes.EventoCompra_List.PostAdd(cm);
+
+            //  MessageBox.Show("Compra Realizada Com Sucesso");
+            //  Boleto.GerarBoleto bol = new Boleto.GerarBoleto (Session.Cpf, cm.Valortotal);
+            //  FormPrincipal.MudarForm("eventos", bol);
+
+            // }
+            // else
+            // {
+            //     MessageBox.Show("Senha Incorreta");
+            // }
+            MessageBox.Show("Compra efetuada com sucesso!");
+        }
     }
 }
