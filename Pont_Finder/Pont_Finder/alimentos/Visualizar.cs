@@ -18,8 +18,7 @@ namespace Pont_Finder.alimentos
         private List<Funcionamento> funcionamentoEmp;
         private int numero, Empcep, Index;
         private long Empcontato;
-        private bool sttsCardapio;
-        public Visualizar(int index, string fantasia, string Rua, string Bairro, List<string> Categorias, int Num, int Cep, long Contato, string link, bool cardapio)
+        public Visualizar(int index, string fantasia, string Rua, string Bairro, List<string> Categorias, int Num, int Cep, long Contato, string link)
         {
             nomeFantasia = fantasia;
             Emprua = Rua;
@@ -30,7 +29,6 @@ namespace Pont_Finder.alimentos
             Empcontato = Contato;
             linkimage = link;
             Index = index;
-            sttsCardapio = cardapio;
             InitializeComponent();
             CapturarFuncionamento();
             int count = 0;
@@ -76,15 +74,8 @@ namespace Pont_Finder.alimentos
         {
             if (Session.Online)
             {
-                if (sttsCardapio == true)
-                {
-                    alimentos.Reserva_Alimentos reserva = new alimentos.Reserva_Alimentos(Index);
-                    FormPrincipal.MudarForm("alimentos", reserva);
-                }
-                else
-                {
-                    MessageBox.Show("Essa empresa não resgistrou um cardápio. ", "Aviso");
-                }
+                alimentos.Reserva_Alimentos reserva = new alimentos.Reserva_Alimentos(Index);
+                FormPrincipal.MudarForm("alimentos", reserva);
             }
             else
             {
@@ -104,18 +95,15 @@ namespace Pont_Finder.alimentos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Session.Online) {
-                if (lbBairro.Text != "")
-                {
-                    Mapa.Mapa map = new Mapa.Mapa(lbBairro.Text);
-                    map.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Caixa localização não preenchida");
-                }
+            if (lbBairro.Text != "")
+            {
+                Mapa.Mapa map = new Mapa.Mapa(lbBairro.Text);
+                map.ShowDialog();
             }
-            else MessageBox.Show("É necessário estar logado para utilizar esta função!", "Alerta");
+            else
+            {
+                MessageBox.Show("Caixa localização não preenchida");
+            }
         }
 
         private void Visualizar_Paint(object sender, PaintEventArgs e)

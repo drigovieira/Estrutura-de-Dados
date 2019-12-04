@@ -28,85 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditarPerfil));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tb_site = new System.Windows.Forms.TextBox();
-            this.tb_telefone = new System.Windows.Forms.TextBox();
-            this.tb_endereco = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Site = new System.Windows.Forms.Label();
             this.Categoria = new System.Windows.Forms.Label();
-            this.lb_categoria = new System.Windows.Forms.Label();
-            this.lb_email = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.tb_descricao = new System.Windows.Forms.RichTextBox();
-            this.tb_slogan = new System.Windows.Forms.RichTextBox();
             this.PolPrivacidade = new System.Windows.Forms.Label();
+            this.SiteLink = new System.Windows.Forms.TextBox();
             this.SobreNos = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.pb_icone = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.lb_fantasia = new System.Windows.Forms.Label();
-            this.pv_capa = new System.Windows.Forms.PictureBox();
+            this.NomeFantasia = new System.Windows.Forms.Label();
+            this.Capa = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Email = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.bt_capa = new System.Windows.Forms.Button();
-            this.bt_icone = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pv_capa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Capa)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.tb_site);
-            this.panel2.Controls.Add(this.tb_telefone);
-            this.panel2.Controls.Add(this.tb_endereco);
+            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.Site);
             this.panel2.Controls.Add(this.Categoria);
-            this.panel2.Controls.Add(this.lb_categoria);
-            this.panel2.Controls.Add(this.lb_email);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.Email);
             this.panel2.Location = new System.Drawing.Point(947, 15);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(313, 1216);
             this.panel2.TabIndex = 12;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
-            // 
-            // tb_site
-            // 
-            this.tb_site.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_site.Location = new System.Drawing.Point(20, 408);
-            this.tb_site.Name = "tb_site";
-            this.tb_site.Size = new System.Drawing.Size(269, 32);
-            this.tb_site.TabIndex = 15;
-            // 
-            // tb_telefone
-            // 
-            this.tb_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_telefone.Location = new System.Drawing.Point(20, 322);
-            this.tb_telefone.Name = "tb_telefone";
-            this.tb_telefone.Size = new System.Drawing.Size(269, 32);
-            this.tb_telefone.TabIndex = 15;
-            // 
-            // tb_endereco
-            // 
-            this.tb_endereco.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_endereco.Location = new System.Drawing.Point(20, 236);
-            this.tb_endereco.Name = "tb_endereco";
-            this.tb_endereco.Size = new System.Drawing.Size(275, 32);
-            this.tb_endereco.TabIndex = 14;
             // 
             // label8
             // 
@@ -158,57 +131,20 @@
             this.Categoria.TabIndex = 12;
             this.Categoria.Text = "Categoria";
             // 
-            // lb_categoria
-            // 
-            this.lb_categoria.AutoSize = true;
-            this.lb_categoria.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_categoria.Location = new System.Drawing.Point(16, 87);
-            this.lb_categoria.Name = "lb_categoria";
-            this.lb_categoria.Size = new System.Drawing.Size(198, 24);
-            this.lb_categoria.TabIndex = 13;
-            this.lb_categoria.Text = "Categorias de serviços";
-            // 
-            // lb_email
-            // 
-            this.lb_email.AutoSize = true;
-            this.lb_email.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_email.ForeColor = System.Drawing.Color.Black;
-            this.lb_email.Location = new System.Drawing.Point(16, 159);
-            this.lb_email.Name = "lb_email";
-            this.lb_email.Size = new System.Drawing.Size(186, 24);
-            this.lb_email.TabIndex = 2;
-            this.lb_email.Text = "exemple@gmail.com";
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.richTextBox2);
             this.panel3.Controls.Add(this.richTextBox1);
-            this.panel3.Controls.Add(this.tb_descricao);
-            this.panel3.Controls.Add(this.tb_slogan);
             this.panel3.Controls.Add(this.PolPrivacidade);
+            this.panel3.Controls.Add(this.SiteLink);
             this.panel3.Controls.Add(this.SobreNos);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(321, 361);
+            this.panel3.Location = new System.Drawing.Point(319, 319);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(625, 912);
             this.panel3.TabIndex = 13;
-            // 
-            // tb_descricao
-            // 
-            this.tb_descricao.Location = new System.Drawing.Point(3, 154);
-            this.tb_descricao.Name = "tb_descricao";
-            this.tb_descricao.Size = new System.Drawing.Size(619, 203);
-            this.tb_descricao.TabIndex = 20;
-            this.tb_descricao.Text = "";
-            // 
-            // tb_slogan
-            // 
-            this.tb_slogan.Location = new System.Drawing.Point(3, 12);
-            this.tb_slogan.Name = "tb_slogan";
-            this.tb_slogan.Size = new System.Drawing.Size(619, 84);
-            this.tb_slogan.TabIndex = 19;
-            this.tb_slogan.Text = "";
             // 
             // PolPrivacidade
             // 
@@ -220,11 +156,23 @@
             this.PolPrivacidade.TabIndex = 16;
             this.PolPrivacidade.Text = "Política de privacidade";
             // 
+            // SiteLink
+            // 
+            this.SiteLink.BackColor = System.Drawing.Color.White;
+            this.SiteLink.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SiteLink.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SiteLink.Location = new System.Drawing.Point(3, 406);
+            this.SiteLink.MaxLength = 700;
+            this.SiteLink.Multiline = true;
+            this.SiteLink.Name = "SiteLink";
+            this.SiteLink.Size = new System.Drawing.Size(619, 203);
+            this.SiteLink.TabIndex = 5;
+            // 
             // SobreNos
             // 
             this.SobreNos.AutoSize = true;
             this.SobreNos.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SobreNos.Location = new System.Drawing.Point(3, 377);
+            this.SobreNos.Location = new System.Drawing.Point(3, 371);
             this.SobreNos.Name = "SobreNos";
             this.SobreNos.Size = new System.Drawing.Size(129, 32);
             this.SobreNos.TabIndex = 4;
@@ -243,12 +191,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.bt_icone);
             this.panel1.Controls.Add(this.btn_back);
-            this.panel1.Controls.Add(this.pb_icone);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.lb_fantasia);
+            this.panel1.Controls.Add(this.NomeFantasia);
             this.panel1.Location = new System.Drawing.Point(5, 15);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(310, 924);
@@ -265,15 +212,14 @@
             this.btn_back.TabIndex = 14;
             this.btn_back.TabStop = false;
             // 
-            // pb_icone
+            // pictureBox1
             // 
-            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_icone.Location = new System.Drawing.Point(28, 61);
-            this.pb_icone.Name = "pb_icone";
-            this.pb_icone.Size = new System.Drawing.Size(250, 250);
-            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_icone.TabIndex = 0;
-            this.pb_icone.TabStop = false;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 62);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(263, 238);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // button2
             // 
@@ -301,73 +247,100 @@
             this.button1.Text = "Salvar Edições";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // lb_fantasia
+            // NomeFantasia
             // 
-            this.lb_fantasia.AutoSize = true;
-            this.lb_fantasia.BackColor = System.Drawing.Color.Transparent;
-            this.lb_fantasia.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_fantasia.ForeColor = System.Drawing.Color.Black;
-            this.lb_fantasia.Location = new System.Drawing.Point(17, 337);
-            this.lb_fantasia.Name = "lb_fantasia";
-            this.lb_fantasia.Size = new System.Drawing.Size(135, 24);
-            this.lb_fantasia.TabIndex = 1;
-            this.lb_fantasia.Text = "Nome Fantasia";
-            this.lb_fantasia.Click += new System.EventHandler(this.NomeFantasia_Click);
+            this.NomeFantasia.AutoSize = true;
+            this.NomeFantasia.BackColor = System.Drawing.Color.Transparent;
+            this.NomeFantasia.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomeFantasia.ForeColor = System.Drawing.Color.Black;
+            this.NomeFantasia.Location = new System.Drawing.Point(17, 337);
+            this.NomeFantasia.Name = "NomeFantasia";
+            this.NomeFantasia.Size = new System.Drawing.Size(135, 24);
+            this.NomeFantasia.TabIndex = 1;
+            this.NomeFantasia.Text = "Nome Fantasia";
             // 
-            // pv_capa
+            // Capa
             // 
-            this.pv_capa.BackColor = System.Drawing.Color.Transparent;
-            this.pv_capa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pv_capa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pv_capa.Location = new System.Drawing.Point(331, 77);
-            this.pv_capa.Name = "pv_capa";
-            this.pv_capa.Size = new System.Drawing.Size(600, 250);
-            this.pv_capa.TabIndex = 14;
-            this.pv_capa.TabStop = false;
+            this.Capa.BackColor = System.Drawing.Color.PowderBlue;
+            this.Capa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Capa.Location = new System.Drawing.Point(319, 77);
+            this.Capa.Name = "Capa";
+            this.Capa.Size = new System.Drawing.Size(625, 238);
+            this.Capa.TabIndex = 14;
+            this.Capa.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(20, 236);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(275, 32);
+            this.textBox2.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(16, 87);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(198, 24);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Categorias de serviços";
+            // 
+            // Email
+            // 
+            this.Email.AutoSize = true;
+            this.Email.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.ForeColor = System.Drawing.Color.Black;
+            this.Email.Location = new System.Drawing.Point(16, 159);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(186, 24);
+            this.Email.TabIndex = 2;
+            this.Email.Text = "exemple@gmail.com";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(20, 322);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(269, 32);
+            this.textBox3.TabIndex = 15;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(20, 408);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(269, 32);
+            this.textBox4.TabIndex = 15;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(2, 412);
+            this.richTextBox1.Location = new System.Drawing.Point(3, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(619, 203);
-            this.richTextBox1.TabIndex = 21;
+            this.richTextBox1.Size = new System.Drawing.Size(619, 84);
+            this.richTextBox1.TabIndex = 19;
             this.richTextBox1.Text = "";
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(3, 675);
+            this.richTextBox2.Location = new System.Drawing.Point(3, 154);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(619, 203);
-            this.richTextBox2.TabIndex = 22;
+            this.richTextBox2.TabIndex = 20;
             this.richTextBox2.Text = "";
             // 
-            // bt_capa
+            // textBox1
             // 
-            this.bt_capa.BackColor = System.Drawing.Color.White;
-            this.bt_capa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_capa.BackgroundImage")));
-            this.bt_capa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.bt_capa.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_capa.FlatAppearance.BorderSize = 0;
-            this.bt_capa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_capa.Location = new System.Drawing.Point(904, 311);
-            this.bt_capa.Name = "bt_capa";
-            this.bt_capa.Size = new System.Drawing.Size(40, 30);
-            this.bt_capa.TabIndex = 15;
-            this.bt_capa.UseVisualStyleBackColor = false;
-            // 
-            // bt_icone
-            // 
-            this.bt_icone.BackColor = System.Drawing.Color.White;
-            this.bt_icone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_icone.BackgroundImage")));
-            this.bt_icone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.bt_icone.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_icone.FlatAppearance.BorderSize = 0;
-            this.bt_icone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_icone.Location = new System.Drawing.Point(258, 295);
-            this.bt_icone.Name = "bt_icone";
-            this.bt_icone.Size = new System.Drawing.Size(40, 30);
-            this.bt_icone.TabIndex = 15;
-            this.bt_icone.UseVisualStyleBackColor = false;
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(4, 675);
+            this.textBox1.MaxLength = 700;
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(619, 203);
+            this.textBox1.TabIndex = 21;
             // 
             // FormEditarPerfil
             // 
@@ -376,15 +349,13 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.bt_capa);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pv_capa);
+            this.Controls.Add(this.Capa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormEditarPerfil";
             this.Text = "FormEditarPerfil";
-            this.Load += new System.EventHandler(this.FormEditarPerfil_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -392,8 +363,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pv_capa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Capa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -408,25 +379,23 @@
         private System.Windows.Forms.Label Categoria;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label PolPrivacidade;
+        private System.Windows.Forms.TextBox SiteLink;
         private System.Windows.Forms.Label SobreNos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btn_back;
-        private System.Windows.Forms.PictureBox pb_icone;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label lb_fantasia;
-        private System.Windows.Forms.PictureBox pv_capa;
-        private System.Windows.Forms.TextBox tb_site;
-        private System.Windows.Forms.TextBox tb_telefone;
-        private System.Windows.Forms.TextBox tb_endereco;
-        private System.Windows.Forms.Label lb_categoria;
-        private System.Windows.Forms.Label lb_email;
-        private System.Windows.Forms.RichTextBox tb_descricao;
-        private System.Windows.Forms.RichTextBox tb_slogan;
+        private System.Windows.Forms.Label NomeFantasia;
+        private System.Windows.Forms.PictureBox Capa;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Email;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button bt_icone;
-        private System.Windows.Forms.Button bt_capa;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

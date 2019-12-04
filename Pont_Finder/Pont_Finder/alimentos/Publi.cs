@@ -28,7 +28,7 @@ namespace Pont_Finder.alimentos
             {
                 if(CompanyList.selectAll().IndexOf(item) == ID)
                 {
-                    alimentos.Visualizar exibirEmpresa = new alimentos.Visualizar(ID, item.NomeFantasia, item.Rua, item.Bairro, item.Categoria, item.Numero, item.Cep, item.TelComercial, item.Image, item.SttsCardapio);
+                    alimentos.Visualizar exibirEmpresa = new alimentos.Visualizar(ID, item.NomeFantasia, item.Rua, item.Bairro, item.Categoria, item.Numero, item.Cep, item.TelComercial, item.Image);
                     FormPrincipal.MudarForm("alimentos", exibirEmpresa);
                 }
             }            

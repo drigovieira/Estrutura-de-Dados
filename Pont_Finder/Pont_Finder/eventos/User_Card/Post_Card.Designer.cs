@@ -52,7 +52,7 @@
             this.lb_valor.AutoSize = true;
             this.lb_valor.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_valor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_valor.Location = new System.Drawing.Point(545, 45);
+            this.lb_valor.Location = new System.Drawing.Point(567, 45);
             this.lb_valor.Name = "lb_valor";
             this.lb_valor.Size = new System.Drawing.Size(44, 54);
             this.lb_valor.TabIndex = 11;
@@ -94,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.label1.Location = new System.Drawing.Point(492, 45);
+            this.label1.Location = new System.Drawing.Point(514, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 54);
             this.label1.TabIndex = 14;
@@ -201,7 +201,7 @@
             // 
             this.lb_local.AutoSize = true;
             this.lb_local.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_local.Location = new System.Drawing.Point(391, 45);
+            this.lb_local.Location = new System.Drawing.Point(401, 45);
             this.lb_local.Name = "lb_local";
             this.lb_local.Size = new System.Drawing.Size(19, 25);
             this.lb_local.TabIndex = 32;
@@ -211,7 +211,7 @@
             // 
             this.lb_classifica.AutoSize = true;
             this.lb_classifica.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_classifica.Location = new System.Drawing.Point(436, 113);
+            this.lb_classifica.Location = new System.Drawing.Point(446, 114);
             this.lb_classifica.Name = "lb_classifica";
             this.lb_classifica.Size = new System.Drawing.Size(19, 25);
             this.lb_classifica.TabIndex = 33;

@@ -12,21 +12,9 @@ namespace Pont_Finder.servicos
 {
     public partial class FormEditarPerfil : Form
     {
-        classes.Empresa empresa;
         public FormEditarPerfil()
         {
-            empresa = classes.ListaEmpresa.ForCpf(Session.Cpf);
             InitializeComponent();
-
-            pb_icone.ImageLocation = empresa.Image;
-            lb_fantasia.Text = empresa.NomeFantasia;
-            lb_categoria.Text = empresa.Categoria;
-            lb_email.Text = empresa.Email;
-            tb_endereco.Text = empresa.Endereco;
-            tb_telefone.Text = empresa.Telefone;
-
-    
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -35,16 +23,6 @@ namespace Pont_Finder.servicos
         }
 
         private void Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void NomeFantasia_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormEditarPerfil_Load(object sender, EventArgs e)
         {
 
         }

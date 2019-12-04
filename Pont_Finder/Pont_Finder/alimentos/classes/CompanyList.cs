@@ -24,13 +24,10 @@ namespace Pont_Finder.alimentos
             emp.Bairro = comp.Bairro;
             emp.Categoria = comp.Categoria;
             emp.Cep = comp.Cep;
-            emp.Cpf = comp.Cpf;
             emp.TelComercial = comp.TelComercial;
             emp.Status = true;
             emp.Image = comp.Image;
             emp.FuncionamentoEmp = comp.FuncionamentoEmp;
-            emp.SttsCardapio = comp.SttsCardapio;
-            emp.SttsEntrega = comp.SttsEntrega;
             company.Add(emp);
             company[company.IndexOf(emp)].Id = company.IndexOf(emp);
         }
@@ -62,31 +59,23 @@ namespace Pont_Finder.alimentos
                 }
             }
         }*/
-        public static void alter(int ID, Company comp)
-        {            
+        public static void alter(string cnpj, Company comp)
+        {
+            long cnpjConvert = Convert.ToInt64(String.Join("", System.Text.RegularExpressions.Regex.Split(cnpj, @"[^\d]")));
+            //percorre a lista com uma variável Company
             foreach (var emps in company)
             {
-                if (emps.Id == ID)
+                if (emps.Id == cnpjConvert)
                 {
                     //pega o index da lista do usuário em questão
                     int index = company.IndexOf(emps);
-                    //substitui na lista company                    
-                    company[index].Nome = comp.Nome;
+                    //substitui na lista company
                     company[index].NomeFantasia = comp.NomeFantasia;
                     company[index].Email = comp.Email;
                     company[index].Rua = comp.Rua;
                     company[index].Numero = comp.Numero;
                     company[index].Bairro = comp.Bairro;
-                    company[index].Categoria = comp.Categoria;
                     company[index].Cep = comp.Cep;
-                    company[index].Cpf = comp.Cpf;
-                    company[index].TelComercial = comp.TelComercial;
-                    company[index].Status = true;
-                    company[index].Image = comp.Image;
-                    company[index].FuncionamentoEmp = comp.FuncionamentoEmp;
-                    company[index].SttsCardapio = comp.SttsCardapio;
-                    company[index].SttsEntrega = comp.SttsEntrega;
-                    company[index].Id = comp.Id;
                     break;
                 }
             }
@@ -240,21 +229,6 @@ namespace Pont_Finder.alimentos
                 node.ParentNode.RemoveChild(node);
             }
             xmldoc.Save(caminho);
-        }
-        public static object[] verifEmp(long cpf)
-        {
-            object[] variaveis = new object[2];
-            variaveis[0] = null;
-            variaveis[1] = false;
-            foreach(var item in company)
-            {
-                if(item.Cpf == cpf)
-                {
-                    variaveis[0] = item.Id;
-                    variaveis[1] = true;
-                }
-            }
-            return variaveis;
         }
     }
 }
