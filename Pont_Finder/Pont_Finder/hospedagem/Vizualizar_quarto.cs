@@ -18,6 +18,7 @@ namespace Pont_Finder.hospedagem
 
         private int id, qtd_pessoas, qtd_disponivel, telefone_emp;
         private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp;
+        private long cpf_usuario;
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -32,10 +33,17 @@ namespace Pont_Finder.hospedagem
             }
         }
 
-        private void bt_reservar_Click(object sender, EventArgs e)
+        private void lb_rs_cartao_Click(object sender, EventArgs e)
         {
 
-            hospedagem.Reservar_quarto reserva = new Reservar_quarto();
+        }
+
+        private void bt_reservar_Click(object sender, EventArgs e)
+        {
+            if (Session.Online)
+                cpf_usuario = Session.Cpf;
+
+            hospedagem.Reservar_quarto reserva = new Reservar_quarto(id, anterior, dt_ini.Value, dt_fim.Value, cpf_usuario);
             FormPrincipal.MudarForm("hospedagem", reserva);
 
         }
@@ -67,6 +75,7 @@ namespace Pont_Finder.hospedagem
             Empresa emp = hostList.selectCnpj(quarto.Cnpj_Empresa);
 
             //QUARTO
+            this.id = quarto.ID;
             this.nome = quarto.NomeQuarto;
             this.qtd_pessoas = quarto.Qtd_Pessoas;
             this.qtd_disponivel = quarto.Qtd_Disponivel;

@@ -63,9 +63,9 @@
             this.lb_txt2 = new System.Windows.Forms.Label();
             this.lb_nome_quarto = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dt_fim = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dt_ini = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.bt_reservar = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.PictureBox();
@@ -378,6 +378,7 @@
             this.lb_rs_cartao.Size = new System.Drawing.Size(49, 36);
             this.lb_rs_cartao.TabIndex = 34;
             this.lb_rs_cartao.Text = "R$";
+            this.lb_rs_cartao.Click += new System.EventHandler(this.lb_rs_cartao_Click);
             // 
             // lb_rs_boleto
             // 
@@ -424,9 +425,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.dt_fim);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.dt_ini);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pn_icons_quarto);
             this.panel1.Controls.Add(this.pn_icons_hotel);
@@ -451,14 +452,14 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
-            // dateTimePicker2
+            // dt_fim
             // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(785, 357);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(240, 21);
-            this.dateTimePicker2.TabIndex = 57;
+            this.dt_fim.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_fim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_fim.Location = new System.Drawing.Point(785, 357);
+            this.dt_fim.Name = "dt_fim";
+            this.dt_fim.Size = new System.Drawing.Size(240, 21);
+            this.dt_fim.TabIndex = 57;
             // 
             // label4
             // 
@@ -471,13 +472,13 @@
             this.label4.TabIndex = 56;
             this.label4.Text = "Data de saída:";
             // 
-            // dateTimePicker1
+            // dt_ini
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(785, 291);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(240, 21);
-            this.dateTimePicker1.TabIndex = 55;
+            this.dt_ini.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_ini.Location = new System.Drawing.Point(785, 291);
+            this.dt_ini.Name = "dt_ini";
+            this.dt_ini.Size = new System.Drawing.Size(240, 21);
+            this.dt_ini.TabIndex = 55;
             // 
             // label3
             // 
@@ -589,9 +590,9 @@
         private System.Windows.Forms.Label lb_tipo_quarto;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dt_fim;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dt_ini;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bt_reservar;
         private System.Windows.Forms.PictureBox pictureBox1;

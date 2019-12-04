@@ -331,6 +331,7 @@
     <Compile Include="hospedagem\Cad_Quarto.Designer.cs">
       <DependentUpon>Cad_Quarto.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\classes\Reserva.cs" />
     <Compile Include="hospedagem\data\inc\Card_list_quarto.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -879,6 +880,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\images\carrousel\home\" />
+    <Folder Include="servicos\data\images\empresas\capas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="alimentos\data\image\cardapio\offImage.jpg" />
