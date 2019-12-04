@@ -30,8 +30,8 @@ namespace Pont_Finder.avalie
             imagemuser.ImageLocation = (post.Imgperfil);
             
             userhora.Text = (post.Tempohora);
-            userboxproblema.Text = (post.Tipoproblema);
-            userboxlocalizacao.Text = (post.Localizacao);
+            lb_problema.Text = (post.Tipoproblema);
+            lb_localizar.Text = (post.Localizacao);
             userboxdesc.Text = (post.Desc);
             pictureBox1.ImageLocation = post.Img;
 
@@ -159,6 +159,26 @@ namespace Pont_Finder.avalie
             {
                 MessageBox.Show("É necessário estar logado para avaliar");
             }
+        }
+
+        private void Userboxdesc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
