@@ -12,12 +12,32 @@ namespace Pont_Finder.servicos
 {
     public partial class PerfilEmpresa : Form
     {
-
+        classes.Empresa empresa;
 
         public PerfilEmpresa()
         {
-
+            empresa = classes.ListaEmpresa.thisForCpf(Session.Cpf); ;
             InitializeComponent();
+
+            pb_icone.ImageLocation = empresa.Image;
+            lb_fantasia.Text = empresa.NomeFantasia;
+
+
+            pb_capa.ImageLocation = empresa.ImageCapa;
+            lb_slogan.Text = empresa.Slogan;
+            lb_sobre.Text = empresa.Sobre;
+            lb_descricao.Text = empresa.Descricao;
+            lb_privacidade.Text = empresa.PoliticaPrivacidade;
+
+            lb_categoria.Text = empresa.Categoria;
+            lb_email.Text = empresa.Email;
+            lb_endereco.Text = empresa.Endereco;
+            lb_telefone.Text = empresa.Telefone;
+            lb_site.Text = empresa.Site;
+
+
+
+
         }
 
         private void NomeFantasia_Click(object sender, EventArgs e)
@@ -68,6 +88,36 @@ namespace Pont_Finder.servicos
         private void Button1_Click(object sender, EventArgs e)
         {
             FormPrincipal.MudarForm("servicos", new FormEditarPerfil());
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PerfilEmpresa_Load(object sender, EventArgs e)
+        {
+            panel_detalhes.Height = panel_dentro.Height;
+        }
+
+        private void Lb_slogan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PolPrivacidade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

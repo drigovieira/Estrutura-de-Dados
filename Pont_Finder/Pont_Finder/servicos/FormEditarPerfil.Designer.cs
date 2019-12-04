@@ -204,9 +204,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(9, 7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 32);
+            this.label2.Size = new System.Drawing.Size(232, 32);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Descrição";
+            this.label2.Text = "Slogan da Empresa";
             // 
             // tb_privacidade
             // 

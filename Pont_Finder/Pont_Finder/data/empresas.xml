@@ -11,11 +11,26 @@
     <cpf>26835036010</cpf>
     <image>..//..//servicos//data//images//empresas//8634895.jpg</image>
     <status>true</status>
-    <slogan>description</slogan>
-    <sobre>description3</sobre>
-    <descricao>description2</descricao>
+    <slogan>The Best Game 2016</slogan>
+    <sobre>Essa empresa é apenas uma empresa de teste
+Foi criada so para testar
+Pronto, o teste foi bem sucedido
+Essa empresa é apenas uma empresa de teste
+Foi criada so para testar
+Pronto, o teste foi bem sucedido</sobre>
+    <descricao>Essa empresa é apenas uma empresa de teste
+Foi criada so para testar
+Pronto, o teste foi bem sucedido</descricao>
     <site>site</site>
-    <politicaprivacidade>description4</politicaprivacidade>
+    <politicaprivacidade>Essa empresa é apenas uma empresa de teste
+Foi criada so para testar
+Pronto, o teste foi bem sucedido
+Essa empresa é apenas uma empresa de teste
+Foi criada so para testar
+Pronto, o teste foi bem sucedido
+Essa empresa é apenas uma empresa de teste
+Foi criada so para testar
+Pronto, o teste foi bem sucedido</politicaprivacidade>
     <imagecapa>..//..//servicos//data//images//empresas//capas//8634895.jpg</imagecapa>
   </servico>
   <servico>
@@ -27,6 +42,24 @@
     <service>Informática</service>
     <cnpj>45675675464067</cnpj>
     <cpf>86609522006</cpf>
+    <image>..//..//servicos//data//images//empresas//offImage.jpg</image>
+    <status>true</status>
+    <slogan></slogan>
+    <sobre></sobre>
+    <descricao></descricao>
+    <site></site>
+    <politicaprivacidade></politicaprivacidade>
+    <imagecapa></imagecapa>
+  </servico>
+  <servico>
+    <nome>hsfo</nome>
+    <nomeFantasia>saofh</nomeFantasia>
+    <email>jspdjof</email>
+    <telefone>284632846</telefone>
+    <endereco>187949249, 38946589</endereco>
+    <service>Limpeza</service>
+    <cnpj>39005419000171</cnpj>
+    <cpf>45850930876</cpf>
     <image>..//..//servicos//data//images//empresas//offImage.jpg</image>
     <status>true</status>
     <slogan></slogan>
