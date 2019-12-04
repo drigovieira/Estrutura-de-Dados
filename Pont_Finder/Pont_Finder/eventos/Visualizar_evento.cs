@@ -94,5 +94,10 @@ namespace Pont_Finder.eventos
         {
 
         }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
