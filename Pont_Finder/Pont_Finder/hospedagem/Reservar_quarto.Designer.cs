@@ -244,6 +244,7 @@
             this.lb_nome_quarto.Size = new System.Drawing.Size(110, 17);
             this.lb_nome_quarto.TabIndex = 5;
             this.lb_nome_quarto.Text = "Nome do quarto";
+            this.lb_nome_quarto.Click += new System.EventHandler(this.lb_nome_quarto_Click);
             // 
             // lb_txt_titulo
             // 
@@ -423,6 +424,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Reservar_quarto";
             this.Text = "Reservar_quarto";
+            this.Load += new System.EventHandler(this.Reservar_quarto_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
