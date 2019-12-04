@@ -18,7 +18,8 @@ namespace Pont_Finder.alimentos
         private List<Funcionamento> funcionamentoEmp;
         private int numero, Empcep, Index;
         private long Empcontato;
-        public Visualizar(int index, string fantasia, string Rua, string Bairro, List<string> Categorias, int Num, int Cep, long Contato, string link)
+        private bool sttsCardapio;
+        public Visualizar(int index, string fantasia, string Rua, string Bairro, List<string> Categorias, int Num, int Cep, long Contato, string link, bool cardapio)
         {
             nomeFantasia = fantasia;
             Emprua = Rua;
@@ -29,6 +30,7 @@ namespace Pont_Finder.alimentos
             Empcontato = Contato;
             linkimage = link;
             Index = index;
+            sttsCardapio = cardapio;
             InitializeComponent();
             CapturarFuncionamento();
             int count = 0;
@@ -74,8 +76,15 @@ namespace Pont_Finder.alimentos
         {
             if (Session.Online)
             {
-                alimentos.Reserva_Alimentos reserva = new alimentos.Reserva_Alimentos(Index);
-                FormPrincipal.MudarForm("alimentos", reserva);
+                if (sttsCardapio == true)
+                {
+                    alimentos.Reserva_Alimentos reserva = new alimentos.Reserva_Alimentos(Index);
+                    FormPrincipal.MudarForm("alimentos", reserva);
+                }
+                else
+                {
+                    MessageBox.Show("Essa empresa não resgistrou um cardápio. ", "Aviso");
+                }
             }
             else
             {

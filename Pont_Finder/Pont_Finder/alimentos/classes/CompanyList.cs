@@ -62,23 +62,31 @@ namespace Pont_Finder.alimentos
                 }
             }
         }*/
-        public static void alter(string cnpj, Company comp)
-        {
-            long cnpjConvert = Convert.ToInt64(String.Join("", System.Text.RegularExpressions.Regex.Split(cnpj, @"[^\d]")));
-            //percorre a lista com uma variável Company
+        public static void alter(int ID, Company comp)
+        {            
             foreach (var emps in company)
             {
-                if (emps.Id == cnpjConvert)
+                if (emps.Id == ID)
                 {
                     //pega o index da lista do usuário em questão
                     int index = company.IndexOf(emps);
-                    //substitui na lista company
+                    //substitui na lista company                    
+                    company[index].Nome = comp.Nome;
                     company[index].NomeFantasia = comp.NomeFantasia;
                     company[index].Email = comp.Email;
                     company[index].Rua = comp.Rua;
                     company[index].Numero = comp.Numero;
                     company[index].Bairro = comp.Bairro;
+                    company[index].Categoria = comp.Categoria;
                     company[index].Cep = comp.Cep;
+                    company[index].Cpf = comp.Cpf;
+                    company[index].TelComercial = comp.TelComercial;
+                    company[index].Status = true;
+                    company[index].Image = comp.Image;
+                    company[index].FuncionamentoEmp = comp.FuncionamentoEmp;
+                    company[index].SttsCardapio = comp.SttsCardapio;
+                    company[index].SttsEntrega = comp.SttsEntrega;
+                    company[index].Id = comp.Id;
                     break;
                 }
             }
