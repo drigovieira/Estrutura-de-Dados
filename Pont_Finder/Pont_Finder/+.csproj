@@ -879,6 +879,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\images\carrousel\home\" />
+    <Folder Include="servicos\data\images\empresas\capas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="alimentos\data\image\cardapio\offImage.jpg" />
