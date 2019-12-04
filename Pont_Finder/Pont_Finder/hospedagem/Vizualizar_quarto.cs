@@ -32,6 +32,11 @@ namespace Pont_Finder.hospedagem
             }
         }
 
+        private void Pn_galery_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void bt_reservar_Click(object sender, EventArgs e)
         {
 

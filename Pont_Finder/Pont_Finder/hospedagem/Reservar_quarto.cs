@@ -51,5 +51,25 @@ namespace Pont_Finder.hospedagem
         {
 
         }
+
+        private void Bt_finalizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Lb_tipo_quarto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

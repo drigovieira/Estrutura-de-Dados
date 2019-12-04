@@ -265,6 +265,18 @@
     <Compile Include="eventos\Tela_compra.Designer.cs">
       <DependentUpon>Tela_compra.cs</DependentUpon>
     </Compile>
+    <Compile Include="eventos\User_Card\Card_boleto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="eventos\User_Card\Card_boleto.Designer.cs">
+      <DependentUpon>Card_boleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\User_Card\Card_cartao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="eventos\User_Card\Card_cartao.Designer.cs">
+      <DependentUpon>Card_cartao.cs</DependentUpon>
+    </Compile>
     <Compile Include="eventos\User_Card\Card_list_Emp.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -646,6 +658,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\Tela_compra.resx">
       <DependentUpon>Tela_compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\User_Card\Card_boleto.resx">
+      <DependentUpon>Card_boleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\User_Card\Card_cartao.resx">
+      <DependentUpon>Card_cartao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\User_Card\Card_list_Emp.resx">
       <DependentUpon>Card_list_Emp.cs</DependentUpon>

@@ -44,6 +44,7 @@
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.pn_galery = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_num_quartos = new System.Windows.Forms.Label();
             this.lb_num_pessoas = new System.Windows.Forms.Label();
             this.lb_tipo_quarto = new System.Windows.Forms.Label();
@@ -69,13 +70,12 @@
             this.bt_reservar = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_principal)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_emp_endereco
@@ -212,6 +212,7 @@
             this.pn_galery.Name = "pn_galery";
             this.pn_galery.Size = new System.Drawing.Size(450, 87);
             this.pn_galery.TabIndex = 38;
+            this.pn_galery.Paint += new System.Windows.Forms.PaintEventHandler(this.Pn_galery_Paint);
             // 
             // panel4
             // 
@@ -236,6 +237,19 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(966, 666);
             this.panel4.TabIndex = 37;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Pont_Finder.Properties.Resources._854878;
+            this.pictureBox1.Location = new System.Drawing.Point(843, 584);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 109;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lb_num_quartos
             // 
@@ -510,19 +524,6 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Pont_Finder.Properties.Resources._854878;
-            this.pictureBox1.Location = new System.Drawing.Point(843, 584);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 109;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // Vizualizar_quarto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -542,12 +543,12 @@
             this.Load += new System.EventHandler(this.Vizualizar_quarto_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_principal)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
