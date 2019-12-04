@@ -41,9 +41,7 @@ namespace Pont_Finder.Boleto
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            invisible();
-            Print();
-            visible();
+           
 
 
         }
@@ -55,11 +53,17 @@ namespace Pont_Finder.Boleto
 
         public void Print()
         {
-            Bitmap bmp = new Bitmap(boletoA.Width, boletoA.Height);
-            DrawToBitmap(bmp, new Rectangle(0, 0, boletoA.Width, boletoA.Height));
-            string link = "..//..//avalie//data//imagens//posts//" + cpfboleto + ".jpg";
-            bmp.Save(link, ImageFormat.Jpeg);
-            MessageBox.Show("Teste");
+            SaveFileDialog salvardiretorio = new SaveFileDialog();
+            salvardiretorio.Filter = ("PNG(*.PNG)| *.PNG");
+
+            if(salvardiretorio.ShowDialog() == DialogResult.OK)
+            {
+                Bitmap bmp = new Bitmap(boletoA.Width, boletoA.Height);
+                DrawToBitmap(bmp, new Rectangle(0, 0, boletoA.Width, boletoA.Height));
+                bmp.Save(salvardiretorio.FileName);
+
+            }
+            MessageBox.Show("Boleto Salvo Com Sucesso");
 
         }
 
@@ -67,6 +71,17 @@ namespace Pont_Finder.Boleto
         {
             btnPrint.Visible = false;
             btnSalvar.Visible = false;
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            
+
+
+            invisible();
+            Print();
+            visible();
+
         }
 
         public void visible()

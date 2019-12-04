@@ -106,28 +106,6 @@ namespace Pont_Finder.avalie
         private void BtnPostar_Click(object sender, EventArgs e)
         {
 
-
-
-
-            /*PostConstructor post = new PostConstructor();
-            
-
-            string post_Tempohora = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
-            string post_problema = comboBox1.SelectedItem.ToString();
-            string post_localizao = txtLocalizacao.Text;
-            string post_descricao = richTextBox1.Text;
-
-
-            post.Tempohora = post_Tempohora;
-            post.Tipoproblema = post_problema;
-            post.Localizao = post_localizao;
-            post.Desc = post_descricao;
-
-            PostList.PostAdd(post);
-
-            
-            this.Close();*/
-
             string link = "..//..//avalie//data//imagens//posts//offImage.jpg";
             if (img)
             {
