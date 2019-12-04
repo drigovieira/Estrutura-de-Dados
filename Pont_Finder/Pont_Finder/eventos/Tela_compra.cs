@@ -83,6 +83,7 @@ namespace Pont_Finder.eventos
         private void Rb_boleto_CheckedChanged(object sender, EventArgs e)
         {
             {
+                Classes.ComprEvento cm = new Classes.ComprEvento();
                 if (rb_boleto.Checked)
                 {
                     eventos.User_Card.Card_boleto boleto = new User_Card.Card_boleto();
@@ -99,11 +100,14 @@ namespace Pont_Finder.eventos
         private void Rb_cartao_CheckedChanged(object sender, EventArgs e)
         {
             {
+                Classes.ComprEvento cm = new Classes.ComprEvento();
                 if (rb_cartao.Checked)
                 {
                     eventos.User_Card.Card_cartao cartao = new User_Card.Card_cartao();
                     cartao.Location = new Point(0, 0);
                     panel_center.Controls.Add(cartao);
+
+                    
                 }
                 else
                 {
@@ -115,9 +119,10 @@ namespace Pont_Finder.eventos
         private void Bt_finalizar_Click(object sender, EventArgs e)
         {
             Classes.ComprEvento cm = new Classes.ComprEvento();
+           
+          
 
 
-            //string metodo = cbbox.SelectedItem.ToString();
             //string qnt = qntbox.Text;
             //string senha = senhabox.Text;
 

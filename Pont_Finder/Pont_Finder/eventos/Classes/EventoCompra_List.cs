@@ -25,6 +25,7 @@ namespace Pont_Finder.eventos.Classes
                 {
                     pos.Id = item.Id;
                     pos.Qnt = item.Qnt;
+                    pos.Cod = item.Cod;
                     pos.Comprador = item.Comprador;
                     pos.Data = item.Data;
                     pos.Datavenc = item.Datavenc;
@@ -57,6 +58,7 @@ namespace Pont_Finder.eventos.Classes
                     ComprEvento pos = new ComprEvento();
                     pos.Id = item.Id;
                     pos.Qnt = item.Qnt;
+                    pos.Cod = item.Cod;
                     pos.Comprador = item.Comprador;
                     pos.Data = item.Data;
                     pos.Datavenc = item.Datavenc;
@@ -80,6 +82,7 @@ namespace Pont_Finder.eventos.Classes
             pos.Id = post.Id;
             pos.Id = post.Id;
             pos.Qnt = post.Qnt;
+            pos.Cod = post.Cod;
             pos.Comprador = post.Comprador;
             pos.Data = post.Data;
             pos.Datavenc = post.Datavenc;
@@ -111,6 +114,7 @@ namespace Pont_Finder.eventos.Classes
                       new XElement("compras",
                       new XElement("id", item.Id),
                       new XElement("cpf", item.Cpf),
+                      new XElement("codigo", item.Cod),
                       new XElement("Metodopagamento", item.Metodopagamento),
                       new XElement("QuantidadedeIngresso", item.Qnt),
                       new XElement("ValorCompra", item.Valortotal),
@@ -134,6 +138,7 @@ namespace Pont_Finder.eventos.Classes
 
                 postar.Id = int.Parse(item.Element("id").Value);
                 postar.Cpf = long.Parse(item.Element("cpf").Value);
+                postar.Cod = long.Parse(item.Element("codigo").Value);
                 postar.Metodopagamento = (item.Element("Metodopagamento").Value);
                 postar.Valortotal = Double.Parse(item.Element("ValorCompra").Value);
                 postar.Qnt = int.Parse(item.Element("QuantidadedeIngresso").Value);

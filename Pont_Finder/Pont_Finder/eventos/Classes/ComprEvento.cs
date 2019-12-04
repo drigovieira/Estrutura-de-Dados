@@ -11,7 +11,8 @@ namespace Pont_Finder.eventos.Classes
 
         long cpf,
              id,
-             qnt;
+             qnt,
+             cod;
 
 
        string metodopagamento,
@@ -23,6 +24,7 @@ namespace Pont_Finder.eventos.Classes
 
         public long Cpf { get => cpf; set => cpf = value; }
         public long Qnt { get => qnt; set => qnt = value; }
+        public long Cod { get => cod; set => cod = value; }
         public string Metodopagamento { get => metodopagamento; set => metodopagamento = value; }
         public string Comprador { get => comprador; set => comprador = value; }
         public string Data { get => data; set => data = value; }
