@@ -29,14 +29,20 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Site = new System.Windows.Forms.Label();
             this.Categoria = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Email = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.PolPrivacidade = new System.Windows.Forms.Label();
-            this.SiteLink = new System.Windows.Forms.TextBox();
             this.SobreNos = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -46,14 +52,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.NomeFantasia = new System.Windows.Forms.Label();
             this.Capa = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Email = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -80,6 +80,30 @@
             this.panel2.Size = new System.Drawing.Size(313, 1216);
             this.panel2.TabIndex = 12;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(20, 408);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(269, 32);
+            this.textBox4.TabIndex = 15;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(20, 322);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(269, 32);
+            this.textBox3.TabIndex = 15;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(20, 236);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(275, 32);
+            this.textBox2.TabIndex = 14;
             // 
             // label8
             // 
@@ -131,14 +155,35 @@
             this.Categoria.TabIndex = 12;
             this.Categoria.Text = "Categoria";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(16, 87);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(198, 24);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Categorias de serviços";
+            // 
+            // Email
+            // 
+            this.Email.AutoSize = true;
+            this.Email.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.ForeColor = System.Drawing.Color.Black;
+            this.Email.Location = new System.Drawing.Point(16, 159);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(186, 24);
+            this.Email.TabIndex = 2;
+            this.Email.Text = "exemple@gmail.com";
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.richTextBox4);
+            this.panel3.Controls.Add(this.richTextBox3);
             this.panel3.Controls.Add(this.richTextBox2);
             this.panel3.Controls.Add(this.richTextBox1);
             this.panel3.Controls.Add(this.PolPrivacidade);
-            this.panel3.Controls.Add(this.SiteLink);
             this.panel3.Controls.Add(this.SobreNos);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(319, 319);
@@ -146,33 +191,40 @@
             this.panel3.Size = new System.Drawing.Size(625, 912);
             this.panel3.TabIndex = 13;
             // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox2.Location = new System.Drawing.Point(12, 154);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(600, 200);
+            this.richTextBox2.TabIndex = 20;
+            this.richTextBox2.Text = "";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(600, 80);
+            this.richTextBox1.TabIndex = 19;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.RichTextBox1_TextChanged);
+            // 
             // PolPrivacidade
             // 
             this.PolPrivacidade.AutoSize = true;
             this.PolPrivacidade.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PolPrivacidade.Location = new System.Drawing.Point(2, 640);
+            this.PolPrivacidade.Location = new System.Drawing.Point(6, 631);
             this.PolPrivacidade.Name = "PolPrivacidade";
             this.PolPrivacidade.Size = new System.Drawing.Size(275, 32);
             this.PolPrivacidade.TabIndex = 16;
             this.PolPrivacidade.Text = "Política de privacidade";
             // 
-            // SiteLink
-            // 
-            this.SiteLink.BackColor = System.Drawing.Color.White;
-            this.SiteLink.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SiteLink.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SiteLink.Location = new System.Drawing.Point(3, 406);
-            this.SiteLink.MaxLength = 700;
-            this.SiteLink.Multiline = true;
-            this.SiteLink.Name = "SiteLink";
-            this.SiteLink.Size = new System.Drawing.Size(619, 203);
-            this.SiteLink.TabIndex = 5;
-            // 
             // SobreNos
             // 
             this.SobreNos.AutoSize = true;
             this.SobreNos.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SobreNos.Location = new System.Drawing.Point(3, 371);
+            this.SobreNos.Location = new System.Drawing.Point(6, 371);
             this.SobreNos.Name = "SobreNos";
             this.SobreNos.Size = new System.Drawing.Size(129, 32);
             this.SobreNos.TabIndex = 4;
@@ -182,7 +234,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 114);
+            this.label1.Location = new System.Drawing.Point(6, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 32);
             this.label1.TabIndex = 2;
@@ -215,9 +267,9 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 62);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 50);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 238);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -263,84 +315,29 @@
             // 
             this.Capa.BackColor = System.Drawing.Color.PowderBlue;
             this.Capa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Capa.Location = new System.Drawing.Point(319, 77);
+            this.Capa.Location = new System.Drawing.Point(331, 65);
             this.Capa.Name = "Capa";
-            this.Capa.Size = new System.Drawing.Size(625, 238);
+            this.Capa.Size = new System.Drawing.Size(600, 250);
             this.Capa.TabIndex = 14;
             this.Capa.TabStop = false;
             // 
-            // textBox2
+            // richTextBox3
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(20, 236);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(275, 32);
-            this.textBox2.TabIndex = 14;
+            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox3.Location = new System.Drawing.Point(12, 406);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(600, 200);
+            this.richTextBox3.TabIndex = 22;
+            this.richTextBox3.Text = "";
             // 
-            // label4
+            // richTextBox4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(16, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(198, 24);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Categorias de serviços";
-            // 
-            // Email
-            // 
-            this.Email.AutoSize = true;
-            this.Email.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email.ForeColor = System.Drawing.Color.Black;
-            this.Email.Location = new System.Drawing.Point(16, 159);
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(186, 24);
-            this.Email.TabIndex = 2;
-            this.Email.Text = "exemple@gmail.com";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(20, 322);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(269, 32);
-            this.textBox3.TabIndex = 15;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(20, 408);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(269, 32);
-            this.textBox4.TabIndex = 15;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(3, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(619, 84);
-            this.richTextBox1.TabIndex = 19;
-            this.richTextBox1.Text = "";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(3, 154);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(619, 203);
-            this.richTextBox2.TabIndex = 20;
-            this.richTextBox2.Text = "";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(4, 675);
-            this.textBox1.MaxLength = 700;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(619, 203);
-            this.textBox1.TabIndex = 21;
+            this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox4.Location = new System.Drawing.Point(12, 666);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.Size = new System.Drawing.Size(600, 200);
+            this.richTextBox4.TabIndex = 23;
+            this.richTextBox4.Text = "";
             // 
             // FormEditarPerfil
             // 
@@ -379,7 +376,6 @@
         private System.Windows.Forms.Label Categoria;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label PolPrivacidade;
-        private System.Windows.Forms.TextBox SiteLink;
         private System.Windows.Forms.Label SobreNos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
@@ -396,6 +392,7 @@
         private System.Windows.Forms.Label Email;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox richTextBox3;
     }
 }
