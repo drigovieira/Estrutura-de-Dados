@@ -119,6 +119,14 @@ namespace Pont_Finder.servicos.classes
                 empresa.Cpf = long.Parse(item.Element("cpf").Value);
                 empresa.Image = item.Element("image").Value;
                 empresa.Status = bool.Parse( item.Element("status").Value);
+
+                empresa.Slogan = item.Element("slogan").Value;
+                empresa.Sobre = item.Element("sobre").Value;
+                empresa.Descricao = item.Element("descricao").Value;
+                empresa.Site = item.Element("site").Value;
+                empresa.PoliticaPrivacidade = item.Element("politicaprivacidade").Value;
+                empresa.ImageCapa = item.Element("imagecapa").Value;
+
                 ListaEmpresa.Add(empresa);               
             }
         }
@@ -138,7 +146,14 @@ namespace Pont_Finder.servicos.classes
                       new XElement("cnpj", item.Cnpj),
                       new XElement("cpf", item.Cpf),
                       new XElement("image", item.Image),
-                      new XElement("status", item.Status));
+                      new XElement("status", item.Status),
+
+                      new XElement("slogan", item.Slogan),
+                      new XElement("sobre", item.Sobre),
+                      new XElement("descricao", item.Descricao),
+                      new XElement("site", item.Site),
+                      new XElement("politicaprivacidade", item.PoliticaPrivacidade),
+                      new XElement("imagecapa", item.ImageCapa));
 
                 XDocument doc = XDocument.Load(caminho);
                 doc.Root.Add(xemp);

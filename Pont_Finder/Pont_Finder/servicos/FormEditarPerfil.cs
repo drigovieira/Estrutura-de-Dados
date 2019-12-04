@@ -84,6 +84,22 @@ namespace Pont_Finder.servicos
         private void Button1_Click(object sender, EventArgs e)
         {
             string link = null;
+            if (img)
+            {
+                pb_icone.Load();
+                pb_icone.Image = Image.FromFile(openIcone.FileName);
+
+                Image bmp = new Bitmap(pb_icone.Image);
+
+                Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+
+                pb_icone.Image = bmp2;
+                link = "..//..//servicos//data//images//empresas//" + empresa.Cnpj + ".jpg";
+                pb_icone.Image.Save(link, ImageFormat.Jpeg);
+                empresa.Image = link;
+            }
+
+            link = null;
             if (capa)
             {
                 if (!Directory.Exists("..//..//servicos//data//images//empresas//capas"))
@@ -104,7 +120,7 @@ namespace Pont_Finder.servicos
                 empresa.ImageCapa = link;
             }
 
-            empresa.Site = tb_site.Text;        
+            empresa.Site = tb_site.Text;
             empresa.Slogan = tb_slogan.Text;
             empresa.Descricao = tb_descricao.Text;
             empresa.Sobre = tb_sobre.Text;
