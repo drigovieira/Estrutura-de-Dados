@@ -52,7 +52,7 @@
             this.lb_valor.AutoSize = true;
             this.lb_valor.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_valor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_valor.Location = new System.Drawing.Point(567, 45);
+            this.lb_valor.Location = new System.Drawing.Point(545, 45);
             this.lb_valor.Name = "lb_valor";
             this.lb_valor.Size = new System.Drawing.Size(44, 54);
             this.lb_valor.TabIndex = 11;
@@ -82,6 +82,7 @@
             // 
             // pb_imagem
             // 
+            this.pb_imagem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_imagem.Location = new System.Drawing.Point(22, 14);
             this.pb_imagem.Name = "pb_imagem";
             this.pb_imagem.Size = new System.Drawing.Size(150, 125);
@@ -94,7 +95,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.label1.Location = new System.Drawing.Point(514, 45);
+            this.label1.Location = new System.Drawing.Point(492, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 54);
             this.label1.TabIndex = 14;
@@ -167,6 +168,7 @@
             // 
             this.bt_visualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_visualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_visualizar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_visualizar.ForeColor = System.Drawing.Color.White;
             this.bt_visualizar.Location = new System.Drawing.Point(501, 113);
