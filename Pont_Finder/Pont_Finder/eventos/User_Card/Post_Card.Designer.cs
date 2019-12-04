@@ -203,7 +203,7 @@
             // 
             this.lb_local.AutoSize = true;
             this.lb_local.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_local.Location = new System.Drawing.Point(401, 45);
+            this.lb_local.Location = new System.Drawing.Point(390, 45);
             this.lb_local.Name = "lb_local";
             this.lb_local.Size = new System.Drawing.Size(19, 25);
             this.lb_local.TabIndex = 32;
@@ -213,7 +213,7 @@
             // 
             this.lb_classifica.AutoSize = true;
             this.lb_classifica.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_classifica.Location = new System.Drawing.Point(446, 114);
+            this.lb_classifica.Location = new System.Drawing.Point(435, 113);
             this.lb_classifica.Name = "lb_classifica";
             this.lb_classifica.Size = new System.Drawing.Size(19, 25);
             this.lb_classifica.TabIndex = 33;

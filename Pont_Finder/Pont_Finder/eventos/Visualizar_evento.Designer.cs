@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lb_txt7 = new System.Windows.Forms.Label();
             this.lb_txt3 = new System.Windows.Forms.Label();
-            this.pn_galery = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lb_descricao = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -72,7 +71,6 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lb_txt7);
             this.panel1.Controls.Add(this.lb_txt3);
-            this.panel1.Controls.Add(this.pn_galery);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pb_principal);
             this.panel1.Controls.Add(this.lb_rs_boleto);
@@ -126,15 +124,6 @@
             this.lb_txt3.Size = new System.Drawing.Size(47, 20);
             this.lb_txt3.TabIndex = 25;
             this.lb_txt3.Text = "Valor:";
-            // 
-            // pn_galery
-            // 
-            this.pn_galery.AutoScroll = true;
-            this.pn_galery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_galery.Location = new System.Drawing.Point(42, 291);
-            this.pn_galery.Name = "pn_galery";
-            this.pn_galery.Size = new System.Drawing.Size(450, 87);
-            this.pn_galery.TabIndex = 38;
             // 
             // panel4
             // 
@@ -418,7 +407,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lb_txt7;
         private System.Windows.Forms.Label lb_txt3;
-        private System.Windows.Forms.Panel pn_galery;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lb_horario;
         private System.Windows.Forms.Label lb_data;
