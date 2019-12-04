@@ -30,7 +30,13 @@ namespace Pont_Finder.servicos
             tb_telefone.Text = empresa.Telefone;
             tb_endereco.Text = empresa.Endereco;
             pb_icone.ImageLocation = empresa.Image;
+
+            tb_site.Text = empresa.Site;
             pb_capa.ImageLocation = empresa.ImageCapa;
+            tb_descricao.Text = empresa.Descricao;
+            tb_slogan.Text = empresa.Slogan;
+            tb_sobre.Text = empresa.Sobre;
+            tb_privacidade.Text = empresa.PoliticaPrivacidade;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -98,6 +104,18 @@ namespace Pont_Finder.servicos
                 empresa.ImageCapa = link;
             }
 
+            empresa.Site = tb_site.Text;        
+            empresa.Slogan = tb_slogan.Text;
+            empresa.Descricao = tb_descricao.Text;
+            empresa.Sobre = tb_sobre.Text;
+            empresa.PoliticaPrivacidade = tb_privacidade.Text;
+
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa());
         }
     }
 }

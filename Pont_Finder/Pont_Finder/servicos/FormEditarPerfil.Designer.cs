@@ -41,6 +41,7 @@
             this.lb_categoria = new System.Windows.Forms.Label();
             this.lb_email = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.tb_privacidade = new System.Windows.Forms.RichTextBox();
             this.tb_sobre = new System.Windows.Forms.RichTextBox();
             this.tb_descricao = new System.Windows.Forms.RichTextBox();
@@ -49,15 +50,14 @@
             this.SobreNos = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_icone = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lb_fantasia = new System.Windows.Forms.Label();
             this.pb_capa = new System.Windows.Forms.PictureBox();
-            this.bt_icone = new System.Windows.Forms.Button();
             this.bt_capa = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.openCapa = new System.Windows.Forms.OpenFileDialog();
             this.panel2.SuspendLayout();
@@ -198,6 +198,16 @@
             this.panel3.Size = new System.Drawing.Size(625, 912);
             this.panel3.TabIndex = 13;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(9, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 32);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Descrição";
+            // 
             // tb_privacidade
             // 
             this.tb_privacidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -279,6 +289,21 @@
             this.panel1.Size = new System.Drawing.Size(310, 924);
             this.panel1.TabIndex = 11;
             // 
+            // bt_icone
+            // 
+            this.bt_icone.BackColor = System.Drawing.Color.White;
+            this.bt_icone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_icone.BackgroundImage")));
+            this.bt_icone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bt_icone.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_icone.FlatAppearance.BorderSize = 0;
+            this.bt_icone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_icone.Location = new System.Drawing.Point(258, 284);
+            this.bt_icone.Name = "bt_icone";
+            this.bt_icone.Size = new System.Drawing.Size(40, 30);
+            this.bt_icone.TabIndex = 15;
+            this.bt_icone.UseVisualStyleBackColor = false;
+            this.bt_icone.Click += new System.EventHandler(this.Bt_icone_Click);
+            // 
             // btn_back
             // 
             this.btn_back.BackColor = System.Drawing.Color.Transparent;
@@ -312,6 +337,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Cancelar Edições";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button1
             // 
@@ -350,21 +376,6 @@
             this.pb_capa.TabIndex = 14;
             this.pb_capa.TabStop = false;
             // 
-            // bt_icone
-            // 
-            this.bt_icone.BackColor = System.Drawing.Color.White;
-            this.bt_icone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_icone.BackgroundImage")));
-            this.bt_icone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.bt_icone.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_icone.FlatAppearance.BorderSize = 0;
-            this.bt_icone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_icone.Location = new System.Drawing.Point(258, 284);
-            this.bt_icone.Name = "bt_icone";
-            this.bt_icone.Size = new System.Drawing.Size(40, 30);
-            this.bt_icone.TabIndex = 15;
-            this.bt_icone.UseVisualStyleBackColor = false;
-            this.bt_icone.Click += new System.EventHandler(this.Bt_icone_Click);
-            // 
             // bt_capa
             // 
             this.bt_capa.BackColor = System.Drawing.Color.White;
@@ -379,16 +390,6 @@
             this.bt_capa.TabIndex = 15;
             this.bt_capa.UseVisualStyleBackColor = false;
             this.bt_capa.Click += new System.EventHandler(this.Bt_capa_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 32);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Descrição";
             // 
             // openIcone
             // 
