@@ -463,6 +463,8 @@
     <Compile Include="servicos\classes\ListaEmpresa.cs" />
     <Compile Include="servicos\classes\Post.cs" />
     <Compile Include="servicos\classes\PostList.cs" />
+    <Compile Include="servicos\classes\Solicitado.cs" />
+    <Compile Include="servicos\classes\SolicitadoList.cs" />
     <Compile Include="servicos\classes\Worker.cs" />
     <Compile Include="servicos\FormCadEmpresa.cs">
       <SubType>Form</SubType>
