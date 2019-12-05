@@ -50,6 +50,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lb_valor_parcela = new System.Windows.Forms.Label();
+            this.lb_valor = new System.Windows.Forms.Label();
             this.lb_rs_boleto = new System.Windows.Forms.Label();
             this.lb_txt5 = new System.Windows.Forms.Label();
             this.lb_rs_cartao = new System.Windows.Forms.Label();
@@ -59,8 +61,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.bt_finalizar = new System.Windows.Forms.Button();
             this.lb_txt_titulo = new System.Windows.Forms.Label();
-            this.lb_valor = new System.Windows.Forms.Label();
-            this.lb_valor_parcela = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -73,9 +73,9 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 665);
+            this.panel2.Location = new System.Drawing.Point(0, 648);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1282, 10);
+            this.panel2.Size = new System.Drawing.Size(1259, 10);
             this.panel2.TabIndex = 3;
             // 
             // rb_cartao
@@ -306,6 +306,28 @@
             this.panel5.Size = new System.Drawing.Size(310, 229);
             this.panel5.TabIndex = 59;
             // 
+            // lb_valor_parcela
+            // 
+            this.lb_valor_parcela.AutoSize = true;
+            this.lb_valor_parcela.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_valor_parcela.ForeColor = System.Drawing.Color.Red;
+            this.lb_valor_parcela.Location = new System.Drawing.Point(245, 143);
+            this.lb_valor_parcela.Name = "lb_valor_parcela";
+            this.lb_valor_parcela.Size = new System.Drawing.Size(33, 36);
+            this.lb_valor_parcela.TabIndex = 58;
+            this.lb_valor_parcela.Text = "V";
+            // 
+            // lb_valor
+            // 
+            this.lb_valor.AutoSize = true;
+            this.lb_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_valor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
+            this.lb_valor.Location = new System.Drawing.Point(245, 48);
+            this.lb_valor.Name = "lb_valor";
+            this.lb_valor.Size = new System.Drawing.Size(33, 36);
+            this.lb_valor.TabIndex = 57;
+            this.lb_valor.Text = "V";
+            // 
             // lb_rs_boleto
             // 
             this.lb_rs_boleto.AutoSize = true;
@@ -372,9 +394,9 @@
             // 
             this.panel3.Controls.Add(this.bt_finalizar);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 565);
+            this.panel3.Location = new System.Drawing.Point(0, 548);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1282, 100);
+            this.panel3.Size = new System.Drawing.Size(1259, 100);
             this.panel3.TabIndex = 62;
             // 
             // bt_finalizar
@@ -400,35 +422,13 @@
             this.lb_txt_titulo.TabIndex = 61;
             this.lb_txt_titulo.Text = "Selecione a forma de pagamento";
             // 
-            // lb_valor
-            // 
-            this.lb_valor.AutoSize = true;
-            this.lb_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_valor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_valor.Location = new System.Drawing.Point(245, 48);
-            this.lb_valor.Name = "lb_valor";
-            this.lb_valor.Size = new System.Drawing.Size(33, 36);
-            this.lb_valor.TabIndex = 57;
-            this.lb_valor.Text = "V";
-            // 
-            // lb_valor_parcela
-            // 
-            this.lb_valor_parcela.AutoSize = true;
-            this.lb_valor_parcela.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_valor_parcela.ForeColor = System.Drawing.Color.Red;
-            this.lb_valor_parcela.Location = new System.Drawing.Point(245, 143);
-            this.lb_valor_parcela.Name = "lb_valor_parcela";
-            this.lb_valor_parcela.Size = new System.Drawing.Size(33, 36);
-            this.lb_valor_parcela.TabIndex = 58;
-            this.lb_valor_parcela.Text = "V";
-            // 
             // Tela_compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1044, 675);
             this.Controls.Add(this.panel_center);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -438,7 +438,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
-            this.MinimumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1022, 675);
             this.Name = "Tela_compra";
             this.Text = "Tela_compra";
             this.Load += new System.EventHandler(this.Tela_compra_Load);

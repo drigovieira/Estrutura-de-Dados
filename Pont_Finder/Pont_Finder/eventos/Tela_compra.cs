@@ -101,8 +101,11 @@ namespace Pont_Finder.eventos
         {
             {
                 Classes.ComprEvento cm = new Classes.ComprEvento();
+                Classes.ComprEvento cc = new Classes.ComprEvento();
+
                 if (rb_cartao.Checked)
                 {
+                   
                     eventos.User_Card.Card_cartao cartao = new User_Card.Card_cartao();
                     cartao.Location = new Point(0, 0);
                     panel_center.Controls.Add(cartao);
