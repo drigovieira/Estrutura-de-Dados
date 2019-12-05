@@ -47,6 +47,8 @@
             this.btn_back.TabIndex = 67;
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            this.btn_back.MouseLeave += new System.EventHandler(this.btn_back_MouseLeave);
+            this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_back_MouseMove);
             // 
             // panel1
             // 

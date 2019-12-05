@@ -19,11 +19,16 @@ namespace Pont_Finder.hospedagem
         private long cpf_user;
         private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp;
 
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("hospedagem", anterior);
+        }
+
         private void lb_nome_quarto_Click(object sender, EventArgs e)
         {
 
         }
-
+        Form anterior;
         public Reservar_quarto(int id, Form anterior, DateTime data_ini, DateTime data_fim, long cpf_usuario)
         {
             classes.Reserva reserva = new classes.Reserva();
