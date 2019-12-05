@@ -21,6 +21,7 @@ namespace Pont_Finder
         private string filtro;
         private List<Company> lista = new List<Company>();
         private ProfileList prof = new ProfileList();
+        private object[] result;
         public formAlimentos()
         {
             cat = false;
@@ -29,7 +30,15 @@ namespace Pont_Finder
             pagQuant = 10;
             lista = CompanyList.selectAll();
             InitializeComponent();
-            if (Session.Online) btn_Config.Visible = true;
+            if (Session.Online)
+            {
+                result = CompanyList.verifEmp(Session.Cpf);
+                if(result[0] != null)
+                {
+                    Btn_Edit_Empresa.Visible = false;
+                    btn_Config.Visible = true;
+                }                
+            }
             else btn_Config.Visible = false;
             Listar();
         }
@@ -617,8 +626,8 @@ namespace Pont_Finder
 
         private void LbConfig2_Click(object sender, EventArgs e)
         {
-            //alimentos.Cadastro_Produto gerenProd = new Cadastro_Produto();
-            //FormPrincipal.MudarForm("alimentos", gerenProd);
+            alimentos.Cadastro_Produto gerenProd = new Cadastro_Produto(int.Parse(result[0].ToString()));
+            FormPrincipal.MudarForm("alimentos", gerenProd);
         }
 
         public void GoPag(string p)
