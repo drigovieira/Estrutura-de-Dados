@@ -41,10 +41,8 @@
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(127, 142);
-            this.panel1.MaximumSize = new System.Drawing.Size(1010, 0);
-            this.panel1.MinimumSize = new System.Drawing.Size(1010, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1010, 0);
+            this.panel1.Size = new System.Drawing.Size(1015, 0);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 

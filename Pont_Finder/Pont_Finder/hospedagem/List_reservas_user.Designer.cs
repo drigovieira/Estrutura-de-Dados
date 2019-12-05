@@ -46,6 +46,7 @@
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 67;
             this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // panel1
             // 
@@ -94,6 +95,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "List_reservas_user";
             this.Text = "List_reservas_user";
+            this.Load += new System.EventHandler(this.List_reservas_user_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
