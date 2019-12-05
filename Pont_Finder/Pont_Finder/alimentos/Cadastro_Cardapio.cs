@@ -55,7 +55,7 @@ namespace Pont_Finder.alimentos
 
                     pb_img_1.Image = bmp2;
                     int name = ID + ListCardapio.selectAll().Count;
-                    link = "..//..//servicos//data//images//empresas//"+name+".jpg";
+                    link = "..//..//alimentos//data//images//empresas//" + name+".jpg";
                     pb_img_1.Image.Save(link, ImageFormat.Jpeg);                                          
                 }
                 menu.Image = link;

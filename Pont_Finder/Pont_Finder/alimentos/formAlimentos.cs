@@ -626,8 +626,8 @@ namespace Pont_Finder
 
         private void LbConfig2_Click(object sender, EventArgs e)
         {            
-            alimentos.Cadastro_Produto gerenProd = new Cadastro_Produto(result);
-            FormPrincipal.MudarForm("alimentos", gerenProd);
+                alimentos.Cadastro_Produto gerenProd = new Cadastro_Produto(result);
+                FormPrincipal.MudarForm("alimentos", gerenProd);                     
         }
 
         public void GoPag(string p)
