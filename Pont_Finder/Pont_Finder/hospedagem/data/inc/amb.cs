@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.hospedagem.data.inc
 {
-    public partial class icon : UserControl
+    public partial class amb : UserControl
     {
 
-        public icon(string icone)
+        public amb(string ambiente)
         {
 
             InitializeComponent();
 
-            pb_icon.ImageLocation = icone;
-            pb_icon.Load();
+            pb_amb.ImageLocation = ambiente;
+            pb_amb.Load();
 
         }
 

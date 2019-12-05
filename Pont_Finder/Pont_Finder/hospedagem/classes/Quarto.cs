@@ -9,7 +9,7 @@ namespace Pont_Finder.hospedagem
     class Quarto
     {
 
-        string nome_quarto, servicos, status, foto;
+        string nome_quarto, servicos, status, foto, ambiente;
         int id, qtd_pessoas, qtd_disponivel, qtd_solteiro,qtd_casal;
         double valor_diario;
         long cnpj_empresa;
@@ -17,6 +17,11 @@ namespace Pont_Finder.hospedagem
 
         //Gets e sets Strings
 
+        public string Ambiente
+        {
+            get { return ambiente; }
+            set { ambiente = value; }
+        }
         public string NomeQuarto
         {
             get { return nome_quarto; }

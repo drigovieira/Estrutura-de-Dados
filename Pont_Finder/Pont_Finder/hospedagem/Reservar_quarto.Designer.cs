@@ -90,6 +90,7 @@
             this.pn_icons.Name = "pn_icons";
             this.pn_icons.Size = new System.Drawing.Size(25, 25);
             this.pn_icons.TabIndex = 53;
+            this.pn_icons.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_icons_Paint);
             // 
             // lb_data_saida
             // 
@@ -415,12 +416,13 @@
             this.btn_back.BackColor = System.Drawing.Color.White;
             this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.Location = new System.Drawing.Point(42, 32);
+            this.btn_back.Location = new System.Drawing.Point(105, 20);
             this.btn_back.Margin = new System.Windows.Forms.Padding(5);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 63;
             this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // Reservar_quarto
             // 

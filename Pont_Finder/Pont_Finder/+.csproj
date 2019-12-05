@@ -357,6 +357,12 @@
     <Compile Include="hospedagem\classes\hostList.cs" />
     <Compile Include="hospedagem\classes\Quarto.cs" />
     <Compile Include="hospedagem\classes\roomList.cs" />
+    <Compile Include="hospedagem\data\inc\amb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\amb.Designer.cs">
+      <DependentUpon>amb.cs</DependentUpon>
+    </Compile>
     <Compile Include="hospedagem\data\inc\icon.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -730,6 +736,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\data\inc\Card_list_quarto.resx">
       <DependentUpon>Card_list_quarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\data\inc\amb.resx">
+      <DependentUpon>amb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\data\inc\icon.resx">
       <DependentUpon>icon.cs</DependentUpon>
