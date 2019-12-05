@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reserva_Alimentos));
-            this.panel1 = new System.Windows.Forms.Panel();
             this.menu = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,31 +46,15 @@
             this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(5, 301);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(310, 691);
-            this.panel1.TabIndex = 52;
-            // 
             // menu
             // 
             this.menu.AutoSize = true;
             this.menu.BackColor = System.Drawing.Color.White;
             this.menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.menu.Location = new System.Drawing.Point(320, 363);
+            this.menu.Location = new System.Drawing.Point(172, 363);
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(625, 629);
             this.menu.TabIndex = 58;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(950, 301);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 691);
-            this.panel2.TabIndex = 59;
             // 
             // panel9
             // 
@@ -86,7 +68,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.PapayaWhip;
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(321, 301);
+            this.panel3.Location = new System.Drawing.Point(172, 301);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(623, 56);
             this.panel3.TabIndex = 62;
@@ -107,7 +89,7 @@
             this.panel4.Controls.Add(this.bt_visualizar);
             this.panel4.Controls.Add(this.panel8);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(950, 301);
+            this.panel4.Location = new System.Drawing.Point(803, 301);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 472);
             this.panel4.TabIndex = 23;
@@ -189,9 +171,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.menu);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
@@ -210,9 +190,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel menu;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;

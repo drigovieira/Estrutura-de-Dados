@@ -80,13 +80,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel2.Controls.Add(this.remFiltro);
             this.panel2.Controls.Add(this.pb_pesquisar);
             this.panel2.Controls.Add(this.PesquisaBox);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(5, 318);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 172);
+            this.panel2.Size = new System.Drawing.Size(310, 148);
             this.panel2.TabIndex = 13;
             // 
             // remFiltro
@@ -96,7 +95,7 @@
             this.remFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.remFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remFiltro.ForeColor = System.Drawing.Color.White;
-            this.remFiltro.Location = new System.Drawing.Point(200, 109);
+            this.remFiltro.Location = new System.Drawing.Point(199, 494);
             this.remFiltro.Name = "remFiltro";
             this.remFiltro.Size = new System.Drawing.Size(103, 37);
             this.remFiltro.TabIndex = 45;
@@ -282,7 +281,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(116, 516);
+            this.label10.Location = new System.Drawing.Point(22, 494);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(73, 27);
             this.label10.TabIndex = 46;
@@ -302,7 +301,7 @@
             this.panel11.Controls.Add(this.rbChurrascaria);
             this.panel11.Controls.Add(this.label11);
             this.panel11.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel11.Location = new System.Drawing.Point(5, 558);
+            this.panel11.Location = new System.Drawing.Point(5, 556);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(310, 324);
             this.panel11.TabIndex = 47;
@@ -565,6 +564,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.remFiltro);
             this.Controls.Add(this.lbConfig2);
             this.Controls.Add(this.lbConfig1);
             this.Controls.Add(this.btn_Config);

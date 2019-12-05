@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.alimentos
 {
-    public partial class Delivery_Alimentos : Form
+    public partial class Pagamento_Cartao : UserControl
     {
-        public Delivery_Alimentos()
+        public Pagamento_Cartao()
         {
             InitializeComponent();
         }
 
-        private void Panel3_Paint(object sender, PaintEventArgs e)
+        private void Pagamento_Cartao_Load(object sender, EventArgs e)
         {
 
         }

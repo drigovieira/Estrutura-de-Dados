@@ -41,7 +41,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lb_deslike = new System.Windows.Forms.Label();
+            this.pb_down = new System.Windows.Forms.PictureBox();
+            this.pb_up = new System.Windows.Forms.PictureBox();
+            this.lb_like = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Restaurante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             this.SuspendLayout();
             // 
             // lbCategoria
@@ -179,11 +185,61 @@
             this.label4.TabIndex = 49;
             this.label4.Text = "Numero:";
             // 
+            // lb_deslike
+            // 
+            this.lb_deslike.AutoSize = true;
+            this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_deslike.Location = new System.Drawing.Point(320, 152);
+            this.lb_deslike.Name = "lb_deslike";
+            this.lb_deslike.Size = new System.Drawing.Size(49, 16);
+            this.lb_deslike.TabIndex = 53;
+            this.lb_deslike.Text = "Deslike";
+            // 
+            // pb_down
+            // 
+            this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.Location = new System.Drawing.Point(289, 148);
+            this.pb_down.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_down.Name = "pb_down";
+            this.pb_down.Size = new System.Drawing.Size(25, 25);
+            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_down.TabIndex = 52;
+            this.pb_down.TabStop = false;
+            // 
+            // pb_up
+            // 
+            this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.Location = new System.Drawing.Point(209, 148);
+            this.pb_up.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_up.Name = "pb_up";
+            this.pb_up.Size = new System.Drawing.Size(25, 25);
+            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_up.TabIndex = 51;
+            this.pb_up.TabStop = false;
+            // 
+            // lb_like
+            // 
+            this.lb_like.AutoSize = true;
+            this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_like.Location = new System.Drawing.Point(240, 152);
+            this.lb_like.Name = "lb_like";
+            this.lb_like.Size = new System.Drawing.Size(31, 16);
+            this.lb_like.TabIndex = 50;
+            this.lb_like.Text = "Like";
+            // 
             // Publi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
+            this.Controls.Add(this.lb_deslike);
+            this.Controls.Add(this.pb_down);
+            this.Controls.Add(this.pb_up);
+            this.Controls.Add(this.lb_like);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -202,6 +258,8 @@
             this.Load += new System.EventHandler(this.Publi_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Publi_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Restaurante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,5 +279,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lb_deslike;
+        private System.Windows.Forms.PictureBox pb_down;
+        private System.Windows.Forms.PictureBox pb_up;
+        private System.Windows.Forms.Label lb_like;
     }
 }
