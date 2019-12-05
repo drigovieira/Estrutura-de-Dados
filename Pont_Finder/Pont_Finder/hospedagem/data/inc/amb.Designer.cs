@@ -1,6 +1,6 @@
 ﻿namespace Pont_Finder.hospedagem.data.inc
 {
-    partial class icon
+    partial class amb
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pb_icon = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icon)).BeginInit();
+            this.pb_amb = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_amb)).BeginInit();
             this.SuspendLayout();
             // 
-            // pb_icon
+            // pb_amb
             // 
-            this.pb_icon.Location = new System.Drawing.Point(0, 0);
-            this.pb_icon.Name = "pb_icon";
-            this.pb_icon.Size = new System.Drawing.Size(25, 25);
-            this.pb_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_icon.TabIndex = 51;
-            this.pb_icon.TabStop = false;
-            this.pb_icon.Click += new System.EventHandler(this.pb_icon_Click);
+            this.pb_amb.Location = new System.Drawing.Point(0, 0);
+            this.pb_amb.Name = "pb_amb";
+            this.pb_amb.Size = new System.Drawing.Size(25, 25);
+            this.pb_amb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_amb.TabIndex = 51;
+            this.pb_amb.TabStop = false;
+            this.pb_amb.Click += new System.EventHandler(this.pb_icon_Click);
             // 
-            // icon
+            // ambien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pb_icon);
-            this.Name = "icon";
+            this.Controls.Add(this.pb_amb);
+            this.Name = "ambien";
             this.Size = new System.Drawing.Size(25, 25);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_amb)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pb_icon;
+        private System.Windows.Forms.PictureBox pb_amb;
     }
 }

@@ -88,6 +88,7 @@
             this.pn_icons.Name = "pn_icons";
             this.pn_icons.Size = new System.Drawing.Size(25, 25);
             this.pn_icons.TabIndex = 53;
+            this.pn_icons.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_icons_Paint);
             // 
             // lb_data_saida
             // 
