@@ -60,6 +60,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,6 +68,7 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // bt_finalizar
@@ -409,6 +411,19 @@
             this.panel5.Size = new System.Drawing.Size(310, 229);
             this.panel5.TabIndex = 53;
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(105, 20);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 63;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // Reservar_quarto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -416,6 +431,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lb_txt_titulo);
             this.Controls.Add(this.panel1);
@@ -436,6 +452,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -474,5 +491,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }

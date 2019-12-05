@@ -8,5 +8,8 @@ namespace Pont_Finder.servicos.classes
 {
     class SolicitadoList
     {
+        private static List<Solicitado> solicitados = new List<Solicitado>();
+
+        public static List<Solicitado> Solicitados { get => solicitados; set => solicitados = value; }
     }
 }

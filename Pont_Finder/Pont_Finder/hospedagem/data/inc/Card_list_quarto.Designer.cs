@@ -44,10 +44,9 @@
             // bt_editar
             // 
             this.bt_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_editar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_editar.ForeColor = System.Drawing.Color.White;
-            this.bt_editar.Location = new System.Drawing.Point(887, 25);
+            this.bt_editar.Location = new System.Drawing.Point(870, 25);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(100, 36);
             this.bt_editar.TabIndex = 4;
@@ -58,10 +57,9 @@
             // bt_remover
             // 
             this.bt_remover.BackColor = System.Drawing.Color.OrangeRed;
-            this.bt_remover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_remover.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_remover.ForeColor = System.Drawing.Color.White;
-            this.bt_remover.Location = new System.Drawing.Point(887, 79);
+            this.bt_remover.Location = new System.Drawing.Point(870, 79);
             this.bt_remover.Name = "bt_remover";
             this.bt_remover.Size = new System.Drawing.Size(100, 36);
             this.bt_remover.TabIndex = 5;
@@ -166,8 +164,9 @@
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.bt_remover);
             this.Controls.Add(this.pb_hotel);
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.Name = "Card_list_quarto";
-            this.Size = new System.Drawing.Size(1008, 158);
+            this.Size = new System.Drawing.Size(1000, 158);
             this.Load += new System.EventHandler(this.Card_list_quarto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).EndInit();
             this.ResumeLayout(false);

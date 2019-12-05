@@ -26,11 +26,16 @@ namespace Pont_Finder.hospedagem
 
         }
 
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("hospedagem", anterior);
+        }
+
         private void lb_nome_quarto_Click(object sender, EventArgs e)
         {
 
         }
-
+        Form anterior;
         public Reservar_quarto(int id, Form anterior, DateTime data_ini, DateTime data_fim, long cpf_usuario)
         {
             classes.Reserva reserva = new classes.Reserva();

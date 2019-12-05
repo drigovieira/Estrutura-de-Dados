@@ -89,8 +89,15 @@ namespace Pont_Finder.servicos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            FormPrincipal.MudarForm("servicos",new Solicitar_Sevico(post.Id, anterior));
+            if (Session.Online)
+            {
+                FormPrincipal.MudarForm("servicos", new Solicitar_Sevico(post.Id, anterior));
+            }
+            else
+            {
+                MessageBox.Show("Faça o Login Para Continuar");
+            }
+           
         }
 
         private void Button2_Click(object sender, EventArgs e)

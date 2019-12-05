@@ -41,7 +41,7 @@ namespace Pont_Finder.TelaCarregamento
                 }
                 else if (valor == 40)
                 {
-                    this.BackColor = Color.FromArgb(69, 172, 20);
+                    this.BackColor = Color.MediumSeaGreen;
                     lb_modulos.Text = "Hospedagem";
                 }
                 else if (valor == 60)
