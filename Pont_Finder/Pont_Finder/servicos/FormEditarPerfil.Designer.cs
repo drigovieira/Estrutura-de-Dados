@@ -51,7 +51,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bt_icone = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.PictureBox();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -63,7 +62,6 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_capa)).BeginInit();
             this.SuspendLayout();
@@ -279,7 +277,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.bt_icone);
-            this.panel1.Controls.Add(this.btn_back);
             this.panel1.Controls.Add(this.pb_icone);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -303,17 +300,6 @@
             this.bt_icone.TabIndex = 15;
             this.bt_icone.UseVisualStyleBackColor = false;
             this.bt_icone.Click += new System.EventHandler(this.Bt_icone_Click);
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.Transparent;
-            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
-            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.Location = new System.Drawing.Point(3, 3);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(40, 40);
-            this.btn_back.TabIndex = 14;
-            this.btn_back.TabStop = false;
             // 
             // pb_icone
             // 
@@ -421,7 +407,6 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_capa)).EndInit();
             this.ResumeLayout(false);
@@ -441,7 +426,6 @@
         private System.Windows.Forms.Label SobreNos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.PictureBox pb_icone;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;

@@ -136,6 +136,7 @@
             this.bt_solicitados.TabIndex = 6;
             this.bt_solicitados.Text = "Serviços solicitados";
             this.bt_solicitados.UseVisualStyleBackColor = false;
+            this.bt_solicitados.Click += new System.EventHandler(this.Bt_solicitados_Click);
             // 
             // bt_servicos
             // 
@@ -477,6 +478,7 @@
             this.bt_mensagens.TabIndex = 15;
             this.bt_mensagens.Text = "Responder Mensagens";
             this.bt_mensagens.UseVisualStyleBackColor = false;
+            this.bt_mensagens.Click += new System.EventHandler(this.Bt_mensagens_Click);
             // 
             // panel_botoes
             // 

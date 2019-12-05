@@ -136,10 +136,23 @@ namespace Pont_Finder.servicos
 
         private void Button2_Click(object sender, EventArgs e)
         {
-
+            if (Session.Online)
+                FormPrincipal.MudarForm("servicos", new FormUserCards(new PerfilEmpresa(empresa.Cpf)));
+            else
+                MessageBox.Show("É necessário estar logado para gerenciar serviços");
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Bt_mensagens_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmpresa(-1, -1));
+        }
+
+        private void Bt_solicitados_Click(object sender, EventArgs e)
         {
 
         }

@@ -12,8 +12,10 @@ namespace Pont_Finder.servicos
 {
     public partial class FormUserCards : Form
     {
-        public FormUserCards()
+        Form anterior;
+        public FormUserCards(Form anterior)
         {
+            this.anterior = anterior;
             InitializeComponent();
             
         }
@@ -35,7 +37,7 @@ namespace Pont_Finder.servicos
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos",new FormCadServico(new FormUserCards()) );
+            FormPrincipal.MudarForm("servicos",new FormCadServico(new FormUserCards(anterior)) );
         }
 
         private void FormUserCards_Load(object sender, EventArgs e)
@@ -54,7 +56,7 @@ namespace Pont_Finder.servicos
                     if (i > 8)
                         break;
                     */
-                    PostCardEdit a = new PostCardEdit(item.Id);
+                    PostCardEdit a = new PostCardEdit(item.Id, anterior);
                     a.Location = new Point(25, y);
                     y = y + a.Height + 5;
                     painel.Controls.Add(a);
@@ -83,7 +85,7 @@ namespace Pont_Finder.servicos
 
         private void Btn_back_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new FormServicos());
+            FormPrincipal.MudarForm("servicos", anterior);
         }
     }
 }

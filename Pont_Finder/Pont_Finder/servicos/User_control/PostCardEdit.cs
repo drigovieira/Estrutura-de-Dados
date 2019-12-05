@@ -21,9 +21,11 @@ namespace Pont_Finder.servicos
         Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
         Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
 
+        Form anterior;
 
-        public PostCardEdit(int postId)
+        public PostCardEdit(int postId, Form anterior)
         {
+            this.anterior = anterior;
             post = classes.PostList.SelectId(postId);
             empresa = classes.ListaEmpresa.ForCpf(post.Cpf);
             InitializeComponent();
@@ -58,12 +60,12 @@ namespace Pont_Finder.servicos
 
         private void bt_obter_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, new FormUserCards()));
+            FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, new FormUserCards(anterior)));
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new FormPostEdit(post.Id, new FormUserCards()));
+            FormPrincipal.MudarForm("servicos", new FormPostEdit(post.Id, new FormUserCards(anterior)));
         }
 
         private void PostCardEdit_Load(object sender, EventArgs e)
@@ -79,7 +81,7 @@ namespace Pont_Finder.servicos
             {
                 post.Ativo = false;
                 MessageBox.Show("Post Excluido");
-                FormPrincipal.MudarForm("servicos", new FormUserCards());
+                FormPrincipal.MudarForm("servicos", new FormUserCards(anterior));
             }               
             else
                 MessageBox.Show("Cancelado");

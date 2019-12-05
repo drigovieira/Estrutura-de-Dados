@@ -28,22 +28,13 @@ namespace Pont_Finder.servicos
             else
             {
                 empresa = null;
-                bt_mensagens.Enabled = false;
-                bt_solicitados.Enabled = false;
-                bt_servicos.Enabled = false;
+                bt_mensagens.Enabled = false;        
                 bt_empresa.Enabled = false;
             }
 
-            if (empresa == null)
-            {
-                bt_solicitados.Enabled = false;
-                bt_servicos.Enabled = false;
-            }
-            else
-            {
+            if (empresa != null)
                 bt_empresa.Text = "Gerenciar Empresa";
-
-            }
+       
 
             pagQuant = 2;
             LoadPosts();
@@ -155,13 +146,6 @@ namespace Pont_Finder.servicos
             tb_pesquisar.Text = "Pesquisar";
         }
 
-        private void button6_Click_1(object sender, EventArgs e)
-        {
-            if (Session.Online)
-                FormPrincipal.MudarForm("servicos", new FormUserCards());          
-            else
-                MessageBox.Show("É necessário estar logado para gerenciar serviços");          
-        }
 
         private void Bt_ant_Click(object sender, EventArgs e)
         {
@@ -478,6 +462,11 @@ namespace Pont_Finder.servicos
         }
 
         private void RadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
         {
 
         }

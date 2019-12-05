@@ -33,11 +33,7 @@
             this.bt_solicitar = new System.Windows.Forms.Button();
             this.bt_empresa = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.EditarPerfil = new System.Windows.Forms.Button();
-            this.bt_solicitados = new System.Windows.Forms.Button();
             this.bt_mensagens = new System.Windows.Forms.Button();
-            this.bt_servicos = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -84,7 +80,7 @@
             this.bt_solicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_solicitar.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_solicitar.ForeColor = System.Drawing.Color.White;
-            this.bt_solicitar.Location = new System.Drawing.Point(824, 5);
+            this.bt_solicitar.Location = new System.Drawing.Point(821, 5);
             this.bt_solicitar.Name = "bt_solicitar";
             this.bt_solicitar.Size = new System.Drawing.Size(122, 28);
             this.bt_solicitar.TabIndex = 4;
@@ -97,7 +93,7 @@
             this.bt_empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_empresa.ForeColor = System.Drawing.Color.White;
-            this.bt_empresa.Location = new System.Drawing.Point(312, 5);
+            this.bt_empresa.Location = new System.Drawing.Point(319, 5);
             this.bt_empresa.Name = "bt_empresa";
             this.bt_empresa.Size = new System.Drawing.Size(122, 28);
             this.bt_empresa.TabIndex = 3;
@@ -109,11 +105,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.EditarPerfil);
-            this.panel1.Controls.Add(this.bt_solicitados);
             this.panel1.Controls.Add(this.bt_mensagens);
-            this.panel1.Controls.Add(this.bt_servicos);
             this.panel1.Controls.Add(this.bt_solicitar);
             this.panel1.Controls.Add(this.bt_empresa);
             this.panel1.Location = new System.Drawing.Point(0, 150);
@@ -121,69 +113,18 @@
             this.panel1.Size = new System.Drawing.Size(1265, 40);
             this.panel1.TabIndex = 19;
             // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(147, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 28);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Solicitados";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // EditarPerfil
-            // 
-            this.EditarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditarPerfil.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditarPerfil.ForeColor = System.Drawing.Color.White;
-            this.EditarPerfil.Location = new System.Drawing.Point(3, 5);
-            this.EditarPerfil.Name = "EditarPerfil";
-            this.EditarPerfil.Size = new System.Drawing.Size(122, 28);
-            this.EditarPerfil.TabIndex = 11;
-            this.EditarPerfil.Text = "Editar perfil";
-            this.EditarPerfil.UseVisualStyleBackColor = true;
-            this.EditarPerfil.Click += new System.EventHandler(this.EditarPerfil_Click);
-            // 
-            // bt_solicitados
-            // 
-            this.bt_solicitados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_solicitados.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_solicitados.ForeColor = System.Drawing.Color.White;
-            this.bt_solicitados.Location = new System.Drawing.Point(696, 5);
-            this.bt_solicitados.Name = "bt_solicitados";
-            this.bt_solicitados.Size = new System.Drawing.Size(122, 28);
-            this.bt_solicitados.TabIndex = 9;
-            this.bt_solicitados.Text = "Mensagens Emp";
-            this.bt_solicitados.UseVisualStyleBackColor = true;
-            this.bt_solicitados.Click += new System.EventHandler(this.Button2_Click_1);
-            // 
             // bt_mensagens
             // 
             this.bt_mensagens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_mensagens.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_mensagens.ForeColor = System.Drawing.Color.White;
-            this.bt_mensagens.Location = new System.Drawing.Point(568, 5);
+            this.bt_mensagens.Location = new System.Drawing.Point(564, 5);
             this.bt_mensagens.Name = "bt_mensagens";
             this.bt_mensagens.Size = new System.Drawing.Size(122, 28);
             this.bt_mensagens.TabIndex = 8;
-            this.bt_mensagens.Text = "Mensagens User";
+            this.bt_mensagens.Text = "Mensagens";
             this.bt_mensagens.UseVisualStyleBackColor = true;
             this.bt_mensagens.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // bt_servicos
-            // 
-            this.bt_servicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_servicos.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_servicos.ForeColor = System.Drawing.Color.White;
-            this.bt_servicos.Location = new System.Drawing.Point(440, 5);
-            this.bt_servicos.Name = "bt_servicos";
-            this.bt_servicos.Size = new System.Drawing.Size(122, 28);
-            this.bt_servicos.TabIndex = 7;
-            this.bt_servicos.Text = "Gerenciar Serviços";
-            this.bt_servicos.UseVisualStyleBackColor = true;
-            this.bt_servicos.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // panel2
             // 
@@ -534,7 +475,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bt_servicos;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button bt_ant;
         private System.Windows.Forms.Button bt_prox;
@@ -547,7 +487,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button bt_mensagens;
-        private System.Windows.Forms.Button bt_solicitados;
         private System.Windows.Forms.TextBox tb_pesquisar;
         private System.Windows.Forms.PictureBox pb_pesquisar;
         private System.Windows.Forms.Label label2;
@@ -557,10 +496,8 @@
         private System.Windows.Forms.RadioButton rb_recente;
         private System.Windows.Forms.RadioButton rb_antigo;
         private System.Windows.Forms.Panel panel_left;
-        private System.Windows.Forms.Button EditarPerfil;
         private System.Windows.Forms.Button bt_antFull;
         private System.Windows.Forms.Button bt_proxFull;
         private System.Windows.Forms.RadioButton rb_categoria;
-        private System.Windows.Forms.Button button1;
     }
 }
