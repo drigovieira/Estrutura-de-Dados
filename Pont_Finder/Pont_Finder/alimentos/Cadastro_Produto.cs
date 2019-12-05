@@ -33,6 +33,13 @@ namespace Pont_Finder.alimentos
                 }
             }
         }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            formAlimentos homeAlimentos = new formAlimentos();
+            FormPrincipal.MudarForm("alimentos", homeAlimentos);
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
             alimentos.Cadastro_Cardapio cadCardapio = new Cadastro_Cardapio(Company);

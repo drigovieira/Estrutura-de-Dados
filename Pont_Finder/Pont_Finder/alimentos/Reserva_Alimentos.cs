@@ -21,6 +21,25 @@ namespace Pont_Finder.alimentos
             Listar();
         }
 
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            formAlimentos homeAlimentos = new formAlimentos();
+            FormPrincipal.MudarForm("alimentos", homeAlimentos);
+        }
+
+        private void Bt_visualizar_Click(object sender, EventArgs e)
+        {
+            if(Lista.Controls != null)
+            {
+                Delivery_Alimentos delivery = new Delivery_Alimentos();
+                FormPrincipal.MudarForm("alimentos", delivery);
+            }
+            else
+            {
+                MessageBox.Show("Não exitem itens na lista de pedidos","Alerta");
+            }
+        }
+
         public void Listar()
         {
             foreach (var item in ListCardapio.selectAll())

@@ -35,7 +35,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bt_visualizar = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.Lista = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -87,7 +87,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.PapayaWhip;
             this.panel4.Controls.Add(this.bt_visualizar);
-            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.Lista);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(803, 301);
             this.panel4.Name = "panel4";
@@ -107,14 +107,16 @@
             this.bt_visualizar.TabIndex = 35;
             this.bt_visualizar.Text = "Finalizar Pedido";
             this.bt_visualizar.UseVisualStyleBackColor = false;
+            this.bt_visualizar.Click += new System.EventHandler(this.Bt_visualizar_Click);
             // 
-            // panel8
+            // Lista
             // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(22, 45);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(270, 347);
-            this.panel8.TabIndex = 6;
+            this.Lista.AutoScroll = true;
+            this.Lista.BackColor = System.Drawing.Color.White;
+            this.Lista.Location = new System.Drawing.Point(22, 45);
+            this.Lista.Name = "Lista";
+            this.Lista.Size = new System.Drawing.Size(270, 347);
+            this.Lista.TabIndex = 6;
             // 
             // label7
             // 
@@ -130,12 +132,15 @@
             // btn_back
             // 
             this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_back.Location = new System.Drawing.Point(12, 232);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 65;
             this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // panel10
             // 
@@ -195,7 +200,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel Lista;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Button bt_visualizar;

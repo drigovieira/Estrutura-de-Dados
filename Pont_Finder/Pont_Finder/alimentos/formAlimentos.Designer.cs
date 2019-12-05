@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formAlimentos));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.remFiltro = new System.Windows.Forms.Button();
             this.pb_pesquisar = new System.Windows.Forms.PictureBox();
             this.PesquisaBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.remFiltro = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Top5 = new System.Windows.Forms.Panel();
             this.lbTop5 = new System.Windows.Forms.Label();
@@ -88,22 +88,6 @@
             this.panel2.Size = new System.Drawing.Size(310, 148);
             this.panel2.TabIndex = 13;
             // 
-            // remFiltro
-            // 
-            this.remFiltro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.remFiltro.FlatAppearance.BorderSize = 0;
-            this.remFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.remFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remFiltro.ForeColor = System.Drawing.Color.White;
-            this.remFiltro.Location = new System.Drawing.Point(199, 494);
-            this.remFiltro.Name = "remFiltro";
-            this.remFiltro.Size = new System.Drawing.Size(103, 37);
-            this.remFiltro.TabIndex = 45;
-            this.remFiltro.Text = "Sem Filtro";
-            this.remFiltro.UseVisualStyleBackColor = false;
-            this.remFiltro.Visible = false;
-            this.remFiltro.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // pb_pesquisar
             // 
             this.pb_pesquisar.BackColor = System.Drawing.Color.White;
@@ -135,6 +119,22 @@
             this.label3.Size = new System.Drawing.Size(197, 24);
             this.label3.TabIndex = 1;
             this.label3.Text = "Nome do Restaurante:";
+            // 
+            // remFiltro
+            // 
+            this.remFiltro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.remFiltro.FlatAppearance.BorderSize = 0;
+            this.remFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.remFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remFiltro.ForeColor = System.Drawing.Color.White;
+            this.remFiltro.Location = new System.Drawing.Point(199, 494);
+            this.remFiltro.Name = "remFiltro";
+            this.remFiltro.Size = new System.Drawing.Size(103, 37);
+            this.remFiltro.TabIndex = 45;
+            this.remFiltro.Text = "Sem Filtro";
+            this.remFiltro.UseVisualStyleBackColor = false;
+            this.remFiltro.Visible = false;
+            this.remFiltro.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label1
             // 
