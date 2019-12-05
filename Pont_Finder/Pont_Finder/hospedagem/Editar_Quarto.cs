@@ -248,7 +248,7 @@ namespace Pont_Finder.hospedagem
                         diretorio = foto;
                     }
 
-                    quarto.ID = id;
+                    //quarto.ID = id;
                     quarto.Cnpj_Empresa = empresa;
                     quarto.NomeQuarto = nome;
                     quarto.Qtd_Pessoas = qtd_pessoas;
