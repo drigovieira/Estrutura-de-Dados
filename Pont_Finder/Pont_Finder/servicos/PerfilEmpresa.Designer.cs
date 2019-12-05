@@ -162,6 +162,9 @@
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 14;
             this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click_1);
+            this.btn_back.MouseEnter += new System.EventHandler(this.Btn_back_MouseEnter);
+            this.btn_back.MouseLeave += new System.EventHandler(this.Btn_back_MouseLeave);
             // 
             // panel1
             // 

@@ -53,7 +53,7 @@ namespace Pont_Finder.servicos
         private void Button2_Click(object sender, EventArgs e)
         {
             if (empresa != null)
-                FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf));
+                FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf, new FormServicos()));
             else if (Session.Online)
                 FormPrincipal.MudarForm("servicos", new FormCadEmpresa());
             else
@@ -245,20 +245,12 @@ namespace Pont_Finder.servicos
 
         private void VisualizarPerfil_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf));
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf, new FormServicos()));
         }
 
-        private void EditarPerfil_Click(object sender, EventArgs e)
-        {
-            FormPrincipal.MudarForm("servicos", new FormEditarPerfil());
-        }
+      
 
         private void Lb_pag_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Panel5_Paint(object sender, PaintEventArgs e)
         {
 
         }
