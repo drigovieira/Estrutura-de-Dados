@@ -243,7 +243,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Pont_Finder.Properties.Resources._854878;
-            this.pictureBox1.Location = new System.Drawing.Point(843, 584);
+            this.pictureBox1.Location = new System.Drawing.Point(210, 423);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
