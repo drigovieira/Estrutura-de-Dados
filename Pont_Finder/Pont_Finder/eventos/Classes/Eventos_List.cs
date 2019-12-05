@@ -248,7 +248,5 @@ namespace Pont_Finder.eventos.Classes
             }
             xmldoc.Save(caminhoPost);
         }
-
-     
     }
 }

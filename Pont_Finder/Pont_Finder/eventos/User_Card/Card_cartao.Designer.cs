@@ -136,7 +136,6 @@
             this.tb_cartao_num.Name = "tb_cartao_num";
             this.tb_cartao_num.Size = new System.Drawing.Size(250, 24);
             this.tb_cartao_num.TabIndex = 34;
-            this.tb_cartao_num.TextChanged += new System.EventHandler(this.Tb_cartao_num_TextChanged);
             // 
             // label1
             // 
@@ -194,7 +193,6 @@
             this.Controls.Add(this.cb_select_cartao);
             this.Name = "Card_cartao";
             this.Size = new System.Drawing.Size(623, 468);
-            this.Load += new System.EventHandler(this.Card_cartao_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
