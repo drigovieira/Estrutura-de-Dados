@@ -130,6 +130,18 @@
     </Compile>
     <Compile Include="alimentos\classes\ProfileCompany.cs" />
     <Compile Include="alimentos\classes\ProfileList.cs" />
+    <Compile Include="alimentos\Pagamento_Cartao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\Pagamento_Cartao.Designer.cs">
+      <DependentUpon>Pagamento_Cartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\Pagamento_Dinheiro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\Pagamento_Dinheiro.Designer.cs">
+      <DependentUpon>Pagamento_Dinheiro.cs</DependentUpon>
+    </Compile>
     <Compile Include="alimentos\Publi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -602,6 +614,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\lbMensagem.resx">
       <DependentUpon>lbMensagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Pagamento_Cartao.resx">
+      <DependentUpon>Pagamento_Cartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Pagamento_Dinheiro.resx">
+      <DependentUpon>Pagamento_Dinheiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Publi.resx">
       <DependentUpon>Publi.cs</DependentUpon>
