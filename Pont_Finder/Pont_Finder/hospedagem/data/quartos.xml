@@ -12,4 +12,16 @@
     <estado>Disponivel</estado>
     <status>true</status>
   </quarto>
+  <quarto>
+    <id>1</id>
+    <empresa>12123123112221</empresa>
+    <nome>abc</nome>
+    <qtd_pessoas>1</qtd_pessoas>
+    <qtd_quartos>11</qtd_quartos>
+    <servicos> * Café da tarde * Wi-fi * Espaço PET</servicos>
+    <valor>500</valor>
+    <foto>..//..//hospedagem//data//images//empresas//12123123112221//quartos//0//abc.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
 </roomlist>
