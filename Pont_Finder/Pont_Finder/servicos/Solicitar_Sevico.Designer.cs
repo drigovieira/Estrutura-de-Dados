@@ -50,6 +50,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.bt_icone = new System.Windows.Forms.Button();
+            this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel3.SuspendLayout();
@@ -167,6 +168,7 @@
             this.pb_icone.Location = new System.Drawing.Point(56, 54);
             this.pb_icone.Name = "pb_icone";
             this.pb_icone.Size = new System.Drawing.Size(300, 225);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_icone.TabIndex = 0;
             this.pb_icone.TabStop = false;
             // 
@@ -299,6 +301,10 @@
             this.bt_icone.UseVisualStyleBackColor = false;
             this.bt_icone.Click += new System.EventHandler(this.Bt_icone_Click);
             // 
+            // openIcone
+            // 
+            this.openIcone.FileName = "icone";
+            // 
             // Solicitar_Sevico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -347,5 +353,6 @@
         private System.Windows.Forms.Button bt_solicitar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.OpenFileDialog openIcone;
     }
 }
