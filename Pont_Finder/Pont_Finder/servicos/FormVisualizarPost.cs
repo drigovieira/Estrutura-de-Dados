@@ -79,12 +79,12 @@ namespace Pont_Finder.servicos
         private void Btn_back_MouseMove(object sender, MouseEventArgs e)
         {
             
-            btn_back.Image = Model.voltar_click;
+            btn_back.Image = Model.Img_Voltar_Click;
         }
 
         private void Btn_back_MouseLeave(object sender, EventArgs e)
         {
-            btn_back.Image = Model.voltar;
+            btn_back.Image = Model.Img_Voltar;
         }
 
         private void button1_Click(object sender, EventArgs e)
