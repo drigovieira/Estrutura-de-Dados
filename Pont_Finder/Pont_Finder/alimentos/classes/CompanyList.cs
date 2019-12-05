@@ -242,17 +242,14 @@ namespace Pont_Finder.alimentos
             }
             xmldoc.Save(caminho);
         }
-        public static object[] verifEmp(long cpf)
+        public static int verifEmp(long cpf)
         {
-            object[] variaveis = new object[2];
-            variaveis[0] = null;
-            variaveis[1] = false;
+            int variaveis = -1;
             foreach (var item in company)
             {
                 if (item.Cpf == cpf)
                 {
-                    variaveis[0] = item.Id;
-                    variaveis[1] = true;
+                    variaveis = item.Id;            
                 }
             }
             return variaveis;

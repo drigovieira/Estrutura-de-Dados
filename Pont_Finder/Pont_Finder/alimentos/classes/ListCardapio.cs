@@ -19,7 +19,8 @@ namespace Pont_Finder.alimentos
             car.Qtd = dados.Qtd;
             car.Ingredientes = dados.Ingredientes;
             car.Image = dados.Image;
-            car.Status = true;           
+            car.Status = true;
+            car.IdEmpresa = dados.IdEmpresa;
             cardapio.Add(car);
             cardapio[cardapio.IndexOf(car)].Id = cardapio.IndexOf(car);
         }
