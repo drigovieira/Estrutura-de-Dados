@@ -36,6 +36,8 @@
             this.bt_servicos = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_botoes = new System.Windows.Forms.Panel();
+            this.bt_mensagens = new System.Windows.Forms.Button();
             this.lb_site = new System.Windows.Forms.Label();
             this.lb_telefone = new System.Windows.Forms.Label();
             this.lb_endereco = new System.Windows.Forms.Label();
@@ -62,12 +64,11 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_slogan = new System.Windows.Forms.Label();
-            this.bt_mensagens = new System.Windows.Forms.Button();
-            this.panel_botoes = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_capa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel_botoes.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel_detalhes.SuspendLayout();
             this.panel_dentro.SuspendLayout();
@@ -75,7 +76,6 @@
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel_botoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // bt_editar
@@ -175,6 +175,31 @@
             this.panel1.Size = new System.Drawing.Size(310, 698);
             this.panel1.TabIndex = 7;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // panel_botoes
+            // 
+            this.panel_botoes.Controls.Add(this.bt_editar);
+            this.panel_botoes.Controls.Add(this.bt_mensagens);
+            this.panel_botoes.Controls.Add(this.bt_servicos);
+            this.panel_botoes.Controls.Add(this.bt_solicitados);
+            this.panel_botoes.Location = new System.Drawing.Point(3, 377);
+            this.panel_botoes.Name = "panel_botoes";
+            this.panel_botoes.Size = new System.Drawing.Size(304, 186);
+            this.panel_botoes.TabIndex = 16;
+            // 
+            // bt_mensagens
+            // 
+            this.bt_mensagens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.bt_mensagens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_mensagens.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_mensagens.ForeColor = System.Drawing.Color.White;
+            this.bt_mensagens.Location = new System.Drawing.Point(26, 96);
+            this.bt_mensagens.Name = "bt_mensagens";
+            this.bt_mensagens.Size = new System.Drawing.Size(250, 35);
+            this.bt_mensagens.TabIndex = 15;
+            this.bt_mensagens.Text = "Responder Mensagens";
+            this.bt_mensagens.UseVisualStyleBackColor = false;
+            this.bt_mensagens.Click += new System.EventHandler(this.Bt_mensagens_Click);
             // 
             // lb_site
             // 
@@ -466,31 +491,6 @@
             this.lb_slogan.TabIndex = 9;
             this.lb_slogan.Text = "Slogan da Empresa";
             // 
-            // bt_mensagens
-            // 
-            this.bt_mensagens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
-            this.bt_mensagens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_mensagens.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_mensagens.ForeColor = System.Drawing.Color.White;
-            this.bt_mensagens.Location = new System.Drawing.Point(26, 96);
-            this.bt_mensagens.Name = "bt_mensagens";
-            this.bt_mensagens.Size = new System.Drawing.Size(250, 35);
-            this.bt_mensagens.TabIndex = 15;
-            this.bt_mensagens.Text = "Responder Mensagens";
-            this.bt_mensagens.UseVisualStyleBackColor = false;
-            this.bt_mensagens.Click += new System.EventHandler(this.Bt_mensagens_Click);
-            // 
-            // panel_botoes
-            // 
-            this.panel_botoes.Controls.Add(this.bt_editar);
-            this.panel_botoes.Controls.Add(this.bt_mensagens);
-            this.panel_botoes.Controls.Add(this.bt_servicos);
-            this.panel_botoes.Controls.Add(this.bt_solicitados);
-            this.panel_botoes.Location = new System.Drawing.Point(3, 377);
-            this.panel_botoes.Name = "panel_botoes";
-            this.panel_botoes.Size = new System.Drawing.Size(304, 186);
-            this.panel_botoes.TabIndex = 16;
-            // 
             // PerfilEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -512,6 +512,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel_botoes.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel_detalhes.ResumeLayout(false);
@@ -526,7 +527,6 @@
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel_botoes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
