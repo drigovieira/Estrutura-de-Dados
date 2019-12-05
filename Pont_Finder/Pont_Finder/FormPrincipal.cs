@@ -173,7 +173,7 @@ namespace Pont_Finder
                     navbar.BackColor = Color.FromArgb(30, 125, 204);
                     break;
                 case "hospedagem":
-                    navbar.BackColor = Color.LightSeaGreen;
+                    navbar.BackColor = Color.MediumSeaGreen;
                     break;
                 case "eventos":
                     navbar.BackColor = Color.FromArgb(129, 78, 210);

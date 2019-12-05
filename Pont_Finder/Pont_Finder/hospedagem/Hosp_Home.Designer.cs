@@ -45,6 +45,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tb_pesquisar = new System.Windows.Forms.TextBox();
             this.pnl_img = new System.Windows.Forms.Panel();
+            this.pn_menu = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bt_gerenciar_quartos = new System.Windows.Forms.Button();
+            this.Btn_Edit_Empresa = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,22 +71,18 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.Btn_Edit_Empresa = new System.Windows.Forms.Button();
-            this.bt_gerenciar_quartos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bt_ant = new System.Windows.Forms.Button();
             this.bt_prox = new System.Windows.Forms.Button();
             this.lb_pag = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pn_menu = new System.Windows.Forms.Panel();
             this.panel10.SuspendLayout();
             this.pnl_img.SuspendLayout();
+            this.pn_menu.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.pn_menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // label13
@@ -263,6 +263,69 @@
             this.pnl_img.Name = "pnl_img";
             this.pnl_img.Size = new System.Drawing.Size(1264, 200);
             this.pnl_img.TabIndex = 29;
+            // 
+            // pn_menu
+            // 
+            this.pn_menu.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pn_menu.Controls.Add(this.button1);
+            this.pn_menu.Controls.Add(this.bt_gerenciar_quartos);
+            this.pn_menu.Controls.Add(this.Btn_Edit_Empresa);
+            this.pn_menu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pn_menu.Location = new System.Drawing.Point(0, 160);
+            this.pn_menu.Name = "pn_menu";
+            this.pn_menu.Size = new System.Drawing.Size(1264, 40);
+            this.pn_menu.TabIndex = 49;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(823, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 28);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Lista de Reservas";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // bt_gerenciar_quartos
+            // 
+            this.bt_gerenciar_quartos.BackColor = System.Drawing.Color.Transparent;
+            this.bt_gerenciar_quartos.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.bt_gerenciar_quartos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.bt_gerenciar_quartos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.bt_gerenciar_quartos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_gerenciar_quartos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_gerenciar_quartos.ForeColor = System.Drawing.Color.White;
+            this.bt_gerenciar_quartos.Location = new System.Drawing.Point(581, 6);
+            this.bt_gerenciar_quartos.Name = "bt_gerenciar_quartos";
+            this.bt_gerenciar_quartos.Size = new System.Drawing.Size(122, 28);
+            this.bt_gerenciar_quartos.TabIndex = 43;
+            this.bt_gerenciar_quartos.Text = "Gerenciar quartos";
+            this.bt_gerenciar_quartos.UseVisualStyleBackColor = false;
+            this.bt_gerenciar_quartos.Click += new System.EventHandler(this.bt_gerenciar_quartos_Click);
+            // 
+            // Btn_Edit_Empresa
+            // 
+            this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Edit_Empresa.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.Btn_Edit_Empresa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.Btn_Edit_Empresa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.Btn_Edit_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
+            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(320, 6);
+            this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
+            this.Btn_Edit_Empresa.Size = new System.Drawing.Size(122, 28);
+            this.Btn_Edit_Empresa.TabIndex = 42;
+            this.Btn_Edit_Empresa.Text = "Editar empresa";
+            this.Btn_Edit_Empresa.UseVisualStyleBackColor = false;
+            this.Btn_Edit_Empresa.Click += new System.EventHandler(this.Btn_Edit_Empresa_Click);
             // 
             // label6
             // 
@@ -509,34 +572,6 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Top 5 acomodações";
             // 
-            // Btn_Edit_Empresa
-            // 
-            this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Edit_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
-            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(320, 6);
-            this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
-            this.Btn_Edit_Empresa.Size = new System.Drawing.Size(122, 28);
-            this.Btn_Edit_Empresa.TabIndex = 42;
-            this.Btn_Edit_Empresa.Text = "Editar empresa";
-            this.Btn_Edit_Empresa.UseVisualStyleBackColor = false;
-            this.Btn_Edit_Empresa.Click += new System.EventHandler(this.Btn_Edit_Empresa_Click);
-            // 
-            // bt_gerenciar_quartos
-            // 
-            this.bt_gerenciar_quartos.BackColor = System.Drawing.Color.Transparent;
-            this.bt_gerenciar_quartos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_gerenciar_quartos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_gerenciar_quartos.ForeColor = System.Drawing.Color.White;
-            this.bt_gerenciar_quartos.Location = new System.Drawing.Point(581, 6);
-            this.bt_gerenciar_quartos.Name = "bt_gerenciar_quartos";
-            this.bt_gerenciar_quartos.Size = new System.Drawing.Size(122, 28);
-            this.bt_gerenciar_quartos.TabIndex = 43;
-            this.bt_gerenciar_quartos.Text = "Gerenciar quartos";
-            this.bt_gerenciar_quartos.UseVisualStyleBackColor = false;
-            this.bt_gerenciar_quartos.Click += new System.EventHandler(this.bt_gerenciar_quartos_Click);
-            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -579,32 +614,6 @@
             this.lb_pag.TabIndex = 47;
             this.lb_pag.Text = "label7";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(823, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 28);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Lista de Reservas";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pn_menu
-            // 
-            this.pn_menu.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.pn_menu.Controls.Add(this.button1);
-            this.pn_menu.Controls.Add(this.bt_gerenciar_quartos);
-            this.pn_menu.Controls.Add(this.Btn_Edit_Empresa);
-            this.pn_menu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_menu.Location = new System.Drawing.Point(0, 160);
-            this.pn_menu.Name = "pn_menu";
-            this.pn_menu.Size = new System.Drawing.Size(1264, 40);
-            this.pn_menu.TabIndex = 49;
-            // 
             // Hosp_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -641,6 +650,7 @@
             this.panel10.PerformLayout();
             this.pnl_img.ResumeLayout(false);
             this.pnl_img.PerformLayout();
+            this.pn_menu.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -651,7 +661,6 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.pn_menu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

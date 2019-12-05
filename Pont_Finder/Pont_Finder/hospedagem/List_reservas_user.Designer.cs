@@ -40,7 +40,7 @@
             this.btn_back.BackColor = System.Drawing.Color.White;
             this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.Location = new System.Drawing.Point(106, 98);
+            this.btn_back.Location = new System.Drawing.Point(105, 98);
             this.btn_back.Margin = new System.Windows.Forms.Padding(5);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(40, 40);
