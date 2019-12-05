@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt_editar = new System.Windows.Forms.Button();
             this.lb_fantasia = new System.Windows.Forms.Label();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.pb_capa = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bt_solicitados = new System.Windows.Forms.Button();
+            this.bt_servicos = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_site = new System.Windows.Forms.Label();
@@ -62,6 +62,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_slogan = new System.Windows.Forms.Label();
+            this.bt_mensagens = new System.Windows.Forms.Button();
+            this.panel_botoes = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_capa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
@@ -73,21 +75,22 @@
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel_botoes.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // bt_editar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(21, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(263, 35);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Editar Perfil";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.bt_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_editar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_editar.ForeColor = System.Drawing.Color.White;
+            this.bt_editar.Location = new System.Drawing.Point(26, 14);
+            this.bt_editar.Name = "bt_editar";
+            this.bt_editar.Size = new System.Drawing.Size(250, 35);
+            this.bt_editar.TabIndex = 4;
+            this.bt_editar.Text = "Editar Perfil";
+            this.bt_editar.UseVisualStyleBackColor = false;
+            this.bt_editar.Click += new System.EventHandler(this.Button1_Click);
             // 
             // lb_fantasia
             // 
@@ -95,7 +98,7 @@
             this.lb_fantasia.BackColor = System.Drawing.Color.Transparent;
             this.lb_fantasia.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_fantasia.ForeColor = System.Drawing.Color.Black;
-            this.lb_fantasia.Location = new System.Drawing.Point(17, 337);
+            this.lb_fantasia.Location = new System.Drawing.Point(17, 318);
             this.lb_fantasia.Name = "lb_fantasia";
             this.lb_fantasia.Size = new System.Drawing.Size(135, 24);
             this.lb_fantasia.TabIndex = 1;
@@ -121,31 +124,32 @@
             this.pb_capa.TabIndex = 10;
             this.pb_capa.TabStop = false;
             // 
-            // button3
+            // bt_solicitados
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(21, 527);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(263, 35);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Serviços solicitados";
-            this.button3.UseVisualStyleBackColor = false;
+            this.bt_solicitados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.bt_solicitados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_solicitados.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_solicitados.ForeColor = System.Drawing.Color.White;
+            this.bt_solicitados.Location = new System.Drawing.Point(26, 137);
+            this.bt_solicitados.Name = "bt_solicitados";
+            this.bt_solicitados.Size = new System.Drawing.Size(250, 35);
+            this.bt_solicitados.TabIndex = 6;
+            this.bt_solicitados.Text = "Serviços solicitados";
+            this.bt_solicitados.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // bt_servicos
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(21, 470);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(263, 35);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Adicionar post";
-            this.button2.UseVisualStyleBackColor = false;
+            this.bt_servicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.bt_servicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_servicos.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_servicos.ForeColor = System.Drawing.Color.White;
+            this.bt_servicos.Location = new System.Drawing.Point(26, 55);
+            this.bt_servicos.Name = "bt_servicos";
+            this.bt_servicos.Size = new System.Drawing.Size(250, 35);
+            this.bt_servicos.TabIndex = 5;
+            this.bt_servicos.Text = "Gerenciar Serviços";
+            this.bt_servicos.UseVisualStyleBackColor = false;
+            this.bt_servicos.Click += new System.EventHandler(this.Button2_Click);
             // 
             // btn_back
             // 
@@ -161,16 +165,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.panel_botoes);
             this.panel1.Controls.Add(this.btn_back);
             this.panel1.Controls.Add(this.pb_icone);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lb_fantasia);
             this.panel1.Location = new System.Drawing.Point(5, 15);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(310, 698);
             this.panel1.TabIndex = 7;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // lb_site
             // 
@@ -462,6 +465,30 @@
             this.lb_slogan.TabIndex = 9;
             this.lb_slogan.Text = "Slogan da Empresa";
             // 
+            // bt_mensagens
+            // 
+            this.bt_mensagens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.bt_mensagens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_mensagens.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_mensagens.ForeColor = System.Drawing.Color.White;
+            this.bt_mensagens.Location = new System.Drawing.Point(26, 96);
+            this.bt_mensagens.Name = "bt_mensagens";
+            this.bt_mensagens.Size = new System.Drawing.Size(250, 35);
+            this.bt_mensagens.TabIndex = 15;
+            this.bt_mensagens.Text = "Responder Mensagens";
+            this.bt_mensagens.UseVisualStyleBackColor = false;
+            // 
+            // panel_botoes
+            // 
+            this.panel_botoes.Controls.Add(this.bt_editar);
+            this.panel_botoes.Controls.Add(this.bt_mensagens);
+            this.panel_botoes.Controls.Add(this.bt_servicos);
+            this.panel_botoes.Controls.Add(this.bt_solicitados);
+            this.panel_botoes.Location = new System.Drawing.Point(3, 377);
+            this.panel_botoes.Name = "panel_botoes";
+            this.panel_botoes.Size = new System.Drawing.Size(304, 186);
+            this.panel_botoes.TabIndex = 16;
+            // 
             // PerfilEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,18 +524,19 @@
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel_botoes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_editar;
         private System.Windows.Forms.Label lb_fantasia;
         private System.Windows.Forms.PictureBox pb_icone;
         private System.Windows.Forms.PictureBox pb_capa;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bt_solicitados;
+        private System.Windows.Forms.Button bt_servicos;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lb_site;
@@ -537,5 +565,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lb_slogan;
+        private System.Windows.Forms.Button bt_mensagens;
+        private System.Windows.Forms.Panel panel_botoes;
     }
 }

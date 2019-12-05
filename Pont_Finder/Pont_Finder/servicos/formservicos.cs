@@ -41,7 +41,7 @@ namespace Pont_Finder.servicos
             }
             else
             {
-                bt_empresa.Text = "Visualizar Empresa";
+                bt_empresa.Text = "Gerenciar Empresa";
 
             }
 
@@ -62,7 +62,7 @@ namespace Pont_Finder.servicos
         private void Button2_Click(object sender, EventArgs e)
         {
             if (empresa != null)
-                FormPrincipal.MudarForm("servicos", new PerfilEmpresa());
+                FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf));
             else if (Session.Online)
                 FormPrincipal.MudarForm("servicos", new FormCadEmpresa());
             else
@@ -261,7 +261,7 @@ namespace Pont_Finder.servicos
 
         private void VisualizarPerfil_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new PerfilEmpresa());
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf));
         }
 
         private void EditarPerfil_Click(object sender, EventArgs e)

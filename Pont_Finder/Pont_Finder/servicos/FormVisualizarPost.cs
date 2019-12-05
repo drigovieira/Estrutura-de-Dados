@@ -137,7 +137,7 @@ namespace Pont_Finder.servicos
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new PerfilEmpresa());
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf));
         }
 
         private void Lb_email_Click(object sender, EventArgs e)

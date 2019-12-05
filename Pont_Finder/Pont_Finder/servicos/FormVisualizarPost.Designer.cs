@@ -35,6 +35,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lb_descricao = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.pb_empresa = new System.Windows.Forms.PictureBox();
             this.lb_telefone = new System.Windows.Forms.Label();
             this.lb_endereco = new System.Windows.Forms.Label();
@@ -43,7 +44,6 @@
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.bt_negociar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.lb_categoria = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel2.SuspendLayout();
@@ -133,6 +133,20 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(387, 145);
             this.panel4.TabIndex = 26;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(3, 105);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 36);
+            this.button2.TabIndex = 35;
+            this.button2.Text = "Visualizar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // pb_empresa
             // 
@@ -236,20 +250,6 @@
             this.bt_negociar.Text = "Negociar Serviço";
             this.bt_negociar.UseVisualStyleBackColor = false;
             this.bt_negociar.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(3, 105);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 36);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Visualizar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // lb_categoria
             // 

@@ -14,14 +14,26 @@ namespace Pont_Finder.servicos
     {
         classes.Empresa empresa;
 
-        public PerfilEmpresa()
+        public PerfilEmpresa(long cpf)
         {
-            empresa = classes.ListaEmpresa.thisForCpf(Session.Cpf); ;
+            empresa = classes.ListaEmpresa.thisForCpf(cpf);
+
             InitializeComponent();
+
+            if (Session.Online)
+            {
+                if (empresa.Cpf == Session.Cpf)
+                    panel_botoes.Visible = true;
+                else
+                    panel_botoes.Visible = false;
+            }
+            else
+            {
+                panel_botoes.Visible = false;
+            }
 
             pb_icone.ImageLocation = empresa.Image;
             lb_fantasia.Text = empresa.NomeFantasia;
-
 
             pb_capa.ImageLocation = empresa.ImageCapa;
             lb_slogan.Text = empresa.Slogan;
@@ -33,7 +45,9 @@ namespace Pont_Finder.servicos
             lb_email.Text = empresa.Email;
             lb_endereco.Text = empresa.Endereco;
             lb_telefone.Text = empresa.Telefone;
-            lb_site.Text = empresa.Site;
+            lb_site.Text = empresa.Site
+                
+                ;
 
 
 
@@ -116,6 +130,16 @@ namespace Pont_Finder.servicos
         }
 
         private void Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

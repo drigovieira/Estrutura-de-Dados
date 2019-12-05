@@ -23,6 +23,7 @@ namespace Pont_Finder.servicos
         public FormEditarPerfil()
         {
             empresa = classes.ListaEmpresa.thisForCpf(Session.Cpf);
+
             InitializeComponent();
             lb_fantasia.Text = empresa.NomeFantasia;
             lb_categoria.Text = empresa.Categoria;
@@ -131,7 +132,7 @@ namespace Pont_Finder.servicos
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new PerfilEmpresa());
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf));
         }
     }
 }
