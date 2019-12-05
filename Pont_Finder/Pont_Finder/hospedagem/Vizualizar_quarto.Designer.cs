@@ -145,6 +145,7 @@
             this.pn_icons_quarto.Name = "pn_icons_quarto";
             this.pn_icons_quarto.Size = new System.Drawing.Size(25, 25);
             this.pn_icons_quarto.TabIndex = 52;
+            this.pn_icons_quarto.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_icons_quarto_Paint);
             // 
             // pn_icons_hotel
             // 
