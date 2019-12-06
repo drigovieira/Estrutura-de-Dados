@@ -35,37 +35,37 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             this.lb_deslike = new System.Windows.Forms.Label();
-            this.lb_like = new System.Windows.Forms.Label();
-            this.pb_down = new System.Windows.Forms.PictureBox();
-            this.pb_up = new System.Windows.Forms.PictureBox();
-            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
-            this.label5 = new System.Windows.Forms.Label();
-            this.NomePos = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pb_imagem = new System.Windows.Forms.PictureBox();
-            this.lb_data = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lb_hora = new System.Windows.Forms.Label();
-            this.tb_problema = new System.Windows.Forms.TextBox();
-            this.tb_descricao = new System.Windows.Forms.TextBox();
-            this.tb_localizacao = new System.Windows.Forms.TextBox();
-            this.tb_resposta = new System.Windows.Forms.RichTextBox();
-            this.bt_postar = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.painelcoment = new System.Windows.Forms.Panel();
             this.bt_prox = new System.Windows.Forms.Button();
             this.lb_pag = new System.Windows.Forms.Label();
+            this.lb_like = new System.Windows.Forms.Label();
             this.bt_ant = new System.Windows.Forms.Button();
+            this.tb_resposta = new System.Windows.Forms.RichTextBox();
+            this.pb_down = new System.Windows.Forms.PictureBox();
+            this.bt_postar = new System.Windows.Forms.Button();
+            this.pb_up = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.painelcoment = new System.Windows.Forms.Panel();
+            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.label4 = new System.Windows.Forms.Label();
+            this.tb_localizacao = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lb_data = new System.Windows.Forms.Label();
+            this.tb_descricao = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.NomePos = new System.Windows.Forms.Label();
+            this.pb_imagem = new System.Windows.Forms.PictureBox();
+            this.tb_problema = new System.Windows.Forms.TextBox();
+            this.lb_hora = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.SuspendLayout();
             // 
             // openIcone
@@ -138,6 +138,16 @@
             this.panel3.Size = new System.Drawing.Size(1010, 735);
             this.panel3.TabIndex = 93;
             // 
+            // imagemuser
+            // 
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemuser.Location = new System.Drawing.Point(38, 40);
+            this.imagemuser.Name = "imagemuser";
+            this.imagemuser.Size = new System.Drawing.Size(68, 68);
+            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagemuser.TabIndex = 109;
+            this.imagemuser.TabStop = false;
+            // 
             // lb_deslike
             // 
             this.lb_deslike.AutoSize = true;
@@ -148,6 +158,29 @@
             this.lb_deslike.TabIndex = 108;
             this.lb_deslike.Text = "0";
             // 
+            // bt_prox
+            // 
+            this.bt_prox.BackColor = System.Drawing.Color.Transparent;
+            this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_prox.ForeColor = System.Drawing.Color.Black;
+            this.bt_prox.Location = new System.Drawing.Point(633, 505);
+            this.bt_prox.Name = "bt_prox";
+            this.bt_prox.Size = new System.Drawing.Size(75, 23);
+            this.bt_prox.TabIndex = 85;
+            this.bt_prox.Text = ">>";
+            this.bt_prox.UseVisualStyleBackColor = false;
+            // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.Location = new System.Drawing.Point(403, 515);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(39, 13);
+            this.lb_pag.TabIndex = 86;
+            this.lb_pag.Text = "lb_pag";
+            // 
             // lb_like
             // 
             this.lb_like.AutoSize = true;
@@ -157,6 +190,31 @@
             this.lb_like.Size = new System.Drawing.Size(15, 16);
             this.lb_like.TabIndex = 105;
             this.lb_like.Text = "0";
+            // 
+            // bt_ant
+            // 
+            this.bt_ant.BackColor = System.Drawing.Color.Transparent;
+            this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ant.ForeColor = System.Drawing.Color.Black;
+            this.bt_ant.Location = new System.Drawing.Point(183, 505);
+            this.bt_ant.Name = "bt_ant";
+            this.bt_ant.Size = new System.Drawing.Size(75, 23);
+            this.bt_ant.TabIndex = 84;
+            this.bt_ant.Text = "<<";
+            this.bt_ant.UseVisualStyleBackColor = false;
+            // 
+            // tb_resposta
+            // 
+            this.tb_resposta.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_resposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_resposta.Location = new System.Drawing.Point(806, 557);
+            this.tb_resposta.Name = "tb_resposta";
+            this.tb_resposta.Size = new System.Drawing.Size(188, 119);
+            this.tb_resposta.TabIndex = 69;
+            this.tb_resposta.Text = "";
             // 
             // pb_down
             // 
@@ -171,6 +229,19 @@
             this.pb_down.TabIndex = 107;
             this.pb_down.TabStop = false;
             // 
+            // bt_postar
+            // 
+            this.bt_postar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_postar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_postar.ForeColor = System.Drawing.Color.White;
+            this.bt_postar.Location = new System.Drawing.Point(856, 682);
+            this.bt_postar.Name = "bt_postar";
+            this.bt_postar.Size = new System.Drawing.Size(86, 38);
+            this.bt_postar.TabIndex = 89;
+            this.bt_postar.Text = "Postar";
+            this.bt_postar.UseVisualStyleBackColor = false;
+            this.bt_postar.Click += new System.EventHandler(this.bt_postar_Click_1);
+            // 
             // pb_up
             // 
             this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
@@ -183,6 +254,27 @@
             this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_up.TabIndex = 106;
             this.pb_up.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(364, 460);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 24);
+            this.label6.TabIndex = 91;
+            this.label6.Text = "Comentarios:";
+            // 
+            // painelcoment
+            // 
+            this.painelcoment.AutoSize = true;
+            this.painelcoment.BackColor = System.Drawing.Color.Transparent;
+            this.painelcoment.Location = new System.Drawing.Point(126, 534);
+            this.painelcoment.Name = "painelcoment";
+            this.painelcoment.Size = new System.Drawing.Size(625, 2);
+            this.painelcoment.TabIndex = 90;
             // 
             // gMapControl1
             // 
@@ -210,6 +302,43 @@
             this.gMapControl1.TabIndex = 85;
             this.gMapControl1.Zoom = 14D;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(10, 6);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(144, 31);
+            this.label4.TabIndex = 86;
+            this.label4.Text = "Postagem";
+            // 
+            // tb_localizacao
+            // 
+            this.tb_localizacao.BackColor = System.Drawing.Color.White;
+            this.tb_localizacao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_localizacao.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tb_localizacao.Enabled = false;
+            this.tb_localizacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_localizacao.Location = new System.Drawing.Point(323, 128);
+            this.tb_localizacao.Name = "tb_localizacao";
+            this.tb_localizacao.ReadOnly = true;
+            this.tb_localizacao.Size = new System.Drawing.Size(289, 19);
+            this.tb_localizacao.TabIndex = 77;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(807, 534);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(106, 24);
+            this.label8.TabIndex = 66;
+            this.label8.Text = "Comentar:";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -220,35 +349,6 @@
             this.label5.TabIndex = 79;
             this.label5.Text = "Problema:";
             // 
-            // NomePos
-            // 
-            this.NomePos.AutoSize = true;
-            this.NomePos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomePos.Location = new System.Drawing.Point(186, 57);
-            this.NomePos.Name = "NomePos";
-            this.NomePos.Size = new System.Drawing.Size(51, 16);
-            this.NomePos.TabIndex = 83;
-            this.NomePos.Text = "label4";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(333, 109);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 16);
-            this.label3.TabIndex = 81;
-            this.label3.Text = "Localização:";
-            // 
-            // pb_imagem
-            // 
-            this.pb_imagem.Location = new System.Drawing.Point(38, 109);
-            this.pb_imagem.Name = "pb_imagem";
-            this.pb_imagem.Size = new System.Drawing.Size(263, 170);
-            this.pb_imagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_imagem.TabIndex = 76;
-            this.pb_imagem.TabStop = false;
-            // 
             // lb_data
             // 
             this.lb_data.AutoSize = true;
@@ -258,39 +358,6 @@
             this.lb_data.Size = new System.Drawing.Size(115, 13);
             this.lb_data.TabIndex = 84;
             this.lb_data.Text = "Data da Postagem:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(333, 243);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 16);
-            this.label2.TabIndex = 80;
-            this.label2.Text = "Descrição:";
-            // 
-            // lb_hora
-            // 
-            this.lb_hora.AutoSize = true;
-            this.lb_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_hora.Location = new System.Drawing.Point(163, 282);
-            this.lb_hora.Name = "lb_hora";
-            this.lb_hora.Size = new System.Drawing.Size(32, 13);
-            this.lb_hora.TabIndex = 82;
-            this.lb_hora.Text = "hora";
-            // 
-            // tb_problema
-            // 
-            this.tb_problema.BackColor = System.Drawing.Color.White;
-            this.tb_problema.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_problema.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.tb_problema.Enabled = false;
-            this.tb_problema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_problema.Location = new System.Drawing.Point(323, 201);
-            this.tb_problema.Name = "tb_problema";
-            this.tb_problema.ReadOnly = true;
-            this.tb_problema.Size = new System.Drawing.Size(289, 19);
-            this.tb_problema.TabIndex = 75;
             // 
             // tb_descricao
             // 
@@ -306,134 +373,67 @@
             this.tb_descricao.Size = new System.Drawing.Size(289, 143);
             this.tb_descricao.TabIndex = 78;
             // 
-            // tb_localizacao
+            // label2
             // 
-            this.tb_localizacao.BackColor = System.Drawing.Color.White;
-            this.tb_localizacao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_localizacao.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.tb_localizacao.Enabled = false;
-            this.tb_localizacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_localizacao.Location = new System.Drawing.Point(323, 128);
-            this.tb_localizacao.Name = "tb_localizacao";
-            this.tb_localizacao.ReadOnly = true;
-            this.tb_localizacao.Size = new System.Drawing.Size(289, 19);
-            this.tb_localizacao.TabIndex = 77;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(333, 243);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 16);
+            this.label2.TabIndex = 80;
+            this.label2.Text = "Descrição:";
             // 
-            // tb_resposta
+            // NomePos
             // 
-            this.tb_resposta.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_resposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_resposta.Location = new System.Drawing.Point(806, 557);
-            this.tb_resposta.Name = "tb_resposta";
-            this.tb_resposta.Size = new System.Drawing.Size(188, 119);
-            this.tb_resposta.TabIndex = 69;
-            this.tb_resposta.Text = "";
+            this.NomePos.AutoSize = true;
+            this.NomePos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomePos.Location = new System.Drawing.Point(186, 57);
+            this.NomePos.Name = "NomePos";
+            this.NomePos.Size = new System.Drawing.Size(51, 16);
+            this.NomePos.TabIndex = 83;
+            this.NomePos.Text = "label4";
             // 
-            // bt_postar
+            // pb_imagem
             // 
-            this.bt_postar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_postar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_postar.ForeColor = System.Drawing.Color.White;
-            this.bt_postar.Location = new System.Drawing.Point(856, 682);
-            this.bt_postar.Name = "bt_postar";
-            this.bt_postar.Size = new System.Drawing.Size(86, 38);
-            this.bt_postar.TabIndex = 89;
-            this.bt_postar.Text = "Postar";
-            this.bt_postar.UseVisualStyleBackColor = false;
-            this.bt_postar.Click += new System.EventHandler(this.bt_postar_Click_1);
+            this.pb_imagem.Location = new System.Drawing.Point(38, 109);
+            this.pb_imagem.Name = "pb_imagem";
+            this.pb_imagem.Size = new System.Drawing.Size(263, 170);
+            this.pb_imagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_imagem.TabIndex = 76;
+            this.pb_imagem.TabStop = false;
             // 
-            // label6
+            // tb_problema
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(364, 460);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 24);
-            this.label6.TabIndex = 91;
-            this.label6.Text = "Comentarios:";
+            this.tb_problema.BackColor = System.Drawing.Color.White;
+            this.tb_problema.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_problema.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tb_problema.Enabled = false;
+            this.tb_problema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_problema.Location = new System.Drawing.Point(323, 201);
+            this.tb_problema.Name = "tb_problema";
+            this.tb_problema.ReadOnly = true;
+            this.tb_problema.Size = new System.Drawing.Size(289, 19);
+            this.tb_problema.TabIndex = 75;
             // 
-            // painelcoment
+            // lb_hora
             // 
-            this.painelcoment.AutoSize = true;
-            this.painelcoment.BackColor = System.Drawing.Color.Transparent;
-            this.painelcoment.Location = new System.Drawing.Point(126, 534);
-            this.painelcoment.Name = "painelcoment";
-            this.painelcoment.Size = new System.Drawing.Size(625, 2);
-            this.painelcoment.TabIndex = 90;
+            this.lb_hora.AutoSize = true;
+            this.lb_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.lb_hora.Location = new System.Drawing.Point(163, 282);
+            this.lb_hora.Name = "lb_hora";
+            this.lb_hora.Size = new System.Drawing.Size(32, 13);
+            this.lb_hora.TabIndex = 82;
+            this.lb_hora.Text = "hora";
             // 
-            // bt_prox
+            // label3
             // 
-            this.bt_prox.BackColor = System.Drawing.Color.Transparent;
-            this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_prox.ForeColor = System.Drawing.Color.Black;
-            this.bt_prox.Location = new System.Drawing.Point(633, 505);
-            this.bt_prox.Name = "bt_prox";
-            this.bt_prox.Size = new System.Drawing.Size(75, 23);
-            this.bt_prox.TabIndex = 85;
-            this.bt_prox.Text = ">>";
-            this.bt_prox.UseVisualStyleBackColor = false;
-            // 
-            // lb_pag
-            // 
-            this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(403, 515);
-            this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(39, 13);
-            this.lb_pag.TabIndex = 86;
-            this.lb_pag.Text = "lb_pag";
-            // 
-            // bt_ant
-            // 
-            this.bt_ant.BackColor = System.Drawing.Color.Transparent;
-            this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(183, 505);
-            this.bt_ant.Name = "bt_ant";
-            this.bt_ant.Size = new System.Drawing.Size(75, 23);
-            this.bt_ant.TabIndex = 84;
-            this.bt_ant.Text = "<<";
-            this.bt_ant.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(10, 6);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 31);
-            this.label4.TabIndex = 86;
-            this.label4.Text = "Postagem";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(807, 534);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 24);
-            this.label8.TabIndex = 66;
-            this.label8.Text = "Comentar:";
-            // 
-            // imagemuser
-            // 
-            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imagemuser.Location = new System.Drawing.Point(38, 40);
-            this.imagemuser.Name = "imagemuser";
-            this.imagemuser.Size = new System.Drawing.Size(68, 68);
-            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagemuser.TabIndex = 109;
-            this.imagemuser.TabStop = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(333, 109);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 16);
+            this.label3.TabIndex = 81;
+            this.label3.Text = "Localização:";
             // 
             // ViewPost
             // 
@@ -454,10 +454,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
