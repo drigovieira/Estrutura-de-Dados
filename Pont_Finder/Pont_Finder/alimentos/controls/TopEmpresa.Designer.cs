@@ -37,8 +37,8 @@
             // 
             // TopEmp
             // 
-            this.TopEmp.BackColor = System.Drawing.Color.Transparent;
-            this.TopEmp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.TopEmp.BackColor = System.Drawing.Color.White;
+            this.TopEmp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TopEmp.Controls.Add(this.NomeTopEmp);
             this.TopEmp.Controls.Add(this.pictureBox1);
             this.TopEmp.Location = new System.Drawing.Point(0, 0);

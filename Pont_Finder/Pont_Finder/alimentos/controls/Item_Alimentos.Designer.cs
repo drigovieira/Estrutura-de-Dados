@@ -153,7 +153,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.White;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.bt_addLista);
@@ -165,7 +166,7 @@
             this.Controls.Add(this.IngredienteComida);
             this.Controls.Add(this.qtdComida);
             this.Name = "Item_Alimentos";
-            this.Size = new System.Drawing.Size(625, 190);
+            this.Size = new System.Drawing.Size(623, 188);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Item_Alimentos_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pb_alimento)).EndInit();
             this.ResumeLayout(false);
