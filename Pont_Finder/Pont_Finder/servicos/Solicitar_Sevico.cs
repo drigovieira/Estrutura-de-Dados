@@ -80,7 +80,7 @@ namespace Pont_Finder.servicos
 
             solicitado.Rua = tb_rua.Text;
             solicitado.Bairro = tb_bairro.Text;
-            solicitado.Numero = int.Parse(tb_numero.Text);
+            solicitado.Numero = int.Parse(""+tb_numero.Value);
             solicitado.Cep = int.Parse(tb_cep.Text);
             solicitado.Descrição = tb_descricao.Text;
             solicitado.DataAgendada = tb_data.Value;

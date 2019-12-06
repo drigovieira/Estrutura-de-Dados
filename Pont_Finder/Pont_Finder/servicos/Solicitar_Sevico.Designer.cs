@@ -37,7 +37,6 @@
             this.tb_data = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.tb_cep = new System.Windows.Forms.MaskedTextBox();
-            this.tb_numero = new System.Windows.Forms.TextBox();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,9 +50,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.bt_icone = new System.Windows.Forms.Button();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
+            this.tb_numero = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_numero)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -153,14 +154,6 @@
             this.tb_cep.TabIndex = 31;
             this.tb_cep.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
-            // tb_numero
-            // 
-            this.tb_numero.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_numero.Location = new System.Drawing.Point(33, 433);
-            this.tb_numero.Name = "tb_numero";
-            this.tb_numero.Size = new System.Drawing.Size(165, 32);
-            this.tb_numero.TabIndex = 30;
-            // 
             // pb_icone
             // 
             this.pb_icone.BackColor = System.Drawing.Color.Gainsboro;
@@ -243,6 +236,7 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.tb_numero);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.bt_icone);
@@ -252,7 +246,6 @@
             this.panel3.Controls.Add(this.tb_cep);
             this.panel3.Controls.Add(this.tb_bairro);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.tb_numero);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.tb_rua);
             this.panel3.Location = new System.Drawing.Point(111, 41);
@@ -305,6 +298,19 @@
             // 
             this.openIcone.FileName = "icone";
             // 
+            // tb_numero
+            // 
+            this.tb_numero.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F);
+            this.tb_numero.Location = new System.Drawing.Point(32, 434);
+            this.tb_numero.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.tb_numero.Name = "tb_numero";
+            this.tb_numero.Size = new System.Drawing.Size(165, 32);
+            this.tb_numero.TabIndex = 43;
+            // 
             // Solicitar_Sevico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -326,6 +332,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_numero)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -336,7 +343,6 @@
         private System.Windows.Forms.PictureBox pb_icone;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.MaskedTextBox tb_cep;
-        private System.Windows.Forms.TextBox tb_numero;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_rua;
@@ -354,5 +360,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.OpenFileDialog openIcone;
+        private System.Windows.Forms.NumericUpDown tb_numero;
     }
 }
