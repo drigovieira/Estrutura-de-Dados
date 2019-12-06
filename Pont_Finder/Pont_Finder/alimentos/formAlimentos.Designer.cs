@@ -68,6 +68,8 @@
             this.btn_Config = new System.Windows.Forms.PictureBox();
             this.lbConfig1 = new System.Windows.Forms.Label();
             this.lbConfig2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
@@ -75,6 +77,8 @@
             this.panel5.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -126,7 +130,7 @@
             this.remFiltro.FlatAppearance.BorderSize = 0;
             this.remFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remFiltro.ForeColor = System.Drawing.Color.White;
-            this.remFiltro.Location = new System.Drawing.Point(200, 494);
+            this.remFiltro.Location = new System.Drawing.Point(62, 3);
             this.remFiltro.Name = "remFiltro";
             this.remFiltro.Size = new System.Drawing.Size(103, 37);
             this.remFiltro.TabIndex = 45;
@@ -170,7 +174,7 @@
             this.ListarEmpresas.BackColor = System.Drawing.Color.White;
             this.ListarEmpresas.Location = new System.Drawing.Point(320, 360);
             this.ListarEmpresas.Name = "ListarEmpresas";
-            this.ListarEmpresas.Size = new System.Drawing.Size(627, 205);
+            this.ListarEmpresas.Size = new System.Drawing.Size(624, 205);
             this.ListarEmpresas.TabIndex = 16;
             this.ListarEmpresas.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel5_Paint);
             // 
@@ -437,7 +441,7 @@
             this.lb_pag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_pag.ForeColor = System.Drawing.Color.Black;
-            this.lb_pag.Location = new System.Drawing.Point(433, 318);
+            this.lb_pag.Location = new System.Drawing.Point(432, 318);
             this.lb_pag.MaximumSize = new System.Drawing.Size(400, 33);
             this.lb_pag.MinimumSize = new System.Drawing.Size(400, 33);
             this.lb_pag.Name = "lb_pag";
@@ -453,7 +457,7 @@
             this.bt_proxFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_proxFull.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_proxFull.ForeColor = System.Drawing.Color.Black;
-            this.bt_proxFull.Location = new System.Drawing.Point(839, 318);
+            this.bt_proxFull.Location = new System.Drawing.Point(838, 318);
             this.bt_proxFull.Name = "bt_proxFull";
             this.bt_proxFull.Size = new System.Drawing.Size(50, 33);
             this.bt_proxFull.TabIndex = 53;
@@ -468,7 +472,7 @@
             this.bt_antFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_antFull.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_antFull.ForeColor = System.Drawing.Color.Black;
-            this.bt_antFull.Location = new System.Drawing.Point(377, 318);
+            this.bt_antFull.Location = new System.Drawing.Point(376, 318);
             this.bt_antFull.Name = "bt_antFull";
             this.bt_antFull.Size = new System.Drawing.Size(50, 33);
             this.bt_antFull.TabIndex = 52;
@@ -483,7 +487,7 @@
             this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_prox.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_prox.ForeColor = System.Drawing.Color.Black;
-            this.bt_prox.Location = new System.Drawing.Point(895, 318);
+            this.bt_prox.Location = new System.Drawing.Point(894, 318);
             this.bt_prox.Name = "bt_prox";
             this.bt_prox.Size = new System.Drawing.Size(50, 33);
             this.bt_prox.TabIndex = 50;
@@ -498,7 +502,7 @@
             this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_ant.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(321, 318);
+            this.bt_ant.Location = new System.Drawing.Point(320, 318);
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(50, 33);
             this.bt_ant.TabIndex = 49;
@@ -527,7 +531,7 @@
             this.lbConfig1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbConfig1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold);
             this.lbConfig1.ForeColor = System.Drawing.Color.White;
-            this.lbConfig1.Location = new System.Drawing.Point(995, 215);
+            this.lbConfig1.Location = new System.Drawing.Point(16, 0);
             this.lbConfig1.Name = "lbConfig1";
             this.lbConfig1.Size = new System.Drawing.Size(184, 25);
             this.lbConfig1.TabIndex = 70;
@@ -544,7 +548,7 @@
             this.lbConfig2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbConfig2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold);
             this.lbConfig2.ForeColor = System.Drawing.Color.White;
-            this.lbConfig2.Location = new System.Drawing.Point(995, 240);
+            this.lbConfig2.Location = new System.Drawing.Point(16, 25);
             this.lbConfig2.Name = "lbConfig2";
             this.lbConfig2.Size = new System.Drawing.Size(184, 25);
             this.lbConfig2.TabIndex = 71;
@@ -555,6 +559,24 @@
             this.lbConfig2.MouseLeave += new System.EventHandler(this.LbConfig2_MouseLeave);
             this.lbConfig2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LbConfig2_MouseMove);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.remFiltro);
+            this.panel3.Location = new System.Drawing.Point(116, 485);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(189, 47);
+            this.panel3.TabIndex = 72;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lbConfig1);
+            this.panel4.Controls.Add(this.lbConfig2);
+            this.panel4.Location = new System.Drawing.Point(982, 215);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(201, 52);
+            this.panel4.TabIndex = 73;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
+            // 
             // formAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -562,9 +584,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.remFiltro);
-            this.Controls.Add(this.lbConfig2);
-            this.Controls.Add(this.lbConfig1);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.btn_Config);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_proxFull);
@@ -603,6 +624,8 @@
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -649,5 +672,7 @@
         private System.Windows.Forms.PictureBox btn_Config;
         private System.Windows.Forms.Label lbConfig1;
         private System.Windows.Forms.Label lbConfig2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

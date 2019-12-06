@@ -630,6 +630,11 @@ namespace Pont_Finder
                 FormPrincipal.MudarForm("alimentos", gerenProd);                     
         }
 
+        private void Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         public void GoPag(string p)
         {            
             int pagina;

@@ -246,7 +246,7 @@
             // 
             this.lbCep.AutoSize = true;
             this.lbCep.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCep.Location = new System.Drawing.Point(13, 125);
+            this.lbCep.Location = new System.Drawing.Point(13, 141);
             this.lbCep.Name = "lbCep";
             this.lbCep.Size = new System.Drawing.Size(76, 21);
             this.lbCep.TabIndex = 39;
@@ -256,7 +256,7 @@
             // 
             this.lbBairro.AutoSize = true;
             this.lbBairro.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBairro.Location = new System.Drawing.Point(13, 88);
+            this.lbBairro.Location = new System.Drawing.Point(13, 111);
             this.lbBairro.Name = "lbBairro";
             this.lbBairro.Size = new System.Drawing.Size(91, 21);
             this.lbBairro.TabIndex = 38;
@@ -266,7 +266,7 @@
             // 
             this.lbNum.AutoSize = true;
             this.lbNum.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNum.Location = new System.Drawing.Point(180, 48);
+            this.lbNum.Location = new System.Drawing.Point(13, 81);
             this.lbNum.Name = "lbNum";
             this.lbNum.Size = new System.Drawing.Size(67, 21);
             this.lbNum.TabIndex = 37;

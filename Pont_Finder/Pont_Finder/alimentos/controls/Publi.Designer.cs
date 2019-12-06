@@ -254,7 +254,7 @@
             this.Controls.Add(this.NomeEmpresa);
             this.Controls.Add(this.lbBairro);
             this.Name = "Publi";
-            this.Size = new System.Drawing.Size(627, 220);
+            this.Size = new System.Drawing.Size(624, 220);
             this.Load += new System.EventHandler(this.Publi_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Publi_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Restaurante)).EndInit();
