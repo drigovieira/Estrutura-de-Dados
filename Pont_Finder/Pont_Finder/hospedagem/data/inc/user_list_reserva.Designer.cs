@@ -39,11 +39,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lb_nome_quarto = new System.Windows.Forms.Label();
             this.pn_icons_quarto = new System.Windows.Forms.Panel();
-            this.lb_endereco_emp = new System.Windows.Forms.Label();
             this.lb_forma_pagamento = new System.Windows.Forms.Label();
             this.bt_visualizar = new System.Windows.Forms.Button();
             this.bt_cancelar = new System.Windows.Forms.Button();
             this.lb_qtd_parcelas_cartao = new System.Windows.Forms.Label();
+            this.lb_endereco_emp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -160,17 +160,6 @@
             this.pn_icons_quarto.Size = new System.Drawing.Size(25, 25);
             this.pn_icons_quarto.TabIndex = 71;
             // 
-            // lb_endereco_emp
-            // 
-            this.lb_endereco_emp.AutoSize = true;
-            this.lb_endereco_emp.BackColor = System.Drawing.Color.Transparent;
-            this.lb_endereco_emp.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_endereco_emp.Location = new System.Drawing.Point(193, 37);
-            this.lb_endereco_emp.Name = "lb_endereco_emp";
-            this.lb_endereco_emp.Size = new System.Drawing.Size(63, 17);
-            this.lb_endereco_emp.TabIndex = 72;
-            this.lb_endereco_emp.Text = "Endereço";
-            // 
             // lb_forma_pagamento
             // 
             this.lb_forma_pagamento.AutoSize = true;
@@ -189,7 +178,7 @@
             this.bt_visualizar.ForeColor = System.Drawing.Color.White;
             this.bt_visualizar.Location = new System.Drawing.Point(866, 37);
             this.bt_visualizar.Name = "bt_visualizar";
-            this.bt_visualizar.Size = new System.Drawing.Size(110, 36);
+            this.bt_visualizar.Size = new System.Drawing.Size(110, 40);
             this.bt_visualizar.TabIndex = 74;
             this.bt_visualizar.Text = "Visualizar";
             this.bt_visualizar.UseVisualStyleBackColor = false;
@@ -202,7 +191,7 @@
             this.bt_cancelar.ForeColor = System.Drawing.Color.White;
             this.bt_cancelar.Location = new System.Drawing.Point(866, 91);
             this.bt_cancelar.Name = "bt_cancelar";
-            this.bt_cancelar.Size = new System.Drawing.Size(110, 36);
+            this.bt_cancelar.Size = new System.Drawing.Size(110, 40);
             this.bt_cancelar.TabIndex = 75;
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = false;
@@ -216,6 +205,17 @@
             this.lb_qtd_parcelas_cartao.Size = new System.Drawing.Size(85, 17);
             this.lb_qtd_parcelas_cartao.TabIndex = 76;
             this.lb_qtd_parcelas_cartao.Text = "12 x de value";
+            // 
+            // lb_endereco_emp
+            // 
+            this.lb_endereco_emp.AutoSize = true;
+            this.lb_endereco_emp.BackColor = System.Drawing.Color.Transparent;
+            this.lb_endereco_emp.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_endereco_emp.Location = new System.Drawing.Point(193, 37);
+            this.lb_endereco_emp.Name = "lb_endereco_emp";
+            this.lb_endereco_emp.Size = new System.Drawing.Size(63, 17);
+            this.lb_endereco_emp.TabIndex = 72;
+            this.lb_endereco_emp.Text = "Endereço";
             // 
             // user_list_reserva
             // 
@@ -259,10 +259,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lb_nome_quarto;
         private System.Windows.Forms.Panel pn_icons_quarto;
-        private System.Windows.Forms.Label lb_endereco_emp;
         private System.Windows.Forms.Label lb_forma_pagamento;
         private System.Windows.Forms.Button bt_visualizar;
         private System.Windows.Forms.Button bt_cancelar;
         private System.Windows.Forms.Label lb_qtd_parcelas_cartao;
+        private System.Windows.Forms.Label lb_endereco_emp;
     }
 }

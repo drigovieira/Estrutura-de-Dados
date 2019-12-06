@@ -101,11 +101,9 @@
     <Compile Include="alimentos\classes\Cardapio.cs" />
     <Compile Include="alimentos\classes\Company.cs" />
     <Compile Include="alimentos\classes\CompanyList.cs" />
-    <Compile Include="alimentos\classes\Delivery.cs" />
     <Compile Include="alimentos\classes\Evaluation.cs" />
     <Compile Include="alimentos\classes\Funcionamento.cs" />
     <Compile Include="alimentos\classes\ListCardapio.cs" />
-    <Compile Include="alimentos\classes\ListPedidos.cs" />
     <Compile Include="alimentos\Delivery_Alimentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,6 +361,12 @@
     <Compile Include="hospedagem\data\inc\amb.Designer.cs">
       <DependentUpon>amb.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\data\inc\emp_list_reservas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\emp_list_reservas.Designer.cs">
+      <DependentUpon>emp_list_reservas.cs</DependentUpon>
+    </Compile>
     <Compile Include="hospedagem\data\inc\icon.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -422,6 +426,12 @@
     </Compile>
     <Compile Include="hospedagem\data\inc\Hosp_PostCard.Designer.cs">
       <DependentUpon>Hosp_PostCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\list_emp_reservados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\list_emp_reservados.Designer.cs">
+      <DependentUpon>list_emp_reservados.cs</DependentUpon>
     </Compile>
     <Compile Include="hospedagem\List_reservas_user.cs">
       <SubType>Form</SubType>
@@ -740,6 +750,9 @@
     <EmbeddedResource Include="hospedagem\data\inc\amb.resx">
       <DependentUpon>amb.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\data\inc\emp_list_reservas.resx">
+      <DependentUpon>emp_list_reservas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\data\inc\icon.resx">
       <DependentUpon>icon.cs</DependentUpon>
     </EmbeddedResource>
@@ -771,6 +784,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\data\inc\Hosp_PostCard.resx">
       <DependentUpon>Hosp_PostCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\list_emp_reservados.resx">
+      <DependentUpon>list_emp_reservados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\List_reservas_user.resx">
       <DependentUpon>List_reservas_user.cs</DependentUpon>
