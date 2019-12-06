@@ -56,4 +56,12 @@
     <image>..//..//data//images//users//86609522006.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Hiero</nome>
+    <email>hierosalim12@gmail.com</email>
+    <senha>hiero123</senha>
+    <cpf>49024585864</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

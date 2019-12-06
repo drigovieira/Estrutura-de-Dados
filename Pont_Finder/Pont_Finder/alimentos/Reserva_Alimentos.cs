@@ -45,7 +45,7 @@ namespace Pont_Finder.alimentos
             int local = 0;
             foreach (var i in lista)
             {
-                itemPedido item = new itemPedido(i.Preco, i.Nome, i.Image, i.Qtd, i.Ingredientes, i.Id);
+                itemPedido item = new itemPedido(i.Preco, i.Nome, i.Image, i.Qtd, i.Ingredientes, i.Id);               
                 ListaPedidos.Location = new Point(0, local);
                 local = local + item.Height + 5;
                 ListaPedidos.Controls.Add(item);
@@ -77,7 +77,7 @@ namespace Pont_Finder.alimentos
             {
                 if (item.IdEmpresa == Company)
                 {
-                    Item_Alimentos AliItem = new Item_Alimentos(item.Preco, item.Nome, item.Image, item.Qtd, item.Ingredientes, item.Categoria, item.Id, Company);
+                    Item_Alimentos AliItem = new Item_Alimentos(item.Preco, item.Nome, item.Image, item.Qtd, item.Ingredientes, item.Categoria, item.Id, Company, true);
                     AliItem.Location = new Point(0, local);
                     local = local + AliItem.Height + 5;
                     menu.Controls.Add(AliItem);

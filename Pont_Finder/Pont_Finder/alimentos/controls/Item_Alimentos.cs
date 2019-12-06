@@ -17,6 +17,7 @@ namespace Pont_Finder.alimentos
         private float PrecoItem, qtdItem;
         private List<string> IngredientesItem, CategoriasItem;
         private int IdItem, Empresa;
+        private bool ExRes;
 
         private void Bt_addLista_Click(object sender, EventArgs e)
         {
@@ -33,7 +34,7 @@ namespace Pont_Finder.alimentos
             reserva.AttLista();            
         }
 
-        public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id, int idEmpresa)
+        public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id, int idEmpresa, bool reserva)
         {
             NomeItem = Nome;
             ImageItem = Imagem;
@@ -44,6 +45,7 @@ namespace Pont_Finder.alimentos
             IdItem = Id;
             maisIngredientes = "";
             maisCategoria = "";
+            ExRes = reserva;
             Empresa = idEmpresa;
             InitializeComponent();
             if (ListCardapio.select(Id).Image != null)
@@ -117,6 +119,17 @@ namespace Pont_Finder.alimentos
             qtdComida.Text = "KG "+ qtdItem.ToString("N2");                        
             CategoriasPrato.Text = maisCategoria;
             lb_rs.Text = PrecoItem.ToString("C", CultureInfo.CurrentCulture);
+            if (ExRes == false)
+            {
+                comboBox1.Visible = false;
+                label1.Visible = false;
+                bt_addLista.Visible = false;
+                Excluir.Visible = true;
+            }
+            else
+            {
+                Excluir.Visible = false;
+            }            
         }
 
         private void label2_Click(object sender, EventArgs e)
