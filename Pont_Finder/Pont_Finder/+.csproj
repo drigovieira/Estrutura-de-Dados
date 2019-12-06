@@ -580,11 +580,11 @@
     <Compile Include="servicos\User_control\CardSev_Agenda.Designer.cs">
       <DependentUpon>CardSev_Agenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\User_control\Card_User_Pedidos.cs">
+    <Compile Include="servicos\User_control\ControlSolicitados.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="servicos\User_control\Card_User_Pedidos.Designer.cs">
-      <DependentUpon>Card_User_Pedidos.cs</DependentUpon>
+    <Compile Include="servicos\User_control\ControlSolicitados.Designer.cs">
+      <DependentUpon>ControlSolicitados.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\User_control\PostCard.cs">
       <SubType>UserControl</SubType>
@@ -604,11 +604,11 @@
     <Compile Include="servicos\SolicitarServico.Designer.cs">
       <DependentUpon>SolicitarServico.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\Visualizar-Solicitado_User.cs">
+    <Compile Include="servicos\FormSolicitados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="servicos\Visualizar-Solicitado_User.Designer.cs">
-      <DependentUpon>Visualizar-Solicitado_User.cs</DependentUpon>
+    <Compile Include="servicos\FormSolicitados.Designer.cs">
+      <DependentUpon>FormSolicitados.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaCarregamento\TelaCarregamento.cs">
       <SubType>Form</SubType>
@@ -890,8 +890,8 @@
     <EmbeddedResource Include="servicos\User_control\CardSev_Agenda.resx">
       <DependentUpon>CardSev_Agenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\User_control\Card_User_Pedidos.resx">
-      <DependentUpon>Card_User_Pedidos.cs</DependentUpon>
+    <EmbeddedResource Include="servicos\User_control\ControlSolicitados.resx">
+      <DependentUpon>ControlSolicitados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\User_control\PostCard.resx">
       <DependentUpon>PostCard.cs</DependentUpon>
@@ -902,8 +902,8 @@
     <EmbeddedResource Include="servicos\SolicitarServico.resx">
       <DependentUpon>SolicitarServico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\Visualizar-Solicitado_User.resx">
-      <DependentUpon>Visualizar-Solicitado_User.cs</DependentUpon>
+    <EmbeddedResource Include="servicos\FormSolicitados.resx">
+      <DependentUpon>FormSolicitados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaCarregamento\TelaCarregamento.resx">
       <DependentUpon>TelaCarregamento.cs</DependentUpon>
