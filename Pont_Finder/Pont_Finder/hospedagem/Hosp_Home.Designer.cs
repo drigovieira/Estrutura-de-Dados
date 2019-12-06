@@ -577,7 +577,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 1336);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 108);
+            this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 44;
             // 
             // bt_ant
@@ -620,7 +620,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 727);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.bt_ant);
@@ -641,8 +641,8 @@
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1282, 727);
-            this.MinimumSize = new System.Drawing.Size(1282, 726);
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Hosp_Home";
             this.Text = "Hosp_Home";
             this.Load += new System.EventHandler(this.Hosp_Home_Load);

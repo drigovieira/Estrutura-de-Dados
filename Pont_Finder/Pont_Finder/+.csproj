@@ -451,6 +451,12 @@
     <Compile Include="hospedagem\Vizualizar_quarto.Designer.cs">
       <DependentUpon>Vizualizar_quarto.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\Vizualizar_reserva_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Vizualizar_reserva_user.Designer.cs">
+      <DependentUpon>Vizualizar_reserva_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mapa\EndMapa.cs" />
     <Compile Include="Mapa\Mapa.cs">
       <SubType>Form</SubType>
@@ -796,6 +802,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Vizualizar_quarto.resx">
       <DependentUpon>Vizualizar_quarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Vizualizar_reserva_user.resx">
+      <DependentUpon>Vizualizar_reserva_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mapa\Mapa.resx">
       <DependentUpon>Mapa.cs</DependentUpon>
