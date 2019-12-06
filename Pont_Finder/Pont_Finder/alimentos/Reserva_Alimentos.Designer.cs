@@ -48,6 +48,7 @@
             // 
             // menu
             // 
+            this.menu.AutoScroll = true;
             this.menu.AutoSize = true;
             this.menu.BackColor = System.Drawing.Color.White;
             this.menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
