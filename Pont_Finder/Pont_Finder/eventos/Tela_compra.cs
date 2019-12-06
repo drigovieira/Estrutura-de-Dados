@@ -14,14 +14,13 @@ namespace Pont_Finder.eventos
     {
 
         Classes.CoEvento edit;
-        classes.CaEmpresa outro;
         private int idremove;
         Form anterior;
         int idpost;
 
 
 
-        public Tela_compra(int idpost)
+        public Tela_compra(int idpost, Form anterior)
         {
             this.idpost = idpost;
             this.anterior = anterior;
@@ -165,6 +164,11 @@ namespace Pont_Finder.eventos
             //{
             //MessageBox.Show("Senha Incorreta");
             //}
+        }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("eventos", new Visualizar_evento(idpost, anterior));
         }
     }
 }

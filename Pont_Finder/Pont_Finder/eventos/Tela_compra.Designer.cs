@@ -61,6 +61,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.bt_finalizar = new System.Windows.Forms.Button();
             this.lb_txt_titulo = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -68,6 +69,7 @@
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -423,6 +425,19 @@
             this.lb_txt_titulo.TabIndex = 61;
             this.lb_txt_titulo.Text = "Selecione a forma de pagamento";
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(56, 14);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 64;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
+            // 
             // Tela_compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -430,6 +445,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel_center);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -453,6 +469,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,5 +508,6 @@
         private System.Windows.Forms.Label lb_txt_titulo;
         private System.Windows.Forms.Label lb_valor_parcela;
         private System.Windows.Forms.Label lb_valor;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }
