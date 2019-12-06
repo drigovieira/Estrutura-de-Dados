@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Pont_Finder.hospedagem.classes
 {
@@ -73,6 +75,65 @@ namespace Pont_Finder.hospedagem.classes
             }
 
             return lista_cpf;
+        }
+
+        public static void CarregarXML()
+        {
+            XDocument doc = XDocument.Load(caminho);
+
+            foreach (var item in doc.Descendants("reserva"))
+            {
+                Reserva r = new Reserva();
+
+                r.Id = int.Parse(item.Element("id").Value);
+                r.IdQuarto = int.Parse(item.Element("idquarto").Value);
+                r.Usuario = long.Parse(item.Element("usuario").Value);
+                r.Data_inicial = DateTime.Parse(item.Element("dataentrada").Value);
+                r.Data_final = DateTime.Parse(item.Element("datasaida").Value);
+                r.MetodoPagamento = item.Element("pagamento").Value;
+                r.Valor = long.Parse(item.Element("valor").Value);
+
+                reservas.Add(r);
+
+            }
+        }
+
+        public static void XmlDrop()
+        {
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.Load(caminho);
+
+            XDocument xdoc = XDocument.Load(caminho);
+
+            foreach (var item in xdoc.Descendants("reserva"))
+            {
+                XmlNode node = xmldoc.SelectSingleNode("/reservelist/reserva");
+                node.ParentNode.RemoveChild(node);
+            }
+            xmldoc.Save(caminho);
+        }
+
+        public static void XmlSave()
+        {
+            XmlDrop();
+
+            foreach (var item in reservas)
+            {
+                XElement xemp =
+                    new XElement("reserva",
+                    new XElement("id", item.Id),
+                    new XElement("idquarto", item.IdQuarto),
+                    new XElement("usuario", item.Usuario),
+                    new XElement("dataentrada", item.Data_inicial),
+                    new XElement("datasaida", item.Data_final),
+                    new XElement("pagamento", item.MetodoPagamento),
+                    new XElement("valor", item.Valor));
+
+                XDocument doc = XDocument.Load(caminho);
+                doc.Root.Add(xemp);
+                doc.Save(caminho);
+            }
+
         }
 
     }

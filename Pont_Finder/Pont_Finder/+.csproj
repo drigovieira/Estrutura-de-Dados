@@ -347,6 +347,7 @@
       <DependentUpon>Cad_Quarto.cs</DependentUpon>
     </Compile>
     <Compile Include="hospedagem\classes\Reserva.cs" />
+    <Compile Include="hospedagem\classes\reserveList.cs" />
     <Compile Include="hospedagem\data\inc\Card_list_quarto.cs">
       <SubType>UserControl</SubType>
     </Compile>
