@@ -35,7 +35,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bt_visualizar = new System.Windows.Forms.Button();
-            this.Lista = new System.Windows.Forms.Panel();
+            this.ListaPedidos = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -61,7 +61,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 992);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1265, 100);
+            this.panel9.Size = new System.Drawing.Size(1282, 100);
             this.panel9.TabIndex = 61;
             // 
             // panel3
@@ -87,7 +87,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.PapayaWhip;
             this.panel4.Controls.Add(this.bt_visualizar);
-            this.panel4.Controls.Add(this.Lista);
+            this.panel4.Controls.Add(this.ListaPedidos);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(803, 301);
             this.panel4.Name = "panel4";
@@ -109,14 +109,14 @@
             this.bt_visualizar.UseVisualStyleBackColor = false;
             this.bt_visualizar.Click += new System.EventHandler(this.Bt_visualizar_Click);
             // 
-            // Lista
+            // ListaPedidos
             // 
-            this.Lista.AutoScroll = true;
-            this.Lista.BackColor = System.Drawing.Color.White;
-            this.Lista.Location = new System.Drawing.Point(22, 45);
-            this.Lista.Name = "Lista";
-            this.Lista.Size = new System.Drawing.Size(270, 347);
-            this.Lista.TabIndex = 6;
+            this.ListaPedidos.AutoScroll = true;
+            this.ListaPedidos.BackColor = System.Drawing.Color.White;
+            this.ListaPedidos.Location = new System.Drawing.Point(22, 45);
+            this.ListaPedidos.Name = "ListaPedidos";
+            this.ListaPedidos.Size = new System.Drawing.Size(270, 347);
+            this.ListaPedidos.TabIndex = 6;
             // 
             // label7
             // 
@@ -170,7 +170,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1299, 675);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel4);
@@ -200,7 +200,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel Lista;
+        private System.Windows.Forms.Panel ListaPedidos;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Button bt_visualizar;

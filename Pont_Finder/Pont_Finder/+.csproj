@@ -101,9 +101,17 @@
     <Compile Include="alimentos\classes\Cardapio.cs" />
     <Compile Include="alimentos\classes\Company.cs" />
     <Compile Include="alimentos\classes\CompanyList.cs" />
+    <Compile Include="alimentos\classes\delivery.cs" />
     <Compile Include="alimentos\classes\Evaluation.cs" />
     <Compile Include="alimentos\classes\Funcionamento.cs" />
     <Compile Include="alimentos\classes\ListCardapio.cs" />
+    <Compile Include="alimentos\classes\ListPedidos.cs" />
+    <Compile Include="alimentos\controls\itemPedido.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\controls\itemPedido.Designer.cs">
+      <DependentUpon>itemPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="alimentos\Delivery_Alimentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,36 +124,36 @@
     <Compile Include="alimentos\Editar_Restaurante.Designer.cs">
       <DependentUpon>Editar_Restaurante.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\Item_Alimentos.cs">
+    <Compile Include="alimentos\controls\Item_Alimentos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\Item_Alimentos.Designer.cs">
+    <Compile Include="alimentos\controls\Item_Alimentos.Designer.cs">
       <DependentUpon>Item_Alimentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\lbMensagem.cs">
+    <Compile Include="alimentos\controls\lbMensagem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\lbMensagem.Designer.cs">
+    <Compile Include="alimentos\controls\lbMensagem.Designer.cs">
       <DependentUpon>lbMensagem.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\classes\ProfileCompany.cs" />
     <Compile Include="alimentos\classes\ProfileList.cs" />
-    <Compile Include="alimentos\Pagamento_Cartao.cs">
+    <Compile Include="alimentos\controls\Pagamento_Cartao.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\Pagamento_Cartao.Designer.cs">
+    <Compile Include="alimentos\controls\Pagamento_Cartao.Designer.cs">
       <DependentUpon>Pagamento_Cartao.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\Pagamento_Dinheiro.cs">
+    <Compile Include="alimentos\controls\Pagamento_Dinheiro.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\Pagamento_Dinheiro.Designer.cs">
+    <Compile Include="alimentos\controls\Pagamento_Dinheiro.Designer.cs">
       <DependentUpon>Pagamento_Dinheiro.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\Publi.cs">
+    <Compile Include="alimentos\controls\Publi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\Publi.Designer.cs">
+    <Compile Include="alimentos\controls\Publi.Designer.cs">
       <DependentUpon>Publi.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\Reserva_Alimentos.cs">
@@ -154,10 +162,10 @@
     <Compile Include="alimentos\Reserva_Alimentos.Designer.cs">
       <DependentUpon>Reserva_Alimentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\TopEmpresa.cs">
+    <Compile Include="alimentos\controls\TopEmpresa.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\TopEmpresa.Designer.cs">
+    <Compile Include="alimentos\controls\TopEmpresa.Designer.cs">
       <DependentUpon>TopEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\Visualizar.cs">
@@ -647,31 +655,34 @@
     <EmbeddedResource Include="alimentos\Cadastro_Restaurante.resx">
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\controls\itemPedido.resx">
+      <DependentUpon>itemPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Delivery_Alimentos.resx">
       <DependentUpon>Delivery_Alimentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Editar_Restaurante.resx">
       <DependentUpon>Editar_Restaurante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\Item_Alimentos.resx">
+    <EmbeddedResource Include="alimentos\controls\Item_Alimentos.resx">
       <DependentUpon>Item_Alimentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\lbMensagem.resx">
+    <EmbeddedResource Include="alimentos\controls\lbMensagem.resx">
       <DependentUpon>lbMensagem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\Pagamento_Cartao.resx">
+    <EmbeddedResource Include="alimentos\controls\Pagamento_Cartao.resx">
       <DependentUpon>Pagamento_Cartao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\Pagamento_Dinheiro.resx">
+    <EmbeddedResource Include="alimentos\controls\Pagamento_Dinheiro.resx">
       <DependentUpon>Pagamento_Dinheiro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\Publi.resx">
+    <EmbeddedResource Include="alimentos\controls\Publi.resx">
       <DependentUpon>Publi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Reserva_Alimentos.resx">
       <DependentUpon>Reserva_Alimentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\TopEmpresa.resx">
+    <EmbeddedResource Include="alimentos\controls\TopEmpresa.resx">
       <DependentUpon>TopEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Visualizar.resx">

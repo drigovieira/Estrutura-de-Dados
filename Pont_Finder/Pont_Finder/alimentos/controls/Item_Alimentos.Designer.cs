@@ -35,7 +35,7 @@
             this.pb_alimento = new System.Windows.Forms.PictureBox();
             this.CategoriasPrato = new System.Windows.Forms.Label();
             this.lb_rs = new System.Windows.Forms.Label();
-            this.bt_visualizar = new System.Windows.Forms.Button();
+            this.bt_addLista = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_alimento)).BeginInit();
@@ -115,19 +115,20 @@
             this.lb_rs.TabIndex = 33;
             this.lb_rs.Text = "R$";
             // 
-            // bt_visualizar
+            // bt_addLista
             // 
-            this.bt_visualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
-            this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_visualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_visualizar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_visualizar.ForeColor = System.Drawing.Color.White;
-            this.bt_visualizar.Location = new System.Drawing.Point(494, 138);
-            this.bt_visualizar.Name = "bt_visualizar";
-            this.bt_visualizar.Size = new System.Drawing.Size(110, 34);
-            this.bt_visualizar.TabIndex = 34;
-            this.bt_visualizar.Text = "Reservar";
-            this.bt_visualizar.UseVisualStyleBackColor = false;
+            this.bt_addLista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
+            this.bt_addLista.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_addLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_addLista.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_addLista.ForeColor = System.Drawing.Color.White;
+            this.bt_addLista.Location = new System.Drawing.Point(494, 138);
+            this.bt_addLista.Name = "bt_addLista";
+            this.bt_addLista.Size = new System.Drawing.Size(110, 34);
+            this.bt_addLista.TabIndex = 34;
+            this.bt_addLista.Text = "Reservar";
+            this.bt_addLista.UseVisualStyleBackColor = false;
+            this.bt_addLista.Click += new System.EventHandler(this.Bt_addLista_Click);
             // 
             // comboBox1
             // 
@@ -155,7 +156,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.bt_visualizar);
+            this.Controls.Add(this.bt_addLista);
             this.Controls.Add(this.lb_rs);
             this.Controls.Add(this.CategoriasPrato);
             this.Controls.Add(this.pb_alimento);
@@ -180,7 +181,7 @@
         private System.Windows.Forms.PictureBox pb_alimento;
         private System.Windows.Forms.Label CategoriasPrato;
         private System.Windows.Forms.Label lb_rs;
-        private System.Windows.Forms.Button bt_visualizar;
+        private System.Windows.Forms.Button bt_addLista;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
     }

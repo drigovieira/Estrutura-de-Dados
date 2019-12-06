@@ -17,6 +17,19 @@ namespace Pont_Finder.alimentos
         private float PrecoItem, qtdItem;
         private List<string> IngredientesItem, CategoriasItem;
         private int IdItem;
+
+        private void Bt_addLista_Click(object sender, EventArgs e)
+        {
+                object[] obj = new object[6];
+                obj[0] = IdItem;
+                obj[1] = NomeItem;
+                obj[2] = ImageItem;
+                obj[3] = maisIngredientes;
+                obj[4] = PrecoItem;
+                obj[5] = qtdItem;
+                Reserva_Alimentos.Add(obj);
+        }
+
         public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id)
         {
             NomeItem = Nome;
@@ -85,7 +98,8 @@ namespace Pont_Finder.alimentos
                     }
                 }
             }
-        }        
+        }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
