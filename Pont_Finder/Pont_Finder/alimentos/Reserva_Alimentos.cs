@@ -49,6 +49,7 @@ namespace Pont_Finder.alimentos
                 ListaPedidos.Location = new Point(0, local);
                 local = local + item.Height + 5;
                 ListaPedidos.Controls.Add(item);
+                ListaPedidos.Refresh();
             }
         }
         private void Btn_back_Click(object sender, EventArgs e)

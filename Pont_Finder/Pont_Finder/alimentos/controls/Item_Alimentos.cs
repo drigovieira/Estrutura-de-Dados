@@ -30,7 +30,7 @@ namespace Pont_Finder.alimentos
                 Reserva_Alimentos.Add(obj);
             
             Reserva_Alimentos reserva = new Reserva_Alimentos(Empresa);
-            reserva.AttLista();
+            reserva.AttLista();            
         }
 
         public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id, int idEmpresa)
