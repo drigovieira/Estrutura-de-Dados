@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Pont_Finder.servicos
 {
-    public partial class ServicosADM : Form
+    public partial class FormSolicitadosEmpresa : Form
     {
-        public ServicosADM()
+        public FormSolicitadosEmpresa()
         {
             InitializeComponent();
+        }
+
+        private void ServicosADM_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,10 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormServicos));
             this.panel_right = new System.Windows.Forms.Panel();
-            this.bt_solicitar = new System.Windows.Forms.Button();
+            this.bt_sogestao = new System.Windows.Forms.Button();
             this.bt_empresa = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.bt_mensagens = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,6 +59,7 @@
             this.rb_categoria = new System.Windows.Forms.RadioButton();
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_proxFull = new System.Windows.Forms.Button();
+            this.bt_solicitados = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -76,18 +76,18 @@
             this.panel_right.Size = new System.Drawing.Size(310, 259);
             this.panel_right.TabIndex = 16;
             // 
-            // bt_solicitar
+            // bt_sogestao
             // 
-            this.bt_solicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_solicitar.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_solicitar.ForeColor = System.Drawing.Color.White;
-            this.bt_solicitar.Location = new System.Drawing.Point(821, 5);
-            this.bt_solicitar.Name = "bt_solicitar";
-            this.bt_solicitar.Size = new System.Drawing.Size(122, 28);
-            this.bt_solicitar.TabIndex = 4;
-            this.bt_solicitar.Text = "Solicitar Serviço";
-            this.bt_solicitar.UseVisualStyleBackColor = true;
-            this.bt_solicitar.Click += new System.EventHandler(this.button3_Click);
+            this.bt_sogestao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_sogestao.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_sogestao.ForeColor = System.Drawing.Color.White;
+            this.bt_sogestao.Location = new System.Drawing.Point(821, 5);
+            this.bt_sogestao.Name = "bt_sogestao";
+            this.bt_sogestao.Size = new System.Drawing.Size(122, 28);
+            this.bt_sogestao.TabIndex = 4;
+            this.bt_sogestao.Text = "Sugerir Serviço";
+            this.bt_sogestao.UseVisualStyleBackColor = true;
+            this.bt_sogestao.Click += new System.EventHandler(this.button3_Click);
             // 
             // bt_empresa
             // 
@@ -106,31 +106,21 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.bt_solicitados);
             this.panel1.Controls.Add(this.bt_mensagens);
-            this.panel1.Controls.Add(this.bt_solicitar);
+            this.panel1.Controls.Add(this.bt_sogestao);
             this.panel1.Controls.Add(this.bt_empresa);
             this.panel1.Location = new System.Drawing.Point(0, 150);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 40);
             this.panel1.TabIndex = 19;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(115, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_2);
-            // 
             // bt_mensagens
             // 
             this.bt_mensagens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_mensagens.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_mensagens.ForeColor = System.Drawing.Color.White;
-            this.bt_mensagens.Location = new System.Drawing.Point(564, 5);
+            this.bt_mensagens.Location = new System.Drawing.Point(487, 5);
             this.bt_mensagens.Name = "bt_mensagens";
             this.bt_mensagens.Size = new System.Drawing.Size(122, 28);
             this.bt_mensagens.TabIndex = 8;
@@ -437,6 +427,19 @@
             this.bt_proxFull.UseVisualStyleBackColor = false;
             this.bt_proxFull.Click += new System.EventHandler(this.Bt_proxFull_Click);
             // 
+            // bt_solicitados
+            // 
+            this.bt_solicitados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_solicitados.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_solicitados.ForeColor = System.Drawing.Color.White;
+            this.bt_solicitados.Location = new System.Drawing.Point(655, 5);
+            this.bt_solicitados.Name = "bt_solicitados";
+            this.bt_solicitados.Size = new System.Drawing.Size(122, 28);
+            this.bt_solicitados.TabIndex = 10;
+            this.bt_solicitados.Text = "Serviços Solicitados";
+            this.bt_solicitados.UseVisualStyleBackColor = true;
+            this.bt_solicitados.Click += new System.EventHandler(this.Bt_solicitados_Click);
+            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -483,7 +486,7 @@
         #endregion
         private System.Windows.Forms.Panel panel_right;
         private System.Windows.Forms.Button bt_empresa;
-        private System.Windows.Forms.Button bt_solicitar;
+        private System.Windows.Forms.Button bt_sogestao;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
@@ -511,6 +514,6 @@
         private System.Windows.Forms.Button bt_antFull;
         private System.Windows.Forms.Button bt_proxFull;
         private System.Windows.Forms.RadioButton rb_categoria;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_solicitados;
     }
 }

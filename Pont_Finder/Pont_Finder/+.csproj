@@ -553,11 +553,11 @@
     <Compile Include="servicos\PerfilEmpresa.Designer.cs">
       <DependentUpon>PerfilEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\ServicosADM.cs">
+    <Compile Include="servicos\FormSolcitadosEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="servicos\ServicosADM.Designer.cs">
-      <DependentUpon>ServicosADM.cs</DependentUpon>
+    <Compile Include="servicos\FormSolcitadosEmpresa.Designer.cs">
+      <DependentUpon>FormSolcitadosEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\socialist\FormSociaListUser.cs">
       <SubType>Form</SubType>
@@ -903,8 +903,8 @@
     <EmbeddedResource Include="servicos\PerfilEmpresa.resx">
       <DependentUpon>PerfilEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\ServicosADM.resx">
-      <DependentUpon>ServicosADM.cs</DependentUpon>
+    <EmbeddedResource Include="servicos\FormSolcitadosEmpresa.resx">
+      <DependentUpon>FormSolcitadosEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\socialist\FormSociaListUser.resx">
       <DependentUpon>FormSociaListUser.cs</DependentUpon>

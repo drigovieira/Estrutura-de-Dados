@@ -1,6 +1,6 @@
 ﻿namespace Pont_Finder.servicos
 {
-    partial class ServicosADM
+    partial class FormSolicitadosEmpresa
     {
         /// <summary>
         /// Required designer variable.
@@ -89,6 +89,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ServicosADM";
             this.Text = "ServicosADM";
+            this.Load += new System.EventHandler(this.ServicosADM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

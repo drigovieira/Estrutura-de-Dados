@@ -467,5 +467,10 @@ namespace Pont_Finder.servicos
         {
             FormPrincipal.MudarForm("servicos", new FormSolicitados());
         }
+
+        private void Bt_solicitados_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new FormSolicitados());
+        }
     }
 }
