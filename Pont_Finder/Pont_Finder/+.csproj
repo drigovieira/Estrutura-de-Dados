@@ -101,9 +101,17 @@
     <Compile Include="alimentos\classes\Cardapio.cs" />
     <Compile Include="alimentos\classes\Company.cs" />
     <Compile Include="alimentos\classes\CompanyList.cs" />
+    <Compile Include="alimentos\classes\delivery.cs" />
     <Compile Include="alimentos\classes\Evaluation.cs" />
     <Compile Include="alimentos\classes\Funcionamento.cs" />
     <Compile Include="alimentos\classes\ListCardapio.cs" />
+    <Compile Include="alimentos\classes\ListPedidos.cs" />
+    <Compile Include="alimentos\controls\itemPedido.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\controls\itemPedido.Designer.cs">
+      <DependentUpon>itemPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="alimentos\Delivery_Alimentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,36 +124,36 @@
     <Compile Include="alimentos\Editar_Restaurante.Designer.cs">
       <DependentUpon>Editar_Restaurante.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\Item_Alimentos.cs">
+    <Compile Include="alimentos\controls\Item_Alimentos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\Item_Alimentos.Designer.cs">
+    <Compile Include="alimentos\controls\Item_Alimentos.Designer.cs">
       <DependentUpon>Item_Alimentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\lbMensagem.cs">
+    <Compile Include="alimentos\controls\lbMensagem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\lbMensagem.Designer.cs">
+    <Compile Include="alimentos\controls\lbMensagem.Designer.cs">
       <DependentUpon>lbMensagem.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\classes\ProfileCompany.cs" />
     <Compile Include="alimentos\classes\ProfileList.cs" />
-    <Compile Include="alimentos\Pagamento_Cartao.cs">
+    <Compile Include="alimentos\controls\Pagamento_Cartao.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\Pagamento_Cartao.Designer.cs">
+    <Compile Include="alimentos\controls\Pagamento_Cartao.Designer.cs">
       <DependentUpon>Pagamento_Cartao.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\Pagamento_Dinheiro.cs">
+    <Compile Include="alimentos\controls\Pagamento_Dinheiro.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\Pagamento_Dinheiro.Designer.cs">
+    <Compile Include="alimentos\controls\Pagamento_Dinheiro.Designer.cs">
       <DependentUpon>Pagamento_Dinheiro.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\Publi.cs">
+    <Compile Include="alimentos\controls\Publi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\Publi.Designer.cs">
+    <Compile Include="alimentos\controls\Publi.Designer.cs">
       <DependentUpon>Publi.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\Reserva_Alimentos.cs">
@@ -154,10 +162,10 @@
     <Compile Include="alimentos\Reserva_Alimentos.Designer.cs">
       <DependentUpon>Reserva_Alimentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\TopEmpresa.cs">
+    <Compile Include="alimentos\controls\TopEmpresa.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="alimentos\TopEmpresa.Designer.cs">
+    <Compile Include="alimentos\controls\TopEmpresa.Designer.cs">
       <DependentUpon>TopEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\Visualizar.cs">
@@ -361,6 +369,12 @@
     <Compile Include="hospedagem\data\inc\amb.Designer.cs">
       <DependentUpon>amb.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\data\inc\emp_list_reservas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\emp_list_reservas.Designer.cs">
+      <DependentUpon>emp_list_reservas.cs</DependentUpon>
+    </Compile>
     <Compile Include="hospedagem\data\inc\icon.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -421,6 +435,12 @@
     <Compile Include="hospedagem\data\inc\Hosp_PostCard.Designer.cs">
       <DependentUpon>Hosp_PostCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\list_emp_reservados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\list_emp_reservados.Designer.cs">
+      <DependentUpon>list_emp_reservados.cs</DependentUpon>
+    </Compile>
     <Compile Include="hospedagem\List_reservas_user.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -438,6 +458,12 @@
     </Compile>
     <Compile Include="hospedagem\Vizualizar_quarto.Designer.cs">
       <DependentUpon>Vizualizar_quarto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospedagem\Vizualizar_reserva_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hospedagem\Vizualizar_reserva_user.Designer.cs">
+      <DependentUpon>Vizualizar_reserva_user.cs</DependentUpon>
     </Compile>
     <Compile Include="Mapa\EndMapa.cs" />
     <Compile Include="Mapa\Mapa.cs">
@@ -520,6 +546,12 @@
     <Compile Include="servicos\FormVisualizarPost.Designer.cs">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\Grid.Designer.cs">
+      <DependentUpon>Grid.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\PerfilEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -578,11 +610,11 @@
     <Compile Include="servicos\User_control\CardSev_Agenda.Designer.cs">
       <DependentUpon>CardSev_Agenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\User_control\Card_User_Pedidos.cs">
+    <Compile Include="servicos\User_control\ControlSolicitados.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="servicos\User_control\Card_User_Pedidos.Designer.cs">
-      <DependentUpon>Card_User_Pedidos.cs</DependentUpon>
+    <Compile Include="servicos\User_control\ControlSolicitados.Designer.cs">
+      <DependentUpon>ControlSolicitados.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\User_control\PostCard.cs">
       <SubType>UserControl</SubType>
@@ -602,11 +634,11 @@
     <Compile Include="servicos\SolicitarServico.Designer.cs">
       <DependentUpon>SolicitarServico.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\Visualizar-Solicitado_User.cs">
+    <Compile Include="servicos\FormSolicitados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="servicos\Visualizar-Solicitado_User.Designer.cs">
-      <DependentUpon>Visualizar-Solicitado_User.cs</DependentUpon>
+    <Compile Include="servicos\FormSolicitados.Designer.cs">
+      <DependentUpon>FormSolicitados.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaCarregamento\TelaCarregamento.cs">
       <SubType>Form</SubType>
@@ -623,31 +655,34 @@
     <EmbeddedResource Include="alimentos\Cadastro_Restaurante.resx">
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\controls\itemPedido.resx">
+      <DependentUpon>itemPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Delivery_Alimentos.resx">
       <DependentUpon>Delivery_Alimentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Editar_Restaurante.resx">
       <DependentUpon>Editar_Restaurante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\Item_Alimentos.resx">
+    <EmbeddedResource Include="alimentos\controls\Item_Alimentos.resx">
       <DependentUpon>Item_Alimentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\lbMensagem.resx">
+    <EmbeddedResource Include="alimentos\controls\lbMensagem.resx">
       <DependentUpon>lbMensagem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\Pagamento_Cartao.resx">
+    <EmbeddedResource Include="alimentos\controls\Pagamento_Cartao.resx">
       <DependentUpon>Pagamento_Cartao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\Pagamento_Dinheiro.resx">
+    <EmbeddedResource Include="alimentos\controls\Pagamento_Dinheiro.resx">
       <DependentUpon>Pagamento_Dinheiro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\Publi.resx">
+    <EmbeddedResource Include="alimentos\controls\Publi.resx">
       <DependentUpon>Publi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Reserva_Alimentos.resx">
       <DependentUpon>Reserva_Alimentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\TopEmpresa.resx">
+    <EmbeddedResource Include="alimentos\controls\TopEmpresa.resx">
       <DependentUpon>TopEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Visualizar.resx">
@@ -738,6 +773,9 @@
     <EmbeddedResource Include="hospedagem\data\inc\amb.resx">
       <DependentUpon>amb.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\data\inc\emp_list_reservas.resx">
+      <DependentUpon>emp_list_reservas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\data\inc\icon.resx">
       <DependentUpon>icon.cs</DependentUpon>
     </EmbeddedResource>
@@ -770,6 +808,9 @@
     <EmbeddedResource Include="hospedagem\data\inc\Hosp_PostCard.resx">
       <DependentUpon>Hosp_PostCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\list_emp_reservados.resx">
+      <DependentUpon>list_emp_reservados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\List_reservas_user.resx">
       <DependentUpon>List_reservas_user.cs</DependentUpon>
     </EmbeddedResource>
@@ -778,6 +819,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Vizualizar_quarto.resx">
       <DependentUpon>Vizualizar_quarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\Vizualizar_reserva_user.resx">
+      <DependentUpon>Vizualizar_reserva_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mapa\Mapa.resx">
       <DependentUpon>Mapa.cs</DependentUpon>
@@ -861,6 +905,9 @@
     <EmbeddedResource Include="servicos\FormVisualizarPost.resx">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="servicos\Grid.resx">
+      <DependentUpon>Grid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="servicos\PerfilEmpresa.resx">
       <DependentUpon>PerfilEmpresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -888,8 +935,8 @@
     <EmbeddedResource Include="servicos\User_control\CardSev_Agenda.resx">
       <DependentUpon>CardSev_Agenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\User_control\Card_User_Pedidos.resx">
-      <DependentUpon>Card_User_Pedidos.cs</DependentUpon>
+    <EmbeddedResource Include="servicos\User_control\ControlSolicitados.resx">
+      <DependentUpon>ControlSolicitados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\User_control\PostCard.resx">
       <DependentUpon>PostCard.cs</DependentUpon>
@@ -900,8 +947,8 @@
     <EmbeddedResource Include="servicos\SolicitarServico.resx">
       <DependentUpon>SolicitarServico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\Visualizar-Solicitado_User.resx">
-      <DependentUpon>Visualizar-Solicitado_User.cs</DependentUpon>
+    <EmbeddedResource Include="servicos\FormSolicitados.resx">
+      <DependentUpon>FormSolicitados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaCarregamento\TelaCarregamento.resx">
       <DependentUpon>TelaCarregamento.cs</DependentUpon>

@@ -142,6 +142,7 @@
             this.label1.Size = new System.Drawing.Size(167, 24);
             this.label1.TabIndex = 43;
             this.label1.Text = "Número do Cartão";
+            this.label1.Visible = false;
             // 
             // textBox3
             // 
@@ -151,6 +152,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(85, 30);
             this.textBox3.TabIndex = 44;
+            this.textBox3.Visible = false;
             // 
             // textBox4
             // 
@@ -160,6 +162,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(85, 30);
             this.textBox4.TabIndex = 45;
+            this.textBox4.Visible = false;
             // 
             // textBox5
             // 
@@ -169,6 +172,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(85, 30);
             this.textBox5.TabIndex = 46;
+            this.textBox5.Visible = false;
             // 
             // textBox6
             // 
@@ -178,6 +182,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(85, 30);
             this.textBox6.TabIndex = 47;
+            this.textBox6.Visible = false;
             // 
             // label3
             // 
@@ -185,9 +190,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(81, 329);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 24);
+            this.label3.Size = new System.Drawing.Size(188, 24);
             this.label3.TabIndex = 49;
-            this.label3.Text = "Código de Segurança";
+            this.label3.Text = "Ponto de Referência*";
             // 
             // textBox7
             // 
@@ -225,6 +230,7 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(85, 30);
             this.textBox9.TabIndex = 54;
+            this.textBox9.Visible = false;
             // 
             // textBox10
             // 
@@ -234,6 +240,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(85, 30);
             this.textBox10.TabIndex = 53;
+            this.textBox10.Visible = false;
             // 
             // label5
             // 
@@ -244,6 +251,7 @@
             this.label5.Size = new System.Drawing.Size(242, 24);
             this.label5.TabIndex = 52;
             this.label5.Text = "Data de Validade do Cartão";
+            this.label5.Visible = false;
             // 
             // label6
             // 
@@ -254,6 +262,7 @@
             this.label6.Size = new System.Drawing.Size(17, 24);
             this.label6.TabIndex = 55;
             this.label6.Text = "/";
+            this.label6.Visible = false;
             // 
             // Pagamento_Cartao
             // 

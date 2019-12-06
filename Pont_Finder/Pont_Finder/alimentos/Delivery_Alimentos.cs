@@ -15,6 +15,9 @@ namespace Pont_Finder.alimentos
         public Delivery_Alimentos()
         {
             InitializeComponent();
+            Pagamento_Dinheiro form = new Pagamento_Dinheiro();
+            form.Location = new Point(0,0);
+            panel_center.Controls.Add(form);
         }
 
         private void Panel3_Paint(object sender, PaintEventArgs e)

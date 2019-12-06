@@ -68,7 +68,7 @@
             // input_valor
             // 
             this.input_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.input_valor.Location = new System.Drawing.Point(352, 1043);
+            this.input_valor.Location = new System.Drawing.Point(355, 933);
             this.input_valor.Name = "input_valor";
             this.input_valor.Size = new System.Drawing.Size(200, 24);
             this.input_valor.TabIndex = 4;
@@ -78,7 +78,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(311, 1040);
+            this.label6.Location = new System.Drawing.Point(314, 930);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 21);
             this.label6.TabIndex = 12;
@@ -97,7 +97,7 @@
             // tb_qtdquarto
             // 
             this.tb_qtdquarto.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_qtdquarto.Location = new System.Drawing.Point(347, 834);
+            this.tb_qtdquarto.Location = new System.Drawing.Point(350, 724);
             this.tb_qtdquarto.Name = "tb_qtdquarto";
             this.tb_qtdquarto.Size = new System.Drawing.Size(200, 24);
             this.tb_qtdquarto.TabIndex = 2;
@@ -107,7 +107,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(344, 1008);
+            this.label5.Location = new System.Drawing.Point(347, 898);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(203, 21);
             this.label5.TabIndex = 11;
@@ -117,7 +117,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(292, 879);
+            this.label4.Location = new System.Drawing.Point(295, 769);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(296, 21);
             this.label4.TabIndex = 9;
@@ -136,7 +136,7 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(310, 967);
+            this.checkBox7.Location = new System.Drawing.Point(313, 857);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(81, 18);
             this.checkBox7.TabIndex = 29;
@@ -147,7 +147,7 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(538, 944);
+            this.checkBox4.Location = new System.Drawing.Point(541, 834);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(49, 18);
             this.checkBox4.TabIndex = 28;
@@ -158,7 +158,7 @@
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(423, 944);
+            this.checkBox5.Location = new System.Drawing.Point(426, 834);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(74, 18);
             this.checkBox5.TabIndex = 27;
@@ -169,7 +169,7 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(310, 944);
+            this.checkBox6.Location = new System.Drawing.Point(313, 834);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(92, 18);
             this.checkBox6.TabIndex = 26;
@@ -180,7 +180,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(538, 921);
+            this.checkBox3.Location = new System.Drawing.Point(541, 811);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(62, 18);
             this.checkBox3.TabIndex = 25;
@@ -191,7 +191,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(423, 921);
+            this.checkBox2.Location = new System.Drawing.Point(426, 811);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(104, 18);
             this.checkBox2.TabIndex = 24;
@@ -202,7 +202,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(310, 921);
+            this.checkBox1.Location = new System.Drawing.Point(313, 811);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(99, 18);
             this.checkBox1.TabIndex = 23;
@@ -213,7 +213,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(303, 798);
+            this.label3.Location = new System.Drawing.Point(306, 688);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(274, 21);
             this.label3.TabIndex = 7;
@@ -250,7 +250,7 @@
             this.bt_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cadastrar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cadastrar.ForeColor = System.Drawing.Color.White;
-            this.bt_cadastrar.Location = new System.Drawing.Point(337, 1096);
+            this.bt_cadastrar.Location = new System.Drawing.Point(340, 986);
             this.bt_cadastrar.Name = "bt_cadastrar";
             this.bt_cadastrar.Size = new System.Drawing.Size(236, 53);
             this.bt_cadastrar.TabIndex = 6;
@@ -271,7 +271,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1298);
+            this.panel1.Location = new System.Drawing.Point(0, 1091);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1282, 100);
             this.panel1.TabIndex = 33;
@@ -310,7 +310,7 @@
             this.panel2.Controls.Add(this.checkBox2);
             this.panel2.Location = new System.Drawing.Point(210, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(845, 1286);
+            this.panel2.Size = new System.Drawing.Size(845, 1079);
             this.panel2.TabIndex = 34;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
@@ -318,7 +318,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(420, 558);
+            this.radioButton1.Location = new System.Drawing.Point(420, 532);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(63, 18);
             this.radioButton1.TabIndex = 40;
@@ -332,7 +332,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(509, 558);
+            this.radioButton2.Location = new System.Drawing.Point(509, 532);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(58, 18);
             this.radioButton2.TabIndex = 41;
@@ -345,7 +345,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(346, 558);
+            this.radioButton3.Location = new System.Drawing.Point(346, 532);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(52, 18);
             this.radioButton3.TabIndex = 39;
@@ -358,7 +358,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(382, 514);
+            this.label11.Location = new System.Drawing.Point(382, 488);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(122, 21);
             this.label11.TabIndex = 38;
@@ -368,7 +368,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(476, 723);
+            this.label10.Location = new System.Drawing.Point(476, 612);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 17);
             this.label10.TabIndex = 37;
@@ -378,7 +378,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(320, 723);
+            this.label9.Location = new System.Drawing.Point(320, 612);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(42, 17);
             this.label9.TabIndex = 37;
@@ -387,7 +387,7 @@
             // tb_solteiro
             // 
             this.tb_solteiro.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_solteiro.Location = new System.Drawing.Point(479, 743);
+            this.tb_solteiro.Location = new System.Drawing.Point(479, 632);
             this.tb_solteiro.Name = "tb_solteiro";
             this.tb_solteiro.Size = new System.Drawing.Size(80, 24);
             this.tb_solteiro.TabIndex = 36;
@@ -396,7 +396,7 @@
             // tb_casal
             // 
             this.tb_casal.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_casal.Location = new System.Drawing.Point(323, 743);
+            this.tb_casal.Location = new System.Drawing.Point(323, 632);
             this.tb_casal.Name = "tb_casal";
             this.tb_casal.Size = new System.Drawing.Size(80, 24);
             this.tb_casal.TabIndex = 35;
@@ -406,7 +406,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(306, 689);
+            this.label8.Location = new System.Drawing.Point(306, 578);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(256, 21);
             this.label8.TabIndex = 33;
