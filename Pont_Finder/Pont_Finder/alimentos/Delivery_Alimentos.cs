@@ -24,5 +24,25 @@ namespace Pont_Finder.alimentos
         {
 
         }
+
+        private void Delivery_Alimentos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lb_endereco_emp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
