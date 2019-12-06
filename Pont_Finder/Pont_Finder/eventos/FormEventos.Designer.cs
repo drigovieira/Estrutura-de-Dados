@@ -153,7 +153,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Orchid;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.bt_pesquisar);
             this.panel2.Controls.Add(this.tb_bai);
@@ -239,7 +239,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(218)))), ((int)(((byte)(243)))));
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
             this.panel8.Location = new System.Drawing.Point(950, 280);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(310, 300);
@@ -257,7 +257,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(218)))), ((int)(((byte)(243)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
             this.panel4.Controls.Add(this.label2);
             this.panel4.Location = new System.Drawing.Point(950, 751);
             this.panel4.Name = "panel4";
@@ -276,7 +276,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(218)))), ((int)(((byte)(243)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
             this.panel5.Controls.Add(this.label8);
             this.panel5.Location = new System.Drawing.Point(950, 586);
             this.panel5.Name = "panel5";
