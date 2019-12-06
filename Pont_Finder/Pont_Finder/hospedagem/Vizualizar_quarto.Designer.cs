@@ -357,6 +357,7 @@
             this.pb_principal.Location = new System.Drawing.Point(42, 54);
             this.pb_principal.Name = "pb_principal";
             this.pb_principal.Size = new System.Drawing.Size(450, 225);
+            this.pb_principal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_principal.TabIndex = 36;
             this.pb_principal.TabStop = false;
             // 
