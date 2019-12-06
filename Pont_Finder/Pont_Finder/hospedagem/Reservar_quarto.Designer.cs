@@ -101,6 +101,7 @@
             this.lb_data_saida.Size = new System.Drawing.Size(40, 17);
             this.lb_data_saida.TabIndex = 52;
             this.lb_data_saida.Text = "Value";
+            this.lb_data_saida.Click += new System.EventHandler(this.lb_data_saida_Click);
             // 
             // lb_data_entrada
             // 
