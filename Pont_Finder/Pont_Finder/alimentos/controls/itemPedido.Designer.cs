@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.NomeTopEmp = new System.Windows.Forms.Label();
+            this.Item = new System.Windows.Forms.Label();
             this.Remover = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // NomeTopEmp
+            // Item
             // 
-            this.NomeTopEmp.AutoSize = true;
-            this.NomeTopEmp.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomeTopEmp.Location = new System.Drawing.Point(13, 15);
-            this.NomeTopEmp.Name = "NomeTopEmp";
-            this.NomeTopEmp.Size = new System.Drawing.Size(57, 21);
-            this.NomeTopEmp.TabIndex = 2;
-            this.NomeTopEmp.Text = "Nome";
+            this.Item.AutoSize = true;
+            this.Item.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Item.Location = new System.Drawing.Point(13, 15);
+            this.Item.Name = "Item";
+            this.Item.Size = new System.Drawing.Size(57, 21);
+            this.Item.TabIndex = 2;
+            this.Item.Text = "Nome";
             // 
             // Remover
             // 
@@ -61,9 +61,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.Remover);
-            this.Controls.Add(this.NomeTopEmp);
+            this.Controls.Add(this.Item);
             this.Name = "itemPedido";
             this.Size = new System.Drawing.Size(270, 50);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.ItemPedido_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,7 +72,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label NomeTopEmp;
+        private System.Windows.Forms.Label Item;
         private System.Windows.Forms.Button Remover;
     }
 }

@@ -16,7 +16,7 @@ namespace Pont_Finder.alimentos
         private string NomeItem, ImageItem, maisIngredientes, maisCategoria;
         private float PrecoItem, qtdItem;
         private List<string> IngredientesItem, CategoriasItem;
-        private int IdItem;
+        private int IdItem, Empresa;
 
         private void Bt_addLista_Click(object sender, EventArgs e)
         {
@@ -28,9 +28,12 @@ namespace Pont_Finder.alimentos
                 obj[4] = PrecoItem;
                 obj[5] = qtdItem;
                 Reserva_Alimentos.Add(obj);
+            
+            Reserva_Alimentos reserva = new Reserva_Alimentos(Empresa);
+            reserva.AttLista();
         }
 
-        public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id)
+        public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id, int idEmpresa)
         {
             NomeItem = Nome;
             ImageItem = Imagem;
@@ -41,6 +44,7 @@ namespace Pont_Finder.alimentos
             IdItem = Id;
             maisIngredientes = "";
             maisCategoria = "";
+            Empresa = idEmpresa;
             InitializeComponent();
             if (ListCardapio.select(Id).Image != null)
                 pb_alimento.ImageLocation = CompanyList.select(Id).Image;

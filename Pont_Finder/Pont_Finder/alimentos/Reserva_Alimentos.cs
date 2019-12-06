@@ -21,6 +21,7 @@ namespace Pont_Finder.alimentos
             local = 0;
             InitializeComponent();
             Listar();
+            AttLista();
         }
         public static void Add(object[] item)
         {
@@ -69,18 +70,13 @@ namespace Pont_Finder.alimentos
             }
         }
 
-        private void ListaPedidos_Paint(object sender, PaintEventArgs e)
-        {
-            AttLista();
-        }
-
         public void Listar()
         {
             foreach (var item in ListCardapio.selectAll())
             {
                 if (item.IdEmpresa == Company)
                 {
-                    Item_Alimentos AliItem = new Item_Alimentos(item.Preco, item.Nome, item.Image, item.Qtd, item.Ingredientes, item.Categoria, item.Id);
+                    Item_Alimentos AliItem = new Item_Alimentos(item.Preco, item.Nome, item.Image, item.Qtd, item.Ingredientes, item.Categoria, item.Id, Company);
                     AliItem.Location = new Point(0, local);
                     local = local + AliItem.Height + 5;
                     menu.Controls.Add(AliItem);
