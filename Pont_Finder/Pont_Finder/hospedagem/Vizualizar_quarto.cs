@@ -96,6 +96,7 @@ namespace Pont_Finder.hospedagem
             //QUARTO
             this.id = quarto.ID;
             this.nome = quarto.NomeQuarto;
+            this.tipo = quarto.Tipo;
             this.qtd_pessoas = quarto.Qtd_Pessoas;
             this.qtd_disponivel = quarto.Qtd_Disponivel;
             this.empresa = emp.Nomefantasia;
@@ -257,6 +258,7 @@ namespace Pont_Finder.hospedagem
 
 
             lb_nome_quarto.Text = nome;
+            lb_tipo_quarto.Text = tipo;
 
             //Valor 15%
             double valor15 = valor * 0.15;

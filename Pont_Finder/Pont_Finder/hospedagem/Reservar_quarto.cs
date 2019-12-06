@@ -76,6 +76,7 @@ namespace Pont_Finder.hospedagem
                 this.servicos = quarto.Servicos;
                 this.foto = quarto.Foto;
                 this.status = quarto.Status;
+                this.tipo = quarto.Tipo;
                 this.nome_emp = emp.Nomeempresa;
                 this.endereco_emp = emp.Endereco;
 
@@ -189,6 +190,7 @@ namespace Pont_Finder.hospedagem
                 pn_icons.Controls.Add(icone_uc);
             }
             lb_nome_quarto.Text = nome;
+            lb_tipo_quarto.Text = tipo;
             lb_data_entrada.Text = Convert.ToString(data_inicial.ToShortDateString());
             lb_data_saida.Text = Convert.ToString(data_final.ToShortDateString());
             lb_nome_emp.Text = nome_emp;
