@@ -156,7 +156,7 @@ namespace Pont_Finder.servicos
 
         private void Bt_solicitados_Click(object sender, EventArgs e)
         {
-
+            FormPrincipal.MudarForm("servicos", new FormSolicitadosEmpresa());
         }
 
         private void Btn_back_Click_1(object sender, EventArgs e)

@@ -28,69 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_back = new System.Windows.Forms.PictureBox();
-            this.painel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.painel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // panel1
+            // panel3
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 575);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1282, 100);
-            this.panel1.TabIndex = 18;
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.White;
-            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
-            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.Location = new System.Drawing.Point(124, 60);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(40, 40);
-            this.btn_back.TabIndex = 17;
-            this.btn_back.TabStop = false;
-            // 
-            // painel
-            // 
-            this.painel.AutoSize = true;
-            this.painel.BackColor = System.Drawing.Color.White;
-            this.painel.Location = new System.Drawing.Point(127, 106);
-            this.painel.MaximumSize = new System.Drawing.Size(1010, 0);
-            this.painel.MinimumSize = new System.Drawing.Size(1010, 0);
-            this.painel.Name = "painel";
-            this.painel.Size = new System.Drawing.Size(1010, 0);
-            this.painel.TabIndex = 15;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 652);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1265, 50);
+            this.panel3.TabIndex = 38;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(498, 34);
+            this.label1.Location = new System.Drawing.Point(430, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(308, 42);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Agenda de serviços";
+            this.label1.Size = new System.Drawing.Size(436, 42);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Lista de Serviços Solicitados";
             // 
-            // ServicosADM
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(1160, 22);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(100, 630);
+            this.panel7.TabIndex = 36;
+            // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(1055, 22);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(100, 630);
+            this.panel8.TabIndex = 35;
+            // 
+            // painel
+            // 
+            this.painel.Location = new System.Drawing.Point(215, 120);
+            this.painel.Name = "painel";
+            this.painel.Size = new System.Drawing.Size(835, 532);
+            this.painel.TabIndex = 34;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(110, 22);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(100, 630);
+            this.panel2.TabIndex = 33;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(5, 22);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(100, 630);
+            this.panel1.TabIndex = 32;
+            // 
+            // FormSolicitadosEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btn_back);
-            this.Controls.Add(this.painel);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.painel);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ServicosADM";
+            this.Name = "FormSolicitadosEmpresa";
             this.Text = "ServicosADM";
-            this.Load += new System.EventHandler(this.ServicosADM_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
+            this.Load += new System.EventHandler(this.FormSolicitadosEmpresa_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,9 +115,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox btn_back;
-        private System.Windows.Forms.Panel painel;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel painel;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
