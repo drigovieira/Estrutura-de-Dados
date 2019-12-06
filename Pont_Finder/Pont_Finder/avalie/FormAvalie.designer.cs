@@ -52,7 +52,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.Top5 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -76,7 +75,8 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -91,7 +91,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel7.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel7.Controls.Add(this.cb_problemas);
             this.panel7.Controls.Add(this.button_Pesquisar);
             this.panel7.Controls.Add(this.label2);
@@ -159,8 +159,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel5.Controls.Add(this.label13);
             this.panel5.Location = new System.Drawing.Point(950, 619);
             this.panel5.Name = "panel5";
@@ -203,8 +202,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel9.Controls.Add(this.button2);
             this.panel9.Controls.Add(this.button3);
             this.panel9.Location = new System.Drawing.Point(0, 150);
@@ -214,7 +212,8 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(726, 5);
@@ -286,8 +285,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel4.Controls.Add(this.label15);
             this.panel4.Location = new System.Drawing.Point(950, 785);
             this.panel4.Name = "panel4";
@@ -306,21 +304,12 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel6.Controls.Add(this.Top5);
+            this.panel6.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel6.Controls.Add(this.label7);
             this.panel6.Location = new System.Drawing.Point(950, 270);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(310, 343);
             this.panel6.TabIndex = 41;
-            // 
-            // Top5
-            // 
-            this.Top5.BackColor = System.Drawing.Color.White;
-            this.Top5.Location = new System.Drawing.Point(22, 41);
-            this.Top5.Name = "Top5";
-            this.Top5.Size = new System.Drawing.Size(270, 286);
-            this.Top5.TabIndex = 6;
             // 
             // label7
             // 
@@ -343,7 +332,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel2.Controls.Add(this.Databox);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.button1);
@@ -457,7 +446,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel Top5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;

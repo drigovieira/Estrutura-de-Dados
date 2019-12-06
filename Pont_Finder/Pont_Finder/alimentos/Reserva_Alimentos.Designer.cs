@@ -29,15 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reserva_Alimentos));
-            this.panel1 = new System.Windows.Forms.Panel();
             this.menu = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bt_visualizar = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.ListaPedidos = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -48,31 +46,15 @@
             this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(5, 301);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(310, 691);
-            this.panel1.TabIndex = 52;
-            // 
             // menu
             // 
             this.menu.AutoSize = true;
             this.menu.BackColor = System.Drawing.Color.White;
             this.menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.menu.Location = new System.Drawing.Point(320, 363);
+            this.menu.Location = new System.Drawing.Point(172, 363);
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(625, 629);
             this.menu.TabIndex = 58;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(950, 301);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 691);
-            this.panel2.TabIndex = 59;
             // 
             // panel9
             // 
@@ -86,7 +68,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.PapayaWhip;
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(321, 301);
+            this.panel3.Location = new System.Drawing.Point(172, 301);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(623, 56);
             this.panel3.TabIndex = 62;
@@ -105,9 +87,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.PapayaWhip;
             this.panel4.Controls.Add(this.bt_visualizar);
-            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.ListaPedidos);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(950, 301);
+            this.panel4.Location = new System.Drawing.Point(803, 301);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 472);
             this.panel4.TabIndex = 23;
@@ -125,14 +107,16 @@
             this.bt_visualizar.TabIndex = 35;
             this.bt_visualizar.Text = "Finalizar Pedido";
             this.bt_visualizar.UseVisualStyleBackColor = false;
+            this.bt_visualizar.Click += new System.EventHandler(this.Bt_visualizar_Click);
             // 
-            // panel8
+            // ListaPedidos
             // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(22, 45);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(270, 347);
-            this.panel8.TabIndex = 6;
+            this.ListaPedidos.AutoScroll = true;
+            this.ListaPedidos.BackColor = System.Drawing.Color.White;
+            this.ListaPedidos.Location = new System.Drawing.Point(22, 45);
+            this.ListaPedidos.Name = "ListaPedidos";
+            this.ListaPedidos.Size = new System.Drawing.Size(270, 347);
+            this.ListaPedidos.TabIndex = 6;
             // 
             // label7
             // 
@@ -148,12 +132,15 @@
             // btn_back
             // 
             this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_back.Location = new System.Drawing.Point(12, 232);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 65;
             this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // panel10
             // 
@@ -189,9 +176,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.menu);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
@@ -210,14 +195,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel menu;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel ListaPedidos;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Button bt_visualizar;

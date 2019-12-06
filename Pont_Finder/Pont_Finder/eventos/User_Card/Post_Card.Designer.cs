@@ -66,7 +66,7 @@
             this.lb_ingressos.ForeColor = System.Drawing.Color.Blue;
             this.lb_ingressos.Location = new System.Drawing.Point(333, 80);
             this.lb_ingressos.Name = "lb_ingressos";
-            this.lb_ingressos.Size = new System.Drawing.Size(19, 25);
+            this.lb_ingressos.Size = new System.Drawing.Size(17, 24);
             this.lb_ingressos.TabIndex = 9;
             this.lb_ingressos.Text = "v";
             // 
@@ -76,7 +76,7 @@
             this.lb_nome.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_nome.Location = new System.Drawing.Point(193, 13);
             this.lb_nome.Name = "lb_nome";
-            this.lb_nome.Size = new System.Drawing.Size(63, 32);
+            this.lb_nome.Size = new System.Drawing.Size(63, 33);
             this.lb_nome.TabIndex = 8;
             this.lb_nome.Text = "Nome";
             // 
@@ -108,7 +108,7 @@
             this.label2.ForeColor = System.Drawing.Color.Blue;
             this.label2.Location = new System.Drawing.Point(195, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 25);
+            this.label2.Size = new System.Drawing.Size(141, 24);
             this.label2.TabIndex = 15;
             this.label2.Text = "Ingressos disponíveis:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -119,7 +119,7 @@
             this.label4.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(195, 113);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 25);
+            this.label4.Size = new System.Drawing.Size(42, 24);
             this.label4.TabIndex = 17;
             this.label4.Text = "Data:";
             // 
@@ -129,7 +129,7 @@
             this.lb_data.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_data.Location = new System.Drawing.Point(231, 113);
             this.lb_data.Name = "lb_data";
-            this.lb_data.Size = new System.Drawing.Size(21, 25);
+            this.lb_data.Size = new System.Drawing.Size(19, 24);
             this.lb_data.TabIndex = 18;
             this.lb_data.Text = "V";
             // 
@@ -139,7 +139,7 @@
             this.label5.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(194, 49);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 25);
+            this.label5.Size = new System.Drawing.Size(71, 24);
             this.label5.TabIndex = 20;
             this.label5.Text = "Categoria:";
             // 
@@ -149,7 +149,7 @@
             this.lb_categoria.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_categoria.Location = new System.Drawing.Point(262, 50);
             this.lb_categoria.Name = "lb_categoria";
-            this.lb_categoria.Size = new System.Drawing.Size(19, 25);
+            this.lb_categoria.Size = new System.Drawing.Size(17, 24);
             this.lb_categoria.TabIndex = 12;
             this.lb_categoria.Text = "v";
             this.lb_categoria.Click += new System.EventHandler(this.Lb_categoria_Click);
@@ -160,7 +160,7 @@
             this.label3.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(492, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 25);
+            this.label3.Size = new System.Drawing.Size(117, 24);
             this.label3.TabIndex = 21;
             this.label3.Text = "Valor do Ingresso";
             // 
@@ -185,7 +185,7 @@
             this.label6.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(348, 45);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 25);
+            this.label6.Size = new System.Drawing.Size(45, 24);
             this.label6.TabIndex = 30;
             this.label6.Text = "Local:";
             // 
@@ -195,7 +195,7 @@
             this.label7.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(349, 113);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 25);
+            this.label7.Size = new System.Drawing.Size(89, 24);
             this.label7.TabIndex = 31;
             this.label7.Text = "Classificação:";
             // 
@@ -205,7 +205,7 @@
             this.lb_local.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_local.Location = new System.Drawing.Point(390, 45);
             this.lb_local.Name = "lb_local";
-            this.lb_local.Size = new System.Drawing.Size(19, 25);
+            this.lb_local.Size = new System.Drawing.Size(17, 24);
             this.lb_local.TabIndex = 32;
             this.lb_local.Text = "v";
             // 
@@ -215,7 +215,7 @@
             this.lb_classifica.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_classifica.Location = new System.Drawing.Point(435, 113);
             this.lb_classifica.Name = "lb_classifica";
-            this.lb_classifica.Size = new System.Drawing.Size(19, 25);
+            this.lb_classifica.Size = new System.Drawing.Size(17, 24);
             this.lb_classifica.TabIndex = 33;
             this.lb_classifica.Text = "v";
             // 
@@ -223,7 +223,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(218)))), ((int)(((byte)(243)))));
+            this.BackColor = System.Drawing.Color.White;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lb_classifica);
             this.Controls.Add(this.lb_local);
             this.Controls.Add(this.label7);
@@ -241,7 +242,7 @@
             this.Controls.Add(this.lb_nome);
             this.Controls.Add(this.pb_imagem);
             this.Name = "Post_Card";
-            this.Size = new System.Drawing.Size(625, 160);
+            this.Size = new System.Drawing.Size(623, 158);
             this.Load += new System.EventHandler(this.Post_Card_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).EndInit();
             this.ResumeLayout(false);

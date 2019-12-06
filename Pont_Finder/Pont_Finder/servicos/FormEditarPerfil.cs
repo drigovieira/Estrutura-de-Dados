@@ -18,10 +18,11 @@ namespace Pont_Finder.servicos
 
         private bool img = false;
         private bool capa = false;
+        Form anterior;
 
-
-        public FormEditarPerfil()
+        public FormEditarPerfil(Form anterior)
         {
+            this.anterior = anterior;
             empresa = classes.ListaEmpresa.thisForCpf(Session.Cpf);
 
             InitializeComponent();
@@ -132,7 +133,7 @@ namespace Pont_Finder.servicos
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf));
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf, anterior));
         }
     }
 }

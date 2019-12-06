@@ -294,8 +294,8 @@ namespace Pont_Finder.hospedagem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //hospedagem.Lista_de_reservas_user listRes = new Lista_de_reservas_user();
-            //FormPrincipal.MudarForm("hospedagem", listRes);
+            hospedagem.List_reservas_user user_reservas = new List_reservas_user(new Hosp_Home());
+            FormPrincipal.MudarForm("hospedagem", user_reservas);
         }
     }
 }

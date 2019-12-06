@@ -119,7 +119,7 @@ namespace Pont_Finder
                     }
                     painel.Controls.Add(Hosp);
                     Hosp.Show();
-                    navbar.BackColor = Color.FromArgb(69,172,20);
+                    navbar.BackColor = Color.MediumSeaGreen;
                     break;
 
                 case "Eventos":
@@ -173,7 +173,7 @@ namespace Pont_Finder
                     navbar.BackColor = Color.FromArgb(30, 125, 204);
                     break;
                 case "hospedagem":
-                    navbar.BackColor = Color.FromArgb(69, 172, 20);
+                    navbar.BackColor = Color.MediumSeaGreen;
                     break;
                 case "eventos":
                     navbar.BackColor = Color.FromArgb(129, 78, 210);

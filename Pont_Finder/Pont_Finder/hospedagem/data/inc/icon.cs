@@ -12,9 +12,20 @@ namespace Pont_Finder.hospedagem.data.inc
 {
     public partial class icon : UserControl
     {
-        public icon()
+
+        public icon(string icone)
         {
+
             InitializeComponent();
+
+            pb_icon.ImageLocation = icone;
+            pb_icon.Load();
+
+        }
+
+        private void pb_icon_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

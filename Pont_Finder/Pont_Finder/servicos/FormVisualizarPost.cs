@@ -78,18 +78,26 @@ namespace Pont_Finder.servicos
 
         private void Btn_back_MouseMove(object sender, MouseEventArgs e)
         {
-            btn_back.Image = Properties.Resources.back_2;
+            
+            btn_back.Image = Model.Img_Voltar_Click;
         }
 
         private void Btn_back_MouseLeave(object sender, EventArgs e)
         {
-            btn_back.Image = Properties.Resources.back_1;
+            btn_back.Image = Model.Img_Voltar;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            FormPrincipal.MudarForm("servicos",new Solicitar_Sevico());
+            if (Session.Online)
+            {
+                FormPrincipal.MudarForm("servicos", new Solicitar_Sevico(post.Id, anterior));
+            }
+            else
+            {
+                MessageBox.Show("Faça o Login Para Continuar");
+            }
+           
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -137,7 +145,7 @@ namespace Pont_Finder.servicos
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf));
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf, new FormVisualizarPost(post.Id, anterior)));
         }
 
         private void Lb_email_Click(object sender, EventArgs e)

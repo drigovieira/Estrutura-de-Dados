@@ -13,9 +13,11 @@ namespace Pont_Finder.servicos
     public partial class PerfilEmpresa : Form
     {
         classes.Empresa empresa;
+        Form anterior;
 
-        public PerfilEmpresa(long cpf)
+        public PerfilEmpresa(long cpf, Form anterior)
         {
+            this.anterior = anterior;
             empresa = classes.ListaEmpresa.thisForCpf(cpf);
 
             InitializeComponent();
@@ -101,7 +103,7 @@ namespace Pont_Finder.servicos
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new FormEditarPerfil());
+            FormPrincipal.MudarForm("servicos", new FormEditarPerfil(anterior));
         }
 
         private void Label4_Click(object sender, EventArgs e)
@@ -137,7 +139,7 @@ namespace Pont_Finder.servicos
         private void Button2_Click(object sender, EventArgs e)
         {
             if (Session.Online)
-                FormPrincipal.MudarForm("servicos", new FormUserCards(new PerfilEmpresa(empresa.Cpf)));
+                FormPrincipal.MudarForm("servicos", new FormUserCards(new PerfilEmpresa(empresa.Cpf, anterior)));
             else
                 MessageBox.Show("É necessário estar logado para gerenciar serviços");
         }
@@ -155,6 +157,21 @@ namespace Pont_Finder.servicos
         private void Bt_solicitados_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Btn_back_Click_1(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", anterior);
+        }
+
+        private void Btn_back_MouseEnter(object sender, EventArgs e)
+        {
+            btn_back.Image = Model.Img_Voltar_Click;
+        }
+
+        private void Btn_back_MouseLeave(object sender, EventArgs e)
+        {
+            btn_back.Image = Model.Img_Voltar;
         }
     }
 }

@@ -145,6 +145,7 @@
             this.pn_icons_quarto.Name = "pn_icons_quarto";
             this.pn_icons_quarto.Size = new System.Drawing.Size(25, 25);
             this.pn_icons_quarto.TabIndex = 52;
+            this.pn_icons_quarto.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_icons_quarto_Paint);
             // 
             // pn_icons_hotel
             // 
@@ -153,6 +154,7 @@
             this.pn_icons_hotel.Name = "pn_icons_hotel";
             this.pn_icons_hotel.Size = new System.Drawing.Size(25, 25);
             this.pn_icons_hotel.TabIndex = 52;
+            this.pn_icons_hotel.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_icons_hotel_Paint);
             // 
             // lb_txt7
             // 
@@ -242,7 +244,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Pont_Finder.Properties.Resources._854878;
-            this.pictureBox1.Location = new System.Drawing.Point(843, 584);
+            this.pictureBox1.Location = new System.Drawing.Point(210, 423);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -355,6 +357,7 @@
             this.pb_principal.Location = new System.Drawing.Point(42, 54);
             this.pb_principal.Name = "pb_principal";
             this.pb_principal.Size = new System.Drawing.Size(450, 225);
+            this.pb_principal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_principal.TabIndex = 36;
             this.pb_principal.TabStop = false;
             // 

@@ -45,6 +45,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tb_pesquisar = new System.Windows.Forms.TextBox();
             this.pnl_img = new System.Windows.Forms.Panel();
+            this.pn_menu = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bt_gerenciar_quartos = new System.Windows.Forms.Button();
+            this.Btn_Edit_Empresa = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,15 +71,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.Btn_Edit_Empresa = new System.Windows.Forms.Button();
-            this.bt_gerenciar_quartos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bt_ant = new System.Windows.Forms.Button();
             this.bt_prox = new System.Windows.Forms.Button();
             this.lb_pag = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.pnl_img.SuspendLayout();
+            this.pn_menu.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -87,7 +89,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(84, 138);
+            this.label13.Location = new System.Drawing.Point(84, 160);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(149, 21);
             this.label13.TabIndex = 0;
@@ -98,9 +100,9 @@
             // 
             this.bt_Cad_Empresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_Cad_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Cad_Empresa.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Cad_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Cad_Empresa.ForeColor = System.Drawing.Color.White;
-            this.bt_Cad_Empresa.Location = new System.Drawing.Point(5, 170);
+            this.bt_Cad_Empresa.Location = new System.Drawing.Point(5, 217);
             this.bt_Cad_Empresa.Name = "bt_Cad_Empresa";
             this.bt_Cad_Empresa.Size = new System.Drawing.Size(196, 38);
             this.bt_Cad_Empresa.TabIndex = 39;
@@ -154,7 +156,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(116, 565);
+            this.label10.Location = new System.Drawing.Point(116, 598);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 25);
             this.label10.TabIndex = 28;
@@ -168,7 +170,7 @@
             this.panel10.Controls.Add(this.radioButton3);
             this.panel10.Controls.Add(this.radioButton4);
             this.panel10.Controls.Add(this.label14);
-            this.panel10.Location = new System.Drawing.Point(5, 696);
+            this.panel10.Location = new System.Drawing.Point(5, 737);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(310, 108);
             this.panel10.TabIndex = 36;
@@ -255,11 +257,75 @@
             // pnl_img
             // 
             this.pnl_img.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl_img.BackgroundImage")));
+            this.pnl_img.Controls.Add(this.pn_menu);
             this.pnl_img.Controls.Add(this.label6);
-            this.pnl_img.Location = new System.Drawing.Point(0, -42);
+            this.pnl_img.Location = new System.Drawing.Point(0, 0);
             this.pnl_img.Name = "pnl_img";
             this.pnl_img.Size = new System.Drawing.Size(1264, 200);
             this.pnl_img.TabIndex = 29;
+            // 
+            // pn_menu
+            // 
+            this.pn_menu.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pn_menu.Controls.Add(this.button1);
+            this.pn_menu.Controls.Add(this.bt_gerenciar_quartos);
+            this.pn_menu.Controls.Add(this.Btn_Edit_Empresa);
+            this.pn_menu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pn_menu.Location = new System.Drawing.Point(0, 160);
+            this.pn_menu.Name = "pn_menu";
+            this.pn_menu.Size = new System.Drawing.Size(1264, 40);
+            this.pn_menu.TabIndex = 49;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(823, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 28);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Lista de Reservas";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // bt_gerenciar_quartos
+            // 
+            this.bt_gerenciar_quartos.BackColor = System.Drawing.Color.Transparent;
+            this.bt_gerenciar_quartos.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.bt_gerenciar_quartos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.bt_gerenciar_quartos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.bt_gerenciar_quartos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_gerenciar_quartos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_gerenciar_quartos.ForeColor = System.Drawing.Color.White;
+            this.bt_gerenciar_quartos.Location = new System.Drawing.Point(581, 6);
+            this.bt_gerenciar_quartos.Name = "bt_gerenciar_quartos";
+            this.bt_gerenciar_quartos.Size = new System.Drawing.Size(122, 28);
+            this.bt_gerenciar_quartos.TabIndex = 43;
+            this.bt_gerenciar_quartos.Text = "Gerenciar quartos";
+            this.bt_gerenciar_quartos.UseVisualStyleBackColor = false;
+            this.bt_gerenciar_quartos.Click += new System.EventHandler(this.bt_gerenciar_quartos_Click);
+            // 
+            // Btn_Edit_Empresa
+            // 
+            this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Edit_Empresa.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.Btn_Edit_Empresa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.Btn_Edit_Empresa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.Btn_Edit_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
+            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(320, 6);
+            this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
+            this.Btn_Edit_Empresa.Size = new System.Drawing.Size(122, 28);
+            this.Btn_Edit_Empresa.TabIndex = 42;
+            this.Btn_Edit_Empresa.Text = "Editar empresa";
+            this.Btn_Edit_Empresa.UseVisualStyleBackColor = false;
+            this.Btn_Edit_Empresa.Click += new System.EventHandler(this.Btn_Edit_Empresa_Click);
             // 
             // label6
             // 
@@ -267,7 +333,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(264, 75);
+            this.label6.Location = new System.Drawing.Point(264, 59);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(814, 46);
             this.label6.TabIndex = 0;
@@ -278,7 +344,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(45, 234);
+            this.label5.Location = new System.Drawing.Point(45, 260);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 27);
             this.label5.TabIndex = 37;
@@ -288,7 +354,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(465, 196);
+            this.label1.Location = new System.Drawing.Point(465, 222);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(378, 36);
             this.label1.TabIndex = 35;
@@ -303,7 +369,7 @@
             this.panel7.Controls.Add(this.radioButton7);
             this.panel7.Controls.Add(this.radioButton8);
             this.panel7.Controls.Add(this.label12);
-            this.panel7.Location = new System.Drawing.Point(5, 802);
+            this.panel7.Location = new System.Drawing.Point(5, 843);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(310, 129);
             this.panel7.TabIndex = 31;
@@ -380,9 +446,9 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))));
+            this.panel8.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(950, 961);
+            this.panel8.Location = new System.Drawing.Point(950, 986);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(310, 350);
             this.panel8.TabIndex = 38;
@@ -391,7 +457,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(84, 156);
+            this.label15.Location = new System.Drawing.Point(84, 178);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(159, 21);
             this.label15.TabIndex = 1;
@@ -412,7 +478,7 @@
             // 
             this.panel_center.AutoSize = true;
             this.panel_center.BackColor = System.Drawing.Color.White;
-            this.panel_center.Location = new System.Drawing.Point(320, 269);
+            this.panel_center.Location = new System.Drawing.Point(320, 295);
             this.panel_center.Name = "panel_center";
             this.panel_center.Size = new System.Drawing.Size(625, 5);
             this.panel_center.TabIndex = 33;
@@ -434,7 +500,7 @@
             this.panel11.Controls.Add(this.radioButton2);
             this.panel11.Controls.Add(this.radioButton1);
             this.panel11.Controls.Add(this.label11);
-            this.panel11.Location = new System.Drawing.Point(5, 604);
+            this.panel11.Location = new System.Drawing.Point(5, 630);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(310, 108);
             this.panel11.TabIndex = 0;
@@ -465,7 +531,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.panel4.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel4.Controls.Add(this.bt_pesquisar);
             this.panel4.Controls.Add(this.dateTimePicker2);
             this.panel4.Controls.Add(this.label4);
@@ -473,7 +539,7 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.tb_pesquisar);
-            this.panel4.Location = new System.Drawing.Point(5, 275);
+            this.panel4.Location = new System.Drawing.Point(5, 301);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 271);
             this.panel4.TabIndex = 30;
@@ -481,17 +547,17 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))));
+            this.panel2.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Location = new System.Drawing.Point(950, 604);
+            this.panel2.Location = new System.Drawing.Point(950, 630);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 350);
             this.panel2.TabIndex = 32;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))));
-            this.panel5.Location = new System.Drawing.Point(950, 275);
+            this.panel5.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel5.Location = new System.Drawing.Point(950, 301);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(310, 323);
             this.panel5.TabIndex = 41;
@@ -500,53 +566,25 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1022, 232);
+            this.label16.Location = new System.Drawing.Point(1022, 258);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(207, 27);
             this.label16.TabIndex = 0;
             this.label16.Text = "Top 5 acomodações";
             // 
-            // Btn_Edit_Empresa
-            // 
-            this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.Btn_Edit_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
-            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(5, 170);
-            this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
-            this.Btn_Edit_Empresa.Size = new System.Drawing.Size(196, 38);
-            this.Btn_Edit_Empresa.TabIndex = 42;
-            this.Btn_Edit_Empresa.Text = "Editar empresa";
-            this.Btn_Edit_Empresa.UseVisualStyleBackColor = false;
-            this.Btn_Edit_Empresa.Click += new System.EventHandler(this.Btn_Edit_Empresa_Click);
-            // 
-            // bt_gerenciar_quartos
-            // 
-            this.bt_gerenciar_quartos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_gerenciar_quartos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_gerenciar_quartos.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_gerenciar_quartos.ForeColor = System.Drawing.Color.White;
-            this.bt_gerenciar_quartos.Location = new System.Drawing.Point(207, 170);
-            this.bt_gerenciar_quartos.Name = "bt_gerenciar_quartos";
-            this.bt_gerenciar_quartos.Size = new System.Drawing.Size(196, 38);
-            this.bt_gerenciar_quartos.TabIndex = 43;
-            this.bt_gerenciar_quartos.Text = "Gerenciar quartos";
-            this.bt_gerenciar_quartos.UseVisualStyleBackColor = false;
-            this.bt_gerenciar_quartos.Click += new System.EventHandler(this.bt_gerenciar_quartos_Click);
-            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1311);
+            this.panel1.Location = new System.Drawing.Point(0, 1336);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 108);
+            this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 44;
             // 
             // bt_ant
             // 
             this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ant.Location = new System.Drawing.Point(320, 240);
+            this.bt_ant.Location = new System.Drawing.Point(320, 266);
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(75, 25);
             this.bt_ant.TabIndex = 45;
@@ -558,7 +596,7 @@
             // 
             this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_prox.Location = new System.Drawing.Point(870, 240);
+            this.bt_prox.Location = new System.Drawing.Point(870, 266);
             this.bt_prox.Name = "bt_prox";
             this.bt_prox.Size = new System.Drawing.Size(75, 25);
             this.bt_prox.TabIndex = 46;
@@ -570,25 +608,11 @@
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(622, 251);
+            this.lb_pag.Location = new System.Drawing.Point(622, 277);
             this.lb_pag.Name = "lb_pag";
             this.lb_pag.Size = new System.Drawing.Size(37, 14);
             this.lb_pag.TabIndex = 47;
             this.lb_pag.Text = "label7";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1033, 170);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 38);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Lista de Reservas";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Hosp_Home
             // 
@@ -596,14 +620,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 727);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.bt_ant);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.bt_gerenciar_quartos);
-            this.Controls.Add(this.Btn_Edit_Empresa);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel11);
@@ -620,8 +641,8 @@
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1282, 727);
-            this.MinimumSize = new System.Drawing.Size(1282, 726);
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Hosp_Home";
             this.Text = "Hosp_Home";
             this.Load += new System.EventHandler(this.Hosp_Home_Load);
@@ -629,6 +650,7 @@
             this.panel10.PerformLayout();
             this.pnl_img.ResumeLayout(false);
             this.pnl_img.PerformLayout();
+            this.pn_menu.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -690,5 +712,6 @@
         private System.Windows.Forms.Button bt_prox;
         private System.Windows.Forms.Label lb_pag;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pn_menu;
     }
 }

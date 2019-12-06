@@ -40,6 +40,7 @@
             this.pb_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_icon.TabIndex = 51;
             this.pb_icon.TabStop = false;
+            this.pb_icon.Click += new System.EventHandler(this.pb_icon_Click);
             // 
             // icon
             // 

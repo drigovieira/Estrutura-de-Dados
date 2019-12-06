@@ -113,6 +113,7 @@
             this.pn_icons_hotel.Name = "pn_icons_hotel";
             this.pn_icons_hotel.Size = new System.Drawing.Size(25, 25);
             this.pn_icons_hotel.TabIndex = 53;
+            this.pn_icons_hotel.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_icons_hotel_Paint);
             // 
             // lb_txt2
             // 

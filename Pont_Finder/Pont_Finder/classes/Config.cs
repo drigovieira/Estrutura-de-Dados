@@ -29,7 +29,7 @@ namespace Pont_Finder.classes
 
             //avalie
             avalie.PostList.XmlLoad();
-            avalie.classes.ComentarioList.XmlLoad();
+            avalie.classes.ComentariosList.XmlLoad();
             //fim avalie
 
             //eventos

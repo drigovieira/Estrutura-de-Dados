@@ -113,7 +113,7 @@ namespace Pont_Finder.hospedagem
 
         private void Bt_cadastrar_Click(object sender, EventArgs e)
         {
-            if (pb_img_1.Image == null || tb_nome.Text == "" || tb_qtdquarto.Text == "" ||
+            /*if (pb_img_1.Image == null || tb_nome.Text == "" || tb_qtdquarto.Text == "" ||
                 input_valor.Text == "" || (rb_pessoas_1.Checked == false && rb_pessoas_2.Checked == false
                 && rb_pessoas_3.Checked == false && rb_pessoas_4.Checked == false && rb_pessoas_5.Checked == false
                 && rb_pessoas_6.Checked == false) || (checkBox1.Checked == false && checkBox2.Checked == false
@@ -155,7 +155,7 @@ namespace Pont_Finder.hospedagem
                         }
                     }
 
-                    //PEGA QTD DE PESSOAS
+                    PEGA QTD DE PESSOAS
                     if (rb_pessoas_1.Checked)
                     {
                         qtd_pessoas = 1;
@@ -181,7 +181,7 @@ namespace Pont_Finder.hospedagem
                         qtd_pessoas = 6;
                     }
 
-                    // PEGA OS VALORES DOS SERVIÇOS
+                     PEGA OS VALORES DOS SERVIÇOS
                     if (checkBox1.Checked)
                     {
                         string a = "Café da manhã";
@@ -265,10 +265,10 @@ namespace Pont_Finder.hospedagem
 
                     this.Close();
 
-                    //hospedagem.Hosp_Home hp = new Hosp_Home();
-                    //FormPrincipal.MudarForm("hospedagem", hp);
+                    hospedagem.Hosp_Home hp = new Hosp_Home();
+                    FormPrincipal.MudarForm("hospedagem", hp);
 
-                    //quarto.Ativo = false;
+                    quarto.Ativo = false;
 
                     //MessageBox.Show("Quarto editado!");
                     FormPrincipal.MudarForm("hospedagem", new Listas_quartos(new Cadastro_Empresa(new Hosp_Home())));
@@ -355,10 +355,10 @@ namespace Pont_Finder.hospedagem
                     checkBox6.Checked = true;
                 }
 
-            }
-            
+            }*/
+
 
 
         }
     }
-}
+    }

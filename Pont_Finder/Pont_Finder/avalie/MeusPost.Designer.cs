@@ -36,6 +36,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
@@ -85,15 +86,19 @@
             // 
             // panel3
             // 
+            this.panel3.AutoSize = true;
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Location = new System.Drawing.Point(209, 114);
+            this.panel3.MaximumSize = new System.Drawing.Size(625, 0);
+            this.panel3.MinimumSize = new System.Drawing.Size(625, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(627, 557);
+            this.panel3.Size = new System.Drawing.Size(625, 0);
             this.panel3.TabIndex = 89;
             // 
             // panel6
             // 
             this.panel6.AutoScroll = true;
+            this.panel6.AutoSize = true;
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label11);
@@ -103,7 +108,7 @@
             this.panel6.Controls.Add(this.lb_pag);
             this.panel6.Location = new System.Drawing.Point(127, 31);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1055, 1166);
+            this.panel6.Size = new System.Drawing.Size(1010, 540);
             this.panel6.TabIndex = 90;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
@@ -133,22 +138,34 @@
             this.btn_back.MouseLeave += new System.EventHandler(this.btn_back_MouseLeave);
             this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_back_MouseMove);
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 575);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1282, 100);
+            this.panel1.TabIndex = 92;
+            // 
             // MeusPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1233, 710);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "MeusPost";
             this.Text = "MeusPost";
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -161,5 +178,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Panel panel1;
     }
 }

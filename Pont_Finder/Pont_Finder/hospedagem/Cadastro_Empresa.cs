@@ -63,7 +63,7 @@ namespace Pont_Finder.hospedagem
                         string Endereco = tb_endereco.Text;
                         long CNPJ = long.Parse(mkb_cnpj.Text);
                         int Cep = Convert.ToInt32(mkb_cep.Text);
-                        int Tel = Convert.ToInt32(mkb_phone.Text);
+                        long Telefone = long.Parse(mkb_phone.Text);
                         string descricao = tb_descricaoHotel.Text;
                         string Foto = "";
 
@@ -167,7 +167,7 @@ namespace Pont_Finder.hospedagem
                                         empresa.Endereco = Endereco;
                                         empresa.CNPJ = CNPJ;
                                         empresa.Cep = Cep;
-                                        empresa.Telefone = Tel;
+                                        empresa.Telefone = Telefone;
                                         empresa.Email = Email;
                                         empresa.CPFADMIN = cpfadmin;
 

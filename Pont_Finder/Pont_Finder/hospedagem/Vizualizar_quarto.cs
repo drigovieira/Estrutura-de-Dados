@@ -16,9 +16,11 @@ namespace Pont_Finder.hospedagem
     public partial class Vizualizar_quarto : Form
     {
 
-        private int id, qtd_pessoas, qtd_disponivel, telefone_emp;
-        private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp;
-        private long cpf_usuario;
+        private int id, qtd_pessoas, qtd_disponivel;
+        private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp, ambiente;
+        private long cpf_usuario, telefone_emp;
+        List<string> icones = new List<string>();
+        List<string> ambientes = new List<string>();
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -34,6 +36,17 @@ namespace Pont_Finder.hospedagem
         }
 
         private void lb_rs_cartao_Click(object sender, EventArgs e)
+        {
+
+        }
+        //Painel SERVICOS HOTEL
+        private void pn_icons_hotel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        //Painel SERVICOS QUARTO
+        private void pn_icons_quarto_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -85,6 +98,7 @@ namespace Pont_Finder.hospedagem
             this.valor = quarto.Valor_Diario;
             this.status = quarto.Status;
             this.ativo = quarto.Ativo;
+            //this.ambiente = quarto.Ambiente;
 
             //EMPRESA
             this.nome_emp = emp.Nomeempresa;
@@ -94,7 +108,7 @@ namespace Pont_Finder.hospedagem
             this.email_emp = emp.Email;
             this.telefone_emp = emp.Telefone;
             this.logo_emp = emp.Logo;
-
+            this.ambiente = emp.Ambiente;
             this.anterior = anterior;
 
             InitializeComponent();
@@ -107,11 +121,80 @@ namespace Pont_Finder.hospedagem
                 || s.EndsWith(".jpeg")).ToList();
 
 
-            
+
 
             foreach (var foto in fotos_empresa)
             {
                 galeria_fotos.Add(foto);
+            }
+
+
+
+
+            //LISTA DE ICONES
+
+            if (servicos.Contains("Café da tarde") == true)
+            {
+                string caminho = "..\\..\\hospedagem\\data\\icones\\cafe.png";
+                icones.Add(caminho);
+            }
+
+            if (servicos.Contains("Ar Condicionado") == true)
+            {
+                string caminho = "..\\..\\hospedagem\\data\\icones\\Ar_condicionado(1).png";
+                icones.Add(caminho);
+            }
+
+            if (servicos.Contains("Café da manhã") == true)
+            {
+                string caminho = "..\\..\\hospedagem\\data\\icones\\breakfast.png";
+                icones.Add(caminho);
+            }
+
+            if (servicos.Contains("Almoço") == true)
+            {
+                
+                string caminho = "..\\..\\hospedagem\\data\\icones\\almoço.png";
+                icones.Add(caminho);
+            }
+
+            if (servicos.Contains("TV a cabo") == true)
+            {
+                string caminho = "..\\..\\hospedagem\\data\\icones\\tv.png";
+                icones.Add(caminho);
+            }
+
+            if (servicos.Contains("Espaço PET") == true)
+            {
+                string caminho = "..\\..\\hospedagem\\data\\icones\\pet.png";
+                icones.Add(caminho);
+            }
+            if (servicos.Contains("Wi-fi") == true)
+            {
+                string caminho = "..\\..\\hospedagem\\data\\icones\\wifi.png";
+                icones.Add(caminho);
+            }
+
+            //Lista de Ambiente do HOTEL
+            if (ambiente.Contains("Estacionamento") == true)
+            {
+                string direto = "..\\..\\hospedagem\\data\\icones\\parking.png";
+                ambientes.Add(direto);
+            }
+            if (ambiente.Contains("Piscina") == true)
+            {
+                string direto = "..\\..\\hospedagem\\data\\icones\\piscina.png";
+                ambientes.Add(direto);
+            }
+            if (ambiente.Contains("Sala de Jogos") == true)
+            {
+                string direto = "..\\..\\hospedagem\\data\\icones\\sala_de_Jogos.png";
+                ambientes.Add(direto);
+            }
+            if (ambiente.Contains("Academia") == true)
+            {
+                string direto = "..\\..\\hospedagem\\data\\icones\\academia.png";
+                ambientes.Add(direto);
             }
 
         }
@@ -124,7 +207,7 @@ namespace Pont_Finder.hospedagem
 
         private void btn_back_MouseMove(object sender, MouseEventArgs e)
         {
-             btn_back.Image = Properties.Resources.back_2;
+            btn_back.Image = Properties.Resources.back_2;
             //btn_back.ImageLocation = "..//..//Resources//back-2.png";
         }
 
@@ -141,6 +224,31 @@ namespace Pont_Finder.hospedagem
 
         private void Vizualizar_quarto_Load(object sender, EventArgs e)
         {
+            int xx = 5;
+            int v = 5;
+
+            //Serviços do hotel
+            foreach (var ambi in ambientes)
+            {
+                data.inc.amb ambiente_ho = new data.inc.amb(ambi);
+
+                ambiente_ho.Location = new Point((xx), 0);
+                xx = xx + ambiente_ho.Width + 5;
+                pn_icons_hotel.Width = pn_icons_hotel.Width + 50;
+                pn_icons_hotel.Controls.Add(ambiente_ho);
+            }
+            //Serviços de Quarto
+            foreach (var item in icones)
+            {
+                data.inc.icon icone_uc = new data.inc.icon(item);
+
+                icone_uc.Location = new Point((v), 0);
+                v = icone_uc.Width + v + 5;
+                pn_icons_quarto.Width = pn_icons_quarto.Width + 180;
+                pn_icons_quarto.Controls.Add(icone_uc);
+            }
+            
+
 
             lb_nome_quarto.Text = nome;
 
@@ -189,3 +297,6 @@ namespace Pont_Finder.hospedagem
         }
     }
 }
+                
+    
+ 

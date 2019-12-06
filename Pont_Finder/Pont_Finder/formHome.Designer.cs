@@ -67,6 +67,7 @@
             // 
             this.button_Avalie.BackColor = System.Drawing.Color.Transparent;
             this.button_Avalie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_Avalie.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_Avalie.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(166)))), ((int)(((byte)(246)))));
             this.button_Avalie.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(166)))), ((int)(((byte)(246)))));
             this.button_Avalie.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(166)))), ((int)(((byte)(246)))));
@@ -95,6 +96,7 @@
             // 
             this.button_Eventos.BackColor = System.Drawing.Color.Transparent;
             this.button_Eventos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_Eventos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_Eventos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
             this.button_Eventos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
             this.button_Eventos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
@@ -123,9 +125,10 @@
             // 
             this.button_Hospedagem.BackColor = System.Drawing.Color.Transparent;
             this.button_Hospedagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button_Hospedagem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
-            this.button_Hospedagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
-            this.button_Hospedagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(172)))), ((int)(((byte)(20)))));
+            this.button_Hospedagem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_Hospedagem.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.button_Hospedagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.button_Hospedagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
             this.button_Hospedagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Hospedagem.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Hospedagem.ForeColor = System.Drawing.Color.White;
@@ -151,6 +154,7 @@
             // 
             this.bt_servicos.BackColor = System.Drawing.Color.Transparent;
             this.bt_servicos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bt_servicos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_servicos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.bt_servicos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.bt_servicos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
@@ -179,6 +183,7 @@
             // 
             this.button__Almentos.BackColor = System.Drawing.Color.Transparent;
             this.button__Almentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button__Almentos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button__Almentos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(9)))), ((int)(((byte)(25)))));
             this.button__Almentos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(9)))), ((int)(((byte)(25)))));
             this.button__Almentos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(9)))), ((int)(((byte)(25)))));
