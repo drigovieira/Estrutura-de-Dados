@@ -1,6 +1,8 @@
 ﻿using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
+using Pont_Finder.avalie.classes;
+using Pont_Finder.avalie.User_Control;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,17 +19,39 @@ namespace Pont_Finder.avalie
     {
 
         PostConstructor post;
+        private List<Comentario> ListaDePost;
         classes.Comentario comment;
+
+        private int pagTotal;
+        private int pagAtual;
+        //quantidade de cards por pag
+        private int pagQuant;
+
+        int local = 0;
+        int leftcontrol = 8;
+        int let = 0;
+        int let2 = 0;
+
         Bitmap imgLike = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
         Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
         Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
         Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
+        long postidzera;
 
         public ViewPost(long postId)
         {
+
+            
+
             InitializeComponent();
 
-            post = PostList.PosterId(postId);
+            post = PostList.thisPostId(postId);
+
+
+            
+
+
+            CarregarComentario();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -36,6 +60,12 @@ namespace Pont_Finder.avalie
         }
 
         private void ViewPost_Load(object sender, EventArgs e)
+        {
+            Recca();
+
+        }
+
+        public void Recca()
         {
             tb_descricao.Text = post.Desc;
             tb_problema.Text = post.Tipoproblema;
@@ -66,7 +96,7 @@ namespace Pont_Finder.avalie
 
 
 
-          
+
 
 
             //MAPA
@@ -95,14 +125,66 @@ namespace Pont_Finder.avalie
             gMapControl1.Overlays.Add(camada);
             camada.Markers.Add(marker);
 
-
         }
+
 
         private void bt_postar_Click(object sender, EventArgs e)
         {
 
+
+
+
+
+
+            
+            
+            
+
+
+
         }
-        
+
+        public void CarregarComentario()
+        {
+
+
+            ListaDePost = ComentariosList.PosterAtivo;
+            ListaDePost.Reverse();
+
+            pagQuant = 3;
+
+            pagTotal = ListaDePost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+            local = 0;
+
+            painelcoment.Controls.Clear();
+            int i = 0;
+            foreach (var item in ListaDePost)
+            {
+                if (i >= pagQuant)
+                    break;
+                Card_comentario t1 = new Card_comentario(item.Idcoment);
+                t1.Location = new Point(0, local);
+                local = local + t1.Height + 5;
+                painelcoment.Controls.Add(t1);
+                i++;
+            }
+
+        }
+
+
 
         private void bt_editar_Click(object sender, EventArgs e)
         {
@@ -220,6 +302,24 @@ namespace Pont_Finder.avalie
         private void Panel4_Paint(object sender, PaintEventArgs e)
         {
             
+        }
+
+        private void bt_postar_Click_1(object sender, EventArgs e)
+        {
+            Comentario post = new Comentario();
+
+            post.UserCpf = Session.Cpf;
+            post.PostId = postidzera;
+            post.Idcoment = ComentariosList.Poster.Count(); ;
+            post.Data = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+            post.Comment = tb_resposta.Text;
+            post.ImgUser = Session.Image;
+            post.Username = Session.Nome;
+            post.Ativo = true;
+
+            ComentariosList.PostAdd(post);
+
+            CarregarComentario();
         }
     }
 }

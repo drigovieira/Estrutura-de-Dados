@@ -167,7 +167,7 @@
       <DependentUpon>Visualizar.cs</DependentUpon>
     </Compile>
     <Compile Include="avalie\classes\Comentario.cs" />
-    <Compile Include="avalie\classes\ComentarioList.cs" />
+    <Compile Include="avalie\classes\ComentariosList.cs" />
     <Compile Include="avalie\classes\PostConstructor.cs" />
     <Compile Include="avalie\classes\PostList.cs" />
     <Compile Include="avalie\EditeMeusPosts.cs">
