@@ -97,6 +97,7 @@
             this.lb_data.Size = new System.Drawing.Size(514, 20);
             this.lb_data.TabIndex = 30;
             this.lb_data.Text = "Postado em:";
+            this.lb_data.Click += new System.EventHandler(this.Lb_data_Click);
             // 
             // lb_descricao
             // 

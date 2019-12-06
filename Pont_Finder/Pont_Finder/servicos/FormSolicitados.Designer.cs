@@ -30,10 +30,11 @@
         {
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.painel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.painel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // panel7
@@ -50,12 +51,13 @@
             this.panel8.Size = new System.Drawing.Size(100, 630);
             this.panel8.TabIndex = 28;
             // 
-            // panel3
+            // painel
             // 
-            this.panel3.Location = new System.Drawing.Point(215, 22);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(835, 630);
-            this.panel3.TabIndex = 20;
+            this.painel.Location = new System.Drawing.Point(215, 120);
+            this.painel.Name = "painel";
+            this.painel.Size = new System.Drawing.Size(835, 532);
+            this.painel.TabIndex = 20;
+            this.painel.Paint += new System.Windows.Forms.PaintEventHandler(this.Painel_Paint);
             // 
             // panel2
             // 
@@ -71,30 +73,40 @@
             this.panel1.Size = new System.Drawing.Size(100, 630);
             this.panel1.TabIndex = 18;
             // 
-            // painel
+            // label1
             // 
-            this.painel.AutoSize = true;
-            this.painel.BackColor = System.Drawing.Color.Gray;
-            this.painel.Location = new System.Drawing.Point(215, 167);
-            this.painel.Name = "painel";
-            this.painel.Size = new System.Drawing.Size(835, 180);
-            this.painel.TabIndex = 30;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(430, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(436, 42);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Lista de Serviços Solicitados";
             // 
-            // Visualizar_Solicitado_User
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 652);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1265, 50);
+            this.panel3.TabIndex = 31;
+            // 
+            // FormSolicitados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
-            this.Controls.Add(this.painel);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.painel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Visualizar_Solicitado_User";
+            this.Name = "FormSolicitados";
             this.Text = "Visualizar_Solicitado_User";
             this.Load += new System.EventHandler(this.Visualizar_Solicitado_User_Load);
             this.ResumeLayout(false);
@@ -106,9 +118,10 @@
 
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel painel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel painel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel3;
     }
 }
