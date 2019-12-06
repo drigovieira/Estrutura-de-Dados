@@ -106,6 +106,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -349,7 +351,7 @@
             this.panel3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(318, 1138);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(625, 1304);
+            this.panel3.Size = new System.Drawing.Size(625, 1392);
             this.panel3.TabIndex = 59;
             // 
             // label20
@@ -365,11 +367,13 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.cbEntrega);
             this.panel5.Controls.Add(this.cbCardapio);
             this.panel5.Location = new System.Drawing.Point(81, 1127);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(460, 74);
+            this.panel5.Size = new System.Drawing.Size(460, 108);
             this.panel5.TabIndex = 38;
             // 
             // cbEntrega
@@ -740,7 +744,7 @@
             this.btnCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCad.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCad.ForeColor = System.Drawing.Color.White;
-            this.btnCad.Location = new System.Drawing.Point(199, 1226);
+            this.btnCad.Location = new System.Drawing.Point(199, 1304);
             this.btnCad.Name = "btnCad";
             this.btnCad.Size = new System.Drawing.Size(220, 50);
             this.btnCad.TabIndex = 14;
@@ -944,7 +948,7 @@
             // panel9
             // 
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 2442);
+            this.panel9.Location = new System.Drawing.Point(0, 2530);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 60;
@@ -1000,6 +1004,24 @@
             this.btn_back.TabIndex = 68;
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click_1);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(58, 66);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(170, 20);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Taxa de Entrega Padrão:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(234, 65);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 24);
+            this.textBox1.TabIndex = 2;
             // 
             // Cadastro_Restaurante
             // 
@@ -1119,5 +1141,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label15;
     }
 }

@@ -44,12 +44,14 @@
             this.lb_data = new System.Windows.Forms.Label();
             this.lb_tipo_evento = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pb_imagem = new System.Windows.Forms.PictureBox();
             this.lb_nome_evento = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lb_valor_parcela = new System.Windows.Forms.Label();
+            this.lb_valor = new System.Windows.Forms.Label();
             this.lb_rs_boleto = new System.Windows.Forms.Label();
             this.lb_txt5 = new System.Windows.Forms.Label();
             this.lb_rs_cartao = new System.Windows.Forms.Label();
@@ -59,12 +61,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.bt_finalizar = new System.Windows.Forms.Button();
             this.lb_txt_titulo = new System.Windows.Forms.Label();
-            this.lb_valor = new System.Windows.Forms.Label();
-            this.lb_valor_parcela = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -183,7 +183,7 @@
             this.panel4.Controls.Add(this.lb_endereco_emp);
             this.panel4.Controls.Add(this.lb_nome_emp);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.pictureBox3);
+            this.panel4.Controls.Add(this.pb_imagem);
             this.panel4.Controls.Add(this.lb_nome_evento);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label3);
@@ -233,14 +233,15 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Tipo de evento:";
             // 
-            // pictureBox3
+            // pb_imagem
             // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(16, 43);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 80);
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
+            this.pb_imagem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_imagem.Location = new System.Drawing.Point(16, 43);
+            this.pb_imagem.Name = "pb_imagem";
+            this.pb_imagem.Size = new System.Drawing.Size(100, 80);
+            this.pb_imagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_imagem.TabIndex = 6;
+            this.pb_imagem.TabStop = false;
             // 
             // lb_nome_evento
             // 
@@ -306,6 +307,28 @@
             this.panel5.Size = new System.Drawing.Size(310, 229);
             this.panel5.TabIndex = 59;
             // 
+            // lb_valor_parcela
+            // 
+            this.lb_valor_parcela.AutoSize = true;
+            this.lb_valor_parcela.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_valor_parcela.ForeColor = System.Drawing.Color.Red;
+            this.lb_valor_parcela.Location = new System.Drawing.Point(245, 143);
+            this.lb_valor_parcela.Name = "lb_valor_parcela";
+            this.lb_valor_parcela.Size = new System.Drawing.Size(33, 36);
+            this.lb_valor_parcela.TabIndex = 58;
+            this.lb_valor_parcela.Text = "V";
+            // 
+            // lb_valor
+            // 
+            this.lb_valor.AutoSize = true;
+            this.lb_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_valor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
+            this.lb_valor.Location = new System.Drawing.Point(245, 48);
+            this.lb_valor.Name = "lb_valor";
+            this.lb_valor.Size = new System.Drawing.Size(33, 36);
+            this.lb_valor.TabIndex = 57;
+            this.lb_valor.Text = "V";
+            // 
             // lb_rs_boleto
             // 
             this.lb_rs_boleto.AutoSize = true;
@@ -354,9 +377,9 @@
             this.lb_txt6.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt6.Location = new System.Drawing.Point(14, 155);
             this.lb_txt6.Name = "lb_txt6";
-            this.lb_txt6.Size = new System.Drawing.Size(190, 21);
+            this.lb_txt6.Size = new System.Drawing.Size(181, 21);
             this.lb_txt6.TabIndex = 56;
-            this.lb_txt6.Text = "Em até 12 vezes no cartão";
+            this.lb_txt6.Text = "Em até 6 vezes no cartão";
             // 
             // lb_txt3
             // 
@@ -400,28 +423,6 @@
             this.lb_txt_titulo.TabIndex = 61;
             this.lb_txt_titulo.Text = "Selecione a forma de pagamento";
             // 
-            // lb_valor
-            // 
-            this.lb_valor.AutoSize = true;
-            this.lb_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_valor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_valor.Location = new System.Drawing.Point(245, 48);
-            this.lb_valor.Name = "lb_valor";
-            this.lb_valor.Size = new System.Drawing.Size(33, 36);
-            this.lb_valor.TabIndex = 57;
-            this.lb_valor.Text = "V";
-            // 
-            // lb_valor_parcela
-            // 
-            this.lb_valor_parcela.AutoSize = true;
-            this.lb_valor_parcela.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_valor_parcela.ForeColor = System.Drawing.Color.Red;
-            this.lb_valor_parcela.Location = new System.Drawing.Point(245, 143);
-            this.lb_valor_parcela.Name = "lb_valor_parcela";
-            this.lb_valor_parcela.Size = new System.Drawing.Size(33, 36);
-            this.lb_valor_parcela.TabIndex = 58;
-            this.lb_valor_parcela.Text = "V";
-            // 
             // Tela_compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -446,7 +447,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -473,7 +474,7 @@
         private System.Windows.Forms.Label lb_data;
         private System.Windows.Forms.Label lb_tipo_evento;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pb_imagem;
         private System.Windows.Forms.Label lb_nome_evento;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

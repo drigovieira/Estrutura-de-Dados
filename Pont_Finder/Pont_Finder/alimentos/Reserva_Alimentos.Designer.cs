@@ -66,7 +66,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel3.BackColor = System.Drawing.Color.Red;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(172, 301);
             this.panel3.Name = "panel3";
@@ -77,6 +77,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(13, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(139, 36);
@@ -85,7 +86,8 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.bt_visualizar);
             this.panel4.Controls.Add(this.ListaPedidos);
             this.panel4.Controls.Add(this.label7);
@@ -98,7 +100,6 @@
             // 
             this.bt_visualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
             this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_visualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_visualizar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_visualizar.ForeColor = System.Drawing.Color.White;
             this.bt_visualizar.Location = new System.Drawing.Point(122, 419);

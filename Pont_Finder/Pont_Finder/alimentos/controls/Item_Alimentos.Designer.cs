@@ -119,7 +119,6 @@
             // 
             this.bt_addLista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
             this.bt_addLista.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_addLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_addLista.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_addLista.ForeColor = System.Drawing.Color.White;
             this.bt_addLista.Location = new System.Drawing.Point(494, 138);

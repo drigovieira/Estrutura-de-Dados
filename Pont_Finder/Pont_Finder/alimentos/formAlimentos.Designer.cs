@@ -124,10 +124,9 @@
             // 
             this.remFiltro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.remFiltro.FlatAppearance.BorderSize = 0;
-            this.remFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.remFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remFiltro.ForeColor = System.Drawing.Color.White;
-            this.remFiltro.Location = new System.Drawing.Point(199, 494);
+            this.remFiltro.Location = new System.Drawing.Point(200, 494);
             this.remFiltro.Name = "remFiltro";
             this.remFiltro.Size = new System.Drawing.Size(103, 37);
             this.remFiltro.TabIndex = 45;
@@ -228,7 +227,6 @@
             // Btn_Edit_Empresa
             // 
             this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.Btn_Edit_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
             this.Btn_Edit_Empresa.Location = new System.Drawing.Point(18, 215);

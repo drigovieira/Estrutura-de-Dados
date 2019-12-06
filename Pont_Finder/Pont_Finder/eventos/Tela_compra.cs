@@ -14,15 +14,31 @@ namespace Pont_Finder.eventos
     {
 
         Classes.CoEvento edit;
+        classes.CaEmpresa outro;
         private int idremove;
+        Form anterior;
+        int idpost;
 
 
 
         public Tela_compra(int idpost)
         {
+            this.idpost = idpost;
+            this.anterior = anterior;
+
             InitializeComponent();
             edit = Classes.Eventos_List.thisPostId(idpost);
             this.idremove = idpost;
+
+            edit = Classes.Eventos_List.PosterId(idpost);
+            lb_tipo_evento.Text = edit.Categoria;
+            lb_data.Text = edit.Data;
+            lb_local.Text = edit.Local;
+            pb_imagem.ImageLocation = edit.Imagem1;
+            lb_valor.Text = edit.Valor;
+            lb_nome_evento.Text = edit.Nome;
+
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
