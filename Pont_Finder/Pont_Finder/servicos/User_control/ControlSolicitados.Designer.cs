@@ -1,6 +1,6 @@
 ﻿namespace Pont_Finder.servicos.User_control
 {
-    partial class Card_User_Pedidos
+    partial class ControlSolicitados
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -119,6 +119,7 @@
             this.lb_descricao.Size = new System.Drawing.Size(500, 65);
             this.lb_descricao.TabIndex = 53;
             this.lb_descricao.Text = "Descricao:";
+            this.lb_descricao.Click += new System.EventHandler(this.Lb_descricao_Click);
             // 
             // pb_icone
             // 
