@@ -79,7 +79,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.BackColor = System.Drawing.Color.Red;
             this.panel2.Controls.Add(this.pb_pesquisar);
             this.panel2.Controls.Add(this.PesquisaBox);
             this.panel2.Controls.Add(this.label3);
@@ -148,7 +148,7 @@
             // 
             // Top5
             // 
-            this.Top5.BackColor = System.Drawing.Color.PapayaWhip;
+            this.Top5.BackColor = System.Drawing.Color.Red;
             this.Top5.Location = new System.Drawing.Point(950, 318);
             this.Top5.Name = "Top5";
             this.Top5.Size = new System.Drawing.Size(310, 392);
@@ -241,7 +241,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel8.BackColor = System.Drawing.Color.Red;
             this.panel8.Controls.Add(this.label15);
             this.panel8.Location = new System.Drawing.Point(950, 883);
             this.panel8.Name = "panel8";
@@ -260,7 +260,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel5.BackColor = System.Drawing.Color.Red;
             this.panel5.Controls.Add(this.label13);
             this.panel5.Location = new System.Drawing.Point(950, 716);
             this.panel5.Name = "panel5";
