@@ -27,5 +27,10 @@ namespace Pont_Finder.eventos
         {
            
         }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("eventos", new eventos.FormEventos());
+        }
     }
 }

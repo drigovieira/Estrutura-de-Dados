@@ -27,12 +27,14 @@ namespace Pont_Finder.eventos
         int let = 0;
         int let2 = 0;
 
-
+        Form anterior;
 
 
         public FormEventos()
         {
             InitializeComponent();
+
+           
 
             CarregarPosts();
 
