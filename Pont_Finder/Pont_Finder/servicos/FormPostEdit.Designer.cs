@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPostEdit));
             this.label4 = new System.Windows.Forms.Label();
-            this.tb_descricao = new System.Windows.Forms.TextBox();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_titulo = new System.Windows.Forms.TextBox();
@@ -45,6 +44,7 @@
             this.tb_valor = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.tb_descricao = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_valor)).BeginInit();
@@ -63,19 +63,6 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Descrição";
             this.label4.Click += new System.EventHandler(this.Label4_Click);
-            // 
-            // tb_descricao
-            // 
-            this.tb_descricao.BackColor = System.Drawing.Color.White;
-            this.tb_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_descricao.Location = new System.Drawing.Point(32, 50);
-            this.tb_descricao.MaxLength = 1200;
-            this.tb_descricao.Multiline = true;
-            this.tb_descricao.Name = "tb_descricao";
-            this.tb_descricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_descricao.Size = new System.Drawing.Size(563, 333);
-            this.tb_descricao.TabIndex = 4;
-            this.tb_descricao.TextChanged += new System.EventHandler(this.tb_descricao_TextChanged);
             // 
             // pb_icone
             // 
@@ -145,7 +132,7 @@
             this.publicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.publicar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.publicar.ForeColor = System.Drawing.Color.White;
-            this.publicar.Location = new System.Drawing.Point(465, 427);
+            this.publicar.Location = new System.Drawing.Point(463, 427);
             this.publicar.Name = "publicar";
             this.publicar.Size = new System.Drawing.Size(130, 35);
             this.publicar.TabIndex = 5;
@@ -238,14 +225,23 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.tb_descricao);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.cancelar);
-            this.panel6.Controls.Add(this.tb_descricao);
             this.panel6.Controls.Add(this.publicar);
             this.panel6.Location = new System.Drawing.Point(531, 74);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(624, 493);
             this.panel6.TabIndex = 42;
+            // 
+            // tb_descricao
+            // 
+            this.tb_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F);
+            this.tb_descricao.Location = new System.Drawing.Point(30, 50);
+            this.tb_descricao.Name = "tb_descricao";
+            this.tb_descricao.Size = new System.Drawing.Size(563, 333);
+            this.tb_descricao.TabIndex = 11;
+            this.tb_descricao.Text = "";
             // 
             // FormPostEdit
             // 
@@ -278,7 +274,6 @@
         #endregion
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tb_descricao;
         private System.Windows.Forms.PictureBox pb_icone;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_titulo;
@@ -292,5 +287,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown tb_valor;
+        private System.Windows.Forms.RichTextBox tb_descricao;
     }
 }

@@ -32,7 +32,8 @@
             this.panel_right = new System.Windows.Forms.Panel();
             this.bt_sogestao = new System.Windows.Forms.Button();
             this.bt_empresa = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.menu = new System.Windows.Forms.Panel();
+            this.bt_solicitados = new System.Windows.Forms.Button();
             this.bt_mensagens = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,8 +60,7 @@
             this.rb_categoria = new System.Windows.Forms.RadioButton();
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_proxFull = new System.Windows.Forms.Button();
-            this.bt_solicitados = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.menu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -81,7 +81,7 @@
             this.bt_sogestao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_sogestao.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_sogestao.ForeColor = System.Drawing.Color.White;
-            this.bt_sogestao.Location = new System.Drawing.Point(821, 5);
+            this.bt_sogestao.Location = new System.Drawing.Point(821, 7);
             this.bt_sogestao.Name = "bt_sogestao";
             this.bt_sogestao.Size = new System.Drawing.Size(122, 28);
             this.bt_sogestao.TabIndex = 4;
@@ -102,18 +102,31 @@
             this.bt_empresa.UseVisualStyleBackColor = true;
             this.bt_empresa.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // panel1
+            // menu
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.bt_solicitados);
-            this.panel1.Controls.Add(this.bt_mensagens);
-            this.panel1.Controls.Add(this.bt_sogestao);
-            this.panel1.Controls.Add(this.bt_empresa);
-            this.panel1.Location = new System.Drawing.Point(0, 150);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 40);
-            this.panel1.TabIndex = 19;
+            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.menu.Controls.Add(this.bt_solicitados);
+            this.menu.Controls.Add(this.bt_mensagens);
+            this.menu.Controls.Add(this.bt_sogestao);
+            this.menu.Controls.Add(this.bt_empresa);
+            this.menu.Location = new System.Drawing.Point(0, 150);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(1265, 40);
+            this.menu.TabIndex = 19;
+            // 
+            // bt_solicitados
+            // 
+            this.bt_solicitados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_solicitados.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_solicitados.ForeColor = System.Drawing.Color.White;
+            this.bt_solicitados.Location = new System.Drawing.Point(655, 5);
+            this.bt_solicitados.Name = "bt_solicitados";
+            this.bt_solicitados.Size = new System.Drawing.Size(122, 28);
+            this.bt_solicitados.TabIndex = 10;
+            this.bt_solicitados.Text = "Serviços Solicitados";
+            this.bt_solicitados.UseVisualStyleBackColor = true;
+            this.bt_solicitados.Click += new System.EventHandler(this.Bt_solicitados_Click);
             // 
             // bt_mensagens
             // 
@@ -427,19 +440,6 @@
             this.bt_proxFull.UseVisualStyleBackColor = false;
             this.bt_proxFull.Click += new System.EventHandler(this.Bt_proxFull_Click);
             // 
-            // bt_solicitados
-            // 
-            this.bt_solicitados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_solicitados.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_solicitados.ForeColor = System.Drawing.Color.White;
-            this.bt_solicitados.Location = new System.Drawing.Point(655, 5);
-            this.bt_solicitados.Name = "bt_solicitados";
-            this.bt_solicitados.Size = new System.Drawing.Size(122, 28);
-            this.bt_solicitados.TabIndex = 10;
-            this.bt_solicitados.Text = "Serviços Solicitados";
-            this.bt_solicitados.UseVisualStyleBackColor = true;
-            this.bt_solicitados.Click += new System.EventHandler(this.Bt_solicitados_Click);
-            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -458,7 +458,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menu);
             this.Controls.Add(this.panel_center);
             this.Controls.Add(this.panel_right);
             this.Controls.Add(this.panel_left);
@@ -468,7 +468,7 @@
             this.Name = "FormServicos";
             this.Text = "servicos";
             this.Load += new System.EventHandler(this.Formservicos_Load);
-            this.panel1.ResumeLayout(false);
+            this.menu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -487,7 +487,7 @@
         private System.Windows.Forms.Panel panel_right;
         private System.Windows.Forms.Button bt_empresa;
         private System.Windows.Forms.Button bt_sogestao;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel menu;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;

@@ -31,6 +31,10 @@ namespace Pont_Finder.servicos
                 {
                     bt_negociar.Text = "Editar Post";
                 }
+                if (empresa.Cpf == Session.Cpf)
+                {
+                    bt_solicitar.Text = "Solicitações";
+                }
             }              
         }
 
@@ -73,7 +77,15 @@ namespace Pont_Finder.servicos
 
         private void Btn_back_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", anterior);
+            if (anterior.Name.Equals("FormServicos"))
+            {
+                FormPrincipal.MudarForm("servicos", new FormServicos());
+            }
+            else
+            {
+                FormPrincipal.MudarForm("servicos", anterior);
+            }
+           
         }
 
         private void Btn_back_MouseMove(object sender, MouseEventArgs e)
@@ -91,7 +103,15 @@ namespace Pont_Finder.servicos
         {
             if (Session.Online)
             {
-                FormPrincipal.MudarForm("servicos", new Solicitar_Sevico(post.Id, anterior));
+                if (empresa.Cpf == Session.Cpf)
+                {
+                    FormPrincipal.MudarForm("servicos", new FormSolicitadosEmpresa());
+                }
+                else
+                {
+                    FormPrincipal.MudarForm("servicos", new Solicitar_Sevico(post.Id, anterior));
+                }
+               
             }
             else
             {
@@ -159,6 +179,16 @@ namespace Pont_Finder.servicos
         }
 
         private void Lb_titulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lb_descricao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

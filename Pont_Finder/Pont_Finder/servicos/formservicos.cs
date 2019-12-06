@@ -27,9 +27,8 @@ namespace Pont_Finder.servicos
             }
             else
             {
-                empresa = null;
-                bt_mensagens.Enabled = false;        
-                bt_empresa.Enabled = false;
+                empresa = null;  
+                menu.Enabled = false;
             }
 
             if (empresa != null)
@@ -63,14 +62,7 @@ namespace Pont_Finder.servicos
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (Session.Online)
-            {
-                FormPrincipal.MudarForm("servicos", new SolicitarServico());
-            }
-            else
-            {
-                MessageBox.Show("É necessário estar logado para solicitar um Serviço");
-            }
+                FormPrincipal.MudarForm("servicos", new SolicitarServico());      
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
@@ -180,54 +172,59 @@ namespace Pont_Finder.servicos
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                if (tb_pesquisar.Text.Equals("!log"))
+                if (rb_semfiltro.Checked || rb_servico.Checked || rb_recente.Checked)
                 {
-                    Session.Login("admin", "admin");
-                    FormPrincipal.MudarForm("servicos", new FormServicos());
-                }
-
-
-                ListaDePost.Clear();
-                foreach (var item in classes.PostList.PostsAtivo)
-                {
-                    if (item.Titulo.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                    ListaDePost.Clear();
+                    foreach (var item in classes.PostList.PostsAtivo)
                     {
-                        ListaDePost.Add(item);
+                        if (item.Titulo.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                        {
+                            ListaDePost.Add(item);
+                        }
                     }
+                    ListaDePost.Reverse();
+                    Pesquisa();
                 }
-
-                y = 5;
-                panel_center.Height = 180;
-                panel_center.Controls.Clear();
-                int i = 0;
-
-                ListaDePost.Reverse();
-
-                pagTotal = ListaDePost.Count;
-                if ((pagTotal % pagQuant) != 0)
+                else if (rb_antigo.Checked)
                 {
-                    pagTotal = (pagTotal / pagQuant);
-                    pagTotal++;
+                    ListaDePost.Clear();
+                    foreach (var item in classes.PostList.PostsAtivo)
+                    {
+                        if (item.Titulo.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                        {
+                            ListaDePost.Add(item);
+                        }
+                    }
+                    Pesquisa();
                 }
-                else
+                else if (rb_empresa.Checked)
                 {
-                    pagTotal = pagTotal / pagQuant;
+                    ListaDePost.Clear();
+                    foreach (var item in classes.PostList.PostsAtivo)
+                    {
+                        classes.Empresa emp = classes.ListaEmpresa.ForCpf(item.Cpf);
+                        if (emp.Nome.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim())
+                            || emp.Nome.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                        {
+                            ListaDePost.Add(item);
+                        }
+                    }
+                    ListaDePost.Reverse();
+                    Pesquisa();
                 }
-                pagAtual = 1;
-
-                lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
-
-
-                foreach (var item in ListaDePost)
+                else if (rb_categoria.Checked)
                 {
-                    if (i >= pagQuant)
-                        break;
-                    PostCard a = new PostCard(item.Id);
-                    a.Location = new Point(0, (y));
-                    y = y + a.Height + 10;
-                    panel_center.Height = panel_center.Height + 180;
-                    panel_center.Controls.Add(a);
-                    i++;
+                    ListaDePost.Clear();
+                    foreach (var item in classes.PostList.PostsAtivo)
+                    {
+                        classes.Empresa emp = classes.ListaEmpresa.ForCpf(item.Cpf);
+                        if (emp.Categoria.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                        {
+                            ListaDePost.Add(item);
+                        }
+                    }
+                    ListaDePost.Reverse();
+                    Pesquisa();
                 }
             }
         }
@@ -267,6 +264,7 @@ namespace Pont_Finder.servicos
 
         public void LoadPosts()
         {
+            
             ListaDePost = classes.PostList.PostsAtivo;
             ListaDePost.Reverse();
 

@@ -134,7 +134,7 @@
             this.bt_solicitados.Name = "bt_solicitados";
             this.bt_solicitados.Size = new System.Drawing.Size(250, 35);
             this.bt_solicitados.TabIndex = 6;
-            this.bt_solicitados.Text = "Serviços solicitados";
+            this.bt_solicitados.Text = "Serviços Solicitados";
             this.bt_solicitados.UseVisualStyleBackColor = false;
             this.bt_solicitados.Click += new System.EventHandler(this.Bt_solicitados_Click);
             // 
