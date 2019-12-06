@@ -82,6 +82,7 @@
             this.bt_finalizar.TabIndex = 25;
             this.bt_finalizar.Text = "Finalizar Reserva";
             this.bt_finalizar.UseVisualStyleBackColor = false;
+            this.bt_finalizar.Click += new System.EventHandler(this.bt_finalizar_Click);
             // 
             // pn_icons
             // 

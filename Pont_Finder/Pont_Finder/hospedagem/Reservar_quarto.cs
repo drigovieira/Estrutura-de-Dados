@@ -20,6 +20,11 @@ namespace Pont_Finder.hospedagem
         private long cpf_user, telefone_emp;
         private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp;
 
+        private void bt_finalizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void lb_data_saida_Click(object sender, EventArgs e)
         {
 

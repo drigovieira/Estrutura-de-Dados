@@ -25,6 +25,7 @@ namespace Pont_Finder.classes
             //hospedagem
             hospedagem.hostList.CarregarXML();
             hospedagem.roomList.CarregarXML();
+            hospedagem.classes.reserveList.CarregarXML();
             //fim hospedagem
 
             //avalie
@@ -59,6 +60,7 @@ namespace Pont_Finder.classes
             //hospedagem
             hospedagem.hostList.XmlSave();
             hospedagem.roomList.XmlSave();
+            hospedagem.classes.reserveList.XmlSave();
             //fim hospedagem
 
             //avalie

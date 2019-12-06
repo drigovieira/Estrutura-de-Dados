@@ -992,6 +992,7 @@
     <Content Include="eventos\Data\imagens\offImage.jpg" />
     <Content Include="eventos\Data\Postagem_Eventos.xml" />
     <Content Include="hospedagem\data\quartos.xml" />
+    <Content Include="hospedagem\data\reservas.xml" />
     <Content Include="obj\Debug\Pont_Finder.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Pont_Finder.exe" />
     <Content Include="obj\Debug\Pont_Finder.pdb" />
