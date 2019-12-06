@@ -538,6 +538,12 @@
     <Compile Include="servicos\FormVisualizarPost.Designer.cs">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\Grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\Grid.Designer.cs">
+      <DependentUpon>Grid.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\PerfilEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -887,6 +893,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\FormVisualizarPost.resx">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicos\Grid.resx">
+      <DependentUpon>Grid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\PerfilEmpresa.resx">
       <DependentUpon>PerfilEmpresa.cs</DependentUpon>

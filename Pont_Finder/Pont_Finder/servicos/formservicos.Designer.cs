@@ -33,6 +33,7 @@
             this.bt_solicitar = new System.Windows.Forms.Button();
             this.bt_empresa = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.bt_mensagens = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@
             this.rb_categoria = new System.Windows.Forms.RadioButton();
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_proxFull = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -114,6 +114,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 40);
             this.panel1.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(115, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_2);
             // 
             // bt_mensagens
             // 
@@ -426,16 +436,6 @@
             this.bt_proxFull.Text = "↠";
             this.bt_proxFull.UseVisualStyleBackColor = false;
             this.bt_proxFull.Click += new System.EventHandler(this.Bt_proxFull_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(115, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_2);
             // 
             // FormServicos
             // 
