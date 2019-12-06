@@ -1,4 +1,5 @@
-﻿using Pont_Finder.alimentos.controls;
+﻿using Pont_Finder.alimentos.classes;
+using Pont_Finder.alimentos.controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,6 @@ namespace Pont_Finder.alimentos
 {
     public partial class Reserva_Alimentos : Form
     {
-        private static List<Cardapio> lista = new List<Cardapio>();
         private int local, Company;
         public Reserva_Alimentos(int idEmpresa)
         {
@@ -22,28 +22,12 @@ namespace Pont_Finder.alimentos
             InitializeComponent();
             Listar();
             AttLista();
-        }
-        public static void Add(object[] item)
-        {
-            Cardapio cad = new Cardapio();
-            cad.Id = int.Parse(item[0].ToString());
-            cad.Nome = item[1].ToString();
-            cad.Image = item[2].ToString();
-            List<string> ingr = new List<string>();
-            foreach (var i in item[3].ToString().Split('/'))
-            {
-                ingr.Add(i);
-            }
-            cad.Ingredientes = ingr;
-            cad.Preco = float.Parse(item[4].ToString());
-            cad.Qtd = float.Parse(item[5].ToString());
-            lista.Add(cad);
-        }
+        }                
         public void AttLista()
         {
             ListaPedidos.Controls.Clear();
             int local = 0;
-            foreach (var i in lista)
+            foreach (var i in Carrinho.selectAll())
             {
                 itemPedido item = new itemPedido(i.Preco, i.Nome, i.Image, i.Qtd, i.Ingredientes, i.Id);               
                 ListaPedidos.Location = new Point(0, local);
@@ -54,12 +38,14 @@ namespace Pont_Finder.alimentos
         }
         private void Btn_back_Click(object sender, EventArgs e)
         {
+            Carrinho.Drop();
             formAlimentos homeAlimentos = new formAlimentos();
             FormPrincipal.MudarForm("alimentos", homeAlimentos);
         }
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
         {
+            Carrinho.Drop();
             if (ListaPedidos.Controls != null)
             {
                 Delivery_Alimentos delivery = new Delivery_Alimentos();

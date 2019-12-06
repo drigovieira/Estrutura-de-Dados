@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using Pont_Finder.alimentos.classes;
 
 namespace Pont_Finder.alimentos
 {
@@ -21,6 +22,8 @@ namespace Pont_Finder.alimentos
 
         private void Bt_addLista_Click(object sender, EventArgs e)
         {
+            if (bt_addLista.Text.Equals("Pedir"))
+            {
                 object[] obj = new object[6];
                 obj[0] = IdItem;
                 obj[1] = NomeItem;
@@ -28,10 +31,16 @@ namespace Pont_Finder.alimentos
                 obj[3] = maisIngredientes;
                 obj[4] = PrecoItem;
                 obj[5] = qtdItem;
-                Reserva_Alimentos.Add(obj);
-            
-            Reserva_Alimentos reserva = new Reserva_Alimentos(Empresa);
-            reserva.AttLista();            
+                Carrinho.Add(obj);
+                bt_addLista.BackColor = System.Drawing.Color.DimGray;
+                bt_addLista.Text = "Remover";
+            }
+            else
+            {
+                Carrinho.Remove(IdItem);
+                bt_addLista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
+                bt_addLista.Text = "Pedir";
+            }
         }
 
         public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id, int idEmpresa, bool reserva)
@@ -116,7 +125,7 @@ namespace Pont_Finder.alimentos
         {
             NomeComida.Text = NomeItem;                
             IngredienteComida.Text = maisIngredientes;
-            qtdComida.Text = "KG "+ qtdItem.ToString("N2");                        
+            qtdComida.Text = "Kg "+ qtdItem.ToString("N2");                        
             CategoriasPrato.Text = maisCategoria;
             lb_rs.Text = PrecoItem.ToString("C", CultureInfo.CurrentCulture);
             if (ExRes == false)

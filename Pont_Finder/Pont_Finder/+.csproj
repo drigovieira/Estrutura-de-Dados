@@ -99,6 +99,7 @@
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\classes\Cardapio.cs" />
+    <Compile Include="alimentos\classes\Carrinho.cs" />
     <Compile Include="alimentos\classes\Company.cs" />
     <Compile Include="alimentos\classes\CompanyList.cs" />
     <Compile Include="alimentos\classes\delivery.cs" />

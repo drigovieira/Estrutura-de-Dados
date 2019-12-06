@@ -126,7 +126,7 @@
             this.bt_addLista.Name = "bt_addLista";
             this.bt_addLista.Size = new System.Drawing.Size(110, 34);
             this.bt_addLista.TabIndex = 34;
-            this.bt_addLista.Text = "Reservar";
+            this.bt_addLista.Text = "Pedir";
             this.bt_addLista.UseVisualStyleBackColor = false;
             this.bt_addLista.Click += new System.EventHandler(this.Bt_addLista_Click);
             // 
@@ -168,7 +168,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.Excluir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.bt_addLista);
@@ -179,6 +178,7 @@
             this.Controls.Add(this.NomeComida);
             this.Controls.Add(this.IngredienteComida);
             this.Controls.Add(this.qtdComida);
+            this.Controls.Add(this.Excluir);
             this.Name = "Item_Alimentos";
             this.Size = new System.Drawing.Size(623, 188);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Item_Alimentos_Paint);
