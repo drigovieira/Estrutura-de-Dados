@@ -26,7 +26,7 @@ namespace Pont_Finder.alimentos
             {
                 if (item.IdEmpresa == Company)
                 {
-                    Item_Alimentos AliItem = new Item_Alimentos(item.Preco, item.Nome, item.Image, item.Qtd, item.Ingredientes, item.Categoria, item.Id);
+                    Item_Alimentos AliItem = new Item_Alimentos(item.Preco, item.Nome, item.Image, item.Qtd, item.Ingredientes, item.Categoria, item.Id, Company);
                     AliItem.Location = new Point(0, local);
                     local = local + AliItem.Height + 5;
                     Cardapio.Controls.Add(AliItem);

@@ -17,6 +17,12 @@ namespace Pont_Finder.alimentos.controls
         private float qtd;
         private List<string> ingredientes;
         private int id;
+
+        private void ItemPedido_Paint(object sender, PaintEventArgs e)
+        {
+            Item.Text = nome;
+        }
+
         public itemPedido(float precoItem, string nomeItem, string imageItem, float QtdItem, List<string> Ingredientes, int ID)
         {
             preco = precoItem;
