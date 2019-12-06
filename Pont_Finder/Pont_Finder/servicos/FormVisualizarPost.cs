@@ -141,7 +141,8 @@ namespace Pont_Finder.servicos
                     }
                     if (existe)
                     {
-                        MessageBox.Show("A Solicitação já foi efetuada");
+                        FormPrincipal.MudarForm("servicos", new socialist.FormSociaListUser(post.Id));
+                        //MessageBox.Show("O chat já foi criado anteriormente");
                     }
                     else
                     {
@@ -149,7 +150,8 @@ namespace Pont_Finder.servicos
                         solicitacao.PostId = post.Id;
                         solicitacao.CpfUser = Session.Cpf;
                         socialist.ChatList.Chats.Add(solicitacao);
-                        MessageBox.Show("A Solicitação foi Efetuada com Sucesso!");
+                        FormPrincipal.MudarForm("servicos", new socialist.FormSociaListUser(post.Id));
+                        //MessageBox.Show("O chat foi criado com Sucesso!");
                     }
 
 
@@ -158,7 +160,7 @@ namespace Pont_Finder.servicos
             }
             else
             {
-                MessageBox.Show("É necessário estar logado para efetuar uma solicitação!");
+                MessageBox.Show("É necessário estar logado para enviar uma mensagem");
             }
            
         }

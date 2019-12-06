@@ -16,5 +16,10 @@ namespace Pont_Finder.servicos.socialist
         {
             InitializeComponent();
         }
+
+        private void FormUserChat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

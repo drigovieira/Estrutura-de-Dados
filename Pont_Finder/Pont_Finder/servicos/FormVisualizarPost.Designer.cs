@@ -230,7 +230,7 @@
             this.bt_solicitar.Name = "bt_solicitar";
             this.bt_solicitar.Size = new System.Drawing.Size(130, 35);
             this.bt_solicitar.TabIndex = 33;
-            this.bt_solicitar.Text = "Solicitar serviço";
+            this.bt_solicitar.Text = "Solicitar Serviço";
             this.bt_solicitar.UseVisualStyleBackColor = false;
             this.bt_solicitar.Click += new System.EventHandler(this.button1_Click);
             // 

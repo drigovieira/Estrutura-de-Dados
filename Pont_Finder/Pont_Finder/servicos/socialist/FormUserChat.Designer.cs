@@ -61,6 +61,7 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "FormUserChat";
             this.Text = "FormUserChat";
+            this.Load += new System.EventHandler(this.FormUserChat_Load);
             this.ResumeLayout(false);
 
         }
