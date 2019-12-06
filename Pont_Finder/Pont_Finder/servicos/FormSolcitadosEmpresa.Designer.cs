@@ -34,7 +34,10 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.painel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -78,10 +81,26 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btn_back);
             this.panel2.Location = new System.Drawing.Point(110, 22);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(100, 630);
             this.panel2.TabIndex = 33;
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(27, 98);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 39;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
+            this.btn_back.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_back_MouseClick);
+            this.btn_back.MouseEnter += new System.EventHandler(this.Btn_back_MouseEnter);
+            this.btn_back.MouseLeave += new System.EventHandler(this.Btn_back_MouseLeave);
             // 
             // panel1
             // 
@@ -108,6 +127,8 @@
             this.Name = "FormSolicitadosEmpresa";
             this.Text = "ServicosADM";
             this.Load += new System.EventHandler(this.FormSolicitadosEmpresa_Load);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,5 +143,6 @@
         private System.Windows.Forms.Panel painel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }
