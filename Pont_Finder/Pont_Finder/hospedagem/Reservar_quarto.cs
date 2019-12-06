@@ -41,7 +41,7 @@ namespace Pont_Finder.hospedagem
         private void btn_back_Click(object sender, EventArgs e)
         {
             
-            FormPrincipal.MudarForm("hospedagem", new Vizualizar_quarto(0, anterior));
+            FormPrincipal.MudarForm("hospedagem", new Vizualizar_quarto(id_quarto,anterior));
         }
         
 
@@ -54,8 +54,7 @@ namespace Pont_Finder.hospedagem
         {
             if (Session.Online)
             {
-
-                
+               
                 classes.Reserva reserva = new classes.Reserva();
 
                 Quarto quarto = new Quarto();
@@ -66,7 +65,6 @@ namespace Pont_Finder.hospedagem
 
                 InitializeComponent();
                 this.id_quarto = quarto.ID;
-
                 //Long
                 this.cpf_user = cpf_usuario;
                 this.telefone_emp = emp.Telefone;
@@ -141,7 +139,9 @@ namespace Pont_Finder.hospedagem
             }
             
         }
+        
 
+        
         private void rb_boleto_CheckedChanged(object sender, EventArgs e)
         {
             {
