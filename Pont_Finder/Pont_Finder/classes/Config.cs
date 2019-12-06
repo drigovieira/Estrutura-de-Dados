@@ -64,8 +64,8 @@ namespace Pont_Finder.classes
             //fim hospedagem
 
             //avalie
-            //avalie.PostList.XmlSave();
-            //avalie.classes.ComentarioList.XmlSave();
+            avalie.PostList.XmlSave();
+            avalie.classes.ComentariosList.XmlSave();
             //fim avalie
 
             //eventos

@@ -171,14 +171,14 @@ namespace Pont_Finder.avalie.classes
                 itens.Idcoment = long.Parse(item.Element("idcoment").Value);
                 itens.PostId = long.Parse(item.Element("id").Value);
                 itens.UserCpf = long.Parse(item.Element("cpf").Value);
-                itens.Username = item.Element("data").Value;
-                itens.ImgUser = item.Element("data").Value;
+                itens.Username = item.Element("nome").Value;
+                itens.ImgUser = item.Element("imguser").Value;
                 itens.Comment = (item.Element("comment").Value);
                 itens.Data = item.Element("data").Value;
                 itens.Ativo = bool.Parse(item.Element("ativo").Value);
 
 
-                string sLikes = item.Element("like").Value;
+                string sLikes = item.Element("likes").Value;
                 string[] userLike = sLikes.Split('*');
 
                 foreach (var like in userLike)
