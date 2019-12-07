@@ -32,7 +32,7 @@ namespace Pont_Finder.alimentos
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
         {
-            if (Carrinho.selectAll().Count == 0)
+            if (Carrinho.selectAll().Count != 0)
             {
                 Delivery_Alimentos delivery = new Delivery_Alimentos();
                 FormPrincipal.MudarForm("alimentos", delivery);

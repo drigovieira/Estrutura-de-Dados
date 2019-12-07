@@ -38,6 +38,8 @@
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.cbCardapio = new System.Windows.Forms.CheckBox();
+            this.cbDelivery = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel10.SuspendLayout();
@@ -46,6 +48,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.cbDelivery);
+            this.panel1.Controls.Add(this.cbCardapio);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(5, 301);
             this.panel1.Name = "panel1";
@@ -139,6 +143,31 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Informe o seu cardápio para os clientes!";
             // 
+            // cbCardapio
+            // 
+            this.cbCardapio.AutoSize = true;
+            this.cbCardapio.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCardapio.Location = new System.Drawing.Point(24, 105);
+            this.cbCardapio.Name = "cbCardapio";
+            this.cbCardapio.Size = new System.Drawing.Size(279, 24);
+            this.cbCardapio.TabIndex = 3;
+            this.cbCardapio.Text = "Disponibilizar Cardápio para exibição";
+            this.cbCardapio.UseVisualStyleBackColor = true;
+            this.cbCardapio.CheckedChanged += new System.EventHandler(this.CbCardapio_CheckedChanged);
+            // 
+            // cbDelivery
+            // 
+            this.cbDelivery.AutoSize = true;
+            this.cbDelivery.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDelivery.Location = new System.Drawing.Point(24, 135);
+            this.cbDelivery.Name = "cbDelivery";
+            this.cbDelivery.Size = new System.Drawing.Size(133, 24);
+            this.cbDelivery.TabIndex = 4;
+            this.cbDelivery.Text = "Utilizar Delivery";
+            this.cbDelivery.UseVisualStyleBackColor = true;
+            this.cbDelivery.Visible = false;
+            this.cbDelivery.CheckedChanged += new System.EventHandler(this.CbDelivery_CheckedChanged);
+            // 
             // Cadastro_Produto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +188,7 @@
             this.Name = "Cadastro_Produto";
             this.Text = "Cadastro_Produto";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -177,5 +207,7 @@
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox cbCardapio;
+        private System.Windows.Forms.CheckBox cbDelivery;
     }
 }
