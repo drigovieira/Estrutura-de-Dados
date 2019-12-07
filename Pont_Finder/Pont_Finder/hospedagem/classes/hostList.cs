@@ -137,7 +137,7 @@ namespace Pont_Finder.hospedagem
                 emp.CNPJ = long.Parse(item.Element("cnpj").Value);
                 emp.Endereco = item.Element("endereco").Value;
                 emp.Cep = int.Parse(item.Element("cep").Value);
-                emp.Telefone = int.Parse(item.Element("telefone").Value);
+                emp.Telefone = long.Parse(item.Element("telefone").Value);
                 emp.Email = item.Element("email").Value;
                 emp.Foto = item.Element("foto").Value;
                 emp.Tipo = item.Element("tipo").Value;
