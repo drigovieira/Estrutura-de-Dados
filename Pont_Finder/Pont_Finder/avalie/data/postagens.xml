@@ -1,17 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <posts>
-  <post>
-    <id>0</id>
-    <nome>leo</nome>
-    <img>..//..//avalie//data//imagens//posts//0.jpg</img>
-    <cpf>47746352863</cpf>
-    <imgperfil>..//..//data//images//users//47746352863.jpg</imgperfil>
-    <tempohora>27/11/2019 22:40</tempohora>
-    <desc>Tem Muito Uchiha andando na rua</desc>
-    <tipoproblema>Outros</tipoproblema>
-    <localizacao>rua das azaleias</localizacao>
-    <ativo>true</ativo>
-    <resolvido>false</resolvido>
-    <like>1,47746352863</like>
-  </post>
+  
 </posts>
