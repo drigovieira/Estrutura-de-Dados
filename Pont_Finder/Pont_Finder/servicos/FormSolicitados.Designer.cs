@@ -32,10 +32,10 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.painel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,21 @@
             this.panel2.Size = new System.Drawing.Size(100, 630);
             this.panel2.TabIndex = 19;
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(27, 98);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 32;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
+            this.btn_back.MouseEnter += new System.EventHandler(this.Btn_back_MouseEnter);
+            this.btn_back.MouseLeave += new System.EventHandler(this.Btn_back_MouseLeave);
+            this.btn_back.MouseHover += new System.EventHandler(this.Btn_back_MouseHover);
+            // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(5, 22);
@@ -94,21 +109,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1265, 50);
             this.panel3.TabIndex = 31;
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.Transparent;
-            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
-            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.Location = new System.Drawing.Point(27, 98);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(40, 40);
-            this.btn_back.TabIndex = 32;
-            this.btn_back.TabStop = false;
-            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
-            this.btn_back.MouseEnter += new System.EventHandler(this.Btn_back_MouseEnter);
-            this.btn_back.MouseLeave += new System.EventHandler(this.Btn_back_MouseLeave);
-            this.btn_back.MouseHover += new System.EventHandler(this.Btn_back_MouseHover);
             // 
             // FormSolicitados
             // 
@@ -143,7 +143,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Panel panel3;
     }
 }

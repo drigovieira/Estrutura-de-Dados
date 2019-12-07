@@ -16,8 +16,10 @@ namespace Pont_Finder.servicos.User_control
         classes.Solicitado solicitado;
         classes.Post post;
         classes.Empresa empresa;
-        public ControlSolicitados(int id)
+        Form anterior;
+        public ControlSolicitados(int id, Form anterior)
         {
+            this.anterior = anterior;
             solicitado = classes.SolicitadoList.thisForId(id);
             post = classes.PostList.thisForId(solicitado.Postid);
             empresa = classes.ListaEmpresa.thisForCpf(post.Cpf);
@@ -47,6 +49,17 @@ namespace Pont_Finder.servicos.User_control
         private void ControlSolicitados_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Bt_obter_Click_1(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, anterior));
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            solicitado.Status = "Em análise";
+            FormPrincipal.MudarForm("servicos", anterior);
         }
     }
 }

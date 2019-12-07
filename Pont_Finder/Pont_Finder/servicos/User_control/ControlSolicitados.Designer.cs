@@ -54,6 +54,7 @@
             this.button3.TabIndex = 43;
             this.button3.Text = "Cancelar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // pb_icone
             // 
@@ -110,6 +111,7 @@
             this.bt_obter.TabIndex = 38;
             this.bt_obter.Text = "Visualizar";
             this.bt_obter.UseVisualStyleBackColor = false;
+            this.bt_obter.Click += new System.EventHandler(this.Bt_obter_Click_1);
             // 
             // lb_status
             // 
