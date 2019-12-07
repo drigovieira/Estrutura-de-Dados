@@ -12,7 +12,7 @@ namespace Pont_Finder.alimentos
 {
     public partial class Delivery_Alimentos : Form
     {
-        public Delivery_Alimentos()
+        public Delivery_Alimentos(int idEmpresa, object[] listaPedidos)
         {
             InitializeComponent();
             Pagamento_Dinheiro form = new Pagamento_Dinheiro();
