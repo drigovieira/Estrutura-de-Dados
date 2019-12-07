@@ -43,7 +43,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rb_cartao = new System.Windows.Forms.RadioButton();
-            this.rb_boleto = new System.Windows.Forms.RadioButton();
+            this.rb_Dinheiro = new System.Windows.Forms.RadioButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lb_txt2 = new System.Windows.Forms.Label();
             this.lb_txt1 = new System.Windows.Forms.Label();
@@ -57,20 +57,20 @@
             this.lb_txt6 = new System.Windows.Forms.Label();
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Troco = new System.Windows.Forms.MaskedTextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Troco = new System.Windows.Forms.MaskedTextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -208,7 +208,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.rb_cartao);
-            this.panel2.Controls.Add(this.rb_boleto);
+            this.panel2.Controls.Add(this.rb_Dinheiro);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.lb_txt2);
             this.panel2.Controls.Add(this.lb_txt1);
@@ -235,16 +235,18 @@
             this.rb_cartao.TabIndex = 5;
             this.rb_cartao.TabStop = true;
             this.rb_cartao.UseVisualStyleBackColor = true;
+            this.rb_cartao.CheckedChanged += new System.EventHandler(this.Rb_cartao_CheckedChanged);
             // 
-            // rb_boleto
+            // rb_Dinheiro
             // 
-            this.rb_boleto.AutoSize = true;
-            this.rb_boleto.Location = new System.Drawing.Point(15, 51);
-            this.rb_boleto.Name = "rb_boleto";
-            this.rb_boleto.Size = new System.Drawing.Size(14, 13);
-            this.rb_boleto.TabIndex = 4;
-            this.rb_boleto.TabStop = true;
-            this.rb_boleto.UseVisualStyleBackColor = true;
+            this.rb_Dinheiro.AutoSize = true;
+            this.rb_Dinheiro.Location = new System.Drawing.Point(15, 51);
+            this.rb_Dinheiro.Name = "rb_Dinheiro";
+            this.rb_Dinheiro.Size = new System.Drawing.Size(14, 13);
+            this.rb_Dinheiro.TabIndex = 4;
+            this.rb_Dinheiro.TabStop = true;
+            this.rb_Dinheiro.UseVisualStyleBackColor = true;
+            this.rb_Dinheiro.CheckedChanged += new System.EventHandler(this.Rb_Dinheiro_CheckedChanged);
             // 
             // pictureBox2
             // 
@@ -374,6 +376,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.maskedTextBox1);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.label20);
             this.panel5.Controls.Add(this.checkBox1);
@@ -383,7 +386,6 @@
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.textBox7);
             this.panel5.Controls.Add(this.textBox1);
-            this.panel5.Controls.Add(this.textBox2);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label7);
@@ -392,6 +394,49 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(625, 327);
             this.panel5.TabIndex = 60;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(303, 279);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(275, 16);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "(Informe o valor que será entregue ao Entregador)*";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(129, 260);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(231, 16);
+            this.label20.TabIndex = 61;
+            this.label20.Text = "(Marque somente se for necessário troco)*";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(132, 278);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(64, 21);
+            this.checkBox1.TabIndex = 60;
+            this.checkBox1.Text = "Troco:";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
+            // 
+            // Troco
+            // 
+            this.Troco.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F);
+            this.Troco.Location = new System.Drawing.Point(197, 278);
+            this.Troco.Name = "Troco";
+            this.Troco.Size = new System.Drawing.Size(100, 24);
+            this.Troco.TabIndex = 59;
+            this.Troco.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.Troco.ValidatingType = typeof(int);
+            this.Troco.Visible = false;
             // 
             // textBox3
             // 
@@ -428,7 +473,7 @@
             this.textBox7.Location = new System.Drawing.Point(131, 107);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(360, 30);
+            this.textBox7.Size = new System.Drawing.Size(360, 24);
             this.textBox7.TabIndex = 55;
             // 
             // textBox1
@@ -437,19 +482,9 @@
             this.textBox1.Location = new System.Drawing.Point(131, 54);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(273, 30);
+            this.textBox1.Size = new System.Drawing.Size(273, 24);
             this.textBox1.TabIndex = 45;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(421, 54);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(70, 30);
-            this.textBox2.TabIndex = 46;
-            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // label9
             // 
@@ -491,47 +526,14 @@
             this.label3.TabIndex = 41;
             this.label3.Text = "Sua Localização";
             // 
-            // Troco
+            // maskedTextBox1
             // 
-            this.Troco.Location = new System.Drawing.Point(197, 278);
-            this.Troco.Name = "Troco";
-            this.Troco.Size = new System.Drawing.Size(100, 20);
-            this.Troco.TabIndex = 59;
-            this.Troco.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.Troco.ValidatingType = typeof(int);
-            this.Troco.Visible = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(132, 278);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(64, 21);
-            this.checkBox1.TabIndex = 60;
-            this.checkBox1.Text = "Troco:";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(129, 260);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(231, 16);
-            this.label20.TabIndex = 61;
-            this.label20.Text = "(Marque somente se for necessário troco)*";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(303, 280);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(275, 16);
-            this.label1.TabIndex = 62;
-            this.label1.Text = "(Informe o valor que será entregue ao Entregador)*";
+            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F);
+            this.maskedTextBox1.Location = new System.Drawing.Point(421, 53);
+            this.maskedTextBox1.Mask = "0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 24);
+            this.maskedTextBox1.TabIndex = 63;
             // 
             // Delivery_Alimentos
             // 
@@ -581,7 +583,7 @@
         private System.Windows.Forms.Label lb_txt_titulo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton rb_cartao;
-        private System.Windows.Forms.RadioButton rb_boleto;
+        private System.Windows.Forms.RadioButton rb_Dinheiro;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lb_txt2;
         private System.Windows.Forms.Label lb_txt1;
@@ -601,7 +603,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox3;
@@ -611,5 +612,6 @@
         private System.Windows.Forms.MaskedTextBox Troco;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

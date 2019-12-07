@@ -36,6 +36,7 @@ namespace Pont_Finder.alimentos
             taxaEntrega.Text = CompanyList.selectAll()[idEmpresa].Taxa.ToString("C", CultureInfo.CurrentCulture);
             total = total + CompanyList.selectAll()[idEmpresa].Taxa;
             lb_rs_Total.Text = total.ToString("C", CultureInfo.CurrentCulture);
+            rb_Dinheiro.Checked = true;
         }
 
         private void Panel3_Paint(object sender, PaintEventArgs e)
@@ -72,6 +73,43 @@ namespace Pont_Finder.alimentos
             else
             {
                 Troco.Visible = false;
+            }
+        }
+
+        private void Rb_Dinheiro_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rb_Dinheiro.Checked == true)
+            {
+                label20.Visible = true;
+                checkBox1.Visible = true;
+                Troco.Visible = true;
+                label1.Visible = true;
+            }
+            else
+            {
+                label20.Visible = false;
+                checkBox1.Visible = false;
+                Troco.Visible = false;
+                label1.Visible = false;
+            }
+        }
+
+        private void Rb_cartao_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rb_cartao.Checked == true)
+            {
+                label20.Visible = false;
+                checkBox1.Visible = false;
+                Troco.Visible = false;
+                label1.Visible = false;
+                checkBox1.Checked = false;
+            }
+            else
+            {
+                label20.Visible = true;
+                checkBox1.Visible = true;
+                Troco.Visible = true;
+                label1.Visible = true;
             }
         }
     }
