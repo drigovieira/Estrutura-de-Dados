@@ -47,33 +47,30 @@ namespace Pont_Finder.servicos
         private void button3_Click(object sender, EventArgs e)
         {
 
-
-            bool validation = false;
-
-
-            if ((cb_servico.SelectedItem + "").Equals(""))
-            {
-                MessageBox.Show("Selecione o tipo de serviço");
-
-            }
-            else if (Validation.Cnpj(mb_cnpj.Text))
-            {
-                validation = true;
-            }
+            if (tb_nome.Text.Trim().Length < 6)
+                MessageBox.Show("Verifique o Nome da Empresa");
+            else if (tb_fantasia.Text.Trim().Length < 2)
+                MessageBox.Show("Verifique o Nome Fantasia da Empresa");
+            else if ((cb_servico.SelectedItem + "").Equals(""))
+                MessageBox.Show("Selecione um Tipo de Serviço");
+            else if (!Validation.Cnpj(mb_cnpj.Text))
+                MessageBox.Show("Cnpj Inválido");
+            else if (!Validation.Email(tb_email.Text))
+                MessageBox.Show("Email Inválido");
+            else if (tb_telefone.Text.Length < 10)
+                MessageBox.Show("Verifique o Telefone");
+            else if (tb_cep.Text.Length < 8)
+                MessageBox.Show("Verifique o Cep");
+            else if (tb_endereco.Text.Length < 6)
+                MessageBox.Show("Verifique o Endereço");
             else
             {
-                MessageBox.Show("Cnpj Invalido");
-            }
 
-
-
-            if (validation)
-            {
                 string nome = tb_nome.Text;
                 string fatasia = tb_fantasia.Text;
                 long cnpj = long.Parse(mb_cnpj.Text);
-                string endereco = tb_endereco.Text + ", " + mb_cep.Text;
-                string telefone = mb_phone.Text;
+                string endereco = tb_endereco.Text + ", " + tb_cep.Text;
+                string telefone = tb_telefone.Text;
                 string email = tb_email.Text;
                 string servico = cb_servico.SelectedItem + "";
 
@@ -97,11 +94,11 @@ namespace Pont_Finder.servicos
                 }
 
                 classes.Empresa tmp = new classes.Empresa();
-                tmp.Nome = nome;
-                tmp.NomeFantasia = fatasia;
-                tmp.Email = email;
+                tmp.Nome = nome.Trim();
+                tmp.NomeFantasia = fatasia.Trim();
+                tmp.Email = email.Trim().ToLower();
                 tmp.Cnpj = cnpj;
-                tmp.Endereco = endereco;
+                tmp.Endereco = endereco.Trim();
                 tmp.Telefone = telefone;
                 tmp.Cpf = Session.Cpf;
                 tmp.Image = link;
@@ -109,8 +106,8 @@ namespace Pont_Finder.servicos
                 tmp.Categoria = servico;
                 classes.ListaEmpresa.Add(tmp);
                 FormPrincipal.MudarForm("servicos", new FormServicos());
+
             }
-        
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -161,6 +158,26 @@ namespace Pont_Finder.servicos
         private void Tb_email_TextChanged(object sender, EventArgs e)
         {
             tb_email.MaxLength = 50;
+        }
+
+        private void Bt_icone_Click(object sender, EventArgs e)
+        {
+            if (openIcone.ShowDialog() == DialogResult.OK)
+            {
+                pb_icone.ImageLocation = openIcone.FileName;
+                pb_icone.Load();
+                img = true;
+            }
+        }
+
+        private void Panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Panel16_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

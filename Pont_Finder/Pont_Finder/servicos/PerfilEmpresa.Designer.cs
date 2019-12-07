@@ -110,6 +110,7 @@
             this.pb_icone.Location = new System.Drawing.Point(29, 50);
             this.pb_icone.Name = "pb_icone";
             this.pb_icone.Size = new System.Drawing.Size(250, 250);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_icone.TabIndex = 0;
             this.pb_icone.TabStop = false;
             this.pb_icone.Click += new System.EventHandler(this.PictureBox1_Click);
