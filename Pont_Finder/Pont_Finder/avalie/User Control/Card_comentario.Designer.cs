@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.nome = new System.Windows.Forms.Label();
-            this.comentarios = new System.Windows.Forms.Label();
             this.datapost = new System.Windows.Forms.Label();
             this.pb_down = new System.Windows.Forms.PictureBox();
             this.pb_up = new System.Windows.Forms.PictureBox();
@@ -38,6 +37,7 @@
             this.lb_deslike = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
             this.imagem = new Pont_Finder.classes.CircularPicBox();
+            this.comentarios = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagem)).BeginInit();
@@ -52,19 +52,6 @@
             this.nome.Size = new System.Drawing.Size(30, 16);
             this.nome.TabIndex = 27;
             this.nome.Text = "user";
-            // 
-            // comentarios
-            // 
-            this.comentarios.BackColor = System.Drawing.Color.Transparent;
-            this.comentarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.comentarios.Font = new System.Drawing.Font("Dubai", 9F);
-            this.comentarios.Location = new System.Drawing.Point(5, 98);
-            this.comentarios.Margin = new System.Windows.Forms.Padding(5);
-            this.comentarios.Name = "comentarios";
-            this.comentarios.Size = new System.Drawing.Size(367, 118);
-            this.comentarios.TabIndex = 30;
-            this.comentarios.Text = "Descricao:";
-            this.comentarios.Click += new System.EventHandler(this.lb_comentario_Click);
             // 
             // datapost
             // 
@@ -121,6 +108,7 @@
             this.bt_editar.Text = "Editar";
             this.bt_editar.UseVisualStyleBackColor = false;
             this.bt_editar.Visible = false;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
             // bt_remover
             // 
@@ -135,6 +123,7 @@
             this.bt_remover.TabIndex = 36;
             this.bt_remover.Text = "Remover";
             this.bt_remover.UseVisualStyleBackColor = false;
+            this.bt_remover.Click += new System.EventHandler(this.bt_remover_Click);
             // 
             // lb_deslike
             // 
@@ -166,12 +155,21 @@
             this.imagem.TabIndex = 39;
             this.imagem.TabStop = false;
             // 
+            // comentarios
+            // 
+            this.comentarios.Location = new System.Drawing.Point(5, 120);
+            this.comentarios.Multiline = true;
+            this.comentarios.Name = "comentarios";
+            this.comentarios.Size = new System.Drawing.Size(345, 96);
+            this.comentarios.TabIndex = 40;
+            // 
             // Card_comentario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.comentarios);
             this.Controls.Add(this.imagem);
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.bt_remover);
@@ -180,7 +178,6 @@
             this.Controls.Add(this.pb_up);
             this.Controls.Add(this.lb_like);
             this.Controls.Add(this.datapost);
-            this.Controls.Add(this.comentarios);
             this.Controls.Add(this.nome);
             this.Name = "Card_comentario";
             this.Size = new System.Drawing.Size(525, 219);
@@ -195,7 +192,6 @@
         #endregion
 
         private System.Windows.Forms.Label nome;
-        private System.Windows.Forms.Label comentarios;
         private System.Windows.Forms.Label datapost;
         private System.Windows.Forms.PictureBox pb_down;
         private System.Windows.Forms.PictureBox pb_up;
@@ -204,5 +200,6 @@
         private System.Windows.Forms.Label lb_deslike;
         private System.Windows.Forms.Label lb_like;
         private Pont_Finder.classes.CircularPicBox imagem;
+        private System.Windows.Forms.TextBox comentarios;
     }
 }

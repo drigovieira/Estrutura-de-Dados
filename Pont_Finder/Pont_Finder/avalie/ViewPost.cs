@@ -65,6 +65,16 @@ namespace Pont_Finder.avalie
         {
             Recca();
 
+            if (Session.Online)
+            {
+                bt_postar.Visible = true;
+                tb_resposta.Visible = true;
+            }
+            else
+            {
+
+            }
+
         }
 
         public void Recca()
@@ -423,6 +433,11 @@ namespace Pont_Finder.avalie
 
                 lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
             }
+        }
+
+        private void tb_resposta_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
