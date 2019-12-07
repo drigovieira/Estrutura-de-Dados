@@ -55,6 +55,7 @@
             this.Solicitar.TabIndex = 43;
             this.Solicitar.Text = "Fazer Pedido";
             this.Solicitar.UseVisualStyleBackColor = false;
+            this.Solicitar.Click += new System.EventHandler(this.Solicitar_Click);
             // 
             // Pagamento_Dinheiro
             // 

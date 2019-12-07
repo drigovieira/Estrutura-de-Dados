@@ -62,5 +62,17 @@ namespace Pont_Finder.alimentos
         {
 
         }
+
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked == true)
+            {
+                Troco.Visible = true;
+            }
+            else
+            {
+                Troco.Visible = false;
+            }
+        }
     }
 }
