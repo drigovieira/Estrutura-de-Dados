@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Delivery_Alimentos));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.Pedidos = new System.Windows.Forms.ListBox();
             this.lb_data_pedido = new System.Windows.Forms.Label();
             this.lb_nome_restaurante = new System.Windows.Forms.Label();
             this.lb_endereco_emp = new System.Windows.Forms.Label();
@@ -48,9 +49,9 @@
             this.lb_txt1 = new System.Windows.Forms.Label();
             this.panel_center = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lb_rs_boleto = new System.Windows.Forms.Label();
+            this.taxaEntrega = new System.Windows.Forms.Label();
+            this.subtotal = new System.Windows.Forms.Label();
+            this.lb_rs_Total = new System.Windows.Forms.Label();
             this.lb_txt5 = new System.Windows.Forms.Label();
             this.lb_txt4 = new System.Windows.Forms.Label();
             this.lb_txt6 = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Pedidos = new System.Windows.Forms.ListBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -93,6 +93,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 447);
             this.panel4.TabIndex = 52;
+            // 
+            // Pedidos
+            // 
+            this.Pedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F);
+            this.Pedidos.FormattingEnabled = true;
+            this.Pedidos.ItemHeight = 17;
+            this.Pedidos.Location = new System.Drawing.Point(16, 166);
+            this.Pedidos.Name = "Pedidos";
+            this.Pedidos.Size = new System.Drawing.Size(250, 191);
+            this.Pedidos.TabIndex = 52;
             // 
             // lb_data_pedido
             // 
@@ -275,9 +285,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.lb_rs_boleto);
+            this.panel3.Controls.Add(this.taxaEntrega);
+            this.panel3.Controls.Add(this.subtotal);
+            this.panel3.Controls.Add(this.lb_rs_Total);
             this.panel3.Controls.Add(this.lb_txt5);
             this.panel3.Controls.Add(this.lb_txt4);
             this.panel3.Controls.Add(this.lb_txt6);
@@ -287,36 +297,36 @@
             this.panel3.Size = new System.Drawing.Size(310, 229);
             this.panel3.TabIndex = 59;
             // 
-            // label2
+            // taxaEntrega
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(153, 102);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 21);
-            this.label2.TabIndex = 58;
-            this.label2.Text = "Value";
+            this.taxaEntrega.AutoSize = true;
+            this.taxaEntrega.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.taxaEntrega.Location = new System.Drawing.Point(153, 102);
+            this.taxaEntrega.Name = "taxaEntrega";
+            this.taxaEntrega.Size = new System.Drawing.Size(49, 21);
+            this.taxaEntrega.TabIndex = 58;
+            this.taxaEntrega.Text = "Value";
             // 
-            // label1
+            // subtotal
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(153, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 21);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Value";
+            this.subtotal.AutoSize = true;
+            this.subtotal.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subtotal.Location = new System.Drawing.Point(153, 55);
+            this.subtotal.Name = "subtotal";
+            this.subtotal.Size = new System.Drawing.Size(49, 21);
+            this.subtotal.TabIndex = 57;
+            this.subtotal.Text = "Value";
             // 
-            // lb_rs_boleto
+            // lb_rs_Total
             // 
-            this.lb_rs_boleto.AutoSize = true;
-            this.lb_rs_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_rs_boleto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs_boleto.Location = new System.Drawing.Point(153, 143);
-            this.lb_rs_boleto.Name = "lb_rs_boleto";
-            this.lb_rs_boleto.Size = new System.Drawing.Size(49, 36);
-            this.lb_rs_boleto.TabIndex = 55;
-            this.lb_rs_boleto.Text = "R$";
+            this.lb_rs_Total.AutoSize = true;
+            this.lb_rs_Total.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rs_Total.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
+            this.lb_rs_Total.Location = new System.Drawing.Point(153, 143);
+            this.lb_rs_Total.Name = "lb_rs_Total";
+            this.lb_rs_Total.Size = new System.Drawing.Size(49, 36);
+            this.lb_rs_Total.TabIndex = 55;
+            this.lb_rs_Total.Text = "R$";
             // 
             // lb_txt5
             // 
@@ -473,16 +483,6 @@
             this.label3.TabIndex = 41;
             this.label3.Text = "Sua Localização";
             // 
-            // Pedidos
-            // 
-            this.Pedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F);
-            this.Pedidos.FormattingEnabled = true;
-            this.Pedidos.ItemHeight = 17;
-            this.Pedidos.Location = new System.Drawing.Point(16, 166);
-            this.Pedidos.Name = "Pedidos";
-            this.Pedidos.Size = new System.Drawing.Size(250, 191);
-            this.Pedidos.TabIndex = 52;
-            // 
             // Delivery_Alimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -537,13 +537,13 @@
         private System.Windows.Forms.Label lb_txt1;
         private System.Windows.Forms.Panel panel_center;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lb_rs_boleto;
+        private System.Windows.Forms.Label lb_rs_Total;
         private System.Windows.Forms.Label lb_txt5;
         private System.Windows.Forms.Label lb_txt4;
         private System.Windows.Forms.Label lb_txt6;
         private System.Windows.Forms.Label lb_txt3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label taxaEntrega;
+        private System.Windows.Forms.Label subtotal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;

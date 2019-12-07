@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,16 @@ namespace Pont_Finder.alimentos
             {
                 Pedidos.Items.Add(i.Nome + " x " + i.Quantos);
             }
-            lb_data_pedido.Text = DateTime.Today.ToString();
+            lb_data_pedido.Text = DateTime.Today.Date.ToShortDateString();
+            float total = 0;
+            foreach (var i in Carrinho.selectAll())
+            {
+                total += i.Preco * i.Quantos;
+            }
+            subtotal.Text = total.ToString("C", CultureInfo.CurrentCulture);
+            taxaEntrega.Text = CompanyList.selectAll()[idEmpresa].Taxa.ToString("C", CultureInfo.CurrentCulture);
+            total = total + CompanyList.selectAll()[idEmpresa].Taxa;
+            lb_rs_Total.Text = total.ToString("C", CultureInfo.CurrentCulture);
         }
 
         private void Panel3_Paint(object sender, PaintEventArgs e)
