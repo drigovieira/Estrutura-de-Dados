@@ -588,6 +588,7 @@
             this.checkBox1.TabIndex = 30;
             this.checkBox1.Text = "Café da manhã";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -610,6 +611,7 @@
             this.checkBox2.TabIndex = 31;
             this.checkBox2.Text = "Ar condicionado";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // label7
             // 

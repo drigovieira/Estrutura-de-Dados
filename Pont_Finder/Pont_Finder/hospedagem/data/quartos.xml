@@ -1,3 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <roomlist>
+  <quarto>
+    <id>0</id>
+    <empresa>11111111111111</empresa>
+    <nome>Monster</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>2</qtd_casal>
+    <qtd_solteiro>3</qtd_solteiro>
+    <qtd_pessoas>7</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
+    <valor>800</valor>
+    <foto>..//..//hospedagem//data//images//empresas//11111111111111//quartos//0//Monster.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>1</id>
+    <empresa>11111111111111</empresa>
+    <nome>Espasr</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>2</qtd_casal>
+    <qtd_solteiro>1</qtd_solteiro>
+    <qtd_pessoas>5</qtd_pessoas>
+    <qtd_quartos>3</qtd_quartos>
+    <servicos> * Café da manhã * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
+    <valor>600</valor>
+    <foto>..//..//hospedagem//data//images//empresas//11111111111111//quartos//1//Espasr.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
 </roomlist>

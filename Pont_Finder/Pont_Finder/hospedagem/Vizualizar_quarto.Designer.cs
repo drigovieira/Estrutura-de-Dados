@@ -170,7 +170,7 @@
             // 
             this.lb_parcelas.AutoSize = true;
             this.lb_parcelas.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_parcelas.Location = new System.Drawing.Point(976, 212);
+            this.lb_parcelas.Location = new System.Drawing.Point(950, 208);
             this.lb_parcelas.Name = "lb_parcelas";
             this.lb_parcelas.Size = new System.Drawing.Size(49, 21);
             this.lb_parcelas.TabIndex = 25;
@@ -180,7 +180,7 @@
             // 
             this.lb_txt5.AutoSize = true;
             this.lb_txt5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt5.Location = new System.Drawing.Point(880, 146);
+            this.lb_txt5.Location = new System.Drawing.Point(854, 142);
             this.lb_txt5.Name = "lb_txt5";
             this.lb_txt5.Size = new System.Drawing.Size(28, 21);
             this.lb_txt5.TabIndex = 25;
@@ -190,7 +190,7 @@
             // 
             this.lb_txt4.AutoSize = true;
             this.lb_txt4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt4.Location = new System.Drawing.Point(821, 109);
+            this.lb_txt4.Location = new System.Drawing.Point(795, 105);
             this.lb_txt4.Name = "lb_txt4";
             this.lb_txt4.Size = new System.Drawing.Size(186, 21);
             this.lb_txt4.TabIndex = 25;
@@ -200,7 +200,7 @@
             // 
             this.lb_txt3.AutoSize = true;
             this.lb_txt3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt3.Location = new System.Drawing.Point(887, 31);
+            this.lb_txt3.Location = new System.Drawing.Point(871, 22);
             this.lb_txt3.Name = "lb_txt3";
             this.lb_txt3.Size = new System.Drawing.Size(45, 17);
             this.lb_txt3.TabIndex = 25;
@@ -365,7 +365,7 @@
             // 
             this.lb_txt6.AutoSize = true;
             this.lb_txt6.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt6.Location = new System.Drawing.Point(814, 212);
+            this.lb_txt6.Location = new System.Drawing.Point(788, 208);
             this.lb_txt6.Name = "lb_txt6";
             this.lb_txt6.Size = new System.Drawing.Size(211, 21);
             this.lb_txt6.TabIndex = 35;
@@ -376,7 +376,7 @@
             this.lb_rs_cartao.AutoSize = true;
             this.lb_rs_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs_cartao.ForeColor = System.Drawing.Color.Red;
-            this.lb_rs_cartao.Location = new System.Drawing.Point(835, 167);
+            this.lb_rs_cartao.Location = new System.Drawing.Point(809, 163);
             this.lb_rs_cartao.Name = "lb_rs_cartao";
             this.lb_rs_cartao.Size = new System.Drawing.Size(49, 36);
             this.lb_rs_cartao.TabIndex = 34;
@@ -388,7 +388,7 @@
             this.lb_rs_boleto.AutoSize = true;
             this.lb_rs_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs_boleto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs_boleto.Location = new System.Drawing.Point(833, 54);
+            this.lb_rs_boleto.Location = new System.Drawing.Point(807, 50);
             this.lb_rs_boleto.Name = "lb_rs_boleto";
             this.lb_rs_boleto.Size = new System.Drawing.Size(63, 46);
             this.lb_rs_boleto.TabIndex = 34;
@@ -451,7 +451,7 @@
             this.panel1.Controls.Add(this.lb_nome_quarto);
             this.panel1.Location = new System.Drawing.Point(114, 29);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1055, 1166);
+            this.panel1.Size = new System.Drawing.Size(1082, 1166);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
@@ -459,7 +459,7 @@
             // 
             this.dt_fim.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_fim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_fim.Location = new System.Drawing.Point(785, 357);
+            this.dt_fim.Location = new System.Drawing.Point(759, 353);
             this.dt_fim.Name = "dt_fim";
             this.dt_fim.Size = new System.Drawing.Size(240, 21);
             this.dt_fim.TabIndex = 57;
@@ -469,7 +469,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(783, 330);
+            this.label4.Location = new System.Drawing.Point(757, 326);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 17);
             this.label4.TabIndex = 56;
@@ -478,7 +478,7 @@
             // dt_ini
             // 
             this.dt_ini.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_ini.Location = new System.Drawing.Point(785, 291);
+            this.dt_ini.Location = new System.Drawing.Point(759, 287);
             this.dt_ini.Name = "dt_ini";
             this.dt_ini.Size = new System.Drawing.Size(240, 21);
             this.dt_ini.TabIndex = 55;
@@ -488,7 +488,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(783, 265);
+            this.label3.Location = new System.Drawing.Point(757, 261);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 17);
             this.label3.TabIndex = 54;
@@ -499,7 +499,7 @@
             this.bt_reservar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.bt_reservar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_reservar.ForeColor = System.Drawing.Color.White;
-            this.bt_reservar.Location = new System.Drawing.Point(828, 402);
+            this.bt_reservar.Location = new System.Drawing.Point(802, 398);
             this.bt_reservar.Name = "bt_reservar";
             this.bt_reservar.Size = new System.Drawing.Size(164, 44);
             this.bt_reservar.TabIndex = 26;
