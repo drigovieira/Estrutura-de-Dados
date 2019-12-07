@@ -15,6 +15,7 @@ namespace Pont_Finder.alimentos
         private int numero, cep, ID;
         private long telComercial, cpf;
         private bool status, sttsCardapio, sttsEntrega;
+        private float taxa;
 
         public string Nome
         {
@@ -96,6 +97,11 @@ namespace Pont_Finder.alimentos
         {
             get { return cpf; }
             set { cpf = value; }
+        }
+        public float Taxa
+        {
+            get { return taxa; }
+            set { taxa = value; }
         }
     }
 }

@@ -31,6 +31,7 @@ namespace Pont_Finder.alimentos
             emp.FuncionamentoEmp = comp.FuncionamentoEmp;
             emp.SttsCardapio = comp.SttsCardapio;
             emp.SttsEntrega = comp.SttsEntrega;
+            emp.Taxa = comp.Taxa;
             company.Add(emp);
             company[company.IndexOf(emp)].Id = company.IndexOf(emp);
         }
@@ -88,6 +89,7 @@ namespace Pont_Finder.alimentos
                     company[index].SttsCardapio = comp.SttsCardapio;
                     company[index].SttsEntrega = comp.SttsEntrega;
                     company[index].Id = comp.Id;
+                    company[index].Taxa = comp.Taxa;
                     break;
                 }
             }

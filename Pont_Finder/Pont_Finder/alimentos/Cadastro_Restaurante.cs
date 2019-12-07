@@ -142,6 +142,7 @@ namespace Pont_Finder.alimentos
                 }
                 else { emp.SttsCardapio = false; emp.SttsEntrega = false; }
                 emp.Cpf = Session.Cpf;
+                emp.Taxa = float.Parse(maskedTextBox1.Text);
                 CompanyList.CompAdd(emp);                
 
                 MessageBox.Show("Empresa Cadastrada!", "Status Operation:");
@@ -457,7 +458,12 @@ namespace Pont_Finder.alimentos
 
         private void CbEntregaSim_CheckedChanged(object sender, EventArgs e)
         {
-            
+            if (cbEntrega.Checked == true)
+            {                
+                label15.Visible = true;
+                maskedTextBox1.Visible = true;
+            }
+            else { cbEntrega.Visible = false; btnCad.Text = "Cadastrar"; }
         }
 
         private void CbEntregaNao_CheckedChanged(object sender, EventArgs e)
