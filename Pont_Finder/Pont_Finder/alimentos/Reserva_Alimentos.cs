@@ -58,7 +58,7 @@ namespace Pont_Finder.alimentos
             {
                 if (item.IdEmpresa == Company)
                 {
-                    Item_Alimentos AliItem = new Item_Alimentos(item.Preco, item.Nome, item.Image, item.Qtd, item.Ingredientes, item.Categoria, item.Id, Company, true, item.Quantos);
+                    Item_Alimentos AliItem = new Item_Alimentos(item.Preco, item.Nome, item.Image, item.Qtd, item.Ingredientes, item.Categoria, item.Id, Company, true, item.Quantos, CompanyList.selectAll()[Company].SttsEntrega);
                     AliItem.Location = new Point(0, local);
                     local = local + AliItem.Height + 5;
                     menu.Controls.Add(AliItem);

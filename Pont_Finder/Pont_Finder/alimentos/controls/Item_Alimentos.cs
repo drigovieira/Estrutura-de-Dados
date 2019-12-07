@@ -18,7 +18,7 @@ namespace Pont_Finder.alimentos
         private float PrecoItem, qtdItem;
         private List<string> IngredientesItem, CategoriasItem;
         private int IdItem, Empresa, QuantosItem;
-        private bool ExRes;
+        private bool ExRes, Pedidos;
 
         private void Excluir_Click(object sender, EventArgs e)
         {
@@ -51,7 +51,7 @@ namespace Pont_Finder.alimentos
             }
         }
 
-        public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id, int idEmpresa, bool reserva, int quantos)
+        public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id, int idEmpresa, bool reserva, int quantos, bool pedido)
         {
             NomeItem = Nome;
             ImageItem = Imagem;
@@ -65,6 +65,7 @@ namespace Pont_Finder.alimentos
             ExRes = reserva;
             Empresa = idEmpresa;
             QuantosItem = quantos;
+            Pedidos = pedido;
             InitializeComponent();
             if (ListCardapio.select(Id).Image != null)
                 pb_alimento.ImageLocation = CompanyList.select(Id).Image;
@@ -147,7 +148,15 @@ namespace Pont_Finder.alimentos
             else
             {
                 Excluir.Visible = false;
-            }            
+            }
+            if(Pedidos == false)
+            {
+                Quant.Visible = false;
+                label1.Visible = false;
+                bt_addLista.Visible = false;
+                Excluir.Visible = false;
+            }
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
