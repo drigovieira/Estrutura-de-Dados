@@ -387,7 +387,7 @@ namespace Pont_Finder.avalie
                 {
                     if (pg + i < ListaDePost.Count)
                     {
-                        UserControl1 t1 = new UserControl1(ListaDePost[pg + i].Idcoment);
+                        Card_comentario t1 = new Card_comentario(ListaDePost[pg + i].Idcoment);
                         t1.Location = new Point(0, local);
                         local = local + t1.Height + 5;
                         painelcoment.Controls.Add(t1);
@@ -413,7 +413,7 @@ namespace Pont_Finder.avalie
                 {
                     if (pg + i < ListaDePost.Count)
                     {
-                        UserControl1 t1 = new UserControl1(ListaDePost[pg + i].Idcoment);
+                        Card_comentario t1 = new Card_comentario(ListaDePost[pg + i].Idcoment);
                         t1.Location = new Point(0, local);
                         local = local + t1.Height + 5;
                         painelcoment.Controls.Add(t1);
