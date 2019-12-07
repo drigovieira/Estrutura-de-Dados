@@ -28,12 +28,19 @@ namespace Pont_Finder.alimentos.classes
         }
         public static void Remove(int ID)
         {
-            foreach (var rem in selectAll())
+            try
             {
-                if (rem.Id == ID)
+                foreach (var rem in lista)
                 {
-                    lista.Remove(rem);
+                    if (rem.Id == ID)
+                    {
+                        lista.Remove(rem);
+                    }
                 }
+            }
+            catch
+            {
+
             }
         }
         public static void Drop()

@@ -34,6 +34,7 @@ namespace Pont_Finder.alimentos
                 Carrinho.Add(obj);
                 bt_addLista.BackColor = System.Drawing.Color.DimGray;
                 bt_addLista.Text = "Remover";
+                
             }
             else
             {

@@ -21,21 +21,8 @@ namespace Pont_Finder.alimentos
             local = 0;
             InitializeComponent();
             Listar();
-            AttLista();
         }                
-        public void AttLista()
-        {
-            ListaPedidos.Controls.Clear();
-            int local = 0;
-            foreach (var i in Carrinho.selectAll())
-            {
-                itemPedido item = new itemPedido(i.Preco, i.Nome, i.Image, i.Qtd, i.Ingredientes, i.Id);               
-                ListaPedidos.Location = new Point(0, local);
-                local = local + item.Height + 5;
-                ListaPedidos.Controls.Add(item);
-                ListaPedidos.Refresh();
-            }
-        }
+        
         private void Btn_back_Click(object sender, EventArgs e)
         {
             Carrinho.Drop();
@@ -45,8 +32,7 @@ namespace Pont_Finder.alimentos
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
         {
-            Carrinho.Drop();
-            if (ListaPedidos.Controls != null)
+            if (Carrinho.selectAll().Count == 0)
             {
                 Delivery_Alimentos delivery = new Delivery_Alimentos();
                 FormPrincipal.MudarForm("alimentos", delivery);
@@ -55,6 +41,16 @@ namespace Pont_Finder.alimentos
             {
                 MessageBox.Show("Não exitem itens na lista de pedidos", "Alerta");
             }
+        }        
+
+        private void Menu_SystemColorsChanged(object sender, EventArgs e)
+        {
+            ValueCarrinho.Text = Carrinho.selectAll().Count.ToString();
+        }
+
+        private void Menu_Paint(object sender, PaintEventArgs e)
+        {
+            ValueCarrinho.Text = Carrinho.selectAll().Count.ToString();
         }
 
         public void Listar()
