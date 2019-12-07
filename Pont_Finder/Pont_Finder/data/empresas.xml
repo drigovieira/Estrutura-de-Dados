@@ -87,26 +87,4 @@ Pronto, o teste foi bem sucedido</politicaprivacidade>
     <statusCardapio>false</statusCardapio>
     <statusEntrega>false</statusEntrega>
   </alimentos>
-  <alimentos>
-    <nome>Teste</nome>
-    <nomeFantasia>Teste</nomeFantasia>
-    <email>asdfa</email>
-    <rua>rua</rua>
-    <bairro>bairro</bairro>
-    <image>..//..//alimentos//data//image//empresas//offImage.jpg</image>
-<<<<<<< HEAD
-    <categorias>Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Pizzaria,Petiscaria</categorias>
-=======
-    <categorias>Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Churrascaria,Pizzaria,Petiscaria</categorias>
->>>>>>> 786cd51ca2d5fbe4e045c0698f3dab0d1a83e6dd
-    <funcionamento>Segunda - Feira,06/12/2019 12:00:00,06/12/2019 18:00:00</funcionamento>
-    <numero>123</numero>
-    <cep>12321321</cep>
-    <id>1</id>
-    <telComercial>1231231321</telComercial>
-    <cpf>49024585864</cpf>
-    <status>true</status>
-    <statusCardapio>true</statusCardapio>
-    <statusEntrega>true</statusEntrega>
-  </alimentos>
 </modulos>
