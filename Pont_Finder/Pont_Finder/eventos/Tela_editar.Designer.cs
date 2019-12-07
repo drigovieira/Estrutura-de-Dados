@@ -35,7 +35,7 @@
             this.Button1 = new System.Windows.Forms.Button();
             this.tb_nome = new System.Windows.Forms.TextBox();
             this.pb_img_1 = new System.Windows.Forms.PictureBox();
-            this.bt_cadastrar = new System.Windows.Forms.Button();
+            this.bt_alterar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mtb_hora = new System.Windows.Forms.MaskedTextBox();
@@ -139,19 +139,19 @@
             this.pb_img_1.TabIndex = 30;
             this.pb_img_1.TabStop = false;
             // 
-            // bt_cadastrar
+            // bt_alterar
             // 
-            this.bt_cadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
-            this.bt_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_cadastrar.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cadastrar.ForeColor = System.Drawing.Color.White;
-            this.bt_cadastrar.Location = new System.Drawing.Point(391, 972);
-            this.bt_cadastrar.Name = "bt_cadastrar";
-            this.bt_cadastrar.Size = new System.Drawing.Size(127, 49);
-            this.bt_cadastrar.TabIndex = 6;
-            this.bt_cadastrar.Text = "Alterar";
-            this.bt_cadastrar.UseVisualStyleBackColor = false;
-            this.bt_cadastrar.Click += new System.EventHandler(this.Bt_cadastrar_Click);
+            this.bt_alterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
+            this.bt_alterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_alterar.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_alterar.ForeColor = System.Drawing.Color.White;
+            this.bt_alterar.Location = new System.Drawing.Point(391, 972);
+            this.bt_alterar.Name = "bt_alterar";
+            this.bt_alterar.Size = new System.Drawing.Size(127, 49);
+            this.bt_alterar.TabIndex = 6;
+            this.bt_alterar.Text = "Alterar";
+            this.bt_alterar.UseVisualStyleBackColor = false;
+            this.bt_alterar.Click += new System.EventHandler(this.Bt_cadastrar_Click);
             // 
             // label1
             // 
@@ -192,7 +192,7 @@
             this.panel2.Controls.Add(this.Button1);
             this.panel2.Controls.Add(this.tb_nome);
             this.panel2.Controls.Add(this.pb_img_1);
-            this.panel2.Controls.Add(this.bt_cadastrar);
+            this.panel2.Controls.Add(this.bt_alterar);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(210, 24);
             this.panel2.Name = "panel2";
@@ -528,7 +528,7 @@
         private System.Windows.Forms.Button Button1;
         private System.Windows.Forms.TextBox tb_nome;
         private System.Windows.Forms.PictureBox pb_img_1;
-        private System.Windows.Forms.Button bt_cadastrar;
+        private System.Windows.Forms.Button bt_alterar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
