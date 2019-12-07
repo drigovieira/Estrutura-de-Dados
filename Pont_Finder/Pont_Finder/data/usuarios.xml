@@ -56,4 +56,12 @@
     <image>..//..//data//images//users//86609522006.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Felipe Mariano Neres</nome>
+    <email>neres@gmail.com</email>
+    <senha>123</senha>
+    <cpf>20083424091</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

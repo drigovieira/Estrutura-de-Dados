@@ -27,5 +27,10 @@ namespace Pont_Finder.hospedagem.data.inc
         {
 
         }
+
+        private void ToolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
