@@ -87,6 +87,23 @@ Pronto, o teste foi bem sucedido</politicaprivacidade>
     <ambiente>  Estacionamento  Piscina  Sala de Jogos  Academia</ambiente>
     <status>true</status>
   </hospedagem>
+  <hospedagem>
+    <admin>20083424091</admin>
+    <logo>..//..//hospedagem//data//images//empresas//27006692000131//logo//27006692000131.jpg</logo>
+    <nomeempresa>Mariano Neres Ltda</nomeempresa>
+    <nomefantasia>Neres Palace Hotel</nomefantasia>
+    <cnpj>27006692000131</cnpj>
+    <endereco>rua doutor celestino</endereco>
+    <cep>12701430</cep>
+    <telefone>12931445566</telefone>
+    <email>palacehotel@gmail.com</email>
+    <foto>..//..//hospedagem//data//images//empresas//27006692000131//empresa//</foto>
+    <tipo>Hotel</tipo>
+    <estrelas>5</estrelas>
+    <descricao>Localizado no centro da cidade próximo a roviária e cinema</descricao>
+    <ambiente>  Estacionamento  Piscina  Sala de Jogos  Academia</ambiente>
+    <status>true</status>
+  </hospedagem>
   <alimentos>
     <nome>Empresa Teste</nome>
     <nomeFantasia>Empresa Teste</nomeFantasia>
