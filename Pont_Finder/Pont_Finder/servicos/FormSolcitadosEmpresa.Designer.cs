@@ -33,9 +33,11 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.painel = new System.Windows.Forms.Panel();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.painel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
@@ -74,10 +76,20 @@
             // 
             // painel
             // 
+            this.painel.Controls.Add(this.vScrollBar1);
             this.painel.Location = new System.Drawing.Point(215, 120);
             this.painel.Name = "painel";
             this.painel.Size = new System.Drawing.Size(835, 532);
             this.painel.TabIndex = 34;
+            this.painel.Paint += new System.Windows.Forms.PaintEventHandler(this.Painel_Paint);
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(815, 11);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 518);
+            this.vScrollBar1.TabIndex = 0;
+            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.VScrollBar1_Scroll);
             // 
             // panel2
             // 
@@ -127,6 +139,7 @@
             this.Name = "FormSolicitadosEmpresa";
             this.Text = "ServicosADM";
             this.Load += new System.EventHandler(this.FormSolicitadosEmpresa_Load);
+            this.painel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
@@ -144,5 +157,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }

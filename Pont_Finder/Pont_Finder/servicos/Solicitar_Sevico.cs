@@ -19,11 +19,14 @@ namespace Pont_Finder.servicos
 
         bool img = false;
 
+        
+
         public Solicitar_Sevico(int postid, Form anterior)
         {
             post = classes.PostList.thisForId(postid);
             this.anterior = anterior;
             InitializeComponent();
+            
         }
 
         private void Bt_continuar_Click(object sender, EventArgs e)
@@ -107,6 +110,11 @@ namespace Pont_Finder.servicos
                 pb_icone.Load();
                 img = true;
             }
+        }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(Session.Cpf, new FormServicos()));
         }
     }
 }

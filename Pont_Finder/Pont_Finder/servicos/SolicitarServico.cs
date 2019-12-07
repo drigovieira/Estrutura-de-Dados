@@ -51,5 +51,10 @@ namespace Pont_Finder.servicos
         {
             FormPrincipal.MudarForm("servicos", new FormServicos());
         }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(Session.Cpf, new FormServicos()));
+        }
     }
 }

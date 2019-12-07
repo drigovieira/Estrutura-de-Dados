@@ -15,6 +15,7 @@ namespace Pont_Finder.servicos
         public FormSolicitadosEmpresa()
         {
             InitializeComponent();
+            
         }
 
         private void FormSolicitadosEmpresa_Load(object sender, EventArgs e)
@@ -53,6 +54,16 @@ namespace Pont_Finder.servicos
         private void Btn_back_Click(object sender, EventArgs e)
         {
             FormPrincipal.MudarForm("servicos", new PerfilEmpresa(Session.Cpf, new FormServicos()));
+        }
+
+        private void Painel_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void VScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
         }
     }
 }

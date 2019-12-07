@@ -36,6 +36,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.painel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +58,7 @@
             // 
             // painel
             // 
+            this.painel.Controls.Add(this.vScrollBar1);
             this.painel.Location = new System.Drawing.Point(215, 120);
             this.painel.Name = "painel";
             this.painel.Size = new System.Drawing.Size(835, 532);
@@ -110,6 +113,13 @@
             this.panel3.Size = new System.Drawing.Size(1265, 50);
             this.panel3.TabIndex = 31;
             // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(818, 11);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 518);
+            this.vScrollBar1.TabIndex = 1;
+            // 
             // FormSolicitados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,6 +138,7 @@
             this.Name = "FormSolicitados";
             this.Text = "Visualizar_Solicitado_User";
             this.Load += new System.EventHandler(this.Visualizar_Solicitado_User_Load);
+            this.painel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
@@ -145,5 +156,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.cancelar = new System.Windows.Forms.Button();
             this.Solicitar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -38,11 +41,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,6 +65,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(845, 702);
             this.panel1.TabIndex = 14;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(214, 346);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(415, 30);
+            this.textBox9.TabIndex = 31;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(214, 252);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(415, 30);
+            this.textBox8.TabIndex = 30;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(263, 252);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(0, 0);
+            this.textBox7.TabIndex = 29;
             // 
             // cancelar
             // 
@@ -162,38 +189,17 @@
             this.textBox1.Size = new System.Drawing.Size(415, 30);
             this.textBox1.TabIndex = 14;
             // 
-            // textBox7
+            // btn_back
             // 
-            this.textBox7.Location = new System.Drawing.Point(263, 252);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(0, 0);
-            this.textBox7.TabIndex = 29;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(214, 252);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(415, 30);
-            this.textBox8.TabIndex = 30;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(214, 346);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(415, 30);
-            this.textBox9.TabIndex = 31;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(1097, 407);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(41, 76);
-            this.panel2.TabIndex = 15;
+            this.btn_back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(42, 71);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 40;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // SolicitarServico
             // 
@@ -202,13 +208,14 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1266, 636);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SolicitarServico";
             this.Text = "SolicitarServico";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,6 +235,6 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }

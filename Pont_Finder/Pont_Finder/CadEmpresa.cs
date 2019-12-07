@@ -31,5 +31,10 @@ namespace Pont_Finder
         {
             
         }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

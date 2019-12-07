@@ -56,13 +56,16 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.bt_icone = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.bt_icone = new System.Windows.Forms.Button();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // tb_telefone
@@ -351,12 +354,16 @@
             this.panel16.TabIndex = 67;
             this.panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel16_Paint);
             // 
-            // panel17
+            // label2
             // 
-            this.panel17.Location = new System.Drawing.Point(5, 164);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(100, 471);
-            this.panel17.TabIndex = 66;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(95, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(223, 27);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Adicione Uma imagem";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bt_icone
             // 
@@ -373,16 +380,25 @@
             this.bt_icone.UseVisualStyleBackColor = false;
             this.bt_icone.Click += new System.EventHandler(this.Bt_icone_Click);
             // 
-            // label2
+            // panel17
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(95, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(223, 27);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Adicione Uma imagem";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel17.Controls.Add(this.btn_back);
+            this.panel17.Location = new System.Drawing.Point(5, 164);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(100, 471);
+            this.panel17.TabIndex = 66;
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(25, 26);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 41;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // FormCadEmpresa
             // 
@@ -410,6 +426,8 @@
             this.panel6.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -445,5 +463,6 @@
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Button bt_icone;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }
