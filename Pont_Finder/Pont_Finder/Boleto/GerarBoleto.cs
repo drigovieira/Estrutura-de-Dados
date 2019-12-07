@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +18,8 @@ namespace Pont_Finder.Boleto
         string cpfboleto,
                 valorboleto;
 
-        
+        PrintPreviewDialog prntprvw = new PrintPreviewDialog();
+        PrintDocument pntdoc = new PrintDocument();
 
         public GerarBoleto()
         {
@@ -43,13 +45,43 @@ namespace Pont_Finder.Boleto
         }
 
         
+        //PRINTANDO Begin
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-           
 
+            Printer(boletoA);
 
         }
+
+        public void Printer(Panel painelboleto)
+        {
+            PrinterSettings ps = new PrinterSettings();
+            boletoA = painelboleto;
+            getprintarea(painelboleto);
+            prntprvw.Document = pntdoc;
+            pntdoc.PrintPage += new PrintPageEventHandler(pntdoc_printpage);
+            prntprvw.ShowDialog();
+        }
+
+        public void pntdoc_printpage(object sender, PrintPageEventArgs e)
+        {
+            Rectangle pagearea = e.PageBounds;
+            e.Graphics.DrawImage(memoryimg, (pagearea.Width) - (this.boletoA.Width/1), this.boletoA.Location.Y);
+           
+        }
+
+
+        Bitmap memoryimg;
+
+        public void getprintarea(Panel painelboleto)
+        {
+            memoryimg = new Bitmap(painelboleto.Width, painelboleto.Height);
+            painelboleto.DrawToBitmap(memoryimg, new Rectangle(0, 0, painelboleto.Width, painelboleto.Height));
+        }
+
+
+        //PRINTANDO END
 
         private void GerarBoleto_Load(object sender, EventArgs e)
         {
