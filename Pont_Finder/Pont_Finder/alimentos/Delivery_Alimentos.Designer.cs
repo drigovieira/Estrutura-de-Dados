@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Delivery_Alimentos));
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lb_data_pedido = new System.Windows.Forms.Label();
             this.lb_nome_restaurante = new System.Windows.Forms.Label();
@@ -67,6 +66,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Pedidos = new System.Windows.Forms.ListBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -76,19 +76,12 @@
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(16, 169);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 198);
-            this.panel1.TabIndex = 34;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.Pedidos);
             this.panel4.Controls.Add(this.lb_data_pedido);
-            this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.lb_nome_restaurante);
             this.panel4.Controls.Add(this.lb_endereco_emp);
             this.panel4.Controls.Add(this.label14);
@@ -160,6 +153,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(16, 43);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 80);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
@@ -479,6 +473,16 @@
             this.label3.TabIndex = 41;
             this.label3.Text = "Sua Localização";
             // 
+            // Pedidos
+            // 
+            this.Pedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F);
+            this.Pedidos.FormattingEnabled = true;
+            this.Pedidos.ItemHeight = 17;
+            this.Pedidos.Location = new System.Drawing.Point(16, 166);
+            this.Pedidos.Name = "Pedidos";
+            this.Pedidos.Size = new System.Drawing.Size(250, 191);
+            this.Pedidos.TabIndex = 52;
+            // 
             // Delivery_Alimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -515,7 +519,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lb_data_pedido;
         private System.Windows.Forms.Label lb_nome_restaurante;
@@ -553,5 +556,6 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListBox Pedidos;
     }
 }

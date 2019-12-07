@@ -15,11 +15,15 @@ namespace Pont_Finder.alimentos
     public partial class Reserva_Alimentos : Form
     {
         private int local, Company;
-        public Reserva_Alimentos(int idEmpresa)
+        public Reserva_Alimentos(int idEmpresa, bool sttsDelivery)
         {
             Company = idEmpresa;
             local = 0;
             InitializeComponent();
+            if (sttsDelivery == false)
+            {
+                panel4.Visible = false;
+            }
             Listar();
         }                
         
@@ -31,15 +35,10 @@ namespace Pont_Finder.alimentos
         }
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
-        {
-            object[] obj = new object[Carrinho.selectAll().Count];
-            for (int cont = 0; cont< Carrinho.selectAll().Count;cont++)
-            {
-                obj[cont] = Carrinho.selectAll()[cont];
-            }
+        {            
             if (Carrinho.selectAll().Count != 0)
             {
-                Delivery_Alimentos delivery = new Delivery_Alimentos(Company, obj);
+                Delivery_Alimentos delivery = new Delivery_Alimentos(Company);
                 FormPrincipal.MudarForm("alimentos", delivery);
             }
             else
@@ -59,7 +58,7 @@ namespace Pont_Finder.alimentos
             {
                 if (item.IdEmpresa == Company)
                 {
-                    Item_Alimentos AliItem = new Item_Alimentos(item.Preco, item.Nome, item.Image, item.Qtd, item.Ingredientes, item.Categoria, item.Id, Company, true);
+                    Item_Alimentos AliItem = new Item_Alimentos(item.Preco, item.Nome, item.Image, item.Qtd, item.Ingredientes, item.Categoria, item.Id, Company, true, item.Quantos);
                     AliItem.Location = new Point(0, local);
                     local = local + AliItem.Height + 5;
                     menu.Controls.Add(AliItem);

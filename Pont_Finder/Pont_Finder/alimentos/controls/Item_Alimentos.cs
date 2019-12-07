@@ -17,7 +17,7 @@ namespace Pont_Finder.alimentos
         private string NomeItem, ImageItem, maisIngredientes, maisCategoria;
         private float PrecoItem, qtdItem;
         private List<string> IngredientesItem, CategoriasItem;
-        private int IdItem, Empresa;
+        private int IdItem, Empresa, QuantosItem;
         private bool ExRes;
 
         private void Excluir_Click(object sender, EventArgs e)
@@ -31,18 +31,17 @@ namespace Pont_Finder.alimentos
         {
             if (bt_addLista.Text.Equals("Pedir"))
             {
-                object[] obj = new object[6];
+                object[] obj = new object[7];
                 obj[0] = IdItem;
                 obj[1] = NomeItem;
                 obj[2] = ImageItem;
                 obj[3] = maisIngredientes;
                 obj[4] = PrecoItem;
                 obj[5] = qtdItem;
+                obj[6] = Quant.Value;
                 Carrinho.Add(obj);
                 bt_addLista.BackColor = System.Drawing.Color.DimGray;
-                bt_addLista.Text = "Remover";
-                Reserva_Alimentos res = new Reserva_Alimentos(Empresa);
-                FormPrincipal.MudarForm("alimentos", res);
+                bt_addLista.Text = "Remover";                
             }
             else
             {
@@ -52,7 +51,7 @@ namespace Pont_Finder.alimentos
             }
         }
 
-        public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id, int idEmpresa, bool reserva)
+        public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id, int idEmpresa, bool reserva, int quantos)
         {
             NomeItem = Nome;
             ImageItem = Imagem;
@@ -65,6 +64,7 @@ namespace Pont_Finder.alimentos
             maisCategoria = "";
             ExRes = reserva;
             Empresa = idEmpresa;
+            QuantosItem = quantos;
             InitializeComponent();
             if (ListCardapio.select(Id).Image != null)
                 pb_alimento.ImageLocation = CompanyList.select(Id).Image;
@@ -139,7 +139,7 @@ namespace Pont_Finder.alimentos
             lb_rs.Text = PrecoItem.ToString("C", CultureInfo.CurrentCulture);
             if (ExRes == false)
             {
-                comboBox1.Visible = false;
+                Quant.Visible = false;
                 label1.Visible = false;
                 bt_addLista.Visible = false;
                 Excluir.Visible = true;

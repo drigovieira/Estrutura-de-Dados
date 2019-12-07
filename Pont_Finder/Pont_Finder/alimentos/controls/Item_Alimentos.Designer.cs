@@ -36,10 +36,11 @@
             this.CategoriasPrato = new System.Windows.Forms.Label();
             this.lb_rs = new System.Windows.Forms.Label();
             this.bt_addLista = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Excluir = new System.Windows.Forms.Button();
+            this.Quant = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pb_alimento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Quant)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -130,15 +131,6 @@
             this.bt_addLista.UseVisualStyleBackColor = false;
             this.bt_addLista.Click += new System.EventHandler(this.Bt_addLista_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(308, 151);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(41, 25);
-            this.comboBox1.TabIndex = 35;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -163,14 +155,27 @@
             this.Excluir.UseVisualStyleBackColor = false;
             this.Excluir.Click += new System.EventHandler(this.Excluir_Click);
             // 
+            // Quant
+            // 
+            this.Quant.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quant.Location = new System.Drawing.Point(293, 149);
+            this.Quant.Name = "Quant";
+            this.Quant.Size = new System.Drawing.Size(46, 28);
+            this.Quant.TabIndex = 38;
+            this.Quant.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // Item_Alimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.Quant);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lb_rs);
             this.Controls.Add(this.CategoriasPrato);
             this.Controls.Add(this.pb_alimento);
@@ -184,6 +189,7 @@
             this.Size = new System.Drawing.Size(623, 188);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Item_Alimentos_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pb_alimento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Quant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,8 +204,8 @@
         private System.Windows.Forms.Label CategoriasPrato;
         private System.Windows.Forms.Label lb_rs;
         private System.Windows.Forms.Button bt_addLista;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Excluir;
+        private System.Windows.Forms.NumericUpDown Quant;
     }
 }

@@ -24,6 +24,7 @@ namespace Pont_Finder.alimentos.classes
             cad.Ingredientes = ingr;
             cad.Preco = float.Parse(item[4].ToString());
             cad.Qtd = float.Parse(item[5].ToString());
+            cad.Quantos = int.Parse(item[6].ToString());
             lista.Add(cad);
         }
         public static void Remove(int ID)

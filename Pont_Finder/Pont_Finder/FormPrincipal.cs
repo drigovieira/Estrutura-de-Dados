@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Pont_Finder.alimentos.classes;
 
 namespace Pont_Finder
 {
@@ -199,6 +200,7 @@ namespace Pont_Finder
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
+            Carrinho.Drop();
             Mudar();
         }
 

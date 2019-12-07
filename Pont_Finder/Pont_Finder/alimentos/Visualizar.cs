@@ -78,7 +78,7 @@ namespace Pont_Finder.alimentos
             {                
                 if (sttsCardapio == true)
                 {
-                    alimentos.Reserva_Alimentos reserva = new alimentos.Reserva_Alimentos(Index);
+                    alimentos.Reserva_Alimentos reserva = new alimentos.Reserva_Alimentos(Index,CompanyList.selectAll()[Index].SttsEntrega);
                     FormPrincipal.MudarForm("alimentos", reserva);
                 }
                 else
