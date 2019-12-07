@@ -1,33 +1,3 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <roomlist>
-  <quarto>
-    <id>0</id>
-    <empresa>23232342423423</empresa>
-    <nome>Casal</nome>
-    <tipo>Casal</tipo>
-    <qtd_casal>1</qtd_casal>
-    <qtd_solteiro>0</qtd_solteiro>
-    <qtd_pessoas>2</qtd_pessoas>
-    <qtd_quartos>2</qtd_quartos>
-    <servicos> * Café da manhã * Ar Condicionado * Café da tarde * TV a cabo * Espaço PET</servicos>
-    <valor>500</valor>
-    <foto>..//..//hospedagem//data//images//empresas//23232342423423//quartos//0//Casal.jpg</foto>
-    <estado>Disponivel</estado>
-    <status>true</status>
-  </quarto>
-  <quarto>
-    <id>1</id>
-    <empresa>23232342423423</empresa>
-    <nome>Salmeira</nome>
-    <tipo>Solteiro</tipo>
-    <qtd_casal>0</qtd_casal>
-    <qtd_solteiro>1</qtd_solteiro>
-    <qtd_pessoas>1</qtd_pessoas>
-    <qtd_quartos>2</qtd_quartos>
-    <servicos> * Café da manhã * Ar Condicionado * Café da tarde * TV a cabo * Espaço PET</servicos>
-    <valor>600</valor>
-    <foto>..//..//hospedagem//data//images//empresas//23232342423423//quartos//1//Salmeira.jpg</foto>
-    <estado>Disponivel</estado>
-    <status>true</status>
-  </quarto>
 </roomlist>
