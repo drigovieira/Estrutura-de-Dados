@@ -17,6 +17,8 @@ namespace Pont_Finder.Boleto
         string cpfboleto,
                 valorboleto;
 
+        
+
         public GerarBoleto()
         {
             InitializeComponent();
@@ -30,6 +32,9 @@ namespace Pont_Finder.Boleto
 
             //cpflabel.Text = Session.Cpf.ToString();
             valorlabel.Text = "R$ "+valorboleto+",00";
+            CalcularN();
+            data.Text = System.DateTime.Now.ToString("dd/MM/yyyy");
+
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -89,6 +94,29 @@ namespace Pont_Finder.Boleto
             btnPrint.Visible = true;
             btnSalvar.Visible = true;
         }
+
+
+        public void CalcularN()
+        {
+            Random rdn = new Random();
+
+                    string cbip1,
+                   p2 = rdn.Next(10000, 99999).ToString(),
+                   p3 = rdn.Next(10000, 99999).ToString(),
+                   p4 = rdn.Next(10000, 99999).ToString(),
+                   p5 = rdn.Next(10000, 99999).ToString(),
+                   p6 = rdn.Next(10000, 99999).ToString(),
+                   p7 = rdn.Next(0, 9).ToString(),
+                   p8 = rdn.Next(0, 9).ToString(),
+                   valp91 = (5676).ToString(),
+                   valp92 = "00000",
+                   valp93 = valorboleto;
+
+                   rdn.Next(0, 99999).ToString();
+
+                   lb_num_codigo_barra.Text = ("00193" + "." + p2 + " " + p3 + "." + p4 + " " + p5 + "." + p6 + " " + p7 + " " + valp91 + valp92 + valp93);
+        }
+
 
     }
 }
