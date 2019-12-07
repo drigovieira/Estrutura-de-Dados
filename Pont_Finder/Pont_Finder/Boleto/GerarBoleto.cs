@@ -28,7 +28,7 @@ namespace Pont_Finder.Boleto
             cpfboleto = cpf.ToString();
             valorboleto = valor.ToString();
 
-            cpflabel.Text = Session.Cpf.ToString();
+            //cpflabel.Text = Session.Cpf.ToString();
             valorlabel.Text = "R$ "+valorboleto+",00";
         }
 

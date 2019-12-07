@@ -157,7 +157,7 @@ namespace Pont_Finder.eventos
             //Preservar:
             MessageBox.Show("Compra Realizada Com Sucesso");
             Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, cm.Valortotal);
-            FormPrincipal.MudarForm("eventos", bol);
+            bol.ShowDialog();
 
             //}
             //else
