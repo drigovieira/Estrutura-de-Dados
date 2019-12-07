@@ -27,12 +27,14 @@ namespace Pont_Finder.eventos
         int let = 0;
         int let2 = 0;
 
-
+        Form anterior;
 
 
         public FormEventos()
         {
             InitializeComponent();
+
+           
 
             CarregarPosts();
 
@@ -232,10 +234,7 @@ namespace Pont_Finder.eventos
             }
         }
 
-        private void Tb_bai_TextChanged(object sender, EventArgs e)
-        {
-            tb_bai.MaxLength = 50;
-        }
+       
 
         private void Tb_fai_TextChanged(object sender, EventArgs e)
         {

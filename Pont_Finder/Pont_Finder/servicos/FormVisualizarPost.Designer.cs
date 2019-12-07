@@ -32,7 +32,6 @@
             this.lb_titulo = new System.Windows.Forms.Label();
             this.lb_valor = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.lb_descricao = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -42,14 +41,22 @@
             this.lb_email = new System.Windows.Forms.Label();
             this.lb_fantasia = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt_solicitar = new System.Windows.Forms.Button();
             this.bt_negociar = new System.Windows.Forms.Button();
             this.lb_categoria = new System.Windows.Forms.Label();
+            this.painel_botoes = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
-            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
+            this.painel_botoes.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // pb_icone
@@ -91,33 +98,23 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 684);
+            this.panel1.Location = new System.Drawing.Point(0, 575);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 100);
+            this.panel1.Size = new System.Drawing.Size(1282, 100);
             this.panel1.TabIndex = 23;
-            // 
-            // panel2
-            // 
-            this.panel2.AutoScroll = true;
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.lb_descricao);
-            this.panel2.Location = new System.Drawing.Point(131, 284);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1055, 400);
-            this.panel2.TabIndex = 24;
             // 
             // lb_descricao
             // 
             this.lb_descricao.AutoSize = true;
-            this.lb_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_descricao.Location = new System.Drawing.Point(51, 10);
-            this.lb_descricao.MaximumSize = new System.Drawing.Size(950, 0);
-            this.lb_descricao.MinimumSize = new System.Drawing.Size(950, 0);
+            this.lb_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F);
+            this.lb_descricao.Location = new System.Drawing.Point(23, 6);
+            this.lb_descricao.MaximumSize = new System.Drawing.Size(1000, 0);
+            this.lb_descricao.MinimumSize = new System.Drawing.Size(1000, 0);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(950, 27);
+            this.lb_descricao.Size = new System.Drawing.Size(1000, 24);
             this.lb_descricao.TabIndex = 0;
             this.lb_descricao.Text = "Descrição geral";
+            this.lb_descricao.Click += new System.EventHandler(this.Lb_descricao_Click);
             // 
             // panel4
             // 
@@ -138,11 +135,11 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F);
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(3, 105);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 36);
+            this.button2.Size = new System.Drawing.Size(100, 35);
             this.button2.TabIndex = 35;
             this.button2.Text = "Visualizar";
             this.button2.UseVisualStyleBackColor = false;
@@ -223,31 +220,31 @@
             this.btn_back.MouseLeave += new System.EventHandler(this.Btn_back_MouseLeave);
             this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Btn_back_MouseMove);
             // 
-            // button1
+            // bt_solicitar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1007, 205);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 51);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Solicitar serviço";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bt_solicitar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_solicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_solicitar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F);
+            this.bt_solicitar.ForeColor = System.Drawing.Color.White;
+            this.bt_solicitar.Location = new System.Drawing.Point(232, 19);
+            this.bt_solicitar.Name = "bt_solicitar";
+            this.bt_solicitar.Size = new System.Drawing.Size(130, 35);
+            this.bt_solicitar.TabIndex = 33;
+            this.bt_solicitar.Text = "Solicitar Serviço";
+            this.bt_solicitar.UseVisualStyleBackColor = false;
+            this.bt_solicitar.Click += new System.EventHandler(this.button1_Click);
             // 
             // bt_negociar
             // 
             this.bt_negociar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_negociar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_negociar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_negociar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F);
             this.bt_negociar.ForeColor = System.Drawing.Color.White;
-            this.bt_negociar.Location = new System.Drawing.Point(821, 205);
+            this.bt_negociar.Location = new System.Drawing.Point(21, 19);
             this.bt_negociar.Name = "bt_negociar";
-            this.bt_negociar.Size = new System.Drawing.Size(157, 51);
+            this.bt_negociar.Size = new System.Drawing.Size(130, 35);
             this.bt_negociar.TabIndex = 34;
-            this.bt_negociar.Text = "Negociar Serviço";
+            this.bt_negociar.Text = "Enviar Mensagem";
             this.bt_negociar.UseVisualStyleBackColor = false;
             this.bt_negociar.Click += new System.EventHandler(this.Button2_Click);
             // 
@@ -263,6 +260,57 @@
             this.lb_categoria.TabIndex = 35;
             this.lb_categoria.Text = "Categoria";
             // 
+            // painel_botoes
+            // 
+            this.painel_botoes.BackColor = System.Drawing.Color.White;
+            this.painel_botoes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.painel_botoes.Controls.Add(this.bt_negociar);
+            this.painel_botoes.Controls.Add(this.bt_solicitar);
+            this.painel_botoes.Location = new System.Drawing.Point(799, 182);
+            this.painel_botoes.Name = "painel_botoes";
+            this.painel_botoes.Size = new System.Drawing.Size(387, 74);
+            this.painel_botoes.TabIndex = 36;
+            this.painel_botoes.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel3_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Location = new System.Drawing.Point(131, 274);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1055, 115);
+            this.panel2.TabIndex = 37;
+            // 
+            // panel6
+            // 
+            this.panel6.AutoSize = true;
+            this.panel6.Controls.Add(this.lb_descricao);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 57);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1055, 30);
+            this.panel6.TabIndex = 39;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1055, 57);
+            this.panel5.TabIndex = 38;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(430, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Descição do Serviço";
+            // 
             // FormVisualizarPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,12 +318,11 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.painel_botoes);
             this.Controls.Add(this.lb_categoria);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.bt_negociar);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_back);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_valor);
             this.Controls.Add(this.lb_titulo);
@@ -287,12 +334,17 @@
             this.Text = "\'";
             this.Load += new System.EventHandler(this.FormVisualizarPost_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
+            this.painel_botoes.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,7 +355,6 @@
         private System.Windows.Forms.Label lb_titulo;
         private System.Windows.Forms.Label lb_valor;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lb_descricao;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lb_fantasia;
@@ -312,9 +363,14 @@
         private System.Windows.Forms.Label lb_telefone;
         private System.Windows.Forms.PictureBox pb_empresa;
         private System.Windows.Forms.PictureBox btn_back;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_solicitar;
         private System.Windows.Forms.Button bt_negociar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lb_categoria;
+        private System.Windows.Forms.Panel painel_botoes;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label1;
     }
 }

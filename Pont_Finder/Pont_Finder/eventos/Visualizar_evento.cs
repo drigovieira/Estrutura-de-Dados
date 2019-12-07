@@ -13,17 +13,18 @@ namespace Pont_Finder.eventos
     public partial class Visualizar_evento : Form
     {
         Classes.CoEvento post;
-        
 
 
-        
-        public Visualizar_evento(int postId)
+
+
+        Form anterior;
+        public Visualizar_evento(int postId, Form anterior)
         {
 
             
           
             InitializeComponent();
-            
+            this.anterior = anterior;
             post = Classes.Eventos_List.thisPostId(postId);
 
             //Evento:
@@ -66,7 +67,7 @@ namespace Pont_Finder.eventos
         {
             if (Session.Online == true)
             {
-                eventos.Tela_compra compra = new eventos.Tela_compra(post.Id);
+                eventos.Tela_compra compra = new eventos.Tela_compra(post.Id, new Visualizar_evento(post.Id, anterior));
                 FormPrincipal.MudarForm("eventos", compra);
             }
             else

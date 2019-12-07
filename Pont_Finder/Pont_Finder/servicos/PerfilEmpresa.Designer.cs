@@ -110,6 +110,7 @@
             this.pb_icone.Location = new System.Drawing.Point(29, 50);
             this.pb_icone.Name = "pb_icone";
             this.pb_icone.Size = new System.Drawing.Size(250, 250);
+            this.pb_icone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_icone.TabIndex = 0;
             this.pb_icone.TabStop = false;
             this.pb_icone.Click += new System.EventHandler(this.PictureBox1_Click);
@@ -134,7 +135,7 @@
             this.bt_solicitados.Name = "bt_solicitados";
             this.bt_solicitados.Size = new System.Drawing.Size(250, 35);
             this.bt_solicitados.TabIndex = 6;
-            this.bt_solicitados.Text = "Serviços solicitados";
+            this.bt_solicitados.Text = "Serviços Solicitados";
             this.bt_solicitados.UseVisualStyleBackColor = false;
             this.bt_solicitados.Click += new System.EventHandler(this.Bt_solicitados_Click);
             // 

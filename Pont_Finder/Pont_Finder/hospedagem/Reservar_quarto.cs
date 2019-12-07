@@ -12,12 +12,24 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Reservar_quarto : Form
     {
+        Form anterior;
         private int id_reserva = 0;
         private int id_quarto, qtd_pessoas, qtd_disponivel;
         private DateTime data_inicial, data_final;
         private double valor_reserva, valor;
         private long cpf_user, telefone_emp;
         private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp;
+
+        private void bt_finalizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_data_saida_Click(object sender, EventArgs e)
+        {
+
+        }
+
         List<string> icones = new List<string>();
 
 
@@ -28,95 +40,108 @@ namespace Pont_Finder.hospedagem
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("hospedagem", anterior);
+            
+            FormPrincipal.MudarForm("hospedagem", new Vizualizar_quarto(id_quarto,anterior));
         }
+        
 
         private void lb_nome_quarto_Click(object sender, EventArgs e)
         {
 
         }
-        Form anterior;
+
         public Reservar_quarto(int id, Form anterior, DateTime data_ini, DateTime data_fim, long cpf_usuario)
         {
-            classes.Reserva reserva = new classes.Reserva();
-
-            Quarto quarto = new Quarto();
-
-            quarto = roomList.SelectId(id);
-
-            Empresa emp = hostList.selectCnpj(quarto.Cnpj_Empresa);
-
-            InitializeComponent();
-            this.id_quarto = quarto.ID;
-
-            //Long
-            this.cpf_user = cpf_usuario;
-            this.telefone_emp = emp.Telefone;
-            //Strings
-            this.nome = quarto.NomeQuarto;
-            this.empresa = emp.Nomefantasia;
-            this.servicos = quarto.Servicos;
-            this.foto = quarto.Foto;
-            this.status = quarto.Status;
-            this.nome_emp = emp.Nomeempresa;
-            this.endereco_emp = emp.Endereco;
-
-            //Double
-            this.valor = quarto.Valor_Diario;
-
-            //DateTimes
-            this.data_inicial = data_ini;
-            this.data_final = data_fim;
-            //int 
-            this.id_quarto = quarto.ID;
-            this.id_reserva = id_reserva++;
-            this.qtd_pessoas= quarto.Qtd_Pessoas;
-            this.qtd_disponivel = quarto.Qtd_Disponivel;
-
-            if (servicos.Contains("Café da tarde") == true)
+            if (Session.Online)
             {
-                string caminho = "..\\..\\hospedagem\\data\\icones\\cafe.png";
-                icones.Add(caminho);
-            }
+               
+                classes.Reserva reserva = new classes.Reserva();
 
-            if (servicos.Contains("Ar Condicionado") == true)
+                Quarto quarto = new Quarto();
+
+                quarto = roomList.SelectId(id);
+
+                Empresa emp = hostList.selectCnpj(quarto.Cnpj_Empresa);
+
+                InitializeComponent();
+                this.id_quarto = quarto.ID;
+                //Long
+                this.cpf_user = cpf_usuario;
+                this.telefone_emp = emp.Telefone;
+                //Strings
+                this.nome = quarto.NomeQuarto;
+                this.empresa = emp.Nomefantasia;
+                this.servicos = quarto.Servicos;
+                this.foto = quarto.Foto;
+                this.status = quarto.Status;
+                this.tipo = quarto.Tipo;
+                this.nome_emp = emp.Nomeempresa;
+                this.endereco_emp = emp.Endereco;
+
+                //Double
+                this.valor = quarto.Valor_Diario;
+
+                //DateTimes
+                this.data_inicial = data_ini;
+                this.data_final = data_fim;
+                //int 
+                this.id_quarto = quarto.ID;
+                this.id_reserva = id_reserva++;
+                this.qtd_pessoas = quarto.Qtd_Pessoas;
+                this.qtd_disponivel = quarto.Qtd_Disponivel;
+
+                if (servicos.Contains("Café da tarde") == true)
+                {
+                    string caminho = "..\\..\\hospedagem\\data\\icones\\cafe.png";
+                    icones.Add(caminho);
+                }
+
+                if (servicos.Contains("Ar Condicionado") == true)
+                {
+                    string caminho = "..\\..\\hospedagem\\data\\icones\\Ar_condicionado(1).png";
+                    icones.Add(caminho);
+                }
+
+                if (servicos.Contains("Café da manhã") == true)
+                {
+                    string caminho = "..\\..\\hospedagem\\data\\icones\\breakfast.png";
+                    icones.Add(caminho);
+                }
+
+                if (servicos.Contains("Almoço") == true)
+                {
+
+                    string caminho = "..\\..\\hospedagem\\data\\icones\\almoço.png";
+                    icones.Add(caminho);
+                }
+
+                if (servicos.Contains("TV a cabo") == true)
+                {
+                    string caminho = "..\\..\\hospedagem\\data\\icones\\tv.png";
+                    icones.Add(caminho);
+                }
+
+                if (servicos.Contains("Espaço PET") == true)
+                {
+                    string caminho = "..\\..\\hospedagem\\data\\icones\\pet.png";
+                    icones.Add(caminho);
+                }
+                if (servicos.Contains("Wi-fi") == true)
+                {
+                    string caminho = "..\\..\\hospedagem\\data\\icones\\wifi.png";
+                    icones.Add(caminho);
+                }
+
+            }
+            else
             {
-                string caminho = "..\\..\\hospedagem\\data\\icones\\Ar_condicionado(1).png";
-                icones.Add(caminho);
+                MessageBox.Show("Necessario estar logado");
             }
-
-            if (servicos.Contains("Café da manhã") == true)
-            {
-                string caminho = "..\\..\\hospedagem\\data\\icones\\breakfast.png";
-                icones.Add(caminho);
-            }
-
-            if (servicos.Contains("Almoço") == true)
-            {
-
-                string caminho = "..\\..\\hospedagem\\data\\icones\\almoço.png";
-                icones.Add(caminho);
-            }
-
-            if (servicos.Contains("TV a cabo") == true)
-            {
-                string caminho = "..\\..\\hospedagem\\data\\icones\\tv.png";
-                icones.Add(caminho);
-            }
-
-            if (servicos.Contains("Espaço PET") == true)
-            {
-                string caminho = "..\\..\\hospedagem\\data\\icones\\pet.png";
-                icones.Add(caminho);
-            }
-            if (servicos.Contains("Wi-fi") == true)
-            {
-                string caminho = "..\\..\\hospedagem\\data\\icones\\wifi.png";
-                icones.Add(caminho);
-            }
-
+            
         }
+        
 
+        
         private void rb_boleto_CheckedChanged(object sender, EventArgs e)
         {
             {
@@ -165,6 +190,7 @@ namespace Pont_Finder.hospedagem
                 pn_icons.Controls.Add(icone_uc);
             }
             lb_nome_quarto.Text = nome;
+            lb_tipo_quarto.Text = tipo;
             lb_data_entrada.Text = Convert.ToString(data_inicial.ToShortDateString());
             lb_data_saida.Text = Convert.ToString(data_final.ToShortDateString());
             lb_nome_emp.Text = nome_emp;

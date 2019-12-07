@@ -15,7 +15,7 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Vizualizar_quarto : Form
     {
-
+        Form anterior;
         private int id, qtd_pessoas, qtd_disponivel;
         private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp, ambiente;
         private long cpf_usuario, telefone_emp;
@@ -50,14 +50,22 @@ namespace Pont_Finder.hospedagem
         {
 
         }
-
+        
+        
+        
         private void bt_reservar_Click(object sender, EventArgs e)
         {
             if (Session.Online)
-                cpf_usuario = Session.Cpf;
+            {    
+            cpf_usuario = Session.Cpf;
 
             hospedagem.Reservar_quarto reserva = new Reservar_quarto(id, anterior, dt_ini.Value, dt_fim.Value, cpf_usuario);
             FormPrincipal.MudarForm("hospedagem", reserva);
+            }
+            else
+            {
+                MessageBox.Show("Você deve estar logado para realizar uma reserva.");
+            }
 
         }
 
@@ -80,7 +88,7 @@ namespace Pont_Finder.hospedagem
 
         Quarto quarto = new Quarto();
 
-        Form anterior;
+        
         public Vizualizar_quarto(int id, Form anterior)
         {
             quarto = roomList.SelectId(id);
@@ -90,6 +98,7 @@ namespace Pont_Finder.hospedagem
             //QUARTO
             this.id = quarto.ID;
             this.nome = quarto.NomeQuarto;
+            this.tipo = quarto.Tipo;
             this.qtd_pessoas = quarto.Qtd_Pessoas;
             this.qtd_disponivel = quarto.Qtd_Disponivel;
             this.empresa = emp.Nomefantasia;
@@ -202,7 +211,7 @@ namespace Pont_Finder.hospedagem
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("hospedagem", anterior);
+            FormPrincipal.MudarForm("hospedagem",new Hosp_Home());
         }
 
         private void btn_back_MouseMove(object sender, MouseEventArgs e)
@@ -251,6 +260,7 @@ namespace Pont_Finder.hospedagem
 
 
             lb_nome_quarto.Text = nome;
+            lb_tipo_quarto.Text = tipo;
 
             //Valor 15%
             double valor15 = valor * 0.15;

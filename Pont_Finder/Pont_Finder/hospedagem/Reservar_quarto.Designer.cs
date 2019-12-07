@@ -82,6 +82,7 @@
             this.bt_finalizar.TabIndex = 25;
             this.bt_finalizar.Text = "Finalizar Reserva";
             this.bt_finalizar.UseVisualStyleBackColor = false;
+            this.bt_finalizar.Click += new System.EventHandler(this.bt_finalizar_Click);
             // 
             // pn_icons
             // 
@@ -101,6 +102,7 @@
             this.lb_data_saida.Size = new System.Drawing.Size(40, 17);
             this.lb_data_saida.TabIndex = 52;
             this.lb_data_saida.Text = "Value";
+            this.lb_data_saida.Click += new System.EventHandler(this.lb_data_saida_Click);
             // 
             // lb_data_entrada
             // 
@@ -409,7 +411,7 @@
             this.panel5.Controls.Add(this.lb_txt3);
             this.panel5.Location = new System.Drawing.Point(950, 80);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 229);
+            this.panel5.Size = new System.Drawing.Size(320, 229);
             this.panel5.TabIndex = 53;
             // 
             // btn_back

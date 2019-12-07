@@ -61,13 +61,17 @@ namespace Pont_Finder.alimentos
         }
         public static void Delete(int index)
         {
-            foreach(var item in cardapio)
+            try
             {
-                if (cardapio.IndexOf(item) == index)
+                foreach (var item in cardapio)
                 {
-                    cardapio.RemoveAt(index);
+                    if (cardapio.IndexOf(item) == index)
+                    {
+                        cardapio.RemoveAt(index);
+                    }
                 }
             }
+            catch { }
         }
         public static void Disable(int Id)
         {

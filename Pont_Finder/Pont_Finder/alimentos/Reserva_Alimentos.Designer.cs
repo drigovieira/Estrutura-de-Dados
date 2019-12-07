@@ -34,20 +34,23 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ValueCarrinho = new System.Windows.Forms.Label();
             this.bt_visualizar = new System.Windows.Forms.Button();
-            this.ListaPedidos = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu
             // 
+            this.menu.AutoScroll = true;
             this.menu.AutoSize = true;
             this.menu.BackColor = System.Drawing.Color.White;
             this.menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -88,13 +91,38 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.ValueCarrinho);
             this.panel4.Controls.Add(this.bt_visualizar);
-            this.panel4.Controls.Add(this.ListaPedidos);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(803, 301);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 472);
+            this.panel4.Size = new System.Drawing.Size(310, 200);
             this.panel4.TabIndex = 23;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 61);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(68, 65);
+            this.pictureBox1.TabIndex = 75;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ValueCarrinho
+            // 
+            this.ValueCarrinho.AutoSize = true;
+            this.ValueCarrinho.BackColor = System.Drawing.Color.OrangeRed;
+            this.ValueCarrinho.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ValueCarrinho.ForeColor = System.Drawing.Color.White;
+            this.ValueCarrinho.Location = new System.Drawing.Point(96, 96);
+            this.ValueCarrinho.Name = "ValueCarrinho";
+            this.ValueCarrinho.Size = new System.Drawing.Size(24, 27);
+            this.ValueCarrinho.TabIndex = 74;
+            this.ValueCarrinho.Text = "0";
             // 
             // bt_visualizar
             // 
@@ -102,22 +130,13 @@
             this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bt_visualizar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_visualizar.ForeColor = System.Drawing.Color.White;
-            this.bt_visualizar.Location = new System.Drawing.Point(122, 419);
+            this.bt_visualizar.Location = new System.Drawing.Point(123, 137);
             this.bt_visualizar.Name = "bt_visualizar";
             this.bt_visualizar.Size = new System.Drawing.Size(170, 34);
             this.bt_visualizar.TabIndex = 35;
             this.bt_visualizar.Text = "Finalizar Pedido";
             this.bt_visualizar.UseVisualStyleBackColor = false;
             this.bt_visualizar.Click += new System.EventHandler(this.Bt_visualizar_Click);
-            // 
-            // ListaPedidos
-            // 
-            this.ListaPedidos.AutoScroll = true;
-            this.ListaPedidos.BackColor = System.Drawing.Color.White;
-            this.ListaPedidos.Location = new System.Drawing.Point(22, 45);
-            this.ListaPedidos.Name = "ListaPedidos";
-            this.ListaPedidos.Size = new System.Drawing.Size(270, 347);
-            this.ListaPedidos.TabIndex = 6;
             // 
             // label7
             // 
@@ -183,10 +202,12 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Reserva_Alimentos";
             this.Text = "Reserva_Alimentos";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Reserva_Alimentos_Paint);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -201,11 +222,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel ListaPedidos;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Button bt_visualizar;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label ValueCarrinho;
     }
 }

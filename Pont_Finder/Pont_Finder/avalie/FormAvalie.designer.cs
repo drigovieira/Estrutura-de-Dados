@@ -80,9 +80,10 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(450, 5);
+            this.button3.Location = new System.Drawing.Point(600, 6);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 28);
+            this.button3.Size = new System.Drawing.Size(160, 34);
             this.button3.TabIndex = 12;
             this.button3.Text = "Realizar post!";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -95,9 +96,10 @@
             this.panel7.Controls.Add(this.cb_problemas);
             this.panel7.Controls.Add(this.button_Pesquisar);
             this.panel7.Controls.Add(this.label2);
-            this.panel7.Location = new System.Drawing.Point(5, 482);
+            this.panel7.Location = new System.Drawing.Point(7, 593);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(310, 200);
+            this.panel7.Size = new System.Drawing.Size(413, 246);
             this.panel7.TabIndex = 14;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
@@ -110,9 +112,10 @@
             "Infraestrutura",
             "Serviços",
             "Outros"});
-            this.cb_problemas.Location = new System.Drawing.Point(65, 72);
+            this.cb_problemas.Location = new System.Drawing.Point(87, 89);
+            this.cb_problemas.Margin = new System.Windows.Forms.Padding(4);
             this.cb_problemas.Name = "cb_problemas";
-            this.cb_problemas.Size = new System.Drawing.Size(200, 28);
+            this.cb_problemas.Size = new System.Drawing.Size(265, 33);
             this.cb_problemas.TabIndex = 82;
             // 
             // button_Pesquisar
@@ -121,9 +124,10 @@
             this.button_Pesquisar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_Pesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Pesquisar.ForeColor = System.Drawing.Color.White;
-            this.button_Pesquisar.Location = new System.Drawing.Point(92, 123);
+            this.button_Pesquisar.Location = new System.Drawing.Point(123, 151);
+            this.button_Pesquisar.Margin = new System.Windows.Forms.Padding(4);
             this.button_Pesquisar.Name = "button_Pesquisar";
-            this.button_Pesquisar.Size = new System.Drawing.Size(110, 34);
+            this.button_Pesquisar.Size = new System.Drawing.Size(147, 42);
             this.button_Pesquisar.TabIndex = 79;
             this.button_Pesquisar.Text = "Filtrar";
             this.button_Pesquisar.UseVisualStyleBackColor = false;
@@ -134,9 +138,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 28);
+            this.label2.Location = new System.Drawing.Point(93, 34);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 24);
+            this.label2.Size = new System.Drawing.Size(247, 29);
             this.label2.TabIndex = 0;
             this.label2.Text = "Filtrar Reclamações";
             // 
@@ -145,9 +150,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(82, 39);
+            this.label1.Location = new System.Drawing.Point(109, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 24);
+            this.label1.Size = new System.Drawing.Size(150, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "Período de:";
             // 
@@ -161,18 +167,20 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel5.Controls.Add(this.label13);
-            this.panel5.Location = new System.Drawing.Point(950, 619);
+            this.panel5.Location = new System.Drawing.Point(1267, 762);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 160);
+            this.panel5.Size = new System.Drawing.Size(413, 197);
             this.panel5.TabIndex = 40;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(84, 71);
+            this.label13.Location = new System.Drawing.Point(112, 87);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(155, 20);
+            this.label13.Size = new System.Drawing.Size(191, 25);
             this.label13.TabIndex = 0;
             this.label13.Text = "Propaganda Externa";
             // 
@@ -183,8 +191,9 @@
             this.panel8.Controls.Add(this.label6);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1265, 150);
+            this.panel8.Size = new System.Drawing.Size(1709, 185);
             this.panel8.TabIndex = 20;
             // 
             // label6
@@ -194,9 +203,10 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(463, 54);
+            this.label6.Location = new System.Drawing.Point(617, 66);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(397, 42);
+            this.label6.Size = new System.Drawing.Size(490, 54);
             this.label6.TabIndex = 1;
             this.label6.Text = "Expresse sua opinião";
             // 
@@ -205,9 +215,10 @@
             this.panel9.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel9.Controls.Add(this.button2);
             this.panel9.Controls.Add(this.button3);
-            this.panel9.Location = new System.Drawing.Point(0, 150);
+            this.panel9.Location = new System.Drawing.Point(0, 185);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1265, 40);
+            this.panel9.Size = new System.Drawing.Size(1687, 49);
             this.panel9.TabIndex = 42;
             // 
             // button2
@@ -216,9 +227,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(726, 5);
+            this.button2.Location = new System.Drawing.Point(968, 6);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 28);
+            this.button2.Size = new System.Drawing.Size(160, 34);
             this.button2.TabIndex = 14;
             this.button2.Text = "Meus Posts";
             this.button2.UseVisualStyleBackColor = false;
@@ -228,18 +240,20 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(565, 208);
+            this.label5.Location = new System.Drawing.Point(753, 256);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 24);
+            this.label5.Size = new System.Drawing.Size(194, 29);
             this.label5.TabIndex = 84;
             this.label5.Text = "Ultimos Posts...";
             // 
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(617, 250);
+            this.lb_pag.Location = new System.Drawing.Point(823, 308);
+            this.lb_pag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(39, 13);
+            this.lb_pag.Size = new System.Drawing.Size(51, 17);
             this.lb_pag.TabIndex = 83;
             this.lb_pag.Text = "lb_pag";
             // 
@@ -250,9 +264,10 @@
             this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_prox.ForeColor = System.Drawing.Color.Black;
-            this.bt_prox.Location = new System.Drawing.Point(869, 241);
+            this.bt_prox.Location = new System.Drawing.Point(1159, 297);
+            this.bt_prox.Margin = new System.Windows.Forms.Padding(4);
             this.bt_prox.Name = "bt_prox";
-            this.bt_prox.Size = new System.Drawing.Size(75, 23);
+            this.bt_prox.Size = new System.Drawing.Size(100, 28);
             this.bt_prox.TabIndex = 82;
             this.bt_prox.Text = ">>";
             this.bt_prox.UseVisualStyleBackColor = false;
@@ -265,9 +280,10 @@
             this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(317, 240);
+            this.bt_ant.Location = new System.Drawing.Point(423, 295);
+            this.bt_ant.Margin = new System.Windows.Forms.Padding(4);
             this.bt_ant.Name = "bt_ant";
-            this.bt_ant.Size = new System.Drawing.Size(75, 23);
+            this.bt_ant.Size = new System.Drawing.Size(100, 28);
             this.bt_ant.TabIndex = 81;
             this.bt_ant.Text = "<<";
             this.bt_ant.UseVisualStyleBackColor = false;
@@ -276,29 +292,32 @@
             // panel3
             // 
             this.panel3.AutoSize = true;
-            this.panel3.Location = new System.Drawing.Point(319, 269);
-            this.panel3.MaximumSize = new System.Drawing.Size(625, 0);
-            this.panel3.MinimumSize = new System.Drawing.Size(625, 0);
+            this.panel3.Location = new System.Drawing.Point(425, 331);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.MaximumSize = new System.Drawing.Size(833, 0);
+            this.panel3.MinimumSize = new System.Drawing.Size(833, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(625, 0);
+            this.panel3.Size = new System.Drawing.Size(833, 0);
             this.panel3.TabIndex = 80;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel4.Controls.Add(this.label15);
-            this.panel4.Location = new System.Drawing.Point(950, 785);
+            this.panel4.Location = new System.Drawing.Point(1267, 966);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 325);
+            this.panel4.Size = new System.Drawing.Size(413, 400);
             this.panel4.TabIndex = 39;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(84, 145);
+            this.label15.Location = new System.Drawing.Point(112, 178);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(160, 20);
+            this.label15.Size = new System.Drawing.Size(198, 25);
             this.label15.TabIndex = 1;
             this.label15.Text = "Propaganda modulos";
             // 
@@ -306,9 +325,10 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel6.Controls.Add(this.label7);
-            this.panel6.Location = new System.Drawing.Point(950, 270);
+            this.panel6.Location = new System.Drawing.Point(1267, 332);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(310, 343);
+            this.panel6.Size = new System.Drawing.Size(413, 422);
             this.panel6.TabIndex = 41;
             // 
             // label7
@@ -316,18 +336,20 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(33, 10);
+            this.label7.Location = new System.Drawing.Point(44, 12);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(259, 26);
+            this.label7.Size = new System.Drawing.Size(314, 31);
             this.label7.TabIndex = 5;
             this.label7.Text = "5 maiores reclamações";
             // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1110);
+            this.panel1.Location = new System.Drawing.Point(0, 1366);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 100);
+            this.panel1.Size = new System.Drawing.Size(1709, 123);
             this.panel1.TabIndex = 85;
             // 
             // panel2
@@ -337,19 +359,20 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(5, 269);
+            this.panel2.Location = new System.Drawing.Point(7, 331);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 189);
+            this.panel2.Size = new System.Drawing.Size(413, 233);
             this.panel2.TabIndex = 80;
             // 
             // Databox
             // 
             this.Databox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Databox.Location = new System.Drawing.Point(86, 85);
-            this.Databox.Margin = new System.Windows.Forms.Padding(2);
+            this.Databox.Location = new System.Drawing.Point(115, 105);
+            this.Databox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Databox.Mask = "00/00/0000";
             this.Databox.Name = "Databox";
-            this.Databox.Size = new System.Drawing.Size(115, 29);
+            this.Databox.Size = new System.Drawing.Size(152, 34);
             this.Databox.TabIndex = 81;
             this.Databox.ValidatingType = typeof(System.DateTime);
             this.Databox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.Databox_MaskInputRejected);
@@ -361,9 +384,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(17, 11);
+            this.label3.Location = new System.Drawing.Point(23, 14);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(265, 25);
+            this.label3.Size = new System.Drawing.Size(328, 31);
             this.label3.TabIndex = 80;
             this.label3.Text = "Pesquisar Reclamações";
             // 
@@ -373,9 +397,10 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(86, 126);
+            this.button1.Location = new System.Drawing.Point(115, 155);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 34);
+            this.button1.Size = new System.Drawing.Size(147, 42);
             this.button1.TabIndex = 26;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = false;
@@ -383,10 +408,10 @@
             // 
             // FormAvalie
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1730, 831);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel7);
@@ -401,8 +426,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1282, 675);
-            this.MinimumSize = new System.Drawing.Size(1282, 675);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(1709, 831);
+            this.MinimumSize = new System.Drawing.Size(1709, 831);
             this.Name = "FormAvalie";
             this.Text = "FormAvalie";
             this.Load += new System.EventHandler(this.FormAvalie_Load);

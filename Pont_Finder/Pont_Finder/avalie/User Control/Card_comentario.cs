@@ -25,7 +25,7 @@ namespace Pont_Finder.avalie.User_Control
             post = classes.ComentariosList.PosterId(postid);
 
             
-
+            
             datapost.Text = (post.Data);
             nome.Text = (post.Username);
             imagem.ImageLocation = (post.ImgUser);

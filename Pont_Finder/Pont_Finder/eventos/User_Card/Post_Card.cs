@@ -49,7 +49,7 @@ namespace Pont_Finder.eventos
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
         {
-            eventos.Visualizar_evento viewpost = new eventos.Visualizar_evento(post.Id);
+            eventos.Visualizar_evento viewpost = new eventos.Visualizar_evento(post.Id, new FormEventos());
             FormPrincipal.MudarForm("Eventos", viewpost);
 
             //eventos.Visualizar_evento visu = new eventos.Visualizar_evento(post.Id);

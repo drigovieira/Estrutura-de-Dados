@@ -503,5 +503,10 @@ namespace Pont_Finder.alimentos
         {
             tbEmail.MaxLength = 50;
         }
+
+        private void Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

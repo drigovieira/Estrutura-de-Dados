@@ -36,7 +36,7 @@ namespace Pont_Finder.avalie
         Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
         Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
         Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
-        long postidzera;
+        long postIdC;
 
         public ViewPost(long postId)
         {
@@ -47,16 +47,18 @@ namespace Pont_Finder.avalie
 
             post = PostList.thisPostId(postId);
 
-
+            postIdC = postId;
             
 
 
             CarregarComentario();
+            FiltroComentario();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            CarregarComentario();
+            FiltroComentario();
         }
 
         private void ViewPost_Load(object sender, EventArgs e)
@@ -184,6 +186,55 @@ namespace Pont_Finder.avalie
 
         }
 
+        public void FiltroComentario()
+        {
+            ListaDePost.Clear();
+
+            foreach (var item in ComentariosList.Poster)
+            {
+                if ((item.PostId == postIdC))
+                {
+                    ListaDePost.Add(item);
+                }
+                
+            }
+
+            int y = 5;
+            painelcoment.Height = 180;
+            painelcoment.Controls.Clear();
+            int i = 0;
+
+            ListaDePost.Reverse();
+
+            pagTotal = ListaDePost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
+            foreach (var item in ListaDePost)
+            {
+                if (i >= pagQuant)
+                    break;
+                Card_comentario a = new Card_comentario(item.Idcoment);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                painelcoment.Height = painelcoment.Height + 180;
+                painelcoment.Controls.Add(a);
+                i++;
+            }
+            
+        }
+
 
 
         private void bt_editar_Click(object sender, EventArgs e)
@@ -309,7 +360,7 @@ namespace Pont_Finder.avalie
             Comentario post = new Comentario();
 
             post.UserCpf = Session.Cpf;
-            post.PostId = postidzera;
+            post.PostId = postIdC;
             post.Idcoment = ComentariosList.Poster.Count(); ;
             post.Data = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
             post.Comment = tb_resposta.Text;
@@ -320,6 +371,7 @@ namespace Pont_Finder.avalie
             ComentariosList.PostAdd(post);
 
             CarregarComentario();
+            FiltroComentario();
         }
     }
 }

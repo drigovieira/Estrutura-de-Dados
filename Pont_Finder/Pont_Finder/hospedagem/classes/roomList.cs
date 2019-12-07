@@ -20,6 +20,9 @@ namespace Pont_Finder.hospedagem
 
             q.ID = quarto.ID;
             q.NomeQuarto = quarto.NomeQuarto;
+            q.Tipo = quarto.Tipo;
+            q.Qtd_Casal = quarto.Qtd_Casal;
+            q.Qtd_Solteiro = quarto.Qtd_Solteiro;
             q.Qtd_Pessoas = quarto.Qtd_Pessoas;
             q.Qtd_Disponivel = quarto.Qtd_Disponivel;
             q.Servicos = quarto.Servicos;
@@ -43,6 +46,9 @@ namespace Pont_Finder.hospedagem
                 q.ID = item.ID;
                 q.Cnpj_Empresa = item.Cnpj_Empresa;
                 q.NomeQuarto = item.NomeQuarto;
+                q.Tipo = item.Tipo;
+                q.Qtd_Casal = item.Qtd_Casal;
+                q.Qtd_Solteiro = item.Qtd_Solteiro;
                 q.Qtd_Pessoas = item.Qtd_Pessoas;
                 q.Qtd_Disponivel = item.Qtd_Disponivel;
                 q.Servicos = item.Servicos;
@@ -71,6 +77,9 @@ namespace Pont_Finder.hospedagem
                     q.ID = item.ID;
                     q.Cnpj_Empresa = item.Cnpj_Empresa;
                     q.NomeQuarto = item.NomeQuarto;
+                    q.Tipo = item.Tipo;
+                    q.Qtd_Casal = item.Qtd_Casal;
+                    q.Qtd_Solteiro = item.Qtd_Solteiro;
                     q.Qtd_Pessoas = item.Qtd_Pessoas;
                     q.Qtd_Disponivel = item.Qtd_Disponivel;
                     q.Servicos = item.Servicos;
@@ -98,6 +107,9 @@ namespace Pont_Finder.hospedagem
                     q.ID = item.ID;
                     q.Cnpj_Empresa = item.Cnpj_Empresa;
                     q.NomeQuarto = item.NomeQuarto;
+                    q.Tipo = item.Tipo;
+                    q.Qtd_Casal = item.Qtd_Casal;
+                    q.Qtd_Solteiro = item.Qtd_Solteiro;
                     q.Qtd_Pessoas = item.Qtd_Pessoas;
                     q.Qtd_Disponivel = item.Qtd_Disponivel;
                     q.Servicos = item.Servicos;
@@ -124,6 +136,9 @@ namespace Pont_Finder.hospedagem
                 q.ID = int.Parse(item.Element("id").Value);
                 q.Ativo = bool.Parse(item.Element("status").Value);
                 q.NomeQuarto = (item.Element("nome").Value);
+                q.Tipo = (item.Element("tipo").Value);
+                q.Qtd_Casal = int.Parse(item.Element("qtd_casal").Value);
+                q.Qtd_Solteiro = int.Parse(item.Element("qtd_solteiro").Value);
                 q.Qtd_Disponivel =int.Parse(item.Element("qtd_quartos").Value);
                 q.Qtd_Pessoas = int.Parse(item.Element("qtd_pessoas").Value);
                 q.Servicos = (item.Element("servicos").Value);
@@ -164,6 +179,9 @@ namespace Pont_Finder.hospedagem
                     new XElement("id", item.ID),
                     new XElement("empresa", item.Cnpj_Empresa),
                     new XElement("nome", item.NomeQuarto),
+                    new XElement("tipo", item.Tipo),
+                    new XElement("qtd_casal", item.Qtd_Casal),
+                    new XElement("qtd_solteiro", item.Qtd_Solteiro),
                     new XElement("qtd_pessoas", item.Qtd_Pessoas),
                     new XElement("qtd_quartos", item.Qtd_Disponivel),
                     new XElement("servicos", item.Servicos),
@@ -198,6 +216,9 @@ namespace Pont_Finder.hospedagem
                     q.ID = item.ID;
                     q.Cnpj_Empresa = item.Cnpj_Empresa;
                     q.NomeQuarto = item.NomeQuarto;
+                    q.Tipo = item.Tipo;
+                    q.Qtd_Casal = item.Qtd_Casal;
+                    q.Qtd_Solteiro = item.Qtd_Solteiro;
                     q.Qtd_Pessoas = item.Qtd_Pessoas;
                     q.Qtd_Disponivel = item.Qtd_Disponivel;
                     q.Servicos = item.Servicos;

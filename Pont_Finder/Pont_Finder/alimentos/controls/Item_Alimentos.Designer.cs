@@ -38,6 +38,7 @@
             this.bt_addLista = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Excluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_alimento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,7 +126,7 @@
             this.bt_addLista.Name = "bt_addLista";
             this.bt_addLista.Size = new System.Drawing.Size(110, 34);
             this.bt_addLista.TabIndex = 34;
-            this.bt_addLista.Text = "Reservar";
+            this.bt_addLista.Text = "Pedir";
             this.bt_addLista.UseVisualStyleBackColor = false;
             this.bt_addLista.Click += new System.EventHandler(this.Bt_addLista_Click);
             // 
@@ -148,6 +149,20 @@
             this.label1.TabIndex = 36;
             this.label1.Text = "Quantidade";
             // 
+            // Excluir
+            // 
+            this.Excluir.BackColor = System.Drawing.Color.Red;
+            this.Excluir.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Excluir.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Excluir.ForeColor = System.Drawing.Color.White;
+            this.Excluir.Location = new System.Drawing.Point(494, 138);
+            this.Excluir.Name = "Excluir";
+            this.Excluir.Size = new System.Drawing.Size(110, 34);
+            this.Excluir.TabIndex = 37;
+            this.Excluir.Text = "Excluir";
+            this.Excluir.UseVisualStyleBackColor = false;
+            this.Excluir.Click += new System.EventHandler(this.Excluir_Click);
+            // 
             // Item_Alimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,7 +171,6 @@
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.bt_addLista);
             this.Controls.Add(this.lb_rs);
             this.Controls.Add(this.CategoriasPrato);
             this.Controls.Add(this.pb_alimento);
@@ -164,6 +178,8 @@
             this.Controls.Add(this.NomeComida);
             this.Controls.Add(this.IngredienteComida);
             this.Controls.Add(this.qtdComida);
+            this.Controls.Add(this.bt_addLista);
+            this.Controls.Add(this.Excluir);
             this.Name = "Item_Alimentos";
             this.Size = new System.Drawing.Size(623, 188);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Item_Alimentos_Paint);
@@ -184,5 +200,6 @@
         private System.Windows.Forms.Button bt_addLista;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Excluir;
     }
 }

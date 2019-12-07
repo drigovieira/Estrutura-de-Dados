@@ -70,6 +70,7 @@ namespace Pont_Finder.hospedagem
                 string nome = tb_nome.Text;
                 string status = "Disponivel";
                 string lista_servicos = "";
+                string tipo ="";
                 int qtd_pessoas = 0;
                 int qtd_solteiro = 0;
                 int qtd_casal = 0;
@@ -95,13 +96,18 @@ namespace Pont_Finder.hospedagem
                 if(radioButton1.Checked)
                 {                    
                     qtd_pessoas = 1;
-                }
+                    tipo = "Solteiro";
+                    qtd_solteiro = 1;
+                    }
                 if (radioButton3.Checked)
                 {
                     qtd_pessoas = 2;
+                    tipo = "Casal";
+                    qtd_casal = 1;
                 }
                 if (radioButton2.Checked)
                 {
+                    tipo = "Outro";
                     if (tb_casal.Text == "")
                     {
                         qtd_solteiro = Convert.ToInt32(tb_solteiro.Text);
@@ -190,6 +196,9 @@ namespace Pont_Finder.hospedagem
                 quarto.ID = id;
                 quarto.Cnpj_Empresa = empresa;
                 quarto.NomeQuarto = nome;
+                quarto.Tipo = tipo;
+                quarto.Qtd_Casal = qtd_casal;
+                quarto.Qtd_Solteiro = qtd_solteiro;
                 quarto.Qtd_Pessoas = qtd_pessoas;
                 quarto.Qtd_Disponivel = qtd_disponivel;
                 quarto.Servicos = lista_servicos;

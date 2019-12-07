@@ -14,12 +14,13 @@ namespace Pont_Finder.eventos
     public partial class CadEmpresa : Form
     {
 
-       
-
+        
 
 
         public CadEmpresa()
         {
+            
+
             InitializeComponent();
         }
 
@@ -94,6 +95,11 @@ namespace Pont_Finder.eventos
         private void Bemail_TextChanged(object sender, EventArgs e)
         {
             Bemail.MaxLength = 50;
+        }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("eventos", new eventos.FormEventos());
         }
     }
 }

@@ -99,6 +99,7 @@
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\classes\Cardapio.cs" />
+    <Compile Include="alimentos\classes\Carrinho.cs" />
     <Compile Include="alimentos\classes\Company.cs" />
     <Compile Include="alimentos\classes\CompanyList.cs" />
     <Compile Include="alimentos\classes\delivery.cs" />
@@ -195,6 +196,12 @@
     </Compile>
     <Compile Include="avalie\MeusPost.Designer.cs">
       <DependentUpon>MeusPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="avalie\User Control\bestPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="avalie\User Control\bestPost.Designer.cs">
+      <DependentUpon>bestPost.cs</DependentUpon>
     </Compile>
     <Compile Include="avalie\User Control\Card_comentario.cs">
       <SubType>UserControl</SubType>
@@ -553,11 +560,11 @@
     <Compile Include="servicos\PerfilEmpresa.Designer.cs">
       <DependentUpon>PerfilEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="servicos\ServicosADM.cs">
+    <Compile Include="servicos\FormSolcitadosEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="servicos\ServicosADM.Designer.cs">
-      <DependentUpon>ServicosADM.cs</DependentUpon>
+    <Compile Include="servicos\FormSolcitadosEmpresa.Designer.cs">
+      <DependentUpon>FormSolcitadosEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\socialist\FormSociaListUser.cs">
       <SubType>Form</SubType>
@@ -691,6 +698,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="avalie\MeusPost.resx">
       <DependentUpon>MeusPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avalie\User Control\bestPost.resx">
+      <DependentUpon>bestPost.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="avalie\User Control\Card_comentario.resx">
       <DependentUpon>Card_comentario.cs</DependentUpon>
@@ -903,8 +913,8 @@
     <EmbeddedResource Include="servicos\PerfilEmpresa.resx">
       <DependentUpon>PerfilEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="servicos\ServicosADM.resx">
-      <DependentUpon>ServicosADM.cs</DependentUpon>
+    <EmbeddedResource Include="servicos\FormSolcitadosEmpresa.resx">
+      <DependentUpon>FormSolcitadosEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicos\socialist\FormSociaListUser.resx">
       <DependentUpon>FormSociaListUser.cs</DependentUpon>
@@ -992,6 +1002,7 @@
     <Content Include="eventos\Data\imagens\offImage.jpg" />
     <Content Include="eventos\Data\Postagem_Eventos.xml" />
     <Content Include="hospedagem\data\quartos.xml" />
+    <Content Include="hospedagem\data\reservas.xml" />
     <Content Include="obj\Debug\Pont_Finder.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Pont_Finder.exe" />
     <Content Include="obj\Debug\Pont_Finder.pdb" />
