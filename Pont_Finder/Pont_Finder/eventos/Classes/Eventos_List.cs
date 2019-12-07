@@ -136,6 +136,7 @@ namespace Pont_Finder.eventos.Classes
             }
         }
 
+        public static List<CoEvento> Posts { get => poster; set => poster = value; }
 
         public static void PostAdd(CoEvento post)
         {
@@ -222,7 +223,7 @@ namespace Pont_Finder.eventos.Classes
                 postar.Imagem2 = (item.Element("imagem2").Value);
                 postar.Imagem3 = (item.Element("imagem3").Value);
                 postar.Imagem4 = (item.Element("imagem4").Value);
-                
+                postar.Descricao = (item.Element("descricao").Value);
                 postar.Categoria = (item.Element("categoria").Value);
                 postar.Data = (item.Element("data").Value);
                 postar.Horario = item.Element("horario").Value;
