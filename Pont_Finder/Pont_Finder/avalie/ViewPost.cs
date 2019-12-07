@@ -52,11 +52,13 @@ namespace Pont_Finder.avalie
 
 
             CarregarComentario();
+            FiltroComentario();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            CarregarComentario();
+            FiltroComentario();
         }
 
         private void ViewPost_Load(object sender, EventArgs e)
@@ -187,12 +189,14 @@ namespace Pont_Finder.avalie
         public void FiltroComentario()
         {
             ListaDePost.Clear();
-            foreach (var item in ComentariosList.PosterAtivo)
+
+            foreach (var item in ComentariosList.Poster)
             {
-                if (item.PostId.ToString().ToLower().Trim().Equals(postIdC.ToString().ToLower().Trim()))
+                if ((item.PostId == postIdC))
                 {
                     ListaDePost.Add(item);
                 }
+                
             }
 
             int y = 5;
@@ -221,13 +225,14 @@ namespace Pont_Finder.avalie
             {
                 if (i >= pagQuant)
                     break;
-                Card_comentario a = new Card_comentario(item.PostId);
+                Card_comentario a = new Card_comentario(item.Idcoment);
                 a.Location = new Point(0, (y));
                 y = y + a.Height + 5;
                 painelcoment.Height = painelcoment.Height + 180;
                 painelcoment.Controls.Add(a);
                 i++;
             }
+            
         }
 
 
@@ -366,6 +371,7 @@ namespace Pont_Finder.avalie
             ComentariosList.PostAdd(post);
 
             CarregarComentario();
+            FiltroComentario();
         }
     }
 }
