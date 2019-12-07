@@ -395,6 +395,93 @@ namespace Pont_Finder
             }
 
         }
+
+
+
+        public void LoadTop3()
+        {
+            ListaDePost = PostList.PosterAtivo;
+            ListaDePost.Reverse();
+
+            pagQuant = 3;
+
+            pagTotal = ListaDePost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+            local = 0;
+
+            top3panel.Controls.Clear();
+            int i = 0;
+            foreach (var item in ListaDePost)
+            {
+                if (i >= pagQuant)
+                    break;
+                UserControl1 t1 = new UserControl1(item.Id);
+                t1.Location = new Point(0, local);
+                local = local + t1.Height + 5;
+                top3panel.Controls.Add(t1);
+                i++;
+            }
+
+        }
+
+        public void OrganizeTop3()
+        {
+            ListaDePost.Clear();
+
+            foreach (var item in PostList.PosterAtivo)
+            {
+                
+            }
+
+
+
+            int y = 5;
+            panel3.Height = 180;
+            panel3.Controls.Clear();
+            int i = 0;
+
+            ListaDePost.Reverse();
+
+            pagTotal = ListaDePost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
+            foreach (var item in ListaDePost)
+            {
+                if (i >= pagQuant)
+                    break;
+                UserControl1 a = new UserControl1(item.Id);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                top3panel.Height = top3panel.Height + 180;
+                top3panel.Controls.Add(a);
+                i++;
+            }
+
+        }
     }
 }
 

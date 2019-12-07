@@ -52,7 +52,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.top3panel = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -162,7 +162,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel5.Controls.Add(this.label13);
-            this.panel5.Location = new System.Drawing.Point(950, 722);
+            this.panel5.Location = new System.Drawing.Point(950, 688);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(303, 127);
             this.panel5.TabIndex = 40;
@@ -288,9 +288,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel4.Controls.Add(this.label15);
-            this.panel4.Location = new System.Drawing.Point(950, 855);
+            this.panel4.Location = new System.Drawing.Point(950, 821);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(303, 255);
+            this.panel4.Size = new System.Drawing.Size(303, 193);
             this.panel4.TabIndex = 39;
             // 
             // label15
@@ -306,19 +306,19 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel6.Controls.Add(this.panel10);
+            this.panel6.Controls.Add(this.top3panel);
             this.panel6.Controls.Add(this.label7);
             this.panel6.Location = new System.Drawing.Point(950, 270);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(303, 446);
+            this.panel6.Size = new System.Drawing.Size(303, 412);
             this.panel6.TabIndex = 41;
             // 
-            // panel10
+            // top3panel
             // 
-            this.panel10.Location = new System.Drawing.Point(29, 39);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(263, 404);
-            this.panel10.TabIndex = 6;
+            this.top3panel.Location = new System.Drawing.Point(29, 39);
+            this.top3panel.Name = "top3panel";
+            this.top3panel.Size = new System.Drawing.Size(263, 310);
+            this.top3panel.TabIndex = 6;
             // 
             // label7
             // 
@@ -329,12 +329,12 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(259, 26);
             this.label7.TabIndex = 5;
-            this.label7.Text = "5 maiores reclamações";
+            this.label7.Text = "3 maiores reclamações";
             // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1110);
+            this.panel1.Location = new System.Drawing.Point(0, 1014);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 85;
@@ -462,6 +462,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MaskedTextBox Databox;
         private System.Windows.Forms.ComboBox cb_problemas;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel top3panel;
     }
 }
