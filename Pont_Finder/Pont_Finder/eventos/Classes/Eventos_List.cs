@@ -188,6 +188,7 @@ namespace Pont_Finder.eventos.Classes
                       new XElement("imagem2", item.Imagem2),
                       new XElement("imagem3", item.Imagem3),
                       new XElement("imagem4", item.Imagem4),
+                      new XElement("descricao", item.Descricao),
                       new XElement("categoria", item.Categoria),
                       new XElement("data", item.Data),
                       new XElement("horario", item.Horario),
@@ -195,7 +196,7 @@ namespace Pont_Finder.eventos.Classes
                       new XElement("idade", item.Idade),
                       new XElement("valor", item.Valor),
                       new XElement("patrocinadores", item.Patrocinadores),
-                      new XElement("ativo", item.Ativo)); ;
+                      new XElement("ativo", item.Ativo)); 
 
                 XDocument doc = XDocument.Load(caminhoPost);
 
@@ -221,6 +222,7 @@ namespace Pont_Finder.eventos.Classes
                 postar.Imagem2 = (item.Element("imagem2").Value);
                 postar.Imagem3 = (item.Element("imagem3").Value);
                 postar.Imagem4 = (item.Element("imagem4").Value);
+                
                 postar.Categoria = (item.Element("categoria").Value);
                 postar.Data = (item.Element("data").Value);
                 postar.Horario = item.Element("horario").Value;

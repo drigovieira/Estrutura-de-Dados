@@ -10,13 +10,13 @@ namespace Pont_Finder.eventos.Classes
     {
         private bool
             ativo;
-        private int
+        public int
             id,
             ingressosTotal,
             ingressosDisponivel;
-        private long
+        public long
             cnpj;
-        private string
+        public string
             nome,
             categoria,
             descricao,

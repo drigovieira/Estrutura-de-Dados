@@ -8,14 +8,14 @@ namespace Pont_Finder.eventos.classes
 {
     class CaEmpresa
     {
-        private string nome;
-        private string nome_fantasia;
-        private string email;
-        private long cnpj;
-        private string telefone;
-        private string endereco;
-        private string modulo;
-        private bool ativo;
+        public string nome;
+        public string nome_fantasia;
+        public string email;
+        public long cnpj;
+        public string telefone;
+        public string endereco;
+        public string modulo;
+        public bool ativo;
        
         public string Nome
         {

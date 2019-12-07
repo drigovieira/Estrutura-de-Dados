@@ -29,7 +29,6 @@ namespace Pont_Finder.eventos
             edit = Classes.Eventos_List.thisPostId(idpost);
             this.idremove = idpost;
 
-            edit = Classes.Eventos_List.PosterId(idpost);
             lb_tipo_evento.Text = edit.Categoria;
             lb_data.Text = edit.Data;
             lb_local.Text = edit.Local;
@@ -157,7 +156,7 @@ namespace Pont_Finder.eventos
             //Preservar:
             MessageBox.Show("Compra Realizada Com Sucesso");
             Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, cm.Valortotal);
-            FormPrincipal.MudarForm("eventos", bol);
+            bol.ShowDialog();
 
             //}
             //else
@@ -169,6 +168,11 @@ namespace Pont_Finder.eventos
         private void Btn_back_Click(object sender, EventArgs e)
         {
             FormPrincipal.MudarForm("eventos", new Visualizar_evento(idpost, anterior));
+        }
+
+        private void Lb_valor_parcela_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

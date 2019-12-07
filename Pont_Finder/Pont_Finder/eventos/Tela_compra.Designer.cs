@@ -32,7 +32,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.rb_cartao = new System.Windows.Forms.RadioButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lb_endereco_emp = new System.Windows.Forms.Label();
             this.lb_nome_emp = new System.Windows.Forms.Label();
             this.rb_boleto = new System.Windows.Forms.RadioButton();
             this.lb_txt2 = new System.Windows.Forms.Label();
@@ -62,6 +61,7 @@
             this.bt_finalizar = new System.Windows.Forms.Button();
             this.lb_txt_titulo = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -102,23 +102,12 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // lb_endereco_emp
-            // 
-            this.lb_endereco_emp.AutoSize = true;
-            this.lb_endereco_emp.BackColor = System.Drawing.Color.Transparent;
-            this.lb_endereco_emp.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_endereco_emp.Location = new System.Drawing.Point(13, 230);
-            this.lb_endereco_emp.Name = "lb_endereco_emp";
-            this.lb_endereco_emp.Size = new System.Drawing.Size(63, 17);
-            this.lb_endereco_emp.TabIndex = 10;
-            this.lb_endereco_emp.Text = "Endereço";
-            // 
             // lb_nome_emp
             // 
             this.lb_nome_emp.AutoSize = true;
             this.lb_nome_emp.BackColor = System.Drawing.Color.Transparent;
             this.lb_nome_emp.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nome_emp.Location = new System.Drawing.Point(13, 201);
+            this.lb_nome_emp.Location = new System.Drawing.Point(98, 211);
             this.lb_nome_emp.Name = "lb_nome_emp";
             this.lb_nome_emp.Size = new System.Drawing.Size(118, 17);
             this.lb_nome_emp.TabIndex = 9;
@@ -179,10 +168,10 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.lb_local);
             this.panel4.Controls.Add(this.lb_data);
             this.panel4.Controls.Add(this.lb_tipo_evento);
-            this.panel4.Controls.Add(this.lb_endereco_emp);
             this.panel4.Controls.Add(this.lb_nome_emp);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.pb_imagem);
@@ -313,19 +302,20 @@
             // 
             this.lb_valor_parcela.AutoSize = true;
             this.lb_valor_parcela.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_valor_parcela.ForeColor = System.Drawing.Color.Red;
-            this.lb_valor_parcela.Location = new System.Drawing.Point(245, 143);
+            this.lb_valor_parcela.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
+            this.lb_valor_parcela.Location = new System.Drawing.Point(246, 51);
             this.lb_valor_parcela.Name = "lb_valor_parcela";
             this.lb_valor_parcela.Size = new System.Drawing.Size(33, 36);
             this.lb_valor_parcela.TabIndex = 58;
             this.lb_valor_parcela.Text = "V";
+            this.lb_valor_parcela.Click += new System.EventHandler(this.Lb_valor_parcela_Click);
             // 
             // lb_valor
             // 
             this.lb_valor.AutoSize = true;
             this.lb_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_valor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_valor.Location = new System.Drawing.Point(245, 48);
+            this.lb_valor.ForeColor = System.Drawing.Color.Red;
+            this.lb_valor.Location = new System.Drawing.Point(246, 143);
             this.lb_valor.Name = "lb_valor";
             this.lb_valor.Size = new System.Drawing.Size(33, 36);
             this.lb_valor.TabIndex = 57;
@@ -438,6 +428,17 @@
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 211);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 17);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Postado por:";
+            // 
             // Tela_compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -479,7 +480,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton rb_cartao;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lb_endereco_emp;
         private System.Windows.Forms.Label lb_nome_emp;
         private System.Windows.Forms.RadioButton rb_boleto;
         private System.Windows.Forms.Label lb_txt2;
@@ -509,5 +509,6 @@
         private System.Windows.Forms.Label lb_valor_parcela;
         private System.Windows.Forms.Label lb_valor;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Label label1;
     }
 }
