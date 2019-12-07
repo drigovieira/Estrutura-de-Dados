@@ -45,14 +45,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tb_localizacao = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.lb_data = new System.Windows.Forms.Label();
-            this.tb_descricao = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.NomePos = new System.Windows.Forms.Label();
-            this.pb_imagem = new System.Windows.Forms.PictureBox();
-            this.tb_problema = new System.Windows.Forms.TextBox();
-            this.lb_hora = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lb_data = new System.Windows.Forms.Label();
+            this.lb_hora = new System.Windows.Forms.Label();
+            this.tb_descricao = new System.Windows.Forms.TextBox();
+            this.tb_problema = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pb_imagem = new System.Windows.Forms.PictureBox();
+            this.NomePos = new System.Windows.Forms.Label();
             this.bt_prox = new System.Windows.Forms.Button();
             this.lb_pag = new System.Windows.Forms.Label();
             this.bt_ant = new System.Windows.Forms.Button();
@@ -100,7 +100,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(89, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(69, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 94;
@@ -108,7 +108,6 @@
             // 
             // panel3
             // 
-            this.panel3.AutoSize = true;
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.imagemuser);
@@ -128,9 +127,9 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pb_imagem);
             this.panel3.Controls.Add(this.NomePos);
-            this.panel3.Location = new System.Drawing.Point(135, 12);
+            this.panel3.Location = new System.Drawing.Point(115, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1020, 452);
+            this.panel3.Size = new System.Drawing.Size(1010, 452);
             this.panel3.TabIndex = 93;
             // 
             // imagemuser
@@ -251,6 +250,16 @@
             this.label5.TabIndex = 79;
             this.label5.Text = "Problema:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(314, 111);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 16);
+            this.label3.TabIndex = 81;
+            this.label3.Text = "Localização:";
+            // 
             // lb_data
             // 
             this.lb_data.AutoSize = true;
@@ -260,6 +269,16 @@
             this.lb_data.Size = new System.Drawing.Size(115, 13);
             this.lb_data.TabIndex = 84;
             this.lb_data.Text = "Data da Postagem:";
+            // 
+            // lb_hora
+            // 
+            this.lb_hora.AutoSize = true;
+            this.lb_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.lb_hora.Location = new System.Drawing.Point(164, 284);
+            this.lb_hora.Name = "lb_hora";
+            this.lb_hora.Size = new System.Drawing.Size(32, 13);
+            this.lb_hora.TabIndex = 82;
+            this.lb_hora.Text = "hora";
             // 
             // tb_descricao
             // 
@@ -275,35 +294,6 @@
             this.tb_descricao.Size = new System.Drawing.Size(289, 143);
             this.tb_descricao.TabIndex = 78;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(314, 252);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 16);
-            this.label2.TabIndex = 80;
-            this.label2.Text = "Descrição:";
-            // 
-            // NomePos
-            // 
-            this.NomePos.AutoSize = true;
-            this.NomePos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomePos.Location = new System.Drawing.Point(187, 59);
-            this.NomePos.Name = "NomePos";
-            this.NomePos.Size = new System.Drawing.Size(51, 16);
-            this.NomePos.TabIndex = 83;
-            this.NomePos.Text = "label4";
-            // 
-            // pb_imagem
-            // 
-            this.pb_imagem.Location = new System.Drawing.Point(39, 111);
-            this.pb_imagem.Name = "pb_imagem";
-            this.pb_imagem.Size = new System.Drawing.Size(263, 170);
-            this.pb_imagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_imagem.TabIndex = 76;
-            this.pb_imagem.TabStop = false;
-            // 
             // tb_problema
             // 
             this.tb_problema.BackColor = System.Drawing.Color.White;
@@ -317,25 +307,34 @@
             this.tb_problema.Size = new System.Drawing.Size(289, 19);
             this.tb_problema.TabIndex = 75;
             // 
-            // lb_hora
+            // label2
             // 
-            this.lb_hora.AutoSize = true;
-            this.lb_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_hora.Location = new System.Drawing.Point(164, 284);
-            this.lb_hora.Name = "lb_hora";
-            this.lb_hora.Size = new System.Drawing.Size(32, 13);
-            this.lb_hora.TabIndex = 82;
-            this.lb_hora.Text = "hora";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(314, 252);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 16);
+            this.label2.TabIndex = 80;
+            this.label2.Text = "Descrição:";
             // 
-            // label3
+            // pb_imagem
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(314, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 16);
-            this.label3.TabIndex = 81;
-            this.label3.Text = "Localização:";
+            this.pb_imagem.Location = new System.Drawing.Point(39, 111);
+            this.pb_imagem.Name = "pb_imagem";
+            this.pb_imagem.Size = new System.Drawing.Size(263, 170);
+            this.pb_imagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_imagem.TabIndex = 76;
+            this.pb_imagem.TabStop = false;
+            // 
+            // NomePos
+            // 
+            this.NomePos.AutoSize = true;
+            this.NomePos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomePos.Location = new System.Drawing.Point(187, 59);
+            this.NomePos.Name = "NomePos";
+            this.NomePos.Size = new System.Drawing.Size(51, 16);
+            this.NomePos.TabIndex = 83;
+            this.NomePos.Text = "label4";
             // 
             // bt_prox
             // 
@@ -426,6 +425,7 @@
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.bt_postar);
             this.panel1.Controls.Add(this.tb_resposta);
@@ -434,9 +434,11 @@
             this.panel1.Controls.Add(this.bt_ant);
             this.panel1.Controls.Add(this.bt_prox);
             this.panel1.Controls.Add(this.lb_pag);
-            this.panel1.Location = new System.Drawing.Point(135, 470);
+            this.panel1.Location = new System.Drawing.Point(115, 470);
+            this.panel1.MaximumSize = new System.Drawing.Size(1010, 325);
+            this.panel1.MinimumSize = new System.Drawing.Size(1010, 325);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1020, 325);
+            this.panel1.Size = new System.Drawing.Size(1010, 325);
             this.panel1.TabIndex = 96;
             // 
             // ViewPost
