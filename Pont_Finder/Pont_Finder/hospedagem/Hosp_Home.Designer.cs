@@ -481,7 +481,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 1336);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 100);
+            this.panel1.Size = new System.Drawing.Size(1282, 100);
             this.panel1.TabIndex = 44;
             // 
             // bt_ant
@@ -588,7 +588,6 @@
             this.checkBox1.TabIndex = 30;
             this.checkBox1.Text = "Café da manhã";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -611,7 +610,6 @@
             this.checkBox2.TabIndex = 31;
             this.checkBox2.Text = "Ar condicionado";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // label7
             // 
@@ -629,7 +627,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1299, 675);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_prox);
