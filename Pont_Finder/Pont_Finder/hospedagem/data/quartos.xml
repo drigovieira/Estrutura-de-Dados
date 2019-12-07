@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <roomlist>
-<<<<<<< HEAD
   <quarto>
     <id>0</id>
     <empresa>11111111111111</empresa>
@@ -121,6 +120,4 @@
     <estado>Disponivel</estado>
     <status>true</status>
   </quarto>
-=======
->>>>>>> fd043951d057559ab9d06bcbfcb595dc62e908b1
 </roomlist>

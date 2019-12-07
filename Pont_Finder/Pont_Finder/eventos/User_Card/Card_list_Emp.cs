@@ -12,35 +12,14 @@ namespace Pont_Finder.eventos.User_Card
 {
     public partial class Card_list_Emp : UserControl
     {
-        Classes.CoEvento evento;
-        public Card_list_Emp(int id)
+        public Card_list_Emp()
         {
-            evento = Classes.Eventos_List.thisPostId(id);
             InitializeComponent();
         }
 
         private void bt_visualizar_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void Card_list_Emp_Load(object sender, EventArgs e)
-        {
-            lb_nome.Text = evento.nome;
-            lb_categoria.Text = evento.Categoria;
-            lb_data.Text = evento.Data;
-            lb_ingressos.Text = "" + evento.IngressosTotal;
-            lb_valor.Text = "" + evento.Valor;
-            pb_imagem.ImageLocation = evento.Imagem1;
-
-
-            
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            eventos.Tela_editar editar = new eventos.Tela_editar(evento.id);
-            FormPrincipal.MudarForm("Eventos", editar);
         }
     }
 }

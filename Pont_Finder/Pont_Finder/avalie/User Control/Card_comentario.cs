@@ -56,18 +56,22 @@ namespace Pont_Finder.avalie.User_Control
             if (Session.Cpf == post.UserCpf)
             {
                 bt_editar.Visible = true;
-                bt_remover.Visible = true;
             }
             else
             {
                 bt_editar.Visible = false;
-                bt_remover.Visible = false;
-                comentarios.Enabled= false;
             }
 
            
 
-           
+            if (Session.Cpf == post.UserCpf)
+            {
+                bt_remover.Visible = true;
+            }
+            else
+            {
+                bt_remover.Visible = false;
+            }
 
 
         }
@@ -127,24 +131,6 @@ namespace Pont_Finder.avalie.User_Control
             {
                 MessageBox.Show("É necessário estar logado para avaliar");
             }
-        }
-
-        private void bt_editar_Click(object sender, EventArgs e)
-        {
-            if (comentarios.Text == "")
-            {
-                MessageBox.Show("Comentário Vazio");
-            }
-            else
-            {
-                
-                post.Comment = comentarios.Text;
-            }
-        }
-
-        private void bt_remover_Click(object sender, EventArgs e)
-        {
-            post.Ativo = false;
         }
     }
 }

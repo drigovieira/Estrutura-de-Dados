@@ -47,7 +47,6 @@
             this.pb_down = new System.Windows.Forms.PictureBox();
             this.pb_up = new System.Windows.Forms.PictureBox();
             this.lb_problema = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             ((System.ComponentModel.ISupportInitialize)(this.checado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,7 +54,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +61,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 305);
+            this.label2.Location = new System.Drawing.Point(163, 335);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 17);
             this.label2.TabIndex = 4;
@@ -73,7 +71,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 15);
+            this.label1.Location = new System.Drawing.Point(111, 308);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 17);
             this.label1.TabIndex = 3;
@@ -84,11 +82,11 @@
             this.userboxdesc.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.userboxdesc.Enabled = false;
             this.userboxdesc.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userboxdesc.Location = new System.Drawing.Point(17, 325);
+            this.userboxdesc.Location = new System.Drawing.Point(166, 355);
             this.userboxdesc.Multiline = true;
             this.userboxdesc.Name = "userboxdesc";
             this.userboxdesc.ReadOnly = true;
-            this.userboxdesc.Size = new System.Drawing.Size(400, 89);
+            this.userboxdesc.Size = new System.Drawing.Size(262, 50);
             this.userboxdesc.TabIndex = 2;
             this.userboxdesc.TextChanged += new System.EventHandler(this.Userboxdesc_TextChanged);
             // 
@@ -107,11 +105,11 @@
             // NomePos
             // 
             this.NomePos.AutoSize = true;
-            this.NomePos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomePos.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NomePos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.NomePos.Location = new System.Drawing.Point(71, 8);
             this.NomePos.Name = "NomePos";
-            this.NomePos.Size = new System.Drawing.Size(45, 17);
+            this.NomePos.Size = new System.Drawing.Size(65, 25);
             this.NomePos.TabIndex = 6;
             this.NomePos.Text = "label4";
             // 
@@ -130,13 +128,12 @@
             // bt_obter
             // 
             this.bt_obter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_obter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_obter.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_obter.ForeColor = System.Drawing.Color.White;
-            this.bt_obter.Location = new System.Drawing.Point(44, 178);
+            this.bt_obter.Location = new System.Drawing.Point(478, 364);
             this.bt_obter.Margin = new System.Windows.Forms.Padding(15);
             this.bt_obter.Name = "bt_obter";
-            this.bt_obter.Size = new System.Drawing.Size(110, 32);
+            this.bt_obter.Size = new System.Drawing.Size(110, 40);
             this.bt_obter.TabIndex = 24;
             this.bt_obter.Text = "Visualizar";
             this.bt_obter.UseVisualStyleBackColor = false;
@@ -156,20 +153,20 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(112, 83);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(400, 217);
+            this.pictureBox1.Size = new System.Drawing.Size(400, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // bt_editar
             // 
-            this.bt_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_editar.BackColor = System.Drawing.Color.DodgerBlue;
             this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_editar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_editar.ForeColor = System.Drawing.Color.White;
-            this.bt_editar.Location = new System.Drawing.Point(44, 140);
+            this.bt_editar.Location = new System.Drawing.Point(472, 6);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(110, 30);
             this.bt_editar.TabIndex = 98;
@@ -181,9 +178,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lb_localizar);
             this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.bt_editar);
             this.panel1.Controls.Add(this.imagemuser);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.userhora);
@@ -219,7 +216,7 @@
             // 
             this.lb_deslike.AutoSize = true;
             this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_deslike.Location = new System.Drawing.Point(490, 397);
+            this.lb_deslike.Location = new System.Drawing.Point(127, 383);
             this.lb_deslike.Margin = new System.Windows.Forms.Padding(3);
             this.lb_deslike.Name = "lb_deslike";
             this.lb_deslike.Size = new System.Drawing.Size(15, 17);
@@ -230,7 +227,7 @@
             // 
             this.lb_like.AutoSize = true;
             this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_like.Location = new System.Drawing.Point(490, 341);
+            this.lb_like.Location = new System.Drawing.Point(61, 383);
             this.lb_like.Margin = new System.Windows.Forms.Padding(3);
             this.lb_like.Name = "lb_like";
             this.lb_like.Size = new System.Drawing.Size(15, 17);
@@ -241,12 +238,11 @@
             // 
             this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
             this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_down.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.Location = new System.Drawing.Point(435, 381);
+            this.pb_down.Location = new System.Drawing.Point(96, 375);
             this.pb_down.Margin = new System.Windows.Forms.Padding(15);
             this.pb_down.Name = "pb_down";
-            this.pb_down.Size = new System.Drawing.Size(37, 33);
+            this.pb_down.Size = new System.Drawing.Size(25, 25);
             this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_down.TabIndex = 103;
             this.pb_down.TabStop = false;
@@ -256,12 +252,11 @@
             // 
             this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
             this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_up.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.Location = new System.Drawing.Point(435, 325);
+            this.pb_up.Location = new System.Drawing.Point(29, 375);
             this.pb_up.Margin = new System.Windows.Forms.Padding(15);
             this.pb_up.Name = "pb_up";
-            this.pb_up.Size = new System.Drawing.Size(37, 33);
+            this.pb_up.Size = new System.Drawing.Size(25, 25);
             this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_up.TabIndex = 102;
             this.pb_up.TabStop = false;
@@ -271,27 +266,15 @@
             // 
             this.lb_problema.AutoSize = true;
             this.lb_problema.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_problema.Location = new System.Drawing.Point(31, 42);
+            this.lb_problema.Location = new System.Drawing.Point(240, 308);
             this.lb_problema.Name = "lb_problema";
             this.lb_problema.Size = new System.Drawing.Size(38, 17);
             this.lb_problema.TabIndex = 105;
             this.lb_problema.Text = "value";
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.lb_problema);
-            this.panel2.Controls.Add(this.bt_editar);
-            this.panel2.Controls.Add(this.bt_obter);
-            this.panel2.Location = new System.Drawing.Point(422, 79);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 216);
-            this.panel2.TabIndex = 106;
-            // 
             // imagemuser
             // 
-            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imagemuser.Location = new System.Drawing.Point(5, 2);
             this.imagemuser.Name = "imagemuser";
             this.imagemuser.Size = new System.Drawing.Size(57, 57);
@@ -304,15 +287,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.lb_problema);
             this.Controls.Add(this.lb_like);
-            this.Controls.Add(this.pb_up);
             this.Controls.Add(this.lb_deslike);
-            this.Controls.Add(this.pb_down);
+            this.Controls.Add(this.bt_obter);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.pb_up);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pb_down);
             this.Controls.Add(this.userboxdesc);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(625, 425);
             this.Load += new System.EventHandler(this.UserControl1_Load);
@@ -323,8 +308,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -352,6 +335,5 @@
         private System.Windows.Forms.Label lb_problema;
         private System.Windows.Forms.Label lb_localizar;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel2;
     }
 }
