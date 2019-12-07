@@ -81,7 +81,7 @@
             this.bt_sogestao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_sogestao.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_sogestao.ForeColor = System.Drawing.Color.White;
-            this.bt_sogestao.Location = new System.Drawing.Point(821, 7);
+            this.bt_sogestao.Location = new System.Drawing.Point(821, 5);
             this.bt_sogestao.Name = "bt_sogestao";
             this.bt_sogestao.Size = new System.Drawing.Size(122, 28);
             this.bt_sogestao.TabIndex = 4;

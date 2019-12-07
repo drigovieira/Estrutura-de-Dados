@@ -31,10 +31,20 @@ namespace Pont_Finder.servicos.socialist
             pb_icone.ImageLocation = user.Image;
             lb_servico.Text += post.Titulo;
             lb_username.Text += user.Nome;
-            lb_status.Text += "Em Beta!";
+            //lb_status.Text += "Em Beta!";
         }
 
         private void Button1_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmpresa(post.Id, user.Cpf));
+        }
+
+        private void Lb_status_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void UserControl_ChatUser_Click(object sender, EventArgs e)
         {
             FormPrincipal.MudarForm("servicos", new socialist.FormSociaListEmpresa(post.Id, user.Cpf));
         }

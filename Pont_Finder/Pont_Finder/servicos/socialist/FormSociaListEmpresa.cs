@@ -40,22 +40,27 @@ namespace Pont_Finder.servicos.socialist
             pb_empresa.ImageLocation = empresa.Image;
 
 
-            int y = 5;
+            int y = 4;
             //panel_chat.Height = 180;
             int i = 0;
-            foreach (var item in ChatList.Chats)
-            {
-                classes.Post tPost = classes.PostList.SelectId(item.PostId);
-                if (tPost.Cpf == Session.Cpf)
+           // for (int j = 0; j < 10; j++)
+                foreach (var item in ChatList.Chats)
                 {
-                    UserControl_ChatUser a = new UserControl_ChatUser(item.PostId, "empresa", item.CpfUser);
-                    a.Location = new Point(10, (y));
-                    y = y + a.Height + 5;
-                    //panel_chat.Height = panel_chat.Height + a.Height+5;
-                    panel_chat.Controls.Add(a);
-                    i++;
+                    classes.Post tPost = classes.PostList.SelectId(item.PostId);
+                    if (tPost.Cpf == Session.Cpf)
+                    {
+                        UserControl_ChatUser a = new UserControl_ChatUser(item.PostId, "empresa", item.CpfUser);
+                        a.Location = new Point(4, (y));
+                        y = y + a.Height + 4;
+                        //panel_chat.Height = panel_chat.Height + a.Height+5;
+                        panel_chat.Controls.Add(a);
+                        i++;
+                    }
                 }
-            }
+           
+             
+
+
 
             if (usuario == null)
             {
@@ -120,6 +125,11 @@ namespace Pont_Finder.servicos.socialist
         private void Tb_mensagens_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(Session.Cpf, new FormServicos()));
         }
     }
 }

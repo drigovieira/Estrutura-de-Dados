@@ -37,7 +37,6 @@
             this.panel_chat = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lb_username = new System.Windows.Forms.Label();
             this.pb_usericone = new System.Windows.Forms.PictureBox();
@@ -45,6 +44,7 @@
             this.bt_limpar = new System.Windows.Forms.Button();
             this.tb_mensagem = new System.Windows.Forms.RichTextBox();
             this.bt_enviar = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_empresa)).BeginInit();
@@ -52,6 +52,7 @@
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_usericone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -84,7 +85,7 @@
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(500, 70);
+            this.panel1.Size = new System.Drawing.Size(395, 70);
             this.panel1.TabIndex = 44;
             // 
             // pb_empresa
@@ -115,7 +116,7 @@
             this.panel_chat.Location = new System.Drawing.Point(10, 90);
             this.panel_chat.Margin = new System.Windows.Forms.Padding(10);
             this.panel_chat.Name = "panel_chat";
-            this.panel_chat.Size = new System.Drawing.Size(500, 384);
+            this.panel_chat.Size = new System.Drawing.Size(395, 384);
             this.panel_chat.TabIndex = 43;
             // 
             // panel4
@@ -123,16 +124,15 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.panel_chat);
-            this.panel4.Location = new System.Drawing.Point(5, 158);
+            this.panel4.Location = new System.Drawing.Point(110, 158);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(520, 484);
+            this.panel4.Size = new System.Drawing.Size(415, 484);
             this.panel4.TabIndex = 46;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
-            this.panel6.Controls.Add(this.button1);
             this.panel6.Controls.Add(this.panel5);
             this.panel6.Controls.Add(this.tb_mensagens);
             this.panel6.Controls.Add(this.bt_limpar);
@@ -140,18 +140,8 @@
             this.panel6.Controls.Add(this.bt_enviar);
             this.panel6.Location = new System.Drawing.Point(531, 158);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(730, 484);
+            this.panel6.Size = new System.Drawing.Size(624, 484);
             this.panel6.TabIndex = 33;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(8, 440);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 35);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Solicitar Serviço";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -162,14 +152,14 @@
             this.panel5.Location = new System.Drawing.Point(10, 10);
             this.panel5.Margin = new System.Windows.Forms.Padding(10);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(710, 70);
+            this.panel5.Size = new System.Drawing.Size(604, 70);
             this.panel5.TabIndex = 6;
             // 
             // lb_username
             // 
             this.lb_username.AutoSize = true;
             this.lb_username.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_username.Location = new System.Drawing.Point(73, 14);
+            this.lb_username.Location = new System.Drawing.Point(73, 17);
             this.lb_username.Name = "lb_username";
             this.lb_username.Size = new System.Drawing.Size(199, 36);
             this.lb_username.TabIndex = 5;
@@ -195,7 +185,7 @@
             this.tb_mensagens.Margin = new System.Windows.Forms.Padding(10);
             this.tb_mensagens.Name = "tb_mensagens";
             this.tb_mensagens.ReadOnly = true;
-            this.tb_mensagens.Size = new System.Drawing.Size(710, 228);
+            this.tb_mensagens.Size = new System.Drawing.Size(604, 257);
             this.tb_mensagens.TabIndex = 3;
             this.tb_mensagens.Text = "";
             this.tb_mensagens.TextChanged += new System.EventHandler(this.Tb_mensagens_TextChanged);
@@ -203,7 +193,7 @@
             // bt_limpar
             // 
             this.bt_limpar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_limpar.Location = new System.Drawing.Point(454, 440);
+            this.bt_limpar.Location = new System.Drawing.Point(10, 439);
             this.bt_limpar.Name = "bt_limpar";
             this.bt_limpar.Size = new System.Drawing.Size(130, 35);
             this.bt_limpar.TabIndex = 2;
@@ -215,17 +205,17 @@
             // 
             this.tb_mensagem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_mensagem.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_mensagem.Location = new System.Drawing.Point(8, 327);
+            this.tb_mensagem.Location = new System.Drawing.Point(10, 358);
             this.tb_mensagem.Margin = new System.Windows.Forms.Padding(10);
             this.tb_mensagem.Name = "tb_mensagem";
-            this.tb_mensagem.Size = new System.Drawing.Size(712, 105);
+            this.tb_mensagem.Size = new System.Drawing.Size(604, 74);
             this.tb_mensagem.TabIndex = 0;
             this.tb_mensagem.Text = "";
             // 
             // bt_enviar
             // 
             this.bt_enviar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_enviar.Location = new System.Drawing.Point(590, 440);
+            this.bt_enviar.Location = new System.Drawing.Point(484, 439);
             this.bt_enviar.Name = "bt_enviar";
             this.bt_enviar.Size = new System.Drawing.Size(130, 35);
             this.bt_enviar.TabIndex = 1;
@@ -233,12 +223,25 @@
             this.bt_enviar.UseVisualStyleBackColor = true;
             this.bt_enviar.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(32, 183);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 47;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
+            // 
             // FormSociaListEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -256,6 +259,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_usericone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -277,6 +281,6 @@
         private System.Windows.Forms.Button bt_limpar;
         private System.Windows.Forms.RichTextBox tb_mensagem;
         private System.Windows.Forms.Button bt_enviar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }

@@ -30,21 +30,22 @@ namespace Pont_Finder.servicos.socialist
             pb_userimage.ImageLocation = Session.Image;
             lb_username.Text = Session.Nome;
 
-            int y = 5;
-            panel_chat.Height = 180;
+            int y = 4;
+            //panel_chat.Height = 180;
             int i = 0;
-            foreach (var item in ChatList.Chats)
-            {
-                if (item.CpfUser.Equals(Session.Cpf))
+            //for (int j = 0; j < 10; j++)
+                foreach (var item in ChatList.Chats)
                 {
-                    UserControl_ChatEmpresa a = new UserControl_ChatEmpresa(item.PostId, "cliente");
-                    a.Location = new Point(10, (y));
-                    y = y + a.Height + 5;
-                    panel_chat.Height = panel_chat.Height + 180;
-                    panel_chat.Controls.Add(a);
-                    i++;
+                    if (item.CpfUser.Equals(Session.Cpf))
+                    {
+                        UserControl_ChatEmpresa a = new UserControl_ChatEmpresa(item.PostId, "cliente");
+                        a.Location = new Point(4, (y));
+                        y = y + a.Height + 4;
+                        //panel_chat.Height = panel_chat.Height + 180;
+                        panel_chat.Controls.Add(a);
+                        i++;
+                    }
                 }
-            }
 
             if (post == null)
             {
@@ -94,6 +95,16 @@ namespace Pont_Finder.servicos.socialist
                 else if (item.PostId == post.Id && item.Para == Session.Cpf && item.De == post.Cpf)
                     tb_mensagens.Text += empresa.NomeFantasia + ": " + item.Msg + "\n";
             }
+        }
+
+        private void Panel_chat_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("servicos", new FormServicos());
         }
     }
 }
