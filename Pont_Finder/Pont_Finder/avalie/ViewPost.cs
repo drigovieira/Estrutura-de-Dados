@@ -374,5 +374,55 @@ namespace Pont_Finder.avalie
             FiltroComentario();
             tb_resposta.Text = "";
         }
+
+        private void bt_prox_Click(object sender, EventArgs e)
+        {
+            if (pagAtual < pagTotal)
+            {
+                local = 0;
+                painelcoment.Controls.Clear();
+                int pg = (pagAtual * pagQuant);
+
+                for (int i = 0; i < pagQuant; i++)
+                {
+                    if (pg + i < ListaDePost.Count)
+                    {
+                        UserControl1 t1 = new UserControl1(ListaDePost[pg + i].Idcoment);
+                        t1.Location = new Point(0, local);
+                        local = local + t1.Height + 5;
+                        painelcoment.Controls.Add(t1);
+                    }
+
+                }
+
+                pagAtual++;
+                lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+            }
+        }
+
+        private void bt_ant_Click(object sender, EventArgs e)
+        {
+            if (pagAtual > 1)
+            {
+                local = 0;
+                painelcoment.Controls.Clear();
+
+                int pg = ((pagAtual - 2) * pagQuant);
+
+                for (int i = 0; i < pagQuant; i++)
+                {
+                    if (pg + i < ListaDePost.Count)
+                    {
+                        UserControl1 t1 = new UserControl1(ListaDePost[pg + i].Idcoment);
+                        t1.Location = new Point(0, local);
+                        local = local + t1.Height + 5;
+                        painelcoment.Controls.Add(t1);
+                    }
+                }
+                pagAtual--;
+
+                lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+            }
+        }
     }
 }

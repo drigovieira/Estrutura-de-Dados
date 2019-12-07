@@ -36,7 +36,6 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             this.lb_deslike = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
             this.pb_down = new System.Windows.Forms.PictureBox();
@@ -62,13 +61,14 @@
             this.tb_resposta = new System.Windows.Forms.RichTextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.SuspendLayout();
             // 
             // openIcone
@@ -131,16 +131,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1010, 452);
             this.panel3.TabIndex = 93;
-            // 
-            // imagemuser
-            // 
-            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imagemuser.Location = new System.Drawing.Point(39, 42);
-            this.imagemuser.Name = "imagemuser";
-            this.imagemuser.Size = new System.Drawing.Size(68, 68);
-            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagemuser.TabIndex = 109;
-            this.imagemuser.TabStop = false;
             // 
             // lb_deslike
             // 
@@ -349,6 +339,7 @@
             this.bt_prox.TabIndex = 85;
             this.bt_prox.Text = ">>";
             this.bt_prox.UseVisualStyleBackColor = false;
+            this.bt_prox.Click += new System.EventHandler(this.bt_prox_Click);
             // 
             // lb_pag
             // 
@@ -372,6 +363,7 @@
             this.bt_ant.TabIndex = 84;
             this.bt_ant.Text = "<<";
             this.bt_ant.UseVisualStyleBackColor = false;
+            this.bt_ant.Click += new System.EventHandler(this.bt_ant_Click);
             // 
             // label6
             // 
@@ -441,6 +433,16 @@
             this.panel1.Size = new System.Drawing.Size(1010, 325);
             this.panel1.TabIndex = 96;
             // 
+            // imagemuser
+            // 
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemuser.Location = new System.Drawing.Point(39, 42);
+            this.imagemuser.Name = "imagemuser";
+            this.imagemuser.Size = new System.Drawing.Size(68, 68);
+            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagemuser.TabIndex = 109;
+            this.imagemuser.TabStop = false;
+            // 
             // ViewPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,12 +463,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
