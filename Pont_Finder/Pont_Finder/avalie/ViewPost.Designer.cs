@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.panel2 = new System.Windows.Forms.Panel();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
@@ -35,7 +36,7 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             this.lb_deslike = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
             this.pb_down = new System.Windows.Forms.PictureBox();
@@ -57,19 +58,17 @@
             this.bt_ant = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.painelcoment = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.bt_postar = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.tb_resposta = new System.Windows.Forms.RichTextBox();
-            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // openIcone
@@ -79,7 +78,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 3410);
+            this.panel2.Location = new System.Drawing.Point(0, 795);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 24;
@@ -101,7 +100,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(107, 2675);
+            this.pictureBox1.Location = new System.Drawing.Point(89, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 94;
@@ -112,48 +111,43 @@
             this.panel3.AutoSize = true;
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Controls.Add(this.bt_prox);
-            this.panel3.Controls.Add(this.lb_pag);
-            this.panel3.Controls.Add(this.bt_ant);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.painelcoment);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(153, 2675);
+            this.panel3.Controls.Add(this.imagemuser);
+            this.panel3.Controls.Add(this.lb_deslike);
+            this.panel3.Controls.Add(this.lb_like);
+            this.panel3.Controls.Add(this.pb_down);
+            this.panel3.Controls.Add(this.pb_up);
+            this.panel3.Controls.Add(this.gMapControl1);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.tb_localizacao);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.lb_data);
+            this.panel3.Controls.Add(this.lb_hora);
+            this.panel3.Controls.Add(this.tb_descricao);
+            this.panel3.Controls.Add(this.tb_problema);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.pb_imagem);
+            this.panel3.Controls.Add(this.NomePos);
+            this.panel3.Location = new System.Drawing.Point(135, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1014, 735);
+            this.panel3.Size = new System.Drawing.Size(1020, 452);
             this.panel3.TabIndex = 93;
             // 
-            // panel1
+            // imagemuser
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.imagemuser);
-            this.panel1.Controls.Add(this.lb_deslike);
-            this.panel1.Controls.Add(this.lb_like);
-            this.panel1.Controls.Add(this.pb_down);
-            this.panel1.Controls.Add(this.pb_up);
-            this.panel1.Controls.Add(this.gMapControl1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.tb_localizacao);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.lb_data);
-            this.panel1.Controls.Add(this.tb_descricao);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.NomePos);
-            this.panel1.Controls.Add(this.pb_imagem);
-            this.panel1.Controls.Add(this.tb_problema);
-            this.panel1.Controls.Add(this.lb_hora);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(17, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(977, 422);
-            this.panel1.TabIndex = 110;
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemuser.Location = new System.Drawing.Point(39, 42);
+            this.imagemuser.Name = "imagemuser";
+            this.imagemuser.Size = new System.Drawing.Size(68, 68);
+            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagemuser.TabIndex = 109;
+            this.imagemuser.TabStop = false;
             // 
             // lb_deslike
             // 
             this.lb_deslike.AutoSize = true;
             this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_deslike.Location = new System.Drawing.Point(243, 380);
+            this.lb_deslike.Location = new System.Drawing.Point(244, 382);
             this.lb_deslike.Name = "lb_deslike";
             this.lb_deslike.Size = new System.Drawing.Size(15, 16);
             this.lb_deslike.TabIndex = 108;
@@ -163,7 +157,7 @@
             // 
             this.lb_like.AutoSize = true;
             this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_like.Location = new System.Drawing.Point(142, 380);
+            this.lb_like.Location = new System.Drawing.Point(143, 382);
             this.lb_like.Name = "lb_like";
             this.lb_like.Size = new System.Drawing.Size(15, 16);
             this.lb_like.TabIndex = 105;
@@ -174,7 +168,7 @@
             this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
             this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.Location = new System.Drawing.Point(200, 380);
+            this.pb_down.Location = new System.Drawing.Point(201, 382);
             this.pb_down.Margin = new System.Windows.Forms.Padding(15);
             this.pb_down.Name = "pb_down";
             this.pb_down.Size = new System.Drawing.Size(37, 32);
@@ -187,7 +181,7 @@
             this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
             this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.Location = new System.Drawing.Point(98, 380);
+            this.pb_up.Location = new System.Drawing.Point(99, 382);
             this.pb_up.Margin = new System.Windows.Forms.Padding(15);
             this.pb_up.Name = "pb_up";
             this.pb_up.Size = new System.Drawing.Size(37, 32);
@@ -204,7 +198,7 @@
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(603, 6);
+            this.gMapControl1.Location = new System.Drawing.Point(628, 19);
             this.gMapControl1.MarkersEnabled = true;
             this.gMapControl1.MaxZoom = 18;
             this.gMapControl1.MinZoom = 14;
@@ -228,7 +222,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(10, 6);
+            this.label4.Location = new System.Drawing.Point(11, 8);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(144, 31);
             this.label4.TabIndex = 86;
@@ -241,7 +235,7 @@
             this.tb_localizacao.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tb_localizacao.Enabled = false;
             this.tb_localizacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_localizacao.Location = new System.Drawing.Point(323, 128);
+            this.tb_localizacao.Location = new System.Drawing.Point(324, 130);
             this.tb_localizacao.Name = "tb_localizacao";
             this.tb_localizacao.ReadOnly = true;
             this.tb_localizacao.Size = new System.Drawing.Size(289, 19);
@@ -251,7 +245,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(313, 182);
+            this.label5.Location = new System.Drawing.Point(314, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 16);
             this.label5.TabIndex = 79;
@@ -261,7 +255,7 @@
             // 
             this.lb_data.AutoSize = true;
             this.lb_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_data.Location = new System.Drawing.Point(42, 282);
+            this.lb_data.Location = new System.Drawing.Point(43, 284);
             this.lb_data.Name = "lb_data";
             this.lb_data.Size = new System.Drawing.Size(115, 13);
             this.lb_data.TabIndex = 84;
@@ -274,7 +268,7 @@
             this.tb_descricao.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tb_descricao.Enabled = false;
             this.tb_descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_descricao.Location = new System.Drawing.Point(316, 269);
+            this.tb_descricao.Location = new System.Drawing.Point(317, 271);
             this.tb_descricao.Multiline = true;
             this.tb_descricao.Name = "tb_descricao";
             this.tb_descricao.ReadOnly = true;
@@ -285,7 +279,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(313, 250);
+            this.label2.Location = new System.Drawing.Point(314, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 16);
             this.label2.TabIndex = 80;
@@ -295,7 +289,7 @@
             // 
             this.NomePos.AutoSize = true;
             this.NomePos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomePos.Location = new System.Drawing.Point(186, 57);
+            this.NomePos.Location = new System.Drawing.Point(187, 59);
             this.NomePos.Name = "NomePos";
             this.NomePos.Size = new System.Drawing.Size(51, 16);
             this.NomePos.TabIndex = 83;
@@ -303,7 +297,7 @@
             // 
             // pb_imagem
             // 
-            this.pb_imagem.Location = new System.Drawing.Point(38, 109);
+            this.pb_imagem.Location = new System.Drawing.Point(39, 111);
             this.pb_imagem.Name = "pb_imagem";
             this.pb_imagem.Size = new System.Drawing.Size(263, 170);
             this.pb_imagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -317,7 +311,7 @@
             this.tb_problema.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tb_problema.Enabled = false;
             this.tb_problema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_problema.Location = new System.Drawing.Point(323, 201);
+            this.tb_problema.Location = new System.Drawing.Point(324, 203);
             this.tb_problema.Name = "tb_problema";
             this.tb_problema.ReadOnly = true;
             this.tb_problema.Size = new System.Drawing.Size(289, 19);
@@ -327,7 +321,7 @@
             // 
             this.lb_hora.AutoSize = true;
             this.lb_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_hora.Location = new System.Drawing.Point(163, 282);
+            this.lb_hora.Location = new System.Drawing.Point(164, 284);
             this.lb_hora.Name = "lb_hora";
             this.lb_hora.Size = new System.Drawing.Size(32, 13);
             this.lb_hora.TabIndex = 82;
@@ -337,7 +331,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(313, 109);
+            this.label3.Location = new System.Drawing.Point(314, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 16);
             this.label3.TabIndex = 81;
@@ -350,7 +344,7 @@
             this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_prox.ForeColor = System.Drawing.Color.Black;
-            this.bt_prox.Location = new System.Drawing.Point(467, 459);
+            this.bt_prox.Location = new System.Drawing.Point(683, 197);
             this.bt_prox.Name = "bt_prox";
             this.bt_prox.Size = new System.Drawing.Size(75, 23);
             this.bt_prox.TabIndex = 85;
@@ -360,7 +354,7 @@
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(249, 469);
+            this.lb_pag.Location = new System.Drawing.Point(465, 207);
             this.lb_pag.Name = "lb_pag";
             this.lb_pag.Size = new System.Drawing.Size(39, 13);
             this.lb_pag.TabIndex = 86;
@@ -373,7 +367,7 @@
             this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(17, 459);
+            this.bt_ant.Location = new System.Drawing.Point(233, 197);
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(75, 23);
             this.bt_ant.TabIndex = 84;
@@ -386,7 +380,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(203, 427);
+            this.label6.Location = new System.Drawing.Point(432, 8);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 24);
             this.label6.TabIndex = 91;
@@ -396,28 +390,17 @@
             // 
             this.painelcoment.AutoSize = true;
             this.painelcoment.BackColor = System.Drawing.Color.Transparent;
-            this.painelcoment.Location = new System.Drawing.Point(17, 509);
+            this.painelcoment.Location = new System.Drawing.Point(233, 247);
             this.painelcoment.Name = "painelcoment";
             this.painelcoment.Size = new System.Drawing.Size(525, 24);
             this.painelcoment.TabIndex = 90;
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.bt_postar);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.tb_resposta);
-            this.panel4.Location = new System.Drawing.Point(597, 418);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(397, 310);
-            this.panel4.TabIndex = 111;
             // 
             // bt_postar
             // 
             this.bt_postar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_postar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_postar.ForeColor = System.Drawing.Color.White;
-            this.bt_postar.Location = new System.Drawing.Point(168, 163);
+            this.bt_postar.Location = new System.Drawing.Point(764, 84);
             this.bt_postar.Name = "bt_postar";
             this.bt_postar.Size = new System.Drawing.Size(86, 38);
             this.bt_postar.TabIndex = 89;
@@ -425,38 +408,36 @@
             this.bt_postar.UseVisualStyleBackColor = false;
             this.bt_postar.Click += new System.EventHandler(this.bt_postar_Click_1);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(3, 14);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 24);
-            this.label8.TabIndex = 66;
-            this.label8.Text = "Comentar:";
-            // 
             // tb_resposta
             // 
-            this.tb_resposta.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_resposta.BackColor = System.Drawing.Color.Gainsboro;
+            this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_resposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_resposta.Location = new System.Drawing.Point(7, 39);
+            this.tb_resposta.Location = new System.Drawing.Point(233, 35);
             this.tb_resposta.Name = "tb_resposta";
-            this.tb_resposta.Size = new System.Drawing.Size(387, 118);
+            this.tb_resposta.Size = new System.Drawing.Size(525, 118);
             this.tb_resposta.TabIndex = 69;
             this.tb_resposta.Text = "";
             // 
-            // imagemuser
+            // contextMenuStrip1
             // 
-            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imagemuser.Location = new System.Drawing.Point(38, 40);
-            this.imagemuser.Name = "imagemuser";
-            this.imagemuser.Size = new System.Drawing.Size(68, 68);
-            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagemuser.TabIndex = 109;
-            this.imagemuser.TabStop = false;
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.bt_postar);
+            this.panel1.Controls.Add(this.tb_resposta);
+            this.panel1.Controls.Add(this.painelcoment);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.bt_ant);
+            this.panel1.Controls.Add(this.bt_prox);
+            this.panel1.Controls.Add(this.lb_pag);
+            this.panel1.Location = new System.Drawing.Point(135, 470);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1020, 325);
+            this.panel1.TabIndex = 96;
             // 
             // ViewPost
             // 
@@ -465,6 +446,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -477,14 +459,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -522,8 +502,7 @@
         private System.Windows.Forms.Label lb_pag;
         private System.Windows.Forms.Button bt_ant;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel4;
     }
 }
