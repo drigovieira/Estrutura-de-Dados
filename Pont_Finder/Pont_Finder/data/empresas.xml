@@ -69,24 +69,6 @@ Pronto, o teste foi bem sucedido</politicaprivacidade>
     <politicaprivacidade></politicaprivacidade>
     <imagecapa></imagecapa>
   </servico>
-  <hospedagem>
-    <admin>26835036010</admin>
-    <logo>..//..//hospedagem//data//images//empresas//11111111111111//logo//11111111111111.jpg</logo>
-    <nomeempresa>Empresa</nomeempresa>
-    <nomefantasia>344444</nomefantasia>
-    <cnpj>11111111111111</cnpj>
-    <endereco>3333</endereco>
-    <cep>33333333</cep>
-    <telefone>33333333333</telefone>
-    <email>ded@.</email>
-    <foto>..//..//hospedagem//data//images//empresas//11111111111111//empresa//</foto>
-    <tipo>Hotel</tipo>
-    <estrelas>5</estrelas>
-    <descricao>Toperzera
-</descricao>
-    <ambiente>  Estacionamento  Piscina  Sala de Jogos  Academia</ambiente>
-    <status>true</status>
-  </hospedagem>
   <alimentos>
     <nome>Empresa Teste</nome>
     <nomeFantasia>Empresa Teste</nomeFantasia>

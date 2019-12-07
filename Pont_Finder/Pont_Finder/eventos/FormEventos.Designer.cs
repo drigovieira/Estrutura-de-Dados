@@ -130,7 +130,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(0, 1076);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1265, 100);
+            this.panel7.Size = new System.Drawing.Size(1282, 100);
             this.panel7.TabIndex = 26;
             // 
             // panel2
@@ -318,7 +318,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.ClientSize = new System.Drawing.Size(1299, 675);
             this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_ant);
