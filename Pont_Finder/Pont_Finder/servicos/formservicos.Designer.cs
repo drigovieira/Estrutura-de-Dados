@@ -318,6 +318,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(64, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 27);
@@ -329,6 +330,7 @@
             this.rb_semfiltro.AutoSize = true;
             this.rb_semfiltro.Checked = true;
             this.rb_semfiltro.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_semfiltro.ForeColor = System.Drawing.Color.White;
             this.rb_semfiltro.Location = new System.Drawing.Point(16, 128);
             this.rb_semfiltro.Name = "rb_semfiltro";
             this.rb_semfiltro.Size = new System.Drawing.Size(78, 20);
@@ -341,6 +343,7 @@
             // 
             this.rb_empresa.AutoSize = true;
             this.rb_empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_empresa.ForeColor = System.Drawing.Color.White;
             this.rb_empresa.Location = new System.Drawing.Point(162, 150);
             this.rb_empresa.Name = "rb_empresa";
             this.rb_empresa.Size = new System.Drawing.Size(121, 20);
@@ -352,6 +355,7 @@
             // 
             this.rb_servico.AutoSize = true;
             this.rb_servico.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_servico.ForeColor = System.Drawing.Color.White;
             this.rb_servico.Location = new System.Drawing.Point(162, 124);
             this.rb_servico.Name = "rb_servico";
             this.rb_servico.Size = new System.Drawing.Size(116, 20);
@@ -364,6 +368,7 @@
             // 
             this.rb_recente.AutoSize = true;
             this.rb_recente.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_recente.ForeColor = System.Drawing.Color.White;
             this.rb_recente.Location = new System.Drawing.Point(16, 154);
             this.rb_recente.Name = "rb_recente";
             this.rb_recente.Size = new System.Drawing.Size(96, 20);
@@ -375,6 +380,7 @@
             // 
             this.rb_antigo.AutoSize = true;
             this.rb_antigo.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_antigo.ForeColor = System.Drawing.Color.White;
             this.rb_antigo.Location = new System.Drawing.Point(16, 180);
             this.rb_antigo.Name = "rb_antigo";
             this.rb_antigo.Size = new System.Drawing.Size(90, 20);
@@ -403,6 +409,7 @@
             // 
             this.rb_categoria.AutoSize = true;
             this.rb_categoria.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_categoria.ForeColor = System.Drawing.Color.White;
             this.rb_categoria.Location = new System.Drawing.Point(162, 176);
             this.rb_categoria.Name = "rb_categoria";
             this.rb_categoria.Size = new System.Drawing.Size(76, 20);
