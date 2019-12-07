@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lb_rs_cartao = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lb_txt4 = new System.Windows.Forms.Label();
             this.esgotado = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_txt7 = new System.Windows.Forms.Label();
@@ -56,11 +61,6 @@
             this.bt_comprar = new System.Windows.Forms.Button();
             this.lb_nome_evento = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.lb_txt4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lb_rs_cartao = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
@@ -91,6 +91,59 @@
             this.panel1.Size = new System.Drawing.Size(1055, 1166);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(820, 279);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(181, 21);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "Em até 6 vezes no cartão\r\n";
+            // 
+            // lb_rs_cartao
+            // 
+            this.lb_rs_cartao.AutoSize = true;
+            this.lb_rs_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rs_cartao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
+            this.lb_rs_cartao.Location = new System.Drawing.Point(918, 87);
+            this.lb_rs_cartao.Name = "lb_rs_cartao";
+            this.lb_rs_cartao.Size = new System.Drawing.Size(43, 46);
+            this.lb_rs_cartao.TabIndex = 44;
+            this.lb_rs_cartao.Text = "V";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(849, 214);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 46);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "R$";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(888, 182);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 21);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Ou";
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
+            // 
+            // lb_txt4
+            // 
+            this.lb_txt4.AutoSize = true;
+            this.lb_txt4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_txt4.Location = new System.Drawing.Point(820, 146);
+            this.lb_txt4.Name = "lb_txt4";
+            this.lb_txt4.Size = new System.Drawing.Size(190, 21);
+            this.lb_txt4.TabIndex = 41;
+            this.lb_txt4.Text = "A vista no boleto bancário";
             // 
             // esgotado
             // 
@@ -345,8 +398,8 @@
             // 
             this.lb_rs_boleto.AutoSize = true;
             this.lb_rs_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_rs_boleto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs_boleto.Location = new System.Drawing.Point(918, 87);
+            this.lb_rs_boleto.ForeColor = System.Drawing.Color.Red;
+            this.lb_rs_boleto.Location = new System.Drawing.Point(918, 214);
             this.lb_rs_boleto.Name = "lb_rs_boleto";
             this.lb_rs_boleto.Size = new System.Drawing.Size(43, 46);
             this.lb_rs_boleto.TabIndex = 34;
@@ -388,59 +441,6 @@
             this.btn_back.TabIndex = 15;
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
-            // 
-            // lb_txt4
-            // 
-            this.lb_txt4.AutoSize = true;
-            this.lb_txt4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt4.Location = new System.Drawing.Point(820, 146);
-            this.lb_txt4.Name = "lb_txt4";
-            this.lb_txt4.Size = new System.Drawing.Size(186, 21);
-            this.lb_txt4.TabIndex = 41;
-            this.lb_txt4.Text = "Avista no boleto bancário";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(888, 182);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 21);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "Ou";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(849, 214);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 46);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "R$";
-            // 
-            // lb_rs_cartao
-            // 
-            this.lb_rs_cartao.AutoSize = true;
-            this.lb_rs_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_rs_cartao.ForeColor = System.Drawing.Color.Red;
-            this.lb_rs_cartao.Location = new System.Drawing.Point(913, 214);
-            this.lb_rs_cartao.Name = "lb_rs_cartao";
-            this.lb_rs_cartao.Size = new System.Drawing.Size(43, 46);
-            this.lb_rs_cartao.TabIndex = 44;
-            this.lb_rs_cartao.Text = "V";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(820, 279);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 21);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "Em até 6 vezes no cartão\r\n";
             // 
             // Visualizar_evento
             // 

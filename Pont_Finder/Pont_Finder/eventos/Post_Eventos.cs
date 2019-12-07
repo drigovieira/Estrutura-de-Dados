@@ -182,5 +182,10 @@ namespace Pont_Finder.eventos
         {
             Bvalor.MaxLength = 10;
         }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("eventos", new eventos.ListEvent());
+        }
     }
 }
