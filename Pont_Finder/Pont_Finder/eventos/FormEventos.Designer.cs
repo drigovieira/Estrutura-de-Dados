@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEventos));
-            this.tb_bai = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.tb_fai = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tb_cat = new System.Windows.Forms.TextBox();
@@ -60,25 +58,6 @@
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tb_bai
-            // 
-            this.tb_bai.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_bai.Location = new System.Drawing.Point(145, 144);
-            this.tb_bai.Name = "tb_bai";
-            this.tb_bai.Size = new System.Drawing.Size(130, 24);
-            this.tb_bai.TabIndex = 6;
-            this.tb_bai.TextChanged += new System.EventHandler(this.Tb_bai_TextChanged);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(46, 145);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 20);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "Bairro:";
-            // 
             // tb_fai
             // 
             this.tb_fai.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -92,6 +71,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(46, 103);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(88, 20);
@@ -112,16 +92,18 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(46, 57);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 20);
+            this.label13.Size = new System.Drawing.Size(53, 20);
             this.label13.TabIndex = 1;
-            this.label13.Text = "Categoria:";
+            this.label13.Text = "Nome:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(76, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(162, 25);
@@ -156,8 +138,6 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.bt_pesquisar);
-            this.panel2.Controls.Add(this.tb_bai);
-            this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.tb_fai);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.tb_cat);
@@ -165,7 +145,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(5, 280);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 250);
+            this.panel2.Size = new System.Drawing.Size(310, 212);
             this.panel2.TabIndex = 19;
             // 
             // bt_pesquisar
@@ -174,7 +154,7 @@
             this.bt_pesquisar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
             this.bt_pesquisar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_pesquisar.ForeColor = System.Drawing.Color.White;
-            this.bt_pesquisar.Location = new System.Drawing.Point(97, 198);
+            this.bt_pesquisar.Location = new System.Drawing.Point(95, 154);
             this.bt_pesquisar.Name = "bt_pesquisar";
             this.bt_pesquisar.Size = new System.Drawing.Size(110, 34);
             this.bt_pesquisar.TabIndex = 27;
@@ -373,10 +353,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox tb_bai;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox tb_fai;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox tb_cat;
