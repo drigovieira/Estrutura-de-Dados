@@ -43,12 +43,7 @@ namespace Pont_Finder.alimentos
             }
         }        
 
-        private void Menu_SystemColorsChanged(object sender, EventArgs e)
-        {
-            ValueCarrinho.Text = Carrinho.selectAll().Count.ToString();
-        }
-
-        private void Menu_Paint(object sender, PaintEventArgs e)
+        private void Reserva_Alimentos_Paint(object sender, PaintEventArgs e)
         {
             ValueCarrinho.Text = Carrinho.selectAll().Count.ToString();
         }

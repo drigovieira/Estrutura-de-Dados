@@ -58,8 +58,6 @@
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(625, 629);
             this.menu.TabIndex = 58;
-            this.menu.Paint += new System.Windows.Forms.PaintEventHandler(this.Menu_Paint);
-            this.menu.SystemColorsChanged += new System.EventHandler(this.Menu_SystemColorsChanged);
             // 
             // panel9
             // 
@@ -171,7 +169,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(23, 61);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 65);
-            this.pictureBox1.TabIndex = 71;
+            this.pictureBox1.TabIndex = 75;
             this.pictureBox1.TabStop = false;
             // 
             // ValueCarrinho
@@ -183,7 +181,7 @@
             this.ValueCarrinho.Location = new System.Drawing.Point(96, 96);
             this.ValueCarrinho.Name = "ValueCarrinho";
             this.ValueCarrinho.Size = new System.Drawing.Size(24, 27);
-            this.ValueCarrinho.TabIndex = 70;
+            this.ValueCarrinho.TabIndex = 74;
             this.ValueCarrinho.Text = "0";
             // 
             // Reserva_Alimentos
@@ -204,6 +202,7 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Reserva_Alimentos";
             this.Text = "Reserva_Alimentos";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Reserva_Alimentos_Paint);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
