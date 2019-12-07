@@ -67,7 +67,7 @@ namespace Pont_Finder.Boleto
         public void pntdoc_printpage(object sender, PrintPageEventArgs e)
         {
             Rectangle pagearea = e.PageBounds;
-            e.Graphics.DrawImage(memoryimg, (pagearea.Width) - (this.boletoA.Width/1), this.boletoA.Location.Y);
+            e.Graphics.DrawImage(memoryimg, (this.boletoA.Width), (this.boletoA.Location.Y));
            
         }
 
@@ -96,7 +96,7 @@ namespace Pont_Finder.Boleto
             if(salvardiretorio.ShowDialog() == DialogResult.OK)
             {
                 Bitmap bmp = new Bitmap(boletoA.Width, boletoA.Height);
-                DrawToBitmap(bmp, new Rectangle(0, 0, boletoA.Width, boletoA.Height));
+                DrawToBitmap(bmp, new Rectangle(0, 0, 1010, 629));
                 bmp.Save(salvardiretorio.FileName);
 
             }
@@ -127,6 +127,10 @@ namespace Pont_Finder.Boleto
             btnSalvar.Visible = true;
         }
 
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
 
         public void CalcularN()
         {
