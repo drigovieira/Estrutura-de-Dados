@@ -183,7 +183,7 @@
             this.Controls.Add(this.comentarios);
             this.Controls.Add(this.nome);
             this.Name = "Card_comentario";
-            this.Size = new System.Drawing.Size(496, 219);
+            this.Size = new System.Drawing.Size(525, 219);
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagem)).EndInit();

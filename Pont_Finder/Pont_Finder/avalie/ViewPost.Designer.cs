@@ -35,22 +35,14 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.lb_deslike = new System.Windows.Forms.Label();
-            this.bt_prox = new System.Windows.Forms.Button();
-            this.lb_pag = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
-            this.bt_ant = new System.Windows.Forms.Button();
-            this.tb_resposta = new System.Windows.Forms.RichTextBox();
             this.pb_down = new System.Windows.Forms.PictureBox();
-            this.bt_postar = new System.Windows.Forms.Button();
             this.pb_up = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.painelcoment = new System.Windows.Forms.Panel();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.label4 = new System.Windows.Forms.Label();
             this.tb_localizacao = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lb_data = new System.Windows.Forms.Label();
             this.tb_descricao = new System.Windows.Forms.TextBox();
@@ -60,12 +52,24 @@
             this.tb_problema = new System.Windows.Forms.TextBox();
             this.lb_hora = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.bt_prox = new System.Windows.Forms.Button();
+            this.lb_pag = new System.Windows.Forms.Label();
+            this.bt_ant = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.painelcoment = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.bt_postar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tb_resposta = new System.Windows.Forms.RichTextBox();
+            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.SuspendLayout();
             // 
             // openIcone
@@ -75,7 +79,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 747);
+            this.panel2.Location = new System.Drawing.Point(0, 3410);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 24;
@@ -97,7 +101,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(107, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(107, 2675);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 94;
@@ -108,45 +112,42 @@
             this.panel3.AutoSize = true;
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.imagemuser);
-            this.panel3.Controls.Add(this.lb_deslike);
+            this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.bt_prox);
             this.panel3.Controls.Add(this.lb_pag);
-            this.panel3.Controls.Add(this.lb_like);
             this.panel3.Controls.Add(this.bt_ant);
-            this.panel3.Controls.Add(this.tb_resposta);
-            this.panel3.Controls.Add(this.pb_down);
-            this.panel3.Controls.Add(this.bt_postar);
-            this.panel3.Controls.Add(this.pb_up);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.painelcoment);
-            this.panel3.Controls.Add(this.gMapControl1);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.tb_localizacao);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.lb_data);
-            this.panel3.Controls.Add(this.tb_descricao);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.NomePos);
-            this.panel3.Controls.Add(this.pb_imagem);
-            this.panel3.Controls.Add(this.tb_problema);
-            this.panel3.Controls.Add(this.lb_hora);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(153, 12);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Location = new System.Drawing.Point(153, 2675);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1010, 735);
+            this.panel3.Size = new System.Drawing.Size(1014, 735);
             this.panel3.TabIndex = 93;
             // 
-            // imagemuser
+            // panel1
             // 
-            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imagemuser.Location = new System.Drawing.Point(38, 40);
-            this.imagemuser.Name = "imagemuser";
-            this.imagemuser.Size = new System.Drawing.Size(68, 68);
-            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagemuser.TabIndex = 109;
-            this.imagemuser.TabStop = false;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.imagemuser);
+            this.panel1.Controls.Add(this.lb_deslike);
+            this.panel1.Controls.Add(this.lb_like);
+            this.panel1.Controls.Add(this.pb_down);
+            this.panel1.Controls.Add(this.pb_up);
+            this.panel1.Controls.Add(this.gMapControl1);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.tb_localizacao);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.lb_data);
+            this.panel1.Controls.Add(this.tb_descricao);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.NomePos);
+            this.panel1.Controls.Add(this.pb_imagem);
+            this.panel1.Controls.Add(this.tb_problema);
+            this.panel1.Controls.Add(this.lb_hora);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(17, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(977, 422);
+            this.panel1.TabIndex = 110;
             // 
             // lb_deslike
             // 
@@ -158,29 +159,6 @@
             this.lb_deslike.TabIndex = 108;
             this.lb_deslike.Text = "0";
             // 
-            // bt_prox
-            // 
-            this.bt_prox.BackColor = System.Drawing.Color.Transparent;
-            this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_prox.ForeColor = System.Drawing.Color.Black;
-            this.bt_prox.Location = new System.Drawing.Point(633, 505);
-            this.bt_prox.Name = "bt_prox";
-            this.bt_prox.Size = new System.Drawing.Size(75, 23);
-            this.bt_prox.TabIndex = 85;
-            this.bt_prox.Text = ">>";
-            this.bt_prox.UseVisualStyleBackColor = false;
-            // 
-            // lb_pag
-            // 
-            this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(403, 515);
-            this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(39, 13);
-            this.lb_pag.TabIndex = 86;
-            this.lb_pag.Text = "lb_pag";
-            // 
             // lb_like
             // 
             this.lb_like.AutoSize = true;
@@ -190,31 +168,6 @@
             this.lb_like.Size = new System.Drawing.Size(15, 16);
             this.lb_like.TabIndex = 105;
             this.lb_like.Text = "0";
-            // 
-            // bt_ant
-            // 
-            this.bt_ant.BackColor = System.Drawing.Color.Transparent;
-            this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(183, 505);
-            this.bt_ant.Name = "bt_ant";
-            this.bt_ant.Size = new System.Drawing.Size(75, 23);
-            this.bt_ant.TabIndex = 84;
-            this.bt_ant.Text = "<<";
-            this.bt_ant.UseVisualStyleBackColor = false;
-            // 
-            // tb_resposta
-            // 
-            this.tb_resposta.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_resposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_resposta.Location = new System.Drawing.Point(806, 557);
-            this.tb_resposta.Name = "tb_resposta";
-            this.tb_resposta.Size = new System.Drawing.Size(188, 119);
-            this.tb_resposta.TabIndex = 69;
-            this.tb_resposta.Text = "";
             // 
             // pb_down
             // 
@@ -229,19 +182,6 @@
             this.pb_down.TabIndex = 107;
             this.pb_down.TabStop = false;
             // 
-            // bt_postar
-            // 
-            this.bt_postar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_postar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_postar.ForeColor = System.Drawing.Color.White;
-            this.bt_postar.Location = new System.Drawing.Point(856, 682);
-            this.bt_postar.Name = "bt_postar";
-            this.bt_postar.Size = new System.Drawing.Size(86, 38);
-            this.bt_postar.TabIndex = 89;
-            this.bt_postar.Text = "Postar";
-            this.bt_postar.UseVisualStyleBackColor = false;
-            this.bt_postar.Click += new System.EventHandler(this.bt_postar_Click_1);
-            // 
             // pb_up
             // 
             this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
@@ -255,36 +195,16 @@
             this.pb_up.TabIndex = 106;
             this.pb_up.TabStop = false;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(364, 460);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 24);
-            this.label6.TabIndex = 91;
-            this.label6.Text = "Comentarios:";
-            // 
-            // painelcoment
-            // 
-            this.painelcoment.AutoSize = true;
-            this.painelcoment.BackColor = System.Drawing.Color.Transparent;
-            this.painelcoment.Location = new System.Drawing.Point(126, 534);
-            this.painelcoment.Name = "painelcoment";
-            this.painelcoment.Size = new System.Drawing.Size(625, 2);
-            this.painelcoment.TabIndex = 90;
-            // 
             // gMapControl1
             // 
             this.gMapControl1.Bearing = 0F;
+            this.gMapControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.gMapControl1.CanDragMap = true;
             this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(625, 15);
+            this.gMapControl1.Location = new System.Drawing.Point(603, 6);
             this.gMapControl1.MarkersEnabled = true;
             this.gMapControl1.MaxZoom = 18;
             this.gMapControl1.MinZoom = 14;
@@ -327,23 +247,11 @@
             this.tb_localizacao.Size = new System.Drawing.Size(289, 19);
             this.tb_localizacao.TabIndex = 77;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(807, 534);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 24);
-            this.label8.TabIndex = 66;
-            this.label8.Text = "Comentar:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(333, 182);
+            this.label5.Location = new System.Drawing.Point(313, 182);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 16);
             this.label5.TabIndex = 79;
@@ -377,7 +285,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(333, 243);
+            this.label2.Location = new System.Drawing.Point(313, 250);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 16);
             this.label2.TabIndex = 80;
@@ -429,11 +337,126 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(333, 109);
+            this.label3.Location = new System.Drawing.Point(313, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 16);
             this.label3.TabIndex = 81;
             this.label3.Text = "Localização:";
+            // 
+            // bt_prox
+            // 
+            this.bt_prox.BackColor = System.Drawing.Color.Transparent;
+            this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_prox.ForeColor = System.Drawing.Color.Black;
+            this.bt_prox.Location = new System.Drawing.Point(467, 459);
+            this.bt_prox.Name = "bt_prox";
+            this.bt_prox.Size = new System.Drawing.Size(75, 23);
+            this.bt_prox.TabIndex = 85;
+            this.bt_prox.Text = ">>";
+            this.bt_prox.UseVisualStyleBackColor = false;
+            // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.Location = new System.Drawing.Point(249, 469);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(39, 13);
+            this.lb_pag.TabIndex = 86;
+            this.lb_pag.Text = "lb_pag";
+            // 
+            // bt_ant
+            // 
+            this.bt_ant.BackColor = System.Drawing.Color.Transparent;
+            this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ant.ForeColor = System.Drawing.Color.Black;
+            this.bt_ant.Location = new System.Drawing.Point(17, 459);
+            this.bt_ant.Name = "bt_ant";
+            this.bt_ant.Size = new System.Drawing.Size(75, 23);
+            this.bt_ant.TabIndex = 84;
+            this.bt_ant.Text = "<<";
+            this.bt_ant.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(203, 427);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 24);
+            this.label6.TabIndex = 91;
+            this.label6.Text = "Comentarios:";
+            // 
+            // painelcoment
+            // 
+            this.painelcoment.AutoSize = true;
+            this.painelcoment.BackColor = System.Drawing.Color.Transparent;
+            this.painelcoment.Location = new System.Drawing.Point(17, 509);
+            this.painelcoment.Name = "painelcoment";
+            this.painelcoment.Size = new System.Drawing.Size(525, 24);
+            this.painelcoment.TabIndex = 90;
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.bt_postar);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.tb_resposta);
+            this.panel4.Location = new System.Drawing.Point(597, 418);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(397, 310);
+            this.panel4.TabIndex = 111;
+            // 
+            // bt_postar
+            // 
+            this.bt_postar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_postar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_postar.ForeColor = System.Drawing.Color.White;
+            this.bt_postar.Location = new System.Drawing.Point(168, 163);
+            this.bt_postar.Name = "bt_postar";
+            this.bt_postar.Size = new System.Drawing.Size(86, 38);
+            this.bt_postar.TabIndex = 89;
+            this.bt_postar.Text = "Postar";
+            this.bt_postar.UseVisualStyleBackColor = false;
+            this.bt_postar.Click += new System.EventHandler(this.bt_postar_Click_1);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(3, 14);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(106, 24);
+            this.label8.TabIndex = 66;
+            this.label8.Text = "Comentar:";
+            // 
+            // tb_resposta
+            // 
+            this.tb_resposta.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_resposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_resposta.Location = new System.Drawing.Point(7, 39);
+            this.tb_resposta.Name = "tb_resposta";
+            this.tb_resposta.Size = new System.Drawing.Size(387, 118);
+            this.tb_resposta.TabIndex = 69;
+            this.tb_resposta.Text = "";
+            // 
+            // imagemuser
+            // 
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemuser.Location = new System.Drawing.Point(38, 40);
+            this.imagemuser.Name = "imagemuser";
+            this.imagemuser.Size = new System.Drawing.Size(68, 68);
+            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagemuser.TabIndex = 109;
+            this.imagemuser.TabStop = false;
             // 
             // ViewPost
             // 
@@ -454,10 +477,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,5 +523,7 @@
         private System.Windows.Forms.Button bt_ant;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel4;
     }
 }

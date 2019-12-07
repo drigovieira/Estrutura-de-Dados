@@ -372,6 +372,7 @@ namespace Pont_Finder.avalie
 
             CarregarComentario();
             FiltroComentario();
+            tb_resposta.Text = "";
         }
     }
 }
