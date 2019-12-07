@@ -32,7 +32,7 @@ namespace Pont_Finder.avalie.classes
                     pos.ImgUser = item.ImgUser;
                     pos.Username = item.Username;
                     pos.Ativo = item.Ativo;
-
+                    pos.LikesList = item.LikesList;
                     return pos;
                 }
             }
@@ -189,6 +189,8 @@ namespace Pont_Finder.avalie.classes
                         itens.like(short.Parse(v[0]), long.Parse(v[1]));
                     }
                 }
+
+                poster.Add(itens);
             }
         }
 
