@@ -143,17 +143,6 @@ namespace Pont_Finder.avalie
         private void bt_postar_Click(object sender, EventArgs e)
         {
 
-
-
-
-
-
-            
-            
-            
-
-
-
         }
 
         public void CarregarComentario()
@@ -193,6 +182,7 @@ namespace Pont_Finder.avalie
                 painelcoment.Controls.Add(t1);
                 i++;
             }
+            FiltroComentario();
 
         }
 
@@ -381,7 +371,7 @@ namespace Pont_Finder.avalie
             ComentariosList.PostAdd(post);
 
             CarregarComentario();
-            FiltroComentario();
+            
             tb_resposta.Text = "";
         }
 
@@ -438,6 +428,16 @@ namespace Pont_Finder.avalie
         private void tb_resposta_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("Reclame", new FormAvalie());
         }
     }
 }
