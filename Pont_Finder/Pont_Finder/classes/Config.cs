@@ -23,9 +23,9 @@ namespace Pont_Finder.classes
             //fim servicos
 
             //hospedagem
-            hospedagem.hostList.CarregarXML();
-            hospedagem.roomList.CarregarXML();
-            hospedagem.classes.reserveList.CarregarXML();
+            //hospedagem.hostList.CarregarXML();
+            //hospedagem.roomList.CarregarXML();
+            //hospedagem.classes.reserveList.CarregarXML();
             //fim hospedagem
 
             //avalie
