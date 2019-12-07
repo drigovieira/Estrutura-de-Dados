@@ -34,18 +34,18 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ValueCarrinho = new System.Windows.Forms.Label();
             this.bt_visualizar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ValueCarrinho = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menu
@@ -99,6 +99,30 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 200);
             this.panel4.TabIndex = 23;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 61);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(68, 65);
+            this.pictureBox1.TabIndex = 75;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ValueCarrinho
+            // 
+            this.ValueCarrinho.AutoSize = true;
+            this.ValueCarrinho.BackColor = System.Drawing.Color.OrangeRed;
+            this.ValueCarrinho.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ValueCarrinho.ForeColor = System.Drawing.Color.White;
+            this.ValueCarrinho.Location = new System.Drawing.Point(96, 96);
+            this.ValueCarrinho.Name = "ValueCarrinho";
+            this.ValueCarrinho.Size = new System.Drawing.Size(24, 27);
+            this.ValueCarrinho.TabIndex = 74;
+            this.ValueCarrinho.Text = "0";
             // 
             // bt_visualizar
             // 
@@ -160,30 +184,6 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Reserve a sua refeição por aqui!";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 61);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(68, 65);
-            this.pictureBox1.TabIndex = 75;
-            this.pictureBox1.TabStop = false;
-            // 
-            // ValueCarrinho
-            // 
-            this.ValueCarrinho.AutoSize = true;
-            this.ValueCarrinho.BackColor = System.Drawing.Color.OrangeRed;
-            this.ValueCarrinho.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ValueCarrinho.ForeColor = System.Drawing.Color.White;
-            this.ValueCarrinho.Location = new System.Drawing.Point(96, 96);
-            this.ValueCarrinho.Name = "ValueCarrinho";
-            this.ValueCarrinho.Size = new System.Drawing.Size(24, 27);
-            this.ValueCarrinho.TabIndex = 74;
-            this.ValueCarrinho.Text = "0";
-            // 
             // Reserva_Alimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,10 +207,10 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

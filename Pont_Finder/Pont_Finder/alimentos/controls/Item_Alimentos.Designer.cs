@@ -161,6 +161,7 @@
             this.Excluir.TabIndex = 37;
             this.Excluir.Text = "Excluir";
             this.Excluir.UseVisualStyleBackColor = false;
+            this.Excluir.Click += new System.EventHandler(this.Excluir_Click);
             // 
             // Item_Alimentos
             // 
@@ -170,7 +171,6 @@
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.bt_addLista);
             this.Controls.Add(this.lb_rs);
             this.Controls.Add(this.CategoriasPrato);
             this.Controls.Add(this.pb_alimento);
@@ -178,6 +178,7 @@
             this.Controls.Add(this.NomeComida);
             this.Controls.Add(this.IngredienteComida);
             this.Controls.Add(this.qtdComida);
+            this.Controls.Add(this.bt_addLista);
             this.Controls.Add(this.Excluir);
             this.Name = "Item_Alimentos";
             this.Size = new System.Drawing.Size(623, 188);

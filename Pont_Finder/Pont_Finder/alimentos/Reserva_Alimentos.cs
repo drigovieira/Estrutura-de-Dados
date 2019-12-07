@@ -41,7 +41,7 @@ namespace Pont_Finder.alimentos
             {
                 MessageBox.Show("Não exitem itens na lista de pedidos", "Alerta");
             }
-        }        
+        }
 
         private void Reserva_Alimentos_Paint(object sender, PaintEventArgs e)
         {

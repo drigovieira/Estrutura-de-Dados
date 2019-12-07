@@ -20,6 +20,13 @@ namespace Pont_Finder.alimentos
         private int IdItem, Empresa;
         private bool ExRes;
 
+        private void Excluir_Click(object sender, EventArgs e)
+        {
+            ListCardapio.Delete(IdItem);
+            Cadastro_Produto cadProd = new Cadastro_Produto(Empresa);
+            FormPrincipal.MudarForm("alimentos", cadProd);
+        }
+
         private void Bt_addLista_Click(object sender, EventArgs e)
         {
             if (bt_addLista.Text.Equals("Pedir"))
@@ -34,7 +41,8 @@ namespace Pont_Finder.alimentos
                 Carrinho.Add(obj);
                 bt_addLista.BackColor = System.Drawing.Color.DimGray;
                 bt_addLista.Text = "Remover";
-                                
+                Reserva_Alimentos res = new Reserva_Alimentos(Empresa);
+                FormPrincipal.MudarForm("alimentos", res);
             }
             else
             {
