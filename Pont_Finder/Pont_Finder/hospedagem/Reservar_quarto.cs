@@ -34,6 +34,10 @@ namespace Pont_Finder.hospedagem
             reserva.Valor = valor_reserva;
 
             classes.reserveList.addReserva(reserva);
+
+            MessageBox.Show("Compra Realizada Com Sucesso");
+            Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf,reserva.Valor);
+            bol.ShowDialog();
         }
 
         private void lb_data_saida_Click(object sender, EventArgs e)

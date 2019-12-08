@@ -501,10 +501,10 @@
             // 
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label15);
-            this.panel12.Location = new System.Drawing.Point(418, 202);
+            this.panel12.Location = new System.Drawing.Point(379, 202);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(139, 45);
+            this.panel12.Size = new System.Drawing.Size(178, 45);
             this.panel12.TabIndex = 25;
             // 
             // label15
@@ -521,7 +521,7 @@
             // 
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.label23);
-            this.panel13.Location = new System.Drawing.Point(297, 202);
+            this.panel13.Location = new System.Drawing.Point(258, 202);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(121, 45);
@@ -565,7 +565,7 @@
             this.panel14.Location = new System.Drawing.Point(196, 202);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(101, 45);
+            this.panel14.Size = new System.Drawing.Size(62, 45);
             this.panel14.TabIndex = 23;
             // 
             // label27

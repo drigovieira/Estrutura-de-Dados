@@ -147,7 +147,7 @@ namespace Pont_Finder.Boleto
                    p8 = rdn.Next(0, 9).ToString(),
                    valp91 = (5676).ToString(),
                    valp92 = "00000",
-                   valp93 = valorboleto;
+                   valp93 = valorboleto+ "00";
 
                    rdn.Next(0, 99999).ToString();
 
