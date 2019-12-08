@@ -156,22 +156,22 @@
             this.btnPrint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.Location = new System.Drawing.Point(1067, 118);
+            this.btnPrint.Location = new System.Drawing.Point(855, 128);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(51, 47);
+            this.btnPrint.Size = new System.Drawing.Size(51, 42);
             this.btnPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPrint.TabIndex = 2;
             this.btnPrint.TabStop = false;
-            this.btnPrint.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnSalvar
             // 
             this.btnSalvar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.Image = global::Pont_Finder.Properties.Resources.downblue;
-            this.btnSalvar.Location = new System.Drawing.Point(1184, 120);
+            this.btnSalvar.Location = new System.Drawing.Point(954, 128);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(51, 45);
+            this.btnSalvar.Size = new System.Drawing.Size(51, 42);
             this.btnSalvar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSalvar.TabIndex = 1;
             this.btnSalvar.TabStop = false;
@@ -182,13 +182,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 750);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 50);
+            this.panel1.Size = new System.Drawing.Size(1013, 50);
             this.panel1.TabIndex = 9;
             // 
             // boletoA
             // 
             this.boletoA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.boletoA.Controls.Add(this.panel24);
+            this.boletoA.Controls.Add(this.pictureBox2);
             this.boletoA.Controls.Add(this.panel25);
             this.boletoA.Controls.Add(this.lb_num_codigo_barra);
             this.boletoA.Controls.Add(this.panel23);
@@ -214,10 +215,11 @@
             this.boletoA.Controls.Add(this.panel3);
             this.boletoA.Controls.Add(this.panel2);
             this.boletoA.Controls.Add(this.pictureBox1);
-            this.boletoA.Location = new System.Drawing.Point(0, 0);
+            this.boletoA.Location = new System.Drawing.Point(23, 12);
             this.boletoA.Name = "boletoA";
-            this.boletoA.Size = new System.Drawing.Size(1010, 629);
+            this.boletoA.Size = new System.Drawing.Size(799, 732);
             this.boletoA.TabIndex = 7;
+            this.boletoA.Paint += new System.Windows.Forms.PaintEventHandler(this.boletoA_Paint);
             // 
             // panel24
             // 
@@ -226,7 +228,7 @@
             this.panel24.Location = new System.Drawing.Point(0, 247);
             this.panel24.Margin = new System.Windows.Forms.Padding(0);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(699, 225);
+            this.panel24.Size = new System.Drawing.Size(557, 225);
             this.panel24.TabIndex = 34;
             // 
             // label17
@@ -243,7 +245,6 @@
             // 
             this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel25.Controls.Add(this.label36);
-            this.panel25.Controls.Add(this.pictureBox2);
             this.panel25.Controls.Add(this.label34);
             this.panel25.Controls.Add(this.label33);
             this.panel25.Controls.Add(this.label30);
@@ -251,7 +252,7 @@
             this.panel25.Location = new System.Drawing.Point(0, 472);
             this.panel25.Margin = new System.Windows.Forms.Padding(0);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(1009, 138);
+            this.panel25.Size = new System.Drawing.Size(797, 138);
             this.panel25.TabIndex = 35;
             // 
             // label36
@@ -267,7 +268,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(153, 27);
+            this.pictureBox2.Location = new System.Drawing.Point(43, 618);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(662, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -317,10 +318,10 @@
             // lb_num_codigo_barra
             // 
             this.lb_num_codigo_barra.AutoSize = true;
-            this.lb_num_codigo_barra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_num_codigo_barra.Location = new System.Drawing.Point(469, 28);
+            this.lb_num_codigo_barra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_num_codigo_barra.Location = new System.Drawing.Point(394, 32);
             this.lb_num_codigo_barra.Name = "lb_num_codigo_barra";
-            this.lb_num_codigo_barra.Size = new System.Drawing.Size(64, 24);
+            this.lb_num_codigo_barra.Size = new System.Drawing.Size(48, 16);
             this.lb_num_codigo_barra.TabIndex = 33;
             this.lb_num_codigo_barra.Text = "Value";
             // 
@@ -328,10 +329,10 @@
             // 
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel23.Controls.Add(this.label47);
-            this.panel23.Location = new System.Drawing.Point(699, 427);
+            this.panel23.Location = new System.Drawing.Point(557, 427);
             this.panel23.Margin = new System.Windows.Forms.Padding(0);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(310, 45);
+            this.panel23.Size = new System.Drawing.Size(240, 45);
             this.panel23.TabIndex = 32;
             // 
             // label47
@@ -348,10 +349,10 @@
             // 
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel22.Controls.Add(this.label44);
-            this.panel22.Location = new System.Drawing.Point(699, 382);
+            this.panel22.Location = new System.Drawing.Point(557, 382);
             this.panel22.Margin = new System.Windows.Forms.Padding(0);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(310, 45);
+            this.panel22.Size = new System.Drawing.Size(240, 45);
             this.panel22.TabIndex = 31;
             // 
             // label44
@@ -368,10 +369,10 @@
             // 
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel21.Controls.Add(this.label41);
-            this.panel21.Location = new System.Drawing.Point(699, 337);
+            this.panel21.Location = new System.Drawing.Point(557, 337);
             this.panel21.Margin = new System.Windows.Forms.Padding(0);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(310, 45);
+            this.panel21.Size = new System.Drawing.Size(240, 45);
             this.panel21.TabIndex = 30;
             // 
             // label41
@@ -388,10 +389,10 @@
             // 
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel20.Controls.Add(this.label38);
-            this.panel20.Location = new System.Drawing.Point(699, 292);
+            this.panel20.Location = new System.Drawing.Point(557, 292);
             this.panel20.Margin = new System.Windows.Forms.Padding(0);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(310, 45);
+            this.panel20.Size = new System.Drawing.Size(240, 45);
             this.panel20.TabIndex = 29;
             // 
             // label38
@@ -408,10 +409,10 @@
             // 
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel19.Controls.Add(this.label35);
-            this.panel19.Location = new System.Drawing.Point(699, 247);
+            this.panel19.Location = new System.Drawing.Point(557, 247);
             this.panel19.Margin = new System.Windows.Forms.Padding(0);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(310, 45);
+            this.panel19.Size = new System.Drawing.Size(240, 45);
             this.panel19.TabIndex = 28;
             // 
             // label35
@@ -430,10 +431,10 @@
             this.panel18.Controls.Add(this.label31);
             this.panel18.Controls.Add(this.label32);
             this.panel18.Controls.Add(this.valorlabel);
-            this.panel18.Location = new System.Drawing.Point(699, 202);
+            this.panel18.Location = new System.Drawing.Point(557, 202);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(310, 45);
+            this.panel18.Size = new System.Drawing.Size(240, 45);
             this.panel18.TabIndex = 27;
             // 
             // label31
@@ -470,10 +471,10 @@
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel17.Controls.Add(this.lb_numero);
             this.panel17.Controls.Add(this.label25);
-            this.panel17.Location = new System.Drawing.Point(699, 157);
+            this.panel17.Location = new System.Drawing.Point(557, 157);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(310, 45);
+            this.panel17.Size = new System.Drawing.Size(240, 45);
             this.panel17.TabIndex = 26;
             // 
             // lb_numero
@@ -500,10 +501,10 @@
             // 
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label15);
-            this.panel12.Location = new System.Drawing.Point(541, 202);
+            this.panel12.Location = new System.Drawing.Point(418, 202);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(158, 45);
+            this.panel12.Size = new System.Drawing.Size(139, 45);
             this.panel12.TabIndex = 25;
             // 
             // label15
@@ -520,10 +521,10 @@
             // 
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.label23);
-            this.panel13.Location = new System.Drawing.Point(397, 202);
+            this.panel13.Location = new System.Drawing.Point(297, 202);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(144, 45);
+            this.panel13.Size = new System.Drawing.Size(121, 45);
             this.panel13.TabIndex = 24;
             // 
             // label23
@@ -540,7 +541,7 @@
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label16);
-            this.panel8.Location = new System.Drawing.Point(353, 157);
+            this.panel8.Location = new System.Drawing.Point(258, 157);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(100, 45);
@@ -561,10 +562,10 @@
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.label27);
             this.panel14.Controls.Add(this.label24);
-            this.panel14.Location = new System.Drawing.Point(268, 202);
+            this.panel14.Location = new System.Drawing.Point(196, 202);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(129, 45);
+            this.panel14.Size = new System.Drawing.Size(101, 45);
             this.panel14.TabIndex = 23;
             // 
             // label27
@@ -592,10 +593,10 @@
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.lb_carteira);
             this.panel15.Controls.Add(this.label26);
-            this.panel15.Location = new System.Drawing.Point(158, 202);
+            this.panel15.Location = new System.Drawing.Point(104, 202);
             this.panel15.Margin = new System.Windows.Forms.Padding(0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(110, 45);
+            this.panel15.Size = new System.Drawing.Size(92, 45);
             this.panel15.TabIndex = 22;
             // 
             // lb_carteira
@@ -625,7 +626,7 @@
             this.panel16.Location = new System.Drawing.Point(0, 202);
             this.panel16.Margin = new System.Windows.Forms.Padding(0);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(158, 45);
+            this.panel16.Size = new System.Drawing.Size(104, 45);
             this.panel16.TabIndex = 21;
             // 
             // label28
@@ -642,7 +643,7 @@
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label18);
-            this.panel9.Location = new System.Drawing.Point(336, -1);
+            this.panel9.Location = new System.Drawing.Point(261, 0);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(130, 68);
@@ -652,7 +653,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(11, 15);
+            this.label18.Location = new System.Drawing.Point(14, 15);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(102, 37);
             this.label18.TabIndex = 6;
@@ -663,10 +664,10 @@
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label22);
             this.panel11.Controls.Add(this.label2);
-            this.panel11.Location = new System.Drawing.Point(549, 157);
+            this.panel11.Location = new System.Drawing.Point(418, 157);
             this.panel11.Margin = new System.Windows.Forms.Padding(0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(150, 45);
+            this.panel11.Size = new System.Drawing.Size(139, 45);
             this.panel11.TabIndex = 19;
             // 
             // label22
@@ -694,10 +695,10 @@
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label19);
             this.panel10.Controls.Add(this.label20);
-            this.panel10.Location = new System.Drawing.Point(451, 157);
+            this.panel10.Location = new System.Drawing.Point(358, 157);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(100, 45);
+            this.panel10.Size = new System.Drawing.Size(60, 45);
             this.panel10.TabIndex = 18;
             // 
             // label19
@@ -725,10 +726,10 @@
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.lb_num_doc);
             this.panel7.Controls.Add(this.label14);
-            this.panel7.Location = new System.Drawing.Point(158, 157);
+            this.panel7.Location = new System.Drawing.Point(135, 157);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(195, 45);
+            this.panel7.Size = new System.Drawing.Size(123, 45);
             this.panel7.TabIndex = 16;
             // 
             // lb_num_doc
@@ -759,7 +760,7 @@
             this.panel6.Location = new System.Drawing.Point(0, 157);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(158, 45);
+            this.panel6.Size = new System.Drawing.Size(135, 45);
             this.panel6.TabIndex = 15;
             // 
             // label11
@@ -787,10 +788,10 @@
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.lb_agencia);
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(699, 112);
+            this.panel5.Location = new System.Drawing.Point(557, 112);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 45);
+            this.panel5.Size = new System.Drawing.Size(240, 45);
             this.panel5.TabIndex = 14;
             // 
             // lb_agencia
@@ -818,10 +819,10 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.label10);
-            this.panel4.Location = new System.Drawing.Point(699, 67);
+            this.panel4.Location = new System.Drawing.Point(557, 67);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 45);
+            this.panel4.Size = new System.Drawing.Size(240, 45);
             this.panel4.TabIndex = 13;
             // 
             // label13
@@ -852,7 +853,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 112);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(699, 45);
+            this.panel3.Size = new System.Drawing.Size(557, 45);
             this.panel3.TabIndex = 12;
             // 
             // label7
@@ -883,7 +884,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 67);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(699, 45);
+            this.panel2.Size = new System.Drawing.Size(557, 45);
             this.panel2.TabIndex = 11;
             // 
             // label6
@@ -911,7 +912,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(330, 61);
+            this.pictureBox1.Size = new System.Drawing.Size(255, 61);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -921,7 +922,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1265, 800);
+            this.ClientSize = new System.Drawing.Size(1013, 800);
             this.Controls.Add(this.boletoA);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnPrint);
