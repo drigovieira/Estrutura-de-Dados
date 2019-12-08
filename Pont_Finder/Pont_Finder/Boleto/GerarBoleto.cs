@@ -90,7 +90,7 @@ namespace Pont_Finder.Boleto
         {
             Bitmap bm = new Bitmap(boletoA.Width, boletoA.Height);
             boletoA.DrawToBitmap(bm, new Rectangle(0, 0, boletoA.Width, boletoA.Height));
-            e.Graphics.DrawImage(bm, 4, 0);
+            e.Graphics.DrawImage(bm, 10, 0);
             bm.Dispose();
         }
 
