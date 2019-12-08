@@ -39,23 +39,23 @@ namespace Pont_Finder.alimentos.classes
         {
             return avaliacao;
         }
-        public static void AddAvaliacao(int nota, int indexEmp, int indexClient, string tipo)
+        public static void AddAvaliacao(int nota, int indexEmp, long Cpf, string tipo)
         {
             Evaluation ava = new Evaluation();
             ava.Nota = nota;
             ava.IndexEmp = indexEmp;
-            ava.IndexClient = indexClient;
+            ava.Cpf = Cpf;
             ava.Tipo = tipo;
             avaliacao.Add(ava);
             avaliacao[avaliacao.IndexOf(ava)].Id = avaliacao.IndexOf(ava);
         }
-        public static void DelAvaliacao(int ID)
+        public static void DelAvaliacao(long CPF)
         {
             try
             {                
                 foreach(var rem in avaliacao)
                 {                    
-                        if (rem.Id == ID)
+                        if (rem.Cpf == CPF)
                         {
                             avaliacao.Remove(rem);
                         }
@@ -63,12 +63,12 @@ namespace Pont_Finder.alimentos.classes
             }
             catch { }
         }
-        public static Evaluation select(int ID)
+        public static Evaluation select(long CPF)
         {
             Evaluation eva = new Evaluation();
             foreach(var i in avaliacao)
             {
-                if (i.IndexClient == ID) eva = i;
+                if (i.Cpf == CPF) eva = i;
             }
             return eva;
         }
