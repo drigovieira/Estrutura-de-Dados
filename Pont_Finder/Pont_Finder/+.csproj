@@ -565,6 +565,12 @@
     <Compile Include="servicos\FormUserCards.Designer.cs">
       <DependentUpon>FormUserCards.cs</DependentUpon>
     </Compile>
+    <Compile Include="servicos\FormVerSolicitacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormVerSolicitacao.Designer.cs">
+      <DependentUpon>FormVerSolicitacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicos\FormVisualizarPost.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -939,6 +945,9 @@
     <EmbeddedResource Include="servicos\FormUserCards.resx">
       <DependentUpon>FormUserCards.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormVerSolicitacao.resx">
+      <DependentUpon>FormVerSolicitacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="servicos\FormVisualizarPost.resx">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
     </EmbeddedResource>
@@ -1012,6 +1021,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\images\carrousel\home\" />
+    <Folder Include="data\images\model\" />
     <Folder Include="servicos\data\images\empresas\capas\" />
   </ItemGroup>
   <ItemGroup>

@@ -55,50 +55,68 @@ namespace Pont_Finder.servicos
 
         private void Bt_solicitar_Click(object sender, EventArgs e)
         {
-           
-            classes.Solicitado solicitado = new classes.Solicitado();
-
-            int id = classes.SolicitadoList.Solicitados.Count;
-            string link = null;
-            if (img)
+            if (tb_rua.Text.Length < 5)
+                MessageBox.Show("O campo Rua não foi preenxido corretamente");
+            else if (tb_bairro.Text.Length < 5)
+                MessageBox.Show("O campo Bairro não foi preenxido corretamente");
+            else if (tb_cep.Text.Length < 8)
+                MessageBox.Show("O campo Cep não foi preenxido corretamente");
+            else if (tb_descricao.Text.Length < 10)
+                MessageBox.Show("O campo Descrição não foi preenxido corretamente");
+            else
             {
-                if (!Directory.Exists("..//..//servicos//data//images//solicitados"))
-                    Directory.CreateDirectory("..//..//servicos//data//images//solicitados");
 
-                pb_icone.Load();
-                pb_icone.Image = Image.FromFile(openIcone.FileName);
 
-                Image bmp = new Bitmap(pb_icone.Image);
+                classes.Solicitado solicitado = new classes.Solicitado();
 
-                Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+                int id = classes.SolicitadoList.Solicitados.Count;
+                string link = null;
+                if (img)
+                {
+                    if (!Directory.Exists("..//..//servicos//data//images//solicitados"))
+                        Directory.CreateDirectory("..//..//servicos//data//images//solicitados");
 
-                pb_icone.Image = bmp2;
-               
-                link = "..//..//servicos//data//images//solicitados//" + id + ".jpg";
-                pb_icone.Image.Save(link, ImageFormat.Jpeg);
-                solicitado.Imagem = link;
+                    pb_icone.Load();
+                    pb_icone.Image = Image.FromFile(openIcone.FileName);
+
+                    Image bmp = new Bitmap(pb_icone.Image);
+
+                    Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+
+                    pb_icone.Image = bmp2;
+
+                    link = "..//..//servicos//data//images//solicitados//" + id + ".jpg";
+                    pb_icone.Image.Save(link, ImageFormat.Jpeg);
+                    solicitado.Imagem = link;
+                }
+                else
+                {
+                    solicitado.Imagem = Model.offimage_link;
+                }
+
+                solicitado.Id = id;
+                solicitado.Status = "Aguardando Pagamento";
+
+                solicitado.Rua = tb_rua.Text;
+                solicitado.Bairro = tb_bairro.Text;
+                solicitado.Numero = int.Parse("" + tb_numero.Value);
+                solicitado.Cep = int.Parse(tb_cep.Text);
+                solicitado.Descrição = tb_descricao.Text;
+                solicitado.DataAgendada = tb_data.Value;
+
+                solicitado.DataSolicitacao = DateTime.Now;
+
+                solicitado.Usercpf = Session.Cpf;
+                solicitado.Postid = post.Id;
+
+                classes.SolicitadoList.Solicitados.Add(solicitado);
+                Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, post.Valor);
+                bol.ShowDialog();
+
+                FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, new FormServicos()));
             }
 
-            solicitado.Id = id;
-            solicitado.Status = "Aguardando Pagamento";
 
-            solicitado.Rua = tb_rua.Text;
-            solicitado.Bairro = tb_bairro.Text;
-            solicitado.Numero = int.Parse(""+tb_numero.Value);
-            solicitado.Cep = int.Parse(tb_cep.Text);
-            solicitado.Descrição = tb_descricao.Text;
-            solicitado.DataAgendada = tb_data.Value;
-           
-            solicitado.DataSolicitacao = DateTime.Now;
-
-            solicitado.Usercpf = Session.Cpf;
-            solicitado.Postid = post.Id;
-
-            classes.SolicitadoList.Solicitados.Add(solicitado);
-            Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, post.Valor);
-            bol.ShowDialog();
-
-            FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, new FormServicos()));
         }
 
         private void Button2_Click(object sender, EventArgs e)

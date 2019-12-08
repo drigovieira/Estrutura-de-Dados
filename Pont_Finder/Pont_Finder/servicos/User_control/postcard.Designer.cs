@@ -52,7 +52,7 @@
             this.lb_data.AutoSize = true;
             this.lb_data.BackColor = System.Drawing.Color.Transparent;
             this.lb_data.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_data.Location = new System.Drawing.Point(15, 167);
+            this.lb_data.Location = new System.Drawing.Point(13, 167);
             this.lb_data.Margin = new System.Windows.Forms.Padding(5);
             this.lb_data.MaximumSize = new System.Drawing.Size(200, 20);
             this.lb_data.MinimumSize = new System.Drawing.Size(200, 20);
@@ -156,6 +156,7 @@
             // 
             // pb_icone
             // 
+            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_icone.Location = new System.Drawing.Point(15, 15);
             this.pb_icone.Margin = new System.Windows.Forms.Padding(15, 15, 5, 15);
             this.pb_icone.Name = "pb_icone";

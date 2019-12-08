@@ -58,6 +58,7 @@
             // 
             // pb_icone
             // 
+            this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_icone.Location = new System.Drawing.Point(20, 8);
             this.pb_icone.Margin = new System.Windows.Forms.Padding(20, 9, 20, 9);
             this.pb_icone.Name = "pb_icone";
