@@ -140,6 +140,25 @@ Todos os quartos deste hotel dispõem de TV de tela plana a cabo e via satélite
     <ambiente>  Estacionamento</ambiente>
     <status>true</status>
   </hospedagem>
+  <hospedagem>
+    <admin>40786107065</admin>
+    <logo>..//..//hospedagem//data//images//empresas//64259716000190//logo//64259716000190.jpg</logo>
+    <nomeempresa> Pousada Rafael Leandro Ltda</nomeempresa>
+    <nomefantasia>Pousada São Rafael</nomefantasia>
+    <cnpj>64259716000190</cnpj>
+    <endereco>Rua:Rua Artêmio do Amaral      </endereco>
+    <cep>12704170</cep>
+    <telefone>12314489996</telefone>
+    <email>pousadarafael@gmail.com</email>
+    <foto>..//..//hospedagem//data//images//empresas//64259716000190//empresa//</foto>
+    <tipo>Pousada</tipo>
+    <estrelas>5</estrelas>
+    <descricao>Oferecendo piscina ao ar livre e sauna, o Hotel Pousada São Rafael está localizado em Cruzeiro, a apenas 100 m da rodovia Rodovia Doutor Avelino Júnior - SP-052. Para sua comodidade, a propriedade conta com WiFi gratuito e estacionamento privativo.
+
+Os quartos do hotel dispõem de TV de tela plana, janelas com isolamento acústico e frigobar. Também incluem toalhas, roupa de cama e banheiro privativo com chuveiro. Os quartos superiores apresentam ar-condicionado.</descricao>
+    <ambiente>  Estacionamento  Piscina  Sala de Jogos</ambiente>
+    <status>true</status>
+  </hospedagem>
   <alimentos>
     <nome>Empresa Teste</nome>
     <nomeFantasia>Empresa Teste</nomeFantasia>

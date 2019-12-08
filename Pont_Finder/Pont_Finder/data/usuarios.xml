@@ -80,4 +80,12 @@
     <image>..//..//data//images//users//offImage.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Rafael Leando</nome>
+    <email>rafael@gmail.com</email>
+    <senha>123</senha>
+    <cpf>40786107065</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>
