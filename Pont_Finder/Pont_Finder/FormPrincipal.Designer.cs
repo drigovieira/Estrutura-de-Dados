@@ -177,6 +177,7 @@
             this.ClientSize = new System.Drawing.Size(1366, 720);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelHome);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1382, 759);
             this.MinimumSize = new System.Drawing.Size(1364, 726);
             this.Name = "FormPrincipal";
