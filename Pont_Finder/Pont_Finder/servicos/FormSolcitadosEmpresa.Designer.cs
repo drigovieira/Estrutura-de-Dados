@@ -33,11 +33,9 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.painel = new System.Windows.Forms.Panel();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.painel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
@@ -45,9 +43,9 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 652);
+            this.panel3.Location = new System.Drawing.Point(0, 625);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1265, 50);
+            this.panel3.Size = new System.Drawing.Size(1282, 50);
             this.panel3.TabIndex = 38;
             // 
             // label1
@@ -64,39 +62,33 @@
             // 
             this.panel7.Location = new System.Drawing.Point(1160, 22);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(100, 630);
+            this.panel7.Size = new System.Drawing.Size(100, 596);
             this.panel7.TabIndex = 36;
             // 
             // panel8
             // 
             this.panel8.Location = new System.Drawing.Point(1055, 22);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(100, 630);
+            this.panel8.Size = new System.Drawing.Size(100, 596);
             this.panel8.TabIndex = 35;
             // 
             // painel
             // 
-            this.painel.Controls.Add(this.vScrollBar1);
+            this.painel.AutoSize = true;
             this.painel.Location = new System.Drawing.Point(215, 120);
+            this.painel.MaximumSize = new System.Drawing.Size(835, 0);
+            this.painel.MinimumSize = new System.Drawing.Size(835, 0);
             this.painel.Name = "painel";
-            this.painel.Size = new System.Drawing.Size(835, 532);
+            this.painel.Size = new System.Drawing.Size(835, 0);
             this.painel.TabIndex = 34;
             this.painel.Paint += new System.Windows.Forms.PaintEventHandler(this.Painel_Paint);
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(815, 11);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 518);
-            this.vScrollBar1.TabIndex = 0;
-            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.VScrollBar1_Scroll);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btn_back);
             this.panel2.Location = new System.Drawing.Point(110, 22);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(100, 630);
+            this.panel2.Size = new System.Drawing.Size(100, 596);
             this.panel2.TabIndex = 33;
             // 
             // btn_back
@@ -118,7 +110,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(5, 22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 630);
+            this.panel1.Size = new System.Drawing.Size(100, 596);
             this.panel1.TabIndex = 32;
             // 
             // FormSolicitadosEmpresa
@@ -139,7 +131,6 @@
             this.Name = "FormSolicitadosEmpresa";
             this.Text = "ServicosADM";
             this.Load += new System.EventHandler(this.FormSolicitadosEmpresa_Load);
-            this.painel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
@@ -157,6 +148,5 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btn_back;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
