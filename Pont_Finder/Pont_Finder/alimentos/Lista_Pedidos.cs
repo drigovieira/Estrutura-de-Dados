@@ -15,7 +15,7 @@ namespace Pont_Finder.alimentos
     public partial class Lista_Pedidos : Form
     {
         private int Empresa;
-        public Lista_Pedidos(int idEmpresa)
+        public Lista_Pedidos(int idEmpresa, bool exibir, int idPedido)
         {
             Empresa = idEmpresa;
             InitializeComponent();
@@ -29,6 +29,12 @@ namespace Pont_Finder.alimentos
                     local = local + client.Height + 5;
                     ListaClientes.Controls.Add(client);
                 }
+            }
+            if (exibir)
+            {
+                Pedido_Delivery dados = new Pedido_Delivery(idPedido);
+                dados.Location = new Point(0, 0);
+                PedidoSelect.Controls.Add(dados);
             }
         }
     }

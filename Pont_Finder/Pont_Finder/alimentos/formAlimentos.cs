@@ -440,7 +440,7 @@ namespace Pont_Finder
 
         private void VerPedidos_Click(object sender, EventArgs e)
         {
-            Lista_Pedidos pedidos = new Lista_Pedidos(CompanyList.verifEmp(Session.Cpf));
+            Lista_Pedidos pedidos = new Lista_Pedidos(CompanyList.verifEmp(Session.Cpf), false, -1);
             FormPrincipal.MudarForm("alimentos", pedidos);
         }
 
