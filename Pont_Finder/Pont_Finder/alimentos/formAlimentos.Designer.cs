@@ -106,10 +106,10 @@
             // 
             // PesquisaBox
             // 
-            this.PesquisaBox.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PesquisaBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PesquisaBox.Location = new System.Drawing.Point(22, 56);
             this.PesquisaBox.Name = "PesquisaBox";
-            this.PesquisaBox.Size = new System.Drawing.Size(254, 35);
+            this.PesquisaBox.Size = new System.Drawing.Size(254, 26);
             this.PesquisaBox.TabIndex = 2;
             this.PesquisaBox.TextChanged += new System.EventHandler(this.PesquisaBox_TextChanged);
             // 
