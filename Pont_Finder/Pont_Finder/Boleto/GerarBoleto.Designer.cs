@@ -307,10 +307,10 @@
             // lb_num_codigo_barra
             // 
             this.lb_num_codigo_barra.AutoSize = true;
-            this.lb_num_codigo_barra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_num_codigo_barra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_num_codigo_barra.Location = new System.Drawing.Point(350, 30);
             this.lb_num_codigo_barra.Name = "lb_num_codigo_barra";
-            this.lb_num_codigo_barra.Size = new System.Drawing.Size(48, 16);
+            this.lb_num_codigo_barra.Size = new System.Drawing.Size(43, 15);
             this.lb_num_codigo_barra.TabIndex = 33;
             this.lb_num_codigo_barra.Text = "Value";
             // 
