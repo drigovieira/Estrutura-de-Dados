@@ -46,7 +46,7 @@ namespace Pont_Finder.servicos
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+         
             if (tb_nome.Text.Trim().Length < 6)
                 MessageBox.Show("Verifique o Nome da Empresa");
             else if (tb_fantasia.Text.Trim().Length < 2)
@@ -65,49 +65,61 @@ namespace Pont_Finder.servicos
                 MessageBox.Show("Verifique o Endereço");
             else
             {
-
-                string nome = tb_nome.Text;
-                string fatasia = tb_fantasia.Text;
-                long cnpj = long.Parse(mb_cnpj.Text);
-                string endereco = tb_endereco.Text + ", " + tb_cep.Text;
-                string telefone = tb_telefone.Text;
-                string email = tb_email.Text;
-                string servico = cb_servico.SelectedItem + "";
-
-                string link = "..//..//servicos//data//images//empresas//offImage.jpg";
-                if (img)
+                new FormTermosDeUso().ShowDialog();
+                if (Session.Termos)
                 {
-                    if (!Directory.Exists("..//..//servicos//data//images//empresas"))
-                        Directory.CreateDirectory("..//..//servicos//data//images//empresas");
+                    string nome = tb_nome.Text;
+                    string fatasia = tb_fantasia.Text;
+                    long cnpj = long.Parse(mb_cnpj.Text);
+                    string endereco = tb_endereco.Text + ", " + tb_cep.Text;
+                    string telefone = tb_telefone.Text;
+                    string email = tb_email.Text;
+                    string servico = cb_servico.SelectedItem + "";
 
-                    pb_icone.Load();
-                    pb_icone.Image = Image.FromFile(openIcone.FileName);
+                    string link = "..//..//servicos//data//images//empresas//offImage.jpg";
+                    if (img)
+                    {
+                        if (!Directory.Exists("..//..//servicos//data//images//empresas"))
+                            Directory.CreateDirectory("..//..//servicos//data//images//empresas");
 
-                    Image bmp = new Bitmap(pb_icone.Image);
+                        pb_icone.Load();
+                        pb_icone.Image = Image.FromFile(openIcone.FileName);
 
-                    Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+                        Image bmp = new Bitmap(pb_icone.Image);
 
-                    pb_icone.Image = bmp2;
+                        Image bmp2 = new Bitmap(bmp, pb_icone.Size);
 
-                    link = "..//..//servicos//data//images//empresas//" + cnpj + ".jpg";
-                    pb_icone.Image.Save(link, ImageFormat.Jpeg);
+                        pb_icone.Image = bmp2;
+
+                        link = "..//..//servicos//data//images//empresas//" + cnpj + ".jpg";
+                        pb_icone.Image.Save(link, ImageFormat.Jpeg);
+                    }
+
+                    classes.Empresa tmp = new classes.Empresa();
+                    tmp.Nome = nome.Trim();
+                    tmp.NomeFantasia = fatasia.Trim();
+                    tmp.Email = email.Trim().ToLower();
+                    tmp.Cnpj = cnpj;
+                    tmp.Endereco = endereco.Trim();
+                    tmp.Telefone = telefone;
+                    tmp.Cpf = Session.Cpf;
+                    tmp.Image = link;
+                    tmp.Status = true;
+                    tmp.Categoria = servico;
+
+                    tmp.Slogan = "";
+                    tmp.Sobre = "";
+                    tmp.Descricao = "";
+                    tmp.PoliticaPrivacidade = "";
+                    tmp.Site = "";
+                    classes.ListaEmpresa.Add(tmp);
+      
+                    FormPrincipal.MudarForm("servicos", new FormServicos());
                 }
 
-                classes.Empresa tmp = new classes.Empresa();
-                tmp.Nome = nome.Trim();
-                tmp.NomeFantasia = fatasia.Trim();
-                tmp.Email = email.Trim().ToLower();
-                tmp.Cnpj = cnpj;
-                tmp.Endereco = endereco.Trim();
-                tmp.Telefone = telefone;
-                tmp.Cpf = Session.Cpf;
-                tmp.Image = link;
-                tmp.Status = true;
-                tmp.Categoria = servico;
-                classes.ListaEmpresa.Add(tmp);
-                FormPrincipal.MudarForm("servicos", new FormServicos());
-
             }
+
+
         }
 
         private void button4_Click(object sender, EventArgs e)

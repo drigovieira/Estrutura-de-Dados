@@ -39,6 +39,8 @@ namespace Pont_Finder.servicos
 
             pb_capa.ImageLocation = empresa.ImageCapa;
 
+
+            
             if (empresa.Slogan.Trim().Length < 10)
                 painel_slogan.Visible = false;
             else

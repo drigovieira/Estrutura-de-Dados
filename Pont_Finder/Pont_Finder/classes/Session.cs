@@ -16,6 +16,8 @@ namespace Pont_Finder
         private static string image;
         private static bool logado = false;
 
+        private static bool termos = false;
+
         public static bool Online
         {
             get
@@ -67,6 +69,7 @@ namespace Pont_Finder
             set { image = value; }
         }
 
+        public static bool Termos { get => termos; set => termos = value; }
 
         public static bool Login(string xEmail, string xSenha)
         {

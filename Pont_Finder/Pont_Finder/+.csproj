@@ -340,6 +340,12 @@
     <Compile Include="eventos\Visualizar_evento.Designer.cs">
       <DependentUpon>Visualizar_evento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTermosDeUso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTermosDeUso.Designer.cs">
+      <DependentUpon>FormTermosDeUso.cs</DependentUpon>
+    </Compile>
     <Compile Include="hospedagem\Cadastro_Empresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -797,6 +803,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\Visualizar_evento.resx">
       <DependentUpon>Visualizar_evento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTermosDeUso.resx">
+      <DependentUpon>FormTermosDeUso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\Cadastro_Empresa.resx">
       <DependentUpon>Cadastro_Empresa.cs</DependentUpon>
