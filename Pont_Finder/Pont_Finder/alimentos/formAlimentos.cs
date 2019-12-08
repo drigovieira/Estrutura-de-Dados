@@ -177,49 +177,56 @@ namespace Pont_Finder
 
         private void pb_pesquisar_Click(object sender, EventArgs e)
         {
-            if (Categoria() == false)
+            if (string.IsNullOrWhiteSpace(PesquisaBox.Text))
             {
-                if (PesquisaBox.Text.Equals(""))
-                {
-                    ListarEmpresas.Controls.Clear();
-                    lbMensagem msg = new lbMensagem("Nenhum resultado encontrado");
-                    msg.Location = new Point(0, 0);
-                    ListarEmpresas.Controls.Add(msg);
-                }
-                else
-                {
-                    lista = CompanyList.SearchName(PesquisaBox.Text);
-                    ListarEmpresas.Controls.Clear();
-                    local = 0;
-                    foreach (var item in lista)
-                    {
-                        Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
-                        exbEmp.Location = new Point(0, local);
-                        local = local + exbEmp.Height + 5;
-                        ListarEmpresas.Controls.Add(exbEmp);
-                    }
-                }
+                MessageBox.Show("Por favor, informe o nome do estabelecimento.", "Aviso!");
             }
             else
             {
-                if (PesquisaBox.Text.Equals(""))
+                if (Categoria() == false)
                 {
-                    ListarEmpresas.Controls.Clear();
-                    lbMensagem msg = new lbMensagem("Nenhum resultado encontrado");
-                    msg.Location = new Point(0, 0);
-                    ListarEmpresas.Controls.Add(msg);
+                    if (PesquisaBox.Text.Equals(""))
+                    {
+                        ListarEmpresas.Controls.Clear();
+                        lbMensagem msg = new lbMensagem("Nenhum resultado encontrado");
+                        msg.Location = new Point(0, 0);
+                        ListarEmpresas.Controls.Add(msg);
+                    }
+                    else
+                    {
+                        lista = CompanyList.SearchName(PesquisaBox.Text);
+                        ListarEmpresas.Controls.Clear();
+                        local = 0;
+                        foreach (var item in lista)
+                        {
+                            Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
+                            exbEmp.Location = new Point(0, local);
+                            local = local + exbEmp.Height + 5;
+                            ListarEmpresas.Controls.Add(exbEmp);
+                        }
+                    }
                 }
                 else
                 {
-                    lista = CompanyList.SearchFiltro(PesquisaBox.Text, Filtro());
-                    ListarEmpresas.Controls.Clear();
-                    local = 0;
-                    foreach (var item in lista)
+                    if (PesquisaBox.Text.Equals(""))
                     {
-                        Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
-                        exbEmp.Location = new Point(0, local);
-                        local = local + exbEmp.Height + 5;
-                        ListarEmpresas.Controls.Add(exbEmp);
+                        ListarEmpresas.Controls.Clear();
+                        lbMensagem msg = new lbMensagem("Nenhum resultado encontrado");
+                        msg.Location = new Point(0, 0);
+                        ListarEmpresas.Controls.Add(msg);
+                    }
+                    else
+                    {
+                        lista = CompanyList.SearchFiltro(PesquisaBox.Text, Filtro());
+                        ListarEmpresas.Controls.Clear();
+                        local = 0;
+                        foreach (var item in lista)
+                        {
+                            Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
+                            exbEmp.Location = new Point(0, local);
+                            local = local + exbEmp.Height + 5;
+                            ListarEmpresas.Controls.Add(exbEmp);
+                        }
                     }
                 }
             }            

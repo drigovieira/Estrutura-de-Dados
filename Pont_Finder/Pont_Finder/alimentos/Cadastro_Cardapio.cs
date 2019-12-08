@@ -30,58 +30,66 @@ namespace Pont_Finder.alimentos
         }
 
         private void Bt_cadastrar_Click(object sender, EventArgs e)
-        {            
-            try
+        {
+            if (string.IsNullOrWhiteSpace(tb_nome.Text) && string.IsNullOrWhiteSpace(input_valor.Text) && string.IsNullOrWhiteSpace(inputIngrediente.Text))
             {
-                Cardapio menu = new Cardapio();
-                menu.Nome = tb_nome.Text;
-                menu.Categoria = categorias;
-                menu.Qtd = float.Parse(tb_qtdprato.Text);
-                menu.Ingredientes = ingredientesList;
-                menu.Preco = float.Parse(input_valor.Text);
-                menu.IdEmpresa = ID;                                    
-                string link = "..//..//alimentos//data//image//cardapio//offImage.jpg";
-                if (img)
+                MessageBox.Show("Por favor, preencha os campos vazios.", "Aviso!");
+            }
+            else
+            {
+                try
                 {
-                    if (!Directory.Exists("..//..//alimentos//data//image//cardapio"))
-                        Directory.CreateDirectory("..//..//alimentos//data//image//cardapio");
+                    Cardapio menu = new Cardapio();
+                    menu.Nome = tb_nome.Text;
+                    menu.Categoria = categorias;
+                    menu.Qtd = float.Parse(tb_qtdprato.Text);
+                    menu.Ingredientes = ingredientesList;
+                    menu.Preco = float.Parse(input_valor.Text);
+                    menu.IdEmpresa = ID;
+                    string link = "..//..//alimentos//data//image//cardapio//offImage.jpg";
+                    if (img)
+                    {
+                        if (!Directory.Exists("..//..//alimentos//data//image//cardapio"))
+                            Directory.CreateDirectory("..//..//alimentos//data//image//cardapio");
 
-                    pb_img_1.Load();
-                    pb_img_1.Image = Image.FromFile(openIcone.FileName);
+                        pb_img_1.Load();
+                        pb_img_1.Image = Image.FromFile(openIcone.FileName);
 
-                    Image bmp = new Bitmap(pb_img_1.Image);
+                        Image bmp = new Bitmap(pb_img_1.Image);
 
-                    Image bmp2 = new Bitmap(bmp, pb_img_1.Size);
+                        Image bmp2 = new Bitmap(bmp, pb_img_1.Size);
 
-                    pb_img_1.Image = bmp2;
-                    int name = ID + ListCardapio.selectAll().Count;
-                    link = "..//..//alimentos//data//image//cardapio//" + name+".jpg";
-                    pb_img_1.Image.Save(link, ImageFormat.Jpeg);                                          
+                        pb_img_1.Image = bmp2;
+                        int name = ID + ListCardapio.selectAll().Count;
+                        link = "..//..//alimentos//data//image//cardapio//" + name + ".jpg";
+                        pb_img_1.Image.Save(link, ImageFormat.Jpeg);
+                    }
+                    menu.Image = link;
+                    ListCardapio.CardapioAdd(menu);
+                    MessageBox.Show("Item adicionado ao cardápio!", "Status Operation:");
+                    alimentos.Cadastro_Produto cadProduto = new Cadastro_Produto(ID);
+                    FormPrincipal.MudarForm("alimentos", cadProduto);
+                    tb_nome.Clear();
+                    tb_qtdprato.Clear();
+                    Ingredientes.Items.Clear();
+                    input_valor.Clear();
+                    checkBox1.Checked = false;
+                    checkBox2.Checked = false;
+                    checkBox3.Checked = false;
+                    checkBox4.Checked = false;
+                    checkBox5.Checked = false;
+                    checkBox6.Checked = false;
+                    checkBox7.Checked = false;
+                    checkBox8.Checked = false;
+                    checkBox9.Checked = false;
+                    checkBox10.Checked = false;
                 }
-                menu.Image = link;
-                ListCardapio.CardapioAdd(menu);                
-                MessageBox.Show("Item adicionado ao cardápio!", "Status Operation:");
-                alimentos.Cadastro_Produto cadProduto = new Cadastro_Produto(ID);
-                FormPrincipal.MudarForm("alimentos", cadProduto);
-                tb_nome.Clear();
-                tb_qtdprato.Clear();
-                Ingredientes.Items.Clear();
-                input_valor.Clear();
-                checkBox1.Checked = false;
-                checkBox2.Checked = false;
-                checkBox3.Checked = false;
-                checkBox4.Checked = false;
-                checkBox5.Checked = false;
-                checkBox6.Checked = false;
-                checkBox7.Checked = false;
-                checkBox8.Checked = false;
-                checkBox9.Checked = false;
-                checkBox10.Checked = false;
+                catch (Exception exp)
+                {
+                    MessageBox.Show("" + exp);
+                }
             }
-            catch (Exception exp)
-            {
-                MessageBox.Show("" + exp);
-            }
+           
         }
 
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
