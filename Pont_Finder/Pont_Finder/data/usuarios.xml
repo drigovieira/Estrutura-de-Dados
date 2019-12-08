@@ -88,4 +88,12 @@
     <image>..//..//data//images//users//offImage.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Serviços</nome>
+    <email>servicos@gmail.com</email>
+    <senha>123</senha>
+    <cpf>46334678086</cpf>
+    <image>..//..//data//images//users//46334678086.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>
