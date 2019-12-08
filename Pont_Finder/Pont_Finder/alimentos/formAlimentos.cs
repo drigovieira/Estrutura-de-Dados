@@ -344,7 +344,7 @@ namespace Pont_Finder
             {
                 foreach (var top in EvaluationList.TopList(CompanyList.selectAll()))
                 {
-                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia);
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia, top.Image);
                     emp.Location = new Point(20, local1);
                     local1 = local1 + emp.Height + 5;
                     Top5.Controls.Add(emp);

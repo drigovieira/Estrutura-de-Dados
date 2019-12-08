@@ -12,16 +12,18 @@ namespace Pont_Finder.alimentos
 {
     public partial class TopEmpresa : UserControl
     {
-        private string NomeCompany;
-        public TopEmpresa(string Nome)
+        private string NomeCompany, ImageIcon;
+        public TopEmpresa(string Nome, string image)
         {
             NomeCompany = Nome;
+            ImageIcon = image;
             InitializeComponent();
         }
 
         private void TopEmp_Paint(object sender, PaintEventArgs e)
         {
             NomeTopEmp.Text = NomeCompany;
+            pictureBox1.ImageLocation = ImageIcon;
         }
     }
 }
