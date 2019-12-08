@@ -104,6 +104,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lb_cpf = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalvar)).BeginInit();
             this.boletoA.SuspendLayout();
@@ -254,6 +255,7 @@
             // panel25
             // 
             this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel25.Controls.Add(this.lb_cpf);
             this.panel25.Controls.Add(this.label36);
             this.panel25.Controls.Add(this.label34);
             this.panel25.Controls.Add(this.end);
@@ -269,7 +271,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(4, 104);
+            this.label36.Location = new System.Drawing.Point(4, 109);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(28, 18);
             this.label36.TabIndex = 10;
@@ -279,7 +281,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(3, 79);
+            this.label34.Location = new System.Drawing.Point(4, 84);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(65, 18);
             this.label34.TabIndex = 9;
@@ -289,7 +291,7 @@
             // 
             this.end.AutoSize = true;
             this.end.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.end.Location = new System.Drawing.Point(4, 53);
+            this.end.Location = new System.Drawing.Point(4, 61);
             this.end.Name = "end";
             this.end.Size = new System.Drawing.Size(112, 18);
             this.end.TabIndex = 8;
@@ -299,7 +301,7 @@
             // 
             this.nome.AutoSize = true;
             this.nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nome.Location = new System.Drawing.Point(4, 27);
+            this.nome.Location = new System.Drawing.Point(4, 16);
             this.nome.Name = "nome";
             this.nome.Size = new System.Drawing.Size(89, 18);
             this.nome.TabIndex = 7;
@@ -917,6 +919,16 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // lb_cpf
+            // 
+            this.lb_cpf.AutoSize = true;
+            this.lb_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cpf.Location = new System.Drawing.Point(4, 38);
+            this.lb_cpf.Name = "lb_cpf";
+            this.lb_cpf.Size = new System.Drawing.Size(78, 18);
+            this.lb_cpf.TabIndex = 11;
+            this.lb_cpf.Text = "CPF Value";
+            // 
             // GerarBoleto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1065,5 +1077,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lb_cpf;
     }
 }

@@ -30,6 +30,7 @@ namespace Pont_Finder.Boleto
         {
             InitializeComponent();
             cpfboleto = cpf.ToString();
+            lb_cpf.Text = "CPF: "+Session.Cpf.ToString();
             valorboleto = valor.ToString();
 
             nome.Text = "Nome: " + Session.Nome;
