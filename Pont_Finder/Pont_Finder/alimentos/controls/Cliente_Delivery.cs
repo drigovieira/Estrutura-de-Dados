@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Pont_Finder.alimentos.classes;
 
 namespace Pont_Finder.alimentos.controls
 {
@@ -17,6 +18,11 @@ namespace Pont_Finder.alimentos.controls
         {
             IndexPedido = idPedido;
             InitializeComponent();
+        }
+
+        private void Cliente_Delivery_Paint(object sender, PaintEventArgs e)
+        {
+            lb_nome_delivery.Text = ListPedidos.selectAll()[IndexPedido].Nome;
         }
     }
 }

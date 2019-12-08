@@ -76,6 +76,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Cliente_Delivery";
             this.Size = new System.Drawing.Size(313, 143);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Cliente_Delivery_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 

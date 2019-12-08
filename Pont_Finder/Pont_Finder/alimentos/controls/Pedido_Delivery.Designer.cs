@@ -170,6 +170,7 @@
             this.Controls.Add(this.lb_nome_prato);
             this.Name = "Pedido_Delivery";
             this.Size = new System.Drawing.Size(415, 316);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Pedido_Delivery_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 

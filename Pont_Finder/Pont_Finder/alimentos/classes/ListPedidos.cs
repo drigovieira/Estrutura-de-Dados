@@ -20,6 +20,7 @@ namespace Pont_Finder.alimentos.classes
             del.Pedidos = pedido.Pedidos;
             del.Observacoes = pedido.Observacoes;
             del.IdUser = pedido.IdUser;
+            del.Valor = pedido.Valor;
             pedidos.Add(del);
         }
         public static List<Delivery> selectAll()

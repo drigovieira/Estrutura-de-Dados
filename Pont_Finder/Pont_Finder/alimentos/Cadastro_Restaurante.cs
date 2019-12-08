@@ -174,7 +174,9 @@ namespace Pont_Finder.alimentos
                                 }
                                 else { emp.SttsCardapio = false; emp.SttsEntrega = false; }
                                 emp.Cpf = Session.Cpf;
-                                emp.Taxa = float.Parse(maskedTextBox1.Text);
+                                if (cbEntrega.Checked == true) {
+                                    emp.Taxa = float.Parse(maskedTextBox1.Text);
+                                }                                
                                 CompanyList.CompAdd(emp);
 
                                 MessageBox.Show("Empresa Cadastrada!", "Status Operation:");

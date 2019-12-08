@@ -15,6 +15,7 @@ namespace Pont_Finder.alimentos
     public partial class Delivery_Alimentos : Form
     {
         private int Empresa;
+        private float Valor;
         public Delivery_Alimentos(int idEmpresa)
         {
             Empresa = idEmpresa;
@@ -34,6 +35,7 @@ namespace Pont_Finder.alimentos
             subtotal.Text = total.ToString("C", CultureInfo.CurrentCulture);
             taxaEntrega.Text = CompanyList.selectAll()[idEmpresa].Taxa.ToString("C", CultureInfo.CurrentCulture);
             total = total + CompanyList.selectAll()[idEmpresa].Taxa;
+            Valor = total;
             lb_rs_Total.Text = total.ToString("C", CultureInfo.CurrentCulture);
             rb_Dinheiro.Checked = true;
         }
@@ -121,6 +123,7 @@ namespace Pont_Finder.alimentos
                         pedidos.IdUser = Session.Id;
                         pedidos.Referencia = textBox7.Text;
                         pedidos.Pedidos = Carrinho.selectAll();
+                        pedidos.Valor = Valor;
                         ListPedidos.Add(pedidos);
                         MessageBox.Show("Pedido registrado!");
                         Reserva_Alimentos reserva = new Reserva_Alimentos(Empresa, CompanyList.selectAll()[Empresa].SttsEntrega);

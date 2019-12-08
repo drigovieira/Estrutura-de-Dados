@@ -77,6 +77,7 @@
             this.label3.Size = new System.Drawing.Size(180, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "Dados do Pedido";
+            this.label3.Visible = false;
             // 
             // label2
             // 
