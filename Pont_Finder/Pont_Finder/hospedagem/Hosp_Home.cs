@@ -294,8 +294,15 @@ namespace Pont_Finder.hospedagem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            hospedagem.List_reservas_user user_reservas = new List_reservas_user(new Hosp_Home());
-            FormPrincipal.MudarForm("hospedagem", user_reservas);
+            if (Session.Online)
+            {
+                hospedagem.List_reservas_user user_reservas = new List_reservas_user(new Hosp_Home());
+                FormPrincipal.MudarForm("hospedagem", user_reservas);
+            }
+            else
+            {
+                MessageBox.Show("Você precisa fazer login para acessar a lista de reservas!");
+            }
         }
     }
 }
