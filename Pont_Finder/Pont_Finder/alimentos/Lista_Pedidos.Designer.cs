@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
@@ -52,6 +52,40 @@
             this.panel1.Size = new System.Drawing.Size(845, 1446);
             this.panel1.TabIndex = 0;
             // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(385, 173);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(415, 100);
+            this.panel3.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(41, 173);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(315, 100);
+            this.panel2.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(380, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 27);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Dados do Pedido";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(36, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(161, 27);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Lista de Cliente";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -61,40 +95,6 @@
             this.label1.Size = new System.Drawing.Size(171, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lista de Pedidos";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(121, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 27);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Lista de Cliente";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(532, 131);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 27);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Dados do Pedido";
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(76, 173);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(315, 100);
-            this.panel2.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(454, 173);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(315, 100);
-            this.panel3.TabIndex = 4;
             // 
             // btn_back
             // 
