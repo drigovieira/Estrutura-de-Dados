@@ -40,5 +40,22 @@ namespace Pont_Finder.eventos.User_Card
             eventos.Tela_Editar editar = new eventos.Tela_Editar(evento.id);
             FormPrincipal.MudarForm("Eventos", editar);
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Deseja realmente remover o quarto?", "Remover Quarto", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+
+            if (confirm.ToString().ToUpper() == "YES")
+            {
+                evento.Ativo = false;
+
+                MessageBox.Show("Evento removido!");
+                FormPrincipal.MudarForm("eventos", new ListEvent());
+            }
+            else
+            {
+
+            }
+        }
     }
 }

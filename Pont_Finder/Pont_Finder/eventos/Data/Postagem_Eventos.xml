@@ -17,7 +17,7 @@
     <idade>18+</idade>
     <valor>89,50</valor>
     <patrocinadores>RockStar, Amanco, Tigre</patrocinadores>
-    <ativo>true</ativo>
+    <ativo>false</ativo>
   </postagem>
   <postagem>
     <id>1</id>

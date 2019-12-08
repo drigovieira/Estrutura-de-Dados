@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.bt_remover = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lb_data = new System.Windows.Forms.Label();
@@ -57,17 +57,18 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button3
+            // bt_remover
             // 
-            this.button3.BackColor = System.Drawing.Color.OrangeRed;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(861, 76);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 28);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Remover";
-            this.button3.UseVisualStyleBackColor = false;
+            this.bt_remover.BackColor = System.Drawing.Color.OrangeRed;
+            this.bt_remover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_remover.ForeColor = System.Drawing.Color.White;
+            this.bt_remover.Location = new System.Drawing.Point(861, 76);
+            this.bt_remover.Name = "bt_remover";
+            this.bt_remover.Size = new System.Drawing.Size(86, 28);
+            this.bt_remover.TabIndex = 6;
+            this.bt_remover.Text = "Remover";
+            this.bt_remover.UseVisualStyleBackColor = false;
+            this.bt_remover.Click += new System.EventHandler(this.Button3_Click);
             // 
             // label3
             // 
@@ -201,7 +202,7 @@
             this.Controls.Add(this.lb_nome);
             this.Controls.Add(this.pb_imagem);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.bt_remover);
             this.Name = "Card_list_Emp";
             this.Size = new System.Drawing.Size(1008, 148);
             this.Load += new System.EventHandler(this.Card_list_Emp_Load);
@@ -214,7 +215,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button bt_remover;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lb_data;
