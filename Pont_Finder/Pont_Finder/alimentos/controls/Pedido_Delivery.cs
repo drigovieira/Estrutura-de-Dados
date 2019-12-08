@@ -36,7 +36,7 @@ namespace Pont_Finder.alimentos.controls
         private void Btn_Realizado_Click(object sender, EventArgs e)
         {
             ListPedidos.Delete(IndexPedido);
-            if (ListPedidos.selectAll() == null)
+            if (ListPedidos.selectAll().Count == 0)
             {
                 formAlimentos form = new formAlimentos();
                 FormPrincipal.MudarForm("alimentos", form);
