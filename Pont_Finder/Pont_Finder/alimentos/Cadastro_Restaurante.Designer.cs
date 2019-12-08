@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro_Restaurante));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.mkb_Tel = new System.Windows.Forms.MaskedTextBox();
             this.mkb_Cep = new System.Windows.Forms.MaskedTextBox();
             this.tbNum = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             this.tbFantasia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbBairro = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tbNomeEmpresa = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -51,7 +53,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.lb_descricao = new System.Windows.Forms.Label();
-            this.lb_emp_descricao = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
@@ -109,8 +110,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.mkb_Tel = new System.Windows.Forms.MaskedTextBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -154,6 +153,15 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(625, 624);
             this.panel11.TabIndex = 57;
+            // 
+            // mkb_Tel
+            // 
+            this.mkb_Tel.Location = new System.Drawing.Point(100, 436);
+            this.mkb_Tel.Mask = "(00)0000-0000";
+            this.mkb_Tel.Name = "mkb_Tel";
+            this.mkb_Tel.Size = new System.Drawing.Size(170, 20);
+            this.mkb_Tel.TabIndex = 14;
+            this.mkb_Tel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // mkb_Cep
             // 
@@ -250,6 +258,17 @@
             this.tbBairro.TabIndex = 6;
             this.tbBairro.TextChanged += new System.EventHandler(this.TbBairro_TextChanged);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label7.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(100, 401);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 21);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Telefone";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -305,7 +324,6 @@
             this.panel3.Controls.Add(this.ckb_termos_uso);
             this.panel3.Controls.Add(this.label18);
             this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.lb_emp_descricao);
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
@@ -363,23 +381,9 @@
             this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
             this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(430, 546);
+            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
             this.lb_descricao.TabIndex = 69;
             this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
-            // 
-            // lb_emp_descricao
-            // 
-            this.lb_emp_descricao.AutoSize = true;
-            this.lb_emp_descricao.BackColor = System.Drawing.Color.Transparent;
-            this.lb_emp_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_emp_descricao.Location = new System.Drawing.Point(-114, 786);
-            this.lb_emp_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
-            this.lb_emp_descricao.MaximumSize = new System.Drawing.Size(850, 0);
-            this.lb_emp_descricao.MinimumSize = new System.Drawing.Size(850, 0);
-            this.lb_emp_descricao.Name = "lb_emp_descricao";
-            this.lb_emp_descricao.Size = new System.Drawing.Size(850, 24);
-            this.lb_emp_descricao.TabIndex = 111;
-            this.lb_emp_descricao.Text = "Descricao:";
             // 
             // label20
             // 
@@ -970,7 +974,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(185, 707);
+            this.label3.Location = new System.Drawing.Point(184, 722);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(254, 25);
             this.label3.TabIndex = 4;
@@ -1070,26 +1074,6 @@
             this.btn_back.TabIndex = 68;
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click_1);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label7.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(100, 401);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 21);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Telefone";
-            // 
-            // mkb_Tel
-            // 
-            this.mkb_Tel.Location = new System.Drawing.Point(100, 436);
-            this.mkb_Tel.Mask = "(00)0000-0000";
-            this.mkb_Tel.Name = "mkb_Tel";
-            this.mkb_Tel.Size = new System.Drawing.Size(170, 20);
-            this.mkb_Tel.TabIndex = 14;
-            this.mkb_Tel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // Cadastro_Restaurante
             // 
@@ -1209,7 +1193,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label lb_emp_descricao;
         private System.Windows.Forms.CheckBox ckb_termos_uso;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel7;

@@ -71,6 +71,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.VerPedidos = new System.Windows.Forms.Button();
+            this.pn_menu = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
@@ -80,6 +81,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.pn_menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -201,6 +203,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
+            this.panel10.Controls.Add(this.pn_menu);
             this.panel10.Controls.Add(this.label6);
             this.panel10.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel10.Location = new System.Drawing.Point(0, 0);
@@ -231,12 +234,12 @@
             // 
             // Btn_Edit_Empresa
             // 
-            this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.Red;
+            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
-            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(18, 215);
+            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(528, 2);
             this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
-            this.Btn_Edit_Empresa.Size = new System.Drawing.Size(196, 35);
+            this.Btn_Edit_Empresa.Size = new System.Drawing.Size(172, 35);
             this.Btn_Edit_Empresa.TabIndex = 43;
             this.Btn_Edit_Empresa.Text = "Cadastrar Empresa";
             this.Btn_Edit_Empresa.UseVisualStyleBackColor = false;
@@ -580,17 +583,28 @@
             // 
             // VerPedidos
             // 
-            this.VerPedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.VerPedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VerPedidos.BackColor = System.Drawing.Color.Red;
+            this.VerPedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerPedidos.ForeColor = System.Drawing.Color.White;
-            this.VerPedidos.Location = new System.Drawing.Point(17, 215);
+            this.VerPedidos.Location = new System.Drawing.Point(540, 3);
             this.VerPedidos.Name = "VerPedidos";
-            this.VerPedidos.Size = new System.Drawing.Size(196, 35);
+            this.VerPedidos.Size = new System.Drawing.Size(146, 35);
             this.VerPedidos.TabIndex = 74;
             this.VerPedidos.Text = "Visualizar Pedidos";
             this.VerPedidos.UseVisualStyleBackColor = false;
             this.VerPedidos.Visible = false;
             this.VerPedidos.Click += new System.EventHandler(this.VerPedidos_Click);
+            // 
+            // pn_menu
+            // 
+            this.pn_menu.BackColor = System.Drawing.Color.Red;
+            this.pn_menu.Controls.Add(this.Btn_Edit_Empresa);
+            this.pn_menu.Controls.Add(this.VerPedidos);
+            this.pn_menu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pn_menu.Location = new System.Drawing.Point(0, 160);
+            this.pn_menu.Name = "pn_menu";
+            this.pn_menu.Size = new System.Drawing.Size(1265, 40);
+            this.pn_menu.TabIndex = 50;
             // 
             // formAlimentos
             // 
@@ -620,8 +634,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ListarEmpresas);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.Btn_Edit_Empresa);
-            this.Controls.Add(this.VerPedidos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
@@ -642,6 +654,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.pn_menu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -691,5 +704,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button VerPedidos;
+        private System.Windows.Forms.Panel pn_menu;
     }
 }
