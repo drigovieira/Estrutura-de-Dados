@@ -288,5 +288,15 @@ namespace Pont_Finder.alimentos
         {
             input_valor.MaxLength = 10;
         }
+
+        private void input_valor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar);
+        }
+
+        private void tb_qtdprato_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar);
+        }
     }
 }
