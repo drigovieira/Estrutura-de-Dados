@@ -160,6 +160,7 @@
             // 
             this.pb_icone.BackColor = System.Drawing.Color.Gainsboro;
             this.pb_icone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_icone.Image = global::Pont_Finder.Properties.Resources.offImage1;
             this.pb_icone.Location = new System.Drawing.Point(56, 54);
             this.pb_icone.Name = "pb_icone";
             this.pb_icone.Size = new System.Drawing.Size(300, 225);

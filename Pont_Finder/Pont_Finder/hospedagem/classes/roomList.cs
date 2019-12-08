@@ -95,15 +95,18 @@ namespace Pont_Finder.hospedagem
             return lista_cnpj;
         }
 
-        public static List<Quarto> quartosAtivos()
+
+
+        public static List<Quarto> SelectRoomIdj(int id)
         {
-            List<Quarto> lista_ativos = new List<Quarto>();
+            List<Quarto> lista_id = new List<Quarto>();
+
+            Quarto q = new Quarto();
 
             foreach (var item in quartos)
             {
-                if (item.Ativo)
+                if (id == item.ID)
                 {
-                    Quarto q = new Quarto();
                     q.ID = item.ID;
                     q.Cnpj_Empresa = item.Cnpj_Empresa;
                     q.NomeQuarto = item.NomeQuarto;
@@ -118,7 +121,42 @@ namespace Pont_Finder.hospedagem
                     q.Status = item.Status;
                     q.Ativo = item.Ativo;
 
-                    lista_ativos.Add(q);
+                    lista_id.Add(q);
+                }
+            }
+
+            return lista_id;
+        }
+
+
+
+        public static List<Quarto> quartosAtivos()
+        {
+            List<Quarto> lista_ativos = new List<Quarto>();
+
+            foreach (var item in quartos)
+            {
+                if (item.Ativo)
+                {
+                    if (item.Qtd_Disponivel != 0)
+                    {
+                        Quarto q = new Quarto();
+                        q.ID = item.ID;
+                        q.Cnpj_Empresa = item.Cnpj_Empresa;
+                        q.NomeQuarto = item.NomeQuarto;
+                        q.Tipo = item.Tipo;
+                        q.Qtd_Casal = item.Qtd_Casal;
+                        q.Qtd_Solteiro = item.Qtd_Solteiro;
+                        q.Qtd_Pessoas = item.Qtd_Pessoas;
+                        q.Qtd_Disponivel = item.Qtd_Disponivel;
+                        q.Servicos = item.Servicos;
+                        q.Valor_Diario = item.Valor_Diario;
+                        q.Foto = item.Foto;
+                        q.Status = item.Status;
+                        q.Ativo = item.Ativo;
+
+                        lista_ativos.Add(q);
+                    }   
                 }
             }
 
