@@ -87,6 +87,7 @@ namespace Pont_Finder.alimentos
                 checkBox1.Visible = false;
                 Troco.Visible = false;                
                 checkBox1.Checked = false;
+                Troco.Clear();
             }
             else
             {
