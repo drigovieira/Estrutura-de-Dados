@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pb_userIcone = new System.Windows.Forms.PictureBox();
             this.bt_Sair = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.username = new System.Windows.Forms.Label();
             this.button_salvar = new System.Windows.Forms.Button();
             this.bt_FazerLogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,7 +48,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.pb_userIcone);
             this.panel1.Controls.Add(this.bt_Sair);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.username);
             this.panel1.Controls.Add(this.button_salvar);
             this.panel1.Controls.Add(this.bt_FazerLogin);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -62,7 +62,7 @@
             // 
             // pb_userIcone
             // 
-            this.pb_userIcone.Location = new System.Drawing.Point(945, 3);
+            this.pb_userIcone.Location = new System.Drawing.Point(955, 2);
             this.pb_userIcone.Name = "pb_userIcone";
             this.pb_userIcone.Size = new System.Drawing.Size(40, 40);
             this.pb_userIcone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -87,17 +87,20 @@
             this.bt_Sair.UseVisualStyleBackColor = false;
             this.bt_Sair.Click += new System.EventHandler(this.Bt_Sair_Click);
             // 
-            // label1
+            // username
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(991, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.username.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.username.AutoSize = true;
+            this.username.BackColor = System.Drawing.Color.Transparent;
+            this.username.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.ForeColor = System.Drawing.Color.White;
+            this.username.Location = new System.Drawing.Point(998, 10);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(98, 24);
+            this.username.TabIndex = 4;
+            this.username.Text = "UserName";
+            this.username.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.username.Click += new System.EventHandler(this.label1_Click);
             // 
             // button_salvar
             // 
@@ -201,7 +204,7 @@
         private System.Windows.Forms.Button bt_CriarConta;
         private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.Button button_salvar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label username;
         private System.Windows.Forms.Button bt_Sair;
         private System.Windows.Forms.PictureBox pb_userIcone;
     }

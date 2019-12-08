@@ -23,12 +23,8 @@ namespace Pont_Finder
         public FormPrincipal()
         {
            
-
-
-
             InitializeComponent();
             
-
             panel1.BackColor = barra;
             navbar = panel1;
             painel = panelHome;
@@ -43,7 +39,7 @@ namespace Pont_Finder
         private void Form1_Load(object sender, EventArgs e)
         {
             bt_Sair.Visible = false;
-            label1.Text = "";
+            username.Text = "";
             formHome fh = new formHome();
             fh.TopLevel = false;
             panelHome.Controls.Add(fh);
@@ -64,7 +60,7 @@ namespace Pont_Finder
             {
                 bt_FazerLogin.Visible = false;
                 bt_CriarConta.Visible = false;
-                label1.Text = Session.Nome;
+                username.Text = Session.Nome.Split(' ')[0];
                 bt_Sair.Visible = true;
                 formHome fh = new formHome();
                 MudarForm("", fh);
@@ -215,7 +211,7 @@ namespace Pont_Finder
             bt_Sair.Visible = false;
             bt_FazerLogin.Visible = true;
             bt_CriarConta.Visible = true;
-            label1.Text = "";  
+            username.Text = "";  
             formHome fh = new formHome();     
             MudarForm("", fh);
             pb_userIcone.Visible = false;

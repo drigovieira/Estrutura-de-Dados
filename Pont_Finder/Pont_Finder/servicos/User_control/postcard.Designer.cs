@@ -212,6 +212,7 @@
             this.lb_tipo.Size = new System.Drawing.Size(240, 20);
             this.lb_tipo.TabIndex = 32;
             this.lb_tipo.Text = "Tipo:";
+            this.lb_tipo.Click += new System.EventHandler(this.Lb_tipo_Click);
             // 
             // PostCard
             // 

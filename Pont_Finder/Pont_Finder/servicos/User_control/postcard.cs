@@ -183,5 +183,10 @@ namespace Pont_Finder.servicos
         {
 
         }
+
+        private void Lb_tipo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
