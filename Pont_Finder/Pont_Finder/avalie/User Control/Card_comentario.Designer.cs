@@ -100,7 +100,7 @@
             this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_editar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_editar.ForeColor = System.Drawing.Color.White;
-            this.bt_editar.Location = new System.Drawing.Point(382, 120);
+            this.bt_editar.Location = new System.Drawing.Point(354, 125);
             this.bt_editar.Margin = new System.Windows.Forms.Padding(5);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(86, 28);
@@ -116,7 +116,7 @@
             this.bt_remover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_remover.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_remover.ForeColor = System.Drawing.Color.White;
-            this.bt_remover.Location = new System.Drawing.Point(382, 188);
+            this.bt_remover.Location = new System.Drawing.Point(354, 186);
             this.bt_remover.Margin = new System.Windows.Forms.Padding(5);
             this.bt_remover.Name = "bt_remover";
             this.bt_remover.Size = new System.Drawing.Size(86, 28);
@@ -157,9 +157,10 @@
             // 
             // comentarios
             // 
+            this.comentarios.Enabled = false;
             this.comentarios.Location = new System.Drawing.Point(8, 96);
             this.comentarios.Name = "comentarios";
-            this.comentarios.Size = new System.Drawing.Size(310, 120);
+            this.comentarios.Size = new System.Drawing.Size(310, 118);
             this.comentarios.TabIndex = 40;
             this.comentarios.Text = "";
             // 
@@ -181,6 +182,7 @@
             this.Controls.Add(this.nome);
             this.Name = "Card_comentario";
             this.Size = new System.Drawing.Size(525, 219);
+            this.Load += new System.EventHandler(this.Card_comentario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagem)).EndInit();

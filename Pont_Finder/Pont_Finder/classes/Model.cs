@@ -11,7 +11,7 @@ namespace Pont_Finder
     {
         public static Color Servicos_Cor
         {
-            get => Color.FromArgb(30, 125, 204); 
+            get => Color.FromArgb(30, 125, 204);
         }
 
         public static Color Servicos_Cor_Back
@@ -33,6 +33,27 @@ namespace Pont_Finder
         public static Image Img_Voltar_Click
         {
             get => Properties.Resources.back_2;
+        }
+
+        public static Bitmap Img_like
+        {
+            get => new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
+        }
+
+        public static Bitmap Img_deslike
+        {
+            get => new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
+        }
+
+        public static Bitmap Img_like_click
+        {
+            get => new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
+        }
+
+
+        public static Bitmap Img_deslike_click
+        {
+            get => new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
         }
 
     }

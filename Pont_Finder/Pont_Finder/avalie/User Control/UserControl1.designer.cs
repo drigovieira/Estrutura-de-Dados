@@ -228,7 +228,7 @@
             // 
             this.lb_deslike.AutoSize = true;
             this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_deslike.Location = new System.Drawing.Point(512, 362);
+            this.lb_deslike.Location = new System.Drawing.Point(339, 362);
             this.lb_deslike.Margin = new System.Windows.Forms.Padding(3);
             this.lb_deslike.Name = "lb_deslike";
             this.lb_deslike.Size = new System.Drawing.Size(15, 17);
@@ -239,7 +239,7 @@
             // 
             this.lb_like.AutoSize = true;
             this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_like.Location = new System.Drawing.Point(357, 362);
+            this.lb_like.Location = new System.Drawing.Point(339, 327);
             this.lb_like.Margin = new System.Windows.Forms.Padding(3);
             this.lb_like.Name = "lb_like";
             this.lb_like.Size = new System.Drawing.Size(15, 17);
@@ -251,7 +251,7 @@
             this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
             this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.Location = new System.Drawing.Point(472, 354);
+            this.pb_down.Location = new System.Drawing.Point(296, 354);
             this.pb_down.Margin = new System.Windows.Forms.Padding(15);
             this.pb_down.Name = "pb_down";
             this.pb_down.Size = new System.Drawing.Size(25, 25);
@@ -265,7 +265,7 @@
             this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
             this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.Location = new System.Drawing.Point(314, 354);
+            this.pb_up.Location = new System.Drawing.Point(296, 319);
             this.pb_up.Margin = new System.Windows.Forms.Padding(15);
             this.pb_up.Name = "pb_up";
             this.pb_up.Size = new System.Drawing.Size(25, 25);
@@ -286,6 +286,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lb_problema);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.bt_editar);

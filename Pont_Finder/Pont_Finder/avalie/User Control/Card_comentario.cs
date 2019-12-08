@@ -12,28 +12,31 @@ namespace Pont_Finder.avalie.User_Control
 {
     public partial class Card_comentario : UserControl
     {
+        private classes.Comentario comentario;
 
-        private classes.Comentario post;
-        Bitmap imgLike = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
-        Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
-        Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
-        Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
+        Bitmap imgLike = Model.Img_like;
+        Bitmap imgDeslike = Model.Img_deslike;
+        Bitmap imgLikeBlue = Model.Img_like_click;
+        Bitmap imgDeslikeBlue = Model.Img_deslike_click;
+
+        long postid;
 
         public Card_comentario(long postid)
         {
             InitializeComponent();
-            post = classes.ComentariosList.PosterId(postid);
+            comentario = classes.ComentariosList.thisPostId(postid);
+            this.postid = postid;
 
             
             
-            datapost.Text = (post.Data);
-            nome.Text = (post.Username);
-            imagem.ImageLocation = (post.ImgUser);
-            comentarios.Text = post.Comment;
+            datapost.Text = (comentario.Data);
+            nome.Text = (comentario.Username);
+            imagem.ImageLocation = (comentario.ImgUser);
+            comentarios.Text = comentario.Comment;
 
 
-            lb_like.Text = this.post.Joinha + "";
-            lb_deslike.Text = this.post.DeJoinha + "";
+            lb_like.Text = this.comentario.Joinha + "";
+            lb_deslike.Text = this.comentario.DeJoinha + "";
 
 
 
@@ -42,7 +45,7 @@ namespace Pont_Finder.avalie.User_Control
 
             if (Session.Online)
             {
-                long userlike = this.post.userLike(Session.Cpf);
+                long userlike = this.comentario.userLike(Session.Cpf);
 
                 if (userlike == 1)
                     pb_up.Image = imgLikeBlue;
@@ -53,25 +56,22 @@ namespace Pont_Finder.avalie.User_Control
 
            
 
-            if (Session.Cpf == post.UserCpf)
+            if (Session.Cpf == comentario.UserCpf)
             {
                 bt_editar.Visible = true;
+                bt_remover.Visible = true;
+                comentarios.Enabled = true;
             }
             else
             {
                 bt_editar.Visible = false;
+                bt_remover.Visible = false;
+                
             }
 
            
 
-            if (Session.Cpf == post.UserCpf)
-            {
-                bt_remover.Visible = true;
-            }
-            else
-            {
-                bt_remover.Visible = false;
-            }
+            
 
 
         }
@@ -87,18 +87,18 @@ namespace Pont_Finder.avalie.User_Control
             {
                 if (pb_up.Image == imgLikeBlue)
                 {
-                    post.like(0, Session.Cpf);
+                    comentario.like(0, Session.Cpf);
                     pb_up.Image = imgLike;
                     pb_down.Image = imgDeslike;
                 }
                 else
                 {
-                    post.like(1, Session.Cpf);
+                    comentario.like(1, Session.Cpf);
                     pb_up.Image = imgLikeBlue;
                     pb_down.Image = imgDeslike;
                 }
-                lb_like.Text = "" + post.Joinha;
-                lb_deslike.Text = "" + post.DeJoinha;
+                lb_like.Text = "" + comentario.Joinha;
+                lb_deslike.Text = "" + comentario.DeJoinha;
 
             }
             else
@@ -114,18 +114,18 @@ namespace Pont_Finder.avalie.User_Control
             {
                 if (pb_down.Image == imgDeslikeBlue)
                 {
-                    post.like(0, Session.Cpf);
+                    comentario.like(0, Session.Cpf);
                     pb_down.Image = imgDeslike;
                     pb_up.Image = imgLike;
                 }
                 else
                 {
-                    post.like(-1, Session.Cpf);
+                    comentario.like(-1, Session.Cpf);
                     pb_down.Image = imgDeslikeBlue;
                     pb_up.Image = imgLike;
                 }
-                lb_like.Text = "" + post.Joinha;
-                lb_deslike.Text = "" + post.DeJoinha;
+                lb_like.Text = "" + comentario.Joinha;
+                lb_deslike.Text = "" + comentario.DeJoinha;
             }
             else
             {
@@ -135,12 +135,34 @@ namespace Pont_Finder.avalie.User_Control
 
         private void bt_editar_Click(object sender, EventArgs e)
         {
+            if (comentarios.Text == "" )
+            {
+                MessageBox.Show("ENTRE COM UM COMENTÁRIO");
+            }
+            else
+            {
 
-
-
+                comentario.Comment = comentarios.Text;
+            }
+            FormPrincipal.MudarForm("avalie", new ViewPost(postid));
         }
 
         private void bt_remover_Click(object sender, EventArgs e)
+        {
+            if (comentarios.Text == "")
+            {
+                MessageBox.Show("ENTRE COM UM COMENTÁRIO");
+            }
+            else
+            {
+
+                comentario.PostId = -1;
+            }
+            FormPrincipal.MudarForm("avalie", new ViewPost(postid));
+
+        }
+
+        private void Card_comentario_Load(object sender, EventArgs e)
         {
 
         }
