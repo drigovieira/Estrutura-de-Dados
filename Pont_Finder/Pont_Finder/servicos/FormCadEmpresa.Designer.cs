@@ -60,12 +60,19 @@
             this.bt_icone = new System.Windows.Forms.Button();
             this.panel17 = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lb_descricao = new System.Windows.Forms.Label();
+            this.ckb_termos_uso = new System.Windows.Forms.CheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_telefone
@@ -203,7 +210,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(457, 406);
+            this.button3.Location = new System.Drawing.Point(650, 308);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(130, 35);
             this.button3.TabIndex = 7;
@@ -236,7 +243,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(37, 406);
+            this.button4.Location = new System.Drawing.Point(230, 308);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(130, 35);
             this.button4.TabIndex = 8;
@@ -267,7 +274,7 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 635);
+            this.panel3.Location = new System.Drawing.Point(0, 1002);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1265, 50);
             this.panel3.TabIndex = 65;
@@ -314,7 +321,7 @@
             // 
             this.panel4.Location = new System.Drawing.Point(1160, 164);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(100, 471);
+            this.panel4.Size = new System.Drawing.Size(100, 373);
             this.panel4.TabIndex = 77;
             // 
             // panel6
@@ -328,9 +335,7 @@
             this.panel6.Controls.Add(this.tb_endereco);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Controls.Add(this.button3);
             this.panel6.Controls.Add(this.tb_cep);
-            this.panel6.Controls.Add(this.button4);
             this.panel6.Controls.Add(this.label7);
             this.panel6.Controls.Add(this.mb_cnpj);
             this.panel6.Location = new System.Drawing.Point(530, 164);
@@ -400,6 +405,63 @@
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.ckb_termos_uso);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Location = new System.Drawing.Point(110, 641);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1045, 361);
+            this.panel1.TabIndex = 78;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(290, 26);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(124, 21);
+            this.label18.TabIndex = 119;
+            this.label18.Text = "Termos de uso:";
+            // 
+            // lb_descricao
+            // 
+            this.lb_descricao.AutoSize = true;
+            this.lb_descricao.BackColor = System.Drawing.Color.Transparent;
+            this.lb_descricao.Font = new System.Drawing.Font("Dubai", 9F);
+            this.lb_descricao.Location = new System.Drawing.Point(4, 2);
+            this.lb_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
+            this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
+            this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
+            this.lb_descricao.Name = "lb_descricao";
+            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
+            this.lb_descricao.TabIndex = 69;
+            this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
+            // 
+            // ckb_termos_uso
+            // 
+            this.ckb_termos_uso.AutoSize = true;
+            this.ckb_termos_uso.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb_termos_uso.Location = new System.Drawing.Point(294, 255);
+            this.ckb_termos_uso.Name = "ckb_termos_uso";
+            this.ckb_termos_uso.Size = new System.Drawing.Size(257, 25);
+            this.ckb_termos_uso.TabIndex = 117;
+            this.ckb_termos_uso.Text = "Concordo com os termos de uso.";
+            this.ckb_termos_uso.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lb_descricao);
+            this.panel2.Location = new System.Drawing.Point(294, 51);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(460, 200);
+            this.panel2.TabIndex = 118;
+            // 
             // FormCadEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -407,6 +469,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
@@ -428,6 +491,10 @@
             this.panel16.PerformLayout();
             this.panel17.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -464,5 +531,10 @@
         private System.Windows.Forms.Button bt_icone;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.CheckBox ckb_termos_uso;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lb_descricao;
     }
 }
