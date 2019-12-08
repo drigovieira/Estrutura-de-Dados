@@ -498,6 +498,12 @@
       <DependentUpon>Mapa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Propaganda_modulos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Propaganda_modulos.Designer.cs">
+      <DependentUpon>Propaganda_modulos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -906,6 +912,9 @@
     <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.PostCard.resources" />
     <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.PostCardEdit.resources" />
     <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.SolicitarServico.resources" />
+    <EmbeddedResource Include="Propaganda_modulos.resx">
+      <DependentUpon>Propaganda_modulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

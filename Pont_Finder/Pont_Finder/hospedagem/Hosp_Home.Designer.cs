@@ -51,7 +51,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.pn_propa_modulos = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_center = new System.Windows.Forms.Panel();
@@ -60,7 +60,7 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pn_propa_externa = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -79,10 +79,10 @@
             this.panel10.SuspendLayout();
             this.pnl_img.SuspendLayout();
             this.pn_menu.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.pn_propa_modulos.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pn_propa_externa.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -349,14 +349,14 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Veja o que temos para você!";
             // 
-            // panel8
+            // pn_propa_modulos
             // 
-            this.panel8.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(950, 986);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(310, 350);
-            this.panel8.TabIndex = 38;
+            this.pn_propa_modulos.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pn_propa_modulos.Controls.Add(this.label15);
+            this.pn_propa_modulos.Location = new System.Drawing.Point(950, 986);
+            this.pn_propa_modulos.Name = "pn_propa_modulos";
+            this.pn_propa_modulos.Size = new System.Drawing.Size(310, 350);
+            this.pn_propa_modulos.TabIndex = 38;
             // 
             // label15
             // 
@@ -450,14 +450,14 @@
             this.panel4.TabIndex = 30;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // panel2
+            // pn_propa_externa
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Location = new System.Drawing.Point(950, 630);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 350);
-            this.panel2.TabIndex = 32;
+            this.pn_propa_externa.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pn_propa_externa.Controls.Add(this.label13);
+            this.pn_propa_externa.Location = new System.Drawing.Point(950, 630);
+            this.pn_propa_externa.Name = "pn_propa_externa";
+            this.pn_propa_externa.Size = new System.Drawing.Size(310, 350);
+            this.pn_propa_externa.TabIndex = 32;
             // 
             // panel5
             // 
@@ -642,10 +642,10 @@
             this.Controls.Add(this.pnl_img);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.pn_propa_modulos);
             this.Controls.Add(this.panel_center);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pn_propa_externa);
             this.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
@@ -658,14 +658,14 @@
             this.pnl_img.ResumeLayout(false);
             this.pnl_img.PerformLayout();
             this.pn_menu.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.pn_propa_modulos.ResumeLayout(false);
+            this.pn_propa_modulos.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pn_propa_externa.ResumeLayout(false);
+            this.pn_propa_externa.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -689,7 +689,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel pn_propa_modulos;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel_center;
@@ -698,7 +698,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pn_propa_externa;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button Btn_Edit_Empresa;
