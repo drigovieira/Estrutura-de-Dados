@@ -31,9 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro_Restaurante));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.mkb_Tel = new System.Windows.Forms.MaskedTextBox();
             this.mkb_Cep = new System.Windows.Forms.MaskedTextBox();
             this.tbNum = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -44,13 +41,17 @@
             this.tbFantasia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbBairro = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tbNomeEmpresa = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.ckb_termos_uso = new System.Windows.Forms.CheckBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lb_descricao = new System.Windows.Forms.Label();
+            this.lb_emp_descricao = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
@@ -108,20 +109,17 @@
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.lb_emp_descricao = new System.Windows.Forms.Label();
-            this.lb_descricao = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.ckb_termos_uso = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.mkb_Tel = new System.Windows.Forms.MaskedTextBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -129,15 +127,13 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(5, 301);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(310, 684);
+            this.panel1.Size = new System.Drawing.Size(310, 624);
             this.panel1.TabIndex = 51;
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.label19);
-            this.panel11.Controls.Add(this.comboBox1);
             this.panel11.Controls.Add(this.mkb_Tel);
             this.panel11.Controls.Add(this.mkb_Cep);
             this.panel11.Controls.Add(this.tbNum);
@@ -156,36 +152,8 @@
             this.panel11.Controls.Add(this.label13);
             this.panel11.Location = new System.Drawing.Point(320, 301);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(625, 684);
+            this.panel11.Size = new System.Drawing.Size(625, 624);
             this.panel11.TabIndex = 57;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label19.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(100, 482);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(63, 21);
-            this.label19.TabIndex = 18;
-            this.label19.Text = "Página";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(100, 521);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 21);
-            this.comboBox1.TabIndex = 17;
-            // 
-            // mkb_Tel
-            // 
-            this.mkb_Tel.Location = new System.Drawing.Point(100, 436);
-            this.mkb_Tel.Mask = "(00)0000-0000";
-            this.mkb_Tel.Name = "mkb_Tel";
-            this.mkb_Tel.Size = new System.Drawing.Size(170, 20);
-            this.mkb_Tel.TabIndex = 14;
-            this.mkb_Tel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // mkb_Cep
             // 
@@ -229,7 +197,7 @@
             // tbEmail
             // 
             this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbEmail.Location = new System.Drawing.Point(100, 603);
+            this.tbEmail.Location = new System.Drawing.Point(100, 532);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(415, 22);
             this.tbEmail.TabIndex = 16;
@@ -267,7 +235,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(100, 566);
+            this.label6.Location = new System.Drawing.Point(100, 495);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 21);
             this.label6.TabIndex = 15;
@@ -281,17 +249,6 @@
             this.tbBairro.Size = new System.Drawing.Size(415, 22);
             this.tbBairro.TabIndex = 6;
             this.tbBairro.TextChanged += new System.EventHandler(this.TbBairro_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label7.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(100, 401);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 21);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Telefone";
             // 
             // label9
             // 
@@ -338,7 +295,7 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(950, 301);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 684);
+            this.panel2.Size = new System.Drawing.Size(310, 624);
             this.panel2.TabIndex = 58;
             // 
             // panel3
@@ -360,11 +317,69 @@
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(318, 1138);
+            this.panel3.Location = new System.Drawing.Point(318, 1070);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(625, 1624);
             this.panel3.TabIndex = 59;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // ckb_termos_uso
+            // 
+            this.ckb_termos_uso.AutoSize = true;
+            this.ckb_termos_uso.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb_termos_uso.Location = new System.Drawing.Point(81, 1486);
+            this.ckb_termos_uso.Name = "ckb_termos_uso";
+            this.ckb_termos_uso.Size = new System.Drawing.Size(257, 25);
+            this.ckb_termos_uso.TabIndex = 69;
+            this.ckb_termos_uso.Text = "Concordo com os termos de uso.";
+            this.ckb_termos_uso.UseVisualStyleBackColor = true;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(77, 1257);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(124, 21);
+            this.label18.TabIndex = 113;
+            this.label18.Text = "Termos de uso:";
+            // 
+            // panel7
+            // 
+            this.panel7.AutoScroll = true;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.lb_descricao);
+            this.panel7.Location = new System.Drawing.Point(81, 1279);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(460, 200);
+            this.panel7.TabIndex = 112;
+            // 
+            // lb_descricao
+            // 
+            this.lb_descricao.AutoSize = true;
+            this.lb_descricao.BackColor = System.Drawing.Color.Transparent;
+            this.lb_descricao.Font = new System.Drawing.Font("Dubai", 9F);
+            this.lb_descricao.Location = new System.Drawing.Point(4, 2);
+            this.lb_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
+            this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
+            this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
+            this.lb_descricao.Name = "lb_descricao";
+            this.lb_descricao.Size = new System.Drawing.Size(430, 546);
+            this.lb_descricao.TabIndex = 69;
+            this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
+            // 
+            // lb_emp_descricao
+            // 
+            this.lb_emp_descricao.AutoSize = true;
+            this.lb_emp_descricao.BackColor = System.Drawing.Color.Transparent;
+            this.lb_emp_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_emp_descricao.Location = new System.Drawing.Point(-114, 786);
+            this.lb_emp_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
+            this.lb_emp_descricao.MaximumSize = new System.Drawing.Size(850, 0);
+            this.lb_emp_descricao.MinimumSize = new System.Drawing.Size(850, 0);
+            this.lb_emp_descricao.Name = "lb_emp_descricao";
+            this.lb_emp_descricao.Size = new System.Drawing.Size(850, 24);
+            this.lb_emp_descricao.TabIndex = 111;
+            this.lb_emp_descricao.Text = "Descricao:";
             // 
             // label20
             // 
@@ -999,7 +1014,7 @@
             // panel9
             // 
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 2762);
+            this.panel9.Location = new System.Drawing.Point(0, 2694);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 60;
@@ -1010,7 +1025,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(531, 1052);
+            this.label16.Location = new System.Drawing.Point(531, 984);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(175, 36);
             this.label16.TabIndex = 61;
@@ -1056,63 +1071,25 @@
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click_1);
             // 
-            // lb_emp_descricao
+            // label7
             // 
-            this.lb_emp_descricao.AutoSize = true;
-            this.lb_emp_descricao.BackColor = System.Drawing.Color.Transparent;
-            this.lb_emp_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_emp_descricao.Location = new System.Drawing.Point(-114, 786);
-            this.lb_emp_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
-            this.lb_emp_descricao.MaximumSize = new System.Drawing.Size(850, 0);
-            this.lb_emp_descricao.MinimumSize = new System.Drawing.Size(850, 0);
-            this.lb_emp_descricao.Name = "lb_emp_descricao";
-            this.lb_emp_descricao.Size = new System.Drawing.Size(850, 24);
-            this.lb_emp_descricao.TabIndex = 111;
-            this.lb_emp_descricao.Text = "Descricao:";
+            this.label7.AutoSize = true;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label7.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(100, 401);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 21);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Telefone";
             // 
-            // lb_descricao
+            // mkb_Tel
             // 
-            this.lb_descricao.AutoSize = true;
-            this.lb_descricao.BackColor = System.Drawing.Color.Transparent;
-            this.lb_descricao.Font = new System.Drawing.Font("Dubai", 9F);
-            this.lb_descricao.Location = new System.Drawing.Point(4, 2);
-            this.lb_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
-            this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
-            this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
-            this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
-            this.lb_descricao.TabIndex = 69;
-            this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
-            // 
-            // panel7
-            // 
-            this.panel7.AutoScroll = true;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.lb_descricao);
-            this.panel7.Location = new System.Drawing.Point(81, 1279);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(460, 200);
-            this.panel7.TabIndex = 112;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(77, 1257);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(124, 21);
-            this.label18.TabIndex = 113;
-            this.label18.Text = "Termos de uso:";
-            // 
-            // ckb_termos_uso
-            // 
-            this.ckb_termos_uso.AutoSize = true;
-            this.ckb_termos_uso.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckb_termos_uso.Location = new System.Drawing.Point(81, 1486);
-            this.ckb_termos_uso.Name = "ckb_termos_uso";
-            this.ckb_termos_uso.Size = new System.Drawing.Size(257, 25);
-            this.ckb_termos_uso.TabIndex = 69;
-            this.ckb_termos_uso.Text = "Concordo com os termos de uso.";
-            this.ckb_termos_uso.UseVisualStyleBackColor = true;
+            this.mkb_Tel.Location = new System.Drawing.Point(100, 436);
+            this.mkb_Tel.Mask = "(00)0000-0000";
+            this.mkb_Tel.Name = "mkb_Tel";
+            this.mkb_Tel.Size = new System.Drawing.Size(170, 20);
+            this.mkb_Tel.TabIndex = 14;
+            this.mkb_Tel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // Cadastro_Restaurante
             // 
@@ -1139,6 +1116,8 @@
             this.panel11.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -1149,8 +1128,6 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1165,7 +1142,6 @@
         private System.Windows.Forms.TextBox tbFantasia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbBairro;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbNomeEmpresa;
         private System.Windows.Forms.Label label12;
@@ -1198,7 +1174,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.MaskedTextBox mkb_Tel;
         private System.Windows.Forms.MaskedTextBox mkb_Cep;
         private System.Windows.Forms.MaskedTextBox maskedTextBox12;
         private System.Windows.Forms.MaskedTextBox maskedTextBox13;
@@ -1230,8 +1205,6 @@
         private System.Windows.Forms.CheckBox cbEntrega;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.CheckBox cbCardapio;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
@@ -1241,5 +1214,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label lb_descricao;
+        private System.Windows.Forms.MaskedTextBox mkb_Tel;
+        private System.Windows.Forms.Label label7;
     }
 }
