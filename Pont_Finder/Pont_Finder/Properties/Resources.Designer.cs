@@ -113,6 +113,16 @@ namespace Pont_Finder.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap codigodebarra_810x4461 {
+            get {
+                object obj = ResourceManager.GetObject("codigodebarra-810x4461", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Deslike_null {
             get {
                 object obj = ResourceManager.GetObject("Deslike_null", resourceCulture);

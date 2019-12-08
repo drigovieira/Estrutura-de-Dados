@@ -31,15 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GerarBoleto));
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.btnPrint = new System.Windows.Forms.PictureBox();
-            this.btnSalvar = new System.Windows.Forms.PictureBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
             this.boletoA = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.lb_cpf = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.end = new System.Windows.Forms.Label();
@@ -103,13 +101,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lb_cpf = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalvar)).BeginInit();
+            this.btnPrint = new System.Windows.Forms.PictureBox();
+            this.btnSalvar = new System.Windows.Forms.PictureBox();
             this.boletoA.SuspendLayout();
             this.panel24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel25.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel22.SuspendLayout();
@@ -133,7 +130,10 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalvar)).BeginInit();
             this.SuspendLayout();
             // 
             // printDocument1
@@ -152,32 +152,6 @@
             this.printPreviewDialog1.Visible = false;
             this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
-            // btnPrint
-            // 
-            this.btnPrint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.Location = new System.Drawing.Point(855, 128);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(51, 42);
-            this.btnPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnPrint.TabIndex = 2;
-            this.btnPrint.TabStop = false;
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalvar.Image = global::Pont_Finder.Properties.Resources.downblue;
-            this.btnSalvar.Location = new System.Drawing.Point(954, 128);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(51, 42);
-            this.btnSalvar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSalvar.TabIndex = 1;
-            this.btnSalvar.TabStop = false;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -189,8 +163,8 @@
             // boletoA
             // 
             this.boletoA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.boletoA.Controls.Add(this.pictureBox3);
             this.boletoA.Controls.Add(this.panel24);
-            this.boletoA.Controls.Add(this.pictureBox2);
             this.boletoA.Controls.Add(this.panel25);
             this.boletoA.Controls.Add(this.lb_num_codigo_barra);
             this.boletoA.Controls.Add(this.panel23);
@@ -242,16 +216,6 @@
             this.label17.TabIndex = 6;
             this.label17.Text = "O pagamento deve ser feito em 3 dias";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(43, 618);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(662, 100);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 36;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel25
             // 
             this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -266,6 +230,16 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(797, 138);
             this.panel25.TabIndex = 35;
+            // 
+            // lb_cpf
+            // 
+            this.lb_cpf.AutoSize = true;
+            this.lb_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cpf.Location = new System.Drawing.Point(4, 38);
+            this.lb_cpf.Name = "lb_cpf";
+            this.lb_cpf.Size = new System.Drawing.Size(78, 18);
+            this.lb_cpf.TabIndex = 11;
+            this.lb_cpf.Text = "CPF Value";
             // 
             // label36
             // 
@@ -321,7 +295,7 @@
             // 
             this.lb_num_codigo_barra.AutoSize = true;
             this.lb_num_codigo_barra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_num_codigo_barra.Location = new System.Drawing.Point(394, 32);
+            this.lb_num_codigo_barra.Location = new System.Drawing.Point(350, 30);
             this.lb_num_codigo_barra.Name = "lb_num_codigo_barra";
             this.lb_num_codigo_barra.Size = new System.Drawing.Size(48, 16);
             this.lb_num_codigo_barra.TabIndex = 33;
@@ -648,16 +622,16 @@
             this.panel9.Location = new System.Drawing.Point(261, -1);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(130, 69);
+            this.panel9.Size = new System.Drawing.Size(86, 69);
             this.panel9.TabIndex = 20;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(14, 15);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(5, 25);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(102, 37);
+            this.label18.Size = new System.Drawing.Size(72, 25);
             this.label18.TabIndex = 6;
             this.label18.Text = "001-9";
             // 
@@ -909,6 +883,16 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Local de pagamento";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Pont_Finder.Properties.Resources.codigodebarra_810x4461;
+            this.pictureBox3.Location = new System.Drawing.Point(8, 624);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(786, 89);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 36;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -919,15 +903,32 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // lb_cpf
+            // btnPrint
             // 
-            this.lb_cpf.AutoSize = true;
-            this.lb_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cpf.Location = new System.Drawing.Point(4, 38);
-            this.lb_cpf.Name = "lb_cpf";
-            this.lb_cpf.Size = new System.Drawing.Size(78, 18);
-            this.lb_cpf.TabIndex = 11;
-            this.lb_cpf.Text = "CPF Value";
+            this.btnPrint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.Location = new System.Drawing.Point(867, 104);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(114, 61);
+            this.btnPrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnPrint.TabIndex = 2;
+            this.btnPrint.TabStop = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvar.Image = global::Pont_Finder.Properties.Resources.downblue;
+            this.btnSalvar.Location = new System.Drawing.Point(903, 218);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(51, 42);
+            this.btnSalvar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSalvar.TabIndex = 1;
+            this.btnSalvar.TabStop = false;
+            this.btnSalvar.Visible = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // GerarBoleto
             // 
@@ -943,13 +944,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GerarBoleto";
             this.Load += new System.EventHandler(this.GerarBoleto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalvar)).EndInit();
             this.boletoA.ResumeLayout(false);
             this.boletoA.PerformLayout();
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
             this.panel23.ResumeLayout(false);
@@ -996,7 +994,10 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalvar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1013,7 +1014,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label end;
         private System.Windows.Forms.Label nome;
@@ -1078,5 +1078,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lb_cpf;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
