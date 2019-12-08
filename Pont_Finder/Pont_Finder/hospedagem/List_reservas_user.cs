@@ -41,25 +41,31 @@ namespace Pont_Finder.hospedagem
                 {
                     cpf = Session.Cpf;
 
-                    foreach (var item in lista)//PERCORRE TODOS QUARTOS
-                    {
+                    
 
                         foreach (var res in lista_reservas)//PERCORRE TODAS RESERVAS
                         {
 
                             if (cpf == res.Usuario)
                             {
-                                data.inc.user_list_reserva a = new data.inc.user_list_reserva(item.ID, res.Id);
-                                a.Location = new Point(25, y);
-                                y = y + a.Height + 5;
-                                panel1.Controls.Add(a);
-                                i++;
+                                foreach (var item in lista)//PERCORRE TODOS QUARTOS
+                                {
+                                    if (item.ID == res.IdQuarto)
+                                    {
+                                        data.inc.user_list_reserva a = new data.inc.user_list_reserva(item.ID, res.Id);
+                                        a.Location = new Point(25, y);
+                                        y = y + a.Height + 5;
+                                        panel1.Controls.Add(a);
+                                        i++;
+                                    }
+                                }
                             }
                         }
 
-                    }
+                    
 
                 }
+
                 else //VERSAO ADMIN
                 {
                     cnpj_empresa = emp.CNPJ;

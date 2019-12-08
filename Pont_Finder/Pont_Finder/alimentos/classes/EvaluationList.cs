@@ -10,10 +10,10 @@ namespace Pont_Finder.alimentos.classes
     {
         private static List<Evaluation> avaliacao = new List<Evaluation>();
 
-        /*public static List<ProfileCompany> TopList(List<ProfileCompany> FiltroList)
+        public static List<Company> TopList(List<Company> FiltroList)
         {
-            List<ProfileCompany> topList = new List<ProfileCompany>();
-            ProfileCompany temp;
+            List<Company> topList = new List<Company>();
+            Company temp;
             int count = 0;
             foreach (var quant in FiltroList)
             {
@@ -22,11 +22,11 @@ namespace Pont_Finder.alimentos.classes
             }
             for (int cont = 0; cont < count; cont++)
             {
-                temp = new ProfileCompany();
+                temp = new Company();
                 foreach (var i in FiltroList)
                 {
                     if (topList.Contains(i)) { }
-                    else if (i.NotaApurada > temp.NotaApurada)
+                    else if (i.Like > temp.Like)
                     {
                         temp = i;
                     }
@@ -34,7 +34,7 @@ namespace Pont_Finder.alimentos.classes
                 topList.Add(temp);
             }
             return topList;
-        }*/
+        }
         public static List<Evaluation> selectEvaluation()
         {
             return avaliacao;
@@ -91,6 +91,10 @@ namespace Pont_Finder.alimentos.classes
             }
             CompanyList.AttEvaluation(indexEmp, "like", valor1);
             CompanyList.AttEvaluation(indexEmp, "deslike", valor2);
+        }
+        public static List<Evaluation> selectAll()
+        {
+            return avaliacao;
         }
     }
 }

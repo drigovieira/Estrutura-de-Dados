@@ -41,6 +41,12 @@ namespace Pont_Finder.hospedagem
         {
 
         }
+
+        private void pn_galery_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         //Painel SERVICOS HOTEL
         private void pn_icons_hotel_Paint(object sender, PaintEventArgs e)
         {
@@ -145,6 +151,8 @@ namespace Pont_Finder.hospedagem
             this.anterior = anterior;
 
             InitializeComponent();
+
+            dt_fim.Text = "" + dt_fim.Value.AddDays(1);
 
             galeria_fotos.Add(foto);
 

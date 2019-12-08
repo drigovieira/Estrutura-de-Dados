@@ -186,6 +186,143 @@ namespace Pont_Finder.hospedagem
 
         }
 
+
+
+        private void DateTimePicker1_ValueChanged(Object sender, EventArgs e)
+        {
+
+            ListadeQuartos.Clear();
+
+            foreach (var item in roomList.Quartos)
+            {
+
+                int contador = 0;
+
+                foreach (var reservas in classes.reserveList.selectAll())
+                {
+                    if (dateTimePicker1.Value <= reservas.Data_final)
+                    {
+                        contador++;
+                    }
+                }
+
+                if (item.Qtd_Disponivel > contador)
+                {
+                    if (item.NomeQuarto.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                    {
+                        ListadeQuartos.Add(item);
+                    }
+                }
+
+            }
+
+            y = 5;
+            panel_center.Height = 180;
+            panel_center.Controls.Clear();
+            int i = 0;
+
+            ListadeQuartos.Reverse();
+
+            pagTotal = ListadeQuartos.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
+            foreach (var item in ListadeQuartos)
+            {
+                if (i >= pagQuant)
+                    break;
+                Hosp_PostCard a = new Hosp_PostCard(item.ID);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                panel_center.Height = panel_center.Height + 180;
+                panel_center.Controls.Add(a);
+                i++;
+            }
+
+        }
+
+
+
+
+        private void DateTimePicker2_ValueChanged(Object sender, EventArgs e)
+        {
+
+            ListadeQuartos.Clear();
+
+            foreach (var item in roomList.Quartos)
+            {
+
+                int contador = 0;
+
+                foreach (var reservas in classes.reserveList.selectAll())
+                {
+                    if (dateTimePicker1.Value <= reservas.Data_final)
+                    {
+                        contador++;
+                    }
+                }
+
+                if (item.Qtd_Disponivel > contador)
+                {
+                    if (item.NomeQuarto.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                    {
+                        ListadeQuartos.Add(item);
+                    }
+                }
+
+            }
+
+            y = 5;
+            panel_center.Height = 180;
+            panel_center.Controls.Clear();
+            int i = 0;
+
+            ListadeQuartos.Reverse();
+
+            pagTotal = ListadeQuartos.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
+            foreach (var item in ListadeQuartos)
+            {
+                if (i >= pagQuant)
+                    break;
+                Hosp_PostCard a = new Hosp_PostCard(item.ID);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                panel_center.Height = panel_center.Height + 180;
+                panel_center.Controls.Add(a);
+                i++;
+            }
+
+        }
+
+
+
+
+
         private void bt_pesquisar_Click(object sender, EventArgs e)
         {
 
@@ -248,6 +385,7 @@ namespace Pont_Finder.hospedagem
                 i++;
             }
         }
+
 
         private void Tb_pesquisar_KeyPress(object sender, KeyPressEventArgs e)
         {

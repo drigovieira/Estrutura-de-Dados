@@ -276,6 +276,8 @@
     </Compile>
     <Compile Include="eventos\Classes\CaEmpresa.cs" />
     <Compile Include="eventos\Classes\CoEvento.cs" />
+    <Compile Include="eventos\Classes\comentario.cs" />
+    <Compile Include="eventos\Classes\comentario_list.cs" />
     <Compile Include="eventos\Classes\ComprEvento.cs" />
     <Compile Include="eventos\Classes\Empresa_List.cs" />
     <Compile Include="eventos\Classes\EventoCompra_List.cs" />
@@ -327,6 +329,12 @@
     </Compile>
     <Compile Include="eventos\User_Card\Card_list_Emp.Designer.cs">
       <DependentUpon>Card_list_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventos\User_Card\comentarios_eventos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="eventos\User_Card\comentarios_eventos.Designer.cs">
+      <DependentUpon>comentarios_eventos.cs</DependentUpon>
     </Compile>
     <Compile Include="eventos\User_Card\Post_Card.cs">
       <SubType>UserControl</SubType>
@@ -798,6 +806,9 @@
     <EmbeddedResource Include="eventos\User_Card\Card_list_Emp.resx">
       <DependentUpon>Card_list_Emp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="eventos\User_Card\comentarios_eventos.resx">
+      <DependentUpon>comentarios_eventos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="eventos\User_Card\Post_Card.resx">
       <DependentUpon>Post_Card.cs</DependentUpon>
     </EmbeddedResource>
@@ -1057,6 +1068,7 @@
     <Content Include="data\empresas.xml" />
     <Content Include="data\images\users\offImage.jpg" />
     <Content Include="data\usuarios.xml" />
+    <Content Include="eventos\Data\Comentarios_eventos.xml" />
     <Content Include="eventos\Data\compras_eventos.xml" />
     <Content Include="eventos\Data\Empresa_Eventos.xml" />
     <Content Include="eventos\Data\imagens\0.jpg" />
