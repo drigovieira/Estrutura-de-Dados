@@ -56,9 +56,9 @@ namespace Pont_Finder.servicos
             //caractere invisivel alt + 0160 ou " "
             string desc = this.post.Descricao.Replace("\n", " ").Replace(" ", " ");
 
-            if (desc.Length > 80)
+            if (desc.Length > 100)
             {
-                desc = desc.Substring(0, 115);
+                desc = desc.Substring(0, 100);
                 desc = desc+"...";
             }
             

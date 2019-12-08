@@ -1,3 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PostList>
+  <Post>
+    <id>0</id>
+    <titulo>Apontamento de satélites</titulo>
+    <valor>89</valor>
+    <descricao>Esse serviço consiste no simples ato de apontar uma antena para um satélite, servicos adicionais serão cobrados posteriormente</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//0.jpg</image>
+    <cpf>28645898004</cpf>
+    <cnpj>5403624000173</cnpj>
+    <data>2019-12-08T13:16:52.7743921-03:00</data>
+    <likes></likes>
+  </Post>
 </PostList>

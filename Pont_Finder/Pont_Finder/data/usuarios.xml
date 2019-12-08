@@ -96,4 +96,12 @@
     <image>..//..//data//images//users//46334678086.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Lincoln Carlos</nome>
+    <email>lincoln@gmail.com</email>
+    <senha>123</senha>
+    <cpf>28645898004</cpf>
+    <image>..//..//data//images//users//28645898004.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

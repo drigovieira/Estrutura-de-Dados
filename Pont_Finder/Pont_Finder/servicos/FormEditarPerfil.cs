@@ -128,12 +128,13 @@ namespace Pont_Finder.servicos
             empresa.Sobre = tb_sobre.Text;
             empresa.PoliticaPrivacidade = tb_privacidade.Text;
 
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf, new FormServicos()));
 
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf, anterior));
+            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf, new FormServicos()));
         }
     }
 }

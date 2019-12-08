@@ -201,13 +201,23 @@
             this.tb_valor.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_valor.Location = new System.Drawing.Point(56, 426);
             this.tb_valor.Maximum = new decimal(new int[] {
-            10000,
+            999,
+            0,
+            0,
+            0});
+            this.tb_valor.Minimum = new decimal(new int[] {
+            10,
             0,
             0,
             0});
             this.tb_valor.Name = "tb_valor";
             this.tb_valor.Size = new System.Drawing.Size(300, 34);
             this.tb_valor.TabIndex = 43;
+            this.tb_valor.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label1
             // 
