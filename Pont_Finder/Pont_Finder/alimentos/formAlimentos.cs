@@ -1,4 +1,5 @@
 ﻿using Pont_Finder.alimentos;
+using Pont_Finder.alimentos.classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,7 @@ namespace Pont_Finder
         {
             cat = false;
             local = 0;
-            local1 = 0;
+            local1 = 42;
             pagQuant = 10;
             lista = CompanyList.selectAll();
             InitializeComponent();
@@ -338,7 +339,17 @@ namespace Pont_Finder
         }
 
         public void Listar()
-        {                        
+        {
+            if (EvaluationList.selectAll().Count != 0)
+            {
+                foreach (var top in EvaluationList.TopList(CompanyList.selectAll()))
+                {
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia);
+                    emp.Location = new Point(20, local1);
+                    local1 = local1 + emp.Height + 5;
+                    Top5.Controls.Add(emp);
+                }
+            }
             //Listando Empresas
             pagTotal = CompanyList.selectAll().Count;
             if ((pagTotal % pagQuant) != 0)
