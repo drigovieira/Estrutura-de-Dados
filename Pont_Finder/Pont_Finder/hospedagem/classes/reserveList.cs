@@ -77,6 +77,11 @@ namespace Pont_Finder.hospedagem.classes
             return lista_cpf;
         }
 
+        public static int Tam
+        {
+            get { return reservas.Count; }
+        }
+
         public static void CarregarXML()
         {
             XDocument doc = XDocument.Load(caminho);

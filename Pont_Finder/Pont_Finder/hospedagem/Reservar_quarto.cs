@@ -18,11 +18,22 @@ namespace Pont_Finder.hospedagem
         private DateTime data_inicial, data_final;
         private double valor_reserva, valor;
         private long cpf_user, telefone_emp;
-        private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp;
+        private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp, metodo;
+
+        classes.Reserva reserva = new classes.Reserva();
 
         private void bt_finalizar_Click(object sender, EventArgs e)
         {
 
+            reserva.Id = classes.reserveList.Tam;
+            reserva.IdQuarto = id_quarto;
+            reserva.Usuario = cpf_user;
+            reserva.Data_inicial = data_inicial;
+            reserva.Data_final = data_final;
+            reserva.MetodoPagamento = metodo;
+            reserva.Valor = valor_reserva;
+
+            classes.reserveList.addReserva(reserva);
         }
 
         private void lb_data_saida_Click(object sender, EventArgs e)
@@ -147,9 +158,12 @@ namespace Pont_Finder.hospedagem
             {
                 if (rb_boleto.Checked)
                 {
+                    metodo = "Boleto";
+                    valor_reserva = (valor - (valor * 0.15));
                     hospedagem.data.inc.Reserva_boleto boleto = new data.inc.Reserva_boleto();
                     boleto.Location = new Point(0, 0);
                     panel_center.Controls.Add(boleto);
+                    
                 }
                 else
                 {
@@ -162,6 +176,8 @@ namespace Pont_Finder.hospedagem
         {
             if (rb_cartao.Checked)
             {
+                metodo = "Cartao de Credito";
+                valor_reserva = valor;
                 hospedagem.data.inc.Reserva_cartao cartao = new data.inc.Reserva_cartao();
                 cartao.Location = new Point(0, 0);
                 panel_center.Controls.Add(cartao);
