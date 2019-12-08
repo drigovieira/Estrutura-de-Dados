@@ -330,6 +330,12 @@
     <Compile Include="eventos\User_Card\Card_list_Emp.Designer.cs">
       <DependentUpon>Card_list_Emp.cs</DependentUpon>
     </Compile>
+    <Compile Include="eventos\User_Card\comentarios_eventos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="eventos\User_Card\comentarios_eventos.Designer.cs">
+      <DependentUpon>comentarios_eventos.cs</DependentUpon>
+    </Compile>
     <Compile Include="eventos\User_Card\Post_Card.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -793,6 +799,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\User_Card\Card_list_Emp.resx">
       <DependentUpon>Card_list_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\User_Card\comentarios_eventos.resx">
+      <DependentUpon>comentarios_eventos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\User_Card\Post_Card.resx">
       <DependentUpon>Post_Card.cs</DependentUpon>
