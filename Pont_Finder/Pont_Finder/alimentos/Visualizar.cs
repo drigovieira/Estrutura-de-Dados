@@ -63,6 +63,23 @@ namespace Pont_Finder.alimentos
             }
             lb_like.Text = CompanyList.selectAll()[Index].Like.ToString();
             lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();
+            if (Session.Online)
+            {
+                foreach (var item in EvaluationList.selectAll())
+                {
+                    if(item.Cpf == Session.Cpf)
+                    {
+                        if (item.Tipo.Equals("like"))
+                        {
+                            pb_up.Image = imgLikeBlue;
+                        }
+                        else
+                        {
+                            pb_down.Image = imgDeslikeBlue;
+                        }
+                    }
+                }
+            }
         }
         public void CapturarFuncionamento()
         {
