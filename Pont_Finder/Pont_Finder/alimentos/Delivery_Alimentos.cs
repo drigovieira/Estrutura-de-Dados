@@ -126,7 +126,7 @@ namespace Pont_Finder.alimentos
                         pedidos.Rua = textBox1.Text;
                         pedidos.Numero = int.Parse(maskedTextBox1.Text);
                         pedidos.Observacoes = textBox3.Text;
-                        pedidos.IdUser = Session.Id;
+                        pedidos.Cpf = Session.Cpf;
                         pedidos.Referencia = textBox7.Text;
                         pedidos.Pedidos = Sacola;
                         pedidos.Valor = Valor;
