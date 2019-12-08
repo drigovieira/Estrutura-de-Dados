@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lb_nome_prato = new System.Windows.Forms.Label();
-            this.lb_quantidade = new System.Windows.Forms.Label();
+            this.lb_Pedidos = new System.Windows.Forms.Label();
             this.lb_numero_delivery = new System.Windows.Forms.Label();
             this.lb_rua_delivery = new System.Windows.Forms.Label();
             this.lb_valor_delivery = new System.Windows.Forms.Label();
@@ -39,27 +38,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lb_referencia = new System.Windows.Forms.Label();
             this.lb_observacao = new System.Windows.Forms.Label();
+            this.Pedidos = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // lb_nome_prato
+            // lb_Pedidos
             // 
-            this.lb_nome_prato.AutoSize = true;
-            this.lb_nome_prato.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nome_prato.Location = new System.Drawing.Point(20, 229);
-            this.lb_nome_prato.Name = "lb_nome_prato";
-            this.lb_nome_prato.Size = new System.Drawing.Size(98, 21);
-            this.lb_nome_prato.TabIndex = 0;
-            this.lb_nome_prato.Text = "NomePrato";
-            // 
-            // lb_quantidade
-            // 
-            this.lb_quantidade.AutoSize = true;
-            this.lb_quantidade.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_quantidade.Location = new System.Drawing.Point(20, 264);
-            this.lb_quantidade.Name = "lb_quantidade";
-            this.lb_quantidade.Size = new System.Drawing.Size(125, 21);
-            this.lb_quantidade.TabIndex = 1;
-            this.lb_quantidade.Text = "QuantiaPedido";
+            this.lb_Pedidos.AutoSize = true;
+            this.lb_Pedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Pedidos.Location = new System.Drawing.Point(20, 230);
+            this.lb_Pedidos.Name = "lb_Pedidos";
+            this.lb_Pedidos.Size = new System.Drawing.Size(75, 21);
+            this.lb_Pedidos.TabIndex = 0;
+            this.lb_Pedidos.Text = "Pedidos:";
             // 
             // lb_numero_delivery
             // 
@@ -151,12 +141,23 @@
             this.lb_observacao.TabIndex = 19;
             this.lb_observacao.Text = "Value";
             // 
+            // Pedidos
+            // 
+            this.Pedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pedidos.FormattingEnabled = true;
+            this.Pedidos.ItemHeight = 21;
+            this.Pedidos.Location = new System.Drawing.Point(24, 254);
+            this.Pedidos.Name = "Pedidos";
+            this.Pedidos.Size = new System.Drawing.Size(366, 109);
+            this.Pedidos.TabIndex = 20;
+            // 
             // Pedido_Delivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.Pedidos);
             this.Controls.Add(this.lb_observacao);
             this.Controls.Add(this.lb_referencia);
             this.Controls.Add(this.label4);
@@ -166,10 +167,9 @@
             this.Controls.Add(this.lb_valor_delivery);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.lb_quantidade);
-            this.Controls.Add(this.lb_nome_prato);
+            this.Controls.Add(this.lb_Pedidos);
             this.Name = "Pedido_Delivery";
-            this.Size = new System.Drawing.Size(415, 316);
+            this.Size = new System.Drawing.Size(415, 391);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Pedido_Delivery_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -178,8 +178,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lb_nome_prato;
-        private System.Windows.Forms.Label lb_quantidade;
+        private System.Windows.Forms.Label lb_Pedidos;
         private System.Windows.Forms.Label lb_numero_delivery;
         private System.Windows.Forms.Label lb_rua_delivery;
         private System.Windows.Forms.Label lb_valor_delivery;
@@ -189,5 +188,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lb_referencia;
         private System.Windows.Forms.Label lb_observacao;
+        private System.Windows.Forms.ListBox Pedidos;
     }
 }

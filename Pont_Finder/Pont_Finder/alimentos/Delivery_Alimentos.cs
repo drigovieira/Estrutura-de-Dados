@@ -37,6 +37,7 @@ namespace Pont_Finder.alimentos
             total = total + CompanyList.selectAll()[idEmpresa].Taxa;
             Valor = total;
             lb_rs_Total.Text = total.ToString("C", CultureInfo.CurrentCulture);
+            lb_endereco_emp.Text = CompanyList.selectAll()[idEmpresa].Rua + " n° " + CompanyList.selectAll()[idEmpresa].Numero + "\n" + CompanyList.selectAll()[idEmpresa].Bairro;
             rb_Dinheiro.Checked = true;
         }
 

@@ -233,13 +233,13 @@
             this.rb_cartao.Name = "rb_cartao";
             this.rb_cartao.Size = new System.Drawing.Size(14, 13);
             this.rb_cartao.TabIndex = 5;
-            this.rb_cartao.TabStop = true;
             this.rb_cartao.UseVisualStyleBackColor = true;
             this.rb_cartao.CheckedChanged += new System.EventHandler(this.Rb_cartao_CheckedChanged);
             // 
             // rb_Dinheiro
             // 
             this.rb_Dinheiro.AutoSize = true;
+            this.rb_Dinheiro.Checked = true;
             this.rb_Dinheiro.Location = new System.Drawing.Point(15, 51);
             this.rb_Dinheiro.Name = "rb_Dinheiro";
             this.rb_Dinheiro.Size = new System.Drawing.Size(14, 13);
