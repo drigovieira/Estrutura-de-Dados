@@ -198,10 +198,10 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Pont_Finder.Properties.Resources.codigodebarra_810x4461;
-            this.pictureBox3.Location = new System.Drawing.Point(186, 625);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(43, 626);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(439, 89);
+            this.pictureBox3.Size = new System.Drawing.Size(513, 89);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 36;
             this.pictureBox3.TabStop = false;
@@ -935,6 +935,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1013, 800);
             this.Controls.Add(this.boletoA);
             this.Controls.Add(this.panel1);
