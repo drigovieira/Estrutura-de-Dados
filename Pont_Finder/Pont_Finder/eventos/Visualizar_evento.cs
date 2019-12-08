@@ -14,10 +14,30 @@ namespace Pont_Finder.eventos
     {
         Classes.CoEvento post;
 
+        private List<Classes.comentario> ListaPost;
+        Classes.comentario coment;
 
+        private int pagTotal;
+        private int pagAtual;
+        //quantidade de cards por pag
+        private int pagQuant;
+
+        int local = 0;
+        int leftcontrol = 8;
+        int let = 0;
+        int let2 = 0;
+
+        Bitmap imgLike = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
+        Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
+        Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
+        Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
+        int postIdC;
 
 
         Form anterior;
+
+
+
         public Visualizar_evento(int postId, Form anterior)
         {
 
@@ -99,6 +119,76 @@ namespace Pont_Finder.eventos
         private void Label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Bt_postar_Click(object sender, EventArgs e)
+        {
+            Classes.comentario post = new Classes.comentario();
+
+            post.UserCpf = Session.Cpf;
+            post.PostId = postIdC;
+            post.Idcoment = Classes.comentario_list.Poster.Count(); ;
+            post.Data = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+            post.Comment = tb_resposta.Text;
+            post.ImgUser = Session.Image;
+            post.Username = Session.Nome;
+            post.Ativo = true;
+
+            Classes.comentario_list.PostAdd(post);
+
+            CarregarComents();
+            Filtro_comentario();
+            tb_resposta.Text = "";
+        }
+
+        public void CarregarComents()
+        {
+            ListaPost = Classes.comentario_list.PosterAtivo;
+            ListaPost.Reverse();
+
+            pagQuant = 3;
+
+            pagTotal = ListaPost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+            local = 0;
+
+            painelcoment.Controls.Clear();
+            int i = 0;
+            foreach (var item in ListaPost)
+            {
+                if (i >= pagQuant)
+                    break;
+                User_Card.comentarios_eventos t1 = new User_Card.comentarios_eventos(postIdC, anterior);
+                t1.Location = new Point(0, local);
+                local = local + t1.Height + 5;
+                painelcoment.Controls.Add(t1);
+                i++;
+            }
+        }
+
+        public void Filtro_comentario()
+        {
+            ListaPost.Clear();
+
+            foreach (var item in Classes.comentario_list.Poster)
+            {
+                if ((item.PostId == postIdC))
+                {
+                    ListaPost.Add(item);
+                }
+            }
         }
     }
 }

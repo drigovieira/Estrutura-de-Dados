@@ -39,6 +39,13 @@
             this.lb_txt7 = new System.Windows.Forms.Label();
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.bt_postar = new System.Windows.Forms.Button();
+            this.tb_resposta = new System.Windows.Forms.RichTextBox();
+            this.bt_ant = new System.Windows.Forms.Button();
+            this.bt_prox = new System.Windows.Forms.Button();
+            this.lb_pag = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.painelcoment = new System.Windows.Forms.Panel();
             this.lb_descricao = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lb_horario = new System.Windows.Forms.Label();
@@ -62,13 +69,6 @@
             this.lb_nome_evento = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bt_ant = new System.Windows.Forms.Button();
-            this.bt_prox = new System.Windows.Forms.Button();
-            this.lb_pag = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.painelcoment = new System.Windows.Forms.Panel();
-            this.bt_postar = new System.Windows.Forms.Button();
-            this.tb_resposta = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
@@ -227,6 +227,86 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(966, 1000);
             this.panel4.TabIndex = 37;
+            // 
+            // bt_postar
+            // 
+            this.bt_postar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_postar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_postar.ForeColor = System.Drawing.Color.White;
+            this.bt_postar.Location = new System.Drawing.Point(759, 808);
+            this.bt_postar.Name = "bt_postar";
+            this.bt_postar.Size = new System.Drawing.Size(86, 38);
+            this.bt_postar.TabIndex = 102;
+            this.bt_postar.Text = "Postar";
+            this.bt_postar.UseVisualStyleBackColor = false;
+            this.bt_postar.Click += new System.EventHandler(this.Bt_postar_Click);
+            // 
+            // tb_resposta
+            // 
+            this.tb_resposta.BackColor = System.Drawing.Color.White;
+            this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_resposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_resposta.Location = new System.Drawing.Point(580, 680);
+            this.tb_resposta.Name = "tb_resposta";
+            this.tb_resposta.Size = new System.Drawing.Size(267, 116);
+            this.tb_resposta.TabIndex = 101;
+            this.tb_resposta.Text = "";
+            // 
+            // bt_ant
+            // 
+            this.bt_ant.BackColor = System.Drawing.Color.Transparent;
+            this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ant.ForeColor = System.Drawing.Color.Black;
+            this.bt_ant.Location = new System.Drawing.Point(16, 683);
+            this.bt_ant.Name = "bt_ant";
+            this.bt_ant.Size = new System.Drawing.Size(75, 23);
+            this.bt_ant.TabIndex = 98;
+            this.bt_ant.Text = "<<";
+            this.bt_ant.UseVisualStyleBackColor = false;
+            // 
+            // bt_prox
+            // 
+            this.bt_prox.BackColor = System.Drawing.Color.Transparent;
+            this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_prox.ForeColor = System.Drawing.Color.Black;
+            this.bt_prox.Location = new System.Drawing.Point(466, 683);
+            this.bt_prox.Name = "bt_prox";
+            this.bt_prox.Size = new System.Drawing.Size(75, 23);
+            this.bt_prox.TabIndex = 99;
+            this.bt_prox.Text = ">>";
+            this.bt_prox.UseVisualStyleBackColor = false;
+            // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.Location = new System.Drawing.Point(248, 693);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(39, 13);
+            this.lb_pag.TabIndex = 100;
+            this.lb_pag.Text = "lb_pag";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(48, 630);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(142, 27);
+            this.label6.TabIndex = 97;
+            this.label6.Text = "Comentários:";
+            // 
+            // painelcoment
+            // 
+            this.painelcoment.AutoSize = true;
+            this.painelcoment.BackColor = System.Drawing.Color.Transparent;
+            this.painelcoment.Location = new System.Drawing.Point(17, 723);
+            this.painelcoment.Name = "painelcoment";
+            this.painelcoment.Size = new System.Drawing.Size(525, 24);
+            this.painelcoment.TabIndex = 96;
             // 
             // lb_descricao
             // 
@@ -463,85 +543,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(72, 100);
             this.panel2.TabIndex = 16;
-            // 
-            // bt_ant
-            // 
-            this.bt_ant.BackColor = System.Drawing.Color.Transparent;
-            this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(16, 683);
-            this.bt_ant.Name = "bt_ant";
-            this.bt_ant.Size = new System.Drawing.Size(75, 23);
-            this.bt_ant.TabIndex = 98;
-            this.bt_ant.Text = "<<";
-            this.bt_ant.UseVisualStyleBackColor = false;
-            // 
-            // bt_prox
-            // 
-            this.bt_prox.BackColor = System.Drawing.Color.Transparent;
-            this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_prox.ForeColor = System.Drawing.Color.Black;
-            this.bt_prox.Location = new System.Drawing.Point(466, 683);
-            this.bt_prox.Name = "bt_prox";
-            this.bt_prox.Size = new System.Drawing.Size(75, 23);
-            this.bt_prox.TabIndex = 99;
-            this.bt_prox.Text = ">>";
-            this.bt_prox.UseVisualStyleBackColor = false;
-            // 
-            // lb_pag
-            // 
-            this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(248, 693);
-            this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(39, 13);
-            this.lb_pag.TabIndex = 100;
-            this.lb_pag.Text = "lb_pag";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(48, 630);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 27);
-            this.label6.TabIndex = 97;
-            this.label6.Text = "Comentários:";
-            // 
-            // painelcoment
-            // 
-            this.painelcoment.AutoSize = true;
-            this.painelcoment.BackColor = System.Drawing.Color.Transparent;
-            this.painelcoment.Location = new System.Drawing.Point(17, 723);
-            this.painelcoment.Name = "painelcoment";
-            this.painelcoment.Size = new System.Drawing.Size(525, 24);
-            this.painelcoment.TabIndex = 96;
-            // 
-            // bt_postar
-            // 
-            this.bt_postar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_postar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_postar.ForeColor = System.Drawing.Color.White;
-            this.bt_postar.Location = new System.Drawing.Point(759, 808);
-            this.bt_postar.Name = "bt_postar";
-            this.bt_postar.Size = new System.Drawing.Size(86, 38);
-            this.bt_postar.TabIndex = 102;
-            this.bt_postar.Text = "Postar";
-            this.bt_postar.UseVisualStyleBackColor = false;
-            // 
-            // tb_resposta
-            // 
-            this.tb_resposta.BackColor = System.Drawing.Color.White;
-            this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_resposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_resposta.Location = new System.Drawing.Point(580, 680);
-            this.tb_resposta.Name = "tb_resposta";
-            this.tb_resposta.Size = new System.Drawing.Size(267, 116);
-            this.tb_resposta.TabIndex = 101;
-            this.tb_resposta.Text = "";
             // 
             // Visualizar_evento
             // 

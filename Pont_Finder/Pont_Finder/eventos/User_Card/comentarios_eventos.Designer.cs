@@ -76,6 +76,7 @@
             this.bt_editar.Text = "Editar";
             this.bt_editar.UseVisualStyleBackColor = false;
             this.bt_editar.Visible = false;
+            this.bt_editar.Click += new System.EventHandler(this.Bt_editar_Click);
             // 
             // bt_remover
             // 
@@ -113,6 +114,7 @@
             this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_down.TabIndex = 55;
             this.pb_down.TabStop = false;
+            this.pb_down.Click += new System.EventHandler(this.Pb_down_Click);
             // 
             // pb_up
             // 
@@ -126,6 +128,7 @@
             this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_up.TabIndex = 54;
             this.pb_up.TabStop = false;
+            this.pb_up.Click += new System.EventHandler(this.Pb_up_Click);
             // 
             // lb_like
             // 
@@ -177,6 +180,7 @@
             this.Controls.Add(this.nome);
             this.Name = "comentarios_eventos";
             this.Size = new System.Drawing.Size(525, 219);
+            this.Load += new System.EventHandler(this.Comentarios_eventos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imagem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
