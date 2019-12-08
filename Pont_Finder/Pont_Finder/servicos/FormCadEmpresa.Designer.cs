@@ -62,9 +62,9 @@
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
-            this.lb_descricao = new System.Windows.Forms.Label();
             this.ckb_termos_uso = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lb_descricao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -321,7 +321,7 @@
             // 
             this.panel4.Location = new System.Drawing.Point(1160, 164);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(100, 373);
+            this.panel4.Size = new System.Drawing.Size(100, 471);
             this.panel4.TabIndex = 77;
             // 
             // panel6
@@ -427,20 +427,6 @@
             this.label18.TabIndex = 119;
             this.label18.Text = "Termos de uso:";
             // 
-            // lb_descricao
-            // 
-            this.lb_descricao.AutoSize = true;
-            this.lb_descricao.BackColor = System.Drawing.Color.Transparent;
-            this.lb_descricao.Font = new System.Drawing.Font("Dubai", 9F);
-            this.lb_descricao.Location = new System.Drawing.Point(4, 2);
-            this.lb_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
-            this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
-            this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
-            this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
-            this.lb_descricao.TabIndex = 69;
-            this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
-            // 
             // ckb_termos_uso
             // 
             this.ckb_termos_uso.AutoSize = true;
@@ -461,6 +447,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(460, 200);
             this.panel2.TabIndex = 118;
+            // 
+            // lb_descricao
+            // 
+            this.lb_descricao.AutoSize = true;
+            this.lb_descricao.BackColor = System.Drawing.Color.Transparent;
+            this.lb_descricao.Font = new System.Drawing.Font("Dubai", 9F);
+            this.lb_descricao.Location = new System.Drawing.Point(4, 2);
+            this.lb_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
+            this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
+            this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
+            this.lb_descricao.Name = "lb_descricao";
+            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
+            this.lb_descricao.TabIndex = 69;
+            this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
             // 
             // FormCadEmpresa
             // 
