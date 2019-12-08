@@ -404,6 +404,7 @@
             this.Troco.Size = new System.Drawing.Size(100, 24);
             this.Troco.TabIndex = 61;
             this.Troco.ValidatingType = typeof(int);
+            this.Troco.Visible = false;
             // 
             // maskedTextBox1
             // 
@@ -425,6 +426,7 @@
             this.checkBox1.TabIndex = 59;
             this.checkBox1.Text = "Troco para:";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // textBox3
             // 

@@ -65,9 +65,9 @@ namespace Pont_Finder.alimentos
             {
                 foreach (var item in cardapio)
                 {
-                    if (cardapio.IndexOf(item) == index)
+                    if (item.Id == index)
                     {
-                        cardapio.RemoveAt(index);
+                        cardapio.Remove(item);
                     }
                 }
             }

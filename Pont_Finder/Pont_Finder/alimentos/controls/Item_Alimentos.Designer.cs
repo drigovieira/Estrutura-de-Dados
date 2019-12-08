@@ -183,8 +183,8 @@
             this.Controls.Add(this.NomeComida);
             this.Controls.Add(this.IngredienteComida);
             this.Controls.Add(this.qtdComida);
-            this.Controls.Add(this.bt_addLista);
             this.Controls.Add(this.Excluir);
+            this.Controls.Add(this.bt_addLista);
             this.Name = "Item_Alimentos";
             this.Size = new System.Drawing.Size(623, 188);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Item_Alimentos_Paint);

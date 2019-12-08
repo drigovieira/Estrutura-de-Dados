@@ -125,5 +125,17 @@ namespace Pont_Finder.alimentos
             Reserva_Alimentos reserva = new Reserva_Alimentos(Empresa, CompanyList.selectAll()[Empresa].SttsEntrega);
             FormPrincipal.MudarForm("alimentos", reserva);
         }
+
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked == true)
+            {
+                Troco.Visible = true;
+            }
+            else
+            {
+                Troco.Visible = false;
+            }
+        }
     }
 }
