@@ -107,11 +107,23 @@
     <Compile Include="alimentos\classes\Funcionamento.cs" />
     <Compile Include="alimentos\classes\ListCardapio.cs" />
     <Compile Include="alimentos\classes\ListPedidos.cs" />
+    <Compile Include="alimentos\controls\Cliente_Delivery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\controls\Cliente_Delivery.Designer.cs">
+      <DependentUpon>Cliente_Delivery.cs</DependentUpon>
+    </Compile>
     <Compile Include="alimentos\controls\itemPedido.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="alimentos\controls\itemPedido.Designer.cs">
       <DependentUpon>itemPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\controls\Pedido_Delivery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alimentos\controls\Pedido_Delivery.Designer.cs">
+      <DependentUpon>Pedido_Delivery.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\Delivery_Alimentos.cs">
       <SubType>Form</SubType>
@@ -150,6 +162,12 @@
     </Compile>
     <Compile Include="alimentos\controls\Publi.Designer.cs">
       <DependentUpon>Publi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alimentos\Lista_Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alimentos\Lista_Pedidos.Designer.cs">
+      <DependentUpon>Lista_Pedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="alimentos\Reserva_Alimentos.cs">
       <SubType>Form</SubType>
@@ -663,8 +681,14 @@
     <EmbeddedResource Include="alimentos\Cadastro_Restaurante.resx">
       <DependentUpon>Cadastro_Restaurante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\controls\Cliente_Delivery.resx">
+      <DependentUpon>Cliente_Delivery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="alimentos\controls\itemPedido.resx">
       <DependentUpon>itemPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\controls\Pedido_Delivery.resx">
+      <DependentUpon>Pedido_Delivery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Delivery_Alimentos.resx">
       <DependentUpon>Delivery_Alimentos.cs</DependentUpon>
@@ -683,6 +707,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\controls\Publi.resx">
       <DependentUpon>Publi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alimentos\Lista_Pedidos.resx">
+      <DependentUpon>Lista_Pedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="alimentos\Reserva_Alimentos.resx">
       <DependentUpon>Reserva_Alimentos.cs</DependentUpon>
