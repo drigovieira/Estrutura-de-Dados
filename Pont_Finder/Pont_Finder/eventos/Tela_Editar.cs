@@ -73,7 +73,28 @@ namespace Pont_Finder.eventos
 
         }
 
-        private void Bt_alterar_Click(object sender, EventArgs e)
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("eventos", new eventos.ListEvent());
+        }
+
+        private void OpenIcone_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+
+            if (openIcone.ShowDialog() == DialogResult.OK)
+            {
+                pb_img_1.ImageLocation = openIcone.FileName;
+                img = true;
+            }
+        }
+
+        private void Bt_alterar_Click_1(object sender, EventArgs e)
         {
             evento.IngressosTotal = int.Parse(tb_ingresso_total.Text);
             evento.IngressoDispinivel = int.Parse(tb_ingresso_disponivel.Text);
