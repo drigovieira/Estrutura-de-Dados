@@ -41,47 +41,10 @@ namespace Pont_Finder.Boleto
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            
-        }
-
-        
-        //PRINTANDO Begin
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-            Printer(boletoA);
-
-        }
-
-        public void Printer(Panel painelboleto)
-        {
-            PrinterSettings ps = new PrinterSettings();
-            boletoA = painelboleto;
-            getprintarea(painelboleto);
-            prntprvw.Document = pntdoc;
-            pntdoc.PrintPage += new PrintPageEventHandler(pntdoc_printpage);
-            prntprvw.ShowDialog();
-        }
-
-        public void pntdoc_printpage(object sender, PrintPageEventArgs e)
-        {
-            Rectangle pagearea = e.PageBounds;
-            e.Graphics.DrawImage(memoryimg, (this.boletoA.Width), (this.boletoA.Location.Y));
            
         }
 
-
-        Bitmap memoryimg;
-
-        public void getprintarea(Panel painelboleto)
-        {
-            memoryimg = new Bitmap(painelboleto.Width, painelboleto.Height);
-            painelboleto.DrawToBitmap(memoryimg, new Rectangle(0, 0, painelboleto.Width, painelboleto.Height));
-        }
-
-
-        //PRINTANDO END
+        
 
         private void GerarBoleto_Load(object sender, EventArgs e)
         {
@@ -95,13 +58,34 @@ namespace Pont_Finder.Boleto
 
             if(salvardiretorio.ShowDialog() == DialogResult.OK)
             {
-                Bitmap bmp = new Bitmap(boletoA.Width, boletoA.Height);
-                DrawToBitmap(bmp, new Rectangle(0, 0, 1010, 629));
+                Bitmap bmp = new Bitmap(boletoA.Width+100, boletoA.Height+100);
+                DrawToBitmap(bmp, new Rectangle(0, 0, boletoA.Width+100, boletoA.Height+100));
                 bmp.Save(salvardiretorio.FileName);
 
             }
             MessageBox.Show("Boleto Salvo Com Sucesso");
 
+        }
+        
+
+        public void Printer()
+        {
+            
+            PrintDialog pd = new PrintDialog();
+            PrintDocument doc = new PrintDocument();
+            doc.PrintPage += Doc_PrintPage;
+            pd.Document = doc;
+            if (pd.ShowDialog() == DialogResult.OK)
+                doc.Print();
+            
+        }
+
+        private void Doc_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Bitmap bm = new Bitmap(boletoA.Width, boletoA.Height);
+            boletoA.DrawToBitmap(bm, new Rectangle(0, 0, boletoA.Width, boletoA.Height));
+            e.Graphics.DrawImage(bm, 0, 0);
+            bm.Dispose();
         }
 
         public void invisible()
@@ -132,11 +116,23 @@ namespace Pont_Finder.Boleto
 
         }
 
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            invisible();
+            Printer();
+            visible();
+        }
+
+        private void boletoA_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         public void CalcularN()
         {
             Random rdn = new Random();
 
-                    string cbip1,
+                   string cbip1,
                    p2 = rdn.Next(10000, 99999).ToString(),
                    p3 = rdn.Next(10000, 99999).ToString(),
                    p4 = rdn.Next(10000, 99999).ToString(),
