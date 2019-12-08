@@ -19,6 +19,12 @@ namespace Pont_Finder.alimentos
         private int numero, Empcep, Index;
         private long Empcontato;
         private bool sttsCardapio;
+
+        Bitmap imgLike = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
+        Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
+        Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
+        Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
+
         public Visualizar(int index, string fantasia, string Rua, string Bairro, List<string> Categorias, int Num, int Cep, long Contato, string link, bool cardapio)
         {
             nomeFantasia = fantasia;
@@ -119,6 +125,53 @@ namespace Pont_Finder.alimentos
             else
             {
                 MessageBox.Show("É necessário estar logado para utilizar este recurso ", "Aviso");
+            }
+        }
+
+        private void Pb_up_Click(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                if (pb_up.Image == imgLikeBlue)
+                {
+                    pb_up.Image = imgLike;
+                    pb_down.Image = imgDeslike;
+                }
+                else
+                {
+                    pb_up.Image = imgLikeBlue;
+                    pb_down.Image = imgDeslike;
+                }
+                lb_like.Text = "";
+                lb_deslike.Text = "";
+
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
+            }
+        }
+
+        private void Pb_down_Click(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                if (pb_down.Image == imgDeslikeBlue)
+                {
+                    pb_down.Image = imgDeslike;
+                    pb_up.Image = imgLike;
+                }
+                else
+                {
+                    pb_down.Image = imgDeslikeBlue;
+                    pb_up.Image = imgLike;
+                }
+                lb_like.Text = "";
+                lb_deslike.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
             }
         }
 
