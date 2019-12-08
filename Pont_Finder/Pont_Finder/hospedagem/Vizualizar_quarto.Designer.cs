@@ -192,9 +192,9 @@
             this.lb_txt4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt4.Location = new System.Drawing.Point(795, 105);
             this.lb_txt4.Name = "lb_txt4";
-            this.lb_txt4.Size = new System.Drawing.Size(186, 21);
+            this.lb_txt4.Size = new System.Drawing.Size(190, 21);
             this.lb_txt4.TabIndex = 25;
-            this.lb_txt4.Text = "Avista no boleto bancário";
+            this.lb_txt4.Text = "À vista no boleto bancário";
             // 
             // lb_txt3
             // 
@@ -410,9 +410,9 @@
             this.lb_txt2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_txt2.Location = new System.Drawing.Point(502, 218);
             this.lb_txt2.Name = "lb_txt2";
-            this.lb_txt2.Size = new System.Drawing.Size(193, 21);
+            this.lb_txt2.Size = new System.Drawing.Size(200, 21);
             this.lb_txt2.TabIndex = 21;
-            this.lb_txt2.Text = "Serviços incluso no quarto";
+            this.lb_txt2.Text = "Serviços inclusos no quarto";
             // 
             // lb_nome_quarto
             // 

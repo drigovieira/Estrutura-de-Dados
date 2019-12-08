@@ -100,11 +100,11 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(151, 500);
+            this.label17.Location = new System.Drawing.Point(181, 500);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(304, 25);
+            this.label17.Size = new System.Drawing.Size(262, 25);
             this.label17.TabIndex = 16;
-            this.label17.Text = "Selecione o tipo de Hospedagem";
+            this.label17.Text = "Selecione o estabelecimento";
             // 
             // ckb_lugarPet
             // 
@@ -172,7 +172,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(505, 999);
+            this.label16.Location = new System.Drawing.Point(496, 999);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(282, 36);
             this.label16.TabIndex = 68;
@@ -184,7 +184,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(448, 235);
+            this.label15.Location = new System.Drawing.Point(435, 235);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(395, 36);
             this.label15.TabIndex = 67;
@@ -202,7 +202,7 @@
             // 
             this.pn_galery.AutoScroll = true;
             this.pn_galery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_galery.Location = new System.Drawing.Point(73, 296);
+            this.pn_galery.Location = new System.Drawing.Point(87, 296);
             this.pn_galery.Name = "pn_galery";
             this.pn_galery.Size = new System.Drawing.Size(450, 87);
             this.pn_galery.TabIndex = 39;
@@ -213,7 +213,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(335, 85);
+            this.button1.Location = new System.Drawing.Point(320, 81);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 44);
             this.button1.TabIndex = 16;
@@ -226,7 +226,7 @@
             this.pnl_tipoHosp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_tipoHosp.Controls.Add(this.radio_pousada);
             this.pnl_tipoHosp.Controls.Add(this.radio_hotel);
-            this.pnl_tipoHosp.Location = new System.Drawing.Point(183, 542);
+            this.pnl_tipoHosp.Location = new System.Drawing.Point(194, 542);
             this.pnl_tipoHosp.Name = "pnl_tipoHosp";
             this.pnl_tipoHosp.Size = new System.Drawing.Size(237, 51);
             this.pnl_tipoHosp.TabIndex = 10;
@@ -261,7 +261,7 @@
             this.bt_alterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_alterar.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_alterar.ForeColor = System.Drawing.Color.White;
-            this.bt_alterar.Location = new System.Drawing.Point(196, 1147);
+            this.bt_alterar.Location = new System.Drawing.Point(202, 1147);
             this.bt_alterar.Name = "bt_alterar";
             this.bt_alterar.Size = new System.Drawing.Size(220, 50);
             this.bt_alterar.TabIndex = 24;
@@ -272,11 +272,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(65, 942);
+            this.label4.Location = new System.Drawing.Point(160, 936);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(444, 25);
+            this.label4.Size = new System.Drawing.Size(305, 25);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Marque os serviços disponíveis para os hospedes";
+            this.label4.Text = "Selecione os serviços disponíveis ";
             // 
             // bt_add_img
             // 
@@ -319,7 +319,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(146, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(104, 40);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 125);
             this.pictureBox1.TabIndex = 15;
@@ -390,9 +390,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(100, 567);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 21);
+            this.label6.Size = new System.Drawing.Size(59, 21);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Email\r\n";
+            this.label6.Text = "E-mail\r\n";
             // 
             // tb_endereco
             // 
@@ -467,7 +467,7 @@
             // tb_descricaoHotel
             // 
             this.tb_descricaoHotel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_descricaoHotel.Location = new System.Drawing.Point(73, 679);
+            this.tb_descricaoHotel.Location = new System.Drawing.Point(82, 679);
             this.tb_descricaoHotel.Multiline = true;
             this.tb_descricaoHotel.Name = "tb_descricaoHotel";
             this.tb_descricaoHotel.Size = new System.Drawing.Size(460, 220);
@@ -477,21 +477,21 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(154, 632);
+            this.label3.Location = new System.Drawing.Point(112, 635);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(306, 25);
+            this.label3.Size = new System.Drawing.Size(401, 25);
             this.label3.TabIndex = 4;
-            this.label3.Text = "De uma breve descrição do Hotel";
+            this.label3.Text = "Dê uma breve descrição do estabelecimento";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(192, 31);
+            this.label2.Location = new System.Drawing.Point(139, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(247, 25);
+            this.label2.Size = new System.Drawing.Size(347, 25);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Adicone imagens do Hotel";
+            this.label2.Text = "Adicione imagens do estabelecimento\r\n";
             // 
             // panel9
             // 
@@ -511,7 +511,7 @@
             this.pnl_ambDisp.Controls.Add(this.ckb_salaJogos);
             this.pnl_ambDisp.Controls.Add(this.ckb_piscina);
             this.pnl_ambDisp.Controls.Add(this.ckb_estacionamento);
-            this.pnl_ambDisp.Location = new System.Drawing.Point(73, 977);
+            this.pnl_ambDisp.Location = new System.Drawing.Point(82, 977);
             this.pnl_ambDisp.Name = "pnl_ambDisp";
             this.pnl_ambDisp.Size = new System.Drawing.Size(460, 133);
             this.pnl_ambDisp.TabIndex = 19;
@@ -542,7 +542,7 @@
             this.pb_img1.BackColor = System.Drawing.SystemColors.Control;
             this.pb_img1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_img1.InitialImage = global::Pont_Finder.Properties.Resources.downgrey;
-            this.pb_img1.Location = new System.Drawing.Point(73, 65);
+            this.pb_img1.Location = new System.Drawing.Point(87, 65);
             this.pb_img1.Name = "pb_img1";
             this.pb_img1.Size = new System.Drawing.Size(450, 225);
             this.pb_img1.TabIndex = 3;

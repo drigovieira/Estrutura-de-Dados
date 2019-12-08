@@ -37,7 +37,7 @@ namespace Pont_Finder.hospedagem
 
         private void Btn_back_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("hospedagem" , anterior);
+            FormPrincipal.MudarForm("hospedagem", anterior);
         }
 
         UserControl user = new UserControl();
@@ -62,31 +62,14 @@ namespace Pont_Finder.hospedagem
             tb_qtdquarto.MaxLength = 10;
         }
 
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void Input_valor_TextChanged(object sender, EventArgs e)
         {
             input_valor.MaxLength = 10;
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            tb_solteiro.Enabled = true;
-            tb_casal.Enabled = true;
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            tb_solteiro.Text = "";
-            tb_casal.Text = "";
-            tb_solteiro.Enabled = false;
-            tb_casal.Enabled = false;
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            tb_solteiro.Text = "";
-            tb_casal.Text = "";
-            tb_solteiro.Enabled = false;
-            tb_casal.Enabled = false;
         }
 
         OpenFileDialog openimg = new OpenFileDialog();
@@ -135,8 +118,10 @@ namespace Pont_Finder.hospedagem
 
         private void Bt_cadastrar_Click(object sender, EventArgs e)
         {
-            if (pb_img_1.Image == null || tb_nome.Text == "" || tb_qtdquarto.Text == "" ||
-                input_valor.Text == "" || (checkBox1.Checked == false && checkBox2.Checked == false
+            /*if (pb_img_1.Image == null || tb_nome.Text == "" || tb_qtdquarto.Text == "" ||
+                input_valor.Text == "" || (rb_pessoas_1.Checked == false && rb_pessoas_2.Checked == false
+                && rb_pessoas_3.Checked == false && rb_pessoas_4.Checked == false && rb_pessoas_5.Checked == false
+                && rb_pessoas_6.Checked == false) || (checkBox1.Checked == false && checkBox2.Checked == false
                 && checkBox3.Checked == false && checkBox4.Checked == false && checkBox5.Checked == false
                 && checkBox6.Checked == false && checkBox7.Checked == false))
             {
@@ -151,15 +136,12 @@ namespace Pont_Finder.hospedagem
                 {
                     List<string> servicos = new List<string>();
 
-                    int id = roomList.Tam;
+                   //int id = roomList.Tam;
 
                     string nome = tb_nome.Text;
                     string status = "Disponivel";
                     string lista_servicos = "";
-                    string tipo = "";
                     int qtd_pessoas = 0;
-                    int qtd_solteiro = 0;
-                    int qtd_casal = 0;
                     int qtd_disponivel = int.Parse(tb_qtdquarto.Text);
                     double valor = double.Parse(input_valor.Text);
                     bool ativo = true;
@@ -177,43 +159,34 @@ namespace Pont_Finder.hospedagem
                             empresa = emp.CNPJ;
                         }
                     }
-                    
 
-                    if (radioButton1.Checked)
+                    PEGA QTD DE PESSOAS
+                    if (rb_pessoas_1.Checked)
                     {
                         qtd_pessoas = 1;
-                        tipo = "Solteiro";
-                        qtd_solteiro = 1;
                     }
-                    if (radioButton3.Checked)
+                    if (rb_pessoas_2.Checked)
                     {
                         qtd_pessoas = 2;
-                        tipo = "Casal";
-                        qtd_casal = 1;
                     }
-                    if (radioButton2.Checked)
+                    if (rb_pessoas_3.Checked)
                     {
-                        tipo = "Outro";
-                        if (tb_casal.Text == "")
-                        {
-                            qtd_solteiro = Convert.ToInt32(tb_solteiro.Text);
-                            qtd_pessoas = qtd_solteiro;
-                        }
-                        if (tb_solteiro.Text == "")
-                        {
-                            qtd_casal = Convert.ToInt32(tb_casal.Text);
-                            qtd_pessoas = qtd_casal * 2;
-                        }
-                        if (tb_casal.Text != "" && tb_solteiro.Text != "")
-                        {
-                            qtd_solteiro = Convert.ToInt32(tb_solteiro.Text);
-                            qtd_casal = Convert.ToInt32(tb_casal.Text);
-                            qtd_pessoas = qtd_solteiro + (qtd_casal * 2);
-                        }
-
-
+                        qtd_pessoas = 3;
+                    }
+                    if (rb_pessoas_4.Checked)
+                    {
+                        qtd_pessoas = 4;
+                    }
+                    if (rb_pessoas_5.Checked)
+                    {
+                        qtd_pessoas = 5;
+                    }
+                    if (rb_pessoas_6.Checked)
+                    {
+                        qtd_pessoas = 6;
                     }
 
+                     PEGA OS VALORES DOS SERVIÇOS
                     if (checkBox1.Checked)
                     {
                         string a = "Café da manhã";
@@ -231,7 +204,7 @@ namespace Pont_Finder.hospedagem
                     }
                     if (checkBox4.Checked)
                     {
-                        string a = "Wi-fi";
+                        string a = "Café da tarde";
                         servicos.Add(a);
                     }
                     if (checkBox5.Checked)
@@ -241,7 +214,7 @@ namespace Pont_Finder.hospedagem
                     }
                     if (checkBox6.Checked)
                     {
-                        string a = "Café da tarde";
+                        string a = "Wi-fi";
                         servicos.Add(a);
                     }
                     if (checkBox7.Checked)
@@ -280,7 +253,7 @@ namespace Pont_Finder.hospedagem
                         diretorio = foto;
                     }
 
-                    quarto.ID = id;
+                    //quarto.ID = id;
                     quarto.Cnpj_Empresa = empresa;
                     quarto.NomeQuarto = nome;
                     quarto.Qtd_Pessoas = qtd_pessoas;
@@ -291,7 +264,7 @@ namespace Pont_Finder.hospedagem
                     quarto.Status = status;
                     quarto.Ativo = ativo;
 
-                    roomList.addQuarto(quarto);
+                    //roomList.addQuarto(quarto);
 
                     MessageBox.Show("O quarto: " + nome + " foi alterado com Sucesso!");
 
@@ -302,9 +275,8 @@ namespace Pont_Finder.hospedagem
 
                     quarto.Ativo = false;
 
-                    MessageBox.Show("Quarto editado!");
-
-                    
+                    //MessageBox.Show("Quarto editado!");
+                    FormPrincipal.MudarForm("hospedagem", new Listas_quartos(new Cadastro_Empresa(new Hosp_Home())));
                 }
                 else
                 {
@@ -327,9 +299,33 @@ namespace Pont_Finder.hospedagem
             }
 
             tb_nome.Text = nome;            
+            //tb_qtdpessoas.Text = "" + this.qtd_pessoas;
             tb_qtdquarto.Text = "" + qtd_disponivel;
             input_valor.Text = "" + valor;
-            
+            if(qtd_pessoas == 1)
+            {
+                rb_pessoas_1.Checked = true;
+            }
+            if (qtd_pessoas == 2)
+            {
+                rb_pessoas_2.Checked = true;
+            }
+            if (qtd_pessoas == 3)
+            {
+                rb_pessoas_3.Checked = true;
+            }
+            if (qtd_pessoas == 4)
+            {
+                rb_pessoas_4.Checked = true;
+            }
+            if (qtd_pessoas == 5)
+            {
+                rb_pessoas_5.Checked = true;
+            }
+            if (qtd_pessoas == 6)
+            {
+                rb_pessoas_6.Checked = true;
+            }
 
            
             foreach (var item in roomList.Quartos)
@@ -364,7 +360,7 @@ namespace Pont_Finder.hospedagem
                     checkBox6.Checked = true;
                 }
 
-            }
+            }*/
 
 
 
