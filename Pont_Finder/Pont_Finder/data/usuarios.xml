@@ -64,4 +64,12 @@
     <image>..//..//data//images//users//offImage.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Jose Silva</nome>
+    <email>jose@.com</email>
+    <senha>123</senha>
+    <cpf>65721839040</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>
