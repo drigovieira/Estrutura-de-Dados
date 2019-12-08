@@ -123,6 +123,23 @@ Todos os quartos deste hotel dispõem de TV de tela plana a cabo e via satélite
     <ambiente>  Estacionamento</ambiente>
     <status>true</status>
   </hospedagem>
+  <hospedagem>
+    <admin>67170982013</admin>
+    <logo>..//..//hospedagem//data//images//empresas//35632680000140//logo//35632680000140.jpg</logo>
+    <nomeempresa>Pousada Emaus Ltda</nomeempresa>
+    <nomefantasia>Pousada Emaus</nomefantasia>
+    <cnpj>35632680000140</cnpj>
+    <endereco>Avenida Jorge Tibiriça</endereco>
+    <cep>15025060</cep>
+    <telefone>12314420099</telefone>
+    <email>pousadaemaus@gmail.com </email>
+    <foto>..//..//hospedagem//data//images//empresas//35632680000140//empresa//</foto>
+    <tipo>Pousada</tipo>
+    <estrelas>5</estrelas>
+    <descricao>Localizado no centro de Cruzeiro, coração do Vale do Paraíba, a Pousada Emaús oferece a você o conforto e a tranquilidade que merece.</descricao>
+    <ambiente>  Estacionamento</ambiente>
+    <status>true</status>
+  </hospedagem>
   <alimentos>
     <nome>Empresa Teste</nome>
     <nomeFantasia>Empresa Teste</nomeFantasia>

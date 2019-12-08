@@ -72,4 +72,12 @@
     <image>..//..//data//images//users//offImage.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Joaquim Sobrinho</nome>
+    <email>joaquim@hotmail.com</email>
+    <senha>123</senha>
+    <cpf>67170982013</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

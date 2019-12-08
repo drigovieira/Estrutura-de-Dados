@@ -165,4 +165,34 @@
     <estado>Disponivel</estado>
     <status>true</status>
   </quarto>
+  <quarto>
+    <id>11</id>
+    <empresa>35632680000140</empresa>
+    <nome>Casal Standard</nome>
+    <tipo>Casal</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>0</qtd_solteiro>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Wi-fi</servicos>
+    <valor>100</valor>
+    <foto>..//..//hospedagem//data//images//empresas//35632680000140//quartos//11//Casal Standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>12</id>
+    <empresa>35632680000140</empresa>
+    <nome>Individual Standard</nome>
+    <tipo>Solteiro</tipo>
+    <qtd_casal>0</qtd_casal>
+    <qtd_solteiro>1</qtd_solteiro>
+    <qtd_pessoas>1</qtd_pessoas>
+    <qtd_quartos>3</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Wi-fi</servicos>
+    <valor>70</valor>
+    <foto>..//..//hospedagem//data//images//empresas//35632680000140//quartos//12//Individual Standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
 </roomlist>
