@@ -276,6 +276,8 @@
     </Compile>
     <Compile Include="eventos\Classes\CaEmpresa.cs" />
     <Compile Include="eventos\Classes\CoEvento.cs" />
+    <Compile Include="eventos\Classes\comentario.cs" />
+    <Compile Include="eventos\Classes\comentario_list.cs" />
     <Compile Include="eventos\Classes\ComprEvento.cs" />
     <Compile Include="eventos\Classes\Empresa_List.cs" />
     <Compile Include="eventos\Classes\EventoCompra_List.cs" />
@@ -1048,6 +1050,7 @@
     <Content Include="data\empresas.xml" />
     <Content Include="data\images\users\offImage.jpg" />
     <Content Include="data\usuarios.xml" />
+    <Content Include="eventos\Data\Comentarios_eventos.xml" />
     <Content Include="eventos\Data\compras_eventos.xml" />
     <Content Include="eventos\Data\Empresa_Eventos.xml" />
     <Content Include="eventos\Data\imagens\0.jpg" />
