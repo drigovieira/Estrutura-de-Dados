@@ -204,6 +204,7 @@
             this.pn_galery.Name = "pn_galery";
             this.pn_galery.Size = new System.Drawing.Size(450, 87);
             this.pn_galery.TabIndex = 38;
+            this.pn_galery.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_galery_Paint);
             // 
             // panel4
             // 
