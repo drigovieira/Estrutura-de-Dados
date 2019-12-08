@@ -38,7 +38,7 @@
             this.pb_img.Location = new System.Drawing.Point(0, 0);
             this.pb_img.Name = "pb_img";
             this.pb_img.Size = new System.Drawing.Size(100, 50);
-            this.pb_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_img.TabIndex = 1;
             this.pb_img.TabStop = false;
             this.pb_img.Click += new System.EventHandler(this.pb_img_Click);
