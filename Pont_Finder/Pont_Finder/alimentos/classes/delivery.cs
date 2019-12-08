@@ -8,13 +8,13 @@ namespace Pont_Finder.alimentos.classes
 {
     class Delivery
     {
-        private List<Cardapio> pedidos;
+        private List<string> pedidos;
         private string rua, nome, referencia;
         private string observacoes;
         private int numero, idUser, idEmpresa, idPedido;
         private float valor;
 
-        public List<Cardapio> Pedidos
+        public List<string> Pedidos
         {
             get { return pedidos; }
             set { pedidos = value; }
