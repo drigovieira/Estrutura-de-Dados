@@ -38,17 +38,16 @@
             this.pn_icons_quarto = new System.Windows.Forms.Panel();
             this.pn_icons_hotel = new System.Windows.Forms.Panel();
             this.lb_txt7 = new System.Windows.Forms.Label();
-            this.lb_parcelas = new System.Windows.Forms.Label();
             this.lb_txt5 = new System.Windows.Forms.Label();
             this.lb_txt4 = new System.Windows.Forms.Label();
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.pn_galery = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lb_emp_descricao = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_num_quartos = new System.Windows.Forms.Label();
             this.lb_num_pessoas = new System.Windows.Forms.Label();
             this.lb_tipo_quarto = new System.Windows.Forms.Label();
-            this.lb_emp_descricao = new System.Windows.Forms.Label();
             this.lb_txt13 = new System.Windows.Forms.Label();
             this.lb_txt8 = new System.Windows.Forms.Label();
             this.lb_txt12 = new System.Windows.Forms.Label();
@@ -70,6 +69,7 @@
             this.bt_reservar = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lb_parcelas = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
@@ -166,16 +166,6 @@
             this.lb_txt7.TabIndex = 31;
             this.lb_txt7.Text = "Detalhes";
             // 
-            // lb_parcelas
-            // 
-            this.lb_parcelas.AutoSize = true;
-            this.lb_parcelas.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_parcelas.Location = new System.Drawing.Point(950, 208);
-            this.lb_parcelas.Name = "lb_parcelas";
-            this.lb_parcelas.Size = new System.Drawing.Size(49, 21);
-            this.lb_parcelas.TabIndex = 25;
-            this.lb_parcelas.Text = "Value";
-            // 
             // lb_txt5
             // 
             this.lb_txt5.AutoSize = true;
@@ -217,12 +207,13 @@
             // 
             // panel4
             // 
+            this.panel4.AutoSize = true;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.lb_emp_descricao);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.lb_num_quartos);
             this.panel4.Controls.Add(this.lb_num_pessoas);
             this.panel4.Controls.Add(this.lb_tipo_quarto);
-            this.panel4.Controls.Add(this.lb_emp_descricao);
             this.panel4.Controls.Add(this.lb_txt13);
             this.panel4.Controls.Add(this.lb_txt8);
             this.panel4.Controls.Add(this.lb_txt12);
@@ -234,10 +225,26 @@
             this.panel4.Controls.Add(this.lb_txt10);
             this.panel4.Controls.Add(this.lb_emp_fantasia);
             this.panel4.Controls.Add(this.lb_txt11);
-            this.panel4.Location = new System.Drawing.Point(40, 471);
+            this.panel4.Location = new System.Drawing.Point(50, 471);
+            this.panel4.MaximumSize = new System.Drawing.Size(955, 3000);
+            this.panel4.MinimumSize = new System.Drawing.Size(955, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(966, 666);
+            this.panel4.Size = new System.Drawing.Size(955, 704);
             this.panel4.TabIndex = 37;
+            // 
+            // lb_emp_descricao
+            // 
+            this.lb_emp_descricao.AutoSize = true;
+            this.lb_emp_descricao.BackColor = System.Drawing.Color.Transparent;
+            this.lb_emp_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_emp_descricao.Location = new System.Drawing.Point(52, 574);
+            this.lb_emp_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
+            this.lb_emp_descricao.MaximumSize = new System.Drawing.Size(850, 0);
+            this.lb_emp_descricao.MinimumSize = new System.Drawing.Size(850, 0);
+            this.lb_emp_descricao.Name = "lb_emp_descricao";
+            this.lb_emp_descricao.Size = new System.Drawing.Size(850, 24);
+            this.lb_emp_descricao.TabIndex = 110;
+            this.lb_emp_descricao.Text = "Descricao:";
             // 
             // pictureBox1
             // 
@@ -281,16 +288,6 @@
             this.lb_tipo_quarto.Size = new System.Drawing.Size(58, 24);
             this.lb_tipo_quarto.TabIndex = 34;
             this.lb_tipo_quarto.Text = "Value";
-            // 
-            // lb_emp_descricao
-            // 
-            this.lb_emp_descricao.AutoSize = true;
-            this.lb_emp_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_emp_descricao.Location = new System.Drawing.Point(55, 584);
-            this.lb_emp_descricao.Name = "lb_emp_descricao";
-            this.lb_emp_descricao.Size = new System.Drawing.Size(58, 24);
-            this.lb_emp_descricao.TabIndex = 33;
-            this.lb_emp_descricao.Text = "Value";
             // 
             // lb_txt13
             // 
@@ -345,7 +342,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 1195);
+            this.panel2.Location = new System.Drawing.Point(0, 1209);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 6;
@@ -357,7 +354,7 @@
             this.pb_principal.Location = new System.Drawing.Point(42, 54);
             this.pb_principal.Name = "pb_principal";
             this.pb_principal.Size = new System.Drawing.Size(450, 225);
-            this.pb_principal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_principal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_principal.TabIndex = 36;
             this.pb_principal.TabStop = false;
             // 
@@ -426,6 +423,7 @@
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.dt_fim);
@@ -450,8 +448,10 @@
             this.panel1.Controls.Add(this.lb_txt2);
             this.panel1.Controls.Add(this.lb_nome_quarto);
             this.panel1.Location = new System.Drawing.Point(114, 29);
+            this.panel1.MaximumSize = new System.Drawing.Size(1055, 5000);
+            this.panel1.MinimumSize = new System.Drawing.Size(1055, 1142);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1082, 1166);
+            this.panel1.Size = new System.Drawing.Size(1055, 1180);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
@@ -527,6 +527,16 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lb_parcelas
+            // 
+            this.lb_parcelas.AutoSize = true;
+            this.lb_parcelas.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_parcelas.Location = new System.Drawing.Point(994, 208);
+            this.lb_parcelas.Name = "lb_parcelas";
+            this.lb_parcelas.Size = new System.Drawing.Size(49, 21);
+            this.lb_parcelas.TabIndex = 25;
+            this.lb_parcelas.Text = "Value";
+            // 
             // Vizualizar_quarto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -553,6 +563,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -567,13 +578,11 @@
         private System.Windows.Forms.Panel pn_icons_quarto;
         private System.Windows.Forms.Panel pn_icons_hotel;
         private System.Windows.Forms.Label lb_txt7;
-        private System.Windows.Forms.Label lb_parcelas;
         private System.Windows.Forms.Label lb_txt5;
         private System.Windows.Forms.Label lb_txt4;
         private System.Windows.Forms.Label lb_txt3;
         private System.Windows.Forms.Panel pn_galery;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lb_emp_descricao;
         private System.Windows.Forms.Label lb_txt13;
         private System.Windows.Forms.Label lb_txt8;
         private System.Windows.Forms.Label lb_txt12;
@@ -599,5 +608,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bt_reservar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lb_emp_descricao;
+        private System.Windows.Forms.Label lb_parcelas;
     }
 }

@@ -32,10 +32,14 @@ namespace Pont_Finder.Boleto
             cpfboleto = cpf.ToString();
             valorboleto = valor.ToString();
 
+            nome.Text = "Nome: " + Session.Nome;
+            end.Text = "Rua: Alameda das Hortensias";
+
             //cpflabel.Text = Session.Cpf.ToString();
             valorlabel.Text = "R$ "+valorboleto+",00";
             CalcularN();
             data.Text = System.DateTime.Now.ToString("dd/MM/yyyy");
+            dataPross.Text = System.DateTime.Now.ToString("dd/MM/yyyy");
 
         }
 
@@ -133,6 +137,7 @@ namespace Pont_Finder.Boleto
             Random rdn = new Random();
 
                    string cbip1,
+                   seila = rdn.Next(10000, 99999).ToString(), 
                    p2 = rdn.Next(10000, 99999).ToString(),
                    p3 = rdn.Next(10000, 99999).ToString(),
                    p4 = rdn.Next(10000, 99999).ToString(),
@@ -147,6 +152,7 @@ namespace Pont_Finder.Boleto
                    rdn.Next(0, 99999).ToString();
 
                    lb_num_codigo_barra.Text = ("00193" + "." + p2 + " " + p3 + "." + p4 + " " + p5 + "." + p6 + " " + p7 + " " + valp91 + valp92 + valp93);
+                    lb_numero.Text = seila;
         }
 
 

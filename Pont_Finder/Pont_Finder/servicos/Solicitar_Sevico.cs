@@ -55,6 +55,7 @@ namespace Pont_Finder.servicos
 
         private void Bt_solicitar_Click(object sender, EventArgs e)
         {
+           
             classes.Solicitado solicitado = new classes.Solicitado();
 
             int id = classes.SolicitadoList.Solicitados.Count;
@@ -94,6 +95,9 @@ namespace Pont_Finder.servicos
             solicitado.Postid = post.Id;
 
             classes.SolicitadoList.Solicitados.Add(solicitado);
+            Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, post.Valor);
+            bol.ShowDialog();
+
             FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, anterior));
         }
 
