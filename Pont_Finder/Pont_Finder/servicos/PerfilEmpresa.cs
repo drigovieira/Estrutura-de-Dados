@@ -38,18 +38,33 @@ namespace Pont_Finder.servicos
             lb_fantasia.Text = empresa.NomeFantasia;
 
             pb_capa.ImageLocation = empresa.ImageCapa;
-            lb_slogan.Text = empresa.Slogan;
-            lb_sobre.Text = empresa.Sobre;
-            lb_descricao.Text = empresa.Descricao;
-            lb_privacidade.Text = empresa.PoliticaPrivacidade;
+
+            if (empresa.Slogan.Trim().Length < 10)
+                painel_slogan.Visible = false;
+            else
+                lb_slogan.Text = empresa.Slogan;
+
+            if (empresa.Sobre.Trim().Length < 10)
+                painel_sobre.Visible = false;
+            else
+                lb_sobre.Text = empresa.Sobre;
+
+            if (empresa.Descricao.Trim().Length < 10)
+                painel_descricao.Visible = false;
+            else
+                lb_descricao.Text = empresa.Descricao;
+
+
+            if (empresa.PoliticaPrivacidade.Trim().Length < 10)
+                painel_termos.Visible = false;
+            else
+                lb_privacidade.Text = empresa.PoliticaPrivacidade;
 
             lb_categoria.Text = empresa.Categoria;
             lb_email.Text = empresa.Email;
             lb_endereco.Text = empresa.Endereco;
             lb_telefone.Text = empresa.Telefone;
-            lb_site.Text = empresa.Site
-                
-                ;
+            lb_site.Text = empresa.Site;
 
 
 

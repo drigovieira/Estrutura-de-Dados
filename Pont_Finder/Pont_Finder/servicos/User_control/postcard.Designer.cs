@@ -67,7 +67,7 @@
             // 
             this.lb_descricao.BackColor = System.Drawing.Color.Transparent;
             this.lb_descricao.Font = new System.Drawing.Font("Dubai", 9F);
-            this.lb_descricao.Location = new System.Drawing.Point(225, 67);
+            this.lb_descricao.Location = new System.Drawing.Point(224, 64);
             this.lb_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
             this.lb_descricao.MaximumSize = new System.Drawing.Size(240, 65);
             this.lb_descricao.MinimumSize = new System.Drawing.Size(240, 65);
@@ -81,7 +81,7 @@
             // 
             this.lb_username.AutoSize = true;
             this.lb_username.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_username.Location = new System.Drawing.Point(548, 32);
+            this.lb_username.Location = new System.Drawing.Point(539, 32);
             this.lb_username.Name = "lb_username";
             this.lb_username.Size = new System.Drawing.Size(30, 16);
             this.lb_username.TabIndex = 25;
@@ -130,14 +130,14 @@
             // 
             this.lb_titulo.AutoSize = true;
             this.lb_titulo.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titulo.Location = new System.Drawing.Point(225, 41);
+            this.lb_titulo.Location = new System.Drawing.Point(225, 40);
             this.lb_titulo.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.lb_titulo.MaximumSize = new System.Drawing.Size(200, 20);
-            this.lb_titulo.MinimumSize = new System.Drawing.Size(200, 20);
+            this.lb_titulo.MaximumSize = new System.Drawing.Size(250, 20);
+            this.lb_titulo.MinimumSize = new System.Drawing.Size(250, 20);
             this.lb_titulo.Name = "lb_titulo";
-            this.lb_titulo.Size = new System.Drawing.Size(200, 20);
+            this.lb_titulo.Size = new System.Drawing.Size(250, 20);
             this.lb_titulo.TabIndex = 15;
-            this.lb_titulo.Text = "Nome do Serviço:";
+            this.lb_titulo.Text = "Serviço:";
             this.lb_titulo.Click += new System.EventHandler(this.lb_titulo_Click);
             // 
             // pb_down
@@ -206,12 +206,12 @@
             this.lb_tipo.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_tipo.Location = new System.Drawing.Point(225, 15);
             this.lb_tipo.Margin = new System.Windows.Forms.Padding(5, 15, 5, 3);
-            this.lb_tipo.MaximumSize = new System.Drawing.Size(240, 20);
-            this.lb_tipo.MinimumSize = new System.Drawing.Size(240, 20);
+            this.lb_tipo.MaximumSize = new System.Drawing.Size(250, 20);
+            this.lb_tipo.MinimumSize = new System.Drawing.Size(250, 20);
             this.lb_tipo.Name = "lb_tipo";
-            this.lb_tipo.Size = new System.Drawing.Size(240, 20);
+            this.lb_tipo.Size = new System.Drawing.Size(250, 20);
             this.lb_tipo.TabIndex = 32;
-            this.lb_tipo.Text = "Tipo:";
+            this.lb_tipo.Text = "Categoria:";
             this.lb_tipo.Click += new System.EventHandler(this.Lb_tipo_Click);
             // 
             // PostCard

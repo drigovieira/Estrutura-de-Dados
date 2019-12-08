@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditarPerfil));
             this.panel2 = new System.Windows.Forms.Panel();
             this.tb_site = new System.Windows.Forms.TextBox();
-            this.tb_telefone = new System.Windows.Forms.TextBox();
             this.tb_endereco = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -59,6 +58,7 @@
             this.bt_capa = new System.Windows.Forms.Button();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.openCapa = new System.Windows.Forms.OpenFileDialog();
+            this.tb_telefone = new System.Windows.Forms.MaskedTextBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -69,8 +69,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.tb_site);
             this.panel2.Controls.Add(this.tb_telefone);
+            this.panel2.Controls.Add(this.tb_site);
             this.panel2.Controls.Add(this.tb_endereco);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
@@ -92,14 +92,6 @@
             this.tb_site.Name = "tb_site";
             this.tb_site.Size = new System.Drawing.Size(269, 32);
             this.tb_site.TabIndex = 15;
-            // 
-            // tb_telefone
-            // 
-            this.tb_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_telefone.Location = new System.Drawing.Point(20, 322);
-            this.tb_telefone.Name = "tb_telefone";
-            this.tb_telefone.Size = new System.Drawing.Size(269, 32);
-            this.tb_telefone.TabIndex = 15;
             // 
             // tb_endereco
             // 
@@ -209,6 +201,7 @@
             // tb_privacidade
             // 
             this.tb_privacidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_privacidade.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F);
             this.tb_privacidade.Location = new System.Drawing.Point(12, 638);
             this.tb_privacidade.Name = "tb_privacidade";
             this.tb_privacidade.Size = new System.Drawing.Size(600, 200);
@@ -218,6 +211,7 @@
             // tb_sobre
             // 
             this.tb_sobre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_sobre.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F);
             this.tb_sobre.Location = new System.Drawing.Point(12, 400);
             this.tb_sobre.Name = "tb_sobre";
             this.tb_sobre.Size = new System.Drawing.Size(600, 200);
@@ -227,6 +221,7 @@
             // tb_descricao
             // 
             this.tb_descricao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F);
             this.tb_descricao.Location = new System.Drawing.Point(12, 162);
             this.tb_descricao.Name = "tb_descricao";
             this.tb_descricao.Size = new System.Drawing.Size(600, 200);
@@ -236,6 +231,7 @@
             // tb_slogan
             // 
             this.tb_slogan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_slogan.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F);
             this.tb_slogan.Location = new System.Drawing.Point(12, 43);
             this.tb_slogan.Name = "tb_slogan";
             this.tb_slogan.Size = new System.Drawing.Size(600, 80);
@@ -385,6 +381,16 @@
             // 
             this.openCapa.FileName = "capa";
             // 
+            // tb_telefone
+            // 
+            this.tb_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F);
+            this.tb_telefone.Location = new System.Drawing.Point(20, 326);
+            this.tb_telefone.Mask = "(99) 00000-0000";
+            this.tb_telefone.Name = "tb_telefone";
+            this.tb_telefone.Size = new System.Drawing.Size(270, 34);
+            this.tb_telefone.TabIndex = 69;
+            this.tb_telefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
             // FormEditarPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,7 +438,6 @@
         private System.Windows.Forms.Label lb_fantasia;
         private System.Windows.Forms.PictureBox pb_capa;
         private System.Windows.Forms.TextBox tb_site;
-        private System.Windows.Forms.TextBox tb_telefone;
         private System.Windows.Forms.TextBox tb_endereco;
         private System.Windows.Forms.Label lb_categoria;
         private System.Windows.Forms.Label lb_email;
@@ -445,5 +450,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.OpenFileDialog openIcone;
         private System.Windows.Forms.OpenFileDialog openCapa;
+        private System.Windows.Forms.MaskedTextBox tb_telefone;
     }
 }
