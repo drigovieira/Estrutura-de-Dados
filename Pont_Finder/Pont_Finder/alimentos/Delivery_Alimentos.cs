@@ -96,5 +96,34 @@ namespace Pont_Finder.alimentos
                 Troco.Visible = true;                
             }
         }
+
+        private void Solicitar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Delivery pedidos = new Delivery();
+                pedidos.Nome = Session.Nome;
+                pedidos.Rua = textBox1.Text;
+                pedidos.Numero = int.Parse(maskedTextBox1.Text);
+                pedidos.Observacoes = textBox3.Text;
+                pedidos.IdUser = Session.Id;
+                pedidos.Referencia = textBox7.Text;
+                pedidos.Pedidos = Carrinho.selectAll();
+                ListPedidos.Add(pedidos);
+                MessageBox.Show("Pedido registrado!");
+                Reserva_Alimentos reserva = new Reserva_Alimentos(Empresa, CompanyList.selectAll()[Empresa].SttsEntrega);
+                FormPrincipal.MudarForm("alimentos", reserva);
+                Carrinho.Drop();
+            }catch(Exception erro)
+            {
+                MessageBox.Show("Erro: " + erro, "Alerta");
+            }
+        }
+
+        private void Cancelar_Click(object sender, EventArgs e)
+        {
+            Reserva_Alimentos reserva = new Reserva_Alimentos(Empresa, CompanyList.selectAll()[Empresa].SttsEntrega);
+            FormPrincipal.MudarForm("alimentos", reserva);
+        }
     }
 }

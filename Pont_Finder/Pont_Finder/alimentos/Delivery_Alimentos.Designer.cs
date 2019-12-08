@@ -56,6 +56,10 @@
             this.lb_txt6 = new System.Windows.Forms.Label();
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.Troco = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -67,10 +71,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cancelar = new System.Windows.Forms.Button();
             this.Solicitar = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.Troco = new System.Windows.Forms.MaskedTextBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -385,6 +385,47 @@
             this.panel5.Size = new System.Drawing.Size(625, 331);
             this.panel5.TabIndex = 60;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(128, 253);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(249, 16);
+            this.label20.TabIndex = 62;
+            this.label20.Text = "(Marque somente caso seja necessário troco)*";
+            // 
+            // Troco
+            // 
+            this.Troco.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Troco.Location = new System.Drawing.Point(222, 270);
+            this.Troco.Mask = "0000";
+            this.Troco.Name = "Troco";
+            this.Troco.Size = new System.Drawing.Size(100, 24);
+            this.Troco.TabIndex = 61;
+            this.Troco.ValidatingType = typeof(int);
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox1.Location = new System.Drawing.Point(421, 54);
+            this.maskedTextBox1.Mask = "0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 24);
+            this.maskedTextBox1.TabIndex = 60;
+            this.maskedTextBox1.ValidatingType = typeof(int);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(130, 272);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(95, 21);
+            this.checkBox1.TabIndex = 59;
+            this.checkBox1.Text = "Troco para:";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -482,6 +523,7 @@
             this.cancelar.TabIndex = 62;
             this.cancelar.Text = "Cancelar";
             this.cancelar.UseVisualStyleBackColor = false;
+            this.cancelar.Click += new System.EventHandler(this.Cancelar_Click);
             // 
             // Solicitar
             // 
@@ -494,47 +536,7 @@
             this.Solicitar.TabIndex = 61;
             this.Solicitar.Text = "Fazer Pedido";
             this.Solicitar.UseVisualStyleBackColor = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(130, 272);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(95, 21);
-            this.checkBox1.TabIndex = 59;
-            this.checkBox1.Text = "Troco para:";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(421, 54);
-            this.maskedTextBox1.Mask = "0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 24);
-            this.maskedTextBox1.TabIndex = 60;
-            this.maskedTextBox1.ValidatingType = typeof(int);
-            // 
-            // Troco
-            // 
-            this.Troco.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Troco.Location = new System.Drawing.Point(222, 270);
-            this.Troco.Mask = "0000";
-            this.Troco.Name = "Troco";
-            this.Troco.Size = new System.Drawing.Size(100, 24);
-            this.Troco.TabIndex = 61;
-            this.Troco.ValidatingType = typeof(int);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(128, 253);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(249, 16);
-            this.label20.TabIndex = 62;
-            this.label20.Text = "(Marque somente caso seja necessário troco)*";
+            this.Solicitar.Click += new System.EventHandler(this.Solicitar_Click);
             // 
             // Delivery_Alimentos
             // 
