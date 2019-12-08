@@ -43,7 +43,7 @@ namespace Pont_Finder.alimentos.controls
             }
             else
             {
-                Lista_Pedidos pedidos = new Lista_Pedidos(ListPedidos.selectAll()[IndexPedido].IdEmpresa, false, -1);
+                Lista_Pedidos pedidos = new Lista_Pedidos(CompanyList.verifEmp(Session.Cpf), false, -1);
                 FormPrincipal.MudarForm("alimentos", pedidos);
             }
             

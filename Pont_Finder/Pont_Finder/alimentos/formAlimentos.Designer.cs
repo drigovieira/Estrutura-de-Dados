@@ -613,7 +613,6 @@
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.lbTop5);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.Btn_Edit_Empresa);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel2);
@@ -621,6 +620,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ListarEmpresas);
             this.Controls.Add(this.panel9);
+            this.Controls.Add(this.Btn_Edit_Empresa);
             this.Controls.Add(this.VerPedidos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
