@@ -20,7 +20,6 @@ namespace Pont_Finder
         private bool cat;
         private string filtro;
         private List<Company> lista = new List<Company>();
-        private ProfileList prof = new ProfileList();
         private int result;
         public formAlimentos()
         {
@@ -236,28 +235,7 @@ namespace Pont_Finder
             {
                 remFiltro.Visible = true;
             }
-            lbTop5.Text = "Top 5 " + rbChurrascaria.Text;
-            List<Company> listaBusca = new List<Company>();
-            listaBusca = CompanyList.SearchCategoria(rbChurrascaria.Text);
-            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, rbChurrascaria.Text);
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in ProfileList.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in CompanyList.selectAll())
-                    {
-                        if (busca.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
+            lbTop5.Text = "Top 5 " + rbChurrascaria.Text;            
         }
 
         private void RbPizzaria_CheckedChanged(object sender, EventArgs e)
@@ -266,28 +244,7 @@ namespace Pont_Finder
             {
                 remFiltro.Visible = true;
             }
-            lbTop5.Text = "Top 5 " + rbPizzaria.Text;
-            List<Company> listaBusca = new List<Company>();
-            listaBusca = CompanyList.SearchCategoria(rbPizzaria.Text);
-            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, rbPizzaria.Text);
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in ProfileList.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in CompanyList.selectAll())
-                    {
-                        if (busca.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
+            lbTop5.Text = "Top 5 " + rbPizzaria.Text;            
         }
 
         private void RbPetiscaria_CheckedChanged(object sender, EventArgs e)
@@ -296,28 +253,7 @@ namespace Pont_Finder
             {
                 remFiltro.Visible = true;
             }
-            lbTop5.Text = "Top 5 " + rbPetiscaria.Text;
-            List<Company> listaBusca = new List<Company>();
-            listaBusca = CompanyList.SearchCategoria(rbPetiscaria.Text);
-            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, rbPetiscaria.Text);
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in ProfileList.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in CompanyList.selectAll())
-                    {
-                        if (busca.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
+            lbTop5.Text = "Top 5 " + rbPetiscaria.Text;            
         }
 
         private void RbComidaItaliana_CheckedChanged(object sender, EventArgs e)
@@ -326,28 +262,7 @@ namespace Pont_Finder
             {
                 remFiltro.Visible = true;
             }
-            lbTop5.Text = "Top 5 " + rbComidaItaliana.Text;
-            List<Company> listaBusca = new List<Company>();
-            listaBusca = CompanyList.SearchCategoria(rbComidaItaliana.Text);
-            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, rbComidaItaliana.Text);
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in ProfileList.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in CompanyList.selectAll())
-                    {
-                        if (busca.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
+            lbTop5.Text = "Top 5 " + rbComidaItaliana.Text;            
         }
 
         private void RbComidaJaponesa_CheckedChanged(object sender, EventArgs e)
@@ -356,28 +271,7 @@ namespace Pont_Finder
             {
                 remFiltro.Visible = true;
             }
-            lbTop5.Text = "Top 5 " + rbComidaJaponesa.Text;
-            List<Company> listaBusca = new List<Company>();
-            listaBusca = CompanyList.SearchCategoria(rbComidaJaponesa.Text);
-            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, rbComidaJaponesa.Text);
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in ProfileList.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in CompanyList.selectAll())
-                    {
-                        if (busca.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
+            lbTop5.Text = "Top 5 " + rbComidaJaponesa.Text;            
         }
 
         private void RbSorveteria_CheckedChanged(object sender, EventArgs e)
@@ -385,29 +279,7 @@ namespace Pont_Finder
             if (Categoria())
             {
                 remFiltro.Visible = true;
-            }
-            lbTop5.Text = "Top 5 " + rbSorveteria.Text;
-            List<Company> listaBusca = new List<Company>();
-            listaBusca = CompanyList.SearchCategoria(rbSorveteria.Text);
-            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, rbSorveteria.Text);
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in ProfileList.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in CompanyList.selectAll())
-                    {
-                        if (busca.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
+            }            
         }
 
         private void RbHambúrgueria_CheckedChanged(object sender, EventArgs e)
@@ -416,28 +288,7 @@ namespace Pont_Finder
             {
                 remFiltro.Visible = true;
             }
-            lbTop5.Text = "Top 5 " + rbHambúrgueria.Text;
-            List<Company> listaBusca = new List<Company>();
-            listaBusca = CompanyList.SearchCategoria(rbHambúrgueria.Text);
-            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, rbHambúrgueria.Text);
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in ProfileList.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in CompanyList.selectAll())
-                    {
-                        if (busca.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
+            lbTop5.Text = "Top 5 " + rbHambúrgueria.Text;            
         }
 
         private void RbFrutosDoMar_CheckedChanged(object sender, EventArgs e)
@@ -446,28 +297,7 @@ namespace Pont_Finder
             {
                 remFiltro.Visible = true;
             }
-            lbTop5.Text = "Top 5 " + rbFrutosDoMar.Text;
-            List<Company> listaBusca = new List<Company>();
-            listaBusca = CompanyList.SearchCategoria(rbFrutosDoMar.Text);
-            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, rbFrutosDoMar.Text);
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in ProfileList.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in CompanyList.selectAll())
-                    {
-                        if (busca.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
+            lbTop5.Text = "Top 5 " + rbFrutosDoMar.Text;            
         }
 
         private void RbOutros_CheckedChanged(object sender, EventArgs e)
@@ -476,28 +306,7 @@ namespace Pont_Finder
             {
                 remFiltro.Visible = true;
             }
-            lbTop5.Text = "Top 5 " + rbOutros.Text;
-            List<Company> listaBusca = new List<Company>();
-            listaBusca = CompanyList.SearchCategoria(rbOutros.Text);
-            List<ProfileCompany> BuscaPerfis = ProfileList.profileList(listaBusca, rbOutros.Text);
-            local1 = 0;
-            Top5.Controls.Clear();
-            foreach (var busca in ProfileList.TopList(BuscaPerfis))
-            {
-                if (busca.NotaApurada != 0)
-                {
-                    foreach (var teste2 in CompanyList.selectAll())
-                    {
-                        if (busca.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
-                        {
-                            TopEmpresa te = new TopEmpresa(teste2.NomeFantasia);
-                            te.Location = new Point(0, local1);
-                            local1 = local1 + te.Height + 5;
-                            Top5.Controls.Add(te);
-                        }
-                    }
-                }
-            }
+            lbTop5.Text = "Top 5 " + rbOutros.Text;            
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -521,21 +330,7 @@ namespace Pont_Finder
         }
 
         public void Listar()
-        {            
-            foreach (var teste in ProfileList.TopList(ProfileList.selectAll()))
-            {
-                foreach (var teste2 in CompanyList.selectAll())
-                {
-                    if (teste.CodigoCompany == CompanyList.selectAll().IndexOf(teste2))
-                    {
-                        TopEmpresa te = new TopEmpresa(teste2.Nome);
-                        te.Location = new Point(0, local1);
-                        local1 = local1 + te.Height + 5;
-                        Top5.Controls.Add(te);
-                    }
-                }
-            }
-
+        {                        
             //Listando Empresas
             pagTotal = CompanyList.selectAll().Count;
             if ((pagTotal % pagQuant) != 0)

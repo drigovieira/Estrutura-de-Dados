@@ -104,6 +104,7 @@
     <Compile Include="alimentos\classes\CompanyList.cs" />
     <Compile Include="alimentos\classes\delivery.cs" />
     <Compile Include="alimentos\classes\Evaluation.cs" />
+    <Compile Include="alimentos\classes\EvaluationList.cs" />
     <Compile Include="alimentos\classes\Funcionamento.cs" />
     <Compile Include="alimentos\classes\ListCardapio.cs" />
     <Compile Include="alimentos\classes\ListPedidos.cs" />
@@ -149,8 +150,6 @@
     <Compile Include="alimentos\controls\lbMensagem.Designer.cs">
       <DependentUpon>lbMensagem.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\classes\ProfileCompany.cs" />
-    <Compile Include="alimentos\classes\ProfileList.cs" />
     <Compile Include="alimentos\controls\Pagamento_Dinheiro.cs">
       <SubType>UserControl</SubType>
     </Compile>
