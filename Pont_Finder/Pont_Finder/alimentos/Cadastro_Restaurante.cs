@@ -493,7 +493,8 @@ namespace Pont_Finder.alimentos
                 btnCad.Text = "Continuar";
                 cbEntrega.Visible = true;
             }
-            else { cbEntrega.Visible = false; btnCad.Text = "Cadastrar"; }
+            else { cbEntrega.Visible = false; label15.Visible = false;
+                maskedTextBox1.Visible = false; maskedTextBox1.Clear(); btnCad.Text = "Cadastrar"; }
         }        
 
         private void CbEntregaSim_CheckedChanged(object sender, EventArgs e)
@@ -503,14 +504,10 @@ namespace Pont_Finder.alimentos
                 label15.Visible = true;
                 maskedTextBox1.Visible = true;
             }
-            else { cbEntrega.Visible = false; btnCad.Text = "Cadastrar"; }
-        }
-
-        private void CbEntregaNao_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cbEntrega.Checked == true)
-            {
-                cbEntrega.Checked = false;
+            else {
+                label15.Visible = false;
+                maskedTextBox1.Visible = false;
+                maskedTextBox1.Clear();
             }
         }
 
