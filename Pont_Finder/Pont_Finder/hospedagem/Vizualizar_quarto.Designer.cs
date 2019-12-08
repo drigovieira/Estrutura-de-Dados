@@ -66,10 +66,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dt_ini = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
+            this.lb_parcelas = new System.Windows.Forms.Label();
             this.bt_reservar = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lb_parcelas = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
@@ -227,7 +227,7 @@
             this.panel4.Controls.Add(this.lb_txt11);
             this.panel4.Location = new System.Drawing.Point(50, 471);
             this.panel4.MaximumSize = new System.Drawing.Size(955, 3000);
-            this.panel4.MinimumSize = new System.Drawing.Size(955, 0);
+            this.panel4.MinimumSize = new System.Drawing.Size(955, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(955, 704);
             this.panel4.TabIndex = 37;
@@ -494,6 +494,16 @@
             this.label3.TabIndex = 54;
             this.label3.Text = "Data de entrada:";
             // 
+            // lb_parcelas
+            // 
+            this.lb_parcelas.AutoSize = true;
+            this.lb_parcelas.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_parcelas.Location = new System.Drawing.Point(994, 208);
+            this.lb_parcelas.Name = "lb_parcelas";
+            this.lb_parcelas.Size = new System.Drawing.Size(49, 21);
+            this.lb_parcelas.TabIndex = 25;
+            this.lb_parcelas.Text = "Value";
+            // 
             // bt_reservar
             // 
             this.bt_reservar.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -526,16 +536,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // lb_parcelas
-            // 
-            this.lb_parcelas.AutoSize = true;
-            this.lb_parcelas.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_parcelas.Location = new System.Drawing.Point(994, 208);
-            this.lb_parcelas.Name = "lb_parcelas";
-            this.lb_parcelas.Size = new System.Drawing.Size(49, 21);
-            this.lb_parcelas.TabIndex = 25;
-            this.lb_parcelas.Text = "Value";
             // 
             // Vizualizar_quarto
             // 

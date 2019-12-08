@@ -21,6 +21,8 @@ namespace Pont_Finder.hospedagem
         private long cpf_usuario, telefone_emp;
         List<string> icones = new List<string>();
         List<string> ambientes = new List<string>();
+        Quarto quarto_ = new Quarto();
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -55,12 +57,34 @@ namespace Pont_Finder.hospedagem
         
         private void bt_reservar_Click(object sender, EventArgs e)
         {
+
+            List<Quarto> lista_datas = roomList.SelectRoomIdj(id);
+
             if (Session.Online)
             {    
-            cpf_usuario = Session.Cpf;
+                cpf_usuario = Session.Cpf;
 
-            hospedagem.Reservar_quarto reserva = new Reservar_quarto(id, anterior, dt_ini.Value, dt_fim.Value, cpf_usuario);
-            FormPrincipal.MudarForm("hospedagem", reserva);
+                int contador =0;
+
+                foreach(var reservas in classes.reserveList.selectAll())
+                {
+                        if (dt_ini.Value <= reservas.Data_final && reservas.IdQuarto == id)
+                        {
+                            contador++;
+                        }
+                }
+
+                if (qtd_disponivel > contador)
+                {
+                    hospedagem.Reservar_quarto reserva = new Reservar_quarto(id, anterior, dt_ini.Value, dt_fim.Value, cpf_usuario);
+                    FormPrincipal.MudarForm("hospedagem", reserva);
+                }
+                else
+                {
+                    MessageBox.Show("Não há vagas disponiveis para este quarto na data informada!");
+                }
+
+                
             }
             else
             {

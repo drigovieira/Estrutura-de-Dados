@@ -40,7 +40,7 @@
     <qtd_pessoas>3</qtd_pessoas>
     <qtd_quartos>2</qtd_quartos>
     <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * Wi-fi</servicos>
-    <valor>320</valor>
+    <valor>15000</valor>
     <foto>..//..//hospedagem//data//images//empresas//27006692000131//quartos//2//Familia standard.jpg</foto>
     <estado>Disponivel</estado>
     <status>false</status>
@@ -265,7 +265,7 @@
     <qtd_pessoas>2</qtd_pessoas>
     <qtd_quartos>4</qtd_quartos>
     <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
-    <valor>320</valor>
+    <valor>1500</valor>
     <foto>..//..//hospedagem//data//images//empresas//64259716000190//quartos//17//Casal Master.jpg</foto>
     <estado>Disponivel</estado>
     <status>true</status>
