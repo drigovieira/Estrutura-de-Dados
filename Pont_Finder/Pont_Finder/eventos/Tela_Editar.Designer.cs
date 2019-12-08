@@ -64,6 +64,7 @@
             this.pb_img_1 = new System.Windows.Forms.PictureBox();
             this.bt_alterar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.bt_back)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -419,6 +420,7 @@
             this.Button1.TabIndex = 31;
             this.Button1.Text = "Adicionar Foto";
             this.Button1.UseVisualStyleBackColor = false;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // tb_nome
             // 
@@ -451,6 +453,7 @@
             this.bt_alterar.TabIndex = 6;
             this.bt_alterar.Text = "Alterar";
             this.bt_alterar.UseVisualStyleBackColor = false;
+            this.bt_alterar.Click += new System.EventHandler(this.Bt_alterar_Click);
             // 
             // label1
             // 
@@ -462,6 +465,14 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Informe o nome do evento: ";
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 1078);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1265, 100);
+            this.panel1.TabIndex = 66;
+            // 
             // Tela_Editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -469,6 +480,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.bt_back);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -523,5 +535,6 @@
         private System.Windows.Forms.PictureBox pb_img_1;
         private System.Windows.Forms.Button bt_alterar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
