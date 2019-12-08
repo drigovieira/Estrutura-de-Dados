@@ -36,8 +36,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.painel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
@@ -46,22 +44,24 @@
             // 
             this.panel7.Location = new System.Drawing.Point(1160, 22);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(100, 630);
+            this.panel7.Size = new System.Drawing.Size(100, 597);
             this.panel7.TabIndex = 29;
             // 
             // panel8
             // 
             this.panel8.Location = new System.Drawing.Point(1055, 22);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(100, 630);
+            this.panel8.Size = new System.Drawing.Size(100, 597);
             this.panel8.TabIndex = 28;
             // 
             // painel
             // 
-            this.painel.Controls.Add(this.vScrollBar1);
+            this.painel.AutoSize = true;
             this.painel.Location = new System.Drawing.Point(215, 120);
+            this.painel.MaximumSize = new System.Drawing.Size(835, 0);
+            this.painel.MinimumSize = new System.Drawing.Size(835, 0);
             this.painel.Name = "painel";
-            this.painel.Size = new System.Drawing.Size(835, 532);
+            this.painel.Size = new System.Drawing.Size(835, 0);
             this.painel.TabIndex = 20;
             this.painel.Paint += new System.Windows.Forms.PaintEventHandler(this.Painel_Paint);
             // 
@@ -70,7 +70,7 @@
             this.panel2.Controls.Add(this.btn_back);
             this.panel2.Location = new System.Drawing.Point(110, 22);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(100, 630);
+            this.panel2.Size = new System.Drawing.Size(100, 597);
             this.panel2.TabIndex = 19;
             // 
             // btn_back
@@ -92,7 +92,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(5, 22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 630);
+            this.panel1.Size = new System.Drawing.Size(100, 597);
             this.panel1.TabIndex = 18;
             // 
             // label1
@@ -108,17 +108,10 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 652);
+            this.panel3.Location = new System.Drawing.Point(0, 625);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1265, 50);
+            this.panel3.Size = new System.Drawing.Size(1282, 50);
             this.panel3.TabIndex = 31;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(818, 11);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 518);
-            this.vScrollBar1.TabIndex = 1;
             // 
             // FormSolicitados
             // 
@@ -138,7 +131,6 @@
             this.Name = "FormSolicitados";
             this.Text = "Visualizar_Solicitado_User";
             this.Load += new System.EventHandler(this.Visualizar_Solicitado_User_Load);
-            this.painel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
@@ -156,6 +148,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }

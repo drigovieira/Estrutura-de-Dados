@@ -22,7 +22,8 @@ namespace Pont_Finder.servicos
             Form ant = new FormSolicitados();
             int y = 5;
             int i = 0;
-        
+
+            //for (int j = 0; j < 10; j++)
             foreach (var item in classes.SolicitadoList.Solicitados)
             {
                 if (item.Usercpf == Session.Cpf)

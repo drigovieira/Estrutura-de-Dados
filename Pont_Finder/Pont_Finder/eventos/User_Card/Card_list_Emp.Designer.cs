@@ -55,6 +55,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Editar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button3
             // 
@@ -74,7 +75,7 @@
             this.label3.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(647, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 24);
+            this.label3.Size = new System.Drawing.Size(119, 25);
             this.label3.TabIndex = 40;
             this.label3.Text = "Valor do Ingresso";
             // 
@@ -84,7 +85,7 @@
             this.label5.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(189, 48);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 24);
+            this.label5.Size = new System.Drawing.Size(73, 25);
             this.label5.TabIndex = 39;
             this.label5.Text = "Categoria:";
             // 
@@ -94,7 +95,7 @@
             this.lb_data.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_data.Location = new System.Drawing.Point(226, 112);
             this.lb_data.Name = "lb_data";
-            this.lb_data.Size = new System.Drawing.Size(19, 24);
+            this.lb_data.Size = new System.Drawing.Size(21, 25);
             this.lb_data.TabIndex = 38;
             this.lb_data.Text = "V";
             // 
@@ -104,7 +105,7 @@
             this.label4.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(190, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 24);
+            this.label4.Size = new System.Drawing.Size(44, 25);
             this.label4.TabIndex = 37;
             this.label4.Text = "Data:";
             // 
@@ -115,7 +116,7 @@
             this.label2.ForeColor = System.Drawing.Color.Blue;
             this.label2.Location = new System.Drawing.Point(190, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 24);
+            this.label2.Size = new System.Drawing.Size(143, 25);
             this.label2.TabIndex = 36;
             this.label2.Text = "Ingressos disponíveis:";
             // 
@@ -136,7 +137,7 @@
             this.lb_categoria.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_categoria.Location = new System.Drawing.Point(257, 49);
             this.lb_categoria.Name = "lb_categoria";
-            this.lb_categoria.Size = new System.Drawing.Size(17, 24);
+            this.lb_categoria.Size = new System.Drawing.Size(19, 25);
             this.lb_categoria.TabIndex = 34;
             this.lb_categoria.Text = "v";
             // 
@@ -159,7 +160,7 @@
             this.lb_ingressos.ForeColor = System.Drawing.Color.Blue;
             this.lb_ingressos.Location = new System.Drawing.Point(328, 79);
             this.lb_ingressos.Name = "lb_ingressos";
-            this.lb_ingressos.Size = new System.Drawing.Size(17, 24);
+            this.lb_ingressos.Size = new System.Drawing.Size(19, 25);
             this.lb_ingressos.TabIndex = 32;
             this.lb_ingressos.Text = "v";
             // 
@@ -169,7 +170,7 @@
             this.lb_nome.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_nome.Location = new System.Drawing.Point(188, 12);
             this.lb_nome.Name = "lb_nome";
-            this.lb_nome.Size = new System.Drawing.Size(63, 33);
+            this.lb_nome.Size = new System.Drawing.Size(63, 32);
             this.lb_nome.TabIndex = 31;
             this.lb_nome.Text = "Nome";
             // 
@@ -203,6 +204,7 @@
             this.Controls.Add(this.button3);
             this.Name = "Card_list_Emp";
             this.Size = new System.Drawing.Size(1008, 148);
+            this.Load += new System.EventHandler(this.Card_list_Emp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

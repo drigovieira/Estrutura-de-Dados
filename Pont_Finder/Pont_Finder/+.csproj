@@ -287,6 +287,12 @@
     <Compile Include="eventos\Tela_compra.Designer.cs">
       <DependentUpon>Tela_compra.cs</DependentUpon>
     </Compile>
+    <Compile Include="eventos\Tela_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventos\Tela_Editar.Designer.cs">
+      <DependentUpon>Tela_Editar.cs</DependentUpon>
+    </Compile>
     <Compile Include="eventos\User_Card\Card_boleto.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -735,6 +741,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\Tela_compra.resx">
       <DependentUpon>Tela_compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventos\Tela_Editar.resx">
+      <DependentUpon>Tela_Editar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eventos\User_Card\Card_boleto.resx">
       <DependentUpon>Card_boleto.cs</DependentUpon>

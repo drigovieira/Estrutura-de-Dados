@@ -136,7 +136,7 @@ namespace Pont_Finder.eventos.Classes
             }
         }
 
-
+        public static List<CoEvento> Posts { get => poster; set => poster = value; }
         public static void PostAdd(CoEvento post)
         {
             CoEvento pos = new CoEvento();
