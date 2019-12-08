@@ -25,6 +25,8 @@ namespace Pont_Finder.hospedagem
 
             InitializeComponent();
 
+            dateTimePicker2.Text = "" + dateTimePicker2.Value.AddDays(1);
+
             bt_Cad_Empresa.Visible = true;
             Btn_Edit_Empresa.Visible = false;
             bt_gerenciar_quartos.Visible = false;
@@ -188,12 +190,28 @@ namespace Pont_Finder.hospedagem
         {
 
             ListadeQuartos.Clear();
+
             foreach (var item in roomList.Quartos)
             {
-                if (item.NomeQuarto.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+
+                int contador = 0;
+
+                foreach (var reservas in classes.reserveList.selectAll())
                 {
-                    ListadeQuartos.Add(item);
+                    if (dateTimePicker1.Value <= reservas.Data_final)
+                    {
+                        contador++;
+                    }
                 }
+
+                if (item.Qtd_Disponivel > contador)
+                {
+                    if (item.NomeQuarto.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                    {
+                        ListadeQuartos.Add(item);
+                    }
+                }
+                    
             }
 
             y = 5;
