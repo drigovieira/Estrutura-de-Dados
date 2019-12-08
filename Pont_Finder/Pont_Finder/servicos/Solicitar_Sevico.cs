@@ -98,12 +98,12 @@ namespace Pont_Finder.servicos
             Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, post.Valor);
             bol.ShowDialog();
 
-            FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, anterior));
+            FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, new FormServicos()));
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, anterior));
+            FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, new FormServicos()));
         }
 
         private void Bt_icone_Click(object sender, EventArgs e)

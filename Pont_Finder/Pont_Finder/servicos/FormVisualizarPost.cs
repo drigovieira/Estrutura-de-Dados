@@ -109,7 +109,7 @@ namespace Pont_Finder.servicos
                 }
                 else
                 {
-                    FormPrincipal.MudarForm("servicos", new Solicitar_Sevico(post.Id, anterior));
+                    FormPrincipal.MudarForm("servicos", new Solicitar_Sevico(post.Id, new FormVisualizarPost(post.Id, new FormServicos())));
                 }
                
             }
