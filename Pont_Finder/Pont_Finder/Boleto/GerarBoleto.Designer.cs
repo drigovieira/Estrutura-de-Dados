@@ -38,12 +38,12 @@
             this.boletoA = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel25 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.end = new System.Windows.Forms.Label();
+            this.nome = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.lb_num_codigo_barra = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
@@ -81,7 +81,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dataPross = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -108,8 +108,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSalvar)).BeginInit();
             this.boletoA.SuspendLayout();
             this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel25.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel21.SuspendLayout();
@@ -237,17 +237,27 @@
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(2, 2);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(313, 16);
+            this.label17.Size = new System.Drawing.Size(235, 16);
             this.label17.TabIndex = 6;
-            this.label17.Text = "Instruções (Texto de responsabilidade do cedente)";
+            this.label17.Text = "O pagamento deve ser feito em 3 dias";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(43, 618);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(662, 100);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 36;
+            this.pictureBox2.TabStop = false;
             // 
             // panel25
             // 
             this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel25.Controls.Add(this.label36);
             this.panel25.Controls.Add(this.label34);
-            this.panel25.Controls.Add(this.label33);
-            this.panel25.Controls.Add(this.label30);
+            this.panel25.Controls.Add(this.end);
+            this.panel25.Controls.Add(this.nome);
             this.panel25.Controls.Add(this.label29);
             this.panel25.Location = new System.Drawing.Point(0, 472);
             this.panel25.Margin = new System.Windows.Forms.Padding(0);
@@ -265,16 +275,6 @@
             this.label36.TabIndex = 10;
             this.label36.Text = "SP";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(43, 618);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(662, 100);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 36;
-            this.pictureBox2.TabStop = false;
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -285,25 +285,25 @@
             this.label34.TabIndex = 9;
             this.label34.Text = "Cruzeiro";
             // 
-            // label33
+            // end
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(4, 53);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(112, 18);
-            this.label33.TabIndex = 8;
-            this.label33.Text = "Endereço Value";
+            this.end.AutoSize = true;
+            this.end.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.end.Location = new System.Drawing.Point(4, 53);
+            this.end.Name = "end";
+            this.end.Size = new System.Drawing.Size(112, 18);
+            this.end.TabIndex = 8;
+            this.end.Text = "Endereço Value";
             // 
-            // label30
+            // nome
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(4, 27);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(89, 18);
-            this.label30.TabIndex = 7;
-            this.label30.Text = "Nome Value";
+            this.nome.AutoSize = true;
+            this.nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome.Location = new System.Drawing.Point(4, 27);
+            this.nome.Name = "nome";
+            this.nome.Size = new System.Drawing.Size(89, 18);
+            this.nome.TabIndex = 7;
+            this.nome.Text = "Nome Value";
             // 
             // label29
             // 
@@ -460,7 +460,7 @@
             // 
             this.valorlabel.AutoSize = true;
             this.valorlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valorlabel.Location = new System.Drawing.Point(36, 20);
+            this.valorlabel.Location = new System.Drawing.Point(3, 26);
             this.valorlabel.Name = "valorlabel";
             this.valorlabel.Size = new System.Drawing.Size(44, 18);
             this.valorlabel.TabIndex = 1;
@@ -481,11 +481,11 @@
             // 
             this.lb_numero.AutoSize = true;
             this.lb_numero.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_numero.Location = new System.Drawing.Point(36, 21);
+            this.lb_numero.Location = new System.Drawing.Point(3, 21);
             this.lb_numero.Name = "lb_numero";
-            this.lb_numero.Size = new System.Drawing.Size(44, 18);
+            this.lb_numero.Size = new System.Drawing.Size(88, 18);
             this.lb_numero.TabIndex = 10;
-            this.lb_numero.Text = "Value";
+            this.lb_numero.Text = "1221027221";
             // 
             // label25
             // 
@@ -605,9 +605,9 @@
             this.lb_carteira.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_carteira.Location = new System.Drawing.Point(4, 18);
             this.lb_carteira.Name = "lb_carteira";
-            this.lb_carteira.Size = new System.Drawing.Size(44, 18);
+            this.lb_carteira.Size = new System.Drawing.Size(24, 18);
             this.lb_carteira.TabIndex = 7;
-            this.lb_carteira.Text = "Valeu";
+            this.lb_carteira.Text = "20";
             // 
             // label26
             // 
@@ -643,10 +643,10 @@
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label18);
-            this.panel9.Location = new System.Drawing.Point(261, 0);
+            this.panel9.Location = new System.Drawing.Point(261, -1);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(130, 68);
+            this.panel9.Size = new System.Drawing.Size(130, 69);
             this.panel9.TabIndex = 20;
             // 
             // label18
@@ -663,7 +663,7 @@
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label22);
-            this.panel11.Controls.Add(this.label2);
+            this.panel11.Controls.Add(this.dataPross);
             this.panel11.Location = new System.Drawing.Point(418, 157);
             this.panel11.Margin = new System.Windows.Forms.Padding(0);
             this.panel11.Name = "panel11";
@@ -680,15 +680,15 @@
             this.label22.TabIndex = 6;
             this.label22.Text = "Data Processamento";
             // 
-            // label2
+            // dataPross
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "value";
+            this.dataPross.AutoSize = true;
+            this.dataPross.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataPross.Location = new System.Drawing.Point(4, 21);
+            this.dataPross.Name = "dataPross";
+            this.dataPross.Size = new System.Drawing.Size(42, 18);
+            this.dataPross.TabIndex = 2;
+            this.dataPross.Text = "value";
             // 
             // panel10
             // 
@@ -800,9 +800,9 @@
             this.lb_agencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_agencia.Location = new System.Drawing.Point(3, 21);
             this.lb_agencia.Name = "lb_agencia";
-            this.lb_agencia.Size = new System.Drawing.Size(44, 18);
+            this.lb_agencia.Size = new System.Drawing.Size(84, 18);
             this.lb_agencia.TabIndex = 9;
-            this.lb_agencia.Text = "Value";
+            this.lb_agencia.Text = "109/660004";
             // 
             // label9
             // 
@@ -937,9 +937,9 @@
             this.boletoA.PerformLayout();
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
             this.panel22.ResumeLayout(false);
@@ -1003,8 +1003,8 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label end;
+        private System.Windows.Forms.Label nome;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label lb_num_codigo_barra;
         private System.Windows.Forms.Panel panel23;
@@ -1042,7 +1042,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label dataPross;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;

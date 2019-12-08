@@ -424,5 +424,10 @@ namespace Pont_Finder.avalie
                 lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
             }
         }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("Reclame", new FormAvalie());
+        }
     }
 }

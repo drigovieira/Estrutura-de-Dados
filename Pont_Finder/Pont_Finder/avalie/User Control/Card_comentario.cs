@@ -132,5 +132,17 @@ namespace Pont_Finder.avalie.User_Control
                 MessageBox.Show("É necessário estar logado para avaliar");
             }
         }
+
+        private void bt_editar_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void bt_remover_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
