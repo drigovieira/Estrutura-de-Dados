@@ -56,5 +56,10 @@ namespace Pont_Finder
             get => new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
         }
 
+        public static string offimage_link
+        {
+            get => "..\\..\\data\\images\\model\\offImage.jpg";
+        }
+
     }
 }

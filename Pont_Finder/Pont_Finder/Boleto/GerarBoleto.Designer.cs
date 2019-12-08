@@ -103,6 +103,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+
+         
+
             this.btnPrint = new System.Windows.Forms.PictureBox();
             this.btnSalvar = new System.Windows.Forms.PictureBox();
             this.boletoA.SuspendLayout();
@@ -155,9 +158,9 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 750);
+            this.panel1.Location = new System.Drawing.Point(0, 744);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1013, 50);
+            this.panel1.Size = new System.Drawing.Size(996, 50);
             this.panel1.TabIndex = 9;
             // 
             // boletoA
@@ -304,10 +307,10 @@
             // lb_num_codigo_barra
             // 
             this.lb_num_codigo_barra.AutoSize = true;
-            this.lb_num_codigo_barra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_num_codigo_barra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_num_codigo_barra.Location = new System.Drawing.Point(350, 30);
             this.lb_num_codigo_barra.Name = "lb_num_codigo_barra";
-            this.lb_num_codigo_barra.Size = new System.Drawing.Size(48, 16);
+            this.lb_num_codigo_barra.Size = new System.Drawing.Size(43, 15);
             this.lb_num_codigo_barra.TabIndex = 33;
             this.lb_num_codigo_barra.Text = "Value";
             // 
@@ -902,9 +905,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnPrint
-            // 
+
             this.btnPrint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
@@ -930,13 +931,18 @@
             this.btnSalvar.Visible = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
+
             // GerarBoleto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+
+            this.ClientSize = new System.Drawing.Size(1013, 749);
+
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1013, 800);
+
             this.Controls.Add(this.boletoA);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnPrint);

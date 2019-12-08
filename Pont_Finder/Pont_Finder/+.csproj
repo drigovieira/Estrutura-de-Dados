@@ -276,6 +276,8 @@
     </Compile>
     <Compile Include="eventos\Classes\CaEmpresa.cs" />
     <Compile Include="eventos\Classes\CoEvento.cs" />
+    <Compile Include="eventos\Classes\comentario.cs" />
+    <Compile Include="eventos\Classes\comentario_list.cs" />
     <Compile Include="eventos\Classes\ComprEvento.cs" />
     <Compile Include="eventos\Classes\Empresa_List.cs" />
     <Compile Include="eventos\Classes\EventoCompra_List.cs" />
@@ -570,6 +572,12 @@
     </Compile>
     <Compile Include="servicos\FormUserCards.Designer.cs">
       <DependentUpon>FormUserCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="servicos\FormVerSolicitacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicos\FormVerSolicitacao.Designer.cs">
+      <DependentUpon>FormVerSolicitacao.cs</DependentUpon>
     </Compile>
     <Compile Include="servicos\FormVisualizarPost.cs">
       <SubType>Form</SubType>
@@ -948,6 +956,9 @@
     <EmbeddedResource Include="servicos\FormUserCards.resx">
       <DependentUpon>FormUserCards.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="servicos\FormVerSolicitacao.resx">
+      <DependentUpon>FormVerSolicitacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="servicos\FormVisualizarPost.resx">
       <DependentUpon>FormVisualizarPost.cs</DependentUpon>
     </EmbeddedResource>
@@ -1021,6 +1032,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\images\carrousel\home\" />
+    <Folder Include="data\images\model\" />
     <Folder Include="servicos\data\images\empresas\capas\" />
   </ItemGroup>
   <ItemGroup>
@@ -1038,6 +1050,7 @@
     <Content Include="data\empresas.xml" />
     <Content Include="data\images\users\offImage.jpg" />
     <Content Include="data\usuarios.xml" />
+    <Content Include="eventos\Data\Comentarios_eventos.xml" />
     <Content Include="eventos\Data\compras_eventos.xml" />
     <Content Include="eventos\Data\Empresa_Eventos.xml" />
     <Content Include="eventos\Data\imagens\0.jpg" />

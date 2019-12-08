@@ -53,7 +53,7 @@ namespace Pont_Finder.servicos.User_control
 
         private void Bt_obter_Click_1(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, anterior));
+            new FormVerSolicitacao(solicitado.Id).ShowDialog();
         }
 
         private void Button3_Click(object sender, EventArgs e)
