@@ -98,9 +98,9 @@
             this.pb_pesquisar.BackColor = System.Drawing.Color.White;
             this.pb_pesquisar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_pesquisar.BackgroundImage")));
             this.pb_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_pesquisar.Location = new System.Drawing.Point(244, 58);
+            this.pb_pesquisar.Location = new System.Drawing.Point(246, 56);
             this.pb_pesquisar.Name = "pb_pesquisar";
-            this.pb_pesquisar.Size = new System.Drawing.Size(30, 30);
+            this.pb_pesquisar.Size = new System.Drawing.Size(30, 26);
             this.pb_pesquisar.TabIndex = 44;
             this.pb_pesquisar.TabStop = false;
             this.pb_pesquisar.Click += new System.EventHandler(this.pb_pesquisar_Click);

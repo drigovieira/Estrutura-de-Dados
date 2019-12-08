@@ -24,5 +24,11 @@ namespace Pont_Finder.alimentos.controls
         {
             lb_nome_delivery.Text = ListPedidos.selectAll()[IndexPedido].Nome;
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Lista_Pedidos pedidos = new Lista_Pedidos(ListPedidos.selectAll()[IndexPedido].IdEmpresa, true, IndexPedido);
+            FormPrincipal.MudarForm("alimentos", pedidos);
+        }
     }
 }
