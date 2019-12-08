@@ -47,7 +47,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lb_txt2 = new System.Windows.Forms.Label();
             this.lb_txt1 = new System.Windows.Forms.Label();
-            this.panel_center = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.taxaEntrega = new System.Windows.Forms.Label();
             this.subtotal = new System.Windows.Forms.Label();
@@ -62,11 +61,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.cancelar = new System.Windows.Forms.Button();
+            this.Solicitar = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.Troco = new System.Windows.Forms.MaskedTextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -208,7 +212,7 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.lb_txt2);
             this.panel2.Controls.Add(this.lb_txt1);
-            this.panel2.Location = new System.Drawing.Point(452, 360);
+            this.panel2.Location = new System.Drawing.Point(452, 417);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 110);
             this.panel2.TabIndex = 57;
@@ -273,15 +277,6 @@
             this.lb_txt1.Size = new System.Drawing.Size(77, 21);
             this.lb_txt1.TabIndex = 1;
             this.lb_txt1.Text = "Dinheiro";
-            // 
-            // panel_center
-            // 
-            this.panel_center.AutoSize = true;
-            this.panel_center.BackColor = System.Drawing.Color.White;
-            this.panel_center.Location = new System.Drawing.Point(321, 485);
-            this.panel_center.Name = "panel_center";
-            this.panel_center.Size = new System.Drawing.Size(625, 5);
-            this.panel_center.TabIndex = 58;
             // 
             // panel3
             // 
@@ -372,19 +367,22 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.label20);
+            this.panel5.Controls.Add(this.Troco);
+            this.panel5.Controls.Add(this.maskedTextBox1);
+            this.panel5.Controls.Add(this.checkBox1);
             this.panel5.Controls.Add(this.textBox3);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.textBox7);
             this.panel5.Controls.Add(this.textBox1);
-            this.panel5.Controls.Add(this.textBox2);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(321, 80);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(625, 272);
+            this.panel5.Size = new System.Drawing.Size(625, 331);
             this.panel5.TabIndex = 60;
             // 
             // textBox3
@@ -420,30 +418,18 @@
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(131, 107);
-            this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(360, 30);
+            this.textBox7.Size = new System.Drawing.Size(360, 24);
             this.textBox7.TabIndex = 55;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(131, 54);
-            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(273, 30);
+            this.textBox1.Size = new System.Drawing.Size(273, 24);
             this.textBox1.TabIndex = 45;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(421, 54);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(70, 30);
-            this.textBox2.TabIndex = 46;
-            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // label9
             // 
@@ -485,6 +471,71 @@
             this.label3.TabIndex = 41;
             this.label3.Text = "Sua Localização";
             // 
+            // cancelar
+            // 
+            this.cancelar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelar.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelar.Location = new System.Drawing.Point(661, 556);
+            this.cancelar.Name = "cancelar";
+            this.cancelar.Size = new System.Drawing.Size(135, 49);
+            this.cancelar.TabIndex = 62;
+            this.cancelar.Text = "Cancelar";
+            this.cancelar.UseVisualStyleBackColor = false;
+            // 
+            // Solicitar
+            // 
+            this.Solicitar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Solicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Solicitar.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Solicitar.Location = new System.Drawing.Point(480, 556);
+            this.Solicitar.Name = "Solicitar";
+            this.Solicitar.Size = new System.Drawing.Size(135, 49);
+            this.Solicitar.TabIndex = 61;
+            this.Solicitar.Text = "Fazer Pedido";
+            this.Solicitar.UseVisualStyleBackColor = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(130, 272);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(95, 21);
+            this.checkBox1.TabIndex = 59;
+            this.checkBox1.Text = "Troco para:";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox1.Location = new System.Drawing.Point(421, 54);
+            this.maskedTextBox1.Mask = "0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 24);
+            this.maskedTextBox1.TabIndex = 60;
+            this.maskedTextBox1.ValidatingType = typeof(int);
+            // 
+            // Troco
+            // 
+            this.Troco.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Troco.Location = new System.Drawing.Point(222, 270);
+            this.Troco.Mask = "0000";
+            this.Troco.Name = "Troco";
+            this.Troco.Size = new System.Drawing.Size(100, 24);
+            this.Troco.TabIndex = 61;
+            this.Troco.ValidatingType = typeof(int);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(128, 253);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(249, 16);
+            this.label20.TabIndex = 62;
+            this.label20.Text = "(Marque somente caso seja necessário troco)*";
+            // 
             // Delivery_Alimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -492,9 +543,10 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.cancelar);
+            this.Controls.Add(this.Solicitar);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel_center);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lb_txt_titulo);
             this.Controls.Add(this.panel4);
@@ -537,7 +589,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lb_txt2;
         private System.Windows.Forms.Label lb_txt1;
-        private System.Windows.Forms.Panel panel_center;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lb_rs_Total;
         private System.Windows.Forms.Label lb_txt5;
@@ -553,11 +604,16 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox Pedidos;
+        private System.Windows.Forms.Button cancelar;
+        private System.Windows.Forms.Button Solicitar;
+        private System.Windows.Forms.MaskedTextBox Troco;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label20;
     }
 }

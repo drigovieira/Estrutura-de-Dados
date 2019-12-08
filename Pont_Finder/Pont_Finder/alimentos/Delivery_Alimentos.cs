@@ -18,10 +18,7 @@ namespace Pont_Finder.alimentos
         public Delivery_Alimentos(int idEmpresa)
         {
             Empresa = idEmpresa;
-            InitializeComponent();
-            Pagamento_Dinheiro form = new Pagamento_Dinheiro();
-            form.Location = new Point(0,0);
-            panel_center.Controls.Add(form);
+            InitializeComponent();            
             lb_nome_restaurante.Text = CompanyList.selectAll()[idEmpresa].NomeFantasia;
             pictureBox3.ImageLocation = CompanyList.selectAll()[idEmpresa].Image;
             foreach (var i in Carrinho.selectAll())
@@ -70,17 +67,15 @@ namespace Pont_Finder.alimentos
         {
             if (rb_Dinheiro.Checked == true)
             {
-                //label20.Visible = true;
-                //checkBox1.Visible = true;
-                //Troco.Visible = true;
-                //label1.Visible = true;
+                label20.Visible = true;
+                checkBox1.Visible = true;
+                Troco.Visible = true;                
             }
             else
             {
-                //label20.Visible = false;
-                //checkBox1.Visible = false;
-                //Troco.Visible = false;
-                //label1.Visible = false;
+                label20.Visible = false;
+                checkBox1.Visible = false;
+                Troco.Visible = false;                
             }
         }
 
@@ -88,18 +83,16 @@ namespace Pont_Finder.alimentos
         {
             if (rb_cartao.Checked == true)
             {
-                //label20.Visible = false;
-                //checkBox1.Visible = false;
-                //Troco.Visible = false;
-                //label1.Visible = false;
-                //checkBox1.Checked = false;
+                label20.Visible = false;
+                checkBox1.Visible = false;
+                Troco.Visible = false;                
+                checkBox1.Checked = false;
             }
             else
             {
-                //label20.Visible = true;
-                //checkBox1.Visible = true;
-                //Troco.Visible = true;
-                //label1.Visible = true;
+                label20.Visible = true;
+                checkBox1.Visible = true;
+                Troco.Visible = true;                
             }
         }
     }
