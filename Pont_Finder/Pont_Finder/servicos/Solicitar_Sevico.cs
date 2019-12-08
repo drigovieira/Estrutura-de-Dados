@@ -56,13 +56,13 @@ namespace Pont_Finder.servicos
         private void Bt_solicitar_Click(object sender, EventArgs e)
         {
             if (tb_rua.Text.Length < 5)
-                MessageBox.Show("O campo Rua não foi preenxido corretamente");
+                MessageBox.Show("O campo Rua não foi preenchido corretamente");
             else if (tb_bairro.Text.Length < 5)
-                MessageBox.Show("O campo Bairro não foi preenxido corretamente");
+                MessageBox.Show("O campo Bairro não foi preenchido corretamente");
             else if (tb_cep.Text.Length < 8)
-                MessageBox.Show("O campo Cep não foi preenxido corretamente");
+                MessageBox.Show("O campo Cep não foi preenchido corretamente");
             else if (tb_descricao.Text.Length < 10)
-                MessageBox.Show("O campo Descrição não foi preenxido corretamente");
+                MessageBox.Show("O campo Descrição não foi preenchido corretamente");
             else
             {
 
