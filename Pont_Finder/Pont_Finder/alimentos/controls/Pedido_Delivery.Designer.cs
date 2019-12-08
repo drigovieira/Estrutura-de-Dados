@@ -39,6 +39,7 @@
             this.lb_referencia = new System.Windows.Forms.Label();
             this.lb_observacao = new System.Windows.Forms.Label();
             this.Pedidos = new System.Windows.Forms.ListBox();
+            this.btn_Realizado = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb_Pedidos
@@ -151,12 +152,26 @@
             this.Pedidos.Size = new System.Drawing.Size(366, 109);
             this.Pedidos.TabIndex = 20;
             // 
+            // btn_Realizado
+            // 
+            this.btn_Realizado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_Realizado.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Realizado.ForeColor = System.Drawing.Color.White;
+            this.btn_Realizado.Location = new System.Drawing.Point(217, 398);
+            this.btn_Realizado.Name = "btn_Realizado";
+            this.btn_Realizado.Size = new System.Drawing.Size(173, 33);
+            this.btn_Realizado.TabIndex = 21;
+            this.btn_Realizado.Text = "Pedido Realizado";
+            this.btn_Realizado.UseVisualStyleBackColor = false;
+            this.btn_Realizado.Click += new System.EventHandler(this.Btn_Realizado_Click);
+            // 
             // Pedido_Delivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.btn_Realizado);
             this.Controls.Add(this.Pedidos);
             this.Controls.Add(this.lb_observacao);
             this.Controls.Add(this.lb_referencia);
@@ -169,7 +184,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lb_Pedidos);
             this.Name = "Pedido_Delivery";
-            this.Size = new System.Drawing.Size(415, 391);
+            this.Size = new System.Drawing.Size(415, 454);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Pedido_Delivery_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -189,5 +204,6 @@
         private System.Windows.Forms.Label lb_referencia;
         private System.Windows.Forms.Label lb_observacao;
         private System.Windows.Forms.ListBox Pedidos;
+        private System.Windows.Forms.Button btn_Realizado;
     }
 }

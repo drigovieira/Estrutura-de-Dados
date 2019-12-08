@@ -31,6 +31,22 @@ namespace Pont_Finder.alimentos.controls
             lb_numero_delivery.Text = " N°: " + ListPedidos.selectAll()[IndexPedido].Numero;
             lb_referencia.Text = ListPedidos.selectAll()[IndexPedido].Referencia;
             lb_observacao.Text = ListPedidos.selectAll()[IndexPedido].Observacoes;            
-        }      
+        }
+
+        private void Btn_Realizado_Click(object sender, EventArgs e)
+        {
+            ListPedidos.Delete(IndexPedido);
+            if (ListPedidos.selectAll() == null)
+            {
+                formAlimentos form = new formAlimentos();
+                FormPrincipal.MudarForm("alimentos", form);
+            }
+            else
+            {
+                Lista_Pedidos pedidos = new Lista_Pedidos(ListPedidos.selectAll()[IndexPedido].IdEmpresa, false, -1);
+                FormPrincipal.MudarForm("alimentos", pedidos);
+            }
+            
+        }
     }
 }
