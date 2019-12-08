@@ -116,5 +116,18 @@ namespace Pont_Finder.servicos
         {
             FormPrincipal.MudarForm("servicos", new PerfilEmpresa(Session.Cpf, new FormServicos()));
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (tb_rua.Text != "")
+            {
+                Mapa.Mapa map = new Mapa.Mapa(tb_rua.Text);
+                map.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Caixa localização não preenchida");
+            }
+        }
     }
 }
