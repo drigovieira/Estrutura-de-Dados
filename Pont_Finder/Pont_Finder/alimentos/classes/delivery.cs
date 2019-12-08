@@ -11,7 +11,7 @@ namespace Pont_Finder.alimentos.classes
         private List<Cardapio> pedidos;
         private string rua, nome, referencia;
         private string observacoes;
-        private int numero, idUser;
+        private int numero, idUser, idEmpresa, idPedido;
         private float valor;
 
         public List<Cardapio> Pedidos
@@ -53,6 +53,16 @@ namespace Pont_Finder.alimentos.classes
         {
             get { return valor; }
             set { valor = value; }
+        }
+        public int IdEmpresa
+        {
+            get { return idEmpresa; }
+            set { idEmpresa = value; }
+        }
+        public int IdPedido
+        {
+            get { return idPedido; }
+            set { idPedido = value; }
         }
     }
 }

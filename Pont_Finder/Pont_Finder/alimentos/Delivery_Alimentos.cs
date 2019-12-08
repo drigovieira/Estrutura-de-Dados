@@ -124,6 +124,7 @@ namespace Pont_Finder.alimentos
                         pedidos.Referencia = textBox7.Text;
                         pedidos.Pedidos = Carrinho.selectAll();
                         pedidos.Valor = Valor;
+                        pedidos.IdEmpresa = Empresa;
                         ListPedidos.Add(pedidos);
                         MessageBox.Show("Pedido registrado!");
                         Reserva_Alimentos reserva = new Reserva_Alimentos(Empresa, CompanyList.selectAll()[Empresa].SttsEntrega);

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Pont_Finder.alimentos.classes;
+using Pont_Finder.alimentos.controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +19,17 @@ namespace Pont_Finder.alimentos
         {
             Empresa = idEmpresa;
             InitializeComponent();
+            int local = 0;
+            foreach (var item in ListPedidos.selectAll())
+            {
+                if (item.IdEmpresa == idEmpresa)
+                {
+                    Cliente_Delivery client = new Cliente_Delivery(item.IdPedido);
+                    client.Location = new Point(0, local);
+                    local = local + client.Height + 5;
+                    ListaClientes.Controls.Add(client);
+                }
+            }
         }
     }
 }

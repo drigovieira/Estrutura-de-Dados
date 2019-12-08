@@ -21,7 +21,9 @@ namespace Pont_Finder.alimentos.classes
             del.Observacoes = pedido.Observacoes;
             del.IdUser = pedido.IdUser;
             del.Valor = pedido.Valor;
+            del.IdEmpresa = pedido.IdEmpresa;            
             pedidos.Add(del);
+            pedidos[pedidos.IndexOf(del)].IdPedido = pedidos.IndexOf(del);
         }
         public static List<Delivery> selectAll()
         {
