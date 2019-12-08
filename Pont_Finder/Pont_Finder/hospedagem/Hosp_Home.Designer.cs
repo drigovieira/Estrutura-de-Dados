@@ -101,11 +101,11 @@
             // 
             this.bt_Cad_Empresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
             this.bt_Cad_Empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Cad_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Cad_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Cad_Empresa.ForeColor = System.Drawing.Color.White;
-            this.bt_Cad_Empresa.Location = new System.Drawing.Point(5, 217);
+            this.bt_Cad_Empresa.Location = new System.Drawing.Point(320, 4);
             this.bt_Cad_Empresa.Name = "bt_Cad_Empresa";
-            this.bt_Cad_Empresa.Size = new System.Drawing.Size(196, 38);
+            this.bt_Cad_Empresa.Size = new System.Drawing.Size(196, 30);
             this.bt_Cad_Empresa.TabIndex = 39;
             this.bt_Cad_Empresa.Text = "Cadastre sua Empresa";
             this.bt_Cad_Empresa.UseVisualStyleBackColor = false;
@@ -258,6 +258,7 @@
             this.pn_menu.Controls.Add(this.button1);
             this.pn_menu.Controls.Add(this.bt_gerenciar_quartos);
             this.pn_menu.Controls.Add(this.Btn_Edit_Empresa);
+            this.pn_menu.Controls.Add(this.bt_Cad_Empresa);
             this.pn_menu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pn_menu.Location = new System.Drawing.Point(0, 160);
             this.pn_menu.Name = "pn_menu";
@@ -636,7 +637,6 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel11);
-            this.Controls.Add(this.bt_Cad_Empresa);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.pnl_img);
