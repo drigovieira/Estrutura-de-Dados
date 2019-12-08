@@ -295,5 +295,25 @@ namespace Pont_Finder.hospedagem
         {
 
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
