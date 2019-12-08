@@ -24,7 +24,6 @@ namespace Pont_Finder.hospedagem
 
         private void bt_finalizar_Click(object sender, EventArgs e)
         {
-
             reserva.Id = classes.reserveList.Tam;
             reserva.IdQuarto = id_quarto;
             reserva.Usuario = cpf_user;
@@ -35,9 +34,15 @@ namespace Pont_Finder.hospedagem
 
             classes.reserveList.addReserva(reserva);
 
-            MessageBox.Show("Compra Realizada Com Sucesso");
-            Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf,reserva.Valor);
-            bol.ShowDialog();
+            if(metodo=="Boleto")
+            { 
+                Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf,reserva.Valor);
+                bol.ShowDialog();
+            }
+
+            MessageBox.Show("Reserva Realizada Com Sucesso");
+
+            FormPrincipal.MudarForm("hospedagem", new List_reservas_user(anterior));
         }
 
         private void lb_data_saida_Click(object sender, EventArgs e)
@@ -79,6 +84,9 @@ namespace Pont_Finder.hospedagem
                 Empresa emp = hostList.selectCnpj(quarto.Cnpj_Empresa);
 
                 InitializeComponent();
+
+                this.anterior = anterior;
+
                 this.id_quarto = quarto.ID;
                 //Long
                 this.cpf_user = cpf_usuario;

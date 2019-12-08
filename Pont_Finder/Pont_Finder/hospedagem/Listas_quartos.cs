@@ -15,8 +15,15 @@ namespace Pont_Finder.hospedagem
         Form anterior;
         public Listas_quartos(Form anterior)
         {
+
+
+
             this.anterior = anterior;
             InitializeComponent();
+
+            Empresa empresa = hostList.selectCpf(Session.Cpf);
+
+            lb_nomeEmpresa.Text = empresa.Nomefantasia;
         }
 
         private void button4_Click(object sender, EventArgs e)

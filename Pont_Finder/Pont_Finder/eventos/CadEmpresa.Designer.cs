@@ -53,9 +53,14 @@
             this.mkb_telefone = new System.Windows.Forms.MaskedTextBox();
             this.mkb_cnpj = new System.Windows.Forms.MaskedTextBox();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.ckb_termos_uso = new System.Windows.Forms.CheckBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lb_descricao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label8
@@ -174,7 +179,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(164, 508);
+            this.button1.Location = new System.Drawing.Point(164, 745);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 40);
             this.button1.TabIndex = 6;
@@ -207,7 +212,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(332, 508);
+            this.button2.Location = new System.Drawing.Point(332, 745);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 40);
             this.button2.TabIndex = 7;
@@ -240,7 +245,7 @@
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 943);
+            this.panel5.Location = new System.Drawing.Point(0, 1112);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1265, 100);
             this.panel5.TabIndex = 35;
@@ -257,6 +262,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.ckb_termos_uso);
+            this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.mkb_telefone);
             this.panel3.Controls.Add(this.mkb_cnpj);
             this.panel3.Controls.Add(this.Bemail);
@@ -273,7 +281,7 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(320, 303);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(625, 640);
+            this.panel3.Size = new System.Drawing.Size(625, 809);
             this.panel3.TabIndex = 34;
             // 
             // mkb_telefone
@@ -309,6 +317,51 @@
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(75, 465);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(124, 21);
+            this.label18.TabIndex = 119;
+            this.label18.Text = "Termos de uso:";
+            // 
+            // ckb_termos_uso
+            // 
+            this.ckb_termos_uso.AutoSize = true;
+            this.ckb_termos_uso.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckb_termos_uso.Location = new System.Drawing.Point(79, 694);
+            this.ckb_termos_uso.Name = "ckb_termos_uso";
+            this.ckb_termos_uso.Size = new System.Drawing.Size(257, 25);
+            this.ckb_termos_uso.TabIndex = 117;
+            this.ckb_termos_uso.Text = "Concordo com os termos de uso.";
+            this.ckb_termos_uso.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            this.panel6.AutoScroll = true;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.lb_descricao);
+            this.panel6.Location = new System.Drawing.Point(79, 490);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(460, 200);
+            this.panel6.TabIndex = 118;
+            // 
+            // lb_descricao
+            // 
+            this.lb_descricao.AutoSize = true;
+            this.lb_descricao.BackColor = System.Drawing.Color.Transparent;
+            this.lb_descricao.Font = new System.Drawing.Font("Dubai", 9F);
+            this.lb_descricao.Location = new System.Drawing.Point(4, 2);
+            this.lb_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
+            this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
+            this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
+            this.lb_descricao.Name = "lb_descricao";
+            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
+            this.lb_descricao.TabIndex = 69;
+            this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
+            // 
             // CadEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,6 +388,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,5 +421,9 @@
         private System.Windows.Forms.MaskedTextBox mkb_cnpj;
         private System.Windows.Forms.MaskedTextBox mkb_telefone;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.CheckBox ckb_termos_uso;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lb_descricao;
     }
 }

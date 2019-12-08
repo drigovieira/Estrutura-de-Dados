@@ -29,6 +29,11 @@ namespace Pont_Finder.hospedagem.classes
             reservas.Add(r);
         }
 
+        public static Reserva SelectId(int id)
+        {
+            return reservas[id];
+        }
+
         public static List<Reserva> selectAll()
         {
             List<Reserva> lista = new List<Reserva>();
@@ -96,7 +101,7 @@ namespace Pont_Finder.hospedagem.classes
                 r.Data_inicial = DateTime.Parse(item.Element("dataentrada").Value);
                 r.Data_final = DateTime.Parse(item.Element("datasaida").Value);
                 r.MetodoPagamento = item.Element("pagamento").Value;
-                r.Valor = long.Parse(item.Element("valor").Value);
+                r.Valor = double.Parse(item.Element("valor").Value);
 
                 reservas.Add(r);
 

@@ -12,7 +12,7 @@ namespace Pont_Finder.alimentos
         private string nome, nomeFantasia, email, rua, bairro, image;
         private List<string> categoria;
         private List<Funcionamento> funcionamentoEmp;
-        private int numero, cep, ID, notaApurada;
+        private int numero, cep, ID, like, deslike;
         private long telComercial, cpf;
         private bool status, sttsCardapio, sttsEntrega;
         private float taxa;
@@ -103,10 +103,15 @@ namespace Pont_Finder.alimentos
             get { return taxa; }
             set { taxa = value; }
         }
-        public int NotaApurada
+        public int Like
         {
-            get { return notaApurada; }
-            set { notaApurada = value; }
+            get { return like; }
+            set { like = value; }
+        }
+        public int Deslike
+        {
+            get { return deslike; }
+            set { deslike = value; }
         }
     }
 }

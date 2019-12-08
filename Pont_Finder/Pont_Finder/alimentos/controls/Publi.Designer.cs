@@ -41,20 +41,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lb_deslike = new System.Windows.Forms.Label();
-            this.pb_down = new System.Windows.Forms.PictureBox();
-            this.pb_up = new System.Windows.Forms.PictureBox();
-            this.lb_like = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Restaurante)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             this.SuspendLayout();
             // 
             // lbCategoria
             // 
             this.lbCategoria.AutoSize = true;
             this.lbCategoria.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCategoria.Location = new System.Drawing.Point(96, 190);
+            this.lbCategoria.Location = new System.Drawing.Point(96, 160);
             this.lbCategoria.Name = "lbCategoria";
             this.lbCategoria.Size = new System.Drawing.Size(46, 20);
             this.lbCategoria.TabIndex = 41;
@@ -74,7 +68,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 190);
+            this.label3.Location = new System.Drawing.Point(14, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 20);
             this.label3.TabIndex = 38;
@@ -106,7 +100,7 @@
             this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bt_visualizar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_visualizar.ForeColor = System.Drawing.Color.White;
-            this.bt_visualizar.Location = new System.Drawing.Point(499, 175);
+            this.bt_visualizar.Location = new System.Drawing.Point(499, 154);
             this.bt_visualizar.Name = "bt_visualizar";
             this.bt_visualizar.Size = new System.Drawing.Size(110, 34);
             this.bt_visualizar.TabIndex = 42;
@@ -184,62 +178,12 @@
             this.label4.TabIndex = 49;
             this.label4.Text = "Numero:";
             // 
-            // lb_deslike
-            // 
-            this.lb_deslike.AutoSize = true;
-            this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_deslike.Location = new System.Drawing.Point(129, 163);
-            this.lb_deslike.Name = "lb_deslike";
-            this.lb_deslike.Size = new System.Drawing.Size(49, 16);
-            this.lb_deslike.TabIndex = 53;
-            this.lb_deslike.Text = "Deslike";
-            // 
-            // pb_down
-            // 
-            this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.Location = new System.Drawing.Point(98, 159);
-            this.pb_down.Margin = new System.Windows.Forms.Padding(15);
-            this.pb_down.Name = "pb_down";
-            this.pb_down.Size = new System.Drawing.Size(25, 25);
-            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_down.TabIndex = 52;
-            this.pb_down.TabStop = false;
-            // 
-            // pb_up
-            // 
-            this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.Location = new System.Drawing.Point(18, 159);
-            this.pb_up.Margin = new System.Windows.Forms.Padding(15);
-            this.pb_up.Name = "pb_up";
-            this.pb_up.Size = new System.Drawing.Size(25, 25);
-            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_up.TabIndex = 51;
-            this.pb_up.TabStop = false;
-            // 
-            // lb_like
-            // 
-            this.lb_like.AutoSize = true;
-            this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_like.Location = new System.Drawing.Point(49, 163);
-            this.lb_like.Name = "lb_like";
-            this.lb_like.Size = new System.Drawing.Size(31, 16);
-            this.lb_like.TabIndex = 50;
-            this.lb_like.Text = "Like";
-            // 
             // Publi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.lb_deslike);
-            this.Controls.Add(this.pb_down);
-            this.Controls.Add(this.pb_up);
-            this.Controls.Add(this.lb_like);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -254,12 +198,10 @@
             this.Controls.Add(this.NomeEmpresa);
             this.Controls.Add(this.lbBairro);
             this.Name = "Publi";
-            this.Size = new System.Drawing.Size(624, 220);
+            this.Size = new System.Drawing.Size(624, 200);
             this.Load += new System.EventHandler(this.Publi_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Publi_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Restaurante)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,9 +221,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lb_deslike;
-        private System.Windows.Forms.PictureBox pb_down;
-        private System.Windows.Forms.PictureBox pb_up;
-        private System.Windows.Forms.Label lb_like;
     }
 }

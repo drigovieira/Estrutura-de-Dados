@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lb_nomeEmpresa = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,6 +96,14 @@
             this.btn_back.MouseLeave += new System.EventHandler(this.btn_back_MouseLeave);
             this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_back_MouseMove);
             // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 625);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1282, 50);
+            this.panel2.TabIndex = 73;
+            // 
             // Listas_quartos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,6 +111,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.lb_nomeEmpresa);
             this.Controls.Add(this.panel1);
@@ -126,5 +136,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lb_nomeEmpresa;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -42,7 +42,6 @@
             this.lb_forma_pagamento = new System.Windows.Forms.Label();
             this.bt_visualizar = new System.Windows.Forms.Button();
             this.bt_cancelar = new System.Windows.Forms.Button();
-            this.lb_qtd_parcelas_cartao = new System.Windows.Forms.Label();
             this.lb_endereco_emp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).BeginInit();
             this.SuspendLayout();
@@ -196,16 +195,6 @@
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = false;
             // 
-            // lb_qtd_parcelas_cartao
-            // 
-            this.lb_qtd_parcelas_cartao.AutoSize = true;
-            this.lb_qtd_parcelas_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_qtd_parcelas_cartao.Location = new System.Drawing.Point(687, 128);
-            this.lb_qtd_parcelas_cartao.Name = "lb_qtd_parcelas_cartao";
-            this.lb_qtd_parcelas_cartao.Size = new System.Drawing.Size(85, 17);
-            this.lb_qtd_parcelas_cartao.TabIndex = 76;
-            this.lb_qtd_parcelas_cartao.Text = "12 x de value";
-            // 
             // lb_endereco_emp
             // 
             this.lb_endereco_emp.AutoSize = true;
@@ -223,7 +212,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.lb_qtd_parcelas_cartao);
             this.Controls.Add(this.bt_cancelar);
             this.Controls.Add(this.bt_visualizar);
             this.Controls.Add(this.lb_forma_pagamento);
@@ -241,6 +229,7 @@
             this.Controls.Add(this.pb_hotel);
             this.Name = "user_list_reserva";
             this.Size = new System.Drawing.Size(1005, 180);
+            this.Load += new System.EventHandler(this.user_list_reserva_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -262,7 +251,6 @@
         private System.Windows.Forms.Label lb_forma_pagamento;
         private System.Windows.Forms.Button bt_visualizar;
         private System.Windows.Forms.Button bt_cancelar;
-        private System.Windows.Forms.Label lb_qtd_parcelas_cartao;
         private System.Windows.Forms.Label lb_endereco_emp;
     }
 }

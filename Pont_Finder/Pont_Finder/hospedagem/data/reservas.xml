@@ -1,3 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <reservelist>
+  <reserva>
+    <id>0</id>
+    <idquarto>12</idquarto>
+    <usuario>42750892804</usuario>
+    <dataentrada>2019-12-08T14:41:23.278474-03:00</dataentrada>
+    <datasaida>2019-12-08T14:41:23.2704945-03:00</datasaida>
+    <pagamento>Boleto</pagamento>
+    <valor>595</valor>
+  </reserva>
+  <reserva>
+    <id>1</id>
+    <idquarto>13</idquarto>
+    <usuario>26835036010</usuario>
+    <dataentrada>2019-12-08T15:26:02.9525705-03:00</dataentrada>
+    <datasaida>2019-12-20T15:26:02</datasaida>
+    <pagamento>Boleto</pagamento>
+    <valor>187</valor>
+  </reserva>
+  <reserva>
+    <id>2</id>
+    <idquarto>10</idquarto>
+    <usuario>26835036010</usuario>
+    <dataentrada>2019-12-08T16:45:04.155201-03:00</dataentrada>
+    <datasaida>2019-12-08T16:45:04.1506361-03:00</datasaida>
+    <pagamento>Boleto</pagamento>
+    <valor>153</valor>
+  </reserva>
+  <reserva>
+    <id>3</id>
+    <idquarto>0</idquarto>
+    <usuario>42750892804</usuario>
+    <dataentrada>2019-12-08T16:48:27.109115-03:00</dataentrada>
+    <datasaida>2019-12-12T16:48:27</datasaida>
+    <pagamento>Boleto</pagamento>
+    <valor>680</valor>
+  </reserva>
+  <reserva>
+    <id>4</id>
+    <idquarto>1</idquarto>
+    <usuario>42750892804</usuario>
+    <dataentrada>2019-12-08T16:52:45.6846832-03:00</dataentrada>
+    <datasaida>2019-12-09T16:52:45</datasaida>
+    <pagamento>Cartao de Credito</pagamento>
+    <valor>600</valor>
+  </reserva>
 </reservelist>

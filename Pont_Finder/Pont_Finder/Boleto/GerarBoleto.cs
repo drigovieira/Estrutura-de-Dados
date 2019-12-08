@@ -29,6 +29,7 @@ namespace Pont_Finder.Boleto
         public GerarBoleto(long cpf, double valor)
         {
             InitializeComponent();
+            Random rdn = new Random();
             cpfboleto = cpf.ToString();
             lb_cpf.Text = "CPF: "+Session.Cpf.ToString();
             valorboleto = valor.ToString();
@@ -41,7 +42,7 @@ namespace Pont_Finder.Boleto
             CalcularN();
             data.Text = System.DateTime.Now.ToString("dd/MM/yyyy");
             dataPross.Text = System.DateTime.Now.ToString("dd/MM/yyyy");
-
+            lb_num_doc.Text = rdn.Next(10000, 99999).ToString();
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -89,7 +90,7 @@ namespace Pont_Finder.Boleto
         {
             Bitmap bm = new Bitmap(boletoA.Width, boletoA.Height);
             boletoA.DrawToBitmap(bm, new Rectangle(0, 0, boletoA.Width, boletoA.Height));
-            e.Graphics.DrawImage(bm, 0, 0);
+            e.Graphics.DrawImage(bm, 4, 0);
             bm.Dispose();
         }
 
@@ -113,7 +114,7 @@ namespace Pont_Finder.Boleto
         public void visible()
         {
             btnPrint.Visible = true;
-            btnSalvar.Visible = true;
+            btnSalvar.Visible = false;
         }
 
         private void printPreviewDialog1_Load(object sender, EventArgs e)

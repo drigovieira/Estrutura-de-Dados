@@ -32,6 +32,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lb_nomeEmpresa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,12 +83,33 @@
             this.label1.TabIndex = 70;
             this.label1.Text = "Lista de quartos reservados";
             // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 625);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1282, 50);
+            this.panel2.TabIndex = 72;
+            // 
+            // lb_nomeEmpresa
+            // 
+            this.lb_nomeEmpresa.AutoSize = true;
+            this.lb_nomeEmpresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nomeEmpresa.Location = new System.Drawing.Point(563, 96);
+            this.lb_nomeEmpresa.Name = "lb_nomeEmpresa";
+            this.lb_nomeEmpresa.Size = new System.Drawing.Size(190, 27);
+            this.lb_nomeEmpresa.TabIndex = 73;
+            this.lb_nomeEmpresa.Text = "Nome da empresa";
+            // 
             // list_emp_reservados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.lb_nomeEmpresa);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
@@ -106,5 +129,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lb_nomeEmpresa;
     }
 }
