@@ -256,5 +256,15 @@ namespace Pont_Finder.alimentos
             }
             return variaveis;
         }
+        public static void AttEvaluation(int idEmpresa, string tipo, int valor)
+        {
+            if (tipo.Equals("like")) {
+                company[idEmpresa].Like = valor;
+            }
+            else
+            {
+                company[idEmpresa].Deslike = valor;
+            }
+        }
     }
 }

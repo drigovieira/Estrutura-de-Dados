@@ -61,6 +61,8 @@ namespace Pont_Finder.alimentos
                 lbFuncionamento.Text += funcio.Dia +"\n";
                 lbHoras.Text += "Inicio: "+ funcio.HoraInicio.ToString("HH:mm") + "  Fim: "+ funcio.HoraFim.ToString("HH:mm")+"\n"; 
             }
+            lb_like.Text = CompanyList.selectAll()[Index].Like.ToString();
+            lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();
         }
         public void CapturarFuncionamento()
         {
@@ -136,14 +138,19 @@ namespace Pont_Finder.alimentos
                 {
                     pb_up.Image = imgLike;
                     pb_down.Image = imgDeslike;
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Id).Id);
+                    EvaluationList.ApuraAvaliacao(Index);
                 }
                 else
                 {
                     pb_up.Image = imgLikeBlue;
                     pb_down.Image = imgDeslike;
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Id).Id);
+                    EvaluationList.AddAvaliacao(1, Index, Session.Id, "like");
+                    EvaluationList.ApuraAvaliacao(Index);
                 }
-                lb_like.Text = "";
-                lb_deslike.Text = "";
+                lb_like.Text = CompanyList.selectAll()[Index].Like.ToString();
+                lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();
 
             }
             else
@@ -159,15 +166,20 @@ namespace Pont_Finder.alimentos
                 if (pb_down.Image == imgDeslikeBlue)
                 {
                     pb_down.Image = imgDeslike;
-                    pb_up.Image = imgLike;
+                    pb_up.Image = imgLike;                    
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Id).Id);
+                    EvaluationList.ApuraAvaliacao(Index);
                 }
                 else
                 {
                     pb_down.Image = imgDeslikeBlue;
                     pb_up.Image = imgLike;
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Id).Id);
+                    EvaluationList.AddAvaliacao(1, Index, Session.Id, "deslike");
+                    EvaluationList.ApuraAvaliacao(Index);
                 }
-                lb_like.Text = "";
-                lb_deslike.Text = "";
+                lb_like.Text = CompanyList.selectAll()[Index].Like.ToString();
+                lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();
             }
             else
             {

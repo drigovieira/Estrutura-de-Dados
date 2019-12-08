@@ -39,33 +39,58 @@ namespace Pont_Finder.alimentos.classes
         {
             return avaliacao;
         }
-        public static void AddAvaliacao(int nota, int indexEmp, int indexClient)
+        public static void AddAvaliacao(int nota, int indexEmp, int indexClient, string tipo)
         {
             Evaluation ava = new Evaluation();
             ava.Nota = nota;
             ava.IndexEmp = indexEmp;
             ava.IndexClient = indexClient;
+            ava.Tipo = tipo;
             avaliacao.Add(ava);
+            avaliacao[avaliacao.IndexOf(ava)].Id = avaliacao.IndexOf(ava);
+        }
+        public static void DelAvaliacao(int ID)
+        {
+            try
+            {                
+                foreach(var rem in avaliacao)
+                {                    
+                        if (rem.Id == ID)
+                        {
+                            avaliacao.Remove(rem);
+                        }
+                }
+            }
+            catch { }
+        }
+        public static Evaluation select(int ID)
+        {
+            Evaluation eva = new Evaluation();
+            foreach(var i in avaliacao)
+            {
+                if (i.IndexClient == ID) eva = i;
+            }
+            return eva;
         }
         public static void ApuraAvaliacao(int indexEmp)
         {
-            float mediaNota = 0;
-            int count = 0;
-            foreach (var itemAva in avaliacao)
+            int valor1 = 0;
+            int valor2 = 0;
+            foreach(var i in avaliacao)
             {
-                if (itemAva.IndexEmp == indexEmp)
+                if(i.IndexEmp == indexEmp)
                 {
-                    mediaNota += itemAva.Nota;
-                    count = count + 1;
-                }
+                    if (i.Tipo.Equals("like")) {
+                        valor1 += i.Nota;
+                    }
+                    else
+                    {
+                        valor2 += i.Nota;
+                    }
+                }                
             }
-            /*foreach (var itemEmp in perfil)
-            {
-                if (itemEmp.CodigoCompany == indexEmp)
-                {
-                    perfil[perfil.IndexOf(itemEmp)].NotaApurada = mediaNota / count;
-                }
-            }*/
+            CompanyList.AttEvaluation(indexEmp, "like", valor1);
+            CompanyList.AttEvaluation(indexEmp, "deslike", valor2);
         }
     }
 }
