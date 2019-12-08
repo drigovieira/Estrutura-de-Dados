@@ -118,7 +118,7 @@ namespace Pont_Finder.servicos
 
         private void Btn_back_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("servicos", new PerfilEmpresa(Session.Cpf, new FormServicos()));
+            FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, new FormServicos()));
         }
 
         private void Button1_Click(object sender, EventArgs e)

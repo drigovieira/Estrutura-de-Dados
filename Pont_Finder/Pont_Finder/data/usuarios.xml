@@ -104,4 +104,12 @@
     <image>..//..//data//images//users//28645898004.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Jhonatan Luiz</nome>
+    <email>jhonatan@gmail.com</email>
+    <senha>123</senha>
+    <cpf>96973023088</cpf>
+    <image>..//..//data//images//users//96973023088.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>
