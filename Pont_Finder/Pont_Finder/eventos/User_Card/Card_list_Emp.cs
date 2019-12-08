@@ -43,7 +43,7 @@ namespace Pont_Finder.eventos.User_Card
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            DialogResult confirm = MessageBox.Show("Deseja realmente remover o quarto?", "Remover Quarto", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+            DialogResult confirm = MessageBox.Show("Deseja realmente remover o evento?", "Remover Evento", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
 
             if (confirm.ToString().ToUpper() == "YES")
             {

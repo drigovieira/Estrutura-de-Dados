@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_deslike = new System.Windows.Forms.Label();
+            this.pb_down = new System.Windows.Forms.PictureBox();
+            this.pb_up = new System.Windows.Forms.PictureBox();
+            this.lb_like = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lbRestaurante = new System.Windows.Forms.Label();
             this.ImagemPerfil = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,6 +59,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel5.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImagemPerfil)).BeginInit();
             this.panel13.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -64,6 +73,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.panel1);
             this.panel5.Controls.Add(this.lbRestaurante);
             this.panel5.Controls.Add(this.ImagemPerfil);
             this.panel5.Controls.Add(this.label2);
@@ -74,8 +84,82 @@
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Location = new System.Drawing.Point(114, 29);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1055, 918);
+            this.panel5.Size = new System.Drawing.Size(1055, 972);
             this.panel5.TabIndex = 23;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lb_deslike);
+            this.panel1.Controls.Add(this.pb_down);
+            this.panel1.Controls.Add(this.pb_up);
+            this.panel1.Controls.Add(this.lb_like);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(244, 336);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(586, 52);
+            this.panel1.TabIndex = 18;
+            // 
+            // lb_deslike
+            // 
+            this.lb_deslike.AutoSize = true;
+            this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_deslike.Location = new System.Drawing.Point(239, 14);
+            this.lb_deslike.Name = "lb_deslike";
+            this.lb_deslike.Size = new System.Drawing.Size(49, 16);
+            this.lb_deslike.TabIndex = 57;
+            this.lb_deslike.Text = "Deslike";
+            // 
+            // pb_down
+            // 
+            this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_down.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.Location = new System.Drawing.Point(208, 10);
+            this.pb_down.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_down.Name = "pb_down";
+            this.pb_down.Size = new System.Drawing.Size(25, 25);
+            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_down.TabIndex = 56;
+            this.pb_down.TabStop = false;
+            this.pb_down.Click += new System.EventHandler(this.Pb_down_Click);
+            // 
+            // pb_up
+            // 
+            this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_up.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.Location = new System.Drawing.Point(128, 10);
+            this.pb_up.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_up.Name = "pb_up";
+            this.pb_up.Size = new System.Drawing.Size(25, 25);
+            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_up.TabIndex = 55;
+            this.pb_up.TabStop = false;
+            this.pb_up.Click += new System.EventHandler(this.Pb_up_Click);
+            // 
+            // lb_like
+            // 
+            this.lb_like.AutoSize = true;
+            this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_like.Location = new System.Drawing.Point(159, 14);
+            this.lb_like.Name = "lb_like";
+            this.lb_like.Size = new System.Drawing.Size(31, 16);
+            this.lb_like.TabIndex = 54;
+            this.lb_like.Text = "Like";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(103, 24);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Avaliações:";
             // 
             // lbRestaurante
             // 
@@ -115,7 +199,7 @@
             this.bt_visualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_visualizar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_visualizar.ForeColor = System.Drawing.Color.White;
-            this.bt_visualizar.Location = new System.Drawing.Point(720, 834);
+            this.bt_visualizar.Location = new System.Drawing.Point(720, 907);
             this.bt_visualizar.Name = "bt_visualizar";
             this.bt_visualizar.Size = new System.Drawing.Size(110, 34);
             this.bt_visualizar.TabIndex = 35;
@@ -129,7 +213,7 @@
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.lbCategorias);
             this.panel13.Controls.Add(this.label9);
-            this.panel13.Location = new System.Drawing.Point(244, 415);
+            this.panel13.Location = new System.Drawing.Point(244, 488);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(586, 86);
             this.panel13.TabIndex = 10;
@@ -160,7 +244,7 @@
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.lbContato);
             this.panel11.Controls.Add(this.label6);
-            this.panel11.Location = new System.Drawing.Point(244, 335);
+            this.panel11.Location = new System.Drawing.Point(244, 408);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(586, 62);
             this.panel11.TabIndex = 9;
@@ -192,7 +276,7 @@
             this.panel9.Controls.Add(this.lbHoras);
             this.panel9.Controls.Add(this.lbFuncionamento);
             this.panel9.Controls.Add(this.label8);
-            this.panel9.Location = new System.Drawing.Point(244, 521);
+            this.panel9.Location = new System.Drawing.Point(244, 594);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(586, 291);
             this.panel9.TabIndex = 8;
@@ -310,7 +394,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 947);
+            this.panel2.Location = new System.Drawing.Point(0, 1001);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 52;
@@ -348,6 +432,10 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Visualizar_Paint);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImagemPerfil)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
@@ -387,5 +475,11 @@
         private System.Windows.Forms.Label lbRestaurante;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lb_deslike;
+        private System.Windows.Forms.PictureBox pb_down;
+        private System.Windows.Forms.PictureBox pb_up;
+        private System.Windows.Forms.Label lb_like;
     }
 }

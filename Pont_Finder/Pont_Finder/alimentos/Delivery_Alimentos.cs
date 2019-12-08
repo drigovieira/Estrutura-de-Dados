@@ -16,6 +16,7 @@ namespace Pont_Finder.alimentos
     {
         private int Empresa;
         private float Valor;
+        private List<string> Sacola = new List<string>();
         public Delivery_Alimentos(int idEmpresa)
         {
             Empresa = idEmpresa;
@@ -115,7 +116,11 @@ namespace Pont_Finder.alimentos
                 else
                 {
                     try
-                    {
+                    {                        
+                        foreach(var item in Carrinho.selectAll())
+                        {
+                            Sacola.Add(item.Nome + " x " + item.Quantos);
+                        }
                         Delivery pedidos = new Delivery();
                         pedidos.Nome = Session.Nome;
                         pedidos.Rua = textBox1.Text;
@@ -123,7 +128,7 @@ namespace Pont_Finder.alimentos
                         pedidos.Observacoes = textBox3.Text;
                         pedidos.IdUser = Session.Id;
                         pedidos.Referencia = textBox7.Text;
-                        pedidos.Pedidos = Carrinho.selectAll();
+                        pedidos.Pedidos = Sacola;
                         pedidos.Valor = Valor;
                         pedidos.IdEmpresa = Empresa;
                         ListPedidos.Add(pedidos);

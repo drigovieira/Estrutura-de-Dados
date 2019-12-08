@@ -127,6 +127,8 @@ namespace Pont_Finder.servicos
             empresa.Descricao = tb_descricao.Text;
             empresa.Sobre = tb_sobre.Text;
             empresa.PoliticaPrivacidade = tb_privacidade.Text;
+            empresa.Telefone = tb_telefone.Text;
+            empresa.Endereco = tb_endereco.Text;
 
             FormPrincipal.MudarForm("servicos", new PerfilEmpresa(empresa.Cpf, new FormServicos()));
 

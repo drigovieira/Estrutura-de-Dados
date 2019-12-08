@@ -10,6 +10,23 @@
     <cpf>28645898004</cpf>
     <cnpj>5403624000173</cnpj>
     <data>2019-12-08T13:16:52.7743921-03:00</data>
-    <likes></likes>
+    <likes>1,28645898004</likes>
+  </Post>
+  <Post>
+    <id>1</id>
+    <titulo>Instalação de câmera</titulo>
+    <valor>362</valor>
+    <descricao>O serviços consiste na instalação de uma câmera.
+
+A implementação de câmeras de segurança é comumente realizada em prédios corporativos e residenciais, além de casas de grande extensão.
+Para realizá-la, é preciso contratar uma empresa capaz de sondar os melhores locais de instalação das câmeras, evitando assim pontos cegos e outras falhas na segurança de maneira geral.
+
+Materiais extras podem ser cobrados durante a instalação.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//1.jpg</image>
+    <cpf>28645898004</cpf>
+    <cnpj>5403624000173</cnpj>
+    <data>2019-12-08T14:16:15.3692218-03:00</data>
+    <likes>1,28645898004</likes>
   </Post>
 </PostList>

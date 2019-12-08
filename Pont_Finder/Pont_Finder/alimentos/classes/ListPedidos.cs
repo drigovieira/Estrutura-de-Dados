@@ -29,5 +29,22 @@ namespace Pont_Finder.alimentos.classes
         {
             return pedidos;
         }
+        public static void Delete(int ID)
+        {
+            try
+            {
+                foreach (var rem in pedidos)
+                {
+                    if (rem.IdPedido == ID)
+                    {
+                        pedidos.Remove(rem);
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+        }
     }
 }

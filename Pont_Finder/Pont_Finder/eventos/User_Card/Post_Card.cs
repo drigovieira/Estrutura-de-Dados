@@ -27,6 +27,7 @@ namespace Pont_Finder.eventos
             lb_valor.Text = post.Valor;
             lb_classifica.Text = post.Idade;
             lb_local.Text = post.Local;
+            lb_horario.Text = post.horario;
             
 
 

@@ -19,6 +19,12 @@ namespace Pont_Finder.alimentos
         private int numero, Empcep, Index;
         private long Empcontato;
         private bool sttsCardapio;
+
+        Bitmap imgLike = new Bitmap("..\\..\\Resources\\servicos\\like\\Like_null.png");
+        Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
+        Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
+        Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
+
         public Visualizar(int index, string fantasia, string Rua, string Bairro, List<string> Categorias, int Num, int Cep, long Contato, string link, bool cardapio)
         {
             nomeFantasia = fantasia;
@@ -55,6 +61,8 @@ namespace Pont_Finder.alimentos
                 lbFuncionamento.Text += funcio.Dia +"\n";
                 lbHoras.Text += "Inicio: "+ funcio.HoraInicio.ToString("HH:mm") + "  Fim: "+ funcio.HoraFim.ToString("HH:mm")+"\n"; 
             }
+            lb_like.Text = CompanyList.selectAll()[Index].Like.ToString();
+            lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();
         }
         public void CapturarFuncionamento()
         {
@@ -119,6 +127,63 @@ namespace Pont_Finder.alimentos
             else
             {
                 MessageBox.Show("É necessário estar logado para utilizar este recurso ", "Aviso");
+            }
+        }
+
+        private void Pb_up_Click(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                if (pb_up.Image == imgLikeBlue)
+                {
+                    pb_up.Image = imgLike;
+                    pb_down.Image = imgDeslike;
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Id).Id);
+                    EvaluationList.ApuraAvaliacao(Index);
+                }
+                else
+                {
+                    pb_up.Image = imgLikeBlue;
+                    pb_down.Image = imgDeslike;
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Id).Id);
+                    EvaluationList.AddAvaliacao(1, Index, Session.Id, "like");
+                    EvaluationList.ApuraAvaliacao(Index);
+                }
+                lb_like.Text = CompanyList.selectAll()[Index].Like.ToString();
+                lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();
+
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
+            }
+        }
+
+        private void Pb_down_Click(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                if (pb_down.Image == imgDeslikeBlue)
+                {
+                    pb_down.Image = imgDeslike;
+                    pb_up.Image = imgLike;                    
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Id).Id);
+                    EvaluationList.ApuraAvaliacao(Index);
+                }
+                else
+                {
+                    pb_down.Image = imgDeslikeBlue;
+                    pb_up.Image = imgLike;
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Id).Id);
+                    EvaluationList.AddAvaliacao(1, Index, Session.Id, "deslike");
+                    EvaluationList.ApuraAvaliacao(Index);
+                }
+                lb_like.Text = CompanyList.selectAll()[Index].Like.ToString();
+                lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
             }
         }
 

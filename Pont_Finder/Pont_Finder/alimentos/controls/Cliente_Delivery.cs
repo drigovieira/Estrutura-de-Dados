@@ -21,8 +21,8 @@ namespace Pont_Finder.alimentos.controls
         }
 
         private void Cliente_Delivery_Paint(object sender, PaintEventArgs e)
-        {
-            lb_nome_delivery.Text = ListPedidos.selectAll()[IndexPedido].Nome;
+        {            
+                lb_nome_delivery.Text = ListPedidos.selectAll()[IndexPedido].Nome;
         }
 
         private void Button1_Click(object sender, EventArgs e)

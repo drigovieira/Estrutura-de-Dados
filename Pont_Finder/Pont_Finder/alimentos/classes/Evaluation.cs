@@ -8,7 +8,8 @@ namespace Pont_Finder.alimentos
 {
     class Evaluation
     {
-        private int nota, indexEmp, indexClient;
+        private int nota, indexEmp, indexClient, id;
+        private string tipo;
 
         public int Nota
         {
@@ -24,6 +25,16 @@ namespace Pont_Finder.alimentos
         {
             set { indexClient = value; }
             get { return indexClient; }
+        }
+        public string Tipo
+        {
+            set { tipo = value; }
+            get { return tipo; }
+        }
+        public int Id
+        {
+            set { id = value; }
+            get { return id; }
         }
     }
 }

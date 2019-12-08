@@ -29,10 +29,16 @@
     <cpf>28645898004</cpf>
     <image>..//..//servicos//data//images//empresas//5403624000173.jpg</image>
     <status>true</status>
-    <slogan></slogan>
+    <slogan>Faça do vale a sua Empresa</slogan>
     <sobre></sobre>
-    <descricao></descricao>
-    <site></site>
+    <descricao>Virtual Vale é uma empresa que oferece os serviços de:
+- Intalação de antenas
+- apontamento de satélites
+- Instalação de câmeras
+- Manutenção de computadores
+- Concerto de eletrônocos em geral
+</descricao>
+    <site>www.virtualvale.com.br</site>
     <politicaprivacidade></politicaprivacidade>
     <imagecapa>..//..//servicos//data//images//empresas//capas//5403624000173.jpg</imagecapa>
   </servico>
