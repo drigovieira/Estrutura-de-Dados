@@ -8629,6 +8629,16 @@
   <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="lb_descricao.Text" xml:space="preserve">
+    <value>Point Finder:
+O Point Finder é um portal que tem o objetivo facilitar esta busca por serviços e auxiliar o usuário a encontrar o que ele precisa. Em Cruzeiro existem muitos eventos e estabelecimentos a serem anunciados, porém devido à falta de divulgação a informação sobre esses eventos não chega até as pessoas. O portal não só busca divulgar esses eventos mas também busca gerenciar todo o processo de agendamento e reservas que o usuário poderá fazer em relação aos módulos disponíveis. 
+
+Remuneração:
+Toda empresa cadastrada nos módulos alimentos, serviços, hospedagem, eventos, poderá realizar postagens de seus produtos ou serviços, onde essas postagens será exibida ao usuário que poderá comprar, reservar, será especificado em contrato  de termos de uso ao fazer o cadastro da empresa nos módulos acima que 5% do valor de cada produto vendido ou reservado será para o Point Finder que é uma forma de gerar caixa por ter disponibilizado a plataforma ao dono do negócio para que possa divulgar o seu produto.
+
+Publicidade:
+Uma outra forma também será por meio de propagandas onde ao entrar em contato com a equipe do point Finder que será responsável por gerenciar as propagandas inseridas nos módulos, onde será feito um plano com o proprietário que deseja anunciar seu serviços. Os planos de publicidade são divididos em 3 níveis onde cada nível tem um valor determinado. O nível 1 será o mais básico a progandanda do serviço será exibida em somente um módulo, no nível 2 a propaganda será exibida em até 3 módulos, já no nível 3 será exibido em todos os módulos.</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
