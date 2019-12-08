@@ -141,6 +141,7 @@
             this.input_valor.Size = new System.Drawing.Size(200, 27);
             this.input_valor.TabIndex = 4;
             this.input_valor.TextChanged += new System.EventHandler(this.Input_valor_TextChanged);
+            this.input_valor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.input_valor_KeyPress);
             // 
             // label3
             // 
@@ -170,6 +171,7 @@
             this.tb_qtdprato.Size = new System.Drawing.Size(200, 27);
             this.tb_qtdprato.TabIndex = 2;
             this.tb_qtdprato.TextChanged += new System.EventHandler(this.Tb_qtdprato_TextChanged);
+            this.tb_qtdprato.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_qtdprato_KeyPress);
             // 
             // panel1
             // 
