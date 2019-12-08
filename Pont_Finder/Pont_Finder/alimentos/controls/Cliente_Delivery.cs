@@ -12,8 +12,10 @@ namespace Pont_Finder.alimentos.controls
 {
     public partial class Cliente_Delivery : UserControl
     {
-        public Cliente_Delivery()
+        private int IndexPedido;
+        public Cliente_Delivery(int idPedido)
         {
+            IndexPedido = idPedido;
             InitializeComponent();
         }
     }

@@ -70,6 +70,7 @@
             this.lbConfig2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.VerPedidos = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
@@ -577,6 +578,20 @@
             this.panel4.TabIndex = 73;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
+            // VerPedidos
+            // 
+            this.VerPedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.VerPedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VerPedidos.ForeColor = System.Drawing.Color.White;
+            this.VerPedidos.Location = new System.Drawing.Point(17, 215);
+            this.VerPedidos.Name = "VerPedidos";
+            this.VerPedidos.Size = new System.Drawing.Size(196, 35);
+            this.VerPedidos.TabIndex = 74;
+            this.VerPedidos.Text = "Visualizar Pedidos";
+            this.VerPedidos.UseVisualStyleBackColor = false;
+            this.VerPedidos.Visible = false;
+            this.VerPedidos.Click += new System.EventHandler(this.VerPedidos_Click);
+            // 
             // formAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -606,6 +621,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ListarEmpresas);
             this.Controls.Add(this.panel9);
+            this.Controls.Add(this.VerPedidos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
             this.MinimumSize = new System.Drawing.Size(1282, 675);
@@ -674,5 +690,6 @@
         private System.Windows.Forms.Label lbConfig2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button VerPedidos;
     }
 }

@@ -36,6 +36,7 @@ namespace Pont_Finder
                 {
                     Btn_Edit_Empresa.Visible = false;
                     btn_Config.Visible = true;
+                    VerPedidos.Visible = true;
                 }                
             }
             else btn_Config.Visible = false;
@@ -428,6 +429,12 @@ namespace Pont_Finder
         private void Panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void VerPedidos_Click(object sender, EventArgs e)
+        {
+            Lista_Pedidos pedidos = new Lista_Pedidos(CompanyList.verifEmp(Session.Cpf));
+            FormPrincipal.MudarForm("alimentos", pedidos);
         }
 
         public void GoPag(string p)

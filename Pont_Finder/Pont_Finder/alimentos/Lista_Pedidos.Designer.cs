@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.PedidoSelect = new System.Windows.Forms.Panel();
+            this.ListaClientes = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,8 +42,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.PedidoSelect);
+            this.panel1.Controls.Add(this.ListaClientes);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -52,19 +52,21 @@
             this.panel1.Size = new System.Drawing.Size(845, 1446);
             this.panel1.TabIndex = 0;
             // 
-            // panel3
+            // PedidoSelect
             // 
-            this.panel3.Location = new System.Drawing.Point(385, 173);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(415, 100);
-            this.panel3.TabIndex = 4;
+            this.PedidoSelect.AutoSize = true;
+            this.PedidoSelect.Location = new System.Drawing.Point(385, 173);
+            this.PedidoSelect.Name = "PedidoSelect";
+            this.PedidoSelect.Size = new System.Drawing.Size(415, 100);
+            this.PedidoSelect.TabIndex = 4;
             // 
-            // panel2
+            // ListaClientes
             // 
-            this.panel2.Location = new System.Drawing.Point(41, 173);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(315, 100);
-            this.panel2.TabIndex = 3;
+            this.ListaClientes.AutoScroll = true;
+            this.ListaClientes.Location = new System.Drawing.Point(41, 173);
+            this.ListaClientes.Name = "ListaClientes";
+            this.ListaClientes.Size = new System.Drawing.Size(315, 450);
+            this.ListaClientes.TabIndex = 3;
             // 
             // label3
             // 
@@ -130,8 +132,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel PedidoSelect;
+        private System.Windows.Forms.Panel ListaClientes;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

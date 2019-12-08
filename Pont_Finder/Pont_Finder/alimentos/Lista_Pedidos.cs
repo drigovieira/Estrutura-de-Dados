@@ -12,8 +12,10 @@ namespace Pont_Finder.alimentos
 {
     public partial class Lista_Pedidos : Form
     {
-        public Lista_Pedidos()
+        private int Empresa;
+        public Lista_Pedidos(int idEmpresa)
         {
+            Empresa = idEmpresa;
             InitializeComponent();
         }
     }
