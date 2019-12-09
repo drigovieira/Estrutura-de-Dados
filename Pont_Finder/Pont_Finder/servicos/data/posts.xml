@@ -85,4 +85,40 @@ Se por necessário realizar a troca de algum componente com defeito, o equipamen
     <data>2019-12-09T10:48:28.8287753-03:00</data>
     <likes></likes>
   </Post>
+  <Post>
+    <id>6</id>
+    <titulo>Aula particular</titulo>
+    <valor>120</valor>
+    <descricao>Aula particular de inglês ou Espanhol em casa com o professor Marcelo. Horários disponíveis: Segunda e Sexta das 17h às 19h.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//6.jpg</image>
+    <cpf>21513021052</cpf>
+    <cnpj>24259729000145</cnpj>
+    <data>2019-12-09T15:04:54.3839401-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>7</id>
+    <titulo>Curso de Francês</titulo>
+    <valor>150</valor>
+    <descricao>Turma de Francês com a professora Ingrid no período de 2 anos, do básico ao intermediário. Terça e Quinta das 9h às 11h.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//7.jpg</image>
+    <cpf>21513021052</cpf>
+    <cnpj>24259729000145</cnpj>
+    <data>2019-12-09T15:07:52.828305-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>8</id>
+    <titulo>Desenvolvimento ou correção de texto</titulo>
+    <valor>0</valor>
+    <descricao>Desenvolvimento ou correção de textos em Potuguês, Inglês, Francês, Espanhol e Russo.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//8.jpg</image>
+    <cpf>21513021052</cpf>
+    <cnpj>24259729000145</cnpj>
+    <data>2019-12-09T15:09:26.7753573-03:00</data>
+    <likes></likes>
+  </Post>
 </PostList>

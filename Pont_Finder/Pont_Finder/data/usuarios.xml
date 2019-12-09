@@ -120,4 +120,12 @@
     <image>..//..//data//images//users//43812136880.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Rafael Ferreira</nome>
+    <email>rafaelferreira@gmail.com</email>
+    <senha>123456</senha>
+    <cpf>21513021052</cpf>
+    <image>..//..//data//images//users//21513021052.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>
