@@ -141,7 +141,156 @@ namespace Pont_Finder.alimentos
                     maskedTextBox12.Enabled = true;
                 }
             }
-        }        
+        }
+        private void RbComidaJaponesa_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbComidaJaponesa.Checked == true)
+            {
+                categorias.Add("Comida Japonesa");
+            }
+            else
+            {
+                if (categorias.Contains("Comida Japonesa"))
+                {
+                    categorias.Remove("Comida Japonesa");
+                }
+            }
+        }
+
+        private void RbChurrascaria_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbChurrascaria.Checked == true)
+            {
+                categorias.Add("Churrascaria");
+            }
+            else
+            {
+                if (categorias.Contains("Churrascaria"))
+                {
+                    categorias.Remove("Churrascaria");
+                }
+            }
+        }
+
+        private void RbPizzaria_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbPizzaria.Checked == true)
+            {
+                categorias.Add("Pizzaria");
+            }
+            else
+            {
+                if (categorias.Contains("Pizzaria"))
+                {
+                    categorias.Remove("Pizzaria");
+                }
+            }
+        }
+
+        private void RbSorveteria_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbSorveteria.Checked == true)
+            {
+                categorias.Add("Sorveteria");
+            }
+            else
+            {
+                if (categorias.Contains("Sorveteria"))
+                {
+                    categorias.Remove("Sorveteria");
+                }
+            }
+        }
+
+        private void RbPetiscaria_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbPetiscaria.Checked == true)
+            {
+                categorias.Add("Petiscaria");
+            }
+            else
+            {
+                if (categorias.Contains("Petiscaria"))
+                {
+                    categorias.Remove("Petiscaria");
+                }
+            }
+        }
+
+        private void RbComidaItaliana_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbComidaItaliana.Checked == true)
+            {
+                categorias.Add("Comida Italiana");
+            }
+            else
+            {
+                if (categorias.Contains("Comida Italiana"))
+                {
+                    categorias.Remove("Comida Italiana");
+                }
+            }
+        }
+
+        private void RbHambúrgueria_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbHambúrgueria.Checked == true)
+            {
+                categorias.Add("Hambúrgueria");
+            }
+            else
+            {
+                if (categorias.Contains("Hambúrgueria"))
+                {
+                    categorias.Remove("Hambúrgueria");
+                }
+            }
+        }
+
+        private void RbFrutosDoMar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbFrutosDoMar.Checked == true)
+            {
+                categorias.Add("Frutos do Mar");
+            }
+            else
+            {
+                if (categorias.Contains("Frutos do Mar"))
+                {
+                    categorias.Remove("Frutos do Mar");
+                }
+            }
+        }
+
+        private void RbConvencional_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbConvencional.Checked == true)
+            {
+                categorias.Add("Convencional");
+            }
+            else
+            {
+                if (categorias.Contains("Convencional"))
+                {
+                    categorias.Remove("Convencional");
+                }
+            }
+        }
+
+        private void RbOutros_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbOutros.Checked == true)
+            {
+                categorias.Add("Outros");
+            }
+            else
+            {
+                if (categorias.Contains("Outros"))
+                {
+                    categorias.Remove("Outros");
+                }
+            }
+        }
 
         private void Editar_Restaurante_Load(object sender, EventArgs e)
         {
@@ -394,7 +543,117 @@ namespace Pont_Finder.alimentos
                                     funcionamentos.Add(funcio);
                                 }
 
-                                Company emp = new Company();
+                            if (rbComidaJaponesa.Checked == true)
+                            {
+                                categorias.Add("Comida Japonesa");
+                            }
+                            else
+                            {
+                                if (categorias.Contains("Comida Japonesa"))
+                                {
+                                    categorias.Remove("Comida Japonesa");
+                                }
+                            }
+                            if (rbChurrascaria.Checked == true)
+                            {
+                                categorias.Add("Churrascaria");
+                            }
+                            else
+                            {
+                                if (categorias.Contains("Churrascaria"))
+                                {
+                                    categorias.Remove("Churrascaria");
+                                }
+                            }
+                            if (rbPizzaria.Checked == true)
+                            {
+                                categorias.Add("Pizzaria");
+                            }
+                            else
+                            {
+                                if (categorias.Contains("Pizzaria"))
+                                {
+                                    categorias.Remove("Pizzaria");
+                                }
+                            }
+                            if (rbSorveteria.Checked == true)
+                            {
+                                categorias.Add("Sorveteria");
+                            }
+                            else
+                            {
+                                if (categorias.Contains("Sorveteria"))
+                                {
+                                    categorias.Remove("Sorveteria");
+                                }
+                            }
+                            if (rbPetiscaria.Checked == true)
+                            {
+                                categorias.Add("Petiscaria");
+                            }
+                            else
+                            {
+                                if (categorias.Contains("Petiscaria"))
+                                {
+                                    categorias.Remove("Petiscaria");
+                                }
+                            }
+                            if (rbComidaItaliana.Checked == true)
+                            {
+                                categorias.Add("Comida Italiana");
+                            }
+                            else
+                            {
+                                if (categorias.Contains("Comida Italiana"))
+                                {
+                                    categorias.Remove("Comida Italiana");
+                                }
+                            }
+                            if (rbHambúrgueria.Checked == true)
+                            {
+                                categorias.Add("Hambúrgueria");
+                            }
+                            else
+                            {
+                                if (categorias.Contains("Hambúrgueria"))
+                                {
+                                    categorias.Remove("Hambúrgueria");
+                                }
+                            }
+                            if (rbFrutosDoMar.Checked == true)
+                            {
+                                categorias.Add("Frutos do Mar");
+                            }
+                            else
+                            {
+                                if (categorias.Contains("Frutos do Mar"))
+                                {
+                                    categorias.Remove("Frutos do Mar");
+                                }
+                            }
+                            if (rbConvencional.Checked == true)
+                            {
+                                categorias.Add("Convencional");
+                            }
+                            else
+                            {
+                                if (categorias.Contains("Convencional"))
+                                {
+                                    categorias.Remove("Convencional");
+                                }
+                            }
+                            if (rbOutros.Checked == true)
+                            {
+                                categorias.Add("Outros");
+                            }
+                            else
+                            {
+                                if (categorias.Contains("Outros"))
+                                {
+                                    categorias.Remove("Outros");
+                                }
+                            }
+                            Company emp = new Company();
                             try
                             {
                                 emp.Nome = tbNomeEmpresa.Text;

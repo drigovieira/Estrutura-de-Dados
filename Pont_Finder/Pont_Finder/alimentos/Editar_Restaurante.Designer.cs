@@ -471,6 +471,7 @@
             this.rbOutros.TabIndex = 9;
             this.rbOutros.Text = "Outros";
             this.rbOutros.UseVisualStyleBackColor = true;
+            this.rbOutros.CheckedChanged += new System.EventHandler(this.RbOutros_CheckedChanged);
             // 
             // rbConvencional
             // 
@@ -482,6 +483,7 @@
             this.rbConvencional.TabIndex = 10;
             this.rbConvencional.Text = "Convencional";
             this.rbConvencional.UseVisualStyleBackColor = true;
+            this.rbConvencional.CheckedChanged += new System.EventHandler(this.RbConvencional_CheckedChanged);
             // 
             // rbFrutosDoMar
             // 
@@ -493,6 +495,7 @@
             this.rbFrutosDoMar.TabIndex = 8;
             this.rbFrutosDoMar.Text = "Frutos do Mar";
             this.rbFrutosDoMar.UseVisualStyleBackColor = true;
+            this.rbFrutosDoMar.CheckedChanged += new System.EventHandler(this.RbFrutosDoMar_CheckedChanged);
             // 
             // rbHambúrgueria
             // 
@@ -504,6 +507,7 @@
             this.rbHambúrgueria.TabIndex = 6;
             this.rbHambúrgueria.Text = "Hambúrgueria";
             this.rbHambúrgueria.UseVisualStyleBackColor = true;
+            this.rbHambúrgueria.CheckedChanged += new System.EventHandler(this.RbHambúrgueria_CheckedChanged);
             // 
             // rbComidaItaliana
             // 
@@ -515,6 +519,7 @@
             this.rbComidaItaliana.TabIndex = 7;
             this.rbComidaItaliana.Text = "Comida Italiana";
             this.rbComidaItaliana.UseVisualStyleBackColor = true;
+            this.rbComidaItaliana.CheckedChanged += new System.EventHandler(this.RbComidaItaliana_CheckedChanged);
             // 
             // rbPetiscaria
             // 
@@ -526,6 +531,7 @@
             this.rbPetiscaria.TabIndex = 5;
             this.rbPetiscaria.Text = "Petiscaria";
             this.rbPetiscaria.UseVisualStyleBackColor = true;
+            this.rbPetiscaria.CheckedChanged += new System.EventHandler(this.RbPetiscaria_CheckedChanged);
             // 
             // rbSorveteria
             // 
@@ -537,6 +543,7 @@
             this.rbSorveteria.TabIndex = 4;
             this.rbSorveteria.Text = "Sorveteria";
             this.rbSorveteria.UseVisualStyleBackColor = true;
+            this.rbSorveteria.CheckedChanged += new System.EventHandler(this.RbSorveteria_CheckedChanged);
             // 
             // rbComidaJaponesa
             // 
@@ -548,6 +555,7 @@
             this.rbComidaJaponesa.TabIndex = 2;
             this.rbComidaJaponesa.Text = "Comida Japonesa";
             this.rbComidaJaponesa.UseVisualStyleBackColor = true;
+            this.rbComidaJaponesa.CheckedChanged += new System.EventHandler(this.RbComidaJaponesa_CheckedChanged);
             // 
             // rbPizzaria
             // 
@@ -559,6 +567,7 @@
             this.rbPizzaria.TabIndex = 3;
             this.rbPizzaria.Text = "Pizzaria";
             this.rbPizzaria.UseVisualStyleBackColor = true;
+            this.rbPizzaria.CheckedChanged += new System.EventHandler(this.RbPizzaria_CheckedChanged);
             // 
             // rbChurrascaria
             // 
@@ -570,6 +579,7 @@
             this.rbChurrascaria.TabIndex = 1;
             this.rbChurrascaria.Text = "Churrascaria";
             this.rbChurrascaria.UseVisualStyleBackColor = true;
+            this.rbChurrascaria.CheckedChanged += new System.EventHandler(this.RbChurrascaria_CheckedChanged);
             // 
             // label4
             // 
