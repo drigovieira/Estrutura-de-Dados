@@ -129,7 +129,7 @@
             this.tb_solteiro.Location = new System.Drawing.Point(462, 617);
             this.tb_solteiro.Name = "tb_solteiro";
             this.tb_solteiro.Size = new System.Drawing.Size(80, 24);
-            this.tb_solteiro.TabIndex = 2;
+            this.tb_solteiro.TabIndex = 48;
             // 
             // tb_casal
             // 
@@ -137,7 +137,7 @@
             this.tb_casal.Location = new System.Drawing.Point(306, 617);
             this.tb_casal.Name = "tb_casal";
             this.tb_casal.Size = new System.Drawing.Size(80, 24);
-            this.tb_casal.TabIndex = 1;
+            this.tb_casal.TabIndex = 47;
             // 
             // label8
             // 
@@ -160,6 +160,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Solteiro";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -172,6 +173,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Outros";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.RadioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -184,6 +186,7 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Casal";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.Click += new System.EventHandler(this.RadioButton3_Click);
             // 
             // label11
             // 
@@ -215,7 +218,6 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 51);
             this.button1.TabIndex = 31;
-            this.button1.TabStop = false;
             this.button1.Text = "Adicionar Foto";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -227,7 +229,6 @@
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(415, 22);
             this.tb_nome.TabIndex = 0;
-            this.tb_nome.TextChanged += new System.EventHandler(this.Tb_nome_TextChanged);
             // 
             // pb_img_1
             // 
@@ -248,7 +249,6 @@
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(81, 18);
             this.checkBox7.TabIndex = 29;
-            this.checkBox7.TabStop = false;
             this.checkBox7.Text = "Espaço PET";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
@@ -269,7 +269,6 @@
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(50, 17);
             this.checkBox4.TabIndex = 28;
-            this.checkBox4.TabStop = false;
             this.checkBox4.Text = "Wi-Fi";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
@@ -283,7 +282,6 @@
             this.bt_cadastrar.Name = "bt_cadastrar";
             this.bt_cadastrar.Size = new System.Drawing.Size(127, 49);
             this.bt_cadastrar.TabIndex = 6;
-            this.bt_cadastrar.TabStop = false;
             this.bt_cadastrar.Text = "Alterar";
             this.bt_cadastrar.UseVisualStyleBackColor = false;
             this.bt_cadastrar.Click += new System.EventHandler(this.Bt_cadastrar_Click);
@@ -306,10 +304,8 @@
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(74, 18);
             this.checkBox5.TabIndex = 27;
-            this.checkBox5.TabStop = false;
             this.checkBox5.Text = "TV a cabo";
             this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // input_valor
             // 
@@ -318,7 +314,6 @@
             this.input_valor.Name = "input_valor";
             this.input_valor.Size = new System.Drawing.Size(200, 24);
             this.input_valor.TabIndex = 4;
-            this.input_valor.TextChanged += new System.EventHandler(this.Input_valor_TextChanged);
             // 
             // label3
             // 
@@ -338,7 +333,6 @@
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(92, 18);
             this.checkBox6.TabIndex = 26;
-            this.checkBox6.TabStop = false;
             this.checkBox6.Text = "Café da tarde";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
@@ -358,8 +352,7 @@
             this.tb_qtdquarto.Location = new System.Drawing.Point(322, 702);
             this.tb_qtdquarto.Name = "tb_qtdquarto";
             this.tb_qtdquarto.Size = new System.Drawing.Size(200, 24);
-            this.tb_qtdquarto.TabIndex = 3;
-            this.tb_qtdquarto.TextChanged += new System.EventHandler(this.Tb_qtdquarto_TextChanged);
+            this.tb_qtdquarto.TabIndex = 2;
             // 
             // checkBox1
             // 
@@ -368,7 +361,6 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(98, 17);
             this.checkBox1.TabIndex = 23;
-            this.checkBox1.TabStop = false;
             this.checkBox1.Text = "Café da manhã";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
@@ -380,7 +372,6 @@
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(62, 18);
             this.checkBox3.TabIndex = 25;
-            this.checkBox3.TabStop = false;
             this.checkBox3.Text = "Almoço";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
@@ -402,7 +393,6 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(104, 18);
             this.checkBox2.TabIndex = 24;
-            this.checkBox2.TabStop = false;
             this.checkBox2.Text = "Ar condicionado";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
