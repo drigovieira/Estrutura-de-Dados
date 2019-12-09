@@ -439,6 +439,10 @@ namespace Pont_Finder
 
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

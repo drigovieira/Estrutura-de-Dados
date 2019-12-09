@@ -481,5 +481,10 @@ namespace Pont_Finder.avalie
             }
 
         }
+
+        private void tb_localizacao_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

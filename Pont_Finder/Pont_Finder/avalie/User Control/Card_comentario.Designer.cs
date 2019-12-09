@@ -71,7 +71,7 @@
             this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
             this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.Location = new System.Drawing.Point(382, 47);
+            this.pb_down.Location = new System.Drawing.Point(344, 51);
             this.pb_down.Margin = new System.Windows.Forms.Padding(15);
             this.pb_down.Name = "pb_down";
             this.pb_down.Size = new System.Drawing.Size(25, 25);
@@ -85,7 +85,7 @@
             this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
             this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.Location = new System.Drawing.Point(382, 8);
+            this.pb_up.Location = new System.Drawing.Point(344, 15);
             this.pb_up.Margin = new System.Windows.Forms.Padding(15);
             this.pb_up.Name = "pb_up";
             this.pb_up.Size = new System.Drawing.Size(25, 25);
@@ -100,7 +100,7 @@
             this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_editar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_editar.ForeColor = System.Drawing.Color.White;
-            this.bt_editar.Location = new System.Drawing.Point(354, 125);
+            this.bt_editar.Location = new System.Drawing.Point(344, 96);
             this.bt_editar.Margin = new System.Windows.Forms.Padding(5);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(86, 28);
@@ -116,7 +116,7 @@
             this.bt_remover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_remover.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_remover.ForeColor = System.Drawing.Color.White;
-            this.bt_remover.Location = new System.Drawing.Point(354, 186);
+            this.bt_remover.Location = new System.Drawing.Point(344, 186);
             this.bt_remover.Margin = new System.Windows.Forms.Padding(5);
             this.bt_remover.Name = "bt_remover";
             this.bt_remover.Size = new System.Drawing.Size(86, 28);
@@ -129,7 +129,7 @@
             // 
             this.lb_deslike.AutoSize = true;
             this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_deslike.Location = new System.Drawing.Point(425, 56);
+            this.lb_deslike.Location = new System.Drawing.Point(392, 60);
             this.lb_deslike.Name = "lb_deslike";
             this.lb_deslike.Size = new System.Drawing.Size(15, 16);
             this.lb_deslike.TabIndex = 35;
@@ -139,7 +139,7 @@
             // 
             this.lb_like.AutoSize = true;
             this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_like.Location = new System.Drawing.Point(425, 17);
+            this.lb_like.Location = new System.Drawing.Point(392, 24);
             this.lb_like.Name = "lb_like";
             this.lb_like.Size = new System.Drawing.Size(15, 16);
             this.lb_like.TabIndex = 32;
@@ -158,6 +158,7 @@
             // comentarios
             // 
             this.comentarios.Enabled = false;
+            this.comentarios.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F);
             this.comentarios.Location = new System.Drawing.Point(8, 96);
             this.comentarios.Name = "comentarios";
             this.comentarios.Size = new System.Drawing.Size(310, 118);

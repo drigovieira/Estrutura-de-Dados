@@ -107,10 +107,11 @@
             // 
             this.lb_problema.AutoSize = true;
             this.lb_problema.BackColor = System.Drawing.Color.Transparent;
+            this.lb_problema.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F);
             this.lb_problema.Location = new System.Drawing.Point(117, 2);
             this.lb_problema.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_problema.Name = "lb_problema";
-            this.lb_problema.Size = new System.Drawing.Size(35, 13);
+            this.lb_problema.Size = new System.Drawing.Size(37, 14);
             this.lb_problema.TabIndex = 40;
             this.lb_problema.Text = "label1";
             // 
@@ -119,6 +120,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(10, 97);
             this.button1.Name = "button1";

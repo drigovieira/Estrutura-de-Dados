@@ -50,22 +50,23 @@
             this.bt_prox.BackColor = System.Drawing.Color.Transparent;
             this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_prox.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold);
             this.bt_prox.ForeColor = System.Drawing.Color.Black;
             this.bt_prox.Location = new System.Drawing.Point(770, 76);
             this.bt_prox.Name = "bt_prox";
             this.bt_prox.Size = new System.Drawing.Size(75, 23);
             this.bt_prox.TabIndex = 87;
-            this.bt_prox.Text = ">>";
+            this.bt_prox.Text = "→";
             this.bt_prox.UseVisualStyleBackColor = false;
             this.bt_prox.Click += new System.EventHandler(this.bt_prox_Click);
             // 
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
+            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F);
             this.lb_pag.Location = new System.Drawing.Point(484, 86);
             this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(39, 13);
+            this.lb_pag.Size = new System.Drawing.Size(39, 14);
             this.lb_pag.TabIndex = 88;
             this.lb_pag.Text = "lb_pag";
             // 
@@ -74,13 +75,13 @@
             this.bt_ant.BackColor = System.Drawing.Color.Transparent;
             this.bt_ant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ant.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold);
             this.bt_ant.ForeColor = System.Drawing.Color.Black;
             this.bt_ant.Location = new System.Drawing.Point(196, 76);
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(75, 23);
             this.bt_ant.TabIndex = 86;
-            this.bt_ant.Text = "<<";
+            this.bt_ant.Text = "←";
             this.bt_ant.UseVisualStyleBackColor = false;
             this.bt_ant.Click += new System.EventHandler(this.bt_ant_Click);
             // 
@@ -116,11 +117,11 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(10, 17);
+            this.label11.Location = new System.Drawing.Point(3, 3);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(166, 31);
+            this.label11.Size = new System.Drawing.Size(160, 36);
             this.label11.TabIndex = 86;
             this.label11.Text = "Meus Posts";
             // 
