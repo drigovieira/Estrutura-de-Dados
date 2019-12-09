@@ -50,17 +50,17 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.mkb_telefone = new System.Windows.Forms.MaskedTextBox();
-            this.mkb_cnpj = new System.Windows.Forms.MaskedTextBox();
-            this.btn_back = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.ckb_termos_uso = new System.Windows.Forms.CheckBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lb_descricao = new System.Windows.Forms.Label();
+            this.mkb_telefone = new System.Windows.Forms.MaskedTextBox();
+            this.mkb_cnpj = new System.Windows.Forms.MaskedTextBox();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -284,39 +284,6 @@
             this.panel3.Size = new System.Drawing.Size(625, 809);
             this.panel3.TabIndex = 34;
             // 
-            // mkb_telefone
-            // 
-            this.mkb_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mkb_telefone.Location = new System.Drawing.Point(105, 358);
-            this.mkb_telefone.Mask = "(99) 0000-00000";
-            this.mkb_telefone.Name = "mkb_telefone";
-            this.mkb_telefone.Size = new System.Drawing.Size(415, 22);
-            this.mkb_telefone.TabIndex = 4;
-            this.mkb_telefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            // 
-            // mkb_cnpj
-            // 
-            this.mkb_cnpj.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mkb_cnpj.Location = new System.Drawing.Point(109, 210);
-            this.mkb_cnpj.Mask = "99.999.999/9999-99";
-            this.mkb_cnpj.Name = "mkb_cnpj";
-            this.mkb_cnpj.Size = new System.Drawing.Size(411, 22);
-            this.mkb_cnpj.TabIndex = 2;
-            this.mkb_cnpj.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.White;
-            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
-            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.Location = new System.Drawing.Point(64, 225);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(40, 40);
-            this.btn_back.TabIndex = 37;
-            this.btn_back.TabStop = false;
-            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -358,9 +325,42 @@
             this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
             this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
+            this.lb_descricao.Size = new System.Drawing.Size(430, 546);
             this.lb_descricao.TabIndex = 69;
             this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
+            // 
+            // mkb_telefone
+            // 
+            this.mkb_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mkb_telefone.Location = new System.Drawing.Point(105, 358);
+            this.mkb_telefone.Mask = "(99) 0000-00000";
+            this.mkb_telefone.Name = "mkb_telefone";
+            this.mkb_telefone.Size = new System.Drawing.Size(415, 22);
+            this.mkb_telefone.TabIndex = 4;
+            this.mkb_telefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // mkb_cnpj
+            // 
+            this.mkb_cnpj.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mkb_cnpj.Location = new System.Drawing.Point(109, 210);
+            this.mkb_cnpj.Mask = "99.999.999/9999-99";
+            this.mkb_cnpj.Name = "mkb_cnpj";
+            this.mkb_cnpj.Size = new System.Drawing.Size(411, 22);
+            this.mkb_cnpj.TabIndex = 2;
+            this.mkb_cnpj.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(64, 225);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 37;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // CadEmpresa
             // 
@@ -387,9 +387,9 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
