@@ -108,6 +108,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.cbEntrega = new System.Windows.Forms.CheckBox();
             this.cbCardapio = new System.Windows.Forms.CheckBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel11.SuspendLayout();
@@ -420,6 +421,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Adicionar imagem";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // pb_icone
             // 
@@ -1014,6 +1016,10 @@
             this.cbCardapio.Text = "Utilizar serviço de exibição de Cardápio.";
             this.cbCardapio.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Editar_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1132,5 +1138,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.CheckBox cbEntrega;
         private System.Windows.Forms.CheckBox cbCardapio;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

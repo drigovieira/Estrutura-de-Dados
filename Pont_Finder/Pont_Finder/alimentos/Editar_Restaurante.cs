@@ -18,6 +18,7 @@ namespace Pont_Finder.alimentos
         private List<string> categorias = new List<string>();
         private List<Funcionamento> funcionamentos = new List<Funcionamento>();
         private int Empresa;
+        private bool img;
         public Editar_Restaurante(int idEmpresa)
         {
             Empresa = idEmpresa;
@@ -29,9 +30,10 @@ namespace Pont_Finder.alimentos
             tbNum.Text = CompanyList.selectAll()[idEmpresa].Numero.ToString();
             mkb_Tel.Text = CompanyList.selectAll()[idEmpresa].TelComercial.ToString();
             tbEmail.Text = CompanyList.selectAll()[idEmpresa].Email;
+            mkb_Cep.Text = CompanyList.selectAll()[idEmpresa].Cep.ToString();
             pb_icone.ImageLocation = CompanyList.selectAll()[idEmpresa].Image;
-            cbCardapio.Checked = true;
-            cbEntrega.Checked = true;
+            cbCardapio.Checked = CompanyList.selectAll()[idEmpresa].SttsCardapio;
+            cbEntrega.Checked = CompanyList.selectAll()[idEmpresa].SttsEntrega;
             maskedTextBox1.Text = CompanyList.selectAll()[idEmpresa].Taxa.ToString();
             foreach(var i in CompanyList.selectAll()[idEmpresa].Categoria)
             {
@@ -405,7 +407,7 @@ namespace Pont_Finder.alimentos
                                 emp.TelComercial = long.Parse(mkb_Tel.Text);
                                 emp.Email = tbEmail.Text;
                                 string link = "..//..//alimentos//data//image//empresas//offImage.jpg";
-                                if (true)
+                                if (img)
                                 {
                                     if (!Directory.Exists("..//..//alimentos//data//image//empresas"))
                                         Directory.CreateDirectory("..//..//alimentos//data//image//empresas");
@@ -438,6 +440,7 @@ namespace Pont_Finder.alimentos
                                 {
                                     emp.Taxa = float.Parse(maskedTextBox1.Text);
                                 }
+                                emp.Id = Empresa;
                                 CompanyList.alter(Empresa, emp);
                                 MessageBox.Show("Empresa Modificada!", "Status Operation:");
                                 if (cbCardapio.Checked == true)
@@ -466,6 +469,15 @@ namespace Pont_Finder.alimentos
                     }
 
                 }
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (openIcone.ShowDialog() == DialogResult.OK)
+            {
+                pb_icone.ImageLocation = openIcone.FileName;
+                img = true;
             }
         }
     }

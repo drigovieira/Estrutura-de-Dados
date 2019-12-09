@@ -49,13 +49,13 @@ namespace Pont_Finder.alimentos.classes
             avaliacao.Add(ava);
             avaliacao[avaliacao.IndexOf(ava)].Id = avaliacao.IndexOf(ava);
         }
-        public static void DelAvaliacao(long CPF)
+        public static void DelAvaliacao(long CPF, int ID)
         {
             try
             {                
                 foreach(var rem in avaliacao)
                 {                    
-                        if (rem.Cpf == CPF)
+                        if (rem.Cpf == CPF && rem.IndexEmp == ID)
                         {
                             avaliacao.Remove(rem);
                         }
