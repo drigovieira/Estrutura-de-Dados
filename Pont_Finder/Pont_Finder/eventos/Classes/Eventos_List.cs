@@ -24,6 +24,7 @@ namespace Pont_Finder.eventos.Classes
                 if (item.Id == postId)
                 {
                     pos.Id = item.Id;
+                    pos.IdEmp = item.IdEmp;
                     pos.IngressosTotal = item.IngressosTotal;
                     pos.IngressoDispinivel = item.IngressoDispinivel;
                     pos.Nome = item.Nome;
@@ -64,6 +65,7 @@ namespace Pont_Finder.eventos.Classes
                 {
                     CoEvento pos = new CoEvento();
                     pos.Id = item.Id;
+                    pos.IdEmp = item.IdEmp;
                     pos.IngressosTotal = item.IngressosTotal;
                     pos.IngressoDispinivel = item.IngressoDispinivel;
                     pos.Nome = item.Nome;
@@ -114,6 +116,7 @@ namespace Pont_Finder.eventos.Classes
                     {
                         CoEvento pos = new CoEvento();
                         pos.Id = item.Id;
+                        pos.IdEmp = item.IdEmp;
                         pos.IngressosTotal = item.IngressosTotal;
                         pos.IngressoDispinivel = item.IngressoDispinivel;
                         pos.Nome = item.Nome;
@@ -144,6 +147,7 @@ namespace Pont_Finder.eventos.Classes
             CoEvento pos = new CoEvento();
 
             pos.Id = post.Id;
+            pos.IdEmp = post.IdEmp;
             pos.IngressosTotal = post.IngressosTotal;
             pos.IngressoDispinivel = post.IngressoDispinivel;
             pos.Nome = post.Nome;
@@ -200,6 +204,7 @@ namespace Pont_Finder.eventos.Classes
                 XElement post =
                       new XElement("postagem",
                       new XElement("id", item.Id),
+                      new XElement("idEmp", item.IdEmp),
                       new XElement("ingresso_total", item.IngressosTotal),
                       new XElement("ingresso_disponivel", item.IngressoDispinivel),
                       new XElement("nome", item.Nome),
@@ -235,6 +240,7 @@ namespace Pont_Finder.eventos.Classes
                 CoEvento postar = new CoEvento();
 
                 postar.Id = long.Parse(item.Element("id").Value);
+                postar.IdEmp = long.Parse(item.Element("idEmp").Value);
                 postar.IngressosTotal = int.Parse(item.Element("ingresso_total").Value);
                 postar.IngressoDispinivel = int.Parse(item.Element("ingresso_disponivel").Value);
                 postar.Nome = (item.Element("nome").Value);

@@ -13,7 +13,7 @@
     <valor>800</valor>
     <foto>..//..//hospedagem//data//images//empresas//11111111111111//quartos//0//Monster.jpg</foto>
     <estado>Disponivel</estado>
-    <status>true</status>
+    <status>false</status>
   </quarto>
   <quarto>
     <id>1</id>
@@ -28,7 +28,7 @@
     <valor>600</valor>
     <foto>..//..//hospedagem//data//images//empresas//11111111111111//quartos//1//Espasr.jpg</foto>
     <estado>Disponivel</estado>
-    <status>true</status>
+    <status>false</status>
   </quarto>
   <quarto>
     <id>2</id>
