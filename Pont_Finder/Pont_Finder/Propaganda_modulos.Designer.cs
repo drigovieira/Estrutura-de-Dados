@@ -38,9 +38,9 @@
             // 
             // pb_propaganda1
             // 
-            this.pb_propaganda1.Location = new System.Drawing.Point(23, 19);
+            this.pb_propaganda1.Location = new System.Drawing.Point(23, 20);
             this.pb_propaganda1.Name = "pb_propaganda1";
-            this.pb_propaganda1.Size = new System.Drawing.Size(256, 140);
+            this.pb_propaganda1.Size = new System.Drawing.Size(250, 140);
             this.pb_propaganda1.TabIndex = 0;
             this.pb_propaganda1.TabStop = false;
             // 
@@ -51,6 +51,10 @@
             this.pb_propaganda2.Size = new System.Drawing.Size(256, 140);
             this.pb_propaganda2.TabIndex = 1;
             this.pb_propaganda2.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Propaganda_modulos
             // 
