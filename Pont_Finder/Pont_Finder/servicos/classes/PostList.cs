@@ -265,10 +265,52 @@ namespace Pont_Finder.servicos.classes
             }
         }
 
+        public static List<Post> top()
+        {
+            int[] ids = new int[posts.Count];
+            long[] likes = new long[posts.Count];
+
+            int cont = 0;
+            foreach (var item in posts)
+            {
+                ids[cont] = item.Id;
+                likes[cont] = item.Joinha;
+                cont++;
+            }
+
+            for (int i = 0; i < likes.Length; i++)
+            {
+                for (int j = 0; j < likes.Length; j++)
+                {
+                    if (likes[i] < likes[j])
+                    {
+                        long like = likes[i];
+                        likes[i] = likes[j];
+                        likes[j] = like;
+
+                        int id = ids[i];
+                        ids[i] = ids[j];
+                        ids[j] = id;
+                    }
+                }
+            }
+
+            List<Post> top = new List<Post>();
+            foreach (var item in ids)
+            {
+                top.Add(ForId(item));
+            }        
+            top.Reverse();
+
+            return top;
+        }
 
 
 
 
 
-    }
+
+
+
+        }
 }

@@ -138,7 +138,7 @@ namespace Pont_Finder.servicos
             tb_pesquisar.Text = "Pesquisar";
         }
 
-
+        
         private void Bt_ant_Click(object sender, EventArgs e)
         {
             GoPag("anterior");
@@ -469,6 +469,13 @@ namespace Pont_Finder.servicos
         private void Bt_solicitados_Click(object sender, EventArgs e)
         {
             FormPrincipal.MudarForm("servicos", new FormSolicitados());
+        }
+
+        private void Button1_Click_3(object sender, EventArgs e)
+        {
+            ListaDePost.Clear();
+            ListaDePost = classes.PostList.top();
+            Pesquisa();
         }
     }
 }
