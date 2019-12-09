@@ -37,5 +37,11 @@ namespace Pont_Finder.alimentos
                 PedidoSelect.Controls.Add(dados);
             }
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            formAlimentos homeAlimentos = new formAlimentos();
+            FormPrincipal.MudarForm("alimentos", homeAlimentos);
+        }
     }
 }

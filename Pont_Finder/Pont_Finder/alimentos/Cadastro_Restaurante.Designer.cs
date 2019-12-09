@@ -405,13 +405,13 @@
             // 
             this.lb_descricao.AutoSize = true;
             this.lb_descricao.BackColor = System.Drawing.Color.Transparent;
-            this.lb_descricao.Font = new System.Drawing.Font("Dubai", 9F);
+            this.lb_descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lb_descricao.Location = new System.Drawing.Point(4, 2);
             this.lb_descricao.Margin = new System.Windows.Forms.Padding(5, 3, 5, 5);
             this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
             this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
+            this.lb_descricao.Size = new System.Drawing.Size(430, 420);
             this.lb_descricao.TabIndex = 69;
             this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
             // 
