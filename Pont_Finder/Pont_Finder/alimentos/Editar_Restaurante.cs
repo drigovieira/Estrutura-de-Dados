@@ -17,6 +17,7 @@ namespace Pont_Finder.alimentos
         {
             Empresa = idEmpresa;
             InitializeComponent();
+            tbNomeEmpresa.Text = CompanyList.selectAll()[idEmpresa].Nome;
         }
 
         private void Editar_Restaurante_Load(object sender, EventArgs e)
@@ -52,6 +53,12 @@ namespace Pont_Finder.alimentos
         private void TbEmail_TextChanged(object sender, EventArgs e)
         {
             tbEmail.MaxLength = 50;
+        }
+
+        private void Btn_back_Click(object sender, EventArgs e)
+        {
+            formAlimentos home = new formAlimentos();
+            FormPrincipal.MudarForm("alimentos", home);
         }
     }
 }
