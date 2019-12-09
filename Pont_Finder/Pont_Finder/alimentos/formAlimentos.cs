@@ -539,22 +539,22 @@ namespace Pont_Finder
 
         private void LbConfig1_MouseMove(object sender, MouseEventArgs e)
         {
-            lbConfig1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(139)))));
+            lbConfig1.BackColor = System.Drawing.Color.Red;
         }
 
         private void LbConfig1_MouseLeave(object sender, EventArgs e)
         {
-            lbConfig1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            lbConfig1.BackColor = System.Drawing.Color.Red;
         }
 
         private void LbConfig2_MouseMove(object sender, MouseEventArgs e)
         {
-            lbConfig2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(139)))));
+            lbConfig2.BackColor = System.Drawing.Color.Red;
         }
 
         private void LbConfig2_MouseLeave(object sender, EventArgs e)
         {
-            lbConfig2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            lbConfig2.BackColor = System.Drawing.Color.Red;
         }
 
         private void LbConfig1_Click(object sender, EventArgs e)

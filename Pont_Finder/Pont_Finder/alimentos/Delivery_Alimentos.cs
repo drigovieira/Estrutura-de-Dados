@@ -73,13 +73,13 @@ namespace Pont_Finder.alimentos
             {
                 label20.Visible = true;
                 checkBox1.Visible = true;
-                Troco.Visible = true;                
+                textBox2.Visible = true;                
             }
             else
             {
                 label20.Visible = false;
                 checkBox1.Visible = false;
-                Troco.Visible = false;                
+                textBox2.Visible = false;                
             }
         }
 
@@ -89,15 +89,15 @@ namespace Pont_Finder.alimentos
             {
                 label20.Visible = false;
                 checkBox1.Visible = false;
-                Troco.Visible = false;                
+                textBox2.Visible = false;                
                 checkBox1.Checked = false;
-                Troco.Clear();
+                textBox2.Clear();
             }
             else
             {
                 label20.Visible = true;
                 checkBox1.Visible = true;
-                Troco.Visible = true;                
+                textBox2.Visible = true;                
             }
         }
 
@@ -155,12 +155,22 @@ namespace Pont_Finder.alimentos
         {
             if(checkBox1.Checked == true)
             {
-                Troco.Visible = true;
+                textBox2.Visible = true;
             }
             else
             {
-                Troco.Visible = false;
+                textBox2.Visible = false;
             }
+        }
+
+        private void Troco_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar);
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar);
         }
     }
 }

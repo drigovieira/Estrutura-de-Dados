@@ -57,7 +57,6 @@
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
-            this.Troco = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -71,6 +70,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cancelar = new System.Windows.Forms.Button();
             this.Solicitar = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -367,8 +367,8 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.textBox2);
             this.panel5.Controls.Add(this.label20);
-            this.panel5.Controls.Add(this.Troco);
             this.panel5.Controls.Add(this.maskedTextBox1);
             this.panel5.Controls.Add(this.checkBox1);
             this.panel5.Controls.Add(this.textBox3);
@@ -394,17 +394,6 @@
             this.label20.Size = new System.Drawing.Size(249, 16);
             this.label20.TabIndex = 62;
             this.label20.Text = "(Marque somente caso seja necessário troco)*";
-            // 
-            // Troco
-            // 
-            this.Troco.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Troco.Location = new System.Drawing.Point(222, 270);
-            this.Troco.Mask = "0000";
-            this.Troco.Name = "Troco";
-            this.Troco.Size = new System.Drawing.Size(100, 24);
-            this.Troco.TabIndex = 61;
-            this.Troco.ValidatingType = typeof(int);
-            this.Troco.Visible = false;
             // 
             // maskedTextBox1
             // 
@@ -540,6 +529,14 @@
             this.Solicitar.UseVisualStyleBackColor = false;
             this.Solicitar.Click += new System.EventHandler(this.Solicitar_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(231, 273);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 63;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            // 
             // Delivery_Alimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -615,9 +612,9 @@
         private System.Windows.Forms.ListBox Pedidos;
         private System.Windows.Forms.Button cancelar;
         private System.Windows.Forms.Button Solicitar;
-        private System.Windows.Forms.MaskedTextBox Troco;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

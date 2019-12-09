@@ -181,7 +181,7 @@ namespace Pont_Finder.alimentos
                                     emp.Cpf = Session.Cpf;
                                     if (cbEntrega.Checked == true)
                                     {
-                                        emp.Taxa = float.Parse(maskedTextBox1.Text);
+                                        emp.Taxa = float.Parse(textBox1.Text);
                                     }
                                     CompanyList.CompAdd(emp);
 
@@ -505,7 +505,7 @@ namespace Pont_Finder.alimentos
                 cbEntrega.Visible = true;
             }
             else { cbEntrega.Visible = false; label15.Visible = false;
-                maskedTextBox1.Visible = false; maskedTextBox1.Clear(); btnCad.Text = "Cadastrar"; }
+                textBox1.Visible = false; textBox1.Clear(); btnCad.Text = "Cadastrar"; }
         }        
 
         private void CbEntregaSim_CheckedChanged(object sender, EventArgs e)
@@ -513,12 +513,12 @@ namespace Pont_Finder.alimentos
             if (cbEntrega.Checked == true)
             {                
                 label15.Visible = true;
-                maskedTextBox1.Visible = true;
+                textBox1.Visible = true;
             }
             else {
                 label15.Visible = false;
-                maskedTextBox1.Visible = false;
-                maskedTextBox1.Clear();
+                textBox1.Visible = false;
+                textBox1.Clear();
             }
         }
 
@@ -675,6 +675,11 @@ namespace Pont_Finder.alimentos
             {
                 mkb_Tel.Mask = "(00)0000-0000";
             }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar);
         }
     }
 }
