@@ -40,6 +40,7 @@ namespace Pont_Finder.classes
 
             //alimentos
             alimentos.CompanyList.XmlLoad();
+            alimentos.classes.EvaluationList.XmlLoad();
             //fim Alimentos
 
 
@@ -75,6 +76,7 @@ namespace Pont_Finder.classes
 
             //alimentos
             alimentos.CompanyList.XmlSave();
+            alimentos.classes.EvaluationList.XmlSave();
             //fim Alimentos
 
         }

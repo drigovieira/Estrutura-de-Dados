@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Pont_Finder.alimentos.classes
 {
     class EvaluationList
     {
         private static List<Evaluation> avaliacao = new List<Evaluation>();
-
         public static List<Company> TopList(List<Company> FiltroList)
         {
             List<Company> topList = new List<Company>();
@@ -95,6 +96,54 @@ namespace Pont_Finder.alimentos.classes
         public static List<Evaluation> selectAll()
         {
             return avaliacao;
+        }
+        public static void XmlLoad()
+        {
+            string caminho = "..\\..\\alimentos\\data\\evaluation.xml";
+            XDocument doc = XDocument.Load(caminho);
+            
+            foreach(var item in doc.Descendants("evaluation"))
+            {
+                Evaluation ava = new Evaluation();
+                ava.Id = int.Parse(item.Element("id").Value);
+                ava.IndexEmp = int.Parse(item.Element("idEmpresa").Value);
+                ava.Nota = int.Parse(item.Element("nota").Value);
+                ava.Tipo = item.Element("tipo").Value;
+                avaliacao.Add(ava);
+            }
+        }
+        public static void XmlSave()
+        {
+            XmlDrop();
+            string caminho = "..\\..\\alimentos\\data\\evaluation.xml";
+            foreach(var item in avaliacao)
+            {
+                XElement xava =
+                    new XElement("evaluation",
+                    new XElement("id", item.Id),
+                    new XElement("idEmpresa", item.IndexEmp),
+                    new XElement("nota", item.Nota),
+                    new XElement("tipo", item.Tipo));
+                XDocument doc = XDocument.Load(caminho);
+                doc.Root.Add(xava);
+                doc.Save(caminho);
+            }
+
+        }
+        public static void XmlDrop()
+        {
+            string caminho = "..\\..\\alimentos\\data\\evaluation.xml";
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.Load(caminho);
+
+            XDocument xdoc = XDocument.Load(caminho);
+
+            foreach (var item in xdoc.Descendants("evaluation"))
+            {
+                XmlNode node = xmldoc.SelectSingleNode("/EvaluationList/evaluation");
+                node.ParentNode.RemoveChild(node);
+            }
+            xmldoc.Save(caminho);
         }
     }
 }
