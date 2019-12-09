@@ -89,10 +89,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(84, 6);
+            this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(74, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(149, 21);
+            this.label13.Size = new System.Drawing.Size(195, 25);
             this.label13.TabIndex = 0;
             this.label13.Text = "Propaganda Externa";
             this.label13.Click += new System.EventHandler(this.label13_Click);
@@ -361,10 +362,11 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(84, 0);
+            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(64, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(159, 21);
+            this.label15.Size = new System.Drawing.Size(205, 25);
             this.label15.TabIndex = 1;
             this.label15.Text = "Propaganda modulos";
             // 

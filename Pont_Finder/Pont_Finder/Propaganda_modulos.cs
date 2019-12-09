@@ -29,6 +29,8 @@ namespace Pont_Finder
             texto.Add("Alimentos");
             imagePropaganda.Add(new Bitmap("..\\..\\data\\images\\propagandas\\entre_modulos\\5.png"));
             texto.Add("Alimentos");
+            imagePropaganda.Add(new Bitmap("..\\..\\data\\images\\propagandas\\entre_modulos\\6.png"));
+            texto.Add("Serviços");
 
         }
 
@@ -65,6 +67,10 @@ namespace Pont_Finder
             if (texto[cont] == "Eventos")
             {
                 FormPrincipal.MudarForm("eventos", new eventos.FormEventos());
+            }
+            if (texto[cont] == "Serviços")
+            {
+                FormPrincipal.MudarForm("servicos", new servicos.FormServicos());
             }
 
         }

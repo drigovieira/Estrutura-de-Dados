@@ -45,21 +45,17 @@
             this.label23 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel_center = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.painel_propaganda = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pn_propa_externa = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.bt_prox = new System.Windows.Forms.Button();
             this.lb_pag = new System.Windows.Forms.Label();
             this.bt_ant = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.painel_propaganda.SuspendLayout();
+            this.pn_propa_externa.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_fai
@@ -132,7 +128,7 @@
             // panel7
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 1292);
+            this.panel7.Location = new System.Drawing.Point(0, 1092);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1265, 100);
             this.panel7.TabIndex = 26;
@@ -239,77 +235,43 @@
             this.panel_center.Size = new System.Drawing.Size(625, 0);
             this.panel_center.TabIndex = 44;
             // 
-            // panel4
+            // painel_propaganda
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
-            this.panel4.Controls.Add(this.panel9);
-            this.panel4.Controls.Add(this.panel10);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(950, 942);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 350);
-            this.panel4.TabIndex = 46;
-            // 
-            // panel9
-            // 
-            this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
-            this.panel9.Location = new System.Drawing.Point(30, 186);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(250, 140);
-            this.panel9.TabIndex = 8;
-            // 
-            // panel10
-            // 
-            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
-            this.panel10.Location = new System.Drawing.Point(30, 28);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(250, 140);
-            this.panel10.TabIndex = 7;
+            this.painel_propaganda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
+            this.painel_propaganda.Controls.Add(this.label2);
+            this.painel_propaganda.Location = new System.Drawing.Point(950, 842);
+            this.painel_propaganda.Name = "painel_propaganda";
+            this.painel_propaganda.Size = new System.Drawing.Size(310, 250);
+            this.painel_propaganda.TabIndex = 46;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(84, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(61, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 21);
+            this.label2.Size = new System.Drawing.Size(205, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Propaganda modulos";
             // 
-            // panel5
+            // pn_propa_externa
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
-            this.panel5.Controls.Add(this.panel1);
-            this.panel5.Controls.Add(this.panel3);
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Location = new System.Drawing.Point(950, 586);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 350);
-            this.panel5.TabIndex = 45;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Location = new System.Drawing.Point(30, 191);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 140);
-            this.panel1.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Location = new System.Drawing.Point(30, 33);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(250, 140);
-            this.panel3.TabIndex = 5;
+            this.pn_propa_externa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(78)))), ((int)(((byte)(210)))));
+            this.pn_propa_externa.Controls.Add(this.label8);
+            this.pn_propa_externa.Location = new System.Drawing.Point(950, 586);
+            this.pn_propa_externa.Name = "pn_propa_externa";
+            this.pn_propa_externa.Size = new System.Drawing.Size(310, 250);
+            this.pn_propa_externa.TabIndex = 45;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(84, 0);
+            this.label8.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(71, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(149, 21);
+            this.label8.Size = new System.Drawing.Size(195, 25);
             this.label8.TabIndex = 0;
             this.label8.Text = "Propaganda Externa";
             // 
@@ -318,8 +280,8 @@
             this.bt_prox.BackColor = System.Drawing.Color.Transparent;
             this.bt_prox.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_prox.ForeColor = System.Drawing.Color.Black;
+            this.bt_prox.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_prox.ForeColor = System.Drawing.Color.White;
             this.bt_prox.Location = new System.Drawing.Point(867, 252);
             this.bt_prox.Name = "bt_prox";
             this.bt_prox.Size = new System.Drawing.Size(75, 23);
@@ -362,8 +324,8 @@
             this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_ant);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.painel_propaganda);
+            this.Controls.Add(this.pn_propa_externa);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.label22);
@@ -383,10 +345,10 @@
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.painel_propaganda.ResumeLayout(false);
+            this.painel_propaganda.PerformLayout();
+            this.pn_propa_externa.ResumeLayout(false);
+            this.pn_propa_externa.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,17 +370,13 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel_center;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel painel_propaganda;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pn_propa_externa;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button bt_pesquisar;
         private System.Windows.Forms.Button bt_prox;
         private System.Windows.Forms.Label lb_pag;
         private System.Windows.Forms.Button bt_ant;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
     }
 }

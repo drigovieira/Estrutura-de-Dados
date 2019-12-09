@@ -54,11 +54,12 @@
             // lb_texto
             // 
             this.lb_texto.AutoSize = true;
+            this.lb_texto.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_texto.Location = new System.Drawing.Point(23, 183);
             this.lb_texto.MaximumSize = new System.Drawing.Size(250, 0);
             this.lb_texto.MinimumSize = new System.Drawing.Size(250, 0);
             this.lb_texto.Name = "lb_texto";
-            this.lb_texto.Size = new System.Drawing.Size(250, 13);
+            this.lb_texto.Size = new System.Drawing.Size(250, 17);
             this.lb_texto.TabIndex = 1;
             this.lb_texto.Text = "label1";
             this.lb_texto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

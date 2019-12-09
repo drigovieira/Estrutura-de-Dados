@@ -23,7 +23,7 @@ namespace Pont_Finder
             imagePropaganda.Add(new Bitmap("..\\..\\data\\images\\propagandas\\externa\\2.png"));
             texto.Add("Mochila Medium");
             imagePropaganda.Add(new Bitmap("..\\..\\data\\images\\propagandas\\externa\\3.png"));
-            texto.Add("shoes");
+            texto.Add("Shoes");
             imagePropaganda.Add(new Bitmap("..\\..\\data\\images\\propagandas\\externa\\4.png"));
             texto.Add("Mochila Big");
         }
