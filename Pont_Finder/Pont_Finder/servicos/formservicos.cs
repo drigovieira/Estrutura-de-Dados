@@ -43,8 +43,19 @@ namespace Pont_Finder.servicos
 
         private void Formservicos_Load(object sender, EventArgs e)
         {
-         
-          
+            panel_tops.Controls.Clear();
+            int i = 0;
+            y = 5;
+            foreach (var item in classes.PostList.top())
+            {
+                if (i >= 5)
+                    break;
+                User_control.ControlTops a = new User_control.ControlTops(item.Id);
+                a.Location = new Point(6, (y));
+                y = y + a.Height + 5;
+
+                panel_tops.Controls.Add(a);
+            }
         }
 
    

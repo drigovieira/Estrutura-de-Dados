@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormServicos));
-            this.panel_right = new System.Windows.Forms.Panel();
+            this.panel_tops = new System.Windows.Forms.Panel();
             this.bt_sogestao = new System.Windows.Forms.Button();
             this.bt_empresa = new System.Windows.Forms.Button();
             this.menu = new System.Windows.Forms.Panel();
@@ -57,10 +57,10 @@
             this.rb_recente = new System.Windows.Forms.RadioButton();
             this.rb_antigo = new System.Windows.Forms.RadioButton();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.rb_categoria = new System.Windows.Forms.RadioButton();
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_proxFull = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.menu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -69,13 +69,13 @@
             this.panel_left.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel_right
+            // panel_tops
             // 
-            this.panel_right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
-            this.panel_right.Location = new System.Drawing.Point(950, 297);
-            this.panel_right.Name = "panel_right";
-            this.panel_right.Size = new System.Drawing.Size(310, 259);
-            this.panel_right.TabIndex = 16;
+            this.panel_tops.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.panel_tops.Location = new System.Drawing.Point(950, 297);
+            this.panel_tops.Name = "panel_tops";
+            this.panel_tops.Size = new System.Drawing.Size(310, 371);
+            this.panel_tops.TabIndex = 16;
             // 
             // bt_sogestao
             // 
@@ -145,7 +145,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 1269);
+            this.panel2.Location = new System.Drawing.Point(0, 1261);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 20;
@@ -253,7 +253,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(950, 919);
+            this.panel8.Location = new System.Drawing.Point(950, 911);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(310, 350);
             this.panel8.TabIndex = 45;
@@ -272,9 +272,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
             this.panel4.Controls.Add(this.label13);
-            this.panel4.Location = new System.Drawing.Point(950, 562);
+            this.panel4.Location = new System.Drawing.Point(950, 674);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 350);
+            this.panel4.Size = new System.Drawing.Size(310, 231);
             this.panel4.TabIndex = 44;
             // 
             // label13
@@ -407,6 +407,16 @@
             this.panel_left.Size = new System.Drawing.Size(310, 259);
             this.panel_left.TabIndex = 15;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(7, 224);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(288, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Top 5";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_3);
+            // 
             // rb_categoria
             // 
             this.rb_categoria.AutoSize = true;
@@ -449,16 +459,6 @@
             this.bt_proxFull.UseVisualStyleBackColor = false;
             this.bt_proxFull.Click += new System.EventHandler(this.Bt_proxFull_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(7, 224);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(288, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Top 5";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_3);
-            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -479,7 +479,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.menu);
             this.Controls.Add(this.panel_center);
-            this.Controls.Add(this.panel_right);
+            this.Controls.Add(this.panel_tops);
             this.Controls.Add(this.panel_left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1282, 675);
@@ -503,7 +503,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel_right;
+        private System.Windows.Forms.Panel panel_tops;
         private System.Windows.Forms.Button bt_empresa;
         private System.Windows.Forms.Button bt_sogestao;
         private System.Windows.Forms.Panel menu;
