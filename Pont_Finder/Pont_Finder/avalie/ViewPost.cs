@@ -116,7 +116,7 @@ namespace Pont_Finder.avalie
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.CacheOnly;
 
             //LOCALIZAÇÃO DO CACHE
-            gMapControl1.CacheLocation = @"F:\GMAP\GmapCache";
+            gMapControl1.CacheLocation = @"D:\GMAP\GmapCache";
 
             // Inicia o mapa nas coordernadas correspondentes a cidade de cruzeiro.
             gMapControl1.Position = new GMap.NET.PointLatLng(-22.5785104945075, -44.959659576416);
