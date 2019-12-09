@@ -89,8 +89,12 @@ namespace Pont_Finder.hospedagem
             }
 
             Propaganda_modulos prop = new Propaganda_modulos();
-            prop.Location = new Point(5, 5);
+            prop.Location = new Point(5, 25);
             painel_propaganda.Controls.Add(prop);
+
+            Propaganda_externa propexter = new Propaganda_externa();
+            propexter.Location = new Point(5, 25);
+            pn_propa_externa.Controls.Add(propexter);
 
         }
 
@@ -118,8 +122,7 @@ namespace Pont_Finder.hospedagem
 
         private void Btn_Edit_Empresa_Click(object sender, EventArgs e)
         {
-            hospedagem.Editar_Empresa edita_empresa = new Editar_Empresa(new Hosp_Home());
-            FormPrincipal.MudarForm("hospedagem", edita_empresa);
+            MessageBox.Show("EDITAR EMPRESA");
         }
 
         private void bt_gerenciar_quartos_Click(object sender, EventArgs e)

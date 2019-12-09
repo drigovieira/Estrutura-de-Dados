@@ -61,8 +61,6 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pn_propa_externa = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -355,7 +353,7 @@
             // 
             this.painel_propaganda.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.painel_propaganda.Controls.Add(this.label15);
-            this.painel_propaganda.Location = new System.Drawing.Point(950, 986);
+            this.painel_propaganda.Location = new System.Drawing.Point(950, 889);
             this.painel_propaganda.Name = "painel_propaganda";
             this.painel_propaganda.Size = new System.Drawing.Size(310, 245);
             this.painel_propaganda.TabIndex = 38;
@@ -364,7 +362,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(84, 221);
+            this.label15.Location = new System.Drawing.Point(84, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(159, 21);
             this.label15.TabIndex = 1;
@@ -455,29 +453,11 @@
             // pn_propa_externa
             // 
             this.pn_propa_externa.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.pn_propa_externa.Controls.Add(this.panel6);
-            this.pn_propa_externa.Controls.Add(this.panel2);
             this.pn_propa_externa.Controls.Add(this.label13);
             this.pn_propa_externa.Location = new System.Drawing.Point(950, 630);
             this.pn_propa_externa.Name = "pn_propa_externa";
-            this.pn_propa_externa.Size = new System.Drawing.Size(310, 350);
+            this.pn_propa_externa.Size = new System.Drawing.Size(310, 245);
             this.pn_propa_externa.TabIndex = 32;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.Location = new System.Drawing.Point(31, 195);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 140);
-            this.panel6.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Location = new System.Drawing.Point(31, 37);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 140);
-            this.panel2.TabIndex = 1;
             // 
             // panel5
             // 
@@ -500,7 +480,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1231);
+            this.panel1.Location = new System.Drawing.Point(0, 1134);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 44;
@@ -741,7 +721,5 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel2;
     }
 }
