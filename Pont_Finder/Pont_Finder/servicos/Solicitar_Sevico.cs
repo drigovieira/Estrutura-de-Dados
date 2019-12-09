@@ -55,6 +55,8 @@ namespace Pont_Finder.servicos
 
         private void Bt_solicitar_Click(object sender, EventArgs e)
         {
+            
+
             if (tb_rua.Text.Length < 5)
                 MessageBox.Show("O campo Rua não foi preenchido corretamente");
             else if (tb_bairro.Text.Length < 5)
@@ -63,10 +65,10 @@ namespace Pont_Finder.servicos
                 MessageBox.Show("O campo Cep não foi preenchido corretamente");
             else if (tb_descricao.Text.Length < 10)
                 MessageBox.Show("O campo Descrição não foi preenchido corretamente");
+            else if ( (!rb_cartao.Checked) && (!rb_boleto.Checked))
+                MessageBox.Show("Escolha a forma de Pagamento");
             else
             {
-
-
                 classes.Solicitado solicitado = new classes.Solicitado();
 
                 int id = classes.SolicitadoList.Solicitados.Count;
@@ -109,11 +111,26 @@ namespace Pont_Finder.servicos
                 solicitado.Usercpf = Session.Cpf;
                 solicitado.Postid = post.Id;
 
-                classes.SolicitadoList.Solicitados.Add(solicitado);
-                Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, post.Valor);
-                bol.ShowDialog();
 
-                FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, new FormServicos()));
+                if (rb_boleto.Checked)
+                {
+                    Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, post.Valor);
+                    bol.ShowDialog();
+                    Session.Termos = true;
+                }
+                else
+                {
+                    Boleto.Cartao card = new Boleto.Cartao();
+                    card.ShowDialog();
+                }
+
+                if (Session.Termos)
+                {
+                    classes.SolicitadoList.Solicitados.Add(solicitado);
+                    FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, new FormServicos()));
+                }
+
+                
             }
 
 

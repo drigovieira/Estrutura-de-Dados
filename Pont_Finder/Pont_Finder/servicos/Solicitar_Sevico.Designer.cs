@@ -52,6 +52,9 @@
             this.bt_icone = new System.Windows.Forms.Button();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.rb_boleto = new System.Windows.Forms.RadioButton();
+            this.rb_cartao = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel3.SuspendLayout();
@@ -62,6 +65,9 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.rb_cartao);
+            this.panel1.Controls.Add(this.rb_boleto);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.bt_solicitar);
             this.panel1.Controls.Add(this.label6);
@@ -80,7 +86,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(465, 479);
+            this.button2.Location = new System.Drawing.Point(32, 479);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 35);
             this.button2.TabIndex = 42;
@@ -94,7 +100,7 @@
             this.bt_solicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_solicitar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_solicitar.ForeColor = System.Drawing.Color.White;
-            this.bt_solicitar.Location = new System.Drawing.Point(465, 430);
+            this.bt_solicitar.Location = new System.Drawing.Point(465, 479);
             this.bt_solicitar.Name = "bt_solicitar";
             this.bt_solicitar.Size = new System.Drawing.Size(130, 35);
             this.bt_solicitar.TabIndex = 41;
@@ -123,15 +129,15 @@
             this.tb_descricao.Multiline = true;
             this.tb_descricao.Name = "tb_descricao";
             this.tb_descricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_descricao.Size = new System.Drawing.Size(563, 353);
+            this.tb_descricao.Size = new System.Drawing.Size(563, 318);
             this.tb_descricao.TabIndex = 39;
             // 
             // tb_data
             // 
             this.tb_data.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_data.Location = new System.Drawing.Point(32, 482);
+            this.tb_data.Location = new System.Drawing.Point(239, 379);
             this.tb_data.Name = "tb_data";
-            this.tb_data.Size = new System.Drawing.Size(313, 28);
+            this.tb_data.Size = new System.Drawing.Size(322, 28);
             this.tb_data.TabIndex = 36;
             this.tb_data.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
             // 
@@ -140,7 +146,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 444);
+            this.label2.Location = new System.Drawing.Point(28, 379);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(174, 24);
             this.label2.TabIndex = 38;
@@ -327,6 +333,43 @@
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 430);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(198, 24);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "Formas de Pagamento";
+            // 
+            // rb_boleto
+            // 
+            this.rb_boleto.AutoSize = true;
+            this.rb_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F);
+            this.rb_boleto.Location = new System.Drawing.Point(249, 428);
+            this.rb_boleto.Name = "rb_boleto";
+            this.rb_boleto.Size = new System.Drawing.Size(161, 28);
+            this.rb_boleto.TabIndex = 44;
+            this.rb_boleto.TabStop = true;
+            this.rb_boleto.Text = "Boleto Bancário";
+            this.rb_boleto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rb_boleto.UseVisualStyleBackColor = true;
+            // 
+            // rb_cartao
+            // 
+            this.rb_cartao.AutoSize = true;
+            this.rb_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F);
+            this.rb_cartao.Location = new System.Drawing.Point(418, 428);
+            this.rb_cartao.Name = "rb_cartao";
+            this.rb_cartao.Size = new System.Drawing.Size(177, 28);
+            this.rb_cartao.TabIndex = 45;
+            this.rb_cartao.TabStop = true;
+            this.rb_cartao.Text = "Cartão de Crédito";
+            this.rb_cartao.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rb_cartao.UseVisualStyleBackColor = true;
+            // 
             // Solicitar_Sevico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,5 +423,8 @@
         private System.Windows.Forms.OpenFileDialog openIcone;
         private System.Windows.Forms.NumericUpDown tb_numero;
         private System.Windows.Forms.PictureBox btn_back;
+        private System.Windows.Forms.RadioButton rb_cartao;
+        private System.Windows.Forms.RadioButton rb_boleto;
+        private System.Windows.Forms.Label label3;
     }
 }

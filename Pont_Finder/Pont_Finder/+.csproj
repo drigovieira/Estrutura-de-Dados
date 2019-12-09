@@ -238,6 +238,12 @@
     <Compile Include="avalie\ViewPost.Designer.cs">
       <DependentUpon>ViewPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="Boleto\Cartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boleto\Cartao.Designer.cs">
+      <DependentUpon>Cartao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Boleto\GerarBoleto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -768,6 +774,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="avalie\ViewPost.resx">
       <DependentUpon>ViewPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boleto\Cartao.resx">
+      <DependentUpon>Cartao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Boleto\GerarBoleto.resx">
       <DependentUpon>GerarBoleto.cs</DependentUpon>

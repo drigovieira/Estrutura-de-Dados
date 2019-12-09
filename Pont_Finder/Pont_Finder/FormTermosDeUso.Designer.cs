@@ -110,6 +110,7 @@
             this.Controls.Add(this.ckb_termos_uso);
             this.Name = "FormTermosDeUso";
             this.Text = "FormTermosDeUso";
+            this.Load += new System.EventHandler(this.FormTermosDeUso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

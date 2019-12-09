@@ -34,5 +34,10 @@ namespace Pont_Finder
             Session.Termos = false;
             this.Dispose();
         }
+
+        private void FormTermosDeUso_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

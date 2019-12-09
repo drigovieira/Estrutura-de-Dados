@@ -14,7 +14,30 @@ namespace Pont_Finder.Boleto
     {
         public Cartao()
         {
+            Session.Termos = false;
             InitializeComponent();
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cartao_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Session.Termos = true;
+            this.Dispose();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            Session.Termos = false;
+            this.Dispose();
         }
     }
 }
