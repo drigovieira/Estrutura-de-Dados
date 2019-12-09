@@ -47,13 +47,9 @@
             this.btn_Config = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.painel_propaganda = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.pn_propa_externa = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -81,8 +77,8 @@
             this.panel10.SuspendLayout();
             this.pn_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).BeginInit();
-            this.panel8.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.painel_propaganda.SuspendLayout();
+            this.pn_propa_externa.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -190,7 +186,7 @@
             // panel9
             // 
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 1422);
+            this.panel9.Location = new System.Drawing.Point(0, 1222);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 17;
@@ -293,32 +289,14 @@
             this.panel1.Size = new System.Drawing.Size(0, 0);
             this.panel1.TabIndex = 12;
             // 
-            // panel8
+            // painel_propaganda
             // 
-            this.panel8.BackColor = System.Drawing.Color.Red;
-            this.panel8.Controls.Add(this.panel7);
-            this.panel8.Controls.Add(this.panel6);
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(950, 1072);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(310, 350);
-            this.panel8.TabIndex = 45;
-            // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.Location = new System.Drawing.Point(30, 197);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(250, 140);
-            this.panel7.TabIndex = 6;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.Location = new System.Drawing.Point(30, 39);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 140);
-            this.panel6.TabIndex = 5;
+            this.painel_propaganda.BackColor = System.Drawing.Color.Red;
+            this.painel_propaganda.Controls.Add(this.label15);
+            this.painel_propaganda.Location = new System.Drawing.Point(950, 972);
+            this.painel_propaganda.Name = "painel_propaganda";
+            this.painel_propaganda.Size = new System.Drawing.Size(310, 250);
+            this.painel_propaganda.TabIndex = 45;
             // 
             // label15
             // 
@@ -330,32 +308,14 @@
             this.label15.TabIndex = 1;
             this.label15.Text = "Propaganda modulos";
             // 
-            // panel5
+            // pn_propa_externa
             // 
-            this.panel5.BackColor = System.Drawing.Color.Red;
-            this.panel5.Controls.Add(this.panel12);
-            this.panel5.Controls.Add(this.panel13);
-            this.panel5.Controls.Add(this.label13);
-            this.panel5.Location = new System.Drawing.Point(950, 716);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 350);
-            this.panel5.TabIndex = 44;
-            // 
-            // panel12
-            // 
-            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.Location = new System.Drawing.Point(30, 192);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(250, 140);
-            this.panel12.TabIndex = 4;
-            // 
-            // panel13
-            // 
-            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.Location = new System.Drawing.Point(30, 34);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(250, 140);
-            this.panel13.TabIndex = 3;
+            this.pn_propa_externa.BackColor = System.Drawing.Color.Red;
+            this.pn_propa_externa.Controls.Add(this.label13);
+            this.pn_propa_externa.Location = new System.Drawing.Point(950, 716);
+            this.pn_propa_externa.Name = "pn_propa_externa";
+            this.pn_propa_externa.Size = new System.Drawing.Size(310, 250);
+            this.pn_propa_externa.TabIndex = 44;
             // 
             // label13
             // 
@@ -667,9 +627,9 @@
             this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.Top5);
             this.Controls.Add(this.bt_ant);
-            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.painel_propaganda);
             this.Controls.Add(this.lbTop5);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.pn_propa_externa);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel2);
@@ -690,10 +650,10 @@
             this.panel10.PerformLayout();
             this.pn_menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.painel_propaganda.ResumeLayout(false);
+            this.painel_propaganda.PerformLayout();
+            this.pn_propa_externa.ResumeLayout(false);
+            this.pn_propa_externa.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -718,9 +678,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button Btn_Edit_Empresa;
         private System.Windows.Forms.PictureBox pb_pesquisar;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel painel_propaganda;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pn_propa_externa;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
@@ -748,9 +708,5 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button VerPedidos;
         private System.Windows.Forms.Panel pn_menu;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
     }
 }

@@ -46,7 +46,13 @@ namespace Pont_Finder
 
         private void FormAlimentos_Load(object sender, EventArgs e)
         {
+            Propaganda_modulos prop = new Propaganda_modulos();
+            prop.Location = new Point(5, 25);
+            painel_propaganda.Controls.Add(prop);
 
+            Propaganda_externa propexter = new Propaganda_externa();
+            propexter.Location = new Point(5, 25);
+            pn_propa_externa.Controls.Add(propexter);
         }
 
         private void Button8_Click(object sender, EventArgs e)

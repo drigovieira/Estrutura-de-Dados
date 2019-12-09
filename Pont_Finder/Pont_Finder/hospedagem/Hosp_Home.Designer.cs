@@ -355,7 +355,7 @@
             this.painel_propaganda.Controls.Add(this.label15);
             this.painel_propaganda.Location = new System.Drawing.Point(950, 889);
             this.painel_propaganda.Name = "painel_propaganda";
-            this.painel_propaganda.Size = new System.Drawing.Size(310, 245);
+            this.painel_propaganda.Size = new System.Drawing.Size(310, 250);
             this.painel_propaganda.TabIndex = 38;
             // 
             // label15
@@ -456,7 +456,7 @@
             this.pn_propa_externa.Controls.Add(this.label13);
             this.pn_propa_externa.Location = new System.Drawing.Point(950, 630);
             this.pn_propa_externa.Name = "pn_propa_externa";
-            this.pn_propa_externa.Size = new System.Drawing.Size(310, 245);
+            this.pn_propa_externa.Size = new System.Drawing.Size(310, 250);
             this.pn_propa_externa.TabIndex = 32;
             // 
             // panel5
@@ -480,7 +480,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1134);
+            this.panel1.Location = new System.Drawing.Point(0, 1139);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 44;
