@@ -13,7 +13,7 @@ namespace Pont_Finder.hospedagem
     public partial class Card_list_quarto : UserControl
     {
         private int id, qtd_pessoas, qtd_disponivel;
-        private string nome, empresa, servicos, foto, status;
+        private string nome, empresa, servicos, foto, status, tipo;
         private double valor;
         private bool ativo;
 
@@ -38,6 +38,7 @@ namespace Pont_Finder.hospedagem
             this.empresa = emp.Nomefantasia;
             this.servicos = quarto.Servicos;
             this.foto = quarto.Foto;
+            this.tipo = quarto.Tipo;
             this.valor = quarto.Valor_Diario;
             this.status = quarto.Status;
             this.ativo = quarto.Ativo;

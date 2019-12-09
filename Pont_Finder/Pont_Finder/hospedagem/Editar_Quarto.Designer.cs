@@ -444,6 +444,7 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Editar_Quarto";
             this.Text = "Editar_Quarto";
+            this.Load += new System.EventHandler(this.Editar_Quarto_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).EndInit();
