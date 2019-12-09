@@ -12,7 +12,6 @@ namespace Pont_Finder.alimentos
 {
     public partial class Editar_Restaurante : Form
     {
-        private string filtro;
         private int Empresa;
         public Editar_Restaurante(int idEmpresa)
         {
@@ -28,7 +27,7 @@ namespace Pont_Finder.alimentos
             pb_icone.ImageLocation = CompanyList.selectAll()[idEmpresa].Image;
             cbCardapio.Checked = true;
             cbEntrega.Checked = true;
-            label15.Text = CompanyList.selectAll()[idEmpresa].Taxa.ToString();
+            maskedTextBox1.Text = CompanyList.selectAll()[idEmpresa].Taxa.ToString();
             foreach(var i in CompanyList.selectAll()[idEmpresa].Categoria)
             {
                 if (i == rbChurrascaria.Text)
@@ -68,47 +67,74 @@ namespace Pont_Finder.alimentos
                     rbOutros.Checked = true;
                 }
             }
-        }
-        public string Filtro()
-        {
-            if (rbChurrascaria.Checked == true)
+            foreach(var i in CompanyList.selectAll()[idEmpresa].FuncionamentoEmp)
             {
-                filtro = rbChurrascaria.Text;
+                if (i.Dia.Equals(cbSegunda.Text))
+                {
+                    cbSegunda.Checked = true;
+                    maskedTextBox4.Text = i.HoraInicio.ToString();
+                    maskedTextBox4.Enabled = true;
+                    maskedTextBox19.Text = i.HoraFim.ToString();
+                    maskedTextBox19.Enabled = true;
+                }
+                else if (i.Dia.Equals(cbTerca.Text))
+                {
+                    cbTerca.Checked = true;
+                    maskedTextBox5.Text = i.HoraInicio.ToString();
+                    maskedTextBox5.Enabled = true;
+                    maskedTextBox18.Text = i.HoraFim.ToString();
+                    maskedTextBox18.Enabled = true;
+                }
+                else if (i.Dia.Equals(cbQuarta.Text))
+                {
+                    cbQuarta.Checked = true;
+                    maskedTextBox6.Text = i.HoraInicio.ToString();
+                    maskedTextBox6.Enabled = true;
+                    maskedTextBox17.Text = i.HoraFim.ToString();
+                    maskedTextBox17.Enabled = true;
+                }
+                else if (i.Equals(cbQuinta.Text))
+                {
+                    cbQuinta.Checked = true;
+                    maskedTextBox7.Text = i.HoraInicio.ToString();
+                    maskedTextBox7.Enabled = true;
+                    maskedTextBox16.Text = i.HoraFim.ToString();
+                    maskedTextBox16.Enabled = true;
+                }
+                else if (i.Equals(cbSexta.Text))
+                {
+                    cbSexta.Checked = true;
+                    maskedTextBox8.Text = i.HoraInicio.ToString();
+                    maskedTextBox8.Enabled = true;
+                    maskedTextBox15.Text = i.HoraFim.ToString();
+                    maskedTextBox15.Enabled = true;
+                }
+                else if (i.Equals(cbSabado.Text))
+                {
+                    cbSabado.Checked = true;
+                    maskedTextBox9.Text = i.HoraInicio.ToString();
+                    maskedTextBox9.Enabled = true;
+                    maskedTextBox14.Text = i.HoraFim.ToString();
+                    maskedTextBox14.Enabled = true;
+                }
+                else if (i.Equals(cbDomingo.Text))
+                {
+                    cbDomingo.Checked = true;
+                    maskedTextBox10.Text = i.HoraInicio.ToString();
+                    maskedTextBox10.Enabled = true;
+                    maskedTextBox13.Text = i.HoraFim.ToString();
+                    maskedTextBox13.Enabled = true;
+                }
+                else if (i.Equals(cbFeriado.Text))
+                {
+                    cbFeriado.Checked = true;
+                    maskedTextBox11.Text = i.HoraInicio.ToString();
+                    maskedTextBox11.Enabled = true;
+                    maskedTextBox12.Text = i.HoraFim.ToString();
+                    maskedTextBox12.Enabled = true;
+                }
             }
-            else if (rbPetiscaria.Checked == true)
-            {
-                filtro = rbPetiscaria.Text;
-            }
-            else if (rbPizzaria.Checked == true)
-            {
-                filtro = rbPizzaria.Text;
-            }
-            else if (rbComidaItaliana.Checked == true)
-            {
-                filtro = rbComidaItaliana.Text;
-            }
-            else if (rbComidaJaponesa.Checked == true)
-            {
-                filtro = rbComidaJaponesa.Text;
-            }
-            else if (rbSorveteria.Checked == true)
-            {
-                filtro = rbSorveteria.Text;
-            }
-            else if (rbHambúrgueria.Checked == true)
-            {
-                filtro = rbHambúrgueria.Text;
-            }
-            else if (rbFrutosDoMar.Checked == true)
-            {
-                filtro = rbFrutosDoMar.Text;
-            }
-            else if (rbOutros.Checked == true)
-            {
-                filtro = rbOutros.Text;
-            }
-            return filtro;
-        }
+        }        
 
         private void Editar_Restaurante_Load(object sender, EventArgs e)
         {
@@ -149,6 +175,118 @@ namespace Pont_Finder.alimentos
         {
             formAlimentos home = new formAlimentos();
             FormPrincipal.MudarForm("alimentos", home);
+        }
+
+        private void CbSegunda_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbSegunda.Checked == true)
+            {
+                maskedTextBox4.Enabled = true;
+                maskedTextBox19.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox4.Enabled = false;
+                maskedTextBox19.Enabled = false;
+            }
+        }
+
+        private void CbTerca_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbTerca.Checked == true)
+            {
+                maskedTextBox5.Enabled = true;
+                maskedTextBox18.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox5.Enabled = false;
+                maskedTextBox18.Enabled = false;
+            }
+        }
+
+        private void CbQuarta_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbQuarta.Checked)
+            {
+                maskedTextBox6.Enabled = true;
+                maskedTextBox17.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox6.Enabled = false;
+                maskedTextBox17.Enabled = false;
+            }
+        }
+
+        private void CbQuinta_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbQuinta.Checked == true)
+            {
+                maskedTextBox7.Enabled = true;
+                maskedTextBox16.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox7.Enabled = false;
+                maskedTextBox16.Enabled = false;
+            }
+        }
+
+        private void CbSexta_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbSexta.Checked == true)
+            {
+                maskedTextBox8.Enabled = true;
+                maskedTextBox15.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox8.Enabled = false;
+                maskedTextBox15.Enabled = false;
+            }
+        }
+
+        private void CbSabado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbSabado.Checked == true)
+            {
+                maskedTextBox9.Enabled = true;
+                maskedTextBox14.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox9.Enabled = false;
+                maskedTextBox14.Enabled = false;
+            }
+        }
+
+        private void CbDomingo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbDomingo.Checked == true)
+            {
+                maskedTextBox10.Enabled = true;
+                maskedTextBox13.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox10.Enabled = false;
+                maskedTextBox13.Enabled = false;
+            }
+        }
+
+        private void CbFeriado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbFeriado.Checked == true)
+            {
+                maskedTextBox11.Enabled = true;
+                maskedTextBox12.Enabled = true;
+            }
+            else
+            {
+                maskedTextBox11.Enabled = false;
+                maskedTextBox12.Enabled = false;
+            }
         }
     }
 }

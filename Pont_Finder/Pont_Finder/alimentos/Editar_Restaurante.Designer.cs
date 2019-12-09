@@ -637,6 +637,7 @@
             this.cbFeriado.TabIndex = 70;
             this.cbFeriado.Text = "Feriados";
             this.cbFeriado.UseVisualStyleBackColor = true;
+            this.cbFeriado.CheckedChanged += new System.EventHandler(this.CbFeriado_CheckedChanged);
             // 
             // cbDomingo
             // 
@@ -648,6 +649,7 @@
             this.cbDomingo.TabIndex = 69;
             this.cbDomingo.Text = "Domingo";
             this.cbDomingo.UseVisualStyleBackColor = true;
+            this.cbDomingo.CheckedChanged += new System.EventHandler(this.CbDomingo_CheckedChanged);
             // 
             // cbSabado
             // 
@@ -659,6 +661,7 @@
             this.cbSabado.TabIndex = 68;
             this.cbSabado.Text = "Sábado";
             this.cbSabado.UseVisualStyleBackColor = true;
+            this.cbSabado.CheckedChanged += new System.EventHandler(this.CbSabado_CheckedChanged);
             // 
             // cbSexta
             // 
@@ -670,6 +673,7 @@
             this.cbSexta.TabIndex = 67;
             this.cbSexta.Text = "Sexta - Feira";
             this.cbSexta.UseVisualStyleBackColor = true;
+            this.cbSexta.CheckedChanged += new System.EventHandler(this.CbSexta_CheckedChanged);
             // 
             // cbTerca
             // 
@@ -681,6 +685,7 @@
             this.cbTerca.TabIndex = 66;
             this.cbTerca.Text = "Terça - Feira";
             this.cbTerca.UseVisualStyleBackColor = true;
+            this.cbTerca.CheckedChanged += new System.EventHandler(this.CbTerca_CheckedChanged);
             // 
             // cbQuarta
             // 
@@ -692,6 +697,7 @@
             this.cbQuarta.TabIndex = 65;
             this.cbQuarta.Text = "Quarta - Feira";
             this.cbQuarta.UseVisualStyleBackColor = true;
+            this.cbQuarta.CheckedChanged += new System.EventHandler(this.CbQuarta_CheckedChanged);
             // 
             // cbQuinta
             // 
@@ -703,6 +709,7 @@
             this.cbQuinta.TabIndex = 64;
             this.cbQuinta.Text = "Quinta - Feira";
             this.cbQuinta.UseVisualStyleBackColor = true;
+            this.cbQuinta.CheckedChanged += new System.EventHandler(this.CbQuinta_CheckedChanged);
             // 
             // cbSegunda
             // 
@@ -714,6 +721,7 @@
             this.cbSegunda.TabIndex = 63;
             this.cbSegunda.Text = "Segunda - Feira";
             this.cbSegunda.UseVisualStyleBackColor = true;
+            this.cbSegunda.CheckedChanged += new System.EventHandler(this.CbSegunda_CheckedChanged);
             // 
             // maskedTextBox12
             // 
@@ -972,7 +980,6 @@
             this.maskedTextBox1.Size = new System.Drawing.Size(100, 24);
             this.maskedTextBox1.TabIndex = 8;
             this.maskedTextBox1.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox1.Visible = false;
             // 
             // label15
             // 
@@ -983,7 +990,6 @@
             this.label15.Size = new System.Drawing.Size(170, 20);
             this.label15.TabIndex = 7;
             this.label15.Text = "Taxa de Entrega Padrão:";
-            this.label15.Visible = false;
             // 
             // cbEntrega
             // 
@@ -995,7 +1001,6 @@
             this.cbEntrega.TabIndex = 0;
             this.cbEntrega.Text = "Utilizar serviço de pedidos para entrega (Delivery).";
             this.cbEntrega.UseVisualStyleBackColor = true;
-            this.cbEntrega.Visible = false;
             // 
             // cbCardapio
             // 
