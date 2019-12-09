@@ -62,24 +62,7 @@ namespace Pont_Finder.alimentos
                 lbHoras.Text += "Inicio: "+ funcio.HoraInicio.ToString("HH:mm") + "  Fim: "+ funcio.HoraFim.ToString("HH:mm")+"\n"; 
             }
             lb_like.Text = CompanyList.selectAll()[Index].Like.ToString();
-            lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();
-            if (Session.Online)
-            {
-                foreach (var item in EvaluationList.selectAll())
-                {
-                    if(item.Cpf == Session.Cpf)
-                    {
-                        if (item.Tipo.Equals("like"))
-                        {
-                            pb_up.Image = imgLikeBlue;
-                        }
-                        else
-                        {
-                            pb_down.Image = imgDeslikeBlue;
-                        }
-                    }
-                }
-            }
+            lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();            
         }
         public void CapturarFuncionamento()
         {
@@ -201,6 +184,27 @@ namespace Pont_Finder.alimentos
             else
             {
                 MessageBox.Show("É necessário estar logado para avaliar");
+            }
+        }
+
+        private void Panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+            if (Session.Online)
+            {
+                foreach (var item in EvaluationList.selectAll())
+                {
+                    if (item.Cpf == Session.Cpf)
+                    {
+                        if (item.Tipo.Equals("like") && item.IndexEmp == Index)
+                        {
+                            pb_up.Image = imgLikeBlue;
+                        }
+                        else if (item.Tipo.Equals("deslike") && item.IndexEmp == Index)
+                        {
+                            pb_down.Image = imgDeslikeBlue;
+                        }
+                    }
+                }
             }
         }
 

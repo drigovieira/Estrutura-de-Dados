@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Pont_Finder.alimentos.classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +15,8 @@ namespace Pont_Finder.alimentos
 {
     public partial class Editar_Restaurante : Form
     {
+        private List<string> categorias = new List<string>();
+        private List<Funcionamento> funcionamentos = new List<Funcionamento>();
         private int Empresa;
         public Editar_Restaurante(int idEmpresa)
         {
@@ -286,6 +291,181 @@ namespace Pont_Finder.alimentos
             {
                 maskedTextBox11.Enabled = false;
                 maskedTextBox12.Enabled = false;
+            }
+        }
+
+        private void BtnCad_Click(object sender, EventArgs e)
+        {
+            Company comp = new Company();            
+            bool checkEmail = Validation.Email(tbEmail.Text);
+            if (string.IsNullOrWhiteSpace(tbNomeEmpresa.Text) || string.IsNullOrWhiteSpace(tbFantasia.Text) || string.IsNullOrWhiteSpace(tbBairro.Text)
+              || string.IsNullOrWhiteSpace(tbRua.Text) || string.IsNullOrWhiteSpace(tbNum.Text) || string.IsNullOrWhiteSpace(mkb_Cep.Text)
+              || string.IsNullOrWhiteSpace(mkb_Tel.Text))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos obrigatórios.", "Aviso!");
+            }
+            else
+            {
+                if (checkEmail == false)
+                {
+                    MessageBox.Show("E-mail inválido.", "Aviso!");
+                }
+                else
+                {
+                    if (rbChurrascaria.Checked == false && rbPetiscaria.Checked == false && rbPizzaria.Checked == false && rbSorveteria.Checked == false
+                        && rbOutros.Checked == false && rbHambúrgueria.Checked == false && rbFrutosDoMar.Checked == false && rbConvencional.Checked == false
+                        && rbComidaJaponesa.Checked == false && rbComidaItaliana.Checked == false)
+                    {
+                        MessageBox.Show("Selecione uma ou mais categorias.", "Aviso!");
+                    }
+                    else
+                    {
+                        if (cbSegunda.Checked == false && cbTerca.Checked == false && cbQuarta.Checked == false && cbQuinta.Checked == false
+                            && cbSexta.Checked == false && cbSabado.Checked == false && cbDomingo.Checked == false)
+                        {
+                            MessageBox.Show("Selecione um ou mais dias de funcionamento.", "Aviso!");
+                        }
+                        else
+                        {                                                        
+                                if (cbSegunda.Checked == true)
+                                {
+                                    Funcionamento funcio = new Funcionamento();
+                                    funcio.Dia = cbSegunda.Text;
+                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox4.Text);
+                                    funcio.HoraFim = DateTime.Parse(maskedTextBox19.Text);
+                                    funcionamentos.Add(funcio);
+                                }
+                                if (cbTerca.Checked == true)
+                                {
+                                    Funcionamento funcio = new Funcionamento();
+                                    funcio.Dia = cbTerca.Text;
+                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox5.Text);
+                                    funcio.HoraFim = DateTime.Parse(maskedTextBox18.Text);
+                                    funcionamentos.Add(funcio);
+                                }
+                                if (cbQuarta.Checked == true)
+                                {
+                                    Funcionamento funcio = new Funcionamento();
+                                    funcio.Dia = cbQuarta.Text;
+                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox6.Text);
+                                    funcio.HoraFim = DateTime.Parse(maskedTextBox17.Text);
+                                    funcionamentos.Add(funcio);
+                                }
+                                if (cbQuinta.Checked == true)
+                                {
+                                    Funcionamento funcio = new Funcionamento();
+                                    funcio.Dia = cbQuinta.Text;
+                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox7.Text);
+                                    funcio.HoraFim = DateTime.Parse(maskedTextBox16.Text);
+                                    funcionamentos.Add(funcio);
+                                }
+                                if (cbSexta.Checked == true)
+                                {
+                                    Funcionamento funcio = new Funcionamento();
+                                    funcio.Dia = cbSexta.Text;
+                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox8.Text);
+                                    funcio.HoraFim = DateTime.Parse(maskedTextBox15.Text);
+                                    funcionamentos.Add(funcio);
+                                }
+                                if (cbSabado.Checked == true)
+                                {
+                                    Funcionamento funcio = new Funcionamento();
+                                    funcio.Dia = cbSabado.Text;
+                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox9.Text);
+                                    funcio.HoraFim = DateTime.Parse(maskedTextBox14.Text);
+                                    funcionamentos.Add(funcio);
+                                }
+                                if (cbDomingo.Checked == true)
+                                {
+                                    Funcionamento funcio = new Funcionamento();
+                                    funcio.Dia = cbDomingo.Text;
+                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox10.Text);
+                                    funcio.HoraFim = DateTime.Parse(maskedTextBox13.Text);
+                                    funcionamentos.Add(funcio);
+                                }
+                                if (cbFeriado.Checked == true)
+                                {
+                                    Funcionamento funcio = new Funcionamento();
+                                    funcio.Dia = cbFeriado.Text;
+                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox11.Text);
+                                    funcio.HoraFim = DateTime.Parse(maskedTextBox12.Text);
+                                    funcionamentos.Add(funcio);
+                                }
+
+                                Company emp = new Company();
+                            try
+                            {
+                                emp.Nome = tbNomeEmpresa.Text;
+                                emp.NomeFantasia = tbFantasia.Text;
+                                emp.Rua = tbRua.Text;
+                                emp.Numero = Convert.ToInt32(tbNum.Text);
+                                emp.Cep = int.Parse(mkb_Cep.Text);
+                                emp.Bairro = tbBairro.Text;
+                                emp.Categoria = categorias;
+                                emp.TelComercial = long.Parse(mkb_Tel.Text);
+                                emp.Email = tbEmail.Text;
+                                string link = "..//..//alimentos//data//image//empresas//offImage.jpg";
+                                if (true)
+                                {
+                                    if (!Directory.Exists("..//..//alimentos//data//image//empresas"))
+                                        Directory.CreateDirectory("..//..//alimentos//data//image//empresas");
+
+                                    pb_icone.Load();
+                                    pb_icone.Image = Image.FromFile(openIcone.FileName);
+
+                                    Image bmp = new Bitmap(pb_icone.Image);
+
+                                    Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+
+                                    pb_icone.Image = bmp2;
+                                    link = "..//..//alimentos//data//images//empresas//" + emp.Email + ".jpg";
+                                    pb_icone.Image.Save(link, ImageFormat.Jpeg);
+                                }
+                                emp.Image = link;
+                                emp.FuncionamentoEmp = funcionamentos;
+                                if (cbCardapio.Checked == true)
+                                {
+                                    emp.SttsCardapio = true;
+                                    if (cbEntrega.Checked == true)
+                                    {
+                                        emp.SttsEntrega = true;
+                                    }
+                                    else { emp.SttsEntrega = false; }
+                                }
+                                else { emp.SttsCardapio = false; emp.SttsEntrega = false; }
+                                emp.Cpf = Session.Cpf;
+                                if (cbEntrega.Checked == true)
+                                {
+                                    emp.Taxa = float.Parse(maskedTextBox1.Text);
+                                }
+                                CompanyList.alter(Empresa, emp);
+                                MessageBox.Show("Empresa Modificada!", "Status Operation:");
+                                if (cbCardapio.Checked == true)
+                                {
+                                    foreach (var i in CompanyList.selectAll())
+                                    {
+                                        if (i.Email.Equals(emp.Email))
+                                        {
+                                            alimentos.Cadastro_Produto cadCardapio = new Cadastro_Produto(i.Id);
+                                            FormPrincipal.MudarForm("alimentos", cadCardapio);
+                                            break;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    formAlimentos homeAlimentos = new formAlimentos();
+                                    FormPrincipal.MudarForm("alimentos", homeAlimentos);
+                                }
+                            }
+                            catch (Exception exp)
+                            {
+                                MessageBox.Show("" + exp);
+                            }                            
+                        }
+                    }
+
+                }
             }
         }
     }

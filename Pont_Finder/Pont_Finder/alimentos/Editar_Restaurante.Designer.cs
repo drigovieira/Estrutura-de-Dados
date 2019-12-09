@@ -591,6 +591,7 @@
             this.btnCad.TabIndex = 14;
             this.btnCad.Text = "Alterar";
             this.btnCad.UseVisualStyleBackColor = false;
+            this.btnCad.Click += new System.EventHandler(this.BtnCad_Click);
             // 
             // panel4
             // 
