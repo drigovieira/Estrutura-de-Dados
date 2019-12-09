@@ -2,7 +2,7 @@
 <postagens>
   <postagem>
     <id>0</id>
-    <idEmp> 0</idEmp>
+    <idEmp>0</idEmp>
     <ingresso_total>50</ingresso_total>
     <ingresso_disponivel>10</ingresso_disponivel>
     <nome>Festa do Odim</nome>

@@ -18,4 +18,13 @@
     <pagamento>Boleto</pagamento>
     <valor>680</valor>
   </reserva>
+  <reserva>
+    <id>2</id>
+    <idquarto>16</idquarto>
+    <usuario>42750892804</usuario>
+    <dataentrada>2019-12-09T13:05:43.133913-03:00</dataentrada>
+    <datasaida>2019-12-10T13:05:43</datasaida>
+    <pagamento>Boleto</pagamento>
+    <valor>297.5</valor>
+  </reserva>
 </reservelist>
