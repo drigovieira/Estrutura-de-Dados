@@ -35,7 +35,7 @@ namespace Pont_Finder.servicos
                 bt_empresa.Text = "Gerenciar Empresa";
        
 
-            pagQuant = 8;
+            pagQuant = 5;
             LoadPosts();
 
 

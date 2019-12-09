@@ -27,7 +27,7 @@ Materiais extras podem ser cobrados durante a instalação.</descricao>
     <cpf>28645898004</cpf>
     <cnpj>5403624000173</cnpj>
     <data>2019-12-08T14:16:15.3692218-03:00</data>
-    <likes>1,28645898004*1,26835036010</likes>
+    <likes>1,28645898004*1,26835036010*1,96973023088</likes>
   </Post>
   <Post>
     <id>2</id>
@@ -43,7 +43,7 @@ Materiais extras podem ser cobrados durante a instalação.</descricao>
 
 Se por necessário realizar a troca de algum componente com defeito, o equipamento será cobrado na manutenção</descricao>
     <ativo>true</ativo>
-    <image>..//..//servicos//data//images//posts//3.jpg</image>
+    <image>..//..//servicos//data//images//posts//2.jpg</image>
     <cpf>28645898004</cpf>
     <cnpj>5403624000173</cnpj>
     <data>2019-12-08T20:49:24.6948708-03:00</data>
@@ -59,7 +59,7 @@ Se por necessário realizar a troca de algum componente com defeito, o equipamen
     <cpf>43812136880</cpf>
     <cnpj>89172297000186</cnpj>
     <data>2019-12-09T10:43:28.9705383-03:00</data>
-    <likes></likes>
+    <likes>1,43812136880</likes>
   </Post>
   <Post>
     <id>4</id>
@@ -79,7 +79,7 @@ Se por necessário realizar a troca de algum componente com defeito, o equipamen
     <valor>659</valor>
     <descricao>Pintura externa completa.</descricao>
     <ativo>true</ativo>
-    <image>..//..//servicos//data//images//posts//6.jpg</image>
+    <image>..//..//servicos//data//images//posts//5.jpg</image>
     <cpf>43812136880</cpf>
     <cnpj>89172297000186</cnpj>
     <data>2019-12-09T10:48:28.8287753-03:00</data>

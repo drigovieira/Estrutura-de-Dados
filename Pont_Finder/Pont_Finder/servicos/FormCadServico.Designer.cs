@@ -42,10 +42,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bt_icone = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.cb_combinar = new System.Windows.Forms.CheckBox();
             this.tb_valor = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.cb_combinar = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_valor)).BeginInit();
@@ -64,6 +64,7 @@
             this.label5.TabIndex = 44;
             this.label5.Text = "Cadastre seu serviço!";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // label4
             // 
@@ -204,6 +205,18 @@
             this.panel4.Size = new System.Drawing.Size(414, 493);
             this.panel4.TabIndex = 43;
             // 
+            // cb_combinar
+            // 
+            this.cb_combinar.AutoSize = true;
+            this.cb_combinar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F);
+            this.cb_combinar.Location = new System.Drawing.Point(216, 428);
+            this.cb_combinar.Name = "cb_combinar";
+            this.cb_combinar.Size = new System.Drawing.Size(141, 31);
+            this.cb_combinar.TabIndex = 44;
+            this.cb_combinar.Text = "A Combinar";
+            this.cb_combinar.UseVisualStyleBackColor = true;
+            this.cb_combinar.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
+            // 
             // tb_valor
             // 
             this.tb_valor.DecimalPlaces = 2;
@@ -251,18 +264,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(624, 493);
             this.panel6.TabIndex = 46;
-            // 
-            // cb_combinar
-            // 
-            this.cb_combinar.AutoSize = true;
-            this.cb_combinar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F);
-            this.cb_combinar.Location = new System.Drawing.Point(216, 428);
-            this.cb_combinar.Name = "cb_combinar";
-            this.cb_combinar.Size = new System.Drawing.Size(141, 31);
-            this.cb_combinar.TabIndex = 44;
-            this.cb_combinar.Text = "A Combinar";
-            this.cb_combinar.UseVisualStyleBackColor = true;
-            this.cb_combinar.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // FormCadServico
             // 
