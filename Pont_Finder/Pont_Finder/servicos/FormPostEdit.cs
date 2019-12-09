@@ -35,7 +35,18 @@ namespace Pont_Finder.servicos
         private void Publicar_Click(object sender, EventArgs e)
         {
             post.Titulo = tb_titulo.Text;
-            post.Valor = double.Parse(tb_valor.Value + "");
+
+            if (cb_combinar.Checked)
+            {
+                tb_valor.Enabled = false;
+                post.Valor = 0;
+            }
+            else
+            {
+                tb_valor.Enabled = true;
+                post.Valor = double.Parse(tb_valor.Value + "");
+            }
+
             post.Descricao = tb_descricao.Text;
 
             string link = null;
@@ -133,7 +144,26 @@ namespace Pont_Finder.servicos
 
         private void FormPostEdit_Load(object sender, EventArgs e)
         {
+            if (cb_combinar.Checked)
+            {
+                tb_valor.Enabled = false;
+            }
+            else
+            {
+                tb_valor.Enabled = true;
+            }
+        }
 
+        private void Cb_combinar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_combinar.Checked)
+            {
+                tb_valor.Enabled = false;
+            }
+            else
+            {
+                tb_valor.Enabled = true;
+            }
         }
     }
 }

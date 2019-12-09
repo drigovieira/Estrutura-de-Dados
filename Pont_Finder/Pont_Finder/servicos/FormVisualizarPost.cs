@@ -41,7 +41,14 @@ namespace Pont_Finder.servicos
         private void FormVisualizarPost_Load(object sender, EventArgs e)
         {
             lb_titulo.Text = post.Titulo;
-            lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", post.Valor); ;
+            if (post.Valor == 0)
+            {
+                lb_valor.Text = "A Combinar";
+            }
+            else
+            {
+                lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.post.Valor);
+            }
             pb_icone.ImageLocation = post.Image;
             lb_descricao.Text = post.Descricao;
 
@@ -191,6 +198,11 @@ namespace Pont_Finder.servicos
         }
 
         private void Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Lb_categoria_Click(object sender, EventArgs e)
         {
 
         }

@@ -63,7 +63,16 @@ namespace Pont_Finder.servicos
             }
             
             lb_descricao.Text = "Descrição: " + desc;
-            lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.post.Valor);
+
+            if (post.Valor == 0)
+            {
+                lb_valor.Text = "A Combinar";
+            }
+            else
+            {
+                lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.post.Valor);
+            }
+            
 
         }
 
