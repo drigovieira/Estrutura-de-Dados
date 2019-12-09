@@ -112,4 +112,12 @@
     <image>..//..//data//images//users//96973023088.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Rafael Carneiro</nome>
+    <email>carneiro@gmail.com</email>
+    <senha>123</senha>
+    <cpf>43812136880</cpf>
+    <image>..//..//data//images//users//43812136880.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>
