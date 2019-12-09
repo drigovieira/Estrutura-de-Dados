@@ -29,6 +29,10 @@ namespace Pont_Finder
             local1 = 42;
             pagQuant = 10;
             lista = CompanyList.selectAll();
+            foreach (var item in CompanyList.selectAll())
+            {
+                EvaluationList.ApuraAvaliacao(item.Id);
+            }
             InitializeComponent();
             if (Session.Online)
             {
@@ -41,7 +45,7 @@ namespace Pont_Finder
                 }                
             }
             else btn_Config.Visible = false;
-            Listar();
+            Listar();            
         }
 
         private void FormAlimentos_Load(object sender, EventArgs e)
