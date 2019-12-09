@@ -48,12 +48,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -76,6 +72,10 @@
             this.lbConfig2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
@@ -296,29 +296,13 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Red;
-            this.panel8.Controls.Add(this.panel12);
-            this.panel8.Controls.Add(this.panel13);
+            this.panel8.Controls.Add(this.panel7);
+            this.panel8.Controls.Add(this.panel6);
             this.panel8.Controls.Add(this.label15);
             this.panel8.Location = new System.Drawing.Point(950, 1072);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(310, 350);
             this.panel8.TabIndex = 45;
-            // 
-            // panel12
-            // 
-            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.Location = new System.Drawing.Point(31, 193);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(250, 140);
-            this.panel12.TabIndex = 6;
-            // 
-            // panel13
-            // 
-            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.Location = new System.Drawing.Point(31, 35);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(250, 140);
-            this.panel13.TabIndex = 5;
             // 
             // label15
             // 
@@ -333,29 +317,13 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Red;
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Controls.Add(this.panel12);
+            this.panel5.Controls.Add(this.panel13);
             this.panel5.Controls.Add(this.label13);
             this.panel5.Location = new System.Drawing.Point(950, 716);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(310, 350);
             this.panel5.TabIndex = 44;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.Location = new System.Drawing.Point(31, 188);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 140);
-            this.panel6.TabIndex = 4;
-            // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.Location = new System.Drawing.Point(31, 30);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(250, 140);
-            this.panel7.TabIndex = 3;
             // 
             // label13
             // 
@@ -650,6 +618,38 @@
             this.panel4.TabIndex = 73;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
+            // panel7
+            // 
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.Location = new System.Drawing.Point(30, 197);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(250, 140);
+            this.panel7.TabIndex = 6;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.Location = new System.Drawing.Point(30, 39);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(250, 140);
+            this.panel6.TabIndex = 5;
+            // 
+            // panel12
+            // 
+            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
+            this.panel12.Location = new System.Drawing.Point(30, 192);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(250, 140);
+            this.panel12.TabIndex = 4;
+            // 
+            // panel13
+            // 
+            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
+            this.panel13.Location = new System.Drawing.Point(30, 34);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(250, 140);
+            this.panel13.TabIndex = 3;
+            // 
             // formAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -748,8 +748,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button VerPedidos;
         private System.Windows.Forms.Panel pn_menu;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
     }
