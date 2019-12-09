@@ -218,6 +218,7 @@
             this.pn_menu.BackColor = System.Drawing.Color.Red;
             this.pn_menu.Controls.Add(this.Btn_Edit_Empresa);
             this.pn_menu.Controls.Add(this.VerPedidos);
+            this.pn_menu.Controls.Add(this.btn_Config);
             this.pn_menu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pn_menu.Location = new System.Drawing.Point(0, 160);
             this.pn_menu.Name = "pn_menu";
@@ -543,11 +544,12 @@
             // 
             // btn_Config
             // 
-            this.btn_Config.BackColor = System.Drawing.Color.White;
+            this.btn_Config.BackColor = System.Drawing.Color.Transparent;
             this.btn_Config.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Config.BackgroundImage")));
             this.btn_Config.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_Config.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Config.Location = new System.Drawing.Point(1181, 215);
+            this.btn_Config.InitialImage = null;
+            this.btn_Config.Location = new System.Drawing.Point(708, 4);
             this.btn_Config.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Config.Name = "btn_Config";
             this.btn_Config.Size = new System.Drawing.Size(40, 35);
@@ -558,11 +560,11 @@
             // 
             // lbConfig1
             // 
-            this.lbConfig1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.lbConfig1.BackColor = System.Drawing.Color.Red;
             this.lbConfig1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbConfig1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold);
+            this.lbConfig1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbConfig1.ForeColor = System.Drawing.Color.White;
-            this.lbConfig1.Location = new System.Drawing.Point(16, 0);
+            this.lbConfig1.Location = new System.Drawing.Point(1, 1);
             this.lbConfig1.Name = "lbConfig1";
             this.lbConfig1.Size = new System.Drawing.Size(184, 25);
             this.lbConfig1.TabIndex = 70;
@@ -575,11 +577,11 @@
             // 
             // lbConfig2
             // 
-            this.lbConfig2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.lbConfig2.BackColor = System.Drawing.Color.Red;
             this.lbConfig2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbConfig2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold);
+            this.lbConfig2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbConfig2.ForeColor = System.Drawing.Color.White;
-            this.lbConfig2.Location = new System.Drawing.Point(16, 25);
+            this.lbConfig2.Location = new System.Drawing.Point(1, 26);
             this.lbConfig2.Name = "lbConfig2";
             this.lbConfig2.Size = new System.Drawing.Size(184, 25);
             this.lbConfig2.TabIndex = 71;
@@ -602,9 +604,9 @@
             // 
             this.panel4.Controls.Add(this.lbConfig1);
             this.panel4.Controls.Add(this.lbConfig2);
-            this.panel4.Location = new System.Drawing.Point(982, 215);
+            this.panel4.Location = new System.Drawing.Point(708, 199);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(201, 52);
+            this.panel4.Size = new System.Drawing.Size(188, 54);
             this.panel4.TabIndex = 73;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
@@ -617,7 +619,6 @@
             this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.btn_Config);
             this.Controls.Add(this.lb_pag);
             this.Controls.Add(this.bt_proxFull);
             this.Controls.Add(this.panel11);
