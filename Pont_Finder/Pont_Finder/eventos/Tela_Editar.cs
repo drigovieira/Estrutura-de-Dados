@@ -14,7 +14,7 @@ namespace Pont_Finder.eventos
     {
         Classes.CoEvento evento;
         bool img = false;
-        public Tela_Editar(int id)
+        public Tela_Editar(long id)
         {
             evento = Classes.Eventos_List.thisPostId(id);
             InitializeComponent();

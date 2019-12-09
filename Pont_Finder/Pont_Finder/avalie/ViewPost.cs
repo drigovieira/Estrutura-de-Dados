@@ -133,17 +133,6 @@ namespace Pont_Finder.avalie
         private void bt_postar_Click(object sender, EventArgs e)
         {
 
-
-
-
-
-
-            
-            
-            
-
-
-
         }
 
         public void CarregarComentario()
@@ -359,20 +348,30 @@ namespace Pont_Finder.avalie
         {
             Comentario post = new Comentario();
 
-            post.UserCpf = Session.Cpf;
-            post.PostId = postIdC;
-            post.Idcoment = ComentariosList.Poster.Count(); ;
-            post.Data = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
-            post.Comment = tb_resposta.Text;
-            post.ImgUser = Session.Image;
-            post.Username = Session.Nome;
-            post.Ativo = true;
+            if (tb_resposta.Text == "")
+            {
+                MessageBox.Show("Digite um comentário");
+            }
+            else
+            {
 
-            ComentariosList.PostAdd(post);
 
-            CarregarComentario();
-            FiltroComentario();
-            tb_resposta.Text = "";
+
+                post.UserCpf = Session.Cpf;
+                post.PostId = postIdC;
+                post.Idcoment = ComentariosList.Poster.Count();
+                post.Data = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+                post.Comment = tb_resposta.Text;
+                post.ImgUser = Session.Image;
+                post.Username = Session.Nome;
+                post.Ativo = true;
+
+                ComentariosList.PostAdd(post);
+
+                CarregarComentario();
+                FiltroComentario();
+                tb_resposta.Text = "";
+            }
         }
 
         private void bt_prox_Click(object sender, EventArgs e)

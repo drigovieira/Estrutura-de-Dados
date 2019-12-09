@@ -24,6 +24,7 @@ namespace Pont_Finder.avalie
         public UserControl1(long postid)
         {
             InitializeComponent();
+
             post = PostList.PosterId(postid);
 
             NomePos.Text = (post.Nome);

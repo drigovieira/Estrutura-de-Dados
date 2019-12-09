@@ -15,7 +15,7 @@ namespace Pont_Finder.eventos.Classes
         private static List<CoEvento> poster = new List<CoEvento>();
 
 
-        public static CoEvento PosterId(int postId)
+        public static CoEvento PosterId(long postId)
         {
             CoEvento pos = new CoEvento();
 
@@ -160,7 +160,7 @@ namespace Pont_Finder.eventos.Classes
             poster.Add(pos);
         }
 
-        public static CoEvento thisPostId(int postId)
+        public static CoEvento thisPostId(long postId)
         {
             foreach (var item in poster)
             {
@@ -214,7 +214,7 @@ namespace Pont_Finder.eventos.Classes
             {
                 CoEvento postar = new CoEvento();
 
-                postar.Id = int.Parse(item.Element("id").Value);
+                postar.Id = long.Parse(item.Element("id").Value);
                 postar.IngressosTotal = int.Parse(item.Element("ingresso_total").Value);
                 postar.IngressoDispinivel = int.Parse(item.Element("ingresso_disponivel").Value);
                 postar.Nome = (item.Element("nome").Value);

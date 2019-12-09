@@ -301,6 +301,7 @@
             // 
             // painelcoment
             // 
+            this.painelcoment.AutoScroll = true;
             this.painelcoment.AutoSize = true;
             this.painelcoment.BackColor = System.Drawing.Color.Transparent;
             this.painelcoment.Location = new System.Drawing.Point(17, 723);

@@ -19,15 +19,17 @@ namespace Pont_Finder.eventos.User_Card
         Bitmap imgLikeBlue = Model.Img_like_click;
         Bitmap imgDeslikeBlue = Model.Img_deslike_click;
 
-        Form anterior;
+        
 
-        int postid;
-        public comentarios_eventos(int idpost, Form anterior)
+        long postid;
+        public comentarios_eventos(long idpost)
         {
             InitializeComponent();
             comentario = Classes.comentario_list.thisPostId(postid);
+
             this.postid = postid;
-            this.anterior = anterior;
+
+            
 
 
 
@@ -139,7 +141,7 @@ namespace Pont_Finder.eventos.User_Card
 
                 comentario.Comment = comentarios.Text;
             }
-            FormPrincipal.MudarForm("eventos", new Visualizar_evento(postid, anterior));
+            FormPrincipal.MudarForm("eventos", new Visualizar_evento(postid));
         }
     }
     

@@ -207,4 +207,13 @@
     <endereco>sdgfg</endereco>
     <ativo>true</ativo>
   </EMPRESA>
+  <EMPRESA>
+    <nome>asdfasdf</nome>
+    <nome_fantasia>dfasasdf</nome_fantasia>
+    <email>adas@gmail</email>
+    <cnpj>22222222222222</cnpj>
+    <telefone>22222222222</telefone>
+    <endereco>asdfsdfa</endereco>
+    <ativo>true</ativo>
+  </EMPRESA>
 </CADEMPRESA>

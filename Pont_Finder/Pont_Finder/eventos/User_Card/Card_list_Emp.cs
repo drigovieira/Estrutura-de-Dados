@@ -14,7 +14,7 @@ namespace Pont_Finder.eventos.User_Card
     {
         Classes.CoEvento evento;
 
-        public Card_list_Emp(int id)
+        public Card_list_Emp(long id)
         {
             evento = Classes.Eventos_List.thisPostId(id);
             InitializeComponent();

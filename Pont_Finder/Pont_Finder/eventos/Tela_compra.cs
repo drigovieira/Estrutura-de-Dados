@@ -14,16 +14,16 @@ namespace Pont_Finder.eventos
     {
 
         Classes.CoEvento edit;
-        private int idremove;
-        Form anterior;
-        int idpost;
+        private long idremove;
+        
+        long idpost;
 
 
 
-        public Tela_compra(int idpost, Form anterior)
+        public Tela_compra(long idpost)
         {
             this.idpost = idpost;
-            this.anterior = anterior;
+            
 
             InitializeComponent();
             edit = Classes.Eventos_List.thisPostId(idpost);
@@ -167,7 +167,7 @@ namespace Pont_Finder.eventos
 
         private void Btn_back_Click(object sender, EventArgs e)
         {
-            FormPrincipal.MudarForm("eventos", new Visualizar_evento(idpost, anterior));
+            FormPrincipal.MudarForm("eventos", new Visualizar_evento(idpost));
         }
 
         private void Lb_valor_parcela_Click(object sender, EventArgs e)

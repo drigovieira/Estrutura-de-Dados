@@ -31,20 +31,20 @@ namespace Pont_Finder.eventos
         Bitmap imgDeslike = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_null.png");
         Bitmap imgLikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\like.png");
         Bitmap imgDeslikeBlue = new Bitmap("..\\..\\Resources\\servicos\\like\\Deslike_blue.png");
-        int postIdC;
+
+        long postIdC;
 
 
-        Form anterior;
+       
 
 
 
-        public Visualizar_evento(int postId, Form anterior)
+        public Visualizar_evento(long postId)
         {
 
             
           
             InitializeComponent();
-            this.anterior = anterior;
             post = Classes.Eventos_List.thisPostId(postId);
 
             //Evento:
@@ -57,7 +57,7 @@ namespace Pont_Finder.eventos
             lb_horario.Text = post.Horario;
             check();
 
-           
+            
 
 
         }
@@ -74,7 +74,8 @@ namespace Pont_Finder.eventos
 
         private void Visualizar_evento_Load(object sender, EventArgs e)
         {
-            
+            CarregarComents();
+            Filtro_comentario();
 
         }
 
@@ -87,8 +88,8 @@ namespace Pont_Finder.eventos
         {
             if (Session.Online == true)
             {
-                eventos.Tela_compra compra = new eventos.Tela_compra(post.Id, new Visualizar_evento(post.Id, anterior));
-                FormPrincipal.MudarForm("eventos", compra);
+                eventos.Tela_compra avaliepost = new Tela_compra(post.Id);
+                FormPrincipal.MudarForm("Reclame", avaliepost);
             }
             else
             {
@@ -170,7 +171,7 @@ namespace Pont_Finder.eventos
             {
                 if (i >= pagQuant)
                     break;
-                User_Card.comentarios_eventos t1 = new User_Card.comentarios_eventos(postIdC, anterior);
+                User_Card.comentarios_eventos t1 = new User_Card.comentarios_eventos(item.Idcoment);
                 t1.Location = new Point(0, local);
                 local = local + t1.Height + 5;
                 painelcoment.Controls.Add(t1);
@@ -188,6 +189,42 @@ namespace Pont_Finder.eventos
                 {
                     ListaPost.Add(item);
                 }
+            }
+
+
+
+            int y = 5;
+            painelcoment.Height = 180;
+            painelcoment.Controls.Clear();
+            int i = 0;
+
+            ListaPost.Reverse();
+
+            pagTotal = ListaPost.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
+            foreach (var item in ListaPost)
+            {
+                if (i >= pagQuant)
+                    break;
+                User_Card.comentarios_eventos a = new User_Card.comentarios_eventos(item.Idcoment);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                painelcoment.Height = painelcoment.Height + 180;
+                painelcoment.Controls.Add(a);
+                i++;
             }
         }
     }
