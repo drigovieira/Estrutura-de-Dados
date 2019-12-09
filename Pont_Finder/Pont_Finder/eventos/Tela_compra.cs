@@ -34,6 +34,7 @@ namespace Pont_Finder.eventos
             lb_local.Text = edit.Local;
             pb_imagem.ImageLocation = edit.Imagem1;
             lb_valor.Text = edit.Valor;
+            lb_valor_parcela.Text = edit.Valor;
             lb_nome_evento.Text = edit.Nome;
 
            
