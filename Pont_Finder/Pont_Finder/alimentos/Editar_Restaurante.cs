@@ -74,70 +74,71 @@ namespace Pont_Finder.alimentos
                     rbOutros.Checked = true;
                 }
             }
-            foreach(var i in CompanyList.selectAll()[idEmpresa].FuncionamentoEmp)
+            int limit = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp.Count;
+            for (int cont =0; cont < limit;cont++)
             {
-                if (i.Dia.Equals(cbSegunda.Text))
+                if (CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].Dia.Equals("Segunda - Feira"))
                 {
+                    maskedTextBox4.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraInicio.ToString("HH:mm");
+                    maskedTextBox19.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraFim.ToString("HH:mm");
                     cbSegunda.Checked = true;
-                    maskedTextBox4.Text = i.HoraInicio.ToString();
                     maskedTextBox4.Enabled = true;
-                    maskedTextBox19.Text = i.HoraFim.ToString();
                     maskedTextBox19.Enabled = true;
                 }
-                else if (i.Dia.Equals(cbTerca.Text))
+                else if (CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].Dia.Equals("Terça - Feira"))
                 {
+                    maskedTextBox5.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraInicio.ToString("HH:mm");
+                    maskedTextBox18.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraFim.ToString("HH:mm");
                     cbTerca.Checked = true;
-                    maskedTextBox5.Text = i.HoraInicio.ToString();
                     maskedTextBox5.Enabled = true;
-                    maskedTextBox18.Text = i.HoraFim.ToString();
                     maskedTextBox18.Enabled = true;
                 }
-                else if (i.Dia.Equals(cbQuarta.Text))
+                else if (CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].Dia.Equals("Quarta - Feira"))
                 {
+                    maskedTextBox6.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraInicio.ToString("HH:mm");
+                    maskedTextBox17.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraFim.ToString("HH:mm");
                     cbQuarta.Checked = true;
-                    maskedTextBox6.Text = i.HoraInicio.ToString();
                     maskedTextBox6.Enabled = true;
-                    maskedTextBox17.Text = i.HoraFim.ToString();
                     maskedTextBox17.Enabled = true;
                 }
-                else if (i.Equals(cbQuinta.Text))
+                else if (CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].Dia.Equals("Quinta - Feira"))
                 {
+                    maskedTextBox7.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraInicio.ToString("HH:mm");
+                    maskedTextBox16.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraFim.ToString("HH:mm");
                     cbQuinta.Checked = true;
-                    maskedTextBox7.Text = i.HoraInicio.ToString();
                     maskedTextBox7.Enabled = true;
-                    maskedTextBox16.Text = i.HoraFim.ToString();
                     maskedTextBox16.Enabled = true;
                 }
-                else if (i.Equals(cbSexta.Text))
+                else if (CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].Dia.Equals("Sexta - Feira"))
                 {
+                    maskedTextBox8.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraInicio.ToString("HH:mm");
+                    maskedTextBox15.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraFim.ToString("HH:mm");
                     cbSexta.Checked = true;
-                    maskedTextBox8.Text = i.HoraInicio.ToString();
                     maskedTextBox8.Enabled = true;
-                    maskedTextBox15.Text = i.HoraFim.ToString();
                     maskedTextBox15.Enabled = true;
                 }
-                else if (i.Equals(cbSabado.Text))
+                else if (CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].Dia.Equals("Sábado"))
                 {
+                    maskedTextBox9.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraInicio.ToString("HH:mm");
+                    maskedTextBox14.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraFim.ToString("HH:mm");
                     cbSabado.Checked = true;
-                    maskedTextBox9.Text = i.HoraInicio.ToString();
                     maskedTextBox9.Enabled = true;
-                    maskedTextBox14.Text = i.HoraFim.ToString();
                     maskedTextBox14.Enabled = true;
                 }
-                else if (i.Equals(cbDomingo.Text))
+                else if (CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].Dia.Equals("Domingo"))
                 {
+                    maskedTextBox10.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraInicio.ToString("HH:mm");
+                    maskedTextBox13.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraFim.ToString("HH:mm");
                     cbDomingo.Checked = true;
-                    maskedTextBox10.Text = i.HoraInicio.ToString();
                     maskedTextBox10.Enabled = true;
-                    maskedTextBox13.Text = i.HoraFim.ToString();
                     maskedTextBox13.Enabled = true;
                 }
-                else if (i.Equals(cbFeriado.Text))
+                else if (CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].Dia.Equals("Feriados"))
                 {
+                    maskedTextBox11.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraInicio.ToString("HH:mm");
+                    maskedTextBox12.Text = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].HoraFim.ToString("HH:mm");
                     cbFeriado.Checked = true;
-                    maskedTextBox11.Text = i.HoraInicio.ToString();
                     maskedTextBox11.Enabled = true;
-                    maskedTextBox12.Text = i.HoraFim.ToString();
                     maskedTextBox12.Enabled = true;
                 }
             }
