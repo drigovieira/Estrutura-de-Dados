@@ -47,6 +47,11 @@ namespace Pont_Finder.hospedagem
 
         }
 
+        private void Lb_emp_fantasia_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //Painel SERVICOS HOTEL
         private void pn_icons_hotel_Paint(object sender, PaintEventArgs e)
         {
