@@ -223,6 +223,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(966, 1000);
             this.panel4.TabIndex = 37;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
             // bt_postar
             // 

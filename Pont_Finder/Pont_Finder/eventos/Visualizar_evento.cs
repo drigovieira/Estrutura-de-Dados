@@ -49,7 +49,7 @@ namespace Pont_Finder.eventos
           
             InitializeComponent();
             post = Classes.Eventos_List.thisPostId(postId);
-            //empresa = classes.Empresa_List.Poster(postId);
+            empresa = classes.Empresa_List.forCnpj(post.Cnpj);
             postIdC = postId;
 
             //Evento:
@@ -61,7 +61,8 @@ namespace Pont_Finder.eventos
             lb_data.Text = post.Data;
             lb_horario.Text = post.Horario;
 
-            //this.lb_emp_fantasia.Text = empresa.Nome_Fantasia;
+            //Resolver:
+            lb_emp_fantasia.Text = " " + empresa.Nome_Fantasia;
             check();
 
 
@@ -240,6 +241,11 @@ namespace Pont_Finder.eventos
         }
 
         private void Visualizar_evento_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }

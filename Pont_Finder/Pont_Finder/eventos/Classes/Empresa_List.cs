@@ -105,6 +105,19 @@ namespace Pont_Finder.eventos.classes
             poster.Add(pos);
         }
 
+        public static CaEmpresa forCnpj(long cnpj)
+        {
+            CaEmpresa post = new CaEmpresa();
+            foreach (var empresa in poster)
+            {
+                if (empresa.Cnpj == cnpj) { 
+                    post = empresa;
+                    break;
+                }
+            }
+            return post;
+        }
+
 
         public static void XmlSave()
         {
