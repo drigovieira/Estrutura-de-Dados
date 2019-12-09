@@ -17,7 +17,7 @@ namespace Pont_Finder.servicos
         private bool img = false;
 
         string[] tiposServicos = {
-            "Eletrecista",
+            "Eletricista",
             "Informática",
             "Limpeza",
             "Montador de Móveis",

@@ -35,7 +35,14 @@ namespace Pont_Finder.servicos
         
             lb_data.Text = "Postado em: " + post.Data;
 
-            lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.post.Valor);
+            if (post.Valor == 0)
+            {
+                lb_valor.Text = "A Combinar";
+            }
+            else
+            {
+                lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.post.Valor);
+            }
 
             pb_icone.ImageLocation = post.Image;
 

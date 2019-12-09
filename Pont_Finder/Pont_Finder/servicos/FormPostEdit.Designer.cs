@@ -45,6 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.tb_descricao = new System.Windows.Forms.RichTextBox();
+            this.cb_combinar = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_valor)).BeginInit();
@@ -182,6 +183,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.cb_combinar);
             this.panel4.Controls.Add(this.tb_valor);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.bt_icone);
@@ -211,7 +213,7 @@
             0,
             0});
             this.tb_valor.Name = "tb_valor";
-            this.tb_valor.Size = new System.Drawing.Size(300, 34);
+            this.tb_valor.Size = new System.Drawing.Size(153, 34);
             this.tb_valor.TabIndex = 43;
             this.tb_valor.Value = new decimal(new int[] {
             10,
@@ -252,6 +254,18 @@
             this.tb_descricao.Size = new System.Drawing.Size(563, 333);
             this.tb_descricao.TabIndex = 11;
             this.tb_descricao.Text = "";
+            // 
+            // cb_combinar
+            // 
+            this.cb_combinar.AutoSize = true;
+            this.cb_combinar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F);
+            this.cb_combinar.Location = new System.Drawing.Point(215, 426);
+            this.cb_combinar.Name = "cb_combinar";
+            this.cb_combinar.Size = new System.Drawing.Size(141, 31);
+            this.cb_combinar.TabIndex = 45;
+            this.cb_combinar.Text = "A Combinar";
+            this.cb_combinar.UseVisualStyleBackColor = true;
+            this.cb_combinar.CheckedChanged += new System.EventHandler(this.Cb_combinar_CheckedChanged);
             // 
             // FormPostEdit
             // 
@@ -298,5 +312,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown tb_valor;
         private System.Windows.Forms.RichTextBox tb_descricao;
+        private System.Windows.Forms.CheckBox cb_combinar;
     }
 }

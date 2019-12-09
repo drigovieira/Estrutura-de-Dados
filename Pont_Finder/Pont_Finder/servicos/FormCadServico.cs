@@ -24,6 +24,7 @@ namespace Pont_Finder.servicos
             this.anterior = anterior;
             empresa = classes.ListaEmpresa.ForCpf(Session.Cpf);
             InitializeComponent();
+           
         }
 
         private void Publicar_Click(object sender, EventArgs e)
@@ -51,7 +52,19 @@ namespace Pont_Finder.servicos
             classes.Post post = new classes.Post();
             post.Id = classes.PostList.Tam;
             post.Titulo = tb_titulo.Text;
-            post.Valor = double.Parse(tb_valor.Value + "");
+
+            if (cb_combinar.Checked)
+            {
+                tb_valor.Enabled = false;
+                post.Valor = 0;
+            }
+            else
+            {
+                tb_valor.Enabled = true;
+                post.Valor = double.Parse(tb_valor.Value + "");
+            }
+
+           
             post.Descricao = tb_descricao.Text;
             post.Image = link;
             post.Data = DateTime.Now;
@@ -73,6 +86,23 @@ namespace Pont_Finder.servicos
         private void Cancelar_Click(object sender, EventArgs e)
         {
             FormPrincipal.MudarForm("servicos", anterior);
+        }
+
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_combinar.Checked)
+            {
+                tb_valor.Enabled = false;
+            }
+            else
+            {
+                tb_valor.Enabled = true;
+            }
+        }
+
+        private void FormCadServico_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

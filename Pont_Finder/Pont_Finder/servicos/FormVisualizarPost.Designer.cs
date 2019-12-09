@@ -259,6 +259,7 @@
             this.lb_categoria.Size = new System.Drawing.Size(320, 50);
             this.lb_categoria.TabIndex = 35;
             this.lb_categoria.Text = "Categoria";
+            this.lb_categoria.Click += new System.EventHandler(this.Lb_categoria_Click);
             // 
             // painel_botoes
             // 

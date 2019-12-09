@@ -29,7 +29,14 @@ namespace Pont_Finder.servicos.User_control
             pb_user.ImageLocation = empresa.Image;
             lb_titulo.Text += post.Titulo;
             lb_status.Text += solicitado.Status;
-            lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.post.Valor);
+            if (post.Valor == 0)
+            {
+                lb_valor.Text = "A Combinar";
+            }
+            else
+            {
+                lb_valor.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.post.Valor);
+            }
             lb_data.Text += solicitado.DataAgendada;
             lb_empresa.Text = empresa.NomeFantasia;
 
