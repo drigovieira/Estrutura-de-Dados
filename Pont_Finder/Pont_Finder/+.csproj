@@ -418,6 +418,12 @@
     <Compile Include="hospedagem\data\inc\amb.Designer.cs">
       <DependentUpon>amb.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospedagem\data\inc\Control_Top5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hospedagem\data\inc\Control_Top5.Designer.cs">
+      <DependentUpon>Control_Top5.cs</DependentUpon>
+    </Compile>
     <Compile Include="hospedagem\data\inc\emp_list_reservas.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -866,6 +872,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\data\inc\amb.resx">
       <DependentUpon>amb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hospedagem\data\inc\Control_Top5.resx">
+      <DependentUpon>Control_Top5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hospedagem\data\inc\emp_list_reservas.resx">
       <DependentUpon>emp_list_reservas.cs</DependentUpon>
