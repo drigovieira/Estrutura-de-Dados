@@ -40,7 +40,6 @@
             this.lb_nome_quarto = new System.Windows.Forms.Label();
             this.pn_icons_quarto = new System.Windows.Forms.Panel();
             this.lb_forma_pagamento = new System.Windows.Forms.Label();
-            this.bt_visualizar = new System.Windows.Forms.Button();
             this.bt_cancelar = new System.Windows.Forms.Button();
             this.lb_endereco_emp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).BeginInit();
@@ -51,7 +50,7 @@
             this.lb_rs.AutoSize = true;
             this.lb_rs.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs.Location = new System.Drawing.Point(694, 43);
+            this.lb_rs.Location = new System.Drawing.Point(656, 43);
             this.lb_rs.Name = "lb_rs";
             this.lb_rs.Size = new System.Drawing.Size(57, 42);
             this.lb_rs.TabIndex = 62;
@@ -163,24 +162,11 @@
             // 
             this.lb_forma_pagamento.AutoSize = true;
             this.lb_forma_pagamento.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_forma_pagamento.Location = new System.Drawing.Point(648, 99);
+            this.lb_forma_pagamento.Location = new System.Drawing.Point(660, 114);
             this.lb_forma_pagamento.Name = "lb_forma_pagamento";
             this.lb_forma_pagamento.Size = new System.Drawing.Size(194, 17);
             this.lb_forma_pagamento.TabIndex = 73;
             this.lb_forma_pagamento.Text = "Forma de pagamento escolhida";
-            // 
-            // bt_visualizar
-            // 
-            this.bt_visualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_visualizar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_visualizar.ForeColor = System.Drawing.Color.White;
-            this.bt_visualizar.Location = new System.Drawing.Point(866, 37);
-            this.bt_visualizar.Name = "bt_visualizar";
-            this.bt_visualizar.Size = new System.Drawing.Size(110, 40);
-            this.bt_visualizar.TabIndex = 74;
-            this.bt_visualizar.Text = "Visualizar";
-            this.bt_visualizar.UseVisualStyleBackColor = false;
             // 
             // bt_cancelar
             // 
@@ -188,12 +174,13 @@
             this.bt_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bt_cancelar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cancelar.ForeColor = System.Drawing.Color.White;
-            this.bt_cancelar.Location = new System.Drawing.Point(866, 91);
+            this.bt_cancelar.Location = new System.Drawing.Point(874, 55);
             this.bt_cancelar.Name = "bt_cancelar";
             this.bt_cancelar.Size = new System.Drawing.Size(110, 40);
             this.bt_cancelar.TabIndex = 75;
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = false;
+            this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // lb_endereco_emp
             // 
@@ -213,7 +200,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.bt_cancelar);
-            this.Controls.Add(this.bt_visualizar);
             this.Controls.Add(this.lb_forma_pagamento);
             this.Controls.Add(this.lb_endereco_emp);
             this.Controls.Add(this.pn_icons_quarto);
@@ -249,7 +235,6 @@
         private System.Windows.Forms.Label lb_nome_quarto;
         private System.Windows.Forms.Panel pn_icons_quarto;
         private System.Windows.Forms.Label lb_forma_pagamento;
-        private System.Windows.Forms.Button bt_visualizar;
         private System.Windows.Forms.Button bt_cancelar;
         private System.Windows.Forms.Label lb_endereco_emp;
     }

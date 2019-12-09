@@ -31,6 +31,7 @@ namespace Pont_Finder.hospedagem
             reserva.Data_final = data_final;
             reserva.MetodoPagamento = metodo;
             reserva.Valor = valor_reserva;
+            reserva.Status = true;
 
             classes.reserveList.addReserva(reserva);
 

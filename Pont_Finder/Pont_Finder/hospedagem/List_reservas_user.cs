@@ -44,7 +44,7 @@ namespace Pont_Finder.hospedagem
                 List<Quarto> lista = roomList.quartosAtivos();
                 lista.Reverse();
 
-                List<classes.Reserva> lista_reservas = classes.reserveList.selectAll();
+                List<classes.Reserva> lista_reservas = classes.reserveList.selectActiveReserves();
 
 
                 cpf = Session.Cpf;
@@ -98,7 +98,7 @@ namespace Pont_Finder.hospedagem
                 List<Quarto> lista = roomList.quartosAtivos();
                 lista.Reverse();
 
-                List<classes.Reserva> lista_reservas = classes.reserveList.selectAll();
+                List<classes.Reserva> lista_reservas = classes.reserveList.selectActiveReserves();
 
                 Empresa emp = hostList.selectCpf(Session.Cpf);
 
@@ -139,7 +139,7 @@ namespace Pont_Finder.hospedagem
                 List<Quarto> lista = roomList.quartosAtivos();
                 lista.Reverse();
 
-                List<classes.Reserva> lista_reservas = classes.reserveList.selectAll();
+                List<classes.Reserva> lista_reservas = classes.reserveList.selectActiveReserves();
 
                 Empresa emp = hostList.selectCpf(Session.Cpf);
 

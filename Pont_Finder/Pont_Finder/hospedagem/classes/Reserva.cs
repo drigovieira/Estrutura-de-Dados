@@ -13,6 +13,14 @@ namespace Pont_Finder.hospedagem.classes
         private DateTime data_inicial, data_final;
         private double valor;
         private string metodo_pagamento;
+        bool status;
+
+
+        public bool Status
+        {
+            get { return status; }
+            set { status = value; }
+        }
 
         public long Usuario
         {

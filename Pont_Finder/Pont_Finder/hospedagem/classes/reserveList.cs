@@ -25,6 +25,7 @@ namespace Pont_Finder.hospedagem.classes
             r.Data_final = reserva.Data_final;
             r.MetodoPagamento = reserva.MetodoPagamento;
             r.Valor = reserva.Valor;
+            r.Status = reserva.Status;
 
             reservas.Add(r);
         }
@@ -49,9 +50,35 @@ namespace Pont_Finder.hospedagem.classes
                 r.Data_final = item.Data_final;
                 r.MetodoPagamento = item.MetodoPagamento;
                 r.Valor = item.Valor;
-
+                r.Status = item.Status;
 
                 lista.Add(r);
+            }
+
+            return lista;
+        }
+
+        public static List<Reserva> selectActiveReserves()
+        {
+            List<Reserva> lista = new List<Reserva>();
+
+            foreach (var item in reservas)
+            {
+                if(item.Status == true)
+                { 
+                    Reserva r = new Reserva();
+
+                    r.Id = item.Id;
+                    r.IdQuarto = item.IdQuarto;
+                    r.Usuario = item.Usuario;
+                    r.Data_inicial = item.Data_inicial;
+                    r.Data_final = item.Data_final;
+                    r.MetodoPagamento = item.MetodoPagamento;
+                    r.Valor = item.Valor;
+                    r.Status = item.Status;
+
+                    lista.Add(r);
+                }
             }
 
             return lista;
@@ -74,6 +101,7 @@ namespace Pont_Finder.hospedagem.classes
                     r.Data_final = item.Data_final;
                     r.MetodoPagamento = item.MetodoPagamento;
                     r.Valor = item.Valor;
+                    r.Status = item.Status;
 
                     lista_cpf.Add(r);
                 }
@@ -102,6 +130,7 @@ namespace Pont_Finder.hospedagem.classes
                 r.Data_final = DateTime.Parse(item.Element("datasaida").Value);
                 r.MetodoPagamento = item.Element("pagamento").Value;
                 r.Valor = double.Parse(item.Element("valor").Value);
+                r.Status = bool.Parse(item.Element("status").Value);
 
                 reservas.Add(r);
 
@@ -137,7 +166,8 @@ namespace Pont_Finder.hospedagem.classes
                     new XElement("dataentrada", item.Data_inicial),
                     new XElement("datasaida", item.Data_final),
                     new XElement("pagamento", item.MetodoPagamento),
-                    new XElement("valor", item.Valor));
+                    new XElement("valor", item.Valor),
+                    new XElement("status", item.Status));
 
                 XDocument doc = XDocument.Load(caminho);
                 doc.Root.Add(xemp);

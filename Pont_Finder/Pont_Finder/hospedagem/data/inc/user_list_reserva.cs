@@ -14,6 +14,24 @@ namespace Pont_Finder.hospedagem.data.inc
     {
         private int id, id_quarto, qtd_pessoas, qtd_disponivel;
         private string nome, empresa, servicos, foto, status;
+
+        private void bt_cancelar_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Deseja realmente cancelar a reserva?", "Cancelar reserva", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+
+            if (confirm.ToString().ToUpper() == "YES")
+            {
+                reserva.Status = false;
+
+                MessageBox.Show("Sua reserva foi cancelada!");
+                FormPrincipal.MudarForm("hospedagem", new List_reservas_user(new Hosp_Home()));
+            }
+            else
+            {
+
+            }
+        }
+
         private DateTime data_entrada, data_saida;
         private double valor;
         private bool ativo;
@@ -60,6 +78,8 @@ namespace Pont_Finder.hospedagem.data.inc
             lb_rs.Text = "R$"+reserva.Valor;
 
             lb_forma_pagamento.Text = "Forma de pagamento: " + reserva.MetodoPagamento;
+
+            label8.Text = "";
 
         }
 
