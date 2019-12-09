@@ -107,13 +107,12 @@ namespace Pont_Finder.hospedagem
                 }
                 if (radioButton2.Checked)
                 {
-                    tipo = "Outro";
-                    if (tb_casal.Text == "")
+                    if (tb_casal.Text == "" && tb_solteiro.Text != "")
                     {
                         qtd_solteiro = Convert.ToInt32(tb_solteiro.Text);
                         qtd_pessoas = qtd_solteiro;
                     }
-                    if (tb_solteiro.Text == "")
+                    if (tb_solteiro.Text == "" && tb_casal.Text != "")
                     {
                         qtd_casal = Convert.ToInt32(tb_casal.Text);
                         qtd_pessoas = qtd_casal * 2;
@@ -124,8 +123,14 @@ namespace Pont_Finder.hospedagem
                         qtd_casal = Convert.ToInt32(tb_casal.Text);
                         qtd_pessoas = qtd_solteiro + (qtd_casal * 2);
                     }
+                    if (tb_casal.Text == "" && tb_casal.Text == "")
+                    {
+                        qtd_casal = 1;
+                        qtd_solteiro = 1;
+                        qtd_pessoas = 3;
 
-                    
+                    }
+
                 }
 
 
