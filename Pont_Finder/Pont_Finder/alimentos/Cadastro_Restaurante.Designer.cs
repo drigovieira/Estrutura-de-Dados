@@ -57,7 +57,6 @@
             this.lb_descricao = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.cbEntrega = new System.Windows.Forms.CheckBox();
             this.cbCardapio = new System.Windows.Forms.CheckBox();
@@ -112,6 +111,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -428,7 +428,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.maskedTextBox1);
+            this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.cbEntrega);
             this.panel5.Controls.Add(this.cbCardapio);
@@ -437,17 +437,6 @@
             this.panel5.Size = new System.Drawing.Size(460, 108);
             this.panel5.TabIndex = 38;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel5_Paint);
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(234, 68);
-            this.maskedTextBox1.Mask = "000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 24);
-            this.maskedTextBox1.TabIndex = 8;
-            this.maskedTextBox1.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox1.Visible = false;
             // 
             // label15
             // 
@@ -1105,6 +1094,14 @@
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click_1);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(234, 68);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(94, 28);
+            this.textBox1.TabIndex = 8;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
             // Cadastro_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1221,7 +1218,6 @@
         private System.Windows.Forms.CheckBox cbCardapio;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.CheckBox ckb_termos_uso;
         private System.Windows.Forms.Label label18;
@@ -1231,5 +1227,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RadioButton rb_Cel;
         private System.Windows.Forms.RadioButton rb_Tel;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

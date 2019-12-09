@@ -61,8 +61,6 @@
             this.radio_hotel = new System.Windows.Forms.RadioButton();
             this.bt_continuar = new System.Windows.Forms.Button();
             this.pnl_ambDisp = new System.Windows.Forms.Panel();
-            this.ckb_wifi = new System.Windows.Forms.CheckBox();
-            this.ckb_lugarPet = new System.Windows.Forms.CheckBox();
             this.ckb_academia = new System.Windows.Forms.CheckBox();
             this.ckb_salaJogos = new System.Windows.Forms.CheckBox();
             this.ckb_piscina = new System.Windows.Forms.CheckBox();
@@ -445,43 +443,19 @@
             // 
             this.pnl_ambDisp.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnl_ambDisp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl_ambDisp.Controls.Add(this.ckb_wifi);
-            this.pnl_ambDisp.Controls.Add(this.ckb_lugarPet);
             this.pnl_ambDisp.Controls.Add(this.ckb_academia);
             this.pnl_ambDisp.Controls.Add(this.ckb_salaJogos);
             this.pnl_ambDisp.Controls.Add(this.ckb_piscina);
             this.pnl_ambDisp.Controls.Add(this.ckb_estacionamento);
-            this.pnl_ambDisp.Location = new System.Drawing.Point(82, 1052);
+            this.pnl_ambDisp.Location = new System.Drawing.Point(85, 1052);
             this.pnl_ambDisp.Name = "pnl_ambDisp";
-            this.pnl_ambDisp.Size = new System.Drawing.Size(460, 143);
+            this.pnl_ambDisp.Size = new System.Drawing.Size(455, 121);
             this.pnl_ambDisp.TabIndex = 19;
-            // 
-            // ckb_wifi
-            // 
-            this.ckb_wifi.AutoSize = true;
-            this.ckb_wifi.Location = new System.Drawing.Point(292, 24);
-            this.ckb_wifi.Name = "ckb_wifi";
-            this.ckb_wifi.Size = new System.Drawing.Size(51, 18);
-            this.ckb_wifi.TabIndex = 23;
-            this.ckb_wifi.TabStop = false;
-            this.ckb_wifi.Text = "Wi-Fi";
-            this.ckb_wifi.UseVisualStyleBackColor = true;
-            // 
-            // ckb_lugarPet
-            // 
-            this.ckb_lugarPet.AutoSize = true;
-            this.ckb_lugarPet.Location = new System.Drawing.Point(72, 96);
-            this.ckb_lugarPet.Name = "ckb_lugarPet";
-            this.ckb_lugarPet.Size = new System.Drawing.Size(97, 18);
-            this.ckb_lugarPet.TabIndex = 22;
-            this.ckb_lugarPet.TabStop = false;
-            this.ckb_lugarPet.Text = "Lugar para pet";
-            this.ckb_lugarPet.UseVisualStyleBackColor = true;
             // 
             // ckb_academia
             // 
             this.ckb_academia.AutoSize = true;
-            this.ckb_academia.Location = new System.Drawing.Point(292, 59);
+            this.ckb_academia.Location = new System.Drawing.Point(90, 32);
             this.ckb_academia.Name = "ckb_academia";
             this.ckb_academia.Size = new System.Drawing.Size(74, 18);
             this.ckb_academia.TabIndex = 24;
@@ -492,7 +466,7 @@
             // ckb_salaJogos
             // 
             this.ckb_salaJogos.AutoSize = true;
-            this.ckb_salaJogos.Location = new System.Drawing.Point(292, 96);
+            this.ckb_salaJogos.Location = new System.Drawing.Point(265, 69);
             this.ckb_salaJogos.Name = "ckb_salaJogos";
             this.ckb_salaJogos.Size = new System.Drawing.Size(92, 18);
             this.ckb_salaJogos.TabIndex = 25;
@@ -503,7 +477,7 @@
             // ckb_piscina
             // 
             this.ckb_piscina.AutoSize = true;
-            this.ckb_piscina.Location = new System.Drawing.Point(72, 59);
+            this.ckb_piscina.Location = new System.Drawing.Point(265, 32);
             this.ckb_piscina.Name = "ckb_piscina";
             this.ckb_piscina.Size = new System.Drawing.Size(60, 18);
             this.ckb_piscina.TabIndex = 21;
@@ -514,7 +488,7 @@
             // ckb_estacionamento
             // 
             this.ckb_estacionamento.AutoSize = true;
-            this.ckb_estacionamento.Location = new System.Drawing.Point(72, 24);
+            this.ckb_estacionamento.Location = new System.Drawing.Point(90, 69);
             this.ckb_estacionamento.Name = "ckb_estacionamento";
             this.ckb_estacionamento.Size = new System.Drawing.Size(104, 18);
             this.ckb_estacionamento.TabIndex = 20;
@@ -752,8 +726,6 @@
         private System.Windows.Forms.Button bt_add_logo;
         private System.Windows.Forms.PictureBox pb_logo;
         private System.Windows.Forms.Panel pn_galery;
-        private System.Windows.Forms.CheckBox ckb_wifi;
-        private System.Windows.Forms.CheckBox ckb_lugarPet;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label18;
