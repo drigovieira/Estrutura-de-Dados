@@ -65,7 +65,7 @@ namespace Pont_Finder.hospedagem
                 quarto.Ativo = false;
 
                 MessageBox.Show("Quarto removido!");
-                FormPrincipal.MudarForm("hospedagem", new Listas_quartos(new Cadastro_Empresa(new Hosp_Home())));
+                FormPrincipal.MudarForm("hospedagem", new Listas_quartos(new Hosp_Home()));
             }
             else 
             { 
