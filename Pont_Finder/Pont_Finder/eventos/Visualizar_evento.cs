@@ -56,6 +56,7 @@ namespace Pont_Finder.eventos
             lb_nome_evento.Text = post.Nome;
             pb_principal.ImageLocation = post.Imagem1;
             lb_rs_boleto.Text = post.Valor;
+            lb_rs_cartao.Text = post.Valor;
             lb_descricao.Text = post.Descricao;
             lb_categoria.Text = post.Categoria;
             lb_data.Text = post.Data;
