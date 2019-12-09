@@ -369,5 +369,10 @@ namespace Pont_Finder.hospedagem
         {
             tb_email.MaxLength = 50;
         }
+
+        private void mkb_phone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

@@ -156,11 +156,12 @@
             // 
             this.mkb_phone.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mkb_phone.Location = new System.Drawing.Point(345, 563);
-            this.mkb_phone.Mask = "(99) 00000-0000";
+            this.mkb_phone.Mask = "(99) 0000-0000";
             this.mkb_phone.Name = "mkb_phone";
             this.mkb_phone.Size = new System.Drawing.Size(170, 22);
             this.mkb_phone.TabIndex = 6;
             this.mkb_phone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mkb_phone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mkb_phone_MaskInputRejected);
             // 
             // mkb_cep
             // 
@@ -388,7 +389,7 @@
             this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
             this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
+            this.lb_descricao.Size = new System.Drawing.Size(430, 546);
             this.lb_descricao.TabIndex = 69;
             this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
             // 

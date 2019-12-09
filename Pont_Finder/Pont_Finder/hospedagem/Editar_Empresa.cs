@@ -60,9 +60,14 @@ namespace Pont_Finder.hospedagem
         private void bt_alterar_Click(object sender, EventArgs e)//DENIS BOTAO ALTERAR
         {
             emp.Endereco = tb_endereco.Text;
+            emp.Cep = Convert.ToInt32(mkb_cep.Text);
+            emp.Telefone = long.Parse(mkb_phone.Text);
+            emp.Descricao = tb_descricaoHotel.Text;
 
             MessageBox.Show("Empresa atualizada!");
 
+            //Achei necessario colocar
+            FormPrincipal.MudarForm("hospedagem", new Hosp_Home());
         }
 
         private void bt_add_img_Click(object sender, EventArgs e)
@@ -96,6 +101,11 @@ namespace Pont_Finder.hospedagem
                     }
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void ckb_lugarPet_CheckedChanged(object sender, EventArgs e)
@@ -175,12 +185,26 @@ namespace Pont_Finder.hospedagem
             pictureBox1.ImageLocation = logo;
             pictureBox1.Load();
 
+            //PREENCHido CheckBOXS COM DADOS DA LISTA      DENIS
             if (ambiente.Contains("Estacionamento"))
             {
                 ckb_estacionamento.Checked = true;
             }
+      
+            if (ambiente.Contains("Piscina"))
+            {
+                ckb_piscina.Checked = true;
+            }
 
-            //PREENCHER TEXTBOXS COM DADOS DA LISTA      DENIS
+            if (ambiente.Contains("Sala de jogos"))
+            {
+                ckb_salaJogos.Checked = true;
+            }
+
+            if (ambiente.Contains("Academia"))
+            {
+                ckb_academia.Checked = true;
+            }
 
         }
     }
