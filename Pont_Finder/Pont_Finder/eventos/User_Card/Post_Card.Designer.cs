@@ -46,7 +46,13 @@
             this.lb_classifica = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lb_horario = new System.Windows.Forms.Label();
+            this.pb_up = new System.Windows.Forms.PictureBox();
+            this.lb_like = new System.Windows.Forms.Label();
+            this.lb_deslike = new System.Windows.Forms.Label();
+            this.pb_down = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_valor
@@ -66,7 +72,7 @@
             this.lb_ingressos.BackColor = System.Drawing.Color.Transparent;
             this.lb_ingressos.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_ingressos.ForeColor = System.Drawing.Color.Blue;
-            this.lb_ingressos.Location = new System.Drawing.Point(333, 80);
+            this.lb_ingressos.Location = new System.Drawing.Point(333, 63);
             this.lb_ingressos.Name = "lb_ingressos";
             this.lb_ingressos.Size = new System.Drawing.Size(19, 25);
             this.lb_ingressos.TabIndex = 9;
@@ -76,7 +82,7 @@
             // 
             this.lb_nome.AutoSize = true;
             this.lb_nome.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nome.Location = new System.Drawing.Point(193, 13);
+            this.lb_nome.Location = new System.Drawing.Point(193, 0);
             this.lb_nome.Name = "lb_nome";
             this.lb_nome.Size = new System.Drawing.Size(63, 32);
             this.lb_nome.TabIndex = 8;
@@ -108,7 +114,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(195, 80);
+            this.label2.Location = new System.Drawing.Point(195, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(143, 25);
             this.label2.TabIndex = 15;
@@ -119,7 +125,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(195, 113);
+            this.label4.Location = new System.Drawing.Point(195, 96);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 25);
             this.label4.TabIndex = 17;
@@ -129,7 +135,7 @@
             // 
             this.lb_data.AutoSize = true;
             this.lb_data.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_data.Location = new System.Drawing.Point(231, 113);
+            this.lb_data.Location = new System.Drawing.Point(231, 96);
             this.lb_data.Name = "lb_data";
             this.lb_data.Size = new System.Drawing.Size(21, 25);
             this.lb_data.TabIndex = 18;
@@ -139,7 +145,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(194, 49);
+            this.label5.Location = new System.Drawing.Point(194, 32);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 25);
             this.label5.TabIndex = 20;
@@ -149,7 +155,7 @@
             // 
             this.lb_categoria.AutoSize = true;
             this.lb_categoria.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_categoria.Location = new System.Drawing.Point(262, 50);
+            this.lb_categoria.Location = new System.Drawing.Point(262, 33);
             this.lb_categoria.Name = "lb_categoria";
             this.lb_categoria.Size = new System.Drawing.Size(19, 25);
             this.lb_categoria.TabIndex = 12;
@@ -185,7 +191,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(358, 45);
+            this.label6.Location = new System.Drawing.Point(358, 28);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 25);
             this.label6.TabIndex = 30;
@@ -195,7 +201,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(358, 114);
+            this.label7.Location = new System.Drawing.Point(358, 97);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 25);
             this.label7.TabIndex = 31;
@@ -205,7 +211,7 @@
             // 
             this.lb_local.AutoSize = true;
             this.lb_local.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_local.Location = new System.Drawing.Point(401, 45);
+            this.lb_local.Location = new System.Drawing.Point(401, 28);
             this.lb_local.Name = "lb_local";
             this.lb_local.Size = new System.Drawing.Size(19, 25);
             this.lb_local.TabIndex = 32;
@@ -215,7 +221,7 @@
             // 
             this.lb_classifica.AutoSize = true;
             this.lb_classifica.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_classifica.Location = new System.Drawing.Point(441, 114);
+            this.lb_classifica.Location = new System.Drawing.Point(441, 97);
             this.lb_classifica.Name = "lb_classifica";
             this.lb_classifica.Size = new System.Drawing.Size(19, 25);
             this.lb_classifica.TabIndex = 33;
@@ -225,7 +231,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(358, 80);
+            this.label8.Location = new System.Drawing.Point(358, 63);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 25);
             this.label8.TabIndex = 34;
@@ -235,11 +241,59 @@
             // 
             this.lb_horario.AutoSize = true;
             this.lb_horario.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_horario.Location = new System.Drawing.Point(416, 80);
+            this.lb_horario.Location = new System.Drawing.Point(416, 63);
             this.lb_horario.Name = "lb_horario";
             this.lb_horario.Size = new System.Drawing.Size(19, 25);
             this.lb_horario.TabIndex = 35;
             this.lb_horario.Text = "v";
+            // 
+            // pb_up
+            // 
+            this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
+            this.pb_up.Location = new System.Drawing.Point(200, 122);
+            this.pb_up.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_up.Name = "pb_up";
+            this.pb_up.Size = new System.Drawing.Size(25, 25);
+            this.pb_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_up.TabIndex = 56;
+            this.pb_up.TabStop = false;
+            this.pb_up.Click += new System.EventHandler(this.Pb_up_Click);
+            // 
+            // lb_like
+            // 
+            this.lb_like.AutoSize = true;
+            this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_like.Location = new System.Drawing.Point(243, 131);
+            this.lb_like.Name = "lb_like";
+            this.lb_like.Size = new System.Drawing.Size(15, 16);
+            this.lb_like.TabIndex = 55;
+            this.lb_like.Text = "0";
+            // 
+            // lb_deslike
+            // 
+            this.lb_deslike.AutoSize = true;
+            this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_deslike.Location = new System.Drawing.Point(310, 131);
+            this.lb_deslike.Name = "lb_deslike";
+            this.lb_deslike.Size = new System.Drawing.Size(15, 16);
+            this.lb_deslike.TabIndex = 58;
+            this.lb_deslike.Text = "0";
+            // 
+            // pb_down
+            // 
+            this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
+            this.pb_down.Location = new System.Drawing.Point(267, 122);
+            this.pb_down.Margin = new System.Windows.Forms.Padding(15);
+            this.pb_down.Name = "pb_down";
+            this.pb_down.Size = new System.Drawing.Size(25, 25);
+            this.pb_down.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_down.TabIndex = 57;
+            this.pb_down.TabStop = false;
+            this.pb_down.Click += new System.EventHandler(this.Pb_down_Click);
             // 
             // Post_Card
             // 
@@ -247,6 +301,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.lb_deslike);
+            this.Controls.Add(this.pb_down);
+            this.Controls.Add(this.pb_up);
+            this.Controls.Add(this.lb_like);
             this.Controls.Add(this.lb_horario);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lb_classifica);
@@ -269,6 +327,8 @@
             this.Size = new System.Drawing.Size(623, 158);
             this.Load += new System.EventHandler(this.Post_Card_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +353,9 @@
         private System.Windows.Forms.Label lb_classifica;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lb_horario;
+        private System.Windows.Forms.PictureBox pb_up;
+        private System.Windows.Forms.Label lb_like;
+        private System.Windows.Forms.Label lb_deslike;
+        private System.Windows.Forms.PictureBox pb_down;
     }
 }
