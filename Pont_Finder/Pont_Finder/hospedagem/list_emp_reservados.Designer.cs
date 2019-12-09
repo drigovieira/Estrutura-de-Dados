@@ -77,7 +77,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(452, 19);
+            this.label1.Location = new System.Drawing.Point(419, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(427, 42);
             this.label1.TabIndex = 70;
@@ -95,7 +95,7 @@
             // 
             this.lb_nomeEmpresa.AutoSize = true;
             this.lb_nomeEmpresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nomeEmpresa.Location = new System.Drawing.Point(563, 96);
+            this.lb_nomeEmpresa.Location = new System.Drawing.Point(537, 96);
             this.lb_nomeEmpresa.Name = "lb_nomeEmpresa";
             this.lb_nomeEmpresa.Size = new System.Drawing.Size(190, 27);
             this.lb_nomeEmpresa.TabIndex = 73;

@@ -92,7 +92,6 @@
             this.radio_hotel.Name = "radio_hotel";
             this.radio_hotel.Size = new System.Drawing.Size(57, 21);
             this.radio_hotel.TabIndex = 11;
-            this.radio_hotel.TabStop = true;
             this.radio_hotel.Text = "Hotel";
             this.radio_hotel.UseVisualStyleBackColor = true;
             // 
@@ -113,7 +112,7 @@
             this.ckb_lugarPet.Location = new System.Drawing.Point(72, 89);
             this.ckb_lugarPet.Name = "ckb_lugarPet";
             this.ckb_lugarPet.Size = new System.Drawing.Size(114, 21);
-            this.ckb_lugarPet.TabIndex = 24;
+            this.ckb_lugarPet.TabIndex = 22;
             this.ckb_lugarPet.Text = "Lugar para pet";
             this.ckb_lugarPet.UseVisualStyleBackColor = true;
             this.ckb_lugarPet.CheckedChanged += new System.EventHandler(this.ckb_lugarPet_CheckedChanged);
@@ -125,7 +124,7 @@
             this.ckb_academia.Location = new System.Drawing.Point(292, 55);
             this.ckb_academia.Name = "ckb_academia";
             this.ckb_academia.Size = new System.Drawing.Size(84, 21);
-            this.ckb_academia.TabIndex = 23;
+            this.ckb_academia.TabIndex = 24;
             this.ckb_academia.Text = "Academia";
             this.ckb_academia.UseVisualStyleBackColor = true;
             this.ckb_academia.CheckedChanged += new System.EventHandler(this.ckb_academia_CheckedChanged);
@@ -137,7 +136,7 @@
             this.ckb_salaJogos.Location = new System.Drawing.Point(292, 89);
             this.ckb_salaJogos.Name = "ckb_salaJogos";
             this.ckb_salaJogos.Size = new System.Drawing.Size(109, 21);
-            this.ckb_salaJogos.TabIndex = 22;
+            this.ckb_salaJogos.TabIndex = 25;
             this.ckb_salaJogos.Text = "Sala de Jogos";
             this.ckb_salaJogos.UseVisualStyleBackColor = true;
             this.ckb_salaJogos.CheckedChanged += new System.EventHandler(this.ckb_salaJogos_CheckedChanged);
@@ -217,6 +216,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 44);
             this.button1.TabIndex = 16;
+            this.button1.TabStop = false;
             this.button1.Text = "Adicionar Logo";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -239,7 +239,6 @@
             this.radio_pousada.Name = "radio_pousada";
             this.radio_pousada.Size = new System.Drawing.Size(76, 21);
             this.radio_pousada.TabIndex = 12;
-            this.radio_pousada.TabStop = true;
             this.radio_pousada.Text = "Pousada";
             this.radio_pousada.UseVisualStyleBackColor = true;
             // 
@@ -249,9 +248,9 @@
             this.ckb_wifi.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckb_wifi.Location = new System.Drawing.Point(292, 22);
             this.ckb_wifi.Name = "ckb_wifi";
-            this.ckb_wifi.Size = new System.Drawing.Size(49, 21);
-            this.ckb_wifi.TabIndex = 25;
-            this.ckb_wifi.Text = "Wifi";
+            this.ckb_wifi.Size = new System.Drawing.Size(56, 21);
+            this.ckb_wifi.TabIndex = 23;
+            this.ckb_wifi.Text = "Wi-Fi";
             this.ckb_wifi.UseVisualStyleBackColor = true;
             this.ckb_wifi.CheckedChanged += new System.EventHandler(this.ckb_wifi_CheckedChanged);
             // 
@@ -265,6 +264,7 @@
             this.bt_alterar.Name = "bt_alterar";
             this.bt_alterar.Size = new System.Drawing.Size(220, 50);
             this.bt_alterar.TabIndex = 24;
+            this.bt_alterar.TabStop = false;
             this.bt_alterar.Text = "Alterar";
             this.bt_alterar.UseVisualStyleBackColor = false;
             // 
@@ -288,6 +288,7 @@
             this.bt_add_img.Name = "bt_add_img";
             this.bt_add_img.Size = new System.Drawing.Size(187, 55);
             this.bt_add_img.TabIndex = 9;
+            this.bt_add_img.TabStop = false;
             this.bt_add_img.Text = "Adicionar imagem";
             this.bt_add_img.UseVisualStyleBackColor = false;
             // 
