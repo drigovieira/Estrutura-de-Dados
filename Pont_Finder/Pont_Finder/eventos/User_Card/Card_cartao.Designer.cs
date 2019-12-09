@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mkb_boleto_CPF = new System.Windows.Forms.MaskedTextBox();
+            this.mkb_cartao_CPF = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tb_cartao_titular = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,17 +41,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cb_qtd_parcelas = new System.Windows.Forms.ComboBox();
             this.cb_select_cartao = new System.Windows.Forms.ComboBox();
+            this.bt_limpar = new System.Windows.Forms.Button();
+            this.bt_finalizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // mkb_boleto_CPF
+            // mkb_cartao_CPF
             // 
-            this.mkb_boleto_CPF.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.mkb_boleto_CPF.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mkb_boleto_CPF.Location = new System.Drawing.Point(124, 423);
-            this.mkb_boleto_CPF.Mask = "000.000.000-00";
-            this.mkb_boleto_CPF.Name = "mkb_boleto_CPF";
-            this.mkb_boleto_CPF.Size = new System.Drawing.Size(150, 24);
-            this.mkb_boleto_CPF.TabIndex = 43;
+            this.mkb_cartao_CPF.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mkb_cartao_CPF.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mkb_cartao_CPF.Location = new System.Drawing.Point(124, 423);
+            this.mkb_cartao_CPF.Mask = "000.000.000-00";
+            this.mkb_cartao_CPF.Name = "mkb_cartao_CPF";
+            this.mkb_cartao_CPF.Size = new System.Drawing.Size(150, 24);
+            this.mkb_cartao_CPF.TabIndex = 43;
             // 
             // label6
             // 
@@ -173,12 +175,40 @@
             this.cb_select_cartao.TabIndex = 31;
             this.cb_select_cartao.Text = "Selecione o cartão";
             // 
+            // bt_limpar
+            // 
+            this.bt_limpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
+            this.bt_limpar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_limpar.ForeColor = System.Drawing.Color.White;
+            this.bt_limpar.Location = new System.Drawing.Point(324, 479);
+            this.bt_limpar.Name = "bt_limpar";
+            this.bt_limpar.Size = new System.Drawing.Size(200, 50);
+            this.bt_limpar.TabIndex = 45;
+            this.bt_limpar.Text = "Limpar";
+            this.bt_limpar.UseVisualStyleBackColor = false;
+            this.bt_limpar.Click += new System.EventHandler(this.Bt_limpar_Click);
+            // 
+            // bt_finalizar
+            // 
+            this.bt_finalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
+            this.bt_finalizar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_finalizar.ForeColor = System.Drawing.Color.White;
+            this.bt_finalizar.Location = new System.Drawing.Point(109, 479);
+            this.bt_finalizar.Name = "bt_finalizar";
+            this.bt_finalizar.Size = new System.Drawing.Size(200, 50);
+            this.bt_finalizar.TabIndex = 44;
+            this.bt_finalizar.Text = "Finalizar compra";
+            this.bt_finalizar.UseVisualStyleBackColor = false;
+            this.bt_finalizar.Click += new System.EventHandler(this.Bt_finalizar_Click);
+            // 
             // Card_cartao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.mkb_boleto_CPF);
+            this.Controls.Add(this.bt_limpar);
+            this.Controls.Add(this.bt_finalizar);
+            this.Controls.Add(this.mkb_cartao_CPF);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tb_cartao_titular);
             this.Controls.Add(this.label5);
@@ -192,7 +222,7 @@
             this.Controls.Add(this.cb_qtd_parcelas);
             this.Controls.Add(this.cb_select_cartao);
             this.Name = "Card_cartao";
-            this.Size = new System.Drawing.Size(623, 468);
+            this.Size = new System.Drawing.Size(623, 560);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,7 +230,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MaskedTextBox mkb_boleto_CPF;
+        private System.Windows.Forms.MaskedTextBox mkb_cartao_CPF;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_cartao_titular;
         private System.Windows.Forms.Label label5;
@@ -213,5 +243,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cb_qtd_parcelas;
         private System.Windows.Forms.ComboBox cb_select_cartao;
+        private System.Windows.Forms.Button bt_limpar;
+        private System.Windows.Forms.Button bt_finalizar;
     }
 }

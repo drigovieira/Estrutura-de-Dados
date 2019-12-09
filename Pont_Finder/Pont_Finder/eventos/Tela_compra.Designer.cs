@@ -39,6 +39,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_center = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lb_local = new System.Windows.Forms.Label();
             this.lb_data = new System.Windows.Forms.Label();
             this.lb_tipo_evento = new System.Windows.Forms.Label();
@@ -58,17 +59,14 @@
             this.lb_txt6 = new System.Windows.Forms.Label();
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bt_finalizar = new System.Windows.Forms.Button();
             this.lb_txt_titulo = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
@@ -182,6 +180,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 271);
             this.panel4.TabIndex = 57;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 211);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 17);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Postado por:";
             // 
             // lb_local
             // 
@@ -385,25 +394,11 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.bt_finalizar);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 565);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1282, 100);
             this.panel3.TabIndex = 62;
-            // 
-            // bt_finalizar
-            // 
-            this.bt_finalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
-            this.bt_finalizar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_finalizar.ForeColor = System.Drawing.Color.White;
-            this.bt_finalizar.Location = new System.Drawing.Point(532, 15);
-            this.bt_finalizar.Name = "bt_finalizar";
-            this.bt_finalizar.Size = new System.Drawing.Size(200, 50);
-            this.bt_finalizar.TabIndex = 25;
-            this.bt_finalizar.Text = "Finalizar Reserva";
-            this.bt_finalizar.UseVisualStyleBackColor = false;
-            this.bt_finalizar.Click += new System.EventHandler(this.Bt_finalizar_Click);
             // 
             // lb_txt_titulo
             // 
@@ -427,17 +422,6 @@
             this.btn_back.TabIndex = 64;
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 211);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 17);
-            this.label1.TabIndex = 53;
-            this.label1.Text = "Postado por:";
             // 
             // Tela_compra
             // 
@@ -469,7 +453,6 @@
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -504,7 +487,6 @@
         private System.Windows.Forms.Label lb_txt6;
         private System.Windows.Forms.Label lb_txt3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button bt_finalizar;
         private System.Windows.Forms.Label lb_txt_titulo;
         private System.Windows.Forms.Label lb_valor_parcela;
         private System.Windows.Forms.Label lb_valor;

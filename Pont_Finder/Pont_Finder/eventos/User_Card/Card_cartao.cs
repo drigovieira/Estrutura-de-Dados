@@ -16,5 +16,19 @@ namespace Pont_Finder.eventos.User_Card
         {
             InitializeComponent();
         }
+
+        private void Bt_finalizar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Compra efetuada com sucesso!");
+        }
+
+        private void Bt_limpar_Click(object sender, EventArgs e)
+        {
+            tb_cartao_num.Clear();
+            mkb_cartao_CPF.Clear();
+            cb_cartao_cod.Clear();
+            tb_cartao_titular.Clear();
+            mkb_cartao_vencimento.Clear();
+        }
     }
 }

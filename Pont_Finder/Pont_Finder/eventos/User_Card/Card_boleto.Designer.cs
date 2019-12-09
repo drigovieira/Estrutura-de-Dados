@@ -37,6 +37,8 @@
             this.mkb_boleto_RG = new System.Windows.Forms.MaskedTextBox();
             this.lb_txt_boleto_titulo = new System.Windows.Forms.Label();
             this.tb_boleto_nome = new System.Windows.Forms.TextBox();
+            this.bt_finalizar = new System.Windows.Forms.Button();
+            this.bt_limpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb_txt4_boleto
@@ -127,11 +129,39 @@
             this.tb_boleto_nome.Size = new System.Drawing.Size(415, 24);
             this.tb_boleto_nome.TabIndex = 27;
             // 
+            // bt_finalizar
+            // 
+            this.bt_finalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
+            this.bt_finalizar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_finalizar.ForeColor = System.Drawing.Color.White;
+            this.bt_finalizar.Location = new System.Drawing.Point(106, 368);
+            this.bt_finalizar.Name = "bt_finalizar";
+            this.bt_finalizar.Size = new System.Drawing.Size(200, 50);
+            this.bt_finalizar.TabIndex = 36;
+            this.bt_finalizar.Text = "Finalizar compra";
+            this.bt_finalizar.UseVisualStyleBackColor = false;
+            this.bt_finalizar.Click += new System.EventHandler(this.Bt_finalizar_Click);
+            // 
+            // bt_limpar
+            // 
+            this.bt_limpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
+            this.bt_limpar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_limpar.ForeColor = System.Drawing.Color.White;
+            this.bt_limpar.Location = new System.Drawing.Point(321, 368);
+            this.bt_limpar.Name = "bt_limpar";
+            this.bt_limpar.Size = new System.Drawing.Size(200, 50);
+            this.bt_limpar.TabIndex = 37;
+            this.bt_limpar.Text = "Limpar";
+            this.bt_limpar.UseVisualStyleBackColor = false;
+            this.bt_limpar.Click += new System.EventHandler(this.Bt_limpar_Click);
+            // 
             // Card_boleto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.bt_limpar);
+            this.Controls.Add(this.bt_finalizar);
             this.Controls.Add(this.lb_txt4_boleto);
             this.Controls.Add(this.mkb_boleto_CPF);
             this.Controls.Add(this.lb_txt3_boleto);
@@ -142,7 +172,7 @@
             this.Controls.Add(this.lb_txt_boleto_titulo);
             this.Controls.Add(this.tb_boleto_nome);
             this.Name = "Card_boleto";
-            this.Size = new System.Drawing.Size(623, 358);
+            this.Size = new System.Drawing.Size(623, 450);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +189,7 @@
         private System.Windows.Forms.MaskedTextBox mkb_boleto_RG;
         private System.Windows.Forms.Label lb_txt_boleto_titulo;
         private System.Windows.Forms.TextBox tb_boleto_nome;
+        private System.Windows.Forms.Button bt_finalizar;
+        private System.Windows.Forms.Button bt_limpar;
     }
 }
