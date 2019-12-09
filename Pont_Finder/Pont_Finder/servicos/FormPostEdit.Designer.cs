@@ -41,11 +41,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bt_icone = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.cb_combinar = new System.Windows.Forms.CheckBox();
             this.tb_valor = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.tb_descricao = new System.Windows.Forms.RichTextBox();
-            this.cb_combinar = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_valor)).BeginInit();
@@ -165,6 +165,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1282, 100);
             this.panel2.TabIndex = 40;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
             // bt_icone
             // 
@@ -196,6 +197,18 @@
             this.panel4.Size = new System.Drawing.Size(414, 493);
             this.panel4.TabIndex = 20;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
+            // 
+            // cb_combinar
+            // 
+            this.cb_combinar.AutoSize = true;
+            this.cb_combinar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F);
+            this.cb_combinar.Location = new System.Drawing.Point(215, 426);
+            this.cb_combinar.Name = "cb_combinar";
+            this.cb_combinar.Size = new System.Drawing.Size(141, 31);
+            this.cb_combinar.TabIndex = 45;
+            this.cb_combinar.Text = "A Combinar";
+            this.cb_combinar.UseVisualStyleBackColor = true;
+            this.cb_combinar.CheckedChanged += new System.EventHandler(this.Cb_combinar_CheckedChanged);
             // 
             // tb_valor
             // 
@@ -254,18 +267,6 @@
             this.tb_descricao.Size = new System.Drawing.Size(563, 333);
             this.tb_descricao.TabIndex = 11;
             this.tb_descricao.Text = "";
-            // 
-            // cb_combinar
-            // 
-            this.cb_combinar.AutoSize = true;
-            this.cb_combinar.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F);
-            this.cb_combinar.Location = new System.Drawing.Point(215, 426);
-            this.cb_combinar.Name = "cb_combinar";
-            this.cb_combinar.Size = new System.Drawing.Size(141, 31);
-            this.cb_combinar.TabIndex = 45;
-            this.cb_combinar.Text = "A Combinar";
-            this.cb_combinar.UseVisualStyleBackColor = true;
-            this.cb_combinar.CheckedChanged += new System.EventHandler(this.Cb_combinar_CheckedChanged);
             // 
             // FormPostEdit
             // 

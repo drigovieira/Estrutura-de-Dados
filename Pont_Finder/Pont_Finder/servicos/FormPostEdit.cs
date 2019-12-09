@@ -27,6 +27,11 @@ namespace Pont_Finder.servicos
             tb_descricao.Text = post.Descricao;
             pb_icone.ImageLocation = post.Image;
 
+            if (post.Valor == 0)
+            {
+                cb_combinar.Checked = true;
+                tb_valor.Enabled = false;
+            }
          
 
 
@@ -164,6 +169,11 @@ namespace Pont_Finder.servicos
             {
                 tb_valor.Enabled = true;
             }
+        }
+
+        private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

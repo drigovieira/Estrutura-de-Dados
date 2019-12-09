@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Solicitar_Sevico));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.painel_pagamento = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.rb_cartao = new System.Windows.Forms.RadioButton();
             this.rb_boleto = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.bt_solicitar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,13 +56,12 @@
             this.bt_icone = new System.Windows.Forms.Button();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.btn_back = new System.Windows.Forms.PictureBox();
-            this.painel_pagamento = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.painel_pagamento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_numero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
-            this.painel_pagamento.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,6 +79,27 @@
             this.panel1.Size = new System.Drawing.Size(624, 531);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // painel_pagamento
+            // 
+            this.painel_pagamento.Controls.Add(this.label3);
+            this.painel_pagamento.Controls.Add(this.rb_cartao);
+            this.painel_pagamento.Controls.Add(this.rb_boleto);
+            this.painel_pagamento.Location = new System.Drawing.Point(30, 423);
+            this.painel_pagamento.Name = "painel_pagamento";
+            this.painel_pagamento.Size = new System.Drawing.Size(563, 38);
+            this.painel_pagamento.TabIndex = 46;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(198, 24);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "Formas de Pagamento";
             // 
             // rb_cartao
             // 
@@ -105,17 +126,6 @@
             this.rb_boleto.Text = "Boleto Bancário";
             this.rb_boleto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.rb_boleto.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(198, 24);
-            this.label3.TabIndex = 43;
-            this.label3.Text = "Formas de Pagamento";
             // 
             // button2
             // 
@@ -304,13 +314,23 @@
             this.tb_numero.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F);
             this.tb_numero.Location = new System.Drawing.Point(32, 434);
             this.tb_numero.Maximum = new decimal(new int[] {
-            1000000,
+            10000,
+            0,
+            0,
+            0});
+            this.tb_numero.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
             this.tb_numero.Name = "tb_numero";
             this.tb_numero.Size = new System.Drawing.Size(165, 32);
             this.tb_numero.TabIndex = 43;
+            this.tb_numero.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // button1
             // 
@@ -370,16 +390,6 @@
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
-            // painel_pagamento
-            // 
-            this.painel_pagamento.Controls.Add(this.label3);
-            this.painel_pagamento.Controls.Add(this.rb_cartao);
-            this.painel_pagamento.Controls.Add(this.rb_boleto);
-            this.painel_pagamento.Location = new System.Drawing.Point(30, 423);
-            this.painel_pagamento.Name = "painel_pagamento";
-            this.painel_pagamento.Size = new System.Drawing.Size(563, 38);
-            this.painel_pagamento.TabIndex = 46;
-            // 
             // Solicitar_Sevico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,13 +409,13 @@
             this.Load += new System.EventHandler(this.Solicitar_Sevico_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.painel_pagamento.ResumeLayout(false);
+            this.painel_pagamento.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_numero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
-            this.painel_pagamento.ResumeLayout(false);
-            this.painel_pagamento.PerformLayout();
             this.ResumeLayout(false);
 
         }
