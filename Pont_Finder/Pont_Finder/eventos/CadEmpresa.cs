@@ -79,7 +79,12 @@ namespace Pont_Finder.eventos
 
         private void Button2_Click(object sender, EventArgs e)
         {
-           
+            Bnomeempresa.Clear();
+            Bnomefantasia.Clear();
+            mkb_cnpj.Clear();
+            Bendereco.Clear();
+            mkb_telefone.Clear();
+            Bemail.Clear();
         }
 
         private void Bnomefantasia_TextChanged(object sender, EventArgs e)

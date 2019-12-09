@@ -59,7 +59,7 @@
             this.mkb_boleto_CPF.Mask = "000.000.000-00";
             this.mkb_boleto_CPF.Name = "mkb_boleto_CPF";
             this.mkb_boleto_CPF.Size = new System.Drawing.Size(150, 24);
-            this.mkb_boleto_CPF.TabIndex = 34;
+            this.mkb_boleto_CPF.TabIndex = 3;
             this.mkb_boleto_CPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // lb_txt3_boleto
@@ -88,7 +88,7 @@
             this.tb_boleto_email.Location = new System.Drawing.Point(106, 187);
             this.tb_boleto_email.Name = "tb_boleto_email";
             this.tb_boleto_email.Size = new System.Drawing.Size(415, 24);
-            this.tb_boleto_email.TabIndex = 31;
+            this.tb_boleto_email.TabIndex = 1;
             // 
             // lb_txt1_boleto_
             // 
@@ -108,7 +108,7 @@
             this.mkb_boleto_RG.Mask = "00.000.000-0";
             this.mkb_boleto_RG.Name = "mkb_boleto_RG";
             this.mkb_boleto_RG.Size = new System.Drawing.Size(150, 24);
-            this.mkb_boleto_RG.TabIndex = 29;
+            this.mkb_boleto_RG.TabIndex = 2;
             this.mkb_boleto_RG.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // lb_txt_boleto_titulo
@@ -127,7 +127,7 @@
             this.tb_boleto_nome.Location = new System.Drawing.Point(106, 119);
             this.tb_boleto_nome.Name = "tb_boleto_nome";
             this.tb_boleto_nome.Size = new System.Drawing.Size(415, 24);
-            this.tb_boleto_nome.TabIndex = 27;
+            this.tb_boleto_nome.TabIndex = 0;
             // 
             // bt_finalizar
             // 
@@ -137,7 +137,7 @@
             this.bt_finalizar.Location = new System.Drawing.Point(106, 368);
             this.bt_finalizar.Name = "bt_finalizar";
             this.bt_finalizar.Size = new System.Drawing.Size(200, 50);
-            this.bt_finalizar.TabIndex = 36;
+            this.bt_finalizar.TabIndex = 4;
             this.bt_finalizar.Text = "Finalizar compra";
             this.bt_finalizar.UseVisualStyleBackColor = false;
             this.bt_finalizar.Click += new System.EventHandler(this.Bt_finalizar_Click);
@@ -150,7 +150,7 @@
             this.bt_limpar.Location = new System.Drawing.Point(321, 368);
             this.bt_limpar.Name = "bt_limpar";
             this.bt_limpar.Size = new System.Drawing.Size(200, 50);
-            this.bt_limpar.TabIndex = 37;
+            this.bt_limpar.TabIndex = 5;
             this.bt_limpar.Text = "Limpar";
             this.bt_limpar.UseVisualStyleBackColor = false;
             this.bt_limpar.Click += new System.EventHandler(this.Bt_limpar_Click);

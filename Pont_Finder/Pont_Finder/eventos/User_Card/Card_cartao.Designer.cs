@@ -53,7 +53,7 @@
             this.mkb_cartao_CPF.Mask = "000.000.000-00";
             this.mkb_cartao_CPF.Name = "mkb_cartao_CPF";
             this.mkb_cartao_CPF.Size = new System.Drawing.Size(150, 24);
-            this.mkb_cartao_CPF.TabIndex = 43;
+            this.mkb_cartao_CPF.TabIndex = 6;
             // 
             // label6
             // 
@@ -71,7 +71,7 @@
             this.tb_cartao_titular.Location = new System.Drawing.Point(123, 354);
             this.tb_cartao_titular.Name = "tb_cartao_titular";
             this.tb_cartao_titular.Size = new System.Drawing.Size(250, 24);
-            this.tb_cartao_titular.TabIndex = 41;
+            this.tb_cartao_titular.TabIndex = 5;
             // 
             // label5
             // 
@@ -89,7 +89,7 @@
             this.cb_cartao_cod.Location = new System.Drawing.Point(123, 300);
             this.cb_cartao_cod.Name = "cb_cartao_cod";
             this.cb_cartao_cod.Size = new System.Drawing.Size(250, 24);
-            this.cb_cartao_cod.TabIndex = 39;
+            this.cb_cartao_cod.TabIndex = 4;
             // 
             // label4
             // 
@@ -128,7 +128,7 @@
             this.mkb_cartao_vencimento.Mask = "00/00";
             this.mkb_cartao_vencimento.Name = "mkb_cartao_vencimento";
             this.mkb_cartao_vencimento.Size = new System.Drawing.Size(88, 24);
-            this.mkb_cartao_vencimento.TabIndex = 35;
+            this.mkb_cartao_vencimento.TabIndex = 3;
             this.mkb_cartao_vencimento.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // tb_cartao_num
@@ -137,7 +137,7 @@
             this.tb_cartao_num.Location = new System.Drawing.Point(123, 178);
             this.tb_cartao_num.Name = "tb_cartao_num";
             this.tb_cartao_num.Size = new System.Drawing.Size(250, 24);
-            this.tb_cartao_num.TabIndex = 34;
+            this.tb_cartao_num.TabIndex = 2;
             // 
             // label1
             // 
@@ -153,10 +153,17 @@
             // 
             this.cb_qtd_parcelas.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_qtd_parcelas.FormattingEnabled = true;
+            this.cb_qtd_parcelas.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
             this.cb_qtd_parcelas.Location = new System.Drawing.Point(333, 82);
             this.cb_qtd_parcelas.Name = "cb_qtd_parcelas";
             this.cb_qtd_parcelas.Size = new System.Drawing.Size(170, 25);
-            this.cb_qtd_parcelas.TabIndex = 32;
+            this.cb_qtd_parcelas.TabIndex = 1;
             this.cb_qtd_parcelas.Text = "Quantidade de parcelas";
             // 
             // cb_select_cartao
@@ -172,7 +179,7 @@
             this.cb_select_cartao.Location = new System.Drawing.Point(123, 82);
             this.cb_select_cartao.Name = "cb_select_cartao";
             this.cb_select_cartao.Size = new System.Drawing.Size(150, 25);
-            this.cb_select_cartao.TabIndex = 31;
+            this.cb_select_cartao.TabIndex = 0;
             this.cb_select_cartao.Text = "Selecione o cartão";
             // 
             // bt_limpar
@@ -183,7 +190,7 @@
             this.bt_limpar.Location = new System.Drawing.Point(324, 479);
             this.bt_limpar.Name = "bt_limpar";
             this.bt_limpar.Size = new System.Drawing.Size(200, 50);
-            this.bt_limpar.TabIndex = 45;
+            this.bt_limpar.TabIndex = 8;
             this.bt_limpar.Text = "Limpar";
             this.bt_limpar.UseVisualStyleBackColor = false;
             this.bt_limpar.Click += new System.EventHandler(this.Bt_limpar_Click);
@@ -196,7 +203,7 @@
             this.bt_finalizar.Location = new System.Drawing.Point(109, 479);
             this.bt_finalizar.Name = "bt_finalizar";
             this.bt_finalizar.Size = new System.Drawing.Size(200, 50);
-            this.bt_finalizar.TabIndex = 44;
+            this.bt_finalizar.TabIndex = 7;
             this.bt_finalizar.Text = "Finalizar compra";
             this.bt_finalizar.UseVisualStyleBackColor = false;
             this.bt_finalizar.Click += new System.EventHandler(this.Bt_finalizar_Click);

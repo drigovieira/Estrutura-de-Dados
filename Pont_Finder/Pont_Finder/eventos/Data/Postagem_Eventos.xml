@@ -103,7 +103,7 @@
     <valor>20</valor>
     <patrocinadores>Diversos</patrocinadores>
     <ativo>true</ativo>
-    <likes></likes>
+    <likes>1,26835036010</likes>
   </postagem>
   <postagem>
     <id>5</id>
@@ -124,7 +124,7 @@
     <valor>20</valor>
     <patrocinadores>Leo, Jhonatan</patrocinadores>
     <ativo>true</ativo>
-    <likes></likes>
+    <likes>1,26835036010</likes>
   </postagem>
   <postagem>
     <id>6</id>
@@ -145,7 +145,7 @@
     <valor>20</valor>
     <patrocinadores>Prefeitura</patrocinadores>
     <ativo>true</ativo>
-    <likes>1,47746352863</likes>
+    <likes>1,47746352863*1,26835036010</likes>
   </postagem>
   <postagem>
     <id>7</id>
@@ -166,6 +166,6 @@
     <valor>30</valor>
     <patrocinadores>Ninguém</patrocinadores>
     <ativo>true</ativo>
-    <likes>-1,47746352863</likes>
+    <likes>-1,47746352863*1,26835036010</likes>
   </postagem>
 </postagens>
