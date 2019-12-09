@@ -75,15 +75,9 @@ namespace Pont_Finder.eventos
 
         private void Bt_visualizar_Click(object sender, EventArgs e)
         {
-            eventos.Visualizar_evento avaliepost = new Visualizar_evento(post.Id);
-            FormPrincipal.MudarForm("Reclame", avaliepost);
+            eventos.Visualizar_evento eventopost = new Visualizar_evento(post.Id);
+            FormPrincipal.MudarForm("eventos", eventopost);
 
-            //eventos.Visualizar_evento visu = new eventos.Visualizar_evento(post.Id);
-            //visu.ShowDialog();
-
-
-            //eventos.Visualizar_evento viewEvento = new eventos.Visualizar_evento(post.Id);
-            //FormPrincipal.MudarForm("eventos", viewEvento);
         }
 
         private void Pb_up_Click(object sender, EventArgs e)
