@@ -14,7 +14,7 @@ namespace Pont_Finder.eventos.Classes
             ingressosTotal,
             ingressosDisponivel;
         public long
-            cnpj, id;
+            cnpj, id, IdEmp;
         public string
             nome,
             categoria,
@@ -41,6 +41,12 @@ namespace Pont_Finder.eventos.Classes
         {
             get { return id; }
             set { id = value; }
+        }
+
+        public long idemp
+        {
+            get { return IdEmp; }
+            set { IdEmp = value; }
         }
 
         public int IngressosTotal
