@@ -34,7 +34,6 @@ namespace Pont_Finder.servicos
             }
          
 
-
         }
 
         private void Publicar_Click(object sender, EventArgs e)
@@ -169,11 +168,6 @@ namespace Pont_Finder.servicos
             {
                 tb_valor.Enabled = true;
             }
-        }
-
-        private void Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
