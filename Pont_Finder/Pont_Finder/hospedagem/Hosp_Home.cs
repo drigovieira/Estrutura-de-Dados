@@ -88,6 +88,10 @@ namespace Pont_Finder.hospedagem
                 i++;
             }
 
+            Propaganda_modulos prop = new Propaganda_modulos();
+            prop.Location = new Point(5, 5);
+            painel_propaganda.Controls.Add(prop);
+
         }
 
         

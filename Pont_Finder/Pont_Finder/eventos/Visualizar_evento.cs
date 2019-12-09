@@ -12,10 +12,16 @@ namespace Pont_Finder.eventos
 {
     public partial class Visualizar_evento : Form
     {
+       // private string nome, empresa, servicos, foto, status, tipo, nome_emp, fotos_emp, endereco_emp, descricao_emp, email_emp, logo_emp, ambiente;
         Classes.CoEvento post;
 
         private List<Classes.comentario> ListaPost;
+
         Classes.comentario coment;
+
+        classes.CaEmpresa empresa;
+
+        
 
         private int pagTotal;
         private int pagAtual;
@@ -43,7 +49,7 @@ namespace Pont_Finder.eventos
           
             InitializeComponent();
             post = Classes.Eventos_List.thisPostId(postId);
-
+            //empresa = classes.Empresa_List.Poster(postId);
             postIdC = postId;
 
             //Evento:
@@ -54,6 +60,8 @@ namespace Pont_Finder.eventos
             lb_categoria.Text = post.Categoria;
             lb_data.Text = post.Data;
             lb_horario.Text = post.Horario;
+
+            //this.lb_emp_fantasia.Text = empresa.Nome_Fantasia;
             check();
 
 
