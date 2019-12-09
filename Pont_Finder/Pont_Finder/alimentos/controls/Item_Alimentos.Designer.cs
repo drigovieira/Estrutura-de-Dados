@@ -167,6 +167,7 @@
             0,
             0,
             0});
+            this.Quant.ValueChanged += new System.EventHandler(this.Quant_ValueChanged);
             // 
             // Item_Alimentos
             // 

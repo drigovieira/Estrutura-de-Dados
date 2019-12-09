@@ -20,6 +20,14 @@ namespace Pont_Finder.alimentos
         private int IdItem, Empresa, QuantosItem;
         private bool ExRes, Pedidos;
 
+        private void Quant_ValueChanged(object sender, EventArgs e)
+        {
+            if(Quant.Value == 0)
+            {
+                Quant.Value = 1;
+            }
+        }
+
         private void Excluir_Click(object sender, EventArgs e)
         {
             ListCardapio.Delete(IdItem);

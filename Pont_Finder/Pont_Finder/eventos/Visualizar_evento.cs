@@ -35,9 +35,6 @@ namespace Pont_Finder.eventos
         long postIdC;
 
 
-       
-
-
 
         public Visualizar_evento(long postId)
         {
@@ -90,8 +87,8 @@ namespace Pont_Finder.eventos
         {
             if (Session.Online == true)
             {
-                eventos.Tela_compra avaliepost = new Tela_compra(post.Id);
-                FormPrincipal.MudarForm("Reclame", avaliepost);
+                eventos.Tela_compra compevento = new Tela_compra(post.Id);
+                FormPrincipal.MudarForm("eventos", compevento);
             }
             else
             {

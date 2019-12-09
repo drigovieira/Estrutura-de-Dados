@@ -62,7 +62,24 @@ namespace Pont_Finder.alimentos
                 lbHoras.Text += "Inicio: "+ funcio.HoraInicio.ToString("HH:mm") + "  Fim: "+ funcio.HoraFim.ToString("HH:mm")+"\n"; 
             }
             lb_like.Text = CompanyList.selectAll()[Index].Like.ToString();
-            lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();            
+            lb_deslike.Text = CompanyList.selectAll()[Index].Deslike.ToString();
+            if (Session.Online)
+            {
+                foreach (var item in EvaluationList.selectAll())
+                {
+                    if (item.Cpf == Session.Cpf && item.IndexEmp == Index)
+                    {
+                        if (item.Tipo.Equals("like") && item.IndexEmp == Index)
+                        {
+                            pb_up.Image = imgLikeBlue;
+                        }
+                        else if (item.Tipo.Equals("deslike") && item.IndexEmp == Index)
+                        {
+                            pb_down.Image = imgDeslikeBlue;
+                        }
+                    }
+                }
+            }
         }
         public void CapturarFuncionamento()
         {
@@ -138,14 +155,14 @@ namespace Pont_Finder.alimentos
                 {
                     pb_up.Image = imgLike;
                     pb_down.Image = imgDeslike;
-                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Cpf).Cpf);
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Cpf).Cpf, Index);
                     EvaluationList.ApuraAvaliacao(Index);
                 }
                 else
                 {
                     pb_up.Image = imgLikeBlue;
                     pb_down.Image = imgDeslike;
-                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Cpf).Cpf);
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Cpf).Cpf, Index);
                     EvaluationList.AddAvaliacao(1, Index, Session.Cpf, "like");
                     EvaluationList.ApuraAvaliacao(Index);
                 }
@@ -167,14 +184,14 @@ namespace Pont_Finder.alimentos
                 {
                     pb_down.Image = imgDeslike;
                     pb_up.Image = imgLike;                    
-                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Cpf).Cpf);
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Cpf).Cpf, Index);
                     EvaluationList.ApuraAvaliacao(Index);
                 }
                 else
                 {
                     pb_down.Image = imgDeslikeBlue;
                     pb_up.Image = imgLike;
-                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Cpf).Cpf);
+                    EvaluationList.DelAvaliacao(EvaluationList.select(Session.Cpf).Cpf, Index);
                     EvaluationList.AddAvaliacao(1, Index, Session.Cpf, "deslike");
                     EvaluationList.ApuraAvaliacao(Index);
                 }
@@ -231,7 +248,23 @@ namespace Pont_Finder.alimentos
 
         private void Visualizar_Load(object sender, EventArgs e)
         {
-
+            if (Session.Online)
+            {
+                foreach (var item in EvaluationList.selectAll())
+                {
+                    if (item.Cpf == Session.Cpf && item.IndexEmp ==Index)
+                    {
+                        if (item.Tipo.Equals("like") && item.IndexEmp == Index)
+                        {
+                            pb_up.Image = imgLikeBlue;
+                        }
+                        else if (item.Tipo.Equals("deslike") && item.IndexEmp == Index)
+                        {
+                            pb_down.Image = imgDeslikeBlue;
+                        }
+                    }
+                }
+            }
         }
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
