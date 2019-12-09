@@ -46,7 +46,7 @@
             // gMapControl1
             // 
             this.gMapControl1.Bearing = 0F;
-            this.gMapControl1.CanDragMap = true;
+            this.gMapControl1.CanDragMap = false;
             this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
@@ -55,7 +55,7 @@
             this.gMapControl1.MarkersEnabled = true;
             this.gMapControl1.MaxZoom = 18;
             this.gMapControl1.MinZoom = 14;
-            this.gMapControl1.MouseWheelZoomEnabled = true;
+            this.gMapControl1.MouseWheelZoomEnabled = false;
             this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
             this.gMapControl1.Name = "gMapControl1";
             this.gMapControl1.NegativeMode = false;
