@@ -122,6 +122,9 @@
             // btnPostar
             // 
             this.btnPostar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnPostar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPostar.FlatAppearance.BorderSize = 0;
+            this.btnPostar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPostar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPostar.ForeColor = System.Drawing.Color.White;
             this.btnPostar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -136,8 +139,8 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(62, 469);
             this.richTextBox1.Name = "richTextBox1";
@@ -209,7 +212,7 @@
             this.btn_back.BackColor = System.Drawing.Color.White;
             this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.Location = new System.Drawing.Point(105, 105);
+            this.btn_back.Location = new System.Drawing.Point(256, 84);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 92;
@@ -230,7 +233,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(476, 28);
+            this.label4.Location = new System.Drawing.Point(476, 39);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(331, 42);
             this.label4.TabIndex = 94;

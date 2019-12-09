@@ -34,17 +34,21 @@
             this.pb_up = new System.Windows.Forms.PictureBox();
             this.lb_like = new System.Windows.Forms.Label();
             this.lb_problema = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(99, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -53,7 +57,7 @@
             // 
             this.lb_deslike.AutoSize = true;
             this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_deslike.Location = new System.Drawing.Point(162, 77);
+            this.lb_deslike.Location = new System.Drawing.Point(160, 78);
             this.lb_deslike.Name = "lb_deslike";
             this.lb_deslike.Size = new System.Drawing.Size(15, 16);
             this.lb_deslike.TabIndex = 39;
@@ -65,7 +69,7 @@
             this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_down.Enabled = false;
             this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.Location = new System.Drawing.Point(119, 68);
+            this.pb_down.Location = new System.Drawing.Point(120, 69);
             this.pb_down.Margin = new System.Windows.Forms.Padding(15);
             this.pb_down.Name = "pb_down";
             this.pb_down.Size = new System.Drawing.Size(25, 25);
@@ -79,7 +83,7 @@
             this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_up.Enabled = false;
             this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.Location = new System.Drawing.Point(119, 30);
+            this.pb_up.Location = new System.Drawing.Point(120, 29);
             this.pb_up.Margin = new System.Windows.Forms.Padding(15);
             this.pb_up.Name = "pb_up";
             this.pb_up.Size = new System.Drawing.Size(25, 25);
@@ -92,7 +96,7 @@
             // 
             this.lb_like.AutoSize = true;
             this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_like.Location = new System.Drawing.Point(162, 39);
+            this.lb_like.Location = new System.Drawing.Point(160, 38);
             this.lb_like.Name = "lb_like";
             this.lb_like.Size = new System.Drawing.Size(15, 16);
             this.lb_like.TabIndex = 36;
@@ -102,33 +106,61 @@
             // lb_problema
             // 
             this.lb_problema.AutoSize = true;
-            this.lb_problema.Location = new System.Drawing.Point(116, 2);
+            this.lb_problema.BackColor = System.Drawing.Color.Transparent;
+            this.lb_problema.Location = new System.Drawing.Point(117, 2);
             this.lb_problema.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_problema.Name = "lb_problema";
             this.lb_problema.Size = new System.Drawing.Size(35, 13);
             this.lb_problema.TabIndex = 40;
             this.lb_problema.Text = "label1";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(10, 97);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 23);
+            this.button1.TabIndex = 41;
+            this.button1.Text = "Visualizar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pb_up);
+            this.panel1.Controls.Add(this.lb_problema);
+            this.panel1.Controls.Add(this.pb_down);
+            this.panel1.Controls.Add(this.lb_deslike);
+            this.panel1.Controls.Add(this.lb_like);
+            this.panel1.Location = new System.Drawing.Point(-1, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(299, 125);
+            this.panel1.TabIndex = 42;
+            // 
             // bestPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.lb_problema);
-            this.Controls.Add(this.lb_deslike);
-            this.Controls.Add(this.pb_down);
-            this.Controls.Add(this.pb_up);
-            this.Controls.Add(this.lb_like);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "bestPost";
-            this.Size = new System.Drawing.Size(261, 98);
+            this.Size = new System.Drawing.Size(297, 123);
             this.Load += new System.EventHandler(this.bestPost_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -140,5 +172,7 @@
         private System.Windows.Forms.PictureBox pb_up;
         private System.Windows.Forms.Label lb_like;
         private System.Windows.Forms.Label lb_problema;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -113,5 +113,11 @@ namespace Pont_Finder.avalie.User_Control
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            avalie.ViewPost avaliepost = new ViewPost(post.Id);
+            FormPrincipal.MudarForm("Reclame", avaliepost);
+        }
     }
 }

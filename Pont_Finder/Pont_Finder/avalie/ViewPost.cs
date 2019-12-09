@@ -428,5 +428,58 @@ namespace Pont_Finder.avalie
         {
             FormPrincipal.MudarForm("Reclame", new FormAvalie());
         }
+
+        private void pb_up_Click_1(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                if (pb_up.Image == imgLikeBlue)
+                {
+                    post.like(0, Session.Cpf);
+                    pb_up.Image = imgLike;
+                    pb_down.Image = imgDeslike;
+                }
+                else
+                {
+                    post.like(1, Session.Cpf);
+                    pb_up.Image = imgLikeBlue;
+                    pb_down.Image = imgDeslike;
+                }
+                lb_like.Text = "" + post.Joinha;
+                lb_deslike.Text = "" + post.DeJoinha;
+
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
+            }
+
+        }
+
+        private void pb_down_Click_1(object sender, EventArgs e)
+        {
+            if (Session.Online)
+            {
+                if (pb_down.Image == imgDeslikeBlue)
+                {
+                    post.like(0, Session.Cpf);
+                    pb_down.Image = imgDeslike;
+                    pb_up.Image = imgLike;
+                }
+                else
+                {
+                    post.like(-1, Session.Cpf);
+                    pb_down.Image = imgDeslikeBlue;
+                    pb_up.Image = imgLike;
+                }
+                lb_like.Text = "" + post.Joinha;
+                lb_deslike.Text = "" + post.DeJoinha;
+            }
+            else
+            {
+                MessageBox.Show("É necessário estar logado para avaliar");
+            }
+
+        }
     }
 }

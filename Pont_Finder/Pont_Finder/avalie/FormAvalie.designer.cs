@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAvalie));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button3 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.cb_problemas = new System.Windows.Forms.ComboBox();
             this.button_Pesquisar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,14 +51,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.top3panel = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.top3panel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.Databox = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -77,11 +75,12 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(470, 6);
+            this.button3.Location = new System.Drawing.Point(321, 9);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(151, 28);
             this.button3.TabIndex = 12;
@@ -89,19 +88,6 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.cb_problemas);
-            this.panel7.Controls.Add(this.button_Pesquisar);
-            this.panel7.Controls.Add(this.label2);
-            this.panel7.Location = new System.Drawing.Point(5, 436);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(310, 200);
-            this.panel7.TabIndex = 14;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // cb_problemas
             // 
@@ -112,21 +98,22 @@
             "Infraestrutura",
             "Serviços",
             "Outros"});
-            this.cb_problemas.Location = new System.Drawing.Point(22, 63);
+            this.cb_problemas.Location = new System.Drawing.Point(22, 262);
             this.cb_problemas.Name = "cb_problemas";
-            this.cb_problemas.Size = new System.Drawing.Size(200, 28);
+            this.cb_problemas.Size = new System.Drawing.Size(181, 28);
             this.cb_problemas.TabIndex = 82;
             // 
             // button_Pesquisar
             // 
-            this.button_Pesquisar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button_Pesquisar.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button_Pesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_Pesquisar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_Pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Pesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Pesquisar.ForeColor = System.Drawing.Color.White;
-            this.button_Pesquisar.Location = new System.Drawing.Point(22, 116);
+            this.button_Pesquisar.Location = new System.Drawing.Point(209, 262);
             this.button_Pesquisar.Name = "button_Pesquisar";
-            this.button_Pesquisar.Size = new System.Drawing.Size(110, 30);
+            this.button_Pesquisar.Size = new System.Drawing.Size(82, 28);
             this.button_Pesquisar.TabIndex = 79;
             this.button_Pesquisar.Text = "Filtrar";
             this.button_Pesquisar.UseVisualStyleBackColor = false;
@@ -137,7 +124,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(18, 20);
+            this.label2.Location = new System.Drawing.Point(18, 224);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(273, 24);
             this.label2.TabIndex = 0;
@@ -163,10 +150,11 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label13);
-            this.panel5.Location = new System.Drawing.Point(950, 659);
+            this.panel5.Location = new System.Drawing.Point(950, 692);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(303, 127);
+            this.panel5.Size = new System.Drawing.Size(303, 94);
             this.panel5.TabIndex = 40;
             // 
             // label13
@@ -197,7 +185,7 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(463, 54);
+            this.label6.Location = new System.Drawing.Point(430, 49);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(397, 42);
             this.label6.TabIndex = 1;
@@ -216,10 +204,11 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(673, 6);
+            this.button2.Location = new System.Drawing.Point(768, 9);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(176, 28);
             this.button2.TabIndex = 14;
@@ -289,6 +278,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label15);
             this.panel4.Location = new System.Drawing.Point(950, 792);
             this.panel4.Name = "panel4";
@@ -308,31 +298,32 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel6.Controls.Add(this.top3panel);
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label7);
+            this.panel6.Controls.Add(this.top3panel);
             this.panel6.Location = new System.Drawing.Point(950, 241);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(303, 412);
+            this.panel6.Size = new System.Drawing.Size(303, 445);
             this.panel6.TabIndex = 41;
-            // 
-            // top3panel
-            // 
-            this.top3panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.top3panel.Location = new System.Drawing.Point(3, 39);
-            this.top3panel.Name = "top3panel";
-            this.top3panel.Size = new System.Drawing.Size(297, 370);
-            this.top3panel.TabIndex = 6;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(33, 10);
+            this.label7.Location = new System.Drawing.Point(19, 11);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(259, 26);
+            this.label7.Size = new System.Drawing.Size(255, 25);
             this.label7.TabIndex = 5;
             this.label7.Text = "3 maiores reclamações";
+            // 
+            // top3panel
+            // 
+            this.top3panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.top3panel.Location = new System.Drawing.Point(15, 43);
+            this.top3panel.Name = "top3panel";
+            this.top3panel.Size = new System.Drawing.Size(269, 381);
+            this.top3panel.TabIndex = 6;
             // 
             // panel1
             // 
@@ -346,14 +337,25 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.button_Pesquisar);
+            this.panel2.Controls.Add(this.cb_problemas);
             this.panel2.Controls.Add(this.Databox);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(5, 241);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 189);
+            this.panel2.Size = new System.Drawing.Size(310, 327);
             this.panel2.TabIndex = 80;
+            // 
+            // panel7
+            // 
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Location = new System.Drawing.Point(-1, 194);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(310, 10);
+            this.panel7.TabIndex = 86;
             // 
             // Databox
             // 
@@ -380,21 +382,6 @@
             this.label3.TabIndex = 80;
             this.label3.Text = "Pesquisar Reclamações";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(142, 97);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 29);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Pesquisar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // FormAvalie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,7 +390,6 @@
             this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
@@ -420,8 +406,6 @@
             this.Name = "FormAvalie";
             this.Text = "FormAvalie";
             this.Load += new System.EventHandler(this.FormAvalie_Load);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -444,7 +428,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_Pesquisar;
@@ -464,9 +447,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MaskedTextBox Databox;
         private System.Windows.Forms.ComboBox cb_problemas;
         private System.Windows.Forms.Panel top3panel;
+        private System.Windows.Forms.Panel panel7;
     }
 }
