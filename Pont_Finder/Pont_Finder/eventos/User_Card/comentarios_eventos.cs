@@ -25,13 +25,9 @@ namespace Pont_Finder.eventos.User_Card
         public comentarios_eventos(long idpost)
         {
             InitializeComponent();
-            comentario = Classes.comentario_list.thisPostId(postid);
+            comentario = Classes.comentario_list.thisPostId(idpost);
 
-            this.postid = postid;
-
-            
-
-
+            this.postid = idpost;
 
             datapost.Text = (comentario.Data);
             nome.Text = (comentario.Username);

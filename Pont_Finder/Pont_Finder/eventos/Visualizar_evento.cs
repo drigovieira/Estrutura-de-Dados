@@ -47,6 +47,8 @@ namespace Pont_Finder.eventos
             InitializeComponent();
             post = Classes.Eventos_List.thisPostId(postId);
 
+            postIdC = postId;
+
             //Evento:
             lb_nome_evento.Text = post.Nome;
             pb_principal.ImageLocation = post.Imagem1;
@@ -57,8 +59,9 @@ namespace Pont_Finder.eventos
             lb_horario.Text = post.Horario;
             check();
 
-            
 
+            CarregarComents();
+            Filtro_comentario();
 
         }
 
@@ -74,8 +77,7 @@ namespace Pont_Finder.eventos
 
         private void Visualizar_evento_Load(object sender, EventArgs e)
         {
-            CarregarComents();
-            Filtro_comentario();
+            
 
         }
 
@@ -128,7 +130,7 @@ namespace Pont_Finder.eventos
 
             post.UserCpf = Session.Cpf;
             post.PostId = postIdC;
-            post.Idcoment = Classes.comentario_list.Poster.Count(); ;
+            post.Idcoment = Classes.comentario_list.Poster.Count();
             post.Data = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm");
             post.Comment = tb_resposta.Text;
             post.ImgUser = Session.Image;
@@ -137,7 +139,7 @@ namespace Pont_Finder.eventos
 
             Classes.comentario_list.PostAdd(post);
 
-            CarregarComents();
+            
             Filtro_comentario();
             tb_resposta.Text = "";
         }
@@ -189,6 +191,10 @@ namespace Pont_Finder.eventos
                 {
                     ListaPost.Add(item);
                 }
+                else
+                {
+                    ListaPost.Remove(item);
+                }
             }
 
 
@@ -226,6 +232,11 @@ namespace Pont_Finder.eventos
                 painelcoment.Controls.Add(a);
                 i++;
             }
+        }
+
+        private void Visualizar_evento_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
