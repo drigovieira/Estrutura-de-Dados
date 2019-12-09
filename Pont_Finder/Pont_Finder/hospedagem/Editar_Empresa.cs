@@ -18,7 +18,7 @@ namespace Pont_Finder.hospedagem
         private string nomeempresa, nomefantasia, endereco, email, descricao, ambiente, foto, tipo, logo;
         private int cep, id;
         private bool ativo;
-        private long cnpj, cpfadmin, telefone;
+        private long cnpj, telefone;
 
         public static string fotin = null;
 
@@ -60,8 +60,15 @@ namespace Pont_Finder.hospedagem
         private void bt_alterar_Click(object sender, EventArgs e)//DENIS BOTAO ALTERAR
         {
             emp.Endereco = tb_endereco.Text;
+            emp.Cep = Convert.ToInt32(mkb_cep.Text);
+            emp.Telefone = long.Parse(mkb_phone.Text);
+            emp.Descricao = tb_descricaoHotel.Text;
 
+            
             MessageBox.Show("Empresa atualizada!");
+
+            //Coloquei para sair da tela automaticamente
+            FormPrincipal.MudarForm("hospedagem", new Hosp_Home());
 
         }
 
@@ -150,6 +157,7 @@ namespace Pont_Finder.hospedagem
 
         private void Editar_Empresa_Load(object sender, EventArgs e) 
         {
+
             tb_nameEmp.Enabled = false;
             tb_nameFantasy.Enabled = false;
             mkb_cnpj.Enabled = false;
@@ -175,12 +183,26 @@ namespace Pont_Finder.hospedagem
             pictureBox1.ImageLocation = logo;
             pictureBox1.Load();
 
+            //PREENCHIDOS CHECKEDBOXS COM DADOS DA LISTA      DENIS 
             if (ambiente.Contains("Estacionamento"))
             {
                 ckb_estacionamento.Checked = true;
             }
-
-            //PREENCHER TEXTBOXS COM DADOS DA LISTA      DENIS
+            if (ambiente.Contains("Piscina"))
+            {
+                ckb_piscina.Checked = true;
+            }
+            if (ambiente.Contains("Sala de Jogos"))
+            {
+                ckb_salaJogos.Checked = true;
+            }
+            if (ambiente.Contains("Academia"))
+            {
+                ckb_academia.Checked = true;
+            }
+           
+           
+            
 
         }
     }
