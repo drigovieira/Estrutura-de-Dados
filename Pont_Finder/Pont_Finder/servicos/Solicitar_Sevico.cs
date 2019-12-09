@@ -71,10 +71,9 @@ namespace Pont_Finder.servicos
                 MessageBox.Show("O campo Cep não foi preenchido corretamente");
             else if (tb_descricao.Text.Length < 10)
                 MessageBox.Show("O campo Descrição não foi preenchido corretamente");
-            else if (post.Valor != 0)
+            else if (post.Valor != 0 && (!rb_cartao.Checked) && (!rb_boleto.Checked))
             {
-                if (((!rb_cartao.Checked) && (!rb_boleto.Checked)))
-                    MessageBox.Show("Escolha a forma de Pagamento");
+                MessageBox.Show("Escolha a forma de Pagamento");
             }
             else
             {
