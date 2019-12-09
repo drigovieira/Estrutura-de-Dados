@@ -600,6 +600,7 @@
             this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Editar_Empresa";
             this.Text = "Editar_Empresa";
+            this.Load += new System.EventHandler(this.Editar_Empresa_Load);
             this.pnl_tipoHosp.ResumeLayout(false);
             this.pnl_tipoHosp.PerformLayout();
             this.panel11.ResumeLayout(false);

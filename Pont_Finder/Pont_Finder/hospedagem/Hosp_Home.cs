@@ -114,7 +114,8 @@ namespace Pont_Finder.hospedagem
 
         private void Btn_Edit_Empresa_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("EDITAR EMPRESA");
+            hospedagem.Editar_Empresa edita_empresa = new Editar_Empresa(new Hosp_Home());
+            FormPrincipal.MudarForm("hospedagem", edita_empresa);
         }
 
         private void bt_gerenciar_quartos_Click(object sender, EventArgs e)

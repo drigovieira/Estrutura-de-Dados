@@ -12,7 +12,7 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Editar_Empresa : Form
     {
-        public Editar_Empresa()
+        public Editar_Empresa(Form anterior)
         {
             InitializeComponent();
         }
@@ -70,6 +70,11 @@ namespace Pont_Finder.hospedagem
         private void Tb_email_TextChanged(object sender, EventArgs e)
         {
             tb_email.MaxLength = 50;
+        }
+
+        private void Editar_Empresa_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
