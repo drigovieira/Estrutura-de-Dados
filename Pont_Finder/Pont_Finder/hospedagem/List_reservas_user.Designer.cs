@@ -30,10 +30,14 @@
         {
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pn_emp = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_back
@@ -62,19 +66,6 @@
             this.panel1.Size = new System.Drawing.Size(1010, 0);
             this.panel1.TabIndex = 64;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1080, 97);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 36);
-            this.button4.TabIndex = 63;
-            this.button4.Text = "Adicionar";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -93,6 +84,51 @@
             this.panel2.Size = new System.Drawing.Size(1282, 50);
             this.panel2.TabIndex = 74;
             // 
+            // pn_emp
+            // 
+            this.pn_emp.AutoSize = true;
+            this.pn_emp.BackColor = System.Drawing.Color.White;
+            this.pn_emp.Location = new System.Drawing.Point(170, 138);
+            this.pn_emp.MaximumSize = new System.Drawing.Size(1010, 0);
+            this.pn_emp.MinimumSize = new System.Drawing.Size(1010, 0);
+            this.pn_emp.Name = "pn_emp";
+            this.pn_emp.Size = new System.Drawing.Size(1010, 0);
+            this.pn_emp.TabIndex = 75;
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.radioButton2);
+            this.panel3.Controls.Add(this.radioButton1);
+            this.panel3.Location = new System.Drawing.Point(435, 65);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(405, 44);
+            this.panel3.TabIndex = 76;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(13, 10);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(200, 21);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Visualizar Reserva do Usuário";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(219, 10);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(173, 21);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Visualizar como Empresa";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // List_reservas_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,16 +136,19 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pn_emp);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "List_reservas_user";
             this.Text = "List_reservas_user";
             this.Load += new System.EventHandler(this.List_reservas_user_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,8 +158,11 @@
 
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pn_emp;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
