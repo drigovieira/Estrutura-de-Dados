@@ -171,13 +171,26 @@ namespace Pont_Finder.eventos.Classes
 
         public static CoEvento thisPostId(long postId)
         {
+            CoEvento e = new CoEvento();
             foreach (var item in poster)
             {
                 if (postId == item.Id)
+                    e = item;
+            }
+            return e;
+        }
+
+        public static CoEvento forCnpj(long cnpj)
+        {
+            foreach (var item in poster)
+            {
+                if (cnpj == item.Cnpj)
                     return item;
             }
             return null;
         }
+
+
 
 
         public static void XmlSave()

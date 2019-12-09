@@ -110,10 +110,12 @@ namespace Pont_Finder.eventos
             postar.Patrocinadores = p_patrocinadores;
             postar.Idade = p_faixaetaria;
             postar.Valor = p_valor;
-            postar.Ativo = true;
-
 
             postar.Ativo = true;
+             
+
+
+
 
 
             Eventos_List.PostAdd(postar);
