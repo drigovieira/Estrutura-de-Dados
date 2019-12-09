@@ -187,4 +187,76 @@ Os quartos do hotel dispõem de TV de tela plana, janelas com isolamento acústi
     <statusCardapio>false</statusCardapio>
     <statusEntrega>false</statusEntrega>
   </alimentos>
+  <alimentos>
+    <nome>Restaurante Kung Peixe</nome>
+    <nomeFantasia>Restaurante Kung Peixe</nomeFantasia>
+    <email>kungpeixe@gmail.com.br</email>
+    <rua>Rodovia Dr. Avelino Junior</rua>
+    <bairro>Jardim São José </bairro>
+    <image>..//..//alimentos//data//image//empresas//offImage.jpg</image>
+    <categorias>Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Frutos do Mar</categorias>
+    <funcionamento>Segunda - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Terça - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Quarta - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Quinta - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Sexta - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Sábado,09/12/2019 18:00:00,09/12/2019 00:00:00*Domingo,09/12/2019 12:00:00,09/12/2019 00:00:00</funcionamento>
+    <numero>52</numero>
+    <cep>12704410</cep>
+    <id>1</id>
+    <telComercial>1231444837</telComercial>
+    <cpf>32446308988</cpf>
+    <status>true</status>
+    <statusCardapio>true</statusCardapio>
+    <statusEntrega>true</statusEntrega>
+  </alimentos>
+  <alimentos>
+    <nome>Restaurante e Hamburgueria Fim de Tarde</nome>
+    <nomeFantasia>Restaurante e Hamburgueria Fim de Tarde</nomeFantasia>
+    <email>fimdetarde@gmail.com</email>
+    <rua>Rua Capitão Neco</rua>
+    <bairro>Centro</bairro>
+    <image>..//..//alimentos//data//image//empresas//offImage.jpg</image>
+    <categorias>Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Frutos do Mar,Hambúrgueria</categorias>
+    <funcionamento>Segunda - Feira,09/12/2019 18:30:00,09/12/2019 23:30:00*Terça - Feira,09/12/2019 18:00:00,09/12/2019 23:30:00*Quarta - Feira,09/12/2019 18:00:00,09/12/2019 23:30:00*Quinta - Feira,09/12/2019 18:00:00,09/12/2019 23:30:00*Sexta - Feira,09/12/2019 18:00:00,09/12/2019 23:30:00*Sábado,09/12/2019 18:00:00,09/12/2019 23:30:00*Domingo,09/12/2019 18:30:00,09/12/2019 23:30:00</funcionamento>
+    <numero>189</numero>
+    <cep>12701350</cep>
+    <id>2</id>
+    <telComercial>12981063255</telComercial>
+    <cpf>73844754814</cpf>
+    <status>true</status>
+    <statusCardapio>true</statusCardapio>
+    <statusEntrega>false</statusEntrega>
+  </alimentos>
+  <alimentos>
+    <nome>Shibo Culinária Oriental</nome>
+    <nomeFantasia>Shibo Culinária Oriental</nomeFantasia>
+    <email>shibo@gmail.com</email>
+    <rua>Rua São Brás </rua>
+    <bairro>Jardim São José</bairro>
+    <image>..//..//alimentos//data//image//empresas//offImage.jpg</image>
+    <categorias>Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Frutos do Mar,Hambúrgueria,Comida Japonesa,Frutos do Mar,Convencional</categorias>
+    <funcionamento>Segunda - Feira,09/12/2019 19:00:00,09/12/2019 23:00:00*Quarta - Feira,09/12/2019 19:00:00,09/12/2019 23:00:00*Quinta - Feira,09/12/2019 19:00:00,09/12/2019 23:00:00*Sexta - Feira,09/12/2019 19:00:00,09/12/2019 23:00:00*Sábado,09/12/2019 19:00:00,09/12/2019 23:00:00*Domingo,09/12/2019 19:00:00,09/12/2019 23:00:00</funcionamento>
+    <numero>15</numero>
+    <cep>12703360</cep>
+    <id>3</id>
+    <telComercial>12982162382</telComercial>
+    <cpf>67198947301</cpf>
+    <status>true</status>
+    <statusCardapio>true</statusCardapio>
+    <statusEntrega>false</statusEntrega>
+  </alimentos>
+  <alimentos>
+    <nome>Pizzaria Pizza 7</nome>
+    <nomeFantasia>Pizza 7</nomeFantasia>
+    <email>pizza7@gmail.com</email>
+    <rua>Rua Capitão Avelino Bastos</rua>
+    <bairro>Centro</bairro>
+    <image>..//..//alimentos//data//image//empresas//offImage.jpg</image>
+    <categorias>Churrascaria,Comida Japonesa,Hambúrgueria,Outros,Frutos do Mar,Hambúrgueria,Comida Japonesa,Frutos do Mar,Convencional,Pizzaria,Convencional,Comida Italiana</categorias>
+    <funcionamento>Segunda - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Terça - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Quarta - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Quinta - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Sexta - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Sábado,09/12/2019 18:00:00,09/12/2019 00:00:00*Domingo,09/12/2019 18:00:00,09/12/2019 00:00:00</funcionamento>
+    <numero>1109</numero>
+    <cep>12701440</cep>
+    <id>4</id>
+    <telComercial>1231453259</telComercial>
+    <cpf>58912611119</cpf>
+    <status>true</status>
+    <statusCardapio>false</statusCardapio>
+    <statusEntrega>false</statusEntrega>
+  </alimentos>
 </modulos>

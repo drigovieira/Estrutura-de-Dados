@@ -128,4 +128,36 @@
     <image>..//..//data//images//users//21513021052.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Lucas Silva</nome>
+    <email>lucas@gmail.com</email>
+    <senha>123</senha>
+    <cpf>32446308988</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Jane Damaris</nome>
+    <email>jane@gmail.com</email>
+    <senha>123</senha>
+    <cpf>73844754814</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>João Rosa</nome>
+    <email>joao@hotmail.com</email>
+    <senha>123</senha>
+    <cpf>67198947301</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Fabio Fagundes</nome>
+    <email>fabio@gmail.com</email>
+    <senha>123</senha>
+    <cpf>58912611119</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>
