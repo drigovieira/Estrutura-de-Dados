@@ -327,11 +327,15 @@ namespace Pont_Finder.hospedagem
             }
             if (tipo == "Casal")
             {
-                radioButton3.Checked = true;                
+                radioButton3.Checked = true;
+                tb_casal.Enabled = false;
+                tb_solteiro.Enabled = false;
             }
             if (tipo == "Solteiro")
             {
                 radioButton1.Checked = true;
+                tb_casal.Enabled = false;
+                tb_solteiro.Enabled = false;
             }
             //marca checkbox da lista
             if (servicos.Contains(" Café da manhã "))
