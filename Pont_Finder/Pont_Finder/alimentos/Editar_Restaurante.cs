@@ -12,8 +12,10 @@ namespace Pont_Finder.alimentos
 {
     public partial class Editar_Restaurante : Form
     {
-        public Editar_Restaurante()
+        private int Empresa;
+        public Editar_Restaurante(int idEmpresa)
         {
+            Empresa = idEmpresa;
             InitializeComponent();
         }
 

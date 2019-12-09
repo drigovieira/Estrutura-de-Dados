@@ -553,7 +553,7 @@ namespace Pont_Finder
 
         private void LbConfig1_Click(object sender, EventArgs e)
         {
-            alimentos.Editar_Restaurante editRest = new Editar_Restaurante();
+            alimentos.Editar_Restaurante editRest = new Editar_Restaurante(result);
             FormPrincipal.MudarForm("alimentos", editRest);
         }
 
