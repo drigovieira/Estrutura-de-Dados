@@ -12,6 +12,7 @@ namespace Pont_Finder.alimentos
 {
     public partial class Editar_Restaurante : Form
     {
+        private string filtro;
         private int Empresa;
         public Editar_Restaurante(int idEmpresa)
         {
@@ -25,7 +26,88 @@ namespace Pont_Finder.alimentos
             mkb_Tel.Text = CompanyList.selectAll()[idEmpresa].TelComercial.ToString();
             tbEmail.Text = CompanyList.selectAll()[idEmpresa].Email;
             pb_icone.ImageLocation = CompanyList.selectAll()[idEmpresa].Image;
-
+            cbCardapio.Checked = true;
+            cbEntrega.Checked = true;
+            label15.Text = CompanyList.selectAll()[idEmpresa].Taxa.ToString();
+            foreach(var i in CompanyList.selectAll()[idEmpresa].Categoria)
+            {
+                if (i == rbChurrascaria.Text)
+                {
+                    rbChurrascaria.Checked = true;
+                }
+                else if (i == rbPetiscaria.Text)
+                {
+                    rbPetiscaria.Checked = true;
+                }
+                else if (i == rbPizzaria.Text)
+                {
+                    rbPizzaria.Checked = true;
+                }
+                else if (i == rbComidaItaliana.Text)
+                {
+                    rbComidaItaliana.Checked = true;
+                }
+                else if (i == rbComidaJaponesa.Text)
+                {
+                    rbComidaJaponesa.Checked = true;
+                }
+                else if (i == rbSorveteria.Text)
+                {
+                    rbSorveteria.Checked = true;
+                }
+                else if (i == rbHambúrgueria.Text)
+                {
+                    rbHambúrgueria.Checked = true;
+                }
+                else if (i == rbFrutosDoMar.Text)
+                {
+                    rbFrutosDoMar.Checked = true;
+                }
+                else if (i == rbOutros.Text)
+                {
+                    rbOutros.Checked = true;
+                }
+            }
+        }
+        public string Filtro()
+        {
+            if (rbChurrascaria.Checked == true)
+            {
+                filtro = rbChurrascaria.Text;
+            }
+            else if (rbPetiscaria.Checked == true)
+            {
+                filtro = rbPetiscaria.Text;
+            }
+            else if (rbPizzaria.Checked == true)
+            {
+                filtro = rbPizzaria.Text;
+            }
+            else if (rbComidaItaliana.Checked == true)
+            {
+                filtro = rbComidaItaliana.Text;
+            }
+            else if (rbComidaJaponesa.Checked == true)
+            {
+                filtro = rbComidaJaponesa.Text;
+            }
+            else if (rbSorveteria.Checked == true)
+            {
+                filtro = rbSorveteria.Text;
+            }
+            else if (rbHambúrgueria.Checked == true)
+            {
+                filtro = rbHambúrgueria.Text;
+            }
+            else if (rbFrutosDoMar.Checked == true)
+            {
+                filtro = rbFrutosDoMar.Text;
+            }
+            else if (rbOutros.Checked == true)
+            {
+                filtro = rbOutros.Text;
+            }
+            return filtro;
         }
 
         private void Editar_Restaurante_Load(object sender, EventArgs e)

@@ -61,16 +61,16 @@
             this.pb_icone = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.rbOutros = new System.Windows.Forms.CheckBox();
+            this.rbConvencional = new System.Windows.Forms.CheckBox();
+            this.rbFrutosDoMar = new System.Windows.Forms.CheckBox();
+            this.rbHambúrgueria = new System.Windows.Forms.CheckBox();
+            this.rbComidaItaliana = new System.Windows.Forms.CheckBox();
+            this.rbPetiscaria = new System.Windows.Forms.CheckBox();
+            this.rbSorveteria = new System.Windows.Forms.CheckBox();
+            this.rbComidaJaponesa = new System.Windows.Forms.CheckBox();
+            this.rbPizzaria = new System.Windows.Forms.CheckBox();
+            this.rbChurrascaria = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCad = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -444,130 +444,130 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.checkBox10);
-            this.panel6.Controls.Add(this.checkBox9);
-            this.panel6.Controls.Add(this.checkBox5);
-            this.panel6.Controls.Add(this.checkBox6);
-            this.panel6.Controls.Add(this.checkBox7);
-            this.panel6.Controls.Add(this.checkBox8);
-            this.panel6.Controls.Add(this.checkBox4);
-            this.panel6.Controls.Add(this.checkBox3);
-            this.panel6.Controls.Add(this.checkBox2);
-            this.panel6.Controls.Add(this.checkBox1);
+            this.panel6.Controls.Add(this.rbOutros);
+            this.panel6.Controls.Add(this.rbConvencional);
+            this.panel6.Controls.Add(this.rbFrutosDoMar);
+            this.panel6.Controls.Add(this.rbHambúrgueria);
+            this.panel6.Controls.Add(this.rbComidaItaliana);
+            this.panel6.Controls.Add(this.rbPetiscaria);
+            this.panel6.Controls.Add(this.rbSorveteria);
+            this.panel6.Controls.Add(this.rbComidaJaponesa);
+            this.panel6.Controls.Add(this.rbPizzaria);
+            this.panel6.Controls.Add(this.rbChurrascaria);
             this.panel6.Location = new System.Drawing.Point(81, 442);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(460, 218);
             this.panel6.TabIndex = 6;
             // 
-            // checkBox10
+            // rbOutros
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox10.Location = new System.Drawing.Point(68, 164);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(72, 24);
-            this.checkBox10.TabIndex = 9;
-            this.checkBox10.Text = "Outros";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.rbOutros.AutoSize = true;
+            this.rbOutros.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbOutros.Location = new System.Drawing.Point(68, 164);
+            this.rbOutros.Name = "rbOutros";
+            this.rbOutros.Size = new System.Drawing.Size(72, 24);
+            this.rbOutros.TabIndex = 9;
+            this.rbOutros.Text = "Outros";
+            this.rbOutros.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // rbConvencional
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox9.Location = new System.Drawing.Point(290, 164);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(117, 24);
-            this.checkBox9.TabIndex = 10;
-            this.checkBox9.Text = "Convencional";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.rbConvencional.AutoSize = true;
+            this.rbConvencional.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbConvencional.Location = new System.Drawing.Point(290, 164);
+            this.rbConvencional.Name = "rbConvencional";
+            this.rbConvencional.Size = new System.Drawing.Size(117, 24);
+            this.rbConvencional.TabIndex = 10;
+            this.rbConvencional.Text = "Convencional";
+            this.rbConvencional.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // rbFrutosDoMar
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(290, 132);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(120, 24);
-            this.checkBox5.TabIndex = 8;
-            this.checkBox5.Text = "Frutos do Mar";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.rbFrutosDoMar.AutoSize = true;
+            this.rbFrutosDoMar.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFrutosDoMar.Location = new System.Drawing.Point(290, 132);
+            this.rbFrutosDoMar.Name = "rbFrutosDoMar";
+            this.rbFrutosDoMar.Size = new System.Drawing.Size(120, 24);
+            this.rbFrutosDoMar.TabIndex = 8;
+            this.rbFrutosDoMar.Text = "Frutos do Mar";
+            this.rbFrutosDoMar.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // rbHambúrgueria
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(290, 99);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(124, 24);
-            this.checkBox6.TabIndex = 6;
-            this.checkBox6.Text = "Hambúrgueria";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.rbHambúrgueria.AutoSize = true;
+            this.rbHambúrgueria.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbHambúrgueria.Location = new System.Drawing.Point(290, 99);
+            this.rbHambúrgueria.Name = "rbHambúrgueria";
+            this.rbHambúrgueria.Size = new System.Drawing.Size(124, 24);
+            this.rbHambúrgueria.TabIndex = 6;
+            this.rbHambúrgueria.Text = "Hambúrgueria";
+            this.rbHambúrgueria.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // rbComidaItaliana
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(70, 132);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(133, 24);
-            this.checkBox7.TabIndex = 7;
-            this.checkBox7.Text = "Comida Italiana";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.rbComidaItaliana.AutoSize = true;
+            this.rbComidaItaliana.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbComidaItaliana.Location = new System.Drawing.Point(70, 132);
+            this.rbComidaItaliana.Name = "rbComidaItaliana";
+            this.rbComidaItaliana.Size = new System.Drawing.Size(133, 24);
+            this.rbComidaItaliana.TabIndex = 7;
+            this.rbComidaItaliana.Text = "Comida Italiana";
+            this.rbComidaItaliana.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // rbPetiscaria
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.Location = new System.Drawing.Point(70, 99);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(91, 24);
-            this.checkBox8.TabIndex = 5;
-            this.checkBox8.Text = "Petiscaria";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.rbPetiscaria.AutoSize = true;
+            this.rbPetiscaria.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPetiscaria.Location = new System.Drawing.Point(70, 99);
+            this.rbPetiscaria.Name = "rbPetiscaria";
+            this.rbPetiscaria.Size = new System.Drawing.Size(91, 24);
+            this.rbPetiscaria.TabIndex = 5;
+            this.rbPetiscaria.Text = "Petiscaria";
+            this.rbPetiscaria.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // rbSorveteria
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(290, 64);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(95, 24);
-            this.checkBox4.TabIndex = 4;
-            this.checkBox4.Text = "Sorveteria";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.rbSorveteria.AutoSize = true;
+            this.rbSorveteria.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSorveteria.Location = new System.Drawing.Point(290, 64);
+            this.rbSorveteria.Name = "rbSorveteria";
+            this.rbSorveteria.Size = new System.Drawing.Size(95, 24);
+            this.rbSorveteria.TabIndex = 4;
+            this.rbSorveteria.Text = "Sorveteria";
+            this.rbSorveteria.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // rbComidaJaponesa
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(290, 31);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(145, 24);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Comida Japonesa";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.rbComidaJaponesa.AutoSize = true;
+            this.rbComidaJaponesa.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbComidaJaponesa.Location = new System.Drawing.Point(290, 31);
+            this.rbComidaJaponesa.Name = "rbComidaJaponesa";
+            this.rbComidaJaponesa.Size = new System.Drawing.Size(145, 24);
+            this.rbComidaJaponesa.TabIndex = 2;
+            this.rbComidaJaponesa.Text = "Comida Japonesa";
+            this.rbComidaJaponesa.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // rbPizzaria
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(70, 64);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(79, 24);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Pizzaria";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.rbPizzaria.AutoSize = true;
+            this.rbPizzaria.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPizzaria.Location = new System.Drawing.Point(70, 64);
+            this.rbPizzaria.Name = "rbPizzaria";
+            this.rbPizzaria.Size = new System.Drawing.Size(79, 24);
+            this.rbPizzaria.TabIndex = 3;
+            this.rbPizzaria.Text = "Pizzaria";
+            this.rbPizzaria.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // rbChurrascaria
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(70, 31);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(109, 24);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Churrascaria";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.rbChurrascaria.AutoSize = true;
+            this.rbChurrascaria.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbChurrascaria.Location = new System.Drawing.Point(70, 31);
+            this.rbChurrascaria.Name = "rbChurrascaria";
+            this.rbChurrascaria.Size = new System.Drawing.Size(109, 24);
+            this.rbChurrascaria.TabIndex = 1;
+            this.rbChurrascaria.Text = "Churrascaria";
+            this.rbChurrascaria.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -1079,16 +1079,16 @@
         private System.Windows.Forms.PictureBox pb_icone;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox rbOutros;
+        private System.Windows.Forms.CheckBox rbConvencional;
+        private System.Windows.Forms.CheckBox rbFrutosDoMar;
+        private System.Windows.Forms.CheckBox rbHambúrgueria;
+        private System.Windows.Forms.CheckBox rbComidaItaliana;
+        private System.Windows.Forms.CheckBox rbPetiscaria;
+        private System.Windows.Forms.CheckBox rbSorveteria;
+        private System.Windows.Forms.CheckBox rbComidaJaponesa;
+        private System.Windows.Forms.CheckBox rbPizzaria;
+        private System.Windows.Forms.CheckBox rbChurrascaria;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnCad;
         private System.Windows.Forms.Panel panel4;
