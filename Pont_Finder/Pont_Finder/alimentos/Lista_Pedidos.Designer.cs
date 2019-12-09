@@ -110,6 +110,7 @@
             this.btn_back.Size = new System.Drawing.Size(40, 40);
             this.btn_back.TabIndex = 65;
             this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // Lista_Pedidos
             // 
