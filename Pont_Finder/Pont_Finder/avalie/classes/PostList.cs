@@ -48,6 +48,34 @@ namespace Pont_Finder.avalie
             get { return poster; }
         }
 
+        public static PostConstructor ForId(long id)
+        {
+            foreach (var item in poster)
+            {
+                if (item.Id == id)
+                {
+                    PostConstructor post = new PostConstructor();
+
+                    post.Id = item.Id;
+                    post.Nome = item.Nome;
+                    post.Img = item.Img;
+                    post.Cpf = item.Cpf;
+                    post.Imgperfil = item.Imgperfil;
+                    post.Tipoproblema = item.Tipoproblema;
+                    post.Localizacao = item.Localizacao;
+                    post.Desc = item.Desc;
+                    post.Tempohora = item.Tempohora;
+                    post.Ativo = item.Ativo;
+                    post.Resolved = item.Resolved;
+                    post.LikesList = item.LikesList;
+                    return post;
+                }
+            }
+            return null;
+        }
+
+
+
         public static List<PostConstructor> Poster
         {
             get {
@@ -213,6 +241,8 @@ namespace Pont_Finder.avalie
                 poster.Add(postar);
             }
         }
+       
+
 
         public static void XmlDrop()
         {
@@ -228,6 +258,58 @@ namespace Pont_Finder.avalie
             }
             xmldoc.Save(caminhoPost);
         }
+
+
+
+
+
+        public static List<PostConstructor> top()
+        {
+            long[] ids = new long[poster.Count];
+            long[] likes = new long[poster.Count];
+
+            int cont = 0;
+            foreach (var item in poster)
+            {
+                ids[cont] = item.Id;
+                likes[cont] = item.Joinha;
+                cont++;
+            }
+
+            for (int i = 0; i < likes.Length; i++)
+            {
+                for (int j = 0; j < likes.Length; j++)
+                {
+                    if (likes[i] < likes[j])
+                    {
+                        long like = likes[i];
+                        likes[i] = likes[j];
+                        likes[j] = like;
+
+                        long id = ids[i];
+                        ids[i] = ids[j];
+                        ids[j] = id;
+                    }
+                }
+            }
+
+            List<PostConstructor> top = new List<PostConstructor>();
+            foreach (var item in ids)
+            {
+                top.Add(ForId(item));
+            }
+            top.Reverse();
+
+            return top;
+        }
+
+
+
+
+
+
+
+
 
     }
 }

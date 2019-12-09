@@ -23,12 +23,12 @@ namespace Pont_Finder.avalie.User_Control
 
 
 
-        public bestPost()
+        public bestPost(long id)
         {
             InitializeComponent();
+            post = PostList.PosterId(id);
 
-
-            lb_problema.Text = (post.Tipoproblema);
+            lb_problema.Text ="Tipo do Problema: "+(post.Tipoproblema);
             pictureBox1.ImageLocation = post.Img;
 
             lb_like.Text = this.post.Joinha + "";

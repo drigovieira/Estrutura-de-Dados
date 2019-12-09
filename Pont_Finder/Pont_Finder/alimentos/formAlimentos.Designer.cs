@@ -44,6 +44,7 @@
             this.pn_menu = new System.Windows.Forms.Panel();
             this.Btn_Edit_Empresa = new System.Windows.Forms.Button();
             this.VerPedidos = new System.Windows.Forms.Button();
+            this.btn_Config = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -67,7 +68,6 @@
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_prox = new System.Windows.Forms.Button();
             this.bt_ant = new System.Windows.Forms.Button();
-            this.btn_Config = new System.Windows.Forms.PictureBox();
             this.lbConfig1 = new System.Windows.Forms.Label();
             this.lbConfig2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -76,10 +76,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
             this.pn_menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -251,6 +251,22 @@
             this.VerPedidos.UseVisualStyleBackColor = false;
             this.VerPedidos.Visible = false;
             this.VerPedidos.Click += new System.EventHandler(this.VerPedidos_Click);
+            // 
+            // btn_Config
+            // 
+            this.btn_Config.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Config.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Config.BackgroundImage")));
+            this.btn_Config.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Config.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Config.InitialImage = null;
+            this.btn_Config.Location = new System.Drawing.Point(708, 4);
+            this.btn_Config.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Config.Name = "btn_Config";
+            this.btn_Config.Size = new System.Drawing.Size(40, 35);
+            this.btn_Config.TabIndex = 69;
+            this.btn_Config.TabStop = false;
+            this.btn_Config.Visible = false;
+            this.btn_Config.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // label6
             // 
@@ -542,22 +558,6 @@
             this.bt_ant.UseVisualStyleBackColor = false;
             this.bt_ant.Click += new System.EventHandler(this.Bt_ant_Click);
             // 
-            // btn_Config
-            // 
-            this.btn_Config.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Config.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Config.BackgroundImage")));
-            this.btn_Config.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Config.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Config.InitialImage = null;
-            this.btn_Config.Location = new System.Drawing.Point(708, 4);
-            this.btn_Config.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Config.Name = "btn_Config";
-            this.btn_Config.Size = new System.Drawing.Size(40, 35);
-            this.btn_Config.TabIndex = 69;
-            this.btn_Config.TabStop = false;
-            this.btn_Config.Visible = false;
-            this.btn_Config.Click += new System.EventHandler(this.Btn_back_Click);
-            // 
             // lbConfig1
             // 
             this.lbConfig1.BackColor = System.Drawing.Color.Red;
@@ -649,13 +649,13 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.pn_menu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
