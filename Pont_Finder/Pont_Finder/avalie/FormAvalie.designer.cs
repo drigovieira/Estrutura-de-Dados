@@ -76,16 +76,16 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(450, 5);
+            this.button3.Location = new System.Drawing.Point(470, 6);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 28);
+            this.button3.Size = new System.Drawing.Size(151, 28);
             this.button3.TabIndex = 12;
-            this.button3.Text = "Realizar post!";
+            this.button3.Text = "Realizar postagem";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -93,10 +93,11 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.cb_problemas);
             this.panel7.Controls.Add(this.button_Pesquisar);
             this.panel7.Controls.Add(this.label2);
-            this.panel7.Location = new System.Drawing.Point(5, 482);
+            this.panel7.Location = new System.Drawing.Point(5, 436);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(310, 200);
             this.panel7.TabIndex = 14;
@@ -111,7 +112,7 @@
             "Infraestrutura",
             "Serviços",
             "Outros"});
-            this.cb_problemas.Location = new System.Drawing.Point(65, 72);
+            this.cb_problemas.Location = new System.Drawing.Point(22, 63);
             this.cb_problemas.Name = "cb_problemas";
             this.cb_problemas.Size = new System.Drawing.Size(200, 28);
             this.cb_problemas.TabIndex = 82;
@@ -120,11 +121,12 @@
             // 
             this.button_Pesquisar.BackColor = System.Drawing.Color.DodgerBlue;
             this.button_Pesquisar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_Pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Pesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Pesquisar.ForeColor = System.Drawing.Color.White;
-            this.button_Pesquisar.Location = new System.Drawing.Point(92, 123);
+            this.button_Pesquisar.Location = new System.Drawing.Point(22, 116);
             this.button_Pesquisar.Name = "button_Pesquisar";
-            this.button_Pesquisar.Size = new System.Drawing.Size(110, 34);
+            this.button_Pesquisar.Size = new System.Drawing.Size(110, 30);
             this.button_Pesquisar.TabIndex = 79;
             this.button_Pesquisar.Text = "Filtrar";
             this.button_Pesquisar.UseVisualStyleBackColor = false;
@@ -135,18 +137,18 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 28);
+            this.label2.Location = new System.Drawing.Point(18, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 24);
+            this.label2.Size = new System.Drawing.Size(273, 24);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Filtrar Reclamações";
+            this.label2.Text = "Filtrar por Tipo de Problema";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(82, 39);
+            this.label1.Location = new System.Drawing.Point(18, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 24);
             this.label1.TabIndex = 3;
@@ -162,7 +164,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel5.Controls.Add(this.label13);
-            this.panel5.Location = new System.Drawing.Point(950, 688);
+            this.panel5.Location = new System.Drawing.Point(950, 659);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(303, 127);
             this.panel5.TabIndex = 40;
@@ -204,8 +206,8 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel9.Controls.Add(this.button2);
             this.panel9.Controls.Add(this.button3);
+            this.panel9.Controls.Add(this.button2);
             this.panel9.Location = new System.Drawing.Point(0, 150);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1265, 40);
@@ -213,15 +215,15 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(726, 5);
+            this.button2.Location = new System.Drawing.Point(673, 6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 28);
+            this.button2.Size = new System.Drawing.Size(176, 28);
             this.button2.TabIndex = 14;
-            this.button2.Text = "Meus Posts";
+            this.button2.Text = "Visualizar Meus Posts";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -238,7 +240,7 @@
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(617, 250);
+            this.lb_pag.Location = new System.Drawing.Point(612, 241);
             this.lb_pag.Name = "lb_pag";
             this.lb_pag.Size = new System.Drawing.Size(39, 13);
             this.lb_pag.TabIndex = 83;
@@ -266,7 +268,7 @@
             this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(317, 240);
+            this.bt_ant.Location = new System.Drawing.Point(321, 241);
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(75, 23);
             this.bt_ant.TabIndex = 81;
@@ -288,7 +290,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel4.Controls.Add(this.label15);
-            this.panel4.Location = new System.Drawing.Point(950, 821);
+            this.panel4.Location = new System.Drawing.Point(950, 792);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(303, 193);
             this.panel4.TabIndex = 39;
@@ -308,16 +310,17 @@
             this.panel6.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel6.Controls.Add(this.top3panel);
             this.panel6.Controls.Add(this.label7);
-            this.panel6.Location = new System.Drawing.Point(950, 270);
+            this.panel6.Location = new System.Drawing.Point(950, 241);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(303, 412);
             this.panel6.TabIndex = 41;
             // 
             // top3panel
             // 
-            this.top3panel.Location = new System.Drawing.Point(29, 39);
+            this.top3panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.top3panel.Location = new System.Drawing.Point(3, 39);
             this.top3panel.Name = "top3panel";
-            this.top3panel.Size = new System.Drawing.Size(263, 310);
+            this.top3panel.Size = new System.Drawing.Size(297, 370);
             this.top3panel.TabIndex = 6;
             // 
             // label7
@@ -334,7 +337,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1014);
+            this.panel1.Location = new System.Drawing.Point(0, 985);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 85;
@@ -342,11 +345,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.Databox);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(5, 269);
+            this.panel2.Location = new System.Drawing.Point(5, 241);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 189);
             this.panel2.TabIndex = 80;
@@ -354,7 +358,7 @@
             // Databox
             // 
             this.Databox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Databox.Location = new System.Drawing.Point(86, 85);
+            this.Databox.Location = new System.Drawing.Point(22, 97);
             this.Databox.Margin = new System.Windows.Forms.Padding(2);
             this.Databox.Mask = "00/00/0000";
             this.Databox.Name = "Databox";
@@ -380,11 +384,12 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(86, 126);
+            this.button1.Location = new System.Drawing.Point(142, 97);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 34);
+            this.button1.Size = new System.Drawing.Size(152, 29);
             this.button1.TabIndex = 26;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = false;

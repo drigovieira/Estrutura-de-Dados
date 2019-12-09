@@ -45,6 +45,7 @@
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(110, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -52,7 +53,7 @@
             // 
             this.lb_deslike.AutoSize = true;
             this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_deslike.Location = new System.Drawing.Point(180, 77);
+            this.lb_deslike.Location = new System.Drawing.Point(162, 77);
             this.lb_deslike.Name = "lb_deslike";
             this.lb_deslike.Size = new System.Drawing.Size(15, 16);
             this.lb_deslike.TabIndex = 39;
@@ -62,8 +63,9 @@
             // 
             this.pb_down.BackgroundImage = global::Pont_Finder.Properties.Resources.Deslike_null;
             this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_down.Enabled = false;
             this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.Location = new System.Drawing.Point(146, 68);
+            this.pb_down.Location = new System.Drawing.Point(119, 68);
             this.pb_down.Margin = new System.Windows.Forms.Padding(15);
             this.pb_down.Name = "pb_down";
             this.pb_down.Size = new System.Drawing.Size(25, 25);
@@ -75,8 +77,9 @@
             // 
             this.pb_up.BackgroundImage = global::Pont_Finder.Properties.Resources.Like_null;
             this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_up.Enabled = false;
             this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.Location = new System.Drawing.Point(146, 30);
+            this.pb_up.Location = new System.Drawing.Point(119, 30);
             this.pb_up.Margin = new System.Windows.Forms.Padding(15);
             this.pb_up.Name = "pb_up";
             this.pb_up.Size = new System.Drawing.Size(25, 25);
@@ -89,7 +92,7 @@
             // 
             this.lb_like.AutoSize = true;
             this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_like.Location = new System.Drawing.Point(180, 39);
+            this.lb_like.Location = new System.Drawing.Point(162, 39);
             this.lb_like.Name = "lb_like";
             this.lb_like.Size = new System.Drawing.Size(15, 16);
             this.lb_like.TabIndex = 36;
@@ -110,6 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lb_problema);
             this.Controls.Add(this.lb_deslike);
             this.Controls.Add(this.pb_down);
@@ -118,7 +122,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "bestPost";
-            this.Size = new System.Drawing.Size(263, 100);
+            this.Size = new System.Drawing.Size(261, 98);
             this.Load += new System.EventHandler(this.bestPost_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();

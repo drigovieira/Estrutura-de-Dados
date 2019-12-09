@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pont_Finder.avalie;
+using Pont_Finder.avalie.User_Control;
 
 namespace Pont_Finder
 {
@@ -28,12 +29,12 @@ namespace Pont_Finder
         public FormAvalie()
         {
             local = 5;
-            
+
 
             InitializeComponent();
             CarregarPost();
+            Top3();
 
-         
 
 
 
@@ -50,7 +51,7 @@ namespace Pont_Finder
             else
             {
                 MessageBox.Show("Por Favor, Efetue o Login para Realizar um Post");
-                
+
             }
 
 
@@ -72,7 +73,7 @@ namespace Pont_Finder
 
             CarregarPost();
 
-          
+
 
 
             /*t1.Top = let * let2;
@@ -81,7 +82,7 @@ namespace Pont_Finder
             t1.Left = 5;
             leftcontrol = 0;
             leftcontrol = leftcontrol;*/
-       
+
 
 
         }
@@ -93,7 +94,7 @@ namespace Pont_Finder
 
         private void d_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         public void CarregarPost()
@@ -316,7 +317,7 @@ namespace Pont_Finder
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -398,10 +399,12 @@ namespace Pont_Finder
 
 
 
-        public void LoadTop3()
+
+        public void Top3()
         {
-            ListaDePost = PostList.PosterAtivo;
-            ListaDePost.Reverse();
+
+            ListaDePost = PostList.top();
+            
 
             pagQuant = 3;
 
@@ -427,7 +430,7 @@ namespace Pont_Finder
             {
                 if (i >= pagQuant)
                     break;
-                UserControl1 t1 = new UserControl1(item.Id);
+                bestPost t1 = new bestPost(item.Id);
                 t1.Location = new Point(0, local);
                 local = local + t1.Height + 5;
                 top3panel.Controls.Add(t1);
@@ -436,52 +439,6 @@ namespace Pont_Finder
 
         }
 
-        public void OrganizeTop3()
-        {
-            ListaDePost.Clear();
-
-            foreach (var item in PostList.PosterAtivo)
-            {
-                
-            }
-
-
-
-            int y = 5;
-            panel3.Height = 180;
-            panel3.Controls.Clear();
-            int i = 0;
-
-            ListaDePost.Reverse();
-
-            pagTotal = ListaDePost.Count;
-            if ((pagTotal % pagQuant) != 0)
-            {
-                pagTotal = (pagTotal / pagQuant);
-                pagTotal++;
-            }
-            else
-            {
-                pagTotal = pagTotal / pagQuant;
-            }
-            pagAtual = 1;
-
-            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
-
-
-            foreach (var item in ListaDePost)
-            {
-                if (i >= pagQuant)
-                    break;
-                UserControl1 a = new UserControl1(item.Id);
-                a.Location = new Point(0, (y));
-                y = y + a.Height + 5;
-                top3panel.Height = top3panel.Height + 180;
-                top3panel.Controls.Add(a);
-                i++;
-            }
-
-        }
     }
 }
 

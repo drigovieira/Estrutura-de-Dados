@@ -57,10 +57,10 @@
             this.rb_recente = new System.Windows.Forms.RadioButton();
             this.rb_antigo = new System.Windows.Forms.RadioButton();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.rb_categoria = new System.Windows.Forms.RadioButton();
             this.bt_antFull = new System.Windows.Forms.Button();
             this.bt_proxFull = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.menu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -407,6 +407,16 @@
             this.panel_left.Size = new System.Drawing.Size(310, 259);
             this.panel_left.TabIndex = 15;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(7, 224);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(288, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Top 5";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_3);
+            // 
             // rb_categoria
             // 
             this.rb_categoria.AutoSize = true;
@@ -448,16 +458,6 @@
             this.bt_proxFull.Text = "↠";
             this.bt_proxFull.UseVisualStyleBackColor = false;
             this.bt_proxFull.Click += new System.EventHandler(this.Bt_proxFull_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(7, 224);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(288, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Top 5";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_3);
             // 
             // FormServicos
             // 
