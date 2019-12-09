@@ -138,6 +138,7 @@
             this.bt_add_logo.Name = "bt_add_logo";
             this.bt_add_logo.Size = new System.Drawing.Size(139, 47);
             this.bt_add_logo.TabIndex = 16;
+            this.bt_add_logo.TabStop = false;
             this.bt_add_logo.Text = "Adicionar Logo";
             this.bt_add_logo.UseVisualStyleBackColor = false;
             this.bt_add_logo.Click += new System.EventHandler(this.bt_add_logo_Click);
@@ -352,7 +353,8 @@
             this.ckb_termos_uso.Location = new System.Drawing.Point(87, 1441);
             this.ckb_termos_uso.Name = "ckb_termos_uso";
             this.ckb_termos_uso.Size = new System.Drawing.Size(257, 25);
-            this.ckb_termos_uso.TabIndex = 114;
+            this.ckb_termos_uso.TabIndex = 27;
+            this.ckb_termos_uso.TabStop = false;
             this.ckb_termos_uso.Text = "Concordo com os termos de uso.";
             this.ckb_termos_uso.UseVisualStyleBackColor = true;
             // 
@@ -409,7 +411,6 @@
             this.radio_pousada.Name = "radio_pousada";
             this.radio_pousada.Size = new System.Drawing.Size(76, 21);
             this.radio_pousada.TabIndex = 12;
-            this.radio_pousada.TabStop = true;
             this.radio_pousada.Text = "Pousada";
             this.radio_pousada.UseVisualStyleBackColor = true;
             // 
@@ -421,7 +422,6 @@
             this.radio_hotel.Name = "radio_hotel";
             this.radio_hotel.Size = new System.Drawing.Size(57, 21);
             this.radio_hotel.TabIndex = 11;
-            this.radio_hotel.TabStop = true;
             this.radio_hotel.Text = "Hotel";
             this.radio_hotel.UseVisualStyleBackColor = true;
             // 
@@ -434,7 +434,8 @@
             this.bt_continuar.Location = new System.Drawing.Point(202, 1507);
             this.bt_continuar.Name = "bt_continuar";
             this.bt_continuar.Size = new System.Drawing.Size(220, 54);
-            this.bt_continuar.TabIndex = 24;
+            this.bt_continuar.TabIndex = 30;
+            this.bt_continuar.TabStop = false;
             this.bt_continuar.Text = "Continuar";
             this.bt_continuar.UseVisualStyleBackColor = false;
             this.bt_continuar.Click += new System.EventHandler(this.Button2_Click);
@@ -459,9 +460,10 @@
             this.ckb_wifi.AutoSize = true;
             this.ckb_wifi.Location = new System.Drawing.Point(292, 24);
             this.ckb_wifi.Name = "ckb_wifi";
-            this.ckb_wifi.Size = new System.Drawing.Size(45, 18);
-            this.ckb_wifi.TabIndex = 25;
-            this.ckb_wifi.Text = "Wifi";
+            this.ckb_wifi.Size = new System.Drawing.Size(51, 18);
+            this.ckb_wifi.TabIndex = 23;
+            this.ckb_wifi.TabStop = false;
+            this.ckb_wifi.Text = "Wi-Fi";
             this.ckb_wifi.UseVisualStyleBackColor = true;
             // 
             // ckb_lugarPet
@@ -470,7 +472,8 @@
             this.ckb_lugarPet.Location = new System.Drawing.Point(72, 96);
             this.ckb_lugarPet.Name = "ckb_lugarPet";
             this.ckb_lugarPet.Size = new System.Drawing.Size(97, 18);
-            this.ckb_lugarPet.TabIndex = 24;
+            this.ckb_lugarPet.TabIndex = 22;
+            this.ckb_lugarPet.TabStop = false;
             this.ckb_lugarPet.Text = "Lugar para pet";
             this.ckb_lugarPet.UseVisualStyleBackColor = true;
             // 
@@ -480,7 +483,8 @@
             this.ckb_academia.Location = new System.Drawing.Point(292, 59);
             this.ckb_academia.Name = "ckb_academia";
             this.ckb_academia.Size = new System.Drawing.Size(74, 18);
-            this.ckb_academia.TabIndex = 23;
+            this.ckb_academia.TabIndex = 24;
+            this.ckb_academia.TabStop = false;
             this.ckb_academia.Text = "Academia";
             this.ckb_academia.UseVisualStyleBackColor = true;
             // 
@@ -490,7 +494,8 @@
             this.ckb_salaJogos.Location = new System.Drawing.Point(292, 96);
             this.ckb_salaJogos.Name = "ckb_salaJogos";
             this.ckb_salaJogos.Size = new System.Drawing.Size(92, 18);
-            this.ckb_salaJogos.TabIndex = 22;
+            this.ckb_salaJogos.TabIndex = 25;
+            this.ckb_salaJogos.TabStop = false;
             this.ckb_salaJogos.Text = "Sala de Jogos";
             this.ckb_salaJogos.UseVisualStyleBackColor = true;
             // 
@@ -501,6 +506,7 @@
             this.ckb_piscina.Name = "ckb_piscina";
             this.ckb_piscina.Size = new System.Drawing.Size(60, 18);
             this.ckb_piscina.TabIndex = 21;
+            this.ckb_piscina.TabStop = false;
             this.ckb_piscina.Text = "Piscina";
             this.ckb_piscina.UseVisualStyleBackColor = true;
             // 
@@ -511,6 +517,7 @@
             this.ckb_estacionamento.Name = "ckb_estacionamento";
             this.ckb_estacionamento.Size = new System.Drawing.Size(104, 18);
             this.ckb_estacionamento.TabIndex = 20;
+            this.ckb_estacionamento.TabStop = false;
             this.ckb_estacionamento.Text = "Estacionamento";
             this.ckb_estacionamento.UseVisualStyleBackColor = true;
             // 

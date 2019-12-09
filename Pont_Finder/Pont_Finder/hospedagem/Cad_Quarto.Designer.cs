@@ -100,7 +100,7 @@
             this.tb_qtdquarto.Location = new System.Drawing.Point(322, 724);
             this.tb_qtdquarto.Name = "tb_qtdquarto";
             this.tb_qtdquarto.Size = new System.Drawing.Size(200, 24);
-            this.tb_qtdquarto.TabIndex = 2;
+            this.tb_qtdquarto.TabIndex = 3;
             this.tb_qtdquarto.TextChanged += new System.EventHandler(this.Tb_qtdquarto_TextChanged);
             // 
             // label5
@@ -140,6 +140,7 @@
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(81, 18);
             this.checkBox7.TabIndex = 29;
+            this.checkBox7.TabStop = false;
             this.checkBox7.Text = "Espaço PET";
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
@@ -152,6 +153,7 @@
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(51, 18);
             this.checkBox4.TabIndex = 28;
+            this.checkBox4.TabStop = false;
             this.checkBox4.Text = "Wi-Fi";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
@@ -163,6 +165,7 @@
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(74, 18);
             this.checkBox5.TabIndex = 27;
+            this.checkBox5.TabStop = false;
             this.checkBox5.Text = "TV a cabo";
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
@@ -175,6 +178,7 @@
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(92, 18);
             this.checkBox6.TabIndex = 26;
+            this.checkBox6.TabStop = false;
             this.checkBox6.Text = "Café da tarde";
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
@@ -187,6 +191,7 @@
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(62, 18);
             this.checkBox3.TabIndex = 25;
+            this.checkBox3.TabStop = false;
             this.checkBox3.Text = "Almoço";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
@@ -198,6 +203,7 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(104, 18);
             this.checkBox2.TabIndex = 24;
+            this.checkBox2.TabStop = false;
             this.checkBox2.Text = "Ar condicionado";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
@@ -209,6 +215,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(99, 18);
             this.checkBox1.TabIndex = 23;
+            this.checkBox1.TabStop = false;
             this.checkBox1.Text = "Café da manhã";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -244,6 +251,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 51);
             this.button1.TabIndex = 31;
+            this.button1.TabStop = false;
             this.button1.Text = "Adicionar Foto";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -394,7 +402,7 @@
             this.tb_solteiro.Location = new System.Drawing.Point(462, 632);
             this.tb_solteiro.Name = "tb_solteiro";
             this.tb_solteiro.Size = new System.Drawing.Size(80, 24);
-            this.tb_solteiro.TabIndex = 36;
+            this.tb_solteiro.TabIndex = 2;
             this.tb_solteiro.TextChanged += new System.EventHandler(this.Tb_solteiro_TextChanged);
             // 
             // tb_casal
@@ -403,7 +411,7 @@
             this.tb_casal.Location = new System.Drawing.Point(306, 632);
             this.tb_casal.Name = "tb_casal";
             this.tb_casal.Size = new System.Drawing.Size(80, 24);
-            this.tb_casal.TabIndex = 35;
+            this.tb_casal.TabIndex = 1;
             this.tb_casal.TextChanged += new System.EventHandler(this.Tb_casal_TextChanged);
             // 
             // label8
