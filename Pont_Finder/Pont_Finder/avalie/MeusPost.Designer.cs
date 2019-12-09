@@ -33,10 +33,10 @@
             this.bt_ant = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lb_pag = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lb_pag = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
@@ -93,15 +93,29 @@
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.lb_pag);
-            this.panel6.Controls.Add(this.label11);
             this.panel6.Controls.Add(this.panel3);
             this.panel6.Controls.Add(this.bt_ant);
             this.panel6.Controls.Add(this.bt_prox);
-            this.panel6.Location = new System.Drawing.Point(127, 31);
+            this.panel6.Location = new System.Drawing.Point(127, 53);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1010, 540);
+            this.panel6.Size = new System.Drawing.Size(1010, 518);
             this.panel6.TabIndex = 90;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_pag.ForeColor = System.Drawing.Color.Black;
+            this.lb_pag.Location = new System.Drawing.Point(423, 72);
+            this.lb_pag.MaximumSize = new System.Drawing.Size(200, 32);
+            this.lb_pag.MinimumSize = new System.Drawing.Size(200, 32);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(200, 32);
+            this.lb_pag.TabIndex = 94;
+            this.lb_pag.Text = "lb_pag";
+            this.lb_pag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
@@ -109,7 +123,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(3, 3);
+            this.label11.Location = new System.Drawing.Point(545, 9);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(160, 36);
             this.label11.TabIndex = 86;
@@ -138,21 +152,6 @@
             this.panel1.Size = new System.Drawing.Size(1282, 100);
             this.panel1.TabIndex = 92;
             // 
-            // lb_pag
-            // 
-            this.lb_pag.AutoSize = true;
-            this.lb_pag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_pag.ForeColor = System.Drawing.Color.Black;
-            this.lb_pag.Location = new System.Drawing.Point(423, 72);
-            this.lb_pag.MaximumSize = new System.Drawing.Size(200, 32);
-            this.lb_pag.MinimumSize = new System.Drawing.Size(200, 32);
-            this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(200, 32);
-            this.lb_pag.TabIndex = 94;
-            this.lb_pag.Text = "lb_pag";
-            this.lb_pag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // MeusPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,6 +160,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

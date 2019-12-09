@@ -69,7 +69,6 @@ namespace Pont_Finder.avalie
             tb_des.Text = post.Desc;
             pb_icone.ImageLocation = post.Img;
             lb_hora.Text = post.Tempohora;
-            NomePos.Text = post.Nome;
             imagemuser.ImageLocation = post.Imgperfil;
 
             if (post.Resolved)
@@ -107,39 +106,48 @@ namespace Pont_Finder.avalie
 
         private void bt_editar_Click_1(object sender, EventArgs e)
         {
-            
-             
-            post.Tipoproblema = cb_pro.SelectedItem.ToString();
-            post.Localizacao = tb_loc.Text;
-            post.Desc = tb_des.Text;
-
-        
-            if (img)
+            if (tb_loc.Text == "" || tb_des.Text == "")
             {
-                if (!Directory.Exists("..//..//avalie//data//imagens//posts"))
-                    Directory.CreateDirectory("..//..//avalie//data//imagens//posts");
+                MessageBox.Show("Campos Vazios");
+                tb_loc.Text = post.Localizacao;
+                tb_des.Text = post.Desc;
 
-                pb_icone.Load();
-                pb_icone.Image = Image.FromFile(openFileDialog1.FileName);
-
-                Image bmp = new Bitmap(pb_icone.Image);
-
-                Image bmp2 = new Bitmap(bmp, pb_icone.Size);
-
-                pb_icone.Image = bmp2;
-
-              
-                string link = "..//..//avalie//data//imagens//posts//" + postId + ".jpg";
-                pb_icone.Image.Save(link, ImageFormat.Jpeg);
             }
+            else
+            {
 
-            if(r.Checked)
-                post.Resolved = true;
-            
-            if(nr.Checked)
-                post.Resolved = false;
+                post.Tipoproblema = cb_pro.SelectedItem.ToString();
+                post.Localizacao = tb_loc.Text;
+                post.Desc = tb_des.Text;
 
-            MessageBox.Show("Post Alterado Com Sucesso");
+
+                if (img)
+                {
+                    if (!Directory.Exists("..//..//avalie//data//imagens//posts"))
+                        Directory.CreateDirectory("..//..//avalie//data//imagens//posts");
+
+                    pb_icone.Load();
+                    pb_icone.Image = Image.FromFile(openFileDialog1.FileName);
+
+                    Image bmp = new Bitmap(pb_icone.Image);
+
+                    Image bmp2 = new Bitmap(bmp, pb_icone.Size);
+
+                    pb_icone.Image = bmp2;
+
+
+                    string link = "..//..//avalie//data//imagens//posts//" + postId + ".jpg";
+                    pb_icone.Image.Save(link, ImageFormat.Jpeg);
+                }
+
+                if (r.Checked)
+                    post.Resolved = true;
+
+                if (nr.Checked)
+                    post.Resolved = false;
+
+                MessageBox.Show("Post Alterado Com Sucesso");
+            }
 
             
             
@@ -253,6 +261,11 @@ namespace Pont_Finder.avalie
         private void Tb_des_TextChanged(object sender, EventArgs e)
         {
             tb_des.MaxLength = 300;
+        }
+
+        private void imagemuser_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -64,9 +64,9 @@
             this.tb_resposta = new System.Windows.Forms.RichTextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_pag = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.checado = new System.Windows.Forms.PictureBox();
-            this.lb_pag = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -482,6 +482,21 @@
             this.panel1.Size = new System.Drawing.Size(1010, 325);
             this.panel1.TabIndex = 96;
             // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_pag.ForeColor = System.Drawing.Color.Black;
+            this.lb_pag.Location = new System.Drawing.Point(397, 176);
+            this.lb_pag.MaximumSize = new System.Drawing.Size(200, 32);
+            this.lb_pag.MinimumSize = new System.Drawing.Size(200, 32);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(200, 32);
+            this.lb_pag.TabIndex = 93;
+            this.lb_pag.Text = "lb_pag";
+            this.lb_pag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -503,21 +518,6 @@
             this.checado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.checado.TabIndex = 97;
             this.checado.TabStop = false;
-            // 
-            // lb_pag
-            // 
-            this.lb_pag.AutoSize = true;
-            this.lb_pag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_pag.ForeColor = System.Drawing.Color.Black;
-            this.lb_pag.Location = new System.Drawing.Point(397, 176);
-            this.lb_pag.MaximumSize = new System.Drawing.Size(200, 32);
-            this.lb_pag.MinimumSize = new System.Drawing.Size(200, 32);
-            this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(200, 32);
-            this.lb_pag.TabIndex = 93;
-            this.lb_pag.Text = "lb_pag";
-            this.lb_pag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ViewPost
             // 

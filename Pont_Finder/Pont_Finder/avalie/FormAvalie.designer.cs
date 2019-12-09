@@ -38,6 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,6 +49,8 @@
             this.bt_prox = new System.Windows.Forms.Button();
             this.bt_ant = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -62,10 +66,6 @@
             this.bt_proxFull = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lb_pag = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -169,6 +169,22 @@
             this.panel5.Size = new System.Drawing.Size(310, 350);
             this.panel5.TabIndex = 40;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // panel12
+            // 
+            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
+            this.panel12.Location = new System.Drawing.Point(29, 193);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(250, 140);
+            this.panel12.TabIndex = 4;
+            // 
+            // panel13
+            // 
+            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
+            this.panel13.Location = new System.Drawing.Point(29, 35);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(250, 140);
+            this.panel13.TabIndex = 3;
             // 
             // label13
             // 
@@ -284,6 +300,22 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 350);
             this.panel4.TabIndex = 39;
+            // 
+            // panel14
+            // 
+            this.panel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel14.BackgroundImage")));
+            this.panel14.Location = new System.Drawing.Point(29, 190);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(250, 140);
+            this.panel14.TabIndex = 6;
+            // 
+            // panel15
+            // 
+            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
+            this.panel15.Location = new System.Drawing.Point(29, 32);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(250, 140);
+            this.panel15.TabIndex = 5;
             // 
             // label15
             // 
@@ -462,38 +494,6 @@
             this.lb_pag.Text = "lb_pag";
             this.lb_pag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_pag.Click += new System.EventHandler(this.lb_pag_Click);
-            // 
-            // panel12
-            // 
-            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.Location = new System.Drawing.Point(29, 193);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(250, 140);
-            this.panel12.TabIndex = 4;
-            // 
-            // panel13
-            // 
-            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.Location = new System.Drawing.Point(29, 35);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(250, 140);
-            this.panel13.TabIndex = 3;
-            // 
-            // panel14
-            // 
-            this.panel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel14.BackgroundImage")));
-            this.panel14.Location = new System.Drawing.Point(29, 190);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(250, 140);
-            this.panel14.TabIndex = 6;
-            // 
-            // panel15
-            // 
-            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
-            this.panel15.Location = new System.Drawing.Point(29, 32);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(250, 140);
-            this.panel15.TabIndex = 5;
             // 
             // FormAvalie
             // 
