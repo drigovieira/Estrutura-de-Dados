@@ -18,6 +18,7 @@
     <valor>89,50</valor>
     <patrocinadores>RockStar, Amanco, Tigre</patrocinadores>
     <ativo>false</ativo>
+    <likes></likes>
   </postagem>
   <postagem>
     <id>1</id>
@@ -37,6 +38,7 @@
     <valor>40</valor>
     <patrocinadores>Bradesco</patrocinadores>
     <ativo>true</ativo>
+    <likes></likes>
   </postagem>
   <postagem>
     <id>2</id>
@@ -56,6 +58,7 @@
     <valor>20</valor>
     <patrocinadores>não sei</patrocinadores>
     <ativo>true</ativo>
+    <likes></likes>
   </postagem>
   <postagem>
     <id>3</id>
@@ -75,6 +78,7 @@
     <valor>40</valor>
     <patrocinadores>Instituto de Arte</patrocinadores>
     <ativo>true</ativo>
+    <likes></likes>
   </postagem>
   <postagem>
     <id>4</id>
@@ -94,6 +98,7 @@
     <valor>20</valor>
     <patrocinadores>Diversos</patrocinadores>
     <ativo>true</ativo>
+    <likes></likes>
   </postagem>
   <postagem>
     <id>5</id>
@@ -113,6 +118,7 @@
     <valor>20</valor>
     <patrocinadores>Leo, Jhonatan</patrocinadores>
     <ativo>true</ativo>
+    <likes></likes>
   </postagem>
   <postagem>
     <id>6</id>
@@ -132,6 +138,7 @@
     <valor>20</valor>
     <patrocinadores>Prefeitura</patrocinadores>
     <ativo>true</ativo>
+    <likes></likes>
   </postagem>
   <postagem>
     <id>7</id>
@@ -151,5 +158,6 @@
     <valor>30</valor>
     <patrocinadores>Ninguém</patrocinadores>
     <ativo>true</ativo>
+    <likes></likes>
   </postagem>
 </postagens>

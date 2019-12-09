@@ -51,8 +51,6 @@
             this.lb_horario = new System.Windows.Forms.Label();
             this.lb_data = new System.Windows.Forms.Label();
             this.lb_categoria = new System.Windows.Forms.Label();
-            this.lb_emp_descricao = new System.Windows.Forms.Label();
-            this.lb_txt13 = new System.Windows.Forms.Label();
             this.lb_txt8 = new System.Windows.Forms.Label();
             this.lb_txt12 = new System.Windows.Forms.Label();
             this.pb_logo_emp = new System.Windows.Forms.PictureBox();
@@ -211,8 +209,6 @@
             this.panel4.Controls.Add(this.lb_horario);
             this.panel4.Controls.Add(this.lb_data);
             this.panel4.Controls.Add(this.lb_categoria);
-            this.panel4.Controls.Add(this.lb_emp_descricao);
-            this.panel4.Controls.Add(this.lb_txt13);
             this.panel4.Controls.Add(this.lb_txt8);
             this.panel4.Controls.Add(this.lb_txt12);
             this.panel4.Controls.Add(this.pb_logo_emp);
@@ -293,7 +289,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(48, 630);
+            this.label6.Location = new System.Drawing.Point(48, 568);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(142, 27);
             this.label6.TabIndex = 97;
@@ -358,26 +354,6 @@
             this.lb_categoria.Size = new System.Drawing.Size(58, 24);
             this.lb_categoria.TabIndex = 34;
             this.lb_categoria.Text = "Value";
-            // 
-            // lb_emp_descricao
-            // 
-            this.lb_emp_descricao.AutoSize = true;
-            this.lb_emp_descricao.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_emp_descricao.Location = new System.Drawing.Point(55, 584);
-            this.lb_emp_descricao.Name = "lb_emp_descricao";
-            this.lb_emp_descricao.Size = new System.Drawing.Size(58, 24);
-            this.lb_emp_descricao.TabIndex = 33;
-            this.lb_emp_descricao.Text = "Value";
-            // 
-            // lb_txt13
-            // 
-            this.lb_txt13.AutoSize = true;
-            this.lb_txt13.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt13.Location = new System.Drawing.Point(55, 534);
-            this.lb_txt13.Name = "lb_txt13";
-            this.lb_txt13.Size = new System.Drawing.Size(111, 27);
-            this.lb_txt13.TabIndex = 32;
-            this.lb_txt13.Text = "Descrição:";
             // 
             // lb_txt8
             // 
@@ -578,8 +554,6 @@
         private System.Windows.Forms.Label lb_horario;
         private System.Windows.Forms.Label lb_data;
         private System.Windows.Forms.Label lb_categoria;
-        private System.Windows.Forms.Label lb_emp_descricao;
-        private System.Windows.Forms.Label lb_txt13;
         private System.Windows.Forms.Label lb_txt8;
         private System.Windows.Forms.Label lb_txt12;
         private System.Windows.Forms.PictureBox pb_logo_emp;

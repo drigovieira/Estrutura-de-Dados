@@ -40,6 +40,7 @@ namespace Pont_Finder.eventos.Classes
                     pos.Valor = item.Valor;
                     pos.Patrocinadores = item.Patrocinadores;
                     pos.Ativo = item.Ativo;
+                    pos.LikesList = item.LikesList;
                     return pos;
                 }
             }
@@ -79,7 +80,7 @@ namespace Pont_Finder.eventos.Classes
                     pos.Valor = item.Valor;
                     pos.Patrocinadores = item.Patrocinadores;
                     pos.Ativo = item.Ativo;
-                    pos.Ativo = item.Ativo;
+                    pos.LikesList = item.LikesList;
 
                     posts.Add(pos);
                 }
@@ -129,6 +130,7 @@ namespace Pont_Finder.eventos.Classes
                         pos.Valor = item.Valor;
                         pos.Patrocinadores = item.Patrocinadores;
                         pos.Ativo = item.Ativo;
+                        pos.LikesList = item.LikesList;
                         posts.Add(pos);
                     }
                 }
@@ -140,6 +142,7 @@ namespace Pont_Finder.eventos.Classes
         public static void PostAdd(CoEvento post)
         {
             CoEvento pos = new CoEvento();
+
             pos.Id = post.Id;
             pos.IngressosTotal = post.IngressosTotal;
             pos.IngressoDispinivel = post.IngressoDispinivel;
@@ -157,6 +160,8 @@ namespace Pont_Finder.eventos.Classes
             pos.Valor = post.Valor;
             pos.Patrocinadores = post.Patrocinadores;
             pos.Ativo = post.Ativo;
+
+            pos.LikesList = post.LikesList;
             poster.Add(pos);
         }
 
@@ -178,6 +183,20 @@ namespace Pont_Finder.eventos.Classes
 
             foreach (var item in poster)
             {
+
+                string like = "";
+                foreach (var item2 in item.LikesList)
+                {
+                    like = like + item2[0] + "," + item2[1] + "*";
+                }
+                if (like.Length - 1 > 0)
+                {
+                    like = like.Remove(like.Length - 1);
+                }
+
+
+
+
                 XElement post =
                       new XElement("postagem",
                       new XElement("id", item.Id),
@@ -196,7 +215,8 @@ namespace Pont_Finder.eventos.Classes
                       new XElement("idade", item.Idade),
                       new XElement("valor", item.Valor),
                       new XElement("patrocinadores", item.Patrocinadores),
-                      new XElement("ativo", item.Ativo)); 
+                      new XElement("ativo", item.Ativo),
+                      new XElement("likes", like));
 
                 XDocument doc = XDocument.Load(caminhoPost);
 
@@ -231,6 +251,18 @@ namespace Pont_Finder.eventos.Classes
                 postar.Valor = (item.Element("valor").Value);
                 postar.Patrocinadores = item.Element("patrocinadores").Value;
                 postar.Ativo = bool.Parse(item.Element("ativo").Value);
+
+                string sLikes = item.Element("likes").Value;
+                string[] userLike = sLikes.Split('*');
+
+                foreach (var like in userLike)
+                {
+                    if (like != "")
+                    {
+                        string[] v = like.Split(',');
+                        postar.like(short.Parse(v[0]), long.Parse(v[1]));
+                    }
+                }
 
                 poster.Add(postar);
             }
