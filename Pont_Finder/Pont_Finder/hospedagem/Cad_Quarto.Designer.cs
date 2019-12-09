@@ -286,7 +286,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 1091);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1282, 100);
+            this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 33;
             // 
             // panel2
@@ -444,13 +444,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1282, 675);
+            this.MinimumSize = new System.Drawing.Size(1282, 675);
             this.Name = "Cad_Quarto";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Cad_Quarto";
             this.Load += new System.EventHandler(this.Cad_Quarto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).EndInit();

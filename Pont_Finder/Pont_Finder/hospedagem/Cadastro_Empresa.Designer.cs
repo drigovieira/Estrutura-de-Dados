@@ -125,6 +125,7 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(625, 706);
             this.panel11.TabIndex = 0;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
             // bt_add_logo
             // 
@@ -387,7 +388,7 @@
             this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
             this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(430, 546);
+            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
             this.lb_descricao.TabIndex = 69;
             this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
             // 

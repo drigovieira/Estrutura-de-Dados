@@ -28,10 +28,10 @@ namespace Pont_Finder.hospedagem
         OpenFileDialog openlogo = new OpenFileDialog();
 
         Empresa emp = hostList.selectCpf(Session.Cpf);
-
+        Form anterior;
         public Editar_Empresa(Form anterior, long cpf_empresa)
         {
-
+            this.anterior = anterior;
             InitializeComponent();
 
 
@@ -106,6 +106,21 @@ namespace Pont_Finder.hospedagem
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.MudarForm("hospedagem", anterior);
+        }
+
+        private void btn_back_MouseLeave(object sender, EventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_1;
+        }
+
+        private void btn_back_MouseMove(object sender, MouseEventArgs e)
+        {
+            btn_back.Image = Properties.Resources.back_2;
         }
 
         private void ckb_lugarPet_CheckedChanged(object sender, EventArgs e)

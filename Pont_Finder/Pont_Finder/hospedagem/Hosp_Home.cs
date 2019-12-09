@@ -130,9 +130,6 @@ namespace Pont_Finder.hospedagem
                 FormPrincipal.MudarForm("hospedagem", edita_empresa);
         
             }
-
-            MessageBox.Show("EDITAR EMPRESA");
-
         }
 
         private void bt_gerenciar_quartos_Click(object sender, EventArgs e)

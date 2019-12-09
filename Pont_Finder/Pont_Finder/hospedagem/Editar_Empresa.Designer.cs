@@ -75,6 +75,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.PictureBox();
             this.pnl_tipoHosp.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,6 +83,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
             // 
             // radio_hotel
@@ -315,7 +317,7 @@
             // 
             this.mkb_phone.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mkb_phone.Location = new System.Drawing.Point(345, 523);
-            this.mkb_phone.Mask = "(99) 0000-0000";
+            this.mkb_phone.Mask = "(00) 00000-0000";
             this.mkb_phone.Name = "mkb_phone";
             this.mkb_phone.Size = new System.Drawing.Size(170, 28);
             this.mkb_phone.TabIndex = 6;
@@ -541,6 +543,7 @@
             this.pb_img1.Location = new System.Drawing.Point(87, 65);
             this.pb_img1.Name = "pb_img1";
             this.pb_img1.Size = new System.Drawing.Size(450, 225);
+            this.pb_img1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_img1.TabIndex = 3;
             this.pb_img1.TabStop = false;
             // 
@@ -592,6 +595,21 @@
             this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 0;
             // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.White;
+            this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Location = new System.Drawing.Point(105, 302);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 43);
+            this.btn_back.TabIndex = 69;
+            this.btn_back.TabStop = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            this.btn_back.MouseLeave += new System.EventHandler(this.btn_back_MouseLeave);
+            this.btn_back.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_back_MouseMove);
+            // 
             // Editar_Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -599,6 +617,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1282, 675);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -623,6 +642,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -676,5 +696,6 @@
         private System.Windows.Forms.Panel pn_galery;
         private System.Windows.Forms.PictureBox pb_img1;
         private System.Windows.Forms.Button bt_add_img;
+        private System.Windows.Forms.PictureBox btn_back;
     }
 }
