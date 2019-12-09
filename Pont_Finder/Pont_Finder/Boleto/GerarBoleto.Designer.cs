@@ -103,9 +103,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-
-         
-
             this.btnPrint = new System.Windows.Forms.PictureBox();
             this.btnSalvar = new System.Windows.Forms.PictureBox();
             this.boletoA.SuspendLayout();
@@ -905,7 +902,9 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-
+            // 
+            // btnPrint
+            // 
             this.btnPrint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
@@ -931,18 +930,13 @@
             this.btnSalvar.Visible = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-
             // GerarBoleto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-
-            this.ClientSize = new System.Drawing.Size(1013, 749);
-
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1013, 800);
-
+            this.ClientSize = new System.Drawing.Size(1013, 749);
             this.Controls.Add(this.boletoA);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnPrint);

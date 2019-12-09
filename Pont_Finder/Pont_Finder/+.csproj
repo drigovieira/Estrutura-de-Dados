@@ -522,6 +522,12 @@
       <DependentUpon>Mapa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Propaganda_externa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Propaganda_externa.Designer.cs">
+      <DependentUpon>Propaganda_externa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Propaganda_modulos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -957,6 +963,9 @@
     <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.PostCard.resources" />
     <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.PostCardEdit.resources" />
     <EmbeddedResource Include="obj\Debug\Pont_Finder.servicos.SolicitarServico.resources" />
+    <EmbeddedResource Include="Propaganda_externa.resx">
+      <DependentUpon>Propaganda_externa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Propaganda_modulos.resx">
       <DependentUpon>Propaganda_modulos.cs</DependentUpon>
     </EmbeddedResource>

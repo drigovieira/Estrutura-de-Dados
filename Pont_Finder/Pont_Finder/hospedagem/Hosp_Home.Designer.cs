@@ -51,9 +51,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pn_propa_modulos = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.painel_propaganda = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_center = new System.Windows.Forms.Panel();
@@ -83,7 +81,7 @@
             this.panel10.SuspendLayout();
             this.pnl_img.SuspendLayout();
             this.pn_menu.SuspendLayout();
-            this.pn_propa_modulos.SuspendLayout();
+            this.painel_propaganda.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel4.SuspendLayout();
             this.pn_propa_externa.SuspendLayout();
@@ -353,38 +351,20 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Veja o que temos para você!";
             // 
-            // pn_propa_modulos
+            // painel_propaganda
             // 
-            this.pn_propa_modulos.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.pn_propa_modulos.Controls.Add(this.panel7);
-            this.pn_propa_modulos.Controls.Add(this.panel8);
-            this.pn_propa_modulos.Controls.Add(this.label15);
-            this.pn_propa_modulos.Location = new System.Drawing.Point(950, 986);
-            this.pn_propa_modulos.Name = "pn_propa_modulos";
-            this.pn_propa_modulos.Size = new System.Drawing.Size(310, 350);
-            this.pn_propa_modulos.TabIndex = 38;
-            // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.Location = new System.Drawing.Point(31, 192);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(250, 140);
-            this.panel7.TabIndex = 4;
-            // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.Location = new System.Drawing.Point(31, 34);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(250, 140);
-            this.panel8.TabIndex = 3;
+            this.painel_propaganda.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.painel_propaganda.Controls.Add(this.label15);
+            this.painel_propaganda.Location = new System.Drawing.Point(950, 986);
+            this.painel_propaganda.Name = "painel_propaganda";
+            this.painel_propaganda.Size = new System.Drawing.Size(310, 245);
+            this.painel_propaganda.TabIndex = 38;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(84, 10);
+            this.label15.Location = new System.Drawing.Point(84, 221);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(159, 21);
             this.label15.TabIndex = 1;
@@ -520,7 +500,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1336);
+            this.panel1.Location = new System.Drawing.Point(0, 1231);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 44;
@@ -682,7 +662,7 @@
             this.Controls.Add(this.pnl_img);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pn_propa_modulos);
+            this.Controls.Add(this.painel_propaganda);
             this.Controls.Add(this.panel_center);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pn_propa_externa);
@@ -698,8 +678,8 @@
             this.pnl_img.ResumeLayout(false);
             this.pnl_img.PerformLayout();
             this.pn_menu.ResumeLayout(false);
-            this.pn_propa_modulos.ResumeLayout(false);
-            this.pn_propa_modulos.PerformLayout();
+            this.painel_propaganda.ResumeLayout(false);
+            this.painel_propaganda.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -729,7 +709,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel pn_propa_modulos;
+        private System.Windows.Forms.Panel painel_propaganda;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel_center;
@@ -761,8 +741,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel2;
     }
