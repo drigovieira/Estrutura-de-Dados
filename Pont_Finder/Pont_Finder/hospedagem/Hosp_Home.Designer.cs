@@ -52,6 +52,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pn_propa_modulos = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_center = new System.Windows.Forms.Panel();
@@ -61,6 +63,8 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pn_propa_externa = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -76,10 +80,6 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel10.SuspendLayout();
             this.pnl_img.SuspendLayout();
             this.pn_menu.SuspendLayout();
@@ -364,6 +364,22 @@
             this.pn_propa_modulos.Size = new System.Drawing.Size(310, 350);
             this.pn_propa_modulos.TabIndex = 38;
             // 
+            // panel7
+            // 
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.Location = new System.Drawing.Point(31, 192);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(250, 140);
+            this.panel7.TabIndex = 4;
+            // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
+            this.panel8.Location = new System.Drawing.Point(31, 34);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(250, 140);
+            this.panel8.TabIndex = 3;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -466,6 +482,22 @@
             this.pn_propa_externa.Name = "pn_propa_externa";
             this.pn_propa_externa.Size = new System.Drawing.Size(310, 350);
             this.pn_propa_externa.TabIndex = 32;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.Location = new System.Drawing.Point(31, 195);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(250, 140);
+            this.panel6.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Location = new System.Drawing.Point(31, 37);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(250, 140);
+            this.panel2.TabIndex = 1;
             // 
             // panel5
             // 
@@ -629,38 +661,6 @@
             this.label7.Size = new System.Drawing.Size(114, 21);
             this.label7.TabIndex = 3;
             this.label7.Text = "Tipo de serviço";
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Location = new System.Drawing.Point(31, 37);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 140);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.Location = new System.Drawing.Point(31, 195);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 140);
-            this.panel6.TabIndex = 2;
-            // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.Location = new System.Drawing.Point(31, 192);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(250, 140);
-            this.panel7.TabIndex = 4;
-            // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.Location = new System.Drawing.Point(31, 34);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(250, 140);
-            this.panel8.TabIndex = 3;
             // 
             // Hosp_Home
             // 

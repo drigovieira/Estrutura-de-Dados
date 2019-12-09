@@ -53,14 +53,14 @@
             this.top3panel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.Databox = new System.Windows.Forms.MaskedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.bt_proxFull = new System.Windows.Forms.Button();
             this.bt_antFull = new System.Windows.Forms.Button();
+            this.bt_proxFull = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lb_pag = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -160,7 +160,7 @@
             this.panel5.Controls.Add(this.label13);
             this.panel5.Location = new System.Drawing.Point(3, 500);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(314, 94);
+            this.panel5.Size = new System.Drawing.Size(310, 350);
             this.panel5.TabIndex = 40;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
@@ -272,20 +272,21 @@
             this.panel4.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label15);
-            this.panel4.Location = new System.Drawing.Point(3, 598);
+            this.panel4.Location = new System.Drawing.Point(3, 856);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(314, 193);
+            this.panel4.Size = new System.Drawing.Size(310, 350);
             this.panel4.TabIndex = 39;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
-            this.label15.Location = new System.Drawing.Point(84, 93);
+            this.label15.Location = new System.Drawing.Point(84, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(159, 21);
             this.label15.TabIndex = 1;
             this.label15.Text = "Propaganda modulos";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // panel6
             // 
@@ -321,7 +322,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 985);
+            this.panel1.Location = new System.Drawing.Point(0, 1443);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 85;
@@ -341,6 +342,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(316, 295);
             this.panel2.TabIndex = 80;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(41, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(236, 27);
+            this.label3.TabIndex = 80;
+            this.label3.Text = "Pesquisar Reclamações";
             // 
             // panel7
             // 
@@ -364,18 +377,6 @@
             this.Databox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.Databox_MaskInputRejected);
             this.Databox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Databox_KeyPress);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(41, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(236, 27);
-            this.label3.TabIndex = 80;
-            this.label3.Text = "Pesquisar Reclamações";
-            // 
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -395,16 +396,24 @@
             this.panel11.Controls.Add(this.panel4);
             this.panel11.Location = new System.Drawing.Point(943, 188);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(322, 797);
+            this.panel11.Size = new System.Drawing.Size(322, 1255);
             this.panel11.TabIndex = 87;
             // 
-            // panel3
+            // bt_antFull
             // 
-            this.panel3.AutoSize = true;
-            this.panel3.Location = new System.Drawing.Point(331, 285);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(606, 20);
-            this.panel3.TabIndex = 88;
+            this.bt_antFull.BackColor = System.Drawing.Color.Transparent;
+            this.bt_antFull.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_antFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_antFull.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_antFull.ForeColor = System.Drawing.Color.Black;
+            this.bt_antFull.Location = new System.Drawing.Point(74, 7);
+            this.bt_antFull.Name = "bt_antFull";
+            this.bt_antFull.Size = new System.Drawing.Size(50, 32);
+            this.bt_antFull.TabIndex = 89;
+            this.bt_antFull.Text = "↞";
+            this.bt_antFull.UseVisualStyleBackColor = false;
+            this.bt_antFull.Visible = false;
+            this.bt_antFull.Click += new System.EventHandler(this.bt_antFull_Click);
             // 
             // bt_proxFull
             // 
@@ -422,21 +431,13 @@
             this.bt_proxFull.Visible = false;
             this.bt_proxFull.Click += new System.EventHandler(this.bt_proxFull_Click);
             // 
-            // bt_antFull
+            // panel3
             // 
-            this.bt_antFull.BackColor = System.Drawing.Color.Transparent;
-            this.bt_antFull.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_antFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_antFull.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_antFull.ForeColor = System.Drawing.Color.Black;
-            this.bt_antFull.Location = new System.Drawing.Point(74, 7);
-            this.bt_antFull.Name = "bt_antFull";
-            this.bt_antFull.Size = new System.Drawing.Size(50, 32);
-            this.bt_antFull.TabIndex = 89;
-            this.bt_antFull.Text = "↞";
-            this.bt_antFull.UseVisualStyleBackColor = false;
-            this.bt_antFull.Visible = false;
-            this.bt_antFull.Click += new System.EventHandler(this.bt_antFull_Click);
+            this.panel3.AutoSize = true;
+            this.panel3.Location = new System.Drawing.Point(331, 285);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(606, 20);
+            this.panel3.TabIndex = 88;
             // 
             // lb_pag
             // 

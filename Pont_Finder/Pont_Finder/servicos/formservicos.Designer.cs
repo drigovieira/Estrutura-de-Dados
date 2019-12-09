@@ -45,8 +45,12 @@
             this.panel_center = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.tb_pesquisar = new System.Windows.Forms.TextBox();
             this.pb_pesquisar = new System.Windows.Forms.PictureBox();
@@ -144,7 +148,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 1261);
+            this.panel2.Location = new System.Drawing.Point(0, 1380);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 20;
@@ -250,18 +254,36 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.panel8.Controls.Add(this.panel7);
+            this.panel8.Controls.Add(this.panel1);
             this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(950, 911);
+            this.panel8.Location = new System.Drawing.Point(950, 1030);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(310, 350);
             this.panel8.TabIndex = 45;
+            // 
+            // panel7
+            // 
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.Location = new System.Drawing.Point(30, 196);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(250, 140);
+            this.panel7.TabIndex = 6;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Location = new System.Drawing.Point(30, 38);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 140);
+            this.panel1.TabIndex = 5;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(84, 156);
+            this.label15.Location = new System.Drawing.Point(84, 9);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(159, 21);
             this.label15.TabIndex = 1;
@@ -270,17 +292,35 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Location = new System.Drawing.Point(950, 674);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 231);
+            this.panel4.Size = new System.Drawing.Size(310, 350);
             this.panel4.TabIndex = 44;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.Location = new System.Drawing.Point(30, 192);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(250, 140);
+            this.panel6.TabIndex = 4;
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.Location = new System.Drawing.Point(30, 34);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(250, 140);
+            this.panel5.TabIndex = 3;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(84, 138);
+            this.label13.Location = new System.Drawing.Point(84, 9);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(149, 21);
             this.label13.TabIndex = 0;
@@ -522,5 +562,9 @@
         private System.Windows.Forms.Button bt_proxFull;
         private System.Windows.Forms.RadioButton rb_categoria;
         private System.Windows.Forms.Button bt_solicitados;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
     }
 }
