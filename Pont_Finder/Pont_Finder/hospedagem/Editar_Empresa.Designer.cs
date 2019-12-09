@@ -113,6 +113,7 @@
             this.ckb_lugarPet.Name = "ckb_lugarPet";
             this.ckb_lugarPet.Size = new System.Drawing.Size(114, 21);
             this.ckb_lugarPet.TabIndex = 22;
+            this.ckb_lugarPet.TabStop = false;
             this.ckb_lugarPet.Text = "Lugar para pet";
             this.ckb_lugarPet.UseVisualStyleBackColor = true;
             this.ckb_lugarPet.CheckedChanged += new System.EventHandler(this.ckb_lugarPet_CheckedChanged);
@@ -125,6 +126,7 @@
             this.ckb_academia.Name = "ckb_academia";
             this.ckb_academia.Size = new System.Drawing.Size(84, 21);
             this.ckb_academia.TabIndex = 24;
+            this.ckb_academia.TabStop = false;
             this.ckb_academia.Text = "Academia";
             this.ckb_academia.UseVisualStyleBackColor = true;
             this.ckb_academia.CheckedChanged += new System.EventHandler(this.ckb_academia_CheckedChanged);
@@ -137,6 +139,7 @@
             this.ckb_salaJogos.Name = "ckb_salaJogos";
             this.ckb_salaJogos.Size = new System.Drawing.Size(109, 21);
             this.ckb_salaJogos.TabIndex = 25;
+            this.ckb_salaJogos.TabStop = false;
             this.ckb_salaJogos.Text = "Sala de Jogos";
             this.ckb_salaJogos.UseVisualStyleBackColor = true;
             this.ckb_salaJogos.CheckedChanged += new System.EventHandler(this.ckb_salaJogos_CheckedChanged);
@@ -149,6 +152,7 @@
             this.ckb_piscina.Name = "ckb_piscina";
             this.ckb_piscina.Size = new System.Drawing.Size(66, 21);
             this.ckb_piscina.TabIndex = 21;
+            this.ckb_piscina.TabStop = false;
             this.ckb_piscina.Text = "Piscina";
             this.ckb_piscina.UseVisualStyleBackColor = true;
             this.ckb_piscina.CheckedChanged += new System.EventHandler(this.ckb_piscina_CheckedChanged);
@@ -161,6 +165,7 @@
             this.ckb_estacionamento.Name = "ckb_estacionamento";
             this.ckb_estacionamento.Size = new System.Drawing.Size(119, 21);
             this.ckb_estacionamento.TabIndex = 20;
+            this.ckb_estacionamento.TabStop = false;
             this.ckb_estacionamento.Text = "Estacionamento";
             this.ckb_estacionamento.UseVisualStyleBackColor = true;
             this.ckb_estacionamento.CheckedChanged += new System.EventHandler(this.ckb_estacionamento_CheckedChanged);
@@ -241,6 +246,7 @@
             this.ckb_wifi.Name = "ckb_wifi";
             this.ckb_wifi.Size = new System.Drawing.Size(56, 21);
             this.ckb_wifi.TabIndex = 23;
+            this.ckb_wifi.TabStop = false;
             this.ckb_wifi.Text = "Wi-Fi";
             this.ckb_wifi.UseVisualStyleBackColor = true;
             this.ckb_wifi.CheckedChanged += new System.EventHandler(this.ckb_wifi_CheckedChanged);
@@ -308,7 +314,7 @@
             // 
             this.mkb_phone.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mkb_phone.Location = new System.Drawing.Point(345, 523);
-            this.mkb_phone.Mask = "(99) 0000-0000";
+            this.mkb_phone.Mask = "(99) 000-0000";
             this.mkb_phone.Name = "mkb_phone";
             this.mkb_phone.Size = new System.Drawing.Size(170, 28);
             this.mkb_phone.TabIndex = 6;
@@ -450,7 +456,8 @@
             this.tb_descricaoHotel.Multiline = true;
             this.tb_descricaoHotel.Name = "tb_descricaoHotel";
             this.tb_descricaoHotel.Size = new System.Drawing.Size(460, 220);
-            this.tb_descricaoHotel.TabIndex = 18;
+            this.tb_descricaoHotel.TabIndex = 8;
+            this.tb_descricaoHotel.TabStop = false;
             // 
             // label3
             // 

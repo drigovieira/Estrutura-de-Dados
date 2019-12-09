@@ -89,11 +89,10 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(74, 0);
+            this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(84, 6);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(195, 25);
+            this.label13.Size = new System.Drawing.Size(149, 21);
             this.label13.TabIndex = 0;
             this.label13.Text = "Propaganda Externa";
             this.label13.Click += new System.EventHandler(this.label13_Click);
@@ -108,6 +107,7 @@
             this.bt_Cad_Empresa.Name = "bt_Cad_Empresa";
             this.bt_Cad_Empresa.Size = new System.Drawing.Size(196, 30);
             this.bt_Cad_Empresa.TabIndex = 39;
+            this.bt_Cad_Empresa.TabStop = false;
             this.bt_Cad_Empresa.Text = "Cadastre sua Empresa";
             this.bt_Cad_Empresa.UseVisualStyleBackColor = false;
             this.bt_Cad_Empresa.Click += new System.EventHandler(this.Bt_Cad_Empresa_Click);
@@ -122,6 +122,7 @@
             this.bt_pesquisar.Name = "bt_pesquisar";
             this.bt_pesquisar.Size = new System.Drawing.Size(110, 37);
             this.bt_pesquisar.TabIndex = 26;
+            this.bt_pesquisar.TabStop = false;
             this.bt_pesquisar.Text = "Pesquisar";
             this.bt_pesquisar.UseVisualStyleBackColor = false;
             this.bt_pesquisar.Click += new System.EventHandler(this.bt_pesquisar_Click);
@@ -133,7 +134,7 @@
             this.dateTimePicker2.Location = new System.Drawing.Point(35, 170);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(240, 28);
-            this.dateTimePicker2.TabIndex = 5;
+            this.dateTimePicker2.TabIndex = 2;
             // 
             // label4
             // 
@@ -152,7 +153,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(35, 104);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(240, 28);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.TabIndex = 1;
             // 
             // label10
             // 
@@ -184,7 +185,6 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(63, 18);
             this.radioButton3.TabIndex = 43;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Solteiro";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
@@ -196,7 +196,6 @@
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(58, 18);
             this.radioButton4.TabIndex = 44;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Outros";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
@@ -208,7 +207,6 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(52, 18);
             this.radioButton5.TabIndex = 42;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Casal";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
@@ -279,6 +277,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 28);
             this.button1.TabIndex = 48;
+            this.button1.TabStop = false;
             this.button1.Text = "Lista de Reservas";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -296,6 +295,7 @@
             this.bt_gerenciar_quartos.Name = "bt_gerenciar_quartos";
             this.bt_gerenciar_quartos.Size = new System.Drawing.Size(122, 28);
             this.bt_gerenciar_quartos.TabIndex = 43;
+            this.bt_gerenciar_quartos.TabStop = false;
             this.bt_gerenciar_quartos.Text = "Gerenciar quartos";
             this.bt_gerenciar_quartos.UseVisualStyleBackColor = false;
             this.bt_gerenciar_quartos.Click += new System.EventHandler(this.bt_gerenciar_quartos_Click);
@@ -313,6 +313,7 @@
             this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
             this.Btn_Edit_Empresa.Size = new System.Drawing.Size(122, 28);
             this.Btn_Edit_Empresa.TabIndex = 42;
+            this.Btn_Edit_Empresa.TabStop = false;
             this.Btn_Edit_Empresa.Text = "Editar empresa";
             this.Btn_Edit_Empresa.UseVisualStyleBackColor = false;
             this.Btn_Edit_Empresa.Click += new System.EventHandler(this.Btn_Edit_Empresa_Click);
@@ -362,11 +363,10 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(64, 0);
+            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(84, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(205, 25);
+            this.label15.Size = new System.Drawing.Size(159, 21);
             this.label15.TabIndex = 1;
             this.label15.Text = "Propaganda modulos";
             // 
@@ -420,7 +420,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(138, 18);
             this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Do maior para o menor";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
@@ -432,7 +431,6 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(138, 18);
             this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Do menor para o maior";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
@@ -495,6 +493,7 @@
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(75, 25);
             this.bt_ant.TabIndex = 45;
+            this.bt_ant.TabStop = false;
             this.bt_ant.Text = "<<";
             this.bt_ant.UseVisualStyleBackColor = true;
             this.bt_ant.Click += new System.EventHandler(this.bt_ant_Click);
@@ -545,6 +544,7 @@
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(81, 18);
             this.checkBox7.TabIndex = 36;
+            this.checkBox7.TabStop = false;
             this.checkBox7.Text = "Espaço PET";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
@@ -556,6 +556,7 @@
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(49, 18);
             this.checkBox4.TabIndex = 35;
+            this.checkBox4.TabStop = false;
             this.checkBox4.Text = "Wi-fi";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
@@ -567,6 +568,7 @@
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(74, 18);
             this.checkBox5.TabIndex = 34;
+            this.checkBox5.TabStop = false;
             this.checkBox5.Text = "TV a cabo";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
@@ -578,6 +580,7 @@
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(92, 18);
             this.checkBox6.TabIndex = 33;
+            this.checkBox6.TabStop = false;
             this.checkBox6.Text = "Café da tarde";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
@@ -589,6 +592,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(99, 18);
             this.checkBox1.TabIndex = 30;
+            this.checkBox1.TabStop = false;
             this.checkBox1.Text = "Café da manhã";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
@@ -600,6 +604,7 @@
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(62, 18);
             this.checkBox3.TabIndex = 32;
+            this.checkBox3.TabStop = false;
             this.checkBox3.Text = "Almoço";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
@@ -611,6 +616,7 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(104, 18);
             this.checkBox2.TabIndex = 31;
+            this.checkBox2.TabStop = false;
             this.checkBox2.Text = "Ar condicionado";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 

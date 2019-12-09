@@ -388,7 +388,7 @@
             this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
             this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(430, 546);
+            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
             this.lb_descricao.TabIndex = 69;
             this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
             // 
@@ -529,6 +529,7 @@
             this.tb_descricaoHotel.Name = "tb_descricaoHotel";
             this.tb_descricaoHotel.Size = new System.Drawing.Size(460, 237);
             this.tb_descricaoHotel.TabIndex = 18;
+            this.tb_descricaoHotel.TabStop = false;
             // 
             // label3
             // 
@@ -562,6 +563,7 @@
             this.bt_add_img.Name = "bt_add_img";
             this.bt_add_img.Size = new System.Drawing.Size(187, 59);
             this.bt_add_img.TabIndex = 9;
+            this.bt_add_img.TabStop = false;
             this.bt_add_img.Text = "Adicionar imagem";
             this.bt_add_img.UseVisualStyleBackColor = false;
             this.bt_add_img.Click += new System.EventHandler(this.bt_add_img_Click);

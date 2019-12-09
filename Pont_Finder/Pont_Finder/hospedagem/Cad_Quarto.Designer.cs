@@ -266,6 +266,7 @@
             this.bt_cadastrar.Name = "bt_cadastrar";
             this.bt_cadastrar.Size = new System.Drawing.Size(236, 53);
             this.bt_cadastrar.TabIndex = 6;
+            this.bt_cadastrar.TabStop = false;
             this.bt_cadastrar.Text = "Cadastrar quarto";
             this.bt_cadastrar.UseVisualStyleBackColor = false;
             this.bt_cadastrar.Click += new System.EventHandler(this.bt_cadastrar_Click);
@@ -334,7 +335,6 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(63, 18);
             this.radioButton1.TabIndex = 40;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Solteiro";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -348,7 +348,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(58, 18);
             this.radioButton2.TabIndex = 41;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Outros";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.Click += new System.EventHandler(this.RadioButton2_Click);
@@ -361,7 +360,6 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(52, 18);
             this.radioButton3.TabIndex = 39;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Casal";
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.Click += new System.EventHandler(this.RadioButton3_Click);
