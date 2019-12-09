@@ -110,6 +110,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.rb_Tel = new System.Windows.Forms.RadioButton();
+            this.rb_Cel = new System.Windows.Forms.RadioButton();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -133,6 +135,8 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.rb_Cel);
+            this.panel11.Controls.Add(this.rb_Tel);
             this.panel11.Controls.Add(this.mkb_Tel);
             this.panel11.Controls.Add(this.mkb_Cep);
             this.panel11.Controls.Add(this.tbNum);
@@ -381,7 +385,7 @@
             this.lb_descricao.MaximumSize = new System.Drawing.Size(430, 1000);
             this.lb_descricao.MinimumSize = new System.Drawing.Size(430, 187);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(430, 475);
+            this.lb_descricao.Size = new System.Drawing.Size(430, 546);
             this.lb_descricao.TabIndex = 69;
             this.lb_descricao.Text = resources.GetString("lb_descricao.Text");
             // 
@@ -1075,6 +1079,32 @@
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click_1);
             // 
+            // rb_Tel
+            // 
+            this.rb_Tel.AutoSize = true;
+            this.rb_Tel.Checked = true;
+            this.rb_Tel.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_Tel.Location = new System.Drawing.Point(276, 436);
+            this.rb_Tel.Name = "rb_Tel";
+            this.rb_Tel.Size = new System.Drawing.Size(103, 21);
+            this.rb_Tel.TabIndex = 17;
+            this.rb_Tel.TabStop = true;
+            this.rb_Tel.Text = "Telefone Fixo";
+            this.rb_Tel.UseVisualStyleBackColor = true;
+            this.rb_Tel.CheckedChanged += new System.EventHandler(this.Rb_Tel_CheckedChanged);
+            // 
+            // rb_Cel
+            // 
+            this.rb_Cel.AutoSize = true;
+            this.rb_Cel.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_Cel.Location = new System.Drawing.Point(383, 436);
+            this.rb_Cel.Name = "rb_Cel";
+            this.rb_Cel.Size = new System.Drawing.Size(66, 21);
+            this.rb_Cel.TabIndex = 18;
+            this.rb_Cel.Text = "Celular";
+            this.rb_Cel.UseVisualStyleBackColor = true;
+            this.rb_Cel.CheckedChanged += new System.EventHandler(this.Rb_Cel_CheckedChanged);
+            // 
             // Cadastro_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1199,5 +1229,7 @@
         private System.Windows.Forms.Label lb_descricao;
         private System.Windows.Forms.MaskedTextBox mkb_Tel;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton rb_Cel;
+        private System.Windows.Forms.RadioButton rb_Tel;
     }
 }

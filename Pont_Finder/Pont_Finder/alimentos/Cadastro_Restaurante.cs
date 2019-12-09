@@ -641,5 +641,29 @@ namespace Pont_Finder.alimentos
         {
 
         }
+
+        private void Rb_Tel_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rb_Tel.Checked == true)
+            {
+                mkb_Tel.Mask = "(00)0000-0000";
+            }
+            else
+            {
+                mkb_Tel.Mask = "(00)00000-0000";
+            }
+        }
+
+        private void Rb_Cel_CheckedChanged(object sender, EventArgs e)
+        {            
+            if (rb_Cel.Checked == true)
+            {
+                mkb_Tel.Mask = "(00)00000-0000";
+            }
+            else
+            {
+                mkb_Tel.Mask = "(00)0000-0000";
+            }
+        }
     }
 }

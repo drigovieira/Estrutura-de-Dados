@@ -41,9 +41,11 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.pn_menu = new System.Windows.Forms.Panel();
+            this.Btn_Edit_Empresa = new System.Windows.Forms.Button();
+            this.VerPedidos = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Btn_Edit_Empresa = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -70,18 +72,16 @@
             this.lbConfig2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.VerPedidos = new System.Windows.Forms.Button();
-            this.pn_menu = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel10.SuspendLayout();
+            this.pn_menu.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.pn_menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -100,6 +100,7 @@
             this.pb_pesquisar.BackColor = System.Drawing.Color.White;
             this.pb_pesquisar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_pesquisar.BackgroundImage")));
             this.pb_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_pesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_pesquisar.Location = new System.Drawing.Point(246, 56);
             this.pb_pesquisar.Name = "pb_pesquisar";
             this.pb_pesquisar.Size = new System.Drawing.Size(30, 26);
@@ -115,6 +116,7 @@
             this.PesquisaBox.Size = new System.Drawing.Size(254, 26);
             this.PesquisaBox.TabIndex = 2;
             this.PesquisaBox.TextChanged += new System.EventHandler(this.PesquisaBox_TextChanged);
+            this.PesquisaBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PesquisaBox_KeyPress);
             // 
             // label3
             // 
@@ -211,6 +213,44 @@
             this.panel10.Size = new System.Drawing.Size(1265, 200);
             this.panel10.TabIndex = 18;
             // 
+            // pn_menu
+            // 
+            this.pn_menu.BackColor = System.Drawing.Color.Red;
+            this.pn_menu.Controls.Add(this.Btn_Edit_Empresa);
+            this.pn_menu.Controls.Add(this.VerPedidos);
+            this.pn_menu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pn_menu.Location = new System.Drawing.Point(0, 160);
+            this.pn_menu.Name = "pn_menu";
+            this.pn_menu.Size = new System.Drawing.Size(1265, 40);
+            this.pn_menu.TabIndex = 50;
+            // 
+            // Btn_Edit_Empresa
+            // 
+            this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.Red;
+            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
+            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(528, 2);
+            this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
+            this.Btn_Edit_Empresa.Size = new System.Drawing.Size(172, 35);
+            this.Btn_Edit_Empresa.TabIndex = 43;
+            this.Btn_Edit_Empresa.Text = "Cadastrar Empresa";
+            this.Btn_Edit_Empresa.UseVisualStyleBackColor = false;
+            this.Btn_Edit_Empresa.Click += new System.EventHandler(this.Btn_Edit_Empresa_Click);
+            // 
+            // VerPedidos
+            // 
+            this.VerPedidos.BackColor = System.Drawing.Color.Red;
+            this.VerPedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VerPedidos.ForeColor = System.Drawing.Color.White;
+            this.VerPedidos.Location = new System.Drawing.Point(540, 3);
+            this.VerPedidos.Name = "VerPedidos";
+            this.VerPedidos.Size = new System.Drawing.Size(146, 35);
+            this.VerPedidos.TabIndex = 74;
+            this.VerPedidos.Text = "Visualizar Pedidos";
+            this.VerPedidos.UseVisualStyleBackColor = false;
+            this.VerPedidos.Visible = false;
+            this.VerPedidos.Click += new System.EventHandler(this.VerPedidos_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -231,19 +271,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(0, 0);
             this.panel1.TabIndex = 12;
-            // 
-            // Btn_Edit_Empresa
-            // 
-            this.Btn_Edit_Empresa.BackColor = System.Drawing.Color.Red;
-            this.Btn_Edit_Empresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Edit_Empresa.ForeColor = System.Drawing.Color.White;
-            this.Btn_Edit_Empresa.Location = new System.Drawing.Point(528, 2);
-            this.Btn_Edit_Empresa.Name = "Btn_Edit_Empresa";
-            this.Btn_Edit_Empresa.Size = new System.Drawing.Size(172, 35);
-            this.Btn_Edit_Empresa.TabIndex = 43;
-            this.Btn_Edit_Empresa.Text = "Cadastrar Empresa";
-            this.Btn_Edit_Empresa.UseVisualStyleBackColor = false;
-            this.Btn_Edit_Empresa.Click += new System.EventHandler(this.Btn_Edit_Empresa_Click);
             // 
             // panel8
             // 
@@ -581,31 +608,6 @@
             this.panel4.TabIndex = 73;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
-            // VerPedidos
-            // 
-            this.VerPedidos.BackColor = System.Drawing.Color.Red;
-            this.VerPedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VerPedidos.ForeColor = System.Drawing.Color.White;
-            this.VerPedidos.Location = new System.Drawing.Point(540, 3);
-            this.VerPedidos.Name = "VerPedidos";
-            this.VerPedidos.Size = new System.Drawing.Size(146, 35);
-            this.VerPedidos.TabIndex = 74;
-            this.VerPedidos.Text = "Visualizar Pedidos";
-            this.VerPedidos.UseVisualStyleBackColor = false;
-            this.VerPedidos.Visible = false;
-            this.VerPedidos.Click += new System.EventHandler(this.VerPedidos_Click);
-            // 
-            // pn_menu
-            // 
-            this.pn_menu.BackColor = System.Drawing.Color.Red;
-            this.pn_menu.Controls.Add(this.Btn_Edit_Empresa);
-            this.pn_menu.Controls.Add(this.VerPedidos);
-            this.pn_menu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_menu.Location = new System.Drawing.Point(0, 160);
-            this.pn_menu.Name = "pn_menu";
-            this.pn_menu.Size = new System.Drawing.Size(1265, 40);
-            this.pn_menu.TabIndex = 50;
-            // 
             // formAlimentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -645,6 +647,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.pn_menu.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -654,7 +657,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_Config)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.pn_menu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

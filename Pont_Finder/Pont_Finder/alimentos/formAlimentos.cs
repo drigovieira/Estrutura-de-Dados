@@ -194,16 +194,26 @@ namespace Pont_Finder
                         ListarEmpresas.Controls.Add(msg);
                     }
                     else
-                    {
+                    {                        
                         lista = CompanyList.SearchName(PesquisaBox.Text);
-                        ListarEmpresas.Controls.Clear();
-                        local = 0;
-                        foreach (var item in lista)
+                        if (lista.Count == 0)
                         {
-                            Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
-                            exbEmp.Location = new Point(0, local);
-                            local = local + exbEmp.Height + 5;
-                            ListarEmpresas.Controls.Add(exbEmp);
+                            ListarEmpresas.Controls.Clear();
+                            lbMensagem msg = new lbMensagem("Nenhum resultado encontrado");
+                            msg.Location = new Point(0, 0);
+                            ListarEmpresas.Controls.Add(msg);
+                        }
+                        else
+                        {
+                            ListarEmpresas.Controls.Clear();
+                            local = 0;
+                            foreach (var item in lista)
+                            {
+                                Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
+                                exbEmp.Location = new Point(0, local);
+                                local = local + exbEmp.Height + 5;
+                                ListarEmpresas.Controls.Add(exbEmp);
+                            }
                         }
                     }
                 }
@@ -562,6 +572,76 @@ namespace Pont_Finder
         {
             Lista_Pedidos pedidos = new Lista_Pedidos(CompanyList.verifEmp(Session.Cpf), false, -1);
             FormPrincipal.MudarForm("alimentos", pedidos);
+        }
+
+        private void PesquisaBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if (string.IsNullOrWhiteSpace(PesquisaBox.Text))
+                {
+                    MessageBox.Show("Por favor, informe o nome do estabelecimento.", "Aviso!");
+                }
+                else
+                {
+                    if (Categoria() == false)
+                    {
+                        if (PesquisaBox.Text.Equals(""))
+                        {
+                            ListarEmpresas.Controls.Clear();
+                            lbMensagem msg = new lbMensagem("Nenhum resultado encontrado");
+                            msg.Location = new Point(0, 0);
+                            ListarEmpresas.Controls.Add(msg);
+                        }
+                        else
+                        {
+                            lista = CompanyList.SearchName(PesquisaBox.Text);
+                            if (lista.Count == 0)
+                            {
+                                ListarEmpresas.Controls.Clear();
+                                lbMensagem msg = new lbMensagem("Nenhum resultado encontrado");
+                                msg.Location = new Point(0, 0);
+                                ListarEmpresas.Controls.Add(msg);
+                            }
+                            else
+                            {
+                                ListarEmpresas.Controls.Clear();
+                                local = 0;
+                                foreach (var item in lista)
+                                {
+                                    Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
+                                    exbEmp.Location = new Point(0, local);
+                                    local = local + exbEmp.Height + 5;
+                                    ListarEmpresas.Controls.Add(exbEmp);
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (PesquisaBox.Text.Equals(""))
+                        {
+                            ListarEmpresas.Controls.Clear();
+                            lbMensagem msg = new lbMensagem("Nenhum resultado encontrado");
+                            msg.Location = new Point(0, 0);
+                            ListarEmpresas.Controls.Add(msg);
+                        }
+                        else
+                        {
+                            lista = CompanyList.SearchFiltro(PesquisaBox.Text, Filtro());
+                            ListarEmpresas.Controls.Clear();
+                            local = 0;
+                            foreach (var item in lista)
+                            {
+                                Publi exbEmp = new Publi(item.NomeFantasia, item.Rua, item.Bairro, item.Numero, item.TelComercial, item.Categoria, item.Id);
+                                exbEmp.Location = new Point(0, local);
+                                local = local + exbEmp.Height + 5;
+                                ListarEmpresas.Controls.Add(exbEmp);
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         public void GoPag(string p)
