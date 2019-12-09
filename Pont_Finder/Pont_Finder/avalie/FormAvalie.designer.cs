@@ -37,9 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.pn_propa_externa = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,9 +46,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.bt_prox = new System.Windows.Forms.Button();
             this.bt_ant = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.painel_propaganda = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -66,10 +62,10 @@
             this.bt_proxFull = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lb_pag = new System.Windows.Forms.Label();
-            this.panel5.SuspendLayout();
+            this.pn_propa_externa.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.painel_propaganda.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -157,42 +153,24 @@
             this.contextMenuStrip2.Name = "contextMenuStrip1";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
-            // panel5
+            // pn_propa_externa
             // 
-            this.panel5.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.panel12);
-            this.panel5.Controls.Add(this.panel13);
-            this.panel5.Controls.Add(this.label13);
-            this.panel5.Location = new System.Drawing.Point(3, 500);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 350);
-            this.panel5.TabIndex = 40;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // panel12
-            // 
-            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.Location = new System.Drawing.Point(29, 193);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(250, 140);
-            this.panel12.TabIndex = 4;
-            // 
-            // panel13
-            // 
-            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.Location = new System.Drawing.Point(29, 35);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(250, 140);
-            this.panel13.TabIndex = 3;
+            this.pn_propa_externa.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.pn_propa_externa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pn_propa_externa.Controls.Add(this.label13);
+            this.pn_propa_externa.Location = new System.Drawing.Point(3, 500);
+            this.pn_propa_externa.Name = "pn_propa_externa";
+            this.pn_propa_externa.Size = new System.Drawing.Size(310, 250);
+            this.pn_propa_externa.TabIndex = 40;
+            this.pn_propa_externa.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
-            this.label13.Location = new System.Drawing.Point(84, 0);
+            this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(65, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(149, 21);
+            this.label13.Size = new System.Drawing.Size(195, 25);
             this.label13.TabIndex = 0;
             this.label13.Text = "Propaganda Externa";
             // 
@@ -289,41 +267,23 @@
             this.bt_ant.UseVisualStyleBackColor = false;
             this.bt_ant.Click += new System.EventHandler(this.bt_ant_Click);
             // 
-            // panel4
+            // painel_propaganda
             // 
-            this.panel4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.panel14);
-            this.panel4.Controls.Add(this.panel15);
-            this.panel4.Controls.Add(this.label15);
-            this.panel4.Location = new System.Drawing.Point(3, 856);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 350);
-            this.panel4.TabIndex = 39;
-            // 
-            // panel14
-            // 
-            this.panel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel14.BackgroundImage")));
-            this.panel14.Location = new System.Drawing.Point(29, 190);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(250, 140);
-            this.panel14.TabIndex = 6;
-            // 
-            // panel15
-            // 
-            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
-            this.panel15.Location = new System.Drawing.Point(29, 32);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(250, 140);
-            this.panel15.TabIndex = 5;
+            this.painel_propaganda.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.painel_propaganda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.painel_propaganda.Controls.Add(this.label15);
+            this.painel_propaganda.Location = new System.Drawing.Point(3, 756);
+            this.painel_propaganda.Name = "painel_propaganda";
+            this.painel_propaganda.Size = new System.Drawing.Size(310, 250);
+            this.painel_propaganda.TabIndex = 39;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
-            this.label15.Location = new System.Drawing.Point(84, 0);
+            this.label15.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(62, -4);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(159, 21);
+            this.label15.Size = new System.Drawing.Size(205, 25);
             this.label15.TabIndex = 1;
             this.label15.Text = "Propaganda modulos";
             this.label15.Click += new System.EventHandler(this.label15_Click);
@@ -362,7 +322,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1400);
+            this.panel1.Location = new System.Drawing.Point(0, 1200);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 85;
@@ -432,11 +392,11 @@
             this.panel11.Controls.Add(this.panel6);
             this.panel11.Controls.Add(this.bt_antFull);
             this.panel11.Controls.Add(this.bt_proxFull);
-            this.panel11.Controls.Add(this.panel5);
-            this.panel11.Controls.Add(this.panel4);
+            this.panel11.Controls.Add(this.pn_propa_externa);
+            this.panel11.Controls.Add(this.painel_propaganda);
             this.panel11.Location = new System.Drawing.Point(943, 188);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(322, 1212);
+            this.panel11.Size = new System.Drawing.Size(322, 1012);
             this.panel11.TabIndex = 87;
             // 
             // bt_antFull
@@ -517,13 +477,13 @@
             this.Name = "FormAvalie";
             this.Text = "FormAvalie";
             this.Load += new System.EventHandler(this.FormAvalie_Load);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.pn_propa_externa.ResumeLayout(false);
+            this.pn_propa_externa.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.painel_propaganda.ResumeLayout(false);
+            this.painel_propaganda.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -539,7 +499,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pn_propa_externa;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -551,7 +511,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button bt_prox;
         private System.Windows.Forms.Button bt_ant;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel painel_propaganda;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label7;
@@ -568,9 +528,5 @@
         private System.Windows.Forms.Button bt_proxFull;
         private System.Windows.Forms.Button bt_antFull;
         private System.Windows.Forms.Label lb_pag;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
     }
 }
