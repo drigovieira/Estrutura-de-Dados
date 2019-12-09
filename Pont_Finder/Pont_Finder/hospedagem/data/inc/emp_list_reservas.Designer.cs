@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lb_qtd_parcelas_cartao = new System.Windows.Forms.Label();
             this.bt_confirmar = new System.Windows.Forms.Button();
-            this.bt_visualizar = new System.Windows.Forms.Button();
             this.lb_forma_pagamento = new System.Windows.Forms.Label();
             this.lb_nome_quarto = new System.Windows.Forms.Label();
             this.lb_data_saida = new System.Windows.Forms.Label();
@@ -43,19 +41,10 @@
             this.pb_hotel = new System.Windows.Forms.PictureBox();
             this.pb_user = new System.Windows.Forms.PictureBox();
             this.lb_user_name = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_user)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lb_qtd_parcelas_cartao
-            // 
-            this.lb_qtd_parcelas_cartao.AutoSize = true;
-            this.lb_qtd_parcelas_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_qtd_parcelas_cartao.Location = new System.Drawing.Point(635, 109);
-            this.lb_qtd_parcelas_cartao.Name = "lb_qtd_parcelas_cartao";
-            this.lb_qtd_parcelas_cartao.Size = new System.Drawing.Size(85, 17);
-            this.lb_qtd_parcelas_cartao.TabIndex = 92;
-            this.lb_qtd_parcelas_cartao.Text = "12 x de value";
             // 
             // bt_confirmar
             // 
@@ -63,25 +52,12 @@
             this.bt_confirmar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.bt_confirmar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_confirmar.ForeColor = System.Drawing.Color.White;
-            this.bt_confirmar.Location = new System.Drawing.Point(820, 121);
+            this.bt_confirmar.Location = new System.Drawing.Point(850, 76);
             this.bt_confirmar.Name = "bt_confirmar";
-            this.bt_confirmar.Size = new System.Drawing.Size(164, 40);
+            this.bt_confirmar.Size = new System.Drawing.Size(130, 40);
             this.bt_confirmar.TabIndex = 91;
             this.bt_confirmar.Text = "Confirmar";
             this.bt_confirmar.UseVisualStyleBackColor = false;
-            // 
-            // bt_visualizar
-            // 
-            this.bt_visualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_visualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_visualizar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_visualizar.ForeColor = System.Drawing.Color.White;
-            this.bt_visualizar.Location = new System.Drawing.Point(820, 70);
-            this.bt_visualizar.Name = "bt_visualizar";
-            this.bt_visualizar.Size = new System.Drawing.Size(164, 40);
-            this.bt_visualizar.TabIndex = 90;
-            this.bt_visualizar.Text = "Visualizar Reserva";
-            this.bt_visualizar.UseVisualStyleBackColor = false;
             // 
             // lb_forma_pagamento
             // 
@@ -207,16 +183,28 @@
             this.lb_user_name.TabIndex = 94;
             this.lb_user_name.Text = "User";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.OrangeRed;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(850, 122);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 40);
+            this.button1.TabIndex = 95;
+            this.button1.Text = "Cancelar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // emp_list_reservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lb_user_name);
             this.Controls.Add(this.pb_user);
-            this.Controls.Add(this.lb_qtd_parcelas_cartao);
             this.Controls.Add(this.bt_confirmar);
-            this.Controls.Add(this.bt_visualizar);
             this.Controls.Add(this.lb_forma_pagamento);
             this.Controls.Add(this.lb_nome_quarto);
             this.Controls.Add(this.lb_data_saida);
@@ -228,7 +216,7 @@
             this.Controls.Add(this.lb_rs);
             this.Controls.Add(this.pb_hotel);
             this.Name = "emp_list_reservas";
-            this.Size = new System.Drawing.Size(1010, 180);
+            this.Size = new System.Drawing.Size(1000, 180);
             this.Load += new System.EventHandler(this.emp_list_reservas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_user)).EndInit();
@@ -238,10 +226,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lb_qtd_parcelas_cartao;
         private System.Windows.Forms.Button bt_confirmar;
-        private System.Windows.Forms.Button bt_visualizar;
         private System.Windows.Forms.Label lb_forma_pagamento;
         private System.Windows.Forms.Label lb_nome_quarto;
         private System.Windows.Forms.Label lb_data_saida;
@@ -254,5 +239,6 @@
         private System.Windows.Forms.PictureBox pb_hotel;
         private System.Windows.Forms.PictureBox pb_user;
         private System.Windows.Forms.Label lb_user_name;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -59,11 +59,9 @@
             // 
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(167, 138);
-            this.panel1.MaximumSize = new System.Drawing.Size(1015, 0);
-            this.panel1.MinimumSize = new System.Drawing.Size(1010, 0);
+            this.panel1.Location = new System.Drawing.Point(150, 115);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1010, 0);
+            this.panel1.Size = new System.Drawing.Size(1020, 10);
             this.panel1.TabIndex = 64;
             // 
             // label1
@@ -88,11 +86,9 @@
             // 
             this.pn_emp.AutoSize = true;
             this.pn_emp.BackColor = System.Drawing.Color.White;
-            this.pn_emp.Location = new System.Drawing.Point(170, 138);
-            this.pn_emp.MaximumSize = new System.Drawing.Size(1015, 0);
-            this.pn_emp.MinimumSize = new System.Drawing.Size(1010, 0);
+            this.pn_emp.Location = new System.Drawing.Point(150, 115);
             this.pn_emp.Name = "pn_emp";
-            this.pn_emp.Size = new System.Drawing.Size(1010, 0);
+            this.pn_emp.Size = new System.Drawing.Size(1020, 5);
             this.pn_emp.TabIndex = 75;
             // 
             // panel3

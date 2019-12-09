@@ -214,7 +214,7 @@
             this.Controls.Add(this.lb_rs);
             this.Controls.Add(this.pb_hotel);
             this.Name = "user_list_reserva";
-            this.Size = new System.Drawing.Size(1005, 180);
+            this.Size = new System.Drawing.Size(1000, 180);
             this.Load += new System.EventHandler(this.user_list_reserva_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hotel)).EndInit();
             this.ResumeLayout(false);
