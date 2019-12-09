@@ -245,6 +245,18 @@ namespace Pont_Finder
                 remFiltro.Visible = true;
             }
             lbTop5.Text = "Top 5 " + rbChurrascaria.Text;            
+            if (EvaluationList.selectAll().Count != 0)
+            {
+                local1 = 42;
+                Top5.Controls.Clear();
+                foreach (var top in EvaluationList.TopList(CompanyList.SearchCategoria(rbChurrascaria.Text)))
+                {
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia, top.Image);
+                    emp.Location = new Point(20, local1);
+                    local1 = local1 + emp.Height + 5;
+                    Top5.Controls.Add(emp);
+                }
+            }
         }
 
         private void RbPizzaria_CheckedChanged(object sender, EventArgs e)
@@ -254,6 +266,18 @@ namespace Pont_Finder
                 remFiltro.Visible = true;
             }
             lbTop5.Text = "Top 5 " + rbPizzaria.Text;            
+            if (EvaluationList.selectAll().Count != 0)
+            {
+                local1 = 42;
+                Top5.Controls.Clear();
+                foreach (var top in EvaluationList.TopList(CompanyList.SearchCategoria(rbPizzaria.Text)))
+                {
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia, top.Image);
+                    emp.Location = new Point(20, local1);
+                    local1 = local1 + emp.Height + 5;
+                    Top5.Controls.Add(emp);
+                }
+            }
         }
 
         private void RbPetiscaria_CheckedChanged(object sender, EventArgs e)
@@ -263,6 +287,18 @@ namespace Pont_Finder
                 remFiltro.Visible = true;
             }
             lbTop5.Text = "Top 5 " + rbPetiscaria.Text;            
+            if (EvaluationList.selectAll().Count != 0)
+            {
+                Top5.Controls.Clear();
+                local1 = 42;
+                foreach (var top in EvaluationList.TopList(CompanyList.SearchCategoria(rbPetiscaria.Text)))
+                {
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia, top.Image);
+                    emp.Location = new Point(20, local1);
+                    local1 = local1 + emp.Height + 5;
+                    Top5.Controls.Add(emp);
+                }
+            }
         }
 
         private void RbComidaItaliana_CheckedChanged(object sender, EventArgs e)
@@ -272,6 +308,18 @@ namespace Pont_Finder
                 remFiltro.Visible = true;
             }
             lbTop5.Text = "Top 5 " + rbComidaItaliana.Text;            
+            if (EvaluationList.selectAll().Count != 0)
+            {
+                local1 = 42;
+                Top5.Controls.Clear();
+                foreach (var top in EvaluationList.TopList(CompanyList.SearchCategoria(rbComidaItaliana.Text)))
+                {
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia, top.Image);
+                    emp.Location = new Point(20, local1);
+                    local1 = local1 + emp.Height + 5;
+                    Top5.Controls.Add(emp);
+                }
+            }
         }
 
         private void RbComidaJaponesa_CheckedChanged(object sender, EventArgs e)
@@ -281,6 +329,18 @@ namespace Pont_Finder
                 remFiltro.Visible = true;
             }
             lbTop5.Text = "Top 5 " + rbComidaJaponesa.Text;            
+            if (EvaluationList.selectAll().Count != 0)
+            {
+                local1 = 42;
+                Top5.Controls.Clear();
+                foreach (var top in EvaluationList.TopList(CompanyList.SearchCategoria(rbComidaJaponesa.Text)))
+                {
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia, top.Image);
+                    emp.Location = new Point(20, local1);
+                    local1 = local1 + emp.Height + 5;
+                    Top5.Controls.Add(emp);
+                }
+            }
         }
 
         private void RbSorveteria_CheckedChanged(object sender, EventArgs e)
@@ -288,7 +348,20 @@ namespace Pont_Finder
             if (Categoria())
             {
                 remFiltro.Visible = true;
-            }            
+            }
+            lbTop5.Text = "Top 5 " + rbSorveteria.Text;            
+            if (EvaluationList.selectAll().Count != 0)
+            {
+                local1 = 42;
+                Top5.Controls.Clear();
+                foreach (var top in EvaluationList.TopList(CompanyList.SearchCategoria(rbSorveteria.Text)))
+                {
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia, top.Image);
+                    emp.Location = new Point(20, local1);
+                    local1 = local1 + emp.Height + 5;
+                    Top5.Controls.Add(emp);
+                }
+            }
         }
 
         private void RbHambúrgueria_CheckedChanged(object sender, EventArgs e)
@@ -298,6 +371,18 @@ namespace Pont_Finder
                 remFiltro.Visible = true;
             }
             lbTop5.Text = "Top 5 " + rbHambúrgueria.Text;            
+            if (EvaluationList.selectAll().Count != 0)
+            {
+                local1 = 42;
+                Top5.Controls.Clear();
+                foreach (var top in EvaluationList.TopList(CompanyList.SearchCategoria(rbHambúrgueria.Text)))
+                {
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia, top.Image);
+                    emp.Location = new Point(20, local1);
+                    local1 = local1 + emp.Height + 5;
+                    Top5.Controls.Add(emp);
+                }
+            }
         }
 
         private void RbFrutosDoMar_CheckedChanged(object sender, EventArgs e)
@@ -307,6 +392,18 @@ namespace Pont_Finder
                 remFiltro.Visible = true;
             }
             lbTop5.Text = "Top 5 " + rbFrutosDoMar.Text;            
+            if (EvaluationList.selectAll().Count != 0)
+            {
+                local1 = 42;
+                Top5.Controls.Clear();
+                foreach (var top in EvaluationList.TopList(CompanyList.SearchCategoria(rbFrutosDoMar.Text)))
+                {
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia, top.Image);
+                    emp.Location = new Point(20, local1);
+                    local1 = local1 + emp.Height + 5;
+                    Top5.Controls.Add(emp);
+                }
+            }
         }
 
         private void RbOutros_CheckedChanged(object sender, EventArgs e)
@@ -316,6 +413,18 @@ namespace Pont_Finder
                 remFiltro.Visible = true;
             }
             lbTop5.Text = "Top 5 " + rbOutros.Text;            
+            if (EvaluationList.selectAll().Count != 0)
+            {
+                Top5.Controls.Clear();
+                local1 = 42;
+                foreach (var top in EvaluationList.TopList(CompanyList.SearchCategoria(rbOutros.Text)))
+                {
+                    TopEmpresa emp = new TopEmpresa(top.NomeFantasia, top.Image);
+                    emp.Location = new Point(20, local1);
+                    local1 = local1 + emp.Height + 5;
+                    Top5.Controls.Add(emp);
+                }
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)

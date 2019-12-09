@@ -115,7 +115,7 @@ namespace Pont_Finder.alimentos
             List<Company> lista = new List<Company>();
             foreach (var emps in company)
             {
-                if (emps.Categoria.Contains(categoria.ToLower()))
+                if (emps.Categoria.Contains(categoria))
                 {
                     lista.Add(emps);
                 }
