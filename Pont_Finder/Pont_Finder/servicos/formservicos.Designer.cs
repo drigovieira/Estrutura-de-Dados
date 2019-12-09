@@ -44,13 +44,9 @@
             this.lb_pag = new System.Windows.Forms.Label();
             this.panel_center = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.painel_propaganda = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pn_propa_externa = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.tb_pesquisar = new System.Windows.Forms.TextBox();
             this.pb_pesquisar = new System.Windows.Forms.PictureBox();
@@ -66,8 +62,8 @@
             this.bt_proxFull = new System.Windows.Forms.Button();
             this.menu.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.painel_propaganda.SuspendLayout();
+            this.pn_propa_externa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).BeginInit();
             this.panel_left.SuspendLayout();
             this.SuspendLayout();
@@ -148,7 +144,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 1380);
+            this.panel2.Location = new System.Drawing.Point(0, 1180);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1265, 100);
             this.panel2.TabIndex = 20;
@@ -252,32 +248,14 @@
             this.label16.TabIndex = 43;
             this.label16.Text = "Top 5 Serviços";
             // 
-            // panel8
+            // painel_propaganda
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
-            this.panel8.Controls.Add(this.panel7);
-            this.panel8.Controls.Add(this.panel1);
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(950, 1030);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(310, 350);
-            this.panel8.TabIndex = 45;
-            // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.Location = new System.Drawing.Point(30, 196);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(250, 140);
-            this.panel7.TabIndex = 6;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Location = new System.Drawing.Point(30, 38);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 140);
-            this.panel1.TabIndex = 5;
+            this.painel_propaganda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.painel_propaganda.Controls.Add(this.label15);
+            this.painel_propaganda.Location = new System.Drawing.Point(950, 930);
+            this.painel_propaganda.Name = "painel_propaganda";
+            this.painel_propaganda.Size = new System.Drawing.Size(310, 250);
+            this.painel_propaganda.TabIndex = 45;
             // 
             // label15
             // 
@@ -289,32 +267,14 @@
             this.label15.TabIndex = 1;
             this.label15.Text = "Propaganda modulos";
             // 
-            // panel4
+            // pn_propa_externa
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Location = new System.Drawing.Point(950, 674);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 350);
-            this.panel4.TabIndex = 44;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.Location = new System.Drawing.Point(30, 192);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 140);
-            this.panel6.TabIndex = 4;
-            // 
-            // panel5
-            // 
-            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
-            this.panel5.Location = new System.Drawing.Point(30, 34);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(250, 140);
-            this.panel5.TabIndex = 3;
+            this.pn_propa_externa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(125)))), ((int)(((byte)(204)))));
+            this.pn_propa_externa.Controls.Add(this.label13);
+            this.pn_propa_externa.Location = new System.Drawing.Point(950, 674);
+            this.pn_propa_externa.Name = "pn_propa_externa";
+            this.pn_propa_externa.Size = new System.Drawing.Size(310, 250);
+            this.pn_propa_externa.TabIndex = 44;
             // 
             // label13
             // 
@@ -499,8 +459,8 @@
             this.Controls.Add(this.bt_antFull);
             this.Controls.Add(this.bt_prox);
             this.Controls.Add(this.bt_ant);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.painel_propaganda);
+            this.Controls.Add(this.pn_propa_externa);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
@@ -518,10 +478,10 @@
             this.menu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.painel_propaganda.ResumeLayout(false);
+            this.painel_propaganda.PerformLayout();
+            this.pn_propa_externa.ResumeLayout(false);
+            this.pn_propa_externa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pesquisar)).EndInit();
             this.panel_left.ResumeLayout(false);
             this.panel_left.PerformLayout();
@@ -544,9 +504,9 @@
         private System.Windows.Forms.Label lb_pag;
         private System.Windows.Forms.Panel panel_center;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel painel_propaganda;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pn_propa_externa;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button bt_mensagens;
         private System.Windows.Forms.TextBox tb_pesquisar;
@@ -562,9 +522,5 @@
         private System.Windows.Forms.Button bt_proxFull;
         private System.Windows.Forms.RadioButton rb_categoria;
         private System.Windows.Forms.Button bt_solicitados;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
     }
 }
