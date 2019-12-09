@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,14 +15,87 @@ namespace Pont_Finder.hospedagem
 {
     public partial class Editar_Empresa : Form
     {
-        public Editar_Empresa(Form anterior)
+        private string nomeempresa, nomefantasia, endereco, email, descricao, ambiente, foto, tipo, logo;
+        private int cep, id;
+        private bool ativo;
+        private long cnpj, cpfadmin, telefone;
+
+        public static string fotin = null;
+
+        bool loguinho = false;
+
+        OpenFileDialog openimg = new OpenFileDialog();
+        OpenFileDialog openlogo = new OpenFileDialog();
+
+        Empresa emp = hostList.selectCpf(Session.Cpf);
+
+        public Editar_Empresa(Form anterior, long cpf_empresa)
         {
+
             InitializeComponent();
+
+
+            this.nomeempresa = emp.Nomeempresa;
+            this.nomefantasia = emp.Nomefantasia;
+            this.endereco = emp.Endereco;
+            this.email = emp.Email;
+            this.descricao = emp.Descricao;
+            this.ambiente = emp.Ambiente;
+            this.foto = emp.Foto;
+            this.tipo = emp.Tipo;
+            this.logo = emp.Logo;
+            this.cep = emp.Cep;
+            this.ativo = emp.Ativo;
+            this.cnpj = emp.CNPJ;
+            this.telefone = emp.Telefone;
+
+
         }
 
         private void ckb_wifi_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bt_alterar_Click(object sender, EventArgs e)//DENIS BOTAO ALTERAR
+        {
+            emp.Endereco = tb_endereco.Text;
+
+            MessageBox.Show("Empresa atualizada!");
+
+        }
+
+        private void bt_add_img_Click(object sender, EventArgs e)
+        {
+            openimg.Filter = "Image Files(*.jpeg;*.bmp;*.png;*.jpg)|*.jpeg;*.bmp;*.jpg";
+
+            openimg.Multiselect = true;
+
+            if (openimg.ShowDialog() == DialogResult.OK)
+            {
+                int x = 5;
+                int abcd = 0;
+
+                pn_galery.Controls.Clear();
+
+
+                foreach (var img in openimg.FileNames)
+                {
+                    data.inc.Img_list gallery = new data.inc.Img_list(img);
+
+                    gallery.Location = new Point((x), 12);
+                    x = x + gallery.Width + 5;
+                    pn_galery.Controls.Add(gallery);
+
+                    if (abcd == 0)
+                    {
+                        fotin = img;
+                        pb_img1.ImageLocation = img;
+                        pb_img1.Load();
+                        abcd++;
+                    }
+                }
+            }
         }
 
         private void ckb_lugarPet_CheckedChanged(object sender, EventArgs e)
@@ -72,8 +148,39 @@ namespace Pont_Finder.hospedagem
             tb_email.MaxLength = 50;
         }
 
-        private void Editar_Empresa_Load(object sender, EventArgs e)
+        private void Editar_Empresa_Load(object sender, EventArgs e) 
         {
+            tb_nameEmp.Enabled = false;
+            tb_nameFantasy.Enabled = false;
+            mkb_cnpj.Enabled = false;
+
+            tb_nameEmp.Text = nomeempresa;
+            tb_nameFantasy.Text = nomefantasia;
+            mkb_cnpj.Text = ""+cnpj;
+            mkb_cep.Text = "" + cep;
+            mkb_phone.Text = "" + telefone;
+            tb_endereco.Text = endereco;
+            tb_email.Text = email;
+            tb_descricaoHotel.Text = descricao;
+
+            if(tipo =="Hotel")
+            {
+                radio_hotel.Checked = true;
+            }
+            else
+            {
+                radio_pousada.Checked = true;
+            }
+
+            pictureBox1.ImageLocation = logo;
+            pictureBox1.Load();
+
+            if (ambiente.Contains("Estacionamento"))
+            {
+                ckb_estacionamento.Checked = true;
+            }
+
+            //PREENCHER TEXTBOXS COM DADOS DA LISTA      DENIS
 
         }
     }

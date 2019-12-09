@@ -41,14 +41,12 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
-            this.pn_galery = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.pnl_tipoHosp = new System.Windows.Forms.Panel();
             this.radio_pousada = new System.Windows.Forms.RadioButton();
             this.ckb_wifi = new System.Windows.Forms.CheckBox();
             this.bt_alterar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.bt_add_img = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mkb_phone = new System.Windows.Forms.MaskedTextBox();
@@ -71,17 +69,19 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.pnl_ambDisp = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pb_img1 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pb_img1 = new System.Windows.Forms.PictureBox();
+            this.pn_galery = new System.Windows.Forms.Panel();
+            this.bt_add_img = new System.Windows.Forms.Button();
             this.pnl_tipoHosp.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_ambDisp.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).BeginInit();
             this.SuspendLayout();
             // 
             // radio_hotel
@@ -197,15 +197,6 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             // 
-            // pn_galery
-            // 
-            this.pn_galery.AutoScroll = true;
-            this.pn_galery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_galery.Location = new System.Drawing.Point(87, 296);
-            this.pn_galery.Name = "pn_galery";
-            this.pn_galery.Size = new System.Drawing.Size(450, 87);
-            this.pn_galery.TabIndex = 39;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
@@ -267,6 +258,7 @@
             this.bt_alterar.TabStop = false;
             this.bt_alterar.Text = "Alterar";
             this.bt_alterar.UseVisualStyleBackColor = false;
+            this.bt_alterar.Click += new System.EventHandler(this.bt_alterar_Click);
             // 
             // label4
             // 
@@ -277,20 +269,6 @@
             this.label4.Size = new System.Drawing.Size(305, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Selecione os serviços disponíveis ";
-            // 
-            // bt_add_img
-            // 
-            this.bt_add_img.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_add_img.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_add_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_add_img.ForeColor = System.Drawing.Color.White;
-            this.bt_add_img.Location = new System.Drawing.Point(219, 410);
-            this.bt_add_img.Name = "bt_add_img";
-            this.bt_add_img.Size = new System.Drawing.Size(187, 55);
-            this.bt_add_img.TabIndex = 9;
-            this.bt_add_img.TabStop = false;
-            this.bt_add_img.Text = "Adicionar imagem";
-            this.bt_add_img.UseVisualStyleBackColor = false;
             // 
             // panel11
             // 
@@ -538,17 +516,6 @@
             this.panel3.Size = new System.Drawing.Size(625, 1224);
             this.panel3.TabIndex = 62;
             // 
-            // pb_img1
-            // 
-            this.pb_img1.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_img1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_img1.InitialImage = global::Pont_Finder.Properties.Resources.downgrey;
-            this.pb_img1.Location = new System.Drawing.Point(87, 65);
-            this.pb_img1.Name = "pb_img1";
-            this.pb_img1.Size = new System.Drawing.Size(450, 225);
-            this.pb_img1.TabIndex = 3;
-            this.pb_img1.TabStop = false;
-            // 
             // panel7
             // 
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
@@ -582,6 +549,41 @@
             this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 0;
             // 
+            // pb_img1
+            // 
+            this.pb_img1.BackColor = System.Drawing.SystemColors.Control;
+            this.pb_img1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img1.InitialImage = global::Pont_Finder.Properties.Resources.downgrey;
+            this.pb_img1.Location = new System.Drawing.Point(87, 65);
+            this.pb_img1.Name = "pb_img1";
+            this.pb_img1.Size = new System.Drawing.Size(450, 225);
+            this.pb_img1.TabIndex = 3;
+            this.pb_img1.TabStop = false;
+            // 
+            // pn_galery
+            // 
+            this.pn_galery.AutoScroll = true;
+            this.pn_galery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pn_galery.Location = new System.Drawing.Point(87, 296);
+            this.pn_galery.Name = "pn_galery";
+            this.pn_galery.Size = new System.Drawing.Size(450, 87);
+            this.pn_galery.TabIndex = 39;
+            // 
+            // bt_add_img
+            // 
+            this.bt_add_img.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_add_img.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_add_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_add_img.ForeColor = System.Drawing.Color.White;
+            this.bt_add_img.Location = new System.Drawing.Point(219, 410);
+            this.bt_add_img.Name = "bt_add_img";
+            this.bt_add_img.Size = new System.Drawing.Size(187, 55);
+            this.bt_add_img.TabIndex = 9;
+            this.bt_add_img.TabStop = false;
+            this.bt_add_img.Text = "Adicionar imagem";
+            this.bt_add_img.UseVisualStyleBackColor = false;
+            this.bt_add_img.Click += new System.EventHandler(this.bt_add_img_Click);
+            // 
             // Editar_Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -610,9 +612,9 @@
             this.pnl_ambDisp.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -635,7 +637,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
-        private System.Windows.Forms.Panel pn_galery;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnl_tipoHosp;
@@ -643,7 +644,6 @@
         private System.Windows.Forms.CheckBox ckb_wifi;
         private System.Windows.Forms.Button bt_alterar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button bt_add_img;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.MaskedTextBox mkb_phone;
         private System.Windows.Forms.MaskedTextBox mkb_cep;
@@ -661,10 +661,12 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox tb_descricaoHotel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pb_img1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel pnl_ambDisp;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pn_galery;
+        private System.Windows.Forms.PictureBox pb_img1;
+        private System.Windows.Forms.Button bt_add_img;
     }
 }
