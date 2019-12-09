@@ -30,13 +30,13 @@
         {
             this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.bt_prox = new System.Windows.Forms.Button();
-            this.lb_pag = new System.Windows.Forms.Label();
             this.bt_ant = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_pag = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
@@ -59,16 +59,6 @@
             this.bt_prox.Text = "→";
             this.bt_prox.UseVisualStyleBackColor = false;
             this.bt_prox.Click += new System.EventHandler(this.bt_prox_Click);
-            // 
-            // lb_pag
-            // 
-            this.lb_pag.AutoSize = true;
-            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F);
-            this.lb_pag.Location = new System.Drawing.Point(484, 86);
-            this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(39, 14);
-            this.lb_pag.TabIndex = 88;
-            this.lb_pag.Text = "lb_pag";
             // 
             // bt_ant
             // 
@@ -102,11 +92,11 @@
             this.panel6.AutoSize = true;
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.lb_pag);
             this.panel6.Controls.Add(this.label11);
             this.panel6.Controls.Add(this.panel3);
             this.panel6.Controls.Add(this.bt_ant);
             this.panel6.Controls.Add(this.bt_prox);
-            this.panel6.Controls.Add(this.lb_pag);
             this.panel6.Location = new System.Drawing.Point(127, 31);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1010, 540);
@@ -130,6 +120,7 @@
             this.btn_back.BackColor = System.Drawing.Color.White;
             this.btn_back.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_back.Location = new System.Drawing.Point(81, 31);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(40, 40);
@@ -146,6 +137,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1282, 100);
             this.panel1.TabIndex = 92;
+            // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_pag.ForeColor = System.Drawing.Color.Black;
+            this.lb_pag.Location = new System.Drawing.Point(423, 72);
+            this.lb_pag.MaximumSize = new System.Drawing.Size(200, 32);
+            this.lb_pag.MinimumSize = new System.Drawing.Size(200, 32);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(200, 32);
+            this.lb_pag.TabIndex = 94;
+            this.lb_pag.Text = "lb_pag";
+            this.lb_pag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MeusPost
             // 
@@ -173,12 +179,12 @@
         #endregion
         private System.Windows.Forms.OpenFileDialog openIcone;
         private System.Windows.Forms.Button bt_prox;
-        private System.Windows.Forms.Label lb_pag;
         private System.Windows.Forms.Button bt_ant;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox btn_back;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lb_pag;
     }
 }

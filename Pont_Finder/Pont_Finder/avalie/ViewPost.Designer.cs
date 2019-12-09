@@ -57,7 +57,6 @@
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.label4 = new System.Windows.Forms.Label();
             this.bt_prox = new System.Windows.Forms.Button();
-            this.lb_pag = new System.Windows.Forms.Label();
             this.bt_ant = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.painelcoment = new System.Windows.Forms.Panel();
@@ -66,6 +65,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.checado = new System.Windows.Forms.PictureBox();
+            this.lb_pag = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -76,6 +77,7 @@
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checado)).BeginInit();
             this.SuspendLayout();
             // 
             // openIcone
@@ -107,6 +109,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(69, 61);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
@@ -225,7 +228,7 @@
             // imagemuser
             // 
             this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imagemuser.Location = new System.Drawing.Point(17, 35);
+            this.imagemuser.Location = new System.Drawing.Point(17, 11);
             this.imagemuser.Name = "imagemuser";
             this.imagemuser.Size = new System.Drawing.Size(56, 53);
             this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,7 +239,7 @@
             // 
             this.lb_deslike.AutoSize = true;
             this.lb_deslike.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_deslike.Location = new System.Drawing.Point(58, 400);
+            this.lb_deslike.Location = new System.Drawing.Point(72, 398);
             this.lb_deslike.Name = "lb_deslike";
             this.lb_deslike.Size = new System.Drawing.Size(15, 16);
             this.lb_deslike.TabIndex = 108;
@@ -246,7 +249,7 @@
             // 
             this.lb_like.AutoSize = true;
             this.lb_like.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_like.Location = new System.Drawing.Point(58, 338);
+            this.lb_like.Location = new System.Drawing.Point(72, 321);
             this.lb_like.Name = "lb_like";
             this.lb_like.Size = new System.Drawing.Size(15, 16);
             this.lb_like.TabIndex = 105;
@@ -258,7 +261,7 @@
             this.pb_down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_down.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_down.Image = global::Pont_Finder.Properties.Resources.Deslike_null;
-            this.pb_down.Location = new System.Drawing.Point(17, 384);
+            this.pb_down.Location = new System.Drawing.Point(15, 382);
             this.pb_down.Margin = new System.Windows.Forms.Padding(15);
             this.pb_down.Name = "pb_down";
             this.pb_down.Size = new System.Drawing.Size(37, 32);
@@ -273,7 +276,7 @@
             this.pb_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_up.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_up.Image = global::Pont_Finder.Properties.Resources.Like_null;
-            this.pb_up.Location = new System.Drawing.Point(17, 322);
+            this.pb_up.Location = new System.Drawing.Point(17, 305);
             this.pb_up.Margin = new System.Windows.Forms.Padding(15);
             this.pb_up.Name = "pb_up";
             this.pb_up.Size = new System.Drawing.Size(37, 32);
@@ -286,7 +289,7 @@
             // 
             this.lb_data.AutoSize = true;
             this.lb_data.Font = new System.Drawing.Font("Microsoft PhagsPa", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_data.Location = new System.Drawing.Point(14, 269);
+            this.lb_data.Location = new System.Drawing.Point(14, 257);
             this.lb_data.Name = "lb_data";
             this.lb_data.Size = new System.Drawing.Size(105, 15);
             this.lb_data.TabIndex = 84;
@@ -296,7 +299,7 @@
             // 
             this.lb_hora.AutoSize = true;
             this.lb_hora.Font = new System.Drawing.Font("Microsoft PhagsPa", 8F, System.Drawing.FontStyle.Bold);
-            this.lb_hora.Location = new System.Drawing.Point(135, 271);
+            this.lb_hora.Location = new System.Drawing.Point(137, 257);
             this.lb_hora.Name = "lb_hora";
             this.lb_hora.Size = new System.Drawing.Size(31, 15);
             this.lb_hora.TabIndex = 82;
@@ -304,7 +307,8 @@
             // 
             // pb_imagem
             // 
-            this.pb_imagem.Location = new System.Drawing.Point(17, 110);
+            this.pb_imagem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_imagem.Location = new System.Drawing.Point(17, 70);
             this.pb_imagem.Name = "pb_imagem";
             this.pb_imagem.Size = new System.Drawing.Size(282, 146);
             this.pb_imagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -315,7 +319,7 @@
             // 
             this.NomePos.AutoSize = true;
             this.NomePos.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.NomePos.Location = new System.Drawing.Point(79, 35);
+            this.NomePos.Location = new System.Drawing.Point(79, 11);
             this.NomePos.Name = "NomePos";
             this.NomePos.Size = new System.Drawing.Size(45, 17);
             this.NomePos.TabIndex = 83;
@@ -389,22 +393,13 @@
             this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_prox.ForeColor = System.Drawing.Color.Black;
-            this.bt_prox.Location = new System.Drawing.Point(683, 197);
+            this.bt_prox.Location = new System.Drawing.Point(683, 181);
             this.bt_prox.Name = "bt_prox";
             this.bt_prox.Size = new System.Drawing.Size(75, 23);
             this.bt_prox.TabIndex = 85;
-            this.bt_prox.Text = ">>";
+            this.bt_prox.Text = "→";
             this.bt_prox.UseVisualStyleBackColor = false;
             this.bt_prox.Click += new System.EventHandler(this.bt_prox_Click);
-            // 
-            // lb_pag
-            // 
-            this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(465, 207);
-            this.lb_pag.Name = "lb_pag";
-            this.lb_pag.Size = new System.Drawing.Size(39, 13);
-            this.lb_pag.TabIndex = 86;
-            this.lb_pag.Text = "lb_pag";
             // 
             // bt_ant
             // 
@@ -413,11 +408,11 @@
             this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(233, 197);
+            this.bt_ant.Location = new System.Drawing.Point(233, 181);
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(75, 23);
             this.bt_ant.TabIndex = 84;
-            this.bt_ant.Text = "<<";
+            this.bt_ant.Text = "←";
             this.bt_ant.UseVisualStyleBackColor = false;
             this.bt_ant.Click += new System.EventHandler(this.bt_ant_Click);
             // 
@@ -427,7 +422,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 14F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(446, 8);
+            this.label6.Location = new System.Drawing.Point(403, 7);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 25);
             this.label6.TabIndex = 91;
@@ -449,9 +444,9 @@
             this.bt_postar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_postar.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Bold);
             this.bt_postar.ForeColor = System.Drawing.Color.White;
-            this.bt_postar.Location = new System.Drawing.Point(803, 85);
+            this.bt_postar.Location = new System.Drawing.Point(766, 88);
             this.bt_postar.Name = "bt_postar";
-            this.bt_postar.Size = new System.Drawing.Size(86, 38);
+            this.bt_postar.Size = new System.Drawing.Size(191, 35);
             this.bt_postar.TabIndex = 89;
             this.bt_postar.Text = "Postar";
             this.bt_postar.UseVisualStyleBackColor = false;
@@ -462,7 +457,7 @@
             this.tb_resposta.BackColor = System.Drawing.Color.Gainsboro;
             this.tb_resposta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_resposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_resposta.Location = new System.Drawing.Point(246, 35);
+            this.tb_resposta.Location = new System.Drawing.Point(215, 35);
             this.tb_resposta.Name = "tb_resposta";
             this.tb_resposta.Size = new System.Drawing.Size(525, 88);
             this.tb_resposta.TabIndex = 69;
@@ -477,11 +472,11 @@
             // 
             this.panel1.AutoSize = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lb_pag);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.painelcoment);
             this.panel1.Controls.Add(this.bt_ant);
             this.panel1.Controls.Add(this.bt_prox);
-            this.panel1.Controls.Add(this.lb_pag);
             this.panel1.Location = new System.Drawing.Point(115, 512);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1010, 325);
@@ -498,6 +493,32 @@
             this.panel6.Size = new System.Drawing.Size(973, 140);
             this.panel6.TabIndex = 92;
             // 
+            // checado
+            // 
+            this.checado.BackColor = System.Drawing.Color.Transparent;
+            this.checado.Image = global::Pont_Finder.Properties.Resources.Checked_icon;
+            this.checado.Location = new System.Drawing.Point(1081, 12);
+            this.checado.Name = "checado";
+            this.checado.Size = new System.Drawing.Size(44, 41);
+            this.checado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.checado.TabIndex = 97;
+            this.checado.TabStop = false;
+            // 
+            // lb_pag
+            // 
+            this.lb_pag.AutoSize = true;
+            this.lb_pag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_pag.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_pag.ForeColor = System.Drawing.Color.Black;
+            this.lb_pag.Location = new System.Drawing.Point(397, 176);
+            this.lb_pag.MaximumSize = new System.Drawing.Size(200, 32);
+            this.lb_pag.MinimumSize = new System.Drawing.Size(200, 32);
+            this.lb_pag.Name = "lb_pag";
+            this.lb_pag.Size = new System.Drawing.Size(200, 32);
+            this.lb_pag.TabIndex = 93;
+            this.lb_pag.Text = "lb_pag";
+            this.lb_pag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ViewPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -505,6 +526,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.Controls.Add(this.checado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
@@ -529,6 +551,7 @@
             this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -563,7 +586,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel painelcoment;
         private System.Windows.Forms.Button bt_prox;
-        private System.Windows.Forms.Label lb_pag;
         private System.Windows.Forms.Button bt_ant;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
@@ -572,5 +594,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox checado;
+        private System.Windows.Forms.Label lb_pag;
     }
 }

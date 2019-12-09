@@ -443,6 +443,31 @@ namespace Pont_Finder
         {
 
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bt_antFull_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_proxFull_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_pag_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

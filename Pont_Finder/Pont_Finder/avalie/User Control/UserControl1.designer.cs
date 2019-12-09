@@ -42,7 +42,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_localizar = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             this.lb_deslike = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
             this.pb_down = new System.Windows.Forms.PictureBox();
@@ -50,15 +49,16 @@
             this.lb_problema = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             ((System.ComponentModel.ISupportInitialize)(this.checado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -75,7 +75,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(69, 16);
+            this.label1.Location = new System.Drawing.Point(50, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 17);
             this.label1.TabIndex = 3;
@@ -89,7 +89,6 @@
             this.userboxdesc.Location = new System.Drawing.Point(6, 295);
             this.userboxdesc.Multiline = true;
             this.userboxdesc.Name = "userboxdesc";
-            this.userboxdesc.ReadOnly = true;
             this.userboxdesc.Size = new System.Drawing.Size(352, 80);
             this.userboxdesc.TabIndex = 2;
             this.userboxdesc.TextChanged += new System.EventHandler(this.Userboxdesc_TextChanged);
@@ -136,7 +135,7 @@
             this.bt_obter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_obter.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_obter.ForeColor = System.Drawing.Color.White;
-            this.bt_obter.Location = new System.Drawing.Point(72, 101);
+            this.bt_obter.Location = new System.Drawing.Point(53, 101);
             this.bt_obter.Margin = new System.Windows.Forms.Padding(15);
             this.bt_obter.Name = "bt_obter";
             this.bt_obter.Size = new System.Drawing.Size(110, 33);
@@ -149,9 +148,9 @@
             // 
             this.checado.BackColor = System.Drawing.Color.Transparent;
             this.checado.Image = global::Pont_Finder.Properties.Resources.Checked_icon;
-            this.checado.Location = new System.Drawing.Point(568, 5);
+            this.checado.Location = new System.Drawing.Point(560, 5);
             this.checado.Name = "checado";
-            this.checado.Size = new System.Drawing.Size(25, 25);
+            this.checado.Size = new System.Drawing.Size(33, 31);
             this.checado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.checado.TabIndex = 25;
             this.checado.TabStop = false;
@@ -173,7 +172,7 @@
             this.bt_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_editar.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_editar.ForeColor = System.Drawing.Color.White;
-            this.bt_editar.Location = new System.Drawing.Point(72, 152);
+            this.bt_editar.Location = new System.Drawing.Point(53, 152);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(110, 30);
             this.bt_editar.TabIndex = 98;
@@ -184,7 +183,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel1.Controls.Add(this.lb_localizar);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.imagemuser);
@@ -194,7 +193,7 @@
             this.panel1.Controls.Add(this.NomePos);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(625, 70);
+            this.panel1.Size = new System.Drawing.Size(608, 70);
             this.panel1.TabIndex = 100;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
@@ -217,16 +216,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 102;
             this.pictureBox2.TabStop = false;
-            // 
-            // imagemuser
-            // 
-            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imagemuser.Location = new System.Drawing.Point(8, 5);
-            this.imagemuser.Name = "imagemuser";
-            this.imagemuser.Size = new System.Drawing.Size(57, 57);
-            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagemuser.TabIndex = 101;
-            this.imagemuser.TabStop = false;
             // 
             // lb_deslike
             // 
@@ -284,7 +273,7 @@
             // 
             this.lb_problema.AutoSize = true;
             this.lb_problema.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_problema.Location = new System.Drawing.Point(115, 42);
+            this.lb_problema.Location = new System.Drawing.Point(59, 34);
             this.lb_problema.Name = "lb_problema";
             this.lb_problema.Size = new System.Drawing.Size(38, 17);
             this.lb_problema.TabIndex = 105;
@@ -315,6 +304,16 @@
             this.panel3.Size = new System.Drawing.Size(226, 80);
             this.panel3.TabIndex = 107;
             // 
+            // imagemuser
+            // 
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemuser.Location = new System.Drawing.Point(8, 5);
+            this.imagemuser.Name = "imagemuser";
+            this.imagemuser.Size = new System.Drawing.Size(57, 57);
+            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagemuser.TabIndex = 101;
+            this.imagemuser.TabStop = false;
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,13 +333,13 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

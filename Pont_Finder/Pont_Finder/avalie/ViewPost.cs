@@ -81,6 +81,14 @@ namespace Pont_Finder.avalie
             lb_like.Text = this.post.Joinha + "";
             lb_deslike.Text = this.post.DeJoinha + "";
 
+            if (post.Resolved == true)
+            {
+                checado.Visible = true;
+            }
+            else
+            {
+                checado.Visible = false;
+            }
 
 
             pb_up.Image = imgLike;
