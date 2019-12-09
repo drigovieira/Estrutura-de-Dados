@@ -160,4 +160,12 @@
     <image>..//..//data//images//users//offImage.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Felipe Moreno</nome>
+    <email>felipe@gmail.com</email>
+    <senha>123</senha>
+    <cpf>45851442182</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>
