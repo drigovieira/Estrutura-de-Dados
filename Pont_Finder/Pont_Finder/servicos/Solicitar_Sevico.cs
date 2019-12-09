@@ -18,7 +18,7 @@ namespace Pont_Finder.servicos
         classes.Post post;
 
         bool img = false;
-
+     
         
 
         public Solicitar_Sevico(int postid, Form anterior)
@@ -26,6 +26,12 @@ namespace Pont_Finder.servicos
             post = classes.PostList.thisForId(postid);
             this.anterior = anterior;
             InitializeComponent();
+
+            if (post.Valor == 0)
+            {
+                painel_pagamento.Visible = false;
+                
+            }
             
         }
 
@@ -65,8 +71,11 @@ namespace Pont_Finder.servicos
                 MessageBox.Show("O campo Cep não foi preenchido corretamente");
             else if (tb_descricao.Text.Length < 10)
                 MessageBox.Show("O campo Descrição não foi preenchido corretamente");
-            else if ( (!rb_cartao.Checked) && (!rb_boleto.Checked))
-                MessageBox.Show("Escolha a forma de Pagamento");
+            else if (post.Valor != 0)
+            {
+                if (((!rb_cartao.Checked) && (!rb_boleto.Checked)))
+                    MessageBox.Show("Escolha a forma de Pagamento");
+            }
             else
             {
                 classes.Solicitado solicitado = new classes.Solicitado();
@@ -118,10 +127,15 @@ namespace Pont_Finder.servicos
                     bol.ShowDialog();
                     Session.Termos = true;
                 }
-                else
+                else if(rb_cartao.Checked)
                 {
                     Boleto.Cartao card = new Boleto.Cartao();
                     card.ShowDialog();
+                }
+                else
+                {
+                    classes.SolicitadoList.Solicitados.Add(solicitado);
+                    FormPrincipal.MudarForm("servicos", new FormVisualizarPost(post.Id, new FormServicos()));
                 }
 
                 if (Session.Termos)
