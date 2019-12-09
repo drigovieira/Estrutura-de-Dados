@@ -18,6 +18,14 @@ namespace Pont_Finder.alimentos
             Empresa = idEmpresa;
             InitializeComponent();
             tbNomeEmpresa.Text = CompanyList.selectAll()[idEmpresa].Nome;
+            tbFantasia.Text = CompanyList.selectAll()[idEmpresa].NomeFantasia;
+            tbBairro.Text = CompanyList.selectAll()[idEmpresa].Bairro;
+            tbRua.Text = CompanyList.selectAll()[idEmpresa].Rua;
+            tbNum.Text = CompanyList.selectAll()[idEmpresa].Numero.ToString();
+            mkb_Tel.Text = CompanyList.selectAll()[idEmpresa].TelComercial.ToString();
+            tbEmail.Text = CompanyList.selectAll()[idEmpresa].Email;
+            pb_icone.ImageLocation = CompanyList.selectAll()[idEmpresa].Image;
+
         }
 
         private void Editar_Restaurante_Load(object sender, EventArgs e)

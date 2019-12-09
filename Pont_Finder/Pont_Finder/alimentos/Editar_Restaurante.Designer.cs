@@ -108,35 +108,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.cbEntrega = new System.Windows.Forms.CheckBox();
             this.cbCardapio = new System.Windows.Forms.CheckBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox20 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox21 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox22 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox23 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox24 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox25 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox26 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox27 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox28 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox29 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox30 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox31 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox32 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox33 = new System.Windows.Forms.MaskedTextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel11.SuspendLayout();
@@ -145,7 +116,6 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // label10
@@ -186,7 +156,7 @@
             // panel9
             // 
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 2884);
+            this.panel9.Location = new System.Drawing.Point(0, 2503);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1282, 100);
             this.panel9.TabIndex = 72;
@@ -615,7 +585,7 @@
             this.btnCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCad.Font = new System.Drawing.Font("Microsoft PhagsPa", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCad.ForeColor = System.Drawing.Color.White;
-            this.btnCad.Location = new System.Drawing.Point(196, 1694);
+            this.btnCad.Location = new System.Drawing.Point(195, 1307);
             this.btnCad.Name = "btnCad";
             this.btnCad.Size = new System.Drawing.Size(220, 50);
             this.btnCad.TabIndex = 14;
@@ -957,8 +927,6 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.label22);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.btnCad);
             this.panel3.Controls.Add(this.label4);
@@ -970,14 +938,14 @@
             this.panel3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(318, 1093);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(625, 1791);
+            this.panel3.Size = new System.Drawing.Size(625, 1410);
             this.panel3.TabIndex = 71;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(84, 1528);
+            this.label20.Location = new System.Drawing.Point(83, 1141);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(461, 16);
             this.label20.TabIndex = 46;
@@ -990,7 +958,7 @@
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.cbEntrega);
             this.panel5.Controls.Add(this.cbCardapio);
-            this.panel5.Location = new System.Drawing.Point(82, 1549);
+            this.panel5.Location = new System.Drawing.Point(81, 1162);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(460, 108);
             this.panel5.TabIndex = 45;
@@ -1040,345 +1008,6 @@
             this.cbCardapio.Text = "Utilizar serviço de exibição de Cardápio.";
             this.cbCardapio.UseVisualStyleBackColor = true;
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.checkBox11);
-            this.panel7.Controls.Add(this.checkBox12);
-            this.panel7.Controls.Add(this.checkBox13);
-            this.panel7.Controls.Add(this.checkBox14);
-            this.panel7.Controls.Add(this.checkBox15);
-            this.panel7.Controls.Add(this.checkBox16);
-            this.panel7.Controls.Add(this.checkBox17);
-            this.panel7.Controls.Add(this.checkBox18);
-            this.panel7.Controls.Add(this.maskedTextBox2);
-            this.panel7.Controls.Add(this.maskedTextBox3);
-            this.panel7.Controls.Add(this.maskedTextBox20);
-            this.panel7.Controls.Add(this.maskedTextBox21);
-            this.panel7.Controls.Add(this.maskedTextBox22);
-            this.panel7.Controls.Add(this.maskedTextBox23);
-            this.panel7.Controls.Add(this.maskedTextBox24);
-            this.panel7.Controls.Add(this.maskedTextBox25);
-            this.panel7.Controls.Add(this.maskedTextBox26);
-            this.panel7.Controls.Add(this.maskedTextBox27);
-            this.panel7.Controls.Add(this.maskedTextBox28);
-            this.panel7.Controls.Add(this.maskedTextBox29);
-            this.panel7.Controls.Add(this.maskedTextBox30);
-            this.panel7.Controls.Add(this.maskedTextBox31);
-            this.panel7.Controls.Add(this.maskedTextBox32);
-            this.panel7.Controls.Add(this.maskedTextBox33);
-            this.panel7.Controls.Add(this.label18);
-            this.panel7.Controls.Add(this.label19);
-            this.panel7.Controls.Add(this.label21);
-            this.panel7.Location = new System.Drawing.Point(82, 1185);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(460, 327);
-            this.panel7.TabIndex = 44;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox11.Location = new System.Drawing.Point(62, 284);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(84, 24);
-            this.checkBox11.TabIndex = 70;
-            this.checkBox11.Text = "Feriados";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox12.Location = new System.Drawing.Point(62, 255);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(91, 24);
-            this.checkBox12.TabIndex = 69;
-            this.checkBox12.Text = "Domingo";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox13.Location = new System.Drawing.Point(62, 222);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(79, 24);
-            this.checkBox13.TabIndex = 68;
-            this.checkBox13.Text = "Sábado";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox14.Location = new System.Drawing.Point(62, 191);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(110, 24);
-            this.checkBox14.TabIndex = 67;
-            this.checkBox14.Text = "Sexta - Feira";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox15.Location = new System.Drawing.Point(62, 94);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(110, 24);
-            this.checkBox15.TabIndex = 66;
-            this.checkBox15.Text = "Terça - Feira";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox16.Location = new System.Drawing.Point(62, 127);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(119, 24);
-            this.checkBox16.TabIndex = 65;
-            this.checkBox16.Text = "Quarta - Feira";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox17.Location = new System.Drawing.Point(62, 159);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(118, 24);
-            this.checkBox17.TabIndex = 64;
-            this.checkBox17.Text = "Quinta - Feira";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox18.Location = new System.Drawing.Point(62, 63);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(132, 24);
-            this.checkBox18.TabIndex = 63;
-            this.checkBox18.Text = "Segunda - Feira";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Enabled = false;
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(308, 282);
-            this.maskedTextBox2.Mask = "00:00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox2.TabIndex = 62;
-            this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.Enabled = false;
-            this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox3.Location = new System.Drawing.Point(308, 253);
-            this.maskedTextBox3.Mask = "00:00";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox3.TabIndex = 60;
-            this.maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox20
-            // 
-            this.maskedTextBox20.Enabled = false;
-            this.maskedTextBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox20.Location = new System.Drawing.Point(308, 220);
-            this.maskedTextBox20.Mask = "00:00";
-            this.maskedTextBox20.Name = "maskedTextBox20";
-            this.maskedTextBox20.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox20.TabIndex = 58;
-            this.maskedTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox21
-            // 
-            this.maskedTextBox21.Enabled = false;
-            this.maskedTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox21.Location = new System.Drawing.Point(308, 189);
-            this.maskedTextBox21.Mask = "00:00";
-            this.maskedTextBox21.Name = "maskedTextBox21";
-            this.maskedTextBox21.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox21.TabIndex = 56;
-            this.maskedTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox22
-            // 
-            this.maskedTextBox22.Enabled = false;
-            this.maskedTextBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox22.Location = new System.Drawing.Point(308, 157);
-            this.maskedTextBox22.Mask = "00:00";
-            this.maskedTextBox22.Name = "maskedTextBox22";
-            this.maskedTextBox22.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox22.TabIndex = 54;
-            this.maskedTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox23
-            // 
-            this.maskedTextBox23.Enabled = false;
-            this.maskedTextBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox23.Location = new System.Drawing.Point(308, 125);
-            this.maskedTextBox23.Mask = "00:00";
-            this.maskedTextBox23.Name = "maskedTextBox23";
-            this.maskedTextBox23.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox23.TabIndex = 52;
-            this.maskedTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox24
-            // 
-            this.maskedTextBox24.Enabled = false;
-            this.maskedTextBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox24.Location = new System.Drawing.Point(308, 92);
-            this.maskedTextBox24.Mask = "00:00";
-            this.maskedTextBox24.Name = "maskedTextBox24";
-            this.maskedTextBox24.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox24.TabIndex = 50;
-            this.maskedTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox25
-            // 
-            this.maskedTextBox25.Enabled = false;
-            this.maskedTextBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox25.Location = new System.Drawing.Point(308, 61);
-            this.maskedTextBox25.Mask = "00:00";
-            this.maskedTextBox25.Name = "maskedTextBox25";
-            this.maskedTextBox25.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox25.TabIndex = 48;
-            this.maskedTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox26
-            // 
-            this.maskedTextBox26.Enabled = false;
-            this.maskedTextBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox26.Location = new System.Drawing.Point(199, 282);
-            this.maskedTextBox26.Mask = "00:00";
-            this.maskedTextBox26.Name = "maskedTextBox26";
-            this.maskedTextBox26.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox26.TabIndex = 61;
-            this.maskedTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox27
-            // 
-            this.maskedTextBox27.Enabled = false;
-            this.maskedTextBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox27.Location = new System.Drawing.Point(199, 253);
-            this.maskedTextBox27.Mask = "00:00";
-            this.maskedTextBox27.Name = "maskedTextBox27";
-            this.maskedTextBox27.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox27.TabIndex = 59;
-            this.maskedTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox28
-            // 
-            this.maskedTextBox28.Enabled = false;
-            this.maskedTextBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox28.Location = new System.Drawing.Point(199, 220);
-            this.maskedTextBox28.Mask = "00:00";
-            this.maskedTextBox28.Name = "maskedTextBox28";
-            this.maskedTextBox28.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox28.TabIndex = 57;
-            this.maskedTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox29
-            // 
-            this.maskedTextBox29.Enabled = false;
-            this.maskedTextBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox29.Location = new System.Drawing.Point(199, 189);
-            this.maskedTextBox29.Mask = "00:00";
-            this.maskedTextBox29.Name = "maskedTextBox29";
-            this.maskedTextBox29.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox29.TabIndex = 55;
-            this.maskedTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox30
-            // 
-            this.maskedTextBox30.Enabled = false;
-            this.maskedTextBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox30.Location = new System.Drawing.Point(199, 157);
-            this.maskedTextBox30.Mask = "00:00";
-            this.maskedTextBox30.Name = "maskedTextBox30";
-            this.maskedTextBox30.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox30.TabIndex = 53;
-            this.maskedTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox31
-            // 
-            this.maskedTextBox31.Enabled = false;
-            this.maskedTextBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox31.Location = new System.Drawing.Point(199, 125);
-            this.maskedTextBox31.Mask = "00:00";
-            this.maskedTextBox31.Name = "maskedTextBox31";
-            this.maskedTextBox31.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox31.TabIndex = 51;
-            this.maskedTextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox32
-            // 
-            this.maskedTextBox32.Enabled = false;
-            this.maskedTextBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox32.Location = new System.Drawing.Point(199, 92);
-            this.maskedTextBox32.Mask = "00:00";
-            this.maskedTextBox32.Name = "maskedTextBox32";
-            this.maskedTextBox32.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox32.TabIndex = 49;
-            this.maskedTextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // maskedTextBox33
-            // 
-            this.maskedTextBox33.Enabled = false;
-            this.maskedTextBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox33.Location = new System.Drawing.Point(199, 61);
-            this.maskedTextBox33.Mask = "00:00";
-            this.maskedTextBox33.Name = "maskedTextBox33";
-            this.maskedTextBox33.Size = new System.Drawing.Size(86, 22);
-            this.maskedTextBox33.TabIndex = 47;
-            this.maskedTextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(305, 21);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(74, 21);
-            this.label18.TabIndex = 46;
-            this.label18.Text = "Fecha às";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(200, 21);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(66, 21);
-            this.label19.TabIndex = 45;
-            this.label19.Text = "Abre às";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(62, 21);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(124, 21);
-            this.label21.TabIndex = 32;
-            this.label21.Text = "Dia da Semana";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(185, 1144);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(254, 25);
-            this.label22.TabIndex = 43;
-            this.label22.Text = "Horário de Funcionamento";
-            // 
             // Editar_Restaurante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1412,8 +1041,6 @@
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1499,34 +1126,5 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.CheckBox cbEntrega;
         private System.Windows.Forms.CheckBox cbCardapio;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox20;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox21;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox22;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox23;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox24;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox25;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox26;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox27;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox28;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox29;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox30;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox31;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox32;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox33;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
     }
 }
