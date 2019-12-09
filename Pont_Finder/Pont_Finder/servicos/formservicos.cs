@@ -484,9 +484,7 @@ namespace Pont_Finder.servicos
 
         private void Button1_Click_3(object sender, EventArgs e)
         {
-            ListaDePost.Clear();
-            ListaDePost = classes.PostList.top();
-            Pesquisa();
+
         }
     }
 }
