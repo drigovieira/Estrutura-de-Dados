@@ -12,7 +12,6 @@ namespace Pont_Finder.alimentos
 {
     public partial class Publi : UserControl
     {
-        string variavel;
         private string nomeCompany, ruaCompany, bairroCompany, categoriaCompany;
         private int ID, numCompany;
 
@@ -81,16 +80,6 @@ namespace Pont_Finder.alimentos
                 pb_Restaurante.ImageLocation = CompanyList.select(index).Image;
             else
                 pb_Restaurante.ImageLocation = "..//..//alimentos//data//image//empresas//offImage.jpg";
-            lbContato.Text = contatoCompany.ToString();
-            if (lbContato.Text.Length.Equals(10))
-            {
-
-                variavel = contatoCompany.ToString(@"(00)0000-0000");
-            }
-            else
-            {
-               variavel = contatoCompany.ToString(@"(00)00000-0000");
-            }
         }
 
 
@@ -100,7 +89,7 @@ namespace Pont_Finder.alimentos
             lbRua.Text = ruaCompany;
             lbBairro.Text = bairroCompany;
             lbNumero.Text = numCompany.ToString();
-            lbContato.Text = variavel;
+            lbContato.Text = contatoCompany.ToString(@"(00) 00000-0000");
             lbCategoria.Text = categoriaCompany;
         }
     }

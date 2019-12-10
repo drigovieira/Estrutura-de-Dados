@@ -745,29 +745,5 @@ namespace Pont_Finder.alimentos
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar);
         }
-
-        private void rb_Tel_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rb_Tel.Checked == true)
-            {
-                mkb_Tel.Mask = "(00)0000-0000";
-            }
-            else
-            {
-                mkb_Tel.Mask = "(00)00000-0000";
-            }
-        }
-
-        private void rb_Cel_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rb_Cel.Checked == true)
-            {
-                mkb_Tel.Mask = "(00)00000-0000";
-            }
-            else
-            {
-                mkb_Tel.Mask = "(00)0000-0000";
-            }
-        }
     }
 }

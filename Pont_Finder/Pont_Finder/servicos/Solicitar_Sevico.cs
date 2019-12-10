@@ -111,7 +111,7 @@ namespace Pont_Finder.servicos
                 solicitado.Bairro = tb_bairro.Text;
                 solicitado.Numero = int.Parse("" + tb_numero.Value);
                 solicitado.Cep = int.Parse(tb_cep.Text);
-                solicitado.Descricao = tb_descricao.Text;
+                solicitado.Descrição = tb_descricao.Text;
                 solicitado.DataAgendada = tb_data.Value;
 
                 solicitado.DataSolicitacao = DateTime.Now;

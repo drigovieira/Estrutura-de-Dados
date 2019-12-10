@@ -77,7 +77,7 @@ Todos os quartos deste hotel dispõem de TV de tela plana a cabo e via satélite
     <nomeempresa> Pousada Rafael Leandro Ltda</nomeempresa>
     <nomefantasia>Pousada São Rafael</nomefantasia>
     <cnpj>64259716000190</cnpj>
-    <endereco>Rua:Rua Artêmio do Amaral      </endereco>
+    <endereco>Rua Artêmio do Amaral      </endereco>
     <cep>12704170</cep>
     <telefone>12314489996</telefone>
     <email>pousadarafael@gmail.com</email>
@@ -105,8 +105,8 @@ Os quartos do hotel dispõem de TV de tela plana, janelas com isolamento acústi
     <telComercial>1111111111</telComercial>
     <cpf>26835036010</cpf>
     <status>true</status>
-    <statusCardapio>true</statusCardapio>
-    <statusEntrega>true</statusEntrega>
+    <statusCardapio>false</statusCardapio>
+    <statusEntrega>false</statusEntrega>
   </alimentos>
   <alimentos>
     <nome>Restaurante Kung Peixe</nome>

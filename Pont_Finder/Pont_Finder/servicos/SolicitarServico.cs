@@ -56,21 +56,5 @@ namespace Pont_Finder.servicos
         {
             FormPrincipal.MudarForm("servicos", new FormServicos());
         }
-
-        private void Solicitar_Click_1(object sender, EventArgs e)
-        {
-            MessageBox.Show("Obrigado pelo Feedback!");
-            FormPrincipal.MudarForm("servicos", new FormServicos());
-        }
-
-        private void SolicitarServico_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

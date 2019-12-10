@@ -20,7 +20,6 @@ namespace Pont_Finder.classes
             servicos.classes.ListaEmpresa.XmlLoad();
             servicos.socialist.MensagemList.XmlLoad();
             servicos.socialist.ChatList.XmlLoad();
-            servicos.classes.SolicitadoList.XmlLoad();
             //fim servicos
 
             //hospedagem
@@ -43,7 +42,6 @@ namespace Pont_Finder.classes
             alimentos.CompanyList.XmlLoad();
             alimentos.classes.EvaluationList.XmlLoad();
             alimentos.ListCardapio.XmlLoad();
-            alimentos.classes.ListPedidos.XmlLoad();
             //fim Alimentos
 
 
@@ -59,7 +57,6 @@ namespace Pont_Finder.classes
             servicos.classes.ListaEmpresa.XmlSave();
             servicos.socialist.MensagemList.XmlSave();
             servicos.socialist.ChatList.XmlSave();
-            servicos.classes.SolicitadoList.XmlSave();
             //fim servicos
 
             //hospedagem
@@ -82,7 +79,6 @@ namespace Pont_Finder.classes
             alimentos.CompanyList.XmlSave();
             alimentos.classes.EvaluationList.XmlSave();
             alimentos.ListCardapio.XmlSave();
-            alimentos.classes.ListPedidos.XmlSave();
             //fim Alimentos
 
         }

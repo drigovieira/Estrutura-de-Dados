@@ -12,7 +12,7 @@ namespace Pont_Finder.servicos.classes
             imagem,
             rua,
             bairro,
-            descricao,
+            descrição,
             status;
         private int
             id,
@@ -28,7 +28,7 @@ namespace Pont_Finder.servicos.classes
         public string Imagem { get => imagem; set => imagem = value; }
         public string Rua { get => rua; set => rua = value; }
         public string Bairro { get => bairro; set => bairro = value; }
-        public string Descricao { get => descricao; set => descricao = value; }
+        public string Descrição { get => descrição; set => descrição = value; }
         public string Status { get => status; set => status = value; }
         public int Id { get => id; set => id = value; }
         public int Numero { get => numero; set => numero = value; }
