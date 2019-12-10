@@ -32,7 +32,14 @@ namespace Pont_Finder.hospedagem.classes
 
         public static Reserva SelectId(int id)
         {
-            return reservas[id];
+            foreach (var item in reservas)
+            {
+                if (item.Id == id)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
 
         public static List<Reserva> selectAll()
@@ -64,8 +71,8 @@ namespace Pont_Finder.hospedagem.classes
 
             foreach (var item in reservas)
             {
-                if(item.Status == true)
-                { 
+                if (item.Status == true)
+                {
                     Reserva r = new Reserva();
 
                     r.Id = item.Id;
@@ -174,6 +181,73 @@ namespace Pont_Finder.hospedagem.classes
                 doc.Save(caminho);
             }
 
+        }
+
+        public static List<Quarto> Tops()
+        {
+            
+            List <int[]> lista = new List<int[]>();
+
+            foreach (var item in reservas)
+            {
+                bool achou = false;
+
+                foreach (var item2 in lista)
+                {
+                    if (item.IdQuarto == item2[0])
+                    {
+                        item2[1]++;
+                        achou = true;
+                        break;
+                    }
+                }
+
+                if (!achou)
+                {
+                    int[] vetor = { item.IdQuarto, 1 };
+                    lista.Add(vetor);
+                }
+
+
+            }
+
+            int[] ids = new int[lista.Count];
+            int[] quant = new int[lista.Count];
+
+            int cont = 0;
+            foreach (var item in lista)
+            {
+                ids[cont] = item[0];
+                quant[cont] = item[1];
+                cont++;
+            }
+
+            for (int i = 0; i < quant.Length; i++)
+            {
+                for (int j = 0; j < quant.Length; j++)
+                {
+                    if (quant[i] < quant[j])
+                    {
+                        int tmp = quant[i];
+                        quant[i] = quant[j];
+                        quant[j] = tmp;
+
+                        int id = ids[i];
+                        ids[i] = ids[j];
+                        ids[j] = id;
+                    }
+                }
+            }
+
+            List<Quarto> top = new List<Quarto>();
+
+            foreach (var item in ids)
+            {
+                top.Add(roomList.SelectId(item));
+            }
+            top.Reverse();
+
+            return top;
         }
 
     }

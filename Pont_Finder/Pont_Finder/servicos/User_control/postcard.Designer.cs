@@ -79,13 +79,15 @@
             // 
             // lb_username
             // 
-            this.lb_username.AutoSize = true;
             this.lb_username.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_username.Location = new System.Drawing.Point(539, 32);
+            this.lb_username.Location = new System.Drawing.Point(537, 15);
+            this.lb_username.MaximumSize = new System.Drawing.Size(71, 50);
+            this.lb_username.MinimumSize = new System.Drawing.Size(71, 50);
             this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(30, 16);
+            this.lb_username.Size = new System.Drawing.Size(71, 50);
             this.lb_username.TabIndex = 25;
             this.lb_username.Text = "user";
+            this.lb_username.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // bt_obter
             // 
@@ -93,7 +95,7 @@
             this.bt_obter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_obter.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.bt_obter.ForeColor = System.Drawing.Color.White;
-            this.bt_obter.Location = new System.Drawing.Point(483, 133);
+            this.bt_obter.Location = new System.Drawing.Point(484, 136);
             this.bt_obter.Margin = new System.Windows.Forms.Padding(15);
             this.bt_obter.Name = "bt_obter";
             this.bt_obter.Size = new System.Drawing.Size(127, 32);
@@ -107,7 +109,7 @@
             this.lb_valor.AutoSize = true;
             this.lb_valor.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_valor.ForeColor = System.Drawing.Color.Green;
-            this.lb_valor.Location = new System.Drawing.Point(477, 84);
+            this.lb_valor.Location = new System.Drawing.Point(478, 80);
             this.lb_valor.Margin = new System.Windows.Forms.Padding(15);
             this.lb_valor.Name = "lb_valor";
             this.lb_valor.Size = new System.Drawing.Size(81, 36);

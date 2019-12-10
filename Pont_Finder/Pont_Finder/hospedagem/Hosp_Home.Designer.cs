@@ -61,7 +61,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pn_propa_externa = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel_tops = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bt_ant = new System.Windows.Forms.Button();
@@ -459,13 +459,13 @@
             this.pn_propa_externa.Size = new System.Drawing.Size(310, 250);
             this.pn_propa_externa.TabIndex = 32;
             // 
-            // panel5
+            // panel_tops
             // 
-            this.panel5.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel5.Location = new System.Drawing.Point(950, 301);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 323);
-            this.panel5.TabIndex = 41;
+            this.panel_tops.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel_tops.Location = new System.Drawing.Point(950, 301);
+            this.panel_tops.Name = "panel_tops";
+            this.panel_tops.Size = new System.Drawing.Size(310, 323);
+            this.panel_tops.TabIndex = 41;
             // 
             // label16
             // 
@@ -643,7 +643,7 @@
             this.Controls.Add(this.bt_ant);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel_tops);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel10);
@@ -707,7 +707,7 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel pn_propa_externa;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel_tops;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button Btn_Edit_Empresa;
         private System.Windows.Forms.Button bt_gerenciar_quartos;

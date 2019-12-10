@@ -28,31 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lb_categoria = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.lb_servico = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pb_icone = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icone)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lb_categoria
-            // 
-            this.lb_categoria.AutoSize = true;
-            this.lb_categoria.Location = new System.Drawing.Point(73, 52);
-            this.lb_categoria.Name = "lb_categoria";
-            this.lb_categoria.Size = new System.Drawing.Size(33, 13);
-            this.lb_categoria.TabIndex = 9;
-            this.lb_categoria.Text = "value";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(73, 37);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Categoria";
             // 
             // lb_servico
             // 
@@ -88,8 +68,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.lb_categoria);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.lb_servico);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pb_icone);
@@ -103,9 +81,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lb_categoria;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lb_servico;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pb_icone;

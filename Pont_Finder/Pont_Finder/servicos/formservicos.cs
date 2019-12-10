@@ -44,18 +44,22 @@ namespace Pont_Finder.servicos
         private void Formservicos_Load(object sender, EventArgs e)
         {
             panel_tops.Controls.Clear();
-            int i = 0;
-            y = 5;
+            int ii = 0;
+            int yy = 5;
             foreach (var item in classes.PostList.top())
             {
-                if (i >= 5)
+                if (ii >= 5)
                     break;
                 User_control.ControlTops a = new User_control.ControlTops(item.Id);
-                a.Location = new Point(6, (y));
-                y = y + a.Height + 5;
+                a.Location = new Point(6, (yy));
+                yy = yy + a.Height + 5;
 
                 panel_tops.Controls.Add(a);
+                ii++;
             }
+
+
+
             Propaganda_modulos prop = new Propaganda_modulos();
             prop.Location = new Point(5, 25);
             painel_propaganda.Controls.Add(prop);

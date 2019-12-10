@@ -74,6 +74,22 @@ namespace Pont_Finder.hospedagem
 
         private void Hosp_Home_Load(object sender, EventArgs e)
         {
+            panel_tops.Controls.Clear();
+
+            int j = 0;
+            int k = 5;
+            foreach (var item in classes.reserveList.Tops())
+            {
+                if (j >= 5)
+                    break;
+                data.inc.Control_Top5 a = new data.inc.Control_Top5(item.ID);
+                a.Location = new Point(6, (k));
+                k = k + a.Height + 5;
+                panel_tops.Controls.Add(a);
+                j++;
+            }
+
+
             int i = 0;
 
             foreach (var item in ListadeQuartos)
