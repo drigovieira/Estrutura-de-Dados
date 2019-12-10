@@ -57,10 +57,16 @@
             this.mkb_telefone = new System.Windows.Forms.MaskedTextBox();
             this.mkb_cnpj = new System.Windows.Forms.MaskedTextBox();
             this.btn_back = new System.Windows.Forms.PictureBox();
+            this.bt_imagem = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Bimagem = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.openIcone = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bimagem)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -99,7 +105,7 @@
             // Bemail
             // 
             this.Bemail.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bemail.Location = new System.Drawing.Point(105, 423);
+            this.Bemail.Location = new System.Drawing.Point(103, 564);
             this.Bemail.Name = "Bemail";
             this.Bemail.Size = new System.Drawing.Size(415, 24);
             this.Bemail.TabIndex = 5;
@@ -109,7 +115,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(101, 247);
+            this.label4.Location = new System.Drawing.Point(99, 388);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 21);
             this.label4.TabIndex = 7;
@@ -118,7 +124,7 @@
             // Bnomefantasia
             // 
             this.Bnomefantasia.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bnomefantasia.Location = new System.Drawing.Point(105, 123);
+            this.Bnomefantasia.Location = new System.Drawing.Point(103, 264);
             this.Bnomefantasia.Name = "Bnomefantasia";
             this.Bnomefantasia.Size = new System.Drawing.Size(415, 24);
             this.Bnomefantasia.TabIndex = 1;
@@ -128,7 +134,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(105, 394);
+            this.label3.Location = new System.Drawing.Point(103, 535);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 21);
             this.label3.TabIndex = 5;
@@ -137,7 +143,7 @@
             // Bendereco
             // 
             this.Bendereco.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bendereco.Location = new System.Drawing.Point(105, 270);
+            this.Bendereco.Location = new System.Drawing.Point(103, 411);
             this.Bendereco.Name = "Bendereco";
             this.Bendereco.Size = new System.Drawing.Size(415, 24);
             this.Bendereco.TabIndex = 3;
@@ -148,7 +154,7 @@
             this.label7.AutoSize = true;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label7.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(112, 319);
+            this.label7.Location = new System.Drawing.Point(110, 460);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 21);
             this.label7.TabIndex = 14;
@@ -167,7 +173,7 @@
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(105, 100);
+            this.label2.Location = new System.Drawing.Point(103, 241);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 21);
             this.label2.TabIndex = 3;
@@ -179,7 +185,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(164, 745);
+            this.button1.Location = new System.Drawing.Point(179, 885);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 40);
             this.button1.TabIndex = 6;
@@ -191,7 +197,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(101, 177);
+            this.label5.Location = new System.Drawing.Point(99, 318);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 21);
             this.label5.TabIndex = 9;
@@ -200,7 +206,7 @@
             // Bnomeempresa
             // 
             this.Bnomeempresa.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bnomeempresa.Location = new System.Drawing.Point(105, 48);
+            this.Bnomeempresa.Location = new System.Drawing.Point(103, 189);
             this.Bnomeempresa.Name = "Bnomeempresa";
             this.Bnomeempresa.Size = new System.Drawing.Size(415, 24);
             this.Bnomeempresa.TabIndex = 0;
@@ -212,7 +218,7 @@
             this.bt_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cancelar.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cancelar.ForeColor = System.Drawing.Color.White;
-            this.bt_cancelar.Location = new System.Drawing.Point(332, 745);
+            this.bt_cancelar.Location = new System.Drawing.Point(347, 885);
             this.bt_cancelar.Name = "bt_cancelar";
             this.bt_cancelar.Size = new System.Drawing.Size(120, 40);
             this.bt_cancelar.TabIndex = 7;
@@ -224,7 +230,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(101, 25);
+            this.label1.Location = new System.Drawing.Point(99, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 21);
             this.label1.TabIndex = 1;
@@ -245,7 +251,7 @@
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 1112);
+            this.panel5.Location = new System.Drawing.Point(0, 1253);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1265, 100);
             this.panel5.TabIndex = 35;
@@ -262,6 +268,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.bt_imagem);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.Bimagem);
             this.panel3.Controls.Add(this.label18);
             this.panel3.Controls.Add(this.ckb_termos_uso);
             this.panel3.Controls.Add(this.panel6);
@@ -281,14 +290,14 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(320, 303);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(625, 809);
+            this.panel3.Size = new System.Drawing.Size(625, 950);
             this.panel3.TabIndex = 34;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(75, 465);
+            this.label18.Location = new System.Drawing.Point(90, 605);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(124, 21);
             this.label18.TabIndex = 119;
@@ -298,7 +307,7 @@
             // 
             this.ckb_termos_uso.AutoSize = true;
             this.ckb_termos_uso.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckb_termos_uso.Location = new System.Drawing.Point(79, 694);
+            this.ckb_termos_uso.Location = new System.Drawing.Point(94, 834);
             this.ckb_termos_uso.Name = "ckb_termos_uso";
             this.ckb_termos_uso.Size = new System.Drawing.Size(257, 25);
             this.ckb_termos_uso.TabIndex = 117;
@@ -310,7 +319,7 @@
             this.panel6.AutoScroll = true;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.lb_descricao);
-            this.panel6.Location = new System.Drawing.Point(79, 490);
+            this.panel6.Location = new System.Drawing.Point(94, 630);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(460, 200);
             this.panel6.TabIndex = 118;
@@ -332,7 +341,7 @@
             // mkb_telefone
             // 
             this.mkb_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mkb_telefone.Location = new System.Drawing.Point(105, 358);
+            this.mkb_telefone.Location = new System.Drawing.Point(103, 499);
             this.mkb_telefone.Mask = "(99) 0000-00000";
             this.mkb_telefone.Name = "mkb_telefone";
             this.mkb_telefone.Size = new System.Drawing.Size(415, 22);
@@ -342,7 +351,7 @@
             // mkb_cnpj
             // 
             this.mkb_cnpj.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mkb_cnpj.Location = new System.Drawing.Point(109, 210);
+            this.mkb_cnpj.Location = new System.Drawing.Point(107, 351);
             this.mkb_cnpj.Mask = "99.999.999/9999-99";
             this.mkb_cnpj.Name = "mkb_cnpj";
             this.mkb_cnpj.Size = new System.Drawing.Size(411, 22);
@@ -361,6 +370,44 @@
             this.btn_back.TabIndex = 37;
             this.btn_back.TabStop = false;
             this.btn_back.Click += new System.EventHandler(this.Btn_back_Click);
+            // 
+            // bt_imagem
+            // 
+            this.bt_imagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_imagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_imagem.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_imagem.ForeColor = System.Drawing.Color.White;
+            this.bt_imagem.Location = new System.Drawing.Point(259, 71);
+            this.bt_imagem.Name = "bt_imagem";
+            this.bt_imagem.Size = new System.Drawing.Size(184, 34);
+            this.bt_imagem.TabIndex = 125;
+            this.bt_imagem.Text = "Selecionar imagem";
+            this.bt_imagem.UseVisualStyleBackColor = false;
+            this.bt_imagem.Click += new System.EventHandler(this.Bt_imagem_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(99, 6);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(140, 21);
+            this.label6.TabIndex = 124;
+            this.label6.Text = "Logo da empresa";
+            // 
+            // Bimagem
+            // 
+            this.Bimagem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Bimagem.Location = new System.Drawing.Point(103, 30);
+            this.Bimagem.Name = "Bimagem";
+            this.Bimagem.Size = new System.Drawing.Size(150, 120);
+            this.Bimagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Bimagem.TabIndex = 123;
+            this.Bimagem.TabStop = false;
+            // 
+            // openIcone
+            // 
+            this.openIcone.FileName = "openIcone";
             // 
             // CadEmpresa
             // 
@@ -390,6 +437,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bimagem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,5 +473,10 @@
         private System.Windows.Forms.CheckBox ckb_termos_uso;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label lb_descricao;
+        private System.Windows.Forms.Button bt_imagem;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox Bimagem;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.OpenFileDialog openIcone;
     }
 }

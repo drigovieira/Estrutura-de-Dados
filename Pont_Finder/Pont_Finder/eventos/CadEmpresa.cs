@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,10 +15,8 @@ namespace Pont_Finder.eventos
 {
     public partial class CadEmpresa : Form
     {
-
+        private bool img;
         
-
-
         public CadEmpresa()
         {
             
@@ -36,6 +36,29 @@ namespace Pont_Finder.eventos
 
 
             CaEmpresa postar = new CaEmpresa();
+
+
+            string link = "..//..//eventos//Data//imagens//offImage.jpg";
+
+            if (img)
+            {
+                if (!Directory.Exists("..//..//eventos//Data//imagens"))
+                    Directory.CreateDirectory("..//..//eventos//Data//imagens");
+
+                Bimagem.Load();
+
+                Bimagem.Image = Image.FromFile(openIcone.FileName);
+
+                Image bmp = new Bitmap(Bimagem.Image);
+
+                Image bmp2 = new Bitmap(bmp, Bimagem.Size);
+
+                Bimagem.Image = bmp2;
+
+                int id = Empresa_List.Poster.Count;
+                link = "..//..//eventos//Data//imagens//" + id + ".jpg";
+                Bimagem.Image.Save(link, ImageFormat.Jpeg);
+            }
 
 
             string p_nomeEmpresa = Bnomeempresa.Text;
@@ -105,6 +128,15 @@ namespace Pont_Finder.eventos
         private void Btn_back_Click(object sender, EventArgs e)
         {
             FormPrincipal.MudarForm("eventos", new eventos.FormEventos());
+        }
+
+        private void Bt_imagem_Click(object sender, EventArgs e)
+        {
+            if (openIcone.ShowDialog() == DialogResult.OK)
+            {
+                Bimagem.ImageLocation = openIcone.FileName;
+                img = true;
+            }
         }
     }
 }

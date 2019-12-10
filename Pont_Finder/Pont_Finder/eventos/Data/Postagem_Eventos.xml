@@ -3,169 +3,22 @@
   <postagem>
     <id>0</id>
     <idEmp>0</idEmp>
-    <ingresso_total>50</ingresso_total>
-    <ingresso_disponivel>10</ingresso_disponivel>
-    <nome>Festa do Odim</nome>
+    <ingresso_total>40</ingresso_total>
+    <ingresso_disponivel>40</ingresso_disponivel>
+    <nome>Festival de Música</nome>
     <imagem1>..//..//eventos//Data//imagens//0.jpg</imagem1>
     <imagem2>null</imagem2>
     <imagem3>null</imagem3>
     <imagem4>null</imagem4>
-    <descricao></descricao>
-    <categoria>TesteNull</categoria>
-    <data>22/11/2019</data>
-    <horario>23:22</horario>
-    <local>Casa do Miguel</local>
-    <idade>18+</idade>
-    <valor>89,50</valor>
-    <patrocinadores>RockStar, Amanco, Tigre</patrocinadores>
-    <ativo>false</ativo>
-    <likes></likes>
-  </postagem>
-  <postagem>
-    <id>1</id>
-    <idEmp>0</idEmp>
-    <ingresso_total>50</ingresso_total>
-    <ingresso_disponivel>50</ingresso_disponivel>
-    <nome>Jaccin</nome>
-    <imagem1>..//..//eventos//Data//imagens//1.jpg</imagem1>
-    <imagem2>null</imagem2>
-    <imagem3>null</imagem3>
-    <imagem4>null</imagem4>
-    <descricao></descricao>
-    <categoria>TesteNull</categoria>
-    <data>03/12/2019</data>
-    <horario>14:40</horario>
-    <local>R. Silva</local>
-    <idade>L</idade>
-    <valor>40</valor>
-    <patrocinadores>Bradesco</patrocinadores>
-    <ativo>true</ativo>
-    <likes></likes>
-  </postagem>
-  <postagem>
-    <id>2</id>
-    <idEmp>0</idEmp>
-    <ingresso_total>50</ingresso_total>
-    <ingresso_disponivel>50</ingresso_disponivel>
-    <nome>work</nome>
-    <imagem1>..//..//eventos//Data//imagens//offImage.jpg</imagem1>
-    <imagem2>null</imagem2>
-    <imagem3>null</imagem3>
-    <imagem4>null</imagem4>
-    <descricao></descricao>
-    <categoria>Workshop</categoria>
-    <data>00/00/0000</data>
-    <horario>12:00</horario>
-    <local>Rua</local>
-    <idade>12 </idade>
-    <valor>20</valor>
-    <patrocinadores>não sei</patrocinadores>
-    <ativo>true</ativo>
-    <likes></likes>
-  </postagem>
-  <postagem>
-    <id>3</id>
-    <idEmp>0</idEmp>
-    <ingresso_total>50</ingresso_total>
-    <ingresso_disponivel>50</ingresso_disponivel>
-    <nome>Mostra de Arte</nome>
-    <imagem1>C:\Users\cryptus\Documents\GitHub\Estrutura-de-Dados\Pont_Finder\Pont_Finder\eventos\Data\imagens\8.jpg</imagem1>
-    <imagem2>null</imagem2>
-    <imagem3>null</imagem3>
-    <imagem4>null</imagem4>
-    <descricao>Diversos Artistas</descricao>
-    <categoria>Cultural</categoria>
-    <data>11/12/2019</data>
-    <horario>09:00</horario>
-    <local>Museu</local>
-    <idade>12 </idade>
-    <valor>40</valor>
-    <patrocinadores>Instituto de Arte</patrocinadores>
-    <ativo>true</ativo>
-    <likes></likes>
-  </postagem>
-  <postagem>
-    <id>4</id>
-    <idEmp>0</idEmp>
-    <ingresso_total>50</ingresso_total>
-    <ingresso_disponivel>26</ingresso_disponivel>
-    <nome>Música ao Vivo</nome>
-    <imagem1>..//..//eventos//Data//imagens//4.jpg</imagem1>
-    <imagem2>null</imagem2>
-    <imagem3>null</imagem3>
-    <imagem4>null</imagem4>
-    <descricao>Bandas Tradicionais no Vale do Paraíba</descricao>
+    <descricao>Festival de música na cidade de Cruzeiro!</descricao>
     <categoria>Música</categoria>
-    <data>14/11/2019</data>
-    <horario>17:00</horario>
-    <local>Praça 9 de Julho</local>
-    <idade>L</idade>
-    <valor>20</valor>
-    <patrocinadores>Diversos</patrocinadores>
-    <ativo>true</ativo>
-    <likes>1,26835036010</likes>
-  </postagem>
-  <postagem>
-    <id>5</id>
-    <idEmp>0</idEmp>
-    <ingresso_total>10</ingresso_total>
-    <ingresso_disponivel>10</ingresso_disponivel>
-    <nome>Boleto</nome>
-    <imagem1>C:\Users\Miguel\Pictures\Projeto_Enari_design\boleto_exemplo.PNG</imagem1>
-    <imagem2>null</imagem2>
-    <imagem3>null</imagem3>
-    <imagem4>null</imagem4>
-    <descricao>Boleto gerado com sucesso!</descricao>
-    <categoria>Tecnologia</categoria>
-    <data>07/12/2019</data>
-    <horario>  :</horario>
-    <local>Fatec Cruzeiro</local>
-    <idade>L</idade>
-    <valor>20</valor>
-    <patrocinadores>Leo, Jhonatan</patrocinadores>
-    <ativo>true</ativo>
-    <likes>1,26835036010</likes>
-  </postagem>
-  <postagem>
-    <id>6</id>
-    <idEmp>0</idEmp>
-    <ingresso_total>30</ingresso_total>
-    <ingresso_disponivel>30</ingresso_disponivel>
-    <nome>Fim de ano</nome>
-    <imagem1>C:\Users\Miguel\Pictures\Projeto_Enari_design\evento_2.1.jpg</imagem1>
-    <imagem2>null</imagem2>
-    <imagem3>null</imagem3>
-    <imagem4>null</imagem4>
-    <descricao>Festa de fim de ano!</descricao>
-    <categoria>Cultural</categoria>
-    <data>31/12/2019</data>
-    <horario>  :</horario>
+    <data>22/12/2019</data>
+    <horario></horario>
     <local>Cruzeiro - SP</local>
-    <idade>L</idade>
+    <idade>12 </idade>
     <valor>20</valor>
     <patrocinadores>Prefeitura</patrocinadores>
     <ativo>true</ativo>
-    <likes>1,47746352863*1,26835036010</likes>
-  </postagem>
-  <postagem>
-    <id>7</id>
-    <idEmp>0</idEmp>
-    <ingresso_total>10</ingresso_total>
-    <ingresso_disponivel>10</ingresso_disponivel>
-    <nome>Snickle</nome>
-    <imagem1>..//..//eventos//Data//imagens//7.jpg</imagem1>
-    <imagem2>null</imagem2>
-    <imagem3>null</imagem3>
-    <imagem4>null</imagem4>
-    <descricao>Um snickles para todos</descricao>
-    <categoria>Gastronomia</categoria>
-    <data>08/12/2019</data>
-    <horario></horario>
-    <local>Cruzeiro</local>
-    <idade>L</idade>
-    <valor>30</valor>
-    <patrocinadores>Ninguém</patrocinadores>
-    <ativo>true</ativo>
-    <likes>-1,47746352863*1,26835036010</likes>
+    <likes></likes>
   </postagem>
 </postagens>

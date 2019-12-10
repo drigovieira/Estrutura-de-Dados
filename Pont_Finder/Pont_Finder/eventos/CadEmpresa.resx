@@ -8639,6 +8639,12 @@ Toda empresa cadastrada nos módulos: alimentos, serviços, hospedagem e/ou even
 Publicidade:
 Uma outra forma também será por meio de propagandas onde ao entrar em contato com a equipe do Point Finder que será responsável por gerenciar as propagandas inseridas nos módulos, onde será feito um plano com o proprietário que deseja anunciar seu serviços. Os planos de publicidade são divididos em 3 níveis onde cada nível tem um valor determinado. O nível 1 será o mais básico e a progandanda do serviço será exibida em somente um módulo, no nível 2 a propaganda será exibida em até 3 módulos, já no nível 3 será exibido em todos os módulos. </value>
   </data>
+  <metadata name="backgroundWorker2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>235, 17</value>
+  </metadata>
+  <metadata name="openIcone.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>399, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
