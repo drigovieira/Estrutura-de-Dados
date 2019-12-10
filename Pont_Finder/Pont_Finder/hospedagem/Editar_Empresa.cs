@@ -63,6 +63,7 @@ namespace Pont_Finder.hospedagem
             emp.Cep = Convert.ToInt32(mkb_cep.Text);
             emp.Telefone = long.Parse(mkb_phone.Text);
             emp.Descricao = tb_descricaoHotel.Text;
+            emp.Email = tb_email.Text;
 
             MessageBox.Show("Empresa atualizada!");
 
