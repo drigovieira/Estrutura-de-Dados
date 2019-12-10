@@ -7,8 +7,74 @@
     <preco>10</preco>
     <nome>teste</nome>
     <image>..//..//alimentos//data//image//cardapio//0.jpg</image>
-    <qtd>10.5</qtd>
+    <qtd>105</qtd>
     <ingredientes>testeestepega</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>1</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>50</preco>
+    <nome>Porção de Camarão</nome>
+    <image>..//..//alimentos//data//image//cardapio//2.jpg</image>
+    <qtd>0.5</qtd>
+    <ingredientes>camarão</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>2</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>60</preco>
+    <nome>Caranguejada</nome>
+    <image>..//..//alimentos//data//image//cardapio//3.jpg</image>
+    <qtd>1</qtd>
+    <ingredientes>caranguejofarofamolho da casa</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>3</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>9</preco>
+    <nome>Casquinha de Siri</nome>
+    <image>..//..//alimentos//data//image//cardapio//4.jpg</image>
+    <qtd>0.3</qtd>
+    <ingredientes>carne de siri</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>4</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>80</preco>
+    <nome>Lagosta </nome>
+    <image>..//..//alimentos//data//image//cardapio//5.jpg</image>
+    <qtd>1</qtd>
+    <ingredientes>lagostatempero nordestino</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>5</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>80</preco>
+    <nome>Mariscada</nome>
+    <image>..//..//alimentos//data//image//cardapio//6.jpg</image>
+    <qtd>0.8</qtd>
+    <ingredientes>mariscos frescoscamarão 7 barbas</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>6</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>38</preco>
+    <nome>Ostras</nome>
+    <image>..//..//alimentos//data//image//cardapio//7.jpg</image>
+    <qtd>0.3</qtd>
+    <ingredientes>ostraslimão</ingredientes>
     <status>true</status>
   </cardapio>
 </ListCardapio>
