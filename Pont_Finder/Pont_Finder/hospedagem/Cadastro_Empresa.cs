@@ -33,7 +33,7 @@ namespace Pont_Finder.hospedagem
 
         private void Cadastro_Empresa_Load(object sender, EventArgs e)
         {
-
+            fotin = null;
         }
 
         public void UpdateGallery(string fotona)

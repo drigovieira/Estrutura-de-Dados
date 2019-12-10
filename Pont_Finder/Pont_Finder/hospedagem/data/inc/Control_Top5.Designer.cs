@@ -37,7 +37,7 @@
             // lb_servico
             // 
             this.lb_servico.AutoSize = true;
-            this.lb_servico.Location = new System.Drawing.Point(73, 20);
+            this.lb_servico.Location = new System.Drawing.Point(73, 34);
             this.lb_servico.Name = "lb_servico";
             this.lb_servico.Size = new System.Drawing.Size(33, 13);
             this.lb_servico.TabIndex = 7;
@@ -46,9 +46,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 3);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(73, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 13);
+            this.label1.Size = new System.Drawing.Size(102, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Nome do serviço";
             // 

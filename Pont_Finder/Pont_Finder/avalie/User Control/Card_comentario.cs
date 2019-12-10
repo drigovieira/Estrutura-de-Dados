@@ -21,10 +21,10 @@ namespace Pont_Finder.avalie.User_Control
 
         long postid;
 
-        public Card_comentario(long postid)
+        public Card_comentario(long idcoment)
         {
             InitializeComponent();
-            comentario = classes.ComentariosList.thisPostId(postid);
+            comentario = classes.ComentariosList.thisPostId(idcoment);
             this.postid = postid;
 
             

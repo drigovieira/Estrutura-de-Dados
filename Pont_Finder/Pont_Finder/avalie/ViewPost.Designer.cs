@@ -43,7 +43,6 @@
             this.tb_problema = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             this.lb_deslike = new System.Windows.Forms.Label();
             this.lb_like = new System.Windows.Forms.Label();
             this.pb_down = new System.Windows.Forms.PictureBox();
@@ -67,10 +66,10 @@
             this.lb_pag = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.checado = new System.Windows.Forms.PictureBox();
+            this.imagemuser = new Pont_Finder.classes.CircularPicBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).BeginInit();
@@ -78,6 +77,7 @@
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).BeginInit();
             this.SuspendLayout();
             // 
             // openIcone
@@ -87,9 +87,9 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 837);
+            this.panel2.Location = new System.Drawing.Point(0, 1039);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1282, 100);
+            this.panel2.Size = new System.Drawing.Size(1299, 100);
             this.panel2.TabIndex = 24;
             // 
             // openFileDialog2
@@ -110,7 +110,7 @@
             this.pictureBox1.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(69, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(69, 263);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 94;
@@ -129,7 +129,7 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.panel5);
-            this.panel3.Location = new System.Drawing.Point(115, 61);
+            this.panel3.Location = new System.Drawing.Point(115, 263);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1010, 445);
             this.panel3.TabIndex = 93;
@@ -224,16 +224,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(312, 445);
             this.panel4.TabIndex = 110;
-            // 
-            // imagemuser
-            // 
-            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imagemuser.Location = new System.Drawing.Point(17, 11);
-            this.imagemuser.Name = "imagemuser";
-            this.imagemuser.Size = new System.Drawing.Size(56, 53);
-            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagemuser.TabIndex = 109;
-            this.imagemuser.TabStop = false;
             // 
             // lb_deslike
             // 
@@ -380,7 +370,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(111, 26);
+            this.label4.Location = new System.Drawing.Point(111, 228);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 27);
             this.label4.TabIndex = 86;
@@ -477,7 +467,7 @@
             this.panel1.Controls.Add(this.painelcoment);
             this.panel1.Controls.Add(this.bt_ant);
             this.panel1.Controls.Add(this.bt_prox);
-            this.panel1.Location = new System.Drawing.Point(115, 512);
+            this.panel1.Location = new System.Drawing.Point(115, 714);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1010, 325);
             this.panel1.TabIndex = 96;
@@ -512,12 +502,22 @@
             // 
             this.checado.BackColor = System.Drawing.Color.Transparent;
             this.checado.Image = global::Pont_Finder.Properties.Resources.Checked_icon;
-            this.checado.Location = new System.Drawing.Point(1081, 12);
+            this.checado.Location = new System.Drawing.Point(1081, 214);
             this.checado.Name = "checado";
             this.checado.Size = new System.Drawing.Size(44, 41);
             this.checado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.checado.TabIndex = 97;
             this.checado.TabStop = false;
+            // 
+            // imagemuser
+            // 
+            this.imagemuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemuser.Location = new System.Drawing.Point(17, 11);
+            this.imagemuser.Name = "imagemuser";
+            this.imagemuser.Size = new System.Drawing.Size(56, 53);
+            this.imagemuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagemuser.TabIndex = 109;
+            this.imagemuser.TabStop = false;
             // 
             // ViewPost
             // 
@@ -525,7 +525,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1316, 675);
             this.Controls.Add(this.checado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -541,7 +541,6 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_imagem)).EndInit();
@@ -552,6 +551,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemuser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

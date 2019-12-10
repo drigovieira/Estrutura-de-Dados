@@ -55,6 +55,7 @@
             this.lb_rs.Size = new System.Drawing.Size(57, 42);
             this.lb_rs.TabIndex = 62;
             this.lb_rs.Text = "R$";
+            this.lb_rs.Click += new System.EventHandler(this.lb_rs_Click);
             // 
             // pb_hotel
             // 
