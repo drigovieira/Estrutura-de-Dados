@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ListPedidos>
+  <pedido>
+    <id>0</id>
+    <idEmpresa>0</idEmpresa>
+    <numero>51</numero>
+    <rua>rua 1</rua>
+    <nome>admin</nome>
+    <referencia>toma</referencia>
+    <observacoes>Deu</observacoes>
+    <pedidos>teste x 2</pedidos>
+    <cpf>26835036010</cpf>
+    <valor>20</valor>
+    <pagamento>Troco para: R$ 30,00</pagamento>
+  </pedido>
+  <pedido>
+    <id>1</id>
+    <idEmpresa>0</idEmpresa>
+    <numero>77</numero>
+    <rua>rua 2</rua>
+    <nome>admin</nome>
+    <referencia>ref</referencia>
+    <observacoes>obs</observacoes>
+    <pedidos>teste x 1,teste x 1,teste x 1,teste x 1,teste x 1</pedidos>
+    <cpf>26835036010</cpf>
+    <valor>10</valor>
+    <pagamento>Troco para: R$ 10,00</pagamento>
+  </pedido>
+</ListPedidos>

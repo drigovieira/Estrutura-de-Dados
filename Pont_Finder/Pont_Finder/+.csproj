@@ -1098,6 +1098,7 @@
     <Content Include="alimentos\data\evaluation.xml" />
     <Content Include="alimentos\data\image\cardapio\offImage.jpg" />
     <Content Include="alimentos\data\image\empresas\offImage.jpg" />
+    <Content Include="alimentos\data\pedidos.xml" />
     <Content Include="avalie\data\comentarios.xml" />
     <Content Include="avalie\data\imagens\posts\offImage.jpg" />
     <Content Include="avalie\data\postagens.xml" />
