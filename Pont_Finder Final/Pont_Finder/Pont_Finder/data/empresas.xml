@@ -170,24 +170,6 @@ Os quartos do hotel dispõem de TV de tela plana, janelas com isolamento acústi
     <status>true</status>
   </hospedagem>
   <alimentos>
-    <nome>empresa teste</nome>
-    <nomeFantasia>nome teste</nomeFantasia>
-    <email>teste@teste.com</email>
-    <rua>rua teste</rua>
-    <bairro>bairro teste</bairro>
-    <image>..//..//alimentos//data//image//empresas//teste@teste.com.jpg</image>
-    <categorias>Churrascaria,Petiscaria,Churrascaria,Petiscaria</categorias>
-    <funcionamento>Segunda - Feira,10/12/2019 12:00:00,10/12/2019 20:00:00*Terça - Feira,10/12/2019 12:00:00,10/12/2019 18:00:00*Quarta - Feira,10/12/2019 12:00:00,10/12/2019 20:00:00*Quinta - Feira,10/12/2019 12:00:00,10/12/2019 20:00:00*Sexta - Feira,10/12/2019 12:00:00,10/12/2019 20:00:00</funcionamento>
-    <numero>123</numero>
-    <cep>11111111</cep>
-    <id>0</id>
-    <telComercial>1111111111</telComercial>
-    <cpf>26835036010</cpf>
-    <status>true</status>
-    <statusCardapio>true</statusCardapio>
-    <statusEntrega>true</statusEntrega>
-  </alimentos>
-  <alimentos>
     <nome>Restaurante Kung Peixe</nome>
     <nomeFantasia>Restaurante Kung Peixe</nomeFantasia>
     <email>kung@gmail.com</email>

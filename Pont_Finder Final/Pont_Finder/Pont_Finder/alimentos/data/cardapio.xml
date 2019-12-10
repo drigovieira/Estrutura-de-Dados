@@ -1,17 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ListCardapio>
   <cardapio>
-    <id>0</id>
-    <idEmpresa>0</idEmpresa>
-    <quantos>0</quantos>
-    <preco>5</preco>
-    <nome>a</nome>
-    <image>..//..//alimentos//data//image//cardapio//0.jpg</image>
-    <qtd>10</qtd>
-    <ingredientes>b,c,d</ingredientes>
-    <status>true</status>
-  </cardapio>
-  <cardapio>
     <id>1</id>
     <idEmpresa>1</idEmpresa>
     <quantos>0</quantos>
