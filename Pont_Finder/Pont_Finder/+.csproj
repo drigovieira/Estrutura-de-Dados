@@ -1094,6 +1094,7 @@
     <Folder Include="servicos\data\images\empresas\capas\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="alimentos\data\cardapio.xml" />
     <Content Include="alimentos\data\evaluation.xml" />
     <Content Include="alimentos\data\image\cardapio\offImage.jpg" />
     <Content Include="alimentos\data\image\empresas\offImage.jpg" />

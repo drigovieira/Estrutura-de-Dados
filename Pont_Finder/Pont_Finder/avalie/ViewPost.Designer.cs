@@ -87,7 +87,7 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 1039);
+            this.panel2.Location = new System.Drawing.Point(0, 851);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1299, 100);
             this.panel2.TabIndex = 24;
@@ -110,7 +110,7 @@
             this.pictureBox1.BackgroundImage = global::Pont_Finder.Properties.Resources.back_1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(69, 263);
+            this.pictureBox1.Location = new System.Drawing.Point(69, 59);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 94;
@@ -129,7 +129,7 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.panel5);
-            this.panel3.Location = new System.Drawing.Point(115, 263);
+            this.panel3.Location = new System.Drawing.Point(115, 59);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1010, 445);
             this.panel3.TabIndex = 93;
@@ -370,7 +370,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(111, 228);
+            this.label4.Location = new System.Drawing.Point(111, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 27);
             this.label4.TabIndex = 86;
@@ -467,7 +467,7 @@
             this.panel1.Controls.Add(this.painelcoment);
             this.panel1.Controls.Add(this.bt_ant);
             this.panel1.Controls.Add(this.bt_prox);
-            this.panel1.Location = new System.Drawing.Point(115, 714);
+            this.panel1.Location = new System.Drawing.Point(115, 526);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1010, 325);
             this.panel1.TabIndex = 96;
@@ -502,7 +502,7 @@
             // 
             this.checado.BackColor = System.Drawing.Color.Transparent;
             this.checado.Image = global::Pont_Finder.Properties.Resources.Checked_icon;
-            this.checado.Location = new System.Drawing.Point(1081, 214);
+            this.checado.Location = new System.Drawing.Point(1081, 12);
             this.checado.Name = "checado";
             this.checado.Size = new System.Drawing.Size(44, 41);
             this.checado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

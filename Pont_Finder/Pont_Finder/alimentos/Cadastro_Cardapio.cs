@@ -41,7 +41,6 @@ namespace Pont_Finder.alimentos
                 {
                     Cardapio menu = new Cardapio();
                     menu.Nome = tb_nome.Text;
-                    menu.Categoria = categorias;
                     menu.Qtd = float.Parse(tb_qtdprato.Text);
                     menu.Ingredientes = ingredientesList;
                     menu.Preco = float.Parse(input_valor.Text);

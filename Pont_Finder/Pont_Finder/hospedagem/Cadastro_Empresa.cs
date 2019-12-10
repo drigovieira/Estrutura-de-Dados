@@ -30,7 +30,6 @@ namespace Pont_Finder.hospedagem
             pb_logo.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-
         private void Cadastro_Empresa_Load(object sender, EventArgs e)
         {
             fotin = null;

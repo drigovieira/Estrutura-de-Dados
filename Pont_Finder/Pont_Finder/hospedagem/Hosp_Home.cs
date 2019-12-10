@@ -25,7 +25,8 @@ namespace Pont_Finder.hospedagem
 
             InitializeComponent();
 
-            dateTimePicker2.Text = "" + dateTimePicker2.Value.AddDays(1);
+            dateTimePicker1.MinDate = DateTime.Now;
+            dateTimePicker2.MinDate = dateTimePicker2.Value.AddDays(1);
 
             bt_Cad_Empresa.Visible = true;
             Btn_Edit_Empresa.Visible = false;
@@ -490,6 +491,62 @@ namespace Pont_Finder.hospedagem
             {
                 MessageBox.Show("Você precisa fazer login para acessar a lista de reservas!");
             }
+        }
+
+        private void bt_limpar_Click(object sender, EventArgs e)
+        {
+            rb_casal.Checked = false;
+            rb_solteiro.Checked = false;
+            rb_outros.Checked = false;
+
+            tb_pesquisar.Text = "";
+
+            dateTimePicker1.Value = DateTime.Now;
+            dateTimePicker2.Value = DateTime.Now.AddDays(1);
+
+            ListadeQuartos.Clear();
+            foreach (var item in roomList.Quartos)
+            {
+                if (item.NomeQuarto.ToLower().Trim().Contains(tb_pesquisar.Text.ToLower().Trim()))
+                {
+                    ListadeQuartos.Add(item);
+                }
+            }
+
+            y = 5;
+            panel_center.Height = 180;
+            panel_center.Controls.Clear();
+            int i = 0;
+
+            ListadeQuartos.Reverse();
+
+            pagTotal = ListadeQuartos.Count;
+            if ((pagTotal % pagQuant) != 0)
+            {
+                pagTotal = (pagTotal / pagQuant);
+                pagTotal++;
+            }
+            else
+            {
+                pagTotal = pagTotal / pagQuant;
+            }
+            pagAtual = 1;
+
+            lb_pag.Text = "Pagina " + pagAtual + " de " + pagTotal;
+
+
+            foreach (var item in ListadeQuartos)
+            {
+                if (i >= pagQuant)
+                    break;
+                Hosp_PostCard a = new Hosp_PostCard(item.ID);
+                a.Location = new Point(0, (y));
+                y = y + a.Height + 5;
+                panel_center.Height = panel_center.Height + 180;
+                panel_center.Controls.Add(a);
+                i++;
+            }
+
         }
     }
 }
