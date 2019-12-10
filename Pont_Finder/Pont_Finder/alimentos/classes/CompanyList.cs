@@ -181,9 +181,10 @@ namespace Pont_Finder.alimentos
         public static void XmlSave()
         {
             XmlDrop();
-            string categorias = "";
+            
             foreach (var item in company)
-            {                
+            {
+                string categorias = "";
                 foreach (var i in item.Categoria) {
                     if (categorias.Equals(""))
                     {
