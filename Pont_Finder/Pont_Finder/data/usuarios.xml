@@ -184,4 +184,20 @@
     <image>..//..//data//images//users//offImage.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Hermany Silva</nome>
+    <email>hermany@gmail.com</email>
+    <senha>123</senha>
+    <cpf>41532222246</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Malcom Barbosa</nome>
+    <email>malcom@gmail.com</email>
+    <senha>123</senha>
+    <cpf>56886704010</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

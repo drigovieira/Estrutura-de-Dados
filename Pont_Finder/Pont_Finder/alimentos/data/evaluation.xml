@@ -1,22 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EvaluationList>
   <evaluation>
-    <id>0</id>
-    <idEmpresa>0</idEmpresa>
-    <nota>1</nota>
-    <tipo>like</tipo>
-  </evaluation>
-  <evaluation>
     <id>1</id>
     <idEmpresa>4</idEmpresa>
     <nota>1</nota>
     <tipo>deslike</tipo>
-  </evaluation>
-  <evaluation>
-    <id>2</id>
-    <idEmpresa>1</idEmpresa>
-    <nota>1</nota>
-    <tipo>like</tipo>
   </evaluation>
   <evaluation>
     <id>3</id>
@@ -49,12 +37,6 @@
     <tipo>like</tipo>
   </evaluation>
   <evaluation>
-    <id>8</id>
-    <idEmpresa>1</idEmpresa>
-    <nota>1</nota>
-    <tipo>like</tipo>
-  </evaluation>
-  <evaluation>
     <id>9</id>
     <idEmpresa>2</idEmpresa>
     <nota>1</nota>
@@ -69,12 +51,6 @@
   <evaluation>
     <id>11</id>
     <idEmpresa>5</idEmpresa>
-    <nota>1</nota>
-    <tipo>like</tipo>
-  </evaluation>
-  <evaluation>
-    <id>12</id>
-    <idEmpresa>1</idEmpresa>
     <nota>1</nota>
     <tipo>like</tipo>
   </evaluation>
@@ -109,12 +85,6 @@
     <tipo>like</tipo>
   </evaluation>
   <evaluation>
-    <id>18</id>
-    <idEmpresa>1</idEmpresa>
-    <nota>1</nota>
-    <tipo>like</tipo>
-  </evaluation>
-  <evaluation>
     <id>19</id>
     <idEmpresa>2</idEmpresa>
     <nota>1</nota>
@@ -145,12 +115,6 @@
     <tipo>like</tipo>
   </evaluation>
   <evaluation>
-    <id>24</id>
-    <idEmpresa>1</idEmpresa>
-    <nota>1</nota>
-    <tipo>like</tipo>
-  </evaluation>
-  <evaluation>
     <id>25</id>
     <idEmpresa>2</idEmpresa>
     <nota>1</nota>
@@ -177,12 +141,6 @@
   <evaluation>
     <id>29</id>
     <idEmpresa>6</idEmpresa>
-    <nota>1</nota>
-    <tipo>like</tipo>
-  </evaluation>
-  <evaluation>
-    <id>30</id>
-    <idEmpresa>1</idEmpresa>
     <nota>1</nota>
     <tipo>like</tipo>
   </evaluation>
@@ -219,6 +177,96 @@
   <evaluation>
     <id>36</id>
     <idEmpresa>7</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>32</id>
+    <idEmpresa>1</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>33</id>
+    <idEmpresa>2</idEmpresa>
+    <nota>1</nota>
+    <tipo>deslike</tipo>
+  </evaluation>
+  <evaluation>
+    <id>34</id>
+    <idEmpresa>3</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>35</id>
+    <idEmpresa>8</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>36</id>
+    <idEmpresa>4</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>36</id>
+    <idEmpresa>0</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>36</id>
+    <idEmpresa>1</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>37</id>
+    <idEmpresa>8</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>38</id>
+    <idEmpresa>2</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>39</id>
+    <idEmpresa>3</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>40</id>
+    <idEmpresa>4</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>41</id>
+    <idEmpresa>5</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>42</id>
+    <idEmpresa>6</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>43</id>
+    <idEmpresa>7</idEmpresa>
+    <nota>1</nota>
+    <tipo>like</tipo>
+  </evaluation>
+  <evaluation>
+    <id>44</id>
+    <idEmpresa>9</idEmpresa>
     <nota>1</nota>
     <tipo>like</tipo>
   </evaluation>

@@ -159,7 +159,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 2503);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1282, 100);
+            this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 72;
             // 
             // openIcone
@@ -1036,7 +1036,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.label16);
