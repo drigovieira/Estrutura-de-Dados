@@ -32,14 +32,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.rb_cartao = new System.Windows.Forms.RadioButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lb_nome_emp = new System.Windows.Forms.Label();
             this.rb_boleto = new System.Windows.Forms.RadioButton();
             this.lb_txt2 = new System.Windows.Forms.Label();
             this.lb_txt1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_center = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.lb_local = new System.Windows.Forms.Label();
             this.lb_data = new System.Windows.Forms.Label();
             this.lb_tipo_evento = new System.Windows.Forms.Label();
@@ -100,17 +98,6 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // lb_nome_emp
-            // 
-            this.lb_nome_emp.AutoSize = true;
-            this.lb_nome_emp.BackColor = System.Drawing.Color.Transparent;
-            this.lb_nome_emp.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nome_emp.Location = new System.Drawing.Point(98, 211);
-            this.lb_nome_emp.Name = "lb_nome_emp";
-            this.lb_nome_emp.Size = new System.Drawing.Size(118, 17);
-            this.lb_nome_emp.TabIndex = 9;
-            this.lb_nome_emp.Text = "Nome da empresa";
-            // 
             // rb_boleto
             // 
             this.rb_boleto.AutoSize = true;
@@ -166,11 +153,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.lb_local);
             this.panel4.Controls.Add(this.lb_data);
             this.panel4.Controls.Add(this.lb_tipo_evento);
-            this.panel4.Controls.Add(this.lb_nome_emp);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.pb_imagem);
             this.panel4.Controls.Add(this.lb_nome_evento);
@@ -178,19 +163,8 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(3, 74);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 271);
+            this.panel4.Size = new System.Drawing.Size(310, 177);
             this.panel4.TabIndex = 57;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 211);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 17);
-            this.label1.TabIndex = 53;
-            this.label1.Text = "Postado por:";
             // 
             // lb_local
             // 
@@ -206,7 +180,7 @@
             // 
             this.lb_data.AutoSize = true;
             this.lb_data.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_data.Location = new System.Drawing.Point(156, 67);
+            this.lb_data.Location = new System.Drawing.Point(156, 77);
             this.lb_data.Name = "lb_data";
             this.lb_data.Size = new System.Drawing.Size(40, 17);
             this.lb_data.TabIndex = 51;
@@ -270,7 +244,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(122, 67);
+            this.label3.Location = new System.Drawing.Point(122, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 17);
             this.label3.TabIndex = 2;
@@ -463,7 +437,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton rb_cartao;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lb_nome_emp;
         private System.Windows.Forms.RadioButton rb_boleto;
         private System.Windows.Forms.Label lb_txt2;
         private System.Windows.Forms.Label lb_txt1;
@@ -491,6 +464,5 @@
         private System.Windows.Forms.Label lb_valor_parcela;
         private System.Windows.Forms.Label lb_valor;
         private System.Windows.Forms.PictureBox btn_back;
-        private System.Windows.Forms.Label label1;
     }
 }

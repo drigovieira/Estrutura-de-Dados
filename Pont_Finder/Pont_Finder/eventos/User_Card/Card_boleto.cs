@@ -12,9 +12,11 @@ namespace Pont_Finder.eventos.User_Card
 {
     public partial class Card_boleto : UserControl
     {
-        public Card_boleto()
+        double valorBoleto;
+        public Card_boleto(long cpf,double valor)
         {
             InitializeComponent();
+            valorBoleto = valor;
         }
 
         private void Bt_finalizar_Click(object sender, EventArgs e)
@@ -22,7 +24,7 @@ namespace Pont_Finder.eventos.User_Card
             Classes.ComprEvento cm = new Classes.ComprEvento();
 
             MessageBox.Show("Compra Realizada Com Sucesso");
-            Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, cm.Valortotal);
+            Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, valorBoleto);
             bol.ShowDialog();
         }
 

@@ -17,6 +17,7 @@ namespace Pont_Finder.eventos
         private long idremove;
         
         long idpost;
+        Double valor;
 
 
 
@@ -36,7 +37,7 @@ namespace Pont_Finder.eventos
             lb_valor.Text = edit.Valor;
             lb_valor_parcela.Text = edit.Valor;
             lb_nome_evento.Text = edit.Nome;
-
+            valor = Double.Parse(edit.Valor);
            
         }
 
@@ -101,7 +102,7 @@ namespace Pont_Finder.eventos
                 Classes.ComprEvento cm = new Classes.ComprEvento();
                 if (rb_boleto.Checked)
                 {
-                    eventos.User_Card.Card_boleto boleto = new User_Card.Card_boleto();
+                    eventos.User_Card.Card_boleto boleto = new User_Card.Card_boleto(Session.Cpf, valor);
                     boleto.Location = new Point(0, 0);
                     panel_center.Controls.Add(boleto);
                 }

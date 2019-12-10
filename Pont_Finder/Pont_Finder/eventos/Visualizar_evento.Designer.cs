@@ -52,14 +52,8 @@
             this.lb_data = new System.Windows.Forms.Label();
             this.lb_categoria = new System.Windows.Forms.Label();
             this.lb_txt8 = new System.Windows.Forms.Label();
-            this.lb_txt12 = new System.Windows.Forms.Label();
-            this.pb_logo_emp = new System.Windows.Forms.PictureBox();
-            this.lb_emp_telefone = new System.Windows.Forms.Label();
-            this.lb_emp_endereco = new System.Windows.Forms.Label();
-            this.lb_emp_email = new System.Windows.Forms.Label();
             this.lb_txt9 = new System.Windows.Forms.Label();
             this.lb_txt10 = new System.Windows.Forms.Label();
-            this.lb_emp_fantasia = new System.Windows.Forms.Label();
             this.lb_txt11 = new System.Windows.Forms.Label();
             this.pb_principal = new System.Windows.Forms.PictureBox();
             this.lb_rs_boleto = new System.Windows.Forms.Label();
@@ -69,7 +63,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_principal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.SuspendLayout();
@@ -210,14 +203,8 @@
             this.panel4.Controls.Add(this.lb_data);
             this.panel4.Controls.Add(this.lb_categoria);
             this.panel4.Controls.Add(this.lb_txt8);
-            this.panel4.Controls.Add(this.lb_txt12);
-            this.panel4.Controls.Add(this.pb_logo_emp);
-            this.panel4.Controls.Add(this.lb_emp_telefone);
-            this.panel4.Controls.Add(this.lb_emp_endereco);
-            this.panel4.Controls.Add(this.lb_emp_email);
             this.panel4.Controls.Add(this.lb_txt9);
             this.panel4.Controls.Add(this.lb_txt10);
-            this.panel4.Controls.Add(this.lb_emp_fantasia);
             this.panel4.Controls.Add(this.lb_txt11);
             this.panel4.Location = new System.Drawing.Point(40, 451);
             this.panel4.Name = "panel4";
@@ -256,7 +243,7 @@
             this.bt_ant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_ant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_ant.ForeColor = System.Drawing.Color.Black;
-            this.bt_ant.Location = new System.Drawing.Point(16, 683);
+            this.bt_ant.Location = new System.Drawing.Point(16, 525);
             this.bt_ant.Name = "bt_ant";
             this.bt_ant.Size = new System.Drawing.Size(75, 23);
             this.bt_ant.TabIndex = 98;
@@ -270,7 +257,7 @@
             this.bt_prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_prox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_prox.ForeColor = System.Drawing.Color.Black;
-            this.bt_prox.Location = new System.Drawing.Point(466, 683);
+            this.bt_prox.Location = new System.Drawing.Point(466, 525);
             this.bt_prox.Name = "bt_prox";
             this.bt_prox.Size = new System.Drawing.Size(75, 23);
             this.bt_prox.TabIndex = 99;
@@ -280,7 +267,7 @@
             // lb_pag
             // 
             this.lb_pag.AutoSize = true;
-            this.lb_pag.Location = new System.Drawing.Point(248, 693);
+            this.lb_pag.Location = new System.Drawing.Point(248, 535);
             this.lb_pag.Name = "lb_pag";
             this.lb_pag.Size = new System.Drawing.Size(39, 13);
             this.lb_pag.TabIndex = 100;
@@ -290,7 +277,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(48, 568);
+            this.label6.Location = new System.Drawing.Point(48, 410);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(142, 27);
             this.label6.TabIndex = 97;
@@ -301,7 +288,7 @@
             this.painelcoment.AutoScroll = true;
             this.painelcoment.AutoSize = true;
             this.painelcoment.BackColor = System.Drawing.Color.Transparent;
-            this.painelcoment.Location = new System.Drawing.Point(17, 723);
+            this.painelcoment.Location = new System.Drawing.Point(17, 565);
             this.painelcoment.Name = "painelcoment";
             this.painelcoment.Size = new System.Drawing.Size(525, 24);
             this.painelcoment.TabIndex = 96;
@@ -366,56 +353,6 @@
             this.lb_txt8.TabIndex = 31;
             this.lb_txt8.Text = "Sobre o evento";
             // 
-            // lb_txt12
-            // 
-            this.lb_txt12.AutoSize = true;
-            this.lb_txt12.Font = new System.Drawing.Font("Microsoft PhagsPa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt12.Location = new System.Drawing.Point(55, 303);
-            this.lb_txt12.Name = "lb_txt12";
-            this.lb_txt12.Size = new System.Drawing.Size(174, 27);
-            this.lb_txt12.TabIndex = 30;
-            this.lb_txt12.Text = "Sobre a Empresa";
-            // 
-            // pb_logo_emp
-            // 
-            this.pb_logo_emp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_logo_emp.Location = new System.Drawing.Point(54, 355);
-            this.pb_logo_emp.Name = "pb_logo_emp";
-            this.pb_logo_emp.Size = new System.Drawing.Size(150, 125);
-            this.pb_logo_emp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_logo_emp.TabIndex = 27;
-            this.pb_logo_emp.TabStop = false;
-            // 
-            // lb_emp_telefone
-            // 
-            this.lb_emp_telefone.AutoSize = true;
-            this.lb_emp_telefone.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_emp_telefone.Location = new System.Drawing.Point(241, 462);
-            this.lb_emp_telefone.Name = "lb_emp_telefone";
-            this.lb_emp_telefone.Size = new System.Drawing.Size(89, 25);
-            this.lb_emp_telefone.TabIndex = 4;
-            this.lb_emp_telefone.Text = "Telefone";
-            // 
-            // lb_emp_endereco
-            // 
-            this.lb_emp_endereco.AutoSize = true;
-            this.lb_emp_endereco.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_emp_endereco.Location = new System.Drawing.Point(241, 423);
-            this.lb_emp_endereco.Name = "lb_emp_endereco";
-            this.lb_emp_endereco.Size = new System.Drawing.Size(95, 25);
-            this.lb_emp_endereco.TabIndex = 3;
-            this.lb_emp_endereco.Text = "Endereco";
-            // 
-            // lb_emp_email
-            // 
-            this.lb_emp_email.AutoSize = true;
-            this.lb_emp_email.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_emp_email.Location = new System.Drawing.Point(241, 384);
-            this.lb_emp_email.Name = "lb_emp_email";
-            this.lb_emp_email.Size = new System.Drawing.Size(67, 25);
-            this.lb_emp_email.TabIndex = 2;
-            this.lb_emp_email.Text = "E-mail";
-            // 
             // lb_txt9
             // 
             this.lb_txt9.AutoSize = true;
@@ -435,16 +372,6 @@
             this.lb_txt10.Size = new System.Drawing.Size(53, 24);
             this.lb_txt10.TabIndex = 22;
             this.lb_txt10.Text = "Data:";
-            // 
-            // lb_emp_fantasia
-            // 
-            this.lb_emp_fantasia.AutoSize = true;
-            this.lb_emp_fantasia.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_emp_fantasia.Location = new System.Drawing.Point(241, 348);
-            this.lb_emp_fantasia.Name = "lb_emp_fantasia";
-            this.lb_emp_fantasia.Size = new System.Drawing.Size(66, 25);
-            this.lb_emp_fantasia.TabIndex = 0;
-            this.lb_emp_fantasia.Text = "Nome";
             // 
             // lb_txt11
             // 
@@ -539,7 +466,6 @@
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_logo_emp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_principal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).EndInit();
             this.ResumeLayout(false);
@@ -556,14 +482,8 @@
         private System.Windows.Forms.Label lb_data;
         private System.Windows.Forms.Label lb_categoria;
         private System.Windows.Forms.Label lb_txt8;
-        private System.Windows.Forms.Label lb_txt12;
-        private System.Windows.Forms.PictureBox pb_logo_emp;
-        private System.Windows.Forms.Label lb_emp_telefone;
-        private System.Windows.Forms.Label lb_emp_endereco;
-        private System.Windows.Forms.Label lb_emp_email;
         private System.Windows.Forms.Label lb_txt9;
         private System.Windows.Forms.Label lb_txt10;
-        private System.Windows.Forms.Label lb_emp_fantasia;
         private System.Windows.Forms.Label lb_txt11;
         private System.Windows.Forms.PictureBox pb_principal;
         private System.Windows.Forms.Label lb_rs_boleto;

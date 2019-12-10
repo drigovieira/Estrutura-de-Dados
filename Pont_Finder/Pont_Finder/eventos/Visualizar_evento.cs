@@ -63,7 +63,7 @@ namespace Pont_Finder.eventos
             lb_horario.Text = post.Horario;
 
             //Resolver:
-            lb_emp_fantasia.Text = " " + empresa.Nome_Fantasia;
+           // lb_emp_fantasia.Text = " " + empresa.Nome_Fantasia;
             check();
 
 

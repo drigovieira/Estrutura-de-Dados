@@ -12,9 +12,11 @@ namespace Pont_Finder.eventos.User_Card
 {
     public partial class Card_cartao : UserControl
     {
+       
         public Card_cartao()
         {
             InitializeComponent();
+           
         }
 
         private void Bt_finalizar_Click(object sender, EventArgs e)
