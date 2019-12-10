@@ -116,7 +116,25 @@ namespace Pont_Finder.servicos
                 }
                 else
                 {
-                    FormPrincipal.MudarForm("servicos", new Solicitar_Sevico(post.Id, new FormVisualizarPost(post.Id, new FormServicos())));
+                    bool achou = false;
+                    foreach (var item in classes.SolicitadoList.Solicitados)
+                    {
+                        
+                        if (item.Postid == post.Id && item.Usercpf == Session.Cpf)
+                        {
+                            achou = true;
+                            break;
+                        }
+                    }
+                    if (achou)
+                    {
+                        MessageBox.Show("Já existe uma solicitação pendente para esse serviço");
+                    }
+                    else
+                    {
+                        FormPrincipal.MudarForm("servicos", new Solicitar_Sevico(post.Id, new FormVisualizarPost(post.Id, new FormServicos())));
+                    }
+                   
                 }
                
             }

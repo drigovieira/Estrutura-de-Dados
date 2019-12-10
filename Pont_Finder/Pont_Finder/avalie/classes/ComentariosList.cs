@@ -10,7 +10,7 @@ namespace Pont_Finder.avalie.classes
 {
     class ComentariosList
     {
-        private static string caminhoPost = "..\\..\\avalie\\data\\postagens.xml";
+        private static string caminhoPost = "..\\..\\avalie\\data\\comentarios.xml";
 
         private static List<Comentario> poster = new List<Comentario>();
 

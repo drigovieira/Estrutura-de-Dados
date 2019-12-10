@@ -46,6 +46,7 @@ namespace Pont_Finder.avalie
             InitializeComponent();
 
             post = PostList.thisPostId(postId);
+            
 
             postIdC = postId;
             
