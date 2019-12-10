@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<roomlist>
+  <quarto>
+    <id>0</id>
+    <empresa>11111111111111</empresa>
+    <nome>Monster</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>2</qtd_casal>
+    <qtd_solteiro>3</qtd_solteiro>
+    <qtd_pessoas>7</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
+    <valor>800</valor>
+    <foto>..//..//hospedagem//data//images//empresas//11111111111111//quartos//0//Monster.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>false</status>
+  </quarto>
+  <quarto>
+    <id>1</id>
+    <empresa>11111111111111</empresa>
+    <nome>Espasr</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>2</qtd_casal>
+    <qtd_solteiro>1</qtd_solteiro>
+    <qtd_pessoas>5</qtd_pessoas>
+    <qtd_quartos>3</qtd_quartos>
+    <servicos> * Café da manhã * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
+    <valor>600</valor>
+    <foto>..//..//hospedagem//data//images//empresas//11111111111111//quartos//1//Espasr.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>false</status>
+  </quarto>
+  <quarto>
+    <id>2</id>
+    <empresa>27006692000131</empresa>
+    <nome>Familia standard</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>1</qtd_solteiro>
+    <qtd_pessoas>3</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * Wi-fi</servicos>
+    <valor>15000</valor>
+    <foto>..//..//hospedagem//data//images//empresas//27006692000131//quartos//2//Familia standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>false</status>
+  </quarto>
+  <quarto>
+    <id>3</id>
+    <empresa>27006692000131</empresa>
+    <nome>Familia master</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>1</qtd_solteiro>
+    <qtd_pessoas>3</qtd_pessoas>
+    <qtd_quartos>4</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * TV a cabo * Wi-fi</servicos>
+    <valor>390</valor>
+    <foto>..//..//hospedagem//data//images//empresas//27006692000131//quartos//3//Familia master.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>false</status>
+  </quarto>
+  <quarto>
+    <id>4</id>
+    <empresa>27006692000131</empresa>
+    <nome>Individual Triplo standard</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>0</qtd_casal>
+    <qtd_solteiro>3</qtd_solteiro>
+    <qtd_pessoas>3</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Almoço * Wi-fi</servicos>
+    <valor>200</valor>
+    <foto>..//..//hospedagem//data//images//empresas//27006692000131//quartos//4//Individual Triplo standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>false</status>
+  </quarto>
+  <quarto>
+    <id>5</id>
+    <empresa>27006692000131</empresa>
+    <nome>Individual standard</nome>
+    <tipo>Solteiro</tipo>
+    <qtd_casal>0</qtd_casal>
+    <qtd_solteiro>1</qtd_solteiro>
+    <qtd_pessoas>1</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Almoço * Wi-fi</servicos>
+    <valor>120</valor>
+    <foto>..//..//hospedagem//data//images//empresas//27006692000131//quartos//5//Individual standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>false</status>
+  </quarto>
+  <quarto>
+    <id>6</id>
+    <empresa>27006692000131</empresa>
+    <nome>Casal Deluxe</nome>
+    <tipo>Casal</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>0</qtd_solteiro>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
+    <valor>450</valor>
+    <foto>..//..//hospedagem//data//images//empresas//27006692000131//quartos//6//Casal Deluxe.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>false</status>
+  </quarto>
+  <quarto>
+    <id>7</id>
+    <empresa>27006692000131</empresa>
+    <nome>Casal Master</nome>
+    <tipo>Casal</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>0</qtd_solteiro>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * Wi-fi</servicos>
+    <valor>360</valor>
+    <foto>..//..//hospedagem//data//images//empresas//27006692000131//quartos//7//Casal Master.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>false</status>
+  </quarto>
+  <quarto>
+    <id>8</id>
+    <empresa>11883060000116</empresa>
+    <nome>Individual Triplo Standard</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>0</qtd_casal>
+    <qtd_solteiro>3</qtd_solteiro>
+    <qtd_pessoas>3</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * TV a cabo * Wi-fi</servicos>
+    <valor>195</valor>
+    <foto>..//..//hospedagem//data//images//empresas//11883060000116//quartos//8//Individual Triplo Standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>9</id>
+    <empresa>11883060000116</empresa>
+    <nome>Casal Master</nome>
+    <tipo>Casal</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>0</qtd_solteiro>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * TV a cabo * Wi-fi</servicos>
+    <valor>220</valor>
+    <foto>..//..//hospedagem//data//images//empresas//11883060000116//quartos//9//Casal Master.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>10</id>
+    <empresa>11883060000116</empresa>
+    <nome>Familia Standard</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>1</qtd_solteiro>
+    <qtd_pessoas>3</qtd_pessoas>
+    <qtd_quartos>3</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * TV a cabo * Wi-fi</servicos>
+    <valor>180</valor>
+    <foto>..//..//hospedagem//data//images//empresas//11883060000116//quartos//10//Familia Standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>11</id>
+    <empresa>35632680000140</empresa>
+    <nome>Casal Standard</nome>
+    <tipo>Casal</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>0</qtd_solteiro>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Wi-fi</servicos>
+    <valor>100</valor>
+    <foto>..//..//hospedagem//data//images//empresas//35632680000140//quartos//11//Casal Standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>12</id>
+    <empresa>35632680000140</empresa>
+    <nome>Individual Standard</nome>
+    <tipo>Solteiro</tipo>
+    <qtd_casal>0</qtd_casal>
+    <qtd_solteiro>1</qtd_solteiro>
+    <qtd_pessoas>1</qtd_pessoas>
+    <qtd_quartos>3</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Wi-fi</servicos>
+    <valor>70</valor>
+    <foto>..//..//hospedagem//data//images//empresas//35632680000140//quartos//12//Individual Standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>13</id>
+    <empresa>27006692000131</empresa>
+    <nome>Familia Standard</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>1</qtd_solteiro>
+    <qtd_pessoas>3</qtd_pessoas>
+    <qtd_quartos>3</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Wi-fi</servicos>
+    <valor>220</valor>
+    <foto>..//..//hospedagem//data//images//empresas//27006692000131//quartos//13//Familia Standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>14</id>
+    <empresa>27006692000131</empresa>
+    <nome>Casal Master</nome>
+    <tipo>Casal</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>0</qtd_solteiro>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>2</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * TV a cabo * Wi-fi</servicos>
+    <valor>290</valor>
+    <foto>..//..//hospedagem//data//images//empresas//27006692000131//quartos//14//Casal Master.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>15</id>
+    <empresa>64259716000190</empresa>
+    <nome>Familia Standard</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>1</qtd_solteiro>
+    <qtd_pessoas>3</qtd_pessoas>
+    <qtd_quartos>4</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * Wi-fi * Espaço PET</servicos>
+    <valor>250</valor>
+    <foto>..//..//hospedagem//data//images//empresas//64259716000190//quartos//15//Familia Standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>16</id>
+    <empresa>64259716000190</empresa>
+    <nome>Triplo Standard</nome>
+    <tipo>Outro</tipo>
+    <qtd_casal>0</qtd_casal>
+    <qtd_solteiro>3</qtd_solteiro>
+    <qtd_pessoas>3</qtd_pessoas>
+    <qtd_quartos>3</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * Wi-fi</servicos>
+    <valor>350</valor>
+    <foto>..//..//hospedagem//data//images//empresas//64259716000190//quartos//16//Triplo Standard.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+  <quarto>
+    <id>17</id>
+    <empresa>64259716000190</empresa>
+    <nome>Casal Master</nome>
+    <tipo>Casal</tipo>
+    <qtd_casal>1</qtd_casal>
+    <qtd_solteiro>0</qtd_solteiro>
+    <qtd_pessoas>2</qtd_pessoas>
+    <qtd_quartos>4</qtd_quartos>
+    <servicos> * Café da manhã * Ar Condicionado * Almoço * Café da tarde * TV a cabo * Wi-fi * Espaço PET</servicos>
+    <valor>150</valor>
+    <foto>..//..//hospedagem//data//images//empresas//64259716000190//quartos//17//Casal Master.jpg</foto>
+    <estado>Disponivel</estado>
+    <status>true</status>
+  </quarto>
+</roomlist>

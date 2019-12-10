@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PostList>
+  <Post>
+    <id>0</id>
+    <titulo>Apontamento de satélites</titulo>
+    <valor>89</valor>
+    <descricao>Esse serviço consiste no simples ato de apontar uma antena para um satélite, servicos adicionais serão cobrados posteriormente</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//0.jpg</image>
+    <cpf>28645898004</cpf>
+    <cnpj>5403624000173</cnpj>
+    <data>2019-12-08T13:16:52.7743921-03:00</data>
+    <likes>1,28645898004</likes>
+  </Post>
+  <Post>
+    <id>1</id>
+    <titulo>Instalação de câmera</titulo>
+    <valor>725</valor>
+    <descricao>O serviços consiste na instalação de uma câmera.
+
+A implementação de câmeras de segurança é comumente realizada em prédios corporativos e residenciais, além de casas de grande extensão.
+Para realizá-la, é preciso contratar uma empresa capaz de sondar os melhores locais de instalação das câmeras, evitando assim pontos cegos e outras falhas na segurança de maneira geral.
+
+Materiais extras podem ser cobrados durante a instalação.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//1.jpg</image>
+    <cpf>28645898004</cpf>
+    <cnpj>5403624000173</cnpj>
+    <data>2019-12-08T14:16:15.3692218-03:00</data>
+    <likes>1,28645898004*1,26835036010*1,96973023088</likes>
+  </Post>
+  <Post>
+    <id>2</id>
+    <titulo>Manutenção de Computador</titulo>
+    <valor>0</valor>
+    <descricao>Manutenção completa do computador
+
+- BKP
+- Formatação
+- Instalação do windows
+- Limpesa de Hardware
+- Manutenção preventiva
+
+Se por necessário realizar a troca de algum componente com defeito, o equipamento será cobrado na manutenção</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//2.jpg</image>
+    <cpf>28645898004</cpf>
+    <cnpj>5403624000173</cnpj>
+    <data>2019-12-08T20:49:24.6948708-03:00</data>
+    <likes>1,43812136880</likes>
+  </Post>
+  <Post>
+    <id>3</id>
+    <titulo>Pintura Residencial</titulo>
+    <valor>0</valor>
+    <descricao>Pintura de externa e interna.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//3.jpg</image>
+    <cpf>43812136880</cpf>
+    <cnpj>89172297000186</cnpj>
+    <data>2019-12-09T10:43:28.9705383-03:00</data>
+    <likes>1,43812136880</likes>
+  </Post>
+  <Post>
+    <id>4</id>
+    <titulo>Pintura de Empresa</titulo>
+    <valor>500</valor>
+    <descricao>Pintura de escritório completa.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//4.jpg</image>
+    <cpf>43812136880</cpf>
+    <cnpj>89172297000186</cnpj>
+    <data>2019-12-09T10:45:57.9736036-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>5</id>
+    <titulo>Pintura de Escola</titulo>
+    <valor>659</valor>
+    <descricao>Pintura externa completa.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//5.jpg</image>
+    <cpf>43812136880</cpf>
+    <cnpj>89172297000186</cnpj>
+    <data>2019-12-09T10:48:28.8287753-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>6</id>
+    <titulo>Aula particular</titulo>
+    <valor>120</valor>
+    <descricao>Aula particular de inglês ou Espanhol em casa com o professor Marcelo. Horários disponíveis: Segunda e Sexta das 17h às 19h.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//6.jpg</image>
+    <cpf>21513021052</cpf>
+    <cnpj>24259729000145</cnpj>
+    <data>2019-12-09T15:04:54.3839401-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>7</id>
+    <titulo>Curso de Francês</titulo>
+    <valor>150</valor>
+    <descricao>Turma de Francês com a professora Ingrid no período de 2 anos, do básico ao intermediário. Terça e Quinta das 9h às 11h.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//7.jpg</image>
+    <cpf>21513021052</cpf>
+    <cnpj>24259729000145</cnpj>
+    <data>2019-12-09T15:07:52.828305-03:00</data>
+    <likes></likes>
+  </Post>
+  <Post>
+    <id>8</id>
+    <titulo>Desenvolvimento ou correção de texto</titulo>
+    <valor>0</valor>
+    <descricao>Desenvolvimento ou correção de textos em Potuguês, Inglês, Francês, Espanhol e Russo.</descricao>
+    <ativo>true</ativo>
+    <image>..//..//servicos//data//images//posts//8.jpg</image>
+    <cpf>21513021052</cpf>
+    <cnpj>24259729000145</cnpj>
+    <data>2019-12-09T15:09:26.7753573-03:00</data>
+    <likes></likes>
+  </Post>
+</PostList>

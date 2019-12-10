@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<postagens>
+  <postagem>
+    <id>0</id>
+    <idEmp>0</idEmp>
+    <ingresso_total>40</ingresso_total>
+    <ingresso_disponivel>40</ingresso_disponivel>
+    <nome>Festival de Música</nome>
+    <imagem1>..//..//eventos//Data//imagens//0.jpg</imagem1>
+    <imagem2>null</imagem2>
+    <imagem3>null</imagem3>
+    <imagem4>null</imagem4>
+    <descricao>Festival de música na cidade de Cruzeiro!</descricao>
+    <categoria>Música</categoria>
+    <data>22/12/2019</data>
+    <horario></horario>
+    <local>Cruzeiro - SP</local>
+    <idade>12 </idade>
+    <valor>20</valor>
+    <patrocinadores>Prefeitura</patrocinadores>
+    <ativo>true</ativo>
+    <likes></likes>
+  </postagem>
+</postagens>

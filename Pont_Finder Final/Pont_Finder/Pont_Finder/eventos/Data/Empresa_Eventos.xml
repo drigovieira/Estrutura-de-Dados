@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CADEMPRESA>
+  <EMPRESA>
+    <nome>Card</nome>
+    <nome_fantasia>SuperCard</nome_fantasia>
+    <email>card@gmail</email>
+    <cnpj>22222222222222</cnpj>
+    <telefone>33333333333</telefone>
+    <endereco>Street</endereco>
+    <ativo>true</ativo>
+  </EMPRESA>
+</CADEMPRESA>

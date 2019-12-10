@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<userList>
+  <user>
+    <nome>admin</nome>
+    <email>admin</email>
+    <senha>admin</senha>
+    <cpf>26835036010</cpf>
+    <image>..//..//data//images//users//26835036010.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>sotndragon</nome>
+    <email>sotndragon</email>
+    <senha>1234</senha>
+    <cpf>45850930876</cpf>
+    <image>..//..//data//images//users//45850930876.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Muzy</nome>
+    <email>pedro@muzy.com</email>
+    <senha>1234</senha>
+    <cpf>42750892864</cpf>
+    <image>..//..//data//images//users//45850930876.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Mateus</nome>
+    <email>mateus@hotmail.com</email>
+    <senha>1234</senha>
+    <cpf>59808211046</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Muzy</nome>
+    <email>pedro</email>
+    <senha>1234</senha>
+    <cpf>42750892804</cpf>
+    <image>..//..//data//images//users//45850930876.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>leo</nome>
+    <email>leo</email>
+    <senha>123</senha>
+    <cpf>47746352863</cpf>
+    <image>..//..//data//images//users//47746352863.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Gabriel</nome>
+    <email>gabriel@gmail.com</email>
+    <senha>1234</senha>
+    <cpf>86609522006</cpf>
+    <image>..//..//data//images//users//86609522006.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Felipe Neres</nome>
+    <email>neres@gmail.com</email>
+    <senha>123</senha>
+    <cpf>20083424091</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Jose Silva</nome>
+    <email>jose@.com</email>
+    <senha>123</senha>
+    <cpf>65721839040</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Joaquim Sobrinho</nome>
+    <email>joaquim@hotmail.com</email>
+    <senha>123</senha>
+    <cpf>67170982013</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Rafael Leando</nome>
+    <email>rafael@gmail.com</email>
+    <senha>123</senha>
+    <cpf>40786107065</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Serviços</nome>
+    <email>servicos@gmail.com</email>
+    <senha>123</senha>
+    <cpf>46334678086</cpf>
+    <image>..//..//data//images//users//46334678086.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Lincoln Carlos</nome>
+    <email>lincoln@gmail.com</email>
+    <senha>123</senha>
+    <cpf>28645898004</cpf>
+    <image>..//..//data//images//users//28645898004.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Jhonatan Luiz</nome>
+    <email>jhonatan@gmail.com</email>
+    <senha>123</senha>
+    <cpf>96973023088</cpf>
+    <image>..//..//data//images//users//96973023088.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Rafael Carneiro</nome>
+    <email>carneiro@gmail.com</email>
+    <senha>123</senha>
+    <cpf>43812136880</cpf>
+    <image>..//..//data//images//users//43812136880.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Rafael Ferreira</nome>
+    <email>rafaelferreira@gmail.com</email>
+    <senha>123456</senha>
+    <cpf>21513021052</cpf>
+    <image>..//..//data//images//users//21513021052.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Lucas Silva</nome>
+    <email>lucas@gmail.com</email>
+    <senha>123</senha>
+    <cpf>32446308988</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Jane Damaris</nome>
+    <email>jane@gmail.com</email>
+    <senha>123</senha>
+    <cpf>73844754814</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>João Rosa</nome>
+    <email>joao@hotmail.com</email>
+    <senha>123</senha>
+    <cpf>67198947301</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Fabio Fagundes</nome>
+    <email>fabio@gmail.com</email>
+    <senha>123</senha>
+    <cpf>58912611119</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Felipe Moreno</nome>
+    <email>felipe@gmail.com</email>
+    <senha>123</senha>
+    <cpf>45851442182</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Maria Clara Hermeto</nome>
+    <email>maria@gmail.com</email>
+    <senha>123</senha>
+    <cpf>40878581383</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Jessica</nome>
+    <email>jessica@gmail.com</email>
+    <senha>123</senha>
+    <cpf>40602136750</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Hermany Silva</nome>
+    <email>hermany@gmail.com</email>
+    <senha>123</senha>
+    <cpf>41532222246</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Malcom Barbosa</nome>
+    <email>malcom@gmail.com</email>
+    <senha>123</senha>
+    <cpf>56886704010</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+</userList>
