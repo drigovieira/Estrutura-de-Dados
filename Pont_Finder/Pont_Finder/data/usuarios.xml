@@ -200,4 +200,12 @@
     <image>..//..//data//images//users//offImage.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>trashyz</nome>
+    <email>trashyz@hotmail.com</email>
+    <senha>1234</senha>
+    <cpf>49085404894</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

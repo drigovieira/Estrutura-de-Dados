@@ -232,7 +232,15 @@ namespace Pont_Finder.alimentos
             lbBairro.Text = "Bairro: " + Empbairro;
             lbNum.Text = "N°: " + numero.ToString();
             lbCep.Text = "CEP: " + Empcep.ToString(@"00000\-000");
-            lbContato.Text = Empcontato.ToString(@"(00) 00000-0000");            
+            lbContato.Text = Empcontato.ToString();
+            if (lbContato.Text.Length.Equals(10))
+            {
+                lbContato.Text = Empcontato.ToString(@"(00)0000-0000");
+            }
+            else
+            {
+                lbContato.Text = Empcontato.ToString(@"(00)00000-0000");
+            }
             ImagemPerfil.ImageLocation = linkimage;
         }
 
