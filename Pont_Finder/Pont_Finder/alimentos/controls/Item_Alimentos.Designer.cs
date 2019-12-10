@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
             this.IngredienteComida = new System.Windows.Forms.Label();
             this.qtdComida = new System.Windows.Forms.Label();
             this.NomeComida = new System.Windows.Forms.Label();
             this.pb_alimento = new System.Windows.Forms.PictureBox();
-            this.CategoriasPrato = new System.Windows.Forms.Label();
             this.lb_rs = new System.Windows.Forms.Label();
             this.bt_addLista = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,16 +40,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_alimento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Quant)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 154);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Categoria:";
             // 
             // IngredienteComida
             // 
@@ -95,16 +83,6 @@
             this.pb_alimento.TabIndex = 4;
             this.pb_alimento.TabStop = false;
             // 
-            // CategoriasPrato
-            // 
-            this.CategoriasPrato.AutoSize = true;
-            this.CategoriasPrato.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategoriasPrato.Location = new System.Drawing.Point(101, 154);
-            this.CategoriasPrato.Name = "CategoriasPrato";
-            this.CategoriasPrato.Size = new System.Drawing.Size(46, 20);
-            this.CategoriasPrato.TabIndex = 5;
-            this.CategoriasPrato.Text = "Value";
-            // 
             // lb_rs
             // 
             this.lb_rs.AutoSize = true;
@@ -135,7 +113,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(200, 152);
+            this.label1.Location = new System.Drawing.Point(8, 152);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 20);
             this.label1.TabIndex = 36;
@@ -158,7 +136,7 @@
             // Quant
             // 
             this.Quant.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quant.Location = new System.Drawing.Point(293, 149);
+            this.Quant.Location = new System.Drawing.Point(101, 149);
             this.Quant.Name = "Quant";
             this.Quant.Size = new System.Drawing.Size(46, 28);
             this.Quant.TabIndex = 38;
@@ -178,9 +156,7 @@
             this.Controls.Add(this.Quant);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lb_rs);
-            this.Controls.Add(this.CategoriasPrato);
             this.Controls.Add(this.pb_alimento);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.NomeComida);
             this.Controls.Add(this.IngredienteComida);
             this.Controls.Add(this.qtdComida);
@@ -198,11 +174,9 @@
 
         #endregion
         private System.Windows.Forms.Label NomeComida;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label IngredienteComida;
         private System.Windows.Forms.Label qtdComida;
         private System.Windows.Forms.PictureBox pb_alimento;
-        private System.Windows.Forms.Label CategoriasPrato;
         private System.Windows.Forms.Label lb_rs;
         private System.Windows.Forms.Button bt_addLista;
         private System.Windows.Forms.Label label1;

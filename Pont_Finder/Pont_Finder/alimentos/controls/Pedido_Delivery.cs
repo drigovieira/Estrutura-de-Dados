@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pont_Finder.alimentos.classes;
+using System.Globalization;
 
 namespace Pont_Finder.alimentos.controls
 {
@@ -26,11 +27,12 @@ namespace Pont_Finder.alimentos.controls
 
         private void Pedido_Delivery_Paint(object sender, PaintEventArgs e)
         {
-            lb_valor_delivery.Text = Convert.ToString(ListPedidos.selectAll()[IndexPedido].Valor);
+            lb_valor_delivery.Text = ListPedidos.selectAll()[IndexPedido].Valor.ToString("C", CultureInfo.CurrentCulture);
             lb_rua_delivery.Text = ListPedidos.selectAll()[IndexPedido].Rua;
             lb_numero_delivery.Text = " N°: " + ListPedidos.selectAll()[IndexPedido].Numero;
-            lb_referencia.Text = ListPedidos.selectAll()[IndexPedido].Referencia;
-            lb_observacao.Text = ListPedidos.selectAll()[IndexPedido].Observacoes;
+            lb_referencia.Text = ListPedidos.selectAll()[IndexPedido].Referencia;            
+            listBox1.Items.Add(ListPedidos.selectAll()[IndexPedido].Observacoes);
+            PgValue.Text = ListPedidos.selectAll()[IndexPedido].Pagamento;
         }
 
         private void Btn_Realizado_Click(object sender, EventArgs e)

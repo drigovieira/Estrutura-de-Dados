@@ -131,6 +131,23 @@ namespace Pont_Finder.alimentos
                         pedidos.Pedidos = Sacola;
                         pedidos.Valor = Valor;
                         pedidos.IdEmpresa = Empresa;
+                        float troco = float.Parse(textBox2.Text);
+                        string format = troco.ToString("C", CultureInfo.CurrentCulture);
+                        if (rb_Dinheiro.Checked == true)
+                        {
+                            if (checkBox1.Checked == true)
+                            {
+                                pedidos.Pagamento = "Troco para: " + format;
+                            }
+                            else
+                            {
+                                pedidos.Pagamento = "Não é necessário Troco";
+                            }
+                        }
+                        else
+                        {
+                            pedidos.Pagamento = "No cartão";
+                        }
                         ListPedidos.Add(pedidos);
                         MessageBox.Show("Pedido registrado!");
                         Reserva_Alimentos reserva = new Reserva_Alimentos(Empresa, CompanyList.selectAll()[Empresa].SttsEntrega);

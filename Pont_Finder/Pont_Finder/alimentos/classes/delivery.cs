@@ -10,7 +10,7 @@ namespace Pont_Finder.alimentos.classes
     {
         private List<string> pedidos;
         private string rua, nome, referencia;
-        private string observacoes;
+        private string observacoes, pagamento;
         private int numero, idEmpresa, idPedido;
         private long cpf;
         private float valor;
@@ -34,6 +34,11 @@ namespace Pont_Finder.alimentos.classes
         {
             get { return referencia; }
             set { referencia = value; }
+        }
+        public string Pagamento
+        {
+            get { return pagamento; }
+            set { pagamento = value; }
         }
         public string Observacoes
         {

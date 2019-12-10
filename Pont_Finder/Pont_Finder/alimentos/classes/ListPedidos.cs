@@ -21,7 +21,8 @@ namespace Pont_Finder.alimentos.classes
             del.Observacoes = pedido.Observacoes;
             del.Cpf = pedido.Cpf;
             del.Valor = pedido.Valor;
-            del.IdEmpresa = pedido.IdEmpresa;            
+            del.IdEmpresa = pedido.IdEmpresa;
+            del.Pagamento = pedido.Pagamento;
             pedidos.Add(del);
             pedidos[pedidos.IndexOf(del)].IdPedido = pedidos.IndexOf(del);
         }

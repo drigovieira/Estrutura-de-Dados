@@ -37,16 +37,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lb_referencia = new System.Windows.Forms.Label();
-            this.lb_observacao = new System.Windows.Forms.Label();
             this.Pedidos = new System.Windows.Forms.ListBox();
             this.btn_Realizado = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.PgValue = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // lb_Pedidos
             // 
             this.lb_Pedidos.AutoSize = true;
             this.lb_Pedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Pedidos.Location = new System.Drawing.Point(20, 230);
+            this.lb_Pedidos.Location = new System.Drawing.Point(20, 289);
             this.lb_Pedidos.Name = "lb_Pedidos";
             this.lb_Pedidos.Size = new System.Drawing.Size(75, 21);
             this.lb_Pedidos.TabIndex = 0;
@@ -132,22 +134,12 @@
             this.lb_referencia.TabIndex = 18;
             this.lb_referencia.Text = "Value";
             // 
-            // lb_observacao
-            // 
-            this.lb_observacao.AutoSize = true;
-            this.lb_observacao.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_observacao.Location = new System.Drawing.Point(20, 185);
-            this.lb_observacao.Name = "lb_observacao";
-            this.lb_observacao.Size = new System.Drawing.Size(49, 21);
-            this.lb_observacao.TabIndex = 19;
-            this.lb_observacao.Text = "Value";
-            // 
             // Pedidos
             // 
             this.Pedidos.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pedidos.FormattingEnabled = true;
             this.Pedidos.ItemHeight = 21;
-            this.Pedidos.Location = new System.Drawing.Point(24, 254);
+            this.Pedidos.Location = new System.Drawing.Point(24, 313);
             this.Pedidos.Name = "Pedidos";
             this.Pedidos.Size = new System.Drawing.Size(366, 109);
             this.Pedidos.TabIndex = 20;
@@ -157,7 +149,7 @@
             this.btn_Realizado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_Realizado.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Realizado.ForeColor = System.Drawing.Color.White;
-            this.btn_Realizado.Location = new System.Drawing.Point(217, 398);
+            this.btn_Realizado.Location = new System.Drawing.Point(217, 510);
             this.btn_Realizado.Name = "btn_Realizado";
             this.btn_Realizado.Size = new System.Drawing.Size(173, 33);
             this.btn_Realizado.TabIndex = 21;
@@ -165,15 +157,47 @@
             this.btn_Realizado.UseVisualStyleBackColor = false;
             this.btn_Realizado.Click += new System.EventHandler(this.Btn_Realizado_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(30, 440);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 21);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Pagamento:";
+            // 
+            // PgValue
+            // 
+            this.PgValue.AutoSize = true;
+            this.PgValue.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PgValue.Location = new System.Drawing.Point(30, 461);
+            this.PgValue.Name = "PgValue";
+            this.PgValue.Size = new System.Drawing.Size(49, 21);
+            this.PgValue.TabIndex = 23;
+            this.PgValue.Text = "Value";
+            // 
+            // listBox1
+            // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 21;
+            this.listBox1.Location = new System.Drawing.Point(24, 188);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(366, 88);
+            this.listBox1.TabIndex = 24;
+            // 
             // Pedido_Delivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.PgValue);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_Realizado);
             this.Controls.Add(this.Pedidos);
-            this.Controls.Add(this.lb_observacao);
             this.Controls.Add(this.lb_referencia);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -184,7 +208,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lb_Pedidos);
             this.Name = "Pedido_Delivery";
-            this.Size = new System.Drawing.Size(415, 454);
+            this.Size = new System.Drawing.Size(415, 562);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Pedido_Delivery_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -202,8 +226,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lb_referencia;
-        private System.Windows.Forms.Label lb_observacao;
         private System.Windows.Forms.ListBox Pedidos;
         private System.Windows.Forms.Button btn_Realizado;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label PgValue;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
