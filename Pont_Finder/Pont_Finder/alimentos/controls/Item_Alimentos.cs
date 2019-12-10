@@ -14,9 +14,9 @@ namespace Pont_Finder.alimentos
 {
     public partial class Item_Alimentos : UserControl
     {
-        private string NomeItem, ImageItem, maisIngredientes, maisCategoria;
+        private string NomeItem, ImageItem, maisIngredientes;
         private float PrecoItem, qtdItem;
-        private List<string> IngredientesItem, CategoriasItem;
+        private List<string> IngredientesItem;
         private int IdItem, Empresa, QuantosItem;
         private bool ExRes, Pedidos;
 
@@ -59,17 +59,15 @@ namespace Pont_Finder.alimentos
             }
         }
 
-        public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, List<string> Categorias, int Id, int idEmpresa, bool reserva, int quantos, bool pedido)
+        public Item_Alimentos(float Preco, string Nome, string Imagem, float Qtd, List<string> Ingredientes, int Id, int idEmpresa, bool reserva, int quantos, bool pedido)
         {
             NomeItem = Nome;
             ImageItem = Imagem;
             PrecoItem = Preco;
             qtdItem = Qtd;
             IngredientesItem = Ingredientes;
-            CategoriasItem = Categorias;
             IdItem = Id;
             maisIngredientes = "";
-            maisCategoria = "";
             ExRes = reserva;
             Empresa = idEmpresa;
             QuantosItem = quantos;
@@ -97,40 +95,7 @@ namespace Pont_Finder.alimentos
                     maisIngredientes += " / " + ingred;
                     cont1++;
                 }
-            }
-            int cont2 = 0;
-            foreach (var aliment in CategoriasItem)
-            {
-                if (CategoriasItem.Count > 3)
-                {
-                    if (maisCategoria.Equals(""))
-                    {
-                        maisCategoria = aliment;
-                        cont2++;
-                    }
-                    else
-                    {
-                        if (cont2 == 3)
-                        {
-                            maisCategoria += " e mais ...";
-                            break;
-                        }
-                        maisCategoria += " / " + aliment;
-                        cont2++;
-                    }
-                }
-                else
-                {
-                    if (maisCategoria.Equals(""))
-                    {
-                        maisCategoria = aliment;
-                    }
-                    else
-                    {
-                        maisCategoria += " / " + aliment;
-                    }
-                }
-            }
+            }            
         }
         
 

@@ -146,8 +146,8 @@ namespace Pont_Finder.alimentos
                                     emp.Numero = Convert.ToInt32(tbNum.Text);
                                     emp.Cep = int.Parse(mkb_Cep.Text);
                                     emp.Bairro = tbBairro.Text;
-                                    emp.Categoria = categorias;
                                     emp.TelComercial = long.Parse(mkb_Tel.Text);
+                                    emp.Categoria = categorias;                                                                                                                
                                     emp.Email = tbEmail.Text;
                                     string link = "..//..//alimentos//data//image//empresas//offImage.jpg";
                                     if (img)

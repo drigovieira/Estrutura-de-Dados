@@ -11,7 +11,7 @@ namespace Pont_Finder.alimentos
         private float preco;
         private string  nome, image;
         private float qtd;
-        private List<string> ingredientes, categoria;
+        private List<string> ingredientes;
         private bool status;
         private int id, idEmpresa, quantos;
 
@@ -19,11 +19,6 @@ namespace Pont_Finder.alimentos
         {
             get { return preco; }
             set { preco = value; }
-        }
-        public List<string> Categoria
-        {
-            get { return categoria; }
-            set { categoria = value; }
         }
         public string Nome
         {
