@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Pont_Finder.alimentos
 {
@@ -14,7 +16,6 @@ namespace Pont_Finder.alimentos
         {
             Cardapio car = new Cardapio();
             car.Nome = dados.Nome;
-            car.Categoria = dados.Categoria;
             car.Preco = dados.Preco;
             car.Qtd = dados.Qtd;
             car.Ingredientes = dados.Ingredientes;
@@ -84,5 +85,82 @@ namespace Pont_Finder.alimentos
                 }
             }
         }
+        public static void XmlLoad()
+        {
+            string caminho = "..\\..\\alimentos\\data\\cardapio.xml";
+            XDocument doc = XDocument.Load(caminho);
+
+            foreach (var item in doc.Descendants("cardapio"))
+            {
+                Cardapio itemCad = new Cardapio();
+                itemCad.Id = int.Parse(item.Element("id").Value);
+                itemCad.IdEmpresa = int.Parse(item.Element("idEmpresa").Value);
+                itemCad.Quantos = int.Parse(item.Element("quantos").Value);
+                itemCad.Preco = float.Parse(item.Element("preco").Value);
+                itemCad.Nome = item.Element("nome").Value;
+                itemCad.Image = item.Element("image").Value;
+                itemCad.Qtd = float.Parse(item.Element("qtd").Value);
+                List<string> ingredientes = new List<string>();
+                string[] tempCat = item.Element("ingredientes").Value.Split(',');
+                foreach (var i in tempCat)
+                {
+                    ingredientes.Add(i);
+                }
+                itemCad.Ingredientes = ingredientes;
+                itemCad.Status = bool.Parse(item.Element("status").Value);
+                cardapio.Add(itemCad);
+            }
+        }
+        public static void XmlSave()
+        {
+            XmlDrop();
+            string caminho = "..\\..\\alimentos\\data\\cardapio.xml";
+            foreach (var item in cardapio)
+            {
+                string ingredientes = "";
+                foreach (var i in item.Ingredientes)
+                {
+                    if (ingredientes.Equals(""))
+                    {
+                        ingredientes = i;
+                    }
+                    else
+                    {
+                        ingredientes += "," + i;
+                    }
+                }                
+                    XElement xcar =
+                    new XElement("cardapio",
+                    new XElement("id", item.Id),
+                    new XElement("idEmpresa", item.IdEmpresa),
+                    new XElement("quantos", '0'),
+                    new XElement("preco", item.Preco),
+                    new XElement("nome", item.Nome),
+                    new XElement("image", item.Image),
+                    new XElement("qtd", item.Qtd),
+                    new XElement("ingredientes", ingredientes),
+                    new XElement("status", item.Status));
+                XDocument doc = XDocument.Load(caminho);
+                doc.Root.Add(xcar);
+                doc.Save(caminho);
+            }
+
+        }
+        public static void XmlDrop()
+        {
+            string caminho = "..\\..\\alimentos\\data\\cardapio.xml";
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.Load(caminho);
+
+            XDocument xdoc = XDocument.Load(caminho);
+
+            foreach (var item in xdoc.Descendants("cardapio"))
+            {
+                XmlNode node = xmldoc.SelectSingleNode("/ListCardapio/cardapio");
+                node.ParentNode.RemoveChild(node);
+            }
+            xmldoc.Save(caminho);
+        }
     }
 }
+
