@@ -168,4 +168,20 @@
     <image>..//..//data//images//users//offImage.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Maria Clara Hermeto</nome>
+    <email>maria@gmail.com</email>
+    <senha>123</senha>
+    <cpf>40878581383</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Jessica</nome>
+    <email>jessica@gmail.com</email>
+    <senha>123</senha>
+    <cpf>40602136750</cpf>
+    <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>
