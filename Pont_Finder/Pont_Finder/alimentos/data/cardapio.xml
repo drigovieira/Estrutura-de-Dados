@@ -13,6 +13,7 @@
   </cardapio>
   <cardapio>
     <id>1</id>
+<<<<<<< HEAD
     <idEmpresa>0</idEmpresa>
     <quantos>0</quantos>
     <preco>10</preco>
@@ -20,10 +21,20 @@
     <image>..//..//alimentos//data//image//cardapio//offImage.jpg</image>
     <qtd>2</qtd>
     <ingredientes>abcd</ingredientes>
+=======
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>50</preco>
+    <nome>Porção de Camarão</nome>
+    <image>..//..//alimentos//data//image//cardapio//2.jpg</image>
+    <qtd>0.5</qtd>
+    <ingredientes>camarão</ingredientes>
+>>>>>>> 3a802399037d5800d8822322fa4c946c0908b9a0
     <status>true</status>
   </cardapio>
   <cardapio>
     <id>2</id>
+<<<<<<< HEAD
     <idEmpresa>0</idEmpresa>
     <quantos>0</quantos>
     <preco>30</preco>
@@ -31,10 +42,20 @@
     <image>..//..//alimentos//data//image//cardapio//offImage.jpg</image>
     <qtd>20</qtd>
     <ingredientes>bcde</ingredientes>
+=======
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>60</preco>
+    <nome>Caranguejada</nome>
+    <image>..//..//alimentos//data//image//cardapio//3.jpg</image>
+    <qtd>1</qtd>
+    <ingredientes>caranguejofarofamolho da casa</ingredientes>
+>>>>>>> 3a802399037d5800d8822322fa4c946c0908b9a0
     <status>true</status>
   </cardapio>
   <cardapio>
     <id>3</id>
+<<<<<<< HEAD
     <idEmpresa>0</idEmpresa>
     <quantos>0</quantos>
     <preco>10</preco>
@@ -42,6 +63,48 @@
     <image>..//..//alimentos//data//image//cardapio//3.jpg</image>
     <qtd>10</qtd>
     <ingredientes>1231231,,,10</ingredientes>
+=======
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>9</preco>
+    <nome>Casquinha de Siri</nome>
+    <image>..//..//alimentos//data//image//cardapio//4.jpg</image>
+    <qtd>0.3</qtd>
+    <ingredientes>carne de siri</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>4</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>80</preco>
+    <nome>Lagosta </nome>
+    <image>..//..//alimentos//data//image//cardapio//5.jpg</image>
+    <qtd>1</qtd>
+    <ingredientes>lagostatempero nordestino</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>5</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>80</preco>
+    <nome>Mariscada</nome>
+    <image>..//..//alimentos//data//image//cardapio//6.jpg</image>
+    <qtd>0.8</qtd>
+    <ingredientes>mariscos frescoscamarão 7 barbas</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>6</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>38</preco>
+    <nome>Ostras</nome>
+    <image>..//..//alimentos//data//image//cardapio//7.jpg</image>
+    <qtd>0.3</qtd>
+    <ingredientes>ostraslimão</ingredientes>
+>>>>>>> 3a802399037d5800d8822322fa4c946c0908b9a0
     <status>true</status>
   </cardapio>
 </ListCardapio>
