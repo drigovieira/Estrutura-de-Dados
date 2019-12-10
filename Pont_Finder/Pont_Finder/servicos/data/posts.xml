@@ -111,7 +111,7 @@ Se por necessário realizar a troca de algum componente com defeito, o equipamen
   </Post>
   <Post>
     <id>8</id>
-    <titulo>Correção de texto</titulo>
+    <titulo>Desenvolvimento ou correção de texto</titulo>
     <valor>0</valor>
     <descricao>Desenvolvimento ou correção de textos em Potuguês, Inglês, Francês, Espanhol e Russo.</descricao>
     <ativo>true</ativo>

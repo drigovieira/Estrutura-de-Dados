@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<solicitados>
+<solicitadolist>
   <solicitado>
     <imagem>..//..//servicos//data//images//solicitados//0.jpg</imagem>
     <rua>Rua Miguel Jorge</rua>
@@ -14,4 +14,4 @@
     <dataAgendada>2019-12-18T23:56:42</dataAgendada>
     <dataSolicitacao>2019-12-09T23:59:18.5130267-03:00</dataSolicitacao>
   </solicitado>
-</solicitados>
+</solicitadolist>
