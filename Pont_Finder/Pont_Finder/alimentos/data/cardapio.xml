@@ -1,3 +1,169 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ListCardapio>
+
+  <cardapio>
+    <id>0</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>26</preco>
+    <nome>Porção de Camarão</nome>
+    <image>..//..//alimentos//data//image//cardapio//1.jpg</image>
+    <qtd>0.5</qtd>
+    <ingredientes>camarão</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>1</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>40</preco>
+    <nome>Caranguejada</nome>
+    <image>..//..//alimentos//data//image//cardapio//2.jpg</image>
+    <qtd>1</qtd>
+    <ingredientes>caranguejo</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>2</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>9</preco>
+    <nome>Casquinha de Siri</nome>
+    <image>..//..//alimentos//data//image//cardapio//3.jpg</image>
+    <qtd>0.3</qtd>
+    <ingredientes>carne de siri</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>3</id>
+    <idEmpresa>2</idEmpresa>
+    <quantos>0</quantos>
+    <preco>28</preco>
+    <nome>X-Tudo</nome>
+    <image>..//..//alimentos//data//image//cardapio//5.jpg</image>
+    <qtd>0.9</qtd>
+    <ingredientes>pão,hamburguer,alface,tomate</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>4</id>
+    <idEmpresa>2</idEmpresa>
+    <quantos>0</quantos>
+    <preco>20</preco>
+    <nome>X-Bacon</nome>
+    <image>..//..//alimentos//data//image//cardapio//6.jpg</image>
+    <qtd>0.7</qtd>
+    <ingredientes>pão,hamburguer,bacon</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>5</id>
+    <idEmpresa>3</idEmpresa>
+    <quantos>0</quantos>
+    <preco>10</preco>
+    <nome>Hot Roll</nome>
+    <image>..//..//alimentos//data//image//cardapio//8.jpg</image>
+    <qtd>0.4</qtd>
+    <ingredientes>salmão,arroz</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>6</id>
+    <idEmpresa>3</idEmpresa>
+    <quantos>0</quantos>
+    <preco>70</preco>
+    <nome>Mix Variedades</nome>
+    <image>..//..//alimentos//data//image//cardapio//9.jpg</image>
+    <qtd>1</qtd>
+    <ingredientes>salmão,atum,peixxe branco</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>7</id>
+    <idEmpresa>3</idEmpresa>
+    <quantos>0</quantos>
+    <preco>16</preco>
+    <nome>Temaki Salmão</nome>
+    <image>..//..//alimentos//data//image//cardapio//10.jpg</image>
+    <qtd>0.6</qtd>
+    <ingredientes>salmão,,cream cheese</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>8</id>
+    <idEmpresa>4</idEmpresa>
+    <quantos>0</quantos>
+    <preco>32</preco>
+    <nome>Pizza Pepperoni</nome>
+    <image>..//..//alimentos//data//image//cardapio//12.jpg</image>
+    <qtd>1</qtd>
+    <ingredientes>pepperoni</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>9</id>
+    <idEmpresa>4</idEmpresa>
+    <quantos>0</quantos>
+    <preco>26</preco>
+    <nome>Pizza Mussarela</nome>
+    <image>..//..//alimentos//data//image//cardapio//13.jpg</image>
+    <qtd>1</qtd>
+    <ingredientes>mussarela</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>10</id>
+    <idEmpresa>4</idEmpresa>
+    <quantos>0</quantos>
+    <preco>34</preco>
+    <nome>Pizza Chocolate</nome>
+    <image>..//..//alimentos//data//image//cardapio//14.jpg</image>
+    <qtd>1</qtd>
+    <ingredientes>chocolate</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>11</id>
+    <idEmpresa>4</idEmpresa>
+    <quantos>0</quantos>
+    <preco>28</preco>
+    <nome>Pizza Frango Catupiry</nome>
+    <image>..//..//alimentos//data//image//cardapio//15.jpg</image>
+    <qtd>1</qtd>
+    <ingredientes>frango,catupiry,azeitona</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>12</id>
+    <idEmpresa>5</idEmpresa>
+    <quantos>0</quantos>
+    <preco>10</preco>
+    <nome>Chopp Heineken</nome>
+    <image>..//..//alimentos//data//image//cardapio//17.jpg</image>
+    <qtd>0.4</qtd>
+    <ingredientes>Heineken</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>13</id>
+    <idEmpresa>5</idEmpresa>
+    <quantos>0</quantos>
+    <preco>20</preco>
+    <nome>Fritas com Cheddar e Bacon</nome>
+    <image>..//..//alimentos//data//image//cardapio//18.jpg</image>
+    <qtd>0.8</qtd>
+    <ingredientes>batata frita,cheddar,bacon,</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>14</id>
+    <idEmpresa>5</idEmpresa>
+    <quantos>0</quantos>
+    <preco>20</preco>
+    <nome>Bolinho de Bacalhau</nome>
+    <image>..//..//alimentos//data//image//cardapio//19.jpg</image>
+    <qtd>0.5</qtd>
+    <ingredientes>bacalhau</ingredientes>
+    <status>true</status>
+  </cardapio>
 </ListCardapio>
