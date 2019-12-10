@@ -130,13 +130,13 @@ namespace Pont_Finder.alimentos
                         pedidos.Referencia = textBox7.Text;
                         pedidos.Pedidos = Sacola;
                         pedidos.Valor = Valor;
-                        pedidos.IdEmpresa = Empresa;                        
+                        pedidos.IdEmpresa = Empresa;
+                        float troco = float.Parse(textBox2.Text);
+                        string format = troco.ToString("C", CultureInfo.CurrentCulture);
                         if (rb_Dinheiro.Checked == true)
                         {
                             if (checkBox1.Checked == true)
                             {
-                                float troco = float.Parse(textBox2.Text);
-                                string format = troco.ToString("C", CultureInfo.CurrentCulture);
                                 pedidos.Pagamento = "Troco para: " + format;
                             }
                             else

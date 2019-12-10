@@ -22,18 +22,17 @@ namespace Pont_Finder.alimentos.controls
             foreach (var i in ListPedidos.selectAll()[idPedido].Pedidos)
             {
                 Pedidos.Items.Add(i);
-            }            
+            }
         }
 
         private void Pedido_Delivery_Paint(object sender, PaintEventArgs e)
         {
-
             lb_valor_delivery.Text = ListPedidos.selectAll()[IndexPedido].Valor.ToString("C", CultureInfo.CurrentCulture);
             lb_rua_delivery.Text = ListPedidos.selectAll()[IndexPedido].Rua;
             lb_numero_delivery.Text = " N°: " + ListPedidos.selectAll()[IndexPedido].Numero;
-            lb_referencia.Text = ListPedidos.selectAll()[IndexPedido].Referencia;                       
+            lb_referencia.Text = ListPedidos.selectAll()[IndexPedido].Referencia;            
+            listBox1.Items.Add(ListPedidos.selectAll()[IndexPedido].Observacoes);
             PgValue.Text = ListPedidos.selectAll()[IndexPedido].Pagamento;
-            textBox1.Text = ListPedidos.selectAll()[IndexPedido].Observacoes;
         }
 
         private void Btn_Realizado_Click(object sender, EventArgs e)
