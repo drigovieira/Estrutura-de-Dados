@@ -124,7 +124,7 @@ namespace Pont_Finder.alimentos.classes
 
             foreach (var item in xdoc.Descendants("pedido"))
             {
-                XmlNode node = xmldoc.SelectSingleNode("/ListCardapio/pedido");
+                XmlNode node = xmldoc.SelectSingleNode("/ListPedidos/pedido");
                 node.ParentNode.RemoveChild(node);
             }
             xmldoc.Save(caminho);

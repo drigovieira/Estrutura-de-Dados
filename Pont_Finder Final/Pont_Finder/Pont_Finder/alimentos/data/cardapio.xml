@@ -11,4 +11,37 @@
     <ingredientes>b,c,d</ingredientes>
     <status>true</status>
   </cardapio>
+  <cardapio>
+    <id>1</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>40</preco>
+    <nome>Camarão</nome>
+    <image>..//..//alimentos//data//image//cardapio//2.jpg</image>
+    <qtd>5</qtd>
+    <ingredientes>camarão,limão,sal</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>2</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>50</preco>
+    <nome>Caranguejada</nome>
+    <image>..//..//alimentos//data//image//cardapio//3.jpg</image>
+    <qtd>5</qtd>
+    <ingredientes>Caranguejo,Farofa</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>3</id>
+    <idEmpresa>1</idEmpresa>
+    <quantos>0</quantos>
+    <preco>9</preco>
+    <nome>Casquinha de Sirí</nome>
+    <image>..//..//alimentos//data//image//cardapio//4.jpg</image>
+    <qtd>3</qtd>
+    <ingredientes>Carne de Sirí,Queijo</ingredientes>
+    <status>true</status>
+  </cardapio>
 </ListCardapio>

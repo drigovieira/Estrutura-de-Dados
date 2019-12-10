@@ -194,8 +194,8 @@ Os quartos do hotel dispõem de TV de tela plana, janelas com isolamento acústi
     <rua>Rodovia Dr. Avelino Junior</rua>
     <bairro>Jardim São José</bairro>
     <image>..//..//alimentos//data//image//empresas//kung@gmail.com.jpg</image>
-    <categorias>Frutos do Mar,Convencional,Petiscaria</categorias>
-    <funcionamento>Segunda - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Terça - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Quarta - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Quinta - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Sexta - Feira,09/12/2019 18:00:00,09/12/2019 00:00:00*Sábado,09/12/2019 18:00:00,09/12/2019 00:00:00*Domingo,09/12/2019 18:00:00,09/12/2019 00:00:00</funcionamento>
+    <categorias>Frutos do Mar,Petiscaria,Petiscaria,Frutos do Mar</categorias>
+    <funcionamento>Segunda - Feira,10/12/2019 18:00:00,10/12/2019 00:00:00*Terça - Feira,10/12/2019 18:00:00,10/12/2019 00:00:00*Quarta - Feira,10/12/2019 18:00:00,10/12/2019 00:00:00*Quinta - Feira,10/12/2019 18:00:00,10/12/2019 00:00:00*Sexta - Feira,10/12/2019 18:00:00,10/12/2019 00:00:00*Sábado,10/12/2019 18:00:00,10/12/2019 00:00:00*Domingo,10/12/2019 18:00:00,10/12/2019 00:00:00</funcionamento>
     <numero>52</numero>
     <cep>12704410</cep>
     <id>1</id>
@@ -203,7 +203,7 @@ Os quartos do hotel dispõem de TV de tela plana, janelas com isolamento acústi
     <cpf>32446308988</cpf>
     <status>true</status>
     <statusCardapio>true</statusCardapio>
-    <statusEntrega>false</statusEntrega>
+    <statusEntrega>true</statusEntrega>
   </alimentos>
   <alimentos>
     <nome>Restaurante e Hambrugueria Fim  de Tarde</nome>
