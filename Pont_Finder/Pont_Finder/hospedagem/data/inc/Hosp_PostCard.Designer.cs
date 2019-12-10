@@ -119,11 +119,11 @@
             // 
             this.lb_txt2.AutoSize = true;
             this.lb_txt2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt2.Location = new System.Drawing.Point(180, 100);
+            this.lb_txt2.Location = new System.Drawing.Point(180, 89);
             this.lb_txt2.Name = "lb_txt2";
-            this.lb_txt2.Size = new System.Drawing.Size(162, 17);
+            this.lb_txt2.Size = new System.Drawing.Size(168, 17);
             this.lb_txt2.TabIndex = 76;
-            this.lb_txt2.Text = "Serviços incluso no quarto";
+            this.lb_txt2.Text = "Serviços inclusos no quarto";
             // 
             // Hosp_PostCard
             // 
