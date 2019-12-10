@@ -9,4 +9,13 @@
     <endereco>Street</endereco>
     <ativo>true</ativo>
   </EMPRESA>
+  <EMPRESA>
+    <nome>Prefeitura</nome>
+    <nome_fantasia>Prefeitura Cruzeiro</nome_fantasia>
+    <email>prefeitura@gmail</email>
+    <cnpj>33333333333333</cnpj>
+    <telefone>44444444444</telefone>
+    <endereco>Cruzeiro</endereco>
+    <ativo>true</ativo>
+  </EMPRESA>
 </CADEMPRESA>

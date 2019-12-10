@@ -4,7 +4,7 @@
     <id>0</id>
     <idquarto>17</idquarto>
     <usuario>23628377005</usuario>
-    <dataentrada>2019-12-10T01:39:39.1744675-02:00</dataentrada>
+    <dataentrada>2019-12-10T00:39:39.1744675-03:00</dataentrada>
     <datasaida>2019-12-13T00:39:39</datasaida>
     <pagamento>Boleto</pagamento>
     <valor>600</valor>
@@ -14,7 +14,7 @@
     <id>1</id>
     <idquarto>16</idquarto>
     <usuario>23628377005</usuario>
-    <dataentrada>2019-12-10T01:41:27.0918649-02:00</dataentrada>
+    <dataentrada>2019-12-10T00:41:27.0918649-03:00</dataentrada>
     <datasaida>2019-12-12T00:41:27</datasaida>
     <pagamento>Boleto</pagamento>
     <valor>1050</valor>
@@ -24,8 +24,8 @@
     <id>2</id>
     <idquarto>14</idquarto>
     <usuario>23628377005</usuario>
-    <dataentrada>2019-12-10T01:42:01.2519611-02:00</dataentrada>
-    <datasaida>2019-12-11T01:42:01.2519611-02:00</datasaida>
+    <dataentrada>2019-12-10T00:42:01.2519611-03:00</dataentrada>
+    <datasaida>2019-12-11T00:42:01.2519611-03:00</datasaida>
     <pagamento>Cartao de Credito</pagamento>
     <valor>667</valor>
     <status>true</status>
@@ -34,8 +34,8 @@
     <id>3</id>
     <idquarto>14</idquarto>
     <usuario>23628377005</usuario>
-    <dataentrada>2019-12-10T01:42:22.0020565-02:00</dataentrada>
-    <datasaida>2019-12-11T01:42:22.0020565-02:00</datasaida>
+    <dataentrada>2019-12-10T00:42:22.0020565-03:00</dataentrada>
+    <datasaida>2019-12-11T00:42:22.0020565-03:00</datasaida>
     <pagamento>Cartao de Credito</pagamento>
     <valor>667</valor>
     <status>true</status>
@@ -44,8 +44,8 @@
     <id>4</id>
     <idquarto>13</idquarto>
     <usuario>23628377005</usuario>
-    <dataentrada>2019-12-10T01:42:45.2988711-02:00</dataentrada>
-    <datasaida>2019-12-11T01:42:45.2998709-02:00</datasaida>
+    <dataentrada>2019-12-10T00:42:45.2988711-03:00</dataentrada>
+    <datasaida>2019-12-11T00:42:45.2998709-03:00</datasaida>
     <pagamento>Cartao de Credito</pagamento>
     <valor>506</valor>
     <status>true</status>
@@ -54,8 +54,8 @@
     <id>5</id>
     <idquarto>11</idquarto>
     <usuario>23628377005</usuario>
-    <dataentrada>2019-12-10T01:43:00.8781104-02:00</dataentrada>
-    <datasaida>2019-12-11T01:43:00.8781104-02:00</datasaida>
+    <dataentrada>2019-12-10T00:43:00.8781104-03:00</dataentrada>
+    <datasaida>2019-12-11T00:43:00.8781104-03:00</datasaida>
     <pagamento>Cartao de Credito</pagamento>
     <valor>230</valor>
     <status>true</status>
@@ -64,8 +64,8 @@
     <id>6</id>
     <idquarto>13</idquarto>
     <usuario>23628377005</usuario>
-    <dataentrada>2019-12-10T01:43:24.372961-02:00</dataentrada>
-    <datasaida>2019-12-11T01:43:24.372961-02:00</datasaida>
+    <dataentrada>2019-12-10T00:43:24.372961-03:00</dataentrada>
+    <datasaida>2019-12-11T00:43:24.372961-03:00</datasaida>
     <pagamento>Cartao de Credito</pagamento>
     <valor>506</valor>
     <status>true</status>
