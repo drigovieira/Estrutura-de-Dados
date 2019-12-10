@@ -56,6 +56,7 @@
             this.lb_txt6 = new System.Windows.Forms.Label();
             this.lb_txt3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -70,7 +71,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cancelar = new System.Windows.Forms.Button();
             this.Solicitar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -385,6 +385,15 @@
             this.panel5.Size = new System.Drawing.Size(625, 331);
             this.panel5.TabIndex = 60;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(231, 273);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 63;
+            this.textBox2.Visible = false;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -528,14 +537,6 @@
             this.Solicitar.Text = "Fazer Pedido";
             this.Solicitar.UseVisualStyleBackColor = false;
             this.Solicitar.Click += new System.EventHandler(this.Solicitar_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(231, 273);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 63;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // Delivery_Alimentos
             // 

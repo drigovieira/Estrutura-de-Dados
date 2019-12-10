@@ -41,7 +41,7 @@
             this.btn_Realizado = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.PgValue = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lb_Pedidos
@@ -177,15 +177,16 @@
             this.PgValue.TabIndex = 23;
             this.PgValue.Text = "Value";
             // 
-            // listBox1
+            // textBox1
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 21;
-            this.listBox1.Location = new System.Drawing.Point(24, 188);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(366, 88);
-            this.listBox1.TabIndex = 24;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F);
+            this.textBox1.Location = new System.Drawing.Point(24, 188);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(366, 98);
+            this.textBox1.TabIndex = 24;
             // 
             // Pedido_Delivery
             // 
@@ -193,7 +194,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.PgValue);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_Realizado);
@@ -230,6 +231,6 @@
         private System.Windows.Forms.Button btn_Realizado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label PgValue;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
