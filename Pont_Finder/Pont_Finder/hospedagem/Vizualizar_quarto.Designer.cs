@@ -82,7 +82,7 @@
             // 
             this.lb_emp_endereco.AutoSize = true;
             this.lb_emp_endereco.Font = new System.Drawing.Font("Microsoft PhagsPa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_emp_endereco.Location = new System.Drawing.Point(241, 423);
+            this.lb_emp_endereco.Location = new System.Drawing.Point(283, 425);
             this.lb_emp_endereco.Name = "lb_emp_endereco";
             this.lb_emp_endereco.Size = new System.Drawing.Size(95, 25);
             this.lb_emp_endereco.TabIndex = 3;
@@ -170,7 +170,7 @@
             // 
             this.lb_txt5.AutoSize = true;
             this.lb_txt5.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt5.Location = new System.Drawing.Point(854, 142);
+            this.lb_txt5.Location = new System.Drawing.Point(864, 146);
             this.lb_txt5.Name = "lb_txt5";
             this.lb_txt5.Size = new System.Drawing.Size(28, 21);
             this.lb_txt5.TabIndex = 25;
@@ -190,11 +190,11 @@
             // 
             this.lb_txt3.AutoSize = true;
             this.lb_txt3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_txt3.Location = new System.Drawing.Point(871, 22);
+            this.lb_txt3.Location = new System.Drawing.Point(855, 22);
             this.lb_txt3.Name = "lb_txt3";
-            this.lb_txt3.Size = new System.Drawing.Size(45, 17);
+            this.lb_txt3.Size = new System.Drawing.Size(99, 17);
             this.lb_txt3.TabIndex = 25;
-            this.lb_txt3.Text = "Diária:";
+            this.lb_txt3.Text = "Valor da Diária:";
             // 
             // pn_galery
             // 
@@ -249,10 +249,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Pont_Finder.Properties.Resources._854878;
-            this.pictureBox1.Location = new System.Drawing.Point(210, 423);
+            this.pictureBox1.Location = new System.Drawing.Point(246, 424);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

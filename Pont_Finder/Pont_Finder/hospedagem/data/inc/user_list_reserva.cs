@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Pont_Finder.hospedagem.data.inc
 {
@@ -30,6 +31,11 @@ namespace Pont_Finder.hospedagem.data.inc
             {
 
             }
+        }
+
+        private void lb_rs_Click(object sender, EventArgs e)
+        {
+
         }
 
         private DateTime data_entrada, data_saida;
@@ -75,7 +81,7 @@ namespace Pont_Finder.hospedagem.data.inc
 
             lb_tipo_quarto.Text = quarto.Tipo;
 
-            lb_rs.Text = "R$"+reserva.Valor;
+            lb_rs.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", reserva.Valor);
 
             lb_forma_pagamento.Text = "Forma de pagamento: " + reserva.MetodoPagamento;
 

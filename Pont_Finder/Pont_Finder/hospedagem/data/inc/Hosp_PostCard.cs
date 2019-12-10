@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Pont_Finder.hospedagem
 {
@@ -54,7 +55,7 @@ namespace Pont_Finder.hospedagem
 
             lb_nome.Text = this.nome;
             lb_empresa.Text = "Localizado em: " + this.empresa;
-            lb_rs.Text = "R$" + this.valor;
+            lb_rs.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
 
 
             //LISTA DE ICONES

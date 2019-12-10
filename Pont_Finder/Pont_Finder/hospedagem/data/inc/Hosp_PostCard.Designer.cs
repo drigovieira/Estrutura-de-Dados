@@ -45,7 +45,7 @@
             this.lb_rs.BackColor = System.Drawing.Color.Transparent;
             this.lb_rs.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs.Location = new System.Drawing.Point(491, 40);
+            this.lb_rs.Location = new System.Drawing.Point(456, 40);
             this.lb_rs.Name = "lb_rs";
             this.lb_rs.Size = new System.Drawing.Size(57, 42);
             this.lb_rs.TabIndex = 32;

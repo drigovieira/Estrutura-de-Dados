@@ -444,6 +444,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(94, 28);
             this.textBox1.TabIndex = 8;
+            this.textBox1.Visible = false;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label15
@@ -1047,7 +1048,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 2694);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1282, 100);
+            this.panel9.Size = new System.Drawing.Size(1265, 100);
             this.panel9.TabIndex = 60;
             // 
             // label16
@@ -1108,7 +1109,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1299, 675);
+            this.ClientSize = new System.Drawing.Size(1282, 675);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.label16);

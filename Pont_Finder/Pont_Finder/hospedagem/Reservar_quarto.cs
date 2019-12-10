@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,26 +25,33 @@ namespace Pont_Finder.hospedagem
 
         private void bt_finalizar_Click(object sender, EventArgs e)
         {
-            reserva.Id = classes.reserveList.Tam;
-            reserva.IdQuarto = id_quarto;
-            reserva.Usuario = cpf_user;
-            reserva.Data_inicial = data_inicial;
-            reserva.Data_final = data_final;
-            reserva.MetodoPagamento = metodo;
-            reserva.Valor = valor_reserva;
-            reserva.Status = true;
+            if(rb_boleto.Checked || rb_cartao.Checked)
+            {
+                reserva.Id = classes.reserveList.Tam;
+                reserva.IdQuarto = id_quarto;
+                reserva.Usuario = cpf_user;
+                reserva.Data_inicial = data_inicial;
+                reserva.Data_final = data_final;
+                reserva.MetodoPagamento = metodo;
+                reserva.Valor = valor_reserva;
+                reserva.Status = true;
 
-            classes.reserveList.addReserva(reserva);
+                classes.reserveList.addReserva(reserva);
 
-            if(metodo=="Boleto")
-            { 
-                Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf,reserva.Valor);
-                bol.ShowDialog();
+                if (metodo == "Boleto")
+                {
+                    Boleto.GerarBoleto bol = new Boleto.GerarBoleto(Session.Cpf, reserva.Valor);
+                    bol.ShowDialog();
+                }
+
+                MessageBox.Show("Reserva Realizada Com Sucesso");
+
+                FormPrincipal.MudarForm("hospedagem", new List_reservas_user(anterior));
             }
-
-            MessageBox.Show("Reserva Realizada Com Sucesso");
-
-            FormPrincipal.MudarForm("hospedagem", new List_reservas_user(anterior));
+            else
+            {
+                MessageBox.Show("Você deve selecionar um metodo de pagamento para prosseguir.");
+            }
         }
 
         private void lb_data_saida_Click(object sender, EventArgs e)
@@ -172,7 +180,8 @@ namespace Pont_Finder.hospedagem
                 if (rb_boleto.Checked)
                 {
                     metodo = "Boleto";
-                    valor_reserva = (valor - (valor * 0.15));
+                    int totalDias = ((DateTime.Parse(lb_data_saida.Text).Subtract(DateTime.Parse(lb_data_entrada.Text))).Days) + 1;
+                    valor_reserva = (totalDias * valor);
                     hospedagem.data.inc.Reserva_boleto boleto = new data.inc.Reserva_boleto();
                     boleto.Location = new Point(0, 0);
                     panel_center.Controls.Add(boleto);
@@ -190,7 +199,8 @@ namespace Pont_Finder.hospedagem
             if (rb_cartao.Checked)
             {
                 metodo = "Cartao de Credito";
-                valor_reserva = valor;
+                int totalDias = ((DateTime.Parse(lb_data_saida.Text).Subtract(DateTime.Parse(lb_data_entrada.Text))).Days) + 1;
+                valor_reserva = (totalDias * (valor +  (valor * 0.15)));
                 hospedagem.data.inc.Reserva_cartao cartao = new data.inc.Reserva_cartao();
                 cartao.Location = new Point(0, 0);
                 panel_center.Controls.Add(cartao);
@@ -219,6 +229,7 @@ namespace Pont_Finder.hospedagem
                 pn_icons.Width = pn_icons.Width + 180;
                 pn_icons.Controls.Add(icone_uc);
             }
+
             lb_nome_quarto.Text = nome;
             lb_tipo_quarto.Text = tipo;
             lb_data_entrada.Text = Convert.ToString(data_inicial.ToShortDateString());
@@ -229,12 +240,10 @@ namespace Pont_Finder.hospedagem
             pictureBox3.ImageLocation = foto;
             pictureBox3.Load();
 
-            int totalDias = ((DateTime.Parse(lb_data_saida.Text).Subtract(DateTime.Parse(lb_data_entrada.Text))).Days)+1;
+            int totalDias = ((DateTime.Parse(lb_data_saida.Text).Subtract(DateTime.Parse(lb_data_entrada.Text))).Days) + 1;
 
-            MessageBox.Show("" + totalDias);
-
-            lb_rs_cartao.Text = "R$"+  (totalDias * valor);
-            lb_rs_boleto.Text = "R$" + (totalDias * (valor-(valor*0.15)));
+            lb_rs_cartao.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}",(totalDias * (valor + (valor * 0.15))));
+            lb_rs_boleto.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", (totalDias * valor));
 
         }
     }

@@ -134,7 +134,7 @@
             this.lb_rs.AutoSize = true;
             this.lb_rs.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_rs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs.Location = new System.Drawing.Point(688, 47);
+            this.lb_rs.Location = new System.Drawing.Point(636, 47);
             this.lb_rs.Name = "lb_rs";
             this.lb_rs.Size = new System.Drawing.Size(57, 42);
             this.lb_rs.TabIndex = 33;
@@ -164,7 +164,7 @@
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.bt_remover);
             this.Controls.Add(this.pb_hotel);
-            this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Card_list_quarto";
             this.Size = new System.Drawing.Size(1000, 158);
             this.Load += new System.EventHandler(this.Card_list_quarto_Load);
