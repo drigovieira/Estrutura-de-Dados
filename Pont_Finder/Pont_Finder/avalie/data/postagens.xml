@@ -1,31 +1,3 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <posts>
-  <post>
-    <id>0</id>
-    <nome>leo</nome>
-    <img>..//..//avalie//data//imagens//posts//0.jpg</img>
-    <cpf>47746352863</cpf>
-    <imgperfil>..//..//data//images//users//47746352863.jpg</imgperfil>
-    <tempohora>10/12/2019 00:39</tempohora>
-    <desc>má manutenção nos fios de energia</desc>
-    <tipoproblema>Serviços</tipoproblema>
-    <localizacao>Rua das Azaleias</localizacao>
-    <ativo>true</ativo>
-    <resolvido>false</resolvido>
-    <like>1,47746352863*1,43812136880</like>
-  </post>
-  <post>
-    <id>1</id>
-    <nome>Rafael Carneiro</nome>
-    <img>..//..//avalie//data//imagens//posts//1.jpg</img>
-    <cpf>43812136880</cpf>
-    <imgperfil>..//..//data//images//users//43812136880.jpg</imgperfil>
-    <tempohora>10/12/2019 00:42</tempohora>
-    <desc>Muitos Assaltos !!!</desc>
-    <tipoproblema>Outros</tipoproblema>
-    <localizacao>Rua dos Geranios</localizacao>
-    <ativo>true</ativo>
-    <resolvido>false</resolvido>
-    <like>1,43812136880</like>
-  </post>
 </posts>

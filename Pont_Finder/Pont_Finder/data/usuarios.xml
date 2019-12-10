@@ -42,7 +42,7 @@
   </user>
   <user>
     <nome>leo</nome>
-    <email>leo@gmail.com</email>
+    <email>leo</email>
     <senha>123</senha>
     <cpf>47746352863</cpf>
     <image>..//..//data//images//users//47746352863.jpg</image>
@@ -198,6 +198,14 @@
     <senha>123</senha>
     <cpf>56886704010</cpf>
     <image>..//..//data//images//users//offImage.jpg</image>
+    <ativo>true</ativo>
+  </user>
+  <user>
+    <nome>Eduardo Enari</nome>
+    <email>enari@gmail.com</email>
+    <senha>123</senha>
+    <cpf>23628377005</cpf>
+    <image>..//..//data//images//users//23628377005.jpg</image>
     <ativo>true</ativo>
   </user>
 </userList>

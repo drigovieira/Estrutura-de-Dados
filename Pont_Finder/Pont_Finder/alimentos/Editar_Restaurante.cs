@@ -34,7 +34,7 @@ namespace Pont_Finder.alimentos
             pb_icone.ImageLocation = CompanyList.selectAll()[idEmpresa].Image;
             cbCardapio.Checked = CompanyList.selectAll()[idEmpresa].SttsCardapio;
             cbEntrega.Checked = CompanyList.selectAll()[idEmpresa].SttsEntrega;
-            maskedTextBox1.Text = CompanyList.selectAll()[idEmpresa].Taxa.ToString();
+            maskedTextBox1.Text = CompanyList.selectAll()[idEmpresa].Taxa.ToString();            
             foreach(var i in CompanyList.selectAll()[idEmpresa].Categoria)
             {
                 if (i == rbChurrascaria.Text)
@@ -666,7 +666,7 @@ namespace Pont_Finder.alimentos
                                 emp.Categoria = categorias;
                                 emp.TelComercial = long.Parse(mkb_Tel.Text);
                                 emp.Email = tbEmail.Text;
-                                string link = "..//..//alimentos//data//image//empresas//offImage.jpg";
+                                string link = CompanyList.selectAll()[Empresa].Image;
                                 if (img)
                                 {
                                     if (!Directory.Exists("..//..//alimentos//data//image//empresas"))
