@@ -77,7 +77,7 @@
     <dataentrada>2019-12-11T00:44:01</dataentrada>
     <datasaida>2019-12-19T00:44:01</datasaida>
     <pagamento>Cartao de Credito</pagamento>
-    <valor>3001.5</valor>
+    <valor>30015</valor>
     <status>true</status>
   </reserva>
 </reservelist>
