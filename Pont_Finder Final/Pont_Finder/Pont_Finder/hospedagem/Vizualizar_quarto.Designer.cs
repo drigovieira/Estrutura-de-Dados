@@ -373,11 +373,11 @@
             // lb_rs_cartao
             // 
             this.lb_rs_cartao.AutoSize = true;
-            this.lb_rs_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_rs_cartao.ForeColor = System.Drawing.Color.Red;
-            this.lb_rs_cartao.Location = new System.Drawing.Point(809, 163);
+            this.lb_rs_cartao.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rs_cartao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
+            this.lb_rs_cartao.Location = new System.Drawing.Point(800, 54);
             this.lb_rs_cartao.Name = "lb_rs_cartao";
-            this.lb_rs_cartao.Size = new System.Drawing.Size(49, 36);
+            this.lb_rs_cartao.Size = new System.Drawing.Size(57, 42);
             this.lb_rs_cartao.TabIndex = 34;
             this.lb_rs_cartao.Text = "R$";
             this.lb_rs_cartao.Click += new System.EventHandler(this.lb_rs_cartao_Click);
@@ -385,11 +385,11 @@
             // lb_rs_boleto
             // 
             this.lb_rs_boleto.AutoSize = true;
-            this.lb_rs_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_rs_boleto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(65)))));
-            this.lb_rs_boleto.Location = new System.Drawing.Point(807, 50);
+            this.lb_rs_boleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rs_boleto.ForeColor = System.Drawing.Color.Red;
+            this.lb_rs_boleto.Location = new System.Drawing.Point(800, 163);
             this.lb_rs_boleto.Name = "lb_rs_boleto";
-            this.lb_rs_boleto.Size = new System.Drawing.Size(63, 46);
+            this.lb_rs_boleto.Size = new System.Drawing.Size(49, 36);
             this.lb_rs_boleto.TabIndex = 34;
             this.lb_rs_boleto.Text = "R$";
             // 
