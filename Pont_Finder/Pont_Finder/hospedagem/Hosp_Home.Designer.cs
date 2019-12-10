@@ -56,6 +56,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel_center = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.bt_limpar = new System.Windows.Forms.Button();
             this.pn_propa_externa = new System.Windows.Forms.Panel();
             this.panel_tops = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
@@ -72,7 +73,6 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.bt_limpar = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.pnl_img.SuspendLayout();
             this.pn_menu.SuspendLayout();
@@ -351,7 +351,7 @@
             // 
             this.painel_propaganda.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.painel_propaganda.Controls.Add(this.label15);
-            this.painel_propaganda.Location = new System.Drawing.Point(950, 889);
+            this.painel_propaganda.Location = new System.Drawing.Point(950, 966);
             this.painel_propaganda.Name = "painel_propaganda";
             this.painel_propaganda.Size = new System.Drawing.Size(310, 250);
             this.painel_propaganda.TabIndex = 38;
@@ -404,11 +404,26 @@
             this.panel4.TabIndex = 30;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // bt_limpar
+            // 
+            this.bt_limpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_limpar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.bt_limpar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_limpar.ForeColor = System.Drawing.Color.White;
+            this.bt_limpar.Location = new System.Drawing.Point(165, 216);
+            this.bt_limpar.Name = "bt_limpar";
+            this.bt_limpar.Size = new System.Drawing.Size(110, 37);
+            this.bt_limpar.TabIndex = 27;
+            this.bt_limpar.TabStop = false;
+            this.bt_limpar.Text = "Limpar";
+            this.bt_limpar.UseVisualStyleBackColor = false;
+            this.bt_limpar.Click += new System.EventHandler(this.bt_limpar_Click);
+            // 
             // pn_propa_externa
             // 
             this.pn_propa_externa.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.pn_propa_externa.Controls.Add(this.label13);
-            this.pn_propa_externa.Location = new System.Drawing.Point(950, 630);
+            this.pn_propa_externa.Location = new System.Drawing.Point(950, 707);
             this.pn_propa_externa.Name = "pn_propa_externa";
             this.pn_propa_externa.Size = new System.Drawing.Size(310, 250);
             this.pn_propa_externa.TabIndex = 32;
@@ -418,7 +433,7 @@
             this.panel_tops.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel_tops.Location = new System.Drawing.Point(950, 301);
             this.panel_tops.Name = "panel_tops";
-            this.panel_tops.Size = new System.Drawing.Size(310, 323);
+            this.panel_tops.Size = new System.Drawing.Size(310, 400);
             this.panel_tops.TabIndex = 41;
             // 
             // label16
@@ -434,7 +449,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1139);
+            this.panel1.Location = new System.Drawing.Point(0, 1216);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 100);
             this.panel1.TabIndex = 44;
@@ -583,21 +598,6 @@
             this.label7.Size = new System.Drawing.Size(114, 21);
             this.label7.TabIndex = 3;
             this.label7.Text = "Tipo de serviço";
-            // 
-            // bt_limpar
-            // 
-            this.bt_limpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
-            this.bt_limpar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
-            this.bt_limpar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_limpar.ForeColor = System.Drawing.Color.White;
-            this.bt_limpar.Location = new System.Drawing.Point(165, 216);
-            this.bt_limpar.Name = "bt_limpar";
-            this.bt_limpar.Size = new System.Drawing.Size(110, 37);
-            this.bt_limpar.TabIndex = 27;
-            this.bt_limpar.TabStop = false;
-            this.bt_limpar.Text = "Limpar";
-            this.bt_limpar.UseVisualStyleBackColor = false;
-            this.bt_limpar.Click += new System.EventHandler(this.bt_limpar_Click);
             // 
             // Hosp_Home
             // 

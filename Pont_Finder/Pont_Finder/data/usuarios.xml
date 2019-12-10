@@ -200,4 +200,12 @@
     <image>..//..//data//images//users//offImage.jpg</image>
     <ativo>true</ativo>
   </user>
+  <user>
+    <nome>Eduardo Enari</nome>
+    <email>enari@gmail.com</email>
+    <senha>123</senha>
+    <cpf>23628377005</cpf>
+    <image>..//..//data//images//users//23628377005.jpg</image>
+    <ativo>true</ativo>
+  </user>
 </userList>

@@ -54,7 +54,7 @@ namespace Pont_Finder.hospedagem
 
 
             lb_nome.Text = this.nome;
-            lb_empresa.Text = "Localizado em: " + this.empresa;
+            lb_empresa.Text = "Empresa: " + this.empresa+"\n"+emp.Endereco;
             lb_rs.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
 
 
