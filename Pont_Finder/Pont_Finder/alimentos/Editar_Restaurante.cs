@@ -740,5 +740,10 @@ namespace Pont_Finder.alimentos
                 img = true;
             }
         }
+
+        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsPunctuation(e.KeyChar);
+        }
     }
 }

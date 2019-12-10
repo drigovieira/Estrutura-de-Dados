@@ -104,11 +104,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.cbEntrega = new System.Windows.Forms.CheckBox();
             this.cbCardapio = new System.Windows.Forms.CheckBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.maskedTextBox1 = new System.Windows.Forms.TextBox();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel11.SuspendLayout();
@@ -446,6 +446,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.rbOutros);
             this.panel6.Controls.Add(this.rbConvencional);
             this.panel6.Controls.Add(this.rbFrutosDoMar);
@@ -608,6 +609,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.cbFeriado);
             this.panel4.Controls.Add(this.cbDomingo);
             this.panel4.Controls.Add(this.cbSabado);
@@ -975,6 +977,7 @@
             // 
             // panel5
             // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.maskedTextBox1);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.cbEntrega);
@@ -983,16 +986,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(460, 108);
             this.panel5.TabIndex = 45;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(234, 68);
-            this.maskedTextBox1.Mask = "000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 24);
-            this.maskedTextBox1.TabIndex = 8;
-            this.maskedTextBox1.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // label15
             // 
@@ -1029,6 +1022,14 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(234, 69);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(94, 28);
+            this.maskedTextBox1.TabIndex = 9;
+            this.maskedTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
             // 
             // Editar_Restaurante
             // 
@@ -1144,10 +1145,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.CheckBox cbEntrega;
         private System.Windows.Forms.CheckBox cbCardapio;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox maskedTextBox1;
     }
 }
