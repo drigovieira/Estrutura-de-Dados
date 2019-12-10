@@ -20,7 +20,7 @@ namespace Pont_Finder.alimentos
         public Delivery_Alimentos(int idEmpresa)
         {
             Empresa = idEmpresa;
-            InitializeComponent();            
+            InitializeComponent();
             lb_nome_restaurante.Text = CompanyList.selectAll()[idEmpresa].NomeFantasia;
             pictureBox3.ImageLocation = CompanyList.selectAll()[idEmpresa].Image;
             foreach (var i in Carrinho.selectAll())
@@ -73,13 +73,13 @@ namespace Pont_Finder.alimentos
             {
                 label20.Visible = true;
                 checkBox1.Visible = true;
-                textBox2.Visible = true;                
+                textBox2.Visible = true;
             }
             else
             {
                 label20.Visible = false;
                 checkBox1.Visible = false;
-                textBox2.Visible = false;                
+                textBox2.Visible = false;
             }
         }
 
@@ -89,7 +89,7 @@ namespace Pont_Finder.alimentos
             {
                 label20.Visible = false;
                 checkBox1.Visible = false;
-                textBox2.Visible = false;                
+                textBox2.Visible = false;
                 checkBox1.Checked = false;
                 textBox2.Clear();
             }
@@ -97,7 +97,7 @@ namespace Pont_Finder.alimentos
             {
                 label20.Visible = true;
                 checkBox1.Visible = true;
-                textBox2.Visible = true;                
+                textBox2.Visible = true;
             }
         }
 
@@ -105,19 +105,19 @@ namespace Pont_Finder.alimentos
         {
             if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(maskedTextBox1.Text))
             {
-                MessageBox.Show("Por favor, preencha os campos de endereço.","Atenção!");
+                MessageBox.Show("Por favor, preencha os campos de endereço.", "Atenção!");
             }
             else
             {
-                if(rb_Dinheiro.Checked == false && rb_cartao.Checked == false)
+                if (rb_Dinheiro.Checked == false && rb_cartao.Checked == false)
                 {
-                    MessageBox.Show("Por favor, escolha um método de pagamento.","Atenção!");
+                    MessageBox.Show("Por favor, escolha um método de pagamento.", "Atenção!");
                 }
                 else
                 {
                     try
-                    {                        
-                        foreach(var item in Carrinho.selectAll())
+                    {
+                        foreach (var item in Carrinho.selectAll())
                         {
                             Sacola.Add(item.Nome + " x " + item.Quantos);
                         }
@@ -131,12 +131,12 @@ namespace Pont_Finder.alimentos
                         pedidos.Pedidos = Sacola;
                         pedidos.Valor = Valor;
                         pedidos.IdEmpresa = Empresa;
-                        float troco = float.Parse(textBox2.Text);
-                        string format = troco.ToString("C", CultureInfo.CurrentCulture);
                         if (rb_Dinheiro.Checked == true)
                         {
                             if (checkBox1.Checked == true)
                             {
+                                float troco = float.Parse(textBox2.Text);
+                                string format = troco.ToString("C", CultureInfo.CurrentCulture);
                                 pedidos.Pagamento = "Troco para: " + format;
                             }
                             else
@@ -170,7 +170,7 @@ namespace Pont_Finder.alimentos
 
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox1.Checked == true)
+            if (checkBox1.Checked == true)
             {
                 textBox2.Visible = true;
             }

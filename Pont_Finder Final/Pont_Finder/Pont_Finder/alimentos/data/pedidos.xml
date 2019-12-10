@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ListPedidos>
+  <pedido>
+    <id>0</id>
+    <idEmpresa>0</idEmpresa>
+    <numero>51</numero>
+    <rua>sad</rua>
+    <nome>admin</nome>
+    <referencia>teste</referencia>
+    <observacoes>sdf</observacoes>
+    <pedidos>a x 1</pedidos>
+    <cpf>26835036010</cpf>
+    <valor>5</valor>
+    <pagamento>No cartão</pagamento>
+  </pedido>
+</ListPedidos>

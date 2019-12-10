@@ -35,7 +35,7 @@ namespace Pont_Finder.alimentos
             cbCardapio.Checked = CompanyList.selectAll()[idEmpresa].SttsCardapio;
             cbEntrega.Checked = CompanyList.selectAll()[idEmpresa].SttsEntrega;
             maskedTextBox1.Text = CompanyList.selectAll()[idEmpresa].Taxa.ToString();
-            foreach(var i in CompanyList.selectAll()[idEmpresa].Categoria)
+            foreach (var i in CompanyList.selectAll()[idEmpresa].Categoria)
             {
                 if (i == rbChurrascaria.Text)
                 {
@@ -75,7 +75,7 @@ namespace Pont_Finder.alimentos
                 }
             }
             int limit = CompanyList.selectAll()[idEmpresa].FuncionamentoEmp.Count;
-            for (int cont =0; cont < limit;cont++)
+            for (int cont = 0; cont < limit; cont++)
             {
                 if (CompanyList.selectAll()[idEmpresa].FuncionamentoEmp[cont].Dia.Equals("Segunda - Feira"))
                 {
@@ -448,7 +448,7 @@ namespace Pont_Finder.alimentos
 
         private void BtnCad_Click(object sender, EventArgs e)
         {
-            Company comp = new Company();            
+            Company comp = new Company();
             bool checkEmail = Validation.Email(tbEmail.Text);
             if (string.IsNullOrWhiteSpace(tbNomeEmpresa.Text) || string.IsNullOrWhiteSpace(tbFantasia.Text) || string.IsNullOrWhiteSpace(tbBairro.Text)
               || string.IsNullOrWhiteSpace(tbRua.Text) || string.IsNullOrWhiteSpace(tbNum.Text) || string.IsNullOrWhiteSpace(mkb_Cep.Text)
@@ -478,71 +478,71 @@ namespace Pont_Finder.alimentos
                             MessageBox.Show("Selecione um ou mais dias de funcionamento.", "Aviso!");
                         }
                         else
-                        {                                                        
-                                if (cbSegunda.Checked == true)
-                                {
-                                    Funcionamento funcio = new Funcionamento();
-                                    funcio.Dia = cbSegunda.Text;
-                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox4.Text);
-                                    funcio.HoraFim = DateTime.Parse(maskedTextBox19.Text);
-                                    funcionamentos.Add(funcio);
-                                }
-                                if (cbTerca.Checked == true)
-                                {
-                                    Funcionamento funcio = new Funcionamento();
-                                    funcio.Dia = cbTerca.Text;
-                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox5.Text);
-                                    funcio.HoraFim = DateTime.Parse(maskedTextBox18.Text);
-                                    funcionamentos.Add(funcio);
-                                }
-                                if (cbQuarta.Checked == true)
-                                {
-                                    Funcionamento funcio = new Funcionamento();
-                                    funcio.Dia = cbQuarta.Text;
-                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox6.Text);
-                                    funcio.HoraFim = DateTime.Parse(maskedTextBox17.Text);
-                                    funcionamentos.Add(funcio);
-                                }
-                                if (cbQuinta.Checked == true)
-                                {
-                                    Funcionamento funcio = new Funcionamento();
-                                    funcio.Dia = cbQuinta.Text;
-                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox7.Text);
-                                    funcio.HoraFim = DateTime.Parse(maskedTextBox16.Text);
-                                    funcionamentos.Add(funcio);
-                                }
-                                if (cbSexta.Checked == true)
-                                {
-                                    Funcionamento funcio = new Funcionamento();
-                                    funcio.Dia = cbSexta.Text;
-                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox8.Text);
-                                    funcio.HoraFim = DateTime.Parse(maskedTextBox15.Text);
-                                    funcionamentos.Add(funcio);
-                                }
-                                if (cbSabado.Checked == true)
-                                {
-                                    Funcionamento funcio = new Funcionamento();
-                                    funcio.Dia = cbSabado.Text;
-                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox9.Text);
-                                    funcio.HoraFim = DateTime.Parse(maskedTextBox14.Text);
-                                    funcionamentos.Add(funcio);
-                                }
-                                if (cbDomingo.Checked == true)
-                                {
-                                    Funcionamento funcio = new Funcionamento();
-                                    funcio.Dia = cbDomingo.Text;
-                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox10.Text);
-                                    funcio.HoraFim = DateTime.Parse(maskedTextBox13.Text);
-                                    funcionamentos.Add(funcio);
-                                }
-                                if (cbFeriado.Checked == true)
-                                {
-                                    Funcionamento funcio = new Funcionamento();
-                                    funcio.Dia = cbFeriado.Text;
-                                    funcio.HoraInicio = DateTime.Parse(maskedTextBox11.Text);
-                                    funcio.HoraFim = DateTime.Parse(maskedTextBox12.Text);
-                                    funcionamentos.Add(funcio);
-                                }
+                        {
+                            if (cbSegunda.Checked == true)
+                            {
+                                Funcionamento funcio = new Funcionamento();
+                                funcio.Dia = cbSegunda.Text;
+                                funcio.HoraInicio = DateTime.Parse(maskedTextBox4.Text);
+                                funcio.HoraFim = DateTime.Parse(maskedTextBox19.Text);
+                                funcionamentos.Add(funcio);
+                            }
+                            if (cbTerca.Checked == true)
+                            {
+                                Funcionamento funcio = new Funcionamento();
+                                funcio.Dia = cbTerca.Text;
+                                funcio.HoraInicio = DateTime.Parse(maskedTextBox5.Text);
+                                funcio.HoraFim = DateTime.Parse(maskedTextBox18.Text);
+                                funcionamentos.Add(funcio);
+                            }
+                            if (cbQuarta.Checked == true)
+                            {
+                                Funcionamento funcio = new Funcionamento();
+                                funcio.Dia = cbQuarta.Text;
+                                funcio.HoraInicio = DateTime.Parse(maskedTextBox6.Text);
+                                funcio.HoraFim = DateTime.Parse(maskedTextBox17.Text);
+                                funcionamentos.Add(funcio);
+                            }
+                            if (cbQuinta.Checked == true)
+                            {
+                                Funcionamento funcio = new Funcionamento();
+                                funcio.Dia = cbQuinta.Text;
+                                funcio.HoraInicio = DateTime.Parse(maskedTextBox7.Text);
+                                funcio.HoraFim = DateTime.Parse(maskedTextBox16.Text);
+                                funcionamentos.Add(funcio);
+                            }
+                            if (cbSexta.Checked == true)
+                            {
+                                Funcionamento funcio = new Funcionamento();
+                                funcio.Dia = cbSexta.Text;
+                                funcio.HoraInicio = DateTime.Parse(maskedTextBox8.Text);
+                                funcio.HoraFim = DateTime.Parse(maskedTextBox15.Text);
+                                funcionamentos.Add(funcio);
+                            }
+                            if (cbSabado.Checked == true)
+                            {
+                                Funcionamento funcio = new Funcionamento();
+                                funcio.Dia = cbSabado.Text;
+                                funcio.HoraInicio = DateTime.Parse(maskedTextBox9.Text);
+                                funcio.HoraFim = DateTime.Parse(maskedTextBox14.Text);
+                                funcionamentos.Add(funcio);
+                            }
+                            if (cbDomingo.Checked == true)
+                            {
+                                Funcionamento funcio = new Funcionamento();
+                                funcio.Dia = cbDomingo.Text;
+                                funcio.HoraInicio = DateTime.Parse(maskedTextBox10.Text);
+                                funcio.HoraFim = DateTime.Parse(maskedTextBox13.Text);
+                                funcionamentos.Add(funcio);
+                            }
+                            if (cbFeriado.Checked == true)
+                            {
+                                Funcionamento funcio = new Funcionamento();
+                                funcio.Dia = cbFeriado.Text;
+                                funcio.HoraInicio = DateTime.Parse(maskedTextBox11.Text);
+                                funcio.HoraFim = DateTime.Parse(maskedTextBox12.Text);
+                                funcionamentos.Add(funcio);
+                            }
 
                             if (rbComidaJaponesa.Checked == true)
                             {
@@ -666,7 +666,7 @@ namespace Pont_Finder.alimentos
                                 emp.Categoria = categorias;
                                 emp.TelComercial = long.Parse(mkb_Tel.Text);
                                 emp.Email = tbEmail.Text;
-                                string link = "..//..//alimentos//data//image//empresas//offImage.jpg";
+                                string link = CompanyList.selectAll()[Empresa].Image;
                                 if (img)
                                 {
                                     if (!Directory.Exists("..//..//alimentos//data//image//empresas"))
@@ -680,7 +680,7 @@ namespace Pont_Finder.alimentos
                                     Image bmp2 = new Bitmap(bmp, pb_icone.Size);
 
                                     pb_icone.Image = bmp2;
-                                    link = "..//..//alimentos//data//images//empresas//" + emp.Email + ".jpg";
+                                    link = "..//..//alimentos//data//image//empresas//" + emp.Email + ".jpg";
                                     pb_icone.Image.Save(link, ImageFormat.Jpeg);
                                 }
                                 emp.Image = link;
@@ -724,7 +724,7 @@ namespace Pont_Finder.alimentos
                             catch (Exception exp)
                             {
                                 MessageBox.Show("" + exp);
-                            }                            
+                            }
                         }
                     }
 

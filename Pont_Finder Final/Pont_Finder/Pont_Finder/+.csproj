@@ -118,12 +118,6 @@
     <Compile Include="alimentos\controls\Cliente_Delivery.Designer.cs">
       <DependentUpon>Cliente_Delivery.cs</DependentUpon>
     </Compile>
-    <Compile Include="alimentos\controls\itemPedido.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="alimentos\controls\itemPedido.Designer.cs">
-      <DependentUpon>itemPedido.cs</DependentUpon>
-    </Compile>
     <Compile Include="alimentos\controls\Pedido_Delivery.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -737,9 +731,6 @@
     <EmbeddedResource Include="alimentos\controls\Cliente_Delivery.resx">
       <DependentUpon>Cliente_Delivery.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="alimentos\controls\itemPedido.resx">
-      <DependentUpon>itemPedido.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="alimentos\controls\Pedido_Delivery.resx">
       <DependentUpon>Pedido_Delivery.cs</DependentUpon>
     </EmbeddedResource>
@@ -1094,9 +1085,11 @@
     <Folder Include="servicos\data\images\empresas\capas\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="alimentos\data\cardapio.xml" />
     <Content Include="alimentos\data\evaluation.xml" />
     <Content Include="alimentos\data\image\cardapio\offImage.jpg" />
     <Content Include="alimentos\data\image\empresas\offImage.jpg" />
+    <Content Include="alimentos\data\pedidos.xml" />
     <Content Include="avalie\data\comentarios.xml" />
     <Content Include="avalie\data\imagens\posts\offImage.jpg" />
     <Content Include="avalie\data\postagens.xml" />

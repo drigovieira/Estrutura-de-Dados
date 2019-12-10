@@ -31,7 +31,7 @@ namespace Pont_Finder.alimentos.controls
             lb_rua_delivery.Text = ListPedidos.selectAll()[IndexPedido].Rua;
             lb_numero_delivery.Text = " N°: " + ListPedidos.selectAll()[IndexPedido].Numero;
             lb_referencia.Text = ListPedidos.selectAll()[IndexPedido].Referencia;            
-            listBox1.Items.Add(ListPedidos.selectAll()[IndexPedido].Observacoes);
+            textBox1.Text = ListPedidos.selectAll()[IndexPedido].Observacoes;
             PgValue.Text = ListPedidos.selectAll()[IndexPedido].Pagamento;
         }
 

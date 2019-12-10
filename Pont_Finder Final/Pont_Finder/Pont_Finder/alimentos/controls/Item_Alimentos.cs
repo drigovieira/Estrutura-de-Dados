@@ -76,7 +76,7 @@ namespace Pont_Finder.alimentos
             Pedidos = pedido;
             InitializeComponent();
             if (ListCardapio.select(Id).Image != null)
-                pb_alimento.ImageLocation = CompanyList.select(Id).Image;
+                pb_alimento.ImageLocation = ListCardapio.select(Id).Image;
             else
                 pb_alimento.ImageLocation = "..//..//alimentos//data//image//cardapio//offImage.jpg";
             int cont1 = 0;
@@ -97,40 +97,7 @@ namespace Pont_Finder.alimentos
                     maisIngredientes += " / " + ingred;
                     cont1++;
                 }
-            }
-            int cont2 = 0;
-            foreach (var aliment in CategoriasItem)
-            {
-                if (CategoriasItem.Count > 3)
-                {
-                    if (maisCategoria.Equals(""))
-                    {
-                        maisCategoria = aliment;
-                        cont2++;
-                    }
-                    else
-                    {
-                        if (cont2 == 3)
-                        {
-                            maisCategoria += " e mais ...";
-                            break;
-                        }
-                        maisCategoria += " / " + aliment;
-                        cont2++;
-                    }
-                }
-                else
-                {
-                    if (maisCategoria.Equals(""))
-                    {
-                        maisCategoria = aliment;
-                    }
-                    else
-                    {
-                        maisCategoria += " / " + aliment;
-                    }
-                }
-            }
+            }           
         }
         
 
