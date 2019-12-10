@@ -37,9 +37,9 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.rb_solteiro = new System.Windows.Forms.RadioButton();
+            this.rb_outros = new System.Windows.Forms.RadioButton();
+            this.rb_casal = new System.Windows.Forms.RadioButton();
             this.label14 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_pesquisar = new System.Windows.Forms.TextBox();
@@ -55,10 +55,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_center = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pn_propa_externa = new System.Windows.Forms.Panel();
             this.panel_tops = new System.Windows.Forms.Panel();
@@ -76,11 +72,11 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.bt_limpar = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.pnl_img.SuspendLayout();
             this.pn_menu.SuspendLayout();
             this.painel_propaganda.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.panel4.SuspendLayout();
             this.pn_propa_externa.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -118,7 +114,7 @@
             this.bt_pesquisar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
             this.bt_pesquisar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_pesquisar.ForeColor = System.Drawing.Color.White;
-            this.bt_pesquisar.Location = new System.Drawing.Point(100, 215);
+            this.bt_pesquisar.Location = new System.Drawing.Point(35, 216);
             this.bt_pesquisar.Name = "bt_pesquisar";
             this.bt_pesquisar.Size = new System.Drawing.Size(110, 37);
             this.bt_pesquisar.TabIndex = 26;
@@ -168,47 +164,47 @@
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.radioButton3);
-            this.panel10.Controls.Add(this.radioButton4);
-            this.panel10.Controls.Add(this.radioButton5);
+            this.panel10.Controls.Add(this.rb_solteiro);
+            this.panel10.Controls.Add(this.rb_outros);
+            this.panel10.Controls.Add(this.rb_casal);
             this.panel10.Controls.Add(this.label14);
-            this.panel10.Location = new System.Drawing.Point(5, 737);
+            this.panel10.Location = new System.Drawing.Point(5, 629);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(310, 108);
             this.panel10.TabIndex = 36;
             // 
-            // radioButton3
+            // rb_solteiro
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(118, 44);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(63, 18);
-            this.radioButton3.TabIndex = 43;
-            this.radioButton3.Text = "Solteiro";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rb_solteiro.AutoSize = true;
+            this.rb_solteiro.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_solteiro.Location = new System.Drawing.Point(118, 44);
+            this.rb_solteiro.Name = "rb_solteiro";
+            this.rb_solteiro.Size = new System.Drawing.Size(63, 18);
+            this.rb_solteiro.TabIndex = 43;
+            this.rb_solteiro.Text = "Solteiro";
+            this.rb_solteiro.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rb_outros
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(207, 44);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(58, 18);
-            this.radioButton4.TabIndex = 44;
-            this.radioButton4.Text = "Outros";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rb_outros.AutoSize = true;
+            this.rb_outros.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_outros.Location = new System.Drawing.Point(207, 44);
+            this.rb_outros.Name = "rb_outros";
+            this.rb_outros.Size = new System.Drawing.Size(58, 18);
+            this.rb_outros.TabIndex = 44;
+            this.rb_outros.Text = "Outros";
+            this.rb_outros.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rb_casal
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(44, 44);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(52, 18);
-            this.radioButton5.TabIndex = 42;
-            this.radioButton5.Text = "Casal";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rb_casal.AutoSize = true;
+            this.rb_casal.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_casal.Location = new System.Drawing.Point(44, 44);
+            this.rb_casal.Name = "rb_casal";
+            this.rb_casal.Size = new System.Drawing.Size(52, 18);
+            this.rb_casal.TabIndex = 42;
+            this.rb_casal.Text = "Casal";
+            this.rb_casal.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -391,52 +387,10 @@
             this.panel_center.TabIndex = 33;
             this.panel_center.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_center_Paint);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(95, 5);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(119, 21);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Listar por preço";
-            // 
-            // panel11
-            // 
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.radioButton2);
-            this.panel11.Controls.Add(this.radioButton1);
-            this.panel11.Controls.Add(this.label11);
-            this.panel11.Location = new System.Drawing.Point(5, 630);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(310, 108);
-            this.panel11.TabIndex = 0;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(81, 70);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(138, 18);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.Text = "Do maior para o menor";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(81, 36);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(138, 18);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.Text = "Do menor para o maior";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel4.Controls.Add(this.bt_limpar);
             this.panel4.Controls.Add(this.bt_pesquisar);
             this.panel4.Controls.Add(this.dateTimePicker2);
             this.panel4.Controls.Add(this.label4);
@@ -531,7 +485,7 @@
             this.panel3.Controls.Add(this.checkBox3);
             this.panel3.Controls.Add(this.checkBox2);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(5, 844);
+            this.panel3.Location = new System.Drawing.Point(5, 736);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(310, 136);
             this.panel3.TabIndex = 48;
@@ -630,6 +584,21 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "Tipo de serviço";
             // 
+            // bt_limpar
+            // 
+            this.bt_limpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(95)))), ((int)(((byte)(233)))));
+            this.bt_limpar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(106)))), ((int)(((byte)(255)))));
+            this.bt_limpar.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_limpar.ForeColor = System.Drawing.Color.White;
+            this.bt_limpar.Location = new System.Drawing.Point(165, 216);
+            this.bt_limpar.Name = "bt_limpar";
+            this.bt_limpar.Size = new System.Drawing.Size(110, 37);
+            this.bt_limpar.TabIndex = 27;
+            this.bt_limpar.TabStop = false;
+            this.bt_limpar.Text = "Limpar";
+            this.bt_limpar.UseVisualStyleBackColor = false;
+            this.bt_limpar.Click += new System.EventHandler(this.bt_limpar_Click);
+            // 
             // Hosp_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -644,7 +613,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel_tops);
-            this.Controls.Add(this.panel11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.pnl_img);
@@ -668,8 +636,6 @@
             this.pn_menu.ResumeLayout(false);
             this.painel_propaganda.ResumeLayout(false);
             this.painel_propaganda.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.pn_propa_externa.ResumeLayout(false);
@@ -701,10 +667,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel_center;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel pn_propa_externa;
         private System.Windows.Forms.Panel panel_tops;
@@ -717,9 +679,9 @@
         private System.Windows.Forms.Label lb_pag;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel pn_menu;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton rb_solteiro;
+        private System.Windows.Forms.RadioButton rb_outros;
+        private System.Windows.Forms.RadioButton rb_casal;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBox7;
@@ -729,5 +691,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Button bt_limpar;
     }
 }

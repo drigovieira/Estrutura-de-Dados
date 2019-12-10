@@ -276,6 +276,9 @@ namespace Pont_Finder.hospedagem
 
             fotin = null;
 
+            dt_ini.MinDate = DateTime.Now;
+            dt_fim.MinDate = DateTime.Now.AddDays(1);
+
             //Serviços do hotel
             foreach (var ambi in ambientes)
             {
