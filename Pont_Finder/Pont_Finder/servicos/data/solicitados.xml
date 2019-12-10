@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<solicitados>
+  <solicitado>
+    <imagem>..//..//servicos//data//images//solicitados//0.jpg</imagem>
+    <rua>Rua Miguel Jorge</rua>
+    <bairro> Miguel Jorge</bairro>
+    <descricao>O computador apresenta a seguinte mensagem ao iniciar</descricao>
+    <status>Aguardando Pagamento</status>
+    <id>0</id>
+    <numero>1</numero>
+    <cep>12346343</cep>
+    <postid>2</postid>
+    <usercpf>96973023088</usercpf>
+    <dataAgendada>2019-12-18T23:56:42</dataAgendada>
+    <dataSolicitacao>2019-12-09T23:59:18.5130267-03:00</dataSolicitacao>
+  </solicitado>
+</solicitados>
