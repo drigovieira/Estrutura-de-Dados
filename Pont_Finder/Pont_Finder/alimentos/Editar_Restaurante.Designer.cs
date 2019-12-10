@@ -104,11 +104,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.maskedTextBox1 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.cbEntrega = new System.Windows.Forms.CheckBox();
             this.cbCardapio = new System.Windows.Forms.CheckBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.maskedTextBox1 = new System.Windows.Forms.TextBox();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_back)).BeginInit();
             this.panel11.SuspendLayout();
@@ -307,6 +307,7 @@
             this.rb_Cel.TabIndex = 20;
             this.rb_Cel.Text = "Celular";
             this.rb_Cel.UseVisualStyleBackColor = true;
+            this.rb_Cel.CheckedChanged += new System.EventHandler(this.rb_Cel_CheckedChanged);
             // 
             // rb_Tel
             // 
@@ -320,6 +321,7 @@
             this.rb_Tel.TabStop = true;
             this.rb_Tel.Text = "Telefone Fixo";
             this.rb_Tel.UseVisualStyleBackColor = true;
+            this.rb_Tel.CheckedChanged += new System.EventHandler(this.rb_Tel_CheckedChanged);
             // 
             // label8
             // 
@@ -987,6 +989,14 @@
             this.panel5.Size = new System.Drawing.Size(460, 108);
             this.panel5.TabIndex = 45;
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(234, 69);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(94, 28);
+            this.maskedTextBox1.TabIndex = 9;
+            this.maskedTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -1022,14 +1032,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(234, 69);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(94, 28);
-            this.maskedTextBox1.TabIndex = 9;
-            this.maskedTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
             // 
             // Editar_Restaurante
             // 
