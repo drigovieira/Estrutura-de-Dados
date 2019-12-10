@@ -184,8 +184,8 @@ Os quartos do hotel dispõem de TV de tela plana, janelas com isolamento acústi
     <telComercial>1111111111</telComercial>
     <cpf>26835036010</cpf>
     <status>true</status>
-    <statusCardapio>false</statusCardapio>
-    <statusEntrega>false</statusEntrega>
+    <statusCardapio>true</statusCardapio>
+    <statusEntrega>true</statusEntrega>
   </alimentos>
   <alimentos>
     <nome>Restaurante Kung Peixe</nome>

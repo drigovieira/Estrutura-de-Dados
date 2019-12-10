@@ -38,6 +38,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lb_data_agendamento = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.lb_usercpf = new System.Windows.Forms.Label();
+            this.lb_username = new System.Windows.Forms.Label();
             this.lb_cpf = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.nome = new System.Windows.Forms.Label();
@@ -52,16 +54,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lb_valor = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pb_solicitado = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.lb_descricao = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.lb_endereco = new System.Windows.Forms.Label();
-            this.pb_solicitado = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lb_username = new System.Windows.Forms.Label();
-            this.lb_usercpf = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -70,9 +71,9 @@
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_solicitado)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_solicitado)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -183,6 +184,26 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(600, 86);
             this.panel25.TabIndex = 36;
+            // 
+            // lb_usercpf
+            // 
+            this.lb_usercpf.AutoSize = true;
+            this.lb_usercpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_usercpf.Location = new System.Drawing.Point(49, 38);
+            this.lb_usercpf.Name = "lb_usercpf";
+            this.lb_usercpf.Size = new System.Drawing.Size(42, 18);
+            this.lb_usercpf.TabIndex = 13;
+            this.lb_usercpf.Text = "value";
+            // 
+            // lb_username
+            // 
+            this.lb_username.AutoSize = true;
+            this.lb_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_username.Location = new System.Drawing.Point(60, 16);
+            this.lb_username.Name = "lb_username";
+            this.lb_username.Size = new System.Drawing.Size(42, 18);
+            this.lb_username.TabIndex = 12;
+            this.lb_username.Text = "value";
             // 
             // lb_cpf
             // 
@@ -325,18 +346,38 @@
             this.panel5.Location = new System.Drawing.Point(68, 271);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(222, 163);
+            this.panel5.Size = new System.Drawing.Size(600, 211);
             this.panel5.TabIndex = 38;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(228, 7);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 16);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Imagam da Solicitação";
+            // 
+            // pb_solicitado
+            // 
+            this.pb_solicitado.Location = new System.Drawing.Point(163, 26);
+            this.pb_solicitado.Name = "pb_solicitado";
+            this.pb_solicitado.Size = new System.Drawing.Size(250, 175);
+            this.pb_solicitado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_solicitado.TabIndex = 0;
+            this.pb_solicitado.TabStop = false;
             // 
             // panel7
             // 
+            this.panel7.AutoSize = true;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.lb_descricao);
-            this.panel7.Location = new System.Drawing.Point(289, 271);
+            this.panel7.Location = new System.Drawing.Point(68, 525);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(379, 163);
+            this.panel7.Size = new System.Drawing.Size(600, 49);
             this.panel7.TabIndex = 39;
             // 
             // label4
@@ -353,9 +394,11 @@
             // 
             this.lb_descricao.AutoSize = true;
             this.lb_descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_descricao.Location = new System.Drawing.Point(4, 19);
+            this.lb_descricao.Location = new System.Drawing.Point(10, 23);
+            this.lb_descricao.MaximumSize = new System.Drawing.Size(570, 0);
+            this.lb_descricao.MinimumSize = new System.Drawing.Size(570, 0);
             this.lb_descricao.Name = "lb_descricao";
-            this.lb_descricao.Size = new System.Drawing.Size(42, 18);
+            this.lb_descricao.Size = new System.Drawing.Size(570, 18);
             this.lb_descricao.TabIndex = 9;
             this.lb_descricao.Text = "value";
             // 
@@ -364,21 +407,11 @@
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.lb_endereco);
             this.panel8.Controls.Add(this.label9);
-            this.panel8.Location = new System.Drawing.Point(68, 433);
+            this.panel8.Location = new System.Drawing.Point(68, 481);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(600, 45);
             this.panel8.TabIndex = 40;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(5, 4);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(141, 18);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Endereço Solicitado";
             // 
             // lb_endereco
             // 
@@ -390,50 +423,31 @@
             this.lb_endereco.TabIndex = 8;
             this.lb_endereco.Text = "value";
             // 
-            // pb_solicitado
+            // label9
             // 
-            this.pb_solicitado.Location = new System.Drawing.Point(10, 26);
-            this.pb_solicitado.Name = "pb_solicitado";
-            this.pb_solicitado.Size = new System.Drawing.Size(200, 125);
-            this.pb_solicitado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_solicitado.TabIndex = 0;
-            this.pb_solicitado.TabStop = false;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(5, 4);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(141, 18);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Endereço Solicitado";
             // 
-            // label7
+            // panel9
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(5, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 16);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Imagam da Solicitação";
-            // 
-            // lb_username
-            // 
-            this.lb_username.AutoSize = true;
-            this.lb_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_username.Location = new System.Drawing.Point(60, 16);
-            this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(42, 18);
-            this.lb_username.TabIndex = 12;
-            this.lb_username.Text = "value";
-            // 
-            // lb_usercpf
-            // 
-            this.lb_usercpf.AutoSize = true;
-            this.lb_usercpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_usercpf.Location = new System.Drawing.Point(49, 38);
-            this.lb_usercpf.Name = "lb_usercpf";
-            this.lb_usercpf.Size = new System.Drawing.Size(42, 18);
-            this.lb_usercpf.TabIndex = 13;
-            this.lb_usercpf.Text = "value";
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(0, 586);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(740, 50);
+            this.panel9.TabIndex = 41;
             // 
             // FormVerSolicitacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 546);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(740, 636);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
@@ -463,12 +477,13 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_solicitado)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_solicitado)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -508,5 +523,6 @@
         private System.Windows.Forms.PictureBox pb_solicitado;
         private System.Windows.Forms.Label lb_usercpf;
         private System.Windows.Forms.Label lb_username;
+        private System.Windows.Forms.Panel panel9;
     }
 }

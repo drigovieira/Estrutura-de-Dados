@@ -33,7 +33,7 @@ namespace Pont_Finder.servicos
             lb_username.Text = user.Nome;
             lb_usercpf.Text = "" + user.Cpf;
             pb_solicitado.ImageLocation = solicitado.Imagem;
-            lb_descricao.Text = solicitado.Descrição;
+            lb_descricao.Text = solicitado.Descricao;
             lb_endereco.Text = solicitado.Rua + ", " + solicitado.Numero;
 
 
