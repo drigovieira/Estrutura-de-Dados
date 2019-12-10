@@ -1,5 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulos>
+  <servico>
+    <nome>Serviços</nome>
+    <nomeFantasia>Serviços</nomeFantasia>
+    <email>servicos@gmail.com</email>
+    <telefone>12981699884</telefone>
+    <endereco>Rua Sargento João Lopes, 12702410</endereco>
+    <service>Outro</service>
+    <cnpj>11184070000163</cnpj>
+    <cpf>46334678086</cpf>
+    <image>..//..//servicos//data//images//empresas//11184070000163.jpg</image>
+    <status>true</status>
+    <slogan></slogan>
+    <sobre></sobre>
+    <descricao></descricao>
+    <site></site>
+    <politicaprivacidade></politicaprivacidade>
+    <imagecapa></imagecapa>
+  </servico>
+  <servico>
+    <nome>Virtual Vale</nome>
+    <nomeFantasia>Virtual Vale</nomeFantasia>
+    <email>virtualvale@gmail.com</email>
+    <telefone>12981812467</telefone>
+    <endereco>Rua Sebastião de Souza, 12711590</endereco>
+    <service>Informática</service>
+    <cnpj>5403624000173</cnpj>
+    <cpf>28645898004</cpf>
+    <image>..//..//servicos//data//images//empresas//5403624000173.jpg</image>
+    <status>true</status>
+    <slogan>Faça do vale a sua Empresa</slogan>
+    <sobre></sobre>
+    <descricao>Virtual Vale é uma empresa que oferece os serviços de:
+- Intalação de antenas
+- apontamento de satélites
+- Instalação de câmeras
+- Manutenção de computadores
+- Concerto de eletrônocos em geral
+</descricao>
+    <site>www.virtualvale.com.br</site>
+    <politicaprivacidade></politicaprivacidade>
+    <imagecapa>..//..//servicos//data//images//empresas//capas//5403624000173.jpg</imagecapa>
+  </servico>
+  <servico>
+    <nome>Freedom Art</nome>
+    <nomeFantasia>FreedomArt</nomeFantasia>
+    <email>freedomart@gmail.com</email>
+    <telefone>11312256987</telefone>
+    <endereco>Rua Palmares, 56932674</endereco>
+    <service>Pintor</service>
+    <cnpj>89172297000186</cnpj>
+    <cpf>43812136880</cpf>
+    <image>..//..//servicos//data//images//empresas//89172297000186.jpg</image>
+    <status>true</status>
+    <slogan>Sua vida mais colorida.</slogan>
+    <sobre>Fundada em 2003, essa empresa se preocupa com a qualidade do serviço e a satisfação do clinte.</sobre>
+    <descricao>Oferecemos pinturas para residências, escolas e empresas.</descricao>
+    <site>www.freedomart.com.br</site>
+    <politicaprivacidade></politicaprivacidade>
+    <imagecapa>..//..//servicos//data//images//empresas//capas//89172297000186.jpg</imagecapa>
+  </servico>
+  <servico>
+    <nome>Fale com o Mundo</nome>
+    <nomeFantasia>Fale com o Mundo</nomeFantasia>
+    <email>falecomomundo@gmail.com</email>
+    <telefone>12319625463</telefone>
+    <endereco>Av. Tiriassu, 700, Vila Nova, 12722533</endereco>
+    <service>Outro</service>
+    <cnpj>24259729000145</cnpj>
+    <cpf>21513021052</cpf>
+    <image>..//..//servicos//data//images//empresas//24259729000145.jpg</image>
+    <status>true</status>
+    <slogan>Sintonize-se com o Mundo </slogan>
+    <sobre>Desde 2012 oferecemos os melhores métodos de aprender falar, ler e escrever em Portugês, Inglês, Francês, Espanhol, Alemão e Russo.</sobre>
+    <descricao>Cursos de Portugês, Inglês, Francês, Espanhol, Alemão e Russo. Aulas particulares em casa ou em turmas na nossa escola. 
+</descricao>
+    <site>www.falecomomundo.com.br</site>
+    <politicaprivacidade></politicaprivacidade>
+    <imagecapa>..//..//servicos//data//images//empresas//capas//24259729000145.jpg</imagecapa>
+  </servico>
   <hospedagem>
     <admin>26835036010</admin>
     <logo>..//..//hospedagem//data//images//empresas//11111111111111//logo//11111111111111.jpg</logo>
@@ -234,83 +313,4 @@ Os quartos do hotel dispõem de TV de tela plana, janelas com isolamento acústi
     <statusCardapio>true</statusCardapio>
     <statusEntrega>false</statusEntrega>
   </alimentos>
-  <servico>
-    <nome>Serviços</nome>
-    <nomeFantasia>Serviços</nomeFantasia>
-    <email>servicos@gmail.com</email>
-    <telefone>12981699884</telefone>
-    <endereco>Rua Sargento João Lopes, 12702410</endereco>
-    <service>Outro</service>
-    <cnpj>11184070000163</cnpj>
-    <cpf>46334678086</cpf>
-    <image>..//..//servicos//data//images//empresas//11184070000163.jpg</image>
-    <status>true</status>
-    <slogan></slogan>
-    <sobre></sobre>
-    <descricao></descricao>
-    <site></site>
-    <politicaprivacidade></politicaprivacidade>
-    <imagecapa></imagecapa>
-  </servico>
-  <servico>
-    <nome>Virtual Vale</nome>
-    <nomeFantasia>Virtual Vale</nomeFantasia>
-    <email>virtualvale@gmail.com</email>
-    <telefone>12981812467</telefone>
-    <endereco>Rua Sebastião de Souza, 12711590</endereco>
-    <service>Informática</service>
-    <cnpj>5403624000173</cnpj>
-    <cpf>28645898004</cpf>
-    <image>..//..//servicos//data//images//empresas//5403624000173.jpg</image>
-    <status>true</status>
-    <slogan>Faça do vale a sua Empresa</slogan>
-    <sobre></sobre>
-    <descricao>Virtual Vale é uma empresa que oferece os serviços de:
-- Intalação de antenas
-- apontamento de satélites
-- Instalação de câmeras
-- Manutenção de computadores
-- Concerto de eletrônocos em geral
-</descricao>
-    <site>www.virtualvale.com.br</site>
-    <politicaprivacidade></politicaprivacidade>
-    <imagecapa>..//..//servicos//data//images//empresas//capas//5403624000173.jpg</imagecapa>
-  </servico>
-  <servico>
-    <nome>Freedom Art</nome>
-    <nomeFantasia>FreedomArt</nomeFantasia>
-    <email>freedomart@gmail.com</email>
-    <telefone>11312256987</telefone>
-    <endereco>Rua Palmares, 56932674</endereco>
-    <service>Pintor</service>
-    <cnpj>89172297000186</cnpj>
-    <cpf>43812136880</cpf>
-    <image>..//..//servicos//data//images//empresas//89172297000186.jpg</image>
-    <status>true</status>
-    <slogan>Sua vida mais colorida.</slogan>
-    <sobre>Fundada em 2003, essa empresa se preocupa com a qualidade do serviço e a satisfação do clinte.</sobre>
-    <descricao>Oferecemos pinturas para residências, escolas e empresas.</descricao>
-    <site>www.freedomart.com.br</site>
-    <politicaprivacidade></politicaprivacidade>
-    <imagecapa>..//..//servicos//data//images//empresas//capas//89172297000186.jpg</imagecapa>
-  </servico>
-  <servico>
-    <nome>Fale com o Mundo</nome>
-    <nomeFantasia>Fale com o Mundo</nomeFantasia>
-    <email>falecomomundo@gmail.com</email>
-    <telefone>12319625463</telefone>
-    <endereco>Av. Tiriassu, 700, Vila Nova, 12722533</endereco>
-    <service>Outro</service>
-    <cnpj>24259729000145</cnpj>
-    <cpf>21513021052</cpf>
-    <image>..//..//servicos//data//images//empresas//24259729000145.jpg</image>
-    <status>true</status>
-    <slogan>Sintonize-se com o Mundo </slogan>
-    <sobre>Desde 2012 oferecemos os melhores métodos de aprender falar, ler e escrever em Portugês, Inglês, Francês, Espanhol, Alemão e Russo.</sobre>
-    <descricao>Cursos de Portugês, Inglês, Francês, Espanhol, Alemão e Russo. Aulas particulares em casa ou em turmas na nossa escola. 
-</descricao>
-    <site>www.falecomomundo.com.br</site>
-    <politicaprivacidade></politicaprivacidade>
-    <imagecapa>..//..//servicos//data//images//empresas//capas//24259729000145.jpg</imagecapa>
-  </servico>
 </modulos>
