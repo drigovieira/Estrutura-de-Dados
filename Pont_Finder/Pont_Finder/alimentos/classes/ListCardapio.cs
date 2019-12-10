@@ -117,7 +117,19 @@ namespace Pont_Finder.alimentos
             string caminho = "..\\..\\alimentos\\data\\cardapio.xml";
             foreach (var item in cardapio)
             {
-                XElement xcar =
+                string ingredientes = "";
+                foreach (var i in item.Ingredientes)
+                {
+                    if (ingredientes.Equals(""))
+                    {
+                        ingredientes = i;
+                    }
+                    else
+                    {
+                        ingredientes += "," + i;
+                    }
+                }                
+                    XElement xcar =
                     new XElement("cardapio",
                     new XElement("id", item.Id),
                     new XElement("idEmpresa", item.IdEmpresa),
@@ -126,7 +138,7 @@ namespace Pont_Finder.alimentos
                     new XElement("nome", item.Nome),
                     new XElement("image", item.Image),
                     new XElement("qtd", item.Qtd),
-                    new XElement("ingredientes", item.Ingredientes),
+                    new XElement("ingredientes", ingredientes),
                     new XElement("status", item.Status));
                 XDocument doc = XDocument.Load(caminho);
                 doc.Root.Add(xcar);

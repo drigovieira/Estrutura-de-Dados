@@ -74,7 +74,7 @@ namespace Pont_Finder.alimentos
             Pedidos = pedido;
             InitializeComponent();
             if (ListCardapio.select(Id).Image != null)
-                pb_alimento.ImageLocation = CompanyList.select(Id).Image;
+                pb_alimento.ImageLocation = ListCardapio.select(Id).Image;
             else
                 pb_alimento.ImageLocation = "..//..//alimentos//data//image//cardapio//offImage.jpg";
             int cont1 = 0;

@@ -7,8 +7,41 @@
     <preco>10</preco>
     <nome>teste</nome>
     <image>..//..//alimentos//data//image//cardapio//0.jpg</image>
-    <qtd>10.5</qtd>
+    <qtd>105</qtd>
     <ingredientes>testeestepega</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>1</id>
+    <idEmpresa>0</idEmpresa>
+    <quantos>0</quantos>
+    <preco>10</preco>
+    <nome>a</nome>
+    <image>..//..//alimentos//data//image//cardapio//offImage.jpg</image>
+    <qtd>2</qtd>
+    <ingredientes>abcd</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>2</id>
+    <idEmpresa>0</idEmpresa>
+    <quantos>0</quantos>
+    <preco>30</preco>
+    <nome>b</nome>
+    <image>..//..//alimentos//data//image//cardapio//offImage.jpg</image>
+    <qtd>20</qtd>
+    <ingredientes>bcde</ingredientes>
+    <status>true</status>
+  </cardapio>
+  <cardapio>
+    <id>3</id>
+    <idEmpresa>0</idEmpresa>
+    <quantos>0</quantos>
+    <preco>10</preco>
+    <nome>g</nome>
+    <image>..//..//alimentos//data//image//cardapio//3.jpg</image>
+    <qtd>10</qtd>
+    <ingredientes>1231231,,,10</ingredientes>
     <status>true</status>
   </cardapio>
 </ListCardapio>
