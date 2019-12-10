@@ -23,7 +23,9 @@ namespace Pont_Finder.hospedagem.data.inc
 
         private void Control_Top5_Load(object sender, EventArgs e)
         {
-            lb_servico.Text = quarto.NomeQuarto;
+            label1.Text = quarto.NomeQuarto;
+            lb_servico.Text = "Localizado em: " + hostList.selectCnpj(quarto.Cnpj_Empresa).Nomefantasia; 
+            pb_icone.ImageLocation = quarto.Foto;
         }
     }
 

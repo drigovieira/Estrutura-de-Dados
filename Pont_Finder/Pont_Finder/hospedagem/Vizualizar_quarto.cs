@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Security;
@@ -273,6 +274,8 @@ namespace Pont_Finder.hospedagem
             int xx = 5;
             int v = 5;
 
+            fotin = null;
+
             //Serviços do hotel
             foreach (var ambi in ambientes)
             {
@@ -303,8 +306,8 @@ namespace Pont_Finder.hospedagem
             double valor15 = valor * 0.15;
             double valorboleto = valor - valor15;
 
-            lb_rs_boleto.Text = "R$"+valorboleto;
-            lb_rs_cartao.Text = "R$" + valor;
+            lb_rs_boleto.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", valorboleto);
+            lb_rs_cartao.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", valor);
 
             lb_num_quartos.Text = ""+qtd_disponivel;
             lb_num_pessoas.Text = "" + qtd_pessoas;

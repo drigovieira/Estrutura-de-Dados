@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Pont_Finder.hospedagem
 {
@@ -53,7 +54,7 @@ namespace Pont_Finder.hospedagem
             lb_nome.Text = this.nome;
             lb_value_pessoas.Text = ""+this.qtd_pessoas;
             lb_value_quartos.Text = "" + this.qtd_disponivel;
-            lb_rs.Text = "R$" + this.valor;
+            lb_rs.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", this.valor);
         }
 
         private void bt_remover_Click(object sender, EventArgs e)
