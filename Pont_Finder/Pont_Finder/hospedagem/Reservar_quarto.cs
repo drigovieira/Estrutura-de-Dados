@@ -206,6 +206,7 @@ namespace Pont_Finder.hospedagem
 
         }
 
+
         private void Reservar_quarto_Load(object sender, EventArgs e)
         {
             int v = 5;
@@ -228,8 +229,12 @@ namespace Pont_Finder.hospedagem
             pictureBox3.ImageLocation = foto;
             pictureBox3.Load();
 
-            lb_rs_cartao.Text = "R$"+valor;
-            lb_rs_boleto.Text = "R$" + (valor-(valor*0.15));
+            int totalDias = ((DateTime.Parse(lb_data_saida.Text).Subtract(DateTime.Parse(lb_data_entrada.Text))).Days)+1;
+
+            MessageBox.Show("" + totalDias);
+
+            lb_rs_cartao.Text = "R$"+  (totalDias * valor);
+            lb_rs_boleto.Text = "R$" + (totalDias * (valor-(valor*0.15)));
 
         }
     }
