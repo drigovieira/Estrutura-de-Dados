@@ -307,6 +307,7 @@
             this.rb_Cel.TabIndex = 20;
             this.rb_Cel.Text = "Celular";
             this.rb_Cel.UseVisualStyleBackColor = true;
+            this.rb_Cel.CheckedChanged += new System.EventHandler(this.rb_Cel_CheckedChanged);
             // 
             // rb_Tel
             // 
@@ -320,6 +321,7 @@
             this.rb_Tel.TabStop = true;
             this.rb_Tel.Text = "Telefone Fixo";
             this.rb_Tel.UseVisualStyleBackColor = true;
+            this.rb_Tel.CheckedChanged += new System.EventHandler(this.rb_Tel_CheckedChanged);
             // 
             // label8
             // 
