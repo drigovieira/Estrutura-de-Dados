@@ -75,8 +75,7 @@ namespace Pont_Finder
 
         private void Button_salvar_Click(object sender, EventArgs e)
         {
-            classes.Config.Save();
-            MessageBox.Show("Dados Salvos");         
+             
         }
 
         private void panelHome_Paint(object sender, PaintEventArgs e)
@@ -234,6 +233,7 @@ namespace Pont_Finder
 
         private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
+            classes.Config.Save();
             Application.Exit();
         }
     }

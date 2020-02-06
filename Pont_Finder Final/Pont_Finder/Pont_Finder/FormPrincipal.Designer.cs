@@ -33,7 +33,6 @@
             this.pb_userIcone = new System.Windows.Forms.PictureBox();
             this.bt_Sair = new System.Windows.Forms.Button();
             this.username = new System.Windows.Forms.Label();
-            this.button_salvar = new System.Windows.Forms.Button();
             this.bt_FazerLogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_CriarConta = new System.Windows.Forms.Button();
@@ -49,7 +48,6 @@
             this.panel1.Controls.Add(this.pb_userIcone);
             this.panel1.Controls.Add(this.bt_Sair);
             this.panel1.Controls.Add(this.username);
-            this.panel1.Controls.Add(this.button_salvar);
             this.panel1.Controls.Add(this.bt_FazerLogin);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.bt_CriarConta);
@@ -101,23 +99,6 @@
             this.username.Text = "UserName";
             this.username.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.username.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // button_salvar
-            // 
-            this.button_salvar.BackColor = System.Drawing.Color.Transparent;
-            this.button_salvar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button_salvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            this.button_salvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-            this.button_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_salvar.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_salvar.ForeColor = System.Drawing.Color.White;
-            this.button_salvar.Location = new System.Drawing.Point(1262, 10);
-            this.button_salvar.Name = "button_salvar";
-            this.button_salvar.Size = new System.Drawing.Size(75, 25);
-            this.button_salvar.TabIndex = 3;
-            this.button_salvar.Text = "Salvar";
-            this.button_salvar.UseVisualStyleBackColor = false;
-            this.button_salvar.Click += new System.EventHandler(this.Button_salvar_Click);
             // 
             // bt_FazerLogin
             // 
@@ -203,7 +184,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button bt_CriarConta;
         private System.Windows.Forms.Panel panelHome;
-        private System.Windows.Forms.Button button_salvar;
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.Button bt_Sair;
         private System.Windows.Forms.PictureBox pb_userIcone;
